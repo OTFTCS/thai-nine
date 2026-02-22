@@ -1,0 +1,86 @@
+@import "tailwindcss";
+
+:root {
+  --background: #faf9f7;
+  --foreground: #2c1810;
+  --primary: #5b9bd5;
+  --primary-dark: #3a7bbf;
+  --primary-light: #d0e4f7;
+  --secondary: #5c3d2e;
+  --secondary-dark: #3e2518;
+  --secondary-light: #8b6b5a;
+  --accent: #e85d4a;
+  --muted: #f0ede8;
+  --muted-foreground: #6b7280;
+  --border: #e0dbd4;
+  --card: #ffffff;
+  --card-foreground: #2c1810;
+  --destructive: #ef4444;
+  --success: #22c55e;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-primary-dark: var(--primary-dark);
+  --color-primary-light: var(--primary-light);
+  --color-secondary: var(--secondary);
+  --color-secondary-dark: var(--secondary-dark);
+  --color-secondary-light: var(--secondary-light);
+  --color-accent: var(--accent);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-border: var(--border);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-destructive: var(--destructive);
+  --color-success: var(--success);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #1a1210;
+    --foreground: #f0ede8;
+    --primary: #7db8e8;
+    --primary-dark: #5b9bd5;
+    --primary-light: #1e3a52;
+    --secondary: #a08070;
+    --secondary-dark: #8b6b5a;
+    --secondary-light: #c0a898;
+    --muted: #2c201a;
+    --muted-foreground: #9ca3af;
+    --border: #3d2e25;
+    --card: #241a14;
+    --card-foreground: #f0ede8;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+}
+
+.flashcard-flip {
+  perspective: 1000px;
+}
+
+.flashcard-inner {
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.flashcard-inner.flipped {
+  transform: rotateY(180deg);
+}
+
+.flashcard-front,
+.flashcard-back {
+  backface-visibility: hidden;
+}
+
+.flashcard-back {
+  transform: rotateY(180deg);
+}
