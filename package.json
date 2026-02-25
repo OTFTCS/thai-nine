@@ -6,7 +6,11 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "course:validate": "node --experimental-strip-types course/tools/pipeline-cli.ts validate",
+    "course:validate:lesson": "node --experimental-strip-types course/tools/pipeline-cli.ts validate --lesson",
+    "course:lint": "npm run lint && npm run course:validate",
+    "course:runlog": "node --experimental-strip-types course/tools/pipeline-cli.ts touch-runlog --message"
   },
   "dependencies": {
     "next": "16.1.6",
