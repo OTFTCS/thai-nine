@@ -1,0 +1,129 @@
+{
+  "quizId": "placement-v0",
+  "levelBand": "A0-A1 entry diagnostic",
+  "version": "2026-02-25",
+  "instructions": "Choose the best answer. Use this quiz to place learners before Module 1.",
+  "sections": [
+    {
+      "id": "listening-basics",
+      "weight": 0.35,
+      "questions": [
+        {
+          "id": "P1",
+          "type": "audio_meaning_match",
+          "prompt": "Audio says: สวัสดีครับ",
+          "options": [
+            "Good morning",
+            "Hello (male polite)",
+            "Thank you",
+            "Excuse me"
+          ],
+          "correct": "B",
+          "audio_required": true
+        },
+        {
+          "id": "P2",
+          "type": "audio_meaning_match",
+          "prompt": "Audio says: ขอบคุณค่ะ",
+          "options": [
+            "Hello",
+            "Sorry",
+            "Thank you (female polite)",
+            "How much"
+          ],
+          "correct": "C",
+          "audio_required": true
+        }
+      ]
+    },
+    {
+      "id": "core-recognition",
+      "weight": 0.4,
+      "questions": [
+        {
+          "id": "P3",
+          "type": "thai_to_english",
+          "prompt": "ใกล้",
+          "options": [
+            "far",
+            "near",
+            "left",
+            "right"
+          ],
+          "correct": "B"
+        },
+        {
+          "id": "P4",
+          "type": "thai_to_english",
+          "prompt": "ไกล",
+          "options": [
+            "near",
+            "fast",
+            "far",
+            "slow"
+          ],
+          "correct": "C"
+        },
+        {
+          "id": "P5",
+          "type": "real_world_response",
+          "prompt": "Thai has how many tones?",
+          "options": [
+            "3",
+            "4",
+            "5",
+            "6"
+          ],
+          "correct": "C"
+        }
+      ]
+    },
+    {
+      "id": "study-readiness",
+      "weight": 0.25,
+      "questions": [
+        {
+          "id": "P6",
+          "type": "real_world_response",
+          "prompt": "Best weekly pace for this course",
+          "options": [
+            "1 lesson",
+            "2 lessons",
+            "3–4 lessons",
+            "only weekends"
+          ],
+          "correct": "C"
+        },
+        {
+          "id": "P7",
+          "type": "word_order",
+          "prompt": "Best learning loop",
+          "options": [
+            "Watch → Practice → Quiz → Review",
+            "Quiz → Watch → Review → Practice",
+            "Practice → Quiz → Watch → Review",
+            "Review only"
+          ],
+          "correct": "A"
+        }
+      ]
+    }
+  ],
+  "placementRules": [
+    {
+      "band": "Beginner start (M01-L001)",
+      "scoreMin": 0,
+      "scoreMax": 39
+    },
+    {
+      "band": "Fast beginner (M01-L003)",
+      "scoreMin": 40,
+      "scoreMax": 69
+    },
+    {
+      "band": "Bridge to M01-L006",
+      "scoreMin": 70,
+      "scoreMax": 100
+    }
+  ]
+}
