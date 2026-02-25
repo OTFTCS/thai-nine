@@ -1,0 +1,428 @@
+version: 1
+course: immersion-thai-with-nine
+generatedAt: 2026-02-25T21:24:00+07:00
+modules:
+  - id: M01
+    title: "Thai Script Fundamentals"
+    lessons:
+      - id: L001
+        lessonId: M01-L001
+        title: "How Thai Works"
+        state: READY_TO_RECORD
+        path: course/modules/M01/L001
+      - id: L002
+        lessonId: M01-L002
+        title: "The Thai Sound System"
+        state: READY_TO_RECORD
+        path: course/modules/M01/L002
+      - id: L003
+        lessonId: M01-L003
+        title: "How to Use This Course"
+        state: READY_TO_RECORD
+        path: course/modules/M01/L003
+      - id: L004
+        lessonId: M01-L004
+        title: "Consonant Classes — Mid Class"
+        state: PLANNED
+        path: course/modules/M01/L004
+      - id: L005
+        lessonId: M01-L005
+        title: "Consonant Classes — High & Low"
+        state: PLANNED
+        path: course/modules/M01/L005
+      - id: L006
+        lessonId: M01-L006
+        title: "Core Vowels — Short & Long"
+        state: PLANNED
+        path: course/modules/M01/L006
+      - id: L007
+        lessonId: M01-L007
+        title: "Tone Rules Basics"
+        state: PLANNED
+        path: course/modules/M01/L007
+      - id: L008
+        lessonId: M01-L008
+        title: "Final Consonants + Live/Dead Syllables"
+        state: PLANNED
+        path: course/modules/M01/L008
+      - id: L009
+        lessonId: M01-L009
+        title: "Reading Drills — Syllables to Words"
+        state: PLANNED
+        path: course/modules/M01/L009
+      - id: L010
+        lessonId: M01-L010
+        title: "Greetings & Politeness Particles"
+        state: PLANNED
+        path: course/modules/M01/L010
+  - id: M02
+    title: "Survival Thai"
+    lessons:
+      - id: L001
+        lessonId: M02-L001
+        title: "Placeholder Lesson 001"
+        state: BACKLOG
+        path: course/modules/M02/L001
+      - id: L002
+        lessonId: M02-L002
+        title: "Placeholder Lesson 002"
+        state: BACKLOG
+        path: course/modules/M02/L002
+      - id: L003
+        lessonId: M02-L003
+        title: "Placeholder Lesson 003"
+        state: BACKLOG
+        path: course/modules/M02/L003
+      - id: L004
+        lessonId: M02-L004
+        title: "Placeholder Lesson 004"
+        state: BACKLOG
+        path: course/modules/M02/L004
+      - id: L005
+        lessonId: M02-L005
+        title: "Placeholder Lesson 005"
+        state: BACKLOG
+        path: course/modules/M02/L005
+      - id: L006
+        lessonId: M02-L006
+        title: "Placeholder Lesson 006"
+        state: BACKLOG
+        path: course/modules/M02/L006
+      - id: L007
+        lessonId: M02-L007
+        title: "Placeholder Lesson 007"
+        state: BACKLOG
+        path: course/modules/M02/L007
+      - id: L008
+        lessonId: M02-L008
+        title: "Placeholder Lesson 008"
+        state: BACKLOG
+        path: course/modules/M02/L008
+      - id: L009
+        lessonId: M02-L009
+        title: "Placeholder Lesson 009"
+        state: BACKLOG
+        path: course/modules/M02/L009
+      - id: L010
+        lessonId: M02-L010
+        title: "Placeholder Lesson 010"
+        state: BACKLOG
+        path: course/modules/M02/L010
+  - id: M03
+    title: "Sentence Building Essentials"
+    lessons:
+      - id: L001
+        lessonId: M03-L001
+        title: "Placeholder Lesson 001"
+        state: BACKLOG
+        path: course/modules/M03/L001
+      - id: L002
+        lessonId: M03-L002
+        title: "Placeholder Lesson 002"
+        state: BACKLOG
+        path: course/modules/M03/L002
+      - id: L003
+        lessonId: M03-L003
+        title: "Placeholder Lesson 003"
+        state: BACKLOG
+        path: course/modules/M03/L003
+      - id: L004
+        lessonId: M03-L004
+        title: "Placeholder Lesson 004"
+        state: BACKLOG
+        path: course/modules/M03/L004
+      - id: L005
+        lessonId: M03-L005
+        title: "Placeholder Lesson 005"
+        state: BACKLOG
+        path: course/modules/M03/L005
+      - id: L006
+        lessonId: M03-L006
+        title: "Placeholder Lesson 006"
+        state: BACKLOG
+        path: course/modules/M03/L006
+      - id: L007
+        lessonId: M03-L007
+        title: "Placeholder Lesson 007"
+        state: BACKLOG
+        path: course/modules/M03/L007
+      - id: L008
+        lessonId: M03-L008
+        title: "Placeholder Lesson 008"
+        state: BACKLOG
+        path: course/modules/M03/L008
+      - id: L009
+        lessonId: M03-L009
+        title: "Placeholder Lesson 009"
+        state: BACKLOG
+        path: course/modules/M03/L009
+      - id: L010
+        lessonId: M03-L010
+        title: "Placeholder Lesson 010"
+        state: BACKLOG
+        path: course/modules/M03/L010
+  - id: M04
+    title: "High-Frequency Vocabulary Systems"
+    lessons:
+      - id: L001
+        lessonId: M04-L001
+        title: "Placeholder Lesson 001"
+        state: BACKLOG
+        path: course/modules/M04/L001
+      - id: L002
+        lessonId: M04-L002
+        title: "Placeholder Lesson 002"
+        state: BACKLOG
+        path: course/modules/M04/L002
+      - id: L003
+        lessonId: M04-L003
+        title: "Placeholder Lesson 003"
+        state: BACKLOG
+        path: course/modules/M04/L003
+      - id: L004
+        lessonId: M04-L004
+        title: "Placeholder Lesson 004"
+        state: BACKLOG
+        path: course/modules/M04/L004
+      - id: L005
+        lessonId: M04-L005
+        title: "Placeholder Lesson 005"
+        state: BACKLOG
+        path: course/modules/M04/L005
+      - id: L006
+        lessonId: M04-L006
+        title: "Placeholder Lesson 006"
+        state: BACKLOG
+        path: course/modules/M04/L006
+      - id: L007
+        lessonId: M04-L007
+        title: "Placeholder Lesson 007"
+        state: BACKLOG
+        path: course/modules/M04/L007
+      - id: L008
+        lessonId: M04-L008
+        title: "Placeholder Lesson 008"
+        state: BACKLOG
+        path: course/modules/M04/L008
+      - id: L009
+        lessonId: M04-L009
+        title: "Placeholder Lesson 009"
+        state: BACKLOG
+        path: course/modules/M04/L009
+      - id: L010
+        lessonId: M04-L010
+        title: "Placeholder Lesson 010"
+        state: BACKLOG
+        path: course/modules/M04/L010
+  - id: M05
+    title: "Listening + Speaking Patterns"
+    lessons:
+      - id: L001
+        lessonId: M05-L001
+        title: "Placeholder Lesson 001"
+        state: BACKLOG
+        path: course/modules/M05/L001
+      - id: L002
+        lessonId: M05-L002
+        title: "Placeholder Lesson 002"
+        state: BACKLOG
+        path: course/modules/M05/L002
+      - id: L003
+        lessonId: M05-L003
+        title: "Placeholder Lesson 003"
+        state: BACKLOG
+        path: course/modules/M05/L003
+      - id: L004
+        lessonId: M05-L004
+        title: "Placeholder Lesson 004"
+        state: BACKLOG
+        path: course/modules/M05/L004
+      - id: L005
+        lessonId: M05-L005
+        title: "Placeholder Lesson 005"
+        state: BACKLOG
+        path: course/modules/M05/L005
+      - id: L006
+        lessonId: M05-L006
+        title: "Placeholder Lesson 006"
+        state: BACKLOG
+        path: course/modules/M05/L006
+      - id: L007
+        lessonId: M05-L007
+        title: "Placeholder Lesson 007"
+        state: BACKLOG
+        path: course/modules/M05/L007
+      - id: L008
+        lessonId: M05-L008
+        title: "Placeholder Lesson 008"
+        state: BACKLOG
+        path: course/modules/M05/L008
+      - id: L009
+        lessonId: M05-L009
+        title: "Placeholder Lesson 009"
+        state: BACKLOG
+        path: course/modules/M05/L009
+      - id: L010
+        lessonId: M05-L010
+        title: "Placeholder Lesson 010"
+        state: BACKLOG
+        path: course/modules/M05/L010
+  - id: M06
+    title: "Reading in the Wild"
+    lessons:
+      - id: L001
+        lessonId: M06-L001
+        title: "Placeholder Lesson 001"
+        state: BACKLOG
+        path: course/modules/M06/L001
+      - id: L002
+        lessonId: M06-L002
+        title: "Placeholder Lesson 002"
+        state: BACKLOG
+        path: course/modules/M06/L002
+      - id: L003
+        lessonId: M06-L003
+        title: "Placeholder Lesson 003"
+        state: BACKLOG
+        path: course/modules/M06/L003
+      - id: L004
+        lessonId: M06-L004
+        title: "Placeholder Lesson 004"
+        state: BACKLOG
+        path: course/modules/M06/L004
+      - id: L005
+        lessonId: M06-L005
+        title: "Placeholder Lesson 005"
+        state: BACKLOG
+        path: course/modules/M06/L005
+      - id: L006
+        lessonId: M06-L006
+        title: "Placeholder Lesson 006"
+        state: BACKLOG
+        path: course/modules/M06/L006
+      - id: L007
+        lessonId: M06-L007
+        title: "Placeholder Lesson 007"
+        state: BACKLOG
+        path: course/modules/M06/L007
+      - id: L008
+        lessonId: M06-L008
+        title: "Placeholder Lesson 008"
+        state: BACKLOG
+        path: course/modules/M06/L008
+      - id: L009
+        lessonId: M06-L009
+        title: "Placeholder Lesson 009"
+        state: BACKLOG
+        path: course/modules/M06/L009
+      - id: L010
+        lessonId: M06-L010
+        title: "Placeholder Lesson 010"
+        state: BACKLOG
+        path: course/modules/M06/L010
+  - id: M07
+    title: "Real-World Scenarios"
+    lessons:
+      - id: L001
+        lessonId: M07-L001
+        title: "Placeholder Lesson 001"
+        state: BACKLOG
+        path: course/modules/M07/L001
+      - id: L002
+        lessonId: M07-L002
+        title: "Placeholder Lesson 002"
+        state: BACKLOG
+        path: course/modules/M07/L002
+      - id: L003
+        lessonId: M07-L003
+        title: "Placeholder Lesson 003"
+        state: BACKLOG
+        path: course/modules/M07/L003
+      - id: L004
+        lessonId: M07-L004
+        title: "Placeholder Lesson 004"
+        state: BACKLOG
+        path: course/modules/M07/L004
+      - id: L005
+        lessonId: M07-L005
+        title: "Placeholder Lesson 005"
+        state: BACKLOG
+        path: course/modules/M07/L005
+      - id: L006
+        lessonId: M07-L006
+        title: "Placeholder Lesson 006"
+        state: BACKLOG
+        path: course/modules/M07/L006
+      - id: L007
+        lessonId: M07-L007
+        title: "Placeholder Lesson 007"
+        state: BACKLOG
+        path: course/modules/M07/L007
+      - id: L008
+        lessonId: M07-L008
+        title: "Placeholder Lesson 008"
+        state: BACKLOG
+        path: course/modules/M07/L008
+      - id: L009
+        lessonId: M07-L009
+        title: "Placeholder Lesson 009"
+        state: BACKLOG
+        path: course/modules/M07/L009
+      - id: L010
+        lessonId: M07-L010
+        title: "Placeholder Lesson 010"
+        state: BACKLOG
+        path: course/modules/M07/L010
+  - id: M08
+    title: "Consolidation + Next Steps"
+    lessons:
+      - id: L001
+        lessonId: M08-L001
+        title: "Placeholder Lesson 001"
+        state: BACKLOG
+        path: course/modules/M08/L001
+      - id: L002
+        lessonId: M08-L002
+        title: "Placeholder Lesson 002"
+        state: BACKLOG
+        path: course/modules/M08/L002
+      - id: L003
+        lessonId: M08-L003
+        title: "Placeholder Lesson 003"
+        state: BACKLOG
+        path: course/modules/M08/L003
+      - id: L004
+        lessonId: M08-L004
+        title: "Placeholder Lesson 004"
+        state: BACKLOG
+        path: course/modules/M08/L004
+      - id: L005
+        lessonId: M08-L005
+        title: "Placeholder Lesson 005"
+        state: BACKLOG
+        path: course/modules/M08/L005
+      - id: L006
+        lessonId: M08-L006
+        title: "Placeholder Lesson 006"
+        state: BACKLOG
+        path: course/modules/M08/L006
+      - id: L007
+        lessonId: M08-L007
+        title: "Placeholder Lesson 007"
+        state: BACKLOG
+        path: course/modules/M08/L007
+      - id: L008
+        lessonId: M08-L008
+        title: "Placeholder Lesson 008"
+        state: BACKLOG
+        path: course/modules/M08/L008
+      - id: L009
+        lessonId: M08-L009
+        title: "Placeholder Lesson 009"
+        state: BACKLOG
+        path: course/modules/M08/L009
+      - id: L010
+        lessonId: M08-L010
+        title: "Placeholder Lesson 010"
+        state: BACKLOG
+        path: course/modules/M08/L010
