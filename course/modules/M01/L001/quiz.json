@@ -1,0 +1,71 @@
+{
+  "lessonId": "M01-L001",
+  "version": "v1",
+  "questions": [
+    {
+      "id": 1,
+      "type": "thai_to_english",
+      "question": "What does สวัสดี mean?",
+      "options": [
+        "Thank you",
+        "Hello/Goodbye",
+        "Sorry",
+        "Please"
+      ],
+      "correct": "B",
+      "explanation": "สวัสดี is the standard greeting."
+    },
+    {
+      "id": 2,
+      "type": "real_world_response",
+      "question": "How many tones does Thai have?",
+      "options": [
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "correct": "C",
+      "explanation": "Standard Thai has five tones."
+    },
+    {
+      "id": 3,
+      "type": "thai_to_english",
+      "question": "What is ครับ used for?",
+      "options": [
+        "Past tense marker",
+        "Polite particle (male)",
+        "Plural marker",
+        "Question marker"
+      ],
+      "correct": "B",
+      "explanation": "ครับ softens statements politely for male speakers."
+    },
+    {
+      "id": 4,
+      "type": "real_world_response",
+      "question": "Thai script is best described as…",
+      "options": [
+        "Pictographic",
+        "Alphabetic",
+        "Numeric",
+        "Gesture-based"
+      ],
+      "correct": "B",
+      "explanation": "Thai script is an alphabet/abugida system."
+    },
+    {
+      "id": 5,
+      "type": "english_to_thai",
+      "question": "Female question polite particle",
+      "options": [
+        "ค่ะ",
+        "คะ",
+        "ครับ",
+        "ไม่"
+      ],
+      "correct": "B",
+      "explanation": "คะ is typically used in polite questions by female speakers."
+    }
+  ]
+}

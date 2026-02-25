@@ -1,0 +1,72 @@
+{
+  "lessonId": "M01-L002",
+  "version": "v1",
+  "questions": [
+    {
+      "id": 1,
+      "type": "thai_to_english",
+      "question": "ไก่ means…",
+      "options": [
+        "egg",
+        "far",
+        "chicken",
+        "near"
+      ],
+      "correct": "C",
+      "explanation": "ไก่ is chicken."
+    },
+    {
+      "id": 2,
+      "type": "thai_to_english",
+      "question": "ไข่ means…",
+      "options": [
+        "egg",
+        "rice",
+        "water",
+        "city"
+      ],
+      "correct": "A",
+      "explanation": "ไข่ is egg."
+    },
+    {
+      "id": 3,
+      "type": "real_world_response",
+      "question": "Short vs long vowels in Thai…",
+      "options": [
+        "Never matter",
+        "Only affect spelling",
+        "Can change meaning",
+        "Are optional"
+      ],
+      "correct": "C",
+      "explanation": "Vowel length can distinguish words."
+    },
+    {
+      "id": 4,
+      "type": "audio_meaning_match",
+      "question": "Listen to ใกล้. Choose meaning.",
+      "options": [
+        "far",
+        "near",
+        "late",
+        "new"
+      ],
+      "correct": "B",
+      "explanation": "ใกล้ means near.",
+      "audio_required": true
+    },
+    {
+      "id": 5,
+      "type": "real_world_response",
+      "question": "How many tones are taught in standard Thai?",
+      "options": [
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "correct": "C",
+      "explanation": "Five tones are taught."
+    }
+  ]
+}
