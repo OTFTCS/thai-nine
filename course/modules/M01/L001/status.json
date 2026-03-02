@@ -1,6 +1,19 @@
 {
   "lessonId": "M01-L001",
-  "state": "READY_TO_RECORD",
-  "updatedAt": "2026-02-25T21:28:00+07:00",
-  "validatedAt": "2026-02-25T21:28:00+07:00"
+  "state": "DRAFT",
+  "updatedAt": "2026-02-26T09:06:57.842Z",
+  "validatedAt": null,
+  "stageResults": {
+    "0": "PASS",
+    "1": "PASS",
+    "2": "PASS",
+    "3": "PASS",
+    "4": "PASS",
+    "5": "PASS",
+    "6": "PASS",
+    "7": "PASS"
+  },
+  "notes": [
+    "release-gate=PASS"
+  ]
 }

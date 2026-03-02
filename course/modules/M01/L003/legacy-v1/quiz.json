@@ -1,0 +1,71 @@
+{
+  "lessonId": "M01-L003",
+  "version": "v1",
+  "questions": [
+    {
+      "id": 1,
+      "type": "thai_to_english",
+      "question": "เรียน means…",
+      "options": [
+        "review",
+        "practice",
+        "study",
+        "listen"
+      ],
+      "correct": "C",
+      "explanation": "เรียน means study/learn."
+    },
+    {
+      "id": 2,
+      "type": "thai_to_english",
+      "question": "ฝึก means…",
+      "options": [
+        "practice",
+        "sleep",
+        "read",
+        "write"
+      ],
+      "correct": "A",
+      "explanation": "ฝึก means practice/train."
+    },
+    {
+      "id": 3,
+      "type": "thai_to_english",
+      "question": "ทบทวน means…",
+      "options": [
+        "watch",
+        "review",
+        "quiz",
+        "speak"
+      ],
+      "correct": "B",
+      "explanation": "ทบทวน means review."
+    },
+    {
+      "id": 4,
+      "type": "real_world_response",
+      "question": "Recommended study pace per week",
+      "options": [
+        "1 lesson",
+        "2 lessons",
+        "3–4 lessons",
+        "7 lessons"
+      ],
+      "correct": "C",
+      "explanation": "Course baseline is 3–4 lessons weekly."
+    },
+    {
+      "id": 5,
+      "type": "word_order",
+      "question": "Correct learning loop order",
+      "options": [
+        "Quiz → Watch → Practice → Review",
+        "Watch → Practice → Quiz → Review",
+        "Review → Watch → Quiz → Practice",
+        "Practice → Watch → Review → Quiz"
+      ],
+      "correct": "B",
+      "explanation": "Active watch, then practice, quiz, and review."
+    }
+  ]
+}

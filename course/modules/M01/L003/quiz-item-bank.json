@@ -1,0 +1,384 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "M01-L003",
+  "generatedAt": "2026-02-26T07:45:24.475Z",
+  "sourceScript": "script-master.json",
+  "items": [
+    {
+      "id": "v-c9337e2739-thai-to-english",
+      "vocabId": "v-c9337e2739",
+      "type": "thai_to_english",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "What is the best meaning of สวัสดี?",
+        "thai": "สวัสดี",
+        "translit": "sà-wàt-dii"
+      },
+      "options": [
+        "hello",
+        "thank you",
+        "excuse me / sorry",
+        "I do not understand"
+      ],
+      "answer": "hello",
+      "rationale": "Maps Thai form to target meaning from script languageFocus."
+    },
+    {
+      "id": "v-c9337e2739-english-to-thai",
+      "vocabId": "v-c9337e2739",
+      "type": "english_to_thai",
+      "displayMode": "english_only",
+      "prompt": {
+        "text": "Select Thai for: hello",
+        "english": "hello"
+      },
+      "options": [
+        "สวัสดี",
+        "ขอบคุณ",
+        "ขอโทษ",
+        "ไม่เข้าใจ"
+      ],
+      "answer": "สวัสดี",
+      "rationale": "Reverses mapping for active recall."
+    },
+    {
+      "id": "v-c9337e2739-fill-translit",
+      "vocabId": "v-c9337e2739",
+      "type": "fill_translit",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "Type the PTM transliteration for สวัสดี.",
+        "thai": "สวัสดี"
+      },
+      "answer": "sà-wàt-dii",
+      "rationale": "Forces transliteration production with inline tone marks."
+    },
+    {
+      "id": "v-c9337e2739-context-mcq",
+      "vocabId": "v-c9337e2739",
+      "type": "context_mcq",
+      "displayMode": "triplet",
+      "prompt": {
+        "text": "Choose the sentence that keeps the lesson meaning of this phrase.",
+        "thai": "สวัสดี",
+        "translit": "sà-wàt-dii",
+        "english": "hello"
+      },
+      "options": [
+        "Use สวัสดี in polite beginner conversation",
+        "Use ขอบคุณ in polite beginner conversation",
+        "Use ขอโทษ in polite beginner conversation",
+        "Use ไม่เข้าใจ in polite beginner conversation"
+      ],
+      "answer": "Use สวัสดี in polite beginner conversation",
+      "rationale": "Checks contextual understanding while preserving triplet exposure."
+    },
+    {
+      "id": "v-217b46aa5a-thai-to-english",
+      "vocabId": "v-217b46aa5a",
+      "type": "thai_to_english",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "What is the best meaning of ขอบคุณ?",
+        "thai": "ขอบคุณ",
+        "translit": "khàawp-khun"
+      },
+      "options": [
+        "thank you",
+        "hello",
+        "excuse me / sorry",
+        "I do not understand"
+      ],
+      "answer": "thank you",
+      "rationale": "Maps Thai form to target meaning from script languageFocus."
+    },
+    {
+      "id": "v-217b46aa5a-english-to-thai",
+      "vocabId": "v-217b46aa5a",
+      "type": "english_to_thai",
+      "displayMode": "english_only",
+      "prompt": {
+        "text": "Select Thai for: thank you",
+        "english": "thank you"
+      },
+      "options": [
+        "ขอบคุณ",
+        "สวัสดี",
+        "ขอโทษ",
+        "ไม่เข้าใจ"
+      ],
+      "answer": "ขอบคุณ",
+      "rationale": "Reverses mapping for active recall."
+    },
+    {
+      "id": "v-217b46aa5a-fill-translit",
+      "vocabId": "v-217b46aa5a",
+      "type": "fill_translit",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "Type the PTM transliteration for ขอบคุณ.",
+        "thai": "ขอบคุณ"
+      },
+      "answer": "khàawp-khun",
+      "rationale": "Forces transliteration production with inline tone marks."
+    },
+    {
+      "id": "v-217b46aa5a-context-mcq",
+      "vocabId": "v-217b46aa5a",
+      "type": "context_mcq",
+      "displayMode": "triplet",
+      "prompt": {
+        "text": "Choose the sentence that keeps the lesson meaning of this phrase.",
+        "thai": "ขอบคุณ",
+        "translit": "khàawp-khun",
+        "english": "thank you"
+      },
+      "options": [
+        "Use ขอบคุณ in polite beginner conversation",
+        "Use สวัสดี in polite beginner conversation",
+        "Use ขอโทษ in polite beginner conversation",
+        "Use ไม่เข้าใจ in polite beginner conversation"
+      ],
+      "answer": "Use ขอบคุณ in polite beginner conversation",
+      "rationale": "Checks contextual understanding while preserving triplet exposure."
+    },
+    {
+      "id": "v-6fce5e8c2c-thai-to-english",
+      "vocabId": "v-6fce5e8c2c",
+      "type": "thai_to_english",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "What is the best meaning of ขอโทษ?",
+        "thai": "ขอโทษ",
+        "translit": "khǎaw-thôot"
+      },
+      "options": [
+        "excuse me / sorry",
+        "hello",
+        "thank you",
+        "I do not understand"
+      ],
+      "answer": "excuse me / sorry",
+      "rationale": "Maps Thai form to target meaning from script languageFocus."
+    },
+    {
+      "id": "v-6fce5e8c2c-english-to-thai",
+      "vocabId": "v-6fce5e8c2c",
+      "type": "english_to_thai",
+      "displayMode": "english_only",
+      "prompt": {
+        "text": "Select Thai for: excuse me / sorry",
+        "english": "excuse me / sorry"
+      },
+      "options": [
+        "ขอโทษ",
+        "สวัสดี",
+        "ขอบคุณ",
+        "ไม่เข้าใจ"
+      ],
+      "answer": "ขอโทษ",
+      "rationale": "Reverses mapping for active recall."
+    },
+    {
+      "id": "v-6fce5e8c2c-fill-translit",
+      "vocabId": "v-6fce5e8c2c",
+      "type": "fill_translit",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "Type the PTM transliteration for ขอโทษ.",
+        "thai": "ขอโทษ"
+      },
+      "answer": "khǎaw-thôot",
+      "rationale": "Forces transliteration production with inline tone marks."
+    },
+    {
+      "id": "v-6fce5e8c2c-context-mcq",
+      "vocabId": "v-6fce5e8c2c",
+      "type": "context_mcq",
+      "displayMode": "triplet",
+      "prompt": {
+        "text": "Choose the sentence that keeps the lesson meaning of this phrase.",
+        "thai": "ขอโทษ",
+        "translit": "khǎaw-thôot",
+        "english": "excuse me / sorry"
+      },
+      "options": [
+        "Use ขอโทษ in polite beginner conversation",
+        "Use สวัสดี in polite beginner conversation",
+        "Use ขอบคุณ in polite beginner conversation",
+        "Use ไม่เข้าใจ in polite beginner conversation"
+      ],
+      "answer": "Use ขอโทษ in polite beginner conversation",
+      "rationale": "Checks contextual understanding while preserving triplet exposure."
+    },
+    {
+      "id": "v-4dea1cee34-thai-to-english",
+      "vocabId": "v-4dea1cee34",
+      "type": "thai_to_english",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "What is the best meaning of ไม่เข้าใจ?",
+        "thai": "ไม่เข้าใจ",
+        "translit": "mâi khâo-jai"
+      },
+      "options": [
+        "I do not understand",
+        "hello",
+        "thank you",
+        "excuse me / sorry"
+      ],
+      "answer": "I do not understand",
+      "rationale": "Maps Thai form to target meaning from script languageFocus."
+    },
+    {
+      "id": "v-4dea1cee34-english-to-thai",
+      "vocabId": "v-4dea1cee34",
+      "type": "english_to_thai",
+      "displayMode": "english_only",
+      "prompt": {
+        "text": "Select Thai for: I do not understand",
+        "english": "I do not understand"
+      },
+      "options": [
+        "ไม่เข้าใจ",
+        "สวัสดี",
+        "ขอบคุณ",
+        "ขอโทษ"
+      ],
+      "answer": "ไม่เข้าใจ",
+      "rationale": "Reverses mapping for active recall."
+    },
+    {
+      "id": "v-4dea1cee34-fill-translit",
+      "vocabId": "v-4dea1cee34",
+      "type": "fill_translit",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "Type the PTM transliteration for ไม่เข้าใจ.",
+        "thai": "ไม่เข้าใจ"
+      },
+      "answer": "mâi khâo-jai",
+      "rationale": "Forces transliteration production with inline tone marks."
+    },
+    {
+      "id": "v-4dea1cee34-context-mcq",
+      "vocabId": "v-4dea1cee34",
+      "type": "context_mcq",
+      "displayMode": "triplet",
+      "prompt": {
+        "text": "Choose the sentence that keeps the lesson meaning of this phrase.",
+        "thai": "ไม่เข้าใจ",
+        "translit": "mâi khâo-jai",
+        "english": "I do not understand"
+      },
+      "options": [
+        "Use ไม่เข้าใจ in polite beginner conversation",
+        "Use สวัสดี in polite beginner conversation",
+        "Use ขอบคุณ in polite beginner conversation",
+        "Use ขอโทษ in polite beginner conversation"
+      ],
+      "answer": "Use ไม่เข้าใจ in polite beginner conversation",
+      "rationale": "Checks contextual understanding while preserving triplet exposure."
+    },
+    {
+      "id": "v-6f22c219d9-thai-to-english",
+      "vocabId": "v-6f22c219d9",
+      "type": "thai_to_english",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "What is the best meaning of พูดช้าๆ ได้ไหม?",
+        "thai": "พูดช้าๆ ได้ไหม",
+        "translit": "phûut cháa-cháa dâai mái"
+      },
+      "options": [
+        "can you speak slowly?",
+        "hello",
+        "thank you",
+        "excuse me / sorry"
+      ],
+      "answer": "can you speak slowly?",
+      "rationale": "Maps Thai form to target meaning from script languageFocus."
+    },
+    {
+      "id": "v-6f22c219d9-english-to-thai",
+      "vocabId": "v-6f22c219d9",
+      "type": "english_to_thai",
+      "displayMode": "english_only",
+      "prompt": {
+        "text": "Select Thai for: can you speak slowly?",
+        "english": "can you speak slowly?"
+      },
+      "options": [
+        "พูดช้าๆ ได้ไหม",
+        "สวัสดี",
+        "ขอบคุณ",
+        "ขอโทษ"
+      ],
+      "answer": "พูดช้าๆ ได้ไหม",
+      "rationale": "Reverses mapping for active recall."
+    },
+    {
+      "id": "v-6f22c219d9-fill-translit",
+      "vocabId": "v-6f22c219d9",
+      "type": "fill_translit",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "Type the PTM transliteration for พูดช้าๆ ได้ไหม.",
+        "thai": "พูดช้าๆ ได้ไหม"
+      },
+      "answer": "phûut cháa-cháa dâai mái",
+      "rationale": "Forces transliteration production with inline tone marks."
+    },
+    {
+      "id": "v-6f22c219d9-context-mcq",
+      "vocabId": "v-6f22c219d9",
+      "type": "context_mcq",
+      "displayMode": "triplet",
+      "prompt": {
+        "text": "Choose the sentence that keeps the lesson meaning of this phrase.",
+        "thai": "พูดช้าๆ ได้ไหม",
+        "translit": "phûut cháa-cháa dâai mái",
+        "english": "can you speak slowly?"
+      },
+      "options": [
+        "Use พูดช้าๆ ได้ไหม in polite beginner conversation",
+        "Use สวัสดี in polite beginner conversation",
+        "Use ขอบคุณ in polite beginner conversation",
+        "Use ขอโทษ in polite beginner conversation"
+      ],
+      "answer": "Use พูดช้าๆ ได้ไหม in polite beginner conversation",
+      "rationale": "Checks contextual understanding while preserving triplet exposure."
+    }
+  ],
+  "coverage": {
+    "minimumItemsPerNewVocab": 3,
+    "perVocab": [
+      {
+        "vocabId": "v-c9337e2739",
+        "thai": "สวัสดี",
+        "itemCount": 4
+      },
+      {
+        "vocabId": "v-217b46aa5a",
+        "thai": "ขอบคุณ",
+        "itemCount": 4
+      },
+      {
+        "vocabId": "v-6fce5e8c2c",
+        "thai": "ขอโทษ",
+        "itemCount": 4
+      },
+      {
+        "vocabId": "v-4dea1cee34",
+        "thai": "ไม่เข้าใจ",
+        "itemCount": 4
+      },
+      {
+        "vocabId": "v-6f22c219d9",
+        "thai": "พูดช้าๆ ได้ไหม",
+        "itemCount": 4
+      }
+    ],
+    "pass": true
+  }
+}

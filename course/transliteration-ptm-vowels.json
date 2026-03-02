@@ -1,0 +1,47 @@
+{
+  "scheme": "ptm-adapted-tone-marks",
+  "note": "Pocket Thai Master vowel mapping adapted for Immersion Thai with Nine. We keep PTM vowel letters but use inline tone marks (e.g., khâo) instead of PTM superscript tone letters.",
+  "short": [
+    { "translit": "a", "thai": "อะ", "thaiForms": ["-ะ", "-ั"] },
+    { "translit": "i", "thai": "อิ", "thaiForms": ["-ิ"] },
+    { "translit": "u", "thai": "อุ", "thaiForms": ["-ุ"] },
+    { "translit": "ae", "thai": "แอะ", "thaiForms": ["แ-ะ", "แ-็"] },
+    { "translit": "oh", "thai": "โอะ", "thaiForms": ["โ-ะ"] },
+    { "translit": "aw", "thai": "เอาะ", "thaiForms": ["เ-าะ"] },
+    { "translit": "eu", "thai": "อึ", "thaiForms": ["-ึ"] },
+    { "translit": "e", "thai": "เอะ", "thaiForms": ["เ-ะ", "เ-็"] },
+    { "translit": "am", "thai": "อัม", "thaiForms": ["-ัม"] },
+    { "translit": "ai", "thai": "อัย", "thaiForms": ["-ัย"] },
+    { "translit": "er", "thai": "เอ็", "thaiForms": ["เ-็"] },
+    { "translit": "ia", "thai": "เอียะ", "thaiForms": ["เ-ียะ"] },
+    { "translit": "eua", "thai": "เอือะ", "thaiForms": ["เ-ือะ"] },
+    { "translit": "uway", "thai": "อวย", "thaiForms": ["-วย"] },
+    { "translit": "ui", "thai": "อุย", "thaiForms": ["-ุย"] },
+    { "translit": "iu", "thai": "อิว", "thaiForms": ["-ิว"] }
+  ],
+  "long": [
+    { "translit": "aa", "thai": "อา", "thaiForms": ["-า"] },
+    { "translit": "ii", "thai": "อี", "thaiForms": ["-ี"] },
+    { "translit": "uu", "thai": "อู", "thaiForms": ["-ู"] },
+    { "translit": "aae", "thai": "แอ", "thaiForms": ["แ-"] },
+    { "translit": "ooh", "thai": "โอ", "thaiForms": ["โ-"] },
+    { "translit": "euu", "thai": "อือ", "thaiForms": ["-ือ"] },
+    { "translit": "aam", "thai": "อำ", "thaiForms": ["-ำ"] },
+    { "translit": "ee", "thai": "เอ", "thaiForms": ["เ-"] },
+    { "translit": "aaw", "thai": "ออ", "thaiForms": ["-อ"] },
+    { "translit": "ao", "thai": "เอา", "thaiForms": ["เ-า"] },
+    { "translit": "uaa", "thai": "อัว", "thaiForms": ["-ัว"] },
+    { "translit": "iia", "thai": "เอีย", "thaiForms": ["เ-ีย"] },
+    { "translit": "aai", "thai": "อาย", "thaiForms": ["-าย"] },
+    { "translit": "aao", "thai": "อาว", "thaiForms": ["-าว"] },
+    { "translit": "uuway", "thai": "อวย", "thaiForms": ["-วย"] },
+    { "translit": "aawy", "thai": "ออย", "thaiForms": ["-อย"] },
+    { "translit": "aaew", "thai": "แอว", "thaiForms": ["แ-ว"] },
+    { "translit": "euua", "thai": "เอือ", "thaiForms": ["เ-ือ"] },
+    { "translit": "euuy", "thai": "เอย", "thaiForms": ["เ-ย"] }
+  ],
+  "specialNotes": [
+    "ใอ and ไอ are both represented as ai in transliteration.",
+    "Do not use PTM superscript tone letters. Use inline tone marks instead (e.g., gàao, mái, khâo, rót)."
+  ]
+}

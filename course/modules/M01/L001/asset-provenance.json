@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "M01-L001",
+  "generatedAt": "2026-02-26T07:10:37.468Z",
+  "assets": [
+    {
+      "assetId": "m01-l001-scene-1-asset-1",
+      "kind": "image",
+      "sourceUrl": "https://www.pexels.com/search/Survival%20Thai%2001%3A%20First%2010%20Minutes%20in%20Thailand%20Core%20greeting%20stack/",
+      "license": "Pexels License",
+      "usage": "scene-1:scene-1 overlay background"
+    },
+    {
+      "assetId": "m01-l001-scene-2-asset-1",
+      "kind": "image",
+      "sourceUrl": "https://www.pexels.com/search/Survival%20Thai%2001%3A%20First%2010%20Minutes%20in%20Thailand%20Repair%20%2B%20clarity/",
+      "license": "Pexels License",
+      "usage": "scene-2:scene-2 overlay background"
+    },
+    {
+      "assetId": "m01-l001-scene-3-asset-1",
+      "kind": "image",
+      "sourceUrl": "https://www.pexels.com/search/Survival%20Thai%2001%3A%20First%2010%20Minutes%20in%20Thailand%20Speed%20control%20request/",
+      "license": "Pexels License",
+      "usage": "scene-3:scene-3 overlay background"
+    }
+  ]
+}

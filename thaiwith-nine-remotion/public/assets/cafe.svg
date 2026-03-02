@@ -1,0 +1,9 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <rect width="512" height="512" rx="36" fill="#FEF3C7"/>
+  <rect x="84" y="122" width="260" height="190" rx="24" fill="#F59E0B"/>
+  <rect x="108" y="146" width="212" height="138" rx="18" fill="#FDE68A"/>
+  <path d="M344 172h46c24 0 42 18 42 40s-18 40-42 40h-28" stroke="#B45309" stroke-width="16" fill="none"/>
+  <rect x="132" y="312" width="164" height="24" rx="12" fill="#92400E"/>
+  <path d="M180 86c-8-14 8-22 0-36M220 86c-8-14 8-22 0-36M260 86c-8-14 8-22 0-36" stroke="#B45309" stroke-width="10" stroke-linecap="round"/>
+  <text x="256" y="430" text-anchor="middle" font-family="Arial" font-size="34" fill="#7C2D12">Café Scene</text>
+</svg>

@@ -1,0 +1,23 @@
+[
+  {"startFrame":0,"endFrame":900,"heroText":"Survival Thai 02","heroSubText":"Introduce Yourself Naturally","englishTranslate":"Name + origin + polite close","image":"assets/namecard.svg","type":"hook"},
+  {"startFrame":900,"endFrame":1800,"heroText":"ฉันชื่อ...","thaiScript":"ฉันชื่อ...","phonetics":"chǎn cheûu...","englishTranslate":"My name is...","image":"assets/namecard.svg","type":"term"},
+  {"startFrame":1800,"endFrame":2700,"heroText":"Pronunciation","thaiScript":"ฉัน | ชื่อ","phonetics":"chǎn | cheûu","englishTranslate":"Rising + falling tones","image":"assets/speak.svg","type":"term"},
+  {"startFrame":2700,"endFrame":3600,"heroText":"Example","thaiScript":"ฉันชื่อโอลิเวอร์","phonetics":"chǎn cheûu oo-li-veu","englishTranslate":"My name is Oliver.","image":"assets/namecard.svg","type":"term"},
+
+  {"startFrame":3600,"endFrame":4500,"heroText":"คุณชื่ออะไร","thaiScript":"คุณชื่ออะไร","phonetics":"khun cheûu à-rai","englishTranslate":"What is your name?","image":"assets/cafe.svg","type":"term"},
+  {"startFrame":4500,"endFrame":5400,"heroText":"Polite endings","thaiScript":"คุณชื่ออะไรครับ / คะ","phonetics":"khun cheûu à-rai khráp / khá","englishTranslate":"Male statement / female question","image":"assets/speak.svg","type":"term"},
+
+  {"startFrame":5400,"endFrame":6300,"heroText":"ฉันมาจาก...","thaiScript":"ฉันมาจาก...","phonetics":"chǎn maa jàak...","englishTranslate":"I'm from...","image":"assets/world.svg","type":"term"},
+  {"startFrame":6300,"endFrame":7200,"heroText":"Country example","thaiScript":"ฉันมาจากอังกฤษ","phonetics":"chǎn maa jàak ang-grìt","englishTranslate":"I'm from England.","image":"assets/world.svg","type":"term"},
+  {"startFrame":7200,"endFrame":8100,"heroText":"Country example","thaiScript":"ฉันมาจากอเมริกา","phonetics":"chǎn maa jàak à-mee-rí-gaa","englishTranslate":"I'm from America.","image":"assets/world.svg","type":"term"},
+
+  {"startFrame":8100,"endFrame":9000,"heroText":"ยินดีที่ได้รู้จัก","thaiScript":"ยินดีที่ได้รู้จัก","phonetics":"yin-dii thîi dâai rúu-jàk","englishTranslate":"Nice to meet you","image":"assets/cafe.svg","type":"term"},
+  {"startFrame":9000,"endFrame":9900,"heroText":"Polite close","thaiScript":"ยินดีที่ได้รู้จักครับ / ค่ะ","phonetics":"yin-dii thîi dâai rúu-jàk khráp / khâ","englishTranslate":"Use as your social close","image":"assets/speak.svg","type":"term"},
+
+  {"startFrame":9900,"endFrame":10800,"heroText":"Drill 1","thaiScript":"What is your name?","phonetics":"khun cheûu à-rai khá / khráp","englishTranslate":"Say it out loud now","image":"assets/listen.svg","type":"term"},
+  {"startFrame":10800,"endFrame":11700,"heroText":"Drill 2","thaiScript":"My name is...","phonetics":"chǎn cheûu...","englishTranslate":"Insert your real name","image":"assets/speak.svg","type":"term"},
+  {"startFrame":11700,"endFrame":12600,"heroText":"Drill 3","thaiScript":"I'm from...","phonetics":"chǎn maa jàak...","englishTranslate":"Insert your country","image":"assets/world.svg","type":"term"},
+
+  {"startFrame":12600,"endFrame":13500,"heroText":"Mini Role-play","thaiScript":"A: คุณชื่ออะไรคะ  B: ฉันชื่อ...","phonetics":"A: khun cheûu à-rai khá  B: chǎn cheûu...","englishTranslate":"Part 1: Name exchange","image":"assets/cafe.svg","type":"term"},
+  {"startFrame":13500,"endFrame":14400,"heroText":"Quiz Time","heroSubText":"Build your full introduction","englishTranslate":"Name + origin + nice to meet you","image":"assets/quiz.svg","type":"outro"}
+]

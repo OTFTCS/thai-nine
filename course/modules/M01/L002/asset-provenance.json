@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "M01-L002",
+  "generatedAt": "2026-02-26T07:10:41.944Z",
+  "assets": [
+    {
+      "assetId": "m01-l002-scene-1-asset-1",
+      "kind": "image",
+      "sourceUrl": "https://www.pexels.com/search/The%20Thai%20Sound%20System%20Consonant%20contrast%20at%20the%20start/",
+      "license": "Pexels License",
+      "usage": "scene-1:scene-1 overlay background"
+    },
+    {
+      "assetId": "m01-l002-scene-2-asset-1",
+      "kind": "image",
+      "sourceUrl": "https://www.pexels.com/search/The%20Thai%20Sound%20System%20Tone%20contour%20changes%20meaning/",
+      "license": "Pexels License",
+      "usage": "scene-2:scene-2 overlay background"
+    },
+    {
+      "assetId": "m01-l002-scene-3-asset-1",
+      "kind": "image",
+      "sourceUrl": "https://www.pexels.com/search/The%20Thai%20Sound%20System%20Length%20awareness/",
+      "license": "Pexels License",
+      "usage": "scene-3:scene-3 overlay background"
+    }
+  ]
+}

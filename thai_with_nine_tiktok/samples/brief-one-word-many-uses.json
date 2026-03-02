@@ -1,0 +1,30 @@
+{
+  "topic": "Thai word แม่ง as intensity marker in casual speech",
+  "goals": [
+    "Show safe context vs risky context",
+    "Teach practical sentence patterns",
+    "Sound authoritative but friendly"
+  ],
+  "template": "one-word-many-uses",
+  "runtimeProfile": "default",
+  "lexemes": [
+    {
+      "thai": "แม่ง",
+      "translit": "mâeng",
+      "english": "damn / freaking (casual intensifier)",
+      "notes": "Use carefully; informal"
+    },
+    {
+      "thai": "โคตร",
+      "translit": "khôot",
+      "english": "super / extremely",
+      "notes": "Safer alternative for emphasis"
+    }
+  ],
+  "voice": {
+    "persona": "Nine",
+    "tone": "teacher-authority",
+    "energy": "high but controlled"
+  },
+  "ctaGoal": "Ask viewers to comment one sentence for correction"
+}

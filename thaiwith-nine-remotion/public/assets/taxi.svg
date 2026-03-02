@@ -1,0 +1,11 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <rect width="512" height="512" rx="36" fill="#DCFCE7"/>
+  <rect x="64" y="240" width="384" height="120" rx="26" fill="#22C55E"/>
+  <rect x="124" y="188" width="184" height="72" rx="18" fill="#86EFAC"/>
+  <rect x="316" y="198" width="76" height="38" rx="8" fill="#166534"/>
+  <circle cx="144" cy="370" r="28" fill="#111827"/>
+  <circle cx="366" cy="370" r="28" fill="#111827"/>
+  <rect x="220" y="156" width="70" height="30" rx="8" fill="#FACC15"/>
+  <text x="255" y="177" text-anchor="middle" font-family="Arial" font-size="16" fill="#111827">TAXI</text>
+  <text x="256" y="440" text-anchor="middle" font-family="Arial" font-size="34" fill="#14532D">Street Thai</text>
+</svg>

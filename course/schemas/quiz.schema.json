@@ -1,0 +1,67 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://thai-nine.local/schemas/quiz.schema.json",
+  "title": "End of Lesson Quiz",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "lessonId", "passScore", "generatedAt", "itemBankPath", "questions", "coverage"],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "lessonId": { "type": "string", "pattern": "^M\\d{2}-L\\d{3}$" },
+    "passScore": { "type": "number", "minimum": 80 },
+    "generatedAt": { "type": "string", "minLength": 1 },
+    "itemBankPath": { "const": "quiz-item-bank.json" },
+    "questions": {
+      "type": "array",
+      "minItems": 5,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["bankItemId", "id", "vocabId", "type", "displayMode", "prompt", "answer", "rationale"],
+        "properties": {
+          "bankItemId": { "type": "string", "minLength": 1 },
+          "id": { "type": "string", "minLength": 1 },
+          "vocabId": { "type": "string", "pattern": "^v-[a-f0-9]{10}$" },
+          "type": { "enum": ["thai_to_english", "english_to_thai", "fill_translit", "context_mcq"] },
+          "displayMode": { "enum": ["triplet", "thai_only", "english_only"] },
+          "prompt": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["text"],
+            "properties": {
+              "text": { "type": "string", "minLength": 1 },
+              "thai": { "type": "string" },
+              "translit": { "type": "string" },
+              "english": { "type": "string" }
+            }
+          },
+          "options": { "type": "array", "items": { "type": "string", "minLength": 1 } },
+          "answer": { "type": "string", "minLength": 1 },
+          "rationale": { "type": "string", "minLength": 1 }
+        }
+      }
+    },
+    "coverage": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["minimumQuizItemsPerNewVocab", "perVocab", "pass"],
+      "properties": {
+        "minimumQuizItemsPerNewVocab": { "type": "number", "minimum": 1 },
+        "perVocab": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["vocabId", "thai", "quizItemCount"],
+            "properties": {
+              "vocabId": { "type": "string", "pattern": "^v-[a-f0-9]{10}$" },
+              "thai": { "type": "string", "minLength": 1 },
+              "quizItemCount": { "type": "number", "minimum": 0 }
+            }
+          }
+        },
+        "pass": { "type": "boolean" }
+      }
+    }
+  }
+}

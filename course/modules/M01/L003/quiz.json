@@ -1,71 +1,225 @@
 {
+  "schemaVersion": 1,
   "lessonId": "M01-L003",
-  "version": "v1",
+  "passScore": 80,
+  "generatedAt": "2026-02-26T07:45:24.475Z",
+  "itemBankPath": "quiz-item-bank.json",
   "questions": [
     {
-      "id": 1,
+      "id": "q01",
+      "vocabId": "v-c9337e2739",
       "type": "thai_to_english",
-      "question": "เรียน means…",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "What is the best meaning of สวัสดี?",
+        "thai": "สวัสดี",
+        "translit": "sà-wàt-dii"
+      },
       "options": [
-        "review",
-        "practice",
-        "study",
-        "listen"
+        "hello",
+        "thank you",
+        "excuse me / sorry",
+        "I do not understand"
       ],
-      "correct": "C",
-      "explanation": "เรียน means study/learn."
+      "answer": "hello",
+      "rationale": "Maps Thai form to target meaning from script languageFocus.",
+      "bankItemId": "v-c9337e2739-thai-to-english"
     },
     {
-      "id": 2,
+      "id": "q02",
+      "vocabId": "v-217b46aa5a",
       "type": "thai_to_english",
-      "question": "ฝึก means…",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "What is the best meaning of ขอบคุณ?",
+        "thai": "ขอบคุณ",
+        "translit": "khàawp-khun"
+      },
       "options": [
-        "practice",
-        "sleep",
-        "read",
-        "write"
+        "thank you",
+        "hello",
+        "excuse me / sorry",
+        "I do not understand"
       ],
-      "correct": "A",
-      "explanation": "ฝึก means practice/train."
+      "answer": "thank you",
+      "rationale": "Maps Thai form to target meaning from script languageFocus.",
+      "bankItemId": "v-217b46aa5a-thai-to-english"
     },
     {
-      "id": 3,
+      "id": "q03",
+      "vocabId": "v-6fce5e8c2c",
       "type": "thai_to_english",
-      "question": "ทบทวน means…",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "What is the best meaning of ขอโทษ?",
+        "thai": "ขอโทษ",
+        "translit": "khǎaw-thôot"
+      },
       "options": [
-        "watch",
-        "review",
-        "quiz",
-        "speak"
+        "excuse me / sorry",
+        "hello",
+        "thank you",
+        "I do not understand"
       ],
-      "correct": "B",
-      "explanation": "ทบทวน means review."
+      "answer": "excuse me / sorry",
+      "rationale": "Maps Thai form to target meaning from script languageFocus.",
+      "bankItemId": "v-6fce5e8c2c-thai-to-english"
     },
     {
-      "id": 4,
-      "type": "real_world_response",
-      "question": "Recommended study pace per week",
+      "id": "q04",
+      "vocabId": "v-4dea1cee34",
+      "type": "thai_to_english",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "What is the best meaning of ไม่เข้าใจ?",
+        "thai": "ไม่เข้าใจ",
+        "translit": "mâi khâo-jai"
+      },
       "options": [
-        "1 lesson",
-        "2 lessons",
-        "3–4 lessons",
-        "7 lessons"
+        "I do not understand",
+        "hello",
+        "thank you",
+        "excuse me / sorry"
       ],
-      "correct": "C",
-      "explanation": "Course baseline is 3–4 lessons weekly."
+      "answer": "I do not understand",
+      "rationale": "Maps Thai form to target meaning from script languageFocus.",
+      "bankItemId": "v-4dea1cee34-thai-to-english"
     },
     {
-      "id": 5,
-      "type": "word_order",
-      "question": "Correct learning loop order",
+      "id": "q05",
+      "vocabId": "v-6f22c219d9",
+      "type": "thai_to_english",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "What is the best meaning of พูดช้าๆ ได้ไหม?",
+        "thai": "พูดช้าๆ ได้ไหม",
+        "translit": "phûut cháa-cháa dâai mái"
+      },
       "options": [
-        "Quiz → Watch → Practice → Review",
-        "Watch → Practice → Quiz → Review",
-        "Review → Watch → Quiz → Practice",
-        "Practice → Watch → Review → Quiz"
+        "can you speak slowly?",
+        "hello",
+        "thank you",
+        "excuse me / sorry"
       ],
-      "correct": "B",
-      "explanation": "Active watch, then practice, quiz, and review."
+      "answer": "can you speak slowly?",
+      "rationale": "Maps Thai form to target meaning from script languageFocus.",
+      "bankItemId": "v-6f22c219d9-thai-to-english"
+    },
+    {
+      "id": "q06",
+      "vocabId": "v-c9337e2739",
+      "type": "english_to_thai",
+      "displayMode": "english_only",
+      "prompt": {
+        "text": "Select Thai for: hello",
+        "english": "hello"
+      },
+      "options": [
+        "สวัสดี",
+        "ขอบคุณ",
+        "ขอโทษ",
+        "ไม่เข้าใจ"
+      ],
+      "answer": "สวัสดี",
+      "rationale": "Reverses mapping for active recall.",
+      "bankItemId": "v-c9337e2739-english-to-thai"
+    },
+    {
+      "id": "q07",
+      "vocabId": "v-c9337e2739",
+      "type": "fill_translit",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "Type the PTM transliteration for สวัสดี.",
+        "thai": "สวัสดี"
+      },
+      "answer": "sà-wàt-dii",
+      "rationale": "Forces transliteration production with inline tone marks.",
+      "bankItemId": "v-c9337e2739-fill-translit"
+    },
+    {
+      "id": "q08",
+      "vocabId": "v-c9337e2739",
+      "type": "context_mcq",
+      "displayMode": "triplet",
+      "prompt": {
+        "text": "Choose the sentence that keeps the lesson meaning of this phrase.",
+        "thai": "สวัสดี",
+        "translit": "sà-wàt-dii",
+        "english": "hello"
+      },
+      "options": [
+        "Use สวัสดี in polite beginner conversation",
+        "Use ขอบคุณ in polite beginner conversation",
+        "Use ขอโทษ in polite beginner conversation",
+        "Use ไม่เข้าใจ in polite beginner conversation"
+      ],
+      "answer": "Use สวัสดี in polite beginner conversation",
+      "rationale": "Checks contextual understanding while preserving triplet exposure.",
+      "bankItemId": "v-c9337e2739-context-mcq"
+    },
+    {
+      "id": "q09",
+      "vocabId": "v-217b46aa5a",
+      "type": "english_to_thai",
+      "displayMode": "english_only",
+      "prompt": {
+        "text": "Select Thai for: thank you",
+        "english": "thank you"
+      },
+      "options": [
+        "ขอบคุณ",
+        "สวัสดี",
+        "ขอโทษ",
+        "ไม่เข้าใจ"
+      ],
+      "answer": "ขอบคุณ",
+      "rationale": "Reverses mapping for active recall.",
+      "bankItemId": "v-217b46aa5a-english-to-thai"
+    },
+    {
+      "id": "q10",
+      "vocabId": "v-217b46aa5a",
+      "type": "fill_translit",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "Type the PTM transliteration for ขอบคุณ.",
+        "thai": "ขอบคุณ"
+      },
+      "answer": "khàawp-khun",
+      "rationale": "Forces transliteration production with inline tone marks.",
+      "bankItemId": "v-217b46aa5a-fill-translit"
     }
-  ]
+  ],
+  "coverage": {
+    "minimumQuizItemsPerNewVocab": 1,
+    "perVocab": [
+      {
+        "vocabId": "v-c9337e2739",
+        "thai": "สวัสดี",
+        "quizItemCount": 4
+      },
+      {
+        "vocabId": "v-217b46aa5a",
+        "thai": "ขอบคุณ",
+        "quizItemCount": 3
+      },
+      {
+        "vocabId": "v-6fce5e8c2c",
+        "thai": "ขอโทษ",
+        "quizItemCount": 1
+      },
+      {
+        "vocabId": "v-4dea1cee34",
+        "thai": "ไม่เข้าใจ",
+        "quizItemCount": 1
+      },
+      {
+        "vocabId": "v-6f22c219d9",
+        "thai": "พูดช้าๆ ได้ไหม",
+        "quizItemCount": 1
+      }
+    ],
+    "pass": true
+  }
 }

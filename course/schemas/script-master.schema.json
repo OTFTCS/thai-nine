@@ -1,0 +1,115 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://thai-nine.local/schemas/script-master.schema.json",
+  "title": "Script Master",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "lessonId",
+    "title",
+    "objective",
+    "context",
+    "sections",
+    "roleplay",
+    "recap",
+    "qaChecks",
+    "policies"
+  ],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "lessonId": { "type": "string", "pattern": "^M\\d{2}-L\\d{3}$" },
+    "title": { "type": "string", "minLength": 1 },
+    "objective": { "type": "string", "minLength": 1 },
+    "context": { "type": "object" },
+    "sections": {
+      "type": "array",
+      "minItems": 3,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "heading",
+          "purpose",
+          "spokenNarration",
+          "onScreenBullets",
+          "drills",
+          "languageFocus"
+        ],
+        "properties": {
+          "id": { "type": "string", "minLength": 1 },
+          "heading": { "type": "string", "minLength": 1 },
+          "purpose": { "type": "string", "minLength": 1 },
+          "spokenNarration": { "type": "array", "minItems": 1, "items": { "type": "string", "minLength": 1 } },
+          "onScreenBullets": { "type": "array", "minItems": 1, "items": { "type": "string", "minLength": 1 } },
+          "drills": { "type": "array", "minItems": 1, "items": { "type": "string", "minLength": 1 } },
+          "languageFocus": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["thai", "translit", "english", "vocabId"],
+              "properties": {
+                "thai": { "type": "string", "minLength": 1 },
+                "translit": { "type": "string", "minLength": 1 },
+                "english": { "type": "string", "minLength": 1 },
+                "notes": { "type": "string" },
+                "vocabId": { "type": "string", "pattern": "^v-[a-f0-9]{10}$" }
+              }
+            }
+          }
+        }
+      }
+    },
+    "roleplay": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["scenario", "lines"],
+      "properties": {
+        "scenario": { "type": "string", "minLength": 1 },
+        "lines": {
+          "type": "array",
+          "minItems": 3,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["speaker", "thai", "translit", "english"],
+            "properties": {
+              "speaker": { "type": "string", "minLength": 1 },
+              "thai": { "type": "string", "minLength": 1 },
+              "translit": { "type": "string", "minLength": 1 },
+              "english": { "type": "string", "minLength": 1 }
+            }
+          }
+        }
+      }
+    },
+    "recap": { "type": "array", "minItems": 3, "items": { "type": "string", "minLength": 1 } },
+    "qaChecks": {
+      "type": "array",
+      "minItems": 5,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "description", "pass", "evidence"],
+        "properties": {
+          "id": { "type": "string", "minLength": 1 },
+          "description": { "type": "string", "minLength": 1 },
+          "pass": { "type": "boolean" },
+          "evidence": { "type": "string", "minLength": 1 }
+        }
+      }
+    },
+    "policies": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["transliteration", "imageSourcing"],
+      "properties": {
+        "transliteration": { "const": "PTM_ADAPTED_INLINE_TONES" },
+        "imageSourcing": { "const": "INTERNET_FIRST_NO_GENERATIVE_DEFAULT" }
+      }
+    }
+  }
+}

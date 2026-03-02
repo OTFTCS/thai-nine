@@ -1,0 +1,28 @@
+{
+  "one-word-many-uses": {
+    "name": "One word, many uses",
+    "styleTags": [
+      "high-clarity teacher authority",
+      "practical real-life examples",
+      "contrast hooks"
+    ],
+    "hookFormula": "Most learners memorize ten words. Pros master one word in five situations.",
+    "setupFormula": "Today we lock one Thai pattern that you can deploy in daily life, chat, and social content.",
+    "teachingBlockFormula": "Start with meaning, then usage contrast, then a practical line you can copy.",
+    "recapFormula": "Repeat the core line once normal speed and once slow speed.",
+    "ctaFormula": "Comment your own sentence and I’ll correct it in PTM transliteration."
+  },
+  "contrast-hook": {
+    "name": "Contrast hook",
+    "styleTags": [
+      "myth-busting",
+      "teacher authority",
+      "usable now"
+    ],
+    "hookFormula": "Most videos teach this wrong. Let’s fix it in under two minutes.",
+    "setupFormula": "I’ll show right vs wrong, then give you a safe sentence you can post today.",
+    "teachingBlockFormula": "Contrast wrong usage with right usage and end each block with a spoken drill.",
+    "recapFormula": "Three quick checkpoints: pronunciation, context, and confidence cue.",
+    "ctaFormula": "Save this and duet with your version for feedback."
+  }
+}

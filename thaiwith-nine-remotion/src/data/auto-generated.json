@@ -1,0 +1,421 @@
+{
+  "schemaVersion": 1,
+  "compositionId": "AutoTikTokOverlay",
+  "fps": 30,
+  "width": 1080,
+  "height": 1920,
+  "durationInFrames": 4404,
+  "videoSrc": "autogen/source_for_remotion.mp4",
+  "captions": [
+    {
+      "startFrame": 0,
+      "endFrame": 59,
+      "text": "If you learn the word อยู่, your"
+    },
+    {
+      "startFrame": 59,
+      "endFrame": 141,
+      "text": "Thai instantly sounds 10 times more natural."
+    },
+    {
+      "startFrame": 141,
+      "endFrame": 206,
+      "text": "Because most learners only know the"
+    },
+    {
+      "startFrame": 206,
+      "endFrame": 249,
+      "text": "word อยู่ means I live,"
+    },
+    {
+      "startFrame": 249,
+      "endFrame": 336,
+      "text": "but this word does 4 different jobs."
+    },
+    {
+      "startFrame": 336,
+      "endFrame": 377,
+      "text": "The first one, อยู่"
+    },
+    {
+      "startFrame": 377,
+      "endFrame": 424,
+      "text": "can tell you location,"
+    },
+    {
+      "startFrame": 424,
+      "endFrame": 456,
+      "text": "like to be at or"
+    },
+    {
+      "startFrame": 456,
+      "endFrame": 511,
+      "text": "leave with these structures."
+    },
+    {
+      "startFrame": 511,
+      "endFrame": 565,
+      "text": "And be careful, don't use the"
+    },
+    {
+      "startFrame": 565,
+      "endFrame": 609,
+      "text": "word เป็น with this one."
+    },
+    {
+      "startFrame": 609,
+      "endFrame": 627,
+      "text": "For"
+    },
+    {
+      "startFrame": 616,
+      "endFrame": 634,
+      "text": "example,"
+    },
+    {
+      "startFrame": 770,
+      "endFrame": 788,
+      "text": "I'm at"
+    },
+    {
+      "startFrame": 782,
+      "endFrame": 800,
+      "text": "home."
+    },
+    {
+      "startFrame": 792,
+      "endFrame": 817,
+      "text": "Or you can drop the"
+    },
+    {
+      "startFrame": 817,
+      "endFrame": 844,
+      "text": "word ฉัน and just say"
+    },
+    {
+      "startFrame": 938,
+      "endFrame": 956,
+      "text": "I'm at"
+    },
+    {
+      "startFrame": 948,
+      "endFrame": 966,
+      "text": "home."
+    },
+    {
+      "startFrame": 1108,
+      "endFrame": 1127,
+      "text": "Where are"
+    },
+    {
+      "startFrame": 1127,
+      "endFrame": 1145,
+      "text": "you?"
+    },
+    {
+      "startFrame": 1135,
+      "endFrame": 1181,
+      "text": "The next one, you can use"
+    },
+    {
+      "startFrame": 1181,
+      "endFrame": 1224,
+      "text": "it as a continuous like"
+    },
+    {
+      "startFrame": 1224,
+      "endFrame": 1291,
+      "text": "I and J in English for something"
+    },
+    {
+      "startFrame": 1291,
+      "endFrame": 1375,
+      "text": "happening right now with this structure."
+    },
+    {
+      "startFrame": 1375,
+      "endFrame": 1393,
+      "text": "For"
+    },
+    {
+      "startFrame": 1381,
+      "endFrame": 1399,
+      "text": "example,"
+    },
+    {
+      "startFrame": 1543,
+      "endFrame": 1569,
+      "text": "I'm eating."
+    },
+    {
+      "startFrame": 1588,
+      "endFrame": 1606,
+      "text": "Or"
+    },
+    {
+      "startFrame": 1692,
+      "endFrame": 1783,
+      "text": "He's working."
+    },
+    {
+      "startFrame": 1783,
+      "endFrame": 1811,
+      "text": "So what about"
+    },
+    {
+      "startFrame": 1811,
+      "endFrame": 1843,
+      "text": "the word กำลัง?"
+    },
+    {
+      "startFrame": 1843,
+      "endFrame": 1879,
+      "text": "You might have heard the"
+    },
+    {
+      "startFrame": 1879,
+      "endFrame": 1917,
+      "text": "word กำลัง before, right?"
+    },
+    {
+      "startFrame": 1917,
+      "endFrame": 2016,
+      "text": "So the word กำลัง, we put it before the verb,"
+    },
+    {
+      "startFrame": 2016,
+      "endFrame": 2034,
+      "text": "like"
+    },
+    {
+      "startFrame": 2068,
+      "endFrame": 2100,
+      "text": "I'm eating."
+    },
+    {
+      "startFrame": 2100,
+      "endFrame": 2184,
+      "text": "But อยู่, we put it after the verb,"
+    },
+    {
+      "startFrame": 2184,
+      "endFrame": 2306,
+      "text": "like กินอยู่ means I'm eating too, so you can use either."
+    },
+    {
+      "startFrame": 2306,
+      "endFrame": 2361,
+      "text": "You can use กำลัง and อยู่ in"
+    },
+    {
+      "startFrame": 2361,
+      "endFrame": 2440,
+      "text": "the same sentence with this structure too,"
+    },
+    {
+      "startFrame": 2440,
+      "endFrame": 2506,
+      "text": "to power up that you're literally"
+    },
+    {
+      "startFrame": 2506,
+      "endFrame": 2560,
+      "text": "in the middle of something."
+    },
+    {
+      "startFrame": 2560,
+      "endFrame": 2578,
+      "text": "For"
+    },
+    {
+      "startFrame": 2567,
+      "endFrame": 2585,
+      "text": "example,"
+    },
+    {
+      "startFrame": 2762,
+      "endFrame": 2824,
+      "text": "I'm eating right now."
+    },
+    {
+      "startFrame": 2824,
+      "endFrame": 2853,
+      "text": "For example,"
+    },
+    {
+      "startFrame": 2983,
+      "endFrame": 3001,
+      "text": "I'm still"
+    },
+    {
+      "startFrame": 3000,
+      "endFrame": 3018,
+      "text": "single."
+    },
+    {
+      "startFrame": 3031,
+      "endFrame": 3049,
+      "text": "Or"
+    },
+    {
+      "startFrame": 3170,
+      "endFrame": 3211,
+      "text": "It's still hot."
+    },
+    {
+      "startFrame": 3211,
+      "endFrame": 3253,
+      "text": "The next one, you can use"
+    },
+    {
+      "startFrame": 3253,
+      "endFrame": 3297,
+      "text": "it to tell the status like"
+    },
+    {
+      "startFrame": 3297,
+      "endFrame": 3349,
+      "text": "something hasn't changed yet"
+    },
+    {
+      "startFrame": 3349,
+      "endFrame": 3386,
+      "text": "with this structure."
+    },
+    {
+      "startFrame": 3386,
+      "endFrame": 3520,
+      "text": "And the last one, you can be slang for like okay vibe,"
+    },
+    {
+      "startFrame": 3520,
+      "endFrame": 3693,
+      "text": "feels like it's pretty good, not bad, but like you know what I mean."
+    },
+    {
+      "startFrame": 3693,
+      "endFrame": 3718,
+      "text": "And this one is"
+    },
+    {
+      "startFrame": 3718,
+      "endFrame": 3739,
+      "text": "a catch word,"
+    },
+    {
+      "startFrame": 3739,
+      "endFrame": 3786,
+      "text": "so make sure that you use it with"
+    },
+    {
+      "startFrame": 3786,
+      "endFrame": 3842,
+      "text": "your friend or someone you're close to."
+    },
+    {
+      "startFrame": 3842,
+      "endFrame": 3860,
+      "text": "For"
+    },
+    {
+      "startFrame": 3848,
+      "endFrame": 3866,
+      "text": "example,"
+    },
+    {
+      "startFrame": 3976,
+      "endFrame": 4021,
+      "text": "It's quite delicious,"
+    },
+    {
+      "startFrame": 4021,
+      "endFrame": 4039,
+      "text": "not bad."
+    },
+    {
+      "startFrame": 4039,
+      "endFrame": 4057,
+      "text": "Or"
+    },
+    {
+      "startFrame": 4142,
+      "endFrame": 4209,
+      "text": "It's pretty good, like alright."
+    },
+    {
+      "startFrame": 4212,
+      "endFrame": 4250,
+      "text": "Drop a sentence with the"
+    },
+    {
+      "startFrame": 4250,
+      "endFrame": 4288,
+      "text": "word you in the comment."
+    },
+    {
+      "startFrame": 4288,
+      "endFrame": 4354,
+      "text": "I will tell you which of the four"
+    },
+    {
+      "startFrame": 4354,
+      "endFrame": 4404,
+      "text": "it is and fix it for you."
+    }
+  ],
+  "cues": [
+    {
+      "startFrame": 0,
+      "endFrame": 71,
+      "label": "Visual Support",
+      "emoji": "🖼️",
+      "searchQuery": "thai culture lifestyle visual"
+    },
+    {
+      "startFrame": 609,
+      "endFrame": 639,
+      "label": "Visual Support",
+      "emoji": "🖼️",
+      "searchQuery": "thai culture lifestyle visual"
+    },
+    {
+      "startFrame": 1181,
+      "endFrame": 1236,
+      "label": "Visual Support",
+      "emoji": "🖼️",
+      "searchQuery": "thai culture lifestyle visual"
+    },
+    {
+      "startFrame": 1879,
+      "endFrame": 1929,
+      "label": "Visual Support",
+      "emoji": "🖼️",
+      "searchQuery": "thai culture lifestyle visual"
+    },
+    {
+      "startFrame": 2567,
+      "endFrame": 2597,
+      "label": "Real-life Example",
+      "emoji": "🧩",
+      "searchQuery": "thailand street conversation"
+    },
+    {
+      "startFrame": 3386,
+      "endFrame": 3461,
+      "label": "Visual Support",
+      "emoji": "🖼️",
+      "searchQuery": "thai culture lifestyle visual"
+    },
+    {
+      "startFrame": 4142,
+      "endFrame": 4217,
+      "label": "Visual Support",
+      "emoji": "🖼️",
+      "searchQuery": "thai culture lifestyle visual"
+    }
+  ],
+  "source": {
+    "transcriptPath": "/Users/immersion/Thai Nine/thai_with_nine_tiktok/out/incoming/source.srt",
+    "generatedAt": "2026-03-01T11:52:38.566Z"
+  }
+}

@@ -1,0 +1,221 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "M01-L001",
+  "title": "Survival Thai 01: First 10 Minutes in Thailand",
+  "objective": "Handle first-contact interactions politely using survival phrases and correct PTM-adapted transliteration with inline tone marks.",
+  "context": {
+    "schemaVersion": 1,
+    "lessonId": "M01-L001",
+    "priorLessons": [],
+    "knownVocabulary": [],
+    "knownGrammar": [],
+    "reviewBuckets": [
+      {
+        "bucket": "last",
+        "offset": 1,
+        "lessonId": null,
+        "vocabIds": [],
+        "sample": []
+      },
+      {
+        "bucket": "minus3",
+        "offset": 3,
+        "lessonId": null,
+        "vocabIds": [],
+        "sample": []
+      },
+      {
+        "bucket": "minus6",
+        "offset": 6,
+        "lessonId": null,
+        "vocabIds": [],
+        "sample": []
+      },
+      {
+        "bucket": "minus8",
+        "offset": 8,
+        "lessonId": null,
+        "vocabIds": [],
+        "sample": []
+      }
+    ]
+  },
+  "sections": [
+    {
+      "id": "s1",
+      "heading": "Core greeting stack",
+      "purpose": "Teach pragmatic greeting and gratitude with politeness particles.",
+      "spokenNarration": [
+        "Start with สวัสดี sà-wàt-dii.",
+        "Then add ครับ khráp or ค่ะ khâ depending on speaker role."
+      ],
+      "onScreenBullets": [
+        "สวัสดี | sà-wàt-dii | hello",
+        "ขอบคุณ | khàawp-khun | thank you",
+        "ครับ / ค่ะ | khráp / khâ | polite ending"
+      ],
+      "drills": [
+        "Say สวัสดีครับ three times slowly.",
+        "Switch to female form: สวัสดีค่ะ."
+      ],
+      "languageFocus": [
+        {
+          "thai": "สวัสดี",
+          "translit": "sà-wàt-dii",
+          "english": "hello",
+          "vocabId": "v-c9337e2739"
+        },
+        {
+          "thai": "ขอบคุณ",
+          "translit": "khàawp-khun",
+          "english": "thank you",
+          "vocabId": "v-217b46aa5a"
+        },
+        {
+          "thai": "ครับ",
+          "translit": "khráp",
+          "english": "male polite ending",
+          "vocabId": "v-a34b9ddfd4"
+        },
+        {
+          "thai": "ค่ะ",
+          "translit": "khâ",
+          "english": "female statement ending",
+          "vocabId": "v-e5c357ab24"
+        },
+        {
+          "thai": "คะ",
+          "translit": "khá",
+          "english": "female question ending",
+          "vocabId": "v-8637eb381c"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "heading": "Repair + clarity",
+      "purpose": "Recover conversation when comprehension drops.",
+      "spokenNarration": [
+        "Use ขอโทษ khǎaw-thôot to interrupt politely.",
+        "Follow with ไม่เข้าใจ mâi khâo-jai."
+      ],
+      "onScreenBullets": [
+        "ขอโทษ | khǎaw-thôot | excuse me / sorry",
+        "ไม่เข้าใจ | mâi khâo-jai | I do not understand"
+      ],
+      "drills": [
+        "Role drill: ขอโทษครับ ไม่เข้าใจครับ",
+        "Repeat in female form with ค่ะ."
+      ],
+      "languageFocus": [
+        {
+          "thai": "ขอโทษ",
+          "translit": "khǎaw-thôot",
+          "english": "excuse me / sorry",
+          "vocabId": "v-6fce5e8c2c"
+        },
+        {
+          "thai": "ไม่เข้าใจ",
+          "translit": "mâi khâo-jai",
+          "english": "I do not understand",
+          "vocabId": "v-4dea1cee34"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "heading": "Speed control request",
+      "purpose": "Request slower speech without breaking politeness.",
+      "spokenNarration": [
+        "พูดช้าๆ ได้ไหม phûut cháa-cháa dâai mái means can you speak slowly?",
+        "Add ครับ or คะ for tone and politeness."
+      ],
+      "onScreenBullets": [
+        "พูดช้าๆ ได้ไหม | phûut cháa-cháa dâai mái | can you speak slowly?"
+      ],
+      "drills": [
+        "Slow repetition at 60% speed.",
+        "Swap endings: ...ไหมครับ / ...ไหมคะ"
+      ],
+      "languageFocus": [
+        {
+          "thai": "พูดช้าๆ ได้ไหม",
+          "translit": "phûut cháa-cháa dâai mái",
+          "english": "can you speak slowly?",
+          "vocabId": "v-6f22c219d9"
+        }
+      ]
+    }
+  ],
+  "roleplay": {
+    "scenario": "Cafe first-contact",
+    "lines": [
+      {
+        "speaker": "Staff",
+        "thai": "สวัสดีค่ะ",
+        "translit": "sà-wàt-dii khâ",
+        "english": "Hello."
+      },
+      {
+        "speaker": "Learner",
+        "thai": "ขอโทษครับ พูดช้าๆ ได้ไหมครับ",
+        "translit": "khǎaw-thôot khráp phûut cháa-cháa dâai mái khráp",
+        "english": "Excuse me, can you speak slowly?"
+      },
+      {
+        "speaker": "Staff",
+        "thai": "ได้ค่ะ",
+        "translit": "dâai khâ",
+        "english": "Sure."
+      },
+      {
+        "speaker": "Learner",
+        "thai": "ขอบคุณครับ",
+        "translit": "khàawp-khun khráp",
+        "english": "Thank you."
+      }
+    ]
+  },
+  "recap": [
+    "Greet first.",
+    "Use particles correctly.",
+    "Repair with ขอโทษ and ไม่เข้าใจ.",
+    "Request slower speed politely."
+  ],
+  "qaChecks": [
+    {
+      "id": "tone-inline",
+      "description": "All transliteration uses PTM inline tone marks; superscripts forbidden",
+      "pass": true,
+      "evidence": "All transliteration strings passed inline-tone checks"
+    },
+    {
+      "id": "triplets",
+      "description": "Thai/translit/English triplets are complete for learner-facing script content",
+      "pass": true,
+      "evidence": "Sections and on-screen bullets contain complete triplets"
+    },
+    {
+      "id": "drills",
+      "description": "Each section includes active drill",
+      "pass": true,
+      "evidence": "Each section has >=1 drill"
+    },
+    {
+      "id": "roleplay",
+      "description": "Scenario roleplay included and substantial",
+      "pass": true,
+      "evidence": "Roleplay contains 4 lines"
+    },
+    {
+      "id": "policy",
+      "description": "Transliteration + image sourcing policies are declared",
+      "pass": true,
+      "evidence": "Policy object present with required enum values"
+    }
+  ],
+  "policies": {
+    "transliteration": "PTM_ADAPTED_INLINE_TONES",
+    "imageSourcing": "INTERNET_FIRST_NO_GENERATIVE_DEFAULT"
+  }
+}

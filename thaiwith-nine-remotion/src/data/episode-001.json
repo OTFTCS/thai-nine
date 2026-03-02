@@ -1,0 +1,180 @@
+[
+  {
+    "startFrame": 0,
+    "endFrame": 600,
+    "heroText": "Survival Thai 01",
+    "heroSubText": "First 10 minutes in Thailand",
+    "englishTranslate": "Practical Thai you can use today",
+    "emoji": "🇹🇭",
+    "image": "assets/airport.svg",
+    "type": "hook"
+  },
+  {
+    "startFrame": 600,
+    "endFrame": 1320,
+    "heroText": "สวัสดี",
+    "thaiScript": "สวัสดี",
+    "phonetics": "sà-wàt-dii",
+    "englishTranslate": "Hello",
+    "image": "assets/airport.svg",
+    "type": "term"
+  },
+  {
+    "startFrame": 1320,
+    "endFrame": 2040,
+    "heroText": "สวัสดีครับ / สวัสดีค่ะ",
+    "thaiScript": "สวัสดีครับ / สวัสดีค่ะ",
+    "phonetics": "sà-wàt-dii khráp / sà-wàt-dii khâ",
+    "englishTranslate": "Hello (male / female)",
+    "image": "assets/speak.svg",
+    "type": "term"
+  },
+  {
+    "startFrame": 2040,
+    "endFrame": 2760,
+    "heroText": "ขอบคุณ",
+    "thaiScript": "ขอบคุณ",
+    "phonetics": "khàawp-khun",
+    "englishTranslate": "Thank you",
+    "image": "assets/cafe.svg",
+    "type": "term"
+  },
+  {
+    "startFrame": 2760,
+    "endFrame": 3480,
+    "heroText": "ครับ / ค่ะ / คะ",
+    "thaiScript": "ครับ • ค่ะ • คะ",
+    "phonetics": "khráp • khâ • khá",
+    "englishTranslate": "Polite endings matter",
+    "emoji": "🙏",
+    "type": "term"
+  },
+  {
+    "startFrame": 3480,
+    "endFrame": 4260,
+    "heroText": "ขอโทษ",
+    "thaiScript": "ขอโทษครับ / ขอโทษค่ะ",
+    "phonetics": "khǎaw-thôot khráp / khǎaw-thôot khâ",
+    "englishTranslate": "Excuse me / Sorry",
+    "image": "assets/taxi.svg",
+    "type": "term"
+  },
+  {
+    "startFrame": 4260,
+    "endFrame": 5100,
+    "heroText": "ไม่เข้าใจ",
+    "thaiScript": "ไม่เข้าใจครับ / ไม่เข้าใจค่ะ",
+    "phonetics": "mâi khâo-jai khráp / mâi khâo-jai khâ",
+    "englishTranslate": "I don't understand",
+    "image": "assets/listen.svg",
+    "type": "term"
+  },
+  {
+    "startFrame": 5100,
+    "endFrame": 5940,
+    "heroText": "พูดช้าๆ ได้ไหม",
+    "thaiScript": "พูดช้าๆ ได้ไหมครับ / ได้ไหมคะ",
+    "phonetics": "phûut cháa-cháa dâai mái khráp / dâai mái khá",
+    "englishTranslate": "Can you speak slowly?",
+    "image": "assets/listen.svg",
+    "type": "term"
+  },
+  {
+    "startFrame": 5940,
+    "endFrame": 7020,
+    "heroText": "Drill 1",
+    "thaiScript": "Hello (male) → สวัสดีครับ",
+    "phonetics": "sà-wàt-dii khráp",
+    "englishTranslate": "Say it out loud now",
+    "image": "assets/speak.svg",
+    "type": "term"
+  },
+  {
+    "startFrame": 7020,
+    "endFrame": 8100,
+    "heroText": "Drill 2",
+    "thaiScript": "Thank you (female) → ขอบคุณค่ะ",
+    "phonetics": "khàawp-khun khâ",
+    "englishTranslate": "Repeat with confidence",
+    "image": "assets/speak.svg",
+    "type": "term"
+  },
+  {
+    "startFrame": 8100,
+    "endFrame": 9180,
+    "heroText": "Drill 3",
+    "thaiScript": "Excuse me (female) → ขอโทษค่ะ",
+    "phonetics": "khǎaw-thôot khâ",
+    "englishTranslate": "Speak clearly and slowly",
+    "image": "assets/taxi.svg",
+    "type": "term"
+  },
+  {
+    "startFrame": 9180,
+    "endFrame": 10260,
+    "heroText": "Drill 4",
+    "thaiScript": "I don't understand (male) → ไม่เข้าใจครับ",
+    "phonetics": "mâi khâo-jai khráp",
+    "englishTranslate": "Useful when listening gets fast",
+    "image": "assets/listen.svg",
+    "type": "term"
+  },
+  {
+    "startFrame": 10260,
+    "endFrame": 11340,
+    "heroText": "Drill 5",
+    "thaiScript": "พูดช้าๆ ได้ไหมคะ",
+    "phonetics": "phûut cháa-cháa dâai mái khá",
+    "englishTranslate": "Can you speak slowly? (female)",
+    "image": "assets/listen.svg",
+    "type": "term"
+  },
+  {
+    "startFrame": 11340,
+    "endFrame": 12420,
+    "heroText": "Mini Role-play",
+    "thaiScript": "A: สวัสดีค่ะ  B: สวัสดีครับ",
+    "phonetics": "A: sà-wàt-dii khâ  B: sà-wàt-dii khráp",
+    "englishTranslate": "Café opening line",
+    "image": "assets/cafe.svg",
+    "type": "term"
+  },
+  {
+    "startFrame": 12420,
+    "endFrame": 13500,
+    "heroText": "Mini Role-play",
+    "thaiScript": "ขอโทษครับ พูดช้าๆ ได้ไหมครับ",
+    "phonetics": "khǎaw-thôot khráp, phûut cháa-cháa dâai mái khráp",
+    "englishTranslate": "Repair and keep the conversation going",
+    "image": "assets/cafe.svg",
+    "type": "term"
+  },
+  {
+    "startFrame": 13500,
+    "endFrame": 14580,
+    "heroText": "Recap",
+    "thaiScript": "สวัสดี • ขอบคุณ • ขอโทษ • ไม่เข้าใจ",
+    "phonetics": "sà-wàt-dii • khàawp-khun • khǎaw-thôot • mâi khâo-jai",
+    "englishTranslate": "You now have real survival Thai",
+    "emoji": "✅",
+    "type": "term"
+  },
+  {
+    "startFrame": 14580,
+    "endFrame": 15660,
+    "heroText": "Quiz Time",
+    "heroSubText": "Lock in the phrases now",
+    "englishTranslate": "Do the lesson quiz immediately",
+    "image": "assets/quiz.svg",
+    "type": "outro"
+  },
+  {
+    "startFrame": 15660,
+    "endFrame": 16200,
+    "heroText": "Great work 🎉",
+    "heroSubText": "Survival Thai 01 complete",
+    "englishTranslate": "Next: ordering + directions",
+    "emoji": "🌟",
+    "type": "outro"
+  }
+]

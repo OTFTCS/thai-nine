@@ -1,0 +1,458 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "M01-L002",
+  "generatedAt": "2026-02-26T07:10:42.000Z",
+  "sourceScript": "script-master.json",
+  "items": [
+    {
+      "id": "v-7ec5a304ff-thai-to-english",
+      "vocabId": "v-7ec5a304ff",
+      "type": "thai_to_english",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "What is the best meaning of ไก่?",
+        "thai": "ไก่",
+        "translit": "gài"
+      },
+      "options": [
+        "chicken",
+        "egg",
+        "near",
+        "far"
+      ],
+      "answer": "chicken",
+      "rationale": "Maps Thai form to target meaning from script languageFocus."
+    },
+    {
+      "id": "v-7ec5a304ff-english-to-thai",
+      "vocabId": "v-7ec5a304ff",
+      "type": "english_to_thai",
+      "displayMode": "english_only",
+      "prompt": {
+        "text": "Select Thai for: chicken",
+        "english": "chicken"
+      },
+      "options": [
+        "ไก่",
+        "ไข่",
+        "ใกล้",
+        "ไกล"
+      ],
+      "answer": "ไก่",
+      "rationale": "Reverses mapping for active recall."
+    },
+    {
+      "id": "v-7ec5a304ff-fill-translit",
+      "vocabId": "v-7ec5a304ff",
+      "type": "fill_translit",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "Type the PTM transliteration for ไก่.",
+        "thai": "ไก่"
+      },
+      "answer": "gài",
+      "rationale": "Forces transliteration production with inline tone marks."
+    },
+    {
+      "id": "v-7ec5a304ff-context-mcq",
+      "vocabId": "v-7ec5a304ff",
+      "type": "context_mcq",
+      "displayMode": "triplet",
+      "prompt": {
+        "text": "Choose the sentence that keeps the lesson meaning of this phrase.",
+        "thai": "ไก่",
+        "translit": "gài",
+        "english": "chicken"
+      },
+      "options": [
+        "Use ไก่ in polite beginner conversation",
+        "Use ไข่ in polite beginner conversation",
+        "Use ใกล้ in polite beginner conversation",
+        "Use ไกล in polite beginner conversation"
+      ],
+      "answer": "Use ไก่ in polite beginner conversation",
+      "rationale": "Checks contextual understanding while preserving triplet exposure."
+    },
+    {
+      "id": "v-3a8e5a9794-thai-to-english",
+      "vocabId": "v-3a8e5a9794",
+      "type": "thai_to_english",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "What is the best meaning of ไข่?",
+        "thai": "ไข่",
+        "translit": "khài"
+      },
+      "options": [
+        "egg",
+        "chicken",
+        "near",
+        "far"
+      ],
+      "answer": "egg",
+      "rationale": "Maps Thai form to target meaning from script languageFocus."
+    },
+    {
+      "id": "v-3a8e5a9794-english-to-thai",
+      "vocabId": "v-3a8e5a9794",
+      "type": "english_to_thai",
+      "displayMode": "english_only",
+      "prompt": {
+        "text": "Select Thai for: egg",
+        "english": "egg"
+      },
+      "options": [
+        "ไข่",
+        "ไก่",
+        "ใกล้",
+        "ไกล"
+      ],
+      "answer": "ไข่",
+      "rationale": "Reverses mapping for active recall."
+    },
+    {
+      "id": "v-3a8e5a9794-fill-translit",
+      "vocabId": "v-3a8e5a9794",
+      "type": "fill_translit",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "Type the PTM transliteration for ไข่.",
+        "thai": "ไข่"
+      },
+      "answer": "khài",
+      "rationale": "Forces transliteration production with inline tone marks."
+    },
+    {
+      "id": "v-3a8e5a9794-context-mcq",
+      "vocabId": "v-3a8e5a9794",
+      "type": "context_mcq",
+      "displayMode": "triplet",
+      "prompt": {
+        "text": "Choose the sentence that keeps the lesson meaning of this phrase.",
+        "thai": "ไข่",
+        "translit": "khài",
+        "english": "egg"
+      },
+      "options": [
+        "Use ไข่ in polite beginner conversation",
+        "Use ไก่ in polite beginner conversation",
+        "Use ใกล้ in polite beginner conversation",
+        "Use ไกล in polite beginner conversation"
+      ],
+      "answer": "Use ไข่ in polite beginner conversation",
+      "rationale": "Checks contextual understanding while preserving triplet exposure."
+    },
+    {
+      "id": "v-994dd77a8a-thai-to-english",
+      "vocabId": "v-994dd77a8a",
+      "type": "thai_to_english",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "What is the best meaning of ใกล้?",
+        "thai": "ใกล้",
+        "translit": "glâi"
+      },
+      "options": [
+        "near",
+        "chicken",
+        "egg",
+        "far"
+      ],
+      "answer": "near",
+      "rationale": "Maps Thai form to target meaning from script languageFocus."
+    },
+    {
+      "id": "v-994dd77a8a-english-to-thai",
+      "vocabId": "v-994dd77a8a",
+      "type": "english_to_thai",
+      "displayMode": "english_only",
+      "prompt": {
+        "text": "Select Thai for: near",
+        "english": "near"
+      },
+      "options": [
+        "ใกล้",
+        "ไก่",
+        "ไข่",
+        "ไกล"
+      ],
+      "answer": "ใกล้",
+      "rationale": "Reverses mapping for active recall."
+    },
+    {
+      "id": "v-994dd77a8a-fill-translit",
+      "vocabId": "v-994dd77a8a",
+      "type": "fill_translit",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "Type the PTM transliteration for ใกล้.",
+        "thai": "ใกล้"
+      },
+      "answer": "glâi",
+      "rationale": "Forces transliteration production with inline tone marks."
+    },
+    {
+      "id": "v-994dd77a8a-context-mcq",
+      "vocabId": "v-994dd77a8a",
+      "type": "context_mcq",
+      "displayMode": "triplet",
+      "prompt": {
+        "text": "Choose the sentence that keeps the lesson meaning of this phrase.",
+        "thai": "ใกล้",
+        "translit": "glâi",
+        "english": "near"
+      },
+      "options": [
+        "Use ใกล้ in polite beginner conversation",
+        "Use ไก่ in polite beginner conversation",
+        "Use ไข่ in polite beginner conversation",
+        "Use ไกล in polite beginner conversation"
+      ],
+      "answer": "Use ใกล้ in polite beginner conversation",
+      "rationale": "Checks contextual understanding while preserving triplet exposure."
+    },
+    {
+      "id": "v-3dcaa4dbf9-thai-to-english",
+      "vocabId": "v-3dcaa4dbf9",
+      "type": "thai_to_english",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "What is the best meaning of ไกล?",
+        "thai": "ไกล",
+        "translit": "glǎi"
+      },
+      "options": [
+        "far",
+        "chicken",
+        "egg",
+        "near"
+      ],
+      "answer": "far",
+      "rationale": "Maps Thai form to target meaning from script languageFocus."
+    },
+    {
+      "id": "v-3dcaa4dbf9-english-to-thai",
+      "vocabId": "v-3dcaa4dbf9",
+      "type": "english_to_thai",
+      "displayMode": "english_only",
+      "prompt": {
+        "text": "Select Thai for: far",
+        "english": "far"
+      },
+      "options": [
+        "ไกล",
+        "ไก่",
+        "ไข่",
+        "ใกล้"
+      ],
+      "answer": "ไกล",
+      "rationale": "Reverses mapping for active recall."
+    },
+    {
+      "id": "v-3dcaa4dbf9-fill-translit",
+      "vocabId": "v-3dcaa4dbf9",
+      "type": "fill_translit",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "Type the PTM transliteration for ไกล.",
+        "thai": "ไกล"
+      },
+      "answer": "glǎi",
+      "rationale": "Forces transliteration production with inline tone marks."
+    },
+    {
+      "id": "v-3dcaa4dbf9-context-mcq",
+      "vocabId": "v-3dcaa4dbf9",
+      "type": "context_mcq",
+      "displayMode": "triplet",
+      "prompt": {
+        "text": "Choose the sentence that keeps the lesson meaning of this phrase.",
+        "thai": "ไกล",
+        "translit": "glǎi",
+        "english": "far"
+      },
+      "options": [
+        "Use ไกล in polite beginner conversation",
+        "Use ไก่ in polite beginner conversation",
+        "Use ไข่ in polite beginner conversation",
+        "Use ใกล้ in polite beginner conversation"
+      ],
+      "answer": "Use ไกล in polite beginner conversation",
+      "rationale": "Checks contextual understanding while preserving triplet exposure."
+    },
+    {
+      "id": "v-ec4de59e6d-thai-to-english",
+      "vocabId": "v-ec4de59e6d",
+      "type": "thai_to_english",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "What is the best meaning of ขา?",
+        "thai": "ขา",
+        "translit": "khǎa"
+      },
+      "options": [
+        "leg",
+        "chicken",
+        "egg",
+        "near"
+      ],
+      "answer": "leg",
+      "rationale": "Maps Thai form to target meaning from script languageFocus."
+    },
+    {
+      "id": "v-ec4de59e6d-english-to-thai",
+      "vocabId": "v-ec4de59e6d",
+      "type": "english_to_thai",
+      "displayMode": "english_only",
+      "prompt": {
+        "text": "Select Thai for: leg",
+        "english": "leg"
+      },
+      "options": [
+        "ขา",
+        "ไก่",
+        "ไข่",
+        "ใกล้"
+      ],
+      "answer": "ขา",
+      "rationale": "Reverses mapping for active recall."
+    },
+    {
+      "id": "v-ec4de59e6d-fill-translit",
+      "vocabId": "v-ec4de59e6d",
+      "type": "fill_translit",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "Type the PTM transliteration for ขา.",
+        "thai": "ขา"
+      },
+      "answer": "khǎa",
+      "rationale": "Forces transliteration production with inline tone marks."
+    },
+    {
+      "id": "v-ec4de59e6d-context-mcq",
+      "vocabId": "v-ec4de59e6d",
+      "type": "context_mcq",
+      "displayMode": "triplet",
+      "prompt": {
+        "text": "Choose the sentence that keeps the lesson meaning of this phrase.",
+        "thai": "ขา",
+        "translit": "khǎa",
+        "english": "leg"
+      },
+      "options": [
+        "Use ขา in polite beginner conversation",
+        "Use ไก่ in polite beginner conversation",
+        "Use ไข่ in polite beginner conversation",
+        "Use ใกล้ in polite beginner conversation"
+      ],
+      "answer": "Use ขา in polite beginner conversation",
+      "rationale": "Checks contextual understanding while preserving triplet exposure."
+    },
+    {
+      "id": "v-33caa947af-thai-to-english",
+      "vocabId": "v-33caa947af",
+      "type": "thai_to_english",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "What is the best meaning of ค่า?",
+        "thai": "ค่า",
+        "translit": "khâa"
+      },
+      "options": [
+        "value / fee",
+        "chicken",
+        "egg",
+        "near"
+      ],
+      "answer": "value / fee",
+      "rationale": "Maps Thai form to target meaning from script languageFocus."
+    },
+    {
+      "id": "v-33caa947af-english-to-thai",
+      "vocabId": "v-33caa947af",
+      "type": "english_to_thai",
+      "displayMode": "english_only",
+      "prompt": {
+        "text": "Select Thai for: value / fee",
+        "english": "value / fee"
+      },
+      "options": [
+        "ค่า",
+        "ไก่",
+        "ไข่",
+        "ใกล้"
+      ],
+      "answer": "ค่า",
+      "rationale": "Reverses mapping for active recall."
+    },
+    {
+      "id": "v-33caa947af-fill-translit",
+      "vocabId": "v-33caa947af",
+      "type": "fill_translit",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "Type the PTM transliteration for ค่า.",
+        "thai": "ค่า"
+      },
+      "answer": "khâa",
+      "rationale": "Forces transliteration production with inline tone marks."
+    },
+    {
+      "id": "v-33caa947af-context-mcq",
+      "vocabId": "v-33caa947af",
+      "type": "context_mcq",
+      "displayMode": "triplet",
+      "prompt": {
+        "text": "Choose the sentence that keeps the lesson meaning of this phrase.",
+        "thai": "ค่า",
+        "translit": "khâa",
+        "english": "value / fee"
+      },
+      "options": [
+        "Use ค่า in polite beginner conversation",
+        "Use ไก่ in polite beginner conversation",
+        "Use ไข่ in polite beginner conversation",
+        "Use ใกล้ in polite beginner conversation"
+      ],
+      "answer": "Use ค่า in polite beginner conversation",
+      "rationale": "Checks contextual understanding while preserving triplet exposure."
+    }
+  ],
+  "coverage": {
+    "minimumItemsPerNewVocab": 3,
+    "perVocab": [
+      {
+        "vocabId": "v-7ec5a304ff",
+        "thai": "ไก่",
+        "itemCount": 4
+      },
+      {
+        "vocabId": "v-3a8e5a9794",
+        "thai": "ไข่",
+        "itemCount": 4
+      },
+      {
+        "vocabId": "v-994dd77a8a",
+        "thai": "ใกล้",
+        "itemCount": 4
+      },
+      {
+        "vocabId": "v-3dcaa4dbf9",
+        "thai": "ไกล",
+        "itemCount": 4
+      },
+      {
+        "vocabId": "v-ec4de59e6d",
+        "thai": "ขา",
+        "itemCount": 4
+      },
+      {
+        "vocabId": "v-33caa947af",
+        "thai": "ค่า",
+        "itemCount": 4
+      }
+    ],
+    "pass": true
+  }
+}

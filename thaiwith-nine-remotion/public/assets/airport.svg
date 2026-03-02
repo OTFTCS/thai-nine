@@ -1,0 +1,10 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <rect width="512" height="512" rx="36" fill="#E0F2FE"/>
+  <rect x="64" y="280" width="384" height="120" rx="20" fill="#0EA5E9"/>
+  <rect x="96" y="210" width="320" height="80" rx="16" fill="#38BDF8"/>
+  <circle cx="156" cy="340" r="18" fill="#fff"/>
+  <circle cx="236" cy="340" r="18" fill="#fff"/>
+  <circle cx="316" cy="340" r="18" fill="#fff"/>
+  <path d="M248 96l36 56h52l-56 36 20 52-52-28-52 28 20-52-56-36h52z" fill="#0284C7"/>
+  <text x="256" y="446" text-anchor="middle" font-family="Arial" font-size="34" fill="#0F172A">Arrival Thai</text>
+</svg>

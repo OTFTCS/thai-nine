@@ -1,0 +1,23 @@
+{
+  "default": {
+    "label": "2-minute teaching post",
+    "targetSeconds": 120,
+    "targetWordCount": 280,
+    "teachingBlocks": 3,
+    "ctaSeconds": 12
+  },
+  "short": {
+    "label": "~75 second quick-hit",
+    "targetSeconds": 75,
+    "targetWordCount": 170,
+    "teachingBlocks": 2,
+    "ctaSeconds": 8
+  },
+  "micro": {
+    "label": "~45 second teaser",
+    "targetSeconds": 45,
+    "targetWordCount": 105,
+    "teachingBlocks": 2,
+    "ctaSeconds": 6
+  }
+}
