@@ -1,38 +1,137 @@
-# Spoken Script — M01-L002
+# Spoken Script — M01-L002 (The Thai Sound System)
 
-## Hook
-Today you'll train your ear so Thai stops sounding like one long blur.
+[Warm, focused]
+Hi, I’m Nine.
+In this lesson, we train your ears and mouth for Thai sound contrasts.
+Listen, repeat, and keep your sounds clean.
 
-## Core input
-Thai has consonants, vowels, and tones working together.
-[SCREEN: 5 tones]
-Mid, low, falling, high, rising.
+[Pause]
+Let’s begin.
 
-[THAI: ไก่] chicken.
-[THAI: ไข่] egg.
-Hear how initial consonants differ.
+[Clear, slow]
+ไก่
+gài
+Chicken.
 
-[THAI: ใกล้] near.
-[THAI: ไกล] far.
-Same broad segment, different tone profile and meaning.
+[Pause]
+ไข่
+khài
+Egg.
 
-## Pattern breakdown
-When Thai feels hard, split into three layers:
-1) consonant quality
-2) vowel length
-3) tone contour
+[Pause]
+Again.
+ไก่
+gài
 
-## Guided practice
-Identify tone category: [THAI: มา]
-[PAUSE 3s]
-Now compare near/far pair:
-[THAI: ใกล้] vs [THAI: ไกล]
-[PAUSE 5s]
+ไข่
+khài
 
-## Micro-quiz
-- Which word means egg? [PAUSE] [THAI: ไข่]
-- Do short/long vowels affect meaning? [PAUSE] Yes.
-- How many tones? [PAUSE] Five.
+[Coaching]
+Small sound change, big meaning change.
 
-## Recap + CTA
-You are not memorizing random noise; you're learning a system. Re-listen once and then do the quiz.
+[Pause]
+Now tone contrast.
+ใกล้
+glâi
+Near.
+
+[Pause]
+ไกล
+glǎi
+Far.
+
+[Pause]
+Again.
+ใกล้
+glâi
+
+ไกล
+glǎi
+
+[Coaching]
+Keep the tone shape clear.
+Don’t flatten it.
+
+[Pause]
+Now length and tone together.
+ขา
+khǎa
+Leg.
+
+[Pause]
+ค่า
+khâa
+Value. Fee.
+
+[Pause]
+Again.
+ขา
+khǎa
+
+ค่า
+khâa
+
+[Coaching]
+In Thai, length and tone both matter.
+One change can change the word.
+
+[Pause]
+Mini roleplay.
+I’ll read both parts.
+
+[Roleplay tone]
+Tutor:
+คำนี้คือ ไข่
+kham-níi kheuu khài
+This word is egg.
+
+Learner:
+ไข่
+khài
+Egg.
+
+Tutor:
+ใกล้ หรือ ไกล
+glâi rǔue glǎi
+Near or far?
+
+Learner:
+ใกล้
+glâi
+Near.
+
+Tutor:
+ขา หรือ ค่า
+khǎa rǔue khâa
+Leg or value?
+
+Learner:
+ค่า
+khâa
+Value.
+
+[Pause]
+Now your turn. Repeat after me.
+
+ไก่
+gài
+
+ไข่
+khài
+
+ใกล้
+glâi
+
+ไกล
+glǎi
+
+ขา
+khǎa
+
+ค่า
+khâa
+
+[Close, encouraging]
+Excellent work.
+Train these six words daily, and your Thai pronunciation will improve fast.
+See you in the next lesson.

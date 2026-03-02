@@ -1,0 +1,122 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "M01-L002",
+  "priorLessons": [
+    "M01-L001"
+  ],
+  "knownVocabulary": [
+    {
+      "thai": "สวัสดี",
+      "translit": "sà-wàt-dii",
+      "english": "hello",
+      "vocabId": "v-c9337e2739"
+    },
+    {
+      "thai": "ขอบคุณ",
+      "translit": "khàawp-khun",
+      "english": "thank you",
+      "vocabId": "v-217b46aa5a"
+    },
+    {
+      "thai": "ครับ",
+      "translit": "khráp",
+      "english": "male polite ending",
+      "vocabId": "v-a34b9ddfd4"
+    },
+    {
+      "thai": "ค่ะ",
+      "translit": "khâ",
+      "english": "female statement ending",
+      "vocabId": "v-e5c357ab24"
+    },
+    {
+      "thai": "คะ",
+      "translit": "khá",
+      "english": "female question ending",
+      "vocabId": "v-8637eb381c"
+    },
+    {
+      "thai": "ขอโทษ",
+      "translit": "khǎaw-thôot",
+      "english": "excuse me / sorry",
+      "vocabId": "v-6fce5e8c2c"
+    },
+    {
+      "thai": "ไม่เข้าใจ",
+      "translit": "mâi khâo-jai",
+      "english": "I do not understand",
+      "vocabId": "v-4dea1cee34"
+    },
+    {
+      "thai": "พูดช้าๆ ได้ไหม",
+      "translit": "phûut cháa-cháa dâai mái",
+      "english": "can you speak slowly?",
+      "vocabId": "v-6f22c219d9"
+    }
+  ],
+  "knownGrammar": [
+    "Recover conversation when comprehension drops.",
+    "Request slower speech without breaking politeness.",
+    "Teach pragmatic greeting and gratitude with politeness particles."
+  ],
+  "reviewBuckets": [
+    {
+      "bucket": "last",
+      "offset": 1,
+      "lessonId": "M01-L001",
+      "vocabIds": [
+        "v-c9337e2739",
+        "v-217b46aa5a",
+        "v-a34b9ddfd4",
+        "v-e5c357ab24"
+      ],
+      "sample": [
+        {
+          "thai": "สวัสดี",
+          "translit": "sà-wàt-dii",
+          "english": "hello",
+          "vocabId": "v-c9337e2739"
+        },
+        {
+          "thai": "ขอบคุณ",
+          "translit": "khàawp-khun",
+          "english": "thank you",
+          "vocabId": "v-217b46aa5a"
+        },
+        {
+          "thai": "ครับ",
+          "translit": "khráp",
+          "english": "male polite ending",
+          "vocabId": "v-a34b9ddfd4"
+        },
+        {
+          "thai": "ค่ะ",
+          "translit": "khâ",
+          "english": "female statement ending",
+          "vocabId": "v-e5c357ab24"
+        }
+      ]
+    },
+    {
+      "bucket": "minus3",
+      "offset": 3,
+      "lessonId": null,
+      "vocabIds": [],
+      "sample": []
+    },
+    {
+      "bucket": "minus6",
+      "offset": 6,
+      "lessonId": null,
+      "vocabIds": [],
+      "sample": []
+    },
+    {
+      "bucket": "minus8",
+      "offset": 8,
+      "lessonId": null,
+      "vocabIds": [],
+      "sample": []
+    }
+  ]
+}

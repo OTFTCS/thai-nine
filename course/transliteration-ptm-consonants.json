@@ -1,0 +1,65 @@
+{
+  "scheme": "ptm-adapted-tone-marks",
+  "note": "Consonant mapping aligned to Pocket Thai Master-style letter/sound distinctions. Tone notation in this project uses inline diacritics (not PTM superscript letters).",
+  "initialTokens": ["g", "j", "d", "dt", "b", "bp", "kh", "ch", "th", "ph", "f", "s", "h", "ng", "n", "m", "y", "r", "l", "w"],
+  "finalTokens": ["k", "t", "p", "ng", "n", "m", "y", "w", ""],
+  "consonants": [
+    { "thai": "ก", "class": "mid", "initial": "g", "final": "k" },
+    { "thai": "ข", "class": "high", "initial": "kh", "final": "k" },
+    { "thai": "ฃ", "class": "high", "initial": "kh", "final": "k" },
+    { "thai": "ค", "class": "low", "initial": "kh", "final": "k" },
+    { "thai": "ฅ", "class": "low", "initial": "kh", "final": "k" },
+    { "thai": "ฆ", "class": "low", "initial": "kh", "final": "k" },
+
+    { "thai": "ง", "class": "low", "initial": "ng", "final": "ng" },
+
+    { "thai": "จ", "class": "mid", "initial": "j", "final": "t" },
+    { "thai": "ฉ", "class": "high", "initial": "ch", "final": "t" },
+    { "thai": "ช", "class": "low", "initial": "ch", "final": "t" },
+    { "thai": "ซ", "class": "low", "initial": "s", "final": "t" },
+    { "thai": "ฌ", "class": "low", "initial": "ch", "final": "t" },
+
+    { "thai": "ญ", "class": "low", "initial": "y", "final": "n" },
+
+    { "thai": "ฎ", "class": "mid", "initial": "d", "final": "t" },
+    { "thai": "ฏ", "class": "mid", "initial": "dt", "final": "t" },
+    { "thai": "ฐ", "class": "high", "initial": "th", "final": "t" },
+    { "thai": "ฑ", "class": "low", "initial": "th", "final": "t" },
+    { "thai": "ฒ", "class": "low", "initial": "th", "final": "t" },
+    { "thai": "ณ", "class": "low", "initial": "n", "final": "n" },
+
+    { "thai": "ด", "class": "mid", "initial": "d", "final": "t" },
+    { "thai": "ต", "class": "mid", "initial": "dt", "final": "t" },
+    { "thai": "ถ", "class": "high", "initial": "th", "final": "t" },
+    { "thai": "ท", "class": "low", "initial": "th", "final": "t" },
+    { "thai": "ธ", "class": "low", "initial": "th", "final": "t" },
+    { "thai": "น", "class": "low", "initial": "n", "final": "n" },
+
+    { "thai": "บ", "class": "mid", "initial": "b", "final": "p" },
+    { "thai": "ป", "class": "mid", "initial": "bp", "final": "p" },
+    { "thai": "ผ", "class": "high", "initial": "ph", "final": "" },
+    { "thai": "ฝ", "class": "high", "initial": "f", "final": "p" },
+    { "thai": "พ", "class": "low", "initial": "ph", "final": "p" },
+    { "thai": "ฟ", "class": "low", "initial": "f", "final": "p" },
+    { "thai": "ภ", "class": "low", "initial": "ph", "final": "p" },
+    { "thai": "ม", "class": "low", "initial": "m", "final": "m" },
+
+    { "thai": "ย", "class": "low", "initial": "y", "final": "y" },
+    { "thai": "ร", "class": "low", "initial": "r", "final": "n" },
+    { "thai": "ล", "class": "low", "initial": "l", "final": "n" },
+    { "thai": "ว", "class": "low", "initial": "w", "final": "w" },
+
+    { "thai": "ศ", "class": "high", "initial": "s", "final": "t" },
+    { "thai": "ษ", "class": "high", "initial": "s", "final": "t" },
+    { "thai": "ส", "class": "high", "initial": "s", "final": "t" },
+    { "thai": "ห", "class": "high", "initial": "h", "final": "" },
+    { "thai": "ฬ", "class": "low", "initial": "l", "final": "n" },
+    { "thai": "อ", "class": "mid", "initial": "", "final": "" },
+    { "thai": "ฮ", "class": "low", "initial": "h", "final": "" }
+  ],
+  "specialNotes": [
+    "Use b vs bp and d vs dt contrasts consistently in transliteration.",
+    "Use kh/ch/th/ph for aspirated initials.",
+    "As in PTM lessons, consonant names may vary pedagogically, but initial/final sound values above are canonical for pipeline output."
+  ]
+}

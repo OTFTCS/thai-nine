@@ -1,0 +1,65 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://thai-nine.local/schemas/quiz-item-bank.schema.json",
+  "title": "Quiz Item Bank",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "lessonId", "generatedAt", "sourceScript", "items", "coverage"],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "lessonId": { "type": "string", "pattern": "^M\\d{2}-L\\d{3}$" },
+    "generatedAt": { "type": "string", "minLength": 1 },
+    "sourceScript": { "const": "script-master.json" },
+    "items": {
+      "type": "array",
+      "minItems": 9,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "vocabId", "type", "displayMode", "prompt", "answer", "rationale"],
+        "properties": {
+          "id": { "type": "string", "minLength": 1 },
+          "vocabId": { "type": "string", "pattern": "^v-[a-f0-9]{10}$" },
+          "type": { "enum": ["thai_to_english", "english_to_thai", "fill_translit", "context_mcq"] },
+          "displayMode": { "enum": ["triplet", "thai_only", "english_only"] },
+          "prompt": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["text"],
+            "properties": {
+              "text": { "type": "string", "minLength": 1 },
+              "thai": { "type": "string" },
+              "translit": { "type": "string" },
+              "english": { "type": "string" }
+            }
+          },
+          "options": { "type": "array", "items": { "type": "string", "minLength": 1 } },
+          "answer": { "type": "string", "minLength": 1 },
+          "rationale": { "type": "string", "minLength": 1 }
+        }
+      }
+    },
+    "coverage": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["minimumItemsPerNewVocab", "perVocab", "pass"],
+      "properties": {
+        "minimumItemsPerNewVocab": { "type": "number", "minimum": 3 },
+        "perVocab": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["vocabId", "thai", "itemCount"],
+            "properties": {
+              "vocabId": { "type": "string", "pattern": "^v-[a-f0-9]{10}$" },
+              "thai": { "type": "string", "minLength": 1 },
+              "itemCount": { "type": "number", "minimum": 0 }
+            }
+          }
+        },
+        "pass": { "type": "boolean" }
+      }
+    }
+  }
+}

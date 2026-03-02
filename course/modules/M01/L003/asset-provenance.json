@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "M01-L003",
+  "generatedAt": "2026-02-26T07:45:24.422Z",
+  "assets": [
+    {
+      "assetId": "m01-l003-scene-1-asset-1",
+      "kind": "image",
+      "sourceUrl": "https://www.pexels.com/search/Fallback%20Thai%20Lesson%20Greeting/",
+      "license": "Pexels License",
+      "usage": "scene-1:scene-1 overlay background"
+    },
+    {
+      "assetId": "m01-l003-scene-2-asset-1",
+      "kind": "image",
+      "sourceUrl": "https://www.pexels.com/search/Fallback%20Thai%20Lesson%20Thanks/",
+      "license": "Pexels License",
+      "usage": "scene-2:scene-2 overlay background"
+    },
+    {
+      "assetId": "m01-l003-scene-3-asset-1",
+      "kind": "image",
+      "sourceUrl": "https://www.pexels.com/search/Fallback%20Thai%20Lesson%20Repair/",
+      "license": "Pexels License",
+      "usage": "scene-3:scene-3 overlay background"
+    }
+  ]
+}

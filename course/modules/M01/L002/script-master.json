@@ -1,0 +1,309 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "M01-L002",
+  "title": "The Thai Sound System",
+  "objective": "Distinguish consonant contrast, vowel length, and tone contour with practical beginner listening drills.",
+  "context": {
+    "schemaVersion": 1,
+    "lessonId": "M01-L002",
+    "priorLessons": [
+      "M01-L001"
+    ],
+    "knownVocabulary": [
+      {
+        "thai": "สวัสดี",
+        "translit": "sà-wàt-dii",
+        "english": "hello",
+        "vocabId": "v-c9337e2739"
+      },
+      {
+        "thai": "ขอบคุณ",
+        "translit": "khàawp-khun",
+        "english": "thank you",
+        "vocabId": "v-217b46aa5a"
+      },
+      {
+        "thai": "ครับ",
+        "translit": "khráp",
+        "english": "male polite ending",
+        "vocabId": "v-a34b9ddfd4"
+      },
+      {
+        "thai": "ค่ะ",
+        "translit": "khâ",
+        "english": "female statement ending",
+        "vocabId": "v-e5c357ab24"
+      },
+      {
+        "thai": "คะ",
+        "translit": "khá",
+        "english": "female question ending",
+        "vocabId": "v-8637eb381c"
+      },
+      {
+        "thai": "ขอโทษ",
+        "translit": "khǎaw-thôot",
+        "english": "excuse me / sorry",
+        "vocabId": "v-6fce5e8c2c"
+      },
+      {
+        "thai": "ไม่เข้าใจ",
+        "translit": "mâi khâo-jai",
+        "english": "I do not understand",
+        "vocabId": "v-4dea1cee34"
+      },
+      {
+        "thai": "พูดช้าๆ ได้ไหม",
+        "translit": "phûut cháa-cháa dâai mái",
+        "english": "can you speak slowly?",
+        "vocabId": "v-6f22c219d9"
+      }
+    ],
+    "knownGrammar": [
+      "Recover conversation when comprehension drops.",
+      "Request slower speech without breaking politeness.",
+      "Teach pragmatic greeting and gratitude with politeness particles."
+    ],
+    "reviewBuckets": [
+      {
+        "bucket": "last",
+        "offset": 1,
+        "lessonId": "M01-L001",
+        "vocabIds": [
+          "v-c9337e2739",
+          "v-217b46aa5a",
+          "v-a34b9ddfd4",
+          "v-e5c357ab24"
+        ],
+        "sample": [
+          {
+            "thai": "สวัสดี",
+            "translit": "sà-wàt-dii",
+            "english": "hello",
+            "vocabId": "v-c9337e2739"
+          },
+          {
+            "thai": "ขอบคุณ",
+            "translit": "khàawp-khun",
+            "english": "thank you",
+            "vocabId": "v-217b46aa5a"
+          },
+          {
+            "thai": "ครับ",
+            "translit": "khráp",
+            "english": "male polite ending",
+            "vocabId": "v-a34b9ddfd4"
+          },
+          {
+            "thai": "ค่ะ",
+            "translit": "khâ",
+            "english": "female statement ending",
+            "vocabId": "v-e5c357ab24"
+          }
+        ]
+      },
+      {
+        "bucket": "minus3",
+        "offset": 3,
+        "lessonId": null,
+        "vocabIds": [],
+        "sample": []
+      },
+      {
+        "bucket": "minus6",
+        "offset": 6,
+        "lessonId": null,
+        "vocabIds": [],
+        "sample": []
+      },
+      {
+        "bucket": "minus8",
+        "offset": 8,
+        "lessonId": null,
+        "vocabIds": [],
+        "sample": []
+      }
+    ]
+  },
+  "sections": [
+    {
+      "id": "s1",
+      "heading": "Consonant contrast at the start",
+      "purpose": "Train ear to hear aspirated vs unaspirated initials.",
+      "spokenNarration": [
+        "Compare ไก่ gài and ไข่ khài.",
+        "One breathy consonant changes meaning immediately."
+      ],
+      "onScreenBullets": [
+        "ไก่ | gài | chicken",
+        "ไข่ | khài | egg",
+        "เสียงต้นต่างกัน | sǐiang dtôn dtàang-gan | initial consonant contrast"
+      ],
+      "drills": [
+        "Point to chicken/egg cards after hearing each word.",
+        "Say gài / khài in alternating pairs."
+      ],
+      "languageFocus": [
+        {
+          "thai": "ไก่",
+          "translit": "gài",
+          "english": "chicken",
+          "vocabId": "v-7ec5a304ff"
+        },
+        {
+          "thai": "ไข่",
+          "translit": "khài",
+          "english": "egg",
+          "vocabId": "v-3a8e5a9794"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "heading": "Tone contour changes meaning",
+      "purpose": "Feel how contour shifts semantic category.",
+      "spokenNarration": [
+        "ใกล้ glâi means near.",
+        "ไกล glǎi marks far in this lesson contrast set."
+      ],
+      "onScreenBullets": [
+        "ใกล้ | glâi | near",
+        "ไกล | glǎi | far",
+        "โทนเสียงเปลี่ยนความหมาย | thoon sǐiang bplìian khwaam-mǎai | tone shifts meaning"
+      ],
+      "drills": [
+        "Tutor says one; learner points near/far.",
+        "Swap roles and repeat at natural speed."
+      ],
+      "languageFocus": [
+        {
+          "thai": "ใกล้",
+          "translit": "glâi",
+          "english": "near",
+          "vocabId": "v-994dd77a8a"
+        },
+        {
+          "thai": "ไกล",
+          "translit": "glǎi",
+          "english": "far",
+          "vocabId": "v-3dcaa4dbf9"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "heading": "Length awareness",
+      "purpose": "Lock in short/long vowel distinction.",
+      "spokenNarration": [
+        "ขา khǎa (leg) and ค่า khâa (value/fee) are not interchangeable.",
+        "Length + tone must be heard together."
+      ],
+      "onScreenBullets": [
+        "ขา | khǎa | leg",
+        "ค่า | khâa | value / fee",
+        "ยาว/สั้นต่างความหมาย | yaao/sân dtàang khwaam-mǎai | length changes meaning"
+      ],
+      "drills": [
+        "Chant khǎa then khâa with clear timing.",
+        "Minimal pair listening at slow speed."
+      ],
+      "languageFocus": [
+        {
+          "thai": "ขา",
+          "translit": "khǎa",
+          "english": "leg",
+          "vocabId": "v-ec4de59e6d"
+        },
+        {
+          "thai": "ค่า",
+          "translit": "khâa",
+          "english": "value / fee",
+          "vocabId": "v-33caa947af"
+        }
+      ]
+    }
+  ],
+  "roleplay": {
+    "scenario": "Listening tutor session",
+    "lines": [
+      {
+        "speaker": "Tutor",
+        "thai": "คำนี้คือ ไข่",
+        "translit": "kham-níi kheuu khài",
+        "english": "This word is egg."
+      },
+      {
+        "speaker": "Learner",
+        "thai": "ไข่ khài",
+        "translit": "khài",
+        "english": "Egg."
+      },
+      {
+        "speaker": "Tutor",
+        "thai": "ใกล้ หรือ ไกล",
+        "translit": "glâi rǔue glǎi",
+        "english": "Near or far?"
+      },
+      {
+        "speaker": "Learner",
+        "thai": "ใกล้ glâi",
+        "translit": "glâi",
+        "english": "Near."
+      },
+      {
+        "speaker": "Tutor",
+        "thai": "ขา หรือ ค่า",
+        "translit": "khǎa rǔue khâa",
+        "english": "Leg or value?"
+      },
+      {
+        "speaker": "Learner",
+        "thai": "ค่า khâa",
+        "translit": "khâa",
+        "english": "Value."
+      }
+    ]
+  },
+  "recap": [
+    "Decode initial consonant first.",
+    "Track tone contour on every syllable.",
+    "Treat vowel length as meaning-critical.",
+    "Drill contrast pairs daily."
+  ],
+  "qaChecks": [
+    {
+      "id": "tone-inline",
+      "description": "All transliteration uses PTM inline tone marks; superscripts forbidden",
+      "pass": true,
+      "evidence": "All transliteration strings passed inline-tone checks"
+    },
+    {
+      "id": "triplets",
+      "description": "Thai/translit/English triplets are complete for learner-facing script content",
+      "pass": true,
+      "evidence": "Sections and on-screen bullets contain complete triplets"
+    },
+    {
+      "id": "drills",
+      "description": "Each section includes active drill",
+      "pass": true,
+      "evidence": "Each section has >=1 drill"
+    },
+    {
+      "id": "roleplay",
+      "description": "Scenario roleplay included and substantial",
+      "pass": true,
+      "evidence": "Roleplay contains 6 lines"
+    },
+    {
+      "id": "policy",
+      "description": "Transliteration + image sourcing policies are declared",
+      "pass": true,
+      "evidence": "Policy object present with required enum values"
+    }
+  ],
+  "policies": {
+    "transliteration": "PTM_ADAPTED_INLINE_TONES",
+    "imageSourcing": "INTERNET_FIRST_NO_GENERATIVE_DEFAULT"
+  }
+}

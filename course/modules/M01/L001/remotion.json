@@ -1,0 +1,122 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "M01-L001",
+  "sourceScript": "script-master.json",
+  "scenes": [
+    {
+      "id": "scene-1",
+      "seconds": 45,
+      "voiceover": [
+        "Start with สวัสดี sà-wàt-dii.",
+        "Then add ครับ khráp or ค่ะ khâ depending on speaker role."
+      ],
+      "overlays": [
+        "Core greeting stack",
+        "สวัสดี | sà-wàt-dii | hello",
+        "ขอบคุณ | khàawp-khun | thank you",
+        "ครับ / ค่ะ | khráp / khâ | polite ending"
+      ],
+      "thaiFocus": [
+        {
+          "thai": "สวัสดี",
+          "translit": "sà-wàt-dii",
+          "english": "hello"
+        },
+        {
+          "thai": "ขอบคุณ",
+          "translit": "khàawp-khun",
+          "english": "thank you"
+        },
+        {
+          "thai": "ครับ",
+          "translit": "khráp",
+          "english": "male polite ending"
+        },
+        {
+          "thai": "ค่ะ",
+          "translit": "khâ",
+          "english": "female statement ending"
+        },
+        {
+          "thai": "คะ",
+          "translit": "khá",
+          "english": "female question ending"
+        }
+      ],
+      "assets": [
+        {
+          "assetId": "m01-l001-scene-1-asset-1",
+          "kind": "image",
+          "query": "Survival Thai 01: First 10 Minutes in Thailand Core greeting stack thai learning visual",
+          "sourcePolicy": "internet-first",
+          "sourceUrl": "https://www.pexels.com/search/Survival%20Thai%2001%3A%20First%2010%20Minutes%20in%20Thailand%20Core%20greeting%20stack/",
+          "license": "Pexels License"
+        }
+      ]
+    },
+    {
+      "id": "scene-2",
+      "seconds": 45,
+      "voiceover": [
+        "Use ขอโทษ khǎaw-thôot to interrupt politely.",
+        "Follow with ไม่เข้าใจ mâi khâo-jai."
+      ],
+      "overlays": [
+        "Repair + clarity",
+        "ขอโทษ | khǎaw-thôot | excuse me / sorry",
+        "ไม่เข้าใจ | mâi khâo-jai | I do not understand"
+      ],
+      "thaiFocus": [
+        {
+          "thai": "ขอโทษ",
+          "translit": "khǎaw-thôot",
+          "english": "excuse me / sorry"
+        },
+        {
+          "thai": "ไม่เข้าใจ",
+          "translit": "mâi khâo-jai",
+          "english": "I do not understand"
+        }
+      ],
+      "assets": [
+        {
+          "assetId": "m01-l001-scene-2-asset-1",
+          "kind": "image",
+          "query": "Survival Thai 01: First 10 Minutes in Thailand Repair + clarity thai learning visual",
+          "sourcePolicy": "internet-first",
+          "sourceUrl": "https://www.pexels.com/search/Survival%20Thai%2001%3A%20First%2010%20Minutes%20in%20Thailand%20Repair%20%2B%20clarity/",
+          "license": "Pexels License"
+        }
+      ]
+    },
+    {
+      "id": "scene-3",
+      "seconds": 45,
+      "voiceover": [
+        "พูดช้าๆ ได้ไหม phûut cháa-cháa dâai mái means can you speak slowly?",
+        "Add ครับ or คะ for tone and politeness."
+      ],
+      "overlays": [
+        "Speed control request",
+        "พูดช้าๆ ได้ไหม | phûut cháa-cháa dâai mái | can you speak slowly?"
+      ],
+      "thaiFocus": [
+        {
+          "thai": "พูดช้าๆ ได้ไหม",
+          "translit": "phûut cháa-cháa dâai mái",
+          "english": "can you speak slowly?"
+        }
+      ],
+      "assets": [
+        {
+          "assetId": "m01-l001-scene-3-asset-1",
+          "kind": "image",
+          "query": "Survival Thai 01: First 10 Minutes in Thailand Speed control request thai learning visual",
+          "sourcePolicy": "internet-first",
+          "sourceUrl": "https://www.pexels.com/search/Survival%20Thai%2001%3A%20First%2010%20Minutes%20in%20Thailand%20Speed%20control%20request/",
+          "license": "Pexels License"
+        }
+      ]
+    }
+  ]
+}

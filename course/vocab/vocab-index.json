@@ -1,0 +1,165 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-02-26T07:45:24.472Z",
+  "entries": [
+    {
+      "id": "v-217b46aa5a",
+      "thai": "ขอบคุณ",
+      "translit": "khàawp-khun",
+      "english": "thank you",
+      "key": "ขอบคุณ|khàawp-khun|thank you",
+      "firstSeenLesson": "M01-L001",
+      "lessons": [
+        "M01-L001",
+        "M01-L003"
+      ]
+    },
+    {
+      "id": "v-33caa947af",
+      "thai": "ค่า",
+      "translit": "khâa",
+      "english": "value / fee",
+      "key": "ค่า|khâa|value / fee",
+      "firstSeenLesson": "M01-L002",
+      "lessons": [
+        "M01-L002"
+      ]
+    },
+    {
+      "id": "v-3a8e5a9794",
+      "thai": "ไข่",
+      "translit": "khài",
+      "english": "egg",
+      "key": "ไข่|khài|egg",
+      "firstSeenLesson": "M01-L002",
+      "lessons": [
+        "M01-L002"
+      ]
+    },
+    {
+      "id": "v-3dcaa4dbf9",
+      "thai": "ไกล",
+      "translit": "glǎi",
+      "english": "far",
+      "key": "ไกล|glǎi|far",
+      "firstSeenLesson": "M01-L002",
+      "lessons": [
+        "M01-L002"
+      ]
+    },
+    {
+      "id": "v-4dea1cee34",
+      "thai": "ไม่เข้าใจ",
+      "translit": "mâi khâo-jai",
+      "english": "I do not understand",
+      "key": "ไม่เข้าใจ|mâi khâo-jai|i do not understand",
+      "firstSeenLesson": "M01-L001",
+      "lessons": [
+        "M01-L001",
+        "M01-L003"
+      ]
+    },
+    {
+      "id": "v-6f22c219d9",
+      "thai": "พูดช้าๆ ได้ไหม",
+      "translit": "phûut cháa-cháa dâai mái",
+      "english": "can you speak slowly?",
+      "key": "พูดช้าๆ ได้ไหม|phûut cháa-cháa dâai mái|can you speak slowly?",
+      "firstSeenLesson": "M01-L001",
+      "lessons": [
+        "M01-L001",
+        "M01-L003"
+      ]
+    },
+    {
+      "id": "v-6fce5e8c2c",
+      "thai": "ขอโทษ",
+      "translit": "khǎaw-thôot",
+      "english": "excuse me / sorry",
+      "key": "ขอโทษ|khǎaw-thôot|excuse me / sorry",
+      "firstSeenLesson": "M01-L001",
+      "lessons": [
+        "M01-L001",
+        "M01-L003"
+      ]
+    },
+    {
+      "id": "v-7ec5a304ff",
+      "thai": "ไก่",
+      "translit": "gài",
+      "english": "chicken",
+      "key": "ไก่|gài|chicken",
+      "firstSeenLesson": "M01-L002",
+      "lessons": [
+        "M01-L002"
+      ]
+    },
+    {
+      "id": "v-8637eb381c",
+      "thai": "คะ",
+      "translit": "khá",
+      "english": "female question ending",
+      "key": "คะ|khá|female question ending",
+      "firstSeenLesson": "M01-L001",
+      "lessons": [
+        "M01-L001"
+      ]
+    },
+    {
+      "id": "v-994dd77a8a",
+      "thai": "ใกล้",
+      "translit": "glâi",
+      "english": "near",
+      "key": "ใกล้|glâi|near",
+      "firstSeenLesson": "M01-L002",
+      "lessons": [
+        "M01-L002"
+      ]
+    },
+    {
+      "id": "v-a34b9ddfd4",
+      "thai": "ครับ",
+      "translit": "khráp",
+      "english": "male polite ending",
+      "key": "ครับ|khráp|male polite ending",
+      "firstSeenLesson": "M01-L001",
+      "lessons": [
+        "M01-L001"
+      ]
+    },
+    {
+      "id": "v-c9337e2739",
+      "thai": "สวัสดี",
+      "translit": "sà-wàt-dii",
+      "english": "hello",
+      "key": "สวัสดี|sà-wàt-dii|hello",
+      "firstSeenLesson": "M01-L001",
+      "lessons": [
+        "M01-L001",
+        "M01-L003"
+      ]
+    },
+    {
+      "id": "v-e5c357ab24",
+      "thai": "ค่ะ",
+      "translit": "khâ",
+      "english": "female statement ending",
+      "key": "ค่ะ|khâ|female statement ending",
+      "firstSeenLesson": "M01-L001",
+      "lessons": [
+        "M01-L001"
+      ]
+    },
+    {
+      "id": "v-ec4de59e6d",
+      "thai": "ขา",
+      "translit": "khǎa",
+      "english": "leg",
+      "key": "ขา|khǎa|leg",
+      "firstSeenLesson": "M01-L002",
+      "lessons": [
+        "M01-L002"
+      ]
+    }
+  ]
+}

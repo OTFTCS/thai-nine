@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "M01-L002",
+  "cards": [
+    {
+      "id": "m01-l002-c01",
+      "vocabId": "v-7ec5a304ff",
+      "front": "ไก่",
+      "back": "chicken",
+      "translit": "gài",
+      "tags": [
+        "M01-L002",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l002-c02",
+      "vocabId": "v-3a8e5a9794",
+      "front": "ไข่",
+      "back": "egg",
+      "translit": "khài",
+      "tags": [
+        "M01-L002",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l002-c03",
+      "vocabId": "v-994dd77a8a",
+      "front": "ใกล้",
+      "back": "near",
+      "translit": "glâi",
+      "tags": [
+        "M01-L002",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l002-c04",
+      "vocabId": "v-3dcaa4dbf9",
+      "front": "ไกล",
+      "back": "far",
+      "translit": "glǎi",
+      "tags": [
+        "M01-L002",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l002-c05",
+      "vocabId": "v-ec4de59e6d",
+      "front": "ขา",
+      "back": "leg",
+      "translit": "khǎa",
+      "tags": [
+        "M01-L002",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l002-c06",
+      "vocabId": "v-33caa947af",
+      "front": "ค่า",
+      "back": "value / fee",
+      "translit": "khâa",
+      "tags": [
+        "M01-L002",
+        "core"
+      ]
+    }
+  ]
+}

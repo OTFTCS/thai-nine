@@ -1,0 +1,10 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <rect width="512" height="512" rx="36" fill="#E0F2FE"/>
+  <rect x="72" y="118" width="368" height="276" rx="24" fill="#ffffff" stroke="#38BDF8" stroke-width="8"/>
+  <circle cx="144" cy="196" r="28" fill="#7DD3FC"/>
+  <rect x="190" y="174" width="190" height="20" rx="8" fill="#0EA5E9"/>
+  <rect x="190" y="206" width="150" height="14" rx="7" fill="#94A3B8"/>
+  <rect x="110" y="266" width="292" height="12" rx="6" fill="#CBD5E1"/>
+  <rect x="110" y="290" width="220" height="12" rx="6" fill="#CBD5E1"/>
+  <text x="256" y="438" text-anchor="middle" font-family="Arial" font-size="34" fill="#0F172A">Introduce Yourself</text>
+</svg>

@@ -1,0 +1,240 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-02-26T07:45:24.473Z",
+  "source": "pipeline-cli",
+  "lessons": [
+    "M01-L001",
+    "M01-L002",
+    "M01-L003"
+  ],
+  "cards": [
+    {
+      "id": "m01-l001-c01",
+      "vocabId": "v-c9337e2739",
+      "thai": "สวัสดี",
+      "translit": "sà-wàt-dii",
+      "english": "hello",
+      "lessonId": "M01-L001",
+      "tags": [
+        "M01-L001",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l001-c02",
+      "vocabId": "v-217b46aa5a",
+      "thai": "ขอบคุณ",
+      "translit": "khàawp-khun",
+      "english": "thank you",
+      "lessonId": "M01-L001",
+      "tags": [
+        "M01-L001",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l001-c03",
+      "vocabId": "v-a34b9ddfd4",
+      "thai": "ครับ",
+      "translit": "khráp",
+      "english": "male polite ending",
+      "lessonId": "M01-L001",
+      "tags": [
+        "M01-L001",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l001-c04",
+      "vocabId": "v-e5c357ab24",
+      "thai": "ค่ะ",
+      "translit": "khâ",
+      "english": "female statement ending",
+      "lessonId": "M01-L001",
+      "tags": [
+        "M01-L001",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l001-c05",
+      "vocabId": "v-8637eb381c",
+      "thai": "คะ",
+      "translit": "khá",
+      "english": "female question ending",
+      "lessonId": "M01-L001",
+      "tags": [
+        "M01-L001",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l001-c06",
+      "vocabId": "v-6fce5e8c2c",
+      "thai": "ขอโทษ",
+      "translit": "khǎaw-thôot",
+      "english": "excuse me / sorry",
+      "lessonId": "M01-L001",
+      "tags": [
+        "M01-L001",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l001-c07",
+      "vocabId": "v-4dea1cee34",
+      "thai": "ไม่เข้าใจ",
+      "translit": "mâi khâo-jai",
+      "english": "I do not understand",
+      "lessonId": "M01-L001",
+      "tags": [
+        "M01-L001",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l001-c08",
+      "vocabId": "v-6f22c219d9",
+      "thai": "พูดช้าๆ ได้ไหม",
+      "translit": "phûut cháa-cháa dâai mái",
+      "english": "can you speak slowly?",
+      "lessonId": "M01-L001",
+      "tags": [
+        "M01-L001",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l002-c01",
+      "vocabId": "v-7ec5a304ff",
+      "thai": "ไก่",
+      "translit": "gài",
+      "english": "chicken",
+      "lessonId": "M01-L002",
+      "tags": [
+        "M01-L002",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l002-c02",
+      "vocabId": "v-3a8e5a9794",
+      "thai": "ไข่",
+      "translit": "khài",
+      "english": "egg",
+      "lessonId": "M01-L002",
+      "tags": [
+        "M01-L002",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l002-c03",
+      "vocabId": "v-994dd77a8a",
+      "thai": "ใกล้",
+      "translit": "glâi",
+      "english": "near",
+      "lessonId": "M01-L002",
+      "tags": [
+        "M01-L002",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l002-c04",
+      "vocabId": "v-3dcaa4dbf9",
+      "thai": "ไกล",
+      "translit": "glǎi",
+      "english": "far",
+      "lessonId": "M01-L002",
+      "tags": [
+        "M01-L002",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l002-c05",
+      "vocabId": "v-ec4de59e6d",
+      "thai": "ขา",
+      "translit": "khǎa",
+      "english": "leg",
+      "lessonId": "M01-L002",
+      "tags": [
+        "M01-L002",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l002-c06",
+      "vocabId": "v-33caa947af",
+      "thai": "ค่า",
+      "translit": "khâa",
+      "english": "value / fee",
+      "lessonId": "M01-L002",
+      "tags": [
+        "M01-L002",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l003-c01",
+      "vocabId": "v-c9337e2739",
+      "thai": "สวัสดี",
+      "translit": "sà-wàt-dii",
+      "english": "hello",
+      "lessonId": "M01-L003",
+      "tags": [
+        "M01-L003",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l003-c02",
+      "vocabId": "v-217b46aa5a",
+      "thai": "ขอบคุณ",
+      "translit": "khàawp-khun",
+      "english": "thank you",
+      "lessonId": "M01-L003",
+      "tags": [
+        "M01-L003",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l003-c03",
+      "vocabId": "v-6fce5e8c2c",
+      "thai": "ขอโทษ",
+      "translit": "khǎaw-thôot",
+      "english": "excuse me / sorry",
+      "lessonId": "M01-L003",
+      "tags": [
+        "M01-L003",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l003-c04",
+      "vocabId": "v-4dea1cee34",
+      "thai": "ไม่เข้าใจ",
+      "translit": "mâi khâo-jai",
+      "english": "I do not understand",
+      "lessonId": "M01-L003",
+      "tags": [
+        "M01-L003",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l003-c05",
+      "vocabId": "v-6f22c219d9",
+      "thai": "พูดช้าๆ ได้ไหม",
+      "translit": "phûut cháa-cháa dâai mái",
+      "english": "can you speak slowly?",
+      "lessonId": "M01-L003",
+      "tags": [
+        "M01-L003",
+        "core"
+      ]
+    }
+  ]
+}

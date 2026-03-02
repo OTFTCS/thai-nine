@@ -1,0 +1,10 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <rect width="512" height="512" rx="36" fill="#FCE7F3"/>
+  <rect x="92" y="126" width="328" height="210" rx="28" fill="#EC4899"/>
+  <circle cx="170" cy="226" r="20" fill="#FBCFE8"/>
+  <circle cx="256" cy="226" r="20" fill="#FBCFE8"/>
+  <circle cx="342" cy="226" r="20" fill="#FBCFE8"/>
+  <path d="M220 336l-52 52v-52z" fill="#EC4899"/>
+  <path d="M154 86c8 16-8 24 0 40M198 86c8 16-8 24 0 40M242 86c8 16-8 24 0 40" stroke="#BE185D" stroke-width="10" stroke-linecap="round"/>
+  <text x="256" y="440" text-anchor="middle" font-family="Arial" font-size="34" fill="#9D174D">Speaking Practice</text>
+</svg>

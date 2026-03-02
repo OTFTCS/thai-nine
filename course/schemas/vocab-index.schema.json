@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://thai-nine.local/schemas/vocab-index.schema.json",
+  "title": "Vocab Index",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "generatedAt", "entries"],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "generatedAt": { "type": "string", "minLength": 1 },
+    "entries": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "thai", "translit", "english", "key", "firstSeenLesson", "lessons"],
+        "properties": {
+          "id": { "type": "string", "pattern": "^v-[a-f0-9]{10}$" },
+          "thai": { "type": "string", "minLength": 1 },
+          "translit": { "type": "string", "minLength": 1 },
+          "english": { "type": "string", "minLength": 1 },
+          "key": { "type": "string", "minLength": 1 },
+          "firstSeenLesson": { "type": "string", "pattern": "^M\\d{2}-L\\d{3}$" },
+          "lessons": { "type": "array", "minItems": 1, "items": { "type": "string", "pattern": "^M\\d{2}-L\\d{3}$" } }
+        }
+      }
+    }
+  }
+}

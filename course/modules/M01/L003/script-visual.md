@@ -1,10 +1,18 @@
-# Visual Companion — M01-L003
+# Visual Script — M01-L003 (Fallback Thai Lesson)
 
-- CARD 01: Watch → Practice → Quiz → Review
-- CARD 02: Weekly target: 3–4 lessons
-- CARD 03: เรียน | study
-- CARD 04: ฝึก | practice
-- CARD 05: ทบทวน | review
-- CARD 06: Prompt: build your weekly plan
-- CARD 07: Quiz checks
-- CARD 08: Recap
+## Greeting
+- สวัสดี | sà-wàt-dii | hello
+- ASSET_SOURCE: url: <https://www.pexels.com/search/Fallback%20Thai%20Lesson%20Greeting/>
+
+## Thanks
+- ขอบคุณ | khàawp-khun | thank you
+- ขอโทษ | khǎaw-thôot | excuse me / sorry
+- ASSET_SOURCE: url: <https://www.pexels.com/search/Fallback%20Thai%20Lesson%20Thanks/>
+
+## Repair
+- ไม่เข้าใจ | mâi khâo-jai | I do not understand
+- พูดช้าๆ ได้ไหม | phûut cháa-cháa dâai mái | can you speak slowly?
+- ASSET_SOURCE: url: <https://www.pexels.com/search/Fallback%20Thai%20Lesson%20Repair/>
+
+## Asset policy
+- Source internet assets first; generated imagery is disabled by default.
