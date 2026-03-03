@@ -7,6 +7,7 @@ import { cn } from "@/lib/utils";
 const adminNav = [
   { href: "/admin", label: "Overview", icon: "📊" },
   { href: "/admin/lessons", label: "Lessons", icon: "📚" },
+  { href: "/admin/quizzes", label: "Nine Mode", icon: "🧠" },
 ];
 
 export default function AdminLayout({
