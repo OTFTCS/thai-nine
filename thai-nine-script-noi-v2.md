@@ -35,43 +35,43 @@
 
 ---
 
-### [0:08–0:16] Example 1 (contrast)
+### [0:08–0:16] Common mistake (quick)
+**Nine says:**
+"Two mistakes: don't put หน่อย at the start, and don't confuse it with น้อย. Different tone, different word."
+
+**On-screen:**
+> หน่อย (nòi) = softener
+> น้อย (nóoi) = little/few
+
+---
+
+### [0:17–0:25] Example 1 (contrast)
 **Nine says:**
 "Blunt: ขอน้ำ. Better: ขอน้ำหน่อย. Same meaning — much softer."
 
 **On-screen:**
-> ❌ ขอน้ำ  
+> ❌ ขอน้ำ
 > ✅ ขอน้ำหน่อย
 
 ---
 
-### [0:17–0:25] Example 2 (real life)
+### [0:26–0:34] Example 2 (real life)
 **Nine says:**
-"Restaurant? Say เก็บเงินหน่อย — super natural for ‘check please.’"
+"Restaurant? Say เก็บเงินหน่อย — super natural for 'check please.'"
 
 **On-screen:**
-> เก็บเงินหน่อย  
+> เก็บเงินหน่อย
 > gèp ngern nòi
 
 ---
 
-### [0:26–0:33] Example 3 (daily life)
+### [0:35–0:42] Example 3 (daily life)
 **Nine says:**
-"Need someone to wait? รอแป๊บหน่อย. You’ll hear this everywhere."
+"Need someone to wait? รอแป๊บหน่อย. You'll hear this everywhere."
 
 **On-screen:**
-> รอแป๊บหน่อย  
+> รอแป๊บหน่อย
 > raw bpáep nòi
-
----
-
-### [0:34–0:42] Common mistake (quick)
-**Nine says:**
-"Two mistakes: don’t put หน่อย at the start, and don’t confuse it with น้อย. Different tone, different word."
-
-**On-screen:**
-> หน่อย (nòi) = softener  
-> น้อย (nóoi) = little/few
 
 ---
 
