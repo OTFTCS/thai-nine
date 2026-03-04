@@ -17,7 +17,10 @@ import {
   saveHistoryRecord,
 } from "@/lib/quiz/persistence";
 import { QuizAudioPlayer } from "@/components/quizzes/quiz-audio-player";
-import { shouldShowLearnerTransliteration } from "@/lib/quiz/display";
+import {
+  shouldShowAudioPromptThai,
+  shouldShowLearnerTransliteration,
+} from "@/lib/quiz/display";
 
 interface QuizRunnerProps {
   quizKind: AssessmentQuizKind;
@@ -340,10 +343,12 @@ export function QuizRunner({
   const isIdkSelected = selectedAnswer?.answerType === "idk";
   const replayCount = attempt.replayCounts[currentQuestion.id] || 0;
   const isLast = attempt.currentIndex === questions.length - 1;
+  const activeTrack = attempt.track || defaultTrack;
   const showLearnerTranslit = shouldShowLearnerTransliteration(
     quizKind,
-    attempt.track || defaultTrack
+    activeTrack
   );
+  const showPromptThai = shouldShowAudioPromptThai(quizKind, activeTrack);
 
   const orderedChoiceIds =
     attempt.choiceOrderByQuestion[currentQuestion.id] ||
@@ -388,6 +393,7 @@ export function QuizRunner({
           <QuizAudioPlayer
             thai={currentQuestion.thai}
             translit={currentQuestion.translit}
+            showThai={showPromptThai}
             showTranslit={showLearnerTranslit}
             audioSrc={currentQuestion.audioSrc}
             replayCount={replayCount}

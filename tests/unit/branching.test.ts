@@ -8,7 +8,10 @@ import {
   assemblePlacementQuestionIds,
   getPlacementTargetCount,
 } from "../../src/lib/quiz/assembler.ts";
-import { shouldShowLearnerTransliteration } from "../../src/lib/quiz/display.ts";
+import {
+  shouldShowAudioPromptThai,
+  shouldShowLearnerTransliteration,
+} from "../../src/lib/quiz/display.ts";
 
 test("placement assembler builds balanced question sets at target size", () => {
   const targetCount = getPlacementTargetCount();
@@ -53,4 +56,11 @@ test("reader track hides transliteration in learner UI", () => {
   assert.equal(shouldShowLearnerTransliteration("placement", "reader"), false);
   assert.equal(shouldShowLearnerTransliteration("reader_tones", "reader"), false);
   assert.equal(shouldShowLearnerTransliteration("placement", "non_reader"), true);
+});
+
+
+test("reader and tone quizzes hide source Thai prompt text", () => {
+  assert.equal(shouldShowAudioPromptThai("reader_tones", "reader"), false);
+  assert.equal(shouldShowAudioPromptThai("tones", "non_reader"), false);
+  assert.equal(shouldShowAudioPromptThai("placement", "reader"), true);
 });

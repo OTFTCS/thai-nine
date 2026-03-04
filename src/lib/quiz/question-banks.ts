@@ -368,8 +368,8 @@ export const toneRecognitionQuestionBank: AssessmentQuestion[] = toneSeed.map(
 
 const readerWordLookup: Record<string, { translit: string; english: string }> = {
   "ใหม่": { translit: "mài", english: "new" },
-  "ไม่": { translit: "mâi", english: "no" },
-  "ไหม": { translit: "mǎi", english: "question/silk" },
+  "ไม่": { translit: "mâi", english: "no/not" },
+  "ไหม": { translit: "mǎi", english: "question particle/silk" },
   "ไม้": { translit: "máai", english: "wood" },
   "เข้า": { translit: "khâo", english: "enter" },
   "เขา": { translit: "khǎo", english: "he/mountain" },
@@ -379,6 +379,18 @@ const readerWordLookup: Record<string, { translit: string; english: string }> = 
   "ไกล": { translit: "glāi", english: "far" },
   "กลาย": { translit: "glāai", english: "become" },
   "ใคร": { translit: "khrāi", english: "who" },
+  "ป่า": { translit: "bpàa", english: "forest" },
+  "ป้า": { translit: "bpâa", english: "aunt" },
+  "ปา": { translit: "bpaa", english: "throw" },
+  "ปลา": { translit: "bplaa", english: "fish" },
+  "เสือ": { translit: "sʉ̌a", english: "tiger" },
+  "เสื้อ": { translit: "sʉ̂a", english: "shirt" },
+  "ชื่อ": { translit: "chʉ̂ʉ", english: "name" },
+  "เชื่อ": { translit: "chʉ̂a", english: "believe" },
+  "ค่า": { translit: "khâa", english: "cost/value" },
+  "ขา": { translit: "khǎa", english: "leg" },
+  "ค้า": { translit: "kháa", english: "trade" },
+  "คา": { translit: "khaa", english: "stuck/remaining" },
 };
 
 interface ReaderSeed {
@@ -391,16 +403,19 @@ interface ReaderSeed {
 }
 
 const readerSeed = [
-  { id: "RT01", thai: "ใหม่", translit: "mài", difficulty: 3 as Difficulty, options: ["ใหม่", "ไม่", "ไหม", "ไม้"], correctIndex: 0 as const },
-  { id: "RT02", thai: "ไม่", translit: "mâi", difficulty: 3 as Difficulty, options: ["ไม่", "ใหม่", "ไหม", "ไม้"], correctIndex: 0 as const },
-  { id: "RT03", thai: "ไหม", translit: "mǎi", difficulty: 3 as Difficulty, options: ["ไหม", "ไม่", "ใหม่", "ไม้"], correctIndex: 0 as const },
-  { id: "RT04", thai: "ไม้", translit: "máai", difficulty: 3 as Difficulty, options: ["ไม้", "ไม่", "ใหม่", "ไหม"], correctIndex: 0 as const },
+  { id: "RT01", thai: "ใหม่", translit: "mài", difficulty: 4 as Difficulty, options: ["ใหม่", "ไม่", "ไหม", "ไม้"], correctIndex: 0 as const },
+  { id: "RT02", thai: "ไม่", translit: "mâi", difficulty: 4 as Difficulty, options: ["ไม่", "ใหม่", "ไหม", "ไม้"], correctIndex: 0 as const },
+  { id: "RT03", thai: "ไหม", translit: "mǎi", difficulty: 4 as Difficulty, options: ["ไหม", "ไม่", "ใหม่", "ไม้"], correctIndex: 0 as const },
+  { id: "RT04", thai: "ไม้", translit: "máai", difficulty: 4 as Difficulty, options: ["ไม้", "ไม่", "ใหม่", "ไหม"], correctIndex: 0 as const },
   { id: "RT05", thai: "เข้า", translit: "khâo", difficulty: 4 as Difficulty, options: ["เข้า", "เขา", "ข่าว", "ข้าว"], correctIndex: 0 as const },
   { id: "RT06", thai: "เขา", translit: "khǎo", difficulty: 4 as Difficulty, options: ["เขา", "เข้า", "ข่าว", "ข้าว"], correctIndex: 0 as const },
-  { id: "RT07", thai: "ข่าว", translit: "khàao", difficulty: 4 as Difficulty, options: ["ข่าว", "ข้าว", "เขา", "เข้า"], correctIndex: 0 as const },
-  { id: "RT08", thai: "ข้าว", translit: "khâao", difficulty: 4 as Difficulty, options: ["ข้าว", "ข่าว", "เขา", "เข้า"], correctIndex: 0 as const },
-  { id: "RT09", thai: "ใกล้", translit: "glâi", difficulty: 4 as Difficulty, options: ["ใกล้", "ไกล", "กลาย", "ใคร"], correctIndex: 0 as const },
-  { id: "RT10", thai: "ไกล", translit: "glāi", difficulty: 4 as Difficulty, options: ["ไกล", "ใกล้", "กลาย", "ใคร"], correctIndex: 0 as const },
+  { id: "RT07", thai: "ข่าว", translit: "khàao", difficulty: 5 as Difficulty, options: ["ข่าว", "ข้าว", "เขา", "เข้า"], correctIndex: 0 as const },
+  { id: "RT08", thai: "ข้าว", translit: "khâao", difficulty: 5 as Difficulty, options: ["ข้าว", "ข่าว", "เขา", "เข้า"], correctIndex: 0 as const },
+  { id: "RT09", thai: "ใกล้", translit: "glâi", difficulty: 5 as Difficulty, options: ["ใกล้", "ไกล", "กลาย", "ใคร"], correctIndex: 0 as const },
+  { id: "RT10", thai: "ไกล", translit: "glāi", difficulty: 5 as Difficulty, options: ["ไกล", "ใกล้", "กลาย", "ใคร"], correctIndex: 0 as const },
+  { id: "RT11", thai: "ป่า", translit: "bpàa", difficulty: 5 as Difficulty, options: ["ป่า", "ป้า", "ปา", "ปลา"], correctIndex: 0 as const },
+  { id: "RT12", thai: "เสื้อ", translit: "sʉ̂a", difficulty: 5 as Difficulty, options: ["เสื้อ", "เสือ", "ชื่อ", "เชื่อ"], correctIndex: 0 as const },
+  { id: "RT13", thai: "ค่า", translit: "khâa", difficulty: 5 as Difficulty, options: ["ค่า", "ขา", "ค้า", "คา"], correctIndex: 0 as const },
 ] satisfies ReaderSeed[];
 
 export const readerToneQuestionBank: AssessmentQuestion[] = readerSeed.map(
@@ -424,7 +439,7 @@ export const readerToneQuestionBank: AssessmentQuestion[] = readerSeed.map(
       track: "reader",
       topic: "reader_tones",
       difficulty: seed.difficulty,
-      prompt: "Which Thai word matches the sound?",
+      prompt: "Listen only. Which Thai word did you hear?",
       thai: seed.thai,
       translit: seed.translit,
       choices,
