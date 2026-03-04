@@ -425,3 +425,37 @@ export function saveNineModeReview(
 
   return next;
 }
+
+// ---------------------------------------------------------------------------
+// Diagnostic attempt persistence (token-scoped, separate from quiz history)
+// ---------------------------------------------------------------------------
+
+const DIAGNOSTIC_ATTEMPT_KEY_PREFIX = "immersion-thai.diagnostic.attempt.v1";
+
+function buildDiagnosticAttemptKey(token: string) {
+  return `${DIAGNOSTIC_ATTEMPT_KEY_PREFIX}.${token}`;
+}
+
+export function loadDiagnosticAttempt(token: string): AssessmentAttempt | null {
+  if (!hasStorage()) return null;
+  const raw = safeParse<Record<string, unknown> | null>(
+    window.localStorage.getItem(buildDiagnosticAttemptKey(token)),
+    null
+  );
+  if (!raw) return null;
+  const result = normalizeAttempt(raw, "placement", false);
+  return result.attempt;
+}
+
+export function saveDiagnosticAttempt(token: string, attempt: AssessmentAttempt) {
+  if (!hasStorage()) return;
+  window.localStorage.setItem(
+    buildDiagnosticAttemptKey(token),
+    JSON.stringify({ ...attempt, updatedAt: new Date().toISOString() })
+  );
+}
+
+export function clearDiagnosticAttempt(token: string) {
+  if (!hasStorage()) return;
+  window.localStorage.removeItem(buildDiagnosticAttemptKey(token));
+}
