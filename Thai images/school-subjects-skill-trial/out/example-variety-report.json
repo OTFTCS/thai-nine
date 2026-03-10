@@ -1,0 +1,12 @@
+{
+  "errors": [],
+  "warnings": [],
+  "stats": {
+    "teachingItems": 11,
+    "uniqueThaiExamples": 11,
+    "uniqueTranslitExamples": 11,
+    "uniqueEnglishExamples": 11,
+    "thaiStartersRepeated3Plus": 0,
+    "englishStartersRepeated3Plus": 0
+  }
+}

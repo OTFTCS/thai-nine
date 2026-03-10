@@ -16,6 +16,44 @@ This repository enforces a single transliteration standard for all learner-facin
 ## Allowed character class
 Transliteration strings are restricted to PTM-compatible latin characters, inline tone marks, digits, spacing, and controlled punctuation (see exported `PTM_ALLOWED_CHARACTER_CLASS`).
 
+## Human quick reference (script-writing)
+Use this section when drafting scripts manually before running audit.
+
+### Frequent words (approved forms)
+- สวัสดี → `sà-wàt-dii`
+- ขอบคุณ → `khàawp-khun`
+- ขอโทษ → `khǎaw-thôot`
+- ไม่เข้าใจ → `mâi khâo-jai`
+- พูดช้าๆ ได้ไหม → `phûut cháa-cháa dâai mái`
+- ครับ → `khráp`
+- ค่ะ → `khâ`
+- คะ → `khá`
+- อยู่ → `yùu`
+- บอกว่า → `bàawk wâa`
+- หมอ → `mǎaw`
+- รอ → `raaw`
+
+### Common mistakes we keep seeing
+- **Do not use IPA glyphs** in learner transliteration.
+  - Wrong: `mɔ̌ɔ`
+  - Right: `mǎaw`
+- Keep PTM long-vowel spellings consistent (`aa`, `aaw`, `aao`, etc.) using canonical mappings.
+- Do not mix systems in one file (for example PTM + IPA forms together).
+- Keep polite particles exact (`khráp`, `khâ`, `khá`) and do not flatten tone marks.
+
+### Pre-publish checklist (for writers)
+Before submitting scripts/lesson artifacts:
+1. Every learner-facing Thai line has a full `Thai | translit | English` triplet.
+2. Transliteration uses inline tone marks only (no superscripts/caret/legacy suffix tones).
+3. No IPA symbols appear anywhere in transliteration fields.
+4. High-frequency words match approved forms in this file.
+5. Run `translit-audit` and resolve all violations.
+
+If unsure about any spelling, check:
+- `course/transliteration-ptm-vowels.json`
+- `course/transliteration-ptm-consonants.json`
+- `course/tools/lib/transliteration-policy.ts`
+
 ## Where this is enforced
 Hard validators cover:
 - `script-master.json`

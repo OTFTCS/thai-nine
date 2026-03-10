@@ -1,0 +1,273 @@
+{
+  "title": "School Subjects in Thai",
+  "slug": "school-subjects-in-thai",
+  "size": {
+    "width": 1080,
+    "height": 1350
+  },
+  "providerDefaults": {
+    "imageProvider": "gemini-flash-image",
+    "modelEnv": "GEMINI_IMAGE_MODEL"
+  },
+  "footer_handle": "@thaiwith.nine",
+  "slides": [
+    {
+      "index": 1,
+      "kind": "cover",
+      "image": "art/01-cover.png",
+      "image_prompt": "A clean educational illustration of school subjects: books, a globe, musical note, paint palette, microscope, and pencil, no text.",
+      "heading": "School Subjects in Thai",
+      "thai": "วิชาเรียน",
+      "translit": "wí-chaa rian",
+      "breakdown": [
+        {
+          "thai": "วิชา",
+          "translit": "wí-chaa",
+          "english": "subject"
+        },
+        {
+          "thai": "เรียน",
+          "translit": "rian",
+          "english": "study"
+        }
+      ],
+      "example": {
+        "thai": "โรงเรียนมีหลายวิชาให้เรียน",
+        "translit": "roong-rian mii lǎai wí-chaa hâi rian",
+        "english": "School has many subjects to study."
+      },
+      "_manifest_dir": "/Users/Shared/work/thai-nine/Thai images/school-subjects-skill-trial"
+    },
+    {
+      "index": 2,
+      "kind": "teaching-single",
+      "image": "art/02.png",
+      "image_prompt": "A clean educational illustration of maths class objects: an abacus, ruler, pencil, and geometric shapes on a desk, no text.",
+      "heading": "School Subjects in Thai",
+      "item": {
+        "english": "Mathematics",
+        "thai": "คณิตศาสตร์",
+        "translit": "khà-nít-sàat",
+        "breakdown": [],
+        "example": {
+          "thai": "พรุ่งนี้ฉันมีวิชาคณิตศาสตร์",
+          "translit": "phrûng-níi chǎn mii wí-chaa khà-nít-sàat",
+          "english": "I have maths tomorrow."
+        }
+      },
+      "_manifest_dir": "/Users/Shared/work/thai-nine/Thai images/school-subjects-skill-trial"
+    },
+    {
+      "index": 3,
+      "kind": "teaching-single",
+      "image": "art/03.png",
+      "image_prompt": "A clean educational illustration of science class objects: a microscope, flask, and atom model, no text.",
+      "heading": "School Subjects in Thai",
+      "item": {
+        "english": "Science",
+        "thai": "วิทยาศาสตร์",
+        "translit": "wít-thá-yaa-sàat",
+        "breakdown": [],
+        "example": {
+          "thai": "เพื่อนของฉันชอบวิทยาศาสตร์",
+          "translit": "phʉ̂an khǎawng chǎn châawp wít-thá-yaa-sàat",
+          "english": "My friend likes science."
+        }
+      },
+      "_manifest_dir": "/Users/Shared/work/thai-nine/Thai images/school-subjects-skill-trial"
+    },
+    {
+      "index": 4,
+      "kind": "teaching-single",
+      "image": "art/04.png",
+      "image_prompt": "A clean educational illustration of Thai language class: an open notebook, a pencil, and a Thai-style reading book, no text.",
+      "heading": "School Subjects in Thai",
+      "item": {
+        "english": "Thai",
+        "thai": "ภาษาไทย",
+        "translit": "phaa-sǎa thai",
+        "breakdown": [
+          {
+            "thai": "ภาษา",
+            "translit": "phaa-sǎa",
+            "english": "language"
+          },
+          {
+            "thai": "ไทย",
+            "translit": "thai",
+            "english": "Thai"
+          }
+        ],
+        "example": {
+          "thai": "ครูภาษาไทยพูดชัดมาก",
+          "translit": "khruu phaa-sǎa thai phûut chát mâak",
+          "english": "The Thai teacher speaks very clearly."
+        }
+      },
+      "_manifest_dir": "/Users/Shared/work/thai-nine/Thai images/school-subjects-skill-trial"
+    },
+    {
+      "index": 5,
+      "kind": "teaching-single",
+      "image": "art/05.png",
+      "image_prompt": "A clean educational illustration of English class: books, a globe, and a notebook on a study desk, no text.",
+      "heading": "School Subjects in Thai",
+      "item": {
+        "english": "English",
+        "thai": "ภาษาอังกฤษ",
+        "translit": "phaa-sǎa ang-grìt",
+        "breakdown": [
+          {
+            "thai": "ภาษา",
+            "translit": "phaa-sǎa",
+            "english": "language"
+          },
+          {
+            "thai": "อังกฤษ",
+            "translit": "ang-grìt",
+            "english": "English"
+          }
+        ],
+        "example": {
+          "thai": "ผมฝึกพูดภาษาอังกฤษทุกวัน",
+          "translit": "phǒm fʉ̀k phûut phaa-sǎa ang-grìt thúk wan",
+          "english": "I practise speaking English every day."
+        }
+      },
+      "_manifest_dir": "/Users/Shared/work/thai-nine/Thai images/school-subjects-skill-trial"
+    },
+    {
+      "index": 6,
+      "kind": "teaching-single",
+      "image": "art/06.png",
+      "image_prompt": "A clean educational illustration of history class: an old map, a scroll, and a history book, no text.",
+      "heading": "School Subjects in Thai",
+      "item": {
+        "english": "History",
+        "thai": "ประวัติศาสตร์",
+        "translit": "prà-wàt-sàat",
+        "breakdown": [],
+        "example": {
+          "thai": "วิชาประวัติศาสตร์สนุกมาก",
+          "translit": "wí-chaa prà-wàt-sàat sà-nùk mâak",
+          "english": "History class is very fun."
+        }
+      },
+      "_manifest_dir": "/Users/Shared/work/thai-nine/Thai images/school-subjects-skill-trial"
+    },
+    {
+      "index": 7,
+      "kind": "teaching-single",
+      "image": "art/07.png",
+      "image_prompt": "A clean educational illustration of geography class: a globe, folded map, and compass, no text.",
+      "heading": "School Subjects in Thai",
+      "item": {
+        "english": "Geography",
+        "thai": "ภูมิศาสตร์",
+        "translit": "phuu-mí-sàat",
+        "breakdown": [],
+        "example": {
+          "thai": "เราใช้แผนที่ในวิชาภูมิศาสตร์",
+          "translit": "rao chái phǎen-thîi nai wí-chaa phuu-mí-sàat",
+          "english": "We use a map in geography class."
+        }
+      },
+      "_manifest_dir": "/Users/Shared/work/thai-nine/Thai images/school-subjects-skill-trial"
+    },
+    {
+      "index": 8,
+      "kind": "teaching-single",
+      "image": "art/08.png",
+      "image_prompt": "A clean educational illustration of art class: a paint palette, brushes, and colored paint, no text.",
+      "heading": "School Subjects in Thai",
+      "item": {
+        "english": "Art",
+        "thai": "ศิลปะ",
+        "translit": "sǐn-lá-pà",
+        "breakdown": [],
+        "example": {
+          "thai": "น้องวาดรูปในวิชาศิลปะ",
+          "translit": "náawng wâat-rûup nai wí-chaa sǐn-lá-pà",
+          "english": "My younger sibling draws pictures in art class."
+        }
+      },
+      "_manifest_dir": "/Users/Shared/work/thai-nine/Thai images/school-subjects-skill-trial"
+    },
+    {
+      "index": 9,
+      "kind": "teaching-single",
+      "image": "art/09.png",
+      "image_prompt": "A clean educational illustration of music class: musical notes, a keyboard, and a small guitar, no text.",
+      "heading": "School Subjects in Thai",
+      "item": {
+        "english": "Music",
+        "thai": "ดนตรี",
+        "translit": "don-dtrii",
+        "breakdown": [],
+        "example": {
+          "thai": "พวกเราร้องเพลงในวิชาดนตรี",
+          "translit": "phûuak-rao ráawng phleeng nai wí-chaa don-dtrii",
+          "english": "We sing songs in music class."
+        }
+      },
+      "_manifest_dir": "/Users/Shared/work/thai-nine/Thai images/school-subjects-skill-trial"
+    },
+    {
+      "index": 10,
+      "kind": "teaching-single",
+      "image": "art/10.png",
+      "image_prompt": "A clean educational illustration of computer class: a laptop, mouse, and coding-themed shapes, no text.",
+      "heading": "School Subjects in Thai",
+      "item": {
+        "english": "Computer",
+        "thai": "คอมพิวเตอร์",
+        "translit": "khaawm-phiw-dtôoe",
+        "breakdown": [],
+        "example": {
+          "thai": "ห้องนี้มีคอมพิวเตอร์หลายเครื่อง",
+          "translit": "hâawng níi mii khaawm-phiw-dtôoe lǎai khrʉ̂ang",
+          "english": "This room has many computers."
+        }
+      },
+      "_manifest_dir": "/Users/Shared/work/thai-nine/Thai images/school-subjects-skill-trial"
+    },
+    {
+      "index": 11,
+      "kind": "teaching-single",
+      "image": "art/11.png",
+      "image_prompt": "A clean educational illustration of physical education: a football, skipping rope, and whistle, no text.",
+      "heading": "School Subjects in Thai",
+      "item": {
+        "english": "Physical Education",
+        "thai": "พละศึกษา",
+        "translit": "phá-lá-sʉ̀k-sǎa",
+        "breakdown": [],
+        "example": {
+          "thai": "วันนี้เราเล่นกีฬาในวิชาพละศึกษา",
+          "translit": "wan-níi rao lên gii-laa nai wí-chaa phá-lá-sʉ̀k-sǎa",
+          "english": "Today we play sports in P.E."
+        }
+      },
+      "_manifest_dir": "/Users/Shared/work/thai-nine/Thai images/school-subjects-skill-trial"
+    },
+    {
+      "index": 12,
+      "kind": "teaching-single",
+      "image": "art/12.png",
+      "image_prompt": "A clean educational illustration of social studies class: community icons, a map pin, and civic learning objects, no text.",
+      "heading": "School Subjects in Thai",
+      "item": {
+        "english": "Social Studies",
+        "thai": "สังคมศึกษา",
+        "translit": "sǎng-khom-sʉ̀k-sǎa",
+        "breakdown": [],
+        "example": {
+          "thai": "วิชาสังคมศึกษาช่วยให้เข้าใจสังคม",
+          "translit": "wí-chaa sǎng-khom-sʉ̀k-sǎa chûuay hâi khâo-jai sǎng-khom",
+          "english": "Social studies helps us understand society."
+        }
+      },
+      "_manifest_dir": "/Users/Shared/work/thai-nine/Thai images/school-subjects-skill-trial"
+    }
+  ]
+}

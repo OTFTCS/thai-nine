@@ -1,0 +1,64 @@
+{
+  "sources": [
+    "/Users/Shared/work/thai-nine/thai-transliteration-standard.md",
+    "/Users/Shared/work/thai-nine/course/transliteration-policy.md",
+    "/Users/Shared/work/thai-nine/src/lib/quiz/transliteration.ts",
+    "/Users/Shared/work/thai-nine/course/transliteration-ptm-vowels.json",
+    "/Users/Shared/work/thai-nine/course/transliteration-ptm-consonants.json"
+  ],
+  "notes": [
+    "Validation prefers exact repo-approved transliterations when overrides exist.",
+    "Runtime-allowed characters from src/lib/quiz/transliteration.ts take precedence over stale prose conflicts.",
+    "Hard token override preserves \"kheuu\" for คือ."
+  ],
+  "slidesValidated": [
+    {
+      "index": 1,
+      "kind": "cover"
+    },
+    {
+      "index": 2,
+      "kind": "teaching-single"
+    },
+    {
+      "index": 3,
+      "kind": "teaching-single"
+    },
+    {
+      "index": 4,
+      "kind": "teaching-single"
+    },
+    {
+      "index": 5,
+      "kind": "teaching-single"
+    },
+    {
+      "index": 6,
+      "kind": "teaching-single"
+    },
+    {
+      "index": 7,
+      "kind": "teaching-single"
+    },
+    {
+      "index": 8,
+      "kind": "teaching-single"
+    },
+    {
+      "index": 9,
+      "kind": "teaching-single"
+    },
+    {
+      "index": 10,
+      "kind": "teaching-single"
+    },
+    {
+      "index": 11,
+      "kind": "teaching-single"
+    },
+    {
+      "index": 12,
+      "kind": "teaching-single"
+    }
+  ]
+}
