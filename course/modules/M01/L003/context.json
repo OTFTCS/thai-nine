@@ -13,10 +13,34 @@
       "vocabId": "v-c9337e2739"
     },
     {
+      "thai": "สวัสดีครับ",
+      "translit": "sà-wàt-dii khráp",
+      "english": "hello (male speaker)",
+      "vocabId": "v-e653eb5319"
+    },
+    {
+      "thai": "สวัสดีค่ะ",
+      "translit": "sà-wàt-dii khâ",
+      "english": "hello (female speaker)",
+      "vocabId": "v-bccbe506b3"
+    },
+    {
       "thai": "ขอบคุณ",
       "translit": "khàawp-khun",
       "english": "thank you",
       "vocabId": "v-217b46aa5a"
+    },
+    {
+      "thai": "ขอโทษ",
+      "translit": "khǎaw-thôot",
+      "english": "excuse me / sorry",
+      "vocabId": "v-6fce5e8c2c"
+    },
+    {
+      "thai": "ไม่เป็นไร",
+      "translit": "mâi bpen rai",
+      "english": "it is okay / no problem",
+      "vocabId": "v-03cc3fe123"
     },
     {
       "thai": "ครับ",
@@ -37,67 +61,105 @@
       "vocabId": "v-8637eb381c"
     },
     {
-      "thai": "ขอโทษ",
-      "translit": "khǎaw-thôot",
-      "english": "excuse me / sorry",
-      "vocabId": "v-6fce5e8c2c"
+      "thai": "ใช่",
+      "translit": "châi",
+      "english": "yes / that is right",
+      "vocabId": "v-f40371ec59"
     },
     {
-      "thai": "ไม่เข้าใจ",
-      "translit": "mâi khâo-jai",
-      "english": "I do not understand",
-      "vocabId": "v-4dea1cee34"
+      "thai": "ไม่ใช่",
+      "translit": "mâi châi",
+      "english": "no / not right",
+      "vocabId": "v-cda55f5b5e"
     },
     {
-      "thai": "พูดช้าๆ ได้ไหม",
-      "translit": "phûut cháa-cháa dâai mái",
-      "english": "can you speak slowly?",
-      "vocabId": "v-6f22c219d9"
+      "thai": "ชื่อ",
+      "translit": "chûue",
+      "english": "name",
+      "vocabId": "v-6acb169e4b"
     },
     {
-      "thai": "ไก่",
-      "translit": "gài",
-      "english": "chicken",
-      "vocabId": "v-7ec5a304ff"
+      "thai": "คุณชื่ออะไร",
+      "translit": "khun chûue à-rai",
+      "english": "what is your name?",
+      "vocabId": "v-a79c6af3af"
     },
     {
-      "thai": "ไข่",
-      "translit": "khài",
-      "english": "egg",
-      "vocabId": "v-3a8e5a9794"
+      "thai": "ฉันชื่อ...",
+      "translit": "chǎn chûue...",
+      "english": "my name is ...",
+      "vocabId": "v-33248cf209"
     },
     {
-      "thai": "ใกล้",
-      "translit": "glâi",
-      "english": "near",
-      "vocabId": "v-994dd77a8a"
+      "thai": "ผมชื่อ...",
+      "translit": "phǒm chûue...",
+      "english": "my name is ... (male speaker)",
+      "vocabId": "v-d5ec4d10d2"
     },
     {
-      "thai": "ไกล",
-      "translit": "glǎi",
-      "english": "far",
-      "vocabId": "v-3dcaa4dbf9"
+      "thai": "ฉัน",
+      "translit": "chǎn",
+      "english": "I",
+      "vocabId": "v-0ab46f92e7"
     },
     {
-      "thai": "ขา",
-      "translit": "khǎa",
-      "english": "leg",
-      "vocabId": "v-ec4de59e6d"
+      "thai": "ผม",
+      "translit": "phǒm",
+      "english": "I (male)",
+      "vocabId": "v-796f86a0f6"
     },
     {
-      "thai": "ค่า",
-      "translit": "khâa",
-      "english": "value / fee",
-      "vocabId": "v-33caa947af"
+      "thai": "ประเทศ",
+      "translit": "bprà-thêet",
+      "english": "country",
+      "vocabId": "v-d0c316cc2c"
+    },
+    {
+      "thai": "มาจาก",
+      "translit": "maa-jàak",
+      "english": "come from / be from",
+      "vocabId": "v-dfd8165dd5"
+    },
+    {
+      "thai": "มาจากไทย",
+      "translit": "maa-jàak thai",
+      "english": "be from Thailand",
+      "vocabId": "v-317510cace"
+    },
+    {
+      "thai": "มาจากอังกฤษ",
+      "translit": "maa-jàak ang-grìt",
+      "english": "be from England",
+      "vocabId": "v-15a452b73b"
+    },
+    {
+      "thai": "มาจากอเมริกา",
+      "translit": "maa-jàak à-mee-rí-gaa",
+      "english": "be from America",
+      "vocabId": "v-b845ab6bae"
+    },
+    {
+      "thai": "ฉันมาจาก...",
+      "translit": "chǎn maa-jàak...",
+      "english": "I am from ...",
+      "vocabId": "v-b2f0acf56a"
+    },
+    {
+      "thai": "ผมมาจาก...",
+      "translit": "phǒm maa-jàak...",
+      "english": "I am from ... (male)",
+      "vocabId": "v-64f9ed0e55"
     }
   ],
   "knownGrammar": [
-    "Feel how contour shifts semantic category.",
-    "Lock in short/long vowel distinction.",
-    "Recover conversation when comprehension drops.",
-    "Request slower speech without breaking politeness.",
-    "Teach pragmatic greeting and gratitude with politeness particles.",
-    "Train ear to hear aspirated vs unaspirated initials."
+    "Combine the greeting from lesson 1 with the new identity patterns so the learner can produce a practical mini-introduction.",
+    "Explain the beginner-level pronoun choice so the learner can produce self-introduction lines without freezing over identity wording.",
+    "Explain what ครับ, ค่ะ, and คะ do so the learner does not memorize them as random decoration.",
+    "Give the learner a small response toolkit so a first encounter can continue instead of stopping at one memorised line.",
+    "Teach the core greeting and show that politeness is built into the line, not added as an afterthought.",
+    "Teach the core name pattern with ชื่อ and อะไร so the learner can ask and answer the most basic identity question immediately.",
+    "Teach the origin pattern so the learner can complete a basic introduction with country information instead of stopping after the name.",
+    "Teach the two highest-value courtesy phrases and explain that one form repairs the interaction while the other closes it warmly."
   ],
   "reviewBuckets": [
     {
@@ -105,35 +167,35 @@
       "offset": 1,
       "lessonId": "M01-L002",
       "vocabIds": [
-        "v-7ec5a304ff",
-        "v-3a8e5a9794",
-        "v-994dd77a8a",
-        "v-3dcaa4dbf9"
+        "v-6acb169e4b",
+        "v-a79c6af3af",
+        "v-33248cf209",
+        "v-d5ec4d10d2"
       ],
       "sample": [
         {
-          "thai": "ไก่",
-          "translit": "gài",
-          "english": "chicken",
-          "vocabId": "v-7ec5a304ff"
+          "thai": "ชื่อ",
+          "translit": "chûue",
+          "english": "name",
+          "vocabId": "v-6acb169e4b"
         },
         {
-          "thai": "ไข่",
-          "translit": "khài",
-          "english": "egg",
-          "vocabId": "v-3a8e5a9794"
+          "thai": "คุณชื่ออะไร",
+          "translit": "khun chûue à-rai",
+          "english": "what is your name?",
+          "vocabId": "v-a79c6af3af"
         },
         {
-          "thai": "ใกล้",
-          "translit": "glâi",
-          "english": "near",
-          "vocabId": "v-994dd77a8a"
+          "thai": "ฉันชื่อ...",
+          "translit": "chǎn chûue...",
+          "english": "my name is ...",
+          "vocabId": "v-33248cf209"
         },
         {
-          "thai": "ไกล",
-          "translit": "glǎi",
-          "english": "far",
-          "vocabId": "v-3dcaa4dbf9"
+          "thai": "ผมชื่อ...",
+          "translit": "phǒm chûue...",
+          "english": "my name is ... (male speaker)",
+          "vocabId": "v-d5ec4d10d2"
         }
       ]
     },

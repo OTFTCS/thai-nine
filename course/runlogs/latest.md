@@ -103,3 +103,39 @@
   - `course:validate` (repo-wide) ✅
   - `course:validate:schemas` (repo-wide) ✅
 - Pipeline fallback seed was expanded to produce >=5 lexemes (keeps strict flashcards schema gate green for migrated fallback lessons).
+
+## 2026-03-11 08:28:35 +07
+- Set M01-L004 state to READY_TO_RECORD.
+
+## 2026-03-11 08:41:53 +07
+- Set M01-L004 state to READY_TO_RECORD.
+
+## 2026-03-11 08:42:31 +07
+- Set M01-L004 state to READY_TO_RECORD.
+
+## 2026-03-11 08:45:58 +07
+- Set M01-L001 state to READY_TO_RECORD.
+
+## 2026-03-11 08:48:00 +07
+- Set M01-L001 state to READY_TO_RECORD.
+
+## 2026-03-11 08:50:58 +07
+- Set M01-L002 state to READY_TO_RECORD.
+
+## 2026-03-11 08:53:54 +07
+- Set M01-L003 state to READY_TO_RECORD.
+
+## 2026-03-11 08:55:40 +07
+- Set M01-L004 state to READY_TO_RECORD.
+
+## 2026-03-11 11:24:30 +07
+- Set M01-L001 state to READY_TO_RECORD.
+
+## 2026-03-11 12:05:41 +07
+- Set M01-L001 state to READY_TO_RECORD.
+
+## 2026-03-11 14:29:15 +07
+- Set M01-L002 state to READY_TO_RECORD.
+
+## 2026-03-11 15:12:26 +07
+- Set M01-L004 state to READY_TO_RECORD.

@@ -1,7 +1,16 @@
 import { NineModePanel } from "@/components/quizzes/nine-mode-panel";
 import { DiagnosticAdminPanel } from "@/components/quizzes/diagnostic-admin-panel";
+import {
+  getBlueprintLessons,
+  getBlueprintPlacementRecommendations,
+} from "@/lib/curriculum/blueprint-loader";
 
-export default function AdminQuizzesPage() {
+export default async function AdminQuizzesPage() {
+  const [lessons, recommendationMap] = await Promise.all([
+    getBlueprintLessons(),
+    getBlueprintPlacementRecommendations(),
+  ]);
+
   return (
     <div className="space-y-12">
       <section className="space-y-6">
@@ -21,7 +30,7 @@ export default function AdminQuizzesPage() {
             Review misses, replay counts, time-to-answer, notes, overrides, and lesson assignments.
           </p>
         </div>
-        <NineModePanel />
+        <NineModePanel lessons={lessons} recommendationMap={recommendationMap} />
       </section>
     </div>
   );

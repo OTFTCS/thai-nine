@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "M01-L003",
+  "generatedAt": "2026-03-11T07:36:45.901Z",
+  "assets": [
+    {
+      "assetId": "m01-l003-scene-1-asset-1",
+      "kind": "icon",
+      "sourceUrl": "https://thenounproject.com/search/icons/?q=M01-L003%20Pronouns%20and%20Who%20Questions%3A%20Identify%20People%20in%20Simple%20Thai%20Use%20pronouns%20as%20practical%20speaker%20labels%20thai%20learning%20visual",
+      "license": "Noun Project search result review required",
+      "usage": "scene-1:scene-1 overlay background",
+      "query": "M01-L003 Pronouns and Who Questions: Identify People in Simple Thai Use pronouns as practical speaker labels thai learning visual",
+      "sourcePolicy": "internet-first",
+      "rationale": "Pronoun contrast is clearer as speaker-role cards than as photographs.",
+      "sourceHints": [
+        "The Noun Project",
+        "Icon sets"
+      ]
+    },
+    {
+      "assetId": "m01-l003-scene-2-asset-1",
+      "kind": "image",
+      "sourceUrl": "https://www.pexels.com/search/two%20people%20introducing%20a%20third%20person%20in%20classroom/",
+      "license": "Pexels License",
+      "usage": "scene-2:scene-2 overlay background",
+      "query": "two people introducing a third person in classroom",
+      "sourcePolicy": "internet-first",
+      "rationale": "A simple real-world social image helps the learner understand that นี่คือ... is used to introduce a person standing there, not only to label objects.",
+      "sourceHints": [
+        "Pexels",
+        "Wikimedia Commons"
+      ],
+      "aiFallbackPrompt": "Friendly adult language-class scene, one speaker introducing another person to a learner, clean medium shot, uncluttered background, realistic classroom, composition weighted to the left two-thirds for lesson overlay use."
+    },
+    {
+      "assetId": "m01-l003-scene-3-asset-1",
+      "kind": "image",
+      "sourceUrl": "https://www.pexels.com/search/single%20person%20portrait%20simple%20background%20looking%20at%20camera/",
+      "license": "Pexels License",
+      "usage": "scene-3:scene-3 overlay background",
+      "query": "single person portrait simple background looking at camera",
+      "sourcePolicy": "internet-first",
+      "rationale": "A single person photo or portrait card makes the who-question concrete and supports pointing-based practice.",
+      "sourceHints": [
+        "Pexels",
+        "Wikimedia Commons"
+      ]
+    },
+    {
+      "assetId": "m01-l003-scene-4-asset-1",
+      "kind": "icon",
+      "sourceUrl": "https://thenounproject.com/search/icons/?q=M01-L003%20Pronouns%20and%20Who%20Questions%3A%20Identify%20People%20in%20Simple%20Thai%20Build%20a%20mini%20identity%20exchange%20with%20review%20thai%20learning%20visual",
+      "license": "Noun Project search result review required",
+      "usage": "scene-4:scene-4 overlay background",
+      "query": "M01-L003 Pronouns and Who Questions: Identify People in Simple Thai Build a mini identity exchange with review thai learning visual",
+      "sourcePolicy": "internet-first",
+      "rationale": "The conversation build is clearer as a staged text ladder than as another photo.",
+      "sourceHints": [
+        "The Noun Project",
+        "Icon sets"
+      ]
+    }
+  ]
+}

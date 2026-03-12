@@ -2,6 +2,7 @@ import test from "node:test";
 import assert from "node:assert/strict";
 import { scoreAssessment, derivePlacementBand, buildPlacementRecommendation } from "../../src/lib/quiz/scoring.ts";
 import { getQuestionsByIds } from "../../src/lib/quiz/question-banks.ts";
+import { getBlueprintPlacementRecommendations } from "../../src/lib/curriculum/blueprint-loader.ts";
 
 function makeChoiceAnswer(questionId: string, selectedChoiceId: string, isCorrect: boolean) {
   return {
@@ -45,7 +46,7 @@ test("weighted scoring uses difficulty weights", () => {
   assert.equal(summary.totalIdk, 0);
 });
 
-test("placement band mapping and recommendation are returned", () => {
+test("placement band mapping and recommendation are returned", async () => {
   const questions = getQuestionsByIds("placement", [
     "G01",
     "N06",
@@ -66,11 +67,13 @@ test("placement band mapping and recommendation are returned", () => {
 
   const summary = scoreAssessment(questions, answers);
   const band = derivePlacementBand(summary);
-  const recommendation = buildPlacementRecommendation(summary);
+  const recommendationMap = await getBlueprintPlacementRecommendations();
+  const recommendation = buildPlacementRecommendation(summary, recommendationMap);
 
   assert.equal(summary.score, 100);
   assert.equal(band, "B1-ish");
   assert.equal(recommendation.band, "B1-ish");
+  assert.match(recommendation.moduleId, /^M\d{2}$/);
   assert.ok(recommendation.lessonLinks.length > 0);
 });
 

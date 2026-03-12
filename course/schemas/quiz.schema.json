@@ -10,7 +10,10 @@
     "lessonId": { "type": "string", "pattern": "^M\\d{2}-L\\d{3}$" },
     "passScore": { "type": "number", "minimum": 80 },
     "generatedAt": { "type": "string", "minLength": 1 },
-    "itemBankPath": { "const": "quiz-item-bank.json" },
+    "itemBankPath": {
+      "type": "string",
+      "pattern": "^(M\\d{2}-L\\d{3}-)?quiz-item-bank\\.json$"
+    },
     "questions": {
       "type": "array",
       "minItems": 5,

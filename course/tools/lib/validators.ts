@@ -1,6 +1,7 @@
 import { existsSync, readFileSync, readdirSync, statSync } from "node:fs";
 import { basename, join } from "node:path";
-import { listLessonDirs, readJson } from "./fs.ts";
+import { listLessonDirs, readJson, resolveLessonDirArtifactPath } from "./fs.ts";
+import { compareLessonIds } from "./lesson-ids.ts";
 import { validateSchemaTargets } from "./schema-runner.ts";
 import {
   checkTransliterationPolicy,
@@ -64,6 +65,14 @@ function lessonIdFromLessonDir(lessonDir: string): string {
   return `${moduleId}-${lessonFolder}`;
 }
 
+function lessonArtifactPathForDir(lessonDir: string, baseName: string): string {
+  return resolveLessonDirArtifactPath(
+    lessonDir,
+    lessonIdFromLessonDir(lessonDir),
+    baseName
+  );
+}
+
 export function remotionEpisodePathForLesson(root: string, lessonId: string): string {
   const lessonNum = Number((lessonId.split("-")[1] ?? "L000").replace(/^L/, ""));
   const episodeNum = String(Math.max(lessonNum, 0)).padStart(3, "0");
@@ -88,10 +97,24 @@ function enforceTriplet(thing: { thai?: string; translit?: string; english?: str
 function checkScriptMaster(path: string): ValidationIssue[] {
   const issues: ValidationIssue[] = [];
   const data = parseJsonFile<ScriptMaster>(path);
+  const isLegacyLesson = compareLessonIds(data.lessonId, "M01-L004") < 0;
 
   if (!Array.isArray(data.sections) || data.sections.length < 3) {
     issues.push({ path, message: "script-master sections must contain >=3 entries" });
     return issues;
+  }
+
+  if (!isLegacyLesson) {
+    if (!data.teachingFrame) {
+      issues.push({ path, message: "non-legacy lessons require teachingFrame" });
+    } else {
+      if (data.teachingFrame.targetRuntimeMin <= 0 || data.teachingFrame.targetRuntimeMax < data.teachingFrame.targetRuntimeMin) {
+        issues.push({ path, message: "teachingFrame runtime bounds are invalid" });
+      }
+      if (isBlank(data.teachingFrame.openingHook) || isBlank(data.teachingFrame.scenario) || isBlank(data.teachingFrame.learnerTakeaway)) {
+        issues.push({ path, message: "teachingFrame must include openingHook, scenario, and learnerTakeaway" });
+      }
+    }
   }
 
   for (const section of data.sections) {
@@ -108,6 +131,32 @@ function checkScriptMaster(path: string): ValidationIssue[] {
       }
       const parts = bullet.split("|").map((x) => x.trim());
       if (parts[1]) pushPolicyIssues(parts[1], `${path}#sections.${section.id}.onScreenBullets[${idx}]`, issues);
+    }
+
+    if (!isLegacyLesson) {
+      const visualPlan = section.visualPlan;
+      if (!visualPlan) {
+        issues.push({ path, message: `section ${section.id} requires visualPlan` });
+      } else {
+        if (isBlank(visualPlan.onScreenGoal)) {
+          issues.push({ path, message: `section ${section.id} visualPlan missing onScreenGoal` });
+        }
+        if (visualPlan.teachingVisuals.length < 2) {
+          issues.push({ path, message: `section ${section.id} visualPlan needs >=2 teaching visuals` });
+        }
+        if (visualPlan.teacherCues.length < 1) {
+          issues.push({ path, message: `section ${section.id} visualPlan needs >=1 teacher cue` });
+        }
+        if (isBlank(visualPlan.imageSupport.rationale)) {
+          issues.push({ path, message: `section ${section.id} visualPlan imageSupport missing rationale` });
+        }
+        if (visualPlan.imageSupport.sourceHints.length < 1) {
+          issues.push({ path, message: `section ${section.id} visualPlan imageSupport needs sourceHints` });
+        }
+        if (visualPlan.imageSupport.helpful && visualPlan.imageSupport.searchQueries.length < 1) {
+          issues.push({ path, message: `section ${section.id} visualPlan marks imageSupport helpful but provides no searchQueries` });
+        }
+      }
     }
   }
 
@@ -138,9 +187,20 @@ function checkContext(path: string): ValidationIssue[] {
 function checkRemotion(path: string): ValidationIssue[] {
   const issues: ValidationIssue[] = [];
   const data = parseJsonFile<RemotionPlan>(path);
+  const isLegacyLesson = compareLessonIds(data.lessonId, "M01-L004") < 0;
 
   if (data.scenes.some((s) => s.assets.some((a) => a.sourcePolicy !== "internet-first"))) {
     issues.push({ path, message: "remotion assets must use internet-first policy" });
+  }
+
+  if (!isLegacyLesson) {
+    if (!data.canvas) {
+      issues.push({ path, message: "non-legacy remotion plans require canvas metadata" });
+    } else {
+      if (Math.abs(data.canvas.leftTeachingFraction - 0.6667) > 0.02 || Math.abs(data.canvas.rightCameraFraction - 0.3333) > 0.02) {
+        issues.push({ path, message: "remotion canvas must reserve roughly the right third for camera and left two-thirds for teaching" });
+      }
+    }
   }
 
   for (const [sceneIdx, scene] of data.scenes.entries()) {
@@ -154,6 +214,22 @@ function checkRemotion(path: string): ValidationIssue[] {
       }
       if (isBlank(asset.license)) {
         issues.push({ path, message: `scene[${sceneIdx}] asset[${assetIdx}] missing license` });
+      }
+    }
+
+    if (!isLegacyLesson) {
+      if (!scene.visualStrategy) {
+        issues.push({ path, message: `scene[${sceneIdx}] missing visualStrategy` });
+      } else {
+        if (scene.visualStrategy.teachingVisuals.length < 1) {
+          issues.push({ path, message: `scene[${sceneIdx}] visualStrategy needs teaching visuals` });
+        }
+        if (scene.visualStrategy.teacherCues.length < 1) {
+          issues.push({ path, message: `scene[${sceneIdx}] visualStrategy needs teacher cues` });
+        }
+      }
+      if (!scene.layout) {
+        issues.push({ path, message: `scene[${sceneIdx}] missing layout` });
       }
     }
   }
@@ -307,6 +383,7 @@ function checkQuiz(path: string): ValidationIssue[] {
 function checkAssetProvenance(path: string, remotionPath: string): ValidationIssue[] {
   const issues: ValidationIssue[] = [];
   const data = parseJsonFile<AssetProvenance>(path);
+  const isLegacyLesson = compareLessonIds(data.lessonId, "M01-L004") < 0;
 
   if (!existsSync(remotionPath)) {
     issues.push({ path, message: "asset-provenance requires remotion.json to cross-check assets" });
@@ -328,6 +405,9 @@ function checkAssetProvenance(path: string, remotionPath: string): ValidationIss
       }
       if (isBlank(prov.license)) {
         issues.push({ path, message: `provenance license missing for assetId ${asset.assetId}` });
+      }
+      if (!isLegacyLesson && !isBlank(asset.query) && isBlank(prov.query)) {
+        issues.push({ path, message: `provenance query missing for assetId ${asset.assetId}` });
       }
     }
   }
@@ -355,9 +435,9 @@ function checkStatus(path: string): ValidationIssue[] {
 }
 
 function checkCoverageCrossFiles(lessonDir: string): ValidationIssue[] {
-  const scriptPath = join(lessonDir, "script-master.json");
-  const bankPath = join(lessonDir, "quiz-item-bank.json");
-  const quizPath = join(lessonDir, "quiz.json");
+  const scriptPath = lessonArtifactPathForDir(lessonDir, "script-master.json");
+  const bankPath = lessonArtifactPathForDir(lessonDir, "quiz-item-bank.json");
+  const quizPath = lessonArtifactPathForDir(lessonDir, "quiz.json");
   if (!existsSync(scriptPath) || !existsSync(bankPath) || !existsSync(quizPath)) return [];
 
   const script = parseJsonFile<ScriptMaster>(scriptPath);
@@ -465,15 +545,15 @@ export function validateAllRemotionData(root: string): ValidationIssue[] {
 
 function lessonSchemaTargets(lessonDir: string): Array<{ path: string; schemaFile: string; required?: boolean }> {
   return [
-    { path: join(lessonDir, "context.json"), schemaFile: "context.schema.json", required: false },
-    { path: join(lessonDir, "script-master.json"), schemaFile: "script-master.schema.json", required: false },
-    { path: join(lessonDir, "remotion.json"), schemaFile: "remotion.schema.json", required: false },
-    { path: join(lessonDir, "asset-provenance.json"), schemaFile: "asset-provenance.schema.json", required: false },
-    { path: join(lessonDir, "pdf-source.json"), schemaFile: "pdf-source.schema.json", required: false },
-    { path: join(lessonDir, "flashcards.json"), schemaFile: "flashcards.schema.json", required: false },
-    { path: join(lessonDir, "vocab-export.json"), schemaFile: "vocab-export.schema.json", required: false },
-    { path: join(lessonDir, "quiz-item-bank.json"), schemaFile: "quiz-item-bank.schema.json", required: false },
-    { path: join(lessonDir, "quiz.json"), schemaFile: "quiz.schema.json", required: false },
+    { path: lessonArtifactPathForDir(lessonDir, "context.json"), schemaFile: "context.schema.json", required: false },
+    { path: lessonArtifactPathForDir(lessonDir, "script-master.json"), schemaFile: "script-master.schema.json", required: false },
+    { path: lessonArtifactPathForDir(lessonDir, "remotion.json"), schemaFile: "remotion.schema.json", required: false },
+    { path: lessonArtifactPathForDir(lessonDir, "asset-provenance.json"), schemaFile: "asset-provenance.schema.json", required: false },
+    { path: lessonArtifactPathForDir(lessonDir, "pdf-source.json"), schemaFile: "pdf-source.schema.json", required: false },
+    { path: lessonArtifactPathForDir(lessonDir, "flashcards.json"), schemaFile: "flashcards.schema.json", required: false },
+    { path: lessonArtifactPathForDir(lessonDir, "vocab-export.json"), schemaFile: "vocab-export.schema.json", required: false },
+    { path: lessonArtifactPathForDir(lessonDir, "quiz-item-bank.json"), schemaFile: "quiz-item-bank.schema.json", required: false },
+    { path: lessonArtifactPathForDir(lessonDir, "quiz.json"), schemaFile: "quiz.schema.json", required: false },
   ];
 }
 
@@ -487,7 +567,7 @@ function globalSchemaTargets(): Array<{ path: string; schemaFile: string; requir
 export function validateLessonDir(lessonDir: string, rootInput?: string): ValidationIssue[] {
   const root = rootInput ?? deriveRootFromLessonDir(lessonDir);
   const issues: ValidationIssue[] = [];
-  const statusPath = join(lessonDir, "status.json");
+  const statusPath = lessonArtifactPathForDir(lessonDir, "status.json");
 
   if (!existsSync(statusPath)) {
     issues.push({ path: lessonDir, message: "Missing status.json" });
@@ -498,7 +578,7 @@ export function validateLessonDir(lessonDir: string, rootInput?: string): Valida
 
   if (status.state === "READY_TO_RECORD") {
     for (const file of REQUIRED_READY_FILES) {
-      const filePath = join(lessonDir, file);
+      const filePath = lessonArtifactPathForDir(lessonDir, file);
       if (!existsSync(filePath)) {
         issues.push({ path: filePath, message: "Required file missing for READY_TO_RECORD" });
       }
@@ -512,40 +592,40 @@ export function validateLessonDir(lessonDir: string, rootInput?: string): Valida
 
   issues.push(...validateSchemaTargets(root, lessonSchemaTargets(lessonDir)));
 
-  const context = join(lessonDir, "context.json");
+  const context = lessonArtifactPathForDir(lessonDir, "context.json");
   if (existsSync(context)) issues.push(...checkContext(context));
 
-  const scriptMaster = join(lessonDir, "script-master.json");
+  const scriptMaster = lessonArtifactPathForDir(lessonDir, "script-master.json");
   if (existsSync(scriptMaster)) issues.push(...checkScriptMaster(scriptMaster));
 
-  const spoken = join(lessonDir, "script-spoken.md");
+  const spoken = lessonArtifactPathForDir(lessonDir, "script-spoken.md");
   if (existsSync(spoken)) issues.push(...checkSpokenScript(spoken));
 
-  const visual = join(lessonDir, "script-visual.md");
+  const visual = lessonArtifactPathForDir(lessonDir, "script-visual.md");
   if (existsSync(visual)) issues.push(...checkVisualScript(visual));
 
-  const remotion = join(lessonDir, "remotion.json");
+  const remotion = lessonArtifactPathForDir(lessonDir, "remotion.json");
   if (existsSync(remotion)) issues.push(...checkRemotion(remotion));
 
-  const provenance = join(lessonDir, "asset-provenance.json");
+  const provenance = lessonArtifactPathForDir(lessonDir, "asset-provenance.json");
   if (existsSync(provenance)) issues.push(...checkAssetProvenance(provenance, remotion));
 
-  const pdfSource = join(lessonDir, "pdf-source.json");
+  const pdfSource = lessonArtifactPathForDir(lessonDir, "pdf-source.json");
   if (existsSync(pdfSource)) issues.push(...checkPdfSource(pdfSource));
 
-  const pdf = join(lessonDir, "pdf.md");
+  const pdf = lessonArtifactPathForDir(lessonDir, "pdf.md");
   if (existsSync(pdf)) issues.push(...checkPdf(pdf));
 
-  const flashcards = join(lessonDir, "flashcards.json");
+  const flashcards = lessonArtifactPathForDir(lessonDir, "flashcards.json");
   if (existsSync(flashcards)) issues.push(...checkFlashcards(flashcards));
 
-  const vocabExport = join(lessonDir, "vocab-export.json");
+  const vocabExport = lessonArtifactPathForDir(lessonDir, "vocab-export.json");
   if (existsSync(vocabExport)) issues.push(...checkVocabExport(vocabExport));
 
-  const quizBank = join(lessonDir, "quiz-item-bank.json");
+  const quizBank = lessonArtifactPathForDir(lessonDir, "quiz-item-bank.json");
   if (existsSync(quizBank)) issues.push(...checkQuizBank(quizBank));
 
-  const quiz = join(lessonDir, "quiz.json");
+  const quiz = lessonArtifactPathForDir(lessonDir, "quiz.json");
   if (existsSync(quiz)) issues.push(...checkQuiz(quiz));
 
   if (existsSync(statusPath)) issues.push(...checkStatus(statusPath));

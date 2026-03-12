@@ -7,7 +7,10 @@ import type {
   PlacementRecommendation,
   TopicSubscore,
 } from "@/types/assessment";
-import { getRecommendationForBand } from "@/lib/quiz/lesson-recommendations";
+import {
+  getRecommendationForBand,
+  type PlacementRecommendationMap,
+} from "@/lib/quiz/lesson-recommendations";
 
 const orderedBands: PlacementBand[] = [
   "A1.0",
@@ -235,10 +238,11 @@ export function derivePlacementBand(summary: AssessmentScoreSummary): PlacementB
 }
 
 export function buildPlacementRecommendation(
-  summary: AssessmentScoreSummary
+  summary: AssessmentScoreSummary,
+  recommendationMap: PlacementRecommendationMap
 ): PlacementRecommendation {
   const band = derivePlacementBand(summary);
-  const moduleRecommendation = getRecommendationForBand(band);
+  const moduleRecommendation = getRecommendationForBand(band, recommendationMap);
 
   const strengths = [...summary.topicSubscores]
     .sort((left, right) => {
@@ -262,7 +266,7 @@ export function buildPlacementRecommendation(
 
   return {
     band,
-    moduleNumber: moduleRecommendation.moduleNumber,
+    moduleId: moduleRecommendation.moduleId,
     moduleTitle: moduleRecommendation.moduleTitle,
     confidence: summary.confidence,
     strengths,

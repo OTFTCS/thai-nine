@@ -19,7 +19,8 @@ import {
   buildPlacementRecommendation,
   scoreAssessment,
 } from "@/lib/quiz/scoring";
-import { mockLessons } from "@/lib/mock-data";
+import type { Lesson } from "@/types/lesson";
+import type { PlacementRecommendationMap } from "@/lib/quiz/lesson-recommendations";
 
 const placementBands: PlacementBand[] = [
   "A1.0",
@@ -29,6 +30,11 @@ const placementBands: PlacementBand[] = [
   "A2.1",
   "B1-ish",
 ];
+
+interface NineModePanelProps {
+  lessons: Lesson[];
+  recommendationMap: PlacementRecommendationMap;
+}
 
 function formatAttemptDate(date: string) {
   return new Date(date).toLocaleString();
@@ -60,7 +66,7 @@ function renderChoiceText(
   return choice.english || "(no label)";
 }
 
-export function NineModePanel() {
+export function NineModePanel({ lessons, recommendationMap }: NineModePanelProps) {
   const [history] = useState<AssessmentHistoryRecord[]>(() =>
     loadAssessmentHistory()
   );
@@ -118,7 +124,7 @@ export function NineModePanel() {
     const summary = scoreAssessment(questions, selectedRecord.attempt.answers);
     const placementRecommendation =
       selectedRecord.attempt.quizKind === "placement"
-        ? buildPlacementRecommendation(summary)
+        ? buildPlacementRecommendation(summary, recommendationMap)
         : null;
 
     const misses: Array<{
@@ -144,7 +150,7 @@ export function NineModePanel() {
       placementRecommendation,
       misses,
     };
-  }, [selectedRecord]);
+  }, [selectedRecord, recommendationMap]);
 
   const saveReview = () => {
     if (!selectedRecord) {
@@ -246,7 +252,7 @@ export function NineModePanel() {
                 {selectedMetrics.placementRecommendation && (
                   <p className="text-sm text-muted-foreground">
                     Auto placement: <span className="text-foreground font-medium">{selectedMetrics.placementRecommendation.band}</span>
-                    {" "}(Module {selectedMetrics.placementRecommendation.moduleNumber})
+                    {" "}({selectedMetrics.placementRecommendation.moduleId})
                   </p>
                 )}
               </CardContent>
@@ -328,7 +334,7 @@ export function NineModePanel() {
                 <div>
                   <p className="text-sm font-medium text-foreground mb-2">Assign lessons</p>
                   <div className="grid gap-2 sm:grid-cols-2">
-                    {mockLessons.map((lesson) => (
+                    {lessons.map((lesson) => (
                       <label key={lesson.id} className="flex items-center gap-2 text-sm text-muted-foreground">
                         <input
                           type="checkbox"
@@ -336,7 +342,7 @@ export function NineModePanel() {
                           checked={draftReview.assignedLessonIds.includes(lesson.id)}
                           onChange={() => toggleLessonAssignment(lesson.id)}
                         />
-                        <span>{lesson.title}</span>
+                        <span>{lesson.id}: {lesson.title}</span>
                       </label>
                     ))}
                   </div>

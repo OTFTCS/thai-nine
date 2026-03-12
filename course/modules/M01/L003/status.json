@@ -1,11 +1,11 @@
 {
   "lessonId": "M01-L003",
-  "state": "DRAFT",
-  "updatedAt": "2026-02-26T09:06:58.114Z",
-  "validatedAt": null,
+  "state": "READY_TO_RECORD",
+  "updatedAt": "2026-03-11T07:36:46.311Z",
+  "validatedAt": "2026-03-11T07:36:46.311Z",
   "stageResults": {
     "0": "PASS",
-    "1": "PASS",
+    "1": "SKIP",
     "2": "PASS",
     "3": "PASS",
     "4": "PASS",
@@ -14,6 +14,6 @@
     "7": "PASS"
   },
   "notes": [
-    "release-gate=PASS"
+    "coverage=v-acdc9c7f8e:4/4, v-e3ef8a701b:4/4, v-7a0154647c:4/2, v-e288d14433:4/1, v-7597900aeb:4/1, v-0a54507804:4/1, v-688905b601:4/1, v-e2c4943d2f:4/1, v-af0f28e039:4/1"
   ]
 }

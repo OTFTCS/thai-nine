@@ -1,0 +1,275 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "M01-L004",
+  "sourceScript": "M01-L004-script-master.json",
+  "canvas": {
+    "width": 1920,
+    "height": 1080,
+    "leftTeachingFraction": 0.6667,
+    "rightCameraFraction": 0.3333,
+    "safeZoneLabel": "Right third reserved for Nine camera"
+  },
+  "scenes": [
+    {
+      "id": "scene-1",
+      "seconds": 36,
+      "voiceover": [
+        "Start with the first four digits you will hear all the time: ศูนย์ sǔun, หนึ่ง nùeng, สอง sǎawng, สาม sǎam.",
+        "For room numbers, phone numbers, and queue numbers, Thai usually says each digit one by one, not as one big math word.",
+        "One important beginner note: หนึ่ง often gets reduced in faster Thai later, but today we keep the full careful form so your ear has something solid to hold on to."
+      ],
+      "overlays": [
+        "Build the first digit map: 0 to 3",
+        "Show the first four digits as a clean memory set with large Thai script and Arabic numerals grouped together on the left.",
+        "ศูนย์ | sǔun | zero",
+        "หนึ่ง | nùeng | one",
+        "สอง | sǎawng | two"
+      ],
+      "teachingObjective": "Give the learner a clean starting map for zero through three and explain that everyday Thai codes are usually said digit by digit.",
+      "layout": "focus-card",
+      "visualStrategy": {
+        "onScreenGoal": "Show the first four digits as a clean memory set with large Thai script and Arabic numerals grouped together on the left.",
+        "teachingVisuals": [
+          "Large stacked cards for 0-3 with Thai script above the transliteration.",
+          "A simple line showing digit-by-digit reading for a code like 1-0-3."
+        ],
+        "teacherCues": [
+          "Pause after each digit and keep the learner on one sound at a time.",
+          "Point to the Arabic numeral only after the learner has seen the Thai script and heard the spoken form."
+        ],
+        "imageUsage": "text-only",
+        "rationale": "The digits themselves are the teaching target here, so a real-world image would distract more than it would help."
+      },
+      "thaiFocus": [
+        {
+          "thai": "ศูนย์",
+          "translit": "sǔun",
+          "english": "zero"
+        },
+        {
+          "thai": "หนึ่ง",
+          "translit": "nùeng",
+          "english": "one"
+        },
+        {
+          "thai": "สอง",
+          "translit": "sǎawng",
+          "english": "two"
+        },
+        {
+          "thai": "สาม",
+          "translit": "sǎam",
+          "english": "three"
+        }
+      ],
+      "assets": [
+        {
+          "assetId": "m01-l004-scene-1-asset-1",
+          "kind": "icon",
+          "query": "M01-L004 Numbers 0 to 10: Age, Room Numbers, and Basic Counting Build the first digit map: 0 to 3 thai learning visual",
+          "sourcePolicy": "internet-first",
+          "sourceUrl": "https://thenounproject.com/search/icons/?q=M01-L004%20Numbers%200%20to%2010%3A%20Age%2C%20Room%20Numbers%2C%20and%20Basic%20Counting%20Build%20the%20first%20digit%20map%3A%200%20to%203%20thai%20learning%20visual",
+          "license": "Noun Project search result review required",
+          "usageNotes": "Text-first scene. Optional icon fallback only if the layout needs a minimal anchor."
+        }
+      ]
+    },
+    {
+      "id": "scene-2",
+      "seconds": 36,
+      "voiceover": [
+        "Now add the middle set: สี่ sìi, ห้า hâa, หก hòk, เจ็ด jèt.",
+        "Do not treat these as just English labels with Thai written next to them. Hear the shape of each word: สี่ is long, หก is clipped, and เจ็ด ends sharply.",
+        "If you stretch หก or soften the ending in เจ็ด too much, you will sound less natural and your listening will stay fuzzy."
+      ],
+      "overlays": [
+        "Add 4 to 7 with pronunciation control",
+        "Contrast the sound-shapes of 4-7 so the learner can see long versus clipped forms without crowding the screen.",
+        "สี่ | sìi | four",
+        "ห้า | hâa | five",
+        "หก | hòk | six"
+      ],
+      "teachingObjective": "Teach the middle set where beginners often blur vowels or rush final consonants, especially with สี่, ห้า, หก, and เจ็ด.",
+      "layout": "contrast-board",
+      "visualStrategy": {
+        "onScreenGoal": "Contrast the sound-shapes of 4-7 so the learner can see long versus clipped forms without crowding the screen.",
+        "teachingVisuals": [
+          "Two-column comparison board pairing long shapes and short clipped shapes.",
+          "A rhythm bar under each digit showing whether the learner should hold or cut the sound."
+        ],
+        "teacherCues": [
+          "Model the digits once naturally and once slowly.",
+          "Use hand timing to show that หก and เจ็ด finish earlier than สี่ and ห้า."
+        ],
+        "imageUsage": "text-only",
+        "rationale": "This section is about pronunciation timing and contrast, so graphic timing cues teach better than stock imagery."
+      },
+      "thaiFocus": [
+        {
+          "thai": "สี่",
+          "translit": "sìi",
+          "english": "four"
+        },
+        {
+          "thai": "ห้า",
+          "translit": "hâa",
+          "english": "five"
+        },
+        {
+          "thai": "หก",
+          "translit": "hòk",
+          "english": "six"
+        },
+        {
+          "thai": "เจ็ด",
+          "translit": "jèt",
+          "english": "seven"
+        }
+      ],
+      "assets": [
+        {
+          "assetId": "m01-l004-scene-2-asset-1",
+          "kind": "icon",
+          "query": "M01-L004 Numbers 0 to 10: Age, Room Numbers, and Basic Counting Add 4 to 7 with pronunciation control thai learning visual",
+          "sourcePolicy": "internet-first",
+          "sourceUrl": "https://thenounproject.com/search/icons/?q=M01-L004%20Numbers%200%20to%2010%3A%20Age%2C%20Room%20Numbers%2C%20and%20Basic%20Counting%20Add%204%20to%207%20with%20pronunciation%20control%20thai%20learning%20visual",
+          "license": "Noun Project search result review required",
+          "usageNotes": "Text-first scene. Optional icon fallback only if the layout needs a minimal anchor."
+        }
+      ]
+    },
+    {
+      "id": "scene-3",
+      "seconds": 36,
+      "voiceover": [
+        "Finish the set with แปด bpàaet, เก้า gâao, and สิบ sìp.",
+        "สิบ means ten, but for now the real job is not mental arithmetic. The real job is hearing each digit clearly and saying it back clearly.",
+        "Then add the chunk เบอร์อะไร ber à-rai. เบอร์ is a very practical borrowed word for a number label, so you hear it with rooms, phones, tables, and tickets."
+      ],
+      "overlays": [
+        "Finish 8 to 10 and ask for a number",
+        "Anchor the digit set in a real-world number context so the learner sees why saying each digit separately matters.",
+        "แปด | bpàaet | eight",
+        "เก้า | gâao | nine",
+        "สิบ | sìp | ten"
+      ],
+      "teachingObjective": "Complete the 0-10 set and introduce เบอร์อะไร as a practical chunk for asking about room numbers, table numbers, and other everyday number labels.",
+      "layout": "image-anchored",
+      "visualStrategy": {
+        "onScreenGoal": "Anchor the digit set in a real-world number context so the learner sees why saying each digit separately matters.",
+        "teachingVisuals": [
+          "Large room-number example such as 5-0-2 with each Thai digit spoken separately underneath.",
+          "Short prompt card showing เบอร์อะไร on the left and a three-digit answer on the next beat."
+        ],
+        "teacherCues": [
+          "Keep the room-number example large and leave the right third empty for Nine.",
+          "Do not let the photo dominate the scene; use it only as a context anchor behind the left teaching card."
+        ],
+        "imageUsage": "real-image",
+        "rationale": "A real room-number plaque or hotel corridor sign makes the use case instantly concrete and helps the learner understand why Thai digits are often said one by one."
+      },
+      "thaiFocus": [
+        {
+          "thai": "แปด",
+          "translit": "bpàaet",
+          "english": "eight"
+        },
+        {
+          "thai": "เก้า",
+          "translit": "gâao",
+          "english": "nine"
+        },
+        {
+          "thai": "สิบ",
+          "translit": "sìp",
+          "english": "ten"
+        },
+        {
+          "thai": "เบอร์อะไร",
+          "translit": "ber à-rai",
+          "english": "what number?"
+        }
+      ],
+      "assets": [
+        {
+          "assetId": "m01-l004-scene-3-asset-1",
+          "kind": "image",
+          "query": "Thailand hotel room number door plaque",
+          "sourcePolicy": "internet-first",
+          "sourceUrl": "https://www.pexels.com/search/Thailand%20hotel%20room%20number%20door%20plaque/",
+          "license": "Pexels License",
+          "usageNotes": "Use as left-panel supporting visual only; keep text dominant."
+        }
+      ]
+    },
+    {
+      "id": "scene-4",
+      "seconds": 36,
+      "voiceover": [
+        "Numbers become much more useful when they plug into the people language you already know. From lesson three, you can now drop digits into frames such as ฉันอายุสิบปี or เขาอายุเก้าปี.",
+        "You already know pronouns like ฉัน, ผม, คุณ, and เขา. That means numbers are no longer floating on their own; they attach to real people, room numbers, and simple personal facts.",
+        "If a number comes too fast, fall back on the repair phrases from the first foundation lesson, such as ขอโทษ khǎaw-thôot, then ask again and keep the number exchange moving."
+      ],
+      "overlays": [
+        "Use numbers in short real phrases",
+        "Show numbers dropping into pronoun-led phrases so the learner sees age and room-number language as part of the same first-contact toolkit.",
+        "ฉัน | chǎn | I",
+        "เขา | khǎo | he / she",
+        "ฉันอายุสิบปี | chǎn aa-yú sìp bpii | I am ten years old"
+      ],
+      "teachingObjective": "Move from isolated digits into usable age and room-number phrases while explicitly reusing the pronoun and identity material from the rebuilt foundation lessons.",
+      "layout": "dialogue-ladder",
+      "visualStrategy": {
+        "onScreenGoal": "Show numbers dropping into pronoun-led phrases so the learner sees age and room-number language as part of the same first-contact toolkit.",
+        "teachingVisuals": [
+          "A compact phrase ladder: ฉัน -> อายุ -> สิบ -> ปี, then a second line with เขาอายุเก้าปี.",
+          "A repair-and-repeat mini-dialogue showing ขอโทษ before the room number is repeated clearly."
+        ],
+        "teacherCues": [
+          "Tie the age pattern explicitly back to the pronouns from the previous lesson.",
+          "Keep the room-number question and answer separate from the age line so the learner hears two different number jobs."
+        ],
+        "imageUsage": "text-only",
+        "rationale": "This section is about plugging digits into phrase frames, so a clean ladder teaches better than another contextual photo."
+      },
+      "thaiFocus": [
+        {
+          "thai": "ฉัน",
+          "translit": "chǎn",
+          "english": "I"
+        },
+        {
+          "thai": "เขา",
+          "translit": "khǎo",
+          "english": "he / she"
+        },
+        {
+          "thai": "ฉันอายุสิบปี",
+          "translit": "chǎn aa-yú sìp bpii",
+          "english": "I am ten years old"
+        },
+        {
+          "thai": "เขาอายุเก้าปี",
+          "translit": "khǎo aa-yú gâao bpii",
+          "english": "he / she is nine years old"
+        },
+        {
+          "thai": "ขอโทษ",
+          "translit": "khǎaw-thôot",
+          "english": "excuse me / sorry"
+        }
+      ],
+      "assets": [
+        {
+          "assetId": "m01-l004-scene-4-asset-1",
+          "kind": "icon",
+          "query": "M01-L004 Numbers 0 to 10: Age, Room Numbers, and Basic Counting Use numbers in short real phrases thai learning visual",
+          "sourcePolicy": "internet-first",
+          "sourceUrl": "https://thenounproject.com/search/icons/?q=M01-L004%20Numbers%200%20to%2010%3A%20Age%2C%20Room%20Numbers%2C%20and%20Basic%20Counting%20Use%20numbers%20in%20short%20real%20phrases%20thai%20learning%20visual",
+          "license": "Noun Project search result review required",
+          "usageNotes": "Text-first scene. Optional icon fallback only if the layout needs a minimal anchor."
+        }
+      ]
+    }
+  ]
+}

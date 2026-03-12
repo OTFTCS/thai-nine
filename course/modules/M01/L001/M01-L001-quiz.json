@@ -1,0 +1,375 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "M01-L001",
+  "passScore": 80,
+  "generatedAt": "2026-03-11T04:49:20.261Z",
+  "itemBankPath": "M01-L001-quiz-item-bank.json",
+  "questions": [
+    {
+      "id": "q01",
+      "vocabId": "v-c9337e2739",
+      "type": "thai_to_english",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "What is the best meaning of สวัสดี?",
+        "thai": "สวัสดี",
+        "translit": "sà-wàt-dii"
+      },
+      "options": [
+        "hello",
+        "hello (male speaker)",
+        "hello (female speaker)",
+        "thank you"
+      ],
+      "answer": "hello",
+      "rationale": "Maps Thai form to target meaning from script languageFocus.",
+      "bankItemId": "v-c9337e2739-thai-to-english"
+    },
+    {
+      "id": "q02",
+      "vocabId": "v-e653eb5319",
+      "type": "thai_to_english",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "What is the best meaning of สวัสดีครับ?",
+        "thai": "สวัสดีครับ",
+        "translit": "sà-wàt-dii khráp"
+      },
+      "options": [
+        "hello (male speaker)",
+        "hello",
+        "hello (female speaker)",
+        "thank you"
+      ],
+      "answer": "hello (male speaker)",
+      "rationale": "Maps Thai form to target meaning from script languageFocus.",
+      "bankItemId": "v-e653eb5319-thai-to-english"
+    },
+    {
+      "id": "q03",
+      "vocabId": "v-bccbe506b3",
+      "type": "thai_to_english",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "What is the best meaning of สวัสดีค่ะ?",
+        "thai": "สวัสดีค่ะ",
+        "translit": "sà-wàt-dii khâ"
+      },
+      "options": [
+        "hello (female speaker)",
+        "hello",
+        "hello (male speaker)",
+        "thank you"
+      ],
+      "answer": "hello (female speaker)",
+      "rationale": "Maps Thai form to target meaning from script languageFocus.",
+      "bankItemId": "v-bccbe506b3-thai-to-english"
+    },
+    {
+      "id": "q04",
+      "vocabId": "v-217b46aa5a",
+      "type": "thai_to_english",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "What is the best meaning of ขอบคุณ?",
+        "thai": "ขอบคุณ",
+        "translit": "khàawp-khun"
+      },
+      "options": [
+        "thank you",
+        "hello",
+        "hello (male speaker)",
+        "hello (female speaker)"
+      ],
+      "answer": "thank you",
+      "rationale": "Maps Thai form to target meaning from script languageFocus.",
+      "bankItemId": "v-217b46aa5a-thai-to-english"
+    },
+    {
+      "id": "q05",
+      "vocabId": "v-6fce5e8c2c",
+      "type": "thai_to_english",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "What is the best meaning of ขอโทษ?",
+        "thai": "ขอโทษ",
+        "translit": "khǎaw-thôot"
+      },
+      "options": [
+        "excuse me / sorry",
+        "hello",
+        "hello (male speaker)",
+        "hello (female speaker)"
+      ],
+      "answer": "excuse me / sorry",
+      "rationale": "Maps Thai form to target meaning from script languageFocus.",
+      "bankItemId": "v-6fce5e8c2c-thai-to-english"
+    },
+    {
+      "id": "q06",
+      "vocabId": "v-03cc3fe123",
+      "type": "thai_to_english",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "What is the best meaning of ไม่เป็นไร?",
+        "thai": "ไม่เป็นไร",
+        "translit": "mâi bpen rai"
+      },
+      "options": [
+        "it is okay / no problem",
+        "hello",
+        "hello (male speaker)",
+        "hello (female speaker)"
+      ],
+      "answer": "it is okay / no problem",
+      "rationale": "Maps Thai form to target meaning from script languageFocus.",
+      "bankItemId": "v-03cc3fe123-thai-to-english"
+    },
+    {
+      "id": "q07",
+      "vocabId": "v-a34b9ddfd4",
+      "type": "thai_to_english",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "What is the best meaning of ครับ?",
+        "thai": "ครับ",
+        "translit": "khráp"
+      },
+      "options": [
+        "male polite ending",
+        "hello",
+        "hello (male speaker)",
+        "hello (female speaker)"
+      ],
+      "answer": "male polite ending",
+      "rationale": "Maps Thai form to target meaning from script languageFocus.",
+      "bankItemId": "v-a34b9ddfd4-thai-to-english"
+    },
+    {
+      "id": "q08",
+      "vocabId": "v-e5c357ab24",
+      "type": "thai_to_english",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "What is the best meaning of ค่ะ?",
+        "thai": "ค่ะ",
+        "translit": "khâ"
+      },
+      "options": [
+        "female statement ending",
+        "hello",
+        "hello (male speaker)",
+        "hello (female speaker)"
+      ],
+      "answer": "female statement ending",
+      "rationale": "Maps Thai form to target meaning from script languageFocus.",
+      "bankItemId": "v-e5c357ab24-thai-to-english"
+    },
+    {
+      "id": "q09",
+      "vocabId": "v-8637eb381c",
+      "type": "thai_to_english",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "What is the best meaning of คะ?",
+        "thai": "คะ",
+        "translit": "khá"
+      },
+      "options": [
+        "female question ending",
+        "hello",
+        "hello (male speaker)",
+        "hello (female speaker)"
+      ],
+      "answer": "female question ending",
+      "rationale": "Maps Thai form to target meaning from script languageFocus.",
+      "bankItemId": "v-8637eb381c-thai-to-english"
+    },
+    {
+      "id": "q10",
+      "vocabId": "v-f40371ec59",
+      "type": "thai_to_english",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "What is the best meaning of ใช่?",
+        "thai": "ใช่",
+        "translit": "châi"
+      },
+      "options": [
+        "yes / that is right",
+        "hello",
+        "hello (male speaker)",
+        "hello (female speaker)"
+      ],
+      "answer": "yes / that is right",
+      "rationale": "Maps Thai form to target meaning from script languageFocus.",
+      "bankItemId": "v-f40371ec59-thai-to-english"
+    },
+    {
+      "id": "q11",
+      "vocabId": "v-cda55f5b5e",
+      "type": "thai_to_english",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "What is the best meaning of ไม่ใช่?",
+        "thai": "ไม่ใช่",
+        "translit": "mâi châi"
+      },
+      "options": [
+        "no / not right",
+        "hello",
+        "hello (male speaker)",
+        "hello (female speaker)"
+      ],
+      "answer": "no / not right",
+      "rationale": "Maps Thai form to target meaning from script languageFocus.",
+      "bankItemId": "v-cda55f5b5e-thai-to-english"
+    },
+    {
+      "id": "q12",
+      "vocabId": "v-c9337e2739",
+      "type": "english_to_thai",
+      "displayMode": "english_only",
+      "prompt": {
+        "text": "Select Thai for: hello",
+        "english": "hello"
+      },
+      "options": [
+        "สวัสดี",
+        "สวัสดีครับ",
+        "สวัสดีค่ะ",
+        "ขอบคุณ"
+      ],
+      "answer": "สวัสดี",
+      "rationale": "Reverses mapping for active recall.",
+      "bankItemId": "v-c9337e2739-english-to-thai"
+    },
+    {
+      "id": "q13",
+      "vocabId": "v-c9337e2739",
+      "type": "fill_translit",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "Type the PTM transliteration for สวัสดี.",
+        "thai": "สวัสดี"
+      },
+      "answer": "sà-wàt-dii",
+      "rationale": "Forces transliteration production with inline tone marks.",
+      "bankItemId": "v-c9337e2739-fill-translit"
+    },
+    {
+      "id": "q14",
+      "vocabId": "v-c9337e2739",
+      "type": "context_mcq",
+      "displayMode": "triplet",
+      "prompt": {
+        "text": "Choose the sentence that keeps the lesson meaning of this phrase.",
+        "thai": "สวัสดี",
+        "translit": "sà-wàt-dii",
+        "english": "hello"
+      },
+      "options": [
+        "Use สวัสดี in polite beginner conversation",
+        "Use สวัสดีครับ in polite beginner conversation",
+        "Use สวัสดีค่ะ in polite beginner conversation",
+        "Use ขอบคุณ in polite beginner conversation"
+      ],
+      "answer": "Use สวัสดี in polite beginner conversation",
+      "rationale": "Checks contextual understanding while preserving triplet exposure.",
+      "bankItemId": "v-c9337e2739-context-mcq"
+    },
+    {
+      "id": "q15",
+      "vocabId": "v-e653eb5319",
+      "type": "english_to_thai",
+      "displayMode": "english_only",
+      "prompt": {
+        "text": "Select Thai for: hello (male speaker)",
+        "english": "hello (male speaker)"
+      },
+      "options": [
+        "สวัสดีครับ",
+        "สวัสดี",
+        "สวัสดีค่ะ",
+        "ขอบคุณ"
+      ],
+      "answer": "สวัสดีครับ",
+      "rationale": "Reverses mapping for active recall.",
+      "bankItemId": "v-e653eb5319-english-to-thai"
+    },
+    {
+      "id": "q16",
+      "vocabId": "v-e653eb5319",
+      "type": "fill_translit",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "Type the PTM transliteration for สวัสดีครับ.",
+        "thai": "สวัสดีครับ"
+      },
+      "answer": "sà-wàt-dii khráp",
+      "rationale": "Forces transliteration production with inline tone marks.",
+      "bankItemId": "v-e653eb5319-fill-translit"
+    }
+  ],
+  "coverage": {
+    "minimumQuizItemsPerNewVocab": 1,
+    "perVocab": [
+      {
+        "vocabId": "v-c9337e2739",
+        "thai": "สวัสดี",
+        "quizItemCount": 4
+      },
+      {
+        "vocabId": "v-e653eb5319",
+        "thai": "สวัสดีครับ",
+        "quizItemCount": 3
+      },
+      {
+        "vocabId": "v-bccbe506b3",
+        "thai": "สวัสดีค่ะ",
+        "quizItemCount": 1
+      },
+      {
+        "vocabId": "v-217b46aa5a",
+        "thai": "ขอบคุณ",
+        "quizItemCount": 1
+      },
+      {
+        "vocabId": "v-6fce5e8c2c",
+        "thai": "ขอโทษ",
+        "quizItemCount": 1
+      },
+      {
+        "vocabId": "v-03cc3fe123",
+        "thai": "ไม่เป็นไร",
+        "quizItemCount": 1
+      },
+      {
+        "vocabId": "v-a34b9ddfd4",
+        "thai": "ครับ",
+        "quizItemCount": 1
+      },
+      {
+        "vocabId": "v-e5c357ab24",
+        "thai": "ค่ะ",
+        "quizItemCount": 1
+      },
+      {
+        "vocabId": "v-8637eb381c",
+        "thai": "คะ",
+        "quizItemCount": 1
+      },
+      {
+        "vocabId": "v-f40371ec59",
+        "thai": "ใช่",
+        "quizItemCount": 1
+      },
+      {
+        "vocabId": "v-cda55f5b5e",
+        "thai": "ไม่ใช่",
+        "quizItemCount": 1
+      }
+    ],
+    "pass": true
+  }
+}

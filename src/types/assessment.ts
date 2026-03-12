@@ -116,7 +116,7 @@ export interface LessonRecommendationLink {
 
 export interface PlacementRecommendation {
   band: PlacementBand;
-  moduleNumber: number;
+  moduleId: string;
   moduleTitle: string;
   confidence: ConfidenceBand;
   strengths: TopicSubscore[];

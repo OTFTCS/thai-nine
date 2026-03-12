@@ -1,41 +1,44 @@
-import { mockLessons } from "@/lib/mock-data";
-import { LessonGrid } from "@/components/lessons/lesson-grid";
+import Link from "next/link";
 import { ProgressBar } from "@/components/ui/progress-bar";
+import { Badge } from "@/components/ui/badge";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { getBlueprintCurriculum } from "@/lib/curriculum/blueprint-loader";
 
-export default function DashboardPage() {
-  // Mock: user is on free tier, has completed lesson 1
+export default async function DashboardPage() {
+  const curriculum = await getBlueprintCurriculum();
+  const lessons = curriculum.lessons;
+
   const mockProgress = [
     {
-      lessonId: "lesson-1",
+      lessonId: "M01-L001",
       status: "completed" as const,
       videoProgressSeconds: 720,
       completedAt: "2024-01-15",
     },
     {
-      lessonId: "lesson-2",
+      lessonId: "M01-L002",
       status: "in_progress" as const,
       videoProgressSeconds: 300,
     },
   ];
 
-  const publishedLessons = mockLessons.filter((l) => l.isPublished);
   const completedCount = mockProgress.filter(
     (p) => p.status === "completed"
   ).length;
-  const progressPercent = (completedCount / publishedLessons.length) * 100;
+  const progressPercent = (completedCount / lessons.length) * 100;
 
   return (
     <div>
       <div className="mb-8">
         <h1 className="text-3xl font-bold text-foreground">Your Lessons</h1>
         <p className="text-muted-foreground mt-1">
-          Pick up where you left off or start a new lesson
+          Full blueprint module and lesson tree (all lessons currently coming soon)
         </p>
 
         <div className="mt-4 max-w-md">
           <div className="flex justify-between text-sm text-muted-foreground mb-1">
             <span>
-              {completedCount} of {publishedLessons.length} lessons completed
+              {completedCount} of {lessons.length} lessons completed
             </span>
             <span>{Math.round(progressPercent)}%</span>
           </div>
@@ -43,11 +46,56 @@ export default function DashboardPage() {
         </div>
       </div>
 
-      <LessonGrid
-        lessons={publishedLessons}
-        progress={mockProgress}
-        userHasAccess={false}
-      />
+      <div className="space-y-4">
+        {curriculum.modules.map((module) => (
+          <Card key={module.id}>
+            <CardHeader>
+              <CardTitle className="text-xl">
+                {module.id}: {module.title}
+              </CardTitle>
+              <p className="text-sm text-muted-foreground">
+                {module.trackTitle} ({module.cefrBand})
+              </p>
+            </CardHeader>
+            <CardContent>
+              <div className="space-y-2">
+                {module.lessons.map((lesson) => {
+                  const progress = mockProgress.find((item) => item.lessonId === lesson.id);
+                  const badgeVariant =
+                    progress?.status === "completed"
+                      ? "completed"
+                      : progress?.status === "in_progress"
+                      ? "in_progress"
+                      : "new";
+                  return (
+                    <Link
+                      key={lesson.id}
+                      href={`/lessons/${lesson.id}`}
+                      className="flex items-center justify-between rounded-md border border-border px-3 py-2 hover:bg-muted/40 transition-colors"
+                    >
+                      <div>
+                        <p className="text-sm font-medium text-foreground">
+                          {lesson.id}: {lesson.title}
+                        </p>
+                        <p className="text-xs text-muted-foreground line-clamp-1">
+                          {lesson.primaryOutcome}
+                        </p>
+                      </div>
+                      <Badge variant={badgeVariant}>
+                        {progress?.status === "completed"
+                          ? "Completed"
+                          : progress?.status === "in_progress"
+                          ? "In Progress"
+                          : "Coming Soon"}
+                      </Badge>
+                    </Link>
+                  );
+                })}
+              </div>
+            </CardContent>
+          </Card>
+        ))}
+      </div>
     </div>
   );
 }

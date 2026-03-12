@@ -1,0 +1,946 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "M01-L003",
+  "lessonDir": "/Users/Shared/work/thai-nine/course/modules/M01/L003",
+  "blueprintRow": {
+    "trackId": "T01",
+    "trackTitle": "Foundations",
+    "cefrBand": "A0",
+    "moduleId": "M01",
+    "moduleTitle": "First Contact and Courtesy",
+    "moduleExitOutcome": "Learner can greet people politely, introduce themselves at a basic level, ask who/what/where questions, and survive the first minute of a conversation.",
+    "lessonId": "M01-L003",
+    "lessonTitle": "Pronouns and Who Questions",
+    "lessonPrimaryOutcome": "Learner can use basic pronouns and ask who someone is.",
+    "lessonSecondaryOutcome": "Learner can recycle recent vocabulary while using identity question with ใคร in short controlled output.",
+    "grammarFunctionPrimary": "personal pronouns",
+    "grammarFunctionSecondary": "identity question with ใคร",
+    "newVocabCore": "ฉัน = I; ผม = I (male); คุณ = you; เขา = he / she; ใคร = who; นี่ = this; คือ = is / this is",
+    "newChunksCore": "นี่คือ... = this is ...; เขาคือใคร = who is he/she?; คุณคือ...ใช่ไหม = you are ... right?",
+    "reviewVocabRequired": "ขอโทษ = sorry / excuse me; ใช่ = yes; ชื่อ = name; คน = person; ประเทศ = country; ไทย = Thailand / Thai",
+    "scriptTarget": "Track script forms for pronouns and the high-frequency word คือ.",
+    "listeningTarget": "Distinguish pronouns and who-questions in short exchanges.",
+    "speakingTarget": "Point, identify, and ask who someone is in a mini-dialogue.",
+    "lessonQuizFocus": "Pronoun choice and identity questions using คือ and ใคร.",
+    "moduleQuizLink": "M01-QUIZ",
+    "flashcardTags": "M01; L003; first-contact;politeness;survival",
+    "notes": "Primary pattern lesson. Expand range while reusing lesson 1-2 vocabulary.",
+    "sourceInspiration": "Thai With Fah first-contact pragmatics; ThaiPod101 introduction lessons; internal backwards planning."
+  },
+  "promptPath": "/Users/Shared/work/thai-nine/course/prompts/agent-prompts/stage-1-editorial-qa.prompt.md",
+  "promptMd": "# Stage 1.5 — Editorial QA Review\n\nYou are the editorial QA agent for **Immersion Thai with Nine**.\n\nYour job is to catch lesson-quality problems that deterministic schema checks cannot catch reliably.\n\nThis review happens **after stage 1 script writing** and **before deterministic stage 2 QA**.\n\n## Inputs\n\nYou will receive:\n- lesson id\n- blueprint row\n- `context.json`\n- `brief.md`\n- `script-master.json`\n- `script-spoken.md`\n- `script-visual.md`\n\n## Required output\n\nWrite:\n- `editorial-qa-report.md`\n\nYou may also edit directly, if needed:\n- `script-master.json`\n- `script-spoken.md`\n- `script-visual.md`\n\n## Mission\n\nLook for issues such as:\n- roleplay turns that do not make conversational sense\n- yes/no answers with no question\n- thank-you or apology lines used with no plausible trigger\n- phrase-checklist dialogue disguised as a scene\n- abrupt topic jumps inside the roleplay\n- explanations that name a form but do not explain what job it does\n- grammar explanation that is technically true but useless for a beginner\n- nuanced vocabulary explained too literally\n- drills that do not practise the claimed lesson target\n- review items forced in unnaturally\n\n## Priority rule\n\nPrefer **coherence and pedagogy** over preserving weak wording.\n\nIf a dialogue does not make sense, fix it.\nIf a roleplay uses the target phrases in unnatural order, fix it.\nIf a line technically contains the target vocabulary but teaches bad conversational logic, fix it.\n\n## Scope discipline\n\nDo not drift outside the blueprint lesson objective.\nDo not rewrite the whole lesson unless the whole lesson is genuinely weak.\nMake the smallest set of edits that creates a lesson Nine could teach from without silently correcting it while recording.\n\n## Specific checks\n\n### 1. Roleplay realism\n\nCheck whether:\n- each line follows naturally from the previous line\n- questions get answers\n- answers match the question asked\n- politeness particles fit the speaker role\n- the scene has a plausible real-world mini-situation\n- the roleplay demonstrates the lesson target instead of merely containing the target words\n\nIf a roleplay line exists only to force in vocabulary, rewrite it.\n\n### 2. Pragmatic sense\n\nCheck whether high-frequency phrases are used in sensible contexts.\n\nExamples of problems:\n- `ขอบคุณ` with no reason for thanks\n- `ขอโทษ` with no interruption, apology, or repair function\n- `ใช่` or `ไม่ใช่` after a statement that was not a confirmation question\n- `ไม่เป็นไร` where another response would be more natural\n\n### 3. Teaching usefulness\n\nCheck whether the lesson explains:\n- what the form means\n- what the form does socially or grammatically\n- when to use it\n- one likely beginner mistake or misuse when relevant\n\nIf a section only presents phrases without teaching why they work, strengthen it.\n\n### 4. Drill quality\n\nCheck whether drills actually practise the target skill.\n\nWeak drill examples:\n- repeating isolated words when the lesson target is a full question-answer pair\n- vague prompts like “practice this”\n- drills that do not force any choice, substitution, or production\n\n### 5. Review integration\n\nIf prior context exists, review items should feel natural.\nThey should support the scene or drill, not be pasted in because the lesson needs to “tick reuse.”\n\n## Repair approach\n\nWhen you find issues:\n1. edit the lesson files directly\n2. keep schema-valid structure intact\n3. preserve transliteration quality\n4. keep lesson scope and objective fixed\n5. then write the report\n\n## Report format\n\nThe report must be concise and explicit.\n\nUse this exact structure:\n\n# Editorial QA Report — Mxx-Lyyy\n\nResult: PASS or FAIL\n\n## Checks\n- Roleplay realism: PASS/FAIL — short reason\n- Pragmatic phrase use: PASS/FAIL — short reason\n- Teaching clarity: PASS/FAIL — short reason\n- Drill usefulness: PASS/FAIL — short reason\n- Review integration: PASS/FAIL — short reason\n\n## Edits made\n- short bullet list of what you changed\n- if no changes were needed, say `- No changes required.`\n\n## Remaining concerns\n- if PASS: `- None.`\n- if FAIL: list unresolved blockers clearly\n\n## Decision rule\n\nWrite `Result: PASS` only if you would be comfortable handing this lesson to Nine without expecting her to repair the logic live while recording.\n\nIf unresolved dialogue or pedagogy problems remain, write `Result: FAIL`.\n",
+  "contextPath": "/Users/Shared/work/thai-nine/course/modules/M01/L003/context.json",
+  "contextJson": {
+    "schemaVersion": 1,
+    "lessonId": "M01-L003",
+    "priorLessons": [
+      "M01-L001",
+      "M01-L002"
+    ],
+    "knownVocabulary": [
+      {
+        "thai": "สวัสดี",
+        "translit": "sà-wàt-dii",
+        "english": "hello",
+        "vocabId": "v-c9337e2739"
+      },
+      {
+        "thai": "สวัสดีครับ",
+        "translit": "sà-wàt-dii khráp",
+        "english": "hello (male speaker)",
+        "vocabId": "v-e653eb5319"
+      },
+      {
+        "thai": "สวัสดีค่ะ",
+        "translit": "sà-wàt-dii khâ",
+        "english": "hello (female speaker)",
+        "vocabId": "v-bccbe506b3"
+      },
+      {
+        "thai": "ขอบคุณ",
+        "translit": "khàawp-khun",
+        "english": "thank you",
+        "vocabId": "v-217b46aa5a"
+      },
+      {
+        "thai": "ขอโทษ",
+        "translit": "khǎaw-thôot",
+        "english": "excuse me / sorry",
+        "vocabId": "v-6fce5e8c2c"
+      },
+      {
+        "thai": "ไม่เป็นไร",
+        "translit": "mâi bpen rai",
+        "english": "it is okay / no problem",
+        "vocabId": "v-03cc3fe123"
+      },
+      {
+        "thai": "ครับ",
+        "translit": "khráp",
+        "english": "male polite ending",
+        "vocabId": "v-a34b9ddfd4"
+      },
+      {
+        "thai": "ค่ะ",
+        "translit": "khâ",
+        "english": "female statement ending",
+        "vocabId": "v-e5c357ab24"
+      },
+      {
+        "thai": "คะ",
+        "translit": "khá",
+        "english": "female question ending",
+        "vocabId": "v-8637eb381c"
+      },
+      {
+        "thai": "ใช่",
+        "translit": "châi",
+        "english": "yes / that is right",
+        "vocabId": "v-f40371ec59"
+      },
+      {
+        "thai": "ไม่ใช่",
+        "translit": "mâi châi",
+        "english": "no / not right",
+        "vocabId": "v-cda55f5b5e"
+      },
+      {
+        "thai": "ชื่อ",
+        "translit": "chûue",
+        "english": "name",
+        "vocabId": "v-6acb169e4b"
+      },
+      {
+        "thai": "คุณชื่ออะไร",
+        "translit": "khun chûue à-rai",
+        "english": "what is your name?",
+        "vocabId": "v-a79c6af3af"
+      },
+      {
+        "thai": "ฉันชื่อ...",
+        "translit": "chǎn chûue...",
+        "english": "my name is ...",
+        "vocabId": "v-33248cf209"
+      },
+      {
+        "thai": "ผมชื่อ...",
+        "translit": "phǒm chûue...",
+        "english": "my name is ... (male speaker)",
+        "vocabId": "v-d5ec4d10d2"
+      },
+      {
+        "thai": "ฉัน",
+        "translit": "chǎn",
+        "english": "I",
+        "vocabId": "v-0ab46f92e7"
+      },
+      {
+        "thai": "ผม",
+        "translit": "phǒm",
+        "english": "I (male)",
+        "vocabId": "v-796f86a0f6"
+      },
+      {
+        "thai": "ประเทศ",
+        "translit": "bprà-thêet",
+        "english": "country",
+        "vocabId": "v-d0c316cc2c"
+      },
+      {
+        "thai": "มาจาก",
+        "translit": "maa-jàak",
+        "english": "come from / be from",
+        "vocabId": "v-dfd8165dd5"
+      },
+      {
+        "thai": "มาจากไทย",
+        "translit": "maa-jàak thai",
+        "english": "be from Thailand",
+        "vocabId": "v-317510cace"
+      },
+      {
+        "thai": "มาจากอังกฤษ",
+        "translit": "maa-jàak ang-grìt",
+        "english": "be from England",
+        "vocabId": "v-15a452b73b"
+      },
+      {
+        "thai": "มาจากอเมริกา",
+        "translit": "maa-jàak à-mee-rí-gaa",
+        "english": "be from America",
+        "vocabId": "v-b845ab6bae"
+      },
+      {
+        "thai": "ฉันมาจาก...",
+        "translit": "chǎn maa-jàak...",
+        "english": "I am from ...",
+        "vocabId": "v-b2f0acf56a"
+      },
+      {
+        "thai": "ผมมาจาก...",
+        "translit": "phǒm maa-jàak...",
+        "english": "I am from ... (male)",
+        "vocabId": "v-64f9ed0e55"
+      }
+    ],
+    "knownGrammar": [
+      "Combine the greeting from lesson 1 with the new identity patterns so the learner can produce a practical mini-introduction.",
+      "Explain the beginner-level pronoun choice so the learner can produce self-introduction lines without freezing over identity wording.",
+      "Explain what ครับ, ค่ะ, and คะ do so the learner does not memorize them as random decoration.",
+      "Give the learner a small response toolkit so a first encounter can continue instead of stopping at one memorised line.",
+      "Teach the core greeting and show that politeness is built into the line, not added as an afterthought.",
+      "Teach the core name pattern with ชื่อ and อะไร so the learner can ask and answer the most basic identity question immediately.",
+      "Teach the origin pattern so the learner can complete a basic introduction with country information instead of stopping after the name.",
+      "Teach the two highest-value courtesy phrases and explain that one form repairs the interaction while the other closes it warmly."
+    ],
+    "reviewBuckets": [
+      {
+        "bucket": "last",
+        "offset": 1,
+        "lessonId": "M01-L002",
+        "vocabIds": [
+          "v-6acb169e4b",
+          "v-a79c6af3af",
+          "v-33248cf209",
+          "v-d5ec4d10d2"
+        ],
+        "sample": [
+          {
+            "thai": "ชื่อ",
+            "translit": "chûue",
+            "english": "name",
+            "vocabId": "v-6acb169e4b"
+          },
+          {
+            "thai": "คุณชื่ออะไร",
+            "translit": "khun chûue à-rai",
+            "english": "what is your name?",
+            "vocabId": "v-a79c6af3af"
+          },
+          {
+            "thai": "ฉันชื่อ...",
+            "translit": "chǎn chûue...",
+            "english": "my name is ...",
+            "vocabId": "v-33248cf209"
+          },
+          {
+            "thai": "ผมชื่อ...",
+            "translit": "phǒm chûue...",
+            "english": "my name is ... (male speaker)",
+            "vocabId": "v-d5ec4d10d2"
+          }
+        ]
+      },
+      {
+        "bucket": "minus3",
+        "offset": 3,
+        "lessonId": null,
+        "vocabIds": [],
+        "sample": []
+      },
+      {
+        "bucket": "minus6",
+        "offset": 6,
+        "lessonId": null,
+        "vocabIds": [],
+        "sample": []
+      },
+      {
+        "bucket": "minus8",
+        "offset": 8,
+        "lessonId": null,
+        "vocabIds": [],
+        "sample": []
+      }
+    ]
+  },
+  "briefPath": "/Users/Shared/work/thai-nine/course/modules/M01/L003/brief.md",
+  "briefMd": "# Brief — M01-L003\n\n- Lesson: `M01-L003` — `Pronouns and Who Questions`\n- Module: `M01` — `First Contact and Courtesy`\n- CEFR: `A0`\n- Target runtime: `10-13 minutes`\n- Primary objective: Learner can use basic pronouns and ask who someone is.\n- Secondary objective: Learner can recycle recent vocabulary while using identity question with `ใคร` in short controlled output.\n- Teaching frame: A learner arrives in a small class or social setting, hears introductions, and needs to identify who another person is.\n\n## Must-teach outcomes\n- Use `ฉัน | chǎn | I`, `ผม | phǒm | I (male speaker)`, and `เขา | khǎo | he / she` as practical speaker labels.\n- Use `นี่คือ... | nîi kheuu... | this is ...` to introduce a person or identify someone in front of you.\n- Ask `เขาคือใคร | khǎo kheuu khrai | who is he / she?` and `คนนี้คือใคร | khon níi kheuu khrai | who is this person?`.\n- Reuse review material such as `คุณชื่ออะไร | khun chûue à-rai | what is your name?`, `ชื่อ | chûue | name`, `ใช่ | châi | yes / that is right`, and `ประเทศ | bprà-thêet | country`.\n\n## Core vocabulary and chunks\n- `ฉัน | chǎn | I`\n- `ผม | phǒm | I (male speaker)`\n- `เขา | khǎo | he / she`\n- `นี่คือ... | nîi kheuu... | this is ...`\n- `เขาคือใคร | khǎo kheuu khrai | who is he / she?`\n- `คนนี้คือใคร | khon níi kheuu khrai | who is this person?`\n- `คุณคือ...ใช่ไหม | khun kheuu... châi mái | you are ... right?`\n- `เขามาจากไทย | khǎo maa-jàak thai | he / she is from Thailand`\n\n## Teaching constraints\n- Keep the lesson chunk-first, not chart-first.\n- Explain the job of `คือ` simply and avoid turning it into a heavy grammar lecture.\n- Keep the left two-thirds visually readable; right third stays clear for Nine.\n- Use real-world images only where they make identity and pointing more concrete.\n\n## Likely learner mistakes\n- Treating `เขาคือใคร` as the same function as `คุณชื่ออะไร`.\n- Overtranslating `คือ` as a rigid English equals sign.\n- Trying to memorise a full pronoun table instead of using a small practical set.\n- Forgetting that review items from earlier lessons should still appear inside the new exchange.\n\n## Image and visual notes\n- Section 2 benefits from a simple social introduction photo.\n- Section 3 benefits from a single portrait or person card to anchor the who-question.\n- Sections 1 and 4 should stay text-led so the sentence frames remain dominant.\n",
+  "scriptMasterPath": "/Users/Shared/work/thai-nine/course/modules/M01/L003/script-master.json",
+  "scriptMaster": {
+    "schemaVersion": 1,
+    "lessonId": "M01-L003",
+    "title": "Pronouns and Who Questions: Identify People in Simple Thai",
+    "objective": "Use basic pronouns, introduce another person with คือ, and ask who someone is in a short controlled exchange.",
+    "teachingFrame": {
+      "targetRuntimeMin": 10,
+      "targetRuntimeMax": 13,
+      "openingHook": "Open with the moment when someone points at another person and the learner needs to ask who that person is.",
+      "scenario": "A learner is meeting people in a class or social setting and needs to identify, introduce, and confirm who someone is.",
+      "learnerTakeaway": "By the end, the learner can use ฉัน, ผม, and เขา practically, introduce someone with นี่คือ..., and ask เขาคือใคร without freezing."
+    },
+    "context": {
+      "schemaVersion": 1,
+      "lessonId": "M01-L003",
+      "priorLessons": [
+        "M01-L001",
+        "M01-L002"
+      ],
+      "knownVocabulary": [
+        {
+          "thai": "สวัสดี",
+          "translit": "sà-wàt-dii",
+          "english": "hello",
+          "vocabId": "v-c9337e2739"
+        },
+        {
+          "thai": "สวัสดีครับ",
+          "translit": "sà-wàt-dii khráp",
+          "english": "hello (male speaker)",
+          "vocabId": "v-e653eb5319"
+        },
+        {
+          "thai": "สวัสดีค่ะ",
+          "translit": "sà-wàt-dii khâ",
+          "english": "hello (female speaker)",
+          "vocabId": "v-bccbe506b3"
+        },
+        {
+          "thai": "ขอบคุณ",
+          "translit": "khàawp-khun",
+          "english": "thank you",
+          "vocabId": "v-217b46aa5a"
+        },
+        {
+          "thai": "ขอโทษ",
+          "translit": "khǎaw-thôot",
+          "english": "excuse me / sorry",
+          "vocabId": "v-6fce5e8c2c"
+        },
+        {
+          "thai": "ไม่เป็นไร",
+          "translit": "mâi bpen rai",
+          "english": "it is okay / no problem",
+          "vocabId": "v-03cc3fe123"
+        },
+        {
+          "thai": "ครับ",
+          "translit": "khráp",
+          "english": "male polite ending",
+          "vocabId": "v-a34b9ddfd4"
+        },
+        {
+          "thai": "ค่ะ",
+          "translit": "khâ",
+          "english": "female statement ending",
+          "vocabId": "v-e5c357ab24"
+        },
+        {
+          "thai": "คะ",
+          "translit": "khá",
+          "english": "female question ending",
+          "vocabId": "v-8637eb381c"
+        },
+        {
+          "thai": "ใช่",
+          "translit": "châi",
+          "english": "yes / that is right",
+          "vocabId": "v-f40371ec59"
+        },
+        {
+          "thai": "ไม่ใช่",
+          "translit": "mâi châi",
+          "english": "no / not right",
+          "vocabId": "v-cda55f5b5e"
+        },
+        {
+          "thai": "ชื่อ",
+          "translit": "chûue",
+          "english": "name",
+          "vocabId": "v-6acb169e4b"
+        },
+        {
+          "thai": "คุณชื่ออะไร",
+          "translit": "khun chûue à-rai",
+          "english": "what is your name?",
+          "vocabId": "v-a79c6af3af"
+        },
+        {
+          "thai": "ฉันชื่อ...",
+          "translit": "chǎn chûue...",
+          "english": "my name is ...",
+          "vocabId": "v-33248cf209"
+        },
+        {
+          "thai": "ผมชื่อ...",
+          "translit": "phǒm chûue...",
+          "english": "my name is ... (male speaker)",
+          "vocabId": "v-d5ec4d10d2"
+        },
+        {
+          "thai": "ฉัน",
+          "translit": "chǎn",
+          "english": "I",
+          "vocabId": "v-0ab46f92e7"
+        },
+        {
+          "thai": "ผม",
+          "translit": "phǒm",
+          "english": "I (male)",
+          "vocabId": "v-796f86a0f6"
+        },
+        {
+          "thai": "ประเทศ",
+          "translit": "bprà-thêet",
+          "english": "country",
+          "vocabId": "v-d0c316cc2c"
+        },
+        {
+          "thai": "มาจาก",
+          "translit": "maa-jàak",
+          "english": "come from / be from",
+          "vocabId": "v-dfd8165dd5"
+        },
+        {
+          "thai": "มาจากไทย",
+          "translit": "maa-jàak thai",
+          "english": "be from Thailand",
+          "vocabId": "v-317510cace"
+        },
+        {
+          "thai": "มาจากอังกฤษ",
+          "translit": "maa-jàak ang-grìt",
+          "english": "be from England",
+          "vocabId": "v-15a452b73b"
+        },
+        {
+          "thai": "มาจากอเมริกา",
+          "translit": "maa-jàak à-mee-rí-gaa",
+          "english": "be from America",
+          "vocabId": "v-b845ab6bae"
+        },
+        {
+          "thai": "ฉันมาจาก...",
+          "translit": "chǎn maa-jàak...",
+          "english": "I am from ...",
+          "vocabId": "v-b2f0acf56a"
+        },
+        {
+          "thai": "ผมมาจาก...",
+          "translit": "phǒm maa-jàak...",
+          "english": "I am from ... (male)",
+          "vocabId": "v-64f9ed0e55"
+        }
+      ],
+      "knownGrammar": [
+        "Combine the greeting from lesson 1 with the new identity patterns so the learner can produce a practical mini-introduction.",
+        "Explain the beginner-level pronoun choice so the learner can produce self-introduction lines without freezing over identity wording.",
+        "Explain what ครับ, ค่ะ, and คะ do so the learner does not memorize them as random decoration.",
+        "Give the learner a small response toolkit so a first encounter can continue instead of stopping at one memorised line.",
+        "Teach the core greeting and show that politeness is built into the line, not added as an afterthought.",
+        "Teach the core name pattern with ชื่อ and อะไร so the learner can ask and answer the most basic identity question immediately.",
+        "Teach the origin pattern so the learner can complete a basic introduction with country information instead of stopping after the name.",
+        "Teach the two highest-value courtesy phrases and explain that one form repairs the interaction while the other closes it warmly."
+      ],
+      "reviewBuckets": [
+        {
+          "bucket": "last",
+          "offset": 1,
+          "lessonId": "M01-L002",
+          "vocabIds": [
+            "v-6acb169e4b",
+            "v-a79c6af3af",
+            "v-33248cf209",
+            "v-d5ec4d10d2"
+          ],
+          "sample": [
+            {
+              "thai": "ชื่อ",
+              "translit": "chûue",
+              "english": "name",
+              "vocabId": "v-6acb169e4b"
+            },
+            {
+              "thai": "คุณชื่ออะไร",
+              "translit": "khun chûue à-rai",
+              "english": "what is your name?",
+              "vocabId": "v-a79c6af3af"
+            },
+            {
+              "thai": "ฉันชื่อ...",
+              "translit": "chǎn chûue...",
+              "english": "my name is ...",
+              "vocabId": "v-33248cf209"
+            },
+            {
+              "thai": "ผมชื่อ...",
+              "translit": "phǒm chûue...",
+              "english": "my name is ... (male speaker)",
+              "vocabId": "v-d5ec4d10d2"
+            }
+          ]
+        },
+        {
+          "bucket": "minus3",
+          "offset": 3,
+          "lessonId": null,
+          "vocabIds": [],
+          "sample": []
+        },
+        {
+          "bucket": "minus6",
+          "offset": 6,
+          "lessonId": null,
+          "vocabIds": [],
+          "sample": []
+        },
+        {
+          "bucket": "minus8",
+          "offset": 8,
+          "lessonId": null,
+          "vocabIds": [],
+          "sample": []
+        }
+      ]
+    },
+    "sections": [
+      {
+        "id": "s1",
+        "heading": "Use pronouns as practical speaker labels",
+        "purpose": "Teach pronouns as tools for basic interaction, not as abstract dictionary entries, so the learner can point to self and others naturally.",
+        "spokenNarration": [
+          "Today we add a small set of pronouns, but we keep them practical. ฉัน chǎn and ผม phǒm are both ways to say I, while เขา khǎo points to another person as he or she.",
+          "Thai beginners often try to memorise a long pronoun chart. That is not the goal here. The goal is to know which word helps you identify yourself and which word helps you refer to someone else.",
+          "You already know the review question คุณชื่ออะไร khun chûue à-rai. Inside that full question, คุณ is the word for you, so the learner is already hearing pronouns in a useful pattern."
+        ],
+        "onScreenBullets": [
+          "ฉัน | chǎn | I",
+          "ผม | phǒm | I (male speaker)",
+          "เขา | khǎo | he / she",
+          "คุณชื่ออะไร | khun chûue à-rai | what is your name?"
+        ],
+        "drills": [
+          "Point-and-say drill: teacher points to self or another person and learner chooses ฉัน, ผม, or เขา aloud.",
+          "Replacement drill: learner keeps the same sentence slot but swaps ฉัน / ผม / เขา depending on the speaker card."
+        ],
+        "languageFocus": [
+          {
+            "thai": "ฉัน",
+            "translit": "chǎn",
+            "english": "I",
+            "vocabId": "v-0ab46f92e7"
+          },
+          {
+            "thai": "ผม",
+            "translit": "phǒm",
+            "english": "I (male speaker)",
+            "vocabId": "v-acdc9c7f8e"
+          },
+          {
+            "thai": "เขา",
+            "translit": "khǎo",
+            "english": "he / she",
+            "vocabId": "v-e3ef8a701b"
+          },
+          {
+            "thai": "คุณชื่ออะไร",
+            "translit": "khun chûue à-rai",
+            "english": "what is your name?",
+            "vocabId": "v-a79c6af3af"
+          }
+        ],
+        "visualPlan": {
+          "leftPanelLayout": "contrast-board",
+          "onScreenGoal": "Show self-versus-other pronouns as usable speaking roles, anchored by one familiar review question.",
+          "teachingVisuals": [
+            "Three speaker chips for ฉัน, ผม, and เขา with simple role labels underneath.",
+            "A review strip for คุณชื่ออะไร to show where คุณ naturally appears as you."
+          ],
+          "teacherCues": [
+            "Keep the contrast practical: self versus another person, not a full grammar table.",
+            "Reinforce that Thai often drops pronouns when context is obvious, but today we keep them visible for control."
+          ],
+          "imageSupport": {
+            "helpful": false,
+            "priority": "avoid",
+            "rationale": "Pronoun contrast is clearer as speaker-role cards than as photographs.",
+            "searchQueries": [],
+            "sourceHints": [
+              "text-only role chips",
+              "speaker-card contrast board"
+            ]
+          }
+        }
+      },
+      {
+        "id": "s2",
+        "heading": "Use นี่คือ... to introduce and identify",
+        "purpose": "Explain how คือ works in beginner identity lines so the learner can introduce someone or identify what is in front of them without treating it as a rigid English equals sign.",
+        "spokenNarration": [
+          "The next frame is นี่คือ... nîi kheuu.... A natural translation is this is ..., and Thai uses it to introduce a person or identify something in front of you.",
+          "The high-frequency word คือ kheuu is doing a linking job here. It connects the person or thing you are talking about with the name or identity that comes after it.",
+          "A common beginner mistake is to think คือ must always be translated word for word as is. It is better to hear the whole frame as an introducing pattern: นี่คือ..., เขาคือ..., or คุณคือ...ใช่ไหม."
+        ],
+        "onScreenBullets": [
+          "นี่คือ... | nîi kheuu... | this is ...",
+          "เขาคือ... | khǎo kheuu... | he / she is ...",
+          "คุณคือ...ใช่ไหม | khun kheuu... châi mái | you are ... right?",
+          "ไม่ใช่ | mâi châi | no / not right"
+        ],
+        "drills": [
+          "Introduction drill: teacher points to a photo card and learner says นี่คือ... with the supplied name or role.",
+          "Confirmation drill: teacher says คุณคือ...ใช่ไหม and learner answers ใช่ or ไม่ใช่."
+        ],
+        "languageFocus": [
+          {
+            "thai": "นี่คือ...",
+            "translit": "nîi kheuu...",
+            "english": "this is ...",
+            "vocabId": "v-7a0154647c"
+          },
+          {
+            "thai": "เขาคือ...",
+            "translit": "khǎo kheuu...",
+            "english": "he / she is ...",
+            "vocabId": "v-e288d14433"
+          },
+          {
+            "thai": "คุณคือ...ใช่ไหม",
+            "translit": "khun kheuu... châi mái",
+            "english": "you are ... right?",
+            "vocabId": "v-7597900aeb"
+          },
+          {
+            "thai": "ไม่ใช่",
+            "translit": "mâi châi",
+            "english": "no / not right",
+            "vocabId": "v-cda55f5b5e"
+          }
+        ],
+        "visualPlan": {
+          "leftPanelLayout": "dialogue-ladder",
+          "onScreenGoal": "Make the linking job of คือ visible through short identity frames, not through dense grammar notes.",
+          "teachingVisuals": [
+            "A three-rung ladder: นี่คือ..., เขาคือ..., คุณคือ...ใช่ไหม.",
+            "A small yes/no response chip showing ใช่ versus ไม่ใช่ after the confirmation question."
+          ],
+          "teacherCues": [
+            "Describe คือ as a linking word with a job, not as a direct dictionary translation only.",
+            "Keep the identity frame on screen while swapping only the final slot."
+          ],
+          "imageSupport": {
+            "helpful": true,
+            "priority": "supporting",
+            "rationale": "A simple real-world social image helps the learner understand that นี่คือ... is used to introduce a person standing there, not only to label objects.",
+            "searchQueries": [
+              "two people introducing a third person in classroom",
+              "small group introduction language class"
+            ],
+            "sourceHints": [
+              "Pexels",
+              "Wikimedia Commons",
+              "official classroom photography"
+            ],
+            "aiFallbackPrompt": "Friendly adult language-class scene, one speaker introducing another person to a learner, clean medium shot, uncluttered background, realistic classroom, composition weighted to the left two-thirds for lesson overlay use."
+          }
+        }
+      },
+      {
+        "id": "s3",
+        "heading": "Ask who someone is with ใคร",
+        "purpose": "Teach the identity question with ใคร so the learner can ask who a person is in a short natural exchange and not confuse it with the earlier name question.",
+        "spokenNarration": [
+          "Now we ask the new question: เขาคือใคร khǎo kheuu khrai. In natural English that is who is he or who is she, depending on context.",
+          "This is different from คุณชื่ออะไร. The name question asks for a name directly, but เขาคือใคร asks for identity first, often when you are looking at or hearing about another person.",
+          "A useful extension is คนนี้คือใคร khon níi kheuu khrai, who is this person? That sounds natural when you can point to someone or a photo in front of you."
+        ],
+        "onScreenBullets": [
+          "เขาคือใคร | khǎo kheuu khrai | who is he / she?",
+          "คนนี้คือใคร | khon níi kheuu khrai | who is this person?",
+          "ชื่อ | chûue | name",
+          "ใช่ | châi | yes / that is right"
+        ],
+        "drills": [
+          "Picture cue drill: teacher shows a person card and learner asks เขาคือใคร or คนนี้คือใคร.",
+          "Repair drill: teacher gives a wrong identification and learner answers ไม่ใช่, then asks the who-question again."
+        ],
+        "languageFocus": [
+          {
+            "thai": "เขาคือใคร",
+            "translit": "khǎo kheuu khrai",
+            "english": "who is he / she?",
+            "vocabId": "v-0a54507804"
+          },
+          {
+            "thai": "คนนี้คือใคร",
+            "translit": "khon níi kheuu khrai",
+            "english": "who is this person?",
+            "vocabId": "v-688905b601"
+          },
+          {
+            "thai": "ชื่อ",
+            "translit": "chûue",
+            "english": "name",
+            "vocabId": "v-6acb169e4b"
+          },
+          {
+            "thai": "ใช่",
+            "translit": "châi",
+            "english": "yes / that is right",
+            "vocabId": "v-f40371ec59"
+          }
+        ],
+        "visualPlan": {
+          "leftPanelLayout": "image-anchored",
+          "onScreenGoal": "Anchor the who-question to a visible person so the learner feels the difference between asking for a name and asking for identity.",
+          "teachingVisuals": [
+            "A photo-card frame on the left with the question เขาคือใคร above it.",
+            "A contrast strip below showing คุณชื่ออะไร versus เขาคือใคร."
+          ],
+          "teacherCues": [
+            "Stress the difference in target: name question versus identity question.",
+            "Use the image only as an anchor and keep the wording large and readable."
+          ],
+          "imageSupport": {
+            "helpful": true,
+            "priority": "essential",
+            "rationale": "A single person photo or portrait card makes the who-question concrete and supports pointing-based practice.",
+            "searchQueries": [
+              "single person portrait simple background looking at camera",
+              "student portrait ID style simple background"
+            ],
+            "sourceHints": [
+              "Pexels",
+              "Unsplash",
+              "official staff portrait examples"
+            ]
+          }
+        }
+      },
+      {
+        "id": "s4",
+        "heading": "Build a mini identity exchange with review",
+        "purpose": "Combine the new who-question pattern with earlier name and country material so the learner can follow and produce a short first-meeting dialogue.",
+        "spokenNarration": [
+          "Now we connect the new lesson to the earlier first-contact material. You can greet, ask who someone is, and then confirm one more detail such as the country.",
+          "This is where review matters. We reuse ชื่อ chûue, ประเทศ bprà-thêet, ใช่ châi, and มาจากไทย maa-jàak thai so the learner builds a small network instead of isolated lesson boxes.",
+          "Notice the progression: first identify the person with คนนี้คือใคร or เขาคือใคร, then name the person, then confirm one more fact such as the country. That is how a real short conversation grows."
+        ],
+        "onScreenBullets": [
+          "ขอโทษนะ | khǎaw-thôot ná | excuse me",
+          "คนนี้คือใคร | khon níi kheuu khrai | who is this person?",
+          "ประเทศ | bprà-thêet | country",
+          "เขามาจากไทย | khǎo maa-jàak thai | he / she is from Thailand",
+          "คุณคือ...ใช่ไหม | khun kheuu... châi mái | you are ... right?"
+        ],
+        "drills": [
+          "Chain drill: learner says สวัสดี, asks คนนี้คือใคร, then follows with a country question or confirmation question.",
+          "Information-build drill: teacher reveals one detail at a time and learner turns it into an identity sentence or confirmation question."
+        ],
+        "languageFocus": [
+          {
+            "thai": "ขอโทษนะ",
+            "translit": "khǎaw-thôot ná",
+            "english": "excuse me",
+            "vocabId": "v-e2c4943d2f"
+          },
+          {
+            "thai": "คนนี้คือใคร",
+            "translit": "khon níi kheuu khrai",
+            "english": "who is this person?",
+            "vocabId": "v-688905b601"
+          },
+          {
+            "thai": "ประเทศ",
+            "translit": "bprà-thêet",
+            "english": "country",
+            "vocabId": "v-d0c316cc2c"
+          },
+          {
+            "thai": "เขามาจากไทย",
+            "translit": "khǎo maa-jàak thai",
+            "english": "he / she is from Thailand",
+            "vocabId": "v-af0f28e039"
+          }
+        ],
+        "visualPlan": {
+          "leftPanelLayout": "drill-stack",
+          "onScreenGoal": "Show the conversation growing step by step from greeting to who-question to name and country follow-up.",
+          "teachingVisuals": [
+            "A four-step conversation stack with greeting, who-question, answer, and country follow-up.",
+            "A small country tag chip next to เขามาจากไทย to connect review from the previous lesson."
+          ],
+          "teacherCues": [
+            "Keep the dialogue build cumulative so the learner sees how older chunks stay alive.",
+            "Make the identity question visually dominant before the country follow-up appears."
+          ],
+          "imageSupport": {
+            "helpful": false,
+            "priority": "avoid",
+            "rationale": "The conversation build is clearer as a staged text ladder than as another photo.",
+            "searchQueries": [],
+            "sourceHints": [
+              "text-only conversation stack"
+            ]
+          }
+        }
+      }
+    ],
+    "roleplay": {
+      "scenario": "A learner arrives at a small Thai class and asks about another student.",
+      "lines": [
+        {
+          "speaker": "A",
+          "thai": "สวัสดีค่ะ",
+          "translit": "sà-wàt-dii khâ",
+          "english": "Hello."
+        },
+        {
+          "speaker": "B",
+          "thai": "สวัสดีครับ",
+          "translit": "sà-wàt-dii khráp",
+          "english": "Hello."
+        },
+        {
+          "speaker": "A",
+          "thai": "ขอโทษนะคะ คนนี้คือใครคะ",
+          "translit": "khǎaw-thôot ná khá khon níi kheuu khrai khá",
+          "english": "Excuse me, who is this person?"
+        },
+        {
+          "speaker": "B",
+          "thai": "คนนี้คือไมค์ครับ",
+          "translit": "khon níi kheuu Mike khráp",
+          "english": "This is Mike."
+        },
+        {
+          "speaker": "A",
+          "thai": "เขามาจากประเทศอะไรคะ",
+          "translit": "khǎo maa-jàak bprà-thêet à-rai khá",
+          "english": "What country is he from?"
+        },
+        {
+          "speaker": "B",
+          "thai": "เขามาจากอังกฤษครับ",
+          "translit": "khǎo maa-jàak ang-grìt khráp",
+          "english": "He is from England."
+        },
+        {
+          "speaker": "A",
+          "thai": "อังกฤษใช่ไหมคะ",
+          "translit": "ang-grìt châi mái khá",
+          "english": "England, right?"
+        },
+        {
+          "speaker": "B",
+          "thai": "ใช่ครับ",
+          "translit": "châi khráp",
+          "english": "Yes."
+        }
+      ]
+    },
+    "recap": [
+      "Use pronouns as speaking tools: ฉัน and ผม for yourself, เขา for another person.",
+      "Use นี่คือ... and เขาคือ... to introduce or identify, not as rigid word-for-word translations only.",
+      "Ask เขาคือใคร or คนนี้คือใคร when you want identity first, not just a name.",
+      "Reuse ชื่อ, ประเทศ, and earlier greeting material so the dialogue grows naturally."
+    ],
+    "qaChecks": [
+      {
+        "id": "tone-inline",
+        "description": "All transliteration uses PTM inline tone marks; superscripts forbidden",
+        "pass": true,
+        "evidence": "All transliteration strings passed inline-tone checks"
+      },
+      {
+        "id": "triplets",
+        "description": "Thai/translit/English triplets are complete for learner-facing script content",
+        "pass": true,
+        "evidence": "Sections and on-screen bullets contain complete triplets"
+      },
+      {
+        "id": "drills",
+        "description": "Each section includes active drill",
+        "pass": true,
+        "evidence": "Each section has >=1 drill"
+      },
+      {
+        "id": "section-count",
+        "description": "Lesson contains at least 4 teaching sections",
+        "pass": true,
+        "evidence": "Legacy lesson exemption applied with 4 sections"
+      },
+      {
+        "id": "section-depth",
+        "description": "Each section includes at least 3 spoken narration lines",
+        "pass": true,
+        "evidence": "Legacy lesson exemption applied"
+      },
+      {
+        "id": "roleplay",
+        "description": "Scenario roleplay included and substantial",
+        "pass": true,
+        "evidence": "Roleplay contains 8 lines"
+      },
+      {
+        "id": "roleplay-duplicates",
+        "description": "Roleplay does not repeat exact lines",
+        "pass": true,
+        "evidence": "All roleplay lines are distinct"
+      },
+      {
+        "id": "roleplay-turn-taking",
+        "description": "Roleplay alternates speakers cleanly",
+        "pass": true,
+        "evidence": "Roleplay alternates speakers line by line"
+      },
+      {
+        "id": "roleplay-answer-logic",
+        "description": "Yes/no answer particles appear only after a nearby question or confirmation turn",
+        "pass": true,
+        "evidence": "Answer particles follow question-like turns when used"
+      },
+      {
+        "id": "roleplay-question-target",
+        "description": "Question-target lessons include at least one question-like roleplay turn",
+        "pass": true,
+        "evidence": "Roleplay includes a question-like turn"
+      },
+      {
+        "id": "recap",
+        "description": "Recap includes at least 3 review items",
+        "pass": true,
+        "evidence": "Recap contains 4 items"
+      },
+      {
+        "id": "review-reuse",
+        "description": "Lesson reuses at least 2 prior items when prior lesson context exists",
+        "pass": true,
+        "evidence": "Reused 2 prior vocabulary items in language focus"
+      },
+      {
+        "id": "teaching-frame",
+        "description": "Lesson includes a clear teaching frame with runtime and learner takeaway",
+        "pass": true,
+        "evidence": "Legacy lesson exemption applied"
+      },
+      {
+        "id": "visual-plan",
+        "description": "Each section includes a left-panel visual plan and explicit image decision",
+        "pass": true,
+        "evidence": "Legacy lesson exemption applied"
+      },
+      {
+        "id": "asset-research",
+        "description": "Lesson provides at least one concrete image research query when visuals would help",
+        "pass": true,
+        "evidence": "Legacy lesson exemption applied"
+      },
+      {
+        "id": "policy",
+        "description": "Transliteration + image sourcing policies are declared",
+        "pass": true,
+        "evidence": "Policy object present with required enum values"
+      }
+    ],
+    "policies": {
+      "transliteration": "PTM_ADAPTED_INLINE_TONES",
+      "imageSourcing": "INTERNET_FIRST_NO_GENERATIVE_DEFAULT"
+    }
+  },
+  "scriptSpokenPath": "/Users/Shared/work/thai-nine/course/modules/M01/L003/script-spoken.md",
+  "scriptSpokenMd": "# Spoken Script — M01-L003\n\n## Opening\nSometimes the next problem in a conversation is not your own name.\n\nIt is this: someone points at another person, and you want to ask who that person is.\n\nToday we build the Thai you need for that moment, and we connect it to the greeting, name, and country material you already learned.\n\n---\n\n## Section 1 — Use pronouns as practical speaker labels\nStart with a very small useful set.\n\n- ฉัน | chǎn | I\n- ผม | phǒm | I (male speaker)\n- เขา | khǎo | he / she\n- คุณชื่ออะไร | khun chûue à-rai | what is your name?\n\nDo not treat this like a huge grammar chart.\n\nThe real goal is simple: say who is speaking, and point to another person when needed.\n\nNotice that you already know คุณ inside คุณชื่ออะไร. So this lesson expands what you can do with people words you are already hearing.\n\n---\n\n## Section 2 — Use นี่คือ... to introduce and identify\nNow add the frame that lets you introduce someone.\n\n- นี่คือ... | nîi kheuu... | this is ...\n- เขาคือ... | khǎo kheuu... | he / she is ...\n- คุณคือ...ใช่ไหม | khun kheuu... châi mái | you are ... right?\n- ไม่ใช่ | mâi châi | no / not right\n\nThe word คือ is a linker here. It connects the person you are talking about with the name or identity that follows.\n\nSo instead of translating every word one by one, hear the whole pattern as an introduction frame.\n\n---\n\n## Section 3 — Ask who someone is with ใคร\nNow ask the real lesson question.\n\n- เขาคือใคร | khǎo kheuu khrai | who is he / she?\n- คนนี้คือใคร | khon níi kheuu khrai | who is this person?\n- ชื่อ | chûue | name\n- ใช่ | châi | yes / that is right\n\nThis is not the same as คุณชื่ออะไร.\n\nคุณชื่ออะไร asks directly for the name. เขาคือใคร asks for identity first, often when you are looking at another person or a photo.\n\nThat distinction matters because it makes your Thai feel more natural and less translated from English.\n\n---\n\n## Section 4 — Build a mini identity exchange with review\nNow we connect the new lesson to the earlier first-contact material.\n\nYou can greet, ask who someone is, and then confirm one more detail such as the country.\n\nThis is where review matters. We reuse ชื่อ, ประเทศ, ใช่, and มาจากไทย so the learner builds a small network instead of isolated lesson boxes.\n\nNotice the progression: first identify the person with คนนี้คือใคร or เขาคือใคร, then name the person, then confirm one more fact such as the country.\n\n---\n\n## Roleplay — Asking about another student\nA: สวัสดีค่ะ | sà-wàt-dii khâ | Hello.\n\nB: สวัสดีครับ | sà-wàt-dii khráp | Hello.\n\nA: ขอโทษนะคะ คนนี้คือใครคะ | khǎaw-thôot ná khá khon níi kheuu khrai khá | Excuse me, who is this person?\n\nB: คนนี้คือไมค์ครับ | khon níi kheuu Mike khráp | This is Mike.\n\nA: เขามาจากประเทศอะไรคะ | khǎo maa-jàak bprà-thêet à-rai khá | What country is he from?\n\nB: เขามาจากอังกฤษครับ | khǎo maa-jàak ang-grìt khráp | He is from England.\n\nA: อังกฤษใช่ไหมคะ | ang-grìt châi mái khá | England, right?\n\nB: ใช่ครับ | châi khráp | Yes.\n\n---\n\n## Recap\n- Use a small pronoun set practically, not as a memorised chart.\n- Use `นี่คือ...` and `เขาคือ...` to introduce or identify.\n- Use `เขาคือใคร` and `คนนี้คือใคร` when you want identity first, not just a name.\n- Reuse `ชื่อ`, `ประเทศ`, greetings, and country language so the dialogue grows naturally.\n",
+  "scriptVisualPath": "/Users/Shared/work/thai-nine/course/modules/M01/L003/script-visual.md",
+  "scriptVisualMd": "# Visual Script — M01-L003 (Pronouns and Who Questions)\n\n## Frame rule\n- Keep all teaching visuals in the left two-thirds.\n- The right third stays clear for Nine's talking head.\n- Prioritise identity frames and who-questions over decorative imagery.\n\n## Section 1 — Use pronouns as practical speaker labels\n- Layout: contrast-board\n- Learning focus: self versus another person\n- Highlighted terms:\n  - ฉัน | chǎn | I\n  - ผม | phǒm | I (male speaker)\n  - เขา | khǎo | he / she\n  - คุณชื่ออะไร | khun chûue à-rai | what is your name?\n- On-screen plan:\n  - three speaker chips\n  - one review strip for คุณชื่ออะไร\n- Visual support choice: text-only\n\n## Section 2 — Use นี่คือ... to introduce and identify\n- Layout: dialogue-ladder\n- Learning focus: introduction frame with คือ\n- Highlighted terms:\n  - นี่คือ... | nîi kheuu... | this is ...\n  - เขาคือ... | khǎo kheuu... | he / she is ...\n  - คุณคือ...ใช่ไหม | khun kheuu... châi mái | you are ... right?\n  - ไม่ใช่ | mâi châi | no / not right\n- On-screen plan:\n  - three-rung identity ladder\n  - small yes/no response chip\n- Real-world image helpful: yes, but only lightly\n- Search ideas:\n  - two people introducing a third person in classroom\n  - small group introduction language class\n\n## Section 3 — Ask who someone is with ใคร\n- Layout: image-anchored\n- Learning focus: identity question versus name question\n- Highlighted terms:\n  - เขาคือใคร | khǎo kheuu khrai | who is he / she?\n  - คนนี้คือใคร | khon níi kheuu khrai | who is this person?\n  - ชื่อ | chûue | name\n  - ใช่ | châi | yes / that is right\n- On-screen plan:\n  - person card with the question above it\n  - contrast strip below for คุณชื่ออะไร versus เขาคือใคร\n- Real-world image helpful: yes\n- Search ideas:\n  - single person portrait simple background looking at camera\n  - student portrait ID style simple background\n\n## Section 4 — Build a mini identity exchange with review\n- Layout: drill-stack\n- Learning focus: greeting to who-question to country follow-up\n- Highlighted terms:\n  - ขอโทษนะ | khǎaw-thôot ná | excuse me\n  - คนนี้คือใคร | khon níi kheuu khrai | who is this person?\n  - ประเทศ | bprà-thêet | country\n  - เขามาจากไทย | khǎo maa-jàak thai | he / she is from Thailand\n  - คุณคือ...ใช่ไหม | khun kheuu... châi mái | you are ... right?\n- On-screen plan:\n  - four-step conversation stack\n  - small country tag chip\n  - reveal one line at a time\n- Visual support choice: text-only\n\n## Roleplay beat\n- Show one turn at a time on the left side.\n- Keep the who-question and country question visually separate.\n- Let อังกฤษใช่ไหมคะ and ใช่ครับ appear as a tight confirmation pair.\n- Do not let the person-image anchor crowd the right-third camera zone.\n",
+  "outputReportPath": "/Users/Shared/work/thai-nine/course/modules/M01/L003/editorial-qa-report.md"
+}

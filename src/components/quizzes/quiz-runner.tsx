@@ -348,7 +348,7 @@ export function QuizRunner({
     quizKind,
     activeTrack
   );
-  const showPromptThai = shouldShowAudioPromptThai(quizKind, activeTrack);
+  const showPromptThai = shouldShowAudioPromptThai(quizKind);
 
   const orderedChoiceIds =
     attempt.choiceOrderByQuestion[currentQuestion.id] ||

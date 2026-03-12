@@ -1,0 +1,171 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "M01-L002",
+  "cards": [
+    {
+      "id": "m01-l002-c01",
+      "vocabId": "v-6acb169e4b",
+      "front": "ชื่อ",
+      "back": "name",
+      "translit": "chûue",
+      "tags": [
+        "M01-L002",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l002-c02",
+      "vocabId": "v-a79c6af3af",
+      "front": "คุณชื่ออะไร",
+      "back": "what is your name?",
+      "translit": "khun chûue à-rai",
+      "tags": [
+        "M01-L002",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l002-c03",
+      "vocabId": "v-33248cf209",
+      "front": "ฉันชื่อ...",
+      "back": "my name is ...",
+      "translit": "chǎn chûue...",
+      "tags": [
+        "M01-L002",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l002-c04",
+      "vocabId": "v-d5ec4d10d2",
+      "front": "ผมชื่อ...",
+      "back": "my name is ... (male speaker)",
+      "translit": "phǒm chûue...",
+      "tags": [
+        "M01-L002",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l002-c05",
+      "vocabId": "v-0ab46f92e7",
+      "front": "ฉัน",
+      "back": "I",
+      "translit": "chǎn",
+      "tags": [
+        "M01-L002",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l002-c06",
+      "vocabId": "v-796f86a0f6",
+      "front": "ผม",
+      "back": "I (male)",
+      "translit": "phǒm",
+      "tags": [
+        "M01-L002",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l002-c07",
+      "vocabId": "v-d0c316cc2c",
+      "front": "ประเทศ",
+      "back": "country",
+      "translit": "bprà-thêet",
+      "tags": [
+        "M01-L002",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l002-c08",
+      "vocabId": "v-dfd8165dd5",
+      "front": "มาจาก",
+      "back": "come from / be from",
+      "translit": "maa-jàak",
+      "tags": [
+        "M01-L002",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l002-c09",
+      "vocabId": "v-317510cace",
+      "front": "มาจากไทย",
+      "back": "be from Thailand",
+      "translit": "maa-jàak thai",
+      "tags": [
+        "M01-L002",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l002-c10",
+      "vocabId": "v-15a452b73b",
+      "front": "มาจากอังกฤษ",
+      "back": "be from England",
+      "translit": "maa-jàak ang-grìt",
+      "tags": [
+        "M01-L002",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l002-c11",
+      "vocabId": "v-b845ab6bae",
+      "front": "มาจากอเมริกา",
+      "back": "be from America",
+      "translit": "maa-jàak à-mee-rí-gaa",
+      "tags": [
+        "M01-L002",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l002-c12",
+      "vocabId": "v-c9337e2739",
+      "front": "สวัสดี",
+      "back": "hello",
+      "translit": "sà-wàt-dii",
+      "tags": [
+        "M01-L002",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l002-c13",
+      "vocabId": "v-217b46aa5a",
+      "front": "ขอบคุณ",
+      "back": "thank you",
+      "translit": "khàawp-khun",
+      "tags": [
+        "M01-L002",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l002-c14",
+      "vocabId": "v-b2f0acf56a",
+      "front": "ฉันมาจาก...",
+      "back": "I am from ...",
+      "translit": "chǎn maa-jàak...",
+      "tags": [
+        "M01-L002",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l002-c15",
+      "vocabId": "v-64f9ed0e55",
+      "front": "ผมมาจาก...",
+      "back": "I am from ... (male)",
+      "translit": "phǒm maa-jàak...",
+      "tags": [
+        "M01-L002",
+        "core"
+      ]
+    }
+  ]
+}

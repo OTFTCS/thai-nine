@@ -1,9 +1,19 @@
 #!/usr/bin/env node
 import { appendFileSync, existsSync, readFileSync, readdirSync, statSync, writeFileSync } from "node:fs";
-import { createHash } from "node:crypto";
 import { join, resolve } from "node:path";
 import { renderLessonPdfById } from "./export-pdf.ts";
-import { lessonPath, listLessonDirs, readJson, writeJson, writeText } from "./lib/fs.ts";
+import {
+  lessonArtifactPath,
+  lessonPath,
+  listLessonDirs,
+  readJson,
+  resolveLessonArtifactPath,
+  resolveLessonDirArtifactPath,
+  writeJson,
+  writeText,
+} from "./lib/fs.ts";
+import { compareLessonIds, lessonIdFromDir, parseLessonRef } from "./lib/lesson-ids.ts";
+import { listReusableLessonIds, readReusableLessonScript } from "./lib/reusable-lessons.ts";
 import {
   remotionEpisodePathForLesson,
   validateAll,
@@ -17,6 +27,13 @@ import {
   repairTransliteration,
   scanTextForTransliterationDrift,
 } from "./lib/transliteration-policy.ts";
+import {
+  canonicalLexemeKey,
+  dedupeLexemes,
+  deterministicVocabId,
+  fixupScriptVocabIds,
+  withVocabId,
+} from "./lib/vocab.ts";
 import type {
   AssetProvenance,
   FlashcardsDeck,
@@ -37,6 +54,18 @@ import type {
 
 const root = resolve(process.cwd());
 const STAGES: readonly StageId[] = ["0", "1", "2", "3", "4", "5", "6", "7"] as const;
+
+function lessonFile(lessonId: string, baseName: string): string {
+  return lessonArtifactPath(root, lessonId, baseName);
+}
+
+function resolveLessonFile(lessonId: string, baseName: string): string {
+  return resolveLessonArtifactPath(root, lessonId, baseName);
+}
+
+function resolveLessonDirFile(lessonDir: string, baseName: string): string {
+  return resolveLessonDirArtifactPath(lessonDir, lessonIdFromDir(lessonDir), baseName);
+}
 
 function nowIso(): string {
   return new Date().toISOString();
@@ -59,6 +88,7 @@ Commands:
   validate-schemas [--lesson M01-L001]
   set-status --lesson M01-L001 --state DRAFT|READY_TO_RECORD|PLANNED|BACKLOG
   touch-runlog --message "text"
+  fixup-vocabids --lesson M01-L001
   stage --lesson M01-L001 --stage 0|1|2|3|4|5|6|7 [--strict]
   run-lesson --lesson M01-L001 [--strict]
   run-batch --lessons M01-L001,M01-L002 [--strict]
@@ -76,72 +106,132 @@ function hasFlag(flag: string): boolean {
   return process.argv.includes(flag);
 }
 
-function lessonIdFromDir(lessonDir: string): string {
-  const parts = lessonDir.split("/");
-  const lesson = parts.at(-1) ?? "";
-  const module = parts.at(-2) ?? "";
-  return `${module}-${lesson}`;
-}
-
-function parseLessonRef(lessonId: string): { moduleId: string; lessonNum: number } {
-  const [moduleId, lessonPart] = lessonId.split("-");
-  const lessonNum = Number((lessonPart ?? "L000").replace(/^L/, ""));
-  return { moduleId: moduleId ?? "M00", lessonNum };
-}
-
-function compareLessonIds(a: string, b: string): number {
-  const pa = parseLessonRef(a);
-  const pb = parseLessonRef(b);
-  if (pa.moduleId !== pb.moduleId) return pa.moduleId.localeCompare(pb.moduleId);
-  return pa.lessonNum - pb.lessonNum;
-}
-
 function uniqueStrings(values: string[]): string[] {
   return Array.from(new Set(values));
 }
 
-function canonicalLexemeKey(lex: Pick<Lexeme, "thai" | "translit" | "english">): string {
-  return `${lex.thai.trim()}|${lex.translit.trim().toLowerCase()}|${lex.english.trim().toLowerCase()}`;
-}
-
-function deterministicVocabId(lex: Pick<Lexeme, "thai" | "translit" | "english">): string {
-  const digest = createHash("sha1").update(canonicalLexemeKey(lex)).digest("hex").slice(0, 10);
-  return `v-${digest}`;
-}
-
-function withVocabId(lex: Lexeme): Lexeme {
-  return {
-    ...lex,
-    vocabId: lex.vocabId && lex.vocabId.trim().length > 0 ? lex.vocabId : deterministicVocabId(lex),
-  };
-}
-
-function dedupeLexemes(lexemes: Lexeme[]): Lexeme[] {
-  const seen = new Map<string, Lexeme>();
-  for (const lex of lexemes) {
-    const finalLex = withVocabId(lex);
-    seen.set(canonicalLexemeKey(finalLex), finalLex);
+function reportHasPassResult(reportPath: string): boolean {
+  if (!existsSync(reportPath)) {
+    return false;
   }
-  return Array.from(seen.values());
+
+  return /Result:\s+PASS\b/.test(readFileSync(reportPath, "utf8"));
+}
+
+function newestMtimeMs(paths: string[]): number {
+  return Math.max(
+    ...paths.map((path) => {
+      if (!existsSync(path)) {
+        return 0;
+      }
+      return statSync(path).mtimeMs;
+    })
+  );
+}
+
+function reportIsFreshAgainst(reportPath: string, sourcePaths: string[]): boolean {
+  if (!existsSync(reportPath)) {
+    return false;
+  }
+
+  return statSync(reportPath).mtimeMs >= newestMtimeMs(sourcePaths);
+}
+
+function roleplayLineLooksQuestionLike(line: {
+  thai: string;
+  translit: string;
+  english: string;
+}): boolean {
+  const joined = `${line.thai} ${line.translit} ${line.english}`.toLowerCase();
+  return (
+    joined.includes("?") ||
+    joined.includes("ไหม") ||
+    joined.includes("mái") ||
+    joined.includes("mai") ||
+    joined.includes("can you") ||
+    joined.includes("do you") ||
+    joined.includes("is it") ||
+    joined.includes("are you") ||
+    joined.includes("right?")
+  );
+}
+
+function roleplayLineLooksYesNoAnswer(line: {
+  thai: string;
+  translit: string;
+  english: string;
+}): boolean {
+  const thai = line.thai.trim();
+  const translit = line.translit.trim().toLowerCase();
+  return (
+    thai === "ใช่" ||
+    thai === "ไม่ใช่" ||
+    thai.startsWith("ใช่") ||
+    thai.startsWith("ไม่ใช่") ||
+    translit === "châi" ||
+    translit === "mâi châi" ||
+    translit.startsWith("châi ") ||
+    translit.startsWith("mâi châi ")
+  );
+}
+
+function lessonAppearsToTargetQuestions(script: ScriptMaster): boolean {
+  const joined = [
+    script.objective,
+    ...script.sections.flatMap((section) => [
+      section.heading,
+      section.purpose,
+      ...section.drills,
+      ...section.languageFocus.flatMap((lex) => [lex.thai, lex.translit, lex.english]),
+    ]),
+  ]
+    .join(" ")
+    .toLowerCase();
+
+  return (
+    joined.includes("?") ||
+    joined.includes("question") ||
+    joined.includes("ask") ||
+    joined.includes("request") ||
+    joined.includes("ไหม") ||
+    joined.includes("mái") ||
+    joined.includes("can you")
+  );
+}
+
+function stageQaSourcePaths(lessonId: string, reportFile: string): string[] {
+  if (reportFile === "editorial-qa-report.md") {
+    return ["brief.md", "script-master.json", "script-spoken.md", "script-visual.md"].map(
+      (file) => resolveLessonFile(lessonId, file)
+    );
+  }
+
+  if (reportFile === "visual-qa-report.md") {
+    return ["script-master.json", "script-spoken.md", "script-visual.md"].map((file) =>
+      resolveLessonFile(lessonId, file)
+    );
+  }
+
+  if (reportFile === "assessment-qa-report.md") {
+    return ["script-master.json", "flashcards.json", "quiz-item-bank.json", "quiz.json"].map(
+      (file) => resolveLessonFile(lessonId, file)
+    );
+  }
+
+  return [];
 }
 
 function scriptMastersForModule(moduleId: string): Array<{ lessonId: string; script: ScriptMaster }> {
-  const dirs = listLessonDirs(root)
-    .map((dir) => ({ dir, lessonId: lessonIdFromDir(dir) }))
-    .filter((x) => x.lessonId.startsWith(`${moduleId}-`))
-    .sort((a, b) => compareLessonIds(a.lessonId, b.lessonId));
-
-  const out: Array<{ lessonId: string; script: ScriptMaster }> = [];
-  for (const entry of dirs) {
-    const scriptPath = join(entry.dir, "script-master.json");
-    if (!existsSync(scriptPath)) continue;
-    try {
-      out.push({ lessonId: entry.lessonId, script: readJson<ScriptMaster>(scriptPath) });
-    } catch {
-      // skip malformed script files during indexing; validators catch them separately.
-    }
-  }
-  return out;
+  return listReusableLessonIds(root)
+    .filter((lessonId) => lessonId.startsWith(`${moduleId}-`))
+    .map((lessonId) => ({
+      lessonId,
+      script: readReusableLessonScript(root, lessonId),
+    }))
+    .filter(
+      (entry): entry is { lessonId: string; script: ScriptMaster } =>
+        Boolean(entry.script)
+    );
 }
 
 function collectPriorScriptMasters(lessonId: string): Array<{ lessonId: string; script: ScriptMaster }> {
@@ -150,20 +240,16 @@ function collectPriorScriptMasters(lessonId: string): Array<{ lessonId: string; 
 }
 
 function rebuildVocabIndex(): VocabIndex {
-  const allScripts = listLessonDirs(root)
-    .map((dir) => ({ dir, lessonId: lessonIdFromDir(dir) }))
-    .sort((a, b) => compareLessonIds(a.lessonId, b.lessonId));
+  const allScripts = listReusableLessonIds(root).map((lessonId) => ({
+    lessonId,
+    script: readReusableLessonScript(root, lessonId),
+  }));
 
   const byId = new Map<string, VocabIndex["entries"][number]>();
 
   for (const lesson of allScripts) {
-    const scriptPath = join(lesson.dir, "script-master.json");
-    if (!existsSync(scriptPath)) continue;
-
-    let script: ScriptMaster;
-    try {
-      script = readJson<ScriptMaster>(scriptPath);
-    } catch {
+    const script = lesson.script;
+    if (!script) {
       continue;
     }
 
@@ -465,6 +551,7 @@ function scriptSeed(lessonId: string): ScriptSeed {
 }
 
 function buildScriptQaChecks(script: ScriptMaster): ScriptMaster["qaChecks"] {
+  const isLegacyLesson = compareLessonIds(script.lessonId, "M01-L004") < 0;
   const lexemes = script.sections.flatMap((s) => s.languageFocus);
   const translits = [
     ...lexemes.map((l) => l.translit),
@@ -478,6 +565,79 @@ function buildScriptQaChecks(script: ScriptMaster): ScriptMaster["qaChecks"] {
     s.languageFocus.some((l) => !l.thai || !l.translit || !l.english || !l.vocabId) ||
     s.onScreenBullets.some((b) => b.split("|").map((p) => p.trim()).length < 3),
   );
+
+  const reusedReviewItems = script.context.reviewBuckets
+    .flatMap((bucket) => bucket.sample)
+    .filter((lex) =>
+      script.sections.some((section) =>
+        section.languageFocus.some(
+          (focus) =>
+            focus.thai.trim() === lex.thai.trim() &&
+            focus.translit.trim().toLowerCase() ===
+              lex.translit.trim().toLowerCase() &&
+            focus.english.trim().toLowerCase() ===
+              lex.english.trim().toLowerCase()
+        )
+      )
+    ).length;
+
+  const hasTeachingFrame =
+    !!script.teachingFrame &&
+    script.teachingFrame.targetRuntimeMin > 0 &&
+    script.teachingFrame.targetRuntimeMax >= script.teachingFrame.targetRuntimeMin &&
+    script.teachingFrame.openingHook.trim().length > 0 &&
+    script.teachingFrame.scenario.trim().length > 0 &&
+    script.teachingFrame.learnerTakeaway.trim().length > 0;
+
+  const visualPlans = script.sections.map((section) => ({
+    sectionId: section.id,
+    plan: section.visualPlan,
+  }));
+  const visualPlanIssues = visualPlans
+    .filter(({ plan }) => {
+      if (!plan) return true;
+      if (plan.onScreenGoal.trim().length === 0) return true;
+      if (plan.teachingVisuals.length < 2) return true;
+      if (plan.teacherCues.length < 1) return true;
+      if (plan.imageSupport.rationale.trim().length === 0) return true;
+      if (plan.imageSupport.sourceHints.length < 1) return true;
+      if (plan.imageSupport.helpful && plan.imageSupport.searchQueries.length < 1) return true;
+      return false;
+    })
+    .map(({ sectionId }) => sectionId);
+
+  const sectionsWithConcreteAssetPlan = visualPlans.filter(({ plan }) =>
+    !!plan &&
+    plan.imageSupport.helpful &&
+    plan.imageSupport.priority !== "avoid" &&
+    plan.imageSupport.searchQueries.length >= 1
+  ).length;
+  const roleplayLineKeys = script.roleplay.lines.map((line) =>
+    [line.speaker, line.thai, line.translit, line.english]
+      .map((part) => part.trim().toLowerCase())
+      .join("|")
+  );
+  const hasDuplicateRoleplayLines =
+    new Set(roleplayLineKeys).size !== roleplayLineKeys.length;
+  const hasSpeakerTurnBreak = script.roleplay.lines.some((line, index, lines) => {
+    if (index === 0) {
+      return false;
+    }
+    return line.speaker.trim() === lines[index - 1]?.speaker.trim();
+  });
+  const hasQuestionLikeRoleplayLine = script.roleplay.lines.some((line) =>
+    roleplayLineLooksQuestionLike(line)
+  );
+  const answerParticleWithoutQuestion = script.roleplay.lines.some((line, index, lines) => {
+    if (!roleplayLineLooksYesNoAnswer(line)) {
+      return false;
+    }
+
+    return !lines
+      .slice(Math.max(0, index - 2), index)
+      .some((candidate) => roleplayLineLooksQuestionLike(candidate));
+  });
+  const expectsQuestionRoleplay = lessonAppearsToTargetQuestions(script);
 
   return [
     {
@@ -499,10 +659,108 @@ function buildScriptQaChecks(script: ScriptMaster): ScriptMaster["qaChecks"] {
       evidence: script.sections.every((s) => s.drills.length >= 1) ? "Each section has >=1 drill" : "At least one section is missing drills",
     },
     {
+      id: "section-count",
+      description: "Lesson contains at least 4 teaching sections",
+      pass: isLegacyLesson || script.sections.length >= 4,
+      evidence: isLegacyLesson
+        ? `Legacy lesson exemption applied with ${script.sections.length} sections`
+        : `Lesson contains ${script.sections.length} sections`,
+    },
+    {
+      id: "section-depth",
+      description: "Each section includes at least 3 spoken narration lines",
+      pass:
+        isLegacyLesson ||
+        script.sections.every((s) => s.spokenNarration.length >= 3),
+      evidence:
+        isLegacyLesson
+          ? "Legacy lesson exemption applied"
+          : script.sections.every((s) => s.spokenNarration.length >= 3)
+          ? "Each section has >=3 spoken narration lines"
+          : "At least one section has fewer than 3 spoken narration lines",
+    },
+    {
       id: "roleplay",
       description: "Scenario roleplay included and substantial",
-      pass: script.roleplay.lines.length >= 4,
+      pass: isLegacyLesson || script.roleplay.lines.length >= 6,
       evidence: `Roleplay contains ${script.roleplay.lines.length} lines`,
+    },
+    {
+      id: "roleplay-duplicates",
+      description: "Roleplay does not repeat exact lines",
+      pass: !hasDuplicateRoleplayLines,
+      evidence: hasDuplicateRoleplayLines
+        ? "Duplicate exact roleplay lines detected"
+        : "All roleplay lines are distinct",
+    },
+    {
+      id: "roleplay-turn-taking",
+      description: "Roleplay alternates speakers cleanly",
+      pass: !hasSpeakerTurnBreak,
+      evidence: hasSpeakerTurnBreak
+        ? "Adjacent roleplay lines reuse the same speaker label"
+        : "Roleplay alternates speakers line by line",
+    },
+    {
+      id: "roleplay-answer-logic",
+      description: "Yes/no answer particles appear only after a nearby question or confirmation turn",
+      pass: !answerParticleWithoutQuestion,
+      evidence: answerParticleWithoutQuestion
+        ? "Found ใช่ / ไม่ใช่ style answer line without a nearby question turn"
+        : "Answer particles follow question-like turns when used",
+    },
+    {
+      id: "roleplay-question-target",
+      description: "Question-target lessons include at least one question-like roleplay turn",
+      pass: !expectsQuestionRoleplay || hasQuestionLikeRoleplayLine,
+      evidence: !expectsQuestionRoleplay
+        ? "Lesson does not appear to target question formation directly"
+        : hasQuestionLikeRoleplayLine
+        ? "Roleplay includes a question-like turn"
+        : "Lesson targets questions or requests but roleplay contains no question-like turn",
+    },
+    {
+      id: "recap",
+      description: "Recap includes at least 3 review items",
+      pass: script.recap.length >= 3,
+      evidence: `Recap contains ${script.recap.length} items`,
+    },
+    {
+      id: "review-reuse",
+      description: "Lesson reuses at least 2 prior items when prior lesson context exists",
+      pass: script.context.priorLessons.length === 0 || reusedReviewItems >= 2,
+      evidence:
+        script.context.priorLessons.length === 0
+          ? "No prior lessons available; review reuse check not required"
+          : `Reused ${reusedReviewItems} prior vocabulary items in language focus`,
+    },
+    {
+      id: "teaching-frame",
+      description: "Lesson includes a clear teaching frame with runtime and learner takeaway",
+      pass: isLegacyLesson || hasTeachingFrame,
+      evidence: isLegacyLesson
+        ? "Legacy lesson exemption applied"
+        : hasTeachingFrame
+        ? `Teaching frame targets ${script.teachingFrame?.targetRuntimeMin}-${script.teachingFrame?.targetRuntimeMax} minutes`
+        : "teachingFrame is missing or incomplete",
+    },
+    {
+      id: "visual-plan",
+      description: "Each section includes a left-panel visual plan and explicit image decision",
+      pass: isLegacyLesson || visualPlanIssues.length === 0,
+      evidence: isLegacyLesson
+        ? "Legacy lesson exemption applied"
+        : visualPlanIssues.length === 0
+        ? "Every section includes visualPlan with usable teaching visuals and image rationale"
+        : `Missing or incomplete visualPlan in sections: ${visualPlanIssues.join(", ")}`,
+    },
+    {
+      id: "asset-research",
+      description: "Lesson provides at least one concrete image research query when visuals would help",
+      pass: isLegacyLesson || sectionsWithConcreteAssetPlan >= 1,
+      evidence: isLegacyLesson
+        ? "Legacy lesson exemption applied"
+        : `Sections with concrete asset research queries: ${sectionsWithConcreteAssetPlan}`,
     },
     {
       id: "policy",
@@ -521,6 +779,19 @@ function stage1ScriptGeneration(lessonId: string, context: LessonContext): Scrip
   const sections = seed.sections.map((s) => ({
     ...s,
     languageFocus: s.languageFocus.map((l) => withVocabId(l)),
+    visualPlan: {
+      leftPanelLayout: "focus-card" as const,
+      onScreenGoal: `Show ${s.heading.toLowerCase()} clearly in the left teaching area.`,
+      teachingVisuals: [s.heading, ...s.onScreenBullets.slice(0, 2)],
+      teacherCues: ["Pause after each model line.", "Point attention to the Thai script before transliteration."],
+      imageSupport: {
+        helpful: true,
+        priority: "supporting" as const,
+        rationale: "A simple real-world anchor helps memory without replacing explicit explanation.",
+        searchQueries: [`${seed.title} ${s.heading} thailand`],
+        sourceHints: ["Pexels", "Wikimedia Commons"],
+      },
+    },
   }));
 
   const script: ScriptMaster = {
@@ -528,6 +799,13 @@ function stage1ScriptGeneration(lessonId: string, context: LessonContext): Scrip
     lessonId,
     title: seed.title,
     objective: seed.objective,
+    teachingFrame: {
+      targetRuntimeMin: 8,
+      targetRuntimeMax: 11,
+      openingHook: `Open with the learner problem that ${seed.title.toLowerCase()} solves immediately.`,
+      scenario: seed.roleplay.scenario,
+      learnerTakeaway: seed.recap[0] ?? seed.objective,
+    },
     context,
     sections,
     roleplay: seed.roleplay,
@@ -561,10 +839,9 @@ function transliterationHardCheck(raw: string): string[] {
 }
 
 function stage2QaLoop(lessonId: string): { pass: boolean; report: string; checks: ScriptMaster["qaChecks"] } {
-  const lpath = lessonPath(root, lessonId);
-  const scriptPath = join(lpath, "script-master.json");
-  const spokenPath = join(lpath, "script-spoken.md");
-  const visualPath = join(lpath, "script-visual.md");
+  const scriptPath = resolveLessonFile(lessonId, "script-master.json");
+  const spokenPath = resolveLessonFile(lessonId, "script-spoken.md");
+  const visualPath = resolveLessonFile(lessonId, "script-visual.md");
   const script = readJson<ScriptMaster>(scriptPath);
   const spoken = existsSync(spokenPath) ? readFileSync(spokenPath, "utf8") : "";
   const visual = existsSync(visualPath) ? readFileSync(visualPath, "utf8") : "";
@@ -572,8 +849,8 @@ function stage2QaLoop(lessonId: string): { pass: boolean; report: string; checks
   const checks = buildScriptQaChecks(script);
 
   const supplementalIssues = [
-    ...transliterationHardCheck(spoken).map((m) => `script-spoken.md: ${m}`),
-    ...transliterationHardCheck(visual).map((m) => `script-visual.md: ${m}`),
+    ...transliterationHardCheck(spoken).map((m) => `${lessonFile(lessonId, "script-spoken.md").split("/").pop()}: ${m}`),
+    ...transliterationHardCheck(visual).map((m) => `${lessonFile(lessonId, "script-visual.md").split("/").pop()}: ${m}`),
   ];
 
   const pass = checks.every((c) => c.pass) && supplementalIssues.length === 0;
@@ -586,8 +863,17 @@ function stage2QaLoop(lessonId: string): { pass: boolean; report: string; checks
     "## Hard Gates",
     "- Transliteration policy: PTM inline tone marks required; superscripts forbidden",
     "- Triplet completeness for learner content",
+    "- Minimum 4 sections for non-legacy lessons",
+    "- Minimum 3 spoken narration lines per section for non-legacy lessons",
     "- Drills per section",
-    "- Roleplay inclusion",
+    "- Minimum 6 roleplay lines for non-legacy lessons",
+    "- No duplicate exact roleplay lines",
+    "- Clean roleplay turn-taking and yes/no answer logic",
+    "- Question-target lessons must contain a question-like roleplay turn",
+    "- Minimum 3 recap items",
+    "- Minimum 2 reused prior items when prior context exists",
+    "- Teaching frame with runtime, scenario, and learner takeaway",
+    "- Visual plan per section with explicit image decision and asset research",
     "- Policy declaration",
     "",
     "## Check Results",
@@ -599,34 +885,125 @@ function stage2QaLoop(lessonId: string): { pass: boolean; report: string; checks
     "",
   ].join("\n");
 
-  script.qaChecks = checks;
-  writeJson(scriptPath, script);
+  const updatedScript: ScriptMaster = {
+    ...script,
+    qaChecks: checks,
+  };
+
+  if (JSON.stringify(updatedScript) !== JSON.stringify(script)) {
+    writeJson(scriptPath, updatedScript);
+  }
 
   return { pass, report, checks };
 }
 
+function runFixupVocabIds(): number {
+  const lesson = getArg("--lesson");
+  if (!lesson) {
+    console.error("Missing --lesson");
+    return 1;
+  }
+
+  const scriptPath = resolveLessonFile(lesson, "script-master.json");
+  if (!existsSync(scriptPath)) {
+    console.error(`Missing ${lessonFile(lesson, "script-master.json").split("/").pop()} for ${lesson}`);
+    return 1;
+  }
+
+  const script = readJson<ScriptMaster>(scriptPath);
+  const fixed = fixupScriptVocabIds(script);
+  const before = JSON.stringify(script);
+  const after = JSON.stringify(fixed);
+
+  if (before !== after) {
+    writeJson(scriptPath, fixed);
+    rebuildVocabIndex();
+    console.log(`Recomputed vocabIds for ${lesson}.`);
+  } else {
+    console.log(`VocabIds already current for ${lesson}.`);
+  }
+  return 0;
+}
+
 function stage3Remotion(script: ScriptMaster): RemotionPlan {
+  const titleQuery = `${script.lessonId} ${script.title}`;
   return {
     schemaVersion: 1,
     lessonId: script.lessonId,
-    sourceScript: "script-master.json",
+    sourceScript: lessonFile(script.lessonId, "script-master.json").split("/").pop() ?? "script-master.json",
+    canvas: {
+      width: 1920,
+      height: 1080,
+      leftTeachingFraction: 0.6667,
+      rightCameraFraction: 0.3333,
+      safeZoneLabel: "Right third reserved for Nine camera",
+    },
     scenes: script.sections.map((section, idx) => {
+      const visualPlan = section.visualPlan;
+      const searchQuery =
+        visualPlan?.imageSupport.searchQueries[0] ??
+        `${titleQuery} ${section.heading} thai learning visual`;
+      const imageUsage =
+        visualPlan?.imageSupport.helpful === false &&
+        visualPlan?.imageSupport.priority === "avoid"
+          ? ("text-only" as const)
+          : visualPlan?.imageSupport.helpful === true
+          ? ("real-image" as const)
+          : ("icon" as const);
       const assetId = `${script.lessonId.toLowerCase()}-scene-${idx + 1}-asset-1`;
-      const sourceUrl = `https://www.pexels.com/search/${encodeURIComponent(`${script.title} ${section.heading}`)}/`;
+      const sourceUrl = imageUsage === "real-image"
+        ? `https://www.pexels.com/search/${encodeURIComponent(searchQuery)}/`
+        : `https://thenounproject.com/search/icons/?q=${encodeURIComponent(searchQuery)}`;
+      const assetKind = imageUsage === "real-image" ? ("image" as const) : ("icon" as const);
+      const sceneOverlays = [
+        section.heading,
+        visualPlan?.onScreenGoal ?? section.purpose,
+        ...section.onScreenBullets.slice(0, 3),
+      ];
+      const totalWords = section.spokenNarration.join(" ").split(/\s+/).filter(Boolean).length;
+      const seconds = Math.max(36, Math.min(72, Math.round(totalWords / 2.6)));
+
       return {
         id: `scene-${idx + 1}`,
-        seconds: 45,
+        seconds,
         voiceover: section.spokenNarration,
-        overlays: [section.heading, ...section.onScreenBullets],
+        overlays: sceneOverlays,
+        teachingObjective: section.purpose,
+        layout: visualPlan?.leftPanelLayout ?? "focus-card",
+        visualStrategy: {
+          onScreenGoal: visualPlan?.onScreenGoal ?? section.purpose,
+          teachingVisuals:
+            visualPlan?.teachingVisuals.length
+              ? visualPlan.teachingVisuals
+              : [section.heading, ...section.onScreenBullets.slice(0, 2)],
+          teacherCues:
+            visualPlan?.teacherCues.length
+              ? visualPlan.teacherCues
+              : ["Keep visuals in the left teaching area.", "Avoid covering the camera safe zone."],
+          imageUsage,
+          rationale:
+            visualPlan?.imageSupport.rationale ??
+            "Use a single supporting visual anchor while the spoken lesson carries the explanation.",
+        },
         thaiFocus: section.languageFocus.map((l) => ({ thai: l.thai, translit: l.translit, english: l.english })),
         assets: [
           {
             assetId,
-            kind: "image" as const,
-            query: `${script.title} ${section.heading} thai learning visual`,
+            kind: assetKind,
+            query: searchQuery,
             sourcePolicy: "internet-first" as const,
             sourceUrl,
-            license: "Pexels License",
+            license: imageUsage === "real-image" ? "Pexels License" : "Noun Project search result review required",
+            usageNotes: imageUsage === "real-image"
+              ? "Use as left-panel supporting visual only; keep text dominant."
+              : imageUsage === "text-only"
+              ? "Text-first scene. Optional icon fallback only if the layout needs a minimal anchor."
+              : "Use as a simple icon/diagram anchor in the left panel only.",
+            aiFallbackPrompt:
+              visualPlan?.imageSupport.aiFallbackPrompt &&
+              visualPlan.imageSupport.aiFallbackPrompt.trim().length > 0
+                ? visualPlan.imageSupport.aiFallbackPrompt
+                : undefined,
           },
         ],
       };
@@ -646,6 +1023,11 @@ function stage3Provenance(remotion: RemotionPlan): AssetProvenance {
         sourceUrl: asset.sourceUrl,
         license: asset.license,
         usage: `${scene.id}:${scene.id} overlay background`,
+        query: asset.query,
+        sourcePolicy: asset.sourcePolicy,
+        rationale: scene.visualStrategy?.rationale ?? asset.usageNotes,
+        sourceHints: scene.visualStrategy?.imageUsage === "real-image" ? ["Pexels", "Wikimedia Commons"] : ["The Noun Project", "Icon sets"],
+        aiFallbackPrompt: asset.aiFallbackPrompt,
       })),
     ),
   };
@@ -655,6 +1037,17 @@ function stage4Pdf(script: ScriptMaster): PdfSource {
   const lexicon = dedupeLexemes(script.sections.flatMap((s) => s.languageFocus));
   const triplets = lexicon.map((l) => `${l.thai} | ${l.translit} | ${l.english}`);
   const roleplayLines = script.roleplay.lines.map((line) => `${line.speaker}: ${line.thai} | ${line.translit} | ${line.english}`);
+  const teachingFrameLines = script.teachingFrame
+    ? [
+        `Target runtime: ${script.teachingFrame.targetRuntimeMin}-${script.teachingFrame.targetRuntimeMax} minutes`,
+        `Scenario: ${script.teachingFrame.scenario}`,
+        `Learner takeaway: ${script.teachingFrame.learnerTakeaway}`,
+      ]
+    : [script.objective];
+  const sectionTips = script.sections.flatMap((section) => [
+    `${section.heading}: ${section.purpose}`,
+    ...section.spokenNarration.slice(0, 2),
+  ]);
 
   return {
     schemaVersion: 1,
@@ -663,15 +1056,15 @@ function stage4Pdf(script: ScriptMaster): PdfSource {
     sections: [
       {
         heading: "What you will be able to say after this lesson",
-        body: [script.objective],
+        body: teachingFrameLines,
       },
       {
         heading: "Core phrases (Thai / Transliteration / English)",
         body: triplets,
       },
       {
-        heading: "Pronunciation tips (simple and practical)",
-        body: script.sections.flatMap((s) => s.spokenNarration.slice(0, 2)),
+        heading: "Teaching notes and explanation cues",
+        body: sectionTips,
       },
       {
         heading: "Mini dialogues / role-play",
@@ -745,8 +1138,8 @@ function lessonVocabExport(script: ScriptMaster, deck: FlashcardsDeck): VocabExp
 
 function rebuildGlobalVocabExport(): VocabExport {
   const exports: VocabExport[] = [];
-  for (const dir of listLessonDirs(root)) {
-    const path = join(dir, "vocab-export.json");
+  for (const lessonId of listReusableLessonIds(root)) {
+    const path = resolveLessonFile(lessonId, "vocab-export.json");
     if (!existsSync(path)) continue;
     try {
       exports.push(readJson<VocabExport>(path));
@@ -878,7 +1271,9 @@ function stage6Quiz(script: ScriptMaster): { itemBank: QuizItemBank; quiz: QuizS
     schemaVersion: 1,
     lessonId: script.lessonId,
     generatedAt: nowIso(),
-    sourceScript: "script-master.json",
+    sourceScript:
+      lessonFile(script.lessonId, "script-master.json").split("/").pop() ??
+      "script-master.json",
     items: bankItems,
     coverage: {
       minimumItemsPerNewVocab: 3,
@@ -918,7 +1313,9 @@ function stage6Quiz(script: ScriptMaster): { itemBank: QuizItemBank; quiz: QuizS
     lessonId: script.lessonId,
     passScore: 80,
     generatedAt: nowIso(),
-    itemBankPath: "quiz-item-bank.json",
+    itemBankPath:
+      lessonFile(script.lessonId, "quiz-item-bank.json").split("/").pop() ??
+      "quiz-item-bank.json",
     questions,
     coverage: {
       minimumQuizItemsPerNewVocab: 1,
@@ -971,7 +1368,7 @@ function renderVisual(script: ScriptMaster): string {
 }
 
 function readStageResultsFromStatus(lessonId: string): Record<StageId, "PASS" | "FAIL" | "SKIP"> {
-  const statusPath = join(lessonPath(root, lessonId), "status.json");
+  const statusPath = resolveLessonFile(lessonId, "status.json");
   const defaults: Record<StageId, "PASS" | "FAIL" | "SKIP"> = {
     "0": "SKIP",
     "1": "SKIP",
@@ -995,7 +1392,7 @@ function writeStatus(
   stageResults: Record<StageId, "PASS" | "FAIL" | "SKIP">,
   notes?: string[],
 ): void {
-  const path = join(lessonPath(root, lessonId), "status.json");
+  const path = resolveLessonFile(lessonId, "status.json");
   writeJson(path, {
     lessonId,
     state,
@@ -1007,31 +1404,65 @@ function writeStatus(
 }
 
 function stagePrerequisiteIssues(lessonId: string, stage: StageId): string[] {
-  const lpath = lessonPath(root, lessonId);
   const requiredByStage: Record<StageId, string[]> = {
     "0": [],
     "1": ["context.json"],
-    "2": ["script-master.json", "script-spoken.md", "script-visual.md"],
+    "2": [
+      "script-master.json",
+      "script-spoken.md",
+      "script-visual.md",
+      "editorial-qa-report.md",
+    ],
     "3": ["qa-report.md"],
-    "4": ["remotion.json", "asset-provenance.json"],
+    "4": ["remotion.json", "asset-provenance.json", "visual-qa-report.md"],
     "5": ["pdf-source.json", "pdf.md", "pdf.pdf"],
     "6": ["flashcards.json", "vocab-export.json"],
-    "7": ["quiz-item-bank.json", "quiz.json"],
+    "7": [
+      "quiz-item-bank.json",
+      "quiz.json",
+      "editorial-qa-report.md",
+      "visual-qa-report.md",
+      "assessment-qa-report.md",
+    ],
   };
 
   const issues: string[] = [];
   for (const file of requiredByStage[stage]) {
-    const path = join(lpath, file);
+    const path = resolveLessonFile(lessonId, file);
     if (!existsSync(path)) issues.push(`Missing prerequisite for stage ${stage}: ${file}`);
   }
 
   if (stage === "3") {
-    const qaPath = join(lpath, "qa-report.md");
+    const qaPath = resolveLessonFile(lessonId, "qa-report.md");
     if (existsSync(qaPath)) {
       const qa = readFileSync(qaPath, "utf8");
       if (qa.includes("Result: FAIL")) {
         issues.push("QA report is FAIL; downstream stages are blocked.");
       }
+    }
+  }
+
+  const requiredPassReports: Partial<Record<StageId, string[]>> = {
+    "2": ["editorial-qa-report.md"],
+    "4": ["visual-qa-report.md"],
+    "7": [
+      "editorial-qa-report.md",
+      "visual-qa-report.md",
+      "assessment-qa-report.md",
+    ],
+  };
+
+  for (const reportFile of requiredPassReports[stage] ?? []) {
+    const reportPath = resolveLessonFile(lessonId, reportFile);
+    if (existsSync(reportPath) && !reportHasPassResult(reportPath)) {
+      issues.push(`${reportFile} is not PASS; stage ${stage} is blocked.`);
+    }
+    if (
+      existsSync(reportPath) &&
+      reportHasPassResult(reportPath) &&
+      !reportIsFreshAgainst(reportPath, stageQaSourcePaths(lessonId, reportFile))
+    ) {
+      issues.push(`${reportFile} is stale; rerun the corresponding QA review before stage ${stage}.`);
     }
   }
 
@@ -1055,7 +1486,7 @@ async function executeStage(lessonId: string, stage: StageId, strict: boolean): 
 
   if (stage === "0") {
     const context = stage0ContextLoader(lessonId);
-    writeJson(join(lpath, "context.json"), context);
+    writeJson(resolveLessonFile(lessonId, "context.json"), context);
     const bucketSummary = context.reviewBuckets
       .map((b) => `${b.bucket}:${b.lessonId ?? "none"}${b.vocabIds.length ? `(${b.vocabIds.length})` : ""}`)
       .join(", ");
@@ -1063,42 +1494,45 @@ async function executeStage(lessonId: string, stage: StageId, strict: boolean): 
   }
 
   if (stage === "1") {
-    const context = readJson<LessonContext>(join(lpath, "context.json"));
+    const context = readJson<LessonContext>(resolveLessonFile(lessonId, "context.json"));
     const script = stage1ScriptGeneration(lessonId, context);
-    writeJson(join(lpath, "script-master.json"), script);
-    writeText(join(lpath, "script-spoken.md"), renderSpoken(script));
-    writeText(join(lpath, "script-visual.md"), renderVisual(script));
+    writeJson(lessonFile(lessonId, "script-master.json"), script);
+    writeText(lessonFile(lessonId, "script-spoken.md"), renderSpoken(script));
+    writeText(lessonFile(lessonId, "script-visual.md"), renderVisual(script));
     rebuildVocabIndex();
     return { code: 0, meta: `generated sections=${script.sections.length}` };
   }
 
   if (stage === "2") {
     const qa = stage2QaLoop(lessonId);
-    writeText(join(lpath, "qa-report.md"), qa.report);
+    writeText(lessonFile(lessonId, "qa-report.md"), qa.report);
     return { code: qa.pass ? 0 : 2, meta: `qa=${qa.pass ? "PASS" : "FAIL"}` };
   }
 
-  const script = readJson<ScriptMaster>(join(lpath, "script-master.json"));
+  const script = readJson<ScriptMaster>(resolveLessonFile(lessonId, "script-master.json"));
 
   if (stage === "3") {
     const remotion = stage3Remotion(script);
-    writeJson(join(lpath, "remotion.json"), remotion);
-    writeJson(join(lpath, "asset-provenance.json"), stage3Provenance(remotion));
+    writeJson(lessonFile(lessonId, "remotion.json"), remotion);
+    writeJson(lessonFile(lessonId, "asset-provenance.json"), stage3Provenance(remotion));
     return { code: 0, meta: `scenes=${remotion.scenes.length}` };
   }
 
   if (stage === "4") {
     const pdf = stage4Pdf(script);
-    writeJson(join(lpath, "pdf-source.json"), pdf);
-    writeText(join(lpath, "pdf.md"), renderPdfMd(pdf));
+    writeJson(lessonFile(lessonId, "pdf-source.json"), pdf);
+    writeText(lessonFile(lessonId, "pdf.md"), renderPdfMd(pdf));
     await renderLessonPdfById(root, lessonId);
-    return { code: 0, meta: "pdf.md + pdf.pdf generated" };
+    return {
+      code: 0,
+      meta: `${lessonFile(lessonId, "pdf.md").split("/").pop()} + ${lessonFile(lessonId, "pdf.pdf").split("/").pop()} generated`,
+    };
   }
 
   if (stage === "5") {
     const deck = stage5Flashcards(script);
-    writeJson(join(lpath, "flashcards.json"), deck);
-    writeJson(join(lpath, "vocab-export.json"), lessonVocabExport(script, deck));
+    writeJson(lessonFile(lessonId, "flashcards.json"), deck);
+    writeJson(lessonFile(lessonId, "vocab-export.json"), lessonVocabExport(script, deck));
     rebuildVocabIndex();
     const global = rebuildGlobalVocabExport();
     return { code: 0, meta: `cards=${deck.cards.length}, globalCards=${global.cards.length}` };
@@ -1106,8 +1540,8 @@ async function executeStage(lessonId: string, stage: StageId, strict: boolean): 
 
   if (stage === "6") {
     const quizData = stage6Quiz(script);
-    writeJson(join(lpath, "quiz-item-bank.json"), quizData.itemBank);
-    writeJson(join(lpath, "quiz.json"), quizData.quiz);
+    writeJson(lessonFile(lessonId, "quiz-item-bank.json"), quizData.itemBank);
+    writeJson(lessonFile(lessonId, "quiz.json"), quizData.quiz);
     const coverageSummary = quizData.itemBank.coverage.perVocab
       .map((p) => `${p.vocabId}:${p.itemCount}/${quizData.quiz.coverage.perVocab.find((q) => q.vocabId === p.vocabId)?.quizItemCount ?? 0}`)
       .join(", ");
@@ -1155,7 +1589,7 @@ async function runLesson(lessonId: string, strict = true): Promise<number> {
     if (result.meta) notes.push(`stage ${stage}: ${result.meta}`);
 
     if (stage === "2") {
-      const qa = readFileSync(join(lessonPath(root, lessonId), "qa-report.md"), "utf8");
+      const qa = readFileSync(resolveLessonFile(lessonId, "qa-report.md"), "utf8");
       if (qa.includes("Result: FAIL")) {
         stageResults[stage] = "FAIL";
         notes.push("stage 2 QA failed; downstream stages blocked");
@@ -1450,7 +1884,7 @@ function collectLessonAuditTargets(lessonId: string): string[] {
   ];
 
   for (const file of lessonFiles) {
-    const path = join(lessonDir, file);
+    const path = resolveLessonDirFile(lessonDir, file);
     if (existsSync(path)) targets.push(path);
   }
 
@@ -1464,17 +1898,17 @@ function collectGlobalAuditTargets(): string[] {
   const targets = new Set<string>();
 
   for (const dir of listLessonDirs(root)) {
-    targets.add(join(dir, "context.json"));
-    targets.add(join(dir, "script-master.json"));
-    targets.add(join(dir, "script-spoken.md"));
-    targets.add(join(dir, "script-visual.md"));
-    targets.add(join(dir, "remotion.json"));
-    targets.add(join(dir, "pdf-source.json"));
-    targets.add(join(dir, "pdf.md"));
-    targets.add(join(dir, "vocab-export.json"));
-    targets.add(join(dir, "quiz-item-bank.json"));
-    targets.add(join(dir, "quiz.json"));
-    targets.add(join(dir, "flashcards.json"));
+    targets.add(resolveLessonDirFile(dir, "context.json"));
+    targets.add(resolveLessonDirFile(dir, "script-master.json"));
+    targets.add(resolveLessonDirFile(dir, "script-spoken.md"));
+    targets.add(resolveLessonDirFile(dir, "script-visual.md"));
+    targets.add(resolveLessonDirFile(dir, "remotion.json"));
+    targets.add(resolveLessonDirFile(dir, "pdf-source.json"));
+    targets.add(resolveLessonDirFile(dir, "pdf.md"));
+    targets.add(resolveLessonDirFile(dir, "vocab-export.json"));
+    targets.add(resolveLessonDirFile(dir, "quiz-item-bank.json"));
+    targets.add(resolveLessonDirFile(dir, "quiz.json"));
+    targets.add(resolveLessonDirFile(dir, "flashcards.json"));
   }
 
   targets.add(join(root, "course", "vocab", "vocab-index.json"));
@@ -1585,6 +2019,10 @@ function runSetStatus(): number {
     return 1;
   }
   writeStatus(lesson, state, readStageResultsFromStatus(lesson));
+  if (state === "READY_TO_RECORD") {
+    rebuildVocabIndex();
+    rebuildGlobalVocabExport();
+  }
   logRun(`Set ${lesson} state to ${state}.`);
   console.log(`Updated ${lesson} => ${state}`);
   return 0;
@@ -1605,7 +2043,19 @@ async function runSingleStage(lesson: string, stage: StageId, strict: boolean): 
   const result = await executeStage(lesson, stage, strict);
   const stageResults = readStageResultsFromStatus(lesson);
   stageResults[stage] = result.code === 0 ? "PASS" : "FAIL";
-  const state = result.code === 0 ? "DRAFT" : "DRAFT";
+  const statusPath = join(lessonPath(root, lesson), "status.json");
+  const previousStatus = existsSync(statusPath)
+    ? readJson<LessonStatus>(statusPath)
+    : ({
+        lessonId: lesson,
+        state: "BACKLOG",
+        updatedAt: nowIso(),
+        validatedAt: null,
+      } satisfies LessonStatus);
+  const state =
+    result.code === 0
+      ? previousStatus.state
+      : "DRAFT";
   writeStatus(lesson, state, stageResults, [result.meta ?? `stage ${stage} code ${result.code}`]);
   if (result.code !== 0) {
     console.error(result.meta ?? `Stage ${stage} failed`);
@@ -1631,6 +2081,8 @@ async function main(): Promise<number> {
       return runSetStatus();
     case "touch-runlog":
       return runTouchRunlog();
+    case "fixup-vocabids":
+      return runFixupVocabIds();
     case "stage": {
       const lesson = getArg("--lesson");
       const stage = getArg("--stage") as StageId | null;

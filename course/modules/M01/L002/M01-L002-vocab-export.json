@@ -1,0 +1,190 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-03-11T07:28:59.527Z",
+  "source": "pipeline-cli",
+  "lessons": [
+    "M01-L002"
+  ],
+  "cards": [
+    {
+      "id": "m01-l002-c01",
+      "vocabId": "v-6acb169e4b",
+      "thai": "ชื่อ",
+      "translit": "chûue",
+      "english": "name",
+      "lessonId": "M01-L002",
+      "tags": [
+        "M01-L002",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l002-c02",
+      "vocabId": "v-a79c6af3af",
+      "thai": "คุณชื่ออะไร",
+      "translit": "khun chûue à-rai",
+      "english": "what is your name?",
+      "lessonId": "M01-L002",
+      "tags": [
+        "M01-L002",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l002-c03",
+      "vocabId": "v-33248cf209",
+      "thai": "ฉันชื่อ...",
+      "translit": "chǎn chûue...",
+      "english": "my name is ...",
+      "lessonId": "M01-L002",
+      "tags": [
+        "M01-L002",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l002-c04",
+      "vocabId": "v-d5ec4d10d2",
+      "thai": "ผมชื่อ...",
+      "translit": "phǒm chûue...",
+      "english": "my name is ... (male speaker)",
+      "lessonId": "M01-L002",
+      "tags": [
+        "M01-L002",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l002-c05",
+      "vocabId": "v-0ab46f92e7",
+      "thai": "ฉัน",
+      "translit": "chǎn",
+      "english": "I",
+      "lessonId": "M01-L002",
+      "tags": [
+        "M01-L002",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l002-c06",
+      "vocabId": "v-796f86a0f6",
+      "thai": "ผม",
+      "translit": "phǒm",
+      "english": "I (male)",
+      "lessonId": "M01-L002",
+      "tags": [
+        "M01-L002",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l002-c07",
+      "vocabId": "v-d0c316cc2c",
+      "thai": "ประเทศ",
+      "translit": "bprà-thêet",
+      "english": "country",
+      "lessonId": "M01-L002",
+      "tags": [
+        "M01-L002",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l002-c08",
+      "vocabId": "v-dfd8165dd5",
+      "thai": "มาจาก",
+      "translit": "maa-jàak",
+      "english": "come from / be from",
+      "lessonId": "M01-L002",
+      "tags": [
+        "M01-L002",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l002-c09",
+      "vocabId": "v-317510cace",
+      "thai": "มาจากไทย",
+      "translit": "maa-jàak thai",
+      "english": "be from Thailand",
+      "lessonId": "M01-L002",
+      "tags": [
+        "M01-L002",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l002-c10",
+      "vocabId": "v-15a452b73b",
+      "thai": "มาจากอังกฤษ",
+      "translit": "maa-jàak ang-grìt",
+      "english": "be from England",
+      "lessonId": "M01-L002",
+      "tags": [
+        "M01-L002",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l002-c11",
+      "vocabId": "v-b845ab6bae",
+      "thai": "มาจากอเมริกา",
+      "translit": "maa-jàak à-mee-rí-gaa",
+      "english": "be from America",
+      "lessonId": "M01-L002",
+      "tags": [
+        "M01-L002",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l002-c12",
+      "vocabId": "v-c9337e2739",
+      "thai": "สวัสดี",
+      "translit": "sà-wàt-dii",
+      "english": "hello",
+      "lessonId": "M01-L002",
+      "tags": [
+        "M01-L002",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l002-c13",
+      "vocabId": "v-217b46aa5a",
+      "thai": "ขอบคุณ",
+      "translit": "khàawp-khun",
+      "english": "thank you",
+      "lessonId": "M01-L002",
+      "tags": [
+        "M01-L002",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l002-c14",
+      "vocabId": "v-b2f0acf56a",
+      "thai": "ฉันมาจาก...",
+      "translit": "chǎn maa-jàak...",
+      "english": "I am from ...",
+      "lessonId": "M01-L002",
+      "tags": [
+        "M01-L002",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l002-c15",
+      "vocabId": "v-64f9ed0e55",
+      "thai": "ผมมาจาก...",
+      "translit": "phǒm maa-jàak...",
+      "english": "I am from ... (male)",
+      "lessonId": "M01-L002",
+      "tags": [
+        "M01-L002",
+        "core"
+      ]
+    }
+  ]
+}

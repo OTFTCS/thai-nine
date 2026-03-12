@@ -102,7 +102,7 @@ export function PlacementResults({
         </CardHeader>
         <CardContent className="space-y-3">
           <p className="text-sm text-muted-foreground">
-            Start at <span className="font-semibold text-foreground">Module {recommendation.moduleNumber}</span>
+            Start at <span className="font-semibold text-foreground">{recommendation.moduleId}</span>
             {" "}- {recommendation.moduleTitle}
           </p>
           <div className="space-y-2">

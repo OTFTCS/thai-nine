@@ -24,6 +24,36 @@ export interface Lexeme {
   vocabId?: string;
 }
 
+export type VisualLayout =
+  | "focus-card"
+  | "contrast-board"
+  | "dialogue-ladder"
+  | "drill-stack"
+  | "image-anchored";
+
+export interface SectionVisualPlan {
+  leftPanelLayout: VisualLayout;
+  onScreenGoal: string;
+  teachingVisuals: string[];
+  teacherCues: string[];
+  imageSupport: {
+    helpful: boolean;
+    priority: "essential" | "supporting" | "avoid";
+    rationale: string;
+    searchQueries: string[];
+    sourceHints: string[];
+    aiFallbackPrompt?: string;
+  };
+}
+
+export interface TeachingFrame {
+  targetRuntimeMin: number;
+  targetRuntimeMax: number;
+  openingHook: string;
+  scenario: string;
+  learnerTakeaway: string;
+}
+
 export interface ReviewBucket {
   bucket: "last" | "minus3" | "minus6" | "minus8";
   offset: 1 | 3 | 6 | 8;
@@ -46,6 +76,7 @@ export interface ScriptMaster {
   lessonId: string;
   title: string;
   objective: string;
+  teachingFrame?: TeachingFrame;
   context: LessonContext;
   sections: Array<{
     id: string;
@@ -55,6 +86,7 @@ export interface ScriptMaster {
     onScreenBullets: string[];
     drills: string[];
     languageFocus: Lexeme[];
+    visualPlan?: SectionVisualPlan;
   }>;
   roleplay: {
     scenario: string;
@@ -72,12 +104,28 @@ export interface RemotionPlan {
   schemaVersion: 1;
   lessonId: string;
   sourceScript: string;
+  canvas?: {
+    width: number;
+    height: number;
+    leftTeachingFraction: number;
+    rightCameraFraction: number;
+    safeZoneLabel: string;
+  };
   scenes: Array<{
     id: string;
     seconds: number;
     voiceover: string[];
     overlays: string[];
     thaiFocus: Array<{ thai: string; translit: string; english: string }>;
+    teachingObjective?: string;
+    layout?: VisualLayout;
+    visualStrategy?: {
+      onScreenGoal: string;
+      teachingVisuals: string[];
+      teacherCues: string[];
+      imageUsage: "real-image" | "icon" | "text-only";
+      rationale: string;
+    };
     assets: Array<{
       assetId: string;
       kind: "image" | "icon" | "video";
@@ -85,6 +133,8 @@ export interface RemotionPlan {
       sourcePolicy: "internet-first";
       sourceUrl: string;
       license: string;
+      usageNotes?: string;
+      aiFallbackPrompt?: string;
     }>;
   }>;
 }
@@ -99,6 +149,11 @@ export interface AssetProvenance {
     sourceUrl: string;
     license: string;
     usage: string;
+    query?: string;
+    sourcePolicy?: "internet-first";
+    rationale?: string;
+    sourceHints?: string[];
+    aiFallbackPrompt?: string;
   }>;
 }
 

@@ -1,0 +1,1121 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "M01-L004",
+  "lessonDir": "/Users/Shared/work/thai-nine/course/modules/M01/L004",
+  "blueprintRow": {
+    "trackId": "T01",
+    "trackTitle": "Foundations",
+    "cefrBand": "A0",
+    "moduleId": "M01",
+    "moduleTitle": "First Contact and Courtesy",
+    "moduleExitOutcome": "Learner can greet people politely, introduce themselves at a basic level, ask who/what/where questions, and survive the first minute of a conversation.",
+    "lessonId": "M01-L004",
+    "lessonTitle": "Numbers 0 to 10",
+    "lessonPrimaryOutcome": "Learner can understand and say the digits needed for age, room numbers, and basic counting.",
+    "lessonSecondaryOutcome": "Learner can recycle recent vocabulary while using number pronunciation control in short controlled output.",
+    "grammarFunctionPrimary": "basic numeral use",
+    "grammarFunctionSecondary": "number pronunciation control",
+    "newVocabCore": "ศูนย์ = zero; หนึ่ง = one; สอง = two; สาม = three; สี่ = four; ห้า = five; หก = six; เจ็ด = seven; แปด = eight; เก้า = nine",
+    "newChunksCore": "สิบ = ten; เบอร์อะไร = what number?; ฉันอายุ...ปี = I am ... years old",
+    "reviewVocabRequired": "ประเทศ = country; ไทย = Thailand / Thai; ฉัน = I; ผม = I (male); คุณ = you; เขา = he / she",
+    "scriptTarget": "Read Thai digits and associate them with spoken forms 0-10.",
+    "listeningTarget": "Recognize slowly spoken digits in age and number contexts.",
+    "speakingTarget": "Say your age, count objects, and give a simple number clearly.",
+    "lessonQuizFocus": "Digit recognition and production from zero to ten.",
+    "moduleQuizLink": "M01-QUIZ",
+    "flashcardTags": "M01; L004; first-contact;politeness;survival",
+    "notes": "Vocabulary system lesson. Widen usable lexicon without adding major new complexity.",
+    "sourceInspiration": "Thai With Fah first-contact pragmatics; ThaiPod101 introduction lessons; internal backwards planning."
+  },
+  "promptPath": "/Users/Shared/work/thai-nine/course/prompts/agent-prompts/stage-1-editorial-qa.prompt.md",
+  "promptMd": "# Stage 1.5 — Editorial QA Review\n\nYou are the editorial QA agent for **Immersion Thai with Nine**.\n\nYour job is to catch lesson-quality problems that deterministic schema checks cannot catch reliably.\n\nThis review happens **after stage 1 script writing** and **before deterministic stage 2 QA**.\n\n## Inputs\n\nYou will receive:\n- lesson id\n- blueprint row\n- `context.json`\n- `brief.md`\n- `script-master.json`\n- `script-spoken.md`\n- `script-visual.md`\n\n## Required output\n\nWrite:\n- `editorial-qa-report.md`\n\nYou may also edit directly, if needed:\n- `script-master.json`\n- `script-spoken.md`\n- `script-visual.md`\n\n## Mission\n\nLook for issues such as:\n- roleplay turns that do not make conversational sense\n- yes/no answers with no question\n- thank-you or apology lines used with no plausible trigger\n- phrase-checklist dialogue disguised as a scene\n- abrupt topic jumps inside the roleplay\n- explanations that name a form but do not explain what job it does\n- grammar explanation that is technically true but useless for a beginner\n- nuanced vocabulary explained too literally\n- drills that do not practise the claimed lesson target\n- review items forced in unnaturally\n\n## Priority rule\n\nPrefer **coherence and pedagogy** over preserving weak wording.\n\nIf a dialogue does not make sense, fix it.\nIf a roleplay uses the target phrases in unnatural order, fix it.\nIf a line technically contains the target vocabulary but teaches bad conversational logic, fix it.\n\n## Scope discipline\n\nDo not drift outside the blueprint lesson objective.\nDo not rewrite the whole lesson unless the whole lesson is genuinely weak.\nMake the smallest set of edits that creates a lesson Nine could teach from without silently correcting it while recording.\n\n## Specific checks\n\n### 1. Roleplay realism\n\nCheck whether:\n- each line follows naturally from the previous line\n- questions get answers\n- answers match the question asked\n- politeness particles fit the speaker role\n- the scene has a plausible real-world mini-situation\n- the roleplay demonstrates the lesson target instead of merely containing the target words\n\nIf a roleplay line exists only to force in vocabulary, rewrite it.\n\n### 2. Pragmatic sense\n\nCheck whether high-frequency phrases are used in sensible contexts.\n\nExamples of problems:\n- `ขอบคุณ` with no reason for thanks\n- `ขอโทษ` with no interruption, apology, or repair function\n- `ใช่` or `ไม่ใช่` after a statement that was not a confirmation question\n- `ไม่เป็นไร` where another response would be more natural\n\n### 3. Teaching usefulness\n\nCheck whether the lesson explains:\n- what the form means\n- what the form does socially or grammatically\n- when to use it\n- one likely beginner mistake or misuse when relevant\n\nIf a section only presents phrases without teaching why they work, strengthen it.\n\n### 4. Drill quality\n\nCheck whether drills actually practise the target skill.\n\nWeak drill examples:\n- repeating isolated words when the lesson target is a full question-answer pair\n- vague prompts like “practice this”\n- drills that do not force any choice, substitution, or production\n\n### 5. Review integration\n\nIf prior context exists, review items should feel natural.\nThey should support the scene or drill, not be pasted in because the lesson needs to “tick reuse.”\n\n## Repair approach\n\nWhen you find issues:\n1. edit the lesson files directly\n2. keep schema-valid structure intact\n3. preserve transliteration quality\n4. keep lesson scope and objective fixed\n5. then write the report\n\n## Report format\n\nThe report must be concise and explicit.\n\nUse this exact structure:\n\n# Editorial QA Report — Mxx-Lyyy\n\nResult: PASS or FAIL\n\n## Checks\n- Roleplay realism: PASS/FAIL — short reason\n- Pragmatic phrase use: PASS/FAIL — short reason\n- Teaching clarity: PASS/FAIL — short reason\n- Drill usefulness: PASS/FAIL — short reason\n- Review integration: PASS/FAIL — short reason\n\n## Edits made\n- short bullet list of what you changed\n- if no changes were needed, say `- No changes required.`\n\n## Remaining concerns\n- if PASS: `- None.`\n- if FAIL: list unresolved blockers clearly\n\n## Decision rule\n\nWrite `Result: PASS` only if you would be comfortable handing this lesson to Nine without expecting her to repair the logic live while recording.\n\nIf unresolved dialogue or pedagogy problems remain, write `Result: FAIL`.\n",
+  "contextPath": "/Users/Shared/work/thai-nine/course/modules/M01/L004/context.json",
+  "contextJson": {
+    "schemaVersion": 1,
+    "lessonId": "M01-L004",
+    "priorLessons": [
+      "M01-L001",
+      "M01-L002",
+      "M01-L003"
+    ],
+    "knownVocabulary": [
+      {
+        "thai": "สวัสดี",
+        "translit": "sà-wàt-dii",
+        "english": "hello",
+        "vocabId": "v-c9337e2739"
+      },
+      {
+        "thai": "สวัสดีครับ",
+        "translit": "sà-wàt-dii khráp",
+        "english": "hello (male speaker)",
+        "vocabId": "v-e653eb5319"
+      },
+      {
+        "thai": "สวัสดีค่ะ",
+        "translit": "sà-wàt-dii khâ",
+        "english": "hello (female speaker)",
+        "vocabId": "v-bccbe506b3"
+      },
+      {
+        "thai": "ขอบคุณ",
+        "translit": "khàawp-khun",
+        "english": "thank you",
+        "vocabId": "v-217b46aa5a"
+      },
+      {
+        "thai": "ขอโทษ",
+        "translit": "khǎaw-thôot",
+        "english": "excuse me / sorry",
+        "vocabId": "v-6fce5e8c2c"
+      },
+      {
+        "thai": "ไม่เป็นไร",
+        "translit": "mâi bpen rai",
+        "english": "it is okay / no problem",
+        "vocabId": "v-03cc3fe123"
+      },
+      {
+        "thai": "ครับ",
+        "translit": "khráp",
+        "english": "male polite ending",
+        "vocabId": "v-a34b9ddfd4"
+      },
+      {
+        "thai": "ค่ะ",
+        "translit": "khâ",
+        "english": "female statement ending",
+        "vocabId": "v-e5c357ab24"
+      },
+      {
+        "thai": "คะ",
+        "translit": "khá",
+        "english": "female question ending",
+        "vocabId": "v-8637eb381c"
+      },
+      {
+        "thai": "ใช่",
+        "translit": "châi",
+        "english": "yes / that is right",
+        "vocabId": "v-f40371ec59"
+      },
+      {
+        "thai": "ไม่ใช่",
+        "translit": "mâi châi",
+        "english": "no / not right",
+        "vocabId": "v-cda55f5b5e"
+      },
+      {
+        "thai": "ชื่อ",
+        "translit": "chûue",
+        "english": "name",
+        "vocabId": "v-6acb169e4b"
+      },
+      {
+        "thai": "คุณชื่ออะไร",
+        "translit": "khun chûue à-rai",
+        "english": "what is your name?",
+        "vocabId": "v-a79c6af3af"
+      },
+      {
+        "thai": "ฉันชื่อ...",
+        "translit": "chǎn chûue...",
+        "english": "my name is ...",
+        "vocabId": "v-33248cf209"
+      },
+      {
+        "thai": "ผมชื่อ...",
+        "translit": "phǒm chûue...",
+        "english": "my name is ... (male speaker)",
+        "vocabId": "v-d5ec4d10d2"
+      },
+      {
+        "thai": "ฉัน",
+        "translit": "chǎn",
+        "english": "I",
+        "vocabId": "v-0ab46f92e7"
+      },
+      {
+        "thai": "ผม",
+        "translit": "phǒm",
+        "english": "I (male)",
+        "vocabId": "v-796f86a0f6"
+      },
+      {
+        "thai": "ประเทศ",
+        "translit": "bprà-thêet",
+        "english": "country",
+        "vocabId": "v-d0c316cc2c"
+      },
+      {
+        "thai": "มาจาก",
+        "translit": "maa-jàak",
+        "english": "come from / be from",
+        "vocabId": "v-dfd8165dd5"
+      },
+      {
+        "thai": "มาจากไทย",
+        "translit": "maa-jàak thai",
+        "english": "be from Thailand",
+        "vocabId": "v-317510cace"
+      },
+      {
+        "thai": "มาจากอังกฤษ",
+        "translit": "maa-jàak ang-grìt",
+        "english": "be from England",
+        "vocabId": "v-15a452b73b"
+      },
+      {
+        "thai": "มาจากอเมริกา",
+        "translit": "maa-jàak à-mee-rí-gaa",
+        "english": "be from America",
+        "vocabId": "v-b845ab6bae"
+      },
+      {
+        "thai": "ฉันมาจาก...",
+        "translit": "chǎn maa-jàak...",
+        "english": "I am from ...",
+        "vocabId": "v-b2f0acf56a"
+      },
+      {
+        "thai": "ผมมาจาก...",
+        "translit": "phǒm maa-jàak...",
+        "english": "I am from ... (male)",
+        "vocabId": "v-64f9ed0e55"
+      },
+      {
+        "thai": "ผม",
+        "translit": "phǒm",
+        "english": "I (male speaker)",
+        "vocabId": "v-acdc9c7f8e"
+      },
+      {
+        "thai": "เขา",
+        "translit": "khǎo",
+        "english": "he / she",
+        "vocabId": "v-e3ef8a701b"
+      },
+      {
+        "thai": "นี่คือ...",
+        "translit": "nîi kheuu...",
+        "english": "this is ...",
+        "vocabId": "v-7a0154647c"
+      },
+      {
+        "thai": "เขาคือ...",
+        "translit": "khǎo kheuu...",
+        "english": "he / she is ...",
+        "vocabId": "v-e288d14433"
+      },
+      {
+        "thai": "คุณคือ...ใช่ไหม",
+        "translit": "khun kheuu... châi mái",
+        "english": "you are ... right?",
+        "vocabId": "v-7597900aeb"
+      },
+      {
+        "thai": "เขาคือใคร",
+        "translit": "khǎo kheuu khrai",
+        "english": "who is he / she?",
+        "vocabId": "v-0a54507804"
+      },
+      {
+        "thai": "คนนี้คือใคร",
+        "translit": "khon níi kheuu khrai",
+        "english": "who is this person?",
+        "vocabId": "v-688905b601"
+      },
+      {
+        "thai": "ขอโทษนะ",
+        "translit": "khǎaw-thôot ná",
+        "english": "excuse me",
+        "vocabId": "v-e2c4943d2f"
+      },
+      {
+        "thai": "เขามาจากไทย",
+        "translit": "khǎo maa-jàak thai",
+        "english": "he / she is from Thailand",
+        "vocabId": "v-af0f28e039"
+      }
+    ],
+    "knownGrammar": [
+      "Combine the greeting from lesson 1 with the new identity patterns so the learner can produce a practical mini-introduction.",
+      "Combine the new who-question pattern with earlier name and country material so the learner can follow and produce a short first-meeting dialogue.",
+      "Explain how คือ works in beginner identity lines so the learner can introduce someone or identify what is in front of them without treating it as a rigid English equals sign.",
+      "Explain the beginner-level pronoun choice so the learner can produce self-introduction lines without freezing over identity wording.",
+      "Explain what ครับ, ค่ะ, and คะ do so the learner does not memorize them as random decoration.",
+      "Give the learner a small response toolkit so a first encounter can continue instead of stopping at one memorised line.",
+      "Teach pronouns as tools for basic interaction, not as abstract dictionary entries, so the learner can point to self and others naturally.",
+      "Teach the core greeting and show that politeness is built into the line, not added as an afterthought.",
+      "Teach the core name pattern with ชื่อ and อะไร so the learner can ask and answer the most basic identity question immediately.",
+      "Teach the identity question with ใคร so the learner can ask who a person is in a short natural exchange and not confuse it with the earlier name question.",
+      "Teach the origin pattern so the learner can complete a basic introduction with country information instead of stopping after the name.",
+      "Teach the two highest-value courtesy phrases and explain that one form repairs the interaction while the other closes it warmly."
+    ],
+    "reviewBuckets": [
+      {
+        "bucket": "last",
+        "offset": 1,
+        "lessonId": "M01-L003",
+        "vocabIds": [
+          "v-0ab46f92e7",
+          "v-acdc9c7f8e",
+          "v-e3ef8a701b",
+          "v-a79c6af3af"
+        ],
+        "sample": [
+          {
+            "thai": "ฉัน",
+            "translit": "chǎn",
+            "english": "I",
+            "vocabId": "v-0ab46f92e7"
+          },
+          {
+            "thai": "ผม",
+            "translit": "phǒm",
+            "english": "I (male speaker)",
+            "vocabId": "v-acdc9c7f8e"
+          },
+          {
+            "thai": "เขา",
+            "translit": "khǎo",
+            "english": "he / she",
+            "vocabId": "v-e3ef8a701b"
+          },
+          {
+            "thai": "คุณชื่ออะไร",
+            "translit": "khun chûue à-rai",
+            "english": "what is your name?",
+            "vocabId": "v-a79c6af3af"
+          }
+        ]
+      },
+      {
+        "bucket": "minus3",
+        "offset": 3,
+        "lessonId": "M01-L001",
+        "vocabIds": [
+          "v-c9337e2739",
+          "v-e653eb5319",
+          "v-bccbe506b3",
+          "v-217b46aa5a"
+        ],
+        "sample": [
+          {
+            "thai": "สวัสดี",
+            "translit": "sà-wàt-dii",
+            "english": "hello",
+            "vocabId": "v-c9337e2739"
+          },
+          {
+            "thai": "สวัสดีครับ",
+            "translit": "sà-wàt-dii khráp",
+            "english": "hello (male speaker)",
+            "vocabId": "v-e653eb5319"
+          },
+          {
+            "thai": "สวัสดีค่ะ",
+            "translit": "sà-wàt-dii khâ",
+            "english": "hello (female speaker)",
+            "vocabId": "v-bccbe506b3"
+          },
+          {
+            "thai": "ขอบคุณ",
+            "translit": "khàawp-khun",
+            "english": "thank you",
+            "vocabId": "v-217b46aa5a"
+          }
+        ]
+      },
+      {
+        "bucket": "minus6",
+        "offset": 6,
+        "lessonId": null,
+        "vocabIds": [],
+        "sample": []
+      },
+      {
+        "bucket": "minus8",
+        "offset": 8,
+        "lessonId": null,
+        "vocabIds": [],
+        "sample": []
+      }
+    ]
+  },
+  "briefPath": "/Users/Shared/work/thai-nine/course/modules/M01/L004/brief.md",
+  "briefMd": "# M01-L004 — Numbers 0 to 10\n\n- **Module:** M01 — First Contact and Courtesy\n- **Level:** A0\n- **Target runtime:** 9-12 minutes\n- **Primary objective:** Learner can understand and say Thai digits 0-10 clearly enough for age, room numbers, and basic counting.\n- **Secondary objective:** Learner can recycle recent pronoun and identity language while handling number pronunciation in short controlled output.\n- **Teaching frame:** Practical number use in a room-number exchange plus age phrases that connect directly to the rebuilt Module 1 foundation.\n\n## Must-teach outcomes\n1. Hear and say the digits 0-10 with stable pronunciation.\n2. Understand that Thai room numbers and similar codes are usually said digit by digit.\n3. Use the chunk `เบอร์อะไร` | `ber à-rai` | what number?\n4. Build the age pattern `ฉันอายุสิบปี` | `chǎn aa-yú sìp bpii` | I am ten years old.\n5. Reuse prior pronoun and courtesy material while handling numbers.\n\n## Core vocabulary and chunks\n| Thai | Transliteration | English |\n|---|---|---|\n| ศูนย์ | sǔun | zero |\n| หนึ่ง | nùeng | one |\n| สอง | sǎawng | two |\n| สาม | sǎam | three |\n| สี่ | sìi | four |\n| ห้า | hâa | five |\n| หก | hòk | six |\n| เจ็ด | jèt | seven |\n| แปด | bpàaet | eight |\n| เก้า | gâao | nine |\n| สิบ | sìp | ten |\n| เบอร์อะไร | ber à-rai | what number? |\n| ฉัน | chǎn | I |\n| เขา | khǎo | he / she |\n| ฉันอายุสิบปี | chǎn aa-yú sìp bpii | I am ten years old |\n| เขาอายุเก้าปี | khǎo aa-yú gâao bpii | he / she is nine years old |\n\n## Teaching constraints\n- Keep this as a real lesson, not a digit list.\n- Explicitly explain why room numbers are said digit by digit.\n- Tie age phrases back to the pronoun lesson so the module feels cumulative.\n- Reuse at least two prior-course items naturally.\n- Keep visuals in the left two-thirds of the frame.\n\n## Likely learner mistakes\n1. Rushing through the digits and flattening contrast between `สี่`, `ห้า`, `หก`, and `เจ็ด`.\n2. Assuming room numbers should be read as one larger number.\n3. Learning age language without plugging it into `ฉัน` or `เขา`.\n4. Forgetting to use repair phrases when a number is missed.\n\n## Image and visual notes\n- Most of the lesson should stay text-first.\n- One real-world image is still useful in the room-number section: a hotel corridor or room-number sign.\n- The final section should stay text-led and show phrase-building from pronoun to age frame.\n",
+  "scriptMasterPath": "/Users/Shared/work/thai-nine/course/modules/M01/L004/script-master.json",
+  "scriptMaster": {
+    "schemaVersion": 1,
+    "lessonId": "M01-L004",
+    "title": "Numbers 0 to 10: Age, Room Numbers, and Basic Counting",
+    "objective": "Understand and say Thai digits 0-10 clearly enough to catch room numbers, answer simple number prompts, and begin using the age pattern อายุ...ปี with confidence.",
+    "teachingFrame": {
+      "targetRuntimeMin": 9,
+      "targetRuntimeMax": 12,
+      "openingHook": "Open with a room number heard too quickly at a hotel desk, then show how a few clear Thai digits solve the problem immediately.",
+      "scenario": "A beginner needs to catch digits in real life, repeat them back clearly, and survive a short number exchange without freezing.",
+      "learnerTakeaway": "By the end, the learner can hear, repeat, and use Thai digits 0-10 in room-number, counting, and simple age practice."
+    },
+    "context": {
+      "schemaVersion": 1,
+      "lessonId": "M01-L004",
+      "priorLessons": [
+        "M01-L001",
+        "M01-L002",
+        "M01-L003"
+      ],
+      "knownVocabulary": [
+        {
+          "thai": "สวัสดี",
+          "translit": "sà-wàt-dii",
+          "english": "hello",
+          "vocabId": "v-c9337e2739"
+        },
+        {
+          "thai": "สวัสดีครับ",
+          "translit": "sà-wàt-dii khráp",
+          "english": "hello (male speaker)",
+          "vocabId": "v-e653eb5319"
+        },
+        {
+          "thai": "สวัสดีค่ะ",
+          "translit": "sà-wàt-dii khâ",
+          "english": "hello (female speaker)",
+          "vocabId": "v-bccbe506b3"
+        },
+        {
+          "thai": "ขอบคุณ",
+          "translit": "khàawp-khun",
+          "english": "thank you",
+          "vocabId": "v-217b46aa5a"
+        },
+        {
+          "thai": "ขอโทษ",
+          "translit": "khǎaw-thôot",
+          "english": "excuse me / sorry",
+          "vocabId": "v-6fce5e8c2c"
+        },
+        {
+          "thai": "ไม่เป็นไร",
+          "translit": "mâi bpen rai",
+          "english": "it is okay / no problem",
+          "vocabId": "v-03cc3fe123"
+        },
+        {
+          "thai": "ครับ",
+          "translit": "khráp",
+          "english": "male polite ending",
+          "vocabId": "v-a34b9ddfd4"
+        },
+        {
+          "thai": "ค่ะ",
+          "translit": "khâ",
+          "english": "female statement ending",
+          "vocabId": "v-e5c357ab24"
+        },
+        {
+          "thai": "คะ",
+          "translit": "khá",
+          "english": "female question ending",
+          "vocabId": "v-8637eb381c"
+        },
+        {
+          "thai": "ใช่",
+          "translit": "châi",
+          "english": "yes / that is right",
+          "vocabId": "v-f40371ec59"
+        },
+        {
+          "thai": "ไม่ใช่",
+          "translit": "mâi châi",
+          "english": "no / not right",
+          "vocabId": "v-cda55f5b5e"
+        },
+        {
+          "thai": "ชื่อ",
+          "translit": "chûue",
+          "english": "name",
+          "vocabId": "v-6acb169e4b"
+        },
+        {
+          "thai": "คุณชื่ออะไร",
+          "translit": "khun chûue à-rai",
+          "english": "what is your name?",
+          "vocabId": "v-a79c6af3af"
+        },
+        {
+          "thai": "ฉันชื่อ...",
+          "translit": "chǎn chûue...",
+          "english": "my name is ...",
+          "vocabId": "v-33248cf209"
+        },
+        {
+          "thai": "ผมชื่อ...",
+          "translit": "phǒm chûue...",
+          "english": "my name is ... (male speaker)",
+          "vocabId": "v-d5ec4d10d2"
+        },
+        {
+          "thai": "ฉัน",
+          "translit": "chǎn",
+          "english": "I",
+          "vocabId": "v-0ab46f92e7"
+        },
+        {
+          "thai": "ผม",
+          "translit": "phǒm",
+          "english": "I (male)",
+          "vocabId": "v-796f86a0f6"
+        },
+        {
+          "thai": "ประเทศ",
+          "translit": "bprà-thêet",
+          "english": "country",
+          "vocabId": "v-d0c316cc2c"
+        },
+        {
+          "thai": "มาจาก",
+          "translit": "maa-jàak",
+          "english": "come from / be from",
+          "vocabId": "v-dfd8165dd5"
+        },
+        {
+          "thai": "มาจากไทย",
+          "translit": "maa-jàak thai",
+          "english": "be from Thailand",
+          "vocabId": "v-317510cace"
+        },
+        {
+          "thai": "มาจากอังกฤษ",
+          "translit": "maa-jàak ang-grìt",
+          "english": "be from England",
+          "vocabId": "v-15a452b73b"
+        },
+        {
+          "thai": "มาจากอเมริกา",
+          "translit": "maa-jàak à-mee-rí-gaa",
+          "english": "be from America",
+          "vocabId": "v-b845ab6bae"
+        },
+        {
+          "thai": "ฉันมาจาก...",
+          "translit": "chǎn maa-jàak...",
+          "english": "I am from ...",
+          "vocabId": "v-b2f0acf56a"
+        },
+        {
+          "thai": "ผมมาจาก...",
+          "translit": "phǒm maa-jàak...",
+          "english": "I am from ... (male)",
+          "vocabId": "v-64f9ed0e55"
+        },
+        {
+          "thai": "ผม",
+          "translit": "phǒm",
+          "english": "I (male speaker)",
+          "vocabId": "v-acdc9c7f8e"
+        },
+        {
+          "thai": "เขา",
+          "translit": "khǎo",
+          "english": "he / she",
+          "vocabId": "v-e3ef8a701b"
+        },
+        {
+          "thai": "นี่คือ...",
+          "translit": "nîi kheuu...",
+          "english": "this is ...",
+          "vocabId": "v-7a0154647c"
+        },
+        {
+          "thai": "เขาคือ...",
+          "translit": "khǎo kheuu...",
+          "english": "he / she is ...",
+          "vocabId": "v-e288d14433"
+        },
+        {
+          "thai": "คุณคือ...ใช่ไหม",
+          "translit": "khun kheuu... châi mái",
+          "english": "you are ... right?",
+          "vocabId": "v-7597900aeb"
+        },
+        {
+          "thai": "เขาคือใคร",
+          "translit": "khǎo kheuu khrai",
+          "english": "who is he / she?",
+          "vocabId": "v-0a54507804"
+        },
+        {
+          "thai": "คนนี้คือใคร",
+          "translit": "khon níi kheuu khrai",
+          "english": "who is this person?",
+          "vocabId": "v-688905b601"
+        },
+        {
+          "thai": "ขอโทษนะ",
+          "translit": "khǎaw-thôot ná",
+          "english": "excuse me",
+          "vocabId": "v-e2c4943d2f"
+        },
+        {
+          "thai": "เขามาจากไทย",
+          "translit": "khǎo maa-jàak thai",
+          "english": "he / she is from Thailand",
+          "vocabId": "v-af0f28e039"
+        }
+      ],
+      "knownGrammar": [
+        "Combine the greeting from lesson 1 with the new identity patterns so the learner can produce a practical mini-introduction.",
+        "Combine the new who-question pattern with earlier name and country material so the learner can follow and produce a short first-meeting dialogue.",
+        "Explain how คือ works in beginner identity lines so the learner can introduce someone or identify what is in front of them without treating it as a rigid English equals sign.",
+        "Explain the beginner-level pronoun choice so the learner can produce self-introduction lines without freezing over identity wording.",
+        "Explain what ครับ, ค่ะ, and คะ do so the learner does not memorize them as random decoration.",
+        "Give the learner a small response toolkit so a first encounter can continue instead of stopping at one memorised line.",
+        "Teach pronouns as tools for basic interaction, not as abstract dictionary entries, so the learner can point to self and others naturally.",
+        "Teach the core greeting and show that politeness is built into the line, not added as an afterthought.",
+        "Teach the core name pattern with ชื่อ and อะไร so the learner can ask and answer the most basic identity question immediately.",
+        "Teach the identity question with ใคร so the learner can ask who a person is in a short natural exchange and not confuse it with the earlier name question.",
+        "Teach the origin pattern so the learner can complete a basic introduction with country information instead of stopping after the name.",
+        "Teach the two highest-value courtesy phrases and explain that one form repairs the interaction while the other closes it warmly."
+      ],
+      "reviewBuckets": [
+        {
+          "bucket": "last",
+          "offset": 1,
+          "lessonId": "M01-L003",
+          "vocabIds": [
+            "v-0ab46f92e7",
+            "v-acdc9c7f8e",
+            "v-e3ef8a701b",
+            "v-a79c6af3af"
+          ],
+          "sample": [
+            {
+              "thai": "ฉัน",
+              "translit": "chǎn",
+              "english": "I",
+              "vocabId": "v-0ab46f92e7"
+            },
+            {
+              "thai": "ผม",
+              "translit": "phǒm",
+              "english": "I (male speaker)",
+              "vocabId": "v-acdc9c7f8e"
+            },
+            {
+              "thai": "เขา",
+              "translit": "khǎo",
+              "english": "he / she",
+              "vocabId": "v-e3ef8a701b"
+            },
+            {
+              "thai": "คุณชื่ออะไร",
+              "translit": "khun chûue à-rai",
+              "english": "what is your name?",
+              "vocabId": "v-a79c6af3af"
+            }
+          ]
+        },
+        {
+          "bucket": "minus3",
+          "offset": 3,
+          "lessonId": "M01-L001",
+          "vocabIds": [
+            "v-c9337e2739",
+            "v-e653eb5319",
+            "v-bccbe506b3",
+            "v-217b46aa5a"
+          ],
+          "sample": [
+            {
+              "thai": "สวัสดี",
+              "translit": "sà-wàt-dii",
+              "english": "hello",
+              "vocabId": "v-c9337e2739"
+            },
+            {
+              "thai": "สวัสดีครับ",
+              "translit": "sà-wàt-dii khráp",
+              "english": "hello (male speaker)",
+              "vocabId": "v-e653eb5319"
+            },
+            {
+              "thai": "สวัสดีค่ะ",
+              "translit": "sà-wàt-dii khâ",
+              "english": "hello (female speaker)",
+              "vocabId": "v-bccbe506b3"
+            },
+            {
+              "thai": "ขอบคุณ",
+              "translit": "khàawp-khun",
+              "english": "thank you",
+              "vocabId": "v-217b46aa5a"
+            }
+          ]
+        },
+        {
+          "bucket": "minus6",
+          "offset": 6,
+          "lessonId": null,
+          "vocabIds": [],
+          "sample": []
+        },
+        {
+          "bucket": "minus8",
+          "offset": 8,
+          "lessonId": null,
+          "vocabIds": [],
+          "sample": []
+        }
+      ]
+    },
+    "sections": [
+      {
+        "id": "s1",
+        "heading": "Build the first digit map: 0 to 3",
+        "purpose": "Give the learner a clean starting map for zero through three and explain that everyday Thai codes are usually said digit by digit.",
+        "spokenNarration": [
+          "Start with the first four digits you will hear all the time: ศูนย์ sǔun, หนึ่ง nùeng, สอง sǎawng, สาม sǎam.",
+          "For room numbers, phone numbers, and queue numbers, Thai usually says each digit one by one, not as one big math word.",
+          "One important beginner note: หนึ่ง often gets reduced in faster Thai later, but today we keep the full careful form so your ear has something solid to hold on to."
+        ],
+        "onScreenBullets": [
+          "ศูนย์ | sǔun | zero",
+          "หนึ่ง | nùeng | one",
+          "สอง | sǎawng | two",
+          "สาม | sǎam | three"
+        ],
+        "drills": [
+          "Listen and repeat: ศูนย์-หนึ่ง-สอง-สาม, then say the same line backwards.",
+          "Tutor says one digit; learner points to 0, 1, 2, or 3 and then repeats the Thai word aloud."
+        ],
+        "languageFocus": [
+          {
+            "thai": "ศูนย์",
+            "translit": "sǔun",
+            "english": "zero",
+            "vocabId": "v-871c9bd62f"
+          },
+          {
+            "thai": "หนึ่ง",
+            "translit": "nùeng",
+            "english": "one",
+            "vocabId": "v-6ad6888f1d",
+            "notes": "Teach the careful full form first."
+          },
+          {
+            "thai": "สอง",
+            "translit": "sǎawng",
+            "english": "two",
+            "vocabId": "v-afdf936166"
+          },
+          {
+            "thai": "สาม",
+            "translit": "sǎam",
+            "english": "three",
+            "vocabId": "v-368c7c205d"
+          }
+        ],
+        "visualPlan": {
+          "leftPanelLayout": "focus-card",
+          "onScreenGoal": "Show the first four digits as a clean memory set with large Thai script and Arabic numerals grouped together on the left.",
+          "teachingVisuals": [
+            "Large stacked cards for 0-3 with Thai script above the transliteration.",
+            "A simple line showing digit-by-digit reading for a code like 1-0-3."
+          ],
+          "teacherCues": [
+            "Pause after each digit and keep the learner on one sound at a time.",
+            "Point to the Arabic numeral only after the learner has seen the Thai script and heard the spoken form."
+          ],
+          "imageSupport": {
+            "helpful": false,
+            "priority": "avoid",
+            "rationale": "The digits themselves are the teaching target here, so a real-world image would distract more than it would help.",
+            "searchQueries": [],
+            "sourceHints": [
+              "text-only teaching card"
+            ]
+          }
+        }
+      },
+      {
+        "id": "s2",
+        "heading": "Add 4 to 7 with pronunciation control",
+        "purpose": "Teach the middle set where beginners often blur vowels or rush final consonants, especially with สี่, ห้า, หก, and เจ็ด.",
+        "spokenNarration": [
+          "Now add the middle set: สี่ sìi, ห้า hâa, หก hòk, เจ็ด jèt.",
+          "Do not treat these as just English labels with Thai written next to them. Hear the shape of each word: สี่ is long, หก is clipped, and เจ็ด ends sharply.",
+          "If you stretch หก or soften the ending in เจ็ด too much, you will sound less natural and your listening will stay fuzzy."
+        ],
+        "onScreenBullets": [
+          "สี่ | sìi | four",
+          "ห้า | hâa | five",
+          "หก | hòk | six",
+          "เจ็ด | jèt | seven"
+        ],
+        "drills": [
+          "Clap once for each digit: สี่-ห้า-หก-เจ็ด, keeping หก and เจ็ด short and controlled.",
+          "Minimal-cue drill: teacher says a digit in Thai, learner repeats only that digit without translating first."
+        ],
+        "languageFocus": [
+          {
+            "thai": "สี่",
+            "translit": "sìi",
+            "english": "four",
+            "vocabId": "v-cf99ffc78e"
+          },
+          {
+            "thai": "ห้า",
+            "translit": "hâa",
+            "english": "five",
+            "vocabId": "v-f028feb896"
+          },
+          {
+            "thai": "หก",
+            "translit": "hòk",
+            "english": "six",
+            "vocabId": "v-f6b67b4e6f"
+          },
+          {
+            "thai": "เจ็ด",
+            "translit": "jèt",
+            "english": "seven",
+            "vocabId": "v-73bffabf48"
+          }
+        ],
+        "visualPlan": {
+          "leftPanelLayout": "contrast-board",
+          "onScreenGoal": "Contrast the sound-shapes of 4-7 so the learner can see long versus clipped forms without crowding the screen.",
+          "teachingVisuals": [
+            "Two-column comparison board pairing long shapes and short clipped shapes.",
+            "A rhythm bar under each digit showing whether the learner should hold or cut the sound."
+          ],
+          "teacherCues": [
+            "Model the digits once naturally and once slowly.",
+            "Use hand timing to show that หก and เจ็ด finish earlier than สี่ and ห้า."
+          ],
+          "imageSupport": {
+            "helpful": false,
+            "priority": "avoid",
+            "rationale": "This section is about pronunciation timing and contrast, so graphic timing cues teach better than stock imagery.",
+            "searchQueries": [],
+            "sourceHints": [
+              "text-only rhythm board",
+              "simple timing icons"
+            ]
+          }
+        }
+      },
+      {
+        "id": "s3",
+        "heading": "Finish 8 to 10 and ask for a number",
+        "purpose": "Complete the 0-10 set and introduce เบอร์อะไร as a practical chunk for asking about room numbers, table numbers, and other everyday number labels.",
+        "spokenNarration": [
+          "Finish the set with แปด bpàaet, เก้า gâao, and สิบ sìp.",
+          "สิบ means ten, but for now the real job is not mental arithmetic. The real job is hearing each digit clearly and saying it back clearly.",
+          "Then add the chunk เบอร์อะไร ber à-rai. เบอร์ is a very practical borrowed word for a number label, so you hear it with rooms, phones, tables, and tickets."
+        ],
+        "onScreenBullets": [
+          "แปด | bpàaet | eight",
+          "เก้า | gâao | nine",
+          "สิบ | sìp | ten",
+          "เบอร์อะไร | ber à-rai | what number?"
+        ],
+        "drills": [
+          "Call-and-response: teacher says the Arabic numeral 8, 9, or 10; learner answers in Thai.",
+          "Prompt drill: teacher asks เบอร์อะไร and learner answers with a short digit string such as ห้า-ศูนย์-สอง."
+        ],
+        "languageFocus": [
+          {
+            "thai": "แปด",
+            "translit": "bpàaet",
+            "english": "eight",
+            "vocabId": "v-1dbb23ed34"
+          },
+          {
+            "thai": "เก้า",
+            "translit": "gâao",
+            "english": "nine",
+            "vocabId": "v-cac367e6fd"
+          },
+          {
+            "thai": "สิบ",
+            "translit": "sìp",
+            "english": "ten",
+            "vocabId": "v-31da0816ab"
+          },
+          {
+            "thai": "เบอร์อะไร",
+            "translit": "ber à-rai",
+            "english": "what number?",
+            "vocabId": "v-ba4059e504",
+            "notes": "Useful for room numbers, phone numbers, and other labelled numbers."
+          }
+        ],
+        "visualPlan": {
+          "leftPanelLayout": "image-anchored",
+          "onScreenGoal": "Anchor the digit set in a real-world number context so the learner sees why saying each digit separately matters.",
+          "teachingVisuals": [
+            "Large room-number example such as 5-0-2 with each Thai digit spoken separately underneath.",
+            "Short prompt card showing เบอร์อะไร on the left and a three-digit answer on the next beat."
+          ],
+          "teacherCues": [
+            "Keep the room-number example large and leave the right third empty for Nine.",
+            "Do not let the photo dominate the scene; use it only as a context anchor behind the left teaching card."
+          ],
+          "imageSupport": {
+            "helpful": true,
+            "priority": "supporting",
+            "rationale": "A real room-number plaque or hotel corridor sign makes the use case instantly concrete and helps the learner understand why Thai digits are often said one by one.",
+            "searchQueries": [
+              "Thailand hotel room number door plaque",
+              "hotel corridor room number sign Thailand"
+            ],
+            "sourceHints": [
+              "Pexels",
+              "Wikimedia Commons",
+              "hotel signage photo"
+            ]
+          }
+        }
+      },
+      {
+        "id": "s4",
+        "heading": "Use numbers in short real phrases",
+        "purpose": "Move from isolated digits into usable age and room-number phrases while explicitly reusing the pronoun and identity material from the rebuilt foundation lessons.",
+        "spokenNarration": [
+          "Numbers become much more useful when they plug into the people language you already know. From lesson three, you can now drop digits into frames such as ฉันอายุสิบปี or เขาอายุเก้าปี.",
+          "You already know pronouns like ฉัน, ผม, คุณ, and เขา. That means numbers are no longer floating on their own; they attach to real people, room numbers, and simple personal facts.",
+          "If a number comes too fast, fall back on the repair phrases from the first foundation lesson, such as ขอโทษ khǎaw-thôot, then ask again and keep the number exchange moving."
+        ],
+        "onScreenBullets": [
+          "ฉัน | chǎn | I",
+          "เขา | khǎo | he / she",
+          "ฉันอายุสิบปี | chǎn aa-yú sìp bpii | I am ten years old",
+          "เขาอายุเก้าปี | khǎo aa-yú gâao bpii | he / she is nine years old",
+          "ขอโทษ | khǎaw-thôot | excuse me / sorry"
+        ],
+        "drills": [
+          "Pattern drill: teacher gives a digit from zero to ten; learner builds ฉันอายุ...ปี or เขาอายุ...ปี with that digit.",
+          "Repair drill: learner hears a room number once, then must respond with either the number or ขอโทษ before hearing it again and repeating it back."
+        ],
+        "languageFocus": [
+          {
+            "thai": "ฉัน",
+            "translit": "chǎn",
+            "english": "I",
+            "vocabId": "v-0ab46f92e7"
+          },
+          {
+            "thai": "เขา",
+            "translit": "khǎo",
+            "english": "he / she",
+            "vocabId": "v-e3ef8a701b"
+          },
+          {
+            "thai": "ฉันอายุสิบปี",
+            "translit": "chǎn aa-yú sìp bpii",
+            "english": "I am ten years old",
+            "vocabId": "v-03d6876d5b"
+          },
+          {
+            "thai": "เขาอายุเก้าปี",
+            "translit": "khǎo aa-yú gâao bpii",
+            "english": "he / she is nine years old",
+            "vocabId": "v-9bf9593428"
+          },
+          {
+            "thai": "ขอโทษ",
+            "translit": "khǎaw-thôot",
+            "english": "excuse me / sorry",
+            "vocabId": "v-6fce5e8c2c"
+          }
+        ],
+        "visualPlan": {
+          "leftPanelLayout": "dialogue-ladder",
+          "onScreenGoal": "Show numbers dropping into pronoun-led phrases so the learner sees age and room-number language as part of the same first-contact toolkit.",
+          "teachingVisuals": [
+            "A compact phrase ladder: ฉัน -> อายุ -> สิบ -> ปี, then a second line with เขาอายุเก้าปี.",
+            "A repair-and-repeat mini-dialogue showing ขอโทษ before the room number is repeated clearly."
+          ],
+          "teacherCues": [
+            "Tie the age pattern explicitly back to the pronouns from the previous lesson.",
+            "Keep the room-number question and answer separate from the age line so the learner hears two different number jobs."
+          ],
+          "imageSupport": {
+            "helpful": false,
+            "priority": "avoid",
+            "rationale": "This section is about plugging digits into phrase frames, so a clean ladder teaches better than another contextual photo.",
+            "searchQueries": [],
+            "sourceHints": [
+              "text-only phrase ladder",
+              "simple dialogue arrows"
+            ]
+          }
+        }
+      }
+    ],
+    "roleplay": {
+      "scenario": "Small class check-in: asking about another student and catching the room number clearly.",
+      "lines": [
+        {
+          "speaker": "A",
+          "thai": "สวัสดีค่ะ ขอโทษนะคะ คนนี้คือใครคะ",
+          "translit": "sà-wàt-dii khâ khǎaw-thôot ná khá khon níi kheuu khrai khá",
+          "english": "Hello, excuse me, who is this person?"
+        },
+        {
+          "speaker": "B",
+          "thai": "คนนี้คือมีนครับ",
+          "translit": "khon níi kheuu Miin khráp",
+          "english": "This is Min."
+        },
+        {
+          "speaker": "A",
+          "thai": "เขาอายุเก้าปีใช่ไหมคะ",
+          "translit": "khǎo aa-yú gâao bpii châi mái khá",
+          "english": "She is nine years old, right?"
+        },
+        {
+          "speaker": "B",
+          "thai": "ใช่ครับ",
+          "translit": "châi khráp",
+          "english": "Yes."
+        },
+        {
+          "speaker": "A",
+          "thai": "ห้องเบอร์อะไรคะ",
+          "translit": "hâawng ber à-rai khá",
+          "english": "What is the room number?"
+        },
+        {
+          "speaker": "B",
+          "thai": "ห้า-ศูนย์-สองครับ",
+          "translit": "hâa-sǔun-sǎawng khráp",
+          "english": "Five-zero-two."
+        },
+        {
+          "speaker": "A",
+          "thai": "ขอบคุณค่ะ",
+          "translit": "khàawp-khun khâ",
+          "english": "Thank you."
+        }
+      ]
+    },
+    "recap": [
+      "Thai digits are most useful when they are attached to a real beginner job such as a room number or an age.",
+      "Reuse pronouns from the previous lesson so numbers describe people, not just abstract counting.",
+      "Use อายุ + number + ปี for beginner age practice, then expand the range later.",
+      "If you miss a number, recycle ขอโทษ or another repair phrase instead of going silent."
+    ],
+    "qaChecks": [
+      {
+        "id": "tone-inline",
+        "description": "All transliteration uses PTM inline tone marks; superscripts forbidden",
+        "pass": true,
+        "evidence": "All transliteration strings passed inline-tone checks"
+      },
+      {
+        "id": "triplets",
+        "description": "Thai/translit/English triplets are complete for learner-facing script content",
+        "pass": true,
+        "evidence": "Sections and on-screen bullets contain complete triplets"
+      },
+      {
+        "id": "drills",
+        "description": "Each section includes active drill",
+        "pass": true,
+        "evidence": "Each section has >=1 drill"
+      },
+      {
+        "id": "section-count",
+        "description": "Lesson contains at least 4 teaching sections",
+        "pass": true,
+        "evidence": "Lesson contains 4 sections"
+      },
+      {
+        "id": "section-depth",
+        "description": "Each section includes at least 3 spoken narration lines",
+        "pass": true,
+        "evidence": "Each section has >=3 spoken narration lines"
+      },
+      {
+        "id": "roleplay",
+        "description": "Scenario roleplay included and substantial",
+        "pass": true,
+        "evidence": "Roleplay contains 7 lines"
+      },
+      {
+        "id": "roleplay-duplicates",
+        "description": "Roleplay does not repeat exact lines",
+        "pass": true,
+        "evidence": "All roleplay lines are distinct"
+      },
+      {
+        "id": "roleplay-turn-taking",
+        "description": "Roleplay alternates speakers cleanly",
+        "pass": true,
+        "evidence": "Roleplay alternates speakers line by line"
+      },
+      {
+        "id": "roleplay-answer-logic",
+        "description": "Yes/no answer particles appear only after a nearby question or confirmation turn",
+        "pass": true,
+        "evidence": "Answer particles follow question-like turns when used"
+      },
+      {
+        "id": "roleplay-question-target",
+        "description": "Question-target lessons include at least one question-like roleplay turn",
+        "pass": true,
+        "evidence": "Roleplay includes a question-like turn"
+      },
+      {
+        "id": "recap",
+        "description": "Recap includes at least 3 review items",
+        "pass": true,
+        "evidence": "Recap contains 4 items"
+      },
+      {
+        "id": "review-reuse",
+        "description": "Lesson reuses at least 2 prior items when prior lesson context exists",
+        "pass": true,
+        "evidence": "Reused 2 prior vocabulary items in language focus"
+      },
+      {
+        "id": "teaching-frame",
+        "description": "Lesson includes a clear teaching frame with runtime and learner takeaway",
+        "pass": true,
+        "evidence": "Teaching frame targets 9-12 minutes"
+      },
+      {
+        "id": "visual-plan",
+        "description": "Each section includes a left-panel visual plan and explicit image decision",
+        "pass": true,
+        "evidence": "Every section includes visualPlan with usable teaching visuals and image rationale"
+      },
+      {
+        "id": "asset-research",
+        "description": "Lesson provides at least one concrete image research query when visuals would help",
+        "pass": true,
+        "evidence": "Sections with concrete asset research queries: 1"
+      },
+      {
+        "id": "policy",
+        "description": "Transliteration + image sourcing policies are declared",
+        "pass": true,
+        "evidence": "Policy object present with required enum values"
+      }
+    ],
+    "policies": {
+      "transliteration": "PTM_ADAPTED_INLINE_TONES",
+      "imageSourcing": "INTERNET_FIRST_NO_GENERATIVE_DEFAULT"
+    }
+  },
+  "scriptSpokenPath": "/Users/Shared/work/thai-nine/course/modules/M01/L004/script-spoken.md",
+  "scriptSpokenMd": "# Spoken Script — M01-L004\n\n## Opening\nToday we are building one of the most practical beginner systems in Thai: the numbers from zero to ten.\n\nNot because you want to do maths, but because numbers show up immediately in real life.\n\nYou hear them in room numbers, phone numbers, table numbers, queue numbers, and very simple personal information.\n\n---\n\n## Section 1 — Build the first digit map: 0 to 3\nStart with the first four digits you will hear all the time.\n\n- ศูนย์ | sǔun | zero\n- หนึ่ง | nùeng | one\n- สอง | sǎawng | two\n- สาม | sǎam | three\n\nFor room numbers and similar codes, Thai usually says each digit one by one.\n\nThat is an important idea. We are not always reading one big number. We are often reading a code.\n\nOne more note about หนึ่ง. In faster speech, Thai can reduce it later. But for now, keep the full careful form: หนึ่ง | nùeng | one.\n\nPractice: say ศูนย์-หนึ่ง-สอง-สาม.\n\nNow backwards: สาม-สอง-หนึ่ง-ศูนย์.\n\n---\n\n## Section 2 — Add 4 to 7 with pronunciation control\nNow add the middle set.\n\n- สี่ | sìi | four\n- ห้า | hâa | five\n- หก | hòk | six\n- เจ็ด | jèt | seven\n\nThese are not all shaped the same.\n\nสี่ is long. ห้า is open and clear. หก is short. เจ็ด ends sharply.\n\nIf you stretch หก or blur the ending in เจ็ด, you make listening harder for yourself.\n\nPractice: สี่-ห้า-หก-เจ็ด.\n\nNow listen and repeat only the one you hear.\n\n---\n\n## Section 3 — Finish 8 to 10 and ask for a number\nNow finish the set.\n\n- แปด | bpàaet | eight\n- เก้า | gâao | nine\n- สิบ | sìp | ten\n- เบอร์อะไร | ber à-rai | what number?\n\nสิบ means ten. But the main skill today is not building bigger numbers yet.\n\nThe main skill is hearing a digit clearly and saying it back clearly.\n\nNow add this very useful chunk: เบอร์อะไร | ber à-rai | what number?\n\nเบอร์ is a practical number-label word. You hear it with room numbers, phone numbers, table numbers, and tickets.\n\nPractice question: เบอร์อะไร | ber à-rai | what number?\n\nPractice answer: ห้า-ศูนย์-สอง | hâa-sǔun-sǎawng | five-zero-two.\n\n---\n\n## Section 4 — Use numbers in short real phrases\nNow connect the numbers to the people language you already know.\n\n- ฉัน | chǎn | I\n- เขา | khǎo | he / she\n- ฉันอายุสิบปี | chǎn aa-yú sìp bpii | I am ten years old\n- เขาอายุเก้าปี | khǎo aa-yú gâao bpii | he / she is nine years old\n- ขอโทษ | khǎaw-thôot | excuse me / sorry\n\nThis is the important module point: numbers are not separate from the earlier lessons.\n\nYou already know pronouns like ฉัน and เขา, and you already hear คุณ naturally in earlier first-contact exchanges. Now you are adding number information to those same people.\n\nSo Thai becomes cumulative: pronoun first, then the age pattern, then other facts such as a room number.\n\nAnd if you miss the number, do not freeze. Use ขอโทษ | khǎaw-thôot | excuse me / sorry, then ask again.\n\n---\n\n## Roleplay — Class check-in with a room number\nA: สวัสดีค่ะ ขอโทษนะคะ คนนี้คือใครคะ | sà-wàt-dii khâ khǎaw-thôot ná khá khon níi kheuu khrai khá | Hello, excuse me, who is this person?\n\nB: คนนี้คือมีนครับ | khon níi kheuu Miin khráp | This is Min.\n\nA: เขาอายุเก้าปีใช่ไหมคะ | khǎo aa-yú gâao bpii châi mái khá | She is nine years old, right?\n\nB: ใช่ครับ | châi khráp | Yes.\n\nA: ห้องเบอร์อะไรคะ | hâawng ber à-rai khá | What is the room number?\n\nB: ห้า-ศูนย์-สองครับ | hâa-sǔun-sǎawng khráp | Five-zero-two.\n\nA: ขอบคุณค่ะ | khàawp-khun khâ | Thank you.\n\n---\n\n## Recap\n- Thai room numbers are usually said digit by digit.\n- Use pronouns from the previous lesson so numbers describe real people.\n- Use อายุ + number + ปี for beginner age practice.\n- If you miss a number, recycle a repair phrase and ask again.\n",
+  "scriptVisualPath": "/Users/Shared/work/thai-nine/course/modules/M01/L004/script-visual.md",
+  "scriptVisualMd": "# Visual Script — M01-L004 (Numbers 0 to 10)\n\n## Frame rule\n- Keep all teaching visuals in the left two-thirds.\n- The right third stays clear for Nine's talking head.\n- Prioritise number clarity, phrase ladders, and code-style reading over decorative imagery.\n\n## Section 1 — Build the first digit map: 0 to 3\n- Layout: focus-card\n- Learning focus: first digit set plus code-reading concept\n- Highlighted terms:\n  - ศูนย์ | sǔun | zero\n  - หนึ่ง | nùeng | one\n  - สอง | sǎawng | two\n  - สาม | sǎam | three\n- On-screen plan:\n  - stacked digit cards\n  - simple 1-0-3 code line\n- Visual support choice: text-only\n\n## Section 2 — Add 4 to 7 with pronunciation control\n- Layout: contrast-board\n- Learning focus: long versus clipped number shapes\n- Highlighted terms:\n  - สี่ | sìi | four\n  - ห้า | hâa | five\n  - หก | hòk | six\n  - เจ็ด | jèt | seven\n- On-screen plan:\n  - comparison board\n  - rhythm bar under each digit\n- Visual support choice: text-only\n\n## Section 3 — Finish 8 to 10 and ask for a number\n- Layout: image-anchored\n- Learning focus: final digit set plus practical number question\n- Highlighted terms:\n  - แปด | bpàaet | eight\n  - เก้า | gâao | nine\n  - สิบ | sìp | ten\n  - เบอร์อะไร | ber à-rai | what number?\n- On-screen plan:\n  - large room-number example 5-0-2\n  - prompt card for เบอร์อะไร\n- Real-world image helpful: yes, but supporting only\n- Search ideas:\n  - Thailand hotel room number door plaque\n  - hotel corridor room number sign Thailand\n\n## Section 4 — Use numbers in short real phrases\n- Layout: dialogue-ladder\n- Learning focus: pronoun-led age phrases plus repair phrase\n- Highlighted terms:\n  - ฉัน | chǎn | I\n  - เขา | khǎo | he / she\n  - ฉันอายุสิบปี | chǎn aa-yú sìp bpii | I am ten years old\n  - เขาอายุเก้าปี | khǎo aa-yú gâao bpii | he / she is nine years old\n  - ขอโทษ | khǎaw-thôot | excuse me / sorry\n- On-screen plan:\n  - compact phrase ladder for age lines\n  - small repair-and-repeat mini-dialogue\n- Visual support choice: text-only\n\n## Roleplay beat\n- Show one turn at a time on the left side.\n- Keep the identity question and room-number question visually separate.\n- Let เขาอายุเก้าปีใช่ไหมคะ and ใช่ครับ appear as a tight confirmation pair.\n- Do not let the room-sign image crowd the right-third camera zone.\n",
+  "outputReportPath": "/Users/Shared/work/thai-nine/course/modules/M01/L004/editorial-qa-report.md"
+}

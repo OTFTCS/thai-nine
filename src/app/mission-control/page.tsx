@@ -4,6 +4,7 @@ import { useEffect, useMemo, useState } from "react";
 
 type Lesson = {
   lessonId: string;
+  title: string;
   moduleId: string;
   lessonKey: string;
   state: string;
@@ -213,11 +214,13 @@ export default function MissionControlPage() {
             <div className="space-y-3 max-h-[520px] overflow-auto pr-1">
               {(selectedModule?.lessons || []).map((lesson) => {
                 const done = lesson.artifacts.filter((a) => a.exists).length;
+                const reviewHref = `/mission-control/lesson/${encodeURIComponent(lesson.lessonId)}`;
                 return (
                   <div key={lesson.lessonId} className="rounded-xl border border-slate-700 bg-slate-800/50 p-3">
                     <div className="flex flex-wrap items-center gap-2 justify-between">
                       <div>
                         <p className="font-semibold">{lesson.lessonId}</p>
+                        <p className="text-xs text-slate-300">{lesson.title}</p>
                         <p className="text-xs text-slate-400">Updated: {lesson.updatedAt || "—"}</p>
                       </div>
                       <span
@@ -226,6 +229,18 @@ export default function MissionControlPage() {
                         }`}
                       >
                         {lesson.state}
+                      </span>
+                    </div>
+
+                    <div className="mt-3 flex flex-wrap items-center gap-2">
+                      <a
+                        href={reviewHref}
+                        className="rounded-lg border border-indigo-500/40 bg-indigo-500/10 px-3 py-1.5 text-xs font-medium text-indigo-200 transition hover:bg-indigo-500/20"
+                      >
+                        Review lesson
+                      </a>
+                      <span className="text-xs text-slate-400">
+                        {done}/{lesson.artifacts.length} artifacts present
                       </span>
                     </div>
 

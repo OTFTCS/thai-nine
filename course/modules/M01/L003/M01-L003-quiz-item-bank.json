@@ -1,0 +1,680 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "M01-L003",
+  "generatedAt": "2026-03-11T07:36:46.309Z",
+  "sourceScript": "M01-L003-script-master.json",
+  "items": [
+    {
+      "id": "v-acdc9c7f8e-thai-to-english",
+      "vocabId": "v-acdc9c7f8e",
+      "type": "thai_to_english",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "What is the best meaning of ผม?",
+        "thai": "ผม",
+        "translit": "phǒm"
+      },
+      "options": [
+        "I (male speaker)",
+        "he / she",
+        "this is ...",
+        "he / she is ..."
+      ],
+      "answer": "I (male speaker)",
+      "rationale": "Maps Thai form to target meaning from script languageFocus."
+    },
+    {
+      "id": "v-acdc9c7f8e-english-to-thai",
+      "vocabId": "v-acdc9c7f8e",
+      "type": "english_to_thai",
+      "displayMode": "english_only",
+      "prompt": {
+        "text": "Select Thai for: I (male speaker)",
+        "english": "I (male speaker)"
+      },
+      "options": [
+        "ผม",
+        "เขา",
+        "นี่คือ...",
+        "เขาคือ..."
+      ],
+      "answer": "ผม",
+      "rationale": "Reverses mapping for active recall."
+    },
+    {
+      "id": "v-acdc9c7f8e-fill-translit",
+      "vocabId": "v-acdc9c7f8e",
+      "type": "fill_translit",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "Type the PTM transliteration for ผม.",
+        "thai": "ผม"
+      },
+      "answer": "phǒm",
+      "rationale": "Forces transliteration production with inline tone marks."
+    },
+    {
+      "id": "v-acdc9c7f8e-context-mcq",
+      "vocabId": "v-acdc9c7f8e",
+      "type": "context_mcq",
+      "displayMode": "triplet",
+      "prompt": {
+        "text": "Choose the sentence that keeps the lesson meaning of this phrase.",
+        "thai": "ผม",
+        "translit": "phǒm",
+        "english": "I (male speaker)"
+      },
+      "options": [
+        "Use ผม in polite beginner conversation",
+        "Use เขา in polite beginner conversation",
+        "Use นี่คือ... in polite beginner conversation",
+        "Use เขาคือ... in polite beginner conversation"
+      ],
+      "answer": "Use ผม in polite beginner conversation",
+      "rationale": "Checks contextual understanding while preserving triplet exposure."
+    },
+    {
+      "id": "v-e3ef8a701b-thai-to-english",
+      "vocabId": "v-e3ef8a701b",
+      "type": "thai_to_english",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "What is the best meaning of เขา?",
+        "thai": "เขา",
+        "translit": "khǎo"
+      },
+      "options": [
+        "he / she",
+        "I (male speaker)",
+        "this is ...",
+        "he / she is ..."
+      ],
+      "answer": "he / she",
+      "rationale": "Maps Thai form to target meaning from script languageFocus."
+    },
+    {
+      "id": "v-e3ef8a701b-english-to-thai",
+      "vocabId": "v-e3ef8a701b",
+      "type": "english_to_thai",
+      "displayMode": "english_only",
+      "prompt": {
+        "text": "Select Thai for: he / she",
+        "english": "he / she"
+      },
+      "options": [
+        "เขา",
+        "ผม",
+        "นี่คือ...",
+        "เขาคือ..."
+      ],
+      "answer": "เขา",
+      "rationale": "Reverses mapping for active recall."
+    },
+    {
+      "id": "v-e3ef8a701b-fill-translit",
+      "vocabId": "v-e3ef8a701b",
+      "type": "fill_translit",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "Type the PTM transliteration for เขา.",
+        "thai": "เขา"
+      },
+      "answer": "khǎo",
+      "rationale": "Forces transliteration production with inline tone marks."
+    },
+    {
+      "id": "v-e3ef8a701b-context-mcq",
+      "vocabId": "v-e3ef8a701b",
+      "type": "context_mcq",
+      "displayMode": "triplet",
+      "prompt": {
+        "text": "Choose the sentence that keeps the lesson meaning of this phrase.",
+        "thai": "เขา",
+        "translit": "khǎo",
+        "english": "he / she"
+      },
+      "options": [
+        "Use เขา in polite beginner conversation",
+        "Use ผม in polite beginner conversation",
+        "Use นี่คือ... in polite beginner conversation",
+        "Use เขาคือ... in polite beginner conversation"
+      ],
+      "answer": "Use เขา in polite beginner conversation",
+      "rationale": "Checks contextual understanding while preserving triplet exposure."
+    },
+    {
+      "id": "v-7a0154647c-thai-to-english",
+      "vocabId": "v-7a0154647c",
+      "type": "thai_to_english",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "What is the best meaning of นี่คือ...?",
+        "thai": "นี่คือ...",
+        "translit": "nîi kheuu..."
+      },
+      "options": [
+        "this is ...",
+        "I (male speaker)",
+        "he / she",
+        "he / she is ..."
+      ],
+      "answer": "this is ...",
+      "rationale": "Maps Thai form to target meaning from script languageFocus."
+    },
+    {
+      "id": "v-7a0154647c-english-to-thai",
+      "vocabId": "v-7a0154647c",
+      "type": "english_to_thai",
+      "displayMode": "english_only",
+      "prompt": {
+        "text": "Select Thai for: this is ...",
+        "english": "this is ..."
+      },
+      "options": [
+        "นี่คือ...",
+        "ผม",
+        "เขา",
+        "เขาคือ..."
+      ],
+      "answer": "นี่คือ...",
+      "rationale": "Reverses mapping for active recall."
+    },
+    {
+      "id": "v-7a0154647c-fill-translit",
+      "vocabId": "v-7a0154647c",
+      "type": "fill_translit",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "Type the PTM transliteration for นี่คือ....",
+        "thai": "นี่คือ..."
+      },
+      "answer": "nîi kheuu...",
+      "rationale": "Forces transliteration production with inline tone marks."
+    },
+    {
+      "id": "v-7a0154647c-context-mcq",
+      "vocabId": "v-7a0154647c",
+      "type": "context_mcq",
+      "displayMode": "triplet",
+      "prompt": {
+        "text": "Choose the sentence that keeps the lesson meaning of this phrase.",
+        "thai": "นี่คือ...",
+        "translit": "nîi kheuu...",
+        "english": "this is ..."
+      },
+      "options": [
+        "Use นี่คือ... in polite beginner conversation",
+        "Use ผม in polite beginner conversation",
+        "Use เขา in polite beginner conversation",
+        "Use เขาคือ... in polite beginner conversation"
+      ],
+      "answer": "Use นี่คือ... in polite beginner conversation",
+      "rationale": "Checks contextual understanding while preserving triplet exposure."
+    },
+    {
+      "id": "v-e288d14433-thai-to-english",
+      "vocabId": "v-e288d14433",
+      "type": "thai_to_english",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "What is the best meaning of เขาคือ...?",
+        "thai": "เขาคือ...",
+        "translit": "khǎo kheuu..."
+      },
+      "options": [
+        "he / she is ...",
+        "I (male speaker)",
+        "he / she",
+        "this is ..."
+      ],
+      "answer": "he / she is ...",
+      "rationale": "Maps Thai form to target meaning from script languageFocus."
+    },
+    {
+      "id": "v-e288d14433-english-to-thai",
+      "vocabId": "v-e288d14433",
+      "type": "english_to_thai",
+      "displayMode": "english_only",
+      "prompt": {
+        "text": "Select Thai for: he / she is ...",
+        "english": "he / she is ..."
+      },
+      "options": [
+        "เขาคือ...",
+        "ผม",
+        "เขา",
+        "นี่คือ..."
+      ],
+      "answer": "เขาคือ...",
+      "rationale": "Reverses mapping for active recall."
+    },
+    {
+      "id": "v-e288d14433-fill-translit",
+      "vocabId": "v-e288d14433",
+      "type": "fill_translit",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "Type the PTM transliteration for เขาคือ....",
+        "thai": "เขาคือ..."
+      },
+      "answer": "khǎo kheuu...",
+      "rationale": "Forces transliteration production with inline tone marks."
+    },
+    {
+      "id": "v-e288d14433-context-mcq",
+      "vocabId": "v-e288d14433",
+      "type": "context_mcq",
+      "displayMode": "triplet",
+      "prompt": {
+        "text": "Choose the sentence that keeps the lesson meaning of this phrase.",
+        "thai": "เขาคือ...",
+        "translit": "khǎo kheuu...",
+        "english": "he / she is ..."
+      },
+      "options": [
+        "Use เขาคือ... in polite beginner conversation",
+        "Use ผม in polite beginner conversation",
+        "Use เขา in polite beginner conversation",
+        "Use นี่คือ... in polite beginner conversation"
+      ],
+      "answer": "Use เขาคือ... in polite beginner conversation",
+      "rationale": "Checks contextual understanding while preserving triplet exposure."
+    },
+    {
+      "id": "v-7597900aeb-thai-to-english",
+      "vocabId": "v-7597900aeb",
+      "type": "thai_to_english",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "What is the best meaning of คุณคือ...ใช่ไหม?",
+        "thai": "คุณคือ...ใช่ไหม",
+        "translit": "khun kheuu... châi mái"
+      },
+      "options": [
+        "you are ... right?",
+        "I (male speaker)",
+        "he / she",
+        "this is ..."
+      ],
+      "answer": "you are ... right?",
+      "rationale": "Maps Thai form to target meaning from script languageFocus."
+    },
+    {
+      "id": "v-7597900aeb-english-to-thai",
+      "vocabId": "v-7597900aeb",
+      "type": "english_to_thai",
+      "displayMode": "english_only",
+      "prompt": {
+        "text": "Select Thai for: you are ... right?",
+        "english": "you are ... right?"
+      },
+      "options": [
+        "คุณคือ...ใช่ไหม",
+        "ผม",
+        "เขา",
+        "นี่คือ..."
+      ],
+      "answer": "คุณคือ...ใช่ไหม",
+      "rationale": "Reverses mapping for active recall."
+    },
+    {
+      "id": "v-7597900aeb-fill-translit",
+      "vocabId": "v-7597900aeb",
+      "type": "fill_translit",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "Type the PTM transliteration for คุณคือ...ใช่ไหม.",
+        "thai": "คุณคือ...ใช่ไหม"
+      },
+      "answer": "khun kheuu... châi mái",
+      "rationale": "Forces transliteration production with inline tone marks."
+    },
+    {
+      "id": "v-7597900aeb-context-mcq",
+      "vocabId": "v-7597900aeb",
+      "type": "context_mcq",
+      "displayMode": "triplet",
+      "prompt": {
+        "text": "Choose the sentence that keeps the lesson meaning of this phrase.",
+        "thai": "คุณคือ...ใช่ไหม",
+        "translit": "khun kheuu... châi mái",
+        "english": "you are ... right?"
+      },
+      "options": [
+        "Use คุณคือ...ใช่ไหม in polite beginner conversation",
+        "Use ผม in polite beginner conversation",
+        "Use เขา in polite beginner conversation",
+        "Use นี่คือ... in polite beginner conversation"
+      ],
+      "answer": "Use คุณคือ...ใช่ไหม in polite beginner conversation",
+      "rationale": "Checks contextual understanding while preserving triplet exposure."
+    },
+    {
+      "id": "v-0a54507804-thai-to-english",
+      "vocabId": "v-0a54507804",
+      "type": "thai_to_english",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "What is the best meaning of เขาคือใคร?",
+        "thai": "เขาคือใคร",
+        "translit": "khǎo kheuu khrai"
+      },
+      "options": [
+        "who is he / she?",
+        "I (male speaker)",
+        "he / she",
+        "this is ..."
+      ],
+      "answer": "who is he / she?",
+      "rationale": "Maps Thai form to target meaning from script languageFocus."
+    },
+    {
+      "id": "v-0a54507804-english-to-thai",
+      "vocabId": "v-0a54507804",
+      "type": "english_to_thai",
+      "displayMode": "english_only",
+      "prompt": {
+        "text": "Select Thai for: who is he / she?",
+        "english": "who is he / she?"
+      },
+      "options": [
+        "เขาคือใคร",
+        "ผม",
+        "เขา",
+        "นี่คือ..."
+      ],
+      "answer": "เขาคือใคร",
+      "rationale": "Reverses mapping for active recall."
+    },
+    {
+      "id": "v-0a54507804-fill-translit",
+      "vocabId": "v-0a54507804",
+      "type": "fill_translit",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "Type the PTM transliteration for เขาคือใคร.",
+        "thai": "เขาคือใคร"
+      },
+      "answer": "khǎo kheuu khrai",
+      "rationale": "Forces transliteration production with inline tone marks."
+    },
+    {
+      "id": "v-0a54507804-context-mcq",
+      "vocabId": "v-0a54507804",
+      "type": "context_mcq",
+      "displayMode": "triplet",
+      "prompt": {
+        "text": "Choose the sentence that keeps the lesson meaning of this phrase.",
+        "thai": "เขาคือใคร",
+        "translit": "khǎo kheuu khrai",
+        "english": "who is he / she?"
+      },
+      "options": [
+        "Use เขาคือใคร in polite beginner conversation",
+        "Use ผม in polite beginner conversation",
+        "Use เขา in polite beginner conversation",
+        "Use นี่คือ... in polite beginner conversation"
+      ],
+      "answer": "Use เขาคือใคร in polite beginner conversation",
+      "rationale": "Checks contextual understanding while preserving triplet exposure."
+    },
+    {
+      "id": "v-688905b601-thai-to-english",
+      "vocabId": "v-688905b601",
+      "type": "thai_to_english",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "What is the best meaning of คนนี้คือใคร?",
+        "thai": "คนนี้คือใคร",
+        "translit": "khon níi kheuu khrai"
+      },
+      "options": [
+        "who is this person?",
+        "I (male speaker)",
+        "he / she",
+        "this is ..."
+      ],
+      "answer": "who is this person?",
+      "rationale": "Maps Thai form to target meaning from script languageFocus."
+    },
+    {
+      "id": "v-688905b601-english-to-thai",
+      "vocabId": "v-688905b601",
+      "type": "english_to_thai",
+      "displayMode": "english_only",
+      "prompt": {
+        "text": "Select Thai for: who is this person?",
+        "english": "who is this person?"
+      },
+      "options": [
+        "คนนี้คือใคร",
+        "ผม",
+        "เขา",
+        "นี่คือ..."
+      ],
+      "answer": "คนนี้คือใคร",
+      "rationale": "Reverses mapping for active recall."
+    },
+    {
+      "id": "v-688905b601-fill-translit",
+      "vocabId": "v-688905b601",
+      "type": "fill_translit",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "Type the PTM transliteration for คนนี้คือใคร.",
+        "thai": "คนนี้คือใคร"
+      },
+      "answer": "khon níi kheuu khrai",
+      "rationale": "Forces transliteration production with inline tone marks."
+    },
+    {
+      "id": "v-688905b601-context-mcq",
+      "vocabId": "v-688905b601",
+      "type": "context_mcq",
+      "displayMode": "triplet",
+      "prompt": {
+        "text": "Choose the sentence that keeps the lesson meaning of this phrase.",
+        "thai": "คนนี้คือใคร",
+        "translit": "khon níi kheuu khrai",
+        "english": "who is this person?"
+      },
+      "options": [
+        "Use คนนี้คือใคร in polite beginner conversation",
+        "Use ผม in polite beginner conversation",
+        "Use เขา in polite beginner conversation",
+        "Use นี่คือ... in polite beginner conversation"
+      ],
+      "answer": "Use คนนี้คือใคร in polite beginner conversation",
+      "rationale": "Checks contextual understanding while preserving triplet exposure."
+    },
+    {
+      "id": "v-e2c4943d2f-thai-to-english",
+      "vocabId": "v-e2c4943d2f",
+      "type": "thai_to_english",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "What is the best meaning of ขอโทษนะ?",
+        "thai": "ขอโทษนะ",
+        "translit": "khǎaw-thôot ná"
+      },
+      "options": [
+        "excuse me",
+        "I (male speaker)",
+        "he / she",
+        "this is ..."
+      ],
+      "answer": "excuse me",
+      "rationale": "Maps Thai form to target meaning from script languageFocus."
+    },
+    {
+      "id": "v-e2c4943d2f-english-to-thai",
+      "vocabId": "v-e2c4943d2f",
+      "type": "english_to_thai",
+      "displayMode": "english_only",
+      "prompt": {
+        "text": "Select Thai for: excuse me",
+        "english": "excuse me"
+      },
+      "options": [
+        "ขอโทษนะ",
+        "ผม",
+        "เขา",
+        "นี่คือ..."
+      ],
+      "answer": "ขอโทษนะ",
+      "rationale": "Reverses mapping for active recall."
+    },
+    {
+      "id": "v-e2c4943d2f-fill-translit",
+      "vocabId": "v-e2c4943d2f",
+      "type": "fill_translit",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "Type the PTM transliteration for ขอโทษนะ.",
+        "thai": "ขอโทษนะ"
+      },
+      "answer": "khǎaw-thôot ná",
+      "rationale": "Forces transliteration production with inline tone marks."
+    },
+    {
+      "id": "v-e2c4943d2f-context-mcq",
+      "vocabId": "v-e2c4943d2f",
+      "type": "context_mcq",
+      "displayMode": "triplet",
+      "prompt": {
+        "text": "Choose the sentence that keeps the lesson meaning of this phrase.",
+        "thai": "ขอโทษนะ",
+        "translit": "khǎaw-thôot ná",
+        "english": "excuse me"
+      },
+      "options": [
+        "Use ขอโทษนะ in polite beginner conversation",
+        "Use ผม in polite beginner conversation",
+        "Use เขา in polite beginner conversation",
+        "Use นี่คือ... in polite beginner conversation"
+      ],
+      "answer": "Use ขอโทษนะ in polite beginner conversation",
+      "rationale": "Checks contextual understanding while preserving triplet exposure."
+    },
+    {
+      "id": "v-af0f28e039-thai-to-english",
+      "vocabId": "v-af0f28e039",
+      "type": "thai_to_english",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "What is the best meaning of เขามาจากไทย?",
+        "thai": "เขามาจากไทย",
+        "translit": "khǎo maa-jàak thai"
+      },
+      "options": [
+        "he / she is from Thailand",
+        "I (male speaker)",
+        "he / she",
+        "this is ..."
+      ],
+      "answer": "he / she is from Thailand",
+      "rationale": "Maps Thai form to target meaning from script languageFocus."
+    },
+    {
+      "id": "v-af0f28e039-english-to-thai",
+      "vocabId": "v-af0f28e039",
+      "type": "english_to_thai",
+      "displayMode": "english_only",
+      "prompt": {
+        "text": "Select Thai for: he / she is from Thailand",
+        "english": "he / she is from Thailand"
+      },
+      "options": [
+        "เขามาจากไทย",
+        "ผม",
+        "เขา",
+        "นี่คือ..."
+      ],
+      "answer": "เขามาจากไทย",
+      "rationale": "Reverses mapping for active recall."
+    },
+    {
+      "id": "v-af0f28e039-fill-translit",
+      "vocabId": "v-af0f28e039",
+      "type": "fill_translit",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "Type the PTM transliteration for เขามาจากไทย.",
+        "thai": "เขามาจากไทย"
+      },
+      "answer": "khǎo maa-jàak thai",
+      "rationale": "Forces transliteration production with inline tone marks."
+    },
+    {
+      "id": "v-af0f28e039-context-mcq",
+      "vocabId": "v-af0f28e039",
+      "type": "context_mcq",
+      "displayMode": "triplet",
+      "prompt": {
+        "text": "Choose the sentence that keeps the lesson meaning of this phrase.",
+        "thai": "เขามาจากไทย",
+        "translit": "khǎo maa-jàak thai",
+        "english": "he / she is from Thailand"
+      },
+      "options": [
+        "Use เขามาจากไทย in polite beginner conversation",
+        "Use ผม in polite beginner conversation",
+        "Use เขา in polite beginner conversation",
+        "Use นี่คือ... in polite beginner conversation"
+      ],
+      "answer": "Use เขามาจากไทย in polite beginner conversation",
+      "rationale": "Checks contextual understanding while preserving triplet exposure."
+    }
+  ],
+  "coverage": {
+    "minimumItemsPerNewVocab": 3,
+    "perVocab": [
+      {
+        "vocabId": "v-acdc9c7f8e",
+        "thai": "ผม",
+        "itemCount": 4
+      },
+      {
+        "vocabId": "v-e3ef8a701b",
+        "thai": "เขา",
+        "itemCount": 4
+      },
+      {
+        "vocabId": "v-7a0154647c",
+        "thai": "นี่คือ...",
+        "itemCount": 4
+      },
+      {
+        "vocabId": "v-e288d14433",
+        "thai": "เขาคือ...",
+        "itemCount": 4
+      },
+      {
+        "vocabId": "v-7597900aeb",
+        "thai": "คุณคือ...ใช่ไหม",
+        "itemCount": 4
+      },
+      {
+        "vocabId": "v-0a54507804",
+        "thai": "เขาคือใคร",
+        "itemCount": 4
+      },
+      {
+        "vocabId": "v-688905b601",
+        "thai": "คนนี้คือใคร",
+        "itemCount": 4
+      },
+      {
+        "vocabId": "v-e2c4943d2f",
+        "thai": "ขอโทษนะ",
+        "itemCount": 4
+      },
+      {
+        "vocabId": "v-af0f28e039",
+        "thai": "เขามาจากไทย",
+        "itemCount": 4
+      }
+    ],
+    "pass": true
+  }
+}

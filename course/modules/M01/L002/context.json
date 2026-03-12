@@ -12,10 +12,34 @@
       "vocabId": "v-c9337e2739"
     },
     {
+      "thai": "สวัสดีครับ",
+      "translit": "sà-wàt-dii khráp",
+      "english": "hello (male speaker)",
+      "vocabId": "v-e653eb5319"
+    },
+    {
+      "thai": "สวัสดีค่ะ",
+      "translit": "sà-wàt-dii khâ",
+      "english": "hello (female speaker)",
+      "vocabId": "v-bccbe506b3"
+    },
+    {
       "thai": "ขอบคุณ",
       "translit": "khàawp-khun",
       "english": "thank you",
       "vocabId": "v-217b46aa5a"
+    },
+    {
+      "thai": "ขอโทษ",
+      "translit": "khǎaw-thôot",
+      "english": "excuse me / sorry",
+      "vocabId": "v-6fce5e8c2c"
+    },
+    {
+      "thai": "ไม่เป็นไร",
+      "translit": "mâi bpen rai",
+      "english": "it is okay / no problem",
+      "vocabId": "v-03cc3fe123"
     },
     {
       "thai": "ครับ",
@@ -36,28 +60,23 @@
       "vocabId": "v-8637eb381c"
     },
     {
-      "thai": "ขอโทษ",
-      "translit": "khǎaw-thôot",
-      "english": "excuse me / sorry",
-      "vocabId": "v-6fce5e8c2c"
+      "thai": "ใช่",
+      "translit": "châi",
+      "english": "yes / that is right",
+      "vocabId": "v-f40371ec59"
     },
     {
-      "thai": "ไม่เข้าใจ",
-      "translit": "mâi khâo-jai",
-      "english": "I do not understand",
-      "vocabId": "v-4dea1cee34"
-    },
-    {
-      "thai": "พูดช้าๆ ได้ไหม",
-      "translit": "phûut cháa-cháa dâai mái",
-      "english": "can you speak slowly?",
-      "vocabId": "v-6f22c219d9"
+      "thai": "ไม่ใช่",
+      "translit": "mâi châi",
+      "english": "no / not right",
+      "vocabId": "v-cda55f5b5e"
     }
   ],
   "knownGrammar": [
-    "Recover conversation when comprehension drops.",
-    "Request slower speech without breaking politeness.",
-    "Teach pragmatic greeting and gratitude with politeness particles."
+    "Explain what ครับ, ค่ะ, and คะ do so the learner does not memorize them as random decoration.",
+    "Give the learner a small response toolkit so a first encounter can continue instead of stopping at one memorised line.",
+    "Teach the core greeting and show that politeness is built into the line, not added as an afterthought.",
+    "Teach the two highest-value courtesy phrases and explain that one form repairs the interaction while the other closes it warmly."
   ],
   "reviewBuckets": [
     {
@@ -66,9 +85,9 @@
       "lessonId": "M01-L001",
       "vocabIds": [
         "v-c9337e2739",
-        "v-217b46aa5a",
-        "v-a34b9ddfd4",
-        "v-e5c357ab24"
+        "v-e653eb5319",
+        "v-bccbe506b3",
+        "v-217b46aa5a"
       ],
       "sample": [
         {
@@ -78,22 +97,22 @@
           "vocabId": "v-c9337e2739"
         },
         {
+          "thai": "สวัสดีครับ",
+          "translit": "sà-wàt-dii khráp",
+          "english": "hello (male speaker)",
+          "vocabId": "v-e653eb5319"
+        },
+        {
+          "thai": "สวัสดีค่ะ",
+          "translit": "sà-wàt-dii khâ",
+          "english": "hello (female speaker)",
+          "vocabId": "v-bccbe506b3"
+        },
+        {
           "thai": "ขอบคุณ",
           "translit": "khàawp-khun",
           "english": "thank you",
           "vocabId": "v-217b46aa5a"
-        },
-        {
-          "thai": "ครับ",
-          "translit": "khráp",
-          "english": "male polite ending",
-          "vocabId": "v-a34b9ddfd4"
-        },
-        {
-          "thai": "ค่ะ",
-          "translit": "khâ",
-          "english": "female statement ending",
-          "vocabId": "v-e5c357ab24"
         }
       ]
     },

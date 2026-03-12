@@ -1,8 +1,9 @@
-import { notFound } from "next/navigation";
+import { notFound, redirect } from "next/navigation";
 import Link from "next/link";
-import { mockLessons, mockQuizzes, mockQuizQuestions } from "@/lib/mock-data";
-import { QuizContainer } from "@/components/quizzes/quiz-container";
 import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { getBlueprintLessonById } from "@/lib/curriculum/blueprint-loader";
+import { resolveLegacyLessonId } from "@/lib/curriculum/legacy-lesson-redirects";
 
 interface QuizPageProps {
   params: Promise<{ lessonId: string }>;
@@ -10,14 +11,16 @@ interface QuizPageProps {
 
 export default async function QuizPage({ params }: QuizPageProps) {
   const { lessonId } = await params;
-  const lesson = mockLessons.find((l) => l.id === lessonId);
+  const legacyRedirect = resolveLegacyLessonId(lessonId);
+  if (legacyRedirect) {
+    redirect(`/lessons/${legacyRedirect}/quiz`);
+  }
+
+  const lesson = await getBlueprintLessonById(lessonId);
 
   if (!lesson) {
     notFound();
   }
-
-  const quiz = mockQuizzes[lessonId];
-  const questions = mockQuizQuestions[lessonId] || [];
 
   return (
     <div className="max-w-2xl mx-auto">
@@ -31,31 +34,25 @@ export default async function QuizPage({ params }: QuizPageProps) {
         <h1 className="text-2xl font-bold text-foreground mt-2">
           Quiz: {lesson.title}
         </h1>
-        {quiz && (
-          <p className="text-muted-foreground mt-1">
-            {questions.length} question{questions.length !== 1 ? "s" : ""} &middot;
-            {" "}{quiz.passingScore}% to pass
-          </p>
-        )}
+        <p className="text-muted-foreground mt-1">
+          {lesson.id} · {lesson.moduleTitle}
+        </p>
       </div>
 
-      {questions.length > 0 && quiz ? (
-        <QuizContainer
-          questions={questions}
-          passingScore={quiz.passingScore}
-          lessonId={lessonId}
-        />
-      ) : (
-        <div className="text-center py-12">
-          <div className="text-5xl mb-4">✅</div>
-          <p className="text-muted-foreground mb-4">
-            No quiz available for this lesson yet.
+      <Card>
+        <CardHeader>
+          <CardTitle>Lesson Quiz Coming Soon</CardTitle>
+        </CardHeader>
+        <CardContent className="space-y-4">
+          <p className="text-sm text-muted-foreground">
+            Lesson-specific quizzes are disabled while the blueprint curriculum shell is being
+            published. Use the placement and tone quizzes from the main quiz area for now.
           </p>
           <Link href={`/lessons/${lessonId}`}>
             <Button variant="outline">Back to Lesson</Button>
           </Link>
-        </div>
-      )}
+        </CardContent>
+      </Card>
     </div>
   );
 }

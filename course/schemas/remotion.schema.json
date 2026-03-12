@@ -8,7 +8,28 @@
   "properties": {
     "schemaVersion": { "const": 1 },
     "lessonId": { "type": "string", "pattern": "^M\\d{2}-L\\d{3}$" },
-    "sourceScript": { "const": "script-master.json" },
+    "sourceScript": {
+      "type": "string",
+      "pattern": "^(M\\d{2}-L\\d{3}-)?script-master\\.json$"
+    },
+    "canvas": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "width",
+        "height",
+        "leftTeachingFraction",
+        "rightCameraFraction",
+        "safeZoneLabel"
+      ],
+      "properties": {
+        "width": { "type": "number", "minimum": 1 },
+        "height": { "type": "number", "minimum": 1 },
+        "leftTeachingFraction": { "type": "number", "minimum": 0.1, "maximum": 1 },
+        "rightCameraFraction": { "type": "number", "minimum": 0.1, "maximum": 1 },
+        "safeZoneLabel": { "type": "string", "minLength": 1 }
+      }
+    },
     "scenes": {
       "type": "array",
       "minItems": 3,
@@ -21,6 +42,44 @@
           "seconds": { "type": "number", "minimum": 20 },
           "voiceover": { "type": "array", "minItems": 1, "items": { "type": "string", "minLength": 1 } },
           "overlays": { "type": "array", "minItems": 1, "items": { "type": "string", "minLength": 1 } },
+          "teachingObjective": { "type": "string", "minLength": 1 },
+          "layout": {
+            "enum": [
+              "focus-card",
+              "contrast-board",
+              "dialogue-ladder",
+              "drill-stack",
+              "image-anchored"
+            ]
+          },
+          "visualStrategy": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "onScreenGoal",
+              "teachingVisuals",
+              "teacherCues",
+              "imageUsage",
+              "rationale"
+            ],
+            "properties": {
+              "onScreenGoal": { "type": "string", "minLength": 1 },
+              "teachingVisuals": {
+                "type": "array",
+                "minItems": 1,
+                "items": { "type": "string", "minLength": 1 }
+              },
+              "teacherCues": {
+                "type": "array",
+                "minItems": 1,
+                "items": { "type": "string", "minLength": 1 }
+              },
+              "imageUsage": {
+                "enum": ["real-image", "icon", "text-only"]
+              },
+              "rationale": { "type": "string", "minLength": 1 }
+            }
+          },
           "thaiFocus": {
             "type": "array",
             "minItems": 1,
@@ -48,7 +107,9 @@
                 "query": { "type": "string", "minLength": 1 },
                 "sourcePolicy": { "const": "internet-first" },
                 "sourceUrl": { "type": "string", "pattern": "^https://" },
-                "license": { "type": "string", "minLength": 1 }
+                "license": { "type": "string", "minLength": 1 },
+                "usageNotes": { "type": "string", "minLength": 1 },
+                "aiFallbackPrompt": { "type": "string", "minLength": 1 }
               }
             }
           }

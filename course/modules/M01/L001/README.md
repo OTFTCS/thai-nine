@@ -1,3 +1,1 @@
-# M01-L001
-
-State: READY_TO_RECORD
+# L001

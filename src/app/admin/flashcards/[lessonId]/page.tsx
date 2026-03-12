@@ -1,8 +1,8 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import { mockLessons, mockFlashcards } from "@/lib/mock-data";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { getBlueprintLessonById } from "@/lib/curriculum/blueprint-loader";
 
 interface AdminFlashcardsPageProps {
   params: Promise<{ lessonId: string }>;
@@ -10,13 +10,11 @@ interface AdminFlashcardsPageProps {
 
 export default async function AdminFlashcardsPage({ params }: AdminFlashcardsPageProps) {
   const { lessonId } = await params;
-  const lesson = mockLessons.find((l) => l.id === lessonId);
+  const lesson = await getBlueprintLessonById(lessonId);
 
   if (!lesson) {
     notFound();
   }
-
-  const cards = mockFlashcards[lessonId] || [];
 
   return (
     <div className="max-w-2xl mx-auto">
@@ -33,54 +31,24 @@ export default async function AdminFlashcardsPage({ params }: AdminFlashcardsPag
             Flashcards: {lesson.title}
           </h1>
           <p className="text-muted-foreground mt-1">
-            {cards.length} card{cards.length !== 1 ? "s" : ""}
+            {lesson.id} · {lesson.moduleTitle}
           </p>
         </div>
-        <Button>+ Add Card</Button>
       </div>
 
-      <div className="space-y-3">
-        {cards.map((card, i) => (
-          <Card key={card.id}>
-            <CardContent className="flex items-center justify-between py-4">
-              <div className="flex items-center gap-4">
-                <span className="text-sm font-mono text-muted-foreground w-6">
-                  {i + 1}
-                </span>
-                <div>
-                  <p className="font-medium text-foreground text-lg">
-                    {card.frontText}
-                  </p>
-                  <p className="text-sm text-muted-foreground">
-                    {card.backText}
-                    {card.backNotes && (
-                      <span className="text-xs ml-2">({card.backNotes})</span>
-                    )}
-                  </p>
-                </div>
-              </div>
-              <div className="flex gap-2">
-                <Button variant="outline" size="sm">
-                  Edit
-                </Button>
-                <Button variant="ghost" size="sm">
-                  Delete
-                </Button>
-              </div>
-            </CardContent>
-          </Card>
-        ))}
-
-        {cards.length === 0 && (
-          <Card>
-            <CardContent className="py-8 text-center">
-              <p className="text-muted-foreground">
-                No flashcards yet. Add your first card to get started.
-              </p>
-            </CardContent>
-          </Card>
-        )}
-      </div>
+      <Card>
+        <CardHeader>
+          <CardTitle>Flashcards Coming Soon</CardTitle>
+        </CardHeader>
+        <CardContent className="space-y-4">
+          <p className="text-sm text-muted-foreground">
+            Flashcard authoring is disabled for blueprint placeholder lessons.
+          </p>
+          <Link href={`/admin/lessons/${lessonId}/edit`}>
+            <Button variant="outline">Back to Lesson</Button>
+          </Link>
+        </CardContent>
+      </Card>
     </div>
   );
 }

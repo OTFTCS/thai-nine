@@ -1,0 +1,397 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "M01-L004",
+  "passScore": 80,
+  "generatedAt": "2026-03-11T08:12:08.469Z",
+  "itemBankPath": "M01-L004-quiz-item-bank.json",
+  "questions": [
+    {
+      "id": "q01",
+      "vocabId": "v-871c9bd62f",
+      "type": "thai_to_english",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "What is the best meaning of ศูนย์?",
+        "thai": "ศูนย์",
+        "translit": "sǔun"
+      },
+      "options": [
+        "zero",
+        "one",
+        "two",
+        "three"
+      ],
+      "answer": "zero",
+      "rationale": "Maps Thai form to target meaning from script languageFocus.",
+      "bankItemId": "v-871c9bd62f-thai-to-english"
+    },
+    {
+      "id": "q02",
+      "vocabId": "v-6ad6888f1d",
+      "type": "thai_to_english",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "What is the best meaning of หนึ่ง?",
+        "thai": "หนึ่ง",
+        "translit": "nùeng"
+      },
+      "options": [
+        "one",
+        "zero",
+        "two",
+        "three"
+      ],
+      "answer": "one",
+      "rationale": "Maps Thai form to target meaning from script languageFocus.",
+      "bankItemId": "v-6ad6888f1d-thai-to-english"
+    },
+    {
+      "id": "q03",
+      "vocabId": "v-afdf936166",
+      "type": "thai_to_english",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "What is the best meaning of สอง?",
+        "thai": "สอง",
+        "translit": "sǎawng"
+      },
+      "options": [
+        "two",
+        "zero",
+        "one",
+        "three"
+      ],
+      "answer": "two",
+      "rationale": "Maps Thai form to target meaning from script languageFocus.",
+      "bankItemId": "v-afdf936166-thai-to-english"
+    },
+    {
+      "id": "q04",
+      "vocabId": "v-368c7c205d",
+      "type": "thai_to_english",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "What is the best meaning of สาม?",
+        "thai": "สาม",
+        "translit": "sǎam"
+      },
+      "options": [
+        "three",
+        "zero",
+        "one",
+        "two"
+      ],
+      "answer": "three",
+      "rationale": "Maps Thai form to target meaning from script languageFocus.",
+      "bankItemId": "v-368c7c205d-thai-to-english"
+    },
+    {
+      "id": "q05",
+      "vocabId": "v-cf99ffc78e",
+      "type": "thai_to_english",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "What is the best meaning of สี่?",
+        "thai": "สี่",
+        "translit": "sìi"
+      },
+      "options": [
+        "four",
+        "zero",
+        "one",
+        "two"
+      ],
+      "answer": "four",
+      "rationale": "Maps Thai form to target meaning from script languageFocus.",
+      "bankItemId": "v-cf99ffc78e-thai-to-english"
+    },
+    {
+      "id": "q06",
+      "vocabId": "v-f028feb896",
+      "type": "thai_to_english",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "What is the best meaning of ห้า?",
+        "thai": "ห้า",
+        "translit": "hâa"
+      },
+      "options": [
+        "five",
+        "zero",
+        "one",
+        "two"
+      ],
+      "answer": "five",
+      "rationale": "Maps Thai form to target meaning from script languageFocus.",
+      "bankItemId": "v-f028feb896-thai-to-english"
+    },
+    {
+      "id": "q07",
+      "vocabId": "v-f6b67b4e6f",
+      "type": "thai_to_english",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "What is the best meaning of หก?",
+        "thai": "หก",
+        "translit": "hòk"
+      },
+      "options": [
+        "six",
+        "zero",
+        "one",
+        "two"
+      ],
+      "answer": "six",
+      "rationale": "Maps Thai form to target meaning from script languageFocus.",
+      "bankItemId": "v-f6b67b4e6f-thai-to-english"
+    },
+    {
+      "id": "q08",
+      "vocabId": "v-73bffabf48",
+      "type": "thai_to_english",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "What is the best meaning of เจ็ด?",
+        "thai": "เจ็ด",
+        "translit": "jèt"
+      },
+      "options": [
+        "seven",
+        "zero",
+        "one",
+        "two"
+      ],
+      "answer": "seven",
+      "rationale": "Maps Thai form to target meaning from script languageFocus.",
+      "bankItemId": "v-73bffabf48-thai-to-english"
+    },
+    {
+      "id": "q09",
+      "vocabId": "v-1dbb23ed34",
+      "type": "thai_to_english",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "What is the best meaning of แปด?",
+        "thai": "แปด",
+        "translit": "bpàaet"
+      },
+      "options": [
+        "eight",
+        "zero",
+        "one",
+        "two"
+      ],
+      "answer": "eight",
+      "rationale": "Maps Thai form to target meaning from script languageFocus.",
+      "bankItemId": "v-1dbb23ed34-thai-to-english"
+    },
+    {
+      "id": "q10",
+      "vocabId": "v-cac367e6fd",
+      "type": "thai_to_english",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "What is the best meaning of เก้า?",
+        "thai": "เก้า",
+        "translit": "gâao"
+      },
+      "options": [
+        "nine",
+        "zero",
+        "one",
+        "two"
+      ],
+      "answer": "nine",
+      "rationale": "Maps Thai form to target meaning from script languageFocus.",
+      "bankItemId": "v-cac367e6fd-thai-to-english"
+    },
+    {
+      "id": "q11",
+      "vocabId": "v-31da0816ab",
+      "type": "thai_to_english",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "What is the best meaning of สิบ?",
+        "thai": "สิบ",
+        "translit": "sìp"
+      },
+      "options": [
+        "ten",
+        "zero",
+        "one",
+        "two"
+      ],
+      "answer": "ten",
+      "rationale": "Maps Thai form to target meaning from script languageFocus.",
+      "bankItemId": "v-31da0816ab-thai-to-english"
+    },
+    {
+      "id": "q12",
+      "vocabId": "v-ba4059e504",
+      "type": "thai_to_english",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "What is the best meaning of เบอร์อะไร?",
+        "thai": "เบอร์อะไร",
+        "translit": "ber à-rai"
+      },
+      "options": [
+        "what number?",
+        "zero",
+        "one",
+        "two"
+      ],
+      "answer": "what number?",
+      "rationale": "Maps Thai form to target meaning from script languageFocus.",
+      "bankItemId": "v-ba4059e504-thai-to-english"
+    },
+    {
+      "id": "q13",
+      "vocabId": "v-03d6876d5b",
+      "type": "thai_to_english",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "What is the best meaning of ฉันอายุสิบปี?",
+        "thai": "ฉันอายุสิบปี",
+        "translit": "chǎn aa-yú sìp bpii"
+      },
+      "options": [
+        "I am ten years old",
+        "zero",
+        "one",
+        "two"
+      ],
+      "answer": "I am ten years old",
+      "rationale": "Maps Thai form to target meaning from script languageFocus.",
+      "bankItemId": "v-03d6876d5b-thai-to-english"
+    },
+    {
+      "id": "q14",
+      "vocabId": "v-9bf9593428",
+      "type": "thai_to_english",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "What is the best meaning of เขาอายุเก้าปี?",
+        "thai": "เขาอายุเก้าปี",
+        "translit": "khǎo aa-yú gâao bpii"
+      },
+      "options": [
+        "he / she is nine years old",
+        "zero",
+        "one",
+        "two"
+      ],
+      "answer": "he / she is nine years old",
+      "rationale": "Maps Thai form to target meaning from script languageFocus.",
+      "bankItemId": "v-9bf9593428-thai-to-english"
+    },
+    {
+      "id": "q15",
+      "vocabId": "v-871c9bd62f",
+      "type": "english_to_thai",
+      "displayMode": "english_only",
+      "prompt": {
+        "text": "Select Thai for: zero",
+        "english": "zero"
+      },
+      "options": [
+        "ศูนย์",
+        "หนึ่ง",
+        "สอง",
+        "สาม"
+      ],
+      "answer": "ศูนย์",
+      "rationale": "Reverses mapping for active recall.",
+      "bankItemId": "v-871c9bd62f-english-to-thai"
+    },
+    {
+      "id": "q16",
+      "vocabId": "v-871c9bd62f",
+      "type": "fill_translit",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "Type the PTM transliteration for ศูนย์.",
+        "thai": "ศูนย์"
+      },
+      "answer": "sǔun",
+      "rationale": "Forces transliteration production with inline tone marks.",
+      "bankItemId": "v-871c9bd62f-fill-translit"
+    }
+  ],
+  "coverage": {
+    "minimumQuizItemsPerNewVocab": 1,
+    "perVocab": [
+      {
+        "vocabId": "v-871c9bd62f",
+        "thai": "ศูนย์",
+        "quizItemCount": 3
+      },
+      {
+        "vocabId": "v-6ad6888f1d",
+        "thai": "หนึ่ง",
+        "quizItemCount": 1
+      },
+      {
+        "vocabId": "v-afdf936166",
+        "thai": "สอง",
+        "quizItemCount": 1
+      },
+      {
+        "vocabId": "v-368c7c205d",
+        "thai": "สาม",
+        "quizItemCount": 1
+      },
+      {
+        "vocabId": "v-cf99ffc78e",
+        "thai": "สี่",
+        "quizItemCount": 1
+      },
+      {
+        "vocabId": "v-f028feb896",
+        "thai": "ห้า",
+        "quizItemCount": 1
+      },
+      {
+        "vocabId": "v-f6b67b4e6f",
+        "thai": "หก",
+        "quizItemCount": 1
+      },
+      {
+        "vocabId": "v-73bffabf48",
+        "thai": "เจ็ด",
+        "quizItemCount": 1
+      },
+      {
+        "vocabId": "v-1dbb23ed34",
+        "thai": "แปด",
+        "quizItemCount": 1
+      },
+      {
+        "vocabId": "v-cac367e6fd",
+        "thai": "เก้า",
+        "quizItemCount": 1
+      },
+      {
+        "vocabId": "v-31da0816ab",
+        "thai": "สิบ",
+        "quizItemCount": 1
+      },
+      {
+        "vocabId": "v-ba4059e504",
+        "thai": "เบอร์อะไร",
+        "quizItemCount": 1
+      },
+      {
+        "vocabId": "v-03d6876d5b",
+        "thai": "ฉันอายุสิบปี",
+        "quizItemCount": 1
+      },
+      {
+        "vocabId": "v-9bf9593428",
+        "thai": "เขาอายุเก้าปี",
+        "quizItemCount": 1
+      }
+    ],
+    "pass": true
+  }
+}

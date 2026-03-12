@@ -1,16 +1,17 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { mockLessons } from "@/lib/mock-data";
+import { getBlueprintCurriculum } from "@/lib/curriculum/blueprint-loader";
 
-export default function AdminPage() {
-  const totalLessons = mockLessons.length;
-  const publishedLessons = mockLessons.filter((l) => l.isPublished).length;
-  const freeLessons = mockLessons.filter((l) => l.isFree).length;
+export default async function AdminPage() {
+  const curriculum = await getBlueprintCurriculum();
+  const totalLessons = curriculum.lessons.length;
+  const totalModules = curriculum.modules.length;
+  const totalTracks = curriculum.tracks.length;
 
   const stats = [
     { label: "Total Lessons", value: totalLessons, icon: "📚" },
-    { label: "Published", value: publishedLessons, icon: "✅" },
-    { label: "Free Lessons", value: freeLessons, icon: "🆓" },
-    { label: "Premium Lessons", value: totalLessons - freeLessons, icon: "💎" },
+    { label: "Modules", value: totalModules, icon: "🧩" },
+    { label: "Tracks", value: totalTracks, icon: "🛤️" },
+    { label: "Coming Soon", value: totalLessons, icon: "⏳" },
   ];
 
   return (
@@ -39,8 +40,8 @@ export default function AdminPage() {
         </CardHeader>
         <CardContent className="space-y-2">
           <p className="text-sm text-muted-foreground">
-            Admin content management features will be available here. Use the
-            navigation above to manage lessons, flashcards, and quizzes.
+            Curriculum structure is now sourced from the blueprint CSV. Lesson rows
+            remain placeholders until production assets are authored.
           </p>
         </CardContent>
       </Card>

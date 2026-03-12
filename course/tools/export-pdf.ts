@@ -2,6 +2,10 @@ import fs from "node:fs";
 import path from "node:path";
 import PDFDocument from "pdfkit";
 import { pathToFileURL } from "node:url";
+import {
+  lessonArtifactCandidateNames,
+  lessonArtifactFileName,
+} from "../../src/lib/course-artifacts.ts";
 
 type Triplet = { thai: string; translit: string; english: string };
 type Section = {
@@ -74,6 +78,23 @@ function cap<T>(arr: T[] | undefined, n: number): T[] {
   return (arr || []).slice(0, n);
 }
 
+function lessonIdFromLessonDir(lessonDir: string) {
+  const lessonKey = path.basename(lessonDir);
+  const moduleId = path.basename(path.dirname(lessonDir));
+  return `${moduleId}-${lessonKey}`;
+}
+
+function resolveLessonArtifactPath(lessonDir: string, lessonId: string, baseName: string) {
+  for (const candidate of lessonArtifactCandidateNames(lessonId, baseName)) {
+    const candidatePath = path.join(lessonDir, candidate);
+    if (fs.existsSync(candidatePath)) {
+      return candidatePath;
+    }
+  }
+
+  return path.join(lessonDir, lessonArtifactFileName(lessonId, baseName));
+}
+
 function tripletTable(doc: PDFKit.PDFDocument, rows: Triplet[], maxRows = 6) {
   const pageW = doc.page.width;
   const left = 46;
@@ -113,11 +134,17 @@ function tripletTable(doc: PDFKit.PDFDocument, rows: Triplet[], maxRows = 6) {
 }
 
 export function renderLessonPdf(lessonDir: string) {
-  const masterPath = path.join(lessonDir, "script-master.json");
-  if (!fs.existsSync(masterPath)) throw new Error(`Missing script-master.json: ${masterPath}`);
+  const lessonId = lessonIdFromLessonDir(lessonDir);
+  const masterPath = resolveLessonArtifactPath(lessonDir, lessonId, "script-master.json");
+  if (!fs.existsSync(masterPath)) {
+    throw new Error(`Missing ${lessonArtifactFileName(lessonId, "script-master.json")}: ${masterPath}`);
+  }
 
   const master = JSON.parse(fs.readFileSync(masterPath, "utf8")) as Master;
-  const outPath = path.join(lessonDir, "pdf.pdf");
+  const outPath = path.join(
+    lessonDir,
+    lessonArtifactFileName(master.lessonId, "pdf.pdf")
+  );
 
   const regularFont = pickExisting(FONT_CANDIDATES.regular, "regular");
   const boldFont = pickExisting(FONT_CANDIDATES.bold, "bold");
@@ -220,7 +247,7 @@ export async function main() {
 
   if (lesson) {
     await renderLessonPdfById(ROOT, lesson);
-    console.log(`Exported ${lesson} -> pdf.pdf`);
+    console.log(`Exported ${lesson} -> ${lessonArtifactFileName(lesson, "pdf.pdf")}`);
     return;
   }
 
@@ -230,12 +257,13 @@ export async function main() {
     const lessons = fs.readdirSync(path.join(modulesRoot, m)).filter((l) => l.startsWith("L"));
     for (const l of lessons) {
       const lessonDir = path.join(modulesRoot, m, l);
-      if (fs.existsSync(path.join(lessonDir, "script-master.json"))) {
+      const lessonId = `${m}-${l}`;
+      if (fs.existsSync(resolveLessonArtifactPath(lessonDir, lessonId, "script-master.json"))) {
         await renderLessonPdf(lessonDir);
       }
     }
   }
-  console.log("Exported all lesson PDFs from script-master.json");
+  console.log("Exported all lesson PDFs from lesson script files");
 }
 
 if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {

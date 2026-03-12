@@ -1,0 +1,482 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "M01-L001",
+  "lessonDir": "/Users/Shared/work/thai-nine/course/modules/M01/L001",
+  "blueprintRow": {
+    "trackId": "T01",
+    "trackTitle": "Foundations",
+    "cefrBand": "A0",
+    "moduleId": "M01",
+    "moduleTitle": "First Contact and Courtesy",
+    "moduleExitOutcome": "Learner can greet people politely, introduce themselves at a basic level, ask who/what/where questions, and survive the first minute of a conversation.",
+    "lessonId": "M01-L001",
+    "lessonTitle": "Hello and Basic Courtesy",
+    "lessonPrimaryOutcome": "Learner can greet people politely, thank others, apologize, and respond yes/no in a friendly first encounter.",
+    "lessonSecondaryOutcome": "Learner can recycle recent vocabulary while using basic affirmation and negation in short controlled output.",
+    "grammarFunctionPrimary": "polite particles ครับ/ค่ะ/คะ",
+    "grammarFunctionSecondary": "basic affirmation and negation",
+    "newVocabCore": "สวัสดี = hello; ขอบคุณ = thank you; ขอโทษ = sorry / excuse me; ใช่ = yes; ไม่ใช่ = not / no; ครับ = male polite ending; ค่ะ = female polite ending",
+    "newChunksCore": "สวัสดีครับ/ค่ะ = hello; ขอบคุณครับ/ค่ะ = thank you; ไม่เป็นไร = it is okay / no problem",
+    "reviewVocabRequired": "",
+    "scriptTarget": "Recognize and read สวัสดี ขอบคุณ ขอโทษ with transliteration support.",
+    "listeningTarget": "Catch greetings, thanks, apologies, and polite particles in slow speech.",
+    "speakingTarget": "Deliver a 2-line greeting exchange with the correct polite ending.",
+    "lessonQuizFocus": "Meaning recognition for greetings and correct choice of polite particles.",
+    "moduleQuizLink": "M01-QUIZ",
+    "flashcardTags": "M01; L001; first-contact;politeness;survival",
+    "notes": "Entry dialogue lesson. Seed the module's central real-world situation with high-utility chunks.",
+    "sourceInspiration": "Thai With Fah first-contact pragmatics; ThaiPod101 introduction lessons; internal backwards planning."
+  },
+  "promptPath": "/Users/Shared/work/thai-nine/course/prompts/agent-prompts/stage-2-qa-repair.prompt.md",
+  "promptMd": "# Stage 2 — QA Repair\n\nYou are repairing an existing Immersion Thai with Nine lesson after deterministic QA failed.\n\nYour job is to fix the lesson with the smallest necessary changes.\n\n## Inputs\n\nYou will receive:\n- lesson id\n- failing `qa-report.md`\n- current `script-master.json`\n- current `script-spoken.md`\n- current `script-visual.md`\n\n## Allowed edits\n\nYou may edit only:\n- `script-master.json`\n- `script-spoken.md`\n- `script-visual.md`\n\nDo not edit:\n- `context.json`\n- `status.json`\n- downstream deterministic artifacts\n- lesson identity, module identity, or curriculum scope\n\n## Repair rules\n\nFix only the issues listed in the QA report.\n\nPreserve:\n- valid pedagogy\n- valid transliteration\n- the lesson goal\n- the lesson structure, unless structure itself is the failing issue\n\nDo not:\n- rewrite the lesson from scratch unless the QA failures make that unavoidable\n- invent new schema fields\n- add decorative content that is unrelated to the QA failures\n- change vocabulary or roleplay scope without a clear QA reason\n\n## Common repair targets\n\nTypical fixes include:\n- correcting transliteration drift\n- fixing malformed triplets\n- adding missing drills\n- extending weak sections to meet the section minimum\n- extending roleplay to meet the line minimum\n- tightening recap items to reach the minimum of 3\n- adding genuinely relevant reuse from prior lesson context\n- completing `teachingFrame`\n- completing section `visualPlan`\n- adding concrete image search queries when visuals genuinely help the lesson\n\n## Schema discipline\n\n`script-master.json` must remain valid against `script-master.schema.json`.\n\nFor every `languageFocus` item:\n- keep `thai`\n- keep `translit`\n- keep `english`\n- keep `vocabId`\n\nDo not add `vocabId` to roleplay lines.\n\nFor `visualPlan` repairs:\n- preserve the lesson's left-panel teaching layout\n- keep Nine's right-third camera zone clear\n- prefer text-first or icon-first visuals unless a real-world image clearly teaches better\n\n## Output behavior\n\nRewrite the affected lesson files directly.\n\nWhen done, the lesson should be ready for:\n- `fixup-vocabids`\n- stage 2 QA rerun\n\nDo not output explanations, summaries, or extra commentary instead of fixing the files.\n",
+  "qaReportPath": "/Users/Shared/work/thai-nine/course/modules/M01/L001/qa-report.md",
+  "qaReportMd": "# QA Report — M01-L001\n\nResult: FAIL\n\n## Hard Gates\n- Transliteration policy: PTM inline tone marks required; superscripts forbidden\n- Triplet completeness for learner content\n- Minimum 4 sections for non-legacy lessons\n- Minimum 3 spoken narration lines per section for non-legacy lessons\n- Drills per section\n- Minimum 6 roleplay lines for non-legacy lessons\n- No duplicate exact roleplay lines\n- Clean roleplay turn-taking and yes/no answer logic\n- Question-target lessons must contain a question-like roleplay turn\n- Minimum 3 recap items\n- Minimum 2 reused prior items when prior context exists\n- Teaching frame with runtime, scenario, and learner takeaway\n- Visual plan per section with explicit image decision and asset research\n- Policy declaration\n\n## Check Results\n- ❌ tone-inline: All transliteration uses PTM inline tone marks; superscripts forbidden (1 transliteration strings failed inline-tone checks)\n- ✅ triplets: Thai/translit/English triplets are complete for learner-facing script content (Sections and on-screen bullets contain complete triplets)\n- ✅ drills: Each section includes active drill (Each section has >=1 drill)\n- ✅ section-count: Lesson contains at least 4 teaching sections (Legacy lesson exemption applied with 4 sections)\n- ✅ section-depth: Each section includes at least 3 spoken narration lines (Legacy lesson exemption applied)\n- ✅ roleplay: Scenario roleplay included and substantial (Roleplay contains 6 lines)\n- ✅ roleplay-duplicates: Roleplay does not repeat exact lines (All roleplay lines are distinct)\n- ❌ roleplay-turn-taking: Roleplay alternates speakers cleanly (Adjacent roleplay lines reuse the same speaker label)\n- ✅ roleplay-answer-logic: Yes/no answer particles appear only after a nearby question or confirmation turn (Answer particles follow question-like turns when used)\n- ✅ roleplay-question-target: Question-target lessons include at least one question-like roleplay turn (Roleplay includes a question-like turn)\n- ✅ recap: Recap includes at least 3 review items (Recap contains 4 items)\n- ✅ review-reuse: Lesson reuses at least 2 prior items when prior lesson context exists (No prior lessons available; review reuse check not required)\n- ✅ teaching-frame: Lesson includes a clear teaching frame with runtime and learner takeaway (Legacy lesson exemption applied)\n- ✅ visual-plan: Each section includes a left-panel visual plan and explicit image decision (Legacy lesson exemption applied)\n- ✅ asset-research: Lesson provides at least one concrete image research query when visuals would help (Legacy lesson exemption applied)\n- ✅ policy: Transliteration + image sourcing policies are declared (Policy object present with required enum values)\n- ❌ script-spoken.md: Line 81: forbidden symbol(s): ʉ\n- ❌ script-spoken.md: Line 81: contains forbidden symbol(s): ʉ\n- ❌ script-spoken.md: Line 81: contains non-PTM character 'ʉ'\n\n## Gate\nBlocked. Fix QA failures before stage 3.\n",
+  "scriptMasterPath": "/Users/Shared/work/thai-nine/course/modules/M01/L001/script-master.json",
+  "scriptMaster": {
+    "schemaVersion": 1,
+    "lessonId": "M01-L001",
+    "title": "Hello and Basic Courtesy: First Contact in Thai",
+    "objective": "Greet someone politely, say thank you and sorry, choose the right basic polite ending, and handle simple yes/no responses in a friendly first encounter.",
+    "teachingFrame": {
+      "targetRuntimeMin": 9,
+      "targetRuntimeMax": 12,
+      "openingHook": "Open with the first five seconds of meeting someone in Thailand and show how a tiny set of polite lines already changes the whole interaction.",
+      "scenario": "A learner meets staff or a new person for the first time and needs to sound friendly, respectful, and calm immediately.",
+      "learnerTakeaway": "By the end, the learner can manage a two-line first-contact exchange politely and recover with basic courtesy phrases."
+    },
+    "context": {
+      "schemaVersion": 1,
+      "lessonId": "M01-L001",
+      "priorLessons": [],
+      "knownVocabulary": [],
+      "knownGrammar": [],
+      "reviewBuckets": [
+        {
+          "bucket": "last",
+          "offset": 1,
+          "lessonId": null,
+          "vocabIds": [],
+          "sample": []
+        },
+        {
+          "bucket": "minus3",
+          "offset": 3,
+          "lessonId": null,
+          "vocabIds": [],
+          "sample": []
+        },
+        {
+          "bucket": "minus6",
+          "offset": 6,
+          "lessonId": null,
+          "vocabIds": [],
+          "sample": []
+        },
+        {
+          "bucket": "minus8",
+          "offset": 8,
+          "lessonId": null,
+          "vocabIds": [],
+          "sample": []
+        }
+      ]
+    },
+    "sections": [
+      {
+        "id": "s1",
+        "heading": "Say hello the Thai way",
+        "purpose": "Teach the core greeting and show that politeness is built into the line, not added as an afterthought.",
+        "spokenNarration": [
+          "The first line you need is สวัสดี sà-wàt-dii. This is your safe, polite hello in a first meeting.",
+          "On its own, สวัสดี already works. But in real interaction, Thai usually sounds warmer and more complete when you add a polite ending.",
+          "So think of the greeting as a stack: hello first, then the polite ending that fits the speaker and the moment."
+        ],
+        "onScreenBullets": [
+          "สวัสดี | sà-wàt-dii | hello",
+          "สวัสดีครับ | sà-wàt-dii khráp | hello (male speaker)",
+          "สวัสดีค่ะ | sà-wàt-dii khâ | hello (female speaker)"
+        ],
+        "drills": [
+          "Listen and repeat three times: สวัสดี, สวัสดีครับ, สวัสดีค่ะ.",
+          "Teacher points to male or female speaker card; learner chooses the correct full greeting aloud."
+        ],
+        "languageFocus": [
+          {
+            "thai": "สวัสดี",
+            "translit": "sà-wàt-dii",
+            "english": "hello",
+            "vocabId": "v-c9337e2739"
+          },
+          {
+            "thai": "สวัสดีครับ",
+            "translit": "sà-wàt-dii khráp",
+            "english": "hello (male speaker)",
+            "vocabId": "v-e653eb5319"
+          },
+          {
+            "thai": "สวัสดีค่ะ",
+            "translit": "sà-wàt-dii khâ",
+            "english": "hello (female speaker)",
+            "vocabId": "v-bccbe506b3"
+          }
+        ],
+        "visualPlan": {
+          "leftPanelLayout": "focus-card",
+          "onScreenGoal": "Show the greeting stack clearly with one base form and two polite full versions in the left teaching area.",
+          "teachingVisuals": [
+            "Large Thai script for สวัสดี with transliteration and English underneath.",
+            "Two smaller follow-up cards for สวัสดีครับ and สวัสดีค่ะ."
+          ],
+          "teacherCues": [
+            "Pause after the base form before adding the polite ending versions.",
+            "Keep the greeting large and centered inside the left panel only."
+          ],
+          "imageSupport": {
+            "helpful": false,
+            "priority": "avoid",
+            "rationale": "The greeting line itself is the teaching target, so a photograph would add clutter without helping recall.",
+            "searchQueries": [],
+            "sourceHints": [
+              "text-only greeting card"
+            ]
+          }
+        }
+      },
+      {
+        "id": "s2",
+        "heading": "Thank, apologise, and soften the moment",
+        "purpose": "Teach the two highest-value courtesy phrases and explain that one form repairs the interaction while the other closes it warmly.",
+        "spokenNarration": [
+          "The next two lines are ขอบคุณ khàawp-khun and ขอโทษ khǎaw-thôot.",
+          "ขอบคุณ closes a small social moment well. You use it after help, service, or a small kindness.",
+          "ขอโทษ can mean excuse me or sorry, so it is your polite way to interrupt, repair, or apologise without sounding abrupt."
+        ],
+        "onScreenBullets": [
+          "ขอบคุณ | khàawp-khun | thank you",
+          "ขอโทษ | khǎaw-thôot | excuse me / sorry",
+          "ไม่เป็นไร | mâi bpen rai | it is okay / no problem"
+        ],
+        "drills": [
+          "Courtesy drill: learner hears a situation and answers with either ขอบคุณ or ขอโทษ.",
+          "Mini exchange drill: ขอบคุณครับ/ค่ะ -> ไม่เป็นไร."
+        ],
+        "languageFocus": [
+          {
+            "thai": "ขอบคุณ",
+            "translit": "khàawp-khun",
+            "english": "thank you",
+            "vocabId": "v-217b46aa5a"
+          },
+          {
+            "thai": "ขอโทษ",
+            "translit": "khǎaw-thôot",
+            "english": "excuse me / sorry",
+            "vocabId": "v-6fce5e8c2c"
+          },
+          {
+            "thai": "ไม่เป็นไร",
+            "translit": "mâi bpen rai",
+            "english": "it is okay / no problem",
+            "vocabId": "v-03cc3fe123",
+            "notes": "Useful response after thanks or a small apology."
+          }
+        ],
+        "visualPlan": {
+          "leftPanelLayout": "contrast-board",
+          "onScreenGoal": "Contrast thanking, apologising, and calming the moment without overloading the frame.",
+          "teachingVisuals": [
+            "Two-column board: thank/close versus interrupt/repair.",
+            "Short arrow from ขอบคุณ to ไม่เป็นไร to show the natural reply pattern."
+          ],
+          "teacherCues": [
+            "Explain function before translation so learners hear the social job of each phrase.",
+            "Keep only one reply line visible at a time."
+          ],
+          "imageSupport": {
+            "helpful": false,
+            "priority": "avoid",
+            "rationale": "This section teaches social function and response pattern, which is clearer as a contrast board than as a photo.",
+            "searchQueries": [],
+            "sourceHints": [
+              "text-only contrast board",
+              "simple arrow diagram"
+            ]
+          }
+        }
+      },
+      {
+        "id": "s3",
+        "heading": "Pick the right polite ending",
+        "purpose": "Explain what ครับ, ค่ะ, and คะ do so the learner does not memorize them as random decoration.",
+        "spokenNarration": [
+          "Thai polite endings are not meaningless filler. They change how your line lands socially.",
+          "ครับ khráp is the common male polite ending. ค่ะ khâ is the common female ending for statements, and คะ khá is the lighter female ending often heard with questions.",
+          "For this lesson, keep one practical rule: learn ครับ and ค่ะ first for safe polite statements, and notice คะ as the question-flavoured partner rather than mixing the two female endings blindly."
+        ],
+        "onScreenBullets": [
+          "ครับ | khráp | male polite ending",
+          "ค่ะ | khâ | female statement ending",
+          "คะ | khá | female question ending"
+        ],
+        "drills": [
+          "Substitution drill: สวัสดี -> สวัสดีครับ / สวัสดีค่ะ.",
+          "Teacher says statement or question context; learner chooses ค่ะ or คะ if speaking in the female role."
+        ],
+        "languageFocus": [
+          {
+            "thai": "ครับ",
+            "translit": "khráp",
+            "english": "male polite ending",
+            "vocabId": "v-a34b9ddfd4"
+          },
+          {
+            "thai": "ค่ะ",
+            "translit": "khâ",
+            "english": "female statement ending",
+            "vocabId": "v-e5c357ab24"
+          },
+          {
+            "thai": "คะ",
+            "translit": "khá",
+            "english": "female question ending",
+            "vocabId": "v-8637eb381c"
+          }
+        ],
+        "visualPlan": {
+          "leftPanelLayout": "drill-stack",
+          "onScreenGoal": "Show the three polite endings as a usable choice system with simple examples, not a grammar wall.",
+          "teachingVisuals": [
+            "Three stacked chips for ครับ, ค่ะ, and คะ with one-line explanations.",
+            "A short substitution line showing the greeting changing with the polite ending."
+          ],
+          "teacherCues": [
+            "Keep the explanation practical and stop before it turns into a long grammar lecture.",
+            "Use one example sentence at a time so the learner can hear the ending clearly."
+          ],
+          "imageSupport": {
+            "helpful": false,
+            "priority": "avoid",
+            "rationale": "The learner needs a functional choice system here, so labelled chips and drill prompts teach better than imagery.",
+            "searchQueries": [],
+            "sourceHints": [
+              "text-only polite-ending chips"
+            ]
+          }
+        }
+      },
+      {
+        "id": "s4",
+        "heading": "Answer yes, no, and no problem naturally",
+        "purpose": "Give the learner a small response toolkit so a first encounter can continue instead of stopping at one memorised line.",
+        "spokenNarration": [
+          "Now add three high-frequency response tools: ใช่ châi, ไม่ใช่ mâi châi, and ไม่เป็นไร mâi bpen rai.",
+          "ใช่ means yes or that is right. ไม่ใช่ means not right or no, but it is not aggressive by itself; it just corrects the idea.",
+          "ไม่เป็นไร is different. It does not mean yes or no. It smooths the moment by saying it is okay, never mind, or no problem."
+        ],
+        "onScreenBullets": [
+          "ใช่ | châi | yes / that is right",
+          "ไม่ใช่ | mâi châi | no / not right",
+          "ไม่เป็นไร | mâi bpen rai | it is okay / no problem"
+        ],
+        "drills": [
+          "Teacher gives a true or false identity cue; learner answers ใช่ or ไม่ใช่.",
+          "Repair drill: after a small apology, learner responds ไม่เป็นไร."
+        ],
+        "languageFocus": [
+          {
+            "thai": "ใช่",
+            "translit": "châi",
+            "english": "yes / that is right",
+            "vocabId": "v-f40371ec59"
+          },
+          {
+            "thai": "ไม่ใช่",
+            "translit": "mâi châi",
+            "english": "no / not right",
+            "vocabId": "v-cda55f5b5e"
+          },
+          {
+            "thai": "ไม่เป็นไร",
+            "translit": "mâi bpen rai",
+            "english": "it is okay / no problem",
+            "vocabId": "v-03cc3fe123"
+          }
+        ],
+        "visualPlan": {
+          "leftPanelLayout": "dialogue-ladder",
+          "onScreenGoal": "Show the difference between a direct answer and a social softener inside one compact response ladder.",
+          "teachingVisuals": [
+            "A three-step response ladder: ใช่ / ไม่ใช่ / ไม่เป็นไร.",
+            "One mini-scenario line showing apology followed by ไม่เป็นไร."
+          ],
+          "teacherCues": [
+            "Explain that ไม่เป็นไร is not a yes/no answer.",
+            "Leave enough empty space for Nine to model the tone difference in the camera zone."
+          ],
+          "imageSupport": {
+            "helpful": false,
+            "priority": "avoid",
+            "rationale": "This is a response-meaning distinction, so a compact dialogue ladder is clearer than any supporting image.",
+            "searchQueries": [],
+            "sourceHints": [
+              "text-only response ladder"
+            ]
+          }
+        }
+      }
+    ],
+    "roleplay": {
+      "scenario": "First check-in at a reception desk.",
+      "lines": [
+        {
+          "speaker": "Learner",
+          "thai": "ขอโทษครับ สวัสดีครับ",
+          "translit": "khǎaw-thôot khráp sà-wàt-dii khráp",
+          "english": "Excuse me, hello."
+        },
+        {
+          "speaker": "Staff",
+          "thai": "สวัสดีค่ะ",
+          "translit": "sà-wàt-dii khâ",
+          "english": "Hello."
+        },
+        {
+          "speaker": "Staff",
+          "thai": "คุณชื่อไมค์ใช่ไหมคะ",
+          "translit": "khun chʉ̂ʉ maik châi mái khá",
+          "english": "Are you Mike?"
+        },
+        {
+          "speaker": "Learner",
+          "thai": "ใช่ครับ",
+          "translit": "châi khráp",
+          "english": "Yes."
+        },
+        {
+          "speaker": "Learner",
+          "thai": "ขอบคุณครับ",
+          "translit": "khàawp-khun khráp",
+          "english": "Thank you."
+        },
+        {
+          "speaker": "Staff",
+          "thai": "ไม่เป็นไรค่ะ",
+          "translit": "mâi bpen rai khâ",
+          "english": "No problem."
+        }
+      ]
+    },
+    "recap": [
+      "Start with สวัสดี and add the right polite ending for a safe first-contact hello.",
+      "Use ขอบคุณ to close the moment well and ขอโทษ to interrupt or repair politely.",
+      "Treat ครับ, ค่ะ, and คะ as meaning-carrying social tools, not decoration.",
+      "Use ใช่ and ไม่ใช่ for basic answers, but use ไม่เป็นไร to soften the moment."
+    ],
+    "qaChecks": [
+      {
+        "id": "tone-inline",
+        "description": "All transliteration uses PTM inline tone marks; superscripts forbidden",
+        "pass": false,
+        "evidence": "1 transliteration strings failed inline-tone checks"
+      },
+      {
+        "id": "triplets",
+        "description": "Thai/translit/English triplets are complete for learner-facing script content",
+        "pass": true,
+        "evidence": "Sections and on-screen bullets contain complete triplets"
+      },
+      {
+        "id": "drills",
+        "description": "Each section includes active drill",
+        "pass": true,
+        "evidence": "Each section has >=1 drill"
+      },
+      {
+        "id": "section-count",
+        "description": "Lesson contains at least 4 teaching sections",
+        "pass": true,
+        "evidence": "Legacy lesson exemption applied with 4 sections"
+      },
+      {
+        "id": "section-depth",
+        "description": "Each section includes at least 3 spoken narration lines",
+        "pass": true,
+        "evidence": "Legacy lesson exemption applied"
+      },
+      {
+        "id": "roleplay",
+        "description": "Scenario roleplay included and substantial",
+        "pass": true,
+        "evidence": "Roleplay contains 6 lines"
+      },
+      {
+        "id": "roleplay-duplicates",
+        "description": "Roleplay does not repeat exact lines",
+        "pass": true,
+        "evidence": "All roleplay lines are distinct"
+      },
+      {
+        "id": "roleplay-turn-taking",
+        "description": "Roleplay alternates speakers cleanly",
+        "pass": false,
+        "evidence": "Adjacent roleplay lines reuse the same speaker label"
+      },
+      {
+        "id": "roleplay-answer-logic",
+        "description": "Yes/no answer particles appear only after a nearby question or confirmation turn",
+        "pass": true,
+        "evidence": "Answer particles follow question-like turns when used"
+      },
+      {
+        "id": "roleplay-question-target",
+        "description": "Question-target lessons include at least one question-like roleplay turn",
+        "pass": true,
+        "evidence": "Roleplay includes a question-like turn"
+      },
+      {
+        "id": "recap",
+        "description": "Recap includes at least 3 review items",
+        "pass": true,
+        "evidence": "Recap contains 4 items"
+      },
+      {
+        "id": "review-reuse",
+        "description": "Lesson reuses at least 2 prior items when prior lesson context exists",
+        "pass": true,
+        "evidence": "No prior lessons available; review reuse check not required"
+      },
+      {
+        "id": "teaching-frame",
+        "description": "Lesson includes a clear teaching frame with runtime and learner takeaway",
+        "pass": true,
+        "evidence": "Legacy lesson exemption applied"
+      },
+      {
+        "id": "visual-plan",
+        "description": "Each section includes a left-panel visual plan and explicit image decision",
+        "pass": true,
+        "evidence": "Legacy lesson exemption applied"
+      },
+      {
+        "id": "asset-research",
+        "description": "Lesson provides at least one concrete image research query when visuals would help",
+        "pass": true,
+        "evidence": "Legacy lesson exemption applied"
+      },
+      {
+        "id": "policy",
+        "description": "Transliteration + image sourcing policies are declared",
+        "pass": true,
+        "evidence": "Policy object present with required enum values"
+      }
+    ],
+    "policies": {
+      "transliteration": "PTM_ADAPTED_INLINE_TONES",
+      "imageSourcing": "INTERNET_FIRST_NO_GENERATIVE_DEFAULT"
+    }
+  },
+  "scriptSpokenPath": "/Users/Shared/work/thai-nine/course/modules/M01/L001/script-spoken.md",
+  "scriptSpokenMd": "# Spoken Script — M01-L001\n\n## Opening\nIn Thai, first contact is small, but it matters.\n\nA few polite words can make you sound calmer, friendlier, and much easier to respond to.\n\nToday we build the smallest courtesy toolkit that already works in real life.\n\n---\n\n## Section 1 — Say hello the Thai way\nStart with สวัสดี | sà-wàt-dii | hello.\n\nThis is a safe, polite greeting for a first meeting.\n\nBut real Thai usually sounds more complete when a polite ending is attached.\n\nSo do not stop at hello alone forever. Learn the greeting as a full social line.\n\n- สวัสดี | sà-wàt-dii | hello\n- สวัสดีครับ | sà-wàt-dii khráp | hello (male speaker)\n- สวัสดีค่ะ | sà-wàt-dii khâ | hello (female speaker)\n\nPractice: say all three slowly.\n\n---\n\n## Section 2 — Thank, apologise, and soften the moment\nNow add the two most useful courtesy phrases after hello.\n\n- ขอบคุณ | khàawp-khun | thank you\n- ขอโทษ | khǎaw-thôot | excuse me / sorry\n- ไม่เป็นไร | mâi bpen rai | it is okay / no problem\n\nขอบคุณ closes the moment warmly.\n\nขอโทษ opens a repair. You can use it to interrupt gently or apologise.\n\nAnd ไม่เป็นไร often answers a small apology or a thank-you moment by smoothing everything out.\n\n---\n\n## Section 3 — Pick the right polite ending\nThai polite endings do real work.\n\n- ครับ | khráp | male polite ending\n- ค่ะ | khâ | female statement ending\n- คะ | khá | female question ending\n\nAt beginner level, keep one practical rule.\n\nIf you are learning safe polite statements, focus first on ครับ and ค่ะ.\n\nNotice คะ as the question-flavoured partner, but do not panic if you are still learning the difference.\n\nThe important thing is to hear that these endings are not random. They shape the tone of the whole line.\n\n---\n\n## Section 4 — Answer yes, no, and no problem naturally\nNow add three simple responses.\n\n- ใช่ | châi | yes / that is right\n- ไม่ใช่ | mâi châi | no / not right\n- ไม่เป็นไร | mâi bpen rai | it is okay / no problem\n\nใช่ and ไม่ใช่ answer the idea.\n\nBut ไม่เป็นไร does a different job. It softens the situation. It says it is okay, no problem, never mind.\n\nThat difference matters. Otherwise, you can answer politely but still sound odd in context.\n\n---\n\n## Roleplay — First check-in at a reception desk\nLearner: ขอโทษครับ สวัสดีครับ | khǎaw-thôot khráp sà-wàt-dii khráp | Excuse me, hello.\n\nStaff: สวัสดีค่ะ | sà-wàt-dii khâ | Hello.\n\nStaff: คุณชื่อไมค์ใช่ไหมคะ | khun chʉ̂ʉ maik châi mái khá | Are you Mike?\n\nLearner: ใช่ครับ | châi khráp | Yes.\n\nLearner: ขอบคุณครับ | khàawp-khun khráp | Thank you.\n\nStaff: ไม่เป็นไรค่ะ | mâi bpen rai khâ | No problem.\n\n---\n\n## Recap\n- Start with สวัสดี and add a polite ending.\n- Use ขอบคุณ to thank and ขอโทษ to repair politely.\n- Learn polite endings as social meaning, not decoration.\n- Use ใช่ and ไม่ใช่ for answers, and ไม่เป็นไร to calm the moment.\n",
+  "scriptVisualPath": "/Users/Shared/work/thai-nine/course/modules/M01/L001/script-visual.md",
+  "scriptVisualMd": "# Visual Script — M01-L001 (Hello and Basic Courtesy)\n\n## Frame rule\n- Keep all teaching visuals in the left two-thirds of the frame.\n- The right third stays clear for Nine's camera.\n- Use clean text cards and compact drill layouts, not dense slides.\n\n## Section 1 — Say hello the Thai way\n- Layout: focus-card\n- Learning focus: greeting stack\n- Highlighted terms:\n  - สวัสดี | sà-wàt-dii | hello\n  - สวัสดีครับ | sà-wàt-dii khráp | hello (male speaker)\n  - สวัสดีค่ะ | sà-wàt-dii khâ | hello (female speaker)\n- On-screen plan:\n  - one large greeting card\n  - two smaller polite full-form examples beneath it\n- Visual support choice: text-only\n\n## Section 2 — Thank, apologise, and soften the moment\n- Layout: contrast-board\n- Learning focus: thanking versus repairing\n- Highlighted terms:\n  - ขอบคุณ | khàawp-khun | thank you\n  - ขอโทษ | khǎaw-thôot | excuse me / sorry\n  - ไม่เป็นไร | mâi bpen rai | it is okay / no problem\n- On-screen plan:\n  - left column for closing warmly\n  - right column for interrupting or repairing\n  - one arrow from ขอบคุณ to ไม่เป็นไร\n- Visual support choice: text-only\n\n## Section 3 — Pick the right polite ending\n- Layout: drill-stack\n- Learning focus: practical polite ending choice\n- Highlighted terms:\n  - ครับ | khráp | male polite ending\n  - ค่ะ | khâ | female statement ending\n  - คะ | khá | female question ending\n- On-screen plan:\n  - stacked choice chips\n  - one substitution example line\n- Visual support choice: text-only\n\n## Section 4 — Answer yes, no, and no problem naturally\n- Layout: dialogue-ladder\n- Learning focus: answer versus softener\n- Highlighted terms:\n  - ใช่ | châi | yes / that is right\n  - ไม่ใช่ | mâi châi | no / not right\n  - ไม่เป็นไร | mâi bpen rai | it is okay / no problem\n- On-screen plan:\n  - compact three-step response ladder\n  - one small apology-response example\n- Visual support choice: text-only\n\n## Roleplay beat\n- Show one turn at a time on the left.\n- Keep the confirmation question, yes-answer, and thank-you/no-problem pair large.\n- Let the learner's opening ขอโทษครับ + สวัสดีครับ read as one polite approach move, not two separate slides.\n- Never push text into Nine's right-third camera zone.\n"
+}

@@ -1,0 +1,277 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "M01-L002",
+  "sourceScript": "M01-L002-script-master.json",
+  "canvas": {
+    "width": 1920,
+    "height": 1080,
+    "leftTeachingFraction": 0.6667,
+    "rightCameraFraction": 0.3333,
+    "safeZoneLabel": "Right third reserved for Nine camera"
+  },
+  "scenes": [
+    {
+      "id": "scene-1",
+      "seconds": 36,
+      "voiceover": [
+        "The first new question is คุณชื่ออะไร khun chûue à-rai. Literally, it is your name what, but functionally it means what is your name?",
+        "The answer is simple and formulaic: ฉันชื่อ... chǎn chûue... or ผมชื่อ... phǒm chûue.... This is good news for a beginner because the pattern is very stable.",
+        "Do not try to translate every word one by one in real time. Learn the question and the answer as a pair that belongs together."
+      ],
+      "overlays": [
+        "Ask and answer the name question",
+        "Show the question-and-answer name pair as one reusable exchange on the left side.",
+        "ชื่อ | chûue | name",
+        "คุณชื่ออะไร | khun chûue à-rai | what is your name?",
+        "ฉันชื่อ... | chǎn chûue... | my name is ..."
+      ],
+      "teachingObjective": "Teach the core name pattern with ชื่อ and อะไร so the learner can ask and answer the most basic identity question immediately.",
+      "layout": "dialogue-ladder",
+      "visualStrategy": {
+        "onScreenGoal": "Show the question-and-answer name pair as one reusable exchange on the left side.",
+        "teachingVisuals": [
+          "A two-step dialogue ladder with the question on top and the answer below.",
+          "Name-slot highlight showing only the personal name changes."
+        ],
+        "teacherCues": [
+          "Keep the pattern whole before zooming in on the word ชื่อ.",
+          "Use a placeholder name slot instead of many example names at once."
+        ],
+        "imageUsage": "text-only",
+        "rationale": "The pattern itself is the lesson, so dialogue structure teaches better than a photo."
+      },
+      "thaiFocus": [
+        {
+          "thai": "ชื่อ",
+          "translit": "chûue",
+          "english": "name"
+        },
+        {
+          "thai": "คุณชื่ออะไร",
+          "translit": "khun chûue à-rai",
+          "english": "what is your name?"
+        },
+        {
+          "thai": "ฉันชื่อ...",
+          "translit": "chǎn chûue...",
+          "english": "my name is ..."
+        },
+        {
+          "thai": "ผมชื่อ...",
+          "translit": "phǒm chûue...",
+          "english": "my name is ... (male speaker)"
+        }
+      ],
+      "assets": [
+        {
+          "assetId": "m01-l002-scene-1-asset-1",
+          "kind": "icon",
+          "query": "M01-L002 Names and Countries: Simple Self-Introduction Thai Ask and answer the name question thai learning visual",
+          "sourcePolicy": "internet-first",
+          "sourceUrl": "https://thenounproject.com/search/icons/?q=M01-L002%20Names%20and%20Countries%3A%20Simple%20Self-Introduction%20Thai%20Ask%20and%20answer%20the%20name%20question%20thai%20learning%20visual",
+          "license": "Noun Project search result review required",
+          "usageNotes": "Text-first scene. Optional icon fallback only if the layout needs a minimal anchor."
+        }
+      ]
+    },
+    {
+      "id": "scene-2",
+      "seconds": 36,
+      "voiceover": [
+        "Thai gives you more than one way to say I. In this course at beginner level, we use ฉัน chǎn as a common all-purpose learning form and ผม phǒm for a clearly male self-reference.",
+        "One small support word here is คน khon, person. It helps you hear that this is a conversation between people, not just a set of labels, and it keeps the pronoun choice grounded in who is speaking.",
+        "The important point is still practical: choose one pronoun confidently and keep the full line stable as ฉันชื่อ... or ผมชื่อ...."
+      ],
+      "overlays": [
+        "Use ฉัน and ผม naturally",
+        "Keep pronoun choice practical by showing the speaking person clearly and returning fast to full introduction lines.",
+        "ฉัน | chǎn | I",
+        "ผม | phǒm | I (male)",
+        "ฉันชื่อ... | chǎn chûue... | my name is ..."
+      ],
+      "teachingObjective": "Explain the beginner-level pronoun choice so the learner can produce self-introduction lines without freezing over identity wording.",
+      "layout": "contrast-board",
+      "visualStrategy": {
+        "onScreenGoal": "Keep pronoun choice practical by showing the speaking person clearly and returning fast to full introduction lines.",
+        "teachingVisuals": [
+          "Two short speaker cards for ฉัน and ผม.",
+          "A small support chip for คน to anchor the idea of the person speaking."
+        ],
+        "teacherCues": [
+          "Keep the explanation short and return quickly to full sentences.",
+          "Use คน only as a support word, not as a new grammar detour."
+        ],
+        "imageUsage": "text-only",
+        "rationale": "Role contrast is clearer with labelled speaker cards than with photos."
+      },
+      "thaiFocus": [
+        {
+          "thai": "ฉัน",
+          "translit": "chǎn",
+          "english": "I"
+        },
+        {
+          "thai": "ผม",
+          "translit": "phǒm",
+          "english": "I (male)"
+        },
+        {
+          "thai": "ฉันชื่อ...",
+          "translit": "chǎn chûue...",
+          "english": "my name is ..."
+        },
+        {
+          "thai": "ผมชื่อ...",
+          "translit": "phǒm chûue...",
+          "english": "my name is ... (male speaker)"
+        }
+      ],
+      "assets": [
+        {
+          "assetId": "m01-l002-scene-2-asset-1",
+          "kind": "icon",
+          "query": "M01-L002 Names and Countries: Simple Self-Introduction Thai Use ฉัน and ผม naturally thai learning visual",
+          "sourcePolicy": "internet-first",
+          "sourceUrl": "https://thenounproject.com/search/icons/?q=M01-L002%20Names%20and%20Countries%3A%20Simple%20Self-Introduction%20Thai%20Use%20%E0%B8%89%E0%B8%B1%E0%B8%99%20and%20%E0%B8%9C%E0%B8%A1%20naturally%20thai%20learning%20visual",
+          "license": "Noun Project search result review required",
+          "usageNotes": "Text-first scene. Optional icon fallback only if the layout needs a minimal anchor."
+        }
+      ]
+    },
+    {
+      "id": "scene-3",
+      "seconds": 36,
+      "voiceover": [
+        "Before the country examples, learn ประเทศ bprà-thêet. It means country, and it gives you the category that ties the place words together.",
+        "To say where you are from, Thai often uses มาจาก maa-jàak, literally come from. So the practical beginner frame is ฉันมาจาก... or ผมมาจาก....",
+        "Today we keep the country set small: ไทย thai, อังกฤษ ang-grìt, and อเมริกา à-mee-rí-gaa. Learn the category word ประเทศ and then plug the country into the stable frame."
+      ],
+      "overlays": [
+        "Say where you are from with มาจาก",
+        "Show ประเทศ as the category word, then keep the มาจาก sentence frame larger than the country examples.",
+        "ประเทศ | bprà-thêet | country",
+        "มาจาก | maa-jàak | come from / be from",
+        "มาจากไทย | maa-jàak thai | be from Thailand"
+      ],
+      "teachingObjective": "Teach the origin pattern so the learner can complete a basic introduction with country information instead of stopping after the name.",
+      "layout": "image-anchored",
+      "visualStrategy": {
+        "onScreenGoal": "Show ประเทศ as the category word, then keep the มาจาก sentence frame larger than the country examples.",
+        "teachingVisuals": [
+          "A category chip for ประเทศ above the sentence frame.",
+          "Sentence frame card for ฉันมาจาก... / ผมมาจาก....",
+          "Three compact country labels with a simple map or flag cue."
+        ],
+        "teacherCues": [
+          "Teach ประเทศ first so the learner hears the country words as one group.",
+          "Keep the sentence frame larger than the country cues so grammar stays primary.",
+          "Use the visual only to help memory, not to turn the scene into a travel poster."
+        ],
+        "imageUsage": "real-image",
+        "rationale": "A very light map or flag anchor helps learners separate the country words quickly while the spoken pattern remains the main teaching target."
+      },
+      "thaiFocus": [
+        {
+          "thai": "ประเทศ",
+          "translit": "bprà-thêet",
+          "english": "country"
+        },
+        {
+          "thai": "มาจาก",
+          "translit": "maa-jàak",
+          "english": "come from / be from"
+        },
+        {
+          "thai": "มาจากไทย",
+          "translit": "maa-jàak thai",
+          "english": "be from Thailand"
+        },
+        {
+          "thai": "มาจากอังกฤษ",
+          "translit": "maa-jàak ang-grìt",
+          "english": "be from England"
+        },
+        {
+          "thai": "มาจากอเมริกา",
+          "translit": "maa-jàak à-mee-rí-gaa",
+          "english": "be from America"
+        }
+      ],
+      "assets": [
+        {
+          "assetId": "m01-l002-scene-3-asset-1",
+          "kind": "image",
+          "query": "simple Thailand England America flags flat lay",
+          "sourcePolicy": "internet-first",
+          "sourceUrl": "https://www.pexels.com/search/simple%20Thailand%20England%20America%20flags%20flat%20lay/",
+          "license": "Pexels License",
+          "usageNotes": "Use as left-panel supporting visual only; keep text dominant."
+        }
+      ]
+    },
+    {
+      "id": "scene-4",
+      "seconds": 36,
+      "voiceover": [
+        "Now connect the old lesson and the new one. Start with สวัสดี, then give your name, and then give your country.",
+        "If you need to begin politely, you can still borrow ขอโทษ from the last lesson to get attention before the question. If you are checking what you heard, ใช่ helps you confirm it.",
+        "So the learner goal is a compact social sequence: hello, name, country, and a polite response that sounds human instead of abrupt."
+      ],
+      "overlays": [
+        "Build a full two-line self-introduction",
+        "Show the learner how the old greeting and courtesy lines stack with the new identity lines into one usable mini-introduction.",
+        "สวัสดีครับ/ค่ะ | sà-wàt-dii khráp/khâ | hello",
+        "ขอโทษ | khǎaw-thôot | excuse me / sorry",
+        "ฉันชื่อ... / ผมชื่อ... | chǎn/phǒm chûue... | my name is ..."
+      ],
+      "teachingObjective": "Combine the greeting from lesson 1 with the new identity patterns so the learner can produce a practical mini-introduction.",
+      "layout": "dialogue-ladder",
+      "visualStrategy": {
+        "onScreenGoal": "Show the learner how the old greeting and courtesy lines stack with the new identity lines into one usable mini-introduction.",
+        "teachingVisuals": [
+          "A four-step introduction ladder: hello -> excuse me/question -> name -> country.",
+          "Two small review chips for ใช่ and ขอบคุณ to show natural follow-up moves."
+        ],
+        "teacherCues": [
+          "Make the sequence feel performable, not theoretical.",
+          "Keep the core name and country lines visually dominant over the review chips."
+        ],
+        "imageUsage": "text-only",
+        "rationale": "The learner needs a sentence sequence here, so a dialogue ladder teaches better than another image."
+      },
+      "thaiFocus": [
+        {
+          "thai": "สวัสดี",
+          "translit": "sà-wàt-dii",
+          "english": "hello"
+        },
+        {
+          "thai": "ขอบคุณ",
+          "translit": "khàawp-khun",
+          "english": "thank you"
+        },
+        {
+          "thai": "ฉันมาจาก...",
+          "translit": "chǎn maa-jàak...",
+          "english": "I am from ..."
+        },
+        {
+          "thai": "ผมมาจาก...",
+          "translit": "phǒm maa-jàak...",
+          "english": "I am from ... (male)"
+        }
+      ],
+      "assets": [
+        {
+          "assetId": "m01-l002-scene-4-asset-1",
+          "kind": "icon",
+          "query": "M01-L002 Names and Countries: Simple Self-Introduction Thai Build a full two-line self-introduction thai learning visual",
+          "sourcePolicy": "internet-first",
+          "sourceUrl": "https://thenounproject.com/search/icons/?q=M01-L002%20Names%20and%20Countries%3A%20Simple%20Self-Introduction%20Thai%20Build%20a%20full%20two-line%20self-introduction%20thai%20learning%20visual",
+          "license": "Noun Project search result review required",
+          "usageNotes": "Text-first scene. Optional icon fallback only if the layout needs a minimal anchor."
+        }
+      ]
+    }
+  ]
+}

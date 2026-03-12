@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "M01-L005",
+  "generatedAt": "2026-03-11T12:10:14.602Z",
+  "assets": [
+    {
+      "assetId": "m01-l005-scene-1-asset-1",
+      "kind": "icon",
+      "sourceUrl": "https://thenounproject.com/search/icons/?q=M01-L005%20Where%20and%20What%20Questions%3A%20Here%2C%20There%2C%20and%20Simple%20Location%20Help%20Ask%20what%20something%20is%20with%20%E0%B8%AD%E0%B8%B0%E0%B9%84%E0%B8%A3%20thai%20learning%20visual",
+      "license": "Noun Project search result review required",
+      "usage": "scene-1:scene-1 overlay background",
+      "query": "M01-L005 Where and What Questions: Here, There, and Simple Location Help Ask what something is with อะไร thai learning visual",
+      "sourcePolicy": "internet-first",
+      "rationale": "This section teaches a chunk pattern and pointing contrast, so typography and distance cues are clearer than a real-world image.",
+      "sourceHints": [
+        "The Noun Project",
+        "Icon sets"
+      ]
+    },
+    {
+      "assetId": "m01-l005-scene-2-asset-1",
+      "kind": "image",
+      "sourceUrl": "https://www.pexels.com/search/simple%20bathroom%20sign%20indoor%20wayfinding/",
+      "license": "Pexels License",
+      "usage": "scene-2:scene-2 overlay background",
+      "query": "simple bathroom sign indoor wayfinding",
+      "sourcePolicy": "internet-first",
+      "rationale": "A single wayfinding or bathroom-sign image makes the location question feel real and helps the learner connect the chunk to an everyday service situation.",
+      "sourceHints": [
+        "Pexels",
+        "Wikimedia Commons"
+      ]
+    },
+    {
+      "assetId": "m01-l005-scene-3-asset-1",
+      "kind": "icon",
+      "sourceUrl": "https://thenounproject.com/search/icons/?q=M01-L005%20Where%20and%20What%20Questions%3A%20Here%2C%20There%2C%20and%20Simple%20Location%20Help%20Recycle%20people%20words%20and%20numbers%20inside%20location%20questions%20thai%20learning%20visual",
+      "license": "Noun Project search result review required",
+      "usage": "scene-3:scene-3 overlay background",
+      "query": "M01-L005 Where and What Questions: Here, There, and Simple Location Help Recycle people words and numbers inside location questions thai learning visual",
+      "sourcePolicy": "internet-first",
+      "rationale": "This section is about combining review vocabulary into a stable pattern, so text-led drills are more useful than another photo.",
+      "sourceHints": [
+        "The Noun Project",
+        "Icon sets"
+      ]
+    },
+    {
+      "assetId": "m01-l005-scene-4-asset-1",
+      "kind": "image",
+      "sourceUrl": "https://www.pexels.com/search/simple%20reception%20desk%20map%20brochure%20close%20up/",
+      "license": "Pexels License",
+      "usage": "scene-4:scene-4 overlay background",
+      "query": "simple reception desk map brochure close up",
+      "sourcePolicy": "internet-first",
+      "rationale": "A small reception-desk or map visual helps the learner understand why both a what-question and a where-question appear in the same exchange.",
+      "sourceHints": [
+        "Pexels",
+        "Wikimedia Commons"
+      ]
+    }
+  ]
+}

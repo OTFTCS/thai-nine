@@ -1,0 +1,193 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "M01-L004",
+  "cards": [
+    {
+      "id": "m01-l004-c01",
+      "vocabId": "v-871c9bd62f",
+      "front": "ศูนย์",
+      "back": "zero",
+      "translit": "sǔun",
+      "tags": [
+        "M01-L004",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l004-c02",
+      "vocabId": "v-6ad6888f1d",
+      "front": "หนึ่ง",
+      "back": "one",
+      "translit": "nùeng",
+      "tags": [
+        "M01-L004",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l004-c03",
+      "vocabId": "v-afdf936166",
+      "front": "สอง",
+      "back": "two",
+      "translit": "sǎawng",
+      "tags": [
+        "M01-L004",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l004-c04",
+      "vocabId": "v-368c7c205d",
+      "front": "สาม",
+      "back": "three",
+      "translit": "sǎam",
+      "tags": [
+        "M01-L004",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l004-c05",
+      "vocabId": "v-cf99ffc78e",
+      "front": "สี่",
+      "back": "four",
+      "translit": "sìi",
+      "tags": [
+        "M01-L004",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l004-c06",
+      "vocabId": "v-f028feb896",
+      "front": "ห้า",
+      "back": "five",
+      "translit": "hâa",
+      "tags": [
+        "M01-L004",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l004-c07",
+      "vocabId": "v-f6b67b4e6f",
+      "front": "หก",
+      "back": "six",
+      "translit": "hòk",
+      "tags": [
+        "M01-L004",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l004-c08",
+      "vocabId": "v-73bffabf48",
+      "front": "เจ็ด",
+      "back": "seven",
+      "translit": "jèt",
+      "tags": [
+        "M01-L004",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l004-c09",
+      "vocabId": "v-1dbb23ed34",
+      "front": "แปด",
+      "back": "eight",
+      "translit": "bpàaet",
+      "tags": [
+        "M01-L004",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l004-c10",
+      "vocabId": "v-cac367e6fd",
+      "front": "เก้า",
+      "back": "nine",
+      "translit": "gâao",
+      "tags": [
+        "M01-L004",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l004-c11",
+      "vocabId": "v-31da0816ab",
+      "front": "สิบ",
+      "back": "ten",
+      "translit": "sìp",
+      "tags": [
+        "M01-L004",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l004-c12",
+      "vocabId": "v-ba4059e504",
+      "front": "เบอร์อะไร",
+      "back": "what number?",
+      "translit": "ber à-rai",
+      "tags": [
+        "M01-L004",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l004-c13",
+      "vocabId": "v-0ab46f92e7",
+      "front": "ฉัน",
+      "back": "I",
+      "translit": "chǎn",
+      "tags": [
+        "M01-L004",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l004-c14",
+      "vocabId": "v-e3ef8a701b",
+      "front": "เขา",
+      "back": "he / she",
+      "translit": "khǎo",
+      "tags": [
+        "M01-L004",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l004-c15",
+      "vocabId": "v-03d6876d5b",
+      "front": "ฉันอายุสิบปี",
+      "back": "I am ten years old",
+      "translit": "chǎn aa-yú sìp bpii",
+      "tags": [
+        "M01-L004",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l004-c16",
+      "vocabId": "v-9bf9593428",
+      "front": "เขาอายุเก้าปี",
+      "back": "he / she is nine years old",
+      "translit": "khǎo aa-yú gâao bpii",
+      "tags": [
+        "M01-L004",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l004-c17",
+      "vocabId": "v-6fce5e8c2c",
+      "front": "ขอโทษ",
+      "back": "excuse me / sorry",
+      "translit": "khǎaw-thôot",
+      "tags": [
+        "M01-L004",
+        "core"
+      ]
+    }
+  ]
+}

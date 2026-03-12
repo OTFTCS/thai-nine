@@ -9,7 +9,10 @@
     "schemaVersion": { "const": 1 },
     "lessonId": { "type": "string", "pattern": "^M\\d{2}-L\\d{3}$" },
     "generatedAt": { "type": "string", "minLength": 1 },
-    "sourceScript": { "const": "script-master.json" },
+    "sourceScript": {
+      "type": "string",
+      "pattern": "^(M\\d{2}-L\\d{3}-)?script-master\\.json$"
+    },
     "items": {
       "type": "array",
       "minItems": 9,

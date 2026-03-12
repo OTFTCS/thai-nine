@@ -3,426 +3,426 @@ course: immersion-thai-with-nine
 generatedAt: 2026-02-25T21:24:00+07:00
 modules:
   - id: M01
-    title: "Thai Script Fundamentals"
+    title: "First Contact and Courtesy"
     lessons:
       - id: L001
         lessonId: M01-L001
-        title: "How Thai Works"
+        title: "Hello and Basic Courtesy"
         state: READY_TO_RECORD
         path: course/modules/M01/L001
       - id: L002
         lessonId: M01-L002
-        title: "The Thai Sound System"
+        title: "Names and Countries"
         state: READY_TO_RECORD
         path: course/modules/M01/L002
       - id: L003
         lessonId: M01-L003
-        title: "How to Use This Course"
+        title: "Pronouns and Who Questions"
         state: READY_TO_RECORD
         path: course/modules/M01/L003
       - id: L004
         lessonId: M01-L004
-        title: "Consonant Classes — Mid Class"
+        title: "Numbers 0 to 10"
         state: PLANNED
         path: course/modules/M01/L004
       - id: L005
         lessonId: M01-L005
-        title: "Consonant Classes — High & Low"
+        title: "Where and What Questions"
         state: PLANNED
         path: course/modules/M01/L005
       - id: L006
         lessonId: M01-L006
-        title: "Core Vowels — Short & Long"
+        title: "Classroom Survival Thai"
         state: PLANNED
         path: course/modules/M01/L006
       - id: L007
         lessonId: M01-L007
-        title: "Tone Rules Basics"
+        title: "Politeness and Register"
         state: PLANNED
         path: course/modules/M01/L007
       - id: L008
         lessonId: M01-L008
-        title: "Final Consonants + Live/Dead Syllables"
+        title: "Listening to First Meetings"
         state: PLANNED
         path: course/modules/M01/L008
       - id: L009
         lessonId: M01-L009
-        title: "Reading Drills — Syllables to Words"
+        title: "Meet Someone New"
         state: PLANNED
         path: course/modules/M01/L009
       - id: L010
         lessonId: M01-L010
-        title: "Greetings & Politeness Particles"
+        title: "Module 1 Recap and Quiz"
         state: PLANNED
         path: course/modules/M01/L010
   - id: M02
-    title: "Survival Thai"
+    title: "Sounds, Script, and Reading Entry"
     lessons:
       - id: L001
         lessonId: M02-L001
-        title: "Placeholder Lesson 001"
+        title: "How Thai Sounds Work"
         state: BACKLOG
         path: course/modules/M02/L001
       - id: L002
         lessonId: M02-L002
-        title: "Placeholder Lesson 002"
+        title: "Mid-Class Consonants"
         state: BACKLOG
         path: course/modules/M02/L002
       - id: L003
         lessonId: M02-L003
-        title: "Placeholder Lesson 003"
+        title: "High and Low Classes"
         state: BACKLOG
         path: course/modules/M02/L003
       - id: L004
         lessonId: M02-L004
-        title: "Placeholder Lesson 004"
+        title: "Core Vowels I"
         state: BACKLOG
         path: course/modules/M02/L004
       - id: L005
         lessonId: M02-L005
-        title: "Placeholder Lesson 005"
+        title: "Core Vowels II"
         state: BACKLOG
         path: course/modules/M02/L005
       - id: L006
         lessonId: M02-L006
-        title: "Placeholder Lesson 006"
+        title: "Tone Marks and Live/Dead Basics"
         state: BACKLOG
         path: course/modules/M02/L006
       - id: L007
         lessonId: M02-L007
-        title: "Placeholder Lesson 007"
+        title: "Reading First Syllables"
         state: BACKLOG
         path: course/modules/M02/L007
       - id: L008
         lessonId: M02-L008
-        title: "Placeholder Lesson 008"
+        title: "Minimal Pairs and Tone Hearing"
         state: BACKLOG
         path: course/modules/M02/L008
       - id: L009
         lessonId: M02-L009
-        title: "Placeholder Lesson 009"
+        title: "Read Your First Useful Words"
         state: BACKLOG
         path: course/modules/M02/L009
       - id: L010
         lessonId: M02-L010
-        title: "Placeholder Lesson 010"
+        title: "Module 2 Recap and Quiz"
         state: BACKLOG
         path: course/modules/M02/L010
   - id: M03
-    title: "Sentence Building Essentials"
+    title: "Building Simple Sentences"
     lessons:
       - id: L001
         lessonId: M03-L001
-        title: "Placeholder Lesson 001"
+        title: "This, That, and What Is It?"
         state: BACKLOG
         path: course/modules/M03/L001
       - id: L002
         lessonId: M03-L002
-        title: "Placeholder Lesson 002"
+        title: "Pronouns and Omission"
         state: BACKLOG
         path: course/modules/M03/L002
       - id: L003
         lessonId: M03-L003
-        title: "Placeholder Lesson 003"
+        title: "Have and There Is with มี"
         state: BACKLOG
         path: course/modules/M03/L003
       - id: L004
         lessonId: M03-L004
-        title: "Placeholder Lesson 004"
+        title: "Being, Identity, and Category"
         state: BACKLOG
         path: course/modules/M03/L004
       - id: L005
         lessonId: M03-L005
-        title: "Placeholder Lesson 005"
+        title: "Adjectives and Degree"
         state: BACKLOG
         path: course/modules/M03/L005
       - id: L006
         lessonId: M03-L006
-        title: "Placeholder Lesson 006"
+        title: "Negation in Real Use"
         state: BACKLOG
         path: course/modules/M03/L006
       - id: L007
         lessonId: M03-L007
-        title: "Placeholder Lesson 007"
+        title: "Possession and Family Relations"
         state: BACKLOG
         path: course/modules/M03/L007
       - id: L008
         lessonId: M03-L008
-        title: "Placeholder Lesson 008"
+        title: "Classifiers and Counting Objects"
         state: BACKLOG
         path: course/modules/M03/L008
       - id: L009
         lessonId: M03-L009
-        title: "Placeholder Lesson 009"
+        title: "Simple Questions and Answers"
         state: BACKLOG
         path: course/modules/M03/L009
       - id: L010
         lessonId: M03-L010
-        title: "Placeholder Lesson 010"
+        title: "Module 3 Recap and Quiz"
         state: BACKLOG
         path: course/modules/M03/L010
   - id: M04
-    title: "High-Frequency Vocabulary Systems"
+    title: "Numbers, Time, Money, and Movement"
     lessons:
       - id: L001
         lessonId: M04-L001
-        title: "Placeholder Lesson 001"
+        title: "Numbers 11 to 100 and Prices"
         state: BACKLOG
         path: course/modules/M04/L001
       - id: L002
         lessonId: M04-L002
-        title: "Placeholder Lesson 002"
+        title: "Clock Time and Time of Day"
         state: BACKLOG
         path: course/modules/M04/L002
       - id: L003
         lessonId: M04-L003
-        title: "Placeholder Lesson 003"
+        title: "Days, Dates, and Calendar Talk"
         state: BACKLOG
         path: course/modules/M04/L003
       - id: L004
         lessonId: M04-L004
-        title: "Placeholder Lesson 004"
+        title: "Need, Want, Can, Cannot"
         state: BACKLOG
         path: course/modules/M04/L004
       - id: L005
         lessonId: M04-L005
-        title: "Placeholder Lesson 005"
+        title: "Places and Directions"
         state: BACKLOG
         path: course/modules/M04/L005
       - id: L006
         lessonId: M04-L006
-        title: "Placeholder Lesson 006"
+        title: "Transport Basics"
         state: BACKLOG
         path: course/modules/M04/L006
       - id: L007
         lessonId: M04-L007
-        title: "Placeholder Lesson 007"
+        title: "Ordering Food and Drinks"
         state: BACKLOG
         path: course/modules/M04/L007
       - id: L008
         lessonId: M04-L008
-        title: "Placeholder Lesson 008"
+        title: "Paying and Quantities"
         state: BACKLOG
         path: course/modules/M04/L008
       - id: L009
         lessonId: M04-L009
-        title: "Placeholder Lesson 009"
+        title: "Survival Chain Roleplay"
         state: BACKLOG
         path: course/modules/M04/L009
       - id: L010
         lessonId: M04-L010
-        title: "Placeholder Lesson 010"
+        title: "Module 4 Recap and Quiz"
         state: BACKLOG
         path: course/modules/M04/L010
   - id: M05
-    title: "Listening + Speaking Patterns"
+    title: "Home, Family, and Daily Life"
     lessons:
       - id: L001
         lessonId: M05-L001
-        title: "Placeholder Lesson 001"
+        title: "Family and Household Roles"
         state: BACKLOG
         path: course/modules/M05/L001
       - id: L002
         lessonId: M05-L002
-        title: "Placeholder Lesson 002"
+        title: "Rooms and Things at Home"
         state: BACKLOG
         path: course/modules/M05/L002
       - id: L003
         lessonId: M05-L003
-        title: "Placeholder Lesson 003"
+        title: "Daily Routine Verbs"
         state: BACKLOG
         path: course/modules/M05/L003
       - id: L004
         lessonId: M05-L004
-        title: "Placeholder Lesson 004"
+        title: "Meals and Eating Habits"
         state: BACKLOG
         path: course/modules/M05/L004
       - id: L005
         lessonId: M05-L005
-        title: "Placeholder Lesson 005"
+        title: "Hobbies and Free Time"
         state: BACKLOG
         path: course/modules/M05/L005
       - id: L006
         lessonId: M05-L006
-        title: "Placeholder Lesson 006"
+        title: "Likes, Dislikes, and Preferences"
         state: BACKLOG
         path: course/modules/M05/L006
       - id: L007
         lessonId: M05-L007
-        title: "Placeholder Lesson 007"
+        title: "Frequency and Weekend Habits"
         state: BACKLOG
         path: course/modules/M05/L007
       - id: L008
         lessonId: M05-L008
-        title: "Placeholder Lesson 008"
+        title: "Inviting and Making Simple Plans"
         state: BACKLOG
         path: course/modules/M05/L008
       - id: L009
         lessonId: M05-L009
-        title: "Placeholder Lesson 009"
+        title: "Daily Life Conversation"
         state: BACKLOG
         path: course/modules/M05/L009
       - id: L010
         lessonId: M05-L010
-        title: "Placeholder Lesson 010"
+        title: "Module 5 Recap and Quiz"
         state: BACKLOG
         path: course/modules/M05/L010
   - id: M06
-    title: "Reading in the Wild"
+    title: "Questions, Repair, and Real-World Understanding"
     lessons:
       - id: L001
         lessonId: M06-L001
-        title: "Placeholder Lesson 001"
+        title: "Question Particles and Echo Questions"
         state: BACKLOG
         path: course/modules/M06/L001
       - id: L002
         lessonId: M06-L002
-        title: "Placeholder Lesson 002"
+        title: "Asking for Repetition and Slower Speech"
         state: BACKLOG
         path: course/modules/M06/L002
       - id: L003
         lessonId: M06-L003
-        title: "Placeholder Lesson 003"
+        title: "Quantities and Approximation"
         state: BACKLOG
         path: course/modules/M06/L003
       - id: L004
         lessonId: M06-L004
-        title: "Placeholder Lesson 004"
+        title: "Comparison and Choice"
         state: BACKLOG
         path: course/modules/M06/L004
       - id: L005
         lessonId: M06-L005
-        title: "Placeholder Lesson 005"
+        title: "Menus and Food Labels"
         state: BACKLOG
         path: course/modules/M06/L005
       - id: L006
         lessonId: M06-L006
-        title: "Placeholder Lesson 006"
+        title: "Signs and Public Notices"
         state: BACKLOG
         path: course/modules/M06/L006
       - id: L007
         lessonId: M06-L007
-        title: "Placeholder Lesson 007"
+        title: "Chat and Message Thai"
         state: BACKLOG
         path: course/modules/M06/L007
       - id: L008
         lessonId: M06-L008
-        title: "Placeholder Lesson 008"
+        title: "Listening Reduction and Filler Words"
         state: BACKLOG
         path: course/modules/M06/L008
       - id: L009
         lessonId: M06-L009
-        title: "Placeholder Lesson 009"
+        title: "Fixing Misunderstandings in Context"
         state: BACKLOG
         path: course/modules/M06/L009
       - id: L010
         lessonId: M06-L010
-        title: "Placeholder Lesson 010"
+        title: "Module 6 Recap and Quiz"
         state: BACKLOG
         path: course/modules/M06/L010
   - id: M07
-    title: "Real-World Scenarios"
+    title: "Reading Fluency and Pronunciation Control"
     lessons:
       - id: L001
         lessonId: M07-L001
-        title: "Placeholder Lesson 001"
+        title: "Advanced Vowels in Real Words"
         state: BACKLOG
         path: course/modules/M07/L001
       - id: L002
         lessonId: M07-L002
-        title: "Placeholder Lesson 002"
+        title: "Consonant Clusters"
         state: BACKLOG
         path: course/modules/M07/L002
       - id: L003
         lessonId: M07-L003
-        title: "Placeholder Lesson 003"
+        title: "Silent Letters and Hidden Sound Traps"
         state: BACKLOG
         path: course/modules/M07/L003
       - id: L004
         lessonId: M07-L004
-        title: "Placeholder Lesson 004"
+        title: "Final Consonant Patterns"
         state: BACKLOG
         path: course/modules/M07/L004
       - id: L005
         lessonId: M07-L005
-        title: "Placeholder Lesson 005"
+        title: "Tone Review in Real Words"
         state: BACKLOG
         path: course/modules/M07/L005
       - id: L006
         lessonId: M07-L006
-        title: "Placeholder Lesson 006"
+        title: "Common Spelling Patterns"
         state: BACKLOG
         path: course/modules/M07/L006
       - id: L007
         lessonId: M07-L007
-        title: "Placeholder Lesson 007"
+        title: "Dictation and Sound-to-Script"
         state: BACKLOG
         path: course/modules/M07/L007
       - id: L008
         lessonId: M07-L008
-        title: "Placeholder Lesson 008"
+        title: "Read Short Notices and Messages"
         state: BACKLOG
         path: course/modules/M07/L008
       - id: L009
         lessonId: M07-L009
-        title: "Placeholder Lesson 009"
+        title: "Read and Say a Short Dialogue"
         state: BACKLOG
         path: course/modules/M07/L009
       - id: L010
         lessonId: M07-L010
-        title: "Placeholder Lesson 010"
+        title: "Module 7 Recap and Quiz"
         state: BACKLOG
         path: course/modules/M07/L010
   - id: M08
-    title: "Consolidation + Next Steps"
+    title: "Food, Markets, and Shopping"
     lessons:
       - id: L001
         lessonId: M08-L001
-        title: "Placeholder Lesson 001"
+        title: "Cafe and Drink Orders"
         state: BACKLOG
         path: course/modules/M08/L001
       - id: L002
         lessonId: M08-L002
-        title: "Placeholder Lesson 002"
+        title: "Thai Dishes and Ingredients"
         state: BACKLOG
         path: course/modules/M08/L002
       - id: L003
         lessonId: M08-L003
-        title: "Placeholder Lesson 003"
+        title: "Taste and Dietary Preferences"
         state: BACKLOG
         path: course/modules/M08/L003
       - id: L004
         lessonId: M08-L004
-        title: "Placeholder Lesson 004"
+        title: "Restaurant Interaction from Start to Finish"
         state: BACKLOG
         path: course/modules/M08/L004
       - id: L005
         lessonId: M08-L005
-        title: "Placeholder Lesson 005"
+        title: "Market Produce and Fresh Food"
         state: BACKLOG
         path: course/modules/M08/L005
       - id: L006
         lessonId: M08-L006
-        title: "Placeholder Lesson 006"
+        title: "Clothes, Colors, and Sizes"
         state: BACKLOG
         path: course/modules/M08/L006
       - id: L007
         lessonId: M08-L007
-        title: "Placeholder Lesson 007"
+        title: "Bargaining and Comparing Options"
         state: BACKLOG
         path: course/modules/M08/L007
       - id: L008
         lessonId: M08-L008
-        title: "Placeholder Lesson 008"
+        title: "Online Shopping and Delivery"
         state: BACKLOG
         path: course/modules/M08/L008
       - id: L009
         lessonId: M08-L009
-        title: "Placeholder Lesson 009"
+        title: "Shopping Scenario Day"
         state: BACKLOG
         path: course/modules/M08/L009
       - id: L010
         lessonId: M08-L010
-        title: "Placeholder Lesson 010"
+        title: "Module 8 Recap and Quiz"
         state: BACKLOG
         path: course/modules/M08/L010

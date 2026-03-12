@@ -21,6 +21,24 @@
     "lessonId": { "type": "string", "pattern": "^M\\d{2}-L\\d{3}$" },
     "title": { "type": "string", "minLength": 1 },
     "objective": { "type": "string", "minLength": 1 },
+    "teachingFrame": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "targetRuntimeMin",
+        "targetRuntimeMax",
+        "openingHook",
+        "scenario",
+        "learnerTakeaway"
+      ],
+      "properties": {
+        "targetRuntimeMin": { "type": "number", "minimum": 1 },
+        "targetRuntimeMax": { "type": "number", "minimum": 1 },
+        "openingHook": { "type": "string", "minLength": 1 },
+        "scenario": { "type": "string", "minLength": 1 },
+        "learnerTakeaway": { "type": "string", "minLength": 1 }
+      }
+    },
     "context": { "type": "object" },
     "sections": {
       "type": "array",
@@ -57,6 +75,65 @@
                 "english": { "type": "string", "minLength": 1 },
                 "notes": { "type": "string" },
                 "vocabId": { "type": "string", "pattern": "^v-[a-f0-9]{10}$" }
+              }
+            }
+          },
+          "visualPlan": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "leftPanelLayout",
+              "onScreenGoal",
+              "teachingVisuals",
+              "teacherCues",
+              "imageSupport"
+            ],
+            "properties": {
+              "leftPanelLayout": {
+                "enum": [
+                  "focus-card",
+                  "contrast-board",
+                  "dialogue-ladder",
+                  "drill-stack",
+                  "image-anchored"
+                ]
+              },
+              "onScreenGoal": { "type": "string", "minLength": 1 },
+              "teachingVisuals": {
+                "type": "array",
+                "minItems": 1,
+                "items": { "type": "string", "minLength": 1 }
+              },
+              "teacherCues": {
+                "type": "array",
+                "minItems": 1,
+                "items": { "type": "string", "minLength": 1 }
+              },
+              "imageSupport": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "helpful",
+                  "priority",
+                  "rationale",
+                  "searchQueries",
+                  "sourceHints"
+                ],
+                "properties": {
+                  "helpful": { "type": "boolean" },
+                  "priority": { "enum": ["essential", "supporting", "avoid"] },
+                  "rationale": { "type": "string", "minLength": 1 },
+                  "searchQueries": {
+                    "type": "array",
+                    "items": { "type": "string", "minLength": 1 }
+                  },
+                  "sourceHints": {
+                    "type": "array",
+                    "minItems": 1,
+                    "items": { "type": "string", "minLength": 1 }
+                  },
+                  "aiFallbackPrompt": { "type": "string", "minLength": 1 }
+                }
               }
             }
           }

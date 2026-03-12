@@ -1,0 +1,214 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-03-11T08:12:08.353Z",
+  "source": "pipeline-cli",
+  "lessons": [
+    "M01-L004"
+  ],
+  "cards": [
+    {
+      "id": "m01-l004-c01",
+      "vocabId": "v-871c9bd62f",
+      "thai": "ศูนย์",
+      "translit": "sǔun",
+      "english": "zero",
+      "lessonId": "M01-L004",
+      "tags": [
+        "M01-L004",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l004-c02",
+      "vocabId": "v-6ad6888f1d",
+      "thai": "หนึ่ง",
+      "translit": "nùeng",
+      "english": "one",
+      "lessonId": "M01-L004",
+      "tags": [
+        "M01-L004",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l004-c03",
+      "vocabId": "v-afdf936166",
+      "thai": "สอง",
+      "translit": "sǎawng",
+      "english": "two",
+      "lessonId": "M01-L004",
+      "tags": [
+        "M01-L004",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l004-c04",
+      "vocabId": "v-368c7c205d",
+      "thai": "สาม",
+      "translit": "sǎam",
+      "english": "three",
+      "lessonId": "M01-L004",
+      "tags": [
+        "M01-L004",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l004-c05",
+      "vocabId": "v-cf99ffc78e",
+      "thai": "สี่",
+      "translit": "sìi",
+      "english": "four",
+      "lessonId": "M01-L004",
+      "tags": [
+        "M01-L004",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l004-c06",
+      "vocabId": "v-f028feb896",
+      "thai": "ห้า",
+      "translit": "hâa",
+      "english": "five",
+      "lessonId": "M01-L004",
+      "tags": [
+        "M01-L004",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l004-c07",
+      "vocabId": "v-f6b67b4e6f",
+      "thai": "หก",
+      "translit": "hòk",
+      "english": "six",
+      "lessonId": "M01-L004",
+      "tags": [
+        "M01-L004",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l004-c08",
+      "vocabId": "v-73bffabf48",
+      "thai": "เจ็ด",
+      "translit": "jèt",
+      "english": "seven",
+      "lessonId": "M01-L004",
+      "tags": [
+        "M01-L004",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l004-c09",
+      "vocabId": "v-1dbb23ed34",
+      "thai": "แปด",
+      "translit": "bpàaet",
+      "english": "eight",
+      "lessonId": "M01-L004",
+      "tags": [
+        "M01-L004",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l004-c10",
+      "vocabId": "v-cac367e6fd",
+      "thai": "เก้า",
+      "translit": "gâao",
+      "english": "nine",
+      "lessonId": "M01-L004",
+      "tags": [
+        "M01-L004",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l004-c11",
+      "vocabId": "v-31da0816ab",
+      "thai": "สิบ",
+      "translit": "sìp",
+      "english": "ten",
+      "lessonId": "M01-L004",
+      "tags": [
+        "M01-L004",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l004-c12",
+      "vocabId": "v-ba4059e504",
+      "thai": "เบอร์อะไร",
+      "translit": "ber à-rai",
+      "english": "what number?",
+      "lessonId": "M01-L004",
+      "tags": [
+        "M01-L004",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l004-c13",
+      "vocabId": "v-0ab46f92e7",
+      "thai": "ฉัน",
+      "translit": "chǎn",
+      "english": "I",
+      "lessonId": "M01-L004",
+      "tags": [
+        "M01-L004",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l004-c14",
+      "vocabId": "v-e3ef8a701b",
+      "thai": "เขา",
+      "translit": "khǎo",
+      "english": "he / she",
+      "lessonId": "M01-L004",
+      "tags": [
+        "M01-L004",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l004-c15",
+      "vocabId": "v-03d6876d5b",
+      "thai": "ฉันอายุสิบปี",
+      "translit": "chǎn aa-yú sìp bpii",
+      "english": "I am ten years old",
+      "lessonId": "M01-L004",
+      "tags": [
+        "M01-L004",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l004-c16",
+      "vocabId": "v-9bf9593428",
+      "thai": "เขาอายุเก้าปี",
+      "translit": "khǎo aa-yú gâao bpii",
+      "english": "he / she is nine years old",
+      "lessonId": "M01-L004",
+      "tags": [
+        "M01-L004",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l004-c17",
+      "vocabId": "v-6fce5e8c2c",
+      "thai": "ขอโทษ",
+      "translit": "khǎaw-thôot",
+      "english": "excuse me / sorry",
+      "lessonId": "M01-L004",
+      "tags": [
+        "M01-L004",
+        "core"
+      ]
+    }
+  ]
+}

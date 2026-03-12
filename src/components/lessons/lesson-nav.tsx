@@ -11,30 +11,24 @@ interface LessonNavProps {
 export function LessonNav({ currentLesson, prevLesson, nextLesson }: LessonNavProps) {
   return (
     <div className="space-y-4">
-      {/* Flashcards & Quiz links */}
       <div className="flex gap-3">
-        <Link href={`/lessons/${currentLesson.id}/flashcards`} className="flex-1">
-          <div className="p-4 rounded-lg border border-border bg-card hover:bg-muted transition-colors text-center">
-            <span className="text-2xl block mb-1">🗂️</span>
-            <p className="text-sm font-medium text-foreground">Flashcards</p>
-            <p className="text-xs text-muted-foreground">Practice vocabulary</p>
-          </div>
-        </Link>
-        <Link href={`/lessons/${currentLesson.id}/quiz`} className="flex-1">
-          <div className="p-4 rounded-lg border border-border bg-card hover:bg-muted transition-colors text-center">
-            <span className="text-2xl block mb-1">✅</span>
-            <p className="text-sm font-medium text-foreground">Quiz</p>
-            <p className="text-xs text-muted-foreground">Test your knowledge</p>
-          </div>
-        </Link>
+        <div className="flex-1 p-4 rounded-lg border border-border bg-card text-center">
+          <span className="text-2xl block mb-1">🗂️</span>
+          <p className="text-sm font-medium text-foreground">Flashcards</p>
+          <p className="text-xs text-muted-foreground">Coming soon for {currentLesson.id}</p>
+        </div>
+        <div className="flex-1 p-4 rounded-lg border border-border bg-card text-center">
+          <span className="text-2xl block mb-1">✅</span>
+          <p className="text-sm font-medium text-foreground">Lesson Quiz</p>
+          <p className="text-xs text-muted-foreground">Coming soon for {currentLesson.id}</p>
+        </div>
       </div>
 
-      {/* Prev/Next navigation */}
       <div className="flex justify-between gap-4">
         {prevLesson ? (
           <Link href={`/lessons/${prevLesson.id}`}>
             <Button variant="outline" size="sm">
-              &larr; {prevLesson.title}
+              &larr; {prevLesson.id}
             </Button>
           </Link>
         ) : (
@@ -43,7 +37,7 @@ export function LessonNav({ currentLesson, prevLesson, nextLesson }: LessonNavPr
         {nextLesson ? (
           <Link href={`/lessons/${nextLesson.id}`}>
             <Button variant="outline" size="sm">
-              {nextLesson.title} &rarr;
+              {nextLesson.id} &rarr;
             </Button>
           </Link>
         ) : (

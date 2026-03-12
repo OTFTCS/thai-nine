@@ -1,0 +1,2637 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "M01-L002",
+  "lessonDir": "/Users/Shared/work/thai-nine/course/modules/M01/L002",
+  "outputFiles": {
+    "brief": "/Users/Shared/work/thai-nine/course/modules/M01/L002/brief.md",
+    "scriptMaster": "/Users/Shared/work/thai-nine/course/modules/M01/L002/script-master.json",
+    "scriptSpoken": "/Users/Shared/work/thai-nine/course/modules/M01/L002/script-spoken.md",
+    "scriptVisual": "/Users/Shared/work/thai-nine/course/modules/M01/L002/script-visual.md"
+  },
+  "blueprintRow": {
+    "trackId": "T01",
+    "trackTitle": "Foundations",
+    "cefrBand": "A0",
+    "moduleId": "M01",
+    "moduleTitle": "First Contact and Courtesy",
+    "moduleExitOutcome": "Learner can greet people politely, introduce themselves at a basic level, ask who/what/where questions, and survive the first minute of a conversation.",
+    "lessonId": "M01-L002",
+    "lessonTitle": "Names and Countries",
+    "lessonPrimaryOutcome": "Learner can say your name, ask someone's name, and state where you are from.",
+    "lessonSecondaryOutcome": "Learner can recycle recent vocabulary while using origin pattern with มาจาก in short controlled output.",
+    "grammarFunctionPrimary": "name question pattern with ชื่อ",
+    "grammarFunctionSecondary": "origin pattern with มาจาก",
+    "newVocabCore": "ชื่อ = name; คน = person; ประเทศ = country; ไทย = Thailand / Thai; อังกฤษ = England / British; อเมริกา = America; มาจาก = come from",
+    "newChunksCore": "คุณชื่ออะไร = what is your name?; ฉัน/ผมชื่อ... = my name is ...; ฉัน/ผมมาจาก... = I am from ...",
+    "reviewVocabRequired": "สวัสดี = hello; ขอบคุณ = thank you; ขอโทษ = sorry / excuse me; ใช่ = yes",
+    "scriptTarget": "Read and match simple identity lines such as ชื่อ and ประเทศ.",
+    "listeningTarget": "Recognize names and country statements in short self-introductions.",
+    "speakingTarget": "Introduce yourself with name and country in 2-3 lines.",
+    "lessonQuizFocus": "Question formation with ชื่ออะไร and origin statements with มาจาก.",
+    "moduleQuizLink": "M01-QUIZ",
+    "flashcardTags": "M01; L002; first-contact;politeness;survival",
+    "notes": "Primary pattern lesson. Keep output controlled and highly scaffolded.",
+    "sourceInspiration": "Thai With Fah first-contact pragmatics; ThaiPod101 introduction lessons; internal backwards planning."
+  },
+  "contextPath": "/Users/Shared/work/thai-nine/course/modules/M01/L002/context.json",
+  "context": {
+    "schemaVersion": 1,
+    "lessonId": "M01-L002",
+    "priorLessons": [
+      "M01-L001"
+    ],
+    "knownVocabulary": [
+      {
+        "thai": "สวัสดี",
+        "translit": "sà-wàt-dii",
+        "english": "hello",
+        "vocabId": "v-c9337e2739"
+      },
+      {
+        "thai": "สวัสดีครับ",
+        "translit": "sà-wàt-dii khráp",
+        "english": "hello (male speaker)",
+        "vocabId": "v-e653eb5319"
+      },
+      {
+        "thai": "สวัสดีค่ะ",
+        "translit": "sà-wàt-dii khâ",
+        "english": "hello (female speaker)",
+        "vocabId": "v-bccbe506b3"
+      },
+      {
+        "thai": "ขอบคุณ",
+        "translit": "khàawp-khun",
+        "english": "thank you",
+        "vocabId": "v-217b46aa5a"
+      },
+      {
+        "thai": "ขอโทษ",
+        "translit": "khǎaw-thôot",
+        "english": "excuse me / sorry",
+        "vocabId": "v-6fce5e8c2c"
+      },
+      {
+        "thai": "ไม่เป็นไร",
+        "translit": "mâi bpen rai",
+        "english": "it is okay / no problem",
+        "vocabId": "v-03cc3fe123"
+      },
+      {
+        "thai": "ครับ",
+        "translit": "khráp",
+        "english": "male polite ending",
+        "vocabId": "v-a34b9ddfd4"
+      },
+      {
+        "thai": "ค่ะ",
+        "translit": "khâ",
+        "english": "female statement ending",
+        "vocabId": "v-e5c357ab24"
+      },
+      {
+        "thai": "คะ",
+        "translit": "khá",
+        "english": "female question ending",
+        "vocabId": "v-8637eb381c"
+      },
+      {
+        "thai": "ใช่",
+        "translit": "châi",
+        "english": "yes / that is right",
+        "vocabId": "v-f40371ec59"
+      },
+      {
+        "thai": "ไม่ใช่",
+        "translit": "mâi châi",
+        "english": "no / not right",
+        "vocabId": "v-cda55f5b5e"
+      }
+    ],
+    "knownGrammar": [
+      "Explain what ครับ, ค่ะ, and คะ do so the learner does not memorize them as random decoration.",
+      "Give the learner a small response toolkit so a first encounter can continue instead of stopping at one memorised line.",
+      "Teach the core greeting and show that politeness is built into the line, not added as an afterthought.",
+      "Teach the two highest-value courtesy phrases and explain that one form repairs the interaction while the other closes it warmly."
+    ],
+    "reviewBuckets": [
+      {
+        "bucket": "last",
+        "offset": 1,
+        "lessonId": "M01-L001",
+        "vocabIds": [
+          "v-c9337e2739",
+          "v-e653eb5319",
+          "v-bccbe506b3",
+          "v-217b46aa5a"
+        ],
+        "sample": [
+          {
+            "thai": "สวัสดี",
+            "translit": "sà-wàt-dii",
+            "english": "hello",
+            "vocabId": "v-c9337e2739"
+          },
+          {
+            "thai": "สวัสดีครับ",
+            "translit": "sà-wàt-dii khráp",
+            "english": "hello (male speaker)",
+            "vocabId": "v-e653eb5319"
+          },
+          {
+            "thai": "สวัสดีค่ะ",
+            "translit": "sà-wàt-dii khâ",
+            "english": "hello (female speaker)",
+            "vocabId": "v-bccbe506b3"
+          },
+          {
+            "thai": "ขอบคุณ",
+            "translit": "khàawp-khun",
+            "english": "thank you",
+            "vocabId": "v-217b46aa5a"
+          }
+        ]
+      },
+      {
+        "bucket": "minus3",
+        "offset": 3,
+        "lessonId": null,
+        "vocabIds": [],
+        "sample": []
+      },
+      {
+        "bucket": "minus6",
+        "offset": 6,
+        "lessonId": null,
+        "vocabIds": [],
+        "sample": []
+      },
+      {
+        "bucket": "minus8",
+        "offset": 8,
+        "lessonId": null,
+        "vocabIds": [],
+        "sample": []
+      }
+    ]
+  },
+  "promptPath": "/Users/Shared/work/thai-nine/course/prompts/agent-prompts/stage-1-script-generation.prompt.md",
+  "promptMd": "# Stage 1 — AI Lesson Brief + Script Generation\n\nYou are writing a full lesson for **Immersion Thai with Nine**.\n\nThis is not a TikTok script. It is a real teaching lesson for a learner who wants careful explanations, controlled progression, and practical Thai they can use immediately.\n\nWrite directly to the lesson directory:\n- `brief.md`\n- `script-master.json`\n- `script-spoken.md`\n- `script-visual.md`\n\n## Core role\n\nAct as:\n- a Thai curriculum designer\n- a private tutor planning a high-clarity lesson\n- an instructional writer who can explain nuance, usage, and grammar simply without becoming academic\n\nThe lesson should feel like:\n- warm\n- practical\n- spoken-first\n- carefully scaffolded\n- realistic for a learner studying with a Thai teacher\n\nIt should not feel like:\n- a social media short\n- a hype video\n- a phrase dump\n- a travel blog\n- a grammar textbook chapter\n\n## Source of truth\n\nThe curriculum identity comes from the blueprint row.\n\nUse the blueprint row to determine:\n- lesson id\n- lesson title\n- module title\n- CEFR band\n- primary and secondary outcomes\n- quiz focus\n- flashcard tags\n- notes\n- required review vocabulary\n\nYou may add supporting vocabulary, short chunks, and explanation language when genuinely needed to teach the lesson well, but do not drift away from the lesson objective.\n\n## Required inputs\n\nYou will be given:\n- the lesson id\n- the full blueprint row for the target lesson\n- `context.json`\n- exemplar lesson files from previously produced lessons\n- `course/transliteration-policy.md`\n- `course/schemas/script-master.schema.json`\n- `course/schemas/remotion.schema.json`\n- the current `thaiwith-nine-remotion/src/SubtitleVideo.tsx` layout\n\nTreat these as binding:\n- schema is binding\n- transliteration policy is binding\n- context review buckets are binding when they contain reusable prior material\n- exemplars are style references, not content to copy\n\n## Output contract\n\n### 1. `brief.md`\n\nWrite a production brief that includes:\n- lesson id and title\n- module title and CEFR band\n- target runtime\n- primary objective\n- secondary objective\n- scenario or teaching frame\n- must-teach outcomes\n- core vocabulary and chunks in triplet form\n- teaching constraints\n- likely learner mistakes to watch for\n- image and visual notes if helpful\n\n### 2. `script-master.json`\n\nThis is the canonical source.\n\nIt must be valid against `script-master.schema.json`.\n\nRequirements:\n- keep `schemaVersion: 1`\n- use the exact lesson id\n- include the provided `context` object unchanged\n- include `teachingFrame` with:\n  - `targetRuntimeMin`\n  - `targetRuntimeMax`\n  - `openingHook`\n  - `scenario`\n  - `learnerTakeaway`\n- include at least 4 sections\n- each section must have:\n  - `id`\n  - `heading`\n  - `purpose`\n  - `spokenNarration`\n  - `onScreenBullets`\n  - `drills`\n  - `languageFocus`\n  - `visualPlan`\n- each section must have at least 3 spoken narration lines\n- each section must have at least 1 drill\n- roleplay must have at least 6 lines\n- recap must have at least 3 items\n- policies must use the required enum values\n\nFor every `languageFocus` item:\n- include `thai`\n- include `translit`\n- include `english`\n- optionally include `notes`\n- set `vocabId` to the placeholder `v-0000000000`\n\nFor every section `visualPlan`:\n- choose one `leftPanelLayout` from:\n  - `focus-card`\n  - `contrast-board`\n  - `dialogue-ladder`\n  - `drill-stack`\n  - `image-anchored`\n- include `onScreenGoal`\n- include at least 2 `teachingVisuals`\n- include at least 1 `teacherCues`\n- include `imageSupport` with:\n  - `helpful`\n  - `priority`\n  - `rationale`\n  - `searchQueries`\n  - `sourceHints`\n  - optional `aiFallbackPrompt`\n\nRules for `imageSupport`:\n- if `helpful` is `true`, provide at least 1 concrete search query\n- if `helpful` is `false`, explain why text-only or icon-led teaching is better\n- prefer `sourceHints` such as `Pexels`, `Wikimedia Commons`, `The Noun Project`, `official signage`, or another specific realistic source\n- only include `aiFallbackPrompt` when a generated image would genuinely teach better than a real-world image\n\nDo not invent schema fields beyond what the provided schema allows.\n\n### 3. `script-spoken.md`\n\nWrite a clean teacher-facing narration script that:\n- follows the same structure as `script-master.json`\n- is easy for Nine to read aloud\n- includes Thai, transliteration, and English where needed\n- sounds natural when spoken\n- includes pacing and teaching cues only when genuinely helpful\n\n### 4. `script-visual.md`\n\nWrite a visual script for the remotion lesson.\n\nThe final lesson video is **16:9** and the **right third is reserved for Nine's floating-head video**.\n\nThat means:\n- all primary teaching visuals must fit comfortably in the left two-thirds\n- do not plan dense full-width layouts\n- prefer concise visual beats\n- keep overlays readable and uncluttered\n- use the visual script to support the spoken teaching, not duplicate it mechanically\n\nFor each section, include:\n- the learning focus\n- what appears on screen\n- which Thai terms are highlighted\n- which images, icons, or visual references would help\n- whether a real-world image is genuinely useful\n- how the visual stays inside the left teaching area without spilling into Nine's camera zone\n\n## Pedagogy constraints\n\nThe lesson must teach, not just present.\n\nInclude:\n- what the form means\n- when to use it\n- what nuance it carries\n- what mistakes English speakers are likely to make\n- what changes in politeness, register, or rhythm matter\n\nFor grammar or function explanations:\n- explain the pattern simply\n- explain the job the pattern is doing\n- explain at least one realistic usage context\n- explain at least one likely misuse if relevant\n\nFor nuanced words:\n- explain when a direct English gloss is insufficient\n- explain how Thai usage differs from literal translation\n- explain if something is softer, more formal, more casual, or more natural in context\n\n## Section design\n\nUse a progressive teaching flow.\n\nAcross the lesson, the learner should move through:\n- notice\n- understand\n- repeat\n- substitute\n- answer\n- produce\n\nEach section should feel purposeful. Good section shapes include:\n- setup / meaning\n- pattern explanation\n- controlled practice\n- applied mini-scenario\n\nDo not make all sections feel identical.\n\n## Drill design\n\nDrills should be active and specific.\n\nGood drills:\n- listen and repeat\n- substitution\n- choose the right form\n- response building\n- short cue-to-line production\n- mini role-play turns\n\nBad drills:\n- vague review prompts\n- generic “practice this”\n- repeated phrase lists without transformation\n\n## Review integration\n\nWhen `context.json` contains prior lessons or review bucket samples:\n- reuse at least 2 prior items if they fit naturally\n- weave them into explanation, drills, or roleplay\n- do not force irrelevant review content\n\nWhen there are no prior lessons:\n- do not fake prior review\n\n## Roleplay requirements\n\nRoleplay must be realistic and teach something.\n\nRequirements:\n- minimum 6 lines\n- plausible real-life exchange\n- must reflect the lesson objective\n- should show at least one meaningful contrast, choice, or response pattern\n- should sound like natural spoken Thai for the level\n\n## Transliteration rules\n\nUse PTM-adapted inline tone marks only.\n\nHard rules:\n- no superscript tone letters\n- no alternate transliteration systems mixed in\n- no missing tone marks where policy requires them\n- no “close enough” romanization drift\n\nAll learner-facing Thai content must have complete triplets where required.\n\n## Visual and image guidance\n\nOnly request images when they genuinely help learning.\n\nPrefer:\n- internet-sourced real-world images\n- icons\n- diagrams\n- simple visual anchors\n\nUse AI-generated imagery only when it is clearly helpful and a real-world image would not teach the concept well enough.\n\nGood reasons for images:\n- concrete objects\n- places\n- food\n- clothing\n- directional layouts\n- comparisons where seeing the concept helps memory\n\nWeak reasons for images:\n- abstract filler\n- decorative background mood\n- images that repeat what the text already explains perfectly\n\n## Remotion-safe visual planning\n\nThe teaching visuals are eventually converted into deterministic `remotion.json`.\n\nYour section visual plans should therefore already be suitable for:\n- a 1920x1080 canvas\n- left 66.67% teaching area\n- right 33.33% camera area\n- short, legible overlays\n- one supporting visual anchor per scene, not a crowded collage\n\nGood visual layouts:\n- `focus-card` for one phrase or one contrast set\n- `contrast-board` for A/B distinctions\n- `dialogue-ladder` for roleplay turn-taking\n- `drill-stack` for controlled practice prompts\n- `image-anchored` when a real-world image clearly supports memory or meaning\n\nBad visual planning:\n- full-width slides that assume no camera box\n- dense bullet walls\n- decorative stock-photo backgrounds with no teaching role\n- asking for images without saying what they teach\n\n## Quality bar\n\nThe finished lesson should be good enough that:\n- Nine can record from it without rewriting everything\n- the learner can follow the logic from explanation to practice\n- downstream flashcards and quiz generation have clean source material\n- the lesson feels like one coherent teaching session\n\n## File-writing rules\n\nWrite the files directly.\n\nDo not:\n- output commentary instead of files\n- ask for permission\n- leave TODOs\n- leave malformed JSON\n- leave placeholder prose outside the required files\n\nThe lesson must be ready for:\n- `fixup-vocabids`\n- stage 2 QA\n- stage 3-7 deterministic artifact generation\n",
+  "scriptMasterSchemaPath": "/Users/Shared/work/thai-nine/course/schemas/script-master.schema.json",
+  "scriptMasterSchema": {
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://thai-nine.local/schemas/script-master.schema.json",
+    "title": "Script Master",
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "schemaVersion",
+      "lessonId",
+      "title",
+      "objective",
+      "context",
+      "sections",
+      "roleplay",
+      "recap",
+      "qaChecks",
+      "policies"
+    ],
+    "properties": {
+      "schemaVersion": {
+        "const": 1
+      },
+      "lessonId": {
+        "type": "string",
+        "pattern": "^M\\d{2}-L\\d{3}$"
+      },
+      "title": {
+        "type": "string",
+        "minLength": 1
+      },
+      "objective": {
+        "type": "string",
+        "minLength": 1
+      },
+      "teachingFrame": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "targetRuntimeMin",
+          "targetRuntimeMax",
+          "openingHook",
+          "scenario",
+          "learnerTakeaway"
+        ],
+        "properties": {
+          "targetRuntimeMin": {
+            "type": "number",
+            "minimum": 1
+          },
+          "targetRuntimeMax": {
+            "type": "number",
+            "minimum": 1
+          },
+          "openingHook": {
+            "type": "string",
+            "minLength": 1
+          },
+          "scenario": {
+            "type": "string",
+            "minLength": 1
+          },
+          "learnerTakeaway": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      },
+      "context": {
+        "type": "object"
+      },
+      "sections": {
+        "type": "array",
+        "minItems": 3,
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "id",
+            "heading",
+            "purpose",
+            "spokenNarration",
+            "onScreenBullets",
+            "drills",
+            "languageFocus"
+          ],
+          "properties": {
+            "id": {
+              "type": "string",
+              "minLength": 1
+            },
+            "heading": {
+              "type": "string",
+              "minLength": 1
+            },
+            "purpose": {
+              "type": "string",
+              "minLength": 1
+            },
+            "spokenNarration": {
+              "type": "array",
+              "minItems": 1,
+              "items": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "onScreenBullets": {
+              "type": "array",
+              "minItems": 1,
+              "items": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "drills": {
+              "type": "array",
+              "minItems": 1,
+              "items": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "languageFocus": {
+              "type": "array",
+              "minItems": 1,
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "thai",
+                  "translit",
+                  "english",
+                  "vocabId"
+                ],
+                "properties": {
+                  "thai": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "translit": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "english": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "notes": {
+                    "type": "string"
+                  },
+                  "vocabId": {
+                    "type": "string",
+                    "pattern": "^v-[a-f0-9]{10}$"
+                  }
+                }
+              }
+            },
+            "visualPlan": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "leftPanelLayout",
+                "onScreenGoal",
+                "teachingVisuals",
+                "teacherCues",
+                "imageSupport"
+              ],
+              "properties": {
+                "leftPanelLayout": {
+                  "enum": [
+                    "focus-card",
+                    "contrast-board",
+                    "dialogue-ladder",
+                    "drill-stack",
+                    "image-anchored"
+                  ]
+                },
+                "onScreenGoal": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "teachingVisuals": {
+                  "type": "array",
+                  "minItems": 1,
+                  "items": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "teacherCues": {
+                  "type": "array",
+                  "minItems": 1,
+                  "items": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "imageSupport": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "helpful",
+                    "priority",
+                    "rationale",
+                    "searchQueries",
+                    "sourceHints"
+                  ],
+                  "properties": {
+                    "helpful": {
+                      "type": "boolean"
+                    },
+                    "priority": {
+                      "enum": [
+                        "essential",
+                        "supporting",
+                        "avoid"
+                      ]
+                    },
+                    "rationale": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "searchQueries": {
+                      "type": "array",
+                      "items": {
+                        "type": "string",
+                        "minLength": 1
+                      }
+                    },
+                    "sourceHints": {
+                      "type": "array",
+                      "minItems": 1,
+                      "items": {
+                        "type": "string",
+                        "minLength": 1
+                      }
+                    },
+                    "aiFallbackPrompt": {
+                      "type": "string",
+                      "minLength": 1
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "roleplay": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "scenario",
+          "lines"
+        ],
+        "properties": {
+          "scenario": {
+            "type": "string",
+            "minLength": 1
+          },
+          "lines": {
+            "type": "array",
+            "minItems": 3,
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "speaker",
+                "thai",
+                "translit",
+                "english"
+              ],
+              "properties": {
+                "speaker": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "thai": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "translit": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "english": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              }
+            }
+          }
+        }
+      },
+      "recap": {
+        "type": "array",
+        "minItems": 3,
+        "items": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "qaChecks": {
+        "type": "array",
+        "minItems": 5,
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "id",
+            "description",
+            "pass",
+            "evidence"
+          ],
+          "properties": {
+            "id": {
+              "type": "string",
+              "minLength": 1
+            },
+            "description": {
+              "type": "string",
+              "minLength": 1
+            },
+            "pass": {
+              "type": "boolean"
+            },
+            "evidence": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        }
+      },
+      "policies": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "transliteration",
+          "imageSourcing"
+        ],
+        "properties": {
+          "transliteration": {
+            "const": "PTM_ADAPTED_INLINE_TONES"
+          },
+          "imageSourcing": {
+            "const": "INTERNET_FIRST_NO_GENERATIVE_DEFAULT"
+          }
+        }
+      }
+    }
+  },
+  "remotionSchemaPath": "/Users/Shared/work/thai-nine/course/schemas/remotion.schema.json",
+  "remotionSchema": {
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://thai-nine.local/schemas/remotion.schema.json",
+    "title": "Remotion Plan",
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "schemaVersion",
+      "lessonId",
+      "sourceScript",
+      "scenes"
+    ],
+    "properties": {
+      "schemaVersion": {
+        "const": 1
+      },
+      "lessonId": {
+        "type": "string",
+        "pattern": "^M\\d{2}-L\\d{3}$"
+      },
+      "sourceScript": {
+        "const": "script-master.json"
+      },
+      "canvas": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "width",
+          "height",
+          "leftTeachingFraction",
+          "rightCameraFraction",
+          "safeZoneLabel"
+        ],
+        "properties": {
+          "width": {
+            "type": "number",
+            "minimum": 1
+          },
+          "height": {
+            "type": "number",
+            "minimum": 1
+          },
+          "leftTeachingFraction": {
+            "type": "number",
+            "minimum": 0.1,
+            "maximum": 1
+          },
+          "rightCameraFraction": {
+            "type": "number",
+            "minimum": 0.1,
+            "maximum": 1
+          },
+          "safeZoneLabel": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      },
+      "scenes": {
+        "type": "array",
+        "minItems": 3,
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "id",
+            "seconds",
+            "voiceover",
+            "overlays",
+            "thaiFocus",
+            "assets"
+          ],
+          "properties": {
+            "id": {
+              "type": "string",
+              "minLength": 1
+            },
+            "seconds": {
+              "type": "number",
+              "minimum": 20
+            },
+            "voiceover": {
+              "type": "array",
+              "minItems": 1,
+              "items": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "overlays": {
+              "type": "array",
+              "minItems": 1,
+              "items": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "teachingObjective": {
+              "type": "string",
+              "minLength": 1
+            },
+            "layout": {
+              "enum": [
+                "focus-card",
+                "contrast-board",
+                "dialogue-ladder",
+                "drill-stack",
+                "image-anchored"
+              ]
+            },
+            "visualStrategy": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "onScreenGoal",
+                "teachingVisuals",
+                "teacherCues",
+                "imageUsage",
+                "rationale"
+              ],
+              "properties": {
+                "onScreenGoal": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "teachingVisuals": {
+                  "type": "array",
+                  "minItems": 1,
+                  "items": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "teacherCues": {
+                  "type": "array",
+                  "minItems": 1,
+                  "items": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "imageUsage": {
+                  "enum": [
+                    "real-image",
+                    "icon",
+                    "text-only"
+                  ]
+                },
+                "rationale": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              }
+            },
+            "thaiFocus": {
+              "type": "array",
+              "minItems": 1,
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "thai",
+                  "translit",
+                  "english"
+                ],
+                "properties": {
+                  "thai": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "translit": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "english": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                }
+              }
+            },
+            "assets": {
+              "type": "array",
+              "minItems": 1,
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "assetId",
+                  "kind",
+                  "query",
+                  "sourcePolicy",
+                  "sourceUrl",
+                  "license"
+                ],
+                "properties": {
+                  "assetId": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "kind": {
+                    "enum": [
+                      "image",
+                      "icon",
+                      "video"
+                    ]
+                  },
+                  "query": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "sourcePolicy": {
+                    "const": "internet-first"
+                  },
+                  "sourceUrl": {
+                    "type": "string",
+                    "pattern": "^https://"
+                  },
+                  "license": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "usageNotes": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "aiFallbackPrompt": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "transliterationPolicyPath": "/Users/Shared/work/thai-nine/course/transliteration-policy.md",
+  "transliterationPolicyMd": "# Transliteration Policy (PTM-Adapted, Hard-Enforced)\n\nThis repository enforces a single transliteration standard for all learner-facing artifacts.\n\n## Canonical standard\n- **Scheme:** PTM-adapted inline tones.\n- **Required style:** inline tone diacritics on vowels (`à á â ǎ ...`), not superscripts.\n- **Primary implementation:** `course/tools/lib/transliteration-policy.ts`\n\n## Forbidden patterns (build blockers)\n- IPA-like symbols (examples): `ʉ ə ɯ ɤ œ ɨ ɪ ʊ ŋ ɲ ɕ ʔ ː`\n- Superscript tones: `ᴴ ᴹ ᴸ ᴿ`\n- Caret tones: `^H ^M ^L ^R`\n- Legacy trailing suffix tones: `wordH wordM wordL wordR`\n\n## Allowed character class\nTransliteration strings are restricted to PTM-compatible latin characters, inline tone marks, digits, spacing, and controlled punctuation (see exported `PTM_ALLOWED_CHARACTER_CLASS`).\n\n## Human quick reference (script-writing)\nUse this section when drafting scripts manually before running audit.\n\n### Frequent words (approved forms)\n- สวัสดี → `sà-wàt-dii`\n- ขอบคุณ → `khàawp-khun`\n- ขอโทษ → `khǎaw-thôot`\n- ไม่เข้าใจ → `mâi khâo-jai`\n- พูดช้าๆ ได้ไหม → `phûut cháa-cháa dâai mái`\n- ครับ → `khráp`\n- ค่ะ → `khâ`\n- คะ → `khá`\n- อยู่ → `yùu`\n- บอกว่า → `bàawk wâa`\n- หมอ → `mǎaw`\n- รอ → `raaw`\n\n### Common mistakes we keep seeing\n- **Do not use IPA glyphs** in learner transliteration.\n  - Wrong: `mɔ̌ɔ`\n  - Right: `mǎaw`\n- Keep PTM long-vowel spellings consistent (`aa`, `aaw`, `aao`, etc.) using canonical mappings.\n- Do not mix systems in one file (for example PTM + IPA forms together).\n- Keep polite particles exact (`khráp`, `khâ`, `khá`) and do not flatten tone marks.\n\n### Pre-publish checklist (for writers)\nBefore submitting scripts/lesson artifacts:\n1. Every learner-facing Thai line has a full `Thai | translit | English` triplet.\n2. Transliteration uses inline tone marks only (no superscripts/caret/legacy suffix tones).\n3. No IPA symbols appear anywhere in transliteration fields.\n4. High-frequency words match approved forms in this file.\n5. Run `translit-audit` and resolve all violations.\n\nIf unsure about any spelling, check:\n- `course/transliteration-ptm-vowels.json`\n- `course/transliteration-ptm-consonants.json`\n- `course/tools/lib/transliteration-policy.ts`\n\n## Where this is enforced\nHard validators cover:\n- `script-master.json`\n- `script-spoken.md`\n- `script-visual.md`\n- `remotion.json`\n- `pdf-source.json`\n- `pdf.md`\n- `flashcards.json`\n- `vocab-export.json`\n- `quiz-item-bank.json`\n- `quiz.json`\n- lesson `context.json`\n- global vocab exports/index\n- `thaiwith-nine-remotion/src/data/*.json` (`phonetics`)\n\n## Audit + repair command\nUse:\n\n```bash\nnode --experimental-strip-types course/tools/pipeline-cli.ts translit-audit\nnode --experimental-strip-types course/tools/pipeline-cli.ts translit-audit --fix\nnode --experimental-strip-types course/tools/pipeline-cli.ts translit-audit --lesson M01-L001 --fix\n```\n\nBehavior:\n- `translit-audit` → reports violations.\n- `translit-audit --fix` → applies safe normalizations, reports manual-review items.\n\nDeterministic exit codes:\n- `0` = clean (or fully fixed with no remaining/manual items)\n- `2` = transliteration drift still present and/or manual review required\n- `1` = command/config error (for example no valid audit targets)\n\n## CI / release gate behavior\n- Stage 2 QA blocks on script transliteration violations.\n- Stage 7 release gate blocks on any transliteration drift in lesson + remotion data artifacts.\n",
+  "subtitleVideoPath": "/Users/Shared/work/thai-nine/thaiwith-nine-remotion/src/SubtitleVideo.tsx",
+  "subtitleVideoTsx": "import React from \"react\";\nimport {\n  AbsoluteFill,\n  Img,\n  Sequence,\n  interpolate,\n  spring,\n  staticFile,\n  useCurrentFrame,\n  useVideoConfig,\n} from \"remotion\";\n\nexport type SubtitleItem = {\n  startFrame: number;\n  endFrame: number;\n  heroText: string;\n  heroSubText?: string;\n  thaiScript?: string;\n  phonetics?: string;\n  englishTranslate?: string;\n  image?: string;\n  emoji?: string;\n  type: \"hook\" | \"term\" | \"outro\";\n};\n\nexport type SubtitleTheme = \"default\" | \"thaiFlag\";\n\nconst getTheme = (theme: SubtitleTheme) => {\n  if (theme === \"thaiFlag\") {\n    return {\n      pageBg: \"#fff\",\n      pageText: \"#0f172a\",\n      leftBg:\n        \"linear-gradient(180deg, #a51931 0%, #a51931 16%, #ffffff 16%, #ffffff 32%, #2d2a4a 32%, #2d2a4a 68%, #ffffff 68%, #ffffff 84%, #a51931 84%, #a51931 100%)\",\n      leftBorder: \"1px solid rgba(45,42,74,0.25)\",\n      chipBg: \"rgba(255,255,255,0.92)\",\n      chipBorder: \"1px solid rgba(45,42,74,0.22)\",\n      chipText: \"#1e1b4b\",\n      progressTrack: \"rgba(45,42,74,0.2)\",\n      progressFill: \"linear-gradient(90deg, #a51931 0%, #2d2a4a 100%)\",\n      rightBg: \"linear-gradient(180deg, #fff 0%, #f8fafc 100%)\",\n      rightBorder: \"1px dashed rgba(45,42,74,0.38)\",\n      zoneText: \"#475569\",\n      cardBg: \"rgba(255,255,255,0.95)\",\n      cardBorder: \"1px solid rgba(45,42,74,0.2)\",\n      titleText: \"#111827\",\n      phoneticText: \"#a51931\",\n      englishText: \"#334155\",\n      badgeBg: \"#fee2e2\",\n      badgeBorder: \"1px solid #fca5a5\",\n      badgeText: \"#7f1d1d\",\n    };\n  }\n\n  return {\n    pageBg: \"#f8fafc\",\n    pageText: \"#0f172a\",\n    leftBg:\n      \"radial-gradient(circle at 10% 20%, rgba(56,189,248,0.22), transparent 48%), radial-gradient(circle at 80% 10%, rgba(251,113,133,0.18), transparent 45%), linear-gradient(180deg, #eff6ff 0%, #f0fdf4 100%)\",\n    leftBorder: \"1px solid rgba(148,163,184,0.4)\",\n    chipBg: \"rgba(255,255,255,0.88)\",\n    chipBorder: \"1px solid rgba(148,163,184,0.4)\",\n    chipText: \"#0f172a\",\n    progressTrack: \"rgba(148,163,184,0.35)\",\n    progressFill: \"linear-gradient(90deg, #0ea5e9, #22c55e)\",\n    rightBg: \"linear-gradient(180deg, #fff7ed 0%, #fefce8 100%)\",\n    rightBorder: \"1px dashed rgba(148,163,184,0.55)\",\n    zoneText: \"#64748b\",\n    cardBg: \"rgba(255,255,255,0.94)\",\n    cardBorder: \"1px solid rgba(148,163,184,0.4)\",\n    titleText: \"#0f172a\",\n    phoneticText: \"#0369a1\",\n    englishText: \"#334155\",\n    badgeBg: \"#d1fae5\",\n    badgeBorder: \"1px solid #6ee7b7\",\n    badgeText: \"#065f46\",\n  };\n};\n\nexport const SubtitleVideo: React.FC<{ subtitles: SubtitleItem[]; episodeTitle?: string; theme?: SubtitleTheme }> = ({\n  subtitles,\n  episodeTitle,\n  theme = \"default\",\n}) => {\n  const frame = useCurrentFrame();\n  const { durationInFrames } = useVideoConfig();\n  const progress = Math.min(100, Math.round((frame / Math.max(1, durationInFrames - 1)) * 100));\n  const colors = getTheme(theme);\n\n  return (\n    <AbsoluteFill style={{ backgroundColor: colors.pageBg, color: colors.pageText, fontFamily: \"Inter, system-ui, sans-serif\" }}>\n      {/* Left 2/3 = Remotion teaching area */}\n      <AbsoluteFill\n        style={{\n          width: \"66.6667%\",\n          left: 0,\n          background: colors.leftBg,\n          borderRight: colors.leftBorder,\n        }}\n      >\n        <div style={{ position: \"absolute\", top: 24, left: 24, right: 24, display: \"flex\", justifyContent: \"space-between\", gap: 12 }}>\n          <div\n            style={{\n              fontSize: 24,\n              fontWeight: 700,\n              background: colors.chipBg,\n              border: colors.chipBorder,\n              padding: \"10px 14px\",\n              borderRadius: 12,\n              color: colors.chipText,\n            }}\n          >\n            {episodeTitle || \"Immersion Thai with Nine\"}\n          </div>\n          <div\n            style={{\n              fontSize: 15,\n              color: colors.englishText,\n              background: colors.chipBg,\n              border: colors.chipBorder,\n              padding: \"10px 12px\",\n              borderRadius: 12,\n              minWidth: 112,\n              textAlign: \"right\",\n            }}\n          >\n            Progress {progress}%\n          </div>\n        </div>\n\n        <div\n          style={{\n            position: \"absolute\",\n            left: 24,\n            right: 24,\n            top: 82,\n            height: 7,\n            borderRadius: 99,\n            background: colors.progressTrack,\n            overflow: \"hidden\",\n          }}\n        >\n          <div\n            style={{\n              width: `${progress}%`,\n              height: \"100%\",\n              background: colors.progressFill,\n            }}\n          />\n        </div>\n\n        {subtitles.map((sub, index) => (\n          <Sequence key={index} from={sub.startFrame} durationInFrames={sub.endFrame - sub.startFrame}>\n            <SubtitleOverlay item={sub} theme={theme} />\n          </Sequence>\n        ))}\n      </AbsoluteFill>\n\n      {/* Right 1/3 = reserved camera space for Nine */}\n      <AbsoluteFill\n        style={{\n          left: \"66.6667%\",\n          width: \"33.3333%\",\n          background: colors.rightBg,\n          display: \"flex\",\n          alignItems: \"center\",\n          justifyContent: \"center\",\n          borderLeft: colors.rightBorder,\n        }}\n      >\n        <div\n          style={{\n            width: \"86%\",\n            height: \"92%\",\n            border: \"2px dashed rgba(148,163,184,0.6)\",\n            borderRadius: 18,\n            display: \"flex\",\n            alignItems: \"center\",\n            justifyContent: \"center\",\n            textAlign: \"center\",\n            padding: 16,\n            color: colors.zoneText,\n            fontSize: 22,\n            lineHeight: 1.4,\n          }}\n        >\n          Nine Camera Zone\n          <br />\n          (raw talking head)\n        </div>\n      </AbsoluteFill>\n    </AbsoluteFill>\n  );\n};\n\nconst SubtitleOverlay: React.FC<{ item: SubtitleItem; theme: SubtitleTheme }> = ({ item, theme }) => {\n  const frame = useCurrentFrame();\n  const { fps } = useVideoConfig();\n  const colors = getTheme(theme);\n\n  const scale = spring({ fps, frame, config: { damping: 100, mass: 0.5 } });\n  const opacity = interpolate(frame, [0, 12], [0, 1], { extrapolateRight: \"clamp\" });\n  const imagePath = item.image ? staticFile(item.image) : null;\n\n  return (\n    <AbsoluteFill style={{ justifyContent: \"center\", alignItems: \"center\", paddingTop: 80 }}>\n      <div\n        style={{\n          width: \"90%\",\n          display: \"grid\",\n          gridTemplateColumns: \"35% 65%\",\n          gap: 18,\n          alignItems: \"stretch\",\n          transform: `scale(${scale})`,\n          opacity,\n        }}\n      >\n        <div\n          style={{\n            borderRadius: 20,\n            background: \"rgba(255,255,255,0.92)\",\n            border: colors.cardBorder,\n            display: \"flex\",\n            alignItems: \"center\",\n            justifyContent: \"center\",\n            minHeight: 280,\n            overflow: \"hidden\",\n            position: \"relative\",\n          }}\n        >\n          {imagePath ? (\n            <Img src={imagePath} style={{ width: \"100%\", height: \"100%\", objectFit: \"cover\" }} />\n          ) : (\n            <div style={{ fontSize: 84 }}>{item.emoji || \"🧠\"}</div>\n          )}\n        </div>\n\n        <div\n          style={{\n            borderRadius: 20,\n            backgroundColor: colors.cardBg,\n            border: colors.cardBorder,\n            padding: 24,\n            display: \"flex\",\n            flexDirection: \"column\",\n            justifyContent: \"center\",\n            minHeight: 280,\n          }}\n        >\n          <div style={{ fontSize: item.type === \"hook\" ? 44 : 46, fontWeight: 700, marginBottom: 10, color: colors.titleText, lineHeight: 1.15 }}>\n            {item.thaiScript || item.heroText}\n          </div>\n\n          {(item.phonetics || item.heroSubText) && (\n            <div style={{ fontSize: 28, color: colors.phoneticText, marginBottom: 8 }}>\n              {item.phonetics || item.heroSubText}\n            </div>\n          )}\n\n          {item.englishTranslate && <div style={{ fontSize: 30, color: colors.englishText }}>{item.englishTranslate}</div>}\n\n          {item.type === \"outro\" && (\n            <div\n              style={{\n                marginTop: 14,\n                display: \"inline-block\",\n                width: \"fit-content\",\n                fontSize: 20,\n                color: colors.badgeText,\n                background: colors.badgeBg,\n                border: colors.badgeBorder,\n                borderRadius: 999,\n                padding: \"8px 14px\",\n              }}\n            >\n              Quiz + Drill now\n            </div>\n          )}\n        </div>\n      </div>\n    </AbsoluteFill>\n  );\n};\n",
+  "reusableLessonIds": [
+    "M01-L001",
+    "M01-L003",
+    "M01-L004"
+  ],
+  "exemplars": [
+    {
+      "lessonId": "M01-L001",
+      "briefPath": "/Users/Shared/work/thai-nine/course/modules/M01/L001/brief.md",
+      "briefMd": "# M01-L001 — Hello and Basic Courtesy\n\n- **Module:** M01 — First Contact and Courtesy\n- **Level:** A0\n- **Target runtime:** 9-12 minutes\n- **Primary objective:** Learner can greet people politely, thank others, apologise, and answer yes/no in a friendly first encounter.\n- **Secondary objective:** Learner can choose the right basic polite ending and recognise when ไม่เป็นไร is the correct social response.\n- **Teaching frame:** First meeting at a reception desk or service counter.\n\n## Must-teach outcomes\n1. Say hello politely with a correct basic ending.\n2. Use ขอบคุณ and ขอโทษ in the right social moments.\n3. Distinguish ครับ, ค่ะ, and คะ at a practical beginner level.\n4. Answer with ใช่ or ไม่ใช่ and soften with ไม่เป็นไร when appropriate.\n5. Deliver a short first-contact exchange without dropping politeness.\n\n## Core vocabulary and chunks\n| Thai | Transliteration | English |\n|---|---|---|\n| สวัสดี | sà-wàt-dii | hello |\n| ขอบคุณ | khàawp-khun | thank you |\n| ขอโทษ | khǎaw-thôot | excuse me / sorry |\n| ใช่ | châi | yes / that is right |\n| ไม่ใช่ | mâi châi | no / not right |\n| ครับ | khráp | male polite ending |\n| ค่ะ | khâ | female statement ending |\n| คะ | khá | female question ending |\n| ไม่เป็นไร | mâi bpen rai | it is okay / no problem |\n\n## Teaching constraints\n- Keep this spoken-first and socially practical.\n- Explain what each courtesy line does in the interaction, not just its dictionary meaning.\n- Keep visuals text-first and left-panel only.\n- Do not overload the learner with edge-case particle theory.\n\n## Likely learner mistakes\n1. Treating polite endings as optional decoration instead of meaning-carrying social tools.\n2. Mixing ค่ะ and คะ without hearing the statement/question difference.\n3. Using ไม่เป็นไร as a yes/no answer instead of a social softener.\n4. Saying hello without warmth because the ending is dropped too early.\n\n## Image and visual notes\n- Most sections should stay text-only.\n- If a visual anchor is used at all, keep it minimal and secondary to the Thai lines.\n",
+      "scriptPath": "/Users/Shared/work/thai-nine/course/modules/M01/L001/script-master.json",
+      "scriptMaster": {
+        "schemaVersion": 1,
+        "lessonId": "M01-L001",
+        "title": "Hello and Basic Courtesy: First Contact in Thai",
+        "objective": "Greet someone politely, say thank you and sorry, choose the right basic polite ending, and handle simple yes/no responses in a friendly first encounter.",
+        "teachingFrame": {
+          "targetRuntimeMin": 9,
+          "targetRuntimeMax": 12,
+          "openingHook": "Open with the first five seconds of meeting someone in Thailand and show how a tiny set of polite lines already changes the whole interaction.",
+          "scenario": "A learner meets staff or a new person for the first time and needs to sound friendly, respectful, and calm immediately.",
+          "learnerTakeaway": "By the end, the learner can manage a two-line first-contact exchange politely and recover with basic courtesy phrases."
+        },
+        "context": {
+          "schemaVersion": 1,
+          "lessonId": "M01-L001",
+          "priorLessons": [],
+          "knownVocabulary": [],
+          "knownGrammar": [],
+          "reviewBuckets": [
+            {
+              "bucket": "last",
+              "offset": 1,
+              "lessonId": null,
+              "vocabIds": [],
+              "sample": []
+            },
+            {
+              "bucket": "minus3",
+              "offset": 3,
+              "lessonId": null,
+              "vocabIds": [],
+              "sample": []
+            },
+            {
+              "bucket": "minus6",
+              "offset": 6,
+              "lessonId": null,
+              "vocabIds": [],
+              "sample": []
+            },
+            {
+              "bucket": "minus8",
+              "offset": 8,
+              "lessonId": null,
+              "vocabIds": [],
+              "sample": []
+            }
+          ]
+        },
+        "sections": [
+          {
+            "id": "s1",
+            "heading": "Say hello the Thai way",
+            "purpose": "Teach the core greeting and show that politeness is built into the line, not added as an afterthought.",
+            "spokenNarration": [
+              "The first line you need is สวัสดี sà-wàt-dii. This is your safe, polite hello in a first meeting.",
+              "On its own, สวัสดี already works. But in real interaction, Thai usually sounds warmer and more complete when you add a polite ending.",
+              "So think of the greeting as a stack: hello first, then the polite ending that fits the speaker and the moment."
+            ],
+            "onScreenBullets": [
+              "สวัสดี | sà-wàt-dii | hello",
+              "สวัสดีครับ | sà-wàt-dii khráp | hello (male speaker)",
+              "สวัสดีค่ะ | sà-wàt-dii khâ | hello (female speaker)"
+            ],
+            "drills": [
+              "Listen and repeat three times: สวัสดี, สวัสดีครับ, สวัสดีค่ะ.",
+              "Teacher points to male or female speaker card; learner chooses the correct full greeting aloud."
+            ],
+            "languageFocus": [
+              {
+                "thai": "สวัสดี",
+                "translit": "sà-wàt-dii",
+                "english": "hello",
+                "vocabId": "v-c9337e2739"
+              },
+              {
+                "thai": "สวัสดีครับ",
+                "translit": "sà-wàt-dii khráp",
+                "english": "hello (male speaker)",
+                "vocabId": "v-e653eb5319"
+              },
+              {
+                "thai": "สวัสดีค่ะ",
+                "translit": "sà-wàt-dii khâ",
+                "english": "hello (female speaker)",
+                "vocabId": "v-bccbe506b3"
+              }
+            ],
+            "visualPlan": {
+              "leftPanelLayout": "focus-card",
+              "onScreenGoal": "Show the greeting stack clearly with one base form and two polite full versions in the left teaching area.",
+              "teachingVisuals": [
+                "Large Thai script for สวัสดี with transliteration and English underneath.",
+                "Two smaller follow-up cards for สวัสดีครับ and สวัสดีค่ะ."
+              ],
+              "teacherCues": [
+                "Pause after the base form before adding the polite ending versions.",
+                "Keep the greeting large and centered inside the left panel only."
+              ],
+              "imageSupport": {
+                "helpful": false,
+                "priority": "avoid",
+                "rationale": "The greeting line itself is the teaching target, so a photograph would add clutter without helping recall.",
+                "searchQueries": [],
+                "sourceHints": [
+                  "text-only greeting card"
+                ]
+              }
+            }
+          },
+          {
+            "id": "s2",
+            "heading": "Thank, apologise, and soften the moment",
+            "purpose": "Teach the two highest-value courtesy phrases and explain that one form repairs the interaction while the other closes it warmly.",
+            "spokenNarration": [
+              "The next two lines are ขอบคุณ khàawp-khun and ขอโทษ khǎaw-thôot.",
+              "ขอบคุณ closes a small social moment well. You use it after help, service, or a small kindness.",
+              "ขอโทษ can mean excuse me or sorry, so it is your polite way to interrupt, repair, or apologise without sounding abrupt."
+            ],
+            "onScreenBullets": [
+              "ขอบคุณ | khàawp-khun | thank you",
+              "ขอโทษ | khǎaw-thôot | excuse me / sorry",
+              "ไม่เป็นไร | mâi bpen rai | it is okay / no problem"
+            ],
+            "drills": [
+              "Courtesy drill: learner hears a situation and answers with either ขอบคุณ or ขอโทษ.",
+              "Mini exchange drill: ขอบคุณครับ/ค่ะ -> ไม่เป็นไร."
+            ],
+            "languageFocus": [
+              {
+                "thai": "ขอบคุณ",
+                "translit": "khàawp-khun",
+                "english": "thank you",
+                "vocabId": "v-217b46aa5a"
+              },
+              {
+                "thai": "ขอโทษ",
+                "translit": "khǎaw-thôot",
+                "english": "excuse me / sorry",
+                "vocabId": "v-6fce5e8c2c"
+              },
+              {
+                "thai": "ไม่เป็นไร",
+                "translit": "mâi bpen rai",
+                "english": "it is okay / no problem",
+                "vocabId": "v-03cc3fe123",
+                "notes": "Useful response after thanks or a small apology."
+              }
+            ],
+            "visualPlan": {
+              "leftPanelLayout": "contrast-board",
+              "onScreenGoal": "Contrast thanking, apologising, and calming the moment without overloading the frame.",
+              "teachingVisuals": [
+                "Two-column board: thank/close versus interrupt/repair.",
+                "Short arrow from ขอบคุณ to ไม่เป็นไร to show the natural reply pattern."
+              ],
+              "teacherCues": [
+                "Explain function before translation so learners hear the social job of each phrase.",
+                "Keep only one reply line visible at a time."
+              ],
+              "imageSupport": {
+                "helpful": false,
+                "priority": "avoid",
+                "rationale": "This section teaches social function and response pattern, which is clearer as a contrast board than as a photo.",
+                "searchQueries": [],
+                "sourceHints": [
+                  "text-only contrast board",
+                  "simple arrow diagram"
+                ]
+              }
+            }
+          },
+          {
+            "id": "s3",
+            "heading": "Pick the right polite ending",
+            "purpose": "Explain what ครับ, ค่ะ, and คะ do so the learner does not memorize them as random decoration.",
+            "spokenNarration": [
+              "Thai polite endings are not meaningless filler. They change how your line lands socially.",
+              "ครับ khráp is the common male polite ending. ค่ะ khâ is the common female ending for statements, and คะ khá is the lighter female ending often heard with questions.",
+              "For this lesson, keep one practical rule: learn ครับ and ค่ะ first for safe polite statements, and notice คะ as the question-flavoured partner rather than mixing the two female endings blindly."
+            ],
+            "onScreenBullets": [
+              "ครับ | khráp | male polite ending",
+              "ค่ะ | khâ | female statement ending",
+              "คะ | khá | female question ending"
+            ],
+            "drills": [
+              "Substitution drill: สวัสดี -> สวัสดีครับ / สวัสดีค่ะ.",
+              "Teacher says statement or question context; learner chooses ค่ะ or คะ if speaking in the female role."
+            ],
+            "languageFocus": [
+              {
+                "thai": "ครับ",
+                "translit": "khráp",
+                "english": "male polite ending",
+                "vocabId": "v-a34b9ddfd4"
+              },
+              {
+                "thai": "ค่ะ",
+                "translit": "khâ",
+                "english": "female statement ending",
+                "vocabId": "v-e5c357ab24"
+              },
+              {
+                "thai": "คะ",
+                "translit": "khá",
+                "english": "female question ending",
+                "vocabId": "v-8637eb381c"
+              }
+            ],
+            "visualPlan": {
+              "leftPanelLayout": "drill-stack",
+              "onScreenGoal": "Show the three polite endings as a usable choice system with simple examples, not a grammar wall.",
+              "teachingVisuals": [
+                "Three stacked chips for ครับ, ค่ะ, and คะ with one-line explanations.",
+                "A short substitution line showing the greeting changing with the polite ending."
+              ],
+              "teacherCues": [
+                "Keep the explanation practical and stop before it turns into a long grammar lecture.",
+                "Use one example sentence at a time so the learner can hear the ending clearly."
+              ],
+              "imageSupport": {
+                "helpful": false,
+                "priority": "avoid",
+                "rationale": "The learner needs a functional choice system here, so labelled chips and drill prompts teach better than imagery.",
+                "searchQueries": [],
+                "sourceHints": [
+                  "text-only polite-ending chips"
+                ]
+              }
+            }
+          },
+          {
+            "id": "s4",
+            "heading": "Answer yes, no, and no problem naturally",
+            "purpose": "Give the learner a small response toolkit so a first encounter can continue instead of stopping at one memorised line.",
+            "spokenNarration": [
+              "Now add three high-frequency response tools: ใช่ châi, ไม่ใช่ mâi châi, and ไม่เป็นไร mâi bpen rai.",
+              "ใช่ means yes or that is right. ไม่ใช่ means not right or no, but it is not aggressive by itself; it just corrects the idea.",
+              "ไม่เป็นไร is different. It does not mean yes or no. It smooths the moment by saying it is okay, never mind, or no problem."
+            ],
+            "onScreenBullets": [
+              "ใช่ | châi | yes / that is right",
+              "ไม่ใช่ | mâi châi | no / not right",
+              "ไม่เป็นไร | mâi bpen rai | it is okay / no problem"
+            ],
+            "drills": [
+              "Teacher gives a true or false identity cue; learner answers ใช่ or ไม่ใช่.",
+              "Repair drill: after a small apology, learner responds ไม่เป็นไร."
+            ],
+            "languageFocus": [
+              {
+                "thai": "ใช่",
+                "translit": "châi",
+                "english": "yes / that is right",
+                "vocabId": "v-f40371ec59"
+              },
+              {
+                "thai": "ไม่ใช่",
+                "translit": "mâi châi",
+                "english": "no / not right",
+                "vocabId": "v-cda55f5b5e"
+              },
+              {
+                "thai": "ไม่เป็นไร",
+                "translit": "mâi bpen rai",
+                "english": "it is okay / no problem",
+                "vocabId": "v-03cc3fe123"
+              }
+            ],
+            "visualPlan": {
+              "leftPanelLayout": "dialogue-ladder",
+              "onScreenGoal": "Show the difference between a direct answer and a social softener inside one compact response ladder.",
+              "teachingVisuals": [
+                "A three-step response ladder: ใช่ / ไม่ใช่ / ไม่เป็นไร.",
+                "One mini-scenario line showing apology followed by ไม่เป็นไร."
+              ],
+              "teacherCues": [
+                "Explain that ไม่เป็นไร is not a yes/no answer.",
+                "Leave enough empty space for Nine to model the tone difference in the camera zone."
+              ],
+              "imageSupport": {
+                "helpful": false,
+                "priority": "avoid",
+                "rationale": "This is a response-meaning distinction, so a compact dialogue ladder is clearer than any supporting image.",
+                "searchQueries": [],
+                "sourceHints": [
+                  "text-only response ladder"
+                ]
+              }
+            }
+          }
+        ],
+        "roleplay": {
+          "scenario": "First check-in at a reception desk.",
+          "lines": [
+            {
+              "speaker": "Learner",
+              "thai": "ขอโทษครับ สวัสดีครับ",
+              "translit": "khǎaw-thôot khráp sà-wàt-dii khráp",
+              "english": "Excuse me, hello."
+            },
+            {
+              "speaker": "Staff",
+              "thai": "สวัสดีค่ะ",
+              "translit": "sà-wàt-dii khâ",
+              "english": "Hello."
+            },
+            {
+              "speaker": "Learner",
+              "thai": "ที่นี่ใช่ไหมครับ",
+              "translit": "thîi-nîi châi mái khráp",
+              "english": "Is this the right place?"
+            },
+            {
+              "speaker": "Staff",
+              "thai": "ใช่ค่ะ",
+              "translit": "châi khâ",
+              "english": "Yes."
+            },
+            {
+              "speaker": "Learner",
+              "thai": "ขอบคุณครับ",
+              "translit": "khàawp-khun khráp",
+              "english": "Thank you."
+            },
+            {
+              "speaker": "Staff",
+              "thai": "ไม่เป็นไรค่ะ",
+              "translit": "mâi bpen rai khâ",
+              "english": "No problem."
+            }
+          ]
+        },
+        "recap": [
+          "Start with สวัสดี and add the right polite ending for a safe first-contact hello.",
+          "Use ขอบคุณ to close the moment well and ขอโทษ to interrupt or repair politely.",
+          "Treat ครับ, ค่ะ, and คะ as meaning-carrying social tools, not decoration.",
+          "Use ใช่ and ไม่ใช่ for basic answers, but use ไม่เป็นไร to soften the moment."
+        ],
+        "qaChecks": [
+          {
+            "id": "tone-inline",
+            "description": "All transliteration uses PTM inline tone marks; superscripts forbidden",
+            "pass": true,
+            "evidence": "All transliteration strings passed inline-tone checks"
+          },
+          {
+            "id": "triplets",
+            "description": "Thai/translit/English triplets are complete for learner-facing script content",
+            "pass": true,
+            "evidence": "Sections and on-screen bullets contain complete triplets"
+          },
+          {
+            "id": "drills",
+            "description": "Each section includes active drill",
+            "pass": true,
+            "evidence": "Each section has >=1 drill"
+          },
+          {
+            "id": "section-count",
+            "description": "Lesson contains at least 4 teaching sections",
+            "pass": true,
+            "evidence": "Legacy lesson exemption applied with 4 sections"
+          },
+          {
+            "id": "section-depth",
+            "description": "Each section includes at least 3 spoken narration lines",
+            "pass": true,
+            "evidence": "Legacy lesson exemption applied"
+          },
+          {
+            "id": "roleplay",
+            "description": "Scenario roleplay included and substantial",
+            "pass": true,
+            "evidence": "Roleplay contains 6 lines"
+          },
+          {
+            "id": "roleplay-duplicates",
+            "description": "Roleplay does not repeat exact lines",
+            "pass": true,
+            "evidence": "All roleplay lines are distinct"
+          },
+          {
+            "id": "roleplay-turn-taking",
+            "description": "Roleplay alternates speakers cleanly",
+            "pass": true,
+            "evidence": "Roleplay alternates speakers line by line"
+          },
+          {
+            "id": "roleplay-answer-logic",
+            "description": "Yes/no answer particles appear only after a nearby question or confirmation turn",
+            "pass": true,
+            "evidence": "Answer particles follow question-like turns when used"
+          },
+          {
+            "id": "roleplay-question-target",
+            "description": "Question-target lessons include at least one question-like roleplay turn",
+            "pass": true,
+            "evidence": "Roleplay includes a question-like turn"
+          },
+          {
+            "id": "recap",
+            "description": "Recap includes at least 3 review items",
+            "pass": true,
+            "evidence": "Recap contains 4 items"
+          },
+          {
+            "id": "review-reuse",
+            "description": "Lesson reuses at least 2 prior items when prior lesson context exists",
+            "pass": true,
+            "evidence": "No prior lessons available; review reuse check not required"
+          },
+          {
+            "id": "teaching-frame",
+            "description": "Lesson includes a clear teaching frame with runtime and learner takeaway",
+            "pass": true,
+            "evidence": "Legacy lesson exemption applied"
+          },
+          {
+            "id": "visual-plan",
+            "description": "Each section includes a left-panel visual plan and explicit image decision",
+            "pass": true,
+            "evidence": "Legacy lesson exemption applied"
+          },
+          {
+            "id": "asset-research",
+            "description": "Lesson provides at least one concrete image research query when visuals would help",
+            "pass": true,
+            "evidence": "Legacy lesson exemption applied"
+          },
+          {
+            "id": "policy",
+            "description": "Transliteration + image sourcing policies are declared",
+            "pass": true,
+            "evidence": "Policy object present with required enum values"
+          }
+        ],
+        "policies": {
+          "transliteration": "PTM_ADAPTED_INLINE_TONES",
+          "imageSourcing": "INTERNET_FIRST_NO_GENERATIVE_DEFAULT"
+        }
+      }
+    },
+    {
+      "lessonId": "M01-L003",
+      "briefPath": "/Users/Shared/work/thai-nine/course/modules/M01/L003/brief.md",
+      "briefMd": "# Brief — M01-L003\n\n- Lesson: `M01-L003` — `Pronouns and Who Questions`\n- Module: `M01` — `First Contact and Courtesy`\n- CEFR: `A0`\n- Target runtime: `10-13 minutes`\n- Primary objective: Learner can use basic pronouns and ask who someone is.\n- Secondary objective: Learner can recycle recent vocabulary while using identity question with `ใคร` in short controlled output.\n- Teaching frame: A learner arrives in a small class or social setting, hears introductions, and needs to identify who another person is.\n\n## Must-teach outcomes\n- Use `ฉัน | chǎn | I`, `ผม | phǒm | I (male speaker)`, and `เขา | khǎo | he / she` as practical speaker labels.\n- Use `นี่คือ... | nîi kheuu... | this is ...` to introduce a person or identify someone in front of you.\n- Ask `เขาคือใคร | khǎo kheuu khrai | who is he / she?` and `คนนี้คือใคร | khon níi kheuu khrai | who is this person?`.\n- Reuse review material such as `คุณชื่ออะไร | khun chûue à-rai | what is your name?`, `ชื่อ | chûue | name`, `ใช่ | châi | yes / that is right`, and `ประเทศ | bprà-thêet | country`.\n\n## Core vocabulary and chunks\n- `ฉัน | chǎn | I`\n- `ผม | phǒm | I (male speaker)`\n- `เขา | khǎo | he / she`\n- `นี่คือ... | nîi kheuu... | this is ...`\n- `เขาคือใคร | khǎo kheuu khrai | who is he / she?`\n- `คนนี้คือใคร | khon níi kheuu khrai | who is this person?`\n- `คุณคือ...ใช่ไหม | khun kheuu... châi mái | you are ... right?`\n- `เขามาจากไทย | khǎo maa-jàak thai | he / she is from Thailand`\n\n## Teaching constraints\n- Keep the lesson chunk-first, not chart-first.\n- Explain the job of `คือ` simply and avoid turning it into a heavy grammar lecture.\n- Keep the left two-thirds visually readable; right third stays clear for Nine.\n- Use real-world images only where they make identity and pointing more concrete.\n\n## Likely learner mistakes\n- Treating `เขาคือใคร` as the same function as `คุณชื่ออะไร`.\n- Overtranslating `คือ` as a rigid English equals sign.\n- Trying to memorise a full pronoun table instead of using a small practical set.\n- Forgetting that review items from earlier lessons should still appear inside the new exchange.\n\n## Image and visual notes\n- Section 2 benefits from a simple social introduction photo.\n- Section 3 benefits from a single portrait or person card to anchor the who-question.\n- Sections 1 and 4 should stay text-led so the sentence frames remain dominant.\n",
+      "scriptPath": "/Users/Shared/work/thai-nine/course/modules/M01/L003/script-master.json",
+      "scriptMaster": {
+        "schemaVersion": 1,
+        "lessonId": "M01-L003",
+        "title": "Pronouns and Who Questions: Identify People in Simple Thai",
+        "objective": "Use basic pronouns, introduce another person with คือ, and ask who someone is in a short controlled exchange.",
+        "teachingFrame": {
+          "targetRuntimeMin": 10,
+          "targetRuntimeMax": 13,
+          "openingHook": "Open with the moment when someone points at another person and the learner needs to ask who that person is.",
+          "scenario": "A learner is meeting people in a class or social setting and needs to identify, introduce, and confirm who someone is.",
+          "learnerTakeaway": "By the end, the learner can use ฉัน, ผม, and เขา practically, introduce someone with นี่คือ..., and ask เขาคือใคร without freezing."
+        },
+        "context": {
+          "schemaVersion": 1,
+          "lessonId": "M01-L003",
+          "priorLessons": [
+            "M01-L001",
+            "M01-L002"
+          ],
+          "knownVocabulary": [
+            {
+              "thai": "สวัสดี",
+              "translit": "sà-wàt-dii",
+              "english": "hello",
+              "vocabId": "v-c9337e2739"
+            },
+            {
+              "thai": "สวัสดีครับ",
+              "translit": "sà-wàt-dii khráp",
+              "english": "hello (male speaker)",
+              "vocabId": "v-e653eb5319"
+            },
+            {
+              "thai": "สวัสดีค่ะ",
+              "translit": "sà-wàt-dii khâ",
+              "english": "hello (female speaker)",
+              "vocabId": "v-bccbe506b3"
+            },
+            {
+              "thai": "ขอบคุณ",
+              "translit": "khàawp-khun",
+              "english": "thank you",
+              "vocabId": "v-217b46aa5a"
+            },
+            {
+              "thai": "ขอโทษ",
+              "translit": "khǎaw-thôot",
+              "english": "excuse me / sorry",
+              "vocabId": "v-6fce5e8c2c"
+            },
+            {
+              "thai": "ไม่เป็นไร",
+              "translit": "mâi bpen rai",
+              "english": "it is okay / no problem",
+              "vocabId": "v-03cc3fe123"
+            },
+            {
+              "thai": "ครับ",
+              "translit": "khráp",
+              "english": "male polite ending",
+              "vocabId": "v-a34b9ddfd4"
+            },
+            {
+              "thai": "ค่ะ",
+              "translit": "khâ",
+              "english": "female statement ending",
+              "vocabId": "v-e5c357ab24"
+            },
+            {
+              "thai": "คะ",
+              "translit": "khá",
+              "english": "female question ending",
+              "vocabId": "v-8637eb381c"
+            },
+            {
+              "thai": "ใช่",
+              "translit": "châi",
+              "english": "yes / that is right",
+              "vocabId": "v-f40371ec59"
+            },
+            {
+              "thai": "ไม่ใช่",
+              "translit": "mâi châi",
+              "english": "no / not right",
+              "vocabId": "v-cda55f5b5e"
+            },
+            {
+              "thai": "ชื่อ",
+              "translit": "chûue",
+              "english": "name",
+              "vocabId": "v-6acb169e4b"
+            },
+            {
+              "thai": "คุณชื่ออะไร",
+              "translit": "khun chûue à-rai",
+              "english": "what is your name?",
+              "vocabId": "v-a79c6af3af"
+            },
+            {
+              "thai": "ฉันชื่อ...",
+              "translit": "chǎn chûue...",
+              "english": "my name is ...",
+              "vocabId": "v-33248cf209"
+            },
+            {
+              "thai": "ผมชื่อ...",
+              "translit": "phǒm chûue...",
+              "english": "my name is ... (male speaker)",
+              "vocabId": "v-d5ec4d10d2"
+            },
+            {
+              "thai": "ฉัน",
+              "translit": "chǎn",
+              "english": "I",
+              "vocabId": "v-0ab46f92e7"
+            },
+            {
+              "thai": "ผม",
+              "translit": "phǒm",
+              "english": "I (male)",
+              "vocabId": "v-796f86a0f6"
+            },
+            {
+              "thai": "ประเทศ",
+              "translit": "bprà-thêet",
+              "english": "country",
+              "vocabId": "v-d0c316cc2c"
+            },
+            {
+              "thai": "มาจาก",
+              "translit": "maa-jàak",
+              "english": "come from / be from",
+              "vocabId": "v-dfd8165dd5"
+            },
+            {
+              "thai": "มาจากไทย",
+              "translit": "maa-jàak thai",
+              "english": "be from Thailand",
+              "vocabId": "v-317510cace"
+            },
+            {
+              "thai": "มาจากอังกฤษ",
+              "translit": "maa-jàak ang-grìt",
+              "english": "be from England",
+              "vocabId": "v-15a452b73b"
+            },
+            {
+              "thai": "มาจากอเมริกา",
+              "translit": "maa-jàak à-mee-rí-gaa",
+              "english": "be from America",
+              "vocabId": "v-b845ab6bae"
+            },
+            {
+              "thai": "ฉันมาจาก...",
+              "translit": "chǎn maa-jàak...",
+              "english": "I am from ...",
+              "vocabId": "v-b2f0acf56a"
+            },
+            {
+              "thai": "ผมมาจาก...",
+              "translit": "phǒm maa-jàak...",
+              "english": "I am from ... (male)",
+              "vocabId": "v-64f9ed0e55"
+            }
+          ],
+          "knownGrammar": [
+            "Combine the greeting from lesson 1 with the new identity patterns so the learner can produce a practical mini-introduction.",
+            "Explain the beginner-level pronoun choice so the learner can produce self-introduction lines without freezing over identity wording.",
+            "Explain what ครับ, ค่ะ, and คะ do so the learner does not memorize them as random decoration.",
+            "Give the learner a small response toolkit so a first encounter can continue instead of stopping at one memorised line.",
+            "Teach the core greeting and show that politeness is built into the line, not added as an afterthought.",
+            "Teach the core name pattern with ชื่อ and อะไร so the learner can ask and answer the most basic identity question immediately.",
+            "Teach the origin pattern so the learner can complete a basic introduction with country information instead of stopping after the name.",
+            "Teach the two highest-value courtesy phrases and explain that one form repairs the interaction while the other closes it warmly."
+          ],
+          "reviewBuckets": [
+            {
+              "bucket": "last",
+              "offset": 1,
+              "lessonId": "M01-L002",
+              "vocabIds": [
+                "v-6acb169e4b",
+                "v-a79c6af3af",
+                "v-33248cf209",
+                "v-d5ec4d10d2"
+              ],
+              "sample": [
+                {
+                  "thai": "ชื่อ",
+                  "translit": "chûue",
+                  "english": "name",
+                  "vocabId": "v-6acb169e4b"
+                },
+                {
+                  "thai": "คุณชื่ออะไร",
+                  "translit": "khun chûue à-rai",
+                  "english": "what is your name?",
+                  "vocabId": "v-a79c6af3af"
+                },
+                {
+                  "thai": "ฉันชื่อ...",
+                  "translit": "chǎn chûue...",
+                  "english": "my name is ...",
+                  "vocabId": "v-33248cf209"
+                },
+                {
+                  "thai": "ผมชื่อ...",
+                  "translit": "phǒm chûue...",
+                  "english": "my name is ... (male speaker)",
+                  "vocabId": "v-d5ec4d10d2"
+                }
+              ]
+            },
+            {
+              "bucket": "minus3",
+              "offset": 3,
+              "lessonId": null,
+              "vocabIds": [],
+              "sample": []
+            },
+            {
+              "bucket": "minus6",
+              "offset": 6,
+              "lessonId": null,
+              "vocabIds": [],
+              "sample": []
+            },
+            {
+              "bucket": "minus8",
+              "offset": 8,
+              "lessonId": null,
+              "vocabIds": [],
+              "sample": []
+            }
+          ]
+        },
+        "sections": [
+          {
+            "id": "s1",
+            "heading": "Use pronouns as practical speaker labels",
+            "purpose": "Teach pronouns as tools for basic interaction, not as abstract dictionary entries, so the learner can point to self and others naturally.",
+            "spokenNarration": [
+              "Today we add a small set of pronouns, but we keep them practical. ฉัน chǎn and ผม phǒm are both ways to say I, while เขา khǎo points to another person as he or she.",
+              "Thai beginners often try to memorise a long pronoun chart. That is not the goal here. The goal is to know which word helps you identify yourself and which word helps you refer to someone else.",
+              "You already know the review question คุณชื่ออะไร khun chûue à-rai. Inside that full question, คุณ is the word for you, so the learner is already hearing pronouns in a useful pattern."
+            ],
+            "onScreenBullets": [
+              "ฉัน | chǎn | I",
+              "ผม | phǒm | I (male speaker)",
+              "เขา | khǎo | he / she",
+              "คุณชื่ออะไร | khun chûue à-rai | what is your name?"
+            ],
+            "drills": [
+              "Point-and-say drill: teacher points to self or another person and learner chooses ฉัน, ผม, or เขา aloud.",
+              "Replacement drill: learner keeps the same sentence slot but swaps ฉัน / ผม / เขา depending on the speaker card."
+            ],
+            "languageFocus": [
+              {
+                "thai": "ฉัน",
+                "translit": "chǎn",
+                "english": "I",
+                "vocabId": "v-0ab46f92e7"
+              },
+              {
+                "thai": "ผม",
+                "translit": "phǒm",
+                "english": "I (male speaker)",
+                "vocabId": "v-acdc9c7f8e"
+              },
+              {
+                "thai": "เขา",
+                "translit": "khǎo",
+                "english": "he / she",
+                "vocabId": "v-e3ef8a701b"
+              },
+              {
+                "thai": "คุณชื่ออะไร",
+                "translit": "khun chûue à-rai",
+                "english": "what is your name?",
+                "vocabId": "v-a79c6af3af"
+              }
+            ],
+            "visualPlan": {
+              "leftPanelLayout": "contrast-board",
+              "onScreenGoal": "Show self-versus-other pronouns as usable speaking roles, anchored by one familiar review question.",
+              "teachingVisuals": [
+                "Three speaker chips for ฉัน, ผม, and เขา with simple role labels underneath.",
+                "A review strip for คุณชื่ออะไร to show where คุณ naturally appears as you."
+              ],
+              "teacherCues": [
+                "Keep the contrast practical: self versus another person, not a full grammar table.",
+                "Reinforce that Thai often drops pronouns when context is obvious, but today we keep them visible for control."
+              ],
+              "imageSupport": {
+                "helpful": false,
+                "priority": "avoid",
+                "rationale": "Pronoun contrast is clearer as speaker-role cards than as photographs.",
+                "searchQueries": [],
+                "sourceHints": [
+                  "text-only role chips",
+                  "speaker-card contrast board"
+                ]
+              }
+            }
+          },
+          {
+            "id": "s2",
+            "heading": "Use นี่คือ... to introduce and identify",
+            "purpose": "Explain how คือ works in beginner identity lines so the learner can introduce someone or identify what is in front of them without treating it as a rigid English equals sign.",
+            "spokenNarration": [
+              "The next frame is นี่คือ... nîi kheuu.... A natural translation is this is ..., and Thai uses it to introduce a person or identify something in front of you.",
+              "The high-frequency word คือ kheuu is doing a linking job here. It connects the person or thing you are talking about with the name or identity that comes after it.",
+              "A common beginner mistake is to think คือ must always be translated word for word as is. It is better to hear the whole frame as an introducing pattern: นี่คือ..., เขาคือ..., or คุณคือ...ใช่ไหม."
+            ],
+            "onScreenBullets": [
+              "นี่คือ... | nîi kheuu... | this is ...",
+              "เขาคือ... | khǎo kheuu... | he / she is ...",
+              "คุณคือ...ใช่ไหม | khun kheuu... châi mái | you are ... right?",
+              "ไม่ใช่ | mâi châi | no / not right"
+            ],
+            "drills": [
+              "Introduction drill: teacher points to a photo card and learner says นี่คือ... with the supplied name or role.",
+              "Confirmation drill: teacher says คุณคือ...ใช่ไหม and learner answers ใช่ or ไม่ใช่."
+            ],
+            "languageFocus": [
+              {
+                "thai": "นี่คือ...",
+                "translit": "nîi kheuu...",
+                "english": "this is ...",
+                "vocabId": "v-7a0154647c"
+              },
+              {
+                "thai": "เขาคือ...",
+                "translit": "khǎo kheuu...",
+                "english": "he / she is ...",
+                "vocabId": "v-e288d14433"
+              },
+              {
+                "thai": "คุณคือ...ใช่ไหม",
+                "translit": "khun kheuu... châi mái",
+                "english": "you are ... right?",
+                "vocabId": "v-7597900aeb"
+              },
+              {
+                "thai": "ไม่ใช่",
+                "translit": "mâi châi",
+                "english": "no / not right",
+                "vocabId": "v-cda55f5b5e"
+              }
+            ],
+            "visualPlan": {
+              "leftPanelLayout": "dialogue-ladder",
+              "onScreenGoal": "Make the linking job of คือ visible through short identity frames, not through dense grammar notes.",
+              "teachingVisuals": [
+                "A three-rung ladder: นี่คือ..., เขาคือ..., คุณคือ...ใช่ไหม.",
+                "A small yes/no response chip showing ใช่ versus ไม่ใช่ after the confirmation question."
+              ],
+              "teacherCues": [
+                "Describe คือ as a linking word with a job, not as a direct dictionary translation only.",
+                "Keep the identity frame on screen while swapping only the final slot."
+              ],
+              "imageSupport": {
+                "helpful": true,
+                "priority": "supporting",
+                "rationale": "A simple real-world social image helps the learner understand that นี่คือ... is used to introduce a person standing there, not only to label objects.",
+                "searchQueries": [
+                  "two people introducing a third person in classroom",
+                  "small group introduction language class"
+                ],
+                "sourceHints": [
+                  "Pexels",
+                  "Wikimedia Commons",
+                  "official classroom photography"
+                ],
+                "aiFallbackPrompt": "Friendly adult language-class scene, one speaker introducing another person to a learner, clean medium shot, uncluttered background, realistic classroom, composition weighted to the left two-thirds for lesson overlay use."
+              }
+            }
+          },
+          {
+            "id": "s3",
+            "heading": "Ask who someone is with ใคร",
+            "purpose": "Teach the identity question with ใคร so the learner can ask who a person is in a short natural exchange and not confuse it with the earlier name question.",
+            "spokenNarration": [
+              "Now we ask the new question: เขาคือใคร khǎo kheuu khrai. In natural English that is who is he or who is she, depending on context.",
+              "This is different from คุณชื่ออะไร. The name question asks for a name directly, but เขาคือใคร asks for identity first, often when you are looking at or hearing about another person.",
+              "A useful extension is คนนี้คือใคร khon níi kheuu khrai, who is this person? That sounds natural when you can point to someone or a photo in front of you."
+            ],
+            "onScreenBullets": [
+              "เขาคือใคร | khǎo kheuu khrai | who is he / she?",
+              "คนนี้คือใคร | khon níi kheuu khrai | who is this person?",
+              "ชื่อ | chûue | name",
+              "ใช่ | châi | yes / that is right"
+            ],
+            "drills": [
+              "Picture cue drill: teacher shows a person card and learner asks เขาคือใคร or คนนี้คือใคร.",
+              "Repair drill: teacher gives a wrong identification and learner answers ไม่ใช่, then asks the who-question again."
+            ],
+            "languageFocus": [
+              {
+                "thai": "เขาคือใคร",
+                "translit": "khǎo kheuu khrai",
+                "english": "who is he / she?",
+                "vocabId": "v-0a54507804"
+              },
+              {
+                "thai": "คนนี้คือใคร",
+                "translit": "khon níi kheuu khrai",
+                "english": "who is this person?",
+                "vocabId": "v-688905b601"
+              },
+              {
+                "thai": "ชื่อ",
+                "translit": "chûue",
+                "english": "name",
+                "vocabId": "v-6acb169e4b"
+              },
+              {
+                "thai": "ใช่",
+                "translit": "châi",
+                "english": "yes / that is right",
+                "vocabId": "v-f40371ec59"
+              }
+            ],
+            "visualPlan": {
+              "leftPanelLayout": "image-anchored",
+              "onScreenGoal": "Anchor the who-question to a visible person so the learner feels the difference between asking for a name and asking for identity.",
+              "teachingVisuals": [
+                "A photo-card frame on the left with the question เขาคือใคร above it.",
+                "A contrast strip below showing คุณชื่ออะไร versus เขาคือใคร."
+              ],
+              "teacherCues": [
+                "Stress the difference in target: name question versus identity question.",
+                "Use the image only as an anchor and keep the wording large and readable."
+              ],
+              "imageSupport": {
+                "helpful": true,
+                "priority": "essential",
+                "rationale": "A single person photo or portrait card makes the who-question concrete and supports pointing-based practice.",
+                "searchQueries": [
+                  "single person portrait simple background looking at camera",
+                  "student portrait ID style simple background"
+                ],
+                "sourceHints": [
+                  "Pexels",
+                  "Unsplash",
+                  "official staff portrait examples"
+                ]
+              }
+            }
+          },
+          {
+            "id": "s4",
+            "heading": "Build a mini identity exchange with review",
+            "purpose": "Combine the new who-question pattern with earlier name and country material so the learner can follow and produce a short first-meeting dialogue.",
+            "spokenNarration": [
+              "Now we connect the new lesson to the earlier first-contact material. You can greet, ask who someone is, ask the name question, and confirm where the person is from.",
+              "This is where review matters. We reuse ชื่อ chûue, ประเทศ bprà-thêet, and มาจากไทย maa-jàak thai so the learner builds a small network instead of isolated lesson boxes.",
+              "Notice the progression: first identify the person with เขาคือใคร, then learn the name, then confirm one more fact such as the country. That is how a real short conversation grows."
+            ],
+            "onScreenBullets": [
+              "ขอโทษนะ | khǎaw-thôot ná | excuse me",
+              "เขามาจากไทย | khǎo maa-jàak thai | he / she is from Thailand",
+              "ประเทศ | bprà-thêet | country",
+              "คุณคือ...ใช่ไหม | khun kheuu... châi mái | you are ... right?"
+            ],
+            "drills": [
+              "Chain drill: learner says สวัสดี, asks เขาคือใคร, then follows with คุณชื่ออะไร when the person joins the conversation.",
+              "Information-build drill: teacher reveals one detail at a time and learner turns it into an identity sentence or confirmation question."
+            ],
+            "languageFocus": [
+              {
+                "thai": "ขอโทษนะ",
+                "translit": "khǎaw-thôot ná",
+                "english": "excuse me",
+                "vocabId": "v-e2c4943d2f"
+              },
+              {
+                "thai": "เขามาจากไทย",
+                "translit": "khǎo maa-jàak thai",
+                "english": "he / she is from Thailand",
+                "vocabId": "v-af0f28e039"
+              },
+              {
+                "thai": "ประเทศ",
+                "translit": "bprà-thêet",
+                "english": "country",
+                "vocabId": "v-d0c316cc2c"
+              },
+              {
+                "thai": "คุณคือ...ใช่ไหม",
+                "translit": "khun kheuu... châi mái",
+                "english": "you are ... right?",
+                "vocabId": "v-7597900aeb"
+              }
+            ],
+            "visualPlan": {
+              "leftPanelLayout": "drill-stack",
+              "onScreenGoal": "Show the conversation growing step by step from greeting to identity question to name and country follow-up.",
+              "teachingVisuals": [
+                "A four-step conversation stack with each new line appearing under the previous one.",
+                "A small country tag chip next to เขามาจากไทย to connect review from the previous lesson."
+              ],
+              "teacherCues": [
+                "Keep the dialogue build cumulative so the learner sees how older chunks stay alive.",
+                "Do not overcrowd the left panel; reveal one line at a time."
+              ],
+              "imageSupport": {
+                "helpful": false,
+                "priority": "avoid",
+                "rationale": "The conversation build is clearer as a staged text ladder than as another photo.",
+                "searchQueries": [],
+                "sourceHints": [
+                  "text-only conversation stack"
+                ]
+              }
+            }
+          }
+        ],
+        "roleplay": {
+          "scenario": "A learner arrives at a small Thai class and asks about another student.",
+          "lines": [
+            {
+              "speaker": "A",
+              "thai": "สวัสดีค่ะ",
+              "translit": "sà-wàt-dii khâ",
+              "english": "Hello."
+            },
+            {
+              "speaker": "B",
+              "thai": "สวัสดีครับ",
+              "translit": "sà-wàt-dii khráp",
+              "english": "Hello."
+            },
+            {
+              "speaker": "A",
+              "thai": "นี่คือครูแอนค่ะ",
+              "translit": "nîi kheuu khruu Aen khâ",
+              "english": "This is Teacher Ann."
+            },
+            {
+              "speaker": "B",
+              "thai": "เขาคือใครครับ",
+              "translit": "khǎo kheuu khrai khráp",
+              "english": "Who is she?"
+            },
+            {
+              "speaker": "A",
+              "thai": "เขาชื่อไมค์ค่ะ",
+              "translit": "khǎo chûue Mike khâ",
+              "english": "His name is Mike."
+            },
+            {
+              "speaker": "B",
+              "thai": "เขามาจากอังกฤษใช่ไหมครับ",
+              "translit": "khǎo maa-jàak ang-grìt châi mái khráp",
+              "english": "He is from England, right?"
+            },
+            {
+              "speaker": "A",
+              "thai": "ใช่ค่ะ",
+              "translit": "châi khâ",
+              "english": "Yes, that is right."
+            }
+          ]
+        },
+        "recap": [
+          "Use pronouns as speaking tools: ฉัน and ผม for yourself, เขา for another person.",
+          "Use นี่คือ... and เขาคือ... to introduce or identify, not as rigid word-for-word translations only.",
+          "Ask เขาคือใคร or คนนี้คือใคร when you want identity first, not just a name.",
+          "Reuse ชื่อ, ประเทศ, and earlier greeting material so the dialogue grows naturally."
+        ],
+        "qaChecks": [
+          {
+            "id": "tone-inline",
+            "description": "All transliteration uses PTM inline tone marks; superscripts forbidden",
+            "pass": true,
+            "evidence": "All transliteration strings passed inline-tone checks"
+          },
+          {
+            "id": "triplets",
+            "description": "Thai/translit/English triplets are complete for learner-facing script content",
+            "pass": true,
+            "evidence": "Sections and on-screen bullets contain complete triplets"
+          },
+          {
+            "id": "drills",
+            "description": "Each section includes active drill",
+            "pass": true,
+            "evidence": "Each section has >=1 drill"
+          },
+          {
+            "id": "section-count",
+            "description": "Lesson contains at least 4 teaching sections",
+            "pass": true,
+            "evidence": "Legacy lesson exemption applied with 4 sections"
+          },
+          {
+            "id": "section-depth",
+            "description": "Each section includes at least 3 spoken narration lines",
+            "pass": true,
+            "evidence": "Legacy lesson exemption applied"
+          },
+          {
+            "id": "roleplay",
+            "description": "Scenario roleplay included and substantial",
+            "pass": true,
+            "evidence": "Roleplay contains 7 lines"
+          },
+          {
+            "id": "recap",
+            "description": "Recap includes at least 3 review items",
+            "pass": true,
+            "evidence": "Recap contains 4 items"
+          },
+          {
+            "id": "review-reuse",
+            "description": "Lesson reuses at least 2 prior items when prior lesson context exists",
+            "pass": true,
+            "evidence": "Reused 2 prior vocabulary items in language focus"
+          },
+          {
+            "id": "teaching-frame",
+            "description": "Lesson includes a clear teaching frame with runtime and learner takeaway",
+            "pass": true,
+            "evidence": "Legacy lesson exemption applied"
+          },
+          {
+            "id": "visual-plan",
+            "description": "Each section includes a left-panel visual plan and explicit image decision",
+            "pass": true,
+            "evidence": "Legacy lesson exemption applied"
+          },
+          {
+            "id": "asset-research",
+            "description": "Lesson provides at least one concrete image research query when visuals would help",
+            "pass": true,
+            "evidence": "Legacy lesson exemption applied"
+          },
+          {
+            "id": "policy",
+            "description": "Transliteration + image sourcing policies are declared",
+            "pass": true,
+            "evidence": "Policy object present with required enum values"
+          }
+        ],
+        "policies": {
+          "transliteration": "PTM_ADAPTED_INLINE_TONES",
+          "imageSourcing": "INTERNET_FIRST_NO_GENERATIVE_DEFAULT"
+        }
+      }
+    },
+    {
+      "lessonId": "M01-L004",
+      "briefPath": "/Users/Shared/work/thai-nine/course/modules/M01/L004/brief.md",
+      "briefMd": "# M01-L004 — Numbers 0 to 10\n\n- **Module:** M01 — First Contact and Courtesy\n- **Level:** A0\n- **Target runtime:** 9-12 minutes\n- **Primary objective:** Learner can understand and say Thai digits 0-10 clearly enough for age, room numbers, and basic counting.\n- **Secondary objective:** Learner can recycle recent pronoun and identity language while handling number pronunciation in short controlled output.\n- **Teaching frame:** Practical number use in a room-number exchange plus age phrases that connect directly to the rebuilt Module 1 foundation.\n\n## Must-teach outcomes\n1. Hear and say the digits 0-10 with stable pronunciation.\n2. Understand that Thai room numbers and similar codes are usually said digit by digit.\n3. Use the chunk `เบอร์อะไร` | `ber à-rai` | what number?\n4. Build the age pattern `ฉันอายุสิบปี` | `chǎn aa-yú sìp bpii` | I am ten years old.\n5. Reuse prior pronoun and courtesy material while handling numbers.\n\n## Core vocabulary and chunks\n| Thai | Transliteration | English |\n|---|---|---|\n| ศูนย์ | sǔun | zero |\n| หนึ่ง | nùeng | one |\n| สอง | sǎawng | two |\n| สาม | sǎam | three |\n| สี่ | sìi | four |\n| ห้า | hâa | five |\n| หก | hòk | six |\n| เจ็ด | jèt | seven |\n| แปด | bpàaet | eight |\n| เก้า | gâao | nine |\n| สิบ | sìp | ten |\n| เบอร์อะไร | ber à-rai | what number? |\n| ฉัน | chǎn | I |\n| เขา | khǎo | he / she |\n| ฉันอายุสิบปี | chǎn aa-yú sìp bpii | I am ten years old |\n| เขาอายุเก้าปี | khǎo aa-yú gâao bpii | he / she is nine years old |\n\n## Teaching constraints\n- Keep this as a real lesson, not a digit list.\n- Explicitly explain why room numbers are said digit by digit.\n- Tie age phrases back to the pronoun lesson so the module feels cumulative.\n- Reuse at least two prior-course items naturally.\n- Keep visuals in the left two-thirds of the frame.\n\n## Likely learner mistakes\n1. Rushing through the digits and flattening contrast between `สี่`, `ห้า`, `หก`, and `เจ็ด`.\n2. Assuming room numbers should be read as one larger number.\n3. Learning age language without plugging it into `ฉัน` or `เขา`.\n4. Forgetting to use repair phrases when a number is missed.\n\n## Image and visual notes\n- Most of the lesson should stay text-first.\n- One real-world image is still useful in the room-number section: a hotel corridor or room-number sign.\n- The final section should stay text-led and show phrase-building from pronoun to age frame.\n",
+      "scriptPath": "/Users/Shared/work/thai-nine/course/modules/M01/L004/script-master.json",
+      "scriptMaster": {
+        "schemaVersion": 1,
+        "lessonId": "M01-L004",
+        "title": "Numbers 0 to 10: Age, Room Numbers, and Basic Counting",
+        "objective": "Understand and say Thai digits 0-10 clearly enough to catch room numbers, answer simple number prompts, and begin using the age pattern อายุ...ปี with confidence.",
+        "teachingFrame": {
+          "targetRuntimeMin": 9,
+          "targetRuntimeMax": 12,
+          "openingHook": "Open with a room number heard too quickly at a hotel desk, then show how a few clear Thai digits solve the problem immediately.",
+          "scenario": "A beginner needs to catch digits in real life, repeat them back clearly, and survive a short number exchange without freezing.",
+          "learnerTakeaway": "By the end, the learner can hear, repeat, and use Thai digits 0-10 in room-number, counting, and simple age practice."
+        },
+        "context": {
+          "schemaVersion": 1,
+          "lessonId": "M01-L004",
+          "priorLessons": [
+            "M01-L001",
+            "M01-L002",
+            "M01-L003"
+          ],
+          "knownVocabulary": [
+            {
+              "thai": "สวัสดี",
+              "translit": "sà-wàt-dii",
+              "english": "hello",
+              "vocabId": "v-c9337e2739"
+            },
+            {
+              "thai": "สวัสดีครับ",
+              "translit": "sà-wàt-dii khráp",
+              "english": "hello (male speaker)",
+              "vocabId": "v-e653eb5319"
+            },
+            {
+              "thai": "สวัสดีค่ะ",
+              "translit": "sà-wàt-dii khâ",
+              "english": "hello (female speaker)",
+              "vocabId": "v-bccbe506b3"
+            },
+            {
+              "thai": "ขอบคุณ",
+              "translit": "khàawp-khun",
+              "english": "thank you",
+              "vocabId": "v-217b46aa5a"
+            },
+            {
+              "thai": "ขอโทษ",
+              "translit": "khǎaw-thôot",
+              "english": "excuse me / sorry",
+              "vocabId": "v-6fce5e8c2c"
+            },
+            {
+              "thai": "ไม่เป็นไร",
+              "translit": "mâi bpen rai",
+              "english": "it is okay / no problem",
+              "vocabId": "v-03cc3fe123"
+            },
+            {
+              "thai": "ครับ",
+              "translit": "khráp",
+              "english": "male polite ending",
+              "vocabId": "v-a34b9ddfd4"
+            },
+            {
+              "thai": "ค่ะ",
+              "translit": "khâ",
+              "english": "female statement ending",
+              "vocabId": "v-e5c357ab24"
+            },
+            {
+              "thai": "คะ",
+              "translit": "khá",
+              "english": "female question ending",
+              "vocabId": "v-8637eb381c"
+            },
+            {
+              "thai": "ใช่",
+              "translit": "châi",
+              "english": "yes / that is right",
+              "vocabId": "v-f40371ec59"
+            },
+            {
+              "thai": "ไม่ใช่",
+              "translit": "mâi châi",
+              "english": "no / not right",
+              "vocabId": "v-cda55f5b5e"
+            },
+            {
+              "thai": "ชื่อ",
+              "translit": "chûue",
+              "english": "name",
+              "vocabId": "v-6acb169e4b"
+            },
+            {
+              "thai": "คุณชื่ออะไร",
+              "translit": "khun chûue à-rai",
+              "english": "what is your name?",
+              "vocabId": "v-a79c6af3af"
+            },
+            {
+              "thai": "ฉันชื่อ...",
+              "translit": "chǎn chûue...",
+              "english": "my name is ...",
+              "vocabId": "v-33248cf209"
+            },
+            {
+              "thai": "ผมชื่อ...",
+              "translit": "phǒm chûue...",
+              "english": "my name is ... (male speaker)",
+              "vocabId": "v-d5ec4d10d2"
+            },
+            {
+              "thai": "ฉัน",
+              "translit": "chǎn",
+              "english": "I",
+              "vocabId": "v-0ab46f92e7"
+            },
+            {
+              "thai": "ผม",
+              "translit": "phǒm",
+              "english": "I (male)",
+              "vocabId": "v-796f86a0f6"
+            },
+            {
+              "thai": "ประเทศ",
+              "translit": "bprà-thêet",
+              "english": "country",
+              "vocabId": "v-d0c316cc2c"
+            },
+            {
+              "thai": "มาจาก",
+              "translit": "maa-jàak",
+              "english": "come from / be from",
+              "vocabId": "v-dfd8165dd5"
+            },
+            {
+              "thai": "มาจากไทย",
+              "translit": "maa-jàak thai",
+              "english": "be from Thailand",
+              "vocabId": "v-317510cace"
+            },
+            {
+              "thai": "มาจากอังกฤษ",
+              "translit": "maa-jàak ang-grìt",
+              "english": "be from England",
+              "vocabId": "v-15a452b73b"
+            },
+            {
+              "thai": "มาจากอเมริกา",
+              "translit": "maa-jàak à-mee-rí-gaa",
+              "english": "be from America",
+              "vocabId": "v-b845ab6bae"
+            },
+            {
+              "thai": "ฉันมาจาก...",
+              "translit": "chǎn maa-jàak...",
+              "english": "I am from ...",
+              "vocabId": "v-b2f0acf56a"
+            },
+            {
+              "thai": "ผมมาจาก...",
+              "translit": "phǒm maa-jàak...",
+              "english": "I am from ... (male)",
+              "vocabId": "v-64f9ed0e55"
+            },
+            {
+              "thai": "ผม",
+              "translit": "phǒm",
+              "english": "I (male speaker)",
+              "vocabId": "v-acdc9c7f8e"
+            },
+            {
+              "thai": "เขา",
+              "translit": "khǎo",
+              "english": "he / she",
+              "vocabId": "v-e3ef8a701b"
+            },
+            {
+              "thai": "นี่คือ...",
+              "translit": "nîi kheuu...",
+              "english": "this is ...",
+              "vocabId": "v-7a0154647c"
+            },
+            {
+              "thai": "เขาคือ...",
+              "translit": "khǎo kheuu...",
+              "english": "he / she is ...",
+              "vocabId": "v-e288d14433"
+            },
+            {
+              "thai": "คุณคือ...ใช่ไหม",
+              "translit": "khun kheuu... châi mái",
+              "english": "you are ... right?",
+              "vocabId": "v-7597900aeb"
+            },
+            {
+              "thai": "เขาคือใคร",
+              "translit": "khǎo kheuu khrai",
+              "english": "who is he / she?",
+              "vocabId": "v-0a54507804"
+            },
+            {
+              "thai": "คนนี้คือใคร",
+              "translit": "khon níi kheuu khrai",
+              "english": "who is this person?",
+              "vocabId": "v-688905b601"
+            },
+            {
+              "thai": "ขอโทษนะ",
+              "translit": "khǎaw-thôot ná",
+              "english": "excuse me",
+              "vocabId": "v-e2c4943d2f"
+            },
+            {
+              "thai": "เขามาจากไทย",
+              "translit": "khǎo maa-jàak thai",
+              "english": "he / she is from Thailand",
+              "vocabId": "v-af0f28e039"
+            }
+          ],
+          "knownGrammar": [
+            "Combine the greeting from lesson 1 with the new identity patterns so the learner can produce a practical mini-introduction.",
+            "Combine the new who-question pattern with earlier name and country material so the learner can follow and produce a short first-meeting dialogue.",
+            "Explain how คือ works in beginner identity lines so the learner can introduce someone or identify what is in front of them without treating it as a rigid English equals sign.",
+            "Explain the beginner-level pronoun choice so the learner can produce self-introduction lines without freezing over identity wording.",
+            "Explain what ครับ, ค่ะ, and คะ do so the learner does not memorize them as random decoration.",
+            "Give the learner a small response toolkit so a first encounter can continue instead of stopping at one memorised line.",
+            "Teach pronouns as tools for basic interaction, not as abstract dictionary entries, so the learner can point to self and others naturally.",
+            "Teach the core greeting and show that politeness is built into the line, not added as an afterthought.",
+            "Teach the core name pattern with ชื่อ and อะไร so the learner can ask and answer the most basic identity question immediately.",
+            "Teach the identity question with ใคร so the learner can ask who a person is in a short natural exchange and not confuse it with the earlier name question.",
+            "Teach the origin pattern so the learner can complete a basic introduction with country information instead of stopping after the name.",
+            "Teach the two highest-value courtesy phrases and explain that one form repairs the interaction while the other closes it warmly."
+          ],
+          "reviewBuckets": [
+            {
+              "bucket": "last",
+              "offset": 1,
+              "lessonId": "M01-L003",
+              "vocabIds": [
+                "v-0ab46f92e7",
+                "v-acdc9c7f8e",
+                "v-e3ef8a701b",
+                "v-a79c6af3af"
+              ],
+              "sample": [
+                {
+                  "thai": "ฉัน",
+                  "translit": "chǎn",
+                  "english": "I",
+                  "vocabId": "v-0ab46f92e7"
+                },
+                {
+                  "thai": "ผม",
+                  "translit": "phǒm",
+                  "english": "I (male speaker)",
+                  "vocabId": "v-acdc9c7f8e"
+                },
+                {
+                  "thai": "เขา",
+                  "translit": "khǎo",
+                  "english": "he / she",
+                  "vocabId": "v-e3ef8a701b"
+                },
+                {
+                  "thai": "คุณชื่ออะไร",
+                  "translit": "khun chûue à-rai",
+                  "english": "what is your name?",
+                  "vocabId": "v-a79c6af3af"
+                }
+              ]
+            },
+            {
+              "bucket": "minus3",
+              "offset": 3,
+              "lessonId": "M01-L001",
+              "vocabIds": [
+                "v-c9337e2739",
+                "v-e653eb5319",
+                "v-bccbe506b3",
+                "v-217b46aa5a"
+              ],
+              "sample": [
+                {
+                  "thai": "สวัสดี",
+                  "translit": "sà-wàt-dii",
+                  "english": "hello",
+                  "vocabId": "v-c9337e2739"
+                },
+                {
+                  "thai": "สวัสดีครับ",
+                  "translit": "sà-wàt-dii khráp",
+                  "english": "hello (male speaker)",
+                  "vocabId": "v-e653eb5319"
+                },
+                {
+                  "thai": "สวัสดีค่ะ",
+                  "translit": "sà-wàt-dii khâ",
+                  "english": "hello (female speaker)",
+                  "vocabId": "v-bccbe506b3"
+                },
+                {
+                  "thai": "ขอบคุณ",
+                  "translit": "khàawp-khun",
+                  "english": "thank you",
+                  "vocabId": "v-217b46aa5a"
+                }
+              ]
+            },
+            {
+              "bucket": "minus6",
+              "offset": 6,
+              "lessonId": null,
+              "vocabIds": [],
+              "sample": []
+            },
+            {
+              "bucket": "minus8",
+              "offset": 8,
+              "lessonId": null,
+              "vocabIds": [],
+              "sample": []
+            }
+          ]
+        },
+        "sections": [
+          {
+            "id": "s1",
+            "heading": "Build the first digit map: 0 to 3",
+            "purpose": "Give the learner a clean starting map for zero through three and explain that everyday Thai codes are usually said digit by digit.",
+            "spokenNarration": [
+              "Start with the first four digits you will hear all the time: ศูนย์ sǔun, หนึ่ง nùeng, สอง sǎawng, สาม sǎam.",
+              "For room numbers, phone numbers, and queue numbers, Thai usually says each digit one by one, not as one big math word.",
+              "One important beginner note: หนึ่ง often gets reduced in faster Thai later, but today we keep the full careful form so your ear has something solid to hold on to."
+            ],
+            "onScreenBullets": [
+              "ศูนย์ | sǔun | zero",
+              "หนึ่ง | nùeng | one",
+              "สอง | sǎawng | two",
+              "สาม | sǎam | three"
+            ],
+            "drills": [
+              "Listen and repeat: ศูนย์-หนึ่ง-สอง-สาม, then say the same line backwards.",
+              "Tutor says one digit; learner points to 0, 1, 2, or 3 and then repeats the Thai word aloud."
+            ],
+            "languageFocus": [
+              {
+                "thai": "ศูนย์",
+                "translit": "sǔun",
+                "english": "zero",
+                "vocabId": "v-871c9bd62f"
+              },
+              {
+                "thai": "หนึ่ง",
+                "translit": "nùeng",
+                "english": "one",
+                "vocabId": "v-6ad6888f1d",
+                "notes": "Teach the careful full form first."
+              },
+              {
+                "thai": "สอง",
+                "translit": "sǎawng",
+                "english": "two",
+                "vocabId": "v-afdf936166"
+              },
+              {
+                "thai": "สาม",
+                "translit": "sǎam",
+                "english": "three",
+                "vocabId": "v-368c7c205d"
+              }
+            ],
+            "visualPlan": {
+              "leftPanelLayout": "focus-card",
+              "onScreenGoal": "Show the first four digits as a clean memory set with large Thai script and Arabic numerals grouped together on the left.",
+              "teachingVisuals": [
+                "Large stacked cards for 0-3 with Thai script above the transliteration.",
+                "A simple line showing digit-by-digit reading for a code like 1-0-3."
+              ],
+              "teacherCues": [
+                "Pause after each digit and keep the learner on one sound at a time.",
+                "Point to the Arabic numeral only after the learner has seen the Thai script and heard the spoken form."
+              ],
+              "imageSupport": {
+                "helpful": false,
+                "priority": "avoid",
+                "rationale": "The digits themselves are the teaching target here, so a real-world image would distract more than it would help.",
+                "searchQueries": [],
+                "sourceHints": [
+                  "text-only teaching card"
+                ]
+              }
+            }
+          },
+          {
+            "id": "s2",
+            "heading": "Add 4 to 7 with pronunciation control",
+            "purpose": "Teach the middle set where beginners often blur vowels or rush final consonants, especially with สี่, ห้า, หก, and เจ็ด.",
+            "spokenNarration": [
+              "Now add the middle set: สี่ sìi, ห้า hâa, หก hòk, เจ็ด jèt.",
+              "Do not treat these as just English labels with Thai written next to them. Hear the shape of each word: สี่ is long, หก is clipped, and เจ็ด ends sharply.",
+              "If you stretch หก or soften the ending in เจ็ด too much, you will sound less natural and your listening will stay fuzzy."
+            ],
+            "onScreenBullets": [
+              "สี่ | sìi | four",
+              "ห้า | hâa | five",
+              "หก | hòk | six",
+              "เจ็ด | jèt | seven"
+            ],
+            "drills": [
+              "Clap once for each digit: สี่-ห้า-หก-เจ็ด, keeping หก and เจ็ด short and controlled.",
+              "Minimal-cue drill: teacher says a digit in Thai, learner repeats only that digit without translating first."
+            ],
+            "languageFocus": [
+              {
+                "thai": "สี่",
+                "translit": "sìi",
+                "english": "four",
+                "vocabId": "v-cf99ffc78e"
+              },
+              {
+                "thai": "ห้า",
+                "translit": "hâa",
+                "english": "five",
+                "vocabId": "v-f028feb896"
+              },
+              {
+                "thai": "หก",
+                "translit": "hòk",
+                "english": "six",
+                "vocabId": "v-f6b67b4e6f"
+              },
+              {
+                "thai": "เจ็ด",
+                "translit": "jèt",
+                "english": "seven",
+                "vocabId": "v-73bffabf48"
+              }
+            ],
+            "visualPlan": {
+              "leftPanelLayout": "contrast-board",
+              "onScreenGoal": "Contrast the sound-shapes of 4-7 so the learner can see long versus clipped forms without crowding the screen.",
+              "teachingVisuals": [
+                "Two-column comparison board pairing long shapes and short clipped shapes.",
+                "A rhythm bar under each digit showing whether the learner should hold or cut the sound."
+              ],
+              "teacherCues": [
+                "Model the digits once naturally and once slowly.",
+                "Use hand timing to show that หก and เจ็ด finish earlier than สี่ and ห้า."
+              ],
+              "imageSupport": {
+                "helpful": false,
+                "priority": "avoid",
+                "rationale": "This section is about pronunciation timing and contrast, so graphic timing cues teach better than stock imagery.",
+                "searchQueries": [],
+                "sourceHints": [
+                  "text-only rhythm board",
+                  "simple timing icons"
+                ]
+              }
+            }
+          },
+          {
+            "id": "s3",
+            "heading": "Finish 8 to 10 and ask for a number",
+            "purpose": "Complete the 0-10 set and introduce เบอร์อะไร as a practical chunk for asking about room numbers, table numbers, and other everyday number labels.",
+            "spokenNarration": [
+              "Finish the set with แปด bpàaet, เก้า gâao, and สิบ sìp.",
+              "สิบ means ten, but for now the real job is not mental arithmetic. The real job is hearing each digit clearly and saying it back clearly.",
+              "Then add the chunk เบอร์อะไร ber à-rai. เบอร์ is a very practical borrowed word for a number label, so you hear it with rooms, phones, tables, and tickets."
+            ],
+            "onScreenBullets": [
+              "แปด | bpàaet | eight",
+              "เก้า | gâao | nine",
+              "สิบ | sìp | ten",
+              "เบอร์อะไร | ber à-rai | what number?"
+            ],
+            "drills": [
+              "Call-and-response: teacher says the Arabic numeral 8, 9, or 10; learner answers in Thai.",
+              "Prompt drill: teacher asks เบอร์อะไร and learner answers with a short digit string such as ห้า-ศูนย์-สอง."
+            ],
+            "languageFocus": [
+              {
+                "thai": "แปด",
+                "translit": "bpàaet",
+                "english": "eight",
+                "vocabId": "v-1dbb23ed34"
+              },
+              {
+                "thai": "เก้า",
+                "translit": "gâao",
+                "english": "nine",
+                "vocabId": "v-cac367e6fd"
+              },
+              {
+                "thai": "สิบ",
+                "translit": "sìp",
+                "english": "ten",
+                "vocabId": "v-31da0816ab"
+              },
+              {
+                "thai": "เบอร์อะไร",
+                "translit": "ber à-rai",
+                "english": "what number?",
+                "vocabId": "v-ba4059e504",
+                "notes": "Useful for room numbers, phone numbers, and other labelled numbers."
+              }
+            ],
+            "visualPlan": {
+              "leftPanelLayout": "image-anchored",
+              "onScreenGoal": "Anchor the digit set in a real-world number context so the learner sees why saying each digit separately matters.",
+              "teachingVisuals": [
+                "Large room-number example such as 5-0-2 with each Thai digit spoken separately underneath.",
+                "Short prompt card showing เบอร์อะไร on the left and a three-digit answer on the next beat."
+              ],
+              "teacherCues": [
+                "Keep the room-number example large and leave the right third empty for Nine.",
+                "Do not let the photo dominate the scene; use it only as a context anchor behind the left teaching card."
+              ],
+              "imageSupport": {
+                "helpful": true,
+                "priority": "supporting",
+                "rationale": "A real room-number plaque or hotel corridor sign makes the use case instantly concrete and helps the learner understand why Thai digits are often said one by one.",
+                "searchQueries": [
+                  "Thailand hotel room number door plaque",
+                  "hotel corridor room number sign Thailand"
+                ],
+                "sourceHints": [
+                  "Pexels",
+                  "Wikimedia Commons",
+                  "hotel signage photo"
+                ]
+              }
+            }
+          },
+          {
+            "id": "s4",
+            "heading": "Use numbers in short real phrases",
+            "purpose": "Move from isolated digits into usable age and room-number phrases while explicitly reusing the pronoun and identity material from the rebuilt foundation lessons.",
+            "spokenNarration": [
+              "Numbers become much more useful when they plug into the people language you already know. From lesson three, you can now drop digits into frames such as ฉันอายุสิบปี or เขาอายุเก้าปี.",
+              "This matters because real beginner Thai is cumulative. You do not learn pronouns in one box and numbers in another. You combine them to talk about a person, an age, a room number, or another simple fact.",
+              "If a number comes too fast, fall back on the repair phrases from the first foundation lesson, such as ขอโทษ khǎaw-thôot or พูดช้าๆ ได้ไหม phûut cháa-cháa dâai mái, and then try the number again."
+            ],
+            "onScreenBullets": [
+              "ฉัน | chǎn | I",
+              "เขา | khǎo | he / she",
+              "ฉันอายุสิบปี | chǎn aa-yú sìp bpii | I am ten years old",
+              "เขาอายุเก้าปี | khǎo aa-yú gâao bpii | he / she is nine years old",
+              "ขอโทษ | khǎaw-thôot | excuse me / sorry"
+            ],
+            "drills": [
+              "Pattern drill: teacher gives a digit from zero to ten; learner builds ฉันอายุ...ปี with that digit.",
+              "Repair drill: learner hears a room number once, then must respond with either the number or a repair phrase before repeating it back."
+            ],
+            "languageFocus": [
+              {
+                "thai": "ฉัน",
+                "translit": "chǎn",
+                "english": "I",
+                "vocabId": "v-0ab46f92e7"
+              },
+              {
+                "thai": "เขา",
+                "translit": "khǎo",
+                "english": "he / she",
+                "vocabId": "v-e3ef8a701b"
+              },
+              {
+                "thai": "ฉันอายุสิบปี",
+                "translit": "chǎn aa-yú sìp bpii",
+                "english": "I am ten years old",
+                "vocabId": "v-03d6876d5b",
+                "notes": "Starter age frame using the new number set."
+              },
+              {
+                "thai": "เขาอายุเก้าปี",
+                "translit": "khǎo aa-yú gâao bpii",
+                "english": "he / she is nine years old",
+                "vocabId": "v-9bf9593428"
+              },
+              {
+                "thai": "ขอโทษ",
+                "translit": "khǎaw-thôot",
+                "english": "excuse me / sorry",
+                "vocabId": "v-6fce5e8c2c"
+              },
+              {
+                "thai": "ขอบคุณ",
+                "translit": "khàawp-khun",
+                "english": "thank you",
+                "vocabId": "v-217b46aa5a"
+              }
+            ],
+            "visualPlan": {
+              "leftPanelLayout": "dialogue-ladder",
+              "onScreenGoal": "Show numbers dropping into pronoun-led phrases so the learner sees age and room-number language as part of the same first-contact toolkit.",
+              "teachingVisuals": [
+                "A compact phrase ladder: ฉัน -> อายุ -> สิบ -> ปี, then a second line with เขาอายุเก้าปี.",
+                "A repair-and-repeat mini-dialogue showing ขอโทษ before the room number is repeated clearly."
+              ],
+              "teacherCues": [
+                "Tie the age pattern explicitly back to the pronouns from the previous lesson.",
+                "Reveal the room number only after the age phrase so the learner sees two different number jobs."
+              ],
+              "imageSupport": {
+                "helpful": false,
+                "priority": "avoid",
+                "rationale": "This section is about plugging digits into phrase frames, so a clean ladder teaches better than another contextual photo.",
+                "searchQueries": [],
+                "sourceHints": [
+                  "text-only phrase ladder",
+                  "simple dialogue arrows"
+                ]
+              }
+            }
+          }
+        ],
+        "roleplay": {
+          "scenario": "Small class check-in: identifying another student and catching the room number clearly.",
+          "lines": [
+            {
+              "speaker": "A",
+              "thai": "สวัสดีค่ะ นี่คือมีนค่ะ",
+              "translit": "sà-wàt-dii khâ nîi kheuu Miin khâ",
+              "english": "Hello. This is Min."
+            },
+            {
+              "speaker": "B",
+              "thai": "เขาคือใครครับ",
+              "translit": "khǎo kheuu khrai khráp",
+              "english": "Who is she?"
+            },
+            {
+              "speaker": "A",
+              "thai": "เขาชื่อมีนค่ะ เขาอายุเก้าปี",
+              "translit": "khǎo chûue Miin khâ khǎo aa-yú gâao bpii",
+              "english": "Her name is Min. She is nine years old."
+            },
+            {
+              "speaker": "B",
+              "thai": "ห้องเบอร์อะไรครับ",
+              "translit": "hâawng ber à-rai khráp",
+              "english": "What is the room number?"
+            },
+            {
+              "speaker": "A",
+              "thai": "ห้า-ศูนย์-สองค่ะ",
+              "translit": "hâa-sǔun-sǎawng khâ",
+              "english": "Five-zero-two."
+            },
+            {
+              "speaker": "B",
+              "thai": "ขอบคุณครับ",
+              "translit": "khàawp-khun khráp",
+              "english": "Thank you."
+            }
+          ]
+        },
+        "recap": [
+          "Thai digits are most useful when they are attached to a real beginner job such as a room number or an age.",
+          "Reuse pronouns from the previous lesson so numbers describe people, not just abstract counting.",
+          "Use อายุ + number + ปี for beginner age practice, then expand the range later.",
+          "If you miss a number, recycle ขอโทษ or another repair phrase instead of going silent."
+        ],
+        "qaChecks": [
+          {
+            "id": "tone-inline",
+            "description": "All transliteration uses PTM inline tone marks; superscripts forbidden",
+            "pass": true,
+            "evidence": "All transliteration strings passed inline-tone checks"
+          },
+          {
+            "id": "triplets",
+            "description": "Thai/translit/English triplets are complete for learner-facing script content",
+            "pass": true,
+            "evidence": "Sections and on-screen bullets contain complete triplets"
+          },
+          {
+            "id": "drills",
+            "description": "Each section includes active drill",
+            "pass": true,
+            "evidence": "Each section has >=1 drill"
+          },
+          {
+            "id": "section-count",
+            "description": "Lesson contains at least 4 teaching sections",
+            "pass": true,
+            "evidence": "Lesson contains 4 sections"
+          },
+          {
+            "id": "section-depth",
+            "description": "Each section includes at least 3 spoken narration lines",
+            "pass": true,
+            "evidence": "Each section has >=3 spoken narration lines"
+          },
+          {
+            "id": "roleplay",
+            "description": "Scenario roleplay included and substantial",
+            "pass": true,
+            "evidence": "Roleplay contains 6 lines"
+          },
+          {
+            "id": "recap",
+            "description": "Recap includes at least 3 review items",
+            "pass": true,
+            "evidence": "Recap contains 4 items"
+          },
+          {
+            "id": "review-reuse",
+            "description": "Lesson reuses at least 2 prior items when prior lesson context exists",
+            "pass": true,
+            "evidence": "Reused 3 prior vocabulary items in language focus"
+          },
+          {
+            "id": "teaching-frame",
+            "description": "Lesson includes a clear teaching frame with runtime and learner takeaway",
+            "pass": true,
+            "evidence": "Teaching frame targets 9-12 minutes"
+          },
+          {
+            "id": "visual-plan",
+            "description": "Each section includes a left-panel visual plan and explicit image decision",
+            "pass": true,
+            "evidence": "Every section includes visualPlan with usable teaching visuals and image rationale"
+          },
+          {
+            "id": "asset-research",
+            "description": "Lesson provides at least one concrete image research query when visuals would help",
+            "pass": true,
+            "evidence": "Sections with concrete asset research queries: 1"
+          },
+          {
+            "id": "policy",
+            "description": "Transliteration + image sourcing policies are declared",
+            "pass": true,
+            "evidence": "Policy object present with required enum values"
+          }
+        ],
+        "policies": {
+          "transliteration": "PTM_ADAPTED_INLINE_TONES",
+          "imageSourcing": "INTERNET_FIRST_NO_GENERATIVE_DEFAULT"
+        }
+      }
+    }
+  ]
+}

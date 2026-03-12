@@ -1,28 +1,23 @@
 import { NextResponse } from "next/server";
 import { promises as fs } from "node:fs";
+import type { Dirent } from "node:fs";
 import path from "node:path";
 import { execSync } from "node:child_process";
+import { lessonArtifactCandidateNames } from "@/lib/course-artifacts";
+import { getBlueprintCurriculum } from "@/lib/curriculum/blueprint-loader";
+import { MISSION_CONTROL_ARTIFACTS } from "@/lib/mission-control/lesson-review";
+import type { CurriculumBlueprint } from "@/types/lesson";
 
 export const dynamic = "force-dynamic";
 
 const ROOT = process.cwd();
 const COURSE_ROOT = path.join(ROOT, "course");
 
-const REQUIRED_ARTIFACTS = [
-  "brief.md",
-  "script-spoken.md",
-  "script-visual.md",
-  "quiz.json",
-  "pdf.pdf",
-  "remotion.json",
-  "flashcards.json",
-  "qa-checklist.md",
-  "status.json",
-  "README.md",
-] as const;
+const REQUIRED_ARTIFACTS = MISSION_CONTROL_ARTIFACTS;
 
 type Lesson = {
   lessonId: string;
+  title: string;
   moduleId: string;
   lessonKey: string;
   state: string;
@@ -65,35 +60,23 @@ async function exists(filePath: string) {
   }
 }
 
-async function parseManifestModuleTitles() {
-  const manifest = await readText(path.join(COURSE_ROOT, "manifest.yaml"));
-  const map = new Map<string, string>();
-
-  let currentModule: string | null = null;
-  for (const line of manifest.split("\n")) {
-    const mod = line.match(/^\s*- id:\s*(M\d{2})\s*$/);
-    if (mod) {
-      currentModule = mod[1];
-      continue;
-    }
-
-    if (currentModule) {
-      const title = line.match(/^\s*title:\s*"?(.*?)"?\s*$/);
-      if (title) {
-        map.set(currentModule, title[1]);
-        currentModule = null;
-      }
+async function lessonArtifactExists(
+  lessonDir: string,
+  lessonId: string,
+  baseName: string
+) {
+  for (const candidate of lessonArtifactCandidateNames(lessonId, baseName)) {
+    if (await exists(path.join(lessonDir, candidate))) {
+      return true;
     }
   }
-
-  return map;
+  return false;
 }
 
-async function collectModules(): Promise<ModuleData[]> {
+async function collectModules(curriculum: CurriculumBlueprint): Promise<ModuleData[]> {
   const modulesDir = path.join(COURSE_ROOT, "modules");
-  const moduleTitles = await parseManifestModuleTitles();
 
-  let moduleEntries: fs.Dirent[] = [];
+  let moduleEntries: Dirent[] = [];
   try {
     moduleEntries = await fs.readdir(modulesDir, { withFileTypes: true });
   } catch {
@@ -104,6 +87,7 @@ async function collectModules(): Promise<ModuleData[]> {
 
   for (const entry of moduleEntries.filter((e) => e.isDirectory()).sort((a, b) => a.name.localeCompare(b.name))) {
     const moduleId = entry.name;
+    const moduleBlueprint = curriculum.moduleById[moduleId];
     const modulePath = path.join(modulesDir, moduleId);
     const lessonEntries = (await fs.readdir(modulePath, { withFileTypes: true }))
       .filter((e) => e.isDirectory())
@@ -114,6 +98,7 @@ async function collectModules(): Promise<ModuleData[]> {
     for (const lessonDir of lessonEntries) {
       const lessonKey = lessonDir.name;
       const lessonId = `${moduleId}-${lessonKey}`;
+      const lessonBlueprint = curriculum.lessonById[lessonId];
       const basePath = path.join(modulePath, lessonKey);
       const statusPath = path.join(basePath, "status.json");
 
@@ -134,19 +119,45 @@ async function collectModules(): Promise<ModuleData[]> {
       const artifacts = await Promise.all(
         REQUIRED_ARTIFACTS.map(async (name) => ({
           name,
-          exists: await exists(path.join(basePath, name)),
+          exists: await lessonArtifactExists(basePath, lessonId, name),
         }))
       );
 
-      lessons.push({ lessonId, moduleId, lessonKey, state, updatedAt, artifacts });
+      lessons.push({
+        lessonId,
+        title: lessonBlueprint?.title ?? lessonId,
+        moduleId,
+        lessonKey,
+        state,
+        updatedAt,
+        artifacts,
+      });
     }
+
+    lessons.sort((left, right) => {
+      const leftOrder = curriculum.lessonById[left.lessonId]?.sortOrder ?? Number.MAX_SAFE_INTEGER;
+      const rightOrder = curriculum.lessonById[right.lessonId]?.sortOrder ?? Number.MAX_SAFE_INTEGER;
+      if (leftOrder === rightOrder) {
+        return left.lessonKey.localeCompare(right.lessonKey);
+      }
+      return leftOrder - rightOrder;
+    });
 
     modules.push({
       moduleId,
-      title: moduleTitles.get(moduleId) ?? moduleId,
+      title: moduleBlueprint?.title ?? moduleId,
       lessons,
     });
   }
+
+  modules.sort((left, right) => {
+    const leftOrder = curriculum.moduleById[left.moduleId]?.order ?? Number.MAX_SAFE_INTEGER;
+    const rightOrder = curriculum.moduleById[right.moduleId]?.order ?? Number.MAX_SAFE_INTEGER;
+    if (leftOrder === rightOrder) {
+      return left.moduleId.localeCompare(right.moduleId);
+    }
+    return leftOrder - rightOrder;
+  });
 
   return modules;
 }
@@ -202,11 +213,12 @@ function buildAgentBoard(modules: ModuleData[]) {
 }
 
 export async function GET() {
-  const [missionControl, runlog, modules] = await Promise.all([
+  const [missionControl, runlog, curriculum] = await Promise.all([
     readText(path.join(COURSE_ROOT, "mission-control.md")),
     readText(path.join(COURSE_ROOT, "runlogs", "latest.md")),
-    collectModules(),
+    getBlueprintCurriculum(),
   ]);
+  const modules = await collectModules(curriculum);
 
   const allLessons = modules.flatMap((m) => m.lessons);
   const totals = {
