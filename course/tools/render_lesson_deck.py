@@ -32,15 +32,13 @@ from pptx.util import Inches, Pt
 
 SLIDE_WIDTH = Inches(13.333)
 SLIDE_HEIGHT = Inches(7.5)
-# PiP camera zone (bottom-right square instead of full-height right column)
+# PiP camera placeholder (top-right, semi-transparent overlay)
 PIP_W = Inches(4.2)
 PIP_H = Inches(3.15)           # 4:3 aspect for camera
 PIP_X = SLIDE_WIDTH - PIP_W    # Right-aligned
-PIP_Y = SLIDE_HEIGHT - PIP_H   # Bottom-aligned
-# Legacy aliases (kept for any remaining references)
-LEFT_ZONE_W = SLIDE_WIDTH
-RIGHT_ZONE_X = PIP_X
-RIGHT_ZONE_W = PIP_W
+PIP_Y = Inches(0)              # Top-right
+# Content uses full slide width — PiP is just a placeholder overlay
+LEFT_ZONE_W = SLIDE_WIDTH  # Full width (legacy alias, kept for opener divider)
 CONTENT_LEFT = Inches(0.8)
 CONTENT_TOP = Inches(1.15)
 CONTENT_WIDTH = Inches(11.0)
@@ -430,15 +428,50 @@ def build_slide_id(index: int, title: str) -> str:
     return f"slide-{index:02d}-{slugify(title)[:24]}"
 
 
+def _add_pip_placeholder(slide):
+    """Add semi-transparent PiP camera placeholder in top-right corner."""
+    pip = slide.shapes.add_shape(MSO_SHAPE.RECTANGLE, PIP_X, PIP_Y, PIP_W, PIP_H)
+    pip.fill.solid()
+    pip.fill.fore_color.rgb = BG_SAND_LIGHT
+    # Set 30% opacity via XML
+    try:
+        sp_pr = pip._element.spPr
+        solid_fill_el = sp_pr.find(qn("a:solidFill"))
+        if solid_fill_el is not None:
+            srgb = solid_fill_el.find(qn("a:srgbClr"))
+            if srgb is not None:
+                alpha = OxmlElement("a:alpha")
+                alpha.set("val", "30000")  # 30% opacity
+                srgb.append(alpha)
+    except Exception:
+        pass  # Opacity is cosmetic — don't fail on it
+    # Dashed navy border
+    pip.line.color.rgb = RGBColor(0x35, 0x5C, 0x7D)
+    pip.line.width = Pt(1.5)
+    pip.line.dash_style = 2  # MSO_LINE_DASH_STYLE.DASH = 2
+    # Add "Nine" label
+    tf = pip.text_frame
+    tf.word_wrap = False
+    p = tf.paragraphs[0]
+    p.alignment = PP_ALIGN.CENTER
+    run = p.add_run()
+    run.text = "Nine"
+    run.font.name = FONT_LATIN
+    run.font.size = Pt(18)
+    run.font.color.rgb = RGBColor(0x35, 0x5C, 0x7D)
+    run.font.bold = True
+    from pptx.enum.text import MSO_ANCHOR as _A
+    tf.vertical_anchor = _A.MIDDLE
+    pip.name = "__pip_placeholder__"
+    return pip
+
+
 def add_blank_slide(prs: Presentation):
     slide = prs.slides.add_slide(prs.slide_layouts[6])
     slide.background.fill.solid()
     slide.background.fill.fore_color.rgb = BG_IVORY
-    # Bottom-right PiP camera zone
-    pip_zone = slide.shapes.add_shape(MSO_SHAPE.RECTANGLE, PIP_X, PIP_Y, PIP_W, PIP_H)
-    pip_zone.fill.solid()
-    pip_zone.fill.fore_color.rgb = BG_SAND_LIGHT
-    pip_zone.line.fill.background()
+    # PiP placeholder added last so it renders on top of content
+    _add_pip_placeholder(slide)
     return slide
 
 
@@ -797,18 +830,21 @@ def render_teaching(
         # Teacher cues go to speaker notes only, not visible on slide
         pass
 
+    content_bottom = top
     if triplet_blocks:
-        add_triplet_rows(slide, content_left, top, left_column_width, triplet_blocks["lines"])
+        content_bottom = add_triplet_rows(slide, content_left, top, left_column_width, triplet_blocks["lines"])
     elif slide_data["thaiFocus"]:
         first = slide_data["thaiFocus"][0]
         add_phrase_card(slide, content_left, top, left_column_width, first["thai"], first["translit"], first["english"])
+        content_bottom = top + Inches(1.92)
 
     if drill_block:
-        # Use full teaching width for practice drills (they contain long Thai+translit text)
+        # Place drill block below content with a gap, using full width
+        drill_top = max(content_bottom + Inches(0.2), Inches(4.85))
         add_bullet_block(
             slide,
             content_left,
-            Inches(4.85),
+            drill_top,
             CONTENT_WIDTH,
             drill_block.get("heading") or "Practice",
             drill_block["lines"][:4],
@@ -1170,9 +1206,61 @@ def render_deck(
         else:
             render_closing(slide, slide_data, translit_entries)
 
+    # Validate layout before saving
+    layout_issues = validate_slide_layout(prs)
+    if layout_issues:
+        print("LAYOUT VALIDATION ISSUES:", file=sys.stderr)
+        for issue in layout_issues:
+            print(f"  - {issue}", file=sys.stderr)
+
     output_pptx.parent.mkdir(parents=True, exist_ok=True)
     prs.save(output_pptx)
     patch_theme_fonts(output_pptx)
+
+    if layout_issues:
+        print(f"WARNING: {len(layout_issues)} layout issue(s) found. Review slides.", file=sys.stderr)
+
+
+def _rects_overlap(r1: tuple, r2: tuple) -> bool:
+    """Check if two (left, top, right, bottom) rectangles overlap."""
+    return r1[0] < r2[2] and r1[2] > r2[0] and r1[1] < r2[3] and r1[3] > r2[1]
+
+
+def validate_slide_layout(prs: Presentation) -> list[str]:
+    """Check all slides for text-text bounding box overlaps."""
+    issues: list[str] = []
+    for slide_idx, slide in enumerate(prs.slides):
+        text_shapes = []
+        for shape in slide.shapes:
+            # Skip PiP placeholder and non-text shapes
+            if getattr(shape, "name", "") == "__pip_placeholder__":
+                continue
+            if not shape.has_text_frame:
+                continue
+            # Skip empty text frames
+            text = shape.text_frame.text.strip()
+            if not text:
+                continue
+            rect = (shape.left, shape.top, shape.left + shape.width, shape.top + shape.height)
+            text_shapes.append((shape, rect, text[:40]))
+
+        # Check pairwise overlaps
+        for i, (s1, r1, t1) in enumerate(text_shapes):
+            for j, (s2, r2, t2) in enumerate(text_shapes[i + 1:], start=i + 1):
+                if _rects_overlap(r1, r2):
+                    # Skip overlaps within the same dialogue turn:
+                    # pill, Thai text, and English text share similar top positions
+                    tops_close = abs(r1[1] - r2[1]) < 320000  # < ~0.35" apart vertically
+                    if tops_close:
+                        continue  # Same dialogue turn — intentional stacking
+                    # For non-turn elements, flag significant overlaps
+                    y_overlap = min(r1[3], r2[3]) - max(r1[1], r2[1])
+                    if y_overlap > 137160:  # > 0.15 inch
+                        issues.append(
+                            f"Slide {slide_idx + 1}: text overlap "
+                            f"('{t1}...' and '{t2}...')"
+                        )
+    return issues
 
 
 def hex_to_rgb(value: str) -> tuple[int, int, int]:
