@@ -297,12 +297,12 @@
     {
       "id": "s2",
       "heading": "Finish the set: 6 to 10",
-      "purpose": "Complete the digit set from six to ten, with attention to the short clipped sounds that beginners tend to stretch.",
+      "purpose": "Teach digits 6-10 with listen-repeat-use, then practise the full 0-10 sequence in real scenarios like queue numbers and floors.",
       "spokenNarration": [
-        "Now add the rest: หก hòk, เจ็ด jèt, แปด bpàet, เก้า gâo, สิบ sìp. Listen first.",
-        "Notice the shapes. หก and เจ็ด are short and clipped — your mouth closes quickly. แปด starts with a bp- sound that has no puff of air. เก้า is longer with a falling tone.",
-        "Try them with me: หก, เจ็ด, แปด, เก้า, สิบ. Good. Now the full set from zero to ten: ศูนย์, หนึ่ง, สอง, สาม, สี่, ห้า, หก, เจ็ด, แปด, เก้า, สิบ.",
-        "If you stretch หก or soften the ending in เจ็ด, it sounds mushy. Keep them sharp. Think of them like a quick tap, not a long note."
+        "Now add five more: หก hòk, เจ็ด jèt, แปด bpàet, เก้า gâo, สิบ sìp. Listen first: หก, เจ็ด, แปด, เก้า, สิบ.",
+        "Say them with me: หก, เจ็ด, แปด, เก้า, สิบ. Good. Now count the full set from zero: ศูนย์, หนึ่ง, สอง, สาม, สี่, ห้า, หก, เจ็ด, แปด, เก้า, สิบ.",
+        "Let's use them. Imagine you are at a hospital. The screen says queue number เจ็ด. That is you — number seven. Or you are in a building and someone says floor หก. That is floor six.",
+        "Now a quick scenario: someone asks what floor? You need floor nine. Say เก้า. What about floor three? สาม. Floor ten? สิบ."
       ],
       "onScreenBullets": [
         "หก | hòk | six",
@@ -312,9 +312,9 @@
         "สิบ | sìp | ten"
       ],
       "drills": [
-        "Clap drill: clap once per digit from หก to สิบ, keeping หก, เจ็ด, แปด, and สิบ short and controlled.",
-        "Random recall: I say a number in English. You say the Thai word before I show it. Seven. Ten. Eight. Six. Nine.",
-        "Substitution drill: I start a room-number code. You finish it. ห้า-ศูนย์-... say สอง. Now สาม-ศูนย์-... say หก. Now เก้า-ศูนย์-... say แปด."
+        "Listen and repeat: หก, เจ็ด, แปด, เก้า, สิบ. Now count the full set 0-10 without looking.",
+        "Pause-and-produce: I say a number in English. You say the Thai word before I show it. Seven. Ten. Eight. Six. Nine.",
+        "Substitution drill: what floor? I say a number, you say the Thai digit. Floor 9? เก้า. Floor 6? หก. Floor 10? สิบ."
       ],
       "languageFocus": [
         {
@@ -357,20 +357,20 @@
         }
       ],
       "visualPlan": {
-        "leftPanelLayout": "contrast-board",
-        "onScreenGoal": "Contrast the sound-shapes of 6-10 so you can see which are short/clipped and which are longer.",
+        "leftPanelLayout": "focus-card",
+        "onScreenGoal": "Show digits 6-10 as a clean set matching the section 1 layout for 0-5.",
         "teachingVisuals": [
-          "Two-column board: short clipped digits (หก, เจ็ด, แปด, สิบ) versus longer open ones (เก้า).",
-          "A rhythm bar under each digit showing hold-length visually."
+          "Large stacked cards for 6-10 with Thai script, transliteration, and Arabic numeral.",
+          "Below: a mini queue-number scenario showing a number on a screen."
         ],
         "teacherCues": [
-          "Model each digit once naturally, then once slowly.",
-          "Use a hand chop for short sounds and a sustained palm for longer ones."
+          "Model each digit naturally, then use in a floor/queue scenario.",
+          "Have the learner count the full 0-10 set from memory."
         ],
         "imageSupport": {
           "helpful": false,
           "priority": "avoid",
-          "rationale": "This section is about pronunciation shape and timing, so graphic rhythm cues teach better than stock imagery.",
+          "rationale": "Digit cards with Arabic numerals are the clearest teaching tool. No stock photos needed.",
           "searchQueries": [],
           "sourceHints": [
             "text-only rhythm board"
@@ -614,11 +614,11 @@
     ]
   },
   "recap": [
-    "Look away and count from zero to ten in Thai. Say each digit aloud before looking back: ศูนย์, หนึ่ง, สอง, สาม, สี่, ห้า, หก, เจ็ด, แปด, เก้า, สิบ.",
-    "How do you ask for a room number or table number? เบอร์อะไร.",
-    "How do you say I am eight years old? ฉันอายุแปดปี — pronoun, then อายุ, then the number, then ปี.",
-    "What is the difference between สี่ sìi and สี sǐi? Low tone means four. Rising tone means colour.",
-    "If you miss a number, what do you say? ขอโทษครับ or ขอโทษค่ะ, then listen again."
+    "Count 0 to 5 in Thai. Go.",
+    "Now 6 to 10.",
+    "How do you ask 'what number?' เบอร์อะไร.",
+    "Say 'I am 8 years old' in Thai.",
+    "สี่ has a low tone. What happens with a rising tone?"
   ],
   "qaChecks": [
     {

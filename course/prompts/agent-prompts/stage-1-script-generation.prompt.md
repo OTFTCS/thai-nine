@@ -422,6 +422,41 @@ Bad drills:
 - repeated phrase lists without transformation
 - long explanation followed by no learner action
 
+## Teaching the content, not about the content
+
+Each section must teach the actual words and patterns with listen → repeat → use in context.
+
+Do NOT spend teaching sections on:
+- pronunciation theory or sound-shape analysis (that belongs in the pronunciation beat only)
+- linguistic observations about the language (“notice the shapes”, “this is a clipped sound”)
+- meta-commentary about the vocabulary (“these words are borrowed from English”)
+
+DO spend teaching sections on:
+- modeling the words clearly
+- having the learner repeat and use them in mini-scenarios
+- building from simple to complex (single words → phrases → short exchanges)
+
+If the lesson has a dedicated pronunciation beat section, other sections should NOT also focus on pronunciation. Each section teaches different content.
+
+## Recap format
+
+Recap items must be **short retrieval prompts**, not reference cards.
+
+Rules:
+- Max 15 words per bullet
+- Ask a question or give a recall challenge — do not restate the content
+- No full Thai + transliteration listings in recap — the learner should recall from memory
+- Max 5 items
+
+Good recap examples:
+- “Count 0 to 5 in Thai. Go.”
+- “How do you ask 'what number?' เบอร์อะไร.”
+- “Say 'I am 8 years old' in Thai.”
+
+Bad recap examples:
+- “Look away and count from zero to ten: ศูนย์ (sǔun), หนึ่ง (nùeng), สอง (sǎawng)...” (too long, restates everything)
+- “ขอบคุณ (khàawp-khun) means thank you and ขอโทษ (khǎaw-thôot) means sorry” (reference card, not retrieval)
+
 ## Review integration
 
 When `context.json` contains prior lessons or review bucket samples:

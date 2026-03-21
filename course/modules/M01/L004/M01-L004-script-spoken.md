@@ -34,27 +34,21 @@ Notice that สี่ | sìi has a low tone — your voice stays flat and low. D
 
 ## Section 2 — Finish the set: 6 to 10
 
-Now add the rest. Listen first.
+Now add five more. Listen first: หก hòk, เจ็ด jèt, แปด bpàet, เก้า gâo, สิบ sìp.
 
-หก | hòk | six.
-เจ็ด | jèt | seven.
-แปด | bpàet | eight.
-เก้า | gâo | nine.
-สิบ | sìp | ten.
+Say them with me: หก, เจ็ด, แปด, เก้า, สิบ. Good.
 
-Notice the shapes. หก and เจ็ด are short and clipped — your mouth closes quickly. แปด starts with a bp- sound that has no puff of air. เก้า is longer with a falling tone.
+Now count the full set from zero: ศูนย์, หนึ่ง, สอง, สาม, สี่, ห้า, หก, เจ็ด, แปด, เก้า, สิบ.
 
-Try them with me: หก, เจ็ด, แปด, เก้า, สิบ. Good.
+Let's use them. Imagine you are at a hospital. The screen says queue number เจ็ด. That is you — number seven. Or you are in a building and someone says floor หก. That is floor six.
 
-Now the full set from zero to ten: ศูนย์, หนึ่ง, สอง, สาม, สี่, ห้า, หก, เจ็ด, แปด, เก้า, สิบ.
+Now a quick scenario: someone asks what floor? You need floor nine. Say เก้า. What about floor three? สาม. Floor ten? สิบ.
 
-If you stretch หก or soften the ending in เจ็ด, it sounds mushy. Keep them sharp. Think of them like a quick tap, not a long note.
+**Drill:** Listen and repeat: หก, เจ็ด, แปด, เก้า, สิบ. Now count the full set 0-10 without looking.
 
-**Drill:** Clap once per digit from หก to สิบ. Keep หก, เจ็ด, แปด, and สิบ short and controlled.
+**Drill:** Pause-and-produce. I say a number in English. You say the Thai word before I show it. Seven. Ten. Eight. Six. Nine.
 
-**Drill:** Random recall. I say a number in English. You say the Thai word before I show it. Seven. Ten. Eight. Six. Nine.
-
-**Drill:** Substitution drill. I start a room-number code. You finish it. ห้า-ศูนย์-... say สอง. Now สาม-ศูนย์-... say หก. Now เก้า-ศูนย์-... say แปด.
+**Drill:** Substitution drill. What floor? I say a number, you say the Thai digit. Floor 9? เก้า. Floor 6? หก. Floor 10? สิบ.
 
 ---
 
@@ -146,8 +140,8 @@ You: ขอบคุณครับ | khàawp-khun khráp | Thank you.
 
 ## Recap
 
-- Look away and count from zero to ten in Thai. Say each digit aloud before looking back.
-- How do you ask for a room number? เบอร์อะไร.
-- How do you say "I am eight years old"? ฉันอายุแปดปี.
-- What is the difference between สี่ sìi and สี sǐi? Low tone means four. Rising tone means colour.
-- If you miss a number, say ขอโทษครับ or ขอโทษค่ะ and listen again.
+- Count 0 to 5 in Thai. Go.
+- Now 6 to 10.
+- How do you ask "what number?" เบอร์อะไร.
+- Say "I am 8 years old" in Thai.
+- สี่ has a low tone. What happens with a rising tone?

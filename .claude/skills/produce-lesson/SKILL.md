@@ -89,6 +89,12 @@ Following the rules in `stage-1-script-generation.prompt.md`, write these 4 file
 - Pronunciation beat section with tone echo and minimal pair drills
 - All 7 teaching devices present and distributed
 
+**Teaching quality — CRITICAL:**
+- Each section must TEACH the content (listen → repeat → use in scenario), not ANALYZE it
+- Do NOT write sections about pronunciation theory, sound shapes, or linguistic observations — that goes in the pronunciation beat ONLY
+- Every section should end with the learner USING the new words in a mini-scenario
+- Recap must be SHORT retrieval prompts (max 15 words each, max 5 items) — NOT reference cards that dump everything with full transliteration
+
 **Language rules:**
 - Use "You" not "Learner" everywhere in user-facing text
 - PTM transliteration with inline tone marks (mid tone = unmarked, that's correct)
