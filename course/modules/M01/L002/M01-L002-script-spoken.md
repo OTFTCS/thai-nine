@@ -71,15 +71,15 @@ You now know three tones: high (ครับ), falling (ชื่อ, ค่ะ)
 
 **New person:** สวัสดีค่ะ คุณชื่ออะไรคะ — Hello! What is your name?
 
-**Learner (your turn):** สวัสดีครับ ผมชื่อ Oliver ครับ — Hello! My name is Oliver.
+**You (your turn):** สวัสดีครับ ผมชื่อ Oliver ครับ — Hello! My name is Oliver.
 
 **New person:** ยินดีที่ได้รู้จักค่ะ คุณมาจากไหนคะ — Nice to meet you. Where are you from?
 
-**Learner (your turn):** ผมมาจากอังกฤษครับ — I am from England.
+**You (your turn):** ผมมาจากอังกฤษครับ — I am from England.
 
 **New person:** อ๋อ คนอังกฤษ ยินดีต้อนรับค่ะ — Oh, an English person! Welcome.
 
-**Learner:** ขอบคุณครับ — Thank you.
+**You:** ขอบคุณครับ — Thank you.
 
 ---
 

@@ -7,8 +7,8 @@
     "targetRuntimeMin": 9,
     "targetRuntimeMax": 12,
     "openingHook": "Open with the first five seconds of meeting someone in Thailand and show how a tiny set of polite lines already changes the whole interaction.",
-    "scenario": "A learner meets staff or a new person for the first time and needs to sound friendly, respectful, and calm immediately.",
-    "learnerTakeaway": "By the end, the learner can open, repair, thank, and close a tiny first-contact exchange politely."
+    "scenario": "You meet staff or a new person for the first time and need to sound friendly, respectful, and calm immediately.",
+    "learnerTakeaway": "By the end, you can open, repair, thank, and close a tiny first-contact exchange politely."
   },
   "context": {
     "schemaVersion": 1,
@@ -100,7 +100,7 @@
         ],
         "teacherCues": [
           "Pause after the base form before adding the polite ending versions.",
-          "Model the greeting naturally — the learner should hear it before reading it."
+          "Model the greeting naturally — you should hear it before reading it."
         ],
         "imageSupport": {
           "helpful": false,
@@ -166,7 +166,7 @@
           "Short arrow from ขอบคุณ to ไม่เป็นไร to show the natural reply pattern."
         ],
         "teacherCues": [
-          "Explain function before translation so learners hear the social job of each phrase.",
+          "Explain function before translation so you hear the social job of each phrase.",
           "Recycle สวัสดี in the example: 'After สวัสดี, things go well — ขอบคุณ. If something goes wrong — ขอโทษ.'"
         ],
         "imageSupport": {
@@ -183,7 +183,7 @@
     {
       "id": "s3",
       "heading": "Pick the right polite ending",
-      "purpose": "Explain what ครับ, ค่ะ, and คะ do so the learner does not memorize them as random decoration.",
+      "purpose": "Explain what ครับ, ค่ะ, and คะ do so you do not memorize them as random decoration.",
       "spokenNarration": [
         "Polite endings are not decoration. Think of them as the final signal telling the listener how your line should land.",
         "ครับ khráp is the common male polite ending. ค่ะ khâ is the common female ending for statements. คะ khá is the lighter female ending often heard with questions.",
@@ -237,7 +237,7 @@
         "imageSupport": {
           "helpful": false,
           "priority": "avoid",
-          "rationale": "The learner needs a functional choice system here, so labelled chips and drill prompts teach better than imagery.",
+          "rationale": "You need a functional choice system here, so labelled chips and drill prompts teach better than imagery.",
           "searchQueries": [],
           "sourceHints": [
             "text-only polite-ending chips"
@@ -248,7 +248,7 @@
     {
       "id": "s4",
       "heading": "Answer yes, no, and no problem naturally",
-      "purpose": "Give the learner a small response toolkit so a first encounter can continue instead of stopping at one memorised line.",
+      "purpose": "Give you a small response toolkit so a first encounter can continue instead of stopping at one memorised line.",
       "spokenNarration": [
         "Now add two response tools: ใช่ châi and ไม่ใช่ mâi châi.",
         "ใช่ and ไม่ใช่ answer the idea. They tell someone yes, that is right, or no, that is not right. You already know ไม่เป็นไร — that does a different job. It manages the feeling of the moment.",
@@ -306,7 +306,7 @@
     {
       "id": "s5",
       "heading": "Pronunciation: hearing Thai tones for the first time",
-      "purpose": "Introduce the learner to the idea that Thai has tones that change meaning, and train their ear on two key contrasts from this lesson.",
+      "purpose": "Introduce you to the idea that Thai has tones that change meaning, and train their ear on two key contrasts from this lesson.",
       "spokenNarration": [
         "Before we roleplay, let's train your ear. Thai is a tone language — the pitch of your voice changes the meaning of a word.",
         "You have already heard two different tones in this lesson. Listen: khráp — that is a high tone, it rises up sharply. Now listen: khâ — that is a falling tone, it starts high and drops down.",
@@ -357,7 +357,7 @@
     }
   ],
   "roleplay": {
-    "scenario": "First polite exchange at a reception desk. The learner approaches, greets, confirms something, and thanks the staff.",
+    "scenario": "First polite exchange at a reception desk. You approach, greets, confirms something, and thanks the staff.",
     "lines": [
       {
         "speaker": "You",

@@ -39,7 +39,7 @@ Layout: 16:9 (1920x1080), right third reserved for Nine's camera.
 
 ## Roleplay
 - **Layout:** dialogue-ladder
-- **On screen:** Turn-by-turn exchange at reception desk. Learner lines highlighted. Two learner turns marked "your turn".
+- **On screen:** Turn-by-turn exchange at reception desk. Your lines highlighted. Two "your turn" prompts marked "your turn".
 - **Notes:** Keep all text in left two-thirds. Right third for Nine demonstrating the interaction.
 
 ## Recap

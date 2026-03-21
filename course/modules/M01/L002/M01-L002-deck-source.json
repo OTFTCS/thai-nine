@@ -385,7 +385,7 @@
       "estimatedSeconds": 37,
       "layout": "roleplay-dialogue",
       "speakerNotes": [
-        "Meeting a new person at a coffee shop. The learner introduces themselves after a greeting.",
+        "Meeting a new person at a coffee shop. You introduce themselves after a greeting.",
         "New person | สวัสดีค่ะ คุณชื่ออะไรคะ | sà-wàt-dii khâ khun chûue à-rai khá | Hello! What is your name?",
         "You | สวัสดีครับ ผมชื่อ Oliver ครับ | sà-wàt-dii khráp phǒm chûue Oliver khráp | Hello! My name is Oliver.",
         "New person | ยินดีที่ได้รู้จักค่ะ คุณมาจากไหนคะ | yin-dii thîi dâai rúu-jàk khâ khun maa-jàak nǎi khá | Nice to meet you. Where are you from?",
@@ -443,7 +443,7 @@
       "visualStrategy": {
         "onScreenGoal": "Support the roleplay recording with clean turn-taking.",
         "teachingVisuals": [
-          "Meeting a new person at a coffee shop. The learner introduces themselves after a greeting."
+          "Meeting a new person at a coffee shop. You introduce themselves after a greeting."
         ],
         "teacherCues": [
           "Record against the dialogue ladder.",
@@ -507,7 +507,7 @@
       "estimatedSeconds": 11,
       "layout": "lesson-closing",
       "speakerNotes": [
-        "By the end, the learner can greet, ask a name, give a name, and say where they are from in a compact polite exchange.",
+        "By the end, you can greet, ask a name, give a name, and say where they are from in a compact polite exchange.",
         "Next: First Contact and Courtesy continues."
       ],
       "textBlocks": [
@@ -516,7 +516,7 @@
           "kind": "closing-list",
           "heading": "Takeaway",
           "lines": [
-            "By the end, the learner can greet, ask a name, give a name, and say where they are from in a compact polite exchange.",
+            "By the end, you can greet, ask a name, give a name, and say where they are from in a compact polite exchange.",
             "Next: First Contact and Courtesy continues."
           ]
         }
@@ -525,7 +525,7 @@
       "visualStrategy": {
         "onScreenGoal": "Give Nine a clean final slide to close the recording.",
         "teachingVisuals": [
-          "By the end, the learner can greet, ask a name, give a name, and say where they are from in a compact polite exchange.",
+          "By the end, you can greet, ask a name, give a name, and say where they are from in a compact polite exchange.",
           "Next: First Contact and Courtesy continues."
         ],
         "teacherCues": [

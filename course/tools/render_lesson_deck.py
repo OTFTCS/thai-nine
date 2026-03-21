@@ -37,11 +37,13 @@ PIP_W = Inches(4.2)
 PIP_H = Inches(3.15)           # 4:3 aspect for camera
 PIP_X = SLIDE_WIDTH - PIP_W    # Right-aligned
 PIP_Y = Inches(0)              # Top-right
-# Content uses full slide width — PiP is just a placeholder overlay
+# Content width: constrained beside PiP (Y < PIP_H), full width below
 LEFT_ZONE_W = SLIDE_WIDTH  # Full width (legacy alias, kept for opener divider)
 CONTENT_LEFT = Inches(0.8)
 CONTENT_TOP = Inches(1.15)
-CONTENT_WIDTH = Inches(11.0)
+CONTENT_WIDTH_BESIDE_PIP = PIP_X - CONTENT_LEFT - Inches(0.2)  # ~8.1" (beside PiP)
+CONTENT_WIDTH = Inches(11.0)                                     # Full width (below PiP)
+PIP_BOTTOM = PIP_Y + PIP_H  # Y threshold: below this, full width is safe
 
 BG_IVORY = RGBColor(0xF5, 0xF7, 0xF8)
 BG_SAND_LIGHT = RGBColor(0xDB, 0xE7, 0xEC)
@@ -611,12 +613,14 @@ def add_phrase_card(slide, left, top, width, thai, translit, english):
 
 def add_section_header(slide, title, eyebrow, translit_entries: list[tuple[str, str]] | None = None):
     add_divider(slide, 0, 0, LEFT_ZONE_W, ACCENT_GOLD, Pt(5))
+    # Headers are beside the PiP — use constrained width
+    header_width = CONTENT_WIDTH_BESIDE_PIP
     if eyebrow:
         add_textbox(
             slide,
             CONTENT_LEFT,
             Inches(0.28),
-            CONTENT_WIDTH,
+            header_width,
             Inches(0.28),
             eyebrow,
             font_name=FONT_LATIN,
@@ -629,7 +633,7 @@ def add_section_header(slide, title, eyebrow, translit_entries: list[tuple[str, 
         slide,
         CONTENT_LEFT,
         Inches(0.58),
-        CONTENT_WIDTH,
+        header_width,
         Inches(0.5),
         title,
         font_name=FONT_LATIN,
@@ -764,9 +768,9 @@ def fit_picture(slide, image_path: Path, left, top, max_width, max_height):
 def render_opener(slide, slide_data: dict[str, Any], row: dict[str, str], translit_entries: list[tuple[str, str]] | None = None):
     add_divider(slide, 0, 0, LEFT_ZONE_W, ACCENT_GOLD, Pt(6))
     eyebrow = f"{row.get('module_title', '').strip()}  ·  {row.get('cefr_band', '').strip()}".strip(" ·")
-    add_textbox(slide, CONTENT_LEFT, Inches(1.75), CONTENT_WIDTH, Inches(0.25), eyebrow or "Immersion Thai with Nine", font_name=FONT_LATIN, font_size=SIZE_LABEL, color=ACCENT_GOLD, bold=True, translit_entries=translit_entries)
-    add_textbox(slide, CONTENT_LEFT, Inches(2.18), CONTENT_WIDTH, Inches(0.36), row.get("lesson_id", slide_data["id"]), font_name=FONT_LATIN, font_size=Pt(20), color=INK_MEDIUM, translit_entries=translit_entries)
-    add_textbox(slide, CONTENT_LEFT, Inches(2.78), CONTENT_WIDTH, Inches(0.9), slide_data["title"], font_name=FONT_LATIN, font_size=Pt(42), bold=True, translit_entries=translit_entries)
+    add_textbox(slide, CONTENT_LEFT, Inches(1.75), CONTENT_WIDTH_BESIDE_PIP, Inches(0.25), eyebrow or "Immersion Thai with Nine", font_name=FONT_LATIN, font_size=SIZE_LABEL, color=ACCENT_GOLD, bold=True, translit_entries=translit_entries)
+    add_textbox(slide, CONTENT_LEFT, Inches(2.18), CONTENT_WIDTH_BESIDE_PIP, Inches(0.36), row.get("lesson_id", slide_data["id"]), font_name=FONT_LATIN, font_size=Pt(20), color=INK_MEDIUM, translit_entries=translit_entries)
+    add_textbox(slide, CONTENT_LEFT, Inches(2.78), CONTENT_WIDTH_BESIDE_PIP, Inches(0.9), slide_data["title"], font_name=FONT_LATIN, font_size=Pt(42), bold=True, translit_entries=translit_entries)
     note_lines = slide_data["textBlocks"][0]["lines"][:2]
     add_bullet_block(slide, CONTENT_LEFT, Inches(4.35), Inches(5.8), "Lesson focus", note_lines, ACCENT_GOLD, translit_entries)
     add_textbox(slide, CONTENT_LEFT, Inches(6.2), CONTENT_WIDTH, Inches(0.25), "Immersion Thai with Nine", font_name=FONT_LATIN, font_size=SIZE_LABEL, color=INK_LIGHT)
@@ -798,9 +802,11 @@ def render_teaching(
     add_section_header(slide, slide_data["title"], "Teaching slide", translit_entries)
     content_left = CONTENT_LEFT
     top = Inches(1.45)
-    left_column_width = Inches(5.5)
-    right_column_left = CONTENT_LEFT + Inches(5.8)
-    right_column_width = Inches(4.5)
+    # Teaching content is beside PiP — constrain to not overlap
+    usable_width = CONTENT_WIDTH_BESIDE_PIP
+    left_column_width = usable_width * 0.55
+    right_column_left = CONTENT_LEFT + usable_width * 0.58
+    right_column_width = usable_width * 0.40
 
     resolved_asset = next((asset for asset in slide_data["assets"] if asset.get("status") == "resolved" and asset.get("localPath")), None)
     image_usage = slide_data["visualStrategy"]["imageUsage"]
@@ -859,20 +865,24 @@ def render_roleplay(slide, slide_data: dict[str, Any], translit_entries: list[tu
     current_top = Inches(1.2)
     for index, line in enumerate(slide_data["textBlocks"][0]["lines"][:6]):
         speaker, thai, translit, english = [part.strip() for part in line.split("|", 3)]
-        add_dialogue_turn(slide, CONTENT_LEFT, current_top, Inches(10.5), speaker, thai, translit, english, learner=index % 2 == 1)
+        # Use constrained width when beside PiP, full width when below
+        turn_width = CONTENT_WIDTH_BESIDE_PIP if current_top < PIP_BOTTOM else CONTENT_WIDTH
+        add_dialogue_turn(slide, CONTENT_LEFT, current_top, turn_width, speaker, thai, translit, english, learner=index % 2 == 1)
         current_top += Inches(0.85)
 
 
 def render_recap(slide, slide_data: dict[str, Any], translit_entries: list[tuple[str, str]] | None = None):
     add_section_header(slide, slide_data["title"], "Recap", translit_entries)
-    add_bullet_block(slide, CONTENT_LEFT, Inches(1.55), Inches(10.5), "What you can now do", slide_data["textBlocks"][0]["lines"][:5], ACCENT_GOLD, translit_entries)
+    # Top block is beside PiP — constrained width
+    add_bullet_block(slide, CONTENT_LEFT, Inches(1.55), CONTENT_WIDTH_BESIDE_PIP, "What you can now do", slide_data["textBlocks"][0]["lines"][:5], ACCENT_GOLD, translit_entries)
     takeaway = slide_data["speakerNotes"][-1] if slide_data["speakerNotes"] else "Ready to record."
-    add_bullet_block(slide, CONTENT_LEFT, Inches(4.55), Inches(10.5), "Remember", [takeaway], ACCENT_TEAL, translit_entries)
+    # Bottom block is below PiP — full width OK
+    add_bullet_block(slide, CONTENT_LEFT, Inches(4.55), CONTENT_WIDTH, "Remember", [takeaway], ACCENT_TEAL, translit_entries)
 
 
 def render_closing(slide, slide_data: dict[str, Any], translit_entries: list[tuple[str, str]] | None = None):
     add_section_header(slide, slide_data["title"], "Closing", translit_entries)
-    add_bullet_block(slide, CONTENT_LEFT, Inches(1.75), Inches(10.5), "Next steps", slide_data["textBlocks"][0]["lines"][:4], ACCENT_CLAY, translit_entries)
+    add_bullet_block(slide, CONTENT_LEFT, Inches(1.75), CONTENT_WIDTH_BESIDE_PIP, "Next steps", slide_data["textBlocks"][0]["lines"][:4], ACCENT_CLAY, translit_entries)
 
 
 def build_teaching_slide(

@@ -90,17 +90,17 @@ Do not try to master all five Thai tones right now. Just notice: pitch matters. 
 
 ## Roleplay: First polite exchange at a reception desk
 
-*The learner approaches a reception desk.*
+*You approach a reception desk.*
 
-**Learner:** ขอโทษครับ สวัสดีครับ — Excuse me, hello.
+**You:** ขอโทษครับ สวัสดีครับ — Excuse me, hello.
 
 **Staff:** สวัสดีค่ะ — Hello.
 
-**Learner (your turn):** นี่ใช่ไหมครับ — Is this right?
+**You (your turn):** นี่ใช่ไหมครับ — Is this right?
 
 **Staff:** ใช่ค่ะ — Yes.
 
-**Learner (your turn):** ขอบคุณครับ — Thank you.
+**You (your turn):** ขอบคุณครับ — Thank you.
 
 **Staff:** ไม่เป็นไรค่ะ — No problem.
 

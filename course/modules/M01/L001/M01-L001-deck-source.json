@@ -165,7 +165,7 @@
         ],
         "teacherCues": [
           "Pause after the base form before adding the polite ending versions.",
-          "Model the greeting naturally — the learner should hear it before reading it."
+          "Model the greeting naturally — you should hear it before reading it."
         ],
         "imageUsage": "text-only",
         "rationale": "The greeting line itself is the teaching target, so a photograph would add clutter without helping recall."
@@ -231,7 +231,7 @@
           "Short arrow from ขอบคุณ to ไม่เป็นไร to show the natural reply pattern."
         ],
         "teacherCues": [
-          "Explain function before translation so learners hear the social job of each phrase.",
+          "Explain function before translation so you hear the social job of each phrase.",
           "Recycle สวัสดี in the example: 'After สวัสดี, things go well — ขอบคุณ. If something goes wrong — ขอโทษ.'"
         ],
         "imageUsage": "text-only",
@@ -301,7 +301,7 @@
           "Recycle ขอบคุณ and ขอโทษ from section 2 in the substitution examples."
         ],
         "imageUsage": "text-only",
-        "rationale": "The learner needs a functional choice system here, so labelled chips and drill prompts teach better than imagery."
+        "rationale": "You need a functional choice system here, so labelled chips and drill prompts teach better than imagery."
       },
       "assets": []
     },
@@ -429,7 +429,7 @@
       "estimatedSeconds": 22,
       "layout": "roleplay-dialogue",
       "speakerNotes": [
-        "First polite exchange at a reception desk. The learner approaches, greets, confirms something, and thanks the staff.",
+        "First polite exchange at a reception desk. You approach, greets, confirms something, and thanks the staff.",
         "You | ขอโทษครับ สวัสดีครับ | khǎaw-thôot khráp sà-wàt-dii khráp | Excuse me, hello.",
         "Staff | สวัสดีค่ะ | sà-wàt-dii khâ | Hello.",
         "You | นี่ใช่ไหมครับ | nîi châi mái khráp | Is this right?",
@@ -487,7 +487,7 @@
       "visualStrategy": {
         "onScreenGoal": "Support the roleplay recording with clean turn-taking.",
         "teachingVisuals": [
-          "First polite exchange at a reception desk. The learner approaches, greets, confirms something, and thanks the staff."
+          "First polite exchange at a reception desk. You approach, greets, confirms something, and thanks the staff."
         ],
         "teacherCues": [
           "Record against the dialogue ladder.",
@@ -551,7 +551,7 @@
       "estimatedSeconds": 10,
       "layout": "lesson-closing",
       "speakerNotes": [
-        "By the end, the learner can open, repair, thank, and close a tiny first-contact exchange politely.",
+        "By the end, you can open, repair, thank, and close a tiny first-contact exchange politely.",
         "Next: First Contact and Courtesy continues."
       ],
       "textBlocks": [
@@ -560,7 +560,7 @@
           "kind": "closing-list",
           "heading": "Takeaway",
           "lines": [
-            "By the end, the learner can open, repair, thank, and close a tiny first-contact exchange politely.",
+            "By the end, you can open, repair, thank, and close a tiny first-contact exchange politely.",
             "Next: First Contact and Courtesy continues."
           ]
         }
@@ -569,7 +569,7 @@
       "visualStrategy": {
         "onScreenGoal": "Give Nine a clean final slide to close the recording.",
         "teachingVisuals": [
-          "By the end, the learner can open, repair, thank, and close a tiny first-contact exchange politely.",
+          "By the end, you can open, repair, thank, and close a tiny first-contact exchange politely.",
           "Next: First Contact and Courtesy continues."
         ],
         "teacherCues": [

@@ -7,8 +7,8 @@
     "targetRuntimeMin": 10,
     "targetRuntimeMax": 13,
     "openingHook": "Open with the moment right after สวัสดี — someone wants to know your name and where you are from.",
-    "scenario": "A learner meets someone for the first time and wants to introduce themselves in two or three clean lines.",
-    "learnerTakeaway": "By the end, the learner can greet, ask a name, give a name, and say where they are from in a compact polite exchange."
+    "scenario": "You meet someone for the first time and want to introduce themselves in two or three clean lines.",
+    "learnerTakeaway": "By the end, you can greet, ask a name, give a name, and say where they are from in a compact polite exchange."
   },
   "context": {
     "schemaVersion": 1,
@@ -332,7 +332,7 @@
     {
       "id": "s4",
       "heading": "Pronunciation: the falling tone on ชื่อ and rising tone on ไหน",
-      "purpose": "Train the learner's ear on the falling tone (ชื่อ) and low tone (มา) contrasts from this lesson's vocabulary.",
+      "purpose": "Train yours ear on the falling tone (ชื่อ) and low tone (มา) contrasts from this lesson's vocabulary.",
       "spokenNarration": [
         "Let's train your ear again. In lesson 1 you heard the high tone on ครับ and the falling tone on ค่ะ. Now notice two more tones in today's words.",
         "Listen: ชื่อ chûue. That is a falling tone — your voice starts high and drops. It sounds like the ค่ะ you already know. ชื่อ, ค่ะ — both falling.",
@@ -383,7 +383,7 @@
     }
   ],
   "roleplay": {
-    "scenario": "Meeting a new person at a coffee shop. The learner introduces themselves after a greeting.",
+    "scenario": "Meeting a new person at a coffee shop. You introduce themselves after a greeting.",
     "lines": [
       {
         "speaker": "New person",
