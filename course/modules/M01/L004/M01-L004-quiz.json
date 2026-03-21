@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "lessonId": "M01-L004",
   "passScore": 80,
-  "generatedAt": "2026-03-21T13:58:29.897Z",
+  "generatedAt": "2026-03-21T14:11:34.681Z",
   "itemBankPath": "M01-L004-quiz-item-bank.json",
   "questions": [
     {
@@ -267,7 +267,7 @@
     },
     {
       "id": "q14",
-      "vocabId": "v-8b9cee2530",
+      "vocabId": "v-b30c0e11f5",
       "type": "thai_to_english",
       "displayMode": "thai_only",
       "prompt": {
@@ -276,17 +276,77 @@
         "translit": "bpii"
       },
       "options": [
-        "year(s) — used for adult ages",
+        "year(s)",
         "zero",
         "one",
         "two"
       ],
-      "answer": "year(s) — used for adult ages",
+      "answer": "year(s)",
       "rationale": "Maps Thai form to target meaning from script languageFocus.",
-      "bankItemId": "v-8b9cee2530-thai-to-english"
+      "bankItemId": "v-b30c0e11f5-thai-to-english"
     },
     {
       "id": "q15",
+      "vocabId": "v-0ab46f92e7",
+      "type": "thai_to_english",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "What is the best meaning of ฉัน?",
+        "thai": "ฉัน",
+        "translit": "chǎn"
+      },
+      "options": [
+        "I",
+        "zero",
+        "one",
+        "two"
+      ],
+      "answer": "I",
+      "rationale": "Maps Thai form to target meaning from script languageFocus.",
+      "bankItemId": "v-0ab46f92e7-thai-to-english"
+    },
+    {
+      "id": "q16",
+      "vocabId": "v-796f86a0f6",
+      "type": "thai_to_english",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "What is the best meaning of ผม?",
+        "thai": "ผม",
+        "translit": "phǒm"
+      },
+      "options": [
+        "I (male)",
+        "zero",
+        "one",
+        "two"
+      ],
+      "answer": "I (male)",
+      "rationale": "Maps Thai form to target meaning from script languageFocus.",
+      "bankItemId": "v-796f86a0f6-thai-to-english"
+    },
+    {
+      "id": "q17",
+      "vocabId": "v-184e325026",
+      "type": "thai_to_english",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "What is the best meaning of เขา?",
+        "thai": "เขา",
+        "translit": "khǎo"
+      },
+      "options": [
+        "he/she",
+        "zero",
+        "one",
+        "two"
+      ],
+      "answer": "he/she",
+      "rationale": "Maps Thai form to target meaning from script languageFocus.",
+      "bankItemId": "v-184e325026-thai-to-english"
+    },
+    {
+      "id": "q18",
       "vocabId": "v-a2028c5b78",
       "type": "thai_to_english",
       "displayMode": "thai_only",
@@ -304,25 +364,6 @@
       "answer": "four (low tone)",
       "rationale": "Maps Thai form to target meaning from script languageFocus.",
       "bankItemId": "v-a2028c5b78-thai-to-english"
-    },
-    {
-      "id": "q16",
-      "vocabId": "v-871c9bd62f",
-      "type": "english_to_thai",
-      "displayMode": "english_only",
-      "prompt": {
-        "text": "Select Thai for: zero",
-        "english": "zero"
-      },
-      "options": [
-        "ศูนย์",
-        "หนึ่ง",
-        "สอง",
-        "สาม"
-      ],
-      "answer": "ศูนย์",
-      "rationale": "Reverses mapping for active recall.",
-      "bankItemId": "v-871c9bd62f-english-to-thai"
     }
   ],
   "coverage": {
@@ -331,7 +372,7 @@
       {
         "vocabId": "v-871c9bd62f",
         "thai": "ศูนย์",
-        "quizItemCount": 2
+        "quizItemCount": 1
       },
       {
         "vocabId": "v-6ad6888f1d",
@@ -394,8 +435,23 @@
         "quizItemCount": 1
       },
       {
-        "vocabId": "v-8b9cee2530",
+        "vocabId": "v-b30c0e11f5",
         "thai": "ปี",
+        "quizItemCount": 1
+      },
+      {
+        "vocabId": "v-0ab46f92e7",
+        "thai": "ฉัน",
+        "quizItemCount": 1
+      },
+      {
+        "vocabId": "v-796f86a0f6",
+        "thai": "ผม",
+        "quizItemCount": 1
+      },
+      {
+        "vocabId": "v-184e325026",
+        "thai": "เขา",
         "quizItemCount": 1
       },
       {

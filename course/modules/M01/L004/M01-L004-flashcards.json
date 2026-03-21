@@ -147,9 +147,9 @@
     },
     {
       "id": "m01-l004-c14",
-      "vocabId": "v-8b9cee2530",
+      "vocabId": "v-b30c0e11f5",
       "front": "ปี",
-      "back": "year(s) — used for adult ages",
+      "back": "year(s)",
       "translit": "bpii",
       "tags": [
         "M01-L004",
@@ -158,28 +158,6 @@
     },
     {
       "id": "m01-l004-c15",
-      "vocabId": "v-c9337e2739",
-      "front": "สวัสดี",
-      "back": "hello",
-      "translit": "sà-wàt-dii",
-      "tags": [
-        "M01-L004",
-        "core"
-      ]
-    },
-    {
-      "id": "m01-l004-c16",
-      "vocabId": "v-217b46aa5a",
-      "front": "ขอบคุณ",
-      "back": "thank you",
-      "translit": "khàawp-khun",
-      "tags": [
-        "M01-L004",
-        "core"
-      ]
-    },
-    {
-      "id": "m01-l004-c17",
       "vocabId": "v-0ab46f92e7",
       "front": "ฉัน",
       "back": "I",
@@ -190,8 +168,8 @@
       ]
     },
     {
-      "id": "m01-l004-c18",
-      "vocabId": "v-acdc9c7f8e",
+      "id": "m01-l004-c16",
+      "vocabId": "v-796f86a0f6",
       "front": "ผม",
       "back": "I (male)",
       "translit": "phǒm",
@@ -201,10 +179,10 @@
       ]
     },
     {
-      "id": "m01-l004-c19",
-      "vocabId": "v-e3ef8a701b",
+      "id": "m01-l004-c17",
+      "vocabId": "v-184e325026",
       "front": "เขา",
-      "back": "he / she",
+      "back": "he/she",
       "translit": "khǎo",
       "tags": [
         "M01-L004",
@@ -212,7 +190,7 @@
       ]
     },
     {
-      "id": "m01-l004-c20",
+      "id": "m01-l004-c18",
       "vocabId": "v-a2028c5b78",
       "front": "สี่",
       "back": "four (low tone)",

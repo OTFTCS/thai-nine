@@ -1,140 +1,85 @@
-# Spoken Script — M01-L004 Numbers 0 to 10
+# M01-L004 — Numbers 0 to 10 — Spoken Script
 
-## Opening
-Today we are learning one of the most practical beginner tools in Thai: the numbers from zero to ten.
+## Section 1: Digits 0 to 5
 
-Not because you want to do maths. Because numbers show up immediately in real life — room numbers, phone numbers, queue numbers, ages, and simple counting.
+Let's learn your first Thai numbers. Listen: ศูนย์ sǔun, หนึ่ง nùeng, สอง sǎawng, สาม sǎam, สี่ sìi, ห้า hâa.
 
-By the end of this lesson, you can hear a digit, say it back clearly, and use it in a short real exchange.
+Now say them with me: ศูนย์, หนึ่ง, สอง, สาม, สี่, ห้า.
 
----
+In Thailand, room numbers are said digit by digit. Room 502 is ห้า-ศูนย์-สอง. Like reading a code.
 
-## Section 1 — The first six digits: 0 to 5
+Let's try. Your room is 305. Say สาม-ศูนย์-ห้า. Room 214? สอง-หนึ่ง-สี่.
 
-Let's start with the first six digits you will hear constantly in Thailand. Listen first.
-
-ศูนย์ | sǔun | zero.
-หนึ่ง | nùeng | one.
-สอง | sǎawng | two.
-สาม | sǎam | three.
-สี่ | sìi | four.
-ห้า | hâa | five.
-
-Now say them with me: ศูนย์, หนึ่ง, สอง, สาม, สี่, ห้า. Good.
-
-One important thing. For room numbers, phone numbers, and queue numbers, Thai usually says each digit separately. Room 502 is not five-hundred-and-two. It is ห้า-ศูนย์-สอง. Digit by digit, like a code.
-
-Notice that สี่ | sìi has a low tone — your voice stays flat and low. Do not lift it up. If you say sǐi with a rising tone, that sounds like the word for colour, not the number four.
-
-**Drill:** Listen and repeat three times: ศูนย์-หนึ่ง-สอง-สาม-สี่-ห้า. Then backwards: ห้า-สี่-สาม-สอง-หนึ่ง-ศูนย์.
-
-**Drill:** Your turn. I say a digit in English. You say the Thai word aloud before I show the answer. Two. Four. Zero. Five. One. Three.
+**Drills:**
+- Listen and repeat: ศูนย์, หนึ่ง, สอง, สาม, สี่, ห้า. Now backwards.
+- Pause-and-produce: I say English, you say Thai. Two. Four. Zero. Five.
+- Room number drill: room 301? สาม-ศูนย์-หนึ่ง. Room 205? สอง-ศูนย์-ห้า.
 
 ---
 
-## Section 2 — Finish the set: 6 to 10
+## Section 2: Digits 6 to 10
 
-Now add five more. Listen first: หก hòk, เจ็ด jèt, แปด bpàet, เก้า gâo, สิบ sìp.
+Five more. Listen: หก hòk, เจ็ด jèt, แปด bpàet, เก้า gâo, สิบ sìp.
 
-Say them with me: หก, เจ็ด, แปด, เก้า, สิบ. Good.
+Say them with me: หก, เจ็ด, แปด, เก้า, สิบ.
 
-Now count the full set from zero: ศูนย์, หนึ่ง, สอง, สาม, สี่, ห้า, หก, เจ็ด, แปด, เก้า, สิบ.
+Now the full count: ศูนย์, หนึ่ง, สอง, สาม, สี่, ห้า, หก, เจ็ด, แปด, เก้า, สิบ.
 
-Let's use them. Imagine you are at a hospital. The screen says queue number เจ็ด. That is you — number seven. Or you are in a building and someone says floor หก. That is floor six.
+Let's use them. Queue number เจ็ด? Seven. Floor หก? Six. Table เก้า? Nine.
 
-Now a quick scenario: someone asks what floor? You need floor nine. Say เก้า. What about floor three? สาม. Floor ten? สิบ.
-
-**Drill:** Listen and repeat: หก, เจ็ด, แปด, เก้า, สิบ. Now count the full set 0-10 without looking.
-
-**Drill:** Pause-and-produce. I say a number in English. You say the Thai word before I show it. Seven. Ten. Eight. Six. Nine.
-
-**Drill:** Substitution drill. What floor? I say a number, you say the Thai digit. Floor 9? เก้า. Floor 6? หก. Floor 10? สิบ.
+**Drills:**
+- Listen and repeat: หก, เจ็ด, แปด, เก้า, สิบ. Count 0-10 from memory.
+- Pause-and-produce: Seven? เจ็ด. Ten? สิบ. Eight? แปด.
+- Substitution: what floor? Floor 9? เก้า. Floor 6? หก. Floor 10? สิบ.
 
 ---
 
-## Section 3 — Ask for a number and say your age
+## Section 3: Ask what number and say your age
 
-Now make the digits useful. First, a question you will hear everywhere.
+เบอร์อะไร ber à-rai — what number? You hear this for rooms, tables, queues.
 
-เบอร์อะไร | ber à-rai | what number?
+Listen: เบอร์อะไรครับ. เบอร์อะไรค่ะ. Answer: room 307? สาม-ศูนย์-เจ็ด.
 
-You hear this with rooms, tables, phones, and queue tickets. เบอร์ is a borrowed word for a number label.
+Your age: ผม or ฉัน + อายุ aa-yú + number + ปี bpii. ผมอายุสามสิบปีครับ — I am thirty.
 
-Listen and repeat: เบอร์อะไรครับ. เบอร์อะไรค่ะ. Good.
+Quick note: for children, Thai uses ขวบ khùap instead of ปี. But you are an adult, so ปี is your word.
 
-Now answer. Someone asks เบอร์อะไร and the room is 307. You say สาม-ศูนย์-เจ็ด. Digit by digit.
-
-Next, the age pattern. You already know ฉัน and เขา from the last lesson. Now add:
-
-ฉันอายุ...ปี | chǎn aa-yú ... bpii | I am ... years old.
-
-Drop any number into the slot. ฉันอายุห้าปี. ฉันอายุสิบปี.
-
-Notice there is no word for "am" in the Thai pattern. You do not say "I am five years old." You say "I age five year." The pattern is: pronoun, then อายุ, then the number, then ปี.
-
-**Drill:** I ask เบอร์อะไร. You answer with a digit string. Room 205? สอง-ศูนย์-ห้า. Room 409? สี่-ศูนย์-เก้า. Your turn.
-
-**Drill:** I give you a number. You build the age sentence. Five? ฉันอายุห้าปี. Eight? ฉันอายุแปดปี. Ten? ฉันอายุสิบปี.
-
-**Drill:** Now change the pronoun. เขา, seven? เขาอายุเจ็ดปี. ผม, nine? ผมอายุเก้าปี.
+**Drills:**
+- I ask เบอร์อะไร. Room 409? สี่-ศูนย์-เก้า. Room 108? หนึ่ง-ศูนย์-แปด.
+- Substitution: Thirty? ผมอายุสามสิบปีครับ. Twenty-five? ฉันอายุยี่สิบห้าปีค่ะ.
+- Pause-and-produce: คุณอายุเท่าไหร่ — say your real age.
 
 ---
 
-## Section 4 — Numbers in real exchanges
+## Section 4: Pronunciation — สี่ vs สี
 
-Now put everything together. You already know สวัสดี for greeting, ขอบคุณ for thanking, and ขอโทษ for getting attention. You know ฉัน, ผม, คุณ, and เขา for talking about people. Now numbers plug straight into that system.
+One tone trap. สี่ sìi — four, low tone. สี sǐi — colour, rising tone.
 
-Imagine someone asks how old are you? You answer: ฉันอายุแปดปี. Or ผมอายุสิบปี. Same pattern, different pronoun, different number.
+Wrong tone, wrong word. Say สี่ low and flat. Now สี rising up.
 
-If you miss a number, do not freeze. Say ขอโทษครับ khǎaw-thôot khráp or ขอโทษค่ะ khǎaw-thôot khâ, then listen again. A repair phrase keeps the exchange moving.
+เก้า gâo — nine — has a falling tone. Voice drops firmly.
 
-Let's practise a short exchange. I ask เบอร์อะไร. You answer with a room number. Then I ask about age. You answer with your age pattern. Say your lines before I show the answer.
-
-**Drill:** I ask เบอร์อะไรครับ. You answer with room 601. Then I ask คุณอายุเท่าไหร่. You answer with age seven. Say your lines before looking.
-
-**Drill:** Repair drill. I say a three-digit room number once, fast. If you catch it, repeat it back. If you miss it, say ขอโทษครับ or ขอโทษค่ะ, then I repeat and you try again.
-
-**Drill:** Substitution drill. เขาอายุสามปี. Now change the number: เขาอายุหกปี. Now change both: ฉันอายุสิบปี.
+**Drills:**
+- Tone echo: สี่ sìi low. สี sǐi rising.
+- Minimal pair: I say one. Four or colour?
 
 ---
 
-## Section 5 — Pronunciation beat: low tone vs rising tone
+## Roleplay: Hotel check-in
 
-Before the roleplay, let's sharpen your ear. Thai tones change meaning. You have been practising this since lesson one with ครับ and ค่ะ. Today the key contrast is low tone versus rising tone.
+**You:** สวัสดีครับ — Hello.
 
-Listen: สี่ | sìi — that is a low tone. Your voice stays flat and low, like a calm, steady statement.
+**Staff:** สวัสดีค่ะ เบอร์ห้องอะไรคะ — Hello. What room number?
 
-Now listen: สี | sǐi — that is a rising tone. Your voice lifts up from low to high, like asking "really?" in English.
+**You:** ห้า-ศูนย์-สองครับ — 502.
 
-สี่ with a low tone means four. สี with a rising tone means colour. Wrong tone, wrong word.
+**Staff:** ค่ะ คุณอายุเท่าไหร่คะ — How old are you?
 
-Try it. Say สี่ sìi — keep it low and flat. Now say สี sǐi — lift it up.
+**You:** ผมอายุสามสิบปีครับ — I am thirty.
 
-Here is another contrast from this lesson. เก้า | gâo — falling tone, means nine. The tone drops down firmly, like saying "no" with conviction.
+**Staff:** ขอบคุณค่ะ — Thank you.
 
-**Drill:** Tone echo. I say สี่ sìi. Repeat it with a low tone. Now I say สี sǐi. Repeat it with a rising tone. Can you feel the difference?
-
-**Drill:** Minimal pair choice. I say one word. Is it four or colour? Point to the answer, then say the word back to me.
-
----
-
-## Roleplay — Hotel check-in with a room number
-
-You are checking in at a small hotel. You need to get your room number and give your age for a form.
-
-You: สวัสดีครับ | sà-wàt-dii khráp | Hello.
-
-Staff: สวัสดีค่ะ ห้องเบอร์อะไรคะ | sà-wàt-dii khâ hâawng ber à-rai khá | Hello. What is the room number?
-
-You: ห้า-ศูนย์-สองครับ | hâa-sǔun-sǎawng khráp | Five-zero-two.
-
-Staff: ค่ะ คุณอายุเท่าไหร่คะ | khâ khun aa-yú thâo-rài khá | Okay. How old are you?
-
-You: ผมอายุสิบปีครับ | phǒm aa-yú sìp bpii khráp | I am ten years old.
-
-Staff: สิบปีค่ะ ขอบคุณค่ะ | sìp bpii khâ khàawp-khun khâ | Ten years old. Thank you.
-
-You: ขอบคุณครับ | khàawp-khun khráp | Thank you.
+**You:** ขอบคุณครับ — Thank you.
 
 ---
 
@@ -142,6 +87,6 @@ You: ขอบคุณครับ | khàawp-khun khráp | Thank you.
 
 - Count 0 to 5 in Thai. Go.
 - Now 6 to 10.
-- How do you ask "what number?" เบอร์อะไร.
-- Say "I am 8 years old" in Thai.
-- สี่ has a low tone. What happens with a rising tone?
+- Ask "what number?" เบอร์อะไร.
+- Say "I am 30 years old" in Thai.
+- สี่ is low tone. Rising tone means what?

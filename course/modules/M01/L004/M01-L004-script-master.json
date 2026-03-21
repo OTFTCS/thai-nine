@@ -2,13 +2,13 @@
   "schemaVersion": 1,
   "lessonId": "M01-L004",
   "title": "Numbers 0 to 10",
-  "objective": "You can understand and say the digits needed for age, room numbers, and basic counting.",
+  "objective": "You can understand and say Thai digits 0-10 for room numbers, ages, and basic counting.",
   "teachingFrame": {
     "targetRuntimeMin": 9,
     "targetRuntimeMax": 12,
-    "openingHook": "Open with a room number said too quickly at a hotel desk, then show how knowing just eleven short Thai words solves the problem immediately.",
-    "scenario": "You need to catch digits in real life — room numbers, ages, queue numbers — and repeat them back clearly without freezing.",
-    "learnerTakeaway": "By the end, you can hear, repeat, and produce Thai digits 0-10 in room-number, counting, and simple age exchanges."
+    "openingHook": "Someone at a hotel desk says a room number too fast. You freeze. After this lesson, you will catch every digit.",
+    "scenario": "You need to hear, say, and use Thai digits in real situations — room numbers, ages, queue numbers, phone numbers.",
+    "learnerTakeaway": "By the end, you can count 0-10, ask what number, say your age, and handle digit-by-digit codes like room numbers."
   },
   "context": {
     "schemaVersion": 1,
@@ -17,131 +17,8 @@
       "M01-L002",
       "M01-L003"
     ],
-    "knownVocabulary": [
-      {
-        "thai": "ชื่อ",
-        "translit": "chûue",
-        "english": "name",
-        "vocabId": "v-6acb169e4b"
-      },
-      {
-        "thai": "คุณชื่ออะไร",
-        "translit": "khun chûue à-rai",
-        "english": "what is your name?",
-        "vocabId": "v-a79c6af3af"
-      },
-      {
-        "thai": "มาจาก",
-        "translit": "maa-jàak",
-        "english": "come from",
-        "type": "chunk",
-        "vocabId": "v-ce7cc833ec"
-      },
-      {
-        "thai": "ประเทศ",
-        "translit": "bprà-thêet",
-        "english": "country",
-        "vocabId": "v-d0c316cc2c"
-      },
-      {
-        "thai": "ไทย",
-        "translit": "thai",
-        "english": "Thailand / Thai",
-        "type": "word",
-        "vocabId": "v-f0b2ddeed3"
-      },
-      {
-        "thai": "อังกฤษ",
-        "translit": "ang-grìt",
-        "english": "England / English",
-        "type": "word",
-        "vocabId": "v-8adc81e330"
-      },
-      {
-        "thai": "อเมริกา",
-        "translit": "à-mee-rí-kaa",
-        "english": "America",
-        "type": "word",
-        "vocabId": "v-9ca06d0136"
-      },
-      {
-        "thai": "คน",
-        "translit": "khon",
-        "english": "person",
-        "type": "word",
-        "vocabId": "v-6bb42f6e5c"
-      },
-      {
-        "thai": "สวัสดี",
-        "translit": "sà-wàt-dii",
-        "english": "hello",
-        "type": "word",
-        "vocabId": "v-c9337e2739"
-      },
-      {
-        "thai": "ขอบคุณ",
-        "translit": "khàawp-khun",
-        "english": "thank you",
-        "type": "word",
-        "vocabId": "v-217b46aa5a"
-      },
-      {
-        "thai": "ฉัน",
-        "translit": "chǎn",
-        "english": "I",
-        "vocabId": "v-0ab46f92e7"
-      },
-      {
-        "thai": "ผม",
-        "translit": "phǒm",
-        "english": "I (male speaker)",
-        "vocabId": "v-acdc9c7f8e"
-      },
-      {
-        "thai": "เขา",
-        "translit": "khǎo",
-        "english": "he / she",
-        "vocabId": "v-e3ef8a701b"
-      },
-      {
-        "thai": "คุณ",
-        "translit": "khun",
-        "english": "you",
-        "vocabId": "v-7597900aeb"
-      },
-      {
-        "thai": "ใช่",
-        "translit": "châi",
-        "english": "yes / that is right",
-        "vocabId": "v-f40371ec59"
-      },
-      {
-        "thai": "ไม่ใช่",
-        "translit": "mâi châi",
-        "english": "no / not right",
-        "vocabId": "v-cda55f5b5e"
-      },
-      {
-        "thai": "ขอโทษ",
-        "translit": "khǎaw-thôot",
-        "english": "excuse me / sorry",
-        "vocabId": "v-6fce5e8c2c"
-      },
-      {
-        "thai": "ไม่เป็นไร",
-        "translit": "mâi bpen rai",
-        "english": "it is okay / no problem",
-        "vocabId": "v-03cc3fe123"
-      }
-    ],
-    "knownGrammar": [
-      "Teach the core greeting and polite endings ครับ/ค่ะ.",
-      "Teach courtesy phrases ขอบคุณ, ขอโทษ, ไม่เป็นไร with social-job framing.",
-      "Teach the name question and answer pattern คุณชื่ออะไร / ฉันชื่อ...",
-      "Teach the origin pattern มาจาก with country names.",
-      "Teach pronouns ฉัน, ผม, คุณ, เขา as tools for basic interaction.",
-      "Teach identity patterns with คือ and the who-question ใคร."
-    ],
+    "knownVocabulary": [],
+    "knownGrammar": [],
     "reviewBuckets": [
       {
         "bucket": "last",
@@ -163,20 +40,14 @@
           {
             "thai": "ผม",
             "translit": "phǒm",
-            "english": "I (male speaker)",
+            "english": "I (male)",
             "vocabId": "v-acdc9c7f8e"
           },
           {
             "thai": "เขา",
             "translit": "khǎo",
-            "english": "he / she",
+            "english": "he/she",
             "vocabId": "v-e3ef8a701b"
-          },
-          {
-            "thai": "คุณชื่ออะไร",
-            "translit": "khun chûue à-rai",
-            "english": "what is your name?",
-            "vocabId": "v-a79c6af3af"
           }
         ]
       },
@@ -207,12 +78,12 @@
     {
       "id": "s1",
       "heading": "Digits 0 to 5",
-      "purpose": "Teach the first six Thai digits with listen-repeat-use in room number scenarios.",
+      "purpose": "Teach the first six Thai digits with listen-repeat-use.",
       "spokenNarration": [
-        "Let's learn your first Thai numbers. Listen first: ศูนย์ sǔun, หนึ่ง nùeng, สอง sǎawng, สาม sǎam, สี่ sìi, ห้า hâa.",
-        "Say them with me: ศูนย์, หนึ่ง, สอง, สาม, สี่, ห้า. Good.",
-        "In Thailand, room numbers and phone numbers are said digit by digit. Room 502 is not five-hundred-and-two. It is ห้า-ศูนย์-สอง. Like a code.",
-        "Let's try. Your room is 305. Say it digit by digit: สาม-ศูนย์-ห้า. Now room 412: สี่-หนึ่ง-สอง."
+        "Let's learn your first Thai numbers. Listen: ศูนย์ sǔun, หนึ่ง nùeng, สอง sǎawng, สาม sǎam, สี่ sìi, ห้า hâa.",
+        "Now say them with me: ศูนย์, หนึ่ง, สอง, สาม, สี่, ห้า.",
+        "In Thailand, room numbers are said digit by digit. Room 502 is ห้า-ศูนย์-สอง. Like reading a code.",
+        "Let's try. Your room is 305. Say สาม-ศูนย์-ห้า. Room 214? สอง-หนึ่ง-สี่."
       ],
       "onScreenBullets": [
         "ศูนย์ | sǔun | 0 — zero",
@@ -223,9 +94,9 @@
         "ห้า | hâa | 5 — five"
       ],
       "drills": [
-        "Listen and repeat: ศูนย์, หนึ่ง, สอง, สาม, สี่, ห้า. Now say them backwards.",
-        "Pause-and-produce: I say a number in English. You say the Thai word before I show it. Two. Four. Zero. Five. One. Three.",
-        "Room number drill: I give you a room. Say it digit by digit. Room 301? สาม-ศูนย์-หนึ่ง. Room 205? สอง-ศูนย์-ห้า."
+        "Listen and repeat: ศูนย์, หนึ่ง, สอง, สาม, สี่, ห้า. Now backwards.",
+        "Pause-and-produce: I say a number in English. Say the Thai before I show it. Two. Four. Zero. Five.",
+        "Room number drill: room 301? สาม-ศูนย์-หนึ่ง. Room 205? สอง-ศูนย์-ห้า. Your turn."
       ],
       "languageFocus": [
         {
@@ -273,24 +144,24 @@
       ],
       "visualPlan": {
         "leftPanelLayout": "focus-card",
-        "onScreenGoal": "Show digits 0-5 as large cards with Thai script, transliteration, and Arabic numeral.",
+        "onScreenGoal": "Show digits 0-5 as large cards with Thai, Arabic numeral, and transliteration.",
         "teachingVisuals": [
-          "Six digit cards: Thai script + Arabic numeral + transliteration.",
-          "Room number example: ห้า-ศูนย์-สอง = 502."
+          "Six digit cards with Thai + Arabic numeral + translit.",
+          "Room number example: 502 = ห้า-ศูนย์-สอง."
         ],
         "teacherCues": [
-          "Model each digit clearly, then use in room number scenario.",
-          "Have the learner count 0-5 from memory."
+          "Model each digit clearly.",
+          "Use room number scenario immediately after teaching."
         ],
         "imageSupport": {
           "helpful": true,
           "priority": "supporting",
-          "rationale": "A simple number chart showing Thai digits alongside Arabic numerals helps visual memory.",
+          "rationale": "A simple 0-5 digit chart with Arabic numerals helps visual anchoring.",
           "searchQueries": [
-            "Thai number chart 0-10"
+            "Thai number chart"
           ],
           "sourceHints": [
-            "text-only digit cards"
+            "Wikimedia Commons"
           ]
         }
       }
@@ -298,12 +169,12 @@
     {
       "id": "s2",
       "heading": "Digits 6 to 10",
-      "purpose": "Complete the digit set with listen-repeat-use in queue number and floor scenarios.",
+      "purpose": "Complete the digit set and practise the full 0-10 count in queue and floor scenarios.",
       "spokenNarration": [
-        "Now five more. Listen: หก hòk, เจ็ด jèt, แปด bpàet, เก้า gâo, สิบ sìp.",
-        "Say them with me: หก, เจ็ด, แปด, เก้า, สิบ. Good.",
-        "Now count the full set from zero to ten: ศูนย์, หนึ่ง, สอง, สาม, สี่, ห้า, หก, เจ็ด, แปด, เก้า, สิบ.",
-        "Let's use them. You are at a hospital. The screen says queue number เจ็ด — that is you, number seven. Someone says floor หก — that is floor six. Your table number is เก้า — nine."
+        "Five more. Listen: หก hòk, เจ็ด jèt, แปด bpàet, เก้า gâo, สิบ sìp.",
+        "Say them with me: หก, เจ็ด, แปด, เก้า, สิบ.",
+        "Now the full count. Ready? ศูนย์, หนึ่ง, สอง, สาม, สี่, ห้า, หก, เจ็ด, แปด, เก้า, สิบ. Say it with me.",
+        "Let's use them. Queue number เจ็ด? That is seven, your turn. Floor หก? Six. Table เก้า? Nine."
       ],
       "onScreenBullets": [
         "หก | hòk | 6 — six",
@@ -313,9 +184,9 @@
         "สิบ | sìp | 10 — ten"
       ],
       "drills": [
-        "Listen and repeat: หก, เจ็ด, แปด, เก้า, สิบ. Now count 0-10 without looking.",
-        "Pause-and-produce: I say a number in English. Say the Thai before I show it. Seven. Ten. Eight. Six. Nine.",
-        "Substitution drill: what floor? Floor 9? เก้า. Floor 6? หก. Floor 10? สิบ. Floor 3? สาม."
+        "Listen and repeat: หก, เจ็ด, แปด, เก้า, สิบ. Now count 0 to 10 from memory.",
+        "Pause-and-produce: Seven? เจ็ด. Ten? สิบ. Eight? แปด. Six? หก. Nine? เก้า.",
+        "Substitution: what floor? Floor 9? เก้า. Floor 6? หก. Floor 10? สิบ."
       ],
       "languageFocus": [
         {
@@ -356,13 +227,13 @@
       ],
       "visualPlan": {
         "leftPanelLayout": "focus-card",
-        "onScreenGoal": "Show digits 6-10 matching the section 1 layout.",
+        "onScreenGoal": "Show digits 6-10 matching section 1 layout.",
         "teachingVisuals": [
-          "Five digit cards: Thai script + Arabic numeral + transliteration.",
-          "Queue/floor scenario visual."
+          "Five digit cards with Thai + Arabic numeral + translit.",
+          "Queue/floor scenario."
         ],
         "teacherCues": [
-          "Model each digit, then use in queue/floor scenario.",
+          "Model each digit, then real scenario.",
           "Full 0-10 count from memory."
         ],
         "imageSupport": {
@@ -371,31 +242,31 @@
           "rationale": "Digit cards are clearest.",
           "searchQueries": [],
           "sourceHints": [
-            "text-only digit cards"
+            "text-only"
           ]
         }
       }
     },
     {
       "id": "s3",
-      "heading": "Ask for a number and say your age",
-      "purpose": "Teach the practical chunks เบอร์อะไร and อายุ...ปี so digits become usable in real exchanges.",
+      "heading": "Ask what number and say your age",
+      "purpose": "Teach เบอร์อะไร and the age pattern so digits become useful in real exchanges.",
       "spokenNarration": [
-        "Now make digits useful. First: เบอร์อะไร ber à-rai — what number? You hear this everywhere: rooms, tables, phone numbers, queue tickets.",
-        "Listen and repeat: เบอร์อะไรครับ. เบอร์อะไรค่ะ. Now answer: someone asks เบอร์อะไร and your room is 307. You say สาม-ศูนย์-เจ็ด.",
-        "Next: how to say your age. The pattern is: pronoun + อายุ aa-yú + number + ปี bpii. ผมอายุสามสิบปีครับ — I am thirty years old. ฉันอายุยี่สิบห้าปีค่ะ — I am twenty-five years old.",
-        "Quick note: for children's ages, Thai uses ขวบ khùap instead of ปี. But since you are an adult learner, ปี is your default. Just recognise ขวบ if you hear it about a child."
+        "Now make digits useful. เบอร์อะไร ber à-rai means what number? You hear this for rooms, tables, queues, phone numbers.",
+        "Listen: เบอร์อะไรครับ. เบอร์อะไรค่ะ. Now answer: room 307? สาม-ศูนย์-เจ็ด.",
+        "Next: your age. The pattern is ผม or ฉัน + อายุ aa-yú + number + ปี bpii. ผมอายุสามสิบปีครับ means I am thirty years old.",
+        "Quick note: for children, Thai uses ขวบ khùap instead of ปี. But you are an adult, so ปี is your word. Just recognise ขวบ if someone talks about a child."
       ],
       "onScreenBullets": [
         "เบอร์อะไร | ber à-rai | what number?",
         "อายุ...ปี | aa-yú ... bpii | ... years old",
         "ผมอายุ...ปี | phǒm aa-yú ... bpii | I am ... years old (male)",
-        "ฉันอายุ...ปี | chǎn aa-yú ... bpii | I am ... years old (female)"
+        "ฉันอายุ...ปี | chǎn aa-yú ... bpii | I am ... years old"
       ],
       "drills": [
-        "Response-building: I ask เบอร์อะไร. Your room is 409. Say it: สี่-ศูนย์-เก้า. Room 108? หนึ่ง-ศูนย์-แปด.",
-        "Substitution drill: I give a number. Build the age sentence. Thirty? ผมอายุสามสิบปีครับ. Twenty-five? ฉันอายุยี่สิบห้าปีค่ะ.",
-        "Pause-and-produce: someone asks คุณอายุเท่าไหร่. Say your real age in Thai before I show an example."
+        "Response-building: I ask เบอร์อะไร. Room 409? สี่-ศูนย์-เก้า. Room 108? หนึ่ง-ศูนย์-แปด.",
+        "Substitution: build your age sentence. Thirty? ผมอายุสามสิบปีครับ. Twenty-five? ฉันอายุยี่สิบห้าปีค่ะ.",
+        "Pause-and-produce: someone asks คุณอายุเท่าไหร่. Say your real age in Thai."
       ],
       "languageFocus": [
         {
@@ -415,30 +286,9 @@
         {
           "thai": "ปี",
           "translit": "bpii",
-          "english": "year(s) — used for adult ages",
+          "english": "year(s)",
           "type": "word",
-          "vocabId": "v-8b9cee2530"
-        },
-        {
-          "thai": "สิบ",
-          "translit": "sìp",
-          "english": "ten",
-          "type": "word",
-          "vocabId": "v-31da0816ab"
-        },
-        {
-          "thai": "สวัสดี",
-          "translit": "sà-wàt-dii",
-          "english": "hello",
-          "type": "word",
-          "vocabId": "v-c9337e2739"
-        },
-        {
-          "thai": "ขอบคุณ",
-          "translit": "khàawp-khun",
-          "english": "thank you",
-          "type": "word",
-          "vocabId": "v-217b46aa5a"
+          "vocabId": "v-b30c0e11f5"
         },
         {
           "thai": "ฉัน",
@@ -452,26 +302,26 @@
           "translit": "phǒm",
           "english": "I (male)",
           "type": "word",
-          "vocabId": "v-acdc9c7f8e"
+          "vocabId": "v-796f86a0f6"
         },
         {
           "thai": "เขา",
           "translit": "khǎo",
-          "english": "he / she",
+          "english": "he/she",
           "type": "word",
-          "vocabId": "v-e3ef8a701b"
+          "vocabId": "v-184e325026"
         }
       ],
       "visualPlan": {
         "leftPanelLayout": "drill-stack",
-        "onScreenGoal": "Show the two practical patterns: เบอร์อะไร question and อายุ...ปี answer frame.",
+        "onScreenGoal": "Show เบอร์อะไร question and อายุ...ปี answer frame.",
         "teachingVisuals": [
-          "Question frame: เบอร์อะไร with example answers.",
-          "Age frame: pronoun + อายุ + ___ + ปี with slot."
+          "Question: เบอร์อะไร with example answers.",
+          "Age frame: pronoun + อายุ + ___ + ปี."
         ],
         "teacherCues": [
-          "Model the full exchange: question → digit answer.",
-          "Use realistic adult ages in examples."
+          "Model full exchange.",
+          "Use realistic adult ages."
         ],
         "imageSupport": {
           "helpful": false,
@@ -479,7 +329,7 @@
           "rationale": "Pattern frames teach better than images.",
           "searchQueries": [],
           "sourceHints": [
-            "text-only pattern frames"
+            "text-only"
           ]
         }
       }
@@ -487,21 +337,21 @@
     {
       "id": "s4",
       "heading": "Pronunciation: สี่ vs สี",
-      "purpose": "Train the ear on the สี่ (four, low tone) vs สี (colour, rising tone) contrast — the most common beginner tone trap in Thai numbers.",
+      "purpose": "Train the ear on the number-four tone trap — the most common beginner mistake with Thai digits.",
       "spokenNarration": [
-        "One tone trap to watch. Listen: สี่ sìi — that is four. Low tone, voice stays down. Now: สี sǐi — that is colour. Rising tone, voice lifts up.",
-        "Wrong tone, wrong word. If you say sǐi when you mean four, Thai people hear colour.",
-        "Try it. Say สี่ with your voice staying low and flat. Now say สี with your voice rising up. Can you feel the difference?",
-        "One more from this lesson: เก้า gâo has a falling tone — voice drops down firmly. Keep that firm drop. You now know low, rising, and falling tones from the numbers."
+        "One tone trap. Listen: สี่ sìi — four. Low tone, voice stays down. Now: สี sǐi — colour. Rising tone, voice lifts.",
+        "Wrong tone, wrong word. If you say sǐi for four, Thai people hear colour.",
+        "Say สี่ with your voice low and flat. Now สี with your voice rising. Feel the difference?",
+        "One more: เก้า gâo — nine — has a falling tone. Voice drops firmly. You now know low, rising, and falling tones from numbers alone."
       ],
       "onScreenBullets": [
         "สี่ | sìi | four — low tone (voice stays low)",
-        "สี | sǐi | colour — rising tone (voice lifts up)",
+        "สี | sǐi | colour — rising tone (voice lifts)",
         "เก้า | gâo | nine — falling tone (voice drops)"
       ],
       "drills": [
-        "Tone echo: I say สี่ sìi. Repeat with a low tone. Now สี sǐi. Repeat with a rising tone.",
-        "Minimal pair choice: I say one word. Is it สี่ (four) or สี (colour)? Answer before I show it."
+        "Tone echo: สี่ sìi — repeat low. สี sǐi — repeat rising.",
+        "Minimal pair: I say one. Is it four or colour? Answer before I show it."
       ],
       "languageFocus": [
         {
@@ -509,35 +359,35 @@
           "translit": "sìi",
           "english": "four (low tone)",
           "type": "word",
-          "notes": "Low tone. Do not confuse with สี sǐi (colour, rising tone).",
+          "notes": "Low tone. Rising tone สี sǐi means colour.",
           "vocabId": "v-a2028c5b78"
         }
       ],
       "visualPlan": {
         "leftPanelLayout": "contrast-board",
-        "onScreenGoal": "Contrast สี่ (four) and สี (colour) with tone direction arrows.",
+        "onScreenGoal": "Contrast สี่ (four) and สี (colour) with tone arrows.",
         "teachingVisuals": [
-          "Two cards side by side: สี่ with downward arrow, สี with upward arrow.",
+          "Two cards: สี่ with down arrow, สี with up arrow.",
           "Pitch contour showing low vs rising."
         ],
         "teacherCues": [
-          "Model each tone slowly.",
-          "Hand gestures: flat-low for สี่, lifting for สี."
+          "Model slowly.",
+          "Hand gestures for pitch."
         ],
         "imageSupport": {
           "helpful": false,
           "priority": "avoid",
-          "rationale": "Tone arrows teach better than images.",
+          "rationale": "Tone arrows teach best.",
           "searchQueries": [],
           "sourceHints": [
-            "text-only tone contrast"
+            "text-only"
           ]
         }
       }
     }
   ],
   "roleplay": {
-    "scenario": "Checking in at a hotel. The staff asks for your room number and age.",
+    "scenario": "Checking in at a hotel. Staff asks for room number and age.",
     "lines": [
       {
         "speaker": "You",
@@ -549,31 +399,31 @@
         "speaker": "Staff",
         "thai": "สวัสดีค่ะ เบอร์ห้องอะไรคะ",
         "translit": "sà-wàt-dii khâ ber hâwng à-rai khá",
-        "english": "Hello. What is the room number?"
+        "english": "Hello. What room number?"
       },
       {
         "speaker": "You",
         "thai": "ห้า-ศูนย์-สองครับ",
         "translit": "hâa-sǔun-sǎawng khráp",
-        "english": "Five-zero-two."
+        "english": "502."
       },
       {
         "speaker": "Staff",
         "thai": "ค่ะ คุณอายุเท่าไหร่คะ",
         "translit": "khâ khun aa-yú thâo-rài khá",
-        "english": "Okay. How old are you?"
+        "english": "How old are you?"
       },
       {
         "speaker": "You",
         "thai": "ผมอายุสามสิบปีครับ",
         "translit": "phǒm aa-yú sǎam-sìp bpii khráp",
-        "english": "I am thirty years old."
+        "english": "I am thirty."
       },
       {
         "speaker": "Staff",
-        "thai": "ค่ะ ขอบคุณค่ะ",
-        "translit": "khâ khàawp-khun khâ",
-        "english": "Okay. Thank you."
+        "thai": "ขอบคุณค่ะ",
+        "translit": "khàawp-khun khâ",
+        "english": "Thank you."
       },
       {
         "speaker": "You",
@@ -586,9 +436,9 @@
   "recap": [
     "Count 0 to 5 in Thai. Go.",
     "Now 6 to 10.",
-    "How do you ask 'what number?' เบอร์อะไร.",
+    "Ask 'what number?' เบอร์อะไร.",
     "Say 'I am 30 years old' in Thai.",
-    "สี่ has a low tone. What happens with a rising tone?"
+    "สี่ is low tone. Rising tone means what?"
   ],
   "qaChecks": [
     {
@@ -661,7 +511,7 @@
       "id": "review-reuse",
       "description": "Lesson reuses at least 2 prior items when prior lesson context exists",
       "pass": true,
-      "evidence": "Reused 2 prior vocabulary items in language focus"
+      "evidence": "Reused 3 prior vocabulary items in language focus"
     },
     {
       "id": "teaching-frame",
@@ -694,8 +544,7 @@
   },
   "pronunciationFocus": {
     "targetSounds": [
-      "low tone (sìi) vs rising tone (sǐi)",
-      "short clipped finals (hòk, jèt, bpàet) vs longer open vowels (hâa, gâo)"
+      "low tone (sìi) vs rising tone (sǐi)"
     ],
     "minimalPairs": [
       {
@@ -711,7 +560,7 @@
         }
       }
     ],
-    "mouthMapAnchor": "Low tone: keep your voice flat and low, like a calm, steady statement. Rising tone: your voice lifts up from low to high, like asking 'really?' in English.",
+    "mouthMapAnchor": "Low tone: voice stays down and flat. Rising tone: voice lifts upward like asking a question.",
     "tonePattern": "low vs rising"
   }
 }
