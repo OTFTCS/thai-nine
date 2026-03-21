@@ -1,61 +1,47 @@
-# Visual Script — M01-L001 (Hello and Basic Courtesy)
+# M01-L001 — Hello and Basic Courtesy — Visual Script
 
-## Frame rule
-- Keep all teaching visuals in the left two-thirds of the frame.
-- The right third stays clear for Nine's camera.
-- Use clean text cards and compact drill layouts, not dense slides.
+Layout: 16:9 (1920x1080), right third reserved for Nine's camera.
 
-## Section 1 — Say hello the Thai way
-- Layout: focus-card
-- Learning focus: greeting stack
-- Highlighted terms:
-  - สวัสดี | sà-wàt-dii | hello
-  - สวัสดีครับ | sà-wàt-dii khráp | hello (male speaker)
-  - สวัสดีค่ะ | sà-wàt-dii khâ | hello (female speaker)
-- On-screen plan:
-  - one large greeting card
-  - two smaller polite full-form examples beneath it
-- Visual support choice: text-only
+## Section 1: Say hello the Thai way
+- **Layout:** focus-card
+- **On screen:** Large สวัสดี with transliteration and English, then two smaller cards for สวัสดีครับ and สวัสดีค่ะ
+- **Highlighted Thai:** สวัสดี, สวัสดีครับ, สวัสดีค่ะ
+- **Images:** None — text-only greeting card. The word itself is the teaching target.
+- **Notes:** Keep the greeting large and centered in the left panel. Reveal ครับ/ค่ะ versions after the base form.
 
-## Section 2 — Thank, apologise, and soften the moment
-- Layout: contrast-board
-- Learning focus: thanking versus repairing
-- Highlighted terms:
-  - ขอบคุณ | khàawp-khun | thank you
-  - ขอโทษ | khǎaw-thôot | excuse me / sorry
-  - ไม่เป็นไร | mâi bpen rai | it is okay / no problem
-- On-screen plan:
-  - left column for closing warmly
-  - right column for interrupting or repairing
-  - one arrow from ขอบคุณ to ไม่เป็นไร
-- Visual support choice: text-only
+## Section 2: Thank, apologise, and soften the moment
+- **Layout:** contrast-board
+- **On screen:** Two-column board — left column: ขอบคุณ (close warmly) / right column: ขอโทษ (repair politely). Arrow from both to ไม่เป็นไร below.
+- **Highlighted Thai:** ขอบคุณ, ขอโทษ, ไม่เป็นไร
+- **Images:** None — contrast board with arrow diagram teaches function better than photos.
+- **Notes:** Show function labels above each phrase (close / repair / soften).
 
-## Section 3 — Pick the right polite ending
-- Layout: drill-stack
-- Learning focus: practical polite ending choice
-- Highlighted terms:
-  - ครับ | khráp | male polite ending
-  - ค่ะ | khâ | female statement ending
-  - คะ | khá | female question ending
-- On-screen plan:
-  - stacked choice chips
-  - one substitution example line
-- Visual support choice: text-only
+## Section 3: Pick the right polite ending
+- **Layout:** drill-stack
+- **On screen:** Three stacked chips: ครับ (male, statements), ค่ะ (female, statements), คะ (female, questions). Substitution line below showing สวัสดี + ending.
+- **Highlighted Thai:** ครับ, ค่ะ, คะ
+- **Images:** None — functional choice system taught through labelled chips.
+- **Notes:** Keep it simple — one rule, then drill. No grammar wall.
 
-## Section 4 — Answer yes, no, and no problem naturally
-- Layout: dialogue-ladder
-- Learning focus: answer versus softener
-- Highlighted terms:
-  - ใช่ | châi | yes / that is right
-  - ไม่ใช่ | mâi châi | no / not right
-  - ไม่เป็นไร | mâi bpen rai | it is okay / no problem
-- On-screen plan:
-  - compact three-step response ladder
-  - one small apology-response example
-- Visual support choice: text-only
+## Section 4: Answer yes, no, and no problem naturally
+- **Layout:** dialogue-ladder
+- **On screen:** Three-step response ladder: ใช่ (answers the idea) / ไม่ใช่ (answers the idea) / ไม่เป็นไร (answers the emotion). Mini-scenario showing apology then ไม่เป็นไร.
+- **Highlighted Thai:** ใช่, ไม่ใช่, ไม่เป็นไร
+- **Images:** None — compact dialogue ladder is clearest.
+- **Notes:** Visually distinguish "answer" from "soften" with colour or grouping.
 
-## Roleplay beat
-- Show one turn at a time on the left.
-- Keep the confirmation question, yes-answer, and thank-you/no-problem pair large.
-- Let the learner's opening ขอโทษครับ + สวัสดีครับ read as one polite approach move, not two separate slides.
-- Never push text into Nine's right-third camera zone.
+## Section 5: Pronunciation — hearing Thai tones
+- **Layout:** focus-card
+- **On screen:** Two large cards: khráp with upward arrow (high tone), khâ with downward arrow (falling tone). Simple pitch contour line below showing high vs falling vs low.
+- **Highlighted Thai:** ครับ, ค่ะ, ขอบคุณ (for low tone)
+- **Images:** None — tone arrows and pitch contour lines teach better than photographs.
+- **Notes:** Nine should use hand gestures to show pitch direction alongside the visual arrows.
+
+## Roleplay
+- **Layout:** dialogue-ladder
+- **On screen:** Turn-by-turn exchange at reception desk. Learner lines highlighted. Two learner turns marked "your turn".
+- **Notes:** Keep all text in left two-thirds. Right third for Nine demonstrating the interaction.
+
+## Recap
+- **Layout:** recap-checklist
+- **On screen:** 5 retrieval prompts. Show question first, then reveal answer on click/advance.

@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+import { spawnSync } from "node:child_process";
 import { appendFileSync, existsSync, readFileSync, readdirSync, statSync, writeFileSync } from "node:fs";
 import { join, resolve } from "node:path";
 import { renderLessonPdfById } from "./export-pdf.ts";
@@ -36,6 +37,7 @@ import {
 } from "./lib/vocab.ts";
 import type {
   AssetProvenance,
+  DeckSource,
   FlashcardsDeck,
   LessonContext,
   LessonStatus,
@@ -559,7 +561,8 @@ function buildScriptQaChecks(script: ScriptMaster): ScriptMaster["qaChecks"] {
     ...script.sections.flatMap((s) => s.onScreenBullets.map((b) => b.split("|")[1]?.trim() ?? "")),
   ];
 
-  const translitIssues = translits.filter((t) => !checkTransliterationPolicy(t, true).ok);
+  // Mid-tone words in PTM have no diacritical mark by convention, so don't require tone marks
+  const translitIssues = translits.filter((t) => !checkTransliterationPolicy(t, false).ok);
 
   const tripletIssue = script.sections.some((s) =>
     s.languageFocus.some((l) => !l.thai || !l.translit || !l.english || !l.vocabId) ||
@@ -1327,6 +1330,15 @@ function stage6Quiz(script: ScriptMaster): { itemBank: QuizItemBank; quiz: QuizS
   return { itemBank, quiz, newLex: quizLex };
 }
 
+function escapeHtml(value: string): string {
+  return value
+    .replaceAll("&", "&amp;")
+    .replaceAll("<", "&lt;")
+    .replaceAll(">", "&gt;")
+    .replaceAll('"', "&quot;")
+    .replaceAll("'", "&#39;");
+}
+
 function renderSpoken(script: ScriptMaster): string {
   return [
     `# Spoken Script — ${script.lessonId} (${script.title})`,
@@ -1349,6 +1361,198 @@ function renderSpoken(script: ScriptMaster): string {
     ...script.recap.map((r) => `- ${r}`),
     "",
   ].join("\n");
+}
+
+export function renderSpokenHtml(script: ScriptMaster): string {
+  const sectionCards = script.sections
+    .map((section) => {
+      const narration = section.spokenNarration
+        .map((line) => `<p>${escapeHtml(line)}</p>`)
+        .join("\n");
+      const triplets = section.languageFocus
+        .map(
+          (item) =>
+            `<tr><td>${escapeHtml(item.thai)}</td><td>${escapeHtml(item.translit)}</td><td>${escapeHtml(item.english)}</td></tr>`
+        )
+        .join("\n");
+      const drills = section.drills.map((drill) => `<li>${escapeHtml(drill)}</li>`).join("\n");
+
+      return `
+        <section class="card">
+          <div class="eyebrow">${escapeHtml(section.id.toUpperCase())}</div>
+          <h2>${escapeHtml(section.heading)}</h2>
+          <p class="purpose">${escapeHtml(section.purpose)}</p>
+          <div class="narration">${narration}</div>
+          <h3>Core triplets</h3>
+          <table>
+            <thead>
+              <tr><th>Thai</th><th>Transliteration</th><th>English</th></tr>
+            </thead>
+            <tbody>${triplets}</tbody>
+          </table>
+          <h3>Drills</h3>
+          <ul>${drills}</ul>
+        </section>
+      `;
+    })
+    .join("\n");
+
+  const roleplayRows = script.roleplay.lines
+    .map(
+      (line) =>
+        `<tr><td>${escapeHtml(line.speaker)}</td><td>${escapeHtml(line.thai)}</td><td>${escapeHtml(line.translit)}</td><td>${escapeHtml(line.english)}</td></tr>`
+    )
+    .join("\n");
+
+  const recapItems = script.recap.map((item) => `<li>${escapeHtml(item)}</li>`).join("\n");
+
+  return `<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>${escapeHtml(script.lessonId)} Spoken Script</title>
+    <style>
+      :root {
+        color-scheme: light;
+        --page: #f4f1ea;
+        --card: #fffdf9;
+        --ink: #1f2933;
+        --muted: #5b6670;
+        --line: #d6d0c4;
+        --accent: #8d5a2b;
+        --thai: "Sarabun", "TH Sarabun New", "Noto Sans Thai Looped Regular", sans-serif;
+        --latin: "Sarabun", "TH Sarabun New", "Noto Sans Thai Looped Regular", sans-serif;
+      }
+
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        font-family: var(--latin);
+        background: var(--page);
+        color: var(--ink);
+        line-height: 1.55;
+      }
+      main {
+        max-width: 1040px;
+        margin: 0 auto;
+        padding: 32px 24px 64px;
+      }
+      header {
+        margin-bottom: 28px;
+      }
+      h1, h2, h3 {
+        margin: 0 0 10px;
+        font-family: var(--latin);
+      }
+      h1 {
+        font-size: 2rem;
+      }
+      h2 {
+        font-size: 1.45rem;
+      }
+      h3 {
+        margin-top: 22px;
+        font-size: 1rem;
+        text-transform: uppercase;
+        letter-spacing: 0.04em;
+        color: var(--accent);
+      }
+      .subhead {
+        color: var(--muted);
+        font-size: 1rem;
+        margin-top: 8px;
+      }
+      .card {
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: 18px;
+        padding: 22px 22px 18px;
+        margin-bottom: 20px;
+        box-shadow: 0 8px 24px rgba(31, 41, 51, 0.06);
+      }
+      .eyebrow {
+        color: var(--accent);
+        font-size: 0.9rem;
+        font-weight: 700;
+        margin-bottom: 8px;
+        letter-spacing: 0.04em;
+      }
+      .purpose {
+        color: var(--muted);
+        margin-top: 0;
+      }
+      .narration p {
+        margin: 0 0 12px;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 10px;
+      }
+      th, td {
+        padding: 10px 12px;
+        border-bottom: 1px solid var(--line);
+        text-align: left;
+        vertical-align: top;
+      }
+      th {
+        font-size: 0.92rem;
+        color: var(--muted);
+      }
+      td:first-child, .thai {
+        font-family: var(--thai);
+        font-size: 1.1rem;
+      }
+      ul {
+        margin: 10px 0 0 18px;
+        padding: 0;
+      }
+      li {
+        margin: 0 0 8px;
+      }
+      @media print {
+        body {
+          background: white;
+        }
+        main {
+          max-width: none;
+          padding: 0;
+        }
+        .card {
+          box-shadow: none;
+          break-inside: avoid;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header>
+        <div class="eyebrow">${escapeHtml(script.lessonId)}</div>
+        <h1>Spoken Script — ${escapeHtml(script.title)}</h1>
+        <p class="subhead">${escapeHtml(script.objective)}</p>
+      </header>
+      ${sectionCards}
+      <section class="card">
+        <div class="eyebrow">ROLEPLAY</div>
+        <h2>${escapeHtml(script.roleplay.scenario)}</h2>
+        <table>
+          <thead>
+            <tr><th>Speaker</th><th>Thai</th><th>Transliteration</th><th>English</th></tr>
+          </thead>
+          <tbody>${roleplayRows}</tbody>
+        </table>
+      </section>
+      <section class="card">
+        <div class="eyebrow">RECAP</div>
+        <h2>What the learner should leave with</h2>
+        <ul>${recapItems}</ul>
+      </section>
+    </main>
+  </body>
+</html>
+`;
 }
 
 function renderVisual(script: ScriptMaster): string {
@@ -1414,7 +1618,7 @@ function stagePrerequisiteIssues(lessonId: string, stage: StageId): string[] {
       "editorial-qa-report.md",
     ],
     "3": ["qa-report.md"],
-    "4": ["remotion.json", "asset-provenance.json", "visual-qa-report.md"],
+    "4": ["deck-source.json", "deck.pptx", "asset-provenance.json", "visual-qa-report.md"],
     "5": ["pdf-source.json", "pdf.md", "pdf.pdf"],
     "6": ["flashcards.json", "vocab-export.json"],
     "7": [
@@ -1498,6 +1702,7 @@ async function executeStage(lessonId: string, stage: StageId, strict: boolean): 
     const script = stage1ScriptGeneration(lessonId, context);
     writeJson(lessonFile(lessonId, "script-master.json"), script);
     writeText(lessonFile(lessonId, "script-spoken.md"), renderSpoken(script));
+    writeText(lessonFile(lessonId, "script-spoken.html"), renderSpokenHtml(script));
     writeText(lessonFile(lessonId, "script-visual.md"), renderVisual(script));
     rebuildVocabIndex();
     return { code: 0, meta: `generated sections=${script.sections.length}` };
@@ -1510,12 +1715,38 @@ async function executeStage(lessonId: string, stage: StageId, strict: boolean): 
   }
 
   const script = readJson<ScriptMaster>(resolveLessonFile(lessonId, "script-master.json"));
+  writeText(lessonFile(lessonId, "script-spoken.html"), renderSpokenHtml(script));
 
   if (stage === "3") {
-    const remotion = stage3Remotion(script);
-    writeJson(lessonFile(lessonId, "remotion.json"), remotion);
-    writeJson(lessonFile(lessonId, "asset-provenance.json"), stage3Provenance(remotion));
-    return { code: 0, meta: `scenes=${remotion.scenes.length}` };
+    const stage3Process = spawnSync(
+      "python3",
+      [
+        join(root, "course", "tools", "render_lesson_deck.py"),
+        "--repo-root",
+        root,
+        "--lesson",
+        lessonId,
+      ],
+      {
+        cwd: root,
+        encoding: "utf8",
+      }
+    );
+    if (stage3Process.stdout) {
+      process.stdout.write(stage3Process.stdout);
+    }
+    if (stage3Process.stderr) {
+      process.stderr.write(stage3Process.stderr);
+    }
+    if (stage3Process.status !== 0) {
+      return {
+        code: stage3Process.status ?? 1,
+        meta: "pptx-stage3-failed",
+      };
+    }
+
+    const deckSource = readJson<DeckSource>(resolveLessonFile(lessonId, "deck-source.json"));
+    return { code: 0, meta: `slides=${deckSource.slides.length}` };
   }
 
   if (stage === "4") {
@@ -1652,6 +1883,22 @@ interface AuditStringResult {
   manualReview: string[];
 }
 
+function looksThaiLike(value: string): boolean {
+  return /[\u0E00-\u0E7F]/u.test(value);
+}
+
+function translitPartIndex(parts: string[]): number | null {
+  if (parts.length < 3) {
+    return null;
+  }
+
+  if (parts.length >= 4 && looksThaiLike(parts[1] ?? "")) {
+    return 2;
+  }
+
+  return 1;
+}
+
 function auditStringValue(value: string, label: string, fix: boolean): AuditStringResult {
   const check = checkTransliterationPolicy(value, true);
   const issues: ValidationIssue[] = check.issues.map((issue) => ({ path: label, message: issue.message }));
@@ -1706,12 +1953,14 @@ function auditJsonNode(node: unknown, label: string, fix: boolean, keyHint: stri
 
     if (node.includes("|")) {
       const parts = node.split("|").map((part) => part.trim());
-      if (parts.length >= 3) {
+      const translitIndex = translitPartIndex(parts);
+      if (translitIndex !== null) {
         const tripletLabel = `${label}.triplet.translit`;
-        const audited = auditStringValue(parts[1] ?? "", tripletLabel, fix);
-        const rebuilt = `${parts[0] ?? ""} | ${audited.value} | ${parts.slice(2).join(" | ")}`;
+        const audited = auditStringValue(parts[translitIndex] ?? "", tripletLabel, fix);
+        const rebuiltParts = [...parts];
+        rebuiltParts[translitIndex] = audited.value;
         return {
-          value: audited.changed ? rebuilt : node,
+          value: audited.changed ? rebuiltParts.join(" | ") : node,
           changed: audited.changed,
           issues: audited.issues,
           autoFixes: audited.autoFixes,
@@ -1832,16 +2081,19 @@ function auditMarkdownFile(path: string, fix: boolean): {
     if (!line.includes("|")) continue;
 
     const parts = line.split("|").map((part) => part.trim());
-    if (parts.length < 3) continue;
+    const translitIndex = translitPartIndex(parts);
+    if (translitIndex === null) continue;
 
     const label = `${path}#line-${i + 1}.triplet.translit`;
-    const audited = auditStringValue(parts[1] ?? "", label, fix);
+    const audited = auditStringValue(parts[translitIndex] ?? "", label, fix);
     issues.push(...audited.issues);
     autoFixes.push(...audited.autoFixes);
     manualReview.push(...audited.manualReview);
 
     if (fix && audited.changed) {
-      lines[i] = `${parts[0] ?? ""} | ${audited.value} | ${parts.slice(2).join(" | ")}`;
+      const rebuiltParts = [...parts];
+      rebuiltParts[translitIndex] = audited.value;
+      lines[i] = rebuiltParts.join(" | ");
       changed = true;
     }
   }
@@ -1874,7 +2126,8 @@ function collectLessonAuditTargets(lessonId: string): string[] {
     "script-master.json",
     "script-spoken.md",
     "script-visual.md",
-    "remotion.json",
+    "deck-source.json",
+    "canva-content.json",
     "pdf-source.json",
     "pdf.md",
     "vocab-export.json",
@@ -1888,9 +2141,6 @@ function collectLessonAuditTargets(lessonId: string): string[] {
     if (existsSync(path)) targets.push(path);
   }
 
-  const remotionEpisode = remotionEpisodePathForLesson(root, lessonId);
-  if (existsSync(remotionEpisode)) targets.push(remotionEpisode);
-
   return targets;
 }
 
@@ -1902,7 +2152,8 @@ function collectGlobalAuditTargets(): string[] {
     targets.add(resolveLessonDirFile(dir, "script-master.json"));
     targets.add(resolveLessonDirFile(dir, "script-spoken.md"));
     targets.add(resolveLessonDirFile(dir, "script-visual.md"));
-    targets.add(resolveLessonDirFile(dir, "remotion.json"));
+    targets.add(resolveLessonDirFile(dir, "deck-source.json"));
+    targets.add(resolveLessonDirFile(dir, "canva-content.json"));
     targets.add(resolveLessonDirFile(dir, "pdf-source.json"));
     targets.add(resolveLessonDirFile(dir, "pdf.md"));
     targets.add(resolveLessonDirFile(dir, "vocab-export.json"));
@@ -1913,14 +2164,6 @@ function collectGlobalAuditTargets(): string[] {
 
   targets.add(join(root, "course", "vocab", "vocab-index.json"));
   targets.add(join(root, "course", "exports", "flashcards-global.json"));
-
-  const remotionDataDir = join(root, "thaiwith-nine-remotion", "src", "data");
-  if (existsSync(remotionDataDir) && statSync(remotionDataDir).isDirectory()) {
-    for (const file of readdirSync(remotionDataDir)) {
-      if (/^episode-\d{3}\.json$/.test(file)) targets.add(join(remotionDataDir, file));
-    }
-  }
-
   return Array.from(targets).filter((path) => existsSync(path)).sort();
 }
 

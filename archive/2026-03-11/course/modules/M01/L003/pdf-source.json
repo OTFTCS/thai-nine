@@ -1,0 +1,80 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "M01-L003",
+  "title": "M01-L003 — Fallback Thai Lesson",
+  "sections": [
+    {
+      "heading": "What you will be able to say after this lesson",
+      "body": [
+        "Provide a deterministic starter lesson artifact pack."
+      ]
+    },
+    {
+      "heading": "Core phrases (Thai / Transliteration / English)",
+      "body": [
+        "สวัสดี | sà-wàt-dii | hello",
+        "ขอบคุณ | khàawp-khun | thank you",
+        "ขอโทษ | khǎaw-thôot | excuse me / sorry",
+        "ไม่เข้าใจ | mâi khâo-jai | I do not understand",
+        "พูดช้าๆ ได้ไหม | phûut cháa-cháa dâai mái | can you speak slowly?"
+      ]
+    },
+    {
+      "heading": "Pronunciation tips (simple and practical)",
+      "body": [
+        "Use สวัสดี sà-wàt-dii to open politely.",
+        "Use ขอบคุณ khàawp-khun to close politely.",
+        "Use ไม่เข้าใจ mâi khâo-jai when needed.",
+        "Add พูดช้าๆ ได้ไหม phûut cháa-cháa dâai mái to control conversation speed."
+      ]
+    },
+    {
+      "heading": "Mini dialogues / role-play",
+      "body": [
+        "A: สวัสดี | sà-wàt-dii | Hello.",
+        "B: สวัสดี | sà-wàt-dii | Hello.",
+        "A: ขอบคุณ | khàawp-khun | Thank you.",
+        "B: ไม่เข้าใจ | mâi khâo-jai | I do not understand."
+      ]
+    },
+    {
+      "heading": "Practice drills (self-study)",
+      "body": [
+        "Repeat greeting with confidence.",
+        "Say thanks with polite ending.",
+        "Repeat repair phrase three times.",
+        "Ask for slower speech politely."
+      ]
+    },
+    {
+      "heading": "Vocabulary list for review / flashcards",
+      "body": [
+        "สวัสดี | sà-wàt-dii | hello",
+        "ขอบคุณ | khàawp-khun | thank you",
+        "ขอโทษ | khǎaw-thôot | excuse me / sorry",
+        "ไม่เข้าใจ | mâi khâo-jai | I do not understand",
+        "พูดช้าๆ ได้ไหม | phûut cháa-cháa dâai mái | can you speak slowly?"
+      ]
+    },
+    {
+      "heading": "Quick recap + memory aids",
+      "body": [
+        "Use polite greeting.",
+        "Use thanks.",
+        "Use repair phrase."
+      ]
+    }
+  ],
+  "drills": [
+    "Repeat greeting with confidence.",
+    "Say thanks with polite ending.",
+    "Repeat repair phrase three times.",
+    "Ask for slower speech politely."
+  ],
+  "answerKey": [
+    "Use PTM inline transliteration marks in every practice line.",
+    "Use polite greeting.",
+    "Use thanks.",
+    "Use repair phrase."
+  ]
+}

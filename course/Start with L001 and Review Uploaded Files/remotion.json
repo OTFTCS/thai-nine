@@ -1,0 +1,250 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "M01-L001",
+  "sourceScript": "script-master.json",
+  "canvas": {
+    "width": 1920,
+    "height": 1080,
+    "leftTeachingFraction": 0.6667,
+    "rightCameraFraction": 0.3333,
+    "safeZoneLabel": "Right third reserved for Nine camera"
+  },
+  "scenes": [
+    {
+      "id": "scene-1",
+      "seconds": 36,
+      "voiceover": [
+        "The first line you need is สวัสดี sà-wàt-dii. This is your safe, polite hello in a first meeting.",
+        "On its own, สวัสดี already works. But in real interaction, Thai usually sounds warmer and more complete when you add a polite ending.",
+        "So think of the greeting as a stack: hello first, then the polite ending that fits the speaker and the moment."
+      ],
+      "overlays": [
+        "Say hello the Thai way",
+        "Show the greeting stack clearly with one base form and two polite full versions in the left teaching area.",
+        "สวัสดี | sà-wàt-dii | hello",
+        "สวัสดีครับ | sà-wàt-dii khráp | hello (male speaker)",
+        "สวัสดีค่ะ | sà-wàt-dii khâ | hello (female speaker)"
+      ],
+      "teachingObjective": "Teach the core greeting and show that politeness is built into the line, not added as an afterthought.",
+      "layout": "focus-card",
+      "visualStrategy": {
+        "onScreenGoal": "Show the greeting stack clearly with one base form and two polite full versions in the left teaching area.",
+        "teachingVisuals": [
+          "Large Thai script for สวัสดี with transliteration and English underneath.",
+          "Two smaller follow-up cards for สวัสดีครับ and สวัสดีค่ะ."
+        ],
+        "teacherCues": [
+          "Pause after the base form before adding the polite ending versions.",
+          "Keep the greeting large and centered inside the left panel only."
+        ],
+        "imageUsage": "text-only",
+        "rationale": "The greeting line itself is the teaching target, so a photograph would add clutter without helping recall."
+      },
+      "thaiFocus": [
+        {
+          "thai": "สวัสดี",
+          "translit": "sà-wàt-dii",
+          "english": "hello"
+        },
+        {
+          "thai": "สวัสดีครับ",
+          "translit": "sà-wàt-dii khráp",
+          "english": "hello (male speaker)"
+        },
+        {
+          "thai": "สวัสดีค่ะ",
+          "translit": "sà-wàt-dii khâ",
+          "english": "hello (female speaker)"
+        }
+      ],
+      "assets": [
+        {
+          "assetId": "m01-l001-scene-1-asset-1",
+          "kind": "icon",
+          "query": "M01-L001 Hello and Basic Courtesy: First Contact in Thai Say hello the Thai way thai learning visual",
+          "sourcePolicy": "internet-first",
+          "sourceUrl": "https://thenounproject.com/search/icons/?q=M01-L001%20Hello%20and%20Basic%20Courtesy%3A%20First%20Contact%20in%20Thai%20Say%20hello%20the%20Thai%20way%20thai%20learning%20visual",
+          "license": "Noun Project search result review required",
+          "usageNotes": "Text-first scene. Optional icon fallback only if the layout needs a minimal anchor."
+        }
+      ]
+    },
+    {
+      "id": "scene-2",
+      "seconds": 36,
+      "voiceover": [
+        "The next two lines are ขอบคุณ khàawp-khun and ขอโทษ khǎaw-thôot.",
+        "ขอบคุณ closes a small social moment well. You use it after help, service, or a small kindness.",
+        "ขอโทษ can mean excuse me or sorry, so it is your polite way to interrupt, repair, or apologise without sounding abrupt."
+      ],
+      "overlays": [
+        "Thank, apologise, and soften the moment",
+        "Contrast thanking, apologising, and calming the moment without overloading the frame.",
+        "ขอบคุณ | khàawp-khun | thank you",
+        "ขอโทษ | khǎaw-thôot | excuse me / sorry",
+        "ไม่เป็นไร | mâi bpen rai | it is okay / no problem"
+      ],
+      "teachingObjective": "Teach the two highest-value courtesy phrases and explain that one form repairs the interaction while the other closes it warmly.",
+      "layout": "contrast-board",
+      "visualStrategy": {
+        "onScreenGoal": "Contrast thanking, apologising, and calming the moment without overloading the frame.",
+        "teachingVisuals": [
+          "Two-column board: thank/close versus interrupt/repair.",
+          "Short arrow from ขอบคุณ to ไม่เป็นไร to show the natural reply pattern."
+        ],
+        "teacherCues": [
+          "Explain function before translation so learners hear the social job of each phrase.",
+          "Keep only one reply line visible at a time."
+        ],
+        "imageUsage": "text-only",
+        "rationale": "This section teaches social function and response pattern, which is clearer as a contrast board than as a photo."
+      },
+      "thaiFocus": [
+        {
+          "thai": "ขอบคุณ",
+          "translit": "khàawp-khun",
+          "english": "thank you"
+        },
+        {
+          "thai": "ขอโทษ",
+          "translit": "khǎaw-thôot",
+          "english": "excuse me / sorry"
+        },
+        {
+          "thai": "ไม่เป็นไร",
+          "translit": "mâi bpen rai",
+          "english": "it is okay / no problem"
+        }
+      ],
+      "assets": [
+        {
+          "assetId": "m01-l001-scene-2-asset-1",
+          "kind": "icon",
+          "query": "M01-L001 Hello and Basic Courtesy: First Contact in Thai Thank, apologise, and soften the moment thai learning visual",
+          "sourcePolicy": "internet-first",
+          "sourceUrl": "https://thenounproject.com/search/icons/?q=M01-L001%20Hello%20and%20Basic%20Courtesy%3A%20First%20Contact%20in%20Thai%20Thank%2C%20apologise%2C%20and%20soften%20the%20moment%20thai%20learning%20visual",
+          "license": "Noun Project search result review required",
+          "usageNotes": "Text-first scene. Optional icon fallback only if the layout needs a minimal anchor."
+        }
+      ]
+    },
+    {
+      "id": "scene-3",
+      "seconds": 36,
+      "voiceover": [
+        "Thai polite endings are not meaningless filler. They change how your line lands socially.",
+        "ครับ khráp is the common male polite ending. ค่ะ khâ is the common female ending for statements, and คะ khá is the lighter female ending often heard with questions.",
+        "For this lesson, keep one practical rule: learn ครับ and ค่ะ first for safe polite statements, and notice คะ as the question-flavoured partner rather than mixing the two female endings blindly."
+      ],
+      "overlays": [
+        "Pick the right polite ending",
+        "Show the three polite endings as a usable choice system with simple examples, not a grammar wall.",
+        "ครับ | khráp | male polite ending",
+        "ค่ะ | khâ | female statement ending",
+        "คะ | khá | female question ending"
+      ],
+      "teachingObjective": "Explain what ครับ, ค่ะ, and คะ do so the learner does not memorize them as random decoration.",
+      "layout": "drill-stack",
+      "visualStrategy": {
+        "onScreenGoal": "Show the three polite endings as a usable choice system with simple examples, not a grammar wall.",
+        "teachingVisuals": [
+          "Three stacked chips for ครับ, ค่ะ, and คะ with one-line explanations.",
+          "A short substitution line showing the greeting changing with the polite ending."
+        ],
+        "teacherCues": [
+          "Keep the explanation practical and stop before it turns into a long grammar lecture.",
+          "Use one example sentence at a time so the learner can hear the ending clearly."
+        ],
+        "imageUsage": "text-only",
+        "rationale": "The learner needs a functional choice system here, so labelled chips and drill prompts teach better than imagery."
+      },
+      "thaiFocus": [
+        {
+          "thai": "ครับ",
+          "translit": "khráp",
+          "english": "male polite ending"
+        },
+        {
+          "thai": "ค่ะ",
+          "translit": "khâ",
+          "english": "female statement ending"
+        },
+        {
+          "thai": "คะ",
+          "translit": "khá",
+          "english": "female question ending"
+        }
+      ],
+      "assets": [
+        {
+          "assetId": "m01-l001-scene-3-asset-1",
+          "kind": "icon",
+          "query": "M01-L001 Hello and Basic Courtesy: First Contact in Thai Pick the right polite ending thai learning visual",
+          "sourcePolicy": "internet-first",
+          "sourceUrl": "https://thenounproject.com/search/icons/?q=M01-L001%20Hello%20and%20Basic%20Courtesy%3A%20First%20Contact%20in%20Thai%20Pick%20the%20right%20polite%20ending%20thai%20learning%20visual",
+          "license": "Noun Project search result review required",
+          "usageNotes": "Text-first scene. Optional icon fallback only if the layout needs a minimal anchor."
+        }
+      ]
+    },
+    {
+      "id": "scene-4",
+      "seconds": 36,
+      "voiceover": [
+        "Now add three high-frequency response tools: ใช่ châi, ไม่ใช่ mâi châi, and ไม่เป็นไร mâi bpen rai.",
+        "ใช่ means yes or that is right. ไม่ใช่ means not right or no, but it is not aggressive by itself; it just corrects the idea.",
+        "ไม่เป็นไร is different. It does not mean yes or no. It smooths the moment by saying it is okay, never mind, or no problem."
+      ],
+      "overlays": [
+        "Answer yes, no, and no problem naturally",
+        "Show the difference between a direct answer and a social softener inside one compact response ladder.",
+        "ใช่ | châi | yes / that is right",
+        "ไม่ใช่ | mâi châi | no / not right",
+        "ไม่เป็นไร | mâi bpen rai | it is okay / no problem"
+      ],
+      "teachingObjective": "Give the learner a small response toolkit so a first encounter can continue instead of stopping at one memorised line.",
+      "layout": "dialogue-ladder",
+      "visualStrategy": {
+        "onScreenGoal": "Show the difference between a direct answer and a social softener inside one compact response ladder.",
+        "teachingVisuals": [
+          "A three-step response ladder: ใช่ / ไม่ใช่ / ไม่เป็นไร.",
+          "One mini-scenario line showing apology followed by ไม่เป็นไร."
+        ],
+        "teacherCues": [
+          "Explain that ไม่เป็นไร is not a yes/no answer.",
+          "Leave enough empty space for Nine to model the tone difference in the camera zone."
+        ],
+        "imageUsage": "text-only",
+        "rationale": "This is a response-meaning distinction, so a compact dialogue ladder is clearer than any supporting image."
+      },
+      "thaiFocus": [
+        {
+          "thai": "ใช่",
+          "translit": "châi",
+          "english": "yes / that is right"
+        },
+        {
+          "thai": "ไม่ใช่",
+          "translit": "mâi châi",
+          "english": "no / not right"
+        },
+        {
+          "thai": "ไม่เป็นไร",
+          "translit": "mâi bpen rai",
+          "english": "it is okay / no problem"
+        }
+      ],
+      "assets": [
+        {
+          "assetId": "m01-l001-scene-4-asset-1",
+          "kind": "icon",
+          "query": "M01-L001 Hello and Basic Courtesy: First Contact in Thai Answer yes, no, and no problem naturally thai learning visual",
+          "sourcePolicy": "internet-first",
+          "sourceUrl": "https://thenounproject.com/search/icons/?q=M01-L001%20Hello%20and%20Basic%20Courtesy%3A%20First%20Contact%20in%20Thai%20Answer%20yes%2C%20no%2C%20and%20no%20problem%20naturally%20thai%20learning%20visual",
+          "license": "Noun Project search result review required",
+          "usageNotes": "Text-first scene. Optional icon fallback only if the layout needs a minimal anchor."
+        }
+      ]
+    }
+  ]
+}

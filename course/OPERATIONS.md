@@ -1,38 +1,36 @@
-# OPERATIONS.md — Thai Nine (Simple Runbook)
+# OPERATIONS.md — Thai Nine
 
-Single source of truth for running the course pipeline + Remotion + post-record captions.
+Single source of truth for running the lesson pipeline, generating PPTX decks, and preparing recording-ready lessons.
 
----
+For a compact one-lesson checklist, use `course/LESSON_PRODUCTION_SOP.md`.
+For the retired Remotion-first workflow snapshot, use `archive/2026-03-18/course/remotion-first-plan/`.
 
-## 1) Daily workflow (short version)
+## 1) Daily workflow
 
-1. Pick lesson(s)
-2. Generate/update content files
-3. Validate
-4. Render Remotion preview (optional before recording)
-5. Record Nine
-6. Add TikTok-style captions (post-record)
-7. Mark status + log
+1. Pick the target lesson from the blueprint and current status.
+2. Run `course:produce`.
+3. Complete any required research, stage-1 writing, or QA handoff.
+4. Let the deterministic pipeline regenerate stage outputs.
+5. Review the PPTX deck and lesson PDF.
+6. Generate or refresh the Canva export pack and open the Canva master template.
+7. Record Nine using the PPTX deck or the Canva-polished deck in presenter mode.
+8. Add captions after recording.
+9. Mark the lesson ready and log any notable changes.
 
----
+## 2) Source of truth
 
-## 2) Where things live
-
-- Course manifest: `course/manifest.yaml`
-- Lessons: `course/modules/Mxx/Lyyy/`
-- Run log: `course/runlogs/latest.md`
+- Lesson order and naming: `course/exports/full-thai-course-blueprint.csv`
+- Runtime lesson state: `course/modules/<module>/<lesson>/status.json`
+- Workflow resume state: `course/modules/<module>/<lesson>/produce-lesson-state.json`
 - Pipeline CLI: `course/tools/pipeline-cli.ts`
-- Transliteration rules:
-  - `course/transliteration-ptm-vowels.json`
-  - `course/transliteration-ptm-consonants.json`
-  - `course/transliteration-policy.md` (hard gate + audit behavior)
-- Mission Control dashboard: `http://localhost:3000/mission-control`
+- Transliteration rules: `course/transliteration-policy.md`
+- Mission Control: `http://localhost:3000/mission-control`
 
----
+`course/manifest.yaml` is convenience metadata, not the production state source.
 
-## 3) Core commands (copy/paste)
+## 3) Core commands
 
-From repo root (`/Users/immersion/Thai Nine`):
+Run from repo root:
 
 ```bash
 npm run course:validate
@@ -41,103 +39,105 @@ npm run course:produce -- --next
 npm run course:produce -- --lesson M01-L004
 node --experimental-strip-types course/tools/pipeline-cli.ts fixup-vocabids --lesson M01-L004
 node --experimental-strip-types course/tools/pipeline-cli.ts validate --lesson M01-L001
+node --experimental-strip-types course/tools/pipeline-cli.ts translit-audit --lesson M01-L001
 node --experimental-strip-types course/tools/pipeline-cli.ts set-status --lesson M01-L001 --state DRAFT
 node --experimental-strip-types course/tools/pipeline-cli.ts touch-runlog --message "Updated M01-L001"
-node --experimental-strip-types course/tools/pipeline-cli.ts translit-audit
-node --experimental-strip-types course/tools/pipeline-cli.ts translit-audit --lesson M01-L001 --fix
 ```
 
-State values currently supported:
+Supported runtime states:
 - `DRAFT`
 - `READY_TO_RECORD`
 - `PLANNED`
 - `BACKLOG`
 
-Operational truth:
-- Lesson order and naming come from `course/exports/full-thai-course-blueprint.csv`
-- Runtime lesson state comes from each lesson `status.json`
-- `course/manifest.yaml` is convenience metadata, not the production state source
+## 4) Pipeline summary
 
-Multi-agent lesson production:
-1. Run `npm run course:produce -- --next` or pass an explicit lesson id.
-2. The command runs stage 0, writes `codex-stage1-work-order.md`, and waits for stage 1 files if they do not exist yet.
-3. Stage 1 must now include:
-   - `teachingFrame` in `script-master.json`
-   - `visualPlan` in every section
-   - image search queries only where a real-world image genuinely helps the lesson
-4. After stage 1 files are written, rerun the same command.
-5. The command runs `fixup-vocabids`, QA, repair handoff if needed, then deterministic stages 3-7.
-6. Stage 3 now derives Remotion scenes with a left teaching zone and right-third camera-safe zone.
-7. On success it marks the lesson `READY_TO_RECORD` in `status.json`.
+1. Stage 0 builds `context.json`.
+2. Research notes are written or updated:
+   - `scope-research.md`
+   - `usage-research.md`
+   - `visual-research.md`
+3. Stage 1 writes:
+   - `brief.md`
+   - `script-master.json`
+   - `script-spoken.md`
+   - `script-spoken.html`
+   - `script-visual.md`
+4. Editorial QA must pass.
+5. Stage 2 deterministic QA must pass.
+6. Stage 3 generates the official recording visuals:
+   - `deck-source.json`
+   - `asset-provenance.json`
+   - `deck.pptx`
+   - `canva-content.json`
+   - `canva-deck.pptx`
+   - `canva-import-guide.md`
+   - `canva-backgrounds/slide-XX.png`
+7. Visual QA must pass.
+8. Stage 4 generates:
+   - `pdf-source.json`
+   - `pdf.md`
+   - `pdf.pdf`
+9. Stage 5 generates:
+   - `flashcards.json`
+   - `vocab-export.json`
+10. Stage 6 generates:
+   - `quiz-item-bank.json`
+   - `quiz.json`
+11. Assessment QA must pass.
+12. Stage 7 validates the pack and marks the lesson `READY_TO_RECORD`.
 
----
+## 5) PPTX deck workflow
 
-## 4) Remotion preview workflow
+Stage 3 is PPTX-first.
 
-```bash
-cd "thaiwith-nine-remotion"
+The official visual pack is:
+- `deck-source.json` for review and QA
+- `deck.pptx` for recording
+- `asset-provenance.json` for source tracking
+- `canva-content.json` for placeholder-driven Canva filling
+- `canva-deck.pptx` for low-risk Canva import
+- `canva-import-guide.md` for the one-shot template workflow
+- `canva-backgrounds/slide-XX.png` for locked slide geometry
 
-# list compositions
-npx remotion compositions src/index.ts --browser-executable="/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
+Deck rules:
+- 16:9 canvas
+- fixed right-third camera-safe zone
+- teaching content left-weighted
+- images embedded locally when they materially help learning
+- text-only or card-based layouts when imagery is unnecessary
+- Canva imports should use locked backgrounds plus editable text and image swaps only
 
-# render lesson preview
-npx remotion render src/index.ts Episode001-L001 out/episode001.mp4 --browser-executable="/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
-```
+Canva workflow rules:
+- Upload `Sarabun` to Canva Brand Kit for learner-facing deck text.
+- Keep `Sarabun` as the standard deck font for Thai, transliteration, and English when lines are mixed.
+- Keep learner-facing Thai visible as `Thai (PTM transliteration)` on beginner decks.
+- Treat Canva as the finishing surface, not the source of truth.
+- If a Canva edit improves spacing, copy that fix back into the repo layout contract.
+- Do not use Canva AI slide generation as the production layout path.
 
-Current outputs:
-- `thaiwith-nine-remotion/out/episode001.mp4`
-- `thaiwith-nine-remotion/out/episode002.mp4`
+Use the produced `deck.pptx` in PowerPoint or Keynote while recording.
+Use the Canva pack to fill the master template without nudging layout by hand.
 
----
-
-## 5) Caption workflow (post-record, TikTok style)
-
-Important: captions are done **after** Nine records.
-
-1. Record Nine camera take
-2. Transcribe:
-   ```bash
-   cd "thaiwith-nine-remotion"
-   npm run transcribe
-   ```
-3. Edit timestamps + wording
-4. Burn captions as final layer (high contrast, bottom-safe area)
-
-This keeps Remotion teaching visuals reusable across takes.
-
----
-
-## 6) Visual asset policy (cost control)
+## 6) Asset sourcing policy
 
 Default rule: use internet-sourced reusable images first.
 
-Priority order:
-1. Open-license web images/icons
-2. Existing local assets / emoji / vector placeholders
-3. Generated images (only when explicitly approved)
+Source order:
+1. Openverse
+2. Wikimedia Commons
+3. Local themed shapes/cards only when imagery is not genuinely helpful
 
-Do not default to paid image generation.
+Do not default to generated imagery.
+If no acceptable real image is found, stage 3 should fall back to a non-image slide layout and record the fallback in `deck-source.json` and `asset-provenance.json`.
 
-For new lessons:
-- every section must say whether the best support is a real image, an icon/diagram, or text-only
-- the visual rationale must be explicit
-- the right third of the 16:9 frame remains reserved for Nine's camera
+## 7) Caption workflow
 
----
+Captions are produced after recording, not inside lesson-authoring visuals.
 
-## 7) What exists right now
+1. Record Nine using the PPTX deck.
+2. Transcribe the recorded audio/video.
+3. Clean timestamps and wording.
+4. Burn captions as a separate final layer.
 
-- Full course structure scaffold (M01–M08, L001–L010 each)
-- L001–L003 lesson artifact packs created
-- L001 regenerated as Survival Thai (~9 min plan)
-- Mission Control with artifact and video links
-- PTM-adapted transliteration rules (vowels + consonants)
-
----
-
-## 8) Next practical steps
-
-1. Produce `M01-L004` through the new stage-1 packet and inspect QA feedback
-2. Regenerate L002 + L003 to match the stronger teaching-frame and visual-plan standard if you want consistency across the first module
-3. Add a real asset download/selection pass if you want the pipeline to fetch image files rather than just generate research-ready asset plans
-4. Add one command alias for render + one for post-record caption pass
+This keeps the PPTX teaching deck reusable across multiple takes.

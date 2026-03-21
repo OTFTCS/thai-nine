@@ -1,0 +1,182 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "M01-L001",
+  "sourceScript": "script-master.json",
+  "canvas": {
+    "width": 1920,
+    "height": 1080,
+    "leftTeachingFraction": 0.6667,
+    "rightCameraFraction": 0.3333,
+    "safeZoneLabel": "Right third reserved for Nine camera"
+  },
+  "scenes": [
+    {
+      "id": "scene-1",
+      "seconds": 36,
+      "voiceover": [
+        "Start with สวัสดี sà-wàt-dii.",
+        "Then add ครับ khráp or ค่ะ khâ depending on speaker role."
+      ],
+      "overlays": [
+        "Core greeting stack",
+        "Teach pragmatic greeting and gratitude with politeness particles.",
+        "สวัสดี | sà-wàt-dii | hello",
+        "ขอบคุณ | khàawp-khun | thank you",
+        "ครับ / ค่ะ | khráp / khâ | polite ending"
+      ],
+      "teachingObjective": "Teach pragmatic greeting and gratitude with politeness particles.",
+      "layout": "focus-card",
+      "visualStrategy": {
+        "onScreenGoal": "Teach pragmatic greeting and gratitude with politeness particles.",
+        "teachingVisuals": [
+          "Core greeting stack",
+          "สวัสดี | sà-wàt-dii | hello",
+          "ขอบคุณ | khàawp-khun | thank you"
+        ],
+        "teacherCues": [
+          "Keep visuals in the left teaching area.",
+          "Avoid covering the camera safe zone."
+        ],
+        "imageUsage": "real-image",
+        "rationale": "Use a single supporting visual anchor while the spoken lesson carries the explanation."
+      },
+      "thaiFocus": [
+        {
+          "thai": "สวัสดี",
+          "translit": "sà-wàt-dii",
+          "english": "hello"
+        },
+        {
+          "thai": "ขอบคุณ",
+          "translit": "khàawp-khun",
+          "english": "thank you"
+        },
+        {
+          "thai": "ครับ",
+          "translit": "khráp",
+          "english": "male polite ending"
+        },
+        {
+          "thai": "ค่ะ",
+          "translit": "khâ",
+          "english": "female statement ending"
+        },
+        {
+          "thai": "คะ",
+          "translit": "khá",
+          "english": "female question ending"
+        }
+      ],
+      "assets": [
+        {
+          "assetId": "m01-l001-scene-1-asset-1",
+          "kind": "image",
+          "query": "M01-L001 Survival Thai 01: First 10 Minutes in Thailand Core greeting stack thai learning visual",
+          "sourcePolicy": "internet-first",
+          "sourceUrl": "https://www.pexels.com/search/M01-L001%20Survival%20Thai%2001%3A%20First%2010%20Minutes%20in%20Thailand%20Core%20greeting%20stack%20thai%20learning%20visual/",
+          "license": "Pexels License",
+          "usageNotes": "Use as left-panel supporting visual only; keep text dominant."
+        }
+      ]
+    },
+    {
+      "id": "scene-2",
+      "seconds": 36,
+      "voiceover": [
+        "Use ขอโทษ khǎaw-thôot to interrupt politely.",
+        "Follow with ไม่เข้าใจ mâi khâo-jai."
+      ],
+      "overlays": [
+        "Repair + clarity",
+        "Recover conversation when comprehension drops.",
+        "ขอโทษ | khǎaw-thôot | excuse me / sorry",
+        "ไม่เข้าใจ | mâi khâo-jai | I do not understand"
+      ],
+      "teachingObjective": "Recover conversation when comprehension drops.",
+      "layout": "focus-card",
+      "visualStrategy": {
+        "onScreenGoal": "Recover conversation when comprehension drops.",
+        "teachingVisuals": [
+          "Repair + clarity",
+          "ขอโทษ | khǎaw-thôot | excuse me / sorry",
+          "ไม่เข้าใจ | mâi khâo-jai | I do not understand"
+        ],
+        "teacherCues": [
+          "Keep visuals in the left teaching area.",
+          "Avoid covering the camera safe zone."
+        ],
+        "imageUsage": "real-image",
+        "rationale": "Use a single supporting visual anchor while the spoken lesson carries the explanation."
+      },
+      "thaiFocus": [
+        {
+          "thai": "ขอโทษ",
+          "translit": "khǎaw-thôot",
+          "english": "excuse me / sorry"
+        },
+        {
+          "thai": "ไม่เข้าใจ",
+          "translit": "mâi khâo-jai",
+          "english": "I do not understand"
+        }
+      ],
+      "assets": [
+        {
+          "assetId": "m01-l001-scene-2-asset-1",
+          "kind": "image",
+          "query": "M01-L001 Survival Thai 01: First 10 Minutes in Thailand Repair + clarity thai learning visual",
+          "sourcePolicy": "internet-first",
+          "sourceUrl": "https://www.pexels.com/search/M01-L001%20Survival%20Thai%2001%3A%20First%2010%20Minutes%20in%20Thailand%20Repair%20%2B%20clarity%20thai%20learning%20visual/",
+          "license": "Pexels License",
+          "usageNotes": "Use as left-panel supporting visual only; keep text dominant."
+        }
+      ]
+    },
+    {
+      "id": "scene-3",
+      "seconds": 36,
+      "voiceover": [
+        "พูดช้าๆ ได้ไหม phûut cháa-cháa dâai mái means can you speak slowly?",
+        "Add ครับ or คะ for tone and politeness."
+      ],
+      "overlays": [
+        "Speed control request",
+        "Request slower speech without breaking politeness.",
+        "พูดช้าๆ ได้ไหม | phûut cháa-cháa dâai mái | can you speak slowly?"
+      ],
+      "teachingObjective": "Request slower speech without breaking politeness.",
+      "layout": "focus-card",
+      "visualStrategy": {
+        "onScreenGoal": "Request slower speech without breaking politeness.",
+        "teachingVisuals": [
+          "Speed control request",
+          "พูดช้าๆ ได้ไหม | phûut cháa-cháa dâai mái | can you speak slowly?"
+        ],
+        "teacherCues": [
+          "Keep visuals in the left teaching area.",
+          "Avoid covering the camera safe zone."
+        ],
+        "imageUsage": "real-image",
+        "rationale": "Use a single supporting visual anchor while the spoken lesson carries the explanation."
+      },
+      "thaiFocus": [
+        {
+          "thai": "พูดช้าๆ ได้ไหม",
+          "translit": "phûut cháa-cháa dâai mái",
+          "english": "can you speak slowly?"
+        }
+      ],
+      "assets": [
+        {
+          "assetId": "m01-l001-scene-3-asset-1",
+          "kind": "image",
+          "query": "M01-L001 Survival Thai 01: First 10 Minutes in Thailand Speed control request thai learning visual",
+          "sourcePolicy": "internet-first",
+          "sourceUrl": "https://www.pexels.com/search/M01-L001%20Survival%20Thai%2001%3A%20First%2010%20Minutes%20in%20Thailand%20Speed%20control%20request%20thai%20learning%20visual/",
+          "license": "Pexels License",
+          "usageNotes": "Use as left-panel supporting visual only; keep text dominant."
+        }
+      ]
+    }
+  ]
+}

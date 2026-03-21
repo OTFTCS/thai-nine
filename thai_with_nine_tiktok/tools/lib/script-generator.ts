@@ -157,7 +157,9 @@ export function generateScriptFromBrief(brief: ScriptBrief): GeneratedScript {
   const safeLexemes = brief.lexemes.length > 0 ? brief.lexemes : [{ thai: "คำ", translit: "kham", english: "word" }];
 
   const blocksWanted = clamp(2, 4, runtimeSelection.config.teachingBlocks);
-  const examplesPerBlock = clamp(1, 3, Math.ceil(safeLexemes.length / blocksWanted));
+  // Overview-style briefs can carry a lot of examples. Never drop the tail of the
+  // list just to keep a hard per-block cap.
+  const examplesPerBlock = Math.max(1, Math.ceil(safeLexemes.length / blocksWanted));
 
   const teachingBlocks = Array.from({ length: blocksWanted }).map((_, blockIndex) => {
     const start = blockIndex * examplesPerBlock;

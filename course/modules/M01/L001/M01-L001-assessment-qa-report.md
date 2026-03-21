@@ -1,16 +1,23 @@
 # Assessment QA Report — M01-L001
 
 Result: PASS
+Date: 2026-03-18
+Reviewer: Codex
+
+## Summary
+
+- The assessment pack remains aligned to the rewritten lesson scope, and the regenerated artifacts still give clean beginner coverage.
+
+## Findings
+
+- No blocking assessment issues remain in the current flashcards, quiz item bank, or quiz outputs.
+
+## Actions
+
+- Regenerated the deterministic assessment artifacts after the lesson script rewrite.
+- Rechecked the current flashcards, quiz item bank, and quiz against the updated wording and roleplay.
 
 ## Checks
-- Flashcard usefulness: PASS — the 11 flashcards stay inside lesson scope and cover the greeting, courtesy, response, and polite-ending targets cleanly.
-- Quiz alignment: PASS — the 16-question quiz checks the actual lesson meanings and basic usage distinctions introduced in the lesson.
-- Distractor quality: PASS — the distractors are simple but still plausible within this tightly constrained beginner vocabulary set.
-- Prompt clarity: PASS — prompts are direct, answer keys are unambiguous, and the transliteration items are fair for this lesson level.
-- Coverage quality: PASS — every taught core item is represented and the quiz includes more than bare minimum coverage for the greeting and courtesy targets.
 
-## Edits made
-- No changes required.
-
-## Remaining concerns
-- The quiz is still more recognition-heavy than ideal, especially for the polite-ending items, but it is acceptable for v1 of this beginner lesson.
+- Assessment quality: PASS — the current 11 flashcards, 44-item bank entries, and 16-question quiz stay inside lesson scope and still cover greetings, courtesy phrases, polite endings, and basic yes/no response handling appropriately for L001.
+- Transliteration consistency: PASS — `course/tools/pipeline-cli.ts translit-audit --lesson M01-L001` passes, and the regenerated assessment outputs remain consistent with the lesson transliteration layer.

@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "M01-L001",
+  "generatedAt": "2026-03-11T01:45:57.799Z",
+  "assets": [
+    {
+      "assetId": "m01-l001-scene-1-asset-1",
+      "kind": "image",
+      "sourceUrl": "https://www.pexels.com/search/M01-L001%20Survival%20Thai%2001%3A%20First%2010%20Minutes%20in%20Thailand%20Core%20greeting%20stack%20thai%20learning%20visual/",
+      "license": "Pexels License",
+      "usage": "scene-1:scene-1 overlay background",
+      "query": "M01-L001 Survival Thai 01: First 10 Minutes in Thailand Core greeting stack thai learning visual",
+      "sourcePolicy": "internet-first",
+      "rationale": "Use a single supporting visual anchor while the spoken lesson carries the explanation.",
+      "sourceHints": [
+        "Pexels",
+        "Wikimedia Commons"
+      ]
+    },
+    {
+      "assetId": "m01-l001-scene-2-asset-1",
+      "kind": "image",
+      "sourceUrl": "https://www.pexels.com/search/M01-L001%20Survival%20Thai%2001%3A%20First%2010%20Minutes%20in%20Thailand%20Repair%20%2B%20clarity%20thai%20learning%20visual/",
+      "license": "Pexels License",
+      "usage": "scene-2:scene-2 overlay background",
+      "query": "M01-L001 Survival Thai 01: First 10 Minutes in Thailand Repair + clarity thai learning visual",
+      "sourcePolicy": "internet-first",
+      "rationale": "Use a single supporting visual anchor while the spoken lesson carries the explanation.",
+      "sourceHints": [
+        "Pexels",
+        "Wikimedia Commons"
+      ]
+    },
+    {
+      "assetId": "m01-l001-scene-3-asset-1",
+      "kind": "image",
+      "sourceUrl": "https://www.pexels.com/search/M01-L001%20Survival%20Thai%2001%3A%20First%2010%20Minutes%20in%20Thailand%20Speed%20control%20request%20thai%20learning%20visual/",
+      "license": "Pexels License",
+      "usage": "scene-3:scene-3 overlay background",
+      "query": "M01-L001 Survival Thai 01: First 10 Minutes in Thailand Speed control request thai learning visual",
+      "sourcePolicy": "internet-first",
+      "rationale": "Use a single supporting visual anchor while the spoken lesson carries the explanation.",
+      "sourceHints": [
+        "Pexels",
+        "Wikimedia Commons"
+      ]
+    }
+  ]
+}

@@ -74,7 +74,8 @@
                 "translit": { "type": "string", "minLength": 1 },
                 "english": { "type": "string", "minLength": 1 },
                 "notes": { "type": "string" },
-                "vocabId": { "type": "string", "pattern": "^v-[a-f0-9]{10}$" }
+                "vocabId": { "type": "string", "pattern": "^v-[a-f0-9]{10}$" },
+                "type": { "enum": ["word", "chunk"], "default": "word" }
               }
             }
           },
@@ -186,6 +187,51 @@
       "properties": {
         "transliteration": { "const": "PTM_ADAPTED_INLINE_TONES" },
         "imageSourcing": { "const": "INTERNET_FIRST_NO_GENERATIVE_DEFAULT" }
+      }
+    },
+    "pronunciationFocus": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["targetSounds", "minimalPairs", "mouthMapAnchor"],
+      "properties": {
+        "targetSounds": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "type": "string", "minLength": 1 }
+        },
+        "minimalPairs": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["a", "b"],
+            "properties": {
+              "a": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": ["thai", "translit", "english"],
+                "properties": {
+                  "thai": { "type": "string", "minLength": 1 },
+                  "translit": { "type": "string", "minLength": 1 },
+                  "english": { "type": "string", "minLength": 1 }
+                }
+              },
+              "b": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": ["thai", "translit", "english"],
+                "properties": {
+                  "thai": { "type": "string", "minLength": 1 },
+                  "translit": { "type": "string", "minLength": 1 },
+                  "english": { "type": "string", "minLength": 1 }
+                }
+              }
+            }
+          }
+        },
+        "mouthMapAnchor": { "type": "string", "minLength": 1 },
+        "tonePattern": { "type": "string", "minLength": 1 }
       }
     }
   }

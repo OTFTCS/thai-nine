@@ -102,7 +102,40 @@ Implication for scripts:
 - drills should progress in difficulty
 - roleplay should come after controlled practice, not replace it
 
-### 5. Roleplays should be short, realistic, and function-driven
+### 5. Use conceptual anchors for slippery concepts
+
+When a bare gloss would teach the wrong instinct, the lesson should give the learner a compact internal model.
+
+Good targets include:
+- particles and politeness language
+- abstract grammar jobs
+- tones and pronunciation contrasts
+- script logic
+- any high-frequency form where English encourages the wrong interpretation
+
+Useful conceptual anchor shapes:
+- social job: what this form does in the interaction
+- slot or frame: where the movable piece sits in the sentence
+- contrast: not exactly X, more like Y
+- sound or mouth map: where the sound sits physically or perceptually
+- tiny situational analogy: one simple concrete comparison
+
+Bad anchor shapes:
+- decorative metaphor with no teaching payoff
+- one-to-one English equivalence that distorts Thai usage
+- unsupported etymology
+- overlong side explanations that break pacing
+
+Implication for scripts:
+- identify up to 3 high-risk concepts per lesson
+- use anchors only where they reduce confusion or improve recall
+- keep translation-first, usage-first explanation as the default for concrete beginner content
+- keep the anchor short and spoken-first
+- if outside explanation research is used, rewrite it into shorter house-style wording before it reaches the lesson script
+- state the limit of the comparison when needed so the analogy does not become the rule
+- do not force analogies into simple concrete vocab lessons
+
+### 6. Roleplays should be short, realistic, and function-driven
 
 Research on communicative tasks and roleplay supports realistic short exchanges that require the target form to do a clear job.
 
@@ -116,7 +149,7 @@ Implication for scripts:
 - roleplays should be built from the lesson target outward
 - if a line exists only to force in vocabulary, remove or rewrite it
 
-### 6. Retrieval and spaced reuse matter
+### 7. Retrieval and spaced reuse matter
 
 Vocabulary and pattern retention improve when learners retrieve previously learned material and meet it again over time.
 
@@ -125,7 +158,7 @@ Implication for scripts:
 - include retrieval prompts, not only re-exposure
 - recap should ask the learner to recall before the answer appears
 
-### 7. Visual support should reduce load, not duplicate speech
+### 8. Visual support should reduce load, not duplicate speech
 
 Multimedia-learning research supports signalling, clean layout, and avoiding redundant overload.
 
@@ -199,6 +232,7 @@ They do need to be clearly present in the lesson design.
 
 ### `script-master.json`
 - sections should describe teaching moves, not only content themes
+- high-risk concepts can be anchored in `spokenNarration` and optionally reinforced in `languageFocus.notes`
 - drills should reflect varied device types
 - review reuse should include retrieval, not only mention
 
@@ -209,6 +243,8 @@ They do need to be clearly present in the lesson design.
   - “pause and answer”
   - “choose one”
   - “look away and try”
+- keep conceptual anchors concise and easy to say aloud
+- prefer one clear internal model over three weak synonyms
 
 ### `script-visual.md`
 - visuals should support:
@@ -216,6 +252,7 @@ They do need to be clearly present in the lesson design.
   - one contrast
   - one choice
   - one answer space
+- only visualize a conceptual anchor when the screen can clarify it more simply than speech alone
 - avoid visuals that only decorate the narration
 
 ## Sources used

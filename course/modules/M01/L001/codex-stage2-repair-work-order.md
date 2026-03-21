@@ -1,13 +1,13 @@
 # Codex Stage 2 Repair Work Order — M01-L001
 
-QA attempt: 3/3
+QA attempt: 4/3
 
 Fix only the issues listed in the QA report.
 
 ## Allowed edits
-- `/Users/Shared/work/thai-nine/course/modules/M01/L001/script-master.json`
-- `/Users/Shared/work/thai-nine/course/modules/M01/L001/script-spoken.md`
-- `/Users/Shared/work/thai-nine/course/modules/M01/L001/script-visual.md`
+- `/Users/Shared/work/thai-nine/course/modules/M01/L001/M01-L001-script-master.json`
+- `/Users/Shared/work/thai-nine/course/modules/M01/L001/M01-L001-script-spoken.md`
+- `/Users/Shared/work/thai-nine/course/modules/M01/L001/M01-L001-script-visual.md`
 
 ## Do not touch
 - `context.json`

@@ -10,17 +10,18 @@ import type { Lesson } from "@/types/lesson";
 const ROOT = process.cwd();
 const COURSE_ROOT = path.join(ROOT, "course");
 const MODULES_ROOT = path.join(COURSE_ROOT, "modules");
-const REMOTION_OUT_ROOT = path.join(ROOT, "thaiwith-nine-remotion", "out");
 
 export const MISSION_CONTROL_ARTIFACTS = [
   "brief.md",
   "script-master.json",
   "script-spoken.md",
+  "script-spoken.html",
   "script-visual.md",
   "editorial-qa-report.md",
   "qa-report.md",
   "status.json",
-  "remotion.json",
+  "deck-source.json",
+  "deck.pptx",
   "asset-provenance.json",
   "pdf.pdf",
   "pdf.md",
@@ -42,6 +43,7 @@ export type MissionControlLessonArtifact = {
   isJson: boolean;
   isMarkdown: boolean;
   isPdf: boolean;
+  isPptx: boolean;
 };
 
 type LessonStatus = {
@@ -72,12 +74,12 @@ type ScriptMaster = {
   recap?: string[];
 };
 
-type RemotionPlan = {
-  scenes?: Array<{
+type DeckSource = {
+  slides?: Array<{
     id?: string;
-    seconds?: number;
+    estimatedSeconds?: number;
     layout?: string;
-    teachingObjective?: string;
+    title?: string;
     assets?: Array<{ assetId?: string; kind?: string; query?: string; sourceUrl?: string }>;
     visualStrategy?: {
       imageUsage?: string;
@@ -146,17 +148,17 @@ export type MissionControlLessonReview = {
     visualQaReportMd: string | null;
     assessmentQaReportMd: string | null;
     statusJson: LessonStatus | null;
-    remotionJson: RemotionPlan | null;
+    deckSourceJson: DeckSource | null;
     quizJson: QuizSet | null;
     flashcardsJson: FlashcardsDeck | null;
     scriptMasterJson: ScriptMaster | null;
   };
   previews: {
+    deckUrl: string | null;
+    deckExists: boolean;
+    deckLabel: string | null;
     pdfUrl: string | null;
     pdfExists: boolean;
-    videoUrl: string | null;
-    videoExists: boolean;
-    videoLabel: string | null;
   };
   checks: {
     qaPass: boolean | null;
@@ -167,7 +169,7 @@ export type MissionControlLessonReview = {
     totalArtifacts: number;
     missingArtifacts: string[];
     schemaReadyArtifacts: number;
-    sceneCount: number;
+    slideCount: number;
     quizQuestionCount: number;
     flashcardCount: number;
   };
@@ -234,33 +236,6 @@ function mediaHref(relPath: string) {
   return `/api/mission-control/media?path=${encodeURIComponent(relPath)}`;
 }
 
-async function findLessonVideo(lessonId: string) {
-  try {
-    const entries = await fs.readdir(REMOTION_OUT_ROOT, { withFileTypes: true });
-    const loweredLessonId = lessonId.toLowerCase();
-    const match = entries
-      .filter((entry) => entry.isFile())
-      .find((entry) => {
-        const lowerName = entry.name.toLowerCase();
-        return (
-          lowerName.includes(loweredLessonId) &&
-          (lowerName.endsWith(".mp4") || lowerName.endsWith(".webm") || lowerName.endsWith(".mov"))
-        );
-      });
-
-    if (!match) {
-      return null;
-    }
-
-    return {
-      label: match.name,
-      url: mediaHref(match.name),
-    };
-  } catch {
-    return null;
-  }
-}
-
 export async function loadMissionControlLessonReview(
   lessonId: string
 ): Promise<MissionControlLessonReview | null> {
@@ -296,6 +271,7 @@ export async function loadMissionControlLessonReview(
         isJson: name.endsWith(".json"),
         isMarkdown: name.endsWith(".md"),
         isPdf: name.endsWith(".pdf"),
+        isPptx: name.endsWith(".pptx"),
       } satisfies MissionControlLessonArtifact;
     })
   );
@@ -309,11 +285,10 @@ export async function loadMissionControlLessonReview(
     visualQaReportMd,
     assessmentQaReportMd,
     statusJson,
-    remotionJson,
+    deckSourceJson,
     quizJson,
     flashcardsJson,
     scriptMasterJson,
-    videoPreview,
   ] = await Promise.all([
     readTextIfExists(await resolveLessonArtifactPath(lessonDir, lessonId, "brief.md")),
     readTextIfExists(await resolveLessonArtifactPath(lessonDir, lessonId, "script-spoken.md")),
@@ -323,13 +298,13 @@ export async function loadMissionControlLessonReview(
     readTextIfExists(await resolveLessonArtifactPath(lessonDir, lessonId, "visual-qa-report.md")),
     readTextIfExists(await resolveLessonArtifactPath(lessonDir, lessonId, "assessment-qa-report.md")),
     readJsonIfExists<LessonStatus>(path.join(lessonDir, "status.json")),
-    readJsonIfExists<RemotionPlan>(await resolveLessonArtifactPath(lessonDir, lessonId, "remotion.json")),
+    readJsonIfExists<DeckSource>(await resolveLessonArtifactPath(lessonDir, lessonId, "deck-source.json")),
     readJsonIfExists<QuizSet>(await resolveLessonArtifactPath(lessonDir, lessonId, "quiz.json")),
     readJsonIfExists<FlashcardsDeck>(await resolveLessonArtifactPath(lessonDir, lessonId, "flashcards.json")),
     readJsonIfExists<ScriptMaster>(await resolveLessonArtifactPath(lessonDir, lessonId, "script-master.json")),
-    findLessonVideo(lessonId),
   ]);
 
+  const deckArtifact = artifacts.find((artifact) => artifact.name === "deck.pptx");
   const pdfArtifact = artifacts.find((artifact) => artifact.name === "pdf.pdf");
   const qaPass = qaReportMd
     ? /Result:\s+PASS/.test(qaReportMd)
@@ -392,17 +367,17 @@ export async function loadMissionControlLessonReview(
       visualQaReportMd,
       assessmentQaReportMd,
       statusJson,
-      remotionJson,
+      deckSourceJson,
       quizJson,
       flashcardsJson,
       scriptMasterJson,
     },
     previews: {
+      deckUrl: deckArtifact?.exists ? deckArtifact.mediaHref : null,
+      deckExists: deckArtifact?.exists ?? false,
+      deckLabel: deckArtifact?.exists ? deckArtifact.fileName : null,
       pdfUrl: pdfArtifact?.exists ? pdfArtifact.mediaHref : null,
       pdfExists: pdfArtifact?.exists ?? false,
-      videoUrl: videoPreview?.url ?? null,
-      videoExists: Boolean(videoPreview),
-      videoLabel: videoPreview?.label ?? null,
     },
     checks: {
       qaPass,
@@ -413,7 +388,7 @@ export async function loadMissionControlLessonReview(
       totalArtifacts,
       missingArtifacts,
       schemaReadyArtifacts,
-      sceneCount: remotionJson?.scenes?.length ?? 0,
+      slideCount: deckSourceJson?.slides?.length ?? 0,
       quizQuestionCount: quizJson?.questions?.length ?? 0,
       flashcardCount: flashcardsJson?.cards?.length ?? 0,
     },

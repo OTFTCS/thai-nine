@@ -1,0 +1,114 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://thai-nine.local/schemas/canva-content.schema.json",
+  "title": "Canva Content Export",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "lessonId",
+    "sourceDeck",
+    "layoutContract",
+    "theme",
+    "slides"
+  ],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "lessonId": { "type": "string", "pattern": "^M\\d{2}-L\\d{3}$" },
+    "sourceDeck": {
+      "type": "string",
+      "pattern": "^(M\\d{2}-L\\d{3}-)?deck-source\\.json$"
+    },
+    "layoutContract": { "type": "string", "minLength": 1 },
+    "theme": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "thaiFont",
+        "latinFont",
+        "backgroundColor",
+        "rightZoneTint",
+        "accentColors"
+      ],
+      "properties": {
+        "thaiFont": { "type": "string", "minLength": 1 },
+        "latinFont": { "type": "string", "minLength": 1 },
+        "backgroundColor": { "type": "string", "pattern": "^#[0-9A-Fa-f]{6}$" },
+        "rightZoneTint": { "type": "string", "pattern": "^#[0-9A-Fa-f]{6}$" },
+        "accentColors": {
+          "type": "array",
+          "minItems": 2,
+          "items": { "type": "string", "pattern": "^#[0-9A-Fa-f]{6}$" }
+        }
+      }
+    },
+    "slides": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "title",
+          "layoutFamily",
+          "backgroundPath",
+          "elements"
+        ],
+        "properties": {
+          "id": { "type": "string", "minLength": 1 },
+          "title": { "type": "string", "minLength": 1 },
+          "layoutFamily": { "type": "string", "minLength": 1 },
+          "backgroundPath": { "type": "string", "minLength": 1 },
+          "elements": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "id",
+                "kind",
+                "x",
+                "y",
+                "w",
+                "h"
+              ],
+              "properties": {
+                "id": { "type": "string", "minLength": 1 },
+                "kind": { "enum": ["text", "image"] },
+                "x": { "type": "number", "minimum": 0 },
+                "y": { "type": "number", "minimum": 0 },
+                "w": { "type": "number", "minimum": 1 },
+                "h": { "type": "number", "minimum": 1 },
+                "fontName": { "type": "string", "minLength": 1 },
+                "fontSizePt": { "type": "number", "minimum": 1 },
+                "color": { "type": "string", "pattern": "^#[0-9A-Fa-f]{6}$" },
+                "bold": { "type": "boolean" },
+                "italic": { "type": "boolean" },
+                "align": { "enum": ["left", "center", "right"] },
+                "value": { "type": "string" },
+                "localPath": { "type": "string", "minLength": 1 },
+                "segments": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "required": ["text"],
+                    "properties": {
+                      "text": { "type": "string" },
+                      "fontName": { "type": "string", "minLength": 1 },
+                      "fontSizePt": { "type": "number", "minimum": 1 },
+                      "color": { "type": "string", "pattern": "^#[0-9A-Fa-f]{6}$" },
+                      "bold": { "type": "boolean" },
+                      "italic": { "type": "boolean" }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

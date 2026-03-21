@@ -1,0 +1,539 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "M01-L002",
+  "sourceScript": "M01-L002-script-master.json",
+  "canvas": {
+    "width": 1920,
+    "height": 1080,
+    "leftTeachingFraction": 1.0,
+    "rightCameraFraction": 0.0,
+    "pipCameraWidth": 4.2,
+    "pipCameraHeight": 3.15,
+    "pipPosition": "bottom-right",
+    "safeZoneLabel": "Bottom-right PiP reserved for recording / camera"
+  },
+  "theme": {
+    "id": "thai-nine-canva-bridge-v1",
+    "name": "Canva Bridge Deck",
+    "thaiFont": "Sarabun",
+    "latinFont": "Sarabun",
+    "backgroundColor": "#F5F7F8",
+    "rightZoneTint": "#DBE7EC",
+    "accentColors": [
+      "#355C7D",
+      "#7A8F54",
+      "#C96F4A"
+    ]
+  },
+  "slides": [
+    {
+      "id": "slide-01-opener",
+      "role": "opener",
+      "title": "Names and Countries",
+      "estimatedSeconds": 12,
+      "layout": "lesson-opener",
+      "speakerNotes": [
+        "Open with the moment right after สวัสดี — someone wants to know your name and where you are from.",
+        "Ask someone's name, say your own name, and state where you are from using a short polite self-introduction."
+      ],
+      "textBlocks": [
+        {
+          "id": "opener-focus",
+          "kind": "bullet-list",
+          "heading": "Lesson focus",
+          "lines": [
+            "Learner can say your name, ask someone's name, and state where you are from.",
+            "Introduce yourself with name and country in 2-3 lines."
+          ]
+        }
+      ],
+      "thaiFocus": [],
+      "visualStrategy": {
+        "onScreenGoal": "Introduce the lesson clearly and set the recording tone.",
+        "teachingVisuals": [
+          "Names and Countries",
+          "First Contact and Courtesy"
+        ],
+        "teacherCues": [
+          "Use the deck title as the recording opener.",
+          "Keep the right third clear."
+        ],
+        "imageUsage": "text-only",
+        "rationale": "The opener should establish identity and objective without visual clutter."
+      },
+      "assets": []
+    },
+    {
+      "id": "slide-02-objectives",
+      "role": "objectives",
+      "title": "What you will learn",
+      "estimatedSeconds": 17,
+      "layout": "objectives-list",
+      "speakerNotes": [
+        "Learner can say your name, ask someone's name, and state where you are from.",
+        "Learner can recycle recent vocabulary while using origin pattern with มาจาก in short controlled output.",
+        "Introduce yourself with name and country in 2-3 lines.",
+        "Recognize names and country statements in short self-introductions."
+      ],
+      "textBlocks": [
+        {
+          "id": "objectives-list",
+          "kind": "bullet-list",
+          "heading": "Objectives",
+          "lines": [
+            "Learner can say your name, ask someone's name, and state where you are from.",
+            "Learner can recycle recent vocabulary while using origin pattern with มาจาก in short controlled output.",
+            "Introduce yourself with name and country in 2-3 lines.",
+            "Recognize names and country statements in short self-introductions."
+          ]
+        }
+      ],
+      "thaiFocus": [],
+      "visualStrategy": {
+        "onScreenGoal": "Make the lesson goals visible before the teaching slides begin.",
+        "teachingVisuals": [
+          "Learner can say your name, ask someone's name, and state where you are from.",
+          "Learner can recycle recent vocabulary while using origin pattern with มาจาก in short controlled output.",
+          "Introduce yourself with name and country in 2-3 lines.",
+          "Recognize names and country statements in short self-introductions."
+        ],
+        "teacherCues": [
+          "Pause briefly after each objective.",
+          "Keep the slide readable from a distance."
+        ],
+        "imageUsage": "text-only",
+        "rationale": "Objectives are clearer as cards than as decorative visuals."
+      },
+      "assets": []
+    },
+    {
+      "id": "slide-03-ask-and-give-your-name",
+      "role": "teaching",
+      "title": "Ask and give your name",
+      "estimatedSeconds": 29,
+      "layout": "focus-card",
+      "speakerNotes": [
+        "After สวัสดี, the next thing someone usually asks is: คุณชื่ออะไร khun chûue à-rai — what is your name? Listen first: คุณชื่ออะไรครับ.",
+        "ชื่อ chûue means name. อะไร à-rai means what. So คุณชื่ออะไร literally asks: you, name, what?",
+        "To answer, say ผมชื่อ phǒm chûue if you are male, or ฉันชื่อ chǎn chûue if you are female, then your name. ผมชื่อ Oliver ครับ.",
+        "Let's practise the full exchange. สวัสดีครับ — คุณชื่ออะไรครับ — ผมชื่อ Oliver ครับ. Three lines and you have introduced yourself."
+      ],
+      "textBlocks": [
+        {
+          "id": "slide-03-ask-and-give-your-name-triplets",
+          "kind": "triplet-list",
+          "heading": "Key language",
+          "lines": [
+            "ชื่อ | chûue | name",
+            "คุณชื่ออะไร | khun chûue à-rai | what is your name?",
+            "ผมชื่อ... | phǒm chûue... | my name is... (male)",
+            "ฉันชื่อ... | chǎn chûue... | my name is... (female)"
+          ]
+        },
+        {
+          "id": "slide-03-ask-and-give-your-name-practice",
+          "kind": "bullet-list",
+          "heading": "Practice",
+          "lines": [
+            "Listen and repeat: คุณชื่ออะไรครับ. Now say it yourself.",
+            "Pause-and-produce: I ask คุณชื่ออะไรครับ. Say your answer — ผมชื่อ or ฉันชื่อ plus your name — before I show it.",
+            "Substitution drill: say ผมชื่อ with your name, then say ฉันชื่อ with your name."
+          ]
+        }
+      ],
+      "thaiFocus": [
+        {
+          "thai": "ชื่อ",
+          "translit": "chûue",
+          "english": "name"
+        },
+        {
+          "thai": "คุณชื่ออะไร",
+          "translit": "khun chûue à-rai",
+          "english": "what is your name?"
+        }
+      ],
+      "visualStrategy": {
+        "onScreenGoal": "Show the name question and answer pattern as a compact exchange.",
+        "teachingVisuals": [
+          "Large card: คุณชื่ออะไร with transliteration and English.",
+          "Below: answer frame ผมชื่อ___ / ฉันชื่อ___ with a blank slot."
+        ],
+        "teacherCues": [
+          "Model the full exchange naturally before breaking it down.",
+          "Recycle สวัสดีครับ from L001 to open the exchange."
+        ],
+        "imageUsage": "text-only",
+        "rationale": "The question-answer pattern is the teaching target. Text cards with a slot frame teach more clearly than imagery."
+      },
+      "assets": []
+    },
+    {
+      "id": "slide-04-say-where-you-are-from",
+      "role": "teaching",
+      "title": "Say where you are from",
+      "estimatedSeconds": 32,
+      "layout": "focus-card",
+      "speakerNotes": [
+        "After your name, the next natural question is: where are you from? In Thai, you say มาจาก maa-jàak — come from.",
+        "ผมมาจากอังกฤษครับ phǒm maa-jàak ang-grìt khráp — I come from England. ฉันมาจากอเมริกาค่ะ chǎn maa-jàak à-mee-rí-kaa khâ — I come from America.",
+        "ประเทศ bprà-thêet means country. ประเทศไทย bprà-thêet thai means Thailand. But in daily speech, Thai people often just say ไทย.",
+        "So now you can do the whole introduction: สวัสดีครับ — ผมชื่อ Oliver ครับ — ผมมาจากอังกฤษครับ. Three lines and you have said hello, your name, and where you are from."
+      ],
+      "textBlocks": [
+        {
+          "id": "slide-04-say-where-you-are-from-triplets",
+          "kind": "triplet-list",
+          "heading": "Key language",
+          "lines": [
+            "มาจาก | maa-jàak | come from",
+            "ประเทศ | bprà-thêet | country",
+            "ไทย | thai | Thailand / Thai",
+            "อังกฤษ | ang-grìt | England / English"
+          ]
+        },
+        {
+          "id": "slide-04-say-where-you-are-from-practice",
+          "kind": "bullet-list",
+          "heading": "Practice",
+          "lines": [
+            "Listen and repeat: ผมมาจากอังกฤษครับ. Now with อเมริกา: ผมมาจากอเมริกาครับ.",
+            "Substitution drill: say มาจาก with อังกฤษ, now with อเมริกา, now with ไทย.",
+            "Response-building: I ask คุณมาจากไหนครับ. Your turn — say where you are from before I show the answer."
+          ]
+        }
+      ],
+      "thaiFocus": [
+        {
+          "thai": "มาจาก",
+          "translit": "maa-jàak",
+          "english": "come from"
+        },
+        {
+          "thai": "ประเทศ",
+          "translit": "bprà-thêet",
+          "english": "country"
+        },
+        {
+          "thai": "ไทย",
+          "translit": "thai",
+          "english": "Thailand / Thai"
+        },
+        {
+          "thai": "อังกฤษ",
+          "translit": "ang-grìt",
+          "english": "England / English"
+        },
+        {
+          "thai": "อเมริกา",
+          "translit": "à-mee-rí-kaa",
+          "english": "America"
+        }
+      ],
+      "visualStrategy": {
+        "onScreenGoal": "Show the origin pattern มาจาก + country as a slot frame with swappable countries.",
+        "teachingVisuals": [
+          "Frame: ผม/ฉัน + มาจาก + ___ with country options below.",
+          "Three country cards: ไทย, อังกฤษ, อเมริกา."
+        ],
+        "teacherCues": [
+          "Model the full three-line introduction: สวัสดี → ชื่อ → มาจาก.",
+          "Recycle ครับ/ค่ะ from L001 on every line."
+        ],
+        "imageUsage": "real-image",
+        "rationale": "Small flag icons for Thailand, UK, and US could help anchor country names visually."
+      },
+      "assets": [
+        {
+          "assetId": "slide-04-say-where-you-are-from-asset-1",
+          "kind": "image",
+          "query": "Thailand flag icon",
+          "sourcePolicy": "internet-first",
+          "status": "fallback-text-only",
+          "sourceProvider": "none",
+          "fallbackReason": "No acceptable Openverse or Wikimedia asset could be downloaded automatically.",
+          "usageNotes": "Small flag icons for Thailand, UK, and US could help anchor country names visually."
+        }
+      ]
+    },
+    {
+      "id": "slide-05-the-word-for-person-and-",
+      "role": "teaching",
+      "title": "The word for person and putting it together",
+      "estimatedSeconds": 31,
+      "layout": "contrast-board",
+      "speakerNotes": [
+        "One more useful word: คน khon means person. คนไทย khon thai means a Thai person. คนอังกฤษ khon ang-grìt means an English person.",
+        "This is how Thai describes nationality — person plus country name. Simple and predictable.",
+        "Now let's put everything together. After สวัสดี, you say your name with ชื่อ, then where you are from with มาจาก. If someone thanks you, you already know ขอบคุณ and ไม่เป็นไร from the last lesson.",
+        "Substitution practice: say คนไทย, now คนอังกฤษ, now คนอเมริกา. You are swapping the country each time."
+      ],
+      "textBlocks": [
+        {
+          "id": "slide-05-the-word-for-person-and--triplets",
+          "kind": "triplet-list",
+          "heading": "Key language",
+          "lines": [
+            "คน | khon | person",
+            "คนไทย | khon thai | Thai person",
+            "คนอังกฤษ | khon ang-grìt | English person"
+          ]
+        },
+        {
+          "id": "slide-05-the-word-for-person-and--practice",
+          "kind": "bullet-list",
+          "heading": "Practice",
+          "lines": [
+            "Substitution drill: say คน + country. คนไทย — your turn. คนอังกฤษ — your turn. คนอเมริกา — your turn.",
+            "Substitution drill (same format, different content): now use มาจาก + country. มาจากไทย — your turn. มาจากอังกฤษ — your turn.",
+            "Recall drill: without looking, how do you say 'thank you' from last lesson? Say it before I show. ขอบคุณครับ."
+          ]
+        }
+      ],
+      "thaiFocus": [
+        {
+          "thai": "คน",
+          "translit": "khon",
+          "english": "person"
+        },
+        {
+          "thai": "สวัสดี",
+          "translit": "sà-wàt-dii",
+          "english": "hello"
+        },
+        {
+          "thai": "ขอบคุณ",
+          "translit": "khàawp-khun",
+          "english": "thank you"
+        }
+      ],
+      "visualStrategy": {
+        "onScreenGoal": "Show the คน + country pattern alongside the มาจาก + country pattern.",
+        "teachingVisuals": [
+          "Two-column: Left = คน + country (who you are). Right = มาจาก + country (where you are from).",
+          "Same country names in both columns to show the pattern."
+        ],
+        "teacherCues": [
+          "Recycle ขอบคุณ from L001 in the recall drill.",
+          "Keep the substitution drills fast-paced."
+        ],
+        "imageUsage": "text-only",
+        "rationale": "The pattern comparison is clearer as a two-column text board than with images."
+      },
+      "assets": []
+    },
+    {
+      "id": "slide-06-pronunciation-the-fallin",
+      "role": "teaching",
+      "title": "Pronunciation: the falling tone on ชื่อ and rising tone on ไหน",
+      "estimatedSeconds": 48,
+      "layout": "focus-card",
+      "speakerNotes": [
+        "Let's train your ear again. In lesson 1 you heard the high tone on ครับ and the falling tone on ค่ะ. Now notice two more tones in today's words.",
+        "Listen: ชื่อ chûue. That is a falling tone — your voice starts high and drops. It sounds like the ค่ะ you already know. ชื่อ, ค่ะ — both falling.",
+        "Now listen: มา maa. That is a mid tone — your voice stays flat in the middle, no rise, no fall. And จาก jàak has a low tone — your voice dips down.",
+        "Try the contrast: ชื่อ — falling, voice drops. มา — mid, voice stays flat. Can you feel the difference?",
+        "Good. You now know three tones: high (ครับ), falling (ชื่อ, ค่ะ), and mid (มา). We will keep adding one or two each lesson."
+      ],
+      "textBlocks": [
+        {
+          "id": "slide-06-pronunciation-the-fallin-triplets",
+          "kind": "triplet-list",
+          "heading": "Key language",
+          "lines": [
+            "ชื่อ | chûue | falling tone — voice starts high, drops",
+            "มา | maa | mid tone — voice stays flat",
+            "จาก | jàak | low tone — voice dips down"
+          ]
+        },
+        {
+          "id": "slide-06-pronunciation-the-fallin-practice",
+          "kind": "bullet-list",
+          "heading": "Practice",
+          "lines": [
+            "Tone echo: I say ชื่อ. Repeat it with a falling tone. Now I say มา. Repeat it flat. Can you feel the difference?",
+            "Minimal pair choice: I say two words from this lesson. Tell me which one has the falling tone."
+          ]
+        }
+      ],
+      "thaiFocus": [
+        {
+          "thai": "ชื่อ",
+          "translit": "chûue",
+          "english": "name (falling tone)"
+        }
+      ],
+      "visualStrategy": {
+        "onScreenGoal": "Show tone direction arrows for falling, mid, and low tones alongside this lesson's vocabulary.",
+        "teachingVisuals": [
+          "Three cards: ชื่อ with downward arrow, มา with flat line, จาก with slight dip arrow.",
+          "Connection note: ชื่อ and ค่ะ (from L001) share the falling tone."
+        ],
+        "teacherCues": [
+          "Connect to L001: 'ชื่อ has the same falling tone as ค่ะ — can you hear it?'",
+          "Use hand gestures for pitch direction."
+        ],
+        "imageUsage": "text-only",
+        "rationale": "Tone arrows and pitch contour lines are the clearest teaching tool here."
+      },
+      "assets": []
+    },
+    {
+      "id": "slide-07-roleplay",
+      "role": "roleplay",
+      "title": "Meeting a new person at a coffee shop. The learner introduces themselves after a greeting.",
+      "estimatedSeconds": 42,
+      "layout": "roleplay-dialogue",
+      "speakerNotes": [
+        "New person | สวัสดีค่ะ คุณชื่ออะไรคะ | sà-wàt-dii khâ khun chûue à-rai khá | Hello! What is your name?",
+        "Learner (your turn — answer with your name) | สวัสดีครับ ผมชื่อ Oliver ครับ | sà-wàt-dii khráp phǒm chûue Oliver khráp | Hello! My name is Oliver.",
+        "New person | ยินดีที่ได้รู้จักค่ะ คุณมาจากไหนคะ | yin-dii thîi dâai rúu-jàk khâ khun maa-jàak nǎi khá | Nice to meet you. Where are you from?",
+        "Learner (your turn — say where you are from) | ผมมาจากอังกฤษครับ | phǒm maa-jàak ang-grìt khráp | I am from England.",
+        "New person | อ๋อ คนอังกฤษ ยินดีต้อนรับค่ะ | ǎw khon ang-grìt yin-dii dtâwn-ráp khâ | Oh, an English person! Welcome.",
+        "Learner | ขอบคุณครับ | khàawp-khun khráp | Thank you."
+      ],
+      "textBlocks": [
+        {
+          "id": "roleplay-dialogue",
+          "kind": "dialogue",
+          "heading": "Dialogue",
+          "lines": [
+            "New person | สวัสดีค่ะ คุณชื่ออะไรคะ | sà-wàt-dii khâ khun chûue à-rai khá | Hello! What is your name?",
+            "Learner (your turn — answer with your name) | สวัสดีครับ ผมชื่อ Oliver ครับ | sà-wàt-dii khráp phǒm chûue Oliver khráp | Hello! My name is Oliver.",
+            "New person | ยินดีที่ได้รู้จักค่ะ คุณมาจากไหนคะ | yin-dii thîi dâai rúu-jàk khâ khun maa-jàak nǎi khá | Nice to meet you. Where are you from?",
+            "Learner (your turn — say where you are from) | ผมมาจากอังกฤษครับ | phǒm maa-jàak ang-grìt khráp | I am from England.",
+            "New person | อ๋อ คนอังกฤษ ยินดีต้อนรับค่ะ | ǎw khon ang-grìt yin-dii dtâwn-ráp khâ | Oh, an English person! Welcome.",
+            "Learner | ขอบคุณครับ | khàawp-khun khráp | Thank you."
+          ]
+        }
+      ],
+      "thaiFocus": [
+        {
+          "thai": "สวัสดีค่ะ คุณชื่ออะไรคะ",
+          "translit": "sà-wàt-dii khâ khun chûue à-rai khá",
+          "english": "Hello! What is your name?"
+        },
+        {
+          "thai": "สวัสดีครับ ผมชื่อ Oliver ครับ",
+          "translit": "sà-wàt-dii khráp phǒm chûue Oliver khráp",
+          "english": "Hello! My name is Oliver."
+        },
+        {
+          "thai": "ยินดีที่ได้รู้จักค่ะ คุณมาจากไหนคะ",
+          "translit": "yin-dii thîi dâai rúu-jàk khâ khun maa-jàak nǎi khá",
+          "english": "Nice to meet you. Where are you from?"
+        },
+        {
+          "thai": "ผมมาจากอังกฤษครับ",
+          "translit": "phǒm maa-jàak ang-grìt khráp",
+          "english": "I am from England."
+        },
+        {
+          "thai": "อ๋อ คนอังกฤษ ยินดีต้อนรับค่ะ",
+          "translit": "ǎw khon ang-grìt yin-dii dtâwn-ráp khâ",
+          "english": "Oh, an English person! Welcome."
+        },
+        {
+          "thai": "ขอบคุณครับ",
+          "translit": "khàawp-khun khráp",
+          "english": "Thank you."
+        }
+      ],
+      "visualStrategy": {
+        "onScreenGoal": "Support the roleplay recording with clean turn-taking.",
+        "teachingVisuals": [
+          "Meeting a new person at a coffee shop. The learner introduces themselves after a greeting."
+        ],
+        "teacherCues": [
+          "Record against the dialogue ladder.",
+          "Leave the right third camera-safe."
+        ],
+        "imageUsage": "text-only",
+        "rationale": "The dialogue itself is the teaching focus."
+      },
+      "assets": []
+    },
+    {
+      "id": "slide-08-recap",
+      "role": "recap",
+      "title": "Recap",
+      "estimatedSeconds": 28,
+      "layout": "recap-checklist",
+      "speakerNotes": [
+        "Look away and try: how do you ask someone's name in Thai? Say it before looking. คุณชื่ออะไร.",
+        "How do you say where you are from? ผม/ฉัน มาจาก + country.",
+        "What does คน mean? Person. How do you say 'Thai person'? คนไทย.",
+        "From lesson 1: how do you say thank you? ขอบคุณ. How do you respond to thanks? ไม่เป็นไร.",
+        "Tone check: ชื่อ has a falling tone — voice drops. มา has a mid tone — voice stays flat."
+      ],
+      "textBlocks": [
+        {
+          "id": "recap-list",
+          "kind": "recap-list",
+          "heading": "What you can now do",
+          "lines": [
+            "Look away and try: how do you ask someone's name in Thai? Say it before looking. คุณชื่ออะไร.",
+            "How do you say where you are from? ผม/ฉัน มาจาก + country.",
+            "What does คน mean? Person. How do you say 'Thai person'? คนไทย.",
+            "From lesson 1: how do you say thank you? ขอบคุณ. How do you respond to thanks? ไม่เป็นไร.",
+            "Tone check: ชื่อ has a falling tone — voice drops. มา has a mid tone — voice stays flat."
+          ]
+        }
+      ],
+      "thaiFocus": [],
+      "visualStrategy": {
+        "onScreenGoal": "Finish with a simple, memorable checklist.",
+        "teachingVisuals": [
+          "Look away and try: how do you ask someone's name in Thai? Say it before looking. คุณชื่ออะไร.",
+          "How do you say where you are from? ผม/ฉัน มาจาก + country.",
+          "What does คน mean? Person. How do you say 'Thai person'? คนไทย.",
+          "From lesson 1: how do you say thank you? ขอบคุณ. How do you respond to thanks? ไม่เป็นไร.",
+          "Tone check: ชื่อ has a falling tone — voice drops. มา has a mid tone — voice stays flat."
+        ],
+        "teacherCues": [
+          "Use this slide as the summary.",
+          "Keep the ending calm and uncluttered."
+        ],
+        "imageUsage": "text-only",
+        "rationale": "A recap slide should be compact and memorable."
+      },
+      "assets": []
+    },
+    {
+      "id": "slide-09-closing",
+      "role": "closing",
+      "title": "Closing",
+      "estimatedSeconds": 11,
+      "layout": "lesson-closing",
+      "speakerNotes": [
+        "By the end, the learner can greet, ask a name, give a name, and say where they are from in a compact polite exchange.",
+        "Next: First Contact and Courtesy continues."
+      ],
+      "textBlocks": [
+        {
+          "id": "closing-list",
+          "kind": "closing-list",
+          "heading": "Takeaway",
+          "lines": [
+            "By the end, the learner can greet, ask a name, give a name, and say where they are from in a compact polite exchange.",
+            "Next: First Contact and Courtesy continues."
+          ]
+        }
+      ],
+      "thaiFocus": [],
+      "visualStrategy": {
+        "onScreenGoal": "Give Nine a clean final slide to close the recording.",
+        "teachingVisuals": [
+          "By the end, the learner can greet, ask a name, give a name, and say where they are from in a compact polite exchange.",
+          "Next: First Contact and Courtesy continues."
+        ],
+        "teacherCues": [
+          "Use the closing as the final spoken wrap-up."
+        ],
+        "imageUsage": "text-only",
+        "rationale": "The closing slide is a presenter anchor, not a new teaching beat."
+      },
+      "assets": []
+    }
+  ]
+}

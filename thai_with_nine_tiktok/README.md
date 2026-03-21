@@ -23,7 +23,7 @@ Each generated script always includes:
 
 And also includes:
 
-- runtime profile metadata (`default`, `short`, `micro`)
+- runtime profile metadata (`default`, `overview`, `short`, `micro`)
 - template-driven prompt pack (repeatable structure)
 - transliteration validation report (PASS/FAIL)
 
@@ -199,6 +199,12 @@ You can tune:
 - number of teaching blocks
 - hook/setup/teaching/recap/CTA formulas
 - style tags for Nine’s delivery
+
+Series planning manifests live under `series/<slug>/`.
+
+- `series/<slug>/README.md` keeps the human-readable creative brief.
+- `series/<slug>/episodes.json` stores the structured episode map for future script writing.
+- The Thai classifier rollout uses `overview` for the opener and `short` for the deep-dive videos.
 
 ---
 

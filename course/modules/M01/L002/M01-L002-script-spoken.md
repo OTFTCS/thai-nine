@@ -1,97 +1,92 @@
-# Spoken Script — M01-L002
+# M01-L002 — Names and Countries — Spoken Script
 
-## Opening
-After hello, people often ask two things very quickly.
+## Section 1: Ask and give your name
 
-What is your name? And where are you from?
+After สวัสดี, the next thing someone usually asks is: คุณชื่ออะไร khun chûue à-rai — what is your name? Listen first: คุณชื่ออะไรครับ.
 
-Today we build those two identity moves in Thai, but we keep them small, practical, and repeatable.
+ชื่อ chûue means name. อะไร à-rai means what. So คุณชื่ออะไร literally asks: you, name, what?
 
----
+To answer, say ผมชื่อ phǒm chûue if you are male, or ฉันชื่อ chǎn chûue if you are female, then your name. ผมชื่อ Oliver ครับ.
 
-## Section 1 — Ask and answer the name question
-The first question is คุณชื่ออะไร | khun chûue à-rai | what is your name?
+Let's practise the full exchange. สวัสดีครับ — คุณชื่ออะไรครับ — ผมชื่อ Oliver ครับ. Three lines and you have introduced yourself.
 
-At beginner level, do not overthink the word order. Learn the whole question as one unit.
-
-Then answer with ฉันชื่อ... | chǎn chûue... | my name is ... or ผมชื่อ... | phǒm chûue... | my name is ... (male speaker).
-
-The good thing is that the pattern is stable. Only the name slot changes.
+**Drills:**
+- Listen and repeat: คุณชื่ออะไรครับ. Now say it yourself.
+- Pause-and-produce: I ask คุณชื่ออะไรครับ. Say your answer before I show it.
+- Substitution drill: say ผมชื่อ with your name, then ฉันชื่อ with your name.
 
 ---
 
-## Section 2 — Use ฉัน and ผม naturally
-Now make the pronoun choice practical.
+## Section 2: Say where you are from
 
-- ฉัน | chǎn | I
-- ผม | phǒm | I (male)
-- ฉันชื่อ... | chǎn chûue... | my name is ...
-- ผมชื่อ... | phǒm chûue... | my name is ... (male speaker)
+After your name, the next natural question is: where are you from? In Thai, you say มาจาก maa-jàak — come from.
 
-คน means person, and it is a useful support word in the background of this lesson because these are real-person introduction lines, not just labels on a page.
+ผมมาจากอังกฤษครับ phǒm maa-jàak ang-grìt khráp — I come from England. ฉันมาจากอเมริกาค่ะ chǎn maa-jàak à-mee-rí-kaa khâ — I come from America.
 
-The goal today is still not every possible nuance. The goal is to choose one clear beginner frame and say it confidently.
+ประเทศ bprà-thêet means country. ประเทศไทย bprà-thêet thai means Thailand. But in daily speech, Thai people often just say ไทย.
 
----
+So now you can do the whole introduction: สวัสดีครับ — ผมชื่อ Oliver ครับ — ผมมาจากอังกฤษครับ. Three lines and you have said hello, your name, and where you are from.
 
-## Section 3 — Say where you are from with มาจาก
-Before the country examples, learn ประเทศ | bprà-thêet | country.
-
-That word gives you the category. It tells you that ไทย, อังกฤษ, and อเมริกา belong together as country words.
-
-To say where you are from, Thai often uses มาจาก | maa-jàak | come from / be from.
-
-That gives you a strong beginner pattern:
-
-- ฉันมาจาก... | chǎn maa-jàak... | I am from ...
-- ผมมาจาก... | phǒm maa-jàak... | I am from ... (male)
-
-Add a small country set:
-
-- มาจากไทย | maa-jàak thai | be from Thailand
-- มาจากอังกฤษ | maa-jàak ang-grìt | be from England
-- มาจากอเมริกา | à-mee-rí-gaa | be from America
-
-Again, the sentence frame is the real lesson. The country slot is what changes.
+**Drills:**
+- Listen and repeat: ผมมาจากอังกฤษครับ. Now with อเมริกา.
+- Substitution drill: say มาจาก with อังกฤษ, now with อเมริกา, now with ไทย.
+- Response-building: I ask คุณมาจากไหนครับ. Say where you are from before I show the answer.
 
 ---
 
-## Section 4 — Build a full two-line self-introduction
-Now connect the old lesson and the new one.
+## Section 3: The word for person and putting it together
 
-Start with สวัสดี. Then say your name. Then say where you are from.
+One more useful word: คน khon means person. คนไทย khon thai means a Thai person. คนอังกฤษ khon ang-grìt means an English person.
 
-If you need to begin politely, you can still borrow ขอโทษ from the last lesson to get attention before your question.
+This is how Thai describes nationality — person plus country name. Simple and predictable.
 
-If you are checking that you heard the country correctly, ใช่ helps you confirm it.
+Now let's put everything together. After สวัสดี, you say your name with ชื่อ, then where you are from with มาจาก. If someone thanks you, you already know ขอบคุณ and ไม่เป็นไร from the last lesson.
 
-So the learner goal is not one isolated sentence. The goal is a compact social sequence that sounds friendly and complete.
+**Drills:**
+- Substitution drill: say คน + country. คนไทย — your turn. คนอังกฤษ — your turn.
+- Substitution drill (same format, different content): now use มาจาก + country.
+- Recall drill: without looking, how do you say 'thank you' from last lesson? Say it before I show.
 
 ---
 
-## Roleplay — First meeting
-A: สวัสดีค่ะ | sà-wàt-dii khâ | Hello.
+## Section 4: Pronunciation — the falling tone on ชื่อ
 
-B: สวัสดีครับ | sà-wàt-dii khráp | Hello.
+Let's train your ear again. In lesson 1 you heard the high tone on ครับ and the falling tone on ค่ะ. Now notice two more tones.
 
-A: ขอโทษค่ะ คุณชื่ออะไรคะ | khǎaw-thôot khâ khun chûue à-rai khá | Excuse me, what is your name?
+Listen: ชื่อ chûue. That is a falling tone — your voice starts high and drops. It sounds like the ค่ะ you already know. ชื่อ, ค่ะ — both falling.
 
-B: ผมชื่อแดนครับ | phǒm chûue Daen khráp | My name is Dan.
+Now listen: มา maa. That is a mid tone — your voice stays flat in the middle, no rise, no fall. And จาก jàak has a low tone — your voice dips down.
 
-A: มาจากประเทศอะไรคะ | maa-jàak bprà-thêet à-rai khá | What country are you from?
+Try the contrast: ชื่อ — falling, voice drops. มา — mid, voice stays flat. Can you feel the difference?
 
-B: ผมมาจากอังกฤษครับ | phǒm maa-jàak ang-grìt khráp | I am from England.
+You now know three tones: high (ครับ), falling (ชื่อ, ค่ะ), and mid (มา). We will keep adding more each lesson.
 
-A: อังกฤษใช่ไหมคะ | ang-grìt châi mái khá | England, right?
+**Drills:**
+- Tone echo: I say ชื่อ. Repeat with falling tone. Now มา. Repeat flat.
+- Minimal pair choice: I say two words. Which has the falling tone?
 
-B: ใช่ครับ | châi khráp | Yes.
+---
 
-A: ขอบคุณค่ะ | khàawp-khun khâ | Thank you.
+## Roleplay: Meeting a new person at a coffee shop
+
+**New person:** สวัสดีค่ะ คุณชื่ออะไรคะ — Hello! What is your name?
+
+**Learner (your turn):** สวัสดีครับ ผมชื่อ Oliver ครับ — Hello! My name is Oliver.
+
+**New person:** ยินดีที่ได้รู้จักค่ะ คุณมาจากไหนคะ — Nice to meet you. Where are you from?
+
+**Learner (your turn):** ผมมาจากอังกฤษครับ — I am from England.
+
+**New person:** อ๋อ คนอังกฤษ ยินดีต้อนรับค่ะ — Oh, an English person! Welcome.
+
+**Learner:** ขอบคุณครับ — Thank you.
 
 ---
 
 ## Recap
-- Learn the name question and answer as a pair.
-- Use ประเทศ to hear the country words as one category.
-- Use มาจาก to build your country statement.
-- Reuse สวัสดี, ขอโทษ, ใช่, and ขอบคุณ so the exchange sounds human and polite.
+
+- Look away and try: how do you ask someone's name? คุณชื่ออะไร.
+- How do you say where you are from? ผม/ฉัน มาจาก + country.
+- What does คน mean? Person. How do you say 'Thai person'? คนไทย.
+- From lesson 1: how do you say thank you? ขอบคุณ.
+- Tone check: ชื่อ has a falling tone. มา has a mid tone.

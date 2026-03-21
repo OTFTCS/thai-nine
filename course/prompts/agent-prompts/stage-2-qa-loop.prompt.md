@@ -4,6 +4,7 @@ Evaluate script for:
 2) pedagogical sequencing
 3) drill adequacy
 4) roleplay realism
-5) policy fields present
+5) conceptual anchor accuracy for high-risk concepts
+6) policy fields present
 If any check fails, output FAIL and required fixes.
 Hard gate: do not continue downstream until PASS.

@@ -3,15 +3,17 @@
 Result: PASS
 
 ## Checks
-- Layout clarity: PASS — each section has one clear teaching job, the overlays are limited, and the chosen layouts fit the material.
-- Camera-safe compliance: PASS — the lesson keeps the teaching content left-weighted and the visual notes consistently protect the right-third camera area.
-- Visual usefulness: PASS — this lesson is better as a text-first lesson, and the contrast-board / drill-stack / dialogue-ladder choices support teaching rather than decoration.
-- Spoken/visual alignment: PASS — the spoken explanation and the on-screen plans now match closely, especially for the repaired roleplay and the response-vs-softener distinction.
-- Scene pacing: PASS — four 36-second scenes with compact overlays are readable for this amount of content.
+- Layout clarity: PASS — the 12-slide deck keeps each beat focused, and the rewritten copy now fits the fixed L001 placement system more cleanly.
+- Camera-safe compliance: PASS — the teaching content remains left-weighted and the right-third recording zone stays protected.
+- Visual usefulness: PASS — this lesson is strongest as a text-first teaching deck, and the chosen card, ladder, and checklist layouts support teaching instead of decoration.
+- Spoken/visual alignment: PASS — the rewritten script now matches the slide logic more closely, especially for the courtesy “social job” framing and the polite-ending hierarchy.
+- Slide pacing: PASS — the denser teaching beats are now broken into smaller readable chunks that suit presenter-led recording.
+- Canva handoff quality: PASS — the Canva export uses locked backgrounds, editable text/image fields only, and explicit Thai run metadata plus theme-level Thai font mapping for `Noto Sans Thai Looped`.
 
 ## Edits made
-- No lesson-file changes required.
-- Regenerated stage 3 after correcting the deterministic remotion mapping so sections marked text-only stay text-only in `remotion.json`.
+- Regenerated stage 3 after the script rewrite.
+- Updated the Canva export path so Thai text runs write `th-TH` language metadata and explicit `latin`, `ea`, and `cs` typefaces for `Noto Sans Thai Looped`.
+- Updated the exported deck theme so Thai script maps to `Noto Sans Thai Looped` and the Latin theme font maps to `Open Sans`.
 
 ## Remaining concerns
 - None.

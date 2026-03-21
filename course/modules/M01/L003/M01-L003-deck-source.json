@@ -1,0 +1,575 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "M01-L003",
+  "sourceScript": "M01-L003-script-master.json",
+  "canvas": {
+    "width": 1920,
+    "height": 1080,
+    "leftTeachingFraction": 0.6667,
+    "rightCameraFraction": 0.3333,
+    "safeZoneLabel": "Right third reserved for recording / camera"
+  },
+  "theme": {
+    "id": "thai-nine-canva-bridge-v1",
+    "name": "Canva Bridge Deck",
+    "thaiFont": "Sarabun",
+    "latinFont": "Sarabun",
+    "backgroundColor": "#F5F7F8",
+    "rightZoneTint": "#DBE7EC",
+    "accentColors": [
+      "#355C7D",
+      "#7A8F54",
+      "#C96F4A"
+    ]
+  },
+  "slides": [
+    {
+      "id": "slide-01-opener",
+      "role": "opener",
+      "title": "Pronouns and Who Questions: Identify People in Simple Thai",
+      "estimatedSeconds": 12,
+      "layout": "lesson-opener",
+      "speakerNotes": [
+        "Open with the moment when someone points at another person and the learner needs to ask who that person is.",
+        "Use basic pronouns, introduce another person with คือ, and ask who someone is in a short controlled exchange."
+      ],
+      "textBlocks": [
+        {
+          "id": "opener-focus",
+          "kind": "bullet-list",
+          "heading": "Lesson focus",
+          "lines": [
+            "Learner can use basic pronouns and ask who someone is.",
+            "Point, identify, and ask who someone is in a mini-dialogue."
+          ]
+        }
+      ],
+      "thaiFocus": [],
+      "visualStrategy": {
+        "onScreenGoal": "Introduce the lesson clearly and set the recording tone.",
+        "teachingVisuals": [
+          "Pronouns and Who Questions: Identify People in Simple Thai",
+          "First Contact and Courtesy"
+        ],
+        "teacherCues": [
+          "Use the deck title as the recording opener.",
+          "Keep the right third clear."
+        ],
+        "imageUsage": "text-only",
+        "rationale": "The opener should establish identity and objective without visual clutter."
+      },
+      "assets": []
+    },
+    {
+      "id": "slide-02-objectives",
+      "role": "objectives",
+      "title": "What you will learn",
+      "estimatedSeconds": 16,
+      "layout": "objectives-list",
+      "speakerNotes": [
+        "Learner can use basic pronouns and ask who someone is.",
+        "Learner can recycle recent vocabulary while using identity question with ใคร in short controlled output.",
+        "Point, identify, and ask who someone is in a mini-dialogue.",
+        "Distinguish pronouns and who-questions in short exchanges."
+      ],
+      "textBlocks": [
+        {
+          "id": "objectives-list",
+          "kind": "bullet-list",
+          "heading": "Objectives",
+          "lines": [
+            "Learner can use basic pronouns and ask who someone is.",
+            "Learner can recycle recent vocabulary while using identity question with ใคร in short controlled output.",
+            "Point, identify, and ask who someone is in a mini-dialogue.",
+            "Distinguish pronouns and who-questions in short exchanges."
+          ]
+        }
+      ],
+      "thaiFocus": [],
+      "visualStrategy": {
+        "onScreenGoal": "Make the lesson goals visible before the teaching slides begin.",
+        "teachingVisuals": [
+          "Learner can use basic pronouns and ask who someone is.",
+          "Learner can recycle recent vocabulary while using identity question with ใคร in short controlled output.",
+          "Point, identify, and ask who someone is in a mini-dialogue.",
+          "Distinguish pronouns and who-questions in short exchanges."
+        ],
+        "teacherCues": [
+          "Pause briefly after each objective.",
+          "Keep the slide readable from a distance."
+        ],
+        "imageUsage": "text-only",
+        "rationale": "Objectives are clearer as cards than as decorative visuals."
+      },
+      "assets": []
+    },
+    {
+      "id": "slide-03-use-pronouns-as-practica",
+      "role": "teaching",
+      "title": "Use pronouns as practical speaker labels",
+      "estimatedSeconds": 37,
+      "layout": "contrast-board",
+      "speakerNotes": [
+        "Today we add a small set of pronouns, but we keep them practical. ฉัน chǎn and ผม phǒm are both ways to say I, while เขา khǎo points to another person as he or she.",
+        "Thai beginners often try to memorise a long pronoun chart. That is not the goal here. The goal is to know which word helps you identify yourself and which word helps you refer to someone else.",
+        "You already know the review question คุณชื่ออะไร khun chûue à-rai. Inside that full question, คุณ is the word for you, so the learner is already hearing pronouns in a useful pattern."
+      ],
+      "textBlocks": [
+        {
+          "id": "slide-03-use-pronouns-as-practica-triplets",
+          "kind": "triplet-list",
+          "heading": "Key language",
+          "lines": [
+            "ฉัน | chǎn | I",
+            "ผม | phǒm | I (male speaker)",
+            "เขา | khǎo | he / she",
+            "คุณชื่ออะไร | khun chûue à-rai | what is your name?"
+          ]
+        },
+        {
+          "id": "slide-03-use-pronouns-as-practica-practice",
+          "kind": "bullet-list",
+          "heading": "Practice",
+          "lines": [
+            "Point-and-say drill: teacher points to self or another person and learner chooses ฉัน, ผม, or เขา aloud.",
+            "Replacement drill: learner keeps the same sentence slot but swaps ฉัน / ผม / เขา depending on the speaker card."
+          ]
+        }
+      ],
+      "thaiFocus": [
+        {
+          "thai": "ฉัน",
+          "translit": "chǎn",
+          "english": "I"
+        },
+        {
+          "thai": "ผม",
+          "translit": "phǒm",
+          "english": "I (male speaker)"
+        },
+        {
+          "thai": "เขา",
+          "translit": "khǎo",
+          "english": "he / she"
+        },
+        {
+          "thai": "คุณชื่ออะไร",
+          "translit": "khun chûue à-rai",
+          "english": "what is your name?"
+        }
+      ],
+      "visualStrategy": {
+        "onScreenGoal": "Show self-versus-other pronouns as usable speaking roles, anchored by one familiar review question.",
+        "teachingVisuals": [
+          "Three speaker chips for ฉัน, ผม, and เขา with simple role labels underneath.",
+          "A review strip for คุณชื่ออะไร to show where คุณ naturally appears as you."
+        ],
+        "teacherCues": [
+          "Keep the contrast practical: self versus another person, not a full grammar table.",
+          "Reinforce that Thai often drops pronouns when context is obvious, but today we keep them visible for control."
+        ],
+        "imageUsage": "text-only",
+        "rationale": "Pronoun contrast is clearer as speaker-role cards than as photographs."
+      },
+      "assets": []
+    },
+    {
+      "id": "slide-04-use-to-introduce-and-ide",
+      "role": "teaching",
+      "title": "Use นี่คือ... to introduce and identify",
+      "estimatedSeconds": 33,
+      "layout": "dialogue-ladder",
+      "speakerNotes": [
+        "The next frame is นี่คือ... nîi kheuu.... A natural translation is this is ..., and Thai uses it to introduce a person or identify something in front of you.",
+        "The high-frequency word คือ kheuu is doing a linking job here. It connects the person or thing you are talking about with the name or identity that comes after it.",
+        "A common beginner mistake is to think คือ must always be translated word for word as is. It is better to hear the whole frame as an introducing pattern: นี่คือ..., เขาคือ..., or คุณคือ...ใช่ไหม."
+      ],
+      "textBlocks": [
+        {
+          "id": "slide-04-use-to-introduce-and-ide-triplets",
+          "kind": "triplet-list",
+          "heading": "Key language",
+          "lines": [
+            "นี่คือ... | nîi kheuu... | this is ...",
+            "เขาคือ... | khǎo kheuu... | he / she is ...",
+            "คุณคือ...ใช่ไหม | khun kheuu... châi mái | you are ... right?",
+            "ไม่ใช่ | mâi châi | no / not right"
+          ]
+        },
+        {
+          "id": "slide-04-use-to-introduce-and-ide-practice",
+          "kind": "bullet-list",
+          "heading": "Practice",
+          "lines": [
+            "Introduction drill: teacher points to a photo card and learner says นี่คือ... with the supplied name or role.",
+            "Confirmation drill: teacher says คุณคือ...ใช่ไหม and learner answers ใช่ or ไม่ใช่."
+          ]
+        }
+      ],
+      "thaiFocus": [
+        {
+          "thai": "นี่คือ...",
+          "translit": "nîi kheuu...",
+          "english": "this is ..."
+        },
+        {
+          "thai": "เขาคือ...",
+          "translit": "khǎo kheuu...",
+          "english": "he / she is ..."
+        },
+        {
+          "thai": "คุณคือ...ใช่ไหม",
+          "translit": "khun kheuu... châi mái",
+          "english": "you are ... right?"
+        },
+        {
+          "thai": "ไม่ใช่",
+          "translit": "mâi châi",
+          "english": "no / not right"
+        }
+      ],
+      "visualStrategy": {
+        "onScreenGoal": "Make the linking job of คือ visible through short identity frames, not through dense grammar notes.",
+        "teachingVisuals": [
+          "A three-rung ladder: นี่คือ..., เขาคือ..., คุณคือ...ใช่ไหม.",
+          "A small yes/no response chip showing ใช่ versus ไม่ใช่ after the confirmation question."
+        ],
+        "teacherCues": [
+          "Describe คือ as a linking word with a job, not as a direct dictionary translation only.",
+          "Keep the identity frame on screen while swapping only the final slot."
+        ],
+        "imageUsage": "real-image",
+        "rationale": "A simple real-world social image helps the learner understand that นี่คือ... is used to introduce a person standing there, not only to label objects."
+      },
+      "assets": [
+        {
+          "assetId": "slide-04-use-to-introduce-and-ide-asset-1",
+          "kind": "image",
+          "query": "two people introducing a third person in classroom",
+          "sourcePolicy": "internet-first",
+          "status": "fallback-text-only",
+          "sourceProvider": "none",
+          "fallbackReason": "No acceptable Openverse or Wikimedia asset could be downloaded automatically.",
+          "usageNotes": "A simple real-world social image helps the learner understand that นี่คือ... is used to introduce a person standing there, not only to label objects."
+        }
+      ]
+    },
+    {
+      "id": "slide-05-ask-who-someone-is-with",
+      "role": "teaching",
+      "title": "Ask who someone is with ใคร",
+      "estimatedSeconds": 31,
+      "layout": "image-anchored",
+      "speakerNotes": [
+        "Now we ask the new question: เขาคือใคร khǎo kheuu khrai. In natural English that is who is he or who is she, depending on context.",
+        "This is different from คุณชื่ออะไร. The name question asks for a name directly, but เขาคือใคร asks for identity first, often when you are looking at or hearing about another person.",
+        "A useful extension is คนนี้คือใคร khon níi kheuu khrai, who is this person? That sounds natural when you can point to someone or a photo in front of you."
+      ],
+      "textBlocks": [
+        {
+          "id": "slide-05-ask-who-someone-is-with-triplets",
+          "kind": "triplet-list",
+          "heading": "Key language",
+          "lines": [
+            "เขาคือใคร | khǎo kheuu khrai | who is he / she?",
+            "คนนี้คือใคร | khon níi kheuu khrai | who is this person?",
+            "ชื่อ | chûue | name",
+            "ใช่ | châi | yes / that is right"
+          ]
+        },
+        {
+          "id": "slide-05-ask-who-someone-is-with-practice",
+          "kind": "bullet-list",
+          "heading": "Practice",
+          "lines": [
+            "Picture cue drill: teacher shows a person card and learner asks เขาคือใคร or คนนี้คือใคร.",
+            "Repair drill: teacher gives a wrong identification and learner answers ไม่ใช่, then asks the who-question again."
+          ]
+        }
+      ],
+      "thaiFocus": [
+        {
+          "thai": "เขาคือใคร",
+          "translit": "khǎo kheuu khrai",
+          "english": "who is he / she?"
+        },
+        {
+          "thai": "คนนี้คือใคร",
+          "translit": "khon níi kheuu khrai",
+          "english": "who is this person?"
+        },
+        {
+          "thai": "ชื่อ",
+          "translit": "chûue",
+          "english": "name"
+        },
+        {
+          "thai": "ใช่",
+          "translit": "châi",
+          "english": "yes / that is right"
+        }
+      ],
+      "visualStrategy": {
+        "onScreenGoal": "Anchor the who-question to a visible person so the learner feels the difference between asking for a name and asking for identity.",
+        "teachingVisuals": [
+          "A photo-card frame on the left with the question เขาคือใคร above it.",
+          "A contrast strip below showing คุณชื่ออะไร versus เขาคือใคร."
+        ],
+        "teacherCues": [
+          "Stress the difference in target: name question versus identity question.",
+          "Use the image only as an anchor and keep the wording large and readable."
+        ],
+        "imageUsage": "real-image",
+        "rationale": "A single person photo or portrait card makes the who-question concrete and supports pointing-based practice."
+      },
+      "assets": [
+        {
+          "assetId": "slide-05-ask-who-someone-is-with-asset-1",
+          "kind": "image",
+          "query": "single person portrait simple background looking at camera",
+          "sourcePolicy": "internet-first",
+          "status": "fallback-text-only",
+          "sourceProvider": "none",
+          "fallbackReason": "No acceptable Openverse or Wikimedia asset could be downloaded automatically.",
+          "usageNotes": "A single person photo or portrait card makes the who-question concrete and supports pointing-based practice."
+        }
+      ]
+    },
+    {
+      "id": "slide-06-build-a-mini-identity-ex",
+      "role": "teaching",
+      "title": "Build a mini identity exchange with review",
+      "estimatedSeconds": 32,
+      "layout": "drill-stack",
+      "speakerNotes": [
+        "Now we connect the new lesson to the earlier first-contact material. You can greet, ask who someone is, and then confirm one more detail such as the country.",
+        "This is where review matters. We reuse ชื่อ chûue, ประเทศ bprà-thêet, ใช่ châi, and มาจากไทย maa-jàak thai so the learner builds a small network instead of isolated lesson boxes.",
+        "Notice the progression: first identify the person with คนนี้คือใคร or เขาคือใคร, then name the person, then confirm one more fact such as the country. That is how a real short conversation grows."
+      ],
+      "textBlocks": [
+        {
+          "id": "slide-06-build-a-mini-identity-ex-triplets",
+          "kind": "triplet-list",
+          "heading": "Key language",
+          "lines": [
+            "ขอโทษนะ | khǎaw-thôot ná | excuse me",
+            "คนนี้คือใคร | khon níi kheuu khrai | who is this person?",
+            "ประเทศ | bprà-thêet | country",
+            "เขามาจากไทย | khǎo maa-jàak thai | he / she is from Thailand"
+          ]
+        },
+        {
+          "id": "slide-06-build-a-mini-identity-ex-practice",
+          "kind": "bullet-list",
+          "heading": "Practice",
+          "lines": [
+            "Chain drill: learner says สวัสดี, asks คนนี้คือใคร, then follows with a country question or confirmation question.",
+            "Information-build drill: teacher reveals one detail at a time and learner turns it into an identity sentence or confirmation question."
+          ]
+        }
+      ],
+      "thaiFocus": [
+        {
+          "thai": "ขอโทษนะ",
+          "translit": "khǎaw-thôot ná",
+          "english": "excuse me"
+        },
+        {
+          "thai": "คนนี้คือใคร",
+          "translit": "khon níi kheuu khrai",
+          "english": "who is this person?"
+        },
+        {
+          "thai": "ประเทศ",
+          "translit": "bprà-thêet",
+          "english": "country"
+        },
+        {
+          "thai": "เขามาจากไทย",
+          "translit": "khǎo maa-jàak thai",
+          "english": "he / she is from Thailand"
+        }
+      ],
+      "visualStrategy": {
+        "onScreenGoal": "Show the conversation growing step by step from greeting to who-question to name and country follow-up.",
+        "teachingVisuals": [
+          "A four-step conversation stack with greeting, who-question, answer, and country follow-up.",
+          "A small country tag chip next to เขามาจากไทย to connect review from the previous lesson."
+        ],
+        "teacherCues": [
+          "Keep the dialogue build cumulative so the learner sees how older chunks stay alive.",
+          "Make the identity question visually dominant before the country follow-up appears."
+        ],
+        "imageUsage": "text-only",
+        "rationale": "The conversation build is clearer as a staged text ladder than as another photo."
+      },
+      "assets": []
+    },
+    {
+      "id": "slide-07-roleplay",
+      "role": "roleplay",
+      "title": "A learner arrives at a small Thai class and asks about another student.",
+      "estimatedSeconds": 35,
+      "layout": "roleplay-dialogue",
+      "speakerNotes": [
+        "A | สวัสดีค่ะ | sà-wàt-dii khâ | Hello.",
+        "B | สวัสดีครับ | sà-wàt-dii khráp | Hello.",
+        "A | ขอโทษนะคะ คนนี้คือใครคะ | khǎaw-thôot ná khá khon níi kheuu khrai khá | Excuse me, who is this person?",
+        "B | คนนี้คือไมค์ครับ | khon níi kheuu Mike khráp | This is Mike.",
+        "A | เขามาจากประเทศอะไรคะ | khǎo maa-jàak bprà-thêet à-rai khá | What country is he from?",
+        "B | เขามาจากอังกฤษครับ | khǎo maa-jàak ang-grìt khráp | He is from England.",
+        "A | อังกฤษใช่ไหมคะ | ang-grìt châi mái khá | England, right?",
+        "B | ใช่ครับ | châi khráp | Yes."
+      ],
+      "textBlocks": [
+        {
+          "id": "roleplay-dialogue",
+          "kind": "dialogue",
+          "heading": "Dialogue",
+          "lines": [
+            "A | สวัสดีค่ะ | sà-wàt-dii khâ | Hello.",
+            "B | สวัสดีครับ | sà-wàt-dii khráp | Hello.",
+            "A | ขอโทษนะคะ คนนี้คือใครคะ | khǎaw-thôot ná khá khon níi kheuu khrai khá | Excuse me, who is this person?",
+            "B | คนนี้คือไมค์ครับ | khon níi kheuu Mike khráp | This is Mike.",
+            "A | เขามาจากประเทศอะไรคะ | khǎo maa-jàak bprà-thêet à-rai khá | What country is he from?",
+            "B | เขามาจากอังกฤษครับ | khǎo maa-jàak ang-grìt khráp | He is from England."
+          ]
+        }
+      ],
+      "thaiFocus": [
+        {
+          "thai": "สวัสดีค่ะ",
+          "translit": "sà-wàt-dii khâ",
+          "english": "Hello."
+        },
+        {
+          "thai": "สวัสดีครับ",
+          "translit": "sà-wàt-dii khráp",
+          "english": "Hello."
+        },
+        {
+          "thai": "ขอโทษนะคะ คนนี้คือใครคะ",
+          "translit": "khǎaw-thôot ná khá khon níi kheuu khrai khá",
+          "english": "Excuse me, who is this person?"
+        },
+        {
+          "thai": "คนนี้คือไมค์ครับ",
+          "translit": "khon níi kheuu Mike khráp",
+          "english": "This is Mike."
+        },
+        {
+          "thai": "เขามาจากประเทศอะไรคะ",
+          "translit": "khǎo maa-jàak bprà-thêet à-rai khá",
+          "english": "What country is he from?"
+        },
+        {
+          "thai": "เขามาจากอังกฤษครับ",
+          "translit": "khǎo maa-jàak ang-grìt khráp",
+          "english": "He is from England."
+        },
+        {
+          "thai": "อังกฤษใช่ไหมคะ",
+          "translit": "ang-grìt châi mái khá",
+          "english": "England, right?"
+        },
+        {
+          "thai": "ใช่ครับ",
+          "translit": "châi khráp",
+          "english": "Yes."
+        }
+      ],
+      "visualStrategy": {
+        "onScreenGoal": "Support the roleplay recording with clean turn-taking.",
+        "teachingVisuals": [
+          "A learner arrives at a small Thai class and asks about another student."
+        ],
+        "teacherCues": [
+          "Record against the dialogue ladder.",
+          "Leave the right third camera-safe."
+        ],
+        "imageUsage": "text-only",
+        "rationale": "The dialogue itself is the teaching focus."
+      },
+      "assets": []
+    },
+    {
+      "id": "slide-08-recap",
+      "role": "recap",
+      "title": "Recap",
+      "estimatedSeconds": 19,
+      "layout": "recap-checklist",
+      "speakerNotes": [
+        "Use pronouns as speaking tools: ฉัน and ผม for yourself, เขา for another person.",
+        "Use นี่คือ... and เขาคือ... to introduce or identify, not as rigid word-for-word translations only.",
+        "Ask เขาคือใคร or คนนี้คือใคร when you want identity first, not just a name.",
+        "Reuse ชื่อ, ประเทศ, and earlier greeting material so the dialogue grows naturally."
+      ],
+      "textBlocks": [
+        {
+          "id": "recap-list",
+          "kind": "recap-list",
+          "heading": "What you can now do",
+          "lines": [
+            "Use pronouns as speaking tools: ฉัน and ผม for yourself, เขา for another person.",
+            "Use นี่คือ... and เขาคือ... to introduce or identify, not as rigid word-for-word translations only.",
+            "Ask เขาคือใคร or คนนี้คือใคร when you want identity first, not just a name.",
+            "Reuse ชื่อ, ประเทศ, and earlier greeting material so the dialogue grows naturally."
+          ]
+        }
+      ],
+      "thaiFocus": [],
+      "visualStrategy": {
+        "onScreenGoal": "Finish with a simple, memorable checklist.",
+        "teachingVisuals": [
+          "Use pronouns as speaking tools: ฉัน and ผม for yourself, เขา for another person.",
+          "Use นี่คือ... and เขาคือ... to introduce or identify, not as rigid word-for-word translations only.",
+          "Ask เขาคือใคร or คนนี้คือใคร when you want identity first, not just a name.",
+          "Reuse ชื่อ, ประเทศ, and earlier greeting material so the dialogue grows naturally."
+        ],
+        "teacherCues": [
+          "Use this slide as the summary.",
+          "Keep the ending calm and uncluttered."
+        ],
+        "imageUsage": "text-only",
+        "rationale": "A recap slide should be compact and memorable."
+      },
+      "assets": []
+    },
+    {
+      "id": "slide-09-closing",
+      "role": "closing",
+      "title": "Closing",
+      "estimatedSeconds": 10,
+      "layout": "lesson-closing",
+      "speakerNotes": [
+        "By the end, the learner can use ฉัน, ผม, and เขา practically, introduce someone with นี่คือ..., and ask เขาคือใคร without freezing.",
+        "Next: First Contact and Courtesy continues."
+      ],
+      "textBlocks": [
+        {
+          "id": "closing-list",
+          "kind": "closing-list",
+          "heading": "Takeaway",
+          "lines": [
+            "By the end, the learner can use ฉัน, ผม, and เขา practically, introduce someone with นี่คือ..., and ask เขาคือใคร without freezing.",
+            "Next: First Contact and Courtesy continues."
+          ]
+        }
+      ],
+      "thaiFocus": [],
+      "visualStrategy": {
+        "onScreenGoal": "Give Nine a clean final slide to close the recording.",
+        "teachingVisuals": [
+          "By the end, the learner can use ฉัน, ผม, and เขา practically, introduce someone with นี่คือ..., and ask เขาคือใคร without freezing.",
+          "Next: First Contact and Courtesy continues."
+        ],
+        "teacherCues": [
+          "Use the closing as the final spoken wrap-up."
+        ],
+        "imageUsage": "text-only",
+        "rationale": "The closing slide is a presenter anchor, not a new teaching beat."
+      },
+      "assets": []
+    }
+  ]
+}

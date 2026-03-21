@@ -1,0 +1,284 @@
+{
+  "series": {
+    "slug": "thai-classifiers",
+    "title": "Thai Classifier Series",
+    "standaloneFromCourse": true,
+    "creativeGoal": "Maximize retention and shareability while teaching high-utility Thai classifiers with minimal filler.",
+    "wave1Classifiers": ["อัน", "คน", "ตัว", "ใบ", "เล่ม", "คัน", "เครื่อง", "ลูก", "ชิ้น", "แก้ว", "ขวด"],
+    "wave2Reserve": ["หลัง", "คู่", "ห้อง", "ฉบับ", "ครั้ง", "ชุด"]
+  },
+  "runtimeContract": {
+    "standardEpisodeSeconds": {
+      "min": 70,
+      "ideal": 85,
+      "max": 100
+    },
+    "overviewEpisodeSeconds": {
+      "min": 110,
+      "ideal": 125,
+      "max": 140
+    },
+    "hardMaxSeconds": 180,
+    "ctaMaxSeconds": 8
+  },
+  "globalRules": [
+    "Start with the contrast or mistake inside the first 2 seconds.",
+    "No greeting, branding intro, or 'today we're learning' opener.",
+    "Give the rule in one sentence, then move straight into examples.",
+    "Keep examples short, concrete, and visual.",
+    "Show every Thai example with a literal word-for-word gloss on screen as well as the natural meaning.",
+    "Use one challenge beat per video so viewers choose the classifier themselves.",
+    "Do not repeat the basic classifier explanation after episode 1.",
+    "No explanation stretch should run longer than 10 seconds without a concrete example.",
+    "Keep the English framing plain and practical."
+  ],
+  "episodes": [
+    {
+      "episode": 1,
+      "slug": "overview-beyond-counting",
+      "title": "Why Thai Says 'Water Two Bottles'",
+      "template": "contrast-hook",
+      "runtimeProfile": "overview",
+      "targetSeconds": {
+        "min": 110,
+        "ideal": 125,
+        "max": 140
+      },
+      "hook": "Direct translation gives you broken Thai. The memory trick is to read the correct Thai back in weird literal English.",
+      "openingContrast": "Show the three bad direct-translation attempts with red X marks first, ask 'What was wrong with these sentences?', then replace them with ขอน้ำเปล่าสองขวด, ผมชอบหนังสือเล่มนี้, and มันเป็นหมาตัวใหญ่มาก before naming the rule.",
+      "ruleLine": "A classifier is the extra word Thai uses to show what kind of thing the noun is, and it appears in counting, in pointing phrases, and in descriptions.",
+      "focus": "Teach classifiers from zero through bad-direct-translation corrections, literal word-for-word glosses, and practical use cases instead of previewing the whole arc.",
+      "openingMistakes": [
+        { "spoken": "kaaw 2 naam bplao", "intendedMeaning": "Please can I have 2 waters", "correctionThai": "ขอน้ำเปล่าสองขวด", "correctionEnglish": "Please can I have 2 bottles of water" },
+        { "spoken": "pom chawp nangseu nii", "intendedMeaning": "I like this book", "correctionThai": "ผมชอบหนังสือเล่มนี้", "correctionEnglish": "I like this book" },
+        { "spoken": "man bpen maa yai maak", "intendedMeaning": "That's a big dog", "correctionThai": "มันเป็นหมาตัวใหญ่มาก", "correctionEnglish": "That's a very big dog" }
+      ],
+      "useCaseExamples": [
+        { "thai": "ขอน้ำเปล่าสองขวด", "english": "two bottles of water", "classifier": "ขวด", "function": "counting" },
+        { "thai": "เห็นแมวสี่ตัว", "english": "I see four cats", "classifier": "ตัว", "function": "counting" },
+        { "thai": "ผมชอบหนังสือเล่มนี้", "english": "I like this book", "classifier": "เล่ม", "function": "demonstrative" },
+        { "thai": "หมาตัวใหญ่", "english": "big dog", "classifier": "ตัว", "function": "descriptive" },
+        { "thai": "หนังสือเล่มนั้น", "english": "that book", "classifier": "เล่ม", "function": "demonstrative" },
+        { "thai": "หนังสือเล่มใหญ่", "english": "big book", "classifier": "เล่ม", "function": "descriptive" },
+        { "thai": "โทรศัพท์เครื่องนี้", "english": "this phone", "classifier": "เครื่อง", "function": "demonstrative" }
+      ],
+      "challenge": {
+        "prompt": "Quick check: how would you say 'four dogs'?",
+        "answerThai": "หมาสี่ตัว",
+        "answerEnglish": "four dogs"
+      },
+      "transferCheck": {
+        "prompt": "End on a new phrase: how would you say 'this phone'?",
+        "answerThai": "โทรศัพท์เครื่องนี้",
+        "answerEnglish": "this phone"
+      },
+      "cta": "Follow and stay tuned for in-depth videos on the most-used classifiers in Thai."
+    },
+    {
+      "episode": 2,
+      "slug": "people-vs-animals",
+      "title": "คน vs ตัว",
+      "template": "contrast-hook",
+      "runtimeProfile": "short",
+      "targetSeconds": {
+        "min": 70,
+        "ideal": 85,
+        "max": 100
+      },
+      "hook": "Why is one cat not counted like one person in Thai?",
+      "openingContrast": "Flash between one student and one cat before naming the rule.",
+      "ruleLine": "Use คน for people and ตัว for animals or body-shaped nouns.",
+      "focus": "Make the people-vs-animal split feel automatic.",
+      "examples": [
+        { "thai": "นักเรียนหนึ่งคน", "english": "one student", "classifier": "คน" },
+        { "thai": "ครูสองคน", "english": "two teachers", "classifier": "คน" },
+        { "thai": "แมวหนึ่งตัว", "english": "one cat", "classifier": "ตัว" },
+        { "thai": "หมาสองตัว", "english": "two dogs", "classifier": "ตัว" },
+        { "thai": "ตุ๊กตาหนึ่งตัว", "english": "one doll", "classifier": "ตัว" }
+      ],
+      "challenge": {
+        "prompt": "What about 'one fish'?",
+        "answerThai": "ปลาหนึ่งตัว",
+        "answerEnglish": "one fish"
+      },
+      "transferCheck": {
+        "prompt": "New noun at the end: 'one friend' should be what?",
+        "answerThai": "เพื่อนหนึ่งคน",
+        "answerEnglish": "one friend"
+      },
+      "cta": "Comment a noun and I'll tell you if it takes คน or ตัว."
+    },
+    {
+      "episode": 3,
+      "slug": "general-object-an",
+      "title": "อัน",
+      "template": "contrast-hook",
+      "runtimeProfile": "short",
+      "targetSeconds": {
+        "min": 70,
+        "ideal": 85,
+        "max": 100
+      },
+      "hook": "If you use อัน for everything, Thai will notice fast.",
+      "openingContrast": "Show one remote, one cat, and one phone together before naming which one actually takes อัน.",
+      "ruleLine": "Use อัน for many small general objects, but not for people, animals, or nouns with a strong specific classifier.",
+      "focus": "Give viewers a useful fallback without turning it into a fake rule for everything.",
+      "examples": [
+        { "thai": "รีโมตหนึ่งอัน", "english": "one remote", "classifier": "อัน" },
+        { "thai": "ไม้หนึ่งอัน", "english": "one stick", "classifier": "อัน" },
+        { "thai": "ค้อนหนึ่งอัน", "english": "one hammer", "classifier": "อัน" }
+      ],
+      "challenge": {
+        "prompt": "Which one sounds right: แมวหนึ่งอัน or แมวหนึ่งตัว?",
+        "answerThai": "แมวหนึ่งตัว",
+        "answerEnglish": "one cat"
+      },
+      "transferCheck": {
+        "prompt": "New noun at the end: 'one book' should be what, not อัน?",
+        "answerThai": "หนังสือหนึ่งเล่ม",
+        "answerEnglish": "one book"
+      },
+      "cta": "Comment a noun and I'll tell you if อัน works or not."
+    },
+    {
+      "episode": 4,
+      "slug": "flat-vs-bound",
+      "title": "ใบ vs เล่ม",
+      "template": "contrast-hook",
+      "runtimeProfile": "short",
+      "targetSeconds": {
+        "min": 70,
+        "ideal": 85,
+        "max": 100
+      },
+      "hook": "A ticket and a book are not the same kind of 'one' in Thai.",
+      "openingContrast": "Show ticket vs book as a pure visual contrast before explaining flat items vs bound items.",
+      "ruleLine": "Use ใบ for flat paper-like items and เล่ม for books or bound items.",
+      "focus": "Teach the visual split fast enough that viewers can guess the classifier on sight.",
+      "examples": [
+        { "thai": "ตั๋วหนึ่งใบ", "english": "one ticket", "classifier": "ใบ" },
+        { "thai": "บัตรหนึ่งใบ", "english": "one card", "classifier": "ใบ" },
+        { "thai": "ใบเสร็จหนึ่งใบ", "english": "one receipt", "classifier": "ใบ" },
+        { "thai": "หนังสือหนึ่งเล่ม", "english": "one book", "classifier": "เล่ม" },
+        { "thai": "สมุดหนึ่งเล่ม", "english": "one notebook", "classifier": "เล่ม" },
+        { "thai": "พาสปอร์ตหนึ่งเล่ม", "english": "one passport", "classifier": "เล่ม" }
+      ],
+      "challenge": {
+        "prompt": "Which one is 'one notebook'?",
+        "answerThai": "สมุดหนึ่งเล่ม",
+        "answerEnglish": "one notebook"
+      },
+      "transferCheck": {
+        "prompt": "Finish on a new noun: 'one queue ticket' should be what?",
+        "answerThai": "บัตรคิวหนึ่งใบ",
+        "answerEnglish": "one queue ticket"
+      },
+      "cta": "Save this if ใบ and เล่ม always trip you up."
+    },
+    {
+      "episode": 5,
+      "slug": "vehicles-vs-machines",
+      "title": "คัน vs เครื่อง",
+      "template": "contrast-hook",
+      "runtimeProfile": "short",
+      "targetSeconds": {
+        "min": 70,
+        "ideal": 85,
+        "max": 100
+      },
+      "hook": "A car and a phone do not use the same classifier.",
+      "openingContrast": "Cut from one car to one phone and force the split before any explanation.",
+      "ruleLine": "Use คัน for vehicles and เครื่อง for machines or devices.",
+      "focus": "Lock in transport vs device logic with highly familiar nouns.",
+      "examples": [
+        { "thai": "รถหนึ่งคัน", "english": "one car", "classifier": "คัน" },
+        { "thai": "จักรยานหนึ่งคัน", "english": "one bicycle", "classifier": "คัน" },
+        { "thai": "มอเตอร์ไซค์หนึ่งคัน", "english": "one motorbike", "classifier": "คัน" },
+        { "thai": "โทรศัพท์หนึ่งเครื่อง", "english": "one phone", "classifier": "เครื่อง" },
+        { "thai": "คอมพิวเตอร์หนึ่งเครื่อง", "english": "one computer", "classifier": "เครื่อง" },
+        { "thai": "ตู้เย็นหนึ่งเครื่อง", "english": "one refrigerator", "classifier": "เครื่อง" }
+      ],
+      "challenge": {
+        "prompt": "What classifier should you use for 'one laptop'?",
+        "answerThai": "แล็ปท็อปหนึ่งเครื่อง",
+        "answerEnglish": "one laptop"
+      },
+      "transferCheck": {
+        "prompt": "New noun to end: 'one taxi' should be what?",
+        "answerThai": "แท็กซี่หนึ่งคัน",
+        "answerEnglish": "one taxi"
+      },
+      "cta": "Comment the weirdest vehicle or gadget noun you want checked."
+    },
+    {
+      "episode": 6,
+      "slug": "whole-vs-piece",
+      "title": "ลูก vs ชิ้น",
+      "template": "contrast-hook",
+      "runtimeProfile": "short",
+      "targetSeconds": {
+        "min": 70,
+        "ideal": 85,
+        "max": 100
+      },
+      "hook": "One orange and one piece of cake count differently.",
+      "openingContrast": "Show a whole fruit next to a cake slice before naming the classifiers.",
+      "ruleLine": "Use ลูก for round or whole items like fruit and balls, and ชิ้น for pieces, slices, or portions.",
+      "focus": "Make food and market Thai feel instantly usable.",
+      "examples": [
+        { "thai": "ส้มหนึ่งลูก", "english": "one orange", "classifier": "ลูก" },
+        { "thai": "มะม่วงสองลูก", "english": "two mangoes", "classifier": "ลูก" },
+        { "thai": "ลูกบอลหนึ่งลูก", "english": "one ball", "classifier": "ลูก" },
+        { "thai": "เค้กหนึ่งชิ้น", "english": "one piece of cake", "classifier": "ชิ้น" },
+        { "thai": "พิซซ่าหนึ่งชิ้น", "english": "one slice of pizza", "classifier": "ชิ้น" },
+        { "thai": "ขนมปังหนึ่งชิ้น", "english": "one piece of bread", "classifier": "ชิ้น" }
+      ],
+      "challenge": {
+        "prompt": "What about 'one watermelon'?",
+        "answerThai": "แตงโมหนึ่งลูก",
+        "answerEnglish": "one watermelon"
+      },
+      "transferCheck": {
+        "prompt": "End with a new food noun: 'one piece of salmon' should be what?",
+        "answerThai": "ปลาแซลมอนหนึ่งชิ้น",
+        "answerEnglish": "one piece of salmon"
+      },
+      "cta": "Comment a food noun and I'll tell you if it's ลูก or ชิ้น."
+    },
+    {
+      "episode": 7,
+      "slug": "drink-units",
+      "title": "แก้ว vs ขวด",
+      "template": "contrast-hook",
+      "runtimeProfile": "short",
+      "targetSeconds": {
+        "min": 70,
+        "ideal": 85,
+        "max": 100
+      },
+      "hook": "Same water, different classifier.",
+      "openingContrast": "Put one glass of water and one bottle of water on screen at the same time.",
+      "ruleLine": "Use แก้ว when you're talking about a glass serving and ขวด when you're talking about a bottle.",
+      "focus": "Finish the arc with a classifier pair viewers can use in cafes, shops, and daily life immediately.",
+      "examples": [
+        { "thai": "น้ำหนึ่งแก้ว", "english": "one glass of water", "classifier": "แก้ว" },
+        { "thai": "กาแฟหนึ่งแก้ว", "english": "one cup of coffee", "classifier": "แก้ว" },
+        { "thai": "ชาไทยหนึ่งแก้ว", "english": "one glass of Thai tea", "classifier": "แก้ว" },
+        { "thai": "น้ำหนึ่งขวด", "english": "one bottle of water", "classifier": "ขวด" },
+        { "thai": "โค้กหนึ่งขวด", "english": "one bottle of Coke", "classifier": "ขวด" },
+        { "thai": "น้ำผลไม้หนึ่งขวด", "english": "one bottle of juice", "classifier": "ขวด" }
+      ],
+      "challenge": {
+        "prompt": "In a cafe, how would you say 'one iced coffee'?",
+        "answerThai": "กาแฟเย็นหนึ่งแก้ว",
+        "answerEnglish": "one iced coffee"
+      },
+      "transferCheck": {
+        "prompt": "New noun at the end: in a shop, what is 'one bottle of milk'?",
+        "answerThai": "นมหนึ่งขวด",
+        "answerEnglish": "one bottle of milk"
+      },
+      "cta": "If you want wave 2 classifiers, comment 'part 2'."
+    }
+  ]
+}

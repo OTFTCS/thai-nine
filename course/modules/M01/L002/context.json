@@ -9,74 +9,95 @@
       "thai": "สวัสดี",
       "translit": "sà-wàt-dii",
       "english": "hello",
+      "type": "word",
       "vocabId": "v-c9337e2739"
     },
     {
       "thai": "สวัสดีครับ",
       "translit": "sà-wàt-dii khráp",
       "english": "hello (male speaker)",
+      "type": "chunk",
       "vocabId": "v-e653eb5319"
     },
     {
       "thai": "สวัสดีค่ะ",
       "translit": "sà-wàt-dii khâ",
       "english": "hello (female speaker)",
+      "type": "chunk",
       "vocabId": "v-bccbe506b3"
     },
     {
       "thai": "ขอบคุณ",
       "translit": "khàawp-khun",
       "english": "thank you",
+      "type": "word",
       "vocabId": "v-217b46aa5a"
     },
     {
       "thai": "ขอโทษ",
       "translit": "khǎaw-thôot",
       "english": "excuse me / sorry",
+      "type": "word",
       "vocabId": "v-6fce5e8c2c"
     },
     {
       "thai": "ไม่เป็นไร",
       "translit": "mâi bpen rai",
       "english": "it is okay / no problem",
+      "type": "chunk",
+      "notes": "Useful response after thanks or a small apology. Teach as a whole chunk first.",
       "vocabId": "v-03cc3fe123"
     },
     {
       "thai": "ครับ",
       "translit": "khráp",
       "english": "male polite ending",
+      "type": "word",
       "vocabId": "v-a34b9ddfd4"
     },
     {
       "thai": "ค่ะ",
       "translit": "khâ",
       "english": "female statement ending",
+      "type": "word",
       "vocabId": "v-e5c357ab24"
     },
     {
       "thai": "คะ",
       "translit": "khá",
       "english": "female question ending",
+      "type": "word",
       "vocabId": "v-8637eb381c"
     },
     {
       "thai": "ใช่",
       "translit": "châi",
       "english": "yes / that is right",
+      "type": "word",
       "vocabId": "v-f40371ec59"
     },
     {
       "thai": "ไม่ใช่",
       "translit": "mâi châi",
       "english": "no / not right",
+      "type": "chunk",
       "vocabId": "v-cda55f5b5e"
+    },
+    {
+      "thai": "ครับ",
+      "translit": "khráp",
+      "english": "male polite ending (high tone)",
+      "type": "word",
+      "notes": "Pronunciation focus: high tone rises sharply upward.",
+      "vocabId": "v-a34b9ddfd4"
     }
   ],
   "knownGrammar": [
     "Explain what ครับ, ค่ะ, and คะ do so the learner does not memorize them as random decoration.",
     "Give the learner a small response toolkit so a first encounter can continue instead of stopping at one memorised line.",
+    "Introduce the learner to the idea that Thai has tones that change meaning, and train their ear on two key contrasts from this lesson.",
     "Teach the core greeting and show that politeness is built into the line, not added as an afterthought.",
-    "Teach the two highest-value courtesy phrases and explain that one form repairs the interaction while the other closes it warmly."
+    "Teach the highest-value courtesy phrases and show that each one has a different social job in the interaction."
   ],
   "reviewBuckets": [
     {
@@ -94,24 +115,28 @@
           "thai": "สวัสดี",
           "translit": "sà-wàt-dii",
           "english": "hello",
+          "type": "word",
           "vocabId": "v-c9337e2739"
         },
         {
           "thai": "สวัสดีครับ",
           "translit": "sà-wàt-dii khráp",
           "english": "hello (male speaker)",
+          "type": "chunk",
           "vocabId": "v-e653eb5319"
         },
         {
           "thai": "สวัสดีค่ะ",
           "translit": "sà-wàt-dii khâ",
           "english": "hello (female speaker)",
+          "type": "chunk",
           "vocabId": "v-bccbe506b3"
         },
         {
           "thai": "ขอบคุณ",
           "translit": "khàawp-khun",
           "english": "thank you",
+          "type": "word",
           "vocabId": "v-217b46aa5a"
         }
       ]

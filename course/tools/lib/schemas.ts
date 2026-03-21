@@ -11,7 +11,23 @@ export const SCRIPT_MASTER_SCHEMA_KEYS = [
   "policies",
 ] as const;
 
-export const REMOTION_SCHEMA_KEYS = ["schemaVersion", "lessonId", "sourceScript", "scenes"] as const;
+export const DECK_SOURCE_SCHEMA_KEYS = [
+  "schemaVersion",
+  "lessonId",
+  "sourceScript",
+  "canvas",
+  "theme",
+  "slides",
+] as const;
+
+export const CANVA_CONTENT_SCHEMA_KEYS = [
+  "schemaVersion",
+  "lessonId",
+  "sourceDeck",
+  "layoutContract",
+  "theme",
+  "slides",
+] as const;
 
 export const PDF_SCHEMA_KEYS = ["schemaVersion", "lessonId", "title", "sections", "drills", "answerKey"] as const;
 

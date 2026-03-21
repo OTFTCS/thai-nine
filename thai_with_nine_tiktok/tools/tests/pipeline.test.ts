@@ -38,6 +38,26 @@ test("script generator outputs required sections", () => {
   assert.equal(script.transliterationValidation.ok, true);
 });
 
+test("script generator keeps every lexeme when a brief exceeds nine examples", () => {
+  const lexemes = Array.from({ length: 11 }, (_, index) => ({
+    thai: `คำที่ ${index + 1}`,
+    translit: `kham-thîi ${index + 1} mâak`,
+    english: `term ${index + 1}`,
+  }));
+
+  const script = generateScriptFromBrief({
+    topic: "Classifier overview pack",
+    goals: ["preview the classifier set", "keep every example visible"],
+    runtimeProfile: "default",
+    lexemes,
+  });
+
+  const emittedExamples = script.sections.teachingBlocks.flatMap((block) => block.examples.map((example) => example.thai));
+
+  assert.equal(emittedExamples.length, lexemes.length);
+  assert.deepEqual(emittedExamples, lexemes.map((lexeme) => lexeme.thai));
+});
+
 test("post-production parser converts SRT to remotion data", () => {
   const transcriptPath = "thai_with_nine_tiktok/samples/transcript-sample.srt";
   const segments = parseTranscriptFile(transcriptPath, 30);

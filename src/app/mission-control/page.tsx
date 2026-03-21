@@ -36,7 +36,7 @@ type Snapshot = {
   todos: { lessonId: string; priority: "high" | "medium"; task: string }[];
   agentBoard: Record<string, string[]>;
   requiredArtifacts: string[];
-  renders: { label: string; relPath: string; exists: boolean; url: string }[];
+  decks: { label: string; relPath: string; exists: boolean; url: string }[];
 };
 
 const REFRESH_MS = 3500;
@@ -112,28 +112,22 @@ export default function MissionControlPage() {
         </section>
 
         <section className="grid xl:grid-cols-4 gap-4">
-          <Panel title="Remotion Previews">
+          <Panel title="PPTX Decks">
             <div className="space-y-2">
-              {(data?.renders || []).map((r) => (
-                <div key={r.relPath} className="rounded-lg border border-slate-700 bg-slate-800/50 p-3">
-                  <p className="text-sm font-medium">{r.label}</p>
-                  <p className="text-xs text-slate-400 mb-2">{r.relPath}</p>
-                  {r.exists ? (
+              {(data?.decks || []).map((deck) => (
+                <div key={deck.relPath} className="rounded-lg border border-slate-700 bg-slate-800/50 p-3">
+                  <p className="text-sm font-medium">{deck.label}</p>
+                  <p className="text-xs text-slate-400 mb-2">{deck.relPath}</p>
+                  {deck.exists ? (
                     <div className="space-y-2">
                       <a
-                        href={r.url}
+                        href={deck.url}
                         target="_blank"
                         rel="noreferrer"
                         className="text-xs inline-block rounded border border-emerald-500/40 bg-emerald-500/10 text-emerald-200 px-2 py-1 hover:bg-emerald-500/20"
                       >
-                        Open video
+                        Download deck
                       </a>
-                      <video
-                        controls
-                        preload="metadata"
-                        className="w-full rounded border border-slate-700 bg-black"
-                        src={r.url}
-                      />
                     </div>
                   ) : (
                     <span className="text-xs text-slate-500">Not rendered yet</span>

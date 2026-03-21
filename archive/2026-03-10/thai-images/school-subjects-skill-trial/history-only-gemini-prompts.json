@@ -1,0 +1,21 @@
+{
+  "title": "School Subjects in Thai",
+  "slug": "school-subjects-in-thai",
+  "imageProvider": "gemini-flash-image",
+  "modelEnv": "GEMINI_IMAGE_MODEL",
+  "resolvedModel": "gemini-3.1-flash-image-preview",
+  "styleVersion": "poster-v2",
+  "artDir": "art",
+  "slides": [
+    {
+      "index": 6,
+      "kind": "teaching-single",
+      "image": "art/06.png",
+      "outputPath": "art/06.png",
+      "sourcePrompt": "A clean educational illustration of a school history lesson: an old history book, an aged map, a pottery fragment or historical artefact, and a subtle ancient temple silhouette in the background, no text.",
+      "prompt": "Create polished digital illustration art for a Thai learning carousel. This image will be placed inside a centered 2:3 frame with teaching text below, so keep the visual composition clean and top-heavy. Use a premium friendly educational style, soft natural lighting, gentle depth, clean shapes, subtle texture, and a simple uncluttered background. The main subject must fill most of the frame without being cropped awkwardly. Avoid cut-off heads, missing limbs, tiny props, chaotic scenes, or busy backgrounds. No text, letters, numbers, captions, logos, packaging text, signs, UI, speech bubbles, or watermarks. A clean educational illustration of a school history lesson: an old history book, an aged map, a pottery fragment or historical artefact, and a subtle ancient temple silhouette in the background, no text. Use a warm classroom or museum-study still life with an old history book, an aged map, a pottery fragment or historical artefact, and a subtle ancient temple silhouette in the background. Avoid fantasy scroll clichés, battle scenes, flags, or portraits of famous people. Prefer a classroom-object still life or mini learning scene over abstract symbols. Keep the concept obvious and literal so beginners can understand it quickly.",
+      "promptReviewStatus": "pending",
+      "promptNotes": ""
+    }
+  ]
+}

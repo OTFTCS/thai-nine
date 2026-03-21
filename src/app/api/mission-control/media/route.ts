@@ -28,6 +28,9 @@ function contentTypeFor(file: string) {
   if (file.endsWith(".json")) return "application/json";
   if (file.endsWith(".md")) return "text/markdown; charset=utf-8";
   if (file.endsWith(".pdf")) return "application/pdf";
+  if (file.endsWith(".pptx")) {
+    return "application/vnd.openxmlformats-officedocument.presentationml.presentation";
+  }
   return "application/octet-stream";
 }
 

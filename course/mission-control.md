@@ -7,7 +7,7 @@ Use this for:
 - module/lesson progress
 - artifact completeness
 - to-do queue
-- remotion previews
+- PPTX deck links
 - runlog + git status
 
 For command-line operations, use:

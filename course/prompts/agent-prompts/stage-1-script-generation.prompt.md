@@ -54,16 +54,23 @@ You will be given:
 - the lesson id
 - the full blueprint row for the target lesson
 - `context.json`
+- lesson research notes from the lesson directory when they already exist:
+  - `scope-research.md`
+  - `usage-research.md`
+  - `visual-research.md`
+  - `explanation-research.md`
 - exemplar lesson files from previously produced lessons
 - `course/transliteration-policy.md`
 - `course/schemas/script-master.schema.json`
-- `course/schemas/remotion.schema.json`
-- the current `thaiwith-nine-remotion/src/SubtitleVideo.tsx` layout
+- `course/schemas/deck-source.schema.json`
+- the current PPTX design system in `course/Start with L001 and Review Uploaded Files/design_system.py`
 
 Treat these as binding:
 - schema is binding
 - transliteration policy is binding
 - context review buckets are binding when they contain reusable prior material
+- research notes are binding once they exist; if they do not exist yet, write them before or alongside stage-1 authoring and use them to lock scope, conceptual anchors, and visual simplification decisions
+- `explanation-research.md` is binding only for the selected high-risk concepts it covers; use it to sharpen understanding, not to import another teacher's voice
 - exemplars are style references, not content to copy
 
 ## Output contract
@@ -159,9 +166,9 @@ Write a clean teacher-facing narration script that:
 
 ### 4. `script-visual.md`
 
-Write a visual script for the remotion lesson.
+Write a visual script for the PPTX lesson deck.
 
-The final lesson video is **16:9** and the **right third is reserved for Nine's floating-head video**.
+The final lesson presentation is **16:9** and the **right third is reserved for Nine's camera / recording space**.
 
 That means:
 - all primary teaching visuals must fit comfortably in the left two-thirds
@@ -182,6 +189,21 @@ For each section, include:
 
 The lesson must teach, not just present.
 
+For concrete beginner content, default to a translation-first, usage-first explanation style.
+
+Start with:
+- the clearest direct gloss that is still true
+- one realistic usage line
+- one likely beginner misuse only when it materially helps
+
+Only escalate to a conceptual anchor or sourced explanation when the direct gloss would teach the wrong instinct or leave a real confusion unresolved.
+
+If `explanation-research.md` exists:
+- use it only for the selected high-risk concepts
+- rewrite the final explanation into shorter house-style wording
+- keep the lesson simpler and more direct than the source note
+- never echo source phrasing closely
+
 Include:
 - what the form means
 - when to use it
@@ -199,6 +221,47 @@ For nuanced words:
 - explain when a direct English gloss is insufficient
 - explain how Thai usage differs from literal translation
 - explain if something is softer, more formal, more casual, or more natural in context
+- prefer the simplest true explanation that gets the learner to a usable next line
+
+## Conceptual anchor pass
+
+Before finalizing the lesson, identify up to 3 high-risk concepts that might need an internal model rather than a bare gloss.
+
+Do not assume a conceptual anchor is needed.
+Most concrete beginner lessons should remain mostly translation-first.
+
+High-risk concepts commonly include:
+- abstract grammar or function
+- politeness particles or social softeners
+- tones or pronunciation contrasts
+- script logic
+- cases where a direct English gloss would teach the wrong instinct
+
+For each selected concept, include one concise conceptual anchor in the lesson.
+
+Good conceptual anchor types:
+- social-job framing
+- sentence-frame or slot framing
+- `not X, but more like Y` contrast
+- sound or mouth map
+- tiny situational analogy
+
+Bad conceptual anchor types:
+- decorative metaphor with no teaching payoff
+- unsupported etymology
+- mystical or pseudo-historical explanation
+- false one-to-one English equivalence
+- long side explanations that interrupt the lesson flow
+
+Rules:
+- if a direct translation-plus-usage explanation works cleanly, prefer that over a conceptual anchor
+- keep conceptual anchors short, usually 1-2 spoken lines
+- keep them spoken-first; they belong primarily in `spokenNarration`
+- optionally reinforce them in `languageFocus[].notes` when that helps later QA or downstream reuse
+- do not invent new schema fields for conceptual anchors
+- if `explanation-research.md` exists, distill it into simpler house wording before it reaches the script
+- make the limit of the comparison clear when needed, especially when the anchor could be mistaken for a literal translation
+- do not force analogies into concrete vocabulary lessons unless they prevent a real beginner mistake or materially improve retention
 
 ## Pre-recorded lesson design
 
@@ -248,6 +311,73 @@ Each section should feel purposeful. Good section shapes include:
 - applied mini-scenario
 
 Do not make all sections feel identical.
+
+## Pronunciation beat (required from M01-L002 onwards)
+
+Every lesson must include a **dedicated pronunciation micro-segment** (60–90 seconds) that trains the learner's ear and mouth, not just their vocabulary.
+
+Include a `pronunciationFocus` object in the script-master.json with:
+- `targetSounds`: what sound contrast or tone pattern is being trained this lesson
+- `minimalPairs`: at least 1 meaning-changing pair (e.g., ไก่/ไข่, มา/ม้า/หมา, ใกล้/ไกล)
+- `mouthMapAnchor`: a physical description of how to produce the sound ("rising tone starts low and lifts up, like asking a question in English")
+- `tonePattern` (optional): which tone is being drilled
+
+Pronunciation focus progression across the course:
+- **M01–M02**: Individual sounds that don't exist in English (aspirated vs unaspirated: ก/ข, ด/ท, บ/ป)
+- **M02–M03**: Tone contrasts via meaning-changing minimal pairs
+- **M04–M06**: Tone drills using that lesson's vocabulary (hear two, choose correct one)
+- **M07+**: Connected speech, rhythm, reduction patterns
+
+At least 1 drill per lesson must be a pronunciation drill. Good pronunciation drill types:
+- **Minimal pair choice**: "Which word means X? Option A or Option B?" (tests tone discrimination)
+- **Tone echo**: Model → learner repeats → model again for self-check
+- **Tone pattern drill**: 3–4 words with the same tone, then one intruder with a different tone
+- **Aspiration contrast**: Hear two words, identify which has the air puff
+
+Do not skip pronunciation. Thai tones are the #1 challenge for Western learners, and every lesson is an opportunity to train the ear.
+
+## Cognitive load limits
+
+Do not overwhelm the learner with too many new items.
+
+Hard limits:
+- **Max 5–7 new vocabulary items per lesson** (A0 level); up to 8–10 for A2+
+- **Max 2–3 new items per section** before practice begins
+- Each new item must appear in **3+ varied contexts** within the lesson (explanation, drill, roleplay, recap — not just its own section)
+- **95% comprehensibility rule**: the learner should understand 95%+ of what they hear in any given section; only 1–2 things should be genuinely new at any moment
+
+If a lesson has too much vocabulary from the blueprint, split teaching across sections and prioritize the highest-frequency items. Flag lower-frequency items as "exposure only" in notes.
+
+## Pushed output requirements
+
+The learner must produce language, not just recognize it. At least 40% of drill moments should require the learner to speak, not just choose.
+
+Every lesson must include:
+- at least **1 substitution drill** (swap one slot in a frame: "Say 'I want ___' with the next food item")
+- at least **1 response-building drill** (learner constructs a response from a cue)
+- at least **1 pause-and-produce moment** where the learner says the line BEFORE hearing the answer
+- roleplay must include at least **2 turns where the learner could reasonably produce the next line** (mark these with a teacher cue like "your turn" or "say the next line before I show it")
+
+## Input flood and recycling
+
+Each new vocabulary item or pattern must appear in multiple contexts across the lesson, not just in its teaching section.
+
+Rules:
+- Each target form must appear in the `spokenNarration` of at least **2 different sections** (not just its own)
+- Target forms should appear naturally across: explanation examples, drill prompts, roleplay lines, AND recap items
+- Prior vocabulary from `context.json` review buckets should be woven into drills and roleplay, not forced as a separate checklist
+
+## Task repetition with variation
+
+At least one drill format should appear **twice in the lesson with different content** (e.g., substitution drill in section 2 with greetings, same format in section 4 with questions). This builds automaticity through repetition with variation.
+
+The roleplay should echo a drill pattern from earlier — the roleplay "tests" what a drill "trained."
+
+## Lexical chunks
+
+When a `languageFocus` item is a multi-word chunk (e.g., ไม่เป็นไร, ยินดีที่ได้รู้จัก, ขอโทษครับ), set `"type": "chunk"` on the item.
+
+Teach chunks as whole units first. The learner should hear, repeat, and use the chunk before (optionally) decomposing it into parts. Do not default to word-by-word translation for chunks.
 
 ## Required teaching devices
 
@@ -350,16 +480,21 @@ Weak reasons for images:
 - decorative background mood
 - images that repeat what the text already explains perfectly
 
-## Remotion-safe visual planning
+If a conceptual anchor is used:
+- keep it spoken-first by default
+- only place it on screen when a small contrast, slot frame, or simple diagram clearly reduces cognitive load
+- do not turn the analogy into decorative metaphor art
 
-The teaching visuals are eventually converted into deterministic `remotion.json`.
+## PPTX-safe visual planning
+
+The teaching visuals are eventually converted into deterministic `deck-source.json` and `deck.pptx`.
 
 Your section visual plans should therefore already be suitable for:
 - a 1920x1080 canvas
 - left 66.67% teaching area
 - right 33.33% camera area
 - short, legible overlays
-- one supporting visual anchor per scene, not a crowded collage
+- one supporting visual anchor per slide, not a crowded collage
 
 Good visual layouts:
 - `focus-card` for one phrase or one contrast set

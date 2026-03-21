@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
   "lessonId": "M01-L001",
-  "title": "Hello and Basic Courtesy: First Contact in Thai",
-  "objective": "Greet someone politely, say thank you and sorry, choose the right basic polite ending, and handle simple yes/no responses in a friendly first encounter.",
+  "title": "Hello and Basic Courtesy",
+  "objective": "Greet politely, thank and apologise, choose a safe polite ending, and handle simple yes/no responses in a friendly first encounter.",
   "teachingFrame": {
     "targetRuntimeMin": 9,
     "targetRuntimeMax": 12,
     "openingHook": "Open with the first five seconds of meeting someone in Thailand and show how a tiny set of polite lines already changes the whole interaction.",
     "scenario": "A learner meets staff or a new person for the first time and needs to sound friendly, respectful, and calm immediately.",
-    "learnerTakeaway": "By the end, the learner can manage a two-line first-contact exchange politely and recover with basic courtesy phrases."
+    "learnerTakeaway": "By the end, the learner can open, repair, thank, and close a tiny first-contact exchange politely."
   },
   "context": {
     "schemaVersion": 1,
@@ -53,9 +53,10 @@
       "heading": "Say hello the Thai way",
       "purpose": "Teach the core greeting and show that politeness is built into the line, not added as an afterthought.",
       "spokenNarration": [
-        "The first line you need is สวัสดี sà-wàt-dii. This is your safe, polite hello in a first meeting.",
-        "On its own, สวัสดี already works. But in real interaction, Thai usually sounds warmer and more complete when you add a polite ending.",
-        "So think of the greeting as a stack: hello first, then the polite ending that fits the speaker and the moment."
+        "Let's start with the first thing you will say in Thai: สวัสดี sà-wàt-dii. Listen first. สวัสดี.",
+        "Now say it with me: สวัสดี. Good. This is your safe, polite hello in any first meeting.",
+        "In real Thai, a greeting sounds more complete when you finish with a polite ending. If you are male, say สวัสดีครับ sà-wàt-dii khráp. If you are female, say สวัสดีค่ะ sà-wàt-dii khâ.",
+        "So learn สวัสดี as the body, and ครับ or ค่ะ as the ending that tells the listener who is speaking."
       ],
       "onScreenBullets": [
         "สวัสดี | sà-wàt-dii | hello",
@@ -64,38 +65,42 @@
       ],
       "drills": [
         "Listen and repeat three times: สวัสดี, สวัสดีครับ, สวัสดีค่ะ.",
-        "Teacher points to male or female speaker card; learner chooses the correct full greeting aloud."
+        "Your turn: I will point to a male or female role. Say the correct full greeting aloud before I show the answer.",
+        "Substitution drill: replace the ending — say สวัสดี with ครับ, now with ค่ะ."
       ],
       "languageFocus": [
         {
           "thai": "สวัสดี",
           "translit": "sà-wàt-dii",
           "english": "hello",
+          "type": "word",
           "vocabId": "v-c9337e2739"
         },
         {
           "thai": "สวัสดีครับ",
           "translit": "sà-wàt-dii khráp",
           "english": "hello (male speaker)",
+          "type": "chunk",
           "vocabId": "v-e653eb5319"
         },
         {
           "thai": "สวัสดีค่ะ",
           "translit": "sà-wàt-dii khâ",
           "english": "hello (female speaker)",
+          "type": "chunk",
           "vocabId": "v-bccbe506b3"
         }
       ],
       "visualPlan": {
         "leftPanelLayout": "focus-card",
-        "onScreenGoal": "Show the greeting stack clearly with one base form and two polite full versions in the left teaching area.",
+        "onScreenGoal": "Show the greeting stack clearly with one base form and two polite full versions.",
         "teachingVisuals": [
           "Large Thai script for สวัสดี with transliteration and English underneath.",
           "Two smaller follow-up cards for สวัสดีครับ and สวัสดีค่ะ."
         ],
         "teacherCues": [
           "Pause after the base form before adding the polite ending versions.",
-          "Keep the greeting large and centered inside the left panel only."
+          "Model the greeting naturally — the learner should hear it before reading it."
         ],
         "imageSupport": {
           "helpful": false,
@@ -111,11 +116,13 @@
     {
       "id": "s2",
       "heading": "Thank, apologise, and soften the moment",
-      "purpose": "Teach the two highest-value courtesy phrases and explain that one form repairs the interaction while the other closes it warmly.",
+      "purpose": "Teach the highest-value courtesy phrases and show that each one has a different social job in the interaction.",
       "spokenNarration": [
-        "The next two lines are ขอบคุณ khàawp-khun and ขอโทษ khǎaw-thôot.",
-        "ขอบคุณ closes a small social moment well. You use it after help, service, or a small kindness.",
-        "ขอโทษ can mean excuse me or sorry, so it is your polite way to interrupt, repair, or apologise without sounding abrupt."
+        "These next courtesy phrases do different social jobs. Listen first to all three: ขอบคุณ khàawp-khun, ขอโทษ khǎaw-thôot, ไม่เป็นไร mâi bpen rai.",
+        "ขอบคุณ closes a small moment warmly — after help, service, or kindness. Someone holds the door? ขอบคุณครับ.",
+        "ขอโทษ opens a repair. It helps you interrupt gently or apologise without crashing into the conversation. Need to get past someone? ขอโทษครับ.",
+        "ไม่เป็นไร smooths the moment afterwards. Someone says ขอโทษ to you? You say ไม่เป็นไร — it is okay, no problem, never mind.",
+        "Notice that สวัสดี opens the meeting, ขอบคุณ closes a kind moment, and ขอโทษ repairs a bump. Three lines, three social jobs."
       ],
       "onScreenBullets": [
         "ขอบคุณ | khàawp-khun | thank you",
@@ -123,28 +130,32 @@
         "ไม่เป็นไร | mâi bpen rai | it is okay / no problem"
       ],
       "drills": [
-        "Courtesy drill: learner hears a situation and answers with either ขอบคุณ or ขอโทษ.",
-        "Mini exchange drill: ขอบคุณครับ/ค่ะ -> ไม่เป็นไร."
+        "Discrimination drill: I describe a situation. Choose ขอบคุณ or ขอโทษ — which one fits? Say it aloud.",
+        "Response-building drill: I say ขอโทษครับ. Your turn — what do you say back? Pause and answer before I show it.",
+        "Substitution drill: say ขอบคุณ with ครับ, now with ค่ะ. Now say ขอโทษ with ครับ, now with ค่ะ."
       ],
       "languageFocus": [
         {
           "thai": "ขอบคุณ",
           "translit": "khàawp-khun",
           "english": "thank you",
+          "type": "word",
           "vocabId": "v-217b46aa5a"
         },
         {
           "thai": "ขอโทษ",
           "translit": "khǎaw-thôot",
           "english": "excuse me / sorry",
+          "type": "word",
           "vocabId": "v-6fce5e8c2c"
         },
         {
           "thai": "ไม่เป็นไร",
           "translit": "mâi bpen rai",
           "english": "it is okay / no problem",
-          "vocabId": "v-03cc3fe123",
-          "notes": "Useful response after thanks or a small apology."
+          "type": "chunk",
+          "notes": "Useful response after thanks or a small apology. Teach as a whole chunk first.",
+          "vocabId": "v-03cc3fe123"
         }
       ],
       "visualPlan": {
@@ -156,7 +167,7 @@
         ],
         "teacherCues": [
           "Explain function before translation so learners hear the social job of each phrase.",
-          "Keep only one reply line visible at a time."
+          "Recycle สวัสดี in the example: 'After สวัสดี, things go well — ขอบคุณ. If something goes wrong — ขอโทษ.'"
         ],
         "imageSupport": {
           "helpful": false,
@@ -164,8 +175,7 @@
           "rationale": "This section teaches social function and response pattern, which is clearer as a contrast board than as a photo.",
           "searchQueries": [],
           "sourceHints": [
-            "text-only contrast board",
-            "simple arrow diagram"
+            "text-only contrast board"
           ]
         }
       }
@@ -175,9 +185,10 @@
       "heading": "Pick the right polite ending",
       "purpose": "Explain what ครับ, ค่ะ, and คะ do so the learner does not memorize them as random decoration.",
       "spokenNarration": [
-        "Thai polite endings are not meaningless filler. They change how your line lands socially.",
-        "ครับ khráp is the common male polite ending. ค่ะ khâ is the common female ending for statements, and คะ khá is the lighter female ending often heard with questions.",
-        "For this lesson, keep one practical rule: learn ครับ and ค่ะ first for safe polite statements, and notice คะ as the question-flavoured partner rather than mixing the two female endings blindly."
+        "Polite endings are not decoration. Think of them as the final signal telling the listener how your line should land.",
+        "ครับ khráp is the common male polite ending. ค่ะ khâ is the common female ending for statements. คะ khá is the lighter female ending often heard with questions.",
+        "For this lesson, keep one safe beginner rule: learn ครับ and ค่ะ first for polite statements, and notice คะ as the question partner rather than forcing it into every line.",
+        "Now let's practise. Add ครับ or ค่ะ to every phrase you already know. สวัสดีครับ. ขอบคุณค่ะ. ขอโทษครับ. ไม่เป็นไรค่ะ."
       ],
       "onScreenBullets": [
         "ครับ | khráp | male polite ending",
@@ -185,39 +196,43 @@
         "คะ | khá | female question ending"
       ],
       "drills": [
-        "Substitution drill: สวัสดี -> สวัสดีครับ / สวัสดีค่ะ.",
-        "Teacher says statement or question context; learner chooses ค่ะ or คะ if speaking in the female role."
+        "Substitution drill: I say a bare phrase. You add the correct polite ending. สวัสดี — your turn. ขอบคุณ — your turn. ขอโทษ — your turn.",
+        "Discrimination drill: I say ค่ะ or คะ. Is the speaker making a statement or asking a question? Choose before I tell you.",
+        "Substitution drill round 2: now try it with ไม่เป็นไร and ใช่. Add ครับ or ค่ะ."
       ],
       "languageFocus": [
         {
           "thai": "ครับ",
           "translit": "khráp",
           "english": "male polite ending",
+          "type": "word",
           "vocabId": "v-a34b9ddfd4"
         },
         {
           "thai": "ค่ะ",
           "translit": "khâ",
           "english": "female statement ending",
+          "type": "word",
           "vocabId": "v-e5c357ab24"
         },
         {
           "thai": "คะ",
           "translit": "khá",
           "english": "female question ending",
+          "type": "word",
           "vocabId": "v-8637eb381c"
         }
       ],
       "visualPlan": {
         "leftPanelLayout": "drill-stack",
-        "onScreenGoal": "Show the three polite endings as a usable choice system with simple examples, not a grammar wall.",
+        "onScreenGoal": "Show the three polite endings as a usable choice system with simple examples.",
         "teachingVisuals": [
           "Three stacked chips for ครับ, ค่ะ, and คะ with one-line explanations.",
           "A short substitution line showing the greeting changing with the polite ending."
         ],
         "teacherCues": [
-          "Keep the explanation practical and stop before it turns into a long grammar lecture.",
-          "Use one example sentence at a time so the learner can hear the ending clearly."
+          "Keep the explanation practical. One rule, then practice immediately.",
+          "Recycle ขอบคุณ and ขอโทษ from section 2 in the substitution examples."
         ],
         "imageSupport": {
           "helpful": false,
@@ -235,9 +250,10 @@
       "heading": "Answer yes, no, and no problem naturally",
       "purpose": "Give the learner a small response toolkit so a first encounter can continue instead of stopping at one memorised line.",
       "spokenNarration": [
-        "Now add three high-frequency response tools: ใช่ châi, ไม่ใช่ mâi châi, and ไม่เป็นไร mâi bpen rai.",
-        "ใช่ means yes or that is right. ไม่ใช่ means not right or no, but it is not aggressive by itself; it just corrects the idea.",
-        "ไม่เป็นไร is different. It does not mean yes or no. It smooths the moment by saying it is okay, never mind, or no problem."
+        "Now add two response tools: ใช่ châi and ไม่ใช่ mâi châi.",
+        "ใช่ and ไม่ใช่ answer the idea. They tell someone yes, that is right, or no, that is not right. You already know ไม่เป็นไร — that does a different job. It manages the feeling of the moment.",
+        "That difference matters. ใช่ answers the question. ไม่เป็นไร answers the emotion. Otherwise you may answer correctly but still sound strange.",
+        "Let's see all your tools together now. สวัสดี opens the meeting. ขอบคุณ closes a kind moment. ขอโทษ repairs a bump. ใช่ and ไม่ใช่ answer the idea. ไม่เป็นไร softens everything."
       ],
       "onScreenBullets": [
         "ใช่ | châi | yes / that is right",
@@ -245,27 +261,24 @@
         "ไม่เป็นไร | mâi bpen rai | it is okay / no problem"
       ],
       "drills": [
-        "Teacher gives a true or false identity cue; learner answers ใช่ or ไม่ใช่.",
-        "Repair drill: after a small apology, learner responds ไม่เป็นไร."
+        "Pause-and-produce: I ask a yes/no question. Say ใช่ or ไม่ใช่ before I show the answer.",
+        "Response-building: I say ขอโทษครับ. What do you say back? Then I say ขอบคุณค่ะ. What do you say back?",
+        "Substitution drill: say ใช่ with ครับ, now with ค่ะ. Say ไม่ใช่ with ครับ, now with ค่ะ."
       ],
       "languageFocus": [
         {
           "thai": "ใช่",
           "translit": "châi",
           "english": "yes / that is right",
+          "type": "word",
           "vocabId": "v-f40371ec59"
         },
         {
           "thai": "ไม่ใช่",
           "translit": "mâi châi",
           "english": "no / not right",
+          "type": "chunk",
           "vocabId": "v-cda55f5b5e"
-        },
-        {
-          "thai": "ไม่เป็นไร",
-          "translit": "mâi bpen rai",
-          "english": "it is okay / no problem",
-          "vocabId": "v-03cc3fe123"
         }
       ],
       "visualPlan": {
@@ -273,11 +286,11 @@
         "onScreenGoal": "Show the difference between a direct answer and a social softener inside one compact response ladder.",
         "teachingVisuals": [
           "A three-step response ladder: ใช่ / ไม่ใช่ / ไม่เป็นไร.",
-          "One mini-scenario line showing apology followed by ไม่เป็นไร."
+          "One mini-scenario showing apology followed by ไม่เป็นไร, and question followed by ใช่."
         ],
         "teacherCues": [
-          "Explain that ไม่เป็นไร is not a yes/no answer.",
-          "Leave enough empty space for Nine to model the tone difference in the camera zone."
+          "Explain that ไม่เป็นไร is not a yes/no answer — it is an emotional softener.",
+          "Recycle all previous vocab: สวัสดี, ขอบคุณ, ขอโทษ, ครับ/ค่ะ in examples."
         ],
         "imageSupport": {
           "helpful": false,
@@ -289,10 +302,62 @@
           ]
         }
       }
+    },
+    {
+      "id": "s5",
+      "heading": "Pronunciation: hearing Thai tones for the first time",
+      "purpose": "Introduce the learner to the idea that Thai has tones that change meaning, and train their ear on two key contrasts from this lesson.",
+      "spokenNarration": [
+        "Before we roleplay, let's train your ear. Thai is a tone language — the pitch of your voice changes the meaning of a word.",
+        "You have already heard two different tones in this lesson. Listen: khráp — that is a high tone, it rises up sharply. Now listen: khâ — that is a falling tone, it starts high and drops down.",
+        "Try it. Say khráp with your voice going up. Now say khâ with your voice starting high and dropping. Can you hear the difference?",
+        "Here is another pair from this lesson: châi — that is a falling tone. And mâi — also a falling tone. But khàawp in ขอบคุณ has a low tone — your voice stays down. Listen: khàawp-khun.",
+        "Do not try to master all five Thai tones right now. Just notice: pitch matters. We will practise more tones every lesson."
+      ],
+      "onScreenBullets": [
+        "ครับ | khráp | high tone — voice rises sharply",
+        "ค่ะ | khâ | falling tone — voice starts high and drops",
+        "ขอบคุณ | khàawp-khun | low tone on khàawp — voice stays low"
+      ],
+      "drills": [
+        "Tone echo: I say ครับ khráp. Repeat it. Now I say ค่ะ khâ. Repeat it. Can you feel the difference?",
+        "Minimal pair choice: I say two words. Which one is ครับ and which is ค่ะ? Point to the answer."
+      ],
+      "languageFocus": [
+        {
+          "thai": "ครับ",
+          "translit": "khráp",
+          "english": "male polite ending (high tone)",
+          "type": "word",
+          "notes": "Pronunciation focus: high tone rises sharply upward.",
+          "vocabId": "v-a34b9ddfd4"
+        }
+      ],
+      "visualPlan": {
+        "leftPanelLayout": "focus-card",
+        "onScreenGoal": "Show tone direction arrows next to the transliteration to visualize pitch movement.",
+        "teachingVisuals": [
+          "Two large cards: khráp with upward arrow, khâ with downward arrow.",
+          "Simple pitch contour line showing high vs falling vs low."
+        ],
+        "teacherCues": [
+          "Model each tone slowly and clearly.",
+          "Use hand gestures to show pitch direction — up for high, down for falling, flat-low for low."
+        ],
+        "imageSupport": {
+          "helpful": false,
+          "priority": "avoid",
+          "rationale": "Tone arrows and pitch contour lines teach better than any photograph here.",
+          "searchQueries": [],
+          "sourceHints": [
+            "text-only tone arrows"
+          ]
+        }
+      }
     }
   ],
   "roleplay": {
-    "scenario": "First check-in at a reception desk.",
+    "scenario": "First polite exchange at a reception desk. The learner approaches, greets, confirms something, and thanks the staff.",
     "lines": [
       {
         "speaker": "Learner",
@@ -307,10 +372,10 @@
         "english": "Hello."
       },
       {
-        "speaker": "Learner",
-        "thai": "ที่นี่ใช่ไหมครับ",
-        "translit": "thîi-nîi châi mái khráp",
-        "english": "Is this the right place?"
+        "speaker": "Learner (your turn — say the next line before I show it)",
+        "thai": "นี่ใช่ไหมครับ",
+        "translit": "nîi châi mái khráp",
+        "english": "Is this right?"
       },
       {
         "speaker": "Staff",
@@ -319,7 +384,7 @@
         "english": "Yes."
       },
       {
-        "speaker": "Learner",
+        "speaker": "Learner (your turn — what do you say after receiving help?)",
         "thai": "ขอบคุณครับ",
         "translit": "khàawp-khun khráp",
         "english": "Thank you."
@@ -333,10 +398,11 @@
     ]
   },
   "recap": [
-    "Start with สวัสดี and add the right polite ending for a safe first-contact hello.",
-    "Use ขอบคุณ to close the moment well and ขอโทษ to interrupt or repair politely.",
-    "Treat ครับ, ค่ะ, and คะ as meaning-carrying social tools, not decoration.",
-    "Use ใช่ and ไม่ใช่ for basic answers, but use ไม่เป็นไร to soften the moment."
+    "Look away and try: how do you say hello politely as a male speaker? Say it before looking back.",
+    "What is the difference between ขอบคุณ and ขอโทษ? One closes warmly, one repairs politely.",
+    "Someone says ขอโทษ to you. What do you say back? ไม่เป็นไร.",
+    "What do ครับ and ค่ะ do? They are the polite endings that tell the listener how your line should land.",
+    "Which two words answer the idea — yes or no? ใช่ and ไม่ใช่."
   ],
   "qaChecks": [
     {
@@ -361,7 +427,7 @@
       "id": "section-count",
       "description": "Lesson contains at least 4 teaching sections",
       "pass": true,
-      "evidence": "Legacy lesson exemption applied with 4 sections"
+      "evidence": "Legacy lesson exemption applied with 5 sections"
     },
     {
       "id": "section-depth",
@@ -403,7 +469,7 @@
       "id": "recap",
       "description": "Recap includes at least 3 review items",
       "pass": true,
-      "evidence": "Recap contains 4 items"
+      "evidence": "Recap contains 5 items"
     },
     {
       "id": "review-reuse",
@@ -439,5 +505,27 @@
   "policies": {
     "transliteration": "PTM_ADAPTED_INLINE_TONES",
     "imageSourcing": "INTERNET_FIRST_NO_GENERATIVE_DEFAULT"
+  },
+  "pronunciationFocus": {
+    "targetSounds": [
+      "high tone (khráp) vs falling tone (khâ)",
+      "low tone (khàawp) awareness"
+    ],
+    "minimalPairs": [
+      {
+        "a": {
+          "thai": "ครับ",
+          "translit": "khráp",
+          "english": "male polite ending (high tone)"
+        },
+        "b": {
+          "thai": "ค่ะ",
+          "translit": "khâ",
+          "english": "female statement ending (falling tone)"
+        }
+      }
+    ],
+    "mouthMapAnchor": "High tone: your voice rises sharply upward, like emphasising 'Really?!' in English. Falling tone: your voice starts high and drops down firmly, like saying 'No!' with conviction.",
+    "tonePattern": "high vs falling"
   }
 }

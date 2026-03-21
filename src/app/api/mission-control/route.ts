@@ -233,18 +233,28 @@ export async function GET() {
   const branch = run("git branch --show-current");
   const commits = run("git log --oneline --decorate -n 12");
 
-  const renderCandidates = [
-    { label: "Episode 001 Preview", relPath: "episode001.mp4" },
-    { label: "Episode 002 Preview", relPath: "episode002.mp4" },
-    { label: "Legacy Preview", relPath: "video.mp4" },
-  ];
-
-  const renders = await Promise.all(
-    renderCandidates.map(async (r) => ({
-      ...r,
-      exists: await exists(path.join(ROOT, "thaiwith-nine-remotion", "out", r.relPath)),
-      url: `/api/mission-control/media?path=${encodeURIComponent(r.relPath)}`,
-    }))
+  const decks = await Promise.all(
+    allLessons
+      .filter((lesson) => lesson.state === "READY_TO_RECORD")
+      .slice(0, 8)
+      .map(async (lesson) => {
+        const lessonDir = path.join(COURSE_ROOT, "modules", lesson.moduleId, lesson.lessonKey);
+        const candidates = lessonArtifactCandidateNames(lesson.lessonId, "deck.pptx");
+        let fileName = candidates[0] ?? `${lesson.lessonId}-deck.pptx`;
+        for (const candidate of candidates) {
+          if (await exists(path.join(lessonDir, candidate))) {
+            fileName = candidate;
+            break;
+          }
+        }
+        const relPath = `modules/${lesson.moduleId}/${lesson.lessonKey}/${fileName}`;
+        return {
+          label: `${lesson.lessonId} deck`,
+          relPath,
+          exists: await exists(path.join(lessonDir, fileName)),
+          url: `/api/mission-control/media?path=${encodeURIComponent(relPath)}`,
+        };
+      })
   );
 
   return NextResponse.json({
@@ -259,6 +269,6 @@ export async function GET() {
     todos: buildTodos(modules),
     agentBoard: buildAgentBoard(modules),
     requiredArtifacts: REQUIRED_ARTIFACTS,
-    renders,
+    decks,
   });
 }

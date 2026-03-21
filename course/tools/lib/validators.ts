@@ -10,6 +10,8 @@ import {
 } from "./transliteration-policy.ts";
 import type {
   AssetProvenance,
+  CanvaContent,
+  DeckSource,
   FlashcardsDeck,
   LessonStatus,
   QuizItem,
@@ -30,7 +32,8 @@ const REQUIRED_READY_FILES = [
   "script-spoken.md",
   "script-visual.md",
   "qa-report.md",
-  "remotion.json",
+  "deck-source.json",
+  "deck.pptx",
   "asset-provenance.json",
   "pdf-source.json",
   "pdf.md",
@@ -79,7 +82,7 @@ export function remotionEpisodePathForLesson(root: string, lessonId: string): st
   return join(root, "thaiwith-nine-remotion", "src", "data", `episode-${episodeNum}.json`);
 }
 
-function pushPolicyIssues(text: string, label: string, issues: ValidationIssue[], requireToneMark = true): void {
+function pushPolicyIssues(text: string, label: string, issues: ValidationIssue[], requireToneMark = false): void {
   const check = checkTransliterationPolicy(text, requireToneMark);
   for (const issue of check.issues) {
     issues.push({ path: label, message: issue.message });
@@ -91,7 +94,8 @@ function enforceTriplet(thing: { thai?: string; translit?: string; english?: str
     issues.push({ path: label, message: "missing Thai/translit/English triplet field" });
     return;
   }
-  pushPolicyIssues(thing.translit ?? "", label, issues);
+  // Mid-tone words in PTM have no diacritical mark by convention, so don't require tone marks on individual languageFocus items
+  pushPolicyIssues(thing.translit ?? "", label, issues, false);
 }
 
 function checkScriptMaster(path: string): ValidationIssue[] {
@@ -130,7 +134,7 @@ function checkScriptMaster(path: string): ValidationIssue[] {
         issues.push({ path, message: `onScreenBullets[${idx}] in ${section.id} must be Thai | translit | English` });
       }
       const parts = bullet.split("|").map((x) => x.trim());
-      if (parts[1]) pushPolicyIssues(parts[1], `${path}#sections.${section.id}.onScreenBullets[${idx}]`, issues);
+      if (parts[1]) pushPolicyIssues(parts[1], `${path}#sections.${section.id}.onScreenBullets[${idx}]`, issues, false);
     }
 
     if (!isLegacyLesson) {
@@ -237,10 +241,115 @@ function checkRemotion(path: string): ValidationIssue[] {
   return issues;
 }
 
+function checkDeckSource(path: string, lessonDir: string): ValidationIssue[] {
+  const issues: ValidationIssue[] = [];
+  const data = parseJsonFile<DeckSource>(path);
+  const isLegacyLesson = compareLessonIds(data.lessonId, "M01-L004") < 0;
+
+  if (data.slides.length < 6) {
+    issues.push({ path, message: "deck-source must contain at least 6 slides" });
+  }
+
+  if (!isLegacyLesson) {
+    if (
+      Math.abs(data.canvas.leftTeachingFraction - 0.6667) > 0.02 ||
+      Math.abs(data.canvas.rightCameraFraction - 0.3333) > 0.02
+    ) {
+      issues.push({
+        path,
+        message:
+          "deck-source canvas must reserve roughly the right third for recording and left two-thirds for teaching",
+      });
+    }
+  }
+
+  for (const [slideIdx, slide] of data.slides.entries()) {
+    if (slide.speakerNotes.length < 1) {
+      issues.push({ path, message: `slide[${slideIdx}] requires speakerNotes` });
+    }
+    if (slide.textBlocks.length < 1) {
+      issues.push({ path, message: `slide[${slideIdx}] requires textBlocks` });
+    }
+    if (slide.role === "teaching" && slide.thaiFocus.length < 1) {
+      issues.push({ path, message: `teaching slide[${slideIdx}] requires thaiFocus` });
+    }
+
+    for (const asset of slide.assets) {
+      if (asset.status === "resolved") {
+        if (isBlank(asset.sourceUrl) || isBlank(asset.license) || isBlank(asset.localPath)) {
+          issues.push({
+            path,
+            message: `slide[${slideIdx}] asset ${asset.assetId} must include sourceUrl, license, and localPath when resolved`,
+          });
+        } else if (!existsSync(join(lessonDir, asset.localPath ?? ""))) {
+          issues.push({
+            path: join(lessonDir, asset.localPath ?? ""),
+            message: `resolved slide asset missing for ${asset.assetId}`,
+          });
+        }
+      }
+
+      if (asset.status === "fallback-text-only" && isBlank(asset.fallbackReason)) {
+        issues.push({
+          path,
+          message: `slide[${slideIdx}] asset ${asset.assetId} must record fallbackReason when image resolution fails`,
+        });
+      }
+    }
+  }
+
+  return issues;
+}
+
+function checkCanvaContent(path: string, lessonDir: string): ValidationIssue[] {
+  const issues: ValidationIssue[] = [];
+  const data = parseJsonFile<CanvaContent>(path);
+
+  if (!Array.isArray(data.slides) || data.slides.length < 1) {
+    issues.push({ path, message: "canva-content must contain at least one slide" });
+    return issues;
+  }
+
+  for (const [slideIdx, slide] of data.slides.entries()) {
+    if (!existsSync(join(lessonDir, slide.backgroundPath))) {
+      issues.push({
+        path: join(lessonDir, slide.backgroundPath),
+        message: `missing Canva background for slide[${slideIdx}]`,
+      });
+    }
+
+    if (!Array.isArray(slide.elements) || slide.elements.length < 1) {
+      issues.push({ path, message: `canva slide[${slideIdx}] requires at least one editable element` });
+      continue;
+    }
+
+    for (const [elementIdx, element] of slide.elements.entries()) {
+      if (element.kind === "text" && isBlank(element.value ?? "")) {
+        issues.push({
+          path,
+          message: `canva slide[${slideIdx}] text element[${elementIdx}] is blank`,
+        });
+      }
+
+      if (element.kind === "image" && element.localPath) {
+        const imagePath = join(lessonDir, element.localPath);
+        if (!existsSync(imagePath)) {
+          issues.push({
+            path: imagePath,
+            message: `canva slide[${slideIdx}] image element[${elementIdx}] points to a missing file`,
+          });
+        }
+      }
+    }
+  }
+
+  return issues;
+}
+
 function checkMarkdownTriplets(raw: string, path: string): ValidationIssue[] {
   const issues: ValidationIssue[] = [];
   for (const segment of extractTripletTranslitSegments(raw)) {
-    pushPolicyIssues(segment.translit, `${path}#line-${segment.line}`, issues);
+    pushPolicyIssues(segment.translit, `${path}#line-${segment.line}`, issues, false);
   }
   return issues;
 }
@@ -380,35 +489,77 @@ function checkQuiz(path: string): ValidationIssue[] {
   return issues;
 }
 
-function checkAssetProvenance(path: string, remotionPath: string): ValidationIssue[] {
+function checkAssetProvenance(path: string, deckSourcePath: string, lessonDir: string): ValidationIssue[] {
   const issues: ValidationIssue[] = [];
   const data = parseJsonFile<AssetProvenance>(path);
-  const isLegacyLesson = compareLessonIds(data.lessonId, "M01-L004") < 0;
-
-  if (!existsSync(remotionPath)) {
-    issues.push({ path, message: "asset-provenance requires remotion.json to cross-check assets" });
+  if (!existsSync(deckSourcePath)) {
+    issues.push({ path, message: "asset-provenance requires deck-source.json to cross-check assets" });
     return issues;
   }
 
-  const remotion = parseJsonFile<RemotionPlan>(remotionPath);
+  const deckSource = parseJsonFile<DeckSource>(deckSourcePath);
   const provenanceById = new Map(data.assets.map((a) => [a.assetId, a]));
+  const deckAssetIds = new Set<string>();
 
-  for (const scene of remotion.scenes) {
-    for (const asset of scene.assets) {
+  for (const slide of deckSource.slides) {
+    for (const asset of slide.assets) {
+      deckAssetIds.add(asset.assetId);
       const prov = provenanceById.get(asset.assetId);
       if (!prov) {
         issues.push({ path, message: `missing provenance entry for assetId ${asset.assetId}` });
         continue;
       }
-      if (prov.sourceUrl !== asset.sourceUrl) {
+
+      if ((prov.status ?? "resolved") !== asset.status) {
+        issues.push({ path, message: `provenance status mismatch for assetId ${asset.assetId}` });
+      }
+      if ((prov.slideId ?? "") !== slide.id) {
+        issues.push({ path, message: `provenance slideId mismatch for assetId ${asset.assetId}` });
+      }
+      if ((prov.sourceProvider ?? "none") !== asset.sourceProvider) {
+        issues.push({ path, message: `provenance sourceProvider mismatch for assetId ${asset.assetId}` });
+      }
+
+      if ((prov.sourceUrl ?? "") !== (asset.sourceUrl ?? "")) {
         issues.push({ path, message: `provenance sourceUrl mismatch for assetId ${asset.assetId}` });
       }
-      if (isBlank(prov.license)) {
+      if ((prov.license ?? "") !== (asset.license ?? "")) {
+        issues.push({ path, message: `provenance license mismatch for assetId ${asset.assetId}` });
+      }
+      if ((prov.query ?? "") !== asset.query) {
+        issues.push({ path, message: `provenance query mismatch for assetId ${asset.assetId}` });
+      }
+      if ((prov.localPath ?? "") !== (asset.localPath ?? "")) {
+        issues.push({ path, message: `provenance localPath mismatch for assetId ${asset.assetId}` });
+      }
+      if ((prov.fallbackReason ?? "") !== (asset.fallbackReason ?? "")) {
+        issues.push({
+          path,
+          message: `provenance fallbackReason mismatch for assetId ${asset.assetId}`,
+        });
+      }
+
+      if (asset.status === "resolved" && isBlank(prov.license)) {
         issues.push({ path, message: `provenance license missing for assetId ${asset.assetId}` });
       }
-      if (!isLegacyLesson && !isBlank(asset.query) && isBlank(prov.query)) {
-        issues.push({ path, message: `provenance query missing for assetId ${asset.assetId}` });
+      if (asset.status === "resolved" && isBlank(prov.sourceUrl)) {
+        issues.push({ path, message: `provenance sourceUrl missing for assetId ${asset.assetId}` });
       }
+      if (asset.status === "resolved" && isBlank(prov.localPath)) {
+        issues.push({ path, message: `provenance localPath missing for assetId ${asset.assetId}` });
+      }
+      if (asset.status === "resolved" && !existsSync(join(lessonDir, prov.localPath ?? ""))) {
+        issues.push({
+          path: join(lessonDir, prov.localPath ?? ""),
+          message: `provenance local asset missing for ${asset.assetId}`,
+        });
+      }
+    }
+  }
+
+  for (const assetId of provenanceById.keys()) {
+    if (!deckAssetIds.has(assetId)) {
+      issues.push({ path, message: `provenance entry ${assetId} does not exist in deck-source.json` });
     }
   }
 
@@ -547,8 +698,9 @@ function lessonSchemaTargets(lessonDir: string): Array<{ path: string; schemaFil
   return [
     { path: lessonArtifactPathForDir(lessonDir, "context.json"), schemaFile: "context.schema.json", required: false },
     { path: lessonArtifactPathForDir(lessonDir, "script-master.json"), schemaFile: "script-master.schema.json", required: false },
-    { path: lessonArtifactPathForDir(lessonDir, "remotion.json"), schemaFile: "remotion.schema.json", required: false },
+    { path: lessonArtifactPathForDir(lessonDir, "deck-source.json"), schemaFile: "deck-source.schema.json", required: false },
     { path: lessonArtifactPathForDir(lessonDir, "asset-provenance.json"), schemaFile: "asset-provenance.schema.json", required: false },
+    { path: lessonArtifactPathForDir(lessonDir, "canva-content.json"), schemaFile: "canva-content.schema.json", required: false },
     { path: lessonArtifactPathForDir(lessonDir, "pdf-source.json"), schemaFile: "pdf-source.schema.json", required: false },
     { path: lessonArtifactPathForDir(lessonDir, "flashcards.json"), schemaFile: "flashcards.schema.json", required: false },
     { path: lessonArtifactPathForDir(lessonDir, "vocab-export.json"), schemaFile: "vocab-export.schema.json", required: false },
@@ -604,11 +756,16 @@ export function validateLessonDir(lessonDir: string, rootInput?: string): Valida
   const visual = lessonArtifactPathForDir(lessonDir, "script-visual.md");
   if (existsSync(visual)) issues.push(...checkVisualScript(visual));
 
-  const remotion = lessonArtifactPathForDir(lessonDir, "remotion.json");
-  if (existsSync(remotion)) issues.push(...checkRemotion(remotion));
+  const deckSource = lessonArtifactPathForDir(lessonDir, "deck-source.json");
+  if (existsSync(deckSource)) issues.push(...checkDeckSource(deckSource, lessonDir));
 
   const provenance = lessonArtifactPathForDir(lessonDir, "asset-provenance.json");
-  if (existsSync(provenance)) issues.push(...checkAssetProvenance(provenance, remotion));
+  if (existsSync(provenance)) {
+    issues.push(...checkAssetProvenance(provenance, deckSource, lessonDir));
+  }
+
+  const canvaContent = lessonArtifactPathForDir(lessonDir, "canva-content.json");
+  if (existsSync(canvaContent)) issues.push(...checkCanvaContent(canvaContent, lessonDir));
 
   const pdfSource = lessonArtifactPathForDir(lessonDir, "pdf-source.json");
   if (existsSync(pdfSource)) issues.push(...checkPdfSource(pdfSource));
@@ -631,9 +788,6 @@ export function validateLessonDir(lessonDir: string, rootInput?: string): Valida
   if (existsSync(statusPath)) issues.push(...checkStatus(statusPath));
 
   issues.push(...checkCoverageCrossFiles(lessonDir));
-
-  const lessonId = lessonIdFromLessonDir(lessonDir);
-  issues.push(...validateRemotionDataForLesson(root, lessonId));
 
   return issues;
 }
@@ -659,8 +813,6 @@ export function validateAll(root: string): ValidationIssue[] {
   if (existsSync(vocabIndexPath)) {
     globalIssues.push(...checkVocabIndex(vocabIndexPath));
   }
-
-  globalIssues.push(...validateAllRemotionData(root));
 
   return [...lessonIssues, ...globalIssues];
 }

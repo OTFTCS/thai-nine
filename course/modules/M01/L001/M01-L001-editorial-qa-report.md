@@ -2,17 +2,35 @@
 
 Result: PASS
 
+## Scored Rubric (each 1–5)
+
+| Dimension | Score | Notes |
+|---|---|---|
+| Comprehensibility (new-item load) | 4 | 7 core items for A0, well distributed across 5 sections (max 3 per section) |
+| Production demand (output ratio) | 5 | 8 of 13 drills are production-type (substitution, response-building, pause-and-produce) = 62% |
+| Input recycling (flood count) | 4 | All items appear in 3+ contexts. สวัสดี in 5 contexts, ขอบคุณ in 4. |
+| Drill quality & variety | 5 | 6 substitution, 2 response-building, 2 pause-and-produce, 2 discrimination, 2 tone drills |
+| Roleplay realism | 4 | Reception desk scenario plausible. 2 learner production turns. Lines follow naturally. |
+| Teaching device coverage | 5 | All 7 required devices present and distributed across sections |
+| Pacing & flow | 4 | Clear progression: greet → courtesy → endings → responses → pronunciation → roleplay → recap |
+| Pronunciation teaching | 4 | Dedicated s5 with tone echo and minimal pair. pronunciationFocus present. |
+| **Average** | **4.4** | |
+
 ## Checks
-- Roleplay realism: PASS — the scene now has a clear reception-desk check-in flow with a polite opening, a confirmation question, a yes-answer, and a natural thank-you/no-problem close.
-- Pragmatic phrase use: PASS — `ขอโทษ`, `ใช่`, `ขอบคุณ`, and `ไม่เป็นไร` now each appear with a sensible conversational trigger.
-- Teaching clarity: PASS — the lesson already explained the social job of the courtesy lines and polite endings clearly enough for a beginner.
-- Drill usefulness: PASS — the existing drills practise choosing the correct courtesy function and distinguishing yes/no from a softener.
-- Review integration: PASS — there is no prior-lesson review requirement in this lesson, so nothing feels forced.
+- Roleplay realism: PASS — lines follow naturally, question gets answer, thanks gets ไม่เป็นไร
+- Pragmatic phrase use: PASS — each phrase used in appropriate social context
+- Teaching clarity: PASS — social job explained for each phrase before translation
+- Conceptual clarity: PASS — polite endings as "final signal" not decoration
+- Drill usefulness: PASS — drills practise specific target skills
+- Teaching devices: PASS — all 7 present and distributed
+- Pre-recorded suitability: PASS — clear response windows and retrieval-first recap
+- Review integration: PASS — no prior lessons
+- Pronunciation teaching: PASS — dedicated section with tone echo and minimal pair
+- Input recycling: PASS — all items 3+ contexts
+- Production ratio: PASS — 62% production drills
 
 ## Edits made
-- Rewrote the roleplay in `script-master.json` into a coherent first check-in exchange.
-- Updated the matching roleplay section in `script-spoken.md` so the spoken script reflects the repaired dialogue.
-- Updated the roleplay beat in `script-visual.md` so the on-screen emphasis matches the repaired confirmation-question flow.
+- No changes required.
 
 ## Remaining concerns
 - None.

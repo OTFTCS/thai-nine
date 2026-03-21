@@ -59,7 +59,7 @@ Hard validators cover:
 - `script-master.json`
 - `script-spoken.md`
 - `script-visual.md`
-- `remotion.json`
+- `deck-source.json`
 - `pdf-source.json`
 - `pdf.md`
 - `flashcards.json`
@@ -68,7 +68,6 @@ Hard validators cover:
 - `quiz.json`
 - lesson `context.json`
 - global vocab exports/index
-- `thaiwith-nine-remotion/src/data/*.json` (`phonetics`)
 
 ## Audit + repair command
 Use:
@@ -90,4 +89,4 @@ Deterministic exit codes:
 
 ## CI / release gate behavior
 - Stage 2 QA blocks on script transliteration violations.
-- Stage 7 release gate blocks on any transliteration drift in lesson + remotion data artifacts.
+- Stage 7 release gate blocks on any transliteration drift in lesson + deck artifacts.

@@ -28,10 +28,10 @@
     "sourceInspiration": "Thai With Fah first-contact pragmatics; ThaiPod101 introduction lessons; internal backwards planning."
   },
   "promptPath": "/Users/Shared/work/thai-nine/course/prompts/agent-prompts/stage-6-assessment-qa.prompt.md",
-  "promptMd": "# Stage 6.5 — Assessment QA Review\n\nYou are the assessment QA agent for **Immersion Thai with Nine**.\n\nYour job is to review the generated flashcards and end-of-lesson quiz after deterministic stages 5 and 6.\n\nThis review is blocking.\n\n## Inputs\n\nYou will receive:\n- lesson id\n- blueprint row\n- `brief.md`\n- `script-master.json`\n- `flashcards.json`\n- `quiz-item-bank.json`\n- `quiz.json`\n\n## Required output\n\nWrite:\n- `assessment-qa-report.md`\n\nDo not edit:\n- `script-master.json`\n- `flashcards.json`\n- `quiz-item-bank.json`\n- `quiz.json`\n\nThose files are deterministic outputs and will be regenerated after your review.\n\n## Mission\n\nCatch assessment-quality failures such as:\n- flashcards that are too noisy, too abstract, or not worth memorising\n- quiz items that test trivial surface recognition instead of lesson understanding\n- distractors that are obviously wrong\n- prompts that are ambiguous or mismatched to the answer key\n- assessment content that technically passes coverage rules but does not really test the lesson\n\n## Review standard\n\nThe flashcards should be worth studying.\nThe quiz should tell us whether the learner remembered and understood the lesson.\n\nThis is not a schema audit.\nThis is an editorial assessment-quality review.\n\n## Specific checks\n\n### 1. Flashcard usefulness\n\nCheck whether:\n- the exported cards represent lesson-worthy vocabulary or chunks\n- the cards are not cluttered with low-value grammatical residue\n- the set feels coherent for spaced repetition review\n\n### 2. Quiz alignment\n\nCheck whether:\n- questions match the lesson objective\n- the quiz tests what the lesson explicitly taught\n- there is enough contextual understanding, not only isolated translation\n\n### 3. Distractor quality\n\nCheck whether wrong answers are plausible enough to test recall.\n\nWeak distractors include:\n- obviously unrelated meanings\n- random Thai forms from elsewhere\n- options that fail by grammar or category in a trivial way\n\n### 4. Ambiguity\n\nCheck whether:\n- prompts have one clear best answer\n- answer keys match the prompt as displayed\n- transliteration prompts are teachable and fair\n\n## Repair approach\n\nIf the real problem is source content, report it clearly as a blocker.\n\nDo not patch deterministic assessment outputs by hand.\nThose outputs will be regenerated after your review.\n\n## Report format\n\nUse this exact structure:\n\n# Assessment QA Report — Mxx-Lyyy\n\nResult: PASS or FAIL\n\n## Checks\n- Flashcard usefulness: PASS/FAIL — short reason\n- Quiz alignment: PASS/FAIL — short reason\n- Distractor quality: PASS/FAIL — short reason\n- Prompt clarity: PASS/FAIL — short reason\n- Coverage quality: PASS/FAIL — short reason\n\n## Edits made\n- short bullet list of what you changed\n- if no changes were needed, say `- No changes required.`\n\n## Remaining concerns\n- if PASS: `- None.`\n- if FAIL: list unresolved blockers clearly\n\n## Decision rule\n\nWrite `Result: PASS` only if the flashcards and quiz would be acceptable as learner-facing study and assessment materials.\n\nIf the pack is still technically valid but educationally weak, write `Result: FAIL`.\n",
-  "briefPath": "/Users/Shared/work/thai-nine/course/modules/M01/L001/brief.md",
+  "promptMd": "# Stage 6.5 — Assessment QA Review\n\nYou are the assessment QA agent for **Immersion Thai with Nine**.\n\nYour job is to review the generated flashcards, end-of-lesson quiz, and final transliteration correctness after deterministic stages 5 and 6.\n\nThis review is blocking.\n\n## Inputs\n\nYou will receive:\n- lesson id\n- blueprint row\n- `brief.md`\n- `script-master.json`\n- `script-spoken.md`\n- `pdf.md`\n- `flashcards.json`\n- `vocab-export.json`\n- `quiz-item-bank.json`\n- `quiz.json`\n- `transliterationReview`\n\n## Required output\n\nWrite:\n- `assessment-qa-report.md`\n\nDo not edit:\n- `script-master.json`\n- `flashcards.json`\n- `quiz-item-bank.json`\n- `quiz.json`\n\nThose files are deterministic outputs and will be regenerated after your review.\n\n## Mission\n\nCatch assessment-quality failures such as:\n- flashcards that are too noisy, too abstract, or not worth memorising\n- quiz items that test trivial surface recognition instead of lesson understanding\n- distractors that are obviously wrong\n- prompts that are ambiguous or mismatched to the answer key\n- assessment content that technically passes coverage rules but does not really test the lesson\n- transliteration that is format-valid but linguistically wrong\n- inconsistent transliteration for the same Thai form across artifacts\n- high-risk vowel drift, especially on forms containing `อึ` or `อื`\n\n## Review standard\n\nThe flashcards should be worth studying.\nThe quiz should tell us whether the learner remembered and understood the lesson.\n\nThis is not a schema audit.\nThis is an editorial assessment-quality review.\n\n## Specific checks\n\n### 1. Flashcard usefulness\n\nCheck whether:\n- the exported cards represent lesson-worthy vocabulary or chunks\n- the cards are not cluttered with low-value grammatical residue\n- the set feels coherent for spaced repetition review\n\n### 2. Quiz alignment\n\nCheck whether:\n- questions match the lesson objective\n- the quiz tests what the lesson explicitly taught\n- there is enough contextual understanding, not only isolated translation\n\n### 3. Distractor quality\n\nCheck whether wrong answers are plausible enough to test recall.\n\nWeak distractors include:\n- obviously unrelated meanings\n- random Thai forms from elsewhere\n- options that fail by grammar or category in a trivial way\n\n### 4. Ambiguity\n\nCheck whether:\n- prompts have one clear best answer\n- answer keys match the prompt as displayed\n- transliteration prompts are teachable and fair\n\n### 5. Transliteration correctness and consistency\n\nCheck whether:\n- the same Thai form keeps the same transliteration across:\n  - `script-master.json`\n  - `script-spoken.md`\n  - `pdf.md`\n  - `flashcards.json`\n  - `vocab-export.json`\n  - `quiz-item-bank.json`\n  - `quiz.json`\n- transliteration is not merely format-valid, but actually plausible for the Thai form\n- high-risk vowel cases are reviewed explicitly, especially Thai forms containing `อึ` and `อื`\n- no artifact quietly drifts to a different transliteration than the source lesson\n\nUse `transliterationReview` as a structured cross-artifact map.\n\nIf a Thai form has multiple transliterations across the lesson pack, treat that as a release-quality problem unless the difference is clearly justified and documented.\n\nPay extra attention to:\n- `อึ` versus `อื`\n- repeated high-frequency forms appearing in script plus quiz/flashcard outputs\n- transliteration prompts whose answer would teach the wrong vowel quality\n\n## Repair approach\n\nIf the real problem is source content, report it clearly as a blocker.\n\nDo not patch deterministic assessment outputs by hand.\nThose outputs will be regenerated after your review.\n\n## Report format\n\nUse this exact structure:\n\n# Assessment QA Report — Mxx-Lyyy\n\nResult: PASS or FAIL\n\n## Checks\n- Flashcard usefulness: PASS/FAIL — short reason\n- Quiz alignment: PASS/FAIL — short reason\n- Distractor quality: PASS/FAIL — short reason\n- Prompt clarity: PASS/FAIL — short reason\n- Coverage quality: PASS/FAIL — short reason\n- Transliteration consistency: PASS/FAIL — short reason\n\n## Edits made\n- short bullet list of what you changed\n- if no changes were needed, say `- No changes required.`\n\n## Remaining concerns\n- if PASS: `- None.`\n- if FAIL: list unresolved blockers clearly\n\n## Decision rule\n\nWrite `Result: PASS` only if the flashcards, quiz, and transliteration layer would be acceptable as learner-facing study and assessment materials.\n\nIf the pack is still technically valid but educationally weak, write `Result: FAIL`.\n",
+  "briefPath": "/Users/Shared/work/thai-nine/course/modules/M01/L001/M01-L001-brief.md",
   "briefMd": "# M01-L001 — Hello and Basic Courtesy\n\n- **Module:** M01 — First Contact and Courtesy\n- **Level:** A0\n- **Target runtime:** 9-12 minutes\n- **Primary objective:** Learner can greet people politely, thank others, apologise, and answer yes/no in a friendly first encounter.\n- **Secondary objective:** Learner can choose the right basic polite ending and recognise when ไม่เป็นไร is the correct social response.\n- **Teaching frame:** First meeting at a reception desk or service counter.\n\n## Must-teach outcomes\n1. Say hello politely with a correct basic ending.\n2. Use ขอบคุณ and ขอโทษ in the right social moments.\n3. Distinguish ครับ, ค่ะ, and คะ at a practical beginner level.\n4. Answer with ใช่ or ไม่ใช่ and soften with ไม่เป็นไร when appropriate.\n5. Deliver a short first-contact exchange without dropping politeness.\n\n## Core vocabulary and chunks\n| Thai | Transliteration | English |\n|---|---|---|\n| สวัสดี | sà-wàt-dii | hello |\n| ขอบคุณ | khàawp-khun | thank you |\n| ขอโทษ | khǎaw-thôot | excuse me / sorry |\n| ใช่ | châi | yes / that is right |\n| ไม่ใช่ | mâi châi | no / not right |\n| ครับ | khráp | male polite ending |\n| ค่ะ | khâ | female statement ending |\n| คะ | khá | female question ending |\n| ไม่เป็นไร | mâi bpen rai | it is okay / no problem |\n\n## Teaching constraints\n- Keep this spoken-first and socially practical.\n- Explain what each courtesy line does in the interaction, not just its dictionary meaning.\n- Keep visuals text-first and left-panel only.\n- Do not overload the learner with edge-case particle theory.\n\n## Likely learner mistakes\n1. Treating polite endings as optional decoration instead of meaning-carrying social tools.\n2. Mixing ค่ะ and คะ without hearing the statement/question difference.\n3. Using ไม่เป็นไร as a yes/no answer instead of a social softener.\n4. Saying hello without warmth because the ending is dropped too early.\n\n## Image and visual notes\n- Most sections should stay text-only.\n- If a visual anchor is used at all, keep it minimal and secondary to the Thai lines.\n",
-  "scriptMasterPath": "/Users/Shared/work/thai-nine/course/modules/M01/L001/script-master.json",
+  "scriptMasterPath": "/Users/Shared/work/thai-nine/course/modules/M01/L001/M01-L001-script-master.json",
   "scriptMaster": {
     "schemaVersion": 1,
     "lessonId": "M01-L001",
@@ -475,7 +475,11 @@
       "imageSourcing": "INTERNET_FIRST_NO_GENERATIVE_DEFAULT"
     }
   },
-  "flashcardsPath": "/Users/Shared/work/thai-nine/course/modules/M01/L001/flashcards.json",
+  "scriptSpokenPath": "/Users/Shared/work/thai-nine/course/modules/M01/L001/M01-L001-script-spoken.md",
+  "scriptSpokenMd": "# Spoken Script — M01-L001\n\n## Opening\nIn Thai, first contact is small, but it matters.\n\nA few polite words can make you sound calmer, friendlier, and much easier to respond to.\n\nToday we build the smallest courtesy toolkit that already works in real life.\n\n---\n\n## Section 1 — Say hello the Thai way\nStart with สวัสดี | sà-wàt-dii | hello.\n\nThis is a safe, polite greeting for a first meeting.\n\nBut real Thai usually sounds more complete when a polite ending is attached.\n\nSo do not stop at hello alone forever. Learn the greeting as a full social line.\n\n- สวัสดี | sà-wàt-dii | hello\n- สวัสดีครับ | sà-wàt-dii khráp | hello (male speaker)\n- สวัสดีค่ะ | sà-wàt-dii khâ | hello (female speaker)\n\nPractice: say all three slowly.\n\n---\n\n## Section 2 — Thank, apologise, and soften the moment\nNow add the two most useful courtesy phrases after hello.\n\n- ขอบคุณ | khàawp-khun | thank you\n- ขอโทษ | khǎaw-thôot | excuse me / sorry\n- ไม่เป็นไร | mâi bpen rai | it is okay / no problem\n\nขอบคุณ closes the moment warmly.\n\nขอโทษ opens a repair. You can use it to interrupt gently or apologise.\n\nAnd ไม่เป็นไร often answers a small apology or a thank-you moment by smoothing everything out.\n\n---\n\n## Section 3 — Pick the right polite ending\nThai polite endings do real work.\n\n- ครับ | khráp | male polite ending\n- ค่ะ | khâ | female statement ending\n- คะ | khá | female question ending\n\nAt beginner level, keep one practical rule.\n\nIf you are learning safe polite statements, focus first on ครับ and ค่ะ.\n\nNotice คะ as the question-flavoured partner, but do not panic if you are still learning the difference.\n\nThe important thing is to hear that these endings are not random. They shape the tone of the whole line.\n\n---\n\n## Section 4 — Answer yes, no, and no problem naturally\nNow add three simple responses.\n\n- ใช่ | châi | yes / that is right\n- ไม่ใช่ | mâi châi | no / not right\n- ไม่เป็นไร | mâi bpen rai | it is okay / no problem\n\nใช่ and ไม่ใช่ answer the idea.\n\nBut ไม่เป็นไร does a different job. It softens the situation. It says it is okay, no problem, never mind.\n\nThat difference matters. Otherwise, you can answer politely but still sound odd in context.\n\n---\n\n## Roleplay — First check-in at a reception desk\nLearner: ขอโทษครับ สวัสดีครับ | khǎaw-thôot khráp sà-wàt-dii khráp | Excuse me, hello.\n\nStaff: สวัสดีค่ะ | sà-wàt-dii khâ | Hello.\n\nLearner: ที่นี่ใช่ไหมครับ | thîi-nîi châi mái khráp | Is this the right place?\n\nStaff: ใช่ค่ะ | châi khâ | Yes.\n\nLearner: ขอบคุณครับ | khàawp-khun khráp | Thank you.\n\nStaff: ไม่เป็นไรค่ะ | mâi bpen rai khâ | No problem.\n\n---\n\n## Recap\n- Start with สวัสดี and add a polite ending.\n- Use ขอบคุณ to thank and ขอโทษ to repair politely.\n- Learn polite endings as social meaning, not decoration.\n- Use ใช่ and ไม่ใช่ for answers, and ไม่เป็นไร to calm the moment.\n",
+  "pdfPath": "/Users/Shared/work/thai-nine/course/modules/M01/L001/M01-L001-pdf.md",
+  "pdfMd": "# M01-L001 — Hello and Basic Courtesy: First Contact in Thai\n\n## What you will be able to say after this lesson\n- Target runtime: 9-12 minutes\n- Scenario: A learner meets staff or a new person for the first time and needs to sound friendly, respectful, and calm immediately.\n- Learner takeaway: By the end, the learner can manage a two-line first-contact exchange politely and recover with basic courtesy phrases.\n\n## Core phrases (Thai / Transliteration / English)\n- สวัสดี | sà-wàt-dii | hello\n- สวัสดีครับ | sà-wàt-dii khráp | hello (male speaker)\n- สวัสดีค่ะ | sà-wàt-dii khâ | hello (female speaker)\n- ขอบคุณ | khàawp-khun | thank you\n- ขอโทษ | khǎaw-thôot | excuse me / sorry\n- ไม่เป็นไร | mâi bpen rai | it is okay / no problem\n- ครับ | khráp | male polite ending\n- ค่ะ | khâ | female statement ending\n- คะ | khá | female question ending\n- ใช่ | châi | yes / that is right\n- ไม่ใช่ | mâi châi | no / not right\n\n## Teaching notes and explanation cues\n- Say hello the Thai way: Teach the core greeting and show that politeness is built into the line, not added as an afterthought.\n- The first line you need is สวัสดี sà-wàt-dii. This is your safe, polite hello in a first meeting.\n- On its own, สวัสดี already works. But in real interaction, Thai usually sounds warmer and more complete when you add a polite ending.\n- Thank, apologise, and soften the moment: Teach the two highest-value courtesy phrases and explain that one form repairs the interaction while the other closes it warmly.\n- The next two lines are ขอบคุณ khàawp-khun and ขอโทษ khǎaw-thôot.\n- ขอบคุณ closes a small social moment well. You use it after help, service, or a small kindness.\n- Pick the right polite ending: Explain what ครับ, ค่ะ, and คะ do so the learner does not memorize them as random decoration.\n- Thai polite endings are not meaningless filler. They change how your line lands socially.\n- ครับ khráp is the common male polite ending. ค่ะ khâ is the common female ending for statements, and คะ khá is the lighter female ending often heard with questions.\n- Answer yes, no, and no problem naturally: Give the learner a small response toolkit so a first encounter can continue instead of stopping at one memorised line.\n- Now add three high-frequency response tools: ใช่ châi, ไม่ใช่ mâi châi, and ไม่เป็นไร mâi bpen rai.\n- ใช่ means yes or that is right. ไม่ใช่ means not right or no, but it is not aggressive by itself; it just corrects the idea.\n\n## Mini dialogues / role-play\n- Learner: ขอโทษครับ สวัสดีครับ | khǎaw-thôot khráp sà-wàt-dii khráp | Excuse me, hello.\n- Staff: สวัสดีค่ะ | sà-wàt-dii khâ | Hello.\n- Learner: ที่นี่ใช่ไหมครับ | thîi-nîi châi mái khráp | Is this the right place?\n- Staff: ใช่ค่ะ | châi khâ | Yes.\n- Learner: ขอบคุณครับ | khàawp-khun khráp | Thank you.\n- Staff: ไม่เป็นไรค่ะ | mâi bpen rai khâ | No problem.\n\n## Practice drills (self-study)\n- Listen and repeat three times: สวัสดี, สวัสดีครับ, สวัสดีค่ะ.\n- Teacher points to male or female speaker card; learner chooses the correct full greeting aloud.\n- Courtesy drill: learner hears a situation and answers with either ขอบคุณ or ขอโทษ.\n- Mini exchange drill: ขอบคุณครับ/ค่ะ -> ไม่เป็นไร.\n- Substitution drill: สวัสดี -> สวัสดีครับ / สวัสดีค่ะ.\n- Teacher says statement or question context; learner chooses ค่ะ or คะ if speaking in the female role.\n- Teacher gives a true or false identity cue; learner answers ใช่ or ไม่ใช่.\n- Repair drill: after a small apology, learner responds ไม่เป็นไร.\n\n## Vocabulary list for review / flashcards\n- สวัสดี | sà-wàt-dii | hello\n- สวัสดีครับ | sà-wàt-dii khráp | hello (male speaker)\n- สวัสดีค่ะ | sà-wàt-dii khâ | hello (female speaker)\n- ขอบคุณ | khàawp-khun | thank you\n- ขอโทษ | khǎaw-thôot | excuse me / sorry\n- ไม่เป็นไร | mâi bpen rai | it is okay / no problem\n- ครับ | khráp | male polite ending\n- ค่ะ | khâ | female statement ending\n- คะ | khá | female question ending\n- ใช่ | châi | yes / that is right\n- ไม่ใช่ | mâi châi | no / not right\n\n## Quick recap + memory aids\n- Start with สวัสดี and add the right polite ending for a safe first-contact hello.\n- Use ขอบคุณ to close the moment well and ขอโทษ to interrupt or repair politely.\n- Treat ครับ, ค่ะ, and คะ as meaning-carrying social tools, not decoration.\n- Use ใช่ and ไม่ใช่ for basic answers, but use ไม่เป็นไร to soften the moment.\n\n## Drills\n1. Listen and repeat three times: สวัสดี, สวัสดีครับ, สวัสดีค่ะ.\n2. Teacher points to male or female speaker card; learner chooses the correct full greeting aloud.\n3. Courtesy drill: learner hears a situation and answers with either ขอบคุณ or ขอโทษ.\n4. Mini exchange drill: ขอบคุณครับ/ค่ะ -> ไม่เป็นไร.\n5. Substitution drill: สวัสดี -> สวัสดีครับ / สวัสดีค่ะ.\n6. Teacher says statement or question context; learner chooses ค่ะ or คะ if speaking in the female role.\n7. Teacher gives a true or false identity cue; learner answers ใช่ or ไม่ใช่.\n8. Repair drill: after a small apology, learner responds ไม่เป็นไร.\n\n## Answer Key\n- Use PTM inline transliteration marks in every practice line.\n- Start with สวัสดี and add the right polite ending for a safe first-contact hello.\n- Use ขอบคุณ to close the moment well and ขอโทษ to interrupt or repair politely.\n- Treat ครับ, ค่ะ, and คะ as meaning-carrying social tools, not decoration.\n- Use ใช่ and ไม่ใช่ for basic answers, but use ไม่เป็นไร to soften the moment.\n",
+  "flashcardsPath": "/Users/Shared/work/thai-nine/course/modules/M01/L001/M01-L001-flashcards.json",
   "flashcardsJson": {
     "schemaVersion": 1,
     "lessonId": "M01-L001",
@@ -603,12 +607,155 @@
       }
     ]
   },
-  "quizItemBankPath": "/Users/Shared/work/thai-nine/course/modules/M01/L001/quiz-item-bank.json",
+  "vocabExportPath": "/Users/Shared/work/thai-nine/course/modules/M01/L001/M01-L001-vocab-export.json",
+  "vocabExportJson": {
+    "schemaVersion": 1,
+    "generatedAt": "2026-03-18T09:06:17.586Z",
+    "source": "pipeline-cli",
+    "lessons": [
+      "M01-L001"
+    ],
+    "cards": [
+      {
+        "id": "m01-l001-c01",
+        "vocabId": "v-c9337e2739",
+        "thai": "สวัสดี",
+        "translit": "sà-wàt-dii",
+        "english": "hello",
+        "lessonId": "M01-L001",
+        "tags": [
+          "M01-L001",
+          "core"
+        ]
+      },
+      {
+        "id": "m01-l001-c02",
+        "vocabId": "v-e653eb5319",
+        "thai": "สวัสดีครับ",
+        "translit": "sà-wàt-dii khráp",
+        "english": "hello (male speaker)",
+        "lessonId": "M01-L001",
+        "tags": [
+          "M01-L001",
+          "core"
+        ]
+      },
+      {
+        "id": "m01-l001-c03",
+        "vocabId": "v-bccbe506b3",
+        "thai": "สวัสดีค่ะ",
+        "translit": "sà-wàt-dii khâ",
+        "english": "hello (female speaker)",
+        "lessonId": "M01-L001",
+        "tags": [
+          "M01-L001",
+          "core"
+        ]
+      },
+      {
+        "id": "m01-l001-c04",
+        "vocabId": "v-217b46aa5a",
+        "thai": "ขอบคุณ",
+        "translit": "khàawp-khun",
+        "english": "thank you",
+        "lessonId": "M01-L001",
+        "tags": [
+          "M01-L001",
+          "core"
+        ]
+      },
+      {
+        "id": "m01-l001-c05",
+        "vocabId": "v-6fce5e8c2c",
+        "thai": "ขอโทษ",
+        "translit": "khǎaw-thôot",
+        "english": "excuse me / sorry",
+        "lessonId": "M01-L001",
+        "tags": [
+          "M01-L001",
+          "core"
+        ]
+      },
+      {
+        "id": "m01-l001-c06",
+        "vocabId": "v-03cc3fe123",
+        "thai": "ไม่เป็นไร",
+        "translit": "mâi bpen rai",
+        "english": "it is okay / no problem",
+        "lessonId": "M01-L001",
+        "tags": [
+          "M01-L001",
+          "core"
+        ]
+      },
+      {
+        "id": "m01-l001-c07",
+        "vocabId": "v-a34b9ddfd4",
+        "thai": "ครับ",
+        "translit": "khráp",
+        "english": "male polite ending",
+        "lessonId": "M01-L001",
+        "tags": [
+          "M01-L001",
+          "core"
+        ]
+      },
+      {
+        "id": "m01-l001-c08",
+        "vocabId": "v-e5c357ab24",
+        "thai": "ค่ะ",
+        "translit": "khâ",
+        "english": "female statement ending",
+        "lessonId": "M01-L001",
+        "tags": [
+          "M01-L001",
+          "core"
+        ]
+      },
+      {
+        "id": "m01-l001-c09",
+        "vocabId": "v-8637eb381c",
+        "thai": "คะ",
+        "translit": "khá",
+        "english": "female question ending",
+        "lessonId": "M01-L001",
+        "tags": [
+          "M01-L001",
+          "core"
+        ]
+      },
+      {
+        "id": "m01-l001-c10",
+        "vocabId": "v-f40371ec59",
+        "thai": "ใช่",
+        "translit": "châi",
+        "english": "yes / that is right",
+        "lessonId": "M01-L001",
+        "tags": [
+          "M01-L001",
+          "core"
+        ]
+      },
+      {
+        "id": "m01-l001-c11",
+        "vocabId": "v-cda55f5b5e",
+        "thai": "ไม่ใช่",
+        "translit": "mâi châi",
+        "english": "no / not right",
+        "lessonId": "M01-L001",
+        "tags": [
+          "M01-L001",
+          "core"
+        ]
+      }
+    ]
+  },
+  "quizItemBankPath": "/Users/Shared/work/thai-nine/course/modules/M01/L001/M01-L001-quiz-item-bank.json",
   "quizItemBankJson": {
     "schemaVersion": 1,
     "lessonId": "M01-L001",
-    "generatedAt": "2026-03-11T04:49:20.261Z",
-    "sourceScript": "script-master.json",
+    "generatedAt": "2026-03-18T09:06:17.704Z",
+    "sourceScript": "M01-L001-script-master.json",
     "items": [
       {
         "id": "v-c9337e2739-thai-to-english",
@@ -1432,13 +1579,13 @@
       "pass": true
     }
   },
-  "quizPath": "/Users/Shared/work/thai-nine/course/modules/M01/L001/quiz.json",
+  "quizPath": "/Users/Shared/work/thai-nine/course/modules/M01/L001/M01-L001-quiz.json",
   "quizJson": {
     "schemaVersion": 1,
     "lessonId": "M01-L001",
     "passScore": 80,
-    "generatedAt": "2026-03-11T04:49:20.261Z",
-    "itemBankPath": "quiz-item-bank.json",
+    "generatedAt": "2026-03-18T09:06:17.704Z",
+    "itemBankPath": "M01-L001-quiz-item-bank.json",
     "questions": [
       {
         "id": "q01",
@@ -1808,5 +1955,437 @@
       "pass": true
     }
   },
-  "outputReportPath": "/Users/Shared/work/thai-nine/course/modules/M01/L001/assessment-qa-report.md"
+  "transliterationReview": {
+    "lessonId": "M01-L001",
+    "totalTrackedForms": 16,
+    "inconsistentEntries": [],
+    "riskyVowelEntries": [],
+    "entries": [
+      {
+        "thai": "ขอโทษ",
+        "translits": [
+          "khǎaw-thôot"
+        ],
+        "occurrences": [
+          {
+            "translit": "khǎaw-thôot",
+            "source": "script-master.sections[1].languageFocus"
+          },
+          {
+            "translit": "khǎaw-thôot",
+            "source": "flashcards.cards[4]"
+          },
+          {
+            "translit": "khǎaw-thôot",
+            "source": "vocab-export.cards[4]"
+          },
+          {
+            "translit": "khǎaw-thôot",
+            "source": "quiz-item-bank.items[16].prompt"
+          },
+          {
+            "translit": "khǎaw-thôot",
+            "source": "quiz-item-bank.items[19].prompt"
+          },
+          {
+            "translit": "khǎaw-thôot",
+            "source": "quiz.questions[4].prompt"
+          }
+        ]
+      },
+      {
+        "thai": "ขอโทษครับ สวัสดีครับ",
+        "translits": [
+          "khǎaw-thôot khráp sà-wàt-dii khráp"
+        ],
+        "occurrences": [
+          {
+            "translit": "khǎaw-thôot khráp sà-wàt-dii khráp",
+            "source": "script-master.roleplay.lines[0]"
+          }
+        ]
+      },
+      {
+        "thai": "ขอบคุณ",
+        "translits": [
+          "khàawp-khun"
+        ],
+        "occurrences": [
+          {
+            "translit": "khàawp-khun",
+            "source": "script-master.sections[1].languageFocus"
+          },
+          {
+            "translit": "khàawp-khun",
+            "source": "flashcards.cards[3]"
+          },
+          {
+            "translit": "khàawp-khun",
+            "source": "vocab-export.cards[3]"
+          },
+          {
+            "translit": "khàawp-khun",
+            "source": "quiz-item-bank.items[12].prompt"
+          },
+          {
+            "translit": "khàawp-khun",
+            "source": "quiz-item-bank.items[15].prompt"
+          },
+          {
+            "translit": "khàawp-khun",
+            "source": "quiz.questions[3].prompt"
+          }
+        ]
+      },
+      {
+        "thai": "ขอบคุณครับ",
+        "translits": [
+          "khàawp-khun khráp"
+        ],
+        "occurrences": [
+          {
+            "translit": "khàawp-khun khráp",
+            "source": "script-master.roleplay.lines[4]"
+          }
+        ]
+      },
+      {
+        "thai": "ครับ",
+        "translits": [
+          "khráp"
+        ],
+        "occurrences": [
+          {
+            "translit": "khráp",
+            "source": "script-master.sections[2].languageFocus"
+          },
+          {
+            "translit": "khráp",
+            "source": "flashcards.cards[6]"
+          },
+          {
+            "translit": "khráp",
+            "source": "vocab-export.cards[6]"
+          },
+          {
+            "translit": "khráp",
+            "source": "quiz-item-bank.items[24].prompt"
+          },
+          {
+            "translit": "khráp",
+            "source": "quiz-item-bank.items[27].prompt"
+          },
+          {
+            "translit": "khráp",
+            "source": "quiz.questions[6].prompt"
+          }
+        ]
+      },
+      {
+        "thai": "คะ",
+        "translits": [
+          "khá"
+        ],
+        "occurrences": [
+          {
+            "translit": "khá",
+            "source": "script-master.sections[2].languageFocus"
+          },
+          {
+            "translit": "khá",
+            "source": "flashcards.cards[8]"
+          },
+          {
+            "translit": "khá",
+            "source": "vocab-export.cards[8]"
+          },
+          {
+            "translit": "khá",
+            "source": "quiz-item-bank.items[32].prompt"
+          },
+          {
+            "translit": "khá",
+            "source": "quiz-item-bank.items[35].prompt"
+          },
+          {
+            "translit": "khá",
+            "source": "quiz.questions[8].prompt"
+          }
+        ]
+      },
+      {
+        "thai": "ค่ะ",
+        "translits": [
+          "khâ"
+        ],
+        "occurrences": [
+          {
+            "translit": "khâ",
+            "source": "script-master.sections[2].languageFocus"
+          },
+          {
+            "translit": "khâ",
+            "source": "flashcards.cards[7]"
+          },
+          {
+            "translit": "khâ",
+            "source": "vocab-export.cards[7]"
+          },
+          {
+            "translit": "khâ",
+            "source": "quiz-item-bank.items[28].prompt"
+          },
+          {
+            "translit": "khâ",
+            "source": "quiz-item-bank.items[31].prompt"
+          },
+          {
+            "translit": "khâ",
+            "source": "quiz.questions[7].prompt"
+          }
+        ]
+      },
+      {
+        "thai": "ใช่",
+        "translits": [
+          "châi"
+        ],
+        "occurrences": [
+          {
+            "translit": "châi",
+            "source": "script-master.sections[3].languageFocus"
+          },
+          {
+            "translit": "châi",
+            "source": "flashcards.cards[9]"
+          },
+          {
+            "translit": "châi",
+            "source": "vocab-export.cards[9]"
+          },
+          {
+            "translit": "châi",
+            "source": "quiz-item-bank.items[36].prompt"
+          },
+          {
+            "translit": "châi",
+            "source": "quiz-item-bank.items[39].prompt"
+          },
+          {
+            "translit": "châi",
+            "source": "quiz.questions[9].prompt"
+          }
+        ]
+      },
+      {
+        "thai": "ใช่ค่ะ",
+        "translits": [
+          "châi khâ"
+        ],
+        "occurrences": [
+          {
+            "translit": "châi khâ",
+            "source": "script-master.roleplay.lines[3]"
+          }
+        ]
+      },
+      {
+        "thai": "ที่นี่ใช่ไหมครับ",
+        "translits": [
+          "thîi-nîi châi mái khráp"
+        ],
+        "occurrences": [
+          {
+            "translit": "thîi-nîi châi mái khráp",
+            "source": "script-master.roleplay.lines[2]"
+          }
+        ]
+      },
+      {
+        "thai": "ไม่ใช่",
+        "translits": [
+          "mâi châi"
+        ],
+        "occurrences": [
+          {
+            "translit": "mâi châi",
+            "source": "script-master.sections[3].languageFocus"
+          },
+          {
+            "translit": "mâi châi",
+            "source": "flashcards.cards[10]"
+          },
+          {
+            "translit": "mâi châi",
+            "source": "vocab-export.cards[10]"
+          },
+          {
+            "translit": "mâi châi",
+            "source": "quiz-item-bank.items[40].prompt"
+          },
+          {
+            "translit": "mâi châi",
+            "source": "quiz-item-bank.items[43].prompt"
+          },
+          {
+            "translit": "mâi châi",
+            "source": "quiz.questions[10].prompt"
+          }
+        ]
+      },
+      {
+        "thai": "ไม่เป็นไร",
+        "translits": [
+          "mâi bpen rai"
+        ],
+        "occurrences": [
+          {
+            "translit": "mâi bpen rai",
+            "source": "script-master.sections[1].languageFocus"
+          },
+          {
+            "translit": "mâi bpen rai",
+            "source": "script-master.sections[3].languageFocus"
+          },
+          {
+            "translit": "mâi bpen rai",
+            "source": "flashcards.cards[5]"
+          },
+          {
+            "translit": "mâi bpen rai",
+            "source": "vocab-export.cards[5]"
+          },
+          {
+            "translit": "mâi bpen rai",
+            "source": "quiz-item-bank.items[20].prompt"
+          },
+          {
+            "translit": "mâi bpen rai",
+            "source": "quiz-item-bank.items[23].prompt"
+          },
+          {
+            "translit": "mâi bpen rai",
+            "source": "quiz.questions[5].prompt"
+          }
+        ]
+      },
+      {
+        "thai": "ไม่เป็นไรค่ะ",
+        "translits": [
+          "mâi bpen rai khâ"
+        ],
+        "occurrences": [
+          {
+            "translit": "mâi bpen rai khâ",
+            "source": "script-master.roleplay.lines[5]"
+          }
+        ]
+      },
+      {
+        "thai": "สวัสดี",
+        "translits": [
+          "sà-wàt-dii"
+        ],
+        "occurrences": [
+          {
+            "translit": "sà-wàt-dii",
+            "source": "script-master.sections[0].languageFocus"
+          },
+          {
+            "translit": "sà-wàt-dii",
+            "source": "flashcards.cards[0]"
+          },
+          {
+            "translit": "sà-wàt-dii",
+            "source": "vocab-export.cards[0]"
+          },
+          {
+            "translit": "sà-wàt-dii",
+            "source": "quiz-item-bank.items[0].prompt"
+          },
+          {
+            "translit": "sà-wàt-dii",
+            "source": "quiz-item-bank.items[3].prompt"
+          },
+          {
+            "translit": "sà-wàt-dii",
+            "source": "quiz.questions[0].prompt"
+          },
+          {
+            "translit": "sà-wàt-dii",
+            "source": "quiz.questions[13].prompt"
+          }
+        ]
+      },
+      {
+        "thai": "สวัสดีครับ",
+        "translits": [
+          "sà-wàt-dii khráp"
+        ],
+        "occurrences": [
+          {
+            "translit": "sà-wàt-dii khráp",
+            "source": "script-master.sections[0].languageFocus"
+          },
+          {
+            "translit": "sà-wàt-dii khráp",
+            "source": "flashcards.cards[1]"
+          },
+          {
+            "translit": "sà-wàt-dii khráp",
+            "source": "vocab-export.cards[1]"
+          },
+          {
+            "translit": "sà-wàt-dii khráp",
+            "source": "quiz-item-bank.items[4].prompt"
+          },
+          {
+            "translit": "sà-wàt-dii khráp",
+            "source": "quiz-item-bank.items[7].prompt"
+          },
+          {
+            "translit": "sà-wàt-dii khráp",
+            "source": "quiz.questions[1].prompt"
+          }
+        ]
+      },
+      {
+        "thai": "สวัสดีค่ะ",
+        "translits": [
+          "sà-wàt-dii khâ"
+        ],
+        "occurrences": [
+          {
+            "translit": "sà-wàt-dii khâ",
+            "source": "script-master.sections[0].languageFocus"
+          },
+          {
+            "translit": "sà-wàt-dii khâ",
+            "source": "script-master.roleplay.lines[1]"
+          },
+          {
+            "translit": "sà-wàt-dii khâ",
+            "source": "flashcards.cards[2]"
+          },
+          {
+            "translit": "sà-wàt-dii khâ",
+            "source": "vocab-export.cards[2]"
+          },
+          {
+            "translit": "sà-wàt-dii khâ",
+            "source": "quiz-item-bank.items[8].prompt"
+          },
+          {
+            "translit": "sà-wàt-dii khâ",
+            "source": "quiz-item-bank.items[11].prompt"
+          },
+          {
+            "translit": "sà-wàt-dii khâ",
+            "source": "quiz.questions[2].prompt"
+          }
+        ]
+      }
+    ]
+  },
+  "outputReportPath": "/Users/Shared/work/thai-nine/course/modules/M01/L001/M01-L001-assessment-qa-report.md"
 }

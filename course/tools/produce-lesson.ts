@@ -151,6 +151,13 @@ function readRequired(path: string): string {
   return readFileSync(path, "utf8");
 }
 
+function readOptional(path: string): string | null {
+  if (!existsSync(path)) {
+    return null;
+  }
+  return readFileSync(path, "utf8");
+}
+
 type TransliterationOccurrence = {
   translit: string;
   source: string;
@@ -316,17 +323,17 @@ function buildStage1Packet(lessonId: string, blueprintRow: BlueprintLessonRow) {
     "stage-1-script-generation.prompt.md"
   );
   const schemaPath = join(root, "course", "schemas", "script-master.schema.json");
-  const remotionSchemaPath = join(root, "course", "schemas", "remotion.schema.json");
+  const deckSchemaPath = join(root, "course", "schemas", "deck-source.schema.json");
   const transliterationPolicyPath = join(
     root,
     "course",
     "transliteration-policy.md"
   );
-  const subtitleVideoPath = join(
+  const deckDesignSystemPath = join(
     root,
-    "thaiwith-nine-remotion",
-    "src",
-    "SubtitleVideo.tsx"
+    "course",
+    "Start with L001 and Review Uploaded Files",
+    "design_system.py"
   );
 
   const reusableLessonIds = listReusableLessonIds(root);
@@ -341,6 +348,9 @@ function buildStage1Packet(lessonId: string, blueprintRow: BlueprintLessonRow) {
       scriptPath: resolveLessonFilePath(exemplarLessonId, "script-master.json"),
       scriptMaster: readReusableLessonScript(root, exemplarLessonId) as ScriptMaster,
     }));
+  const scopeResearchPath = join(lessonDir, "scope-research.md");
+  const usageResearchPath = join(lessonDir, "usage-research.md");
+  const visualResearchPath = join(lessonDir, "visual-research.md");
 
   return {
     schemaVersion: 1,
@@ -361,12 +371,20 @@ function buildStage1Packet(lessonId: string, blueprintRow: BlueprintLessonRow) {
     scriptMasterSchema: readJson<Record<string, unknown>>(
       join(root, "course", "schemas", "script-master.schema.json")
     ),
-    remotionSchemaPath,
-    remotionSchema: readJson<Record<string, unknown>>(remotionSchemaPath),
+    deckSchemaPath,
+    deckSchema: readJson<Record<string, unknown>>(deckSchemaPath),
     transliterationPolicyPath,
     transliterationPolicyMd: readRequired(transliterationPolicyPath),
-    subtitleVideoPath,
-    subtitleVideoTsx: readRequired(subtitleVideoPath),
+    researchNotes: {
+      scopePath: scopeResearchPath,
+      scopeMd: readOptional(scopeResearchPath),
+      usagePath: usageResearchPath,
+      usageMd: readOptional(usageResearchPath),
+      visualPath: visualResearchPath,
+      visualMd: readOptional(visualResearchPath),
+    },
+    deckDesignSystemPath,
+    deckDesignSystemPy: readRequired(deckDesignSystemPath),
     reusableLessonIds,
     exemplars,
   };
@@ -390,12 +408,19 @@ function buildStage1WorkOrder(
     `- \`${lessonFilePath(lessonId, "script-spoken.md")}\``,
     `- \`${lessonFilePath(lessonId, "script-visual.md")}\``,
     "",
+    "## Required research notes",
+    `- \`${join(lessonPath(root, lessonId), "scope-research.md")}\``,
+    `- \`${join(lessonPath(root, lessonId), "usage-research.md")}\``,
+    `- \`${join(lessonPath(root, lessonId), "visual-research.md")}\``,
+    "- Review existing notes if present, or write them before or alongside the stage-1 files.",
+    "",
     "## Constraints",
     "- Do not edit downstream deterministic artifacts.",
     "- Keep `languageFocus[].vocabId` as `v-0000000000` placeholders only.",
     "- The script must satisfy the schema and prompt requirements in the input packet.",
     "- Plan visuals for the left teaching area only; the right third stays reserved for Nine.",
     "- Make image choices explicit: useful real-world image, useful icon/diagram, or text-only by design.",
+    "- Identify up to 3 high-risk concepts and give each a concise conceptual anchor only when it improves clarity or retention.",
     "",
     "## Curriculum target",
     `- Module: ${blueprintRow.moduleId} — ${blueprintRow.moduleTitle}`,
@@ -462,6 +487,10 @@ function buildEditorialQaPacket(lessonId: string, blueprintRow: BlueprintLessonR
     promptMd: readRequired(promptPath),
     contextPath: resolveLessonFilePath(lessonId, "context.json"),
     contextJson: readJson<LessonContext>(resolveLessonFilePath(lessonId, "context.json")),
+    scopeResearchPath: join(lessonDir, "scope-research.md"),
+    scopeResearchMd: readOptional(join(lessonDir, "scope-research.md")),
+    usageResearchPath: join(lessonDir, "usage-research.md"),
+    usageResearchMd: readOptional(join(lessonDir, "usage-research.md")),
     briefPath: resolveLessonFilePath(lessonId, "brief.md"),
     briefMd: readRequired(resolveLessonFilePath(lessonId, "brief.md")),
     scriptMasterPath: resolveLessonFilePath(lessonId, "script-master.json"),
@@ -499,12 +528,18 @@ function buildVisualQaPacket(lessonId: string, blueprintRow: BlueprintLessonRow)
     scriptSpokenMd: readRequired(resolveLessonFilePath(lessonId, "script-spoken.md")),
     scriptVisualPath: resolveLessonFilePath(lessonId, "script-visual.md"),
     scriptVisualMd: readRequired(resolveLessonFilePath(lessonId, "script-visual.md")),
-    remotionPath: resolveLessonFilePath(lessonId, "remotion.json"),
-    remotionJson: readJson<Record<string, unknown>>(resolveLessonFilePath(lessonId, "remotion.json")),
+    deckSourcePath: resolveLessonFilePath(lessonId, "deck-source.json"),
+    deckSourceJson: readJson<Record<string, unknown>>(resolveLessonFilePath(lessonId, "deck-source.json")),
+    deckPptxPath: resolveLessonFilePath(lessonId, "deck.pptx"),
     assetProvenancePath: resolveLessonFilePath(lessonId, "asset-provenance.json"),
     assetProvenanceJson: readJson<Record<string, unknown>>(
       resolveLessonFilePath(lessonId, "asset-provenance.json")
     ),
+    canvaContentPath: resolveLessonFilePath(lessonId, "canva-content.json"),
+    canvaContentJson: readJson<Record<string, unknown>>(resolveLessonFilePath(lessonId, "canva-content.json")),
+    canvaDeckPath: resolveLessonFilePath(lessonId, "canva-deck.pptx"),
+    canvaImportGuidePath: resolveLessonFilePath(lessonId, "canva-import-guide.md"),
+    canvaImportGuideMd: readRequired(resolveLessonFilePath(lessonId, "canva-import-guide.md")),
     outputReportPath: visualQaReportPath(lessonId),
   };
 }
@@ -609,11 +644,13 @@ function buildEditorialQaWorkOrder(lessonId: string): string {
     "- question/answer coherence",
     "- phrase-use pragmatics (for example thank-you, apology, yes/no, no-problem used in sensible contexts)",
     "- explanation clarity for nuanced vocabulary and grammar function",
+    "- conceptual anchors for high-risk concepts should be accurate, concise, and non-misleading",
     "- whether the lesson sounds like a real teaching session rather than a phrase checklist",
     "",
     "## Decision rule",
     "- Fix issues directly in the lesson files first when you can.",
     `- Write \`${lessonArtifactPath(root, lessonId, "editorial-qa-report.md")}\` with \`Result: PASS\` only if the lesson is coherent after your review.`,
+    "- Use the report format from the prompt, including the conceptual-clarity check line.",
     "- Use `Result: FAIL` only if unresolved issues remain after your best repair pass.",
     "",
     "## Input packet",
@@ -641,8 +678,9 @@ function buildVisualQaWorkOrder(lessonId: string): string {
     "- left two-thirds teaching readability",
     "- right-third camera-safe compliance",
     "- overlay density and pacing",
-    "- whether scene layout and asset choice support the spoken teaching",
+    "- whether slide layout and asset choice support the spoken teaching",
     "- whether text-only/icon/image decisions make instructional sense",
+    "- whether conceptual anchors stay spoken-first unless a simple visual reduces load",
     "",
     "## Decision rule",
     "- Fix script visual-plan issues directly in the allowed files when needed.",
@@ -785,7 +823,7 @@ function assessmentQaSourcePaths(lessonId: string): string[] {
 }
 
 function visualStage3OutputPaths(lessonId: string): string[] {
-  return ["remotion.json", "asset-provenance.json"].map((file) =>
+  return ["deck-source.json", "deck.pptx", "asset-provenance.json"].map((file) =>
     resolveLessonFilePath(lessonId, file)
   );
 }

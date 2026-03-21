@@ -22,6 +22,7 @@ function formatDateTime(value: string | null): string {
 
 function rawArtifactLabel(artifact: MissionControlLessonArtifact): string {
   if (artifact.isPdf) return "Open PDF";
+  if (artifact.isPptx) return "Download PPTX";
   if (artifact.isJson || artifact.isMarkdown) return "Open raw";
   return "Open file";
 }
@@ -79,7 +80,10 @@ export default async function MissionControlLessonReviewPage({
     (artifact) => artifact.name === "assessment-qa-report.md"
   );
   const statusArtifact = review.artifacts.find((artifact) => artifact.name === "status.json");
-  const remotionArtifact = review.artifacts.find((artifact) => artifact.name === "remotion.json");
+  const deckArtifact = review.artifacts.find((artifact) => artifact.name === "deck.pptx");
+  const deckSourceArtifact = review.artifacts.find(
+    (artifact) => artifact.name === "deck-source.json"
+  );
 
   return (
     <main className="min-h-screen bg-gradient-to-b from-slate-950 via-slate-950 to-slate-900 text-slate-100 p-6 md:p-8">
@@ -137,7 +141,7 @@ export default async function MissionControlLessonReviewPage({
                 value={`${review.checks.coreArtifactsPresent}/${review.checks.totalArtifacts}`}
                 tone={review.checks.missingArtifacts.length === 0 ? "good" : "warn"}
               />
-              <MetricCard label="Scenes" value={String(review.checks.sceneCount)} tone="neutral" />
+              <MetricCard label="Slides" value={String(review.checks.slideCount)} tone="neutral" />
               <MetricCard label="Quiz Questions" value={String(review.checks.quizQuestionCount)} tone="neutral" />
             </div>
           </div>
@@ -199,12 +203,22 @@ export default async function MissionControlLessonReviewPage({
                 Open raw status
               </a>
             ) : null}
-            {remotionArtifact?.exists ? (
+            {deckArtifact?.exists ? (
               <a
-                href={remotionArtifact.viewHref}
+                href={deckArtifact.mediaHref}
+                target="_blank"
+                rel="noreferrer"
                 className="rounded-lg border border-slate-700 bg-slate-950/40 px-3 py-2 text-sm text-slate-200 hover:bg-slate-800"
               >
-                Open raw remotion
+                Download PPTX deck
+              </a>
+            ) : null}
+            {deckSourceArtifact?.exists ? (
+              <a
+                href={deckSourceArtifact.viewHref}
+                className="rounded-lg border border-slate-700 bg-slate-950/40 px-3 py-2 text-sm text-slate-200 hover:bg-slate-800"
+              >
+                Open raw deck source
               </a>
             ) : null}
           </div>
@@ -236,7 +250,7 @@ export default async function MissionControlLessonReviewPage({
                   <dl className="mt-3 space-y-2 text-sm text-slate-200">
                     <SummaryRow label="Flashcards" value={String(review.checks.flashcardCount)} />
                     <SummaryRow label="Quiz questions" value={String(review.checks.quizQuestionCount)} />
-                    <SummaryRow label="Scene count" value={String(review.checks.sceneCount)} />
+                    <SummaryRow label="Slide count" value={String(review.checks.slideCount)} />
                     <SummaryRow label="Notes" value={review.lesson.notes || "—"} />
                   </dl>
                 </div>
@@ -266,22 +280,22 @@ export default async function MissionControlLessonReviewPage({
                 ) : (
                   <MissingArtifact name="script-visual.md" />
                 )}
-                {review.content.remotionJson?.scenes?.length ? (
+                {review.content.deckSourceJson?.slides?.length ? (
                   <div className="rounded-xl border border-slate-800 bg-slate-950/40 p-4">
-                    <p className="text-xs uppercase tracking-wide text-slate-400">Scene Layout Summary</p>
+                    <p className="text-xs uppercase tracking-wide text-slate-400">Slide Layout Summary</p>
                     <div className="mt-3 space-y-3">
-                      {review.content.remotionJson.scenes.map((scene, index) => (
-                        <div key={scene.id ?? `scene-${index + 1}`} className="rounded-lg border border-slate-800 bg-slate-900/70 p-3">
+                      {review.content.deckSourceJson.slides.map((slide, index) => (
+                        <div key={slide.id ?? `slide-${index + 1}`} className="rounded-lg border border-slate-800 bg-slate-900/70 p-3">
                           <div className="flex flex-wrap items-center justify-between gap-2">
-                            <p className="font-medium text-slate-100">{scene.id ?? `scene-${index + 1}`}</p>
+                            <p className="font-medium text-slate-100">{slide.id ?? `slide-${index + 1}`}</p>
                             <div className="flex flex-wrap gap-2 text-xs text-slate-300">
-                              <span className="rounded-full border border-slate-700 px-2 py-0.5">{scene.layout ?? "—"}</span>
-                              <span className="rounded-full border border-slate-700 px-2 py-0.5">{scene.seconds ?? 0}s</span>
-                              <span className="rounded-full border border-slate-700 px-2 py-0.5">{scene.assets?.length ?? 0} assets</span>
+                              <span className="rounded-full border border-slate-700 px-2 py-0.5">{slide.layout ?? "—"}</span>
+                              <span className="rounded-full border border-slate-700 px-2 py-0.5">{slide.estimatedSeconds ?? 0}s</span>
+                              <span className="rounded-full border border-slate-700 px-2 py-0.5">{slide.assets?.length ?? 0} assets</span>
                             </div>
                           </div>
                           <p className="mt-2 text-sm text-slate-300">
-                            {scene.visualStrategy?.onScreenGoal || scene.teachingObjective || "No scene objective."}
+                            {slide.visualStrategy?.onScreenGoal || slide.title || "No slide objective."}
                           </p>
                         </div>
                       ))}
@@ -338,6 +352,30 @@ export default async function MissionControlLessonReviewPage({
                 <div className="rounded-xl border border-slate-800 bg-slate-950/40 p-4">
                   <div className="flex flex-wrap items-center justify-between gap-3">
                     <div>
+                      <p className="text-xs uppercase tracking-wide text-slate-400">PPTX Deck</p>
+                      <p className="mt-1 text-sm text-slate-300">
+                        {review.previews.deckExists ? "Recording deck is available." : "Deck not generated yet."}
+                      </p>
+                    </div>
+                    {review.previews.deckUrl ? (
+                      <a
+                        href={review.previews.deckUrl}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="rounded-lg border border-indigo-500/40 bg-indigo-500/10 px-3 py-2 text-sm text-indigo-200 hover:bg-indigo-500/20"
+                      >
+                        Download PPTX
+                      </a>
+                    ) : null}
+                  </div>
+                  {review.previews.deckLabel ? (
+                    <p className="mt-3 text-sm text-slate-400">{review.previews.deckLabel}</p>
+                  ) : null}
+                </div>
+
+                <div className="rounded-xl border border-slate-800 bg-slate-950/40 p-4">
+                  <div className="flex flex-wrap items-center justify-between gap-3">
+                    <div>
                       <p className="text-xs uppercase tracking-wide text-slate-400">PDF Preview</p>
                       <p className="mt-1 text-sm text-slate-300">
                         {review.previews.pdfExists ? "Lesson resource PDF is available." : "PDF not generated yet."}
@@ -361,13 +399,6 @@ export default async function MissionControlLessonReviewPage({
                   ) : null}
                 </div>
 
-                {review.previews.videoExists && review.previews.videoUrl ? (
-                  <div className="rounded-xl border border-slate-800 bg-slate-950/40 p-4">
-                    <p className="text-xs uppercase tracking-wide text-slate-400">Video Preview</p>
-                    <p className="mt-1 text-sm text-slate-300">{review.previews.videoLabel}</p>
-                    <video controls preload="metadata" className="mt-4 w-full rounded border border-slate-800 bg-black" src={review.previews.videoUrl} />
-                  </div>
-                ) : null}
               </div>
             </SectionCard>
 
@@ -502,9 +533,9 @@ export default async function MissionControlLessonReviewPage({
                 </details>
 
                 <details className="rounded-xl border border-slate-800 bg-slate-950/40 p-4">
-                  <summary className="cursor-pointer text-sm font-medium text-slate-100">Open raw remotion.json</summary>
+                  <summary className="cursor-pointer text-sm font-medium text-slate-100">Open raw deck-source.json</summary>
                   <div className="mt-4">
-                    {review.content.remotionJson ? <JsonPreview data={review.content.remotionJson} /> : <MissingArtifact name="remotion.json" compact />}
+                    {review.content.deckSourceJson ? <JsonPreview data={review.content.deckSourceJson} /> : <MissingArtifact name="deck-source.json" compact />}
                   </div>
                 </details>
 
@@ -542,9 +573,9 @@ export default async function MissionControlLessonReviewPage({
                       {artifact.exists ? (
                         <>
                           <a
-                            href={artifact.isPdf ? artifact.mediaHref : artifact.viewHref}
-                            target={artifact.isPdf ? "_blank" : undefined}
-                            rel={artifact.isPdf ? "noreferrer" : undefined}
+                            href={artifact.isPdf || artifact.isPptx ? artifact.mediaHref : artifact.viewHref}
+                            target={artifact.isPdf || artifact.isPptx ? "_blank" : undefined}
+                            rel={artifact.isPdf || artifact.isPptx ? "noreferrer" : undefined}
                             className="rounded border border-indigo-500/40 bg-indigo-500/10 px-2.5 py-1.5 text-xs text-indigo-200 hover:bg-indigo-500/20"
                           >
                             {rawArtifactLabel(artifact)}

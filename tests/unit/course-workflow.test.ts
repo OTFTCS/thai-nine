@@ -1,6 +1,6 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import { mkdtempSync, mkdirSync, utimesSync, writeFileSync } from "node:fs";
+import { mkdtempSync, mkdirSync, readFileSync, utimesSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 import { tmpdir } from "node:os";
 import { lessonArtifactFileName } from "../../src/lib/course-artifacts.ts";
@@ -80,6 +80,48 @@ test("blueprint csv helper reads lessons from the real file", () => {
   const rows = readBlueprintLessonRows(process.cwd());
   assert.ok(rows.length >= 180);
   assert.equal(rows[0]?.lessonId, "M01-L001");
+});
+
+test("stage-1 prompt includes targeted conceptual anchor guidance", () => {
+  const prompt = readFileSync(
+    join(
+      process.cwd(),
+      "course",
+      "prompts",
+      "agent-prompts",
+      "stage-1-script-generation.prompt.md"
+    ),
+    "utf8"
+  );
+
+  assert.match(prompt, /identify up to 3 high-risk concepts/i);
+  assert.match(prompt, /translation-first, usage-first explanation style/i);
+  assert.match(prompt, /explanation-research\.md/i);
+  assert.match(prompt, /keep them spoken-first/i);
+  assert.match(prompt, /do not force analogies into concrete vocabulary lessons/i);
+});
+
+test("editorial QA prompt and research note design require conceptual clarity", () => {
+  const editorialPrompt = readFileSync(
+    join(
+      process.cwd(),
+      "course",
+      "prompts",
+      "agent-prompts",
+      "stage-1-editorial-qa.prompt.md"
+    ),
+    "utf8"
+  );
+  const designNote = readFileSync(
+    join(process.cwd(), "course", "research", "prerecorded-language-lesson-design.md"),
+    "utf8"
+  );
+
+  assert.match(editorialPrompt, /Conceptual clarity: PASS\/FAIL/i);
+  assert.match(editorialPrompt, /misleading one-to-one English equivalent/i);
+  assert.match(editorialPrompt, /explanation-research\.md/i);
+  assert.match(editorialPrompt, /translation-first/i);
+  assert.match(designNote, /Use conceptual anchors for slippery concepts/i);
 });
 
 test("selectNextPlannedLesson uses blueprint order", () => {
@@ -429,9 +471,60 @@ test("reusable lesson gating excludes legacy ready lessons", () => {
 test("workflow artifact list includes the new QA reports", async () => {
   const module = await import("../../course/tools/lib/produce-lesson.ts");
 
+  assert.ok(module.WORKFLOW_ARTIFACT_FILES.includes("deck-source.json"));
+  assert.ok(module.WORKFLOW_ARTIFACT_FILES.includes("deck.pptx"));
+  assert.ok(module.WORKFLOW_ARTIFACT_FILES.includes("script-spoken.html"));
+  assert.ok(module.WORKFLOW_ARTIFACT_FILES.includes("canva-content.json"));
+  assert.ok(module.WORKFLOW_ARTIFACT_FILES.includes("canva-deck.pptx"));
+  assert.ok(module.WORKFLOW_ARTIFACT_FILES.includes("canva-import-guide.md"));
   assert.ok(module.WORKFLOW_ARTIFACT_FILES.includes("editorial-qa-report.md"));
   assert.ok(module.WORKFLOW_ARTIFACT_FILES.includes("visual-qa-report.md"));
   assert.ok(module.WORKFLOW_ARTIFACT_FILES.includes("assessment-qa-report.md"));
+});
+
+test("visual QA prompt includes Canva-first checks", () => {
+  const prompt = readFileSync(
+    join(
+      process.cwd(),
+      "course",
+      "prompts",
+      "agent-prompts",
+      "stage-3-visual-qa.prompt.md"
+    ),
+    "utf8"
+  );
+
+  assert.match(prompt, /canva-content\.json/i);
+  assert.match(prompt, /Canva handoff quality: PASS\/FAIL/i);
+  assert.match(prompt, /one-shot import/i);
+  assert.match(prompt, /Sarabun/i);
+  assert.match(prompt, /Thai \(PTM transliteration\)/i);
+  assert.match(prompt, /recording anchor|presenter mode/i);
+});
+
+test("ready lessons require the PPTX deck artifact pack", () => {
+  const root = mkdtempSync(join(tmpdir(), "thai-nine-ready-"));
+  const lessonDir = join(root, "course", "modules", "M01", "L004");
+  mkdirSync(lessonDir, { recursive: true });
+
+  writeFileSync(
+    join(lessonDir, "status.json"),
+    JSON.stringify(
+      {
+        lessonId: "M01-L004",
+        state: "READY_TO_RECORD",
+        updatedAt: new Date("2026-03-11T00:00:00.000Z").toISOString(),
+        validatedAt: new Date("2026-03-11T00:00:00.000Z").toISOString(),
+      },
+      null,
+      2
+    )
+  );
+
+  const issues = validateLessonDir(lessonDir, root);
+
+  assert.ok(issues.some((issue) => issue.path.endsWith("M01-L004-deck-source.json")));
+  assert.ok(issues.some((issue) => issue.path.endsWith("M01-L004-deck.pptx")));
 });
 
 test("report helpers detect PASS results and freshness", () => {

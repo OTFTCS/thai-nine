@@ -12,6 +12,9 @@ You will receive:
 - lesson id
 - blueprint row
 - `context.json`
+- `scope-research.md` when it exists
+- `usage-research.md` when it exists
+- `explanation-research.md` when it exists
 - `brief.md`
 - `script-master.json`
 - `script-spoken.md`
@@ -38,6 +41,9 @@ Look for issues such as:
 - explanations that name a form but do not explain what job it does
 - grammar explanation that is technically true but useless for a beginner
 - nuanced vocabulary explained too literally
+- missing or misleading conceptual anchors for high-risk concepts
+- sourced explanation ideas copied too closely or left more abstract than the lesson needs
+- concepts treated as high-risk when a direct translation plus one usage line would have taught more clearly
 - drills that do not practise the claimed lesson target
 - review items forced in unnaturally
 - scripts that explain clearly but do not actually make the learner do anything
@@ -89,9 +95,27 @@ Check whether the lesson explains:
 - when to use it
 - one likely beginner mistake or misuse when relevant
 
+Also check whether:
+- concrete beginner content stays translation-first when that teaches more cleanly
+- any sourced explanation has been simplified into short house wording
+- the lesson sounds like Immersion Thai with Nine, not imported pedagogy prose
+
 If a section only presents phrases without teaching why they work, strengthen it.
 
-### 4. Drill quality
+### 4. Conceptual clarity
+
+Check whether:
+- high-risk concepts that need an internal model actually receive one
+- each conceptual anchor is short, accurate, and useful for a beginner
+- the anchor prevents a real misconception instead of adding decorative flavor
+- the lesson makes clear where the comparison stops when that limit matters
+- the script avoids flattening a Thai form into a misleading one-to-one English equivalent
+- if `explanation-research.md` exists, the final explanation is simpler and more direct than the source note it came from
+- no concept is treated as high-risk when a direct gloss plus one natural usage line would have done the job
+
+If an analogy is vivid but inaccurate, tighten or remove it.
+
+### 5. Drill quality
 
 Check whether drills actually practise the target skill.
 
@@ -111,7 +135,7 @@ The lesson should normally include:
 
 If the lesson mostly explains and then moves on, strengthen it.
 
-### 5. Pre-recorded suitability
+### 6. Pre-recorded suitability
 
 Check whether the lesson works as an asynchronous tutorial.
 
@@ -123,7 +147,7 @@ Questions to ask:
 
 If the script would make the learner mostly watch and listen passively, repair it.
 
-### 6. Review integration
+### 7. Review integration
 
 If prior context exists, review items should feel natural.
 They should support the scene or drill, not be pasted in because the lesson needs to “tick reuse.”
@@ -137,6 +161,38 @@ When you find issues:
 4. keep lesson scope and objective fixed
 5. then write the report
 
+### 8. Pronunciation teaching
+
+Check whether:
+- the lesson includes a pronunciation beat (from M01-L002 onwards)
+- `pronunciationFocus` is present in `script-master.json` with at least 1 minimal pair
+- at least 1 drill is pronunciation-focused (minimal pair choice, tone echo, tone pattern)
+- the mouth-map anchor gives a physical description, not just a label
+
+If pronunciation is absent or token, flag it.
+
+### 9. Input flood / recycling
+
+Check whether each new vocabulary item appears in **3+ different contexts** across the lesson (not just its own section).
+
+Count occurrences of each new `languageFocus` item across:
+- `spokenNarration` (all sections)
+- `drills`
+- `roleplay.lines`
+- `recap`
+
+If any new item appears fewer than 3 times total, flag it.
+
+### 10. Production ratio
+
+Check whether at least 40% of drill moments require the learner to **produce** language (speak, construct, or recall), not just choose or recognize.
+
+Count:
+- Production drills: substitution, response-building, pause-and-produce, cue-to-line, recall-before-reveal
+- Recognition drills: listen-and-repeat, spot-the-right-answer, choose-the-right-form, minimal-pair-choice
+
+If production drills are less than 40% of total, flag it.
+
 ## Report format
 
 The report must be concise and explicit.
@@ -147,14 +203,41 @@ Use this exact structure:
 
 Result: PASS or FAIL
 
+## Scored Rubric (each 1–5)
+
+| Dimension | Score | Notes |
+|---|---|---|
+| Comprehensibility (new-item load) | | |
+| Production demand (output ratio) | | |
+| Input recycling (flood count) | | |
+| Drill quality & variety | | |
+| Roleplay realism | | |
+| Teaching device coverage | | |
+| Pacing & flow | | |
+| Pronunciation teaching | | |
+| **Average** | | |
+
+Scoring guide:
+- 1 = Fail (major issues)
+- 2 = Below bar (needs repair)
+- 3 = Acceptable (adequate for recording)
+- 4 = Good (minor improvements possible)
+- 5 = Excellent (exemplary)
+
+**Minimum pass: average 3.0, no dimension below 2.**
+
 ## Checks
 - Roleplay realism: PASS/FAIL — short reason
 - Pragmatic phrase use: PASS/FAIL — short reason
 - Teaching clarity: PASS/FAIL — short reason
+- Conceptual clarity: PASS/FAIL — short reason
 - Drill usefulness: PASS/FAIL — short reason
 - Teaching devices: PASS/FAIL — short reason
 - Pre-recorded suitability: PASS/FAIL — short reason
 - Review integration: PASS/FAIL — short reason
+- Pronunciation teaching: PASS/FAIL — short reason
+- Input recycling: PASS/FAIL — short reason
+- Production ratio: PASS/FAIL — short reason
 
 ## Edits made
 - short bullet list of what you changed
@@ -166,6 +249,8 @@ Result: PASS or FAIL
 
 ## Decision rule
 
-Write `Result: PASS` only if you would be comfortable handing this lesson to Nine without expecting her to repair the logic live while recording.
+Write `Result: PASS` only if:
+- the scored rubric averages 3.0+ with no dimension below 2
+- you would be comfortable handing this lesson to Nine without expecting her to repair the logic live while recording
 
 If unresolved dialogue or pedagogy problems remain, write `Result: FAIL`.

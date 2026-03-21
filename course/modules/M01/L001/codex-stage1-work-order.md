@@ -5,10 +5,16 @@ Target lesson directory: `/Users/Shared/work/thai-nine/course/modules/M01/L001`
 Use the input packet and prompt below to author lesson content.
 
 ## Required outputs
-- `/Users/Shared/work/thai-nine/course/modules/M01/L001/brief.md`
-- `/Users/Shared/work/thai-nine/course/modules/M01/L001/script-master.json`
-- `/Users/Shared/work/thai-nine/course/modules/M01/L001/script-spoken.md`
-- `/Users/Shared/work/thai-nine/course/modules/M01/L001/script-visual.md`
+- `/Users/Shared/work/thai-nine/course/modules/M01/L001/M01-L001-brief.md`
+- `/Users/Shared/work/thai-nine/course/modules/M01/L001/M01-L001-script-master.json`
+- `/Users/Shared/work/thai-nine/course/modules/M01/L001/M01-L001-script-spoken.md`
+- `/Users/Shared/work/thai-nine/course/modules/M01/L001/M01-L001-script-visual.md`
+
+## Required research notes
+- `/Users/Shared/work/thai-nine/course/modules/M01/L001/scope-research.md`
+- `/Users/Shared/work/thai-nine/course/modules/M01/L001/usage-research.md`
+- `/Users/Shared/work/thai-nine/course/modules/M01/L001/visual-research.md`
+- Review existing notes if present, or write them before or alongside the stage-1 files.
 
 ## Constraints
 - Do not edit downstream deterministic artifacts.
@@ -16,6 +22,7 @@ Use the input packet and prompt below to author lesson content.
 - The script must satisfy the schema and prompt requirements in the input packet.
 - Plan visuals for the left teaching area only; the right third stays reserved for Nine.
 - Make image choices explicit: useful real-world image, useful icon/diagram, or text-only by design.
+- Identify up to 3 high-risk concepts and give each a concise conceptual anchor only when it improves clarity or retention.
 
 ## Curriculum target
 - Module: M01 — First Contact and Courtesy

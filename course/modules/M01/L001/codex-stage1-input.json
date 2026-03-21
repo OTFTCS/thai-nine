@@ -3,10 +3,10 @@
   "lessonId": "M01-L001",
   "lessonDir": "/Users/Shared/work/thai-nine/course/modules/M01/L001",
   "outputFiles": {
-    "brief": "/Users/Shared/work/thai-nine/course/modules/M01/L001/brief.md",
-    "scriptMaster": "/Users/Shared/work/thai-nine/course/modules/M01/L001/script-master.json",
-    "scriptSpoken": "/Users/Shared/work/thai-nine/course/modules/M01/L001/script-spoken.md",
-    "scriptVisual": "/Users/Shared/work/thai-nine/course/modules/M01/L001/script-visual.md"
+    "brief": "/Users/Shared/work/thai-nine/course/modules/M01/L001/M01-L001-brief.md",
+    "scriptMaster": "/Users/Shared/work/thai-nine/course/modules/M01/L001/M01-L001-script-master.json",
+    "scriptSpoken": "/Users/Shared/work/thai-nine/course/modules/M01/L001/M01-L001-script-spoken.md",
+    "scriptVisual": "/Users/Shared/work/thai-nine/course/modules/M01/L001/M01-L001-script-visual.md"
   },
   "blueprintRow": {
     "trackId": "T01",
@@ -72,7 +72,7 @@
     ]
   },
   "promptPath": "/Users/Shared/work/thai-nine/course/prompts/agent-prompts/stage-1-script-generation.prompt.md",
-  "promptMd": "# Stage 1 — AI Lesson Brief + Script Generation\n\nYou are writing a full lesson for **Immersion Thai with Nine**.\n\nThis is not a TikTok script. It is a real teaching lesson for a learner who wants careful explanations, controlled progression, and practical Thai they can use immediately.\n\nWrite directly to the lesson directory:\n- `brief.md`\n- `script-master.json`\n- `script-spoken.md`\n- `script-visual.md`\n\n## Core role\n\nAct as:\n- a Thai curriculum designer\n- a private tutor planning a high-clarity lesson\n- an instructional writer who can explain nuance, usage, and grammar simply without becoming academic\n\nThe lesson should feel like:\n- warm\n- practical\n- spoken-first\n- carefully scaffolded\n- realistic for a learner studying with a Thai teacher\n\nIt should not feel like:\n- a social media short\n- a hype video\n- a phrase dump\n- a travel blog\n- a grammar textbook chapter\n\n## Source of truth\n\nThe curriculum identity comes from the blueprint row.\n\nUse the blueprint row to determine:\n- lesson id\n- lesson title\n- module title\n- CEFR band\n- primary and secondary outcomes\n- quiz focus\n- flashcard tags\n- notes\n- required review vocabulary\n\nYou may add supporting vocabulary, short chunks, and explanation language when genuinely needed to teach the lesson well, but do not drift away from the lesson objective.\n\n## Required inputs\n\nYou will be given:\n- the lesson id\n- the full blueprint row for the target lesson\n- `context.json`\n- exemplar lesson files from previously produced lessons\n- `course/transliteration-policy.md`\n- `course/schemas/script-master.schema.json`\n- `course/schemas/remotion.schema.json`\n- the current `thaiwith-nine-remotion/src/SubtitleVideo.tsx` layout\n\nTreat these as binding:\n- schema is binding\n- transliteration policy is binding\n- context review buckets are binding when they contain reusable prior material\n- exemplars are style references, not content to copy\n\n## Output contract\n\n### 1. `brief.md`\n\nWrite a production brief that includes:\n- lesson id and title\n- module title and CEFR band\n- target runtime\n- primary objective\n- secondary objective\n- scenario or teaching frame\n- must-teach outcomes\n- core vocabulary and chunks in triplet form\n- teaching constraints\n- likely learner mistakes to watch for\n- image and visual notes if helpful\n\n### 2. `script-master.json`\n\nThis is the canonical source.\n\nIt must be valid against `script-master.schema.json`.\n\nRequirements:\n- keep `schemaVersion: 1`\n- use the exact lesson id\n- include the provided `context` object unchanged\n- include `teachingFrame` with:\n  - `targetRuntimeMin`\n  - `targetRuntimeMax`\n  - `openingHook`\n  - `scenario`\n  - `learnerTakeaway`\n- include at least 4 sections\n- each section must have:\n  - `id`\n  - `heading`\n  - `purpose`\n  - `spokenNarration`\n  - `onScreenBullets`\n  - `drills`\n  - `languageFocus`\n  - `visualPlan`\n- each section must have at least 3 spoken narration lines\n- each section must have at least 1 drill\n- roleplay must have at least 6 lines\n- recap must have at least 3 items\n- policies must use the required enum values\n\nFor every `languageFocus` item:\n- include `thai`\n- include `translit`\n- include `english`\n- optionally include `notes`\n- set `vocabId` to the placeholder `v-0000000000`\n\nFor every section `visualPlan`:\n- choose one `leftPanelLayout` from:\n  - `focus-card`\n  - `contrast-board`\n  - `dialogue-ladder`\n  - `drill-stack`\n  - `image-anchored`\n- include `onScreenGoal`\n- include at least 2 `teachingVisuals`\n- include at least 1 `teacherCues`\n- include `imageSupport` with:\n  - `helpful`\n  - `priority`\n  - `rationale`\n  - `searchQueries`\n  - `sourceHints`\n  - optional `aiFallbackPrompt`\n\nRules for `imageSupport`:\n- if `helpful` is `true`, provide at least 1 concrete search query\n- if `helpful` is `false`, explain why text-only or icon-led teaching is better\n- prefer `sourceHints` such as `Pexels`, `Wikimedia Commons`, `The Noun Project`, `official signage`, or another specific realistic source\n- only include `aiFallbackPrompt` when a generated image would genuinely teach better than a real-world image\n\nDo not invent schema fields beyond what the provided schema allows.\n\n### 3. `script-spoken.md`\n\nWrite a clean teacher-facing narration script that:\n- follows the same structure as `script-master.json`\n- is easy for Nine to read aloud\n- includes Thai, transliteration, and English where needed\n- sounds natural when spoken\n- includes pacing and teaching cues only when genuinely helpful\n\n### 4. `script-visual.md`\n\nWrite a visual script for the remotion lesson.\n\nThe final lesson video is **16:9** and the **right third is reserved for Nine's floating-head video**.\n\nThat means:\n- all primary teaching visuals must fit comfortably in the left two-thirds\n- do not plan dense full-width layouts\n- prefer concise visual beats\n- keep overlays readable and uncluttered\n- use the visual script to support the spoken teaching, not duplicate it mechanically\n\nFor each section, include:\n- the learning focus\n- what appears on screen\n- which Thai terms are highlighted\n- which images, icons, or visual references would help\n- whether a real-world image is genuinely useful\n- how the visual stays inside the left teaching area without spilling into Nine's camera zone\n\n## Pedagogy constraints\n\nThe lesson must teach, not just present.\n\nInclude:\n- what the form means\n- when to use it\n- what nuance it carries\n- what mistakes English speakers are likely to make\n- what changes in politeness, register, or rhythm matter\n\nFor grammar or function explanations:\n- explain the pattern simply\n- explain the job the pattern is doing\n- explain at least one realistic usage context\n- explain at least one likely misuse if relevant\n\nFor nuanced words:\n- explain when a direct English gloss is insufficient\n- explain how Thai usage differs from literal translation\n- explain if something is softer, more formal, more casual, or more natural in context\n\n## Section design\n\nUse a progressive teaching flow.\n\nAcross the lesson, the learner should move through:\n- notice\n- understand\n- repeat\n- substitute\n- answer\n- produce\n\nEach section should feel purposeful. Good section shapes include:\n- setup / meaning\n- pattern explanation\n- controlled practice\n- applied mini-scenario\n\nDo not make all sections feel identical.\n\n## Drill design\n\nDrills should be active and specific.\n\nGood drills:\n- listen and repeat\n- substitution\n- choose the right form\n- response building\n- short cue-to-line production\n- mini role-play turns\n\nBad drills:\n- vague review prompts\n- generic “practice this”\n- repeated phrase lists without transformation\n\n## Review integration\n\nWhen `context.json` contains prior lessons or review bucket samples:\n- reuse at least 2 prior items if they fit naturally\n- weave them into explanation, drills, or roleplay\n- do not force irrelevant review content\n\nWhen there are no prior lessons:\n- do not fake prior review\n\n## Roleplay requirements\n\nRoleplay must be realistic and teach something.\n\nRequirements:\n- minimum 6 lines\n- plausible real-life exchange\n- must reflect the lesson objective\n- should show at least one meaningful contrast, choice, or response pattern\n- should sound like natural spoken Thai for the level\n\n## Transliteration rules\n\nUse PTM-adapted inline tone marks only.\n\nHard rules:\n- no superscript tone letters\n- no alternate transliteration systems mixed in\n- no missing tone marks where policy requires them\n- no “close enough” romanization drift\n\nAll learner-facing Thai content must have complete triplets where required.\n\n## Visual and image guidance\n\nOnly request images when they genuinely help learning.\n\nPrefer:\n- internet-sourced real-world images\n- icons\n- diagrams\n- simple visual anchors\n\nUse AI-generated imagery only when it is clearly helpful and a real-world image would not teach the concept well enough.\n\nGood reasons for images:\n- concrete objects\n- places\n- food\n- clothing\n- directional layouts\n- comparisons where seeing the concept helps memory\n\nWeak reasons for images:\n- abstract filler\n- decorative background mood\n- images that repeat what the text already explains perfectly\n\n## Remotion-safe visual planning\n\nThe teaching visuals are eventually converted into deterministic `remotion.json`.\n\nYour section visual plans should therefore already be suitable for:\n- a 1920x1080 canvas\n- left 66.67% teaching area\n- right 33.33% camera area\n- short, legible overlays\n- one supporting visual anchor per scene, not a crowded collage\n\nGood visual layouts:\n- `focus-card` for one phrase or one contrast set\n- `contrast-board` for A/B distinctions\n- `dialogue-ladder` for roleplay turn-taking\n- `drill-stack` for controlled practice prompts\n- `image-anchored` when a real-world image clearly supports memory or meaning\n\nBad visual planning:\n- full-width slides that assume no camera box\n- dense bullet walls\n- decorative stock-photo backgrounds with no teaching role\n- asking for images without saying what they teach\n\n## Quality bar\n\nThe finished lesson should be good enough that:\n- Nine can record from it without rewriting everything\n- the learner can follow the logic from explanation to practice\n- downstream flashcards and quiz generation have clean source material\n- the lesson feels like one coherent teaching session\n\n## File-writing rules\n\nWrite the files directly.\n\nDo not:\n- output commentary instead of files\n- ask for permission\n- leave TODOs\n- leave malformed JSON\n- leave placeholder prose outside the required files\n\nThe lesson must be ready for:\n- `fixup-vocabids`\n- stage 2 QA\n- stage 3-7 deterministic artifact generation\n",
+  "promptMd": "# Stage 1 — AI Lesson Brief + Script Generation\n\nYou are writing a full lesson for **Immersion Thai with Nine**.\n\nThis is not a TikTok script. It is a real teaching lesson for a learner who wants careful explanations, controlled progression, and practical Thai they can use immediately.\n\nWrite directly to the lesson directory:\n- `brief.md`\n- `script-master.json`\n- `script-spoken.md`\n- `script-visual.md`\n\n## Core role\n\nAct as:\n- a Thai curriculum designer\n- a private tutor planning a high-clarity lesson\n- an instructional writer who can explain nuance, usage, and grammar simply without becoming academic\n\nThe lesson should feel like:\n- warm\n- practical\n- spoken-first\n- carefully scaffolded\n- realistic for a learner studying with a Thai teacher\n\nIt should not feel like:\n- a social media short\n- a hype video\n- a phrase dump\n- a travel blog\n- a grammar textbook chapter\n\n## Source of truth\n\nThe curriculum identity comes from the blueprint row.\n\nUse the blueprint row to determine:\n- lesson id\n- lesson title\n- module title\n- CEFR band\n- primary and secondary outcomes\n- quiz focus\n- flashcard tags\n- notes\n- required review vocabulary\n\nYou may add supporting vocabulary, short chunks, and explanation language when genuinely needed to teach the lesson well, but do not drift away from the lesson objective.\n\n## Required inputs\n\nYou will be given:\n- the lesson id\n- the full blueprint row for the target lesson\n- `context.json`\n- lesson research notes from the lesson directory when they already exist:\n  - `scope-research.md`\n  - `usage-research.md`\n  - `visual-research.md`\n  - `explanation-research.md`\n- exemplar lesson files from previously produced lessons\n- `course/transliteration-policy.md`\n- `course/schemas/script-master.schema.json`\n- `course/schemas/deck-source.schema.json`\n- the current PPTX design system in `course/Start with L001 and Review Uploaded Files/design_system.py`\n\nTreat these as binding:\n- schema is binding\n- transliteration policy is binding\n- context review buckets are binding when they contain reusable prior material\n- research notes are binding once they exist; if they do not exist yet, write them before or alongside stage-1 authoring and use them to lock scope, conceptual anchors, and visual simplification decisions\n- `explanation-research.md` is binding only for the selected high-risk concepts it covers; use it to sharpen understanding, not to import another teacher's voice\n- exemplars are style references, not content to copy\n\n## Output contract\n\n### 1. `brief.md`\n\nWrite a production brief that includes:\n- lesson id and title\n- module title and CEFR band\n- target runtime\n- primary objective\n- secondary objective\n- scenario or teaching frame\n- must-teach outcomes\n- core vocabulary and chunks in triplet form\n- teaching constraints\n- likely learner mistakes to watch for\n- image and visual notes if helpful\n\n### 2. `script-master.json`\n\nThis is the canonical source.\n\nIt must be valid against `script-master.schema.json`.\n\nRequirements:\n- keep `schemaVersion: 1`\n- use the exact lesson id\n- include the provided `context` object unchanged\n- include `teachingFrame` with:\n  - `targetRuntimeMin`\n  - `targetRuntimeMax`\n  - `openingHook`\n  - `scenario`\n  - `learnerTakeaway`\n- include at least 4 sections\n- each section must have:\n  - `id`\n  - `heading`\n  - `purpose`\n  - `spokenNarration`\n  - `onScreenBullets`\n  - `drills`\n  - `languageFocus`\n  - `visualPlan`\n- each section must have at least 3 spoken narration lines\n- each section must have at least 1 drill\n- roleplay must have at least 6 lines\n- recap must have at least 3 items\n- policies must use the required enum values\n\nFor every `languageFocus` item:\n- include `thai`\n- include `translit`\n- include `english`\n- optionally include `notes`\n- set `vocabId` to the placeholder `v-0000000000`\n\nFor every section `visualPlan`:\n- choose one `leftPanelLayout` from:\n  - `focus-card`\n  - `contrast-board`\n  - `dialogue-ladder`\n  - `drill-stack`\n  - `image-anchored`\n- include `onScreenGoal`\n- include at least 2 `teachingVisuals`\n- include at least 1 `teacherCues`\n- include `imageSupport` with:\n  - `helpful`\n  - `priority`\n  - `rationale`\n  - `searchQueries`\n  - `sourceHints`\n  - optional `aiFallbackPrompt`\n\nRules for `imageSupport`:\n- if `helpful` is `true`, provide at least 1 concrete search query\n- if `helpful` is `false`, explain why text-only or icon-led teaching is better\n- prefer `sourceHints` such as `Pexels`, `Wikimedia Commons`, `The Noun Project`, `official signage`, or another specific realistic source\n- only include `aiFallbackPrompt` when a generated image would genuinely teach better than a real-world image\n\nDo not invent schema fields beyond what the provided schema allows.\n\n### 3. `script-spoken.md`\n\nWrite a clean teacher-facing narration script that:\n- follows the same structure as `script-master.json`\n- is easy for Nine to read aloud\n- includes Thai, transliteration, and English where needed\n- sounds natural when spoken\n- includes pacing and teaching cues only when genuinely helpful\n\n### 4. `script-visual.md`\n\nWrite a visual script for the PPTX lesson deck.\n\nThe final lesson presentation is **16:9** and the **right third is reserved for Nine's camera / recording space**.\n\nThat means:\n- all primary teaching visuals must fit comfortably in the left two-thirds\n- do not plan dense full-width layouts\n- prefer concise visual beats\n- keep overlays readable and uncluttered\n- use the visual script to support the spoken teaching, not duplicate it mechanically\n\nFor each section, include:\n- the learning focus\n- what appears on screen\n- which Thai terms are highlighted\n- which images, icons, or visual references would help\n- whether a real-world image is genuinely useful\n- how the visual stays inside the left teaching area without spilling into Nine's camera zone\n\n## Pedagogy constraints\n\nThe lesson must teach, not just present.\n\nFor concrete beginner content, default to a translation-first, usage-first explanation style.\n\nStart with:\n- the clearest direct gloss that is still true\n- one realistic usage line\n- one likely beginner misuse only when it materially helps\n\nOnly escalate to a conceptual anchor or sourced explanation when the direct gloss would teach the wrong instinct or leave a real confusion unresolved.\n\nIf `explanation-research.md` exists:\n- use it only for the selected high-risk concepts\n- rewrite the final explanation into shorter house-style wording\n- keep the lesson simpler and more direct than the source note\n- never echo source phrasing closely\n\nInclude:\n- what the form means\n- when to use it\n- what nuance it carries\n- what mistakes English speakers are likely to make\n- what changes in politeness, register, or rhythm matter\n\nFor grammar or function explanations:\n- explain the pattern simply\n- explain the job the pattern is doing\n- explain at least one realistic usage context\n- explain at least one likely misuse if relevant\n\nFor nuanced words:\n- explain when a direct English gloss is insufficient\n- explain how Thai usage differs from literal translation\n- explain if something is softer, more formal, more casual, or more natural in context\n- prefer the simplest true explanation that gets the learner to a usable next line\n\n## Conceptual anchor pass\n\nBefore finalizing the lesson, identify up to 3 high-risk concepts that might need an internal model rather than a bare gloss.\n\nDo not assume a conceptual anchor is needed.\nMost concrete beginner lessons should remain mostly translation-first.\n\nHigh-risk concepts commonly include:\n- abstract grammar or function\n- politeness particles or social softeners\n- tones or pronunciation contrasts\n- script logic\n- cases where a direct English gloss would teach the wrong instinct\n\nFor each selected concept, include one concise conceptual anchor in the lesson.\n\nGood conceptual anchor types:\n- social-job framing\n- sentence-frame or slot framing\n- `not X, but more like Y` contrast\n- sound or mouth map\n- tiny situational analogy\n\nBad conceptual anchor types:\n- decorative metaphor with no teaching payoff\n- unsupported etymology\n- mystical or pseudo-historical explanation\n- false one-to-one English equivalence\n- long side explanations that interrupt the lesson flow\n\nRules:\n- if a direct translation-plus-usage explanation works cleanly, prefer that over a conceptual anchor\n- keep conceptual anchors short, usually 1-2 spoken lines\n- keep them spoken-first; they belong primarily in `spokenNarration`\n- optionally reinforce them in `languageFocus[].notes` when that helps later QA or downstream reuse\n- do not invent new schema fields for conceptual anchors\n- if `explanation-research.md` exists, distill it into simpler house wording before it reaches the script\n- make the limit of the comparison clear when needed, especially when the anchor could be mistaken for a literal translation\n- do not force analogies into concrete vocabulary lessons unless they prevent a real beginner mistake or materially improve retention\n\n## Pre-recorded lesson design\n\nThis lesson is delivered as a **pre-recorded online tutorial**.\n\nThat means the script must create interaction deliberately.\nDo not write a passive lecture with occasional phrase lists.\n\nUse the lesson to create a rhythm of:\n- model\n- notice\n- repeat\n- choose\n- produce\n- roleplay\n- retrieve\n\nThe learner should be asked to do things out loud even though the lesson is asynchronous.\n\nUseful teacher cues include:\n- `listen first`\n- `say it with me`\n- `your turn`\n- `pause and answer`\n- `choose the right one`\n- `look away and try`\n- `say the next line before I show it`\n\nThese cues do not need to appear mechanically in every paragraph, but the lesson should clearly create response windows.\n\n## Section design\n\nUse a progressive teaching flow.\n\nAcross the lesson, the learner should move through:\n- notice\n- understand\n- repeat\n- substitute\n- answer\n- produce\n\nEach section should feel purposeful. Good section shapes include:\n- setup / meaning\n- pattern explanation\n- controlled practice\n- applied mini-scenario\n\nDo not make all sections feel identical.\n\n## Pronunciation beat (required from M01-L002 onwards)\n\nEvery lesson must include a **dedicated pronunciation micro-segment** (60–90 seconds) that trains the learner's ear and mouth, not just their vocabulary.\n\nInclude a `pronunciationFocus` object in the script-master.json with:\n- `targetSounds`: what sound contrast or tone pattern is being trained this lesson\n- `minimalPairs`: at least 1 meaning-changing pair (e.g., ไก่/ไข่, มา/ม้า/หมา, ใกล้/ไกล)\n- `mouthMapAnchor`: a physical description of how to produce the sound (\"rising tone starts low and lifts up, like asking a question in English\")\n- `tonePattern` (optional): which tone is being drilled\n\nPronunciation focus progression across the course:\n- **M01–M02**: Individual sounds that don't exist in English (aspirated vs unaspirated: ก/ข, ด/ท, บ/ป)\n- **M02–M03**: Tone contrasts via meaning-changing minimal pairs\n- **M04–M06**: Tone drills using that lesson's vocabulary (hear two, choose correct one)\n- **M07+**: Connected speech, rhythm, reduction patterns\n\nAt least 1 drill per lesson must be a pronunciation drill. Good pronunciation drill types:\n- **Minimal pair choice**: \"Which word means X? Option A or Option B?\" (tests tone discrimination)\n- **Tone echo**: Model → learner repeats → model again for self-check\n- **Tone pattern drill**: 3–4 words with the same tone, then one intruder with a different tone\n- **Aspiration contrast**: Hear two words, identify which has the air puff\n\nDo not skip pronunciation. Thai tones are the #1 challenge for Western learners, and every lesson is an opportunity to train the ear.\n\n## Cognitive load limits\n\nDo not overwhelm the learner with too many new items.\n\nHard limits:\n- **Max 5–7 new vocabulary items per lesson** (A0 level); up to 8–10 for A2+\n- **Max 2–3 new items per section** before practice begins\n- Each new item must appear in **3+ varied contexts** within the lesson (explanation, drill, roleplay, recap — not just its own section)\n- **95% comprehensibility rule**: the learner should understand 95%+ of what they hear in any given section; only 1–2 things should be genuinely new at any moment\n\nIf a lesson has too much vocabulary from the blueprint, split teaching across sections and prioritize the highest-frequency items. Flag lower-frequency items as \"exposure only\" in notes.\n\n## Pushed output requirements\n\nThe learner must produce language, not just recognize it. At least 40% of drill moments should require the learner to speak, not just choose.\n\nEvery lesson must include:\n- at least **1 substitution drill** (swap one slot in a frame: \"Say 'I want ___' with the next food item\")\n- at least **1 response-building drill** (learner constructs a response from a cue)\n- at least **1 pause-and-produce moment** where the learner says the line BEFORE hearing the answer\n- roleplay must include at least **2 turns where the learner could reasonably produce the next line** (mark these with a teacher cue like \"your turn\" or \"say the next line before I show it\")\n\n## Input flood and recycling\n\nEach new vocabulary item or pattern must appear in multiple contexts across the lesson, not just in its teaching section.\n\nRules:\n- Each target form must appear in the `spokenNarration` of at least **2 different sections** (not just its own)\n- Target forms should appear naturally across: explanation examples, drill prompts, roleplay lines, AND recap items\n- Prior vocabulary from `context.json` review buckets should be woven into drills and roleplay, not forced as a separate checklist\n\n## Task repetition with variation\n\nAt least one drill format should appear **twice in the lesson with different content** (e.g., substitution drill in section 2 with greetings, same format in section 4 with questions). This builds automaticity through repetition with variation.\n\nThe roleplay should echo a drill pattern from earlier — the roleplay \"tests\" what a drill \"trained.\"\n\n## Lexical chunks\n\nWhen a `languageFocus` item is a multi-word chunk (e.g., ไม่เป็นไร, ยินดีที่ได้รู้จัก, ขอโทษครับ), set `\"type\": \"chunk\"` on the item.\n\nTeach chunks as whole units first. The learner should hear, repeat, and use the chunk before (optionally) decomposing it into parts. Do not default to word-by-word translation for chunks.\n\n## Required teaching devices\n\nEvery lesson must include all of the following somewhere in the script:\n- at least 1 `listen first` model moment before explanation\n- at least 1 explicit repeat / echo / call-and-response cycle\n- at least 1 discrimination or choice task\n- at least 1 substitution or response-building drill\n- at least 1 pause-and-produce retrieval moment\n- at least 1 realistic micro-roleplay\n- at least 1 recap that asks the learner to recall before the answer is shown\n\nThese devices should be distributed naturally across the lesson.\nDo not dump them all into one section.\n\n## Drill design\n\nDrills should be active and specific.\n\nGood drills:\n- listen and repeat\n- listen once before repeating\n- minimal-pair or contrast choice\n- spot-the-right-answer\n- substitution\n- choose the right form\n- response building\n- short cue-to-line production\n- pause-and-produce\n- recall-before-reveal\n- mini role-play turns\n\nBad drills:\n- vague review prompts\n- generic “practice this”\n- repeated phrase lists without transformation\n- long explanation followed by no learner action\n\n## Review integration\n\nWhen `context.json` contains prior lessons or review bucket samples:\n- reuse at least 2 prior items if they fit naturally\n- weave them into explanation, drills, or roleplay\n- do not force irrelevant review content\n\nWhen there are no prior lessons:\n- do not fake prior review\n\n## Roleplay requirements\n\nRoleplay must be realistic and teach something.\n\nRequirements:\n- minimum 6 lines\n- plausible real-life exchange\n- must reflect the lesson objective\n- should show at least one meaningful contrast, choice, or response pattern\n- should sound like natural spoken Thai for the level\n- should include at least one point where the learner could reasonably pause and say the next line before the answer appears\n\nFor pre-recorded teaching:\n- roleplay should be staged as teachable beats, not just performed once at full speed\n- earlier sections should prepare the exact lines or decisions the roleplay needs\n- the roleplay should solve one small communicative problem\n\n## Transliteration rules\n\nUse PTM-adapted inline tone marks only.\n\nHard rules:\n- no superscript tone letters\n- no alternate transliteration systems mixed in\n- no missing tone marks where policy requires them\n- no “close enough” romanization drift\n\nAll learner-facing Thai content must have complete triplets where required.\n\n## Visual and image guidance\n\nOnly request images when they genuinely help learning.\n\nPrefer:\n- internet-sourced real-world images\n- icons\n- diagrams\n- simple visual anchors\n\nUse AI-generated imagery only when it is clearly helpful and a real-world image would not teach the concept well enough.\n\nGood reasons for images:\n- concrete objects\n- places\n- food\n- clothing\n- directional layouts\n- comparisons where seeing the concept helps memory\n\nWeak reasons for images:\n- abstract filler\n- decorative background mood\n- images that repeat what the text already explains perfectly\n\nIf a conceptual anchor is used:\n- keep it spoken-first by default\n- only place it on screen when a small contrast, slot frame, or simple diagram clearly reduces cognitive load\n- do not turn the analogy into decorative metaphor art\n\n## PPTX-safe visual planning\n\nThe teaching visuals are eventually converted into deterministic `deck-source.json` and `deck.pptx`.\n\nYour section visual plans should therefore already be suitable for:\n- a 1920x1080 canvas\n- left 66.67% teaching area\n- right 33.33% camera area\n- short, legible overlays\n- one supporting visual anchor per slide, not a crowded collage\n\nGood visual layouts:\n- `focus-card` for one phrase or one contrast set\n- `contrast-board` for A/B distinctions\n- `dialogue-ladder` for roleplay turn-taking\n- `drill-stack` for controlled practice prompts\n- `image-anchored` when a real-world image clearly supports memory or meaning\n\nBad visual planning:\n- full-width slides that assume no camera box\n- dense bullet walls\n- decorative stock-photo backgrounds with no teaching role\n- asking for images without saying what they teach\n\n## Quality bar\n\nThe finished lesson should be good enough that:\n- Nine can record from it without rewriting everything\n- the learner can follow the logic from explanation to practice\n- downstream flashcards and quiz generation have clean source material\n- the lesson feels like one coherent teaching session\n\n## File-writing rules\n\nWrite the files directly.\n\nDo not:\n- output commentary instead of files\n- ask for permission\n- leave TODOs\n- leave malformed JSON\n- leave placeholder prose outside the required files\n\nThe lesson must be ready for:\n- `fixup-vocabids`\n- stage 2 QA\n- stage 3-7 deterministic artifact generation\n",
   "scriptMasterSchemaPath": "/Users/Shared/work/thai-nine/course/schemas/script-master.schema.json",
   "scriptMasterSchema": {
     "$schema": "https://json-schema.org/draft/2020-12/schema",
@@ -227,6 +227,13 @@
                   "vocabId": {
                     "type": "string",
                     "pattern": "^v-[a-f0-9]{10}$"
+                  },
+                  "type": {
+                    "enum": [
+                      "word",
+                      "chunk"
+                    ],
+                    "default": "word"
                   }
                 }
               }
@@ -422,21 +429,110 @@
             "const": "INTERNET_FIRST_NO_GENERATIVE_DEFAULT"
           }
         }
+      },
+      "pronunciationFocus": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "targetSounds",
+          "minimalPairs",
+          "mouthMapAnchor"
+        ],
+        "properties": {
+          "targetSounds": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "minimalPairs": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "a",
+                "b"
+              ],
+              "properties": {
+                "a": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "thai",
+                    "translit",
+                    "english"
+                  ],
+                  "properties": {
+                    "thai": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "translit": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "english": {
+                      "type": "string",
+                      "minLength": 1
+                    }
+                  }
+                },
+                "b": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "thai",
+                    "translit",
+                    "english"
+                  ],
+                  "properties": {
+                    "thai": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "translit": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "english": {
+                      "type": "string",
+                      "minLength": 1
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "mouthMapAnchor": {
+            "type": "string",
+            "minLength": 1
+          },
+          "tonePattern": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
       }
     }
   },
-  "remotionSchemaPath": "/Users/Shared/work/thai-nine/course/schemas/remotion.schema.json",
-  "remotionSchema": {
+  "deckSchemaPath": "/Users/Shared/work/thai-nine/course/schemas/deck-source.schema.json",
+  "deckSchema": {
     "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "$id": "https://thai-nine.local/schemas/remotion.schema.json",
-    "title": "Remotion Plan",
+    "$id": "https://thai-nine.local/schemas/deck-source.schema.json",
+    "title": "PPTX Deck Source",
     "type": "object",
     "additionalProperties": false,
     "required": [
       "schemaVersion",
       "lessonId",
       "sourceScript",
-      "scenes"
+      "canvas",
+      "theme",
+      "slides"
     ],
     "properties": {
       "schemaVersion": {
@@ -447,7 +543,8 @@
         "pattern": "^M\\d{2}-L\\d{3}$"
       },
       "sourceScript": {
-        "const": "script-master.json"
+        "type": "string",
+        "pattern": "^(M\\d{2}-L\\d{3}-)?script-master\\.json$"
       },
       "canvas": {
         "type": "object",
@@ -484,18 +581,69 @@
           }
         }
       },
-      "scenes": {
+      "theme": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "name",
+          "thaiFont",
+          "latinFont",
+          "backgroundColor",
+          "rightZoneTint",
+          "accentColors"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "name": {
+            "type": "string",
+            "minLength": 1
+          },
+          "thaiFont": {
+            "type": "string",
+            "minLength": 1
+          },
+          "latinFont": {
+            "type": "string",
+            "minLength": 1
+          },
+          "backgroundColor": {
+            "type": "string",
+            "pattern": "^#[0-9A-Fa-f]{6}$"
+          },
+          "rightZoneTint": {
+            "type": "string",
+            "pattern": "^#[0-9A-Fa-f]{6}$"
+          },
+          "accentColors": {
+            "type": "array",
+            "minItems": 2,
+            "items": {
+              "type": "string",
+              "pattern": "^#[0-9A-Fa-f]{6}$"
+            }
+          }
+        }
+      },
+      "slides": {
         "type": "array",
-        "minItems": 3,
+        "minItems": 6,
         "items": {
           "type": "object",
           "additionalProperties": false,
           "required": [
             "id",
-            "seconds",
-            "voiceover",
-            "overlays",
+            "role",
+            "title",
+            "estimatedSeconds",
+            "layout",
+            "speakerNotes",
+            "textBlocks",
             "thaiFocus",
+            "visualStrategy",
             "assets"
           ],
           "properties": {
@@ -503,38 +651,103 @@
               "type": "string",
               "minLength": 1
             },
-            "seconds": {
-              "type": "number",
-              "minimum": 20
+            "role": {
+              "enum": [
+                "opener",
+                "objectives",
+                "teaching",
+                "roleplay",
+                "recap",
+                "closing"
+              ]
             },
-            "voiceover": {
-              "type": "array",
-              "minItems": 1,
-              "items": {
-                "type": "string",
-                "minLength": 1
-              }
-            },
-            "overlays": {
-              "type": "array",
-              "minItems": 1,
-              "items": {
-                "type": "string",
-                "minLength": 1
-              }
-            },
-            "teachingObjective": {
+            "title": {
               "type": "string",
               "minLength": 1
             },
+            "estimatedSeconds": {
+              "type": "number",
+              "minimum": 8
+            },
             "layout": {
-              "enum": [
-                "focus-card",
-                "contrast-board",
-                "dialogue-ladder",
-                "drill-stack",
-                "image-anchored"
-              ]
+              "type": "string",
+              "minLength": 1
+            },
+            "speakerNotes": {
+              "type": "array",
+              "minItems": 1,
+              "items": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "textBlocks": {
+              "type": "array",
+              "minItems": 1,
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "id",
+                  "kind",
+                  "lines"
+                ],
+                "properties": {
+                  "id": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "kind": {
+                    "enum": [
+                      "eyebrow",
+                      "bullet-list",
+                      "triplet-list",
+                      "dialogue",
+                      "recap-list",
+                      "closing-list",
+                      "note"
+                    ]
+                  },
+                  "heading": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "lines": {
+                    "type": "array",
+                    "minItems": 1,
+                    "items": {
+                      "type": "string",
+                      "minLength": 1
+                    }
+                  }
+                }
+              }
+            },
+            "thaiFocus": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "thai",
+                  "translit",
+                  "english"
+                ],
+                "properties": {
+                  "thai": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "translit": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "english": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                }
+              }
             },
             "visualStrategy": {
               "type": "object",
@@ -580,36 +793,8 @@
                 }
               }
             },
-            "thaiFocus": {
-              "type": "array",
-              "minItems": 1,
-              "items": {
-                "type": "object",
-                "additionalProperties": false,
-                "required": [
-                  "thai",
-                  "translit",
-                  "english"
-                ],
-                "properties": {
-                  "thai": {
-                    "type": "string",
-                    "minLength": 1
-                  },
-                  "translit": {
-                    "type": "string",
-                    "minLength": 1
-                  },
-                  "english": {
-                    "type": "string",
-                    "minLength": 1
-                  }
-                }
-              }
-            },
             "assets": {
               "type": "array",
-              "minItems": 1,
               "items": {
                 "type": "object",
                 "additionalProperties": false,
@@ -618,8 +803,8 @@
                   "kind",
                   "query",
                   "sourcePolicy",
-                  "sourceUrl",
-                  "license"
+                  "status",
+                  "sourceProvider"
                 ],
                 "properties": {
                   "assetId": {
@@ -628,9 +813,7 @@
                   },
                   "kind": {
                     "enum": [
-                      "image",
-                      "icon",
-                      "video"
+                      "image"
                     ]
                   },
                   "query": {
@@ -640,6 +823,20 @@
                   "sourcePolicy": {
                     "const": "internet-first"
                   },
+                  "status": {
+                    "enum": [
+                      "resolved",
+                      "fallback-text-only",
+                      "not-needed"
+                    ]
+                  },
+                  "sourceProvider": {
+                    "enum": [
+                      "openverse",
+                      "wikimedia",
+                      "none"
+                    ]
+                  },
                   "sourceUrl": {
                     "type": "string",
                     "pattern": "^https://"
@@ -648,11 +845,15 @@
                     "type": "string",
                     "minLength": 1
                   },
+                  "localPath": {
+                    "type": "string",
+                    "minLength": 1
+                  },
                   "usageNotes": {
                     "type": "string",
                     "minLength": 1
                   },
-                  "aiFallbackPrompt": {
+                  "fallbackReason": {
                     "type": "string",
                     "minLength": 1
                   }
@@ -665,9 +866,17 @@
     }
   },
   "transliterationPolicyPath": "/Users/Shared/work/thai-nine/course/transliteration-policy.md",
-  "transliterationPolicyMd": "# Transliteration Policy (PTM-Adapted, Hard-Enforced)\n\nThis repository enforces a single transliteration standard for all learner-facing artifacts.\n\n## Canonical standard\n- **Scheme:** PTM-adapted inline tones.\n- **Required style:** inline tone diacritics on vowels (`à á â ǎ ...`), not superscripts.\n- **Primary implementation:** `course/tools/lib/transliteration-policy.ts`\n\n## Forbidden patterns (build blockers)\n- IPA-like symbols (examples): `ʉ ə ɯ ɤ œ ɨ ɪ ʊ ŋ ɲ ɕ ʔ ː`\n- Superscript tones: `ᴴ ᴹ ᴸ ᴿ`\n- Caret tones: `^H ^M ^L ^R`\n- Legacy trailing suffix tones: `wordH wordM wordL wordR`\n\n## Allowed character class\nTransliteration strings are restricted to PTM-compatible latin characters, inline tone marks, digits, spacing, and controlled punctuation (see exported `PTM_ALLOWED_CHARACTER_CLASS`).\n\n## Human quick reference (script-writing)\nUse this section when drafting scripts manually before running audit.\n\n### Frequent words (approved forms)\n- สวัสดี → `sà-wàt-dii`\n- ขอบคุณ → `khàawp-khun`\n- ขอโทษ → `khǎaw-thôot`\n- ไม่เข้าใจ → `mâi khâo-jai`\n- พูดช้าๆ ได้ไหม → `phûut cháa-cháa dâai mái`\n- ครับ → `khráp`\n- ค่ะ → `khâ`\n- คะ → `khá`\n- อยู่ → `yùu`\n- บอกว่า → `bàawk wâa`\n- หมอ → `mǎaw`\n- รอ → `raaw`\n\n### Common mistakes we keep seeing\n- **Do not use IPA glyphs** in learner transliteration.\n  - Wrong: `mɔ̌ɔ`\n  - Right: `mǎaw`\n- Keep PTM long-vowel spellings consistent (`aa`, `aaw`, `aao`, etc.) using canonical mappings.\n- Do not mix systems in one file (for example PTM + IPA forms together).\n- Keep polite particles exact (`khráp`, `khâ`, `khá`) and do not flatten tone marks.\n\n### Pre-publish checklist (for writers)\nBefore submitting scripts/lesson artifacts:\n1. Every learner-facing Thai line has a full `Thai | translit | English` triplet.\n2. Transliteration uses inline tone marks only (no superscripts/caret/legacy suffix tones).\n3. No IPA symbols appear anywhere in transliteration fields.\n4. High-frequency words match approved forms in this file.\n5. Run `translit-audit` and resolve all violations.\n\nIf unsure about any spelling, check:\n- `course/transliteration-ptm-vowels.json`\n- `course/transliteration-ptm-consonants.json`\n- `course/tools/lib/transliteration-policy.ts`\n\n## Where this is enforced\nHard validators cover:\n- `script-master.json`\n- `script-spoken.md`\n- `script-visual.md`\n- `remotion.json`\n- `pdf-source.json`\n- `pdf.md`\n- `flashcards.json`\n- `vocab-export.json`\n- `quiz-item-bank.json`\n- `quiz.json`\n- lesson `context.json`\n- global vocab exports/index\n- `thaiwith-nine-remotion/src/data/*.json` (`phonetics`)\n\n## Audit + repair command\nUse:\n\n```bash\nnode --experimental-strip-types course/tools/pipeline-cli.ts translit-audit\nnode --experimental-strip-types course/tools/pipeline-cli.ts translit-audit --fix\nnode --experimental-strip-types course/tools/pipeline-cli.ts translit-audit --lesson M01-L001 --fix\n```\n\nBehavior:\n- `translit-audit` → reports violations.\n- `translit-audit --fix` → applies safe normalizations, reports manual-review items.\n\nDeterministic exit codes:\n- `0` = clean (or fully fixed with no remaining/manual items)\n- `2` = transliteration drift still present and/or manual review required\n- `1` = command/config error (for example no valid audit targets)\n\n## CI / release gate behavior\n- Stage 2 QA blocks on script transliteration violations.\n- Stage 7 release gate blocks on any transliteration drift in lesson + remotion data artifacts.\n",
-  "subtitleVideoPath": "/Users/Shared/work/thai-nine/thaiwith-nine-remotion/src/SubtitleVideo.tsx",
-  "subtitleVideoTsx": "import React from \"react\";\nimport {\n  AbsoluteFill,\n  Img,\n  Sequence,\n  interpolate,\n  spring,\n  staticFile,\n  useCurrentFrame,\n  useVideoConfig,\n} from \"remotion\";\n\nexport type SubtitleItem = {\n  startFrame: number;\n  endFrame: number;\n  heroText: string;\n  heroSubText?: string;\n  thaiScript?: string;\n  phonetics?: string;\n  englishTranslate?: string;\n  image?: string;\n  emoji?: string;\n  type: \"hook\" | \"term\" | \"outro\";\n};\n\nexport type SubtitleTheme = \"default\" | \"thaiFlag\";\n\nconst getTheme = (theme: SubtitleTheme) => {\n  if (theme === \"thaiFlag\") {\n    return {\n      pageBg: \"#fff\",\n      pageText: \"#0f172a\",\n      leftBg:\n        \"linear-gradient(180deg, #a51931 0%, #a51931 16%, #ffffff 16%, #ffffff 32%, #2d2a4a 32%, #2d2a4a 68%, #ffffff 68%, #ffffff 84%, #a51931 84%, #a51931 100%)\",\n      leftBorder: \"1px solid rgba(45,42,74,0.25)\",\n      chipBg: \"rgba(255,255,255,0.92)\",\n      chipBorder: \"1px solid rgba(45,42,74,0.22)\",\n      chipText: \"#1e1b4b\",\n      progressTrack: \"rgba(45,42,74,0.2)\",\n      progressFill: \"linear-gradient(90deg, #a51931 0%, #2d2a4a 100%)\",\n      rightBg: \"linear-gradient(180deg, #fff 0%, #f8fafc 100%)\",\n      rightBorder: \"1px dashed rgba(45,42,74,0.38)\",\n      zoneText: \"#475569\",\n      cardBg: \"rgba(255,255,255,0.95)\",\n      cardBorder: \"1px solid rgba(45,42,74,0.2)\",\n      titleText: \"#111827\",\n      phoneticText: \"#a51931\",\n      englishText: \"#334155\",\n      badgeBg: \"#fee2e2\",\n      badgeBorder: \"1px solid #fca5a5\",\n      badgeText: \"#7f1d1d\",\n    };\n  }\n\n  return {\n    pageBg: \"#f8fafc\",\n    pageText: \"#0f172a\",\n    leftBg:\n      \"radial-gradient(circle at 10% 20%, rgba(56,189,248,0.22), transparent 48%), radial-gradient(circle at 80% 10%, rgba(251,113,133,0.18), transparent 45%), linear-gradient(180deg, #eff6ff 0%, #f0fdf4 100%)\",\n    leftBorder: \"1px solid rgba(148,163,184,0.4)\",\n    chipBg: \"rgba(255,255,255,0.88)\",\n    chipBorder: \"1px solid rgba(148,163,184,0.4)\",\n    chipText: \"#0f172a\",\n    progressTrack: \"rgba(148,163,184,0.35)\",\n    progressFill: \"linear-gradient(90deg, #0ea5e9, #22c55e)\",\n    rightBg: \"linear-gradient(180deg, #fff7ed 0%, #fefce8 100%)\",\n    rightBorder: \"1px dashed rgba(148,163,184,0.55)\",\n    zoneText: \"#64748b\",\n    cardBg: \"rgba(255,255,255,0.94)\",\n    cardBorder: \"1px solid rgba(148,163,184,0.4)\",\n    titleText: \"#0f172a\",\n    phoneticText: \"#0369a1\",\n    englishText: \"#334155\",\n    badgeBg: \"#d1fae5\",\n    badgeBorder: \"1px solid #6ee7b7\",\n    badgeText: \"#065f46\",\n  };\n};\n\nexport const SubtitleVideo: React.FC<{ subtitles: SubtitleItem[]; episodeTitle?: string; theme?: SubtitleTheme }> = ({\n  subtitles,\n  episodeTitle,\n  theme = \"default\",\n}) => {\n  const frame = useCurrentFrame();\n  const { durationInFrames } = useVideoConfig();\n  const progress = Math.min(100, Math.round((frame / Math.max(1, durationInFrames - 1)) * 100));\n  const colors = getTheme(theme);\n\n  return (\n    <AbsoluteFill style={{ backgroundColor: colors.pageBg, color: colors.pageText, fontFamily: \"Inter, system-ui, sans-serif\" }}>\n      {/* Left 2/3 = Remotion teaching area */}\n      <AbsoluteFill\n        style={{\n          width: \"66.6667%\",\n          left: 0,\n          background: colors.leftBg,\n          borderRight: colors.leftBorder,\n        }}\n      >\n        <div style={{ position: \"absolute\", top: 24, left: 24, right: 24, display: \"flex\", justifyContent: \"space-between\", gap: 12 }}>\n          <div\n            style={{\n              fontSize: 24,\n              fontWeight: 700,\n              background: colors.chipBg,\n              border: colors.chipBorder,\n              padding: \"10px 14px\",\n              borderRadius: 12,\n              color: colors.chipText,\n            }}\n          >\n            {episodeTitle || \"Immersion Thai with Nine\"}\n          </div>\n          <div\n            style={{\n              fontSize: 15,\n              color: colors.englishText,\n              background: colors.chipBg,\n              border: colors.chipBorder,\n              padding: \"10px 12px\",\n              borderRadius: 12,\n              minWidth: 112,\n              textAlign: \"right\",\n            }}\n          >\n            Progress {progress}%\n          </div>\n        </div>\n\n        <div\n          style={{\n            position: \"absolute\",\n            left: 24,\n            right: 24,\n            top: 82,\n            height: 7,\n            borderRadius: 99,\n            background: colors.progressTrack,\n            overflow: \"hidden\",\n          }}\n        >\n          <div\n            style={{\n              width: `${progress}%`,\n              height: \"100%\",\n              background: colors.progressFill,\n            }}\n          />\n        </div>\n\n        {subtitles.map((sub, index) => (\n          <Sequence key={index} from={sub.startFrame} durationInFrames={sub.endFrame - sub.startFrame}>\n            <SubtitleOverlay item={sub} theme={theme} />\n          </Sequence>\n        ))}\n      </AbsoluteFill>\n\n      {/* Right 1/3 = reserved camera space for Nine */}\n      <AbsoluteFill\n        style={{\n          left: \"66.6667%\",\n          width: \"33.3333%\",\n          background: colors.rightBg,\n          display: \"flex\",\n          alignItems: \"center\",\n          justifyContent: \"center\",\n          borderLeft: colors.rightBorder,\n        }}\n      >\n        <div\n          style={{\n            width: \"86%\",\n            height: \"92%\",\n            border: \"2px dashed rgba(148,163,184,0.6)\",\n            borderRadius: 18,\n            display: \"flex\",\n            alignItems: \"center\",\n            justifyContent: \"center\",\n            textAlign: \"center\",\n            padding: 16,\n            color: colors.zoneText,\n            fontSize: 22,\n            lineHeight: 1.4,\n          }}\n        >\n          Nine Camera Zone\n          <br />\n          (raw talking head)\n        </div>\n      </AbsoluteFill>\n    </AbsoluteFill>\n  );\n};\n\nconst SubtitleOverlay: React.FC<{ item: SubtitleItem; theme: SubtitleTheme }> = ({ item, theme }) => {\n  const frame = useCurrentFrame();\n  const { fps } = useVideoConfig();\n  const colors = getTheme(theme);\n\n  const scale = spring({ fps, frame, config: { damping: 100, mass: 0.5 } });\n  const opacity = interpolate(frame, [0, 12], [0, 1], { extrapolateRight: \"clamp\" });\n  const imagePath = item.image ? staticFile(item.image) : null;\n\n  return (\n    <AbsoluteFill style={{ justifyContent: \"center\", alignItems: \"center\", paddingTop: 80 }}>\n      <div\n        style={{\n          width: \"90%\",\n          display: \"grid\",\n          gridTemplateColumns: \"35% 65%\",\n          gap: 18,\n          alignItems: \"stretch\",\n          transform: `scale(${scale})`,\n          opacity,\n        }}\n      >\n        <div\n          style={{\n            borderRadius: 20,\n            background: \"rgba(255,255,255,0.92)\",\n            border: colors.cardBorder,\n            display: \"flex\",\n            alignItems: \"center\",\n            justifyContent: \"center\",\n            minHeight: 280,\n            overflow: \"hidden\",\n            position: \"relative\",\n          }}\n        >\n          {imagePath ? (\n            <Img src={imagePath} style={{ width: \"100%\", height: \"100%\", objectFit: \"cover\" }} />\n          ) : (\n            <div style={{ fontSize: 84 }}>{item.emoji || \"🧠\"}</div>\n          )}\n        </div>\n\n        <div\n          style={{\n            borderRadius: 20,\n            backgroundColor: colors.cardBg,\n            border: colors.cardBorder,\n            padding: 24,\n            display: \"flex\",\n            flexDirection: \"column\",\n            justifyContent: \"center\",\n            minHeight: 280,\n          }}\n        >\n          <div style={{ fontSize: item.type === \"hook\" ? 44 : 46, fontWeight: 700, marginBottom: 10, color: colors.titleText, lineHeight: 1.15 }}>\n            {item.thaiScript || item.heroText}\n          </div>\n\n          {(item.phonetics || item.heroSubText) && (\n            <div style={{ fontSize: 28, color: colors.phoneticText, marginBottom: 8 }}>\n              {item.phonetics || item.heroSubText}\n            </div>\n          )}\n\n          {item.englishTranslate && <div style={{ fontSize: 30, color: colors.englishText }}>{item.englishTranslate}</div>}\n\n          {item.type === \"outro\" && (\n            <div\n              style={{\n                marginTop: 14,\n                display: \"inline-block\",\n                width: \"fit-content\",\n                fontSize: 20,\n                color: colors.badgeText,\n                background: colors.badgeBg,\n                border: colors.badgeBorder,\n                borderRadius: 999,\n                padding: \"8px 14px\",\n              }}\n            >\n              Quiz + Drill now\n            </div>\n          )}\n        </div>\n      </div>\n    </AbsoluteFill>\n  );\n};\n",
+  "transliterationPolicyMd": "# Transliteration Policy (PTM-Adapted, Hard-Enforced)\n\nThis repository enforces a single transliteration standard for all learner-facing artifacts.\n\n## Canonical standard\n- **Scheme:** PTM-adapted inline tones.\n- **Required style:** inline tone diacritics on vowels (`à á â ǎ ...`), not superscripts.\n- **Primary implementation:** `course/tools/lib/transliteration-policy.ts`\n\n## Forbidden patterns (build blockers)\n- IPA-like symbols (examples): `ʉ ə ɯ ɤ œ ɨ ɪ ʊ ŋ ɲ ɕ ʔ ː`\n- Superscript tones: `ᴴ ᴹ ᴸ ᴿ`\n- Caret tones: `^H ^M ^L ^R`\n- Legacy trailing suffix tones: `wordH wordM wordL wordR`\n\n## Allowed character class\nTransliteration strings are restricted to PTM-compatible latin characters, inline tone marks, digits, spacing, and controlled punctuation (see exported `PTM_ALLOWED_CHARACTER_CLASS`).\n\n## Human quick reference (script-writing)\nUse this section when drafting scripts manually before running audit.\n\n### Frequent words (approved forms)\n- สวัสดี → `sà-wàt-dii`\n- ขอบคุณ → `khàawp-khun`\n- ขอโทษ → `khǎaw-thôot`\n- ไม่เข้าใจ → `mâi khâo-jai`\n- พูดช้าๆ ได้ไหม → `phûut cháa-cháa dâai mái`\n- ครับ → `khráp`\n- ค่ะ → `khâ`\n- คะ → `khá`\n- อยู่ → `yùu`\n- บอกว่า → `bàawk wâa`\n- หมอ → `mǎaw`\n- รอ → `raaw`\n\n### Common mistakes we keep seeing\n- **Do not use IPA glyphs** in learner transliteration.\n  - Wrong: `mɔ̌ɔ`\n  - Right: `mǎaw`\n- Keep PTM long-vowel spellings consistent (`aa`, `aaw`, `aao`, etc.) using canonical mappings.\n- Do not mix systems in one file (for example PTM + IPA forms together).\n- Keep polite particles exact (`khráp`, `khâ`, `khá`) and do not flatten tone marks.\n\n### Pre-publish checklist (for writers)\nBefore submitting scripts/lesson artifacts:\n1. Every learner-facing Thai line has a full `Thai | translit | English` triplet.\n2. Transliteration uses inline tone marks only (no superscripts/caret/legacy suffix tones).\n3. No IPA symbols appear anywhere in transliteration fields.\n4. High-frequency words match approved forms in this file.\n5. Run `translit-audit` and resolve all violations.\n\nIf unsure about any spelling, check:\n- `course/transliteration-ptm-vowels.json`\n- `course/transliteration-ptm-consonants.json`\n- `course/tools/lib/transliteration-policy.ts`\n\n## Where this is enforced\nHard validators cover:\n- `script-master.json`\n- `script-spoken.md`\n- `script-visual.md`\n- `deck-source.json`\n- `pdf-source.json`\n- `pdf.md`\n- `flashcards.json`\n- `vocab-export.json`\n- `quiz-item-bank.json`\n- `quiz.json`\n- lesson `context.json`\n- global vocab exports/index\n\n## Audit + repair command\nUse:\n\n```bash\nnode --experimental-strip-types course/tools/pipeline-cli.ts translit-audit\nnode --experimental-strip-types course/tools/pipeline-cli.ts translit-audit --fix\nnode --experimental-strip-types course/tools/pipeline-cli.ts translit-audit --lesson M01-L001 --fix\n```\n\nBehavior:\n- `translit-audit` → reports violations.\n- `translit-audit --fix` → applies safe normalizations, reports manual-review items.\n\nDeterministic exit codes:\n- `0` = clean (or fully fixed with no remaining/manual items)\n- `2` = transliteration drift still present and/or manual review required\n- `1` = command/config error (for example no valid audit targets)\n\n## CI / release gate behavior\n- Stage 2 QA blocks on script transliteration violations.\n- Stage 7 release gate blocks on any transliteration drift in lesson + deck artifacts.\n",
+  "researchNotes": {
+    "scopePath": "/Users/Shared/work/thai-nine/course/modules/M01/L001/scope-research.md",
+    "scopeMd": null,
+    "usagePath": "/Users/Shared/work/thai-nine/course/modules/M01/L001/usage-research.md",
+    "usageMd": null,
+    "visualPath": "/Users/Shared/work/thai-nine/course/modules/M01/L001/visual-research.md",
+    "visualMd": null
+  },
+  "deckDesignSystemPath": "/Users/Shared/work/thai-nine/course/Start with L001 and Review Uploaded Files/design_system.py",
+  "deckDesignSystemPy": "\"\"\"\nImmersion Thai with Nine — Slide Design System\nShared constants, helpers, and reusable slide builders for all M01 lessons.\n\"\"\"\n\nfrom pptx import Presentation\nfrom pptx.util import Inches, Pt, Emu\nfrom pptx.dml.color import RGBColor\nfrom pptx.enum.text import PP_ALIGN, MSO_ANCHOR\nfrom pptx.enum.shapes import MSO_SHAPE\nimport copy\n\n# ── Canvas ──────────────────────────────────────────────────────────────\nSLIDE_WIDTH = Inches(13.333)   # 1920 px at 144 dpi → 13.333 in\nSLIDE_HEIGHT = Inches(7.5)     # 1080 px at 144 dpi → 7.5 in\nLEFT_ZONE_W = Inches(8.889)    # 66.67 %\nRIGHT_ZONE_X = Inches(8.889)\nRIGHT_ZONE_W = Inches(4.444)   # 33.33 %\n\n# Comfortable content margins inside the left zone\nCONTENT_LEFT = Inches(0.8)\nCONTENT_TOP = Inches(1.2)\nCONTENT_WIDTH = Inches(7.5)\nCONTENT_BOTTOM_MARGIN = Inches(0.6)\n\n# ── Palette ─────────────────────────────────────────────────────────────\nBG_IVORY        = RGBColor(0xFA, 0xF6, 0xF0)\nBG_SAND_LIGHT   = RGBColor(0xF0, 0xEB, 0xE3)\nBG_WARM_WHITE   = RGBColor(0xFE, 0xFC, 0xF9)\nINK_DARK        = RGBColor(0x2C, 0x24, 0x20)\nINK_MEDIUM      = RGBColor(0x5A, 0x4E, 0x46)\nINK_LIGHT       = RGBColor(0x8A, 0x7E, 0x76)\nACCENT_GOLD     = RGBColor(0xB8, 0x96, 0x3E)\nACCENT_CLAY     = RGBColor(0xA0, 0x52, 0x2D)\nACCENT_TEAL     = RGBColor(0x3B, 0x7A, 0x72)\nACCENT_SOFT_GOLD = RGBColor(0xD4, 0xBE, 0x8A)\nWHITE           = RGBColor(0xFF, 0xFF, 0xFF)\nCARD_BG         = RGBColor(0xFF, 0xFF, 0xFF)\nCARD_BORDER     = RGBColor(0xE0, 0xD8, 0xCE)\nHIGHLIGHT_BG    = RGBColor(0xFD, 0xF5, 0xE6)  # warm highlight behind Thai\nDIVIDER_COLOR   = RGBColor(0xD8, 0xCE, 0xC0)\n\n# ── Fonts ───────────────────────────────────────────────────────────────\nFONT_THAI       = \"Noto Sans Thai\"\nFONT_LATIN      = \"Inter\"\nFONT_TRANSLIT   = \"Inter\"\nFONT_MONO       = \"Consolas\"\n\n# ── Font sizes ──────────────────────────────────────────────────────────\nSIZE_TITLE       = Pt(36)\nSIZE_SUBTITLE    = Pt(20)\nSIZE_THAI_LARGE  = Pt(48)\nSIZE_THAI_MED    = Pt(36)\nSIZE_THAI_SMALL  = Pt(28)\nSIZE_TRANSLIT    = Pt(18)\nSIZE_ENGLISH     = Pt(16)\nSIZE_BODY        = Pt(18)\nSIZE_BODY_SMALL  = Pt(15)\nSIZE_LABEL       = Pt(13)\nSIZE_SECTION_NUM = Pt(14)\n\n# ── Helpers ─────────────────────────────────────────────────────────────\n\ndef create_presentation():\n    \"\"\"Create a blank 16:9 presentation with correct dimensions.\"\"\"\n    prs = Presentation()\n    prs.slide_width = SLIDE_WIDTH\n    prs.slide_height = SLIDE_HEIGHT\n    return prs\n\n\ndef add_blank_slide(prs):\n    \"\"\"Add a blank slide layout.\"\"\"\n    layout = prs.slide_layouts[6]  # blank\n    slide = prs.slides.add_slide(layout)\n    return slide\n\n\ndef set_slide_bg(slide, color):\n    \"\"\"Set solid background color for a slide.\"\"\"\n    bg = slide.background\n    fill = bg.fill\n    fill.solid()\n    fill.fore_color.rgb = color\n\n\ndef add_right_zone_tint(slide, color=BG_SAND_LIGHT, opacity=None):\n    \"\"\"Add a subtle tinted rectangle for the right camera zone.\"\"\"\n    shape = slide.shapes.add_shape(\n        MSO_SHAPE.RECTANGLE,\n        RIGHT_ZONE_X, Inches(0),\n        RIGHT_ZONE_W, SLIDE_HEIGHT\n    )\n    shape.fill.solid()\n    shape.fill.fore_color.rgb = color\n    shape.line.fill.background()\n    # Send to back\n    sp = shape._element\n    sp.getparent().remove(sp)\n    slide.shapes._spTree.insert(2, sp)\n\n\ndef add_textbox(slide, left, top, width, height, text=\"\",\n                font_name=FONT_LATIN, font_size=SIZE_BODY,\n                font_color=INK_DARK, bold=False, italic=False,\n                alignment=PP_ALIGN.LEFT, word_wrap=True,\n                anchor=MSO_ANCHOR.TOP):\n    \"\"\"Add a text box with a single run of styled text.\"\"\"\n    txBox = slide.shapes.add_textbox(left, top, width, height)\n    tf = txBox.text_frame\n    tf.word_wrap = word_wrap\n    tf.auto_size = None\n    try:\n        tf.paragraphs[0].alignment = alignment\n    except:\n        pass\n    \n    p = tf.paragraphs[0]\n    run = p.add_run()\n    run.text = text\n    run.font.name = font_name\n    run.font.size = font_size\n    run.font.color.rgb = font_color\n    run.font.bold = bold\n    run.font.italic = italic\n    \n    return txBox\n\n\ndef add_multiline_textbox(slide, left, top, width, height, lines,\n                          alignment=PP_ALIGN.LEFT, anchor=MSO_ANCHOR.TOP):\n    \"\"\"\n    Add a text box with multiple styled lines.\n    lines: list of dicts with keys: text, font_name, font_size, font_color, bold, italic, space_after\n    \"\"\"\n    txBox = slide.shapes.add_textbox(left, top, width, height)\n    tf = txBox.text_frame\n    tf.word_wrap = True\n    tf.auto_size = None\n    \n    for i, line_spec in enumerate(lines):\n        if i == 0:\n            p = tf.paragraphs[0]\n        else:\n            p = tf.add_paragraph()\n        \n        p.alignment = alignment\n        if 'space_after' in line_spec:\n            p.space_after = line_spec['space_after']\n        if 'space_before' in line_spec:\n            p.space_before = line_spec['space_before']\n        \n        run = p.add_run()\n        run.text = line_spec.get('text', '')\n        run.font.name = line_spec.get('font_name', FONT_LATIN)\n        run.font.size = line_spec.get('font_size', SIZE_BODY)\n        run.font.color.rgb = line_spec.get('font_color', INK_DARK)\n        run.font.bold = line_spec.get('bold', False)\n        run.font.italic = line_spec.get('italic', False)\n    \n    return txBox\n\n\ndef add_rounded_rect(slide, left, top, width, height,\n                     fill_color=CARD_BG, border_color=CARD_BORDER,\n                     border_width=Pt(1)):\n    \"\"\"Add a rounded rectangle card background.\"\"\"\n    shape = slide.shapes.add_shape(\n        MSO_SHAPE.ROUNDED_RECTANGLE,\n        left, top, width, height\n    )\n    shape.fill.solid()\n    shape.fill.fore_color.rgb = fill_color\n    shape.line.color.rgb = border_color\n    shape.line.width = border_width\n    # Adjust corner radius\n    shape.adjustments[0] = 0.05\n    return shape\n\n\ndef add_horizontal_line(slide, left, top, width, color=DIVIDER_COLOR, weight=Pt(1)):\n    \"\"\"Add a thin horizontal divider line.\"\"\"\n    connector = slide.shapes.add_shape(\n        MSO_SHAPE.RECTANGLE,\n        left, top, width, weight\n    )\n    connector.fill.solid()\n    connector.fill.fore_color.rgb = color\n    connector.line.fill.background()\n    return connector\n\n\ndef add_accent_bar(slide, left, top, width=Inches(0.08), height=Inches(0.6),\n                   color=ACCENT_GOLD):\n    \"\"\"Add a small vertical accent bar.\"\"\"\n    shape = slide.shapes.add_shape(\n        MSO_SHAPE.RECTANGLE,\n        left, top, width, height\n    )\n    shape.fill.solid()\n    shape.fill.fore_color.rgb = color\n    shape.line.fill.background()\n    return shape\n\n\n# ── Phrase Card Builder ─────────────────────────────────────────────────\n\ndef add_phrase_card(slide, left, top, width, thai, translit, english,\n                    thai_size=SIZE_THAI_LARGE, card_bg=CARD_BG,\n                    border_color=CARD_BORDER, accent_color=ACCENT_GOLD,\n                    show_accent_bar=True):\n    \"\"\"\n    Add a phrase card with Thai (large), transliteration (medium), English (small).\n    Returns the card shape and text boxes for later editing.\n    \"\"\"\n    card_height = Inches(1.8)\n    \n    # Card background\n    card = add_rounded_rect(slide, left, top, width, card_height,\n                           fill_color=card_bg, border_color=border_color)\n    \n    # Accent bar on left edge\n    if show_accent_bar:\n        add_accent_bar(slide, left + Inches(0.15), top + Inches(0.3),\n                      height=Inches(1.2), color=accent_color)\n    \n    text_left = left + Inches(0.45) if show_accent_bar else left + Inches(0.25)\n    text_width = width - Inches(0.7)\n    \n    # Thai text\n    add_textbox(slide, text_left, top + Inches(0.2), text_width, Inches(0.7),\n               text=thai, font_name=FONT_THAI, font_size=thai_size,\n               font_color=INK_DARK, bold=True)\n    \n    # Transliteration\n    add_textbox(slide, text_left, top + Inches(0.85), text_width, Inches(0.4),\n               text=translit, font_name=FONT_TRANSLIT, font_size=SIZE_TRANSLIT,\n               font_color=INK_MEDIUM, italic=True)\n    \n    # English\n    add_textbox(slide, text_left, top + Inches(1.25), text_width, Inches(0.4),\n               text=english, font_name=FONT_LATIN, font_size=SIZE_ENGLISH,\n               font_color=INK_LIGHT)\n    \n    return card\n\n\ndef add_compact_phrase(slide, left, top, width, thai, translit, english,\n                       thai_size=SIZE_THAI_MED, accent_color=ACCENT_GOLD):\n    \"\"\"Add a compact phrase row (no card background) — Thai | translit | English.\"\"\"\n    # Accent dot\n    dot = slide.shapes.add_shape(\n        MSO_SHAPE.OVAL,\n        left, top + Inches(0.18), Inches(0.12), Inches(0.12)\n    )\n    dot.fill.solid()\n    dot.fill.fore_color.rgb = accent_color\n    dot.line.fill.background()\n    \n    text_left = left + Inches(0.25)\n    text_width = width - Inches(0.3)\n    \n    add_textbox(slide, text_left, top, text_width, Inches(0.5),\n               text=thai, font_name=FONT_THAI, font_size=thai_size,\n               font_color=INK_DARK, bold=True)\n    \n    add_textbox(slide, text_left, top + Inches(0.5), text_width, Inches(0.3),\n               text=f\"{translit}  —  {english}\",\n               font_name=FONT_TRANSLIT, font_size=SIZE_TRANSLIT,\n               font_color=INK_MEDIUM, italic=False)\n\n\ndef add_mini_phrase_row(slide, left, top, width, thai, translit, english,\n                        thai_size=SIZE_THAI_SMALL):\n    \"\"\"Add a single-line compact phrase: Thai  translit  english.\"\"\"\n    # Thai\n    add_textbox(slide, left, top, Inches(2.5), Inches(0.45),\n               text=thai, font_name=FONT_THAI, font_size=thai_size,\n               font_color=INK_DARK, bold=True)\n    # translit + english\n    add_textbox(slide, left + Inches(2.6), top + Inches(0.05), width - Inches(2.6), Inches(0.4),\n               text=f\"{translit}  ·  {english}\",\n               font_name=FONT_TRANSLIT, font_size=Pt(15),\n               font_color=INK_MEDIUM)\n\n\n# ── Section Header ──────────────────────────────────────────────────────\n\ndef add_section_header(slide, section_num, title, subtitle=\"\"):\n    \"\"\"Add a section header bar at the top of a teaching slide.\"\"\"\n    # Top accent line\n    add_horizontal_line(slide, Inches(0), Inches(0), LEFT_ZONE_W,\n                       color=ACCENT_GOLD, weight=Pt(4))\n    \n    # Section number pill\n    if section_num:\n        pill = slide.shapes.add_shape(\n            MSO_SHAPE.ROUNDED_RECTANGLE,\n            CONTENT_LEFT, Inches(0.25), Inches(1.0), Inches(0.32)\n        )\n        pill.fill.solid()\n        pill.fill.fore_color.rgb = ACCENT_GOLD\n        pill.line.fill.background()\n        pill.adjustments[0] = 0.3\n        \n        tf = pill.text_frame\n        tf.word_wrap = False\n        p = tf.paragraphs[0]\n        p.alignment = PP_ALIGN.CENTER\n        run = p.add_run()\n        run.text = f\"Section {section_num}\"\n        run.font.name = FONT_LATIN\n        run.font.size = SIZE_LABEL\n        run.font.color.rgb = WHITE\n        run.font.bold = True\n    \n    # Title — use wider box and single line\n    title_top = Inches(0.22) if not section_num else Inches(0.22)\n    title_left = CONTENT_LEFT + Inches(1.15) if section_num else CONTENT_LEFT\n    title_width = Inches(6.5) if section_num else Inches(7.5)\n    add_textbox(slide, title_left, title_top, title_width, Inches(0.5),\n               text=title, font_name=FONT_LATIN, font_size=Pt(30),\n               font_color=INK_DARK, bold=True)\n    \n    if subtitle:\n        add_textbox(slide, CONTENT_LEFT, Inches(0.72), CONTENT_WIDTH, Inches(0.4),\n                   text=subtitle, font_name=FONT_LATIN, font_size=SIZE_BODY_SMALL,\n                   font_color=INK_MEDIUM)\n\n\n# ── Dialogue Builder ────────────────────────────────────────────────────\n\ndef add_dialogue_turn(slide, left, top, width, speaker, thai, translit, english,\n                      speaker_color=ACCENT_TEAL, is_learner=False):\n    \"\"\"Add one dialogue turn with speaker label, Thai, translit, English.\"\"\"\n    # Speaker label\n    label_bg = ACCENT_TEAL if not is_learner else ACCENT_CLAY\n    pill = slide.shapes.add_shape(\n        MSO_SHAPE.ROUNDED_RECTANGLE,\n        left, top, Inches(1.2), Inches(0.32)\n    )\n    pill.fill.solid()\n    pill.fill.fore_color.rgb = label_bg\n    pill.line.fill.background()\n    pill.adjustments[0] = 0.3\n    \n    tf = pill.text_frame\n    tf.word_wrap = False\n    p = tf.paragraphs[0]\n    p.alignment = PP_ALIGN.CENTER\n    run = p.add_run()\n    run.text = speaker\n    run.font.name = FONT_LATIN\n    run.font.size = SIZE_LABEL\n    run.font.color.rgb = WHITE\n    run.font.bold = True\n    \n    # Thai line\n    add_textbox(slide, left + Inches(1.4), top - Inches(0.05), width - Inches(1.4), Inches(0.45),\n               text=thai, font_name=FONT_THAI, font_size=SIZE_THAI_SMALL,\n               font_color=INK_DARK, bold=True)\n    \n    # Translit + English\n    add_textbox(slide, left + Inches(1.4), top + Inches(0.38), width - Inches(1.4), Inches(0.35),\n               text=f\"{translit}  —  {english}\",\n               font_name=FONT_TRANSLIT, font_size=Pt(14),\n               font_color=INK_MEDIUM)\n    \n    return Inches(0.9)  # height consumed\n\n\n# ── Lesson Opener ───────────────────────────────────────────────────────\n\ndef add_lesson_opener(prs, lesson_id, lesson_title, module_title, level=\"A0\"):\n    \"\"\"Create the lesson title/opener slide.\"\"\"\n    slide = add_blank_slide(prs)\n    set_slide_bg(slide, BG_IVORY)\n    add_right_zone_tint(slide, BG_SAND_LIGHT)\n    \n    # Large gold accent line at top\n    add_horizontal_line(slide, Inches(0), Inches(0), LEFT_ZONE_W,\n                       color=ACCENT_GOLD, weight=Pt(6))\n    \n    # Module + level label\n    add_textbox(slide, CONTENT_LEFT, Inches(1.8), CONTENT_WIDTH, Inches(0.4),\n               text=f\"{module_title}  ·  Level {level}\",\n               font_name=FONT_LATIN, font_size=SIZE_LABEL,\n               font_color=ACCENT_GOLD, bold=True)\n    \n    # Lesson ID\n    add_textbox(slide, CONTENT_LEFT, Inches(2.3), CONTENT_WIDTH, Inches(0.5),\n               text=lesson_id,\n               font_name=FONT_LATIN, font_size=SIZE_SUBTITLE,\n               font_color=INK_MEDIUM, bold=False)\n    \n    # Lesson title\n    add_textbox(slide, CONTENT_LEFT, Inches(2.9), CONTENT_WIDTH, Inches(1.0),\n               text=lesson_title,\n               font_name=FONT_LATIN, font_size=Pt(44),\n               font_color=INK_DARK, bold=True)\n    \n    # Course name at bottom\n    add_textbox(slide, CONTENT_LEFT, Inches(5.8), CONTENT_WIDTH, Inches(0.4),\n               text=\"Immersion Thai with Nine\",\n               font_name=FONT_LATIN, font_size=SIZE_LABEL,\n               font_color=INK_LIGHT, bold=False)\n    \n    # Bottom accent line\n    add_horizontal_line(slide, CONTENT_LEFT, Inches(6.3), Inches(2.0),\n                       color=ACCENT_GOLD, weight=Pt(3))\n    \n    return slide\n\n\n# ── Objectives Slide ────────────────────────────────────────────────────\n\ndef add_objectives_slide(prs, objectives, title=\"What you will learn\"):\n    \"\"\"Create the objectives/what-you-will-learn slide.\"\"\"\n    slide = add_blank_slide(prs)\n    set_slide_bg(slide, BG_IVORY)\n    add_right_zone_tint(slide, BG_SAND_LIGHT)\n    \n    add_section_header(slide, None, title)\n    \n    y = Inches(1.3)\n    for i, obj in enumerate(objectives):\n        # Number circle\n        circle = slide.shapes.add_shape(\n            MSO_SHAPE.OVAL,\n            CONTENT_LEFT, y + Inches(0.05), Inches(0.4), Inches(0.4)\n        )\n        circle.fill.solid()\n        circle.fill.fore_color.rgb = ACCENT_GOLD\n        circle.line.fill.background()\n        \n        tf = circle.text_frame\n        p = tf.paragraphs[0]\n        p.alignment = PP_ALIGN.CENTER\n        run = p.add_run()\n        run.text = str(i + 1)\n        run.font.name = FONT_LATIN\n        run.font.size = Pt(16)\n        run.font.color.rgb = WHITE\n        run.font.bold = True\n        \n        # Objective text\n        add_textbox(slide, CONTENT_LEFT + Inches(0.6), y, Inches(6.8), Inches(0.5),\n                   text=obj, font_name=FONT_LATIN, font_size=SIZE_BODY,\n                   font_color=INK_DARK)\n        \n        y += Inches(0.7)\n    \n    return slide\n\n\n# ── Recap Slide ─────────────────────────────────────────────────────────\n\ndef add_recap_slide(prs, points, title=\"Recap\"):\n    \"\"\"Create a recap slide with bullet points.\"\"\"\n    slide = add_blank_slide(prs)\n    set_slide_bg(slide, BG_IVORY)\n    add_right_zone_tint(slide, BG_SAND_LIGHT)\n    \n    add_section_header(slide, None, title)\n    \n    y = Inches(1.3)\n    for point in points:\n        # Checkmark or bullet\n        add_textbox(slide, CONTENT_LEFT, y, Inches(0.3), Inches(0.4),\n                   text=\"✓\", font_name=FONT_LATIN, font_size=SIZE_BODY,\n                   font_color=ACCENT_TEAL, bold=True)\n        \n        add_textbox(slide, CONTENT_LEFT + Inches(0.4), y, Inches(7.0), Inches(0.5),\n                   text=point, font_name=FONT_LATIN, font_size=SIZE_BODY,\n                   font_color=INK_DARK)\n        \n        y += Inches(0.65)\n    \n    return slide\n\n\n# ── Closing Slide ───────────────────────────────────────────────────────\n\ndef add_closing_slide(prs, lesson_id, message, takeaway_lines=None):\n    \"\"\"Create the closing summary slide.\"\"\"\n    slide = add_blank_slide(prs)\n    set_slide_bg(slide, BG_IVORY)\n    add_right_zone_tint(slide, BG_SAND_LIGHT)\n    \n    add_horizontal_line(slide, Inches(0), Inches(0), LEFT_ZONE_W,\n                       color=ACCENT_GOLD, weight=Pt(6))\n    \n    add_textbox(slide, CONTENT_LEFT, Inches(1.5), CONTENT_WIDTH, Inches(0.4),\n               text=lesson_id,\n               font_name=FONT_LATIN, font_size=SIZE_LABEL,\n               font_color=ACCENT_GOLD, bold=True)\n    \n    add_textbox(slide, CONTENT_LEFT, Inches(2.1), CONTENT_WIDTH, Inches(1.0),\n               text=message,\n               font_name=FONT_LATIN, font_size=Pt(32),\n               font_color=INK_DARK, bold=True)\n    \n    if takeaway_lines:\n        y = Inches(3.5)\n        for line in takeaway_lines:\n            add_textbox(slide, CONTENT_LEFT, y, CONTENT_WIDTH, Inches(0.45),\n                       text=line, font_name=FONT_LATIN, font_size=SIZE_BODY,\n                       font_color=INK_MEDIUM)\n            y += Inches(0.5)\n    \n    add_textbox(slide, CONTENT_LEFT, Inches(5.8), CONTENT_WIDTH, Inches(0.4),\n               text=\"Immersion Thai with Nine\",\n               font_name=FONT_LATIN, font_size=SIZE_LABEL,\n               font_color=INK_LIGHT)\n    \n    add_horizontal_line(slide, CONTENT_LEFT, Inches(6.3), Inches(2.0),\n                       color=ACCENT_GOLD, weight=Pt(3))\n    \n    return slide\n",
   "reusableLessonIds": [
     "M01-L002",
     "M01-L003",
@@ -676,9 +885,9 @@
   "exemplars": [
     {
       "lessonId": "M01-L002",
-      "briefPath": "/Users/Shared/work/thai-nine/course/modules/M01/L002/brief.md",
+      "briefPath": "/Users/Shared/work/thai-nine/course/modules/M01/L002/M01-L002-brief.md",
       "briefMd": "# M01-L002 — Names and Countries\n\n- **Module:** M01 — First Contact and Courtesy\n- **Level:** A0\n- **Target runtime:** 10-13 minutes\n- **Primary objective:** Learner can ask someone’s name, say your own name, and state where you are from.\n- **Secondary objective:** Learner can reuse the previous greeting/courtesy lesson while building a two- or three-line self-introduction.\n- **Teaching frame:** First meeting at a class, event, or reception desk.\n\n## Must-teach outcomes\n1. Ask and answer the name question.\n2. Recognise and use ชื่อ as the core name word.\n3. Say where you are from with มาจาก.\n4. Produce a short self-introduction with hello, name, and country.\n5. Reuse at least two previous courtesy items naturally.\n\n## Core vocabulary and chunks\n| Thai | Transliteration | English |\n|---|---|---|\n| ชื่อ | chûue | name |\n| คุณชื่ออะไร | khun chûue à-rai | what is your name? |\n| ฉันชื่อ... | chǎn chûue... | my name is ... |\n| ผมชื่อ... | phǒm chûue... | my name is ... (male speaker) |\n| ฉัน | chǎn | I |\n| ผม | phǒm | I (male) |\n| คุณ | khun | you |\n| คน | khon | person |\n| ประเทศ | bprà-thêet | country |\n| มาจาก | maa-jàak | come from / be from |\n| ไทย | thai | Thailand / Thai |\n| อังกฤษ | ang-grìt | England / British |\n| อเมริกา | à-mee-rí-gaa | America |\n\n## Teaching constraints\n- Keep the name and country patterns highly scaffolded.\n- Reuse greeting/courtesy naturally instead of introducing identity language in isolation.\n- Keep map/flag support small and secondary to the sentence frame.\n\n## Likely learner mistakes\n1. Translating word by word instead of treating the name question as a fixed chunk.\n2. Freezing over pronoun choice instead of committing to one clear beginner frame.\n3. Memorising country words without learning the มาจาก pattern.\n4. Dropping the greeting so the self-introduction sounds abrupt.\n\n## Image and visual notes\n- Most sections should stay text-first.\n- Only the country section benefits from a light visual anchor such as simple flags or map cues.\n",
-      "scriptPath": "/Users/Shared/work/thai-nine/course/modules/M01/L002/script-master.json",
+      "scriptPath": "/Users/Shared/work/thai-nine/course/modules/M01/L002/M01-L002-script-master.json",
       "scriptMaster": {
         "schemaVersion": 1,
         "lessonId": "M01-L002",
@@ -906,18 +1115,18 @@
             "purpose": "Explain the beginner-level pronoun choice so the learner can produce self-introduction lines without freezing over identity wording.",
             "spokenNarration": [
               "Thai gives you more than one way to say I. In this course at beginner level, we use ฉัน chǎn as a common all-purpose learning form and ผม phǒm for a clearly male self-reference.",
-              "The important point is not to master every social nuance today. The important point is to recognize the line pattern and choose one pronoun confidently.",
-              "That means the core line stays stable: ฉันชื่อ... or ผมชื่อ.... The name slot changes, but the frame does not."
+              "One small support word here is คน khon, person. It helps you hear that this is a conversation between people, not just a set of labels, and it keeps the pronoun choice grounded in who is speaking.",
+              "The important point is still practical: choose one pronoun confidently and keep the full line stable as ฉันชื่อ... or ผมชื่อ...."
             ],
             "onScreenBullets": [
               "ฉัน | chǎn | I",
               "ผม | phǒm | I (male)",
-              "คุณชื่ออะไร | khun chûue à-rai | what is your name?",
+              "ฉันชื่อ... | chǎn chûue... | my name is ...",
               "ผมชื่อ... | phǒm chûue... | my name is ... (male speaker)"
             ],
             "drills": [
               "Prompt drill: teacher gives the role, learner starts the sentence with ฉัน or ผม and finishes the name line.",
-              "Quick recognition drill: hear the pronoun and identify whether the speaker is talking about self or addressing the other person."
+              "Quick recognition drill: hear คน and identify who the speaking person is in the line before repeating it."
             ],
             "languageFocus": [
               {
@@ -933,10 +1142,10 @@
                 "vocabId": "v-796f86a0f6"
               },
               {
-                "thai": "คุณชื่ออะไร",
-                "translit": "khun chûue à-rai",
-                "english": "what is your name?",
-                "vocabId": "v-a79c6af3af"
+                "thai": "ฉันชื่อ...",
+                "translit": "chǎn chûue...",
+                "english": "my name is ...",
+                "vocabId": "v-33248cf209"
               },
               {
                 "thai": "ผมชื่อ...",
@@ -947,14 +1156,14 @@
             ],
             "visualPlan": {
               "leftPanelLayout": "contrast-board",
-              "onScreenGoal": "Keep pronoun choice practical by contrasting speaker roles rather than giving an abstract pronoun lecture.",
+              "onScreenGoal": "Keep pronoun choice practical by showing the speaking person clearly and returning fast to full introduction lines.",
               "teachingVisuals": [
                 "Two short speaker cards for ฉัน and ผม.",
-                "One listener card for คุณ to anchor the conversation roles."
+                "A small support chip for คน to anchor the idea of the person speaking."
               ],
               "teacherCues": [
                 "Keep the explanation short and return quickly to full sentences.",
-                "Do not crowd the frame with too many pronoun variants."
+                "Use คน only as a support word, not as a new grammar detour."
               ],
               "imageSupport": {
                 "helpful": false,
@@ -972,9 +1181,9 @@
             "heading": "Say where you are from with มาจาก",
             "purpose": "Teach the origin pattern so the learner can complete a basic introduction with country information instead of stopping after the name.",
             "spokenNarration": [
-              "To say where you are from, Thai often uses มาจาก maa-jàak, literally come from.",
-              "So the pattern becomes ฉันมาจาก... chǎn maa-jàak... or ผมมาจาก... phǒm maa-jàak.... Again, the frame is stable and only the country changes.",
-              "Today we use a small country set: ไทย thai, อังกฤษ ang-grìt, and อเมริกา à-mee-rí-gaa. Learn them as useful introduction words, not as a geography test."
+              "Before the country examples, learn ประเทศ bprà-thêet. It means country, and it gives you the category that ties the place words together.",
+              "To say where you are from, Thai often uses มาจาก maa-jàak, literally come from. So the practical beginner frame is ฉันมาจาก... or ผมมาจาก....",
+              "Today we keep the country set small: ไทย thai, อังกฤษ ang-grìt, and อเมริกา à-mee-rí-gaa. Learn the category word ประเทศ and then plug the country into the stable frame."
             ],
             "onScreenBullets": [
               "ประเทศ | bprà-thêet | country",
@@ -984,6 +1193,7 @@
               "มาจากอเมริกา | maa-jàak à-mee-rí-gaa | be from America"
             ],
             "drills": [
+              "Category drill: teacher says ประเทศ and the learner points to the country words that belong under it.",
               "Country substitution drill: keep ฉันมาจาก... or ผมมาจาก... and swap only the country.",
               "Listening drill: hear a country line and point to ไทย, อังกฤษ, or อเมริกา before repeating it."
             ],
@@ -1021,12 +1231,14 @@
             ],
             "visualPlan": {
               "leftPanelLayout": "image-anchored",
-              "onScreenGoal": "Anchor the country pattern with a small map-or-flag style reference while keeping the sentence frame dominant.",
+              "onScreenGoal": "Show ประเทศ as the category word, then keep the มาจาก sentence frame larger than the country examples.",
               "teachingVisuals": [
+                "A category chip for ประเทศ above the sentence frame.",
                 "Sentence frame card for ฉันมาจาก... / ผมมาจาก....",
                 "Three compact country labels with a simple map or flag cue."
               ],
               "teacherCues": [
+                "Teach ประเทศ first so the learner hears the country words as one group.",
                 "Keep the sentence frame larger than the country cues so grammar stays primary.",
                 "Use the visual only to help memory, not to turn the scene into a travel poster."
               ],
@@ -1052,18 +1264,20 @@
             "purpose": "Combine the greeting from lesson 1 with the new identity patterns so the learner can produce a practical mini-introduction.",
             "spokenNarration": [
               "Now connect the old lesson and the new one. Start with สวัสดี, then give your name, and then give your country.",
-              "This is where review becomes useful, not decorative. A real first encounter starts with hello, then moves into identity.",
-              "So the learner goal is not one isolated sentence. The goal is a compact social sequence that sounds friendly and complete."
+              "If you need to begin politely, you can still borrow ขอโทษ from the last lesson to get attention before the question. If you are checking what you heard, ใช่ helps you confirm it.",
+              "So the learner goal is a compact social sequence: hello, name, country, and a polite response that sounds human instead of abrupt."
             ],
             "onScreenBullets": [
               "สวัสดีครับ/ค่ะ | sà-wàt-dii khráp/khâ | hello",
-              "ฉันชื่อ... | chǎn chûue... | my name is ...",
-              "ฉันมาจาก... | chǎn maa-jàak... | I am from ...",
+              "ขอโทษ | khǎaw-thôot | excuse me / sorry",
+              "ฉันชื่อ... / ผมชื่อ... | chǎn/phǒm chûue... | my name is ...",
+              "ฉันมาจาก... / ผมมาจาก... | chǎn/phǒm maa-jàak... | I am from ...",
+              "ใช่ | châi | yes / that is right",
               "ขอบคุณ | khàawp-khun | thank you"
             ],
             "drills": [
               "Build drill: learner says hello, name, and country as one three-step sequence.",
-              "Partner drill: one learner asks คุณชื่ออะไร and the other answers with name plus country."
+              "Partner drill: one learner starts with ขอโทษ and คุณชื่ออะไร, the other answers with name and country, then the first learner confirms with ใช่."
             ],
             "languageFocus": [
               {
@@ -1093,14 +1307,14 @@
             ],
             "visualPlan": {
               "leftPanelLayout": "dialogue-ladder",
-              "onScreenGoal": "Show the learner how the old greeting and the new identity lines stack into one usable mini-introduction.",
+              "onScreenGoal": "Show the learner how the old greeting and courtesy lines stack with the new identity lines into one usable mini-introduction.",
               "teachingVisuals": [
-                "Three-step introduction ladder: hello -> name -> country.",
-                "A closing thank-you chip to show how the exchange can end politely."
+                "A four-step introduction ladder: hello -> excuse me/question -> name -> country.",
+                "Two small review chips for ใช่ and ขอบคุณ to show natural follow-up moves."
               ],
               "teacherCues": [
                 "Make the sequence feel performable, not theoretical.",
-                "Keep the three steps vertically separated so the learner can rehearse them in order."
+                "Keep the core name and country lines visually dominant over the review chips."
               ],
               "imageSupport": {
                 "helpful": false,
@@ -1131,9 +1345,9 @@
             },
             {
               "speaker": "A",
-              "thai": "คุณชื่ออะไรคะ",
-              "translit": "khun chûue à-rai khá",
-              "english": "What is your name?"
+              "thai": "ขอโทษค่ะ คุณชื่ออะไรคะ",
+              "translit": "khǎaw-thôot khâ khun chûue à-rai khá",
+              "english": "Excuse me, what is your name?"
             },
             {
               "speaker": "B",
@@ -1143,15 +1357,33 @@
             },
             {
               "speaker": "A",
-              "thai": "คุณมาจากไหนคะ",
-              "translit": "khun maa-jàak nǎi khá",
-              "english": "Where are you from?"
+              "thai": "มาจากประเทศอะไรคะ",
+              "translit": "maa-jàak bprà-thêet à-rai khá",
+              "english": "What country are you from?"
             },
             {
               "speaker": "B",
               "thai": "ผมมาจากอังกฤษครับ",
               "translit": "phǒm maa-jàak ang-grìt khráp",
               "english": "I am from England."
+            },
+            {
+              "speaker": "A",
+              "thai": "อังกฤษใช่ไหมคะ",
+              "translit": "ang-grìt châi mái khá",
+              "english": "England, right?"
+            },
+            {
+              "speaker": "B",
+              "thai": "ใช่ครับ",
+              "translit": "châi khráp",
+              "english": "Yes."
+            },
+            {
+              "speaker": "A",
+              "thai": "ขอบคุณค่ะ",
+              "translit": "khàawp-khun khâ",
+              "english": "Thank you."
             }
           ]
         },
@@ -1196,7 +1428,31 @@
             "id": "roleplay",
             "description": "Scenario roleplay included and substantial",
             "pass": true,
-            "evidence": "Roleplay contains 6 lines"
+            "evidence": "Roleplay contains 9 lines"
+          },
+          {
+            "id": "roleplay-duplicates",
+            "description": "Roleplay does not repeat exact lines",
+            "pass": true,
+            "evidence": "All roleplay lines are distinct"
+          },
+          {
+            "id": "roleplay-turn-taking",
+            "description": "Roleplay alternates speakers cleanly",
+            "pass": true,
+            "evidence": "Roleplay alternates speakers line by line"
+          },
+          {
+            "id": "roleplay-answer-logic",
+            "description": "Yes/no answer particles appear only after a nearby question or confirmation turn",
+            "pass": true,
+            "evidence": "Answer particles follow question-like turns when used"
+          },
+          {
+            "id": "roleplay-question-target",
+            "description": "Question-target lessons include at least one question-like roleplay turn",
+            "pass": true,
+            "evidence": "Roleplay includes a question-like turn"
           },
           {
             "id": "recap",
@@ -1243,9 +1499,9 @@
     },
     {
       "lessonId": "M01-L003",
-      "briefPath": "/Users/Shared/work/thai-nine/course/modules/M01/L003/brief.md",
+      "briefPath": "/Users/Shared/work/thai-nine/course/modules/M01/L003/M01-L003-brief.md",
       "briefMd": "# Brief — M01-L003\n\n- Lesson: `M01-L003` — `Pronouns and Who Questions`\n- Module: `M01` — `First Contact and Courtesy`\n- CEFR: `A0`\n- Target runtime: `10-13 minutes`\n- Primary objective: Learner can use basic pronouns and ask who someone is.\n- Secondary objective: Learner can recycle recent vocabulary while using identity question with `ใคร` in short controlled output.\n- Teaching frame: A learner arrives in a small class or social setting, hears introductions, and needs to identify who another person is.\n\n## Must-teach outcomes\n- Use `ฉัน | chǎn | I`, `ผม | phǒm | I (male speaker)`, and `เขา | khǎo | he / she` as practical speaker labels.\n- Use `นี่คือ... | nîi kheuu... | this is ...` to introduce a person or identify someone in front of you.\n- Ask `เขาคือใคร | khǎo kheuu khrai | who is he / she?` and `คนนี้คือใคร | khon níi kheuu khrai | who is this person?`.\n- Reuse review material such as `คุณชื่ออะไร | khun chûue à-rai | what is your name?`, `ชื่อ | chûue | name`, `ใช่ | châi | yes / that is right`, and `ประเทศ | bprà-thêet | country`.\n\n## Core vocabulary and chunks\n- `ฉัน | chǎn | I`\n- `ผม | phǒm | I (male speaker)`\n- `เขา | khǎo | he / she`\n- `นี่คือ... | nîi kheuu... | this is ...`\n- `เขาคือใคร | khǎo kheuu khrai | who is he / she?`\n- `คนนี้คือใคร | khon níi kheuu khrai | who is this person?`\n- `คุณคือ...ใช่ไหม | khun kheuu... châi mái | you are ... right?`\n- `เขามาจากไทย | khǎo maa-jàak thai | he / she is from Thailand`\n\n## Teaching constraints\n- Keep the lesson chunk-first, not chart-first.\n- Explain the job of `คือ` simply and avoid turning it into a heavy grammar lecture.\n- Keep the left two-thirds visually readable; right third stays clear for Nine.\n- Use real-world images only where they make identity and pointing more concrete.\n\n## Likely learner mistakes\n- Treating `เขาคือใคร` as the same function as `คุณชื่ออะไร`.\n- Overtranslating `คือ` as a rigid English equals sign.\n- Trying to memorise a full pronoun table instead of using a small practical set.\n- Forgetting that review items from earlier lessons should still appear inside the new exchange.\n\n## Image and visual notes\n- Section 2 benefits from a simple social introduction photo.\n- Section 3 benefits from a single portrait or person card to anchor the who-question.\n- Sections 1 and 4 should stay text-led so the sentence frames remain dominant.\n",
-      "scriptPath": "/Users/Shared/work/thai-nine/course/modules/M01/L003/script-master.json",
+      "scriptPath": "/Users/Shared/work/thai-nine/course/modules/M01/L003/M01-L003-script-master.json",
       "scriptMaster": {
         "schemaVersion": 1,
         "lessonId": "M01-L003",
@@ -1701,18 +1957,19 @@
             "heading": "Build a mini identity exchange with review",
             "purpose": "Combine the new who-question pattern with earlier name and country material so the learner can follow and produce a short first-meeting dialogue.",
             "spokenNarration": [
-              "Now we connect the new lesson to the earlier first-contact material. You can greet, ask who someone is, ask the name question, and confirm where the person is from.",
-              "This is where review matters. We reuse ชื่อ chûue, ประเทศ bprà-thêet, and มาจากไทย maa-jàak thai so the learner builds a small network instead of isolated lesson boxes.",
-              "Notice the progression: first identify the person with เขาคือใคร, then learn the name, then confirm one more fact such as the country. That is how a real short conversation grows."
+              "Now we connect the new lesson to the earlier first-contact material. You can greet, ask who someone is, and then confirm one more detail such as the country.",
+              "This is where review matters. We reuse ชื่อ chûue, ประเทศ bprà-thêet, ใช่ châi, and มาจากไทย maa-jàak thai so the learner builds a small network instead of isolated lesson boxes.",
+              "Notice the progression: first identify the person with คนนี้คือใคร or เขาคือใคร, then name the person, then confirm one more fact such as the country. That is how a real short conversation grows."
             ],
             "onScreenBullets": [
               "ขอโทษนะ | khǎaw-thôot ná | excuse me",
-              "เขามาจากไทย | khǎo maa-jàak thai | he / she is from Thailand",
+              "คนนี้คือใคร | khon níi kheuu khrai | who is this person?",
               "ประเทศ | bprà-thêet | country",
+              "เขามาจากไทย | khǎo maa-jàak thai | he / she is from Thailand",
               "คุณคือ...ใช่ไหม | khun kheuu... châi mái | you are ... right?"
             ],
             "drills": [
-              "Chain drill: learner says สวัสดี, asks เขาคือใคร, then follows with คุณชื่ออะไร when the person joins the conversation.",
+              "Chain drill: learner says สวัสดี, asks คนนี้คือใคร, then follows with a country question or confirmation question.",
               "Information-build drill: teacher reveals one detail at a time and learner turns it into an identity sentence or confirmation question."
             ],
             "languageFocus": [
@@ -1723,10 +1980,10 @@
                 "vocabId": "v-e2c4943d2f"
               },
               {
-                "thai": "เขามาจากไทย",
-                "translit": "khǎo maa-jàak thai",
-                "english": "he / she is from Thailand",
-                "vocabId": "v-af0f28e039"
+                "thai": "คนนี้คือใคร",
+                "translit": "khon níi kheuu khrai",
+                "english": "who is this person?",
+                "vocabId": "v-688905b601"
               },
               {
                 "thai": "ประเทศ",
@@ -1735,22 +1992,22 @@
                 "vocabId": "v-d0c316cc2c"
               },
               {
-                "thai": "คุณคือ...ใช่ไหม",
-                "translit": "khun kheuu... châi mái",
-                "english": "you are ... right?",
-                "vocabId": "v-7597900aeb"
+                "thai": "เขามาจากไทย",
+                "translit": "khǎo maa-jàak thai",
+                "english": "he / she is from Thailand",
+                "vocabId": "v-af0f28e039"
               }
             ],
             "visualPlan": {
               "leftPanelLayout": "drill-stack",
-              "onScreenGoal": "Show the conversation growing step by step from greeting to identity question to name and country follow-up.",
+              "onScreenGoal": "Show the conversation growing step by step from greeting to who-question to name and country follow-up.",
               "teachingVisuals": [
-                "A four-step conversation stack with each new line appearing under the previous one.",
+                "A four-step conversation stack with greeting, who-question, answer, and country follow-up.",
                 "A small country tag chip next to เขามาจากไทย to connect review from the previous lesson."
               ],
               "teacherCues": [
                 "Keep the dialogue build cumulative so the learner sees how older chunks stay alive.",
-                "Do not overcrowd the left panel; reveal one line at a time."
+                "Make the identity question visually dominant before the country follow-up appears."
               ],
               "imageSupport": {
                 "helpful": false,
@@ -1781,33 +2038,39 @@
             },
             {
               "speaker": "A",
-              "thai": "นี่คือครูแอนค่ะ",
-              "translit": "nîi kheuu khruu Aen khâ",
-              "english": "This is Teacher Ann."
+              "thai": "ขอโทษนะคะ คนนี้คือใครคะ",
+              "translit": "khǎaw-thôot ná khá khon níi kheuu khrai khá",
+              "english": "Excuse me, who is this person?"
             },
             {
               "speaker": "B",
-              "thai": "เขาคือใครครับ",
-              "translit": "khǎo kheuu khrai khráp",
-              "english": "Who is she?"
+              "thai": "คนนี้คือไมค์ครับ",
+              "translit": "khon níi kheuu Mike khráp",
+              "english": "This is Mike."
             },
             {
               "speaker": "A",
-              "thai": "เขาชื่อไมค์ค่ะ",
-              "translit": "khǎo chûue Mike khâ",
-              "english": "His name is Mike."
+              "thai": "เขามาจากประเทศอะไรคะ",
+              "translit": "khǎo maa-jàak bprà-thêet à-rai khá",
+              "english": "What country is he from?"
             },
             {
               "speaker": "B",
-              "thai": "เขามาจากอังกฤษใช่ไหมครับ",
-              "translit": "khǎo maa-jàak ang-grìt châi mái khráp",
-              "english": "He is from England, right?"
+              "thai": "เขามาจากอังกฤษครับ",
+              "translit": "khǎo maa-jàak ang-grìt khráp",
+              "english": "He is from England."
             },
             {
               "speaker": "A",
-              "thai": "ใช่ค่ะ",
-              "translit": "châi khâ",
-              "english": "Yes, that is right."
+              "thai": "อังกฤษใช่ไหมคะ",
+              "translit": "ang-grìt châi mái khá",
+              "english": "England, right?"
+            },
+            {
+              "speaker": "B",
+              "thai": "ใช่ครับ",
+              "translit": "châi khráp",
+              "english": "Yes."
             }
           ]
         },
@@ -1852,7 +2115,31 @@
             "id": "roleplay",
             "description": "Scenario roleplay included and substantial",
             "pass": true,
-            "evidence": "Roleplay contains 7 lines"
+            "evidence": "Roleplay contains 8 lines"
+          },
+          {
+            "id": "roleplay-duplicates",
+            "description": "Roleplay does not repeat exact lines",
+            "pass": true,
+            "evidence": "All roleplay lines are distinct"
+          },
+          {
+            "id": "roleplay-turn-taking",
+            "description": "Roleplay alternates speakers cleanly",
+            "pass": true,
+            "evidence": "Roleplay alternates speakers line by line"
+          },
+          {
+            "id": "roleplay-answer-logic",
+            "description": "Yes/no answer particles appear only after a nearby question or confirmation turn",
+            "pass": true,
+            "evidence": "Answer particles follow question-like turns when used"
+          },
+          {
+            "id": "roleplay-question-target",
+            "description": "Question-target lessons include at least one question-like roleplay turn",
+            "pass": true,
+            "evidence": "Roleplay includes a question-like turn"
           },
           {
             "id": "recap",
@@ -1899,9 +2186,9 @@
     },
     {
       "lessonId": "M01-L004",
-      "briefPath": "/Users/Shared/work/thai-nine/course/modules/M01/L004/brief.md",
+      "briefPath": "/Users/Shared/work/thai-nine/course/modules/M01/L004/M01-L004-brief.md",
       "briefMd": "# M01-L004 — Numbers 0 to 10\n\n- **Module:** M01 — First Contact and Courtesy\n- **Level:** A0\n- **Target runtime:** 9-12 minutes\n- **Primary objective:** Learner can understand and say Thai digits 0-10 clearly enough for age, room numbers, and basic counting.\n- **Secondary objective:** Learner can recycle recent pronoun and identity language while handling number pronunciation in short controlled output.\n- **Teaching frame:** Practical number use in a room-number exchange plus age phrases that connect directly to the rebuilt Module 1 foundation.\n\n## Must-teach outcomes\n1. Hear and say the digits 0-10 with stable pronunciation.\n2. Understand that Thai room numbers and similar codes are usually said digit by digit.\n3. Use the chunk `เบอร์อะไร` | `ber à-rai` | what number?\n4. Build the age pattern `ฉันอายุสิบปี` | `chǎn aa-yú sìp bpii` | I am ten years old.\n5. Reuse prior pronoun and courtesy material while handling numbers.\n\n## Core vocabulary and chunks\n| Thai | Transliteration | English |\n|---|---|---|\n| ศูนย์ | sǔun | zero |\n| หนึ่ง | nùeng | one |\n| สอง | sǎawng | two |\n| สาม | sǎam | three |\n| สี่ | sìi | four |\n| ห้า | hâa | five |\n| หก | hòk | six |\n| เจ็ด | jèt | seven |\n| แปด | bpàaet | eight |\n| เก้า | gâao | nine |\n| สิบ | sìp | ten |\n| เบอร์อะไร | ber à-rai | what number? |\n| ฉัน | chǎn | I |\n| เขา | khǎo | he / she |\n| ฉันอายุสิบปี | chǎn aa-yú sìp bpii | I am ten years old |\n| เขาอายุเก้าปี | khǎo aa-yú gâao bpii | he / she is nine years old |\n\n## Teaching constraints\n- Keep this as a real lesson, not a digit list.\n- Explicitly explain why room numbers are said digit by digit.\n- Tie age phrases back to the pronoun lesson so the module feels cumulative.\n- Reuse at least two prior-course items naturally.\n- Keep visuals in the left two-thirds of the frame.\n\n## Likely learner mistakes\n1. Rushing through the digits and flattening contrast between `สี่`, `ห้า`, `หก`, and `เจ็ด`.\n2. Assuming room numbers should be read as one larger number.\n3. Learning age language without plugging it into `ฉัน` or `เขา`.\n4. Forgetting to use repair phrases when a number is missed.\n\n## Image and visual notes\n- Most of the lesson should stay text-first.\n- One real-world image is still useful in the room-number section: a hotel corridor or room-number sign.\n- The final section should stay text-led and show phrase-building from pronoun to age frame.\n",
-      "scriptPath": "/Users/Shared/work/thai-nine/course/modules/M01/L004/script-master.json",
+      "scriptPath": "/Users/Shared/work/thai-nine/course/modules/M01/L004/M01-L004-script-master.json",
       "scriptMaster": {
         "schemaVersion": 1,
         "lessonId": "M01-L004",
@@ -2443,8 +2730,8 @@
             "purpose": "Move from isolated digits into usable age and room-number phrases while explicitly reusing the pronoun and identity material from the rebuilt foundation lessons.",
             "spokenNarration": [
               "Numbers become much more useful when they plug into the people language you already know. From lesson three, you can now drop digits into frames such as ฉันอายุสิบปี or เขาอายุเก้าปี.",
-              "This matters because real beginner Thai is cumulative. You do not learn pronouns in one box and numbers in another. You combine them to talk about a person, an age, a room number, or another simple fact.",
-              "If a number comes too fast, fall back on the repair phrases from the first foundation lesson, such as ขอโทษ khǎaw-thôot or พูดช้าๆ ได้ไหม phûut cháa-cháa dâai mái, and then try the number again."
+              "You already know pronouns like ฉัน, ผม, คุณ, and เขา. That means numbers are no longer floating on their own; they attach to real people, room numbers, and simple personal facts.",
+              "If a number comes too fast, fall back on the repair phrases from the first foundation lesson, such as ขอโทษ khǎaw-thôot, then ask again and keep the number exchange moving."
             ],
             "onScreenBullets": [
               "ฉัน | chǎn | I",
@@ -2454,8 +2741,8 @@
               "ขอโทษ | khǎaw-thôot | excuse me / sorry"
             ],
             "drills": [
-              "Pattern drill: teacher gives a digit from zero to ten; learner builds ฉันอายุ...ปี with that digit.",
-              "Repair drill: learner hears a room number once, then must respond with either the number or a repair phrase before repeating it back."
+              "Pattern drill: teacher gives a digit from zero to ten; learner builds ฉันอายุ...ปี or เขาอายุ...ปี with that digit.",
+              "Repair drill: learner hears a room number once, then must respond with either the number or ขอโทษ before hearing it again and repeating it back."
             ],
             "languageFocus": [
               {
@@ -2474,8 +2761,7 @@
                 "thai": "ฉันอายุสิบปี",
                 "translit": "chǎn aa-yú sìp bpii",
                 "english": "I am ten years old",
-                "vocabId": "v-03d6876d5b",
-                "notes": "Starter age frame using the new number set."
+                "vocabId": "v-03d6876d5b"
               },
               {
                 "thai": "เขาอายุเก้าปี",
@@ -2488,12 +2774,6 @@
                 "translit": "khǎaw-thôot",
                 "english": "excuse me / sorry",
                 "vocabId": "v-6fce5e8c2c"
-              },
-              {
-                "thai": "ขอบคุณ",
-                "translit": "khàawp-khun",
-                "english": "thank you",
-                "vocabId": "v-217b46aa5a"
               }
             ],
             "visualPlan": {
@@ -2505,7 +2785,7 @@
               ],
               "teacherCues": [
                 "Tie the age pattern explicitly back to the pronouns from the previous lesson.",
-                "Reveal the room number only after the age phrase so the learner sees two different number jobs."
+                "Keep the room-number question and answer separate from the age line so the learner hears two different number jobs."
               ],
               "imageSupport": {
                 "helpful": false,
@@ -2521,42 +2801,48 @@
           }
         ],
         "roleplay": {
-          "scenario": "Small class check-in: identifying another student and catching the room number clearly.",
+          "scenario": "Small class check-in: asking about another student and catching the room number clearly.",
           "lines": [
             {
               "speaker": "A",
-              "thai": "สวัสดีค่ะ นี่คือมีนค่ะ",
-              "translit": "sà-wàt-dii khâ nîi kheuu Miin khâ",
-              "english": "Hello. This is Min."
+              "thai": "สวัสดีค่ะ ขอโทษนะคะ คนนี้คือใครคะ",
+              "translit": "sà-wàt-dii khâ khǎaw-thôot ná khá khon níi kheuu khrai khá",
+              "english": "Hello, excuse me, who is this person?"
             },
             {
               "speaker": "B",
-              "thai": "เขาคือใครครับ",
-              "translit": "khǎo kheuu khrai khráp",
-              "english": "Who is she?"
+              "thai": "คนนี้คือมีนครับ",
+              "translit": "khon níi kheuu Miin khráp",
+              "english": "This is Min."
             },
             {
               "speaker": "A",
-              "thai": "เขาชื่อมีนค่ะ เขาอายุเก้าปี",
-              "translit": "khǎo chûue Miin khâ khǎo aa-yú gâao bpii",
-              "english": "Her name is Min. She is nine years old."
+              "thai": "เขาอายุเก้าปีใช่ไหมคะ",
+              "translit": "khǎo aa-yú gâao bpii châi mái khá",
+              "english": "She is nine years old, right?"
             },
             {
               "speaker": "B",
-              "thai": "ห้องเบอร์อะไรครับ",
-              "translit": "hâawng ber à-rai khráp",
+              "thai": "ใช่ครับ",
+              "translit": "châi khráp",
+              "english": "Yes."
+            },
+            {
+              "speaker": "A",
+              "thai": "ห้องเบอร์อะไรคะ",
+              "translit": "hâawng ber à-rai khá",
               "english": "What is the room number?"
             },
             {
-              "speaker": "A",
-              "thai": "ห้า-ศูนย์-สองค่ะ",
-              "translit": "hâa-sǔun-sǎawng khâ",
+              "speaker": "B",
+              "thai": "ห้า-ศูนย์-สองครับ",
+              "translit": "hâa-sǔun-sǎawng khráp",
               "english": "Five-zero-two."
             },
             {
-              "speaker": "B",
-              "thai": "ขอบคุณครับ",
-              "translit": "khàawp-khun khráp",
+              "speaker": "A",
+              "thai": "ขอบคุณค่ะ",
+              "translit": "khàawp-khun khâ",
               "english": "Thank you."
             }
           ]
@@ -2602,7 +2888,31 @@
             "id": "roleplay",
             "description": "Scenario roleplay included and substantial",
             "pass": true,
-            "evidence": "Roleplay contains 6 lines"
+            "evidence": "Roleplay contains 7 lines"
+          },
+          {
+            "id": "roleplay-duplicates",
+            "description": "Roleplay does not repeat exact lines",
+            "pass": true,
+            "evidence": "All roleplay lines are distinct"
+          },
+          {
+            "id": "roleplay-turn-taking",
+            "description": "Roleplay alternates speakers cleanly",
+            "pass": true,
+            "evidence": "Roleplay alternates speakers line by line"
+          },
+          {
+            "id": "roleplay-answer-logic",
+            "description": "Yes/no answer particles appear only after a nearby question or confirmation turn",
+            "pass": true,
+            "evidence": "Answer particles follow question-like turns when used"
+          },
+          {
+            "id": "roleplay-question-target",
+            "description": "Question-target lessons include at least one question-like roleplay turn",
+            "pass": true,
+            "evidence": "Roleplay includes a question-like turn"
           },
           {
             "id": "recap",
@@ -2614,7 +2924,7 @@
             "id": "review-reuse",
             "description": "Lesson reuses at least 2 prior items when prior lesson context exists",
             "pass": true,
-            "evidence": "Reused 3 prior vocabulary items in language focus"
+            "evidence": "Reused 2 prior vocabulary items in language focus"
           },
           {
             "id": "teaching-frame",

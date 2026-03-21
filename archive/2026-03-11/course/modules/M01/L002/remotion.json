@@ -1,0 +1,115 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "M01-L002",
+  "sourceScript": "script-master.json",
+  "scenes": [
+    {
+      "id": "scene-1",
+      "seconds": 45,
+      "voiceover": [
+        "Compare ไก่ gài and ไข่ khài.",
+        "One breathy consonant changes meaning immediately."
+      ],
+      "overlays": [
+        "Consonant contrast at the start",
+        "ไก่ | gài | chicken",
+        "ไข่ | khài | egg",
+        "เสียงต้นต่างกัน | sǐiang dtôn dtàang-gan | initial consonant contrast"
+      ],
+      "thaiFocus": [
+        {
+          "thai": "ไก่",
+          "translit": "gài",
+          "english": "chicken"
+        },
+        {
+          "thai": "ไข่",
+          "translit": "khài",
+          "english": "egg"
+        }
+      ],
+      "assets": [
+        {
+          "assetId": "m01-l002-scene-1-asset-1",
+          "kind": "image",
+          "query": "The Thai Sound System Consonant contrast at the start thai learning visual",
+          "sourcePolicy": "internet-first",
+          "sourceUrl": "https://www.pexels.com/search/The%20Thai%20Sound%20System%20Consonant%20contrast%20at%20the%20start/",
+          "license": "Pexels License"
+        }
+      ]
+    },
+    {
+      "id": "scene-2",
+      "seconds": 45,
+      "voiceover": [
+        "ใกล้ glâi means near.",
+        "ไกล glǎi marks far in this lesson contrast set."
+      ],
+      "overlays": [
+        "Tone contour changes meaning",
+        "ใกล้ | glâi | near",
+        "ไกล | glǎi | far",
+        "โทนเสียงเปลี่ยนความหมาย | thoon sǐiang bplìian khwaam-mǎai | tone shifts meaning"
+      ],
+      "thaiFocus": [
+        {
+          "thai": "ใกล้",
+          "translit": "glâi",
+          "english": "near"
+        },
+        {
+          "thai": "ไกล",
+          "translit": "glǎi",
+          "english": "far"
+        }
+      ],
+      "assets": [
+        {
+          "assetId": "m01-l002-scene-2-asset-1",
+          "kind": "image",
+          "query": "The Thai Sound System Tone contour changes meaning thai learning visual",
+          "sourcePolicy": "internet-first",
+          "sourceUrl": "https://www.pexels.com/search/The%20Thai%20Sound%20System%20Tone%20contour%20changes%20meaning/",
+          "license": "Pexels License"
+        }
+      ]
+    },
+    {
+      "id": "scene-3",
+      "seconds": 45,
+      "voiceover": [
+        "ขา khǎa (leg) and ค่า khâa (value/fee) are not interchangeable.",
+        "Length + tone must be heard together."
+      ],
+      "overlays": [
+        "Length awareness",
+        "ขา | khǎa | leg",
+        "ค่า | khâa | value / fee",
+        "ยาว/สั้นต่างความหมาย | yaao/sân dtàang khwaam-mǎai | length changes meaning"
+      ],
+      "thaiFocus": [
+        {
+          "thai": "ขา",
+          "translit": "khǎa",
+          "english": "leg"
+        },
+        {
+          "thai": "ค่า",
+          "translit": "khâa",
+          "english": "value / fee"
+        }
+      ],
+      "assets": [
+        {
+          "assetId": "m01-l002-scene-3-asset-1",
+          "kind": "image",
+          "query": "The Thai Sound System Length awareness thai learning visual",
+          "sourcePolicy": "internet-first",
+          "sourceUrl": "https://www.pexels.com/search/The%20Thai%20Sound%20System%20Length%20awareness/",
+          "license": "Pexels License"
+        }
+      ]
+    }
+  ]
+}

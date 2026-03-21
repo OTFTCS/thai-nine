@@ -1,0 +1,52 @@
+Episode 04 - ใบ vs เล่ม
+
+Target runtime: 70-90 seconds
+Goal: teach the flat-item vs bound-item split fast
+
+Full script:
+
+A ticket and a book are not the same kind of "one" in Thai.
+
+Use "ใบ" for flat paper-like items.
+
+ตั๋วหนึ่งใบ | dtǔua nùeng bai | ticket one flat-thing | one ticket
+
+บัตรหนึ่งใบ | bàt nùeng bai | card one flat-thing | one card
+
+ใบเสร็จหนึ่งใบ | bai-sèt nùeng bai | receipt one flat-thing | one receipt
+
+Use "เล่ม" for books and bound items.
+
+หนังสือหนึ่งเล่ม | nǎng-sěuu nùeng lèm | book one volume | one book
+
+สมุดหนึ่งเล่ม | sà-mùt nùeng lèm | notebook one volume | one notebook
+
+พาสปอร์ตหนึ่งเล่ม | phâat-spàwt nùeng lèm | passport one volume | one passport
+
+Fast shortcut.
+
+Loose flat item, think "ใบ".
+
+Book-like unit you hold as one bound thing, think "เล่ม".
+
+The weird English helps here too.
+
+Ticket one flat-thing.
+
+Book one volume.
+
+Quick check.
+
+สมุดหนึ่งเล่ม | sà-mùt nùeng lèm | notebook one volume | one notebook
+
+Transfer check.
+
+บัตรคิวหนึ่งใบ | bàt khiu nùeng bai | queue-ticket one flat-thing | one queue ticket
+
+Save this if "ใบ" and "เล่ม" always trip you up.
+
+On-screen beats:
+- Open on a ticket card and a book cover side by side
+- Stack the "ใบ" examples first, then the "เล่ม" examples
+- End on a single card with a short pause:
+  บัตรคิวหนึ่งใบ | bàt khiu nùeng bai | queue-ticket one flat-thing | one queue ticket

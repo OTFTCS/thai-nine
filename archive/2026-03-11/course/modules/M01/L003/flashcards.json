@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "M01-L003",
+  "cards": [
+    {
+      "id": "m01-l003-c01",
+      "vocabId": "v-c9337e2739",
+      "front": "สวัสดี",
+      "back": "hello",
+      "translit": "sà-wàt-dii",
+      "tags": [
+        "M01-L003",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l003-c02",
+      "vocabId": "v-217b46aa5a",
+      "front": "ขอบคุณ",
+      "back": "thank you",
+      "translit": "khàawp-khun",
+      "tags": [
+        "M01-L003",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l003-c03",
+      "vocabId": "v-6fce5e8c2c",
+      "front": "ขอโทษ",
+      "back": "excuse me / sorry",
+      "translit": "khǎaw-thôot",
+      "tags": [
+        "M01-L003",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l003-c04",
+      "vocabId": "v-4dea1cee34",
+      "front": "ไม่เข้าใจ",
+      "back": "I do not understand",
+      "translit": "mâi khâo-jai",
+      "tags": [
+        "M01-L003",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l003-c05",
+      "vocabId": "v-6f22c219d9",
+      "front": "พูดช้าๆ ได้ไหม",
+      "back": "can you speak slowly?",
+      "translit": "phûut cháa-cháa dâai mái",
+      "tags": [
+        "M01-L003",
+        "core"
+      ]
+    }
+  ]
+}

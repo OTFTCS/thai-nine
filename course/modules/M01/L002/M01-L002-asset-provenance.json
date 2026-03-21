@@ -1,63 +1,19 @@
 {
   "schemaVersion": 1,
   "lessonId": "M01-L002",
-  "generatedAt": "2026-03-11T07:29:14.923Z",
+  "generatedAt": "2026-03-21T07:09:22.424720Z",
   "assets": [
     {
-      "assetId": "m01-l002-scene-1-asset-1",
-      "kind": "icon",
-      "sourceUrl": "https://thenounproject.com/search/icons/?q=M01-L002%20Names%20and%20Countries%3A%20Simple%20Self-Introduction%20Thai%20Ask%20and%20answer%20the%20name%20question%20thai%20learning%20visual",
-      "license": "Noun Project search result review required",
-      "usage": "scene-1:scene-1 overlay background",
-      "query": "M01-L002 Names and Countries: Simple Self-Introduction Thai Ask and answer the name question thai learning visual",
-      "sourcePolicy": "internet-first",
-      "rationale": "The pattern itself is the lesson, so dialogue structure teaches better than a photo.",
-      "sourceHints": [
-        "The Noun Project",
-        "Icon sets"
-      ]
-    },
-    {
-      "assetId": "m01-l002-scene-2-asset-1",
-      "kind": "icon",
-      "sourceUrl": "https://thenounproject.com/search/icons/?q=M01-L002%20Names%20and%20Countries%3A%20Simple%20Self-Introduction%20Thai%20Use%20%E0%B8%89%E0%B8%B1%E0%B8%99%20and%20%E0%B8%9C%E0%B8%A1%20naturally%20thai%20learning%20visual",
-      "license": "Noun Project search result review required",
-      "usage": "scene-2:scene-2 overlay background",
-      "query": "M01-L002 Names and Countries: Simple Self-Introduction Thai Use ฉัน and ผม naturally thai learning visual",
-      "sourcePolicy": "internet-first",
-      "rationale": "Role contrast is clearer with labelled speaker cards than with photos.",
-      "sourceHints": [
-        "The Noun Project",
-        "Icon sets"
-      ]
-    },
-    {
-      "assetId": "m01-l002-scene-3-asset-1",
+      "assetId": "slide-04-say-where-you-are-from-asset-1",
+      "slideId": "slide-04-say-where-you-are-from",
       "kind": "image",
-      "sourceUrl": "https://www.pexels.com/search/simple%20Thailand%20England%20America%20flags%20flat%20lay/",
-      "license": "Pexels License",
-      "usage": "scene-3:scene-3 overlay background",
-      "query": "simple Thailand England America flags flat lay",
+      "status": "fallback-text-only",
+      "sourceProvider": "none",
+      "usage": "slide-04-say-where-you-are-from:left-panel image fallback",
+      "query": "Thailand flag icon",
       "sourcePolicy": "internet-first",
-      "rationale": "A very light map or flag anchor helps learners separate the country words quickly while the spoken pattern remains the main teaching target.",
-      "sourceHints": [
-        "Pexels",
-        "Wikimedia Commons"
-      ]
-    },
-    {
-      "assetId": "m01-l002-scene-4-asset-1",
-      "kind": "icon",
-      "sourceUrl": "https://thenounproject.com/search/icons/?q=M01-L002%20Names%20and%20Countries%3A%20Simple%20Self-Introduction%20Thai%20Build%20a%20full%20two-line%20self-introduction%20thai%20learning%20visual",
-      "license": "Noun Project search result review required",
-      "usage": "scene-4:scene-4 overlay background",
-      "query": "M01-L002 Names and Countries: Simple Self-Introduction Thai Build a full two-line self-introduction thai learning visual",
-      "sourcePolicy": "internet-first",
-      "rationale": "The learner needs a sentence sequence here, so a dialogue ladder teaches better than another image.",
-      "sourceHints": [
-        "The Noun Project",
-        "Icon sets"
-      ]
+      "fallbackReason": "No acceptable Openverse or Wikimedia asset could be downloaded automatically.",
+      "rationale": "Small flag icons for Thailand, UK, and US could help anchor country names visually."
     }
   ]
 }

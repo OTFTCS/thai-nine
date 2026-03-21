@@ -1,0 +1,2989 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "M01-L001",
+  "sourceDeck": "M01-L001-deck-source.json",
+  "layoutContract": "course/layout-contracts/canva/l001-reference-v1.json",
+  "theme": {
+    "thaiFont": "Sarabun",
+    "latinFont": "Sarabun",
+    "backgroundColor": "#F5F7F8",
+    "rightZoneTint": "#DBE7EC",
+    "accentColors": [
+      "#355C7D",
+      "#7A8F54",
+      "#C96F4A"
+    ]
+  },
+  "slides": [
+    {
+      "id": "canva-slide-01-opener",
+      "title": "Hello and Basic Courtesy",
+      "layoutFamily": "opener",
+      "backgroundPath": "canva-backgrounds/slide-01.png",
+      "elements": [
+        {
+          "id": "eyebrow",
+          "kind": "text",
+          "x": 731520,
+          "y": 1645920,
+          "w": 6858000,
+          "h": 365760,
+          "fontName": "Sarabun",
+          "fontSizePt": 12,
+          "color": "#355C7D",
+          "bold": true,
+          "italic": false,
+          "align": "left",
+          "value": "First Contact and Courtesy  ·  A0"
+        },
+        {
+          "id": "lesson_id",
+          "kind": "text",
+          "x": 731520,
+          "y": 2103120,
+          "w": 6858000,
+          "h": 457200,
+          "fontName": "Sarabun",
+          "fontSizePt": 19,
+          "color": "#566873",
+          "bold": false,
+          "italic": false,
+          "align": "left",
+          "value": "M01-L001"
+        },
+        {
+          "id": "title",
+          "kind": "text",
+          "x": 731520,
+          "y": 2651760,
+          "w": 6858000,
+          "h": 914400,
+          "fontName": "Sarabun",
+          "fontSizePt": 38,
+          "color": "#24333D",
+          "bold": true,
+          "italic": false,
+          "align": "left",
+          "value": "Hello and Basic Courtesy"
+        },
+        {
+          "id": "brand",
+          "kind": "text",
+          "x": 731520,
+          "y": 5303520,
+          "w": 6858000,
+          "h": 365760,
+          "fontName": "Sarabun",
+          "fontSizePt": 15,
+          "color": "#566873",
+          "bold": false,
+          "italic": false,
+          "align": "left",
+          "value": "Immersion Thai with Nine"
+        }
+      ]
+    },
+    {
+      "id": "canva-slide-02-objectives",
+      "title": "What you will learn",
+      "layoutFamily": "objectives-list",
+      "backgroundPath": "canva-backgrounds/slide-02.png",
+      "elements": [
+        {
+          "id": "title",
+          "kind": "text",
+          "x": 731520,
+          "y": 1061443,
+          "w": 6858000,
+          "h": 457200,
+          "fontName": "Sarabun",
+          "fontSizePt": 30,
+          "color": "#24333D",
+          "bold": true,
+          "italic": false,
+          "align": "left",
+          "value": "What you will learn"
+        },
+        {
+          "id": "objective_1",
+          "kind": "text",
+          "x": 1280047,
+          "y": 1964720,
+          "w": 6217800,
+          "h": 457200,
+          "fontName": "Sarabun",
+          "fontSizePt": 16,
+          "color": "#24333D",
+          "bold": false,
+          "italic": false,
+          "align": "left",
+          "value": "1. Say hello politely with a correct polite ending"
+        },
+        {
+          "id": "objective_2",
+          "kind": "text",
+          "x": 1280047,
+          "y": 2649225,
+          "w": 6217800,
+          "h": 457200,
+          "fontName": "Sarabun",
+          "fontSizePt": 16,
+          "color": "#24333D",
+          "bold": false,
+          "italic": false,
+          "align": "left",
+          "value": "2. Use ขอบคุณ (khàawp-khun) and ขอโทษ (khǎaw-thôot) in the right social moments",
+          "segments": [
+            {
+              "text": "2. Use ",
+              "fontName": "Sarabun",
+              "fontSizePt": 16.0,
+              "color": "#24333D",
+              "bold": false,
+              "italic": false
+            },
+            {
+              "text": "ขอบคุณ",
+              "fontName": "Sarabun",
+              "fontSizePt": 16.0,
+              "color": "#24333D",
+              "bold": false,
+              "italic": false
+            },
+            {
+              "text": " (khàawp-khun)",
+              "fontName": "Sarabun",
+              "fontSizePt": 15.0,
+              "color": "#566873",
+              "bold": false,
+              "italic": true
+            },
+            {
+              "text": " and ",
+              "fontName": "Sarabun",
+              "fontSizePt": 16.0,
+              "color": "#24333D",
+              "bold": false,
+              "italic": false
+            },
+            {
+              "text": "ขอโทษ",
+              "fontName": "Sarabun",
+              "fontSizePt": 16.0,
+              "color": "#24333D",
+              "bold": false,
+              "italic": false
+            },
+            {
+              "text": " (khǎaw-thôot)",
+              "fontName": "Sarabun",
+              "fontSizePt": 15.0,
+              "color": "#566873",
+              "bold": false,
+              "italic": true
+            },
+            {
+              "text": " in the right social moments",
+              "fontName": "Sarabun",
+              "fontSizePt": 16.0,
+              "color": "#24333D",
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "id": "objective_3",
+          "kind": "text",
+          "x": 1280047,
+          "y": 3333730,
+          "w": 6217800,
+          "h": 457200,
+          "fontName": "Sarabun",
+          "fontSizePt": 16,
+          "color": "#24333D",
+          "bold": false,
+          "italic": false,
+          "align": "left",
+          "value": "3. Distinguish ครับ (khráp), ค่ะ (khâ), and คะ (khá) at a practical level",
+          "segments": [
+            {
+              "text": "3. Distinguish ",
+              "fontName": "Sarabun",
+              "fontSizePt": 16.0,
+              "color": "#24333D",
+              "bold": false,
+              "italic": false
+            },
+            {
+              "text": "ครับ",
+              "fontName": "Sarabun",
+              "fontSizePt": 16.0,
+              "color": "#24333D",
+              "bold": false,
+              "italic": false
+            },
+            {
+              "text": " (khráp)",
+              "fontName": "Sarabun",
+              "fontSizePt": 15.0,
+              "color": "#566873",
+              "bold": false,
+              "italic": true
+            },
+            {
+              "text": ", ",
+              "fontName": "Sarabun",
+              "fontSizePt": 16.0,
+              "color": "#24333D",
+              "bold": false,
+              "italic": false
+            },
+            {
+              "text": "ค่ะ",
+              "fontName": "Sarabun",
+              "fontSizePt": 16.0,
+              "color": "#24333D",
+              "bold": false,
+              "italic": false
+            },
+            {
+              "text": " (khâ)",
+              "fontName": "Sarabun",
+              "fontSizePt": 15.0,
+              "color": "#566873",
+              "bold": false,
+              "italic": true
+            },
+            {
+              "text": ", and ",
+              "fontName": "Sarabun",
+              "fontSizePt": 16.0,
+              "color": "#24333D",
+              "bold": false,
+              "italic": false
+            },
+            {
+              "text": "คะ",
+              "fontName": "Sarabun",
+              "fontSizePt": 16.0,
+              "color": "#24333D",
+              "bold": false,
+              "italic": false
+            },
+            {
+              "text": " (khá)",
+              "fontName": "Sarabun",
+              "fontSizePt": 15.0,
+              "color": "#566873",
+              "bold": false,
+              "italic": true
+            },
+            {
+              "text": " at a practical level",
+              "fontName": "Sarabun",
+              "fontSizePt": 16.0,
+              "color": "#24333D",
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "id": "objective_4",
+          "kind": "text",
+          "x": 1280160,
+          "y": 4018260,
+          "w": 6217800,
+          "h": 457200,
+          "fontName": "Sarabun",
+          "fontSizePt": 16,
+          "color": "#24333D",
+          "bold": false,
+          "italic": false,
+          "align": "left",
+          "value": "4. Answer with ใช่ (châi) or ไม่ใช่ (mâi châi) and soften with ไม่เป็นไร (mâi bpen rai)",
+          "segments": [
+            {
+              "text": "4. Answer with ",
+              "fontName": "Sarabun",
+              "fontSizePt": 16.0,
+              "color": "#24333D",
+              "bold": false,
+              "italic": false
+            },
+            {
+              "text": "ใช่",
+              "fontName": "Sarabun",
+              "fontSizePt": 16.0,
+              "color": "#24333D",
+              "bold": false,
+              "italic": false
+            },
+            {
+              "text": " (châi)",
+              "fontName": "Sarabun",
+              "fontSizePt": 15.0,
+              "color": "#566873",
+              "bold": false,
+              "italic": true
+            },
+            {
+              "text": " or ",
+              "fontName": "Sarabun",
+              "fontSizePt": 16.0,
+              "color": "#24333D",
+              "bold": false,
+              "italic": false
+            },
+            {
+              "text": "ไม่ใช่",
+              "fontName": "Sarabun",
+              "fontSizePt": 16.0,
+              "color": "#24333D",
+              "bold": false,
+              "italic": false
+            },
+            {
+              "text": " (mâi châi)",
+              "fontName": "Sarabun",
+              "fontSizePt": 15.0,
+              "color": "#566873",
+              "bold": false,
+              "italic": true
+            },
+            {
+              "text": " and soften with ",
+              "fontName": "Sarabun",
+              "fontSizePt": 16.0,
+              "color": "#24333D",
+              "bold": false,
+              "italic": false
+            },
+            {
+              "text": "ไม่เป็นไร",
+              "fontName": "Sarabun",
+              "fontSizePt": 16.0,
+              "color": "#24333D",
+              "bold": false,
+              "italic": false
+            },
+            {
+              "text": " (mâi bpen rai)",
+              "fontName": "Sarabun",
+              "fontSizePt": 15.0,
+              "color": "#566873",
+              "bold": false,
+              "italic": true
+            }
+          ]
+        },
+        {
+          "id": "objective_5",
+          "kind": "text",
+          "x": 1280160,
+          "y": 4690815,
+          "w": 6217800,
+          "h": 457200,
+          "fontName": "Sarabun",
+          "fontSizePt": 16,
+          "color": "#24333D",
+          "bold": false,
+          "italic": false,
+          "align": "left",
+          "value": "5. Deliver a short first-contact exchange with politeness"
+        }
+      ]
+    },
+    {
+      "id": "canva-slide-03-focus",
+      "title": "Say hello the Thai way",
+      "layoutFamily": "single-focus-card",
+      "backgroundPath": "canva-backgrounds/slide-03.png",
+      "elements": [
+        {
+          "id": "section_label",
+          "kind": "text",
+          "x": 731527,
+          "y": 1719200,
+          "w": 1210500,
+          "h": 320100,
+          "fontName": "Sarabun",
+          "fontSizePt": 12,
+          "color": "#FFFFFF",
+          "bold": true,
+          "italic": false,
+          "align": "center",
+          "value": "Section 1"
+        },
+        {
+          "id": "title",
+          "kind": "text",
+          "x": 2063268,
+          "y": 1582106,
+          "w": 5943600,
+          "h": 457200,
+          "fontName": "Sarabun",
+          "fontSizePt": 30,
+          "color": "#24333D",
+          "bold": true,
+          "italic": false,
+          "align": "left",
+          "value": "Say hello the Thai way"
+        },
+        {
+          "id": "thai",
+          "kind": "text",
+          "x": 1142988.0,
+          "y": 2332605.0,
+          "w": 5303400.0,
+          "h": 1042060.0,
+          "fontName": "Sarabun",
+          "fontSizePt": 32,
+          "color": "#24333D",
+          "bold": true,
+          "italic": false,
+          "align": "left",
+          "value": "สวัสดี (sà-wàt-dii)",
+          "segments": [
+            {
+              "text": "สวัสดี",
+              "fontName": "Sarabun",
+              "fontSizePt": 32.0,
+              "color": "#24333D",
+              "bold": true,
+              "italic": false
+            },
+            {
+              "text": " (sà-wàt-dii)",
+              "fontName": "Sarabun",
+              "fontSizePt": 19.8,
+              "color": "#566873",
+              "bold": false,
+              "italic": true
+            }
+          ]
+        },
+        {
+          "id": "english",
+          "kind": "text",
+          "x": 1143000,
+          "y": 3374675,
+          "w": 5303400,
+          "h": 365700,
+          "fontName": "Sarabun",
+          "fontSizePt": 15,
+          "color": "#82909A",
+          "bold": false,
+          "italic": false,
+          "align": "left",
+          "value": "hello"
+        },
+        {
+          "id": "note",
+          "kind": "text",
+          "x": 731520,
+          "y": 4142240,
+          "w": 6858000,
+          "h": 914400,
+          "fontName": "Sarabun",
+          "fontSizePt": 16,
+          "color": "#24333D",
+          "bold": false,
+          "italic": false,
+          "align": "left",
+          "value": "This is your safe, polite greeting for a first meeting.\nTreat politeness as part of the whole line, not as an extra decoration."
+        }
+      ]
+    },
+    {
+      "id": "canva-slide-04-greeting-stack",
+      "title": "The greeting stack",
+      "layoutFamily": "stacked-phrase-cards",
+      "backgroundPath": "canva-backgrounds/slide-04.png",
+      "elements": [
+        {
+          "id": "section_label",
+          "kind": "text",
+          "x": 731527,
+          "y": 694913,
+          "w": 1210500,
+          "h": 320100,
+          "fontName": "Sarabun",
+          "fontSizePt": 12,
+          "color": "#FFFFFF",
+          "bold": true,
+          "italic": false,
+          "align": "center",
+          "value": "Section 1"
+        },
+        {
+          "id": "title",
+          "kind": "text",
+          "x": 2063268,
+          "y": 552443,
+          "w": 5943600,
+          "h": 457200,
+          "fontName": "Sarabun",
+          "fontSizePt": 30,
+          "color": "#24333D",
+          "bold": true,
+          "italic": false,
+          "align": "left",
+          "value": "The greeting stack"
+        },
+        {
+          "id": "subtitle",
+          "kind": "text",
+          "x": 731520,
+          "y": 1051560,
+          "w": 6858000,
+          "h": 365700,
+          "fontName": "Sarabun",
+          "fontSizePt": 15,
+          "color": "#566873",
+          "bold": false,
+          "italic": false,
+          "align": "left",
+          "value": "Learn the greeting as a full social line, not just the base word."
+        },
+        {
+          "id": "card_1_thai",
+          "kind": "text",
+          "x": 1097280.0,
+          "y": 1659140.0,
+          "w": 5029200.0,
+          "h": 858203.0,
+          "fontName": "Sarabun",
+          "fontSizePt": 27,
+          "color": "#24333D",
+          "bold": true,
+          "italic": false,
+          "align": "left",
+          "value": "สวัสดี (sà-wàt-dii)",
+          "segments": [
+            {
+              "text": "สวัสดี",
+              "fontName": "Sarabun",
+              "fontSizePt": 27.0,
+              "color": "#24333D",
+              "bold": true,
+              "italic": false
+            },
+            {
+              "text": " (sà-wàt-dii)",
+              "fontName": "Sarabun",
+              "fontSizePt": 16.7,
+              "color": "#566873",
+              "bold": false,
+              "italic": true
+            }
+          ]
+        },
+        {
+          "id": "card_1_english",
+          "kind": "text",
+          "x": 1097280,
+          "y": 2475000,
+          "w": 5029200,
+          "h": 280000,
+          "fontName": "Sarabun",
+          "fontSizePt": 15,
+          "color": "#82909A",
+          "bold": false,
+          "italic": false,
+          "align": "left",
+          "value": "hello"
+        },
+        {
+          "id": "card_2_thai",
+          "kind": "text",
+          "x": 1097280.0,
+          "y": 3063303.0,
+          "w": 5029200.0,
+          "h": 845740.0,
+          "fontName": "Sarabun",
+          "fontSizePt": 27,
+          "color": "#24333D",
+          "bold": true,
+          "italic": false,
+          "align": "left",
+          "value": "สวัสดีครับ (sà-wàt-dii khráp)",
+          "segments": [
+            {
+              "text": "สวัสดีครับ",
+              "fontName": "Sarabun",
+              "fontSizePt": 27.0,
+              "color": "#24333D",
+              "bold": true,
+              "italic": false
+            },
+            {
+              "text": " (sà-wàt-dii khráp)",
+              "fontName": "Sarabun",
+              "fontSizePt": 16.7,
+              "color": "#566873",
+              "bold": false,
+              "italic": true
+            }
+          ]
+        },
+        {
+          "id": "card_2_english",
+          "kind": "text",
+          "x": 1097280,
+          "y": 3865000,
+          "w": 5029200,
+          "h": 280000,
+          "fontName": "Sarabun",
+          "fontSizePt": 15,
+          "color": "#82909A",
+          "bold": false,
+          "italic": false,
+          "align": "left",
+          "value": "hello (male speaker)"
+        },
+        {
+          "id": "card_3_thai",
+          "kind": "text",
+          "x": 1165180.0,
+          "y": 4477940.0,
+          "w": 5029200.0,
+          "h": 822815.0,
+          "fontName": "Sarabun",
+          "fontSizePt": 27,
+          "color": "#24333D",
+          "bold": true,
+          "italic": false,
+          "align": "left",
+          "value": "สวัสดีค่ะ (sà-wàt-dii khâ)",
+          "segments": [
+            {
+              "text": "สวัสดีค่ะ",
+              "fontName": "Sarabun",
+              "fontSizePt": 27.0,
+              "color": "#24333D",
+              "bold": true,
+              "italic": false
+            },
+            {
+              "text": " (sà-wàt-dii khâ)",
+              "fontName": "Sarabun",
+              "fontSizePt": 16.7,
+              "color": "#566873",
+              "bold": false,
+              "italic": true
+            }
+          ]
+        },
+        {
+          "id": "card_3_english",
+          "kind": "text",
+          "x": 1165180,
+          "y": 5250000,
+          "w": 5029200,
+          "h": 280000,
+          "fontName": "Sarabun",
+          "fontSizePt": 15,
+          "color": "#82909A",
+          "bold": false,
+          "italic": false,
+          "align": "left",
+          "value": "hello (female speaker)"
+        }
+      ]
+    },
+    {
+      "id": "canva-slide-05-courtesy-pairs",
+      "title": "Thank, apologise, and soften",
+      "layoutFamily": "dual-card-shared-reply",
+      "backgroundPath": "canva-backgrounds/slide-05.png",
+      "elements": [
+        {
+          "id": "section_label",
+          "kind": "text",
+          "x": 731527,
+          "y": 954588,
+          "w": 1210500,
+          "h": 320100,
+          "fontName": "Sarabun",
+          "fontSizePt": 12,
+          "color": "#FFFFFF",
+          "bold": true,
+          "italic": false,
+          "align": "center",
+          "value": "Section 2"
+        },
+        {
+          "id": "title",
+          "kind": "text",
+          "x": 1942043,
+          "y": 870018,
+          "w": 5943600,
+          "h": 457200,
+          "fontName": "Sarabun",
+          "fontSizePt": 30,
+          "color": "#24333D",
+          "bold": true,
+          "italic": false,
+          "align": "left",
+          "value": "Thank, apologise, and soften"
+        },
+        {
+          "id": "left_label",
+          "kind": "text",
+          "x": 731520,
+          "y": 1618433,
+          "w": 3108900,
+          "h": 365700,
+          "fontName": "Sarabun",
+          "fontSizePt": 12,
+          "color": "#FFFFFF",
+          "bold": true,
+          "italic": false,
+          "align": "center",
+          "value": "Close warmly"
+        },
+        {
+          "id": "right_label",
+          "kind": "text",
+          "x": 4114800,
+          "y": 1593171,
+          "w": 3108900,
+          "h": 365700,
+          "fontName": "Sarabun",
+          "fontSizePt": 12,
+          "color": "#FFFFFF",
+          "bold": true,
+          "italic": false,
+          "align": "center",
+          "value": "Interrupt or repair"
+        },
+        {
+          "id": "left_thai",
+          "kind": "text",
+          "x": 1051547.0,
+          "y": 2178469.0,
+          "w": 2651750.0,
+          "h": 836584.0,
+          "fontName": "Sarabun",
+          "fontSizePt": 27,
+          "color": "#24333D",
+          "bold": true,
+          "italic": false,
+          "align": "left",
+          "value": "ขอบคุณ (khàawp-khun)",
+          "segments": [
+            {
+              "text": "ขอบคุณ",
+              "fontName": "Sarabun",
+              "fontSizePt": 27.0,
+              "color": "#24333D",
+              "bold": true,
+              "italic": false
+            },
+            {
+              "text": " (khàawp-khun)",
+              "fontName": "Sarabun",
+              "fontSizePt": 16.7,
+              "color": "#566873",
+              "bold": false,
+              "italic": true
+            }
+          ]
+        },
+        {
+          "id": "left_english",
+          "kind": "text",
+          "x": 1051560,
+          "y": 3074630,
+          "w": 2651700,
+          "h": 274200,
+          "fontName": "Sarabun",
+          "fontSizePt": 15,
+          "color": "#82909A",
+          "bold": false,
+          "italic": false,
+          "align": "left",
+          "value": "thank you"
+        },
+        {
+          "id": "right_thai",
+          "kind": "text",
+          "x": 4434840.0,
+          "y": 2178469.0,
+          "w": 2651700.0,
+          "h": 823896.0,
+          "fontName": "Sarabun",
+          "fontSizePt": 27,
+          "color": "#24333D",
+          "bold": true,
+          "italic": false,
+          "align": "left",
+          "value": "ขอโทษ (khǎaw-thôot)",
+          "segments": [
+            {
+              "text": "ขอโทษ",
+              "fontName": "Sarabun",
+              "fontSizePt": 27.0,
+              "color": "#24333D",
+              "bold": true,
+              "italic": false
+            },
+            {
+              "text": " (khǎaw-thôot)",
+              "fontName": "Sarabun",
+              "fontSizePt": 16.7,
+              "color": "#566873",
+              "bold": false,
+              "italic": true
+            }
+          ]
+        },
+        {
+          "id": "right_english",
+          "kind": "text",
+          "x": 4434840,
+          "y": 3074630,
+          "w": 2651700,
+          "h": 274200,
+          "fontName": "Sarabun",
+          "fontSizePt": 15,
+          "color": "#82909A",
+          "bold": false,
+          "italic": false,
+          "align": "left",
+          "value": "excuse me / sorry"
+        },
+        {
+          "id": "shared_label",
+          "kind": "text",
+          "x": 1624195,
+          "y": 3816533,
+          "w": 3108900,
+          "h": 365700,
+          "fontName": "Sarabun",
+          "fontSizePt": 12,
+          "color": "#FFFFFF",
+          "bold": true,
+          "italic": false,
+          "align": "center",
+          "value": "Natural reply to both"
+        },
+        {
+          "id": "shared_thai",
+          "kind": "text",
+          "x": 2103120.0,
+          "y": 4525340.0,
+          "w": 4907431.0,
+          "h": 867034.0,
+          "fontName": "Sarabun",
+          "fontSizePt": 27,
+          "color": "#24333D",
+          "bold": true,
+          "italic": false,
+          "align": "left",
+          "value": "ไม่เป็นไร (mâi bpen rai)",
+          "segments": [
+            {
+              "text": "ไม่เป็นไร",
+              "fontName": "Sarabun",
+              "fontSizePt": 27.0,
+              "color": "#24333D",
+              "bold": true,
+              "italic": false
+            },
+            {
+              "text": " (mâi bpen rai)",
+              "fontName": "Sarabun",
+              "fontSizePt": 16.7,
+              "color": "#566873",
+              "bold": false,
+              "italic": true
+            }
+          ]
+        },
+        {
+          "id": "shared_english",
+          "kind": "text",
+          "x": 2103150,
+          "y": 5370163,
+          "w": 4023300,
+          "h": 593100,
+          "fontName": "Sarabun",
+          "fontSizePt": 15,
+          "color": "#566873",
+          "bold": false,
+          "italic": false,
+          "align": "left",
+          "value": "Smooths the moment after thanks or a small apology."
+        }
+      ]
+    },
+    {
+      "id": "canva-slide-06-social-jobs",
+      "title": "How these phrases work together",
+      "layoutFamily": "social-job-stack",
+      "backgroundPath": "canva-backgrounds/slide-06.png",
+      "elements": [
+        {
+          "id": "section_label",
+          "kind": "text",
+          "x": 731527,
+          "y": 896075,
+          "w": 1210500,
+          "h": 320100,
+          "fontName": "Sarabun",
+          "fontSizePt": 12,
+          "color": "#FFFFFF",
+          "bold": true,
+          "italic": false,
+          "align": "center",
+          "value": "Section 2"
+        },
+        {
+          "id": "title",
+          "kind": "text",
+          "x": 2000375,
+          "y": 811779,
+          "w": 7057500,
+          "h": 667500,
+          "fontName": "Sarabun",
+          "fontSizePt": 30,
+          "color": "#24333D",
+          "bold": true,
+          "italic": false,
+          "align": "left",
+          "value": "How these phrases work together"
+        },
+        {
+          "id": "subtitle",
+          "kind": "text",
+          "x": 731520,
+          "y": 1293880,
+          "w": 6858000,
+          "h": 457200,
+          "fontName": "Sarabun",
+          "fontSizePt": 16,
+          "color": "#24333D",
+          "bold": false,
+          "italic": false,
+          "align": "left",
+          "value": "Each phrase has a social job in the interaction:"
+        },
+        {
+          "id": "row_1_thai",
+          "kind": "text",
+          "x": 1051560.0,
+          "y": 1828800.0,
+          "w": 2743200.0,
+          "h": 685800.0,
+          "fontName": "Sarabun",
+          "fontSizePt": 23,
+          "color": "#24333D",
+          "bold": true,
+          "italic": false,
+          "align": "left",
+          "value": "ขอบคุณ (khàawp-khun)",
+          "segments": [
+            {
+              "text": "ขอบคุณ",
+              "fontName": "Sarabun",
+              "fontSizePt": 23.0,
+              "color": "#24333D",
+              "bold": true,
+              "italic": false
+            },
+            {
+              "text": " (khàawp-khun)",
+              "fontName": "Sarabun",
+              "fontSizePt": 15.0,
+              "color": "#566873",
+              "bold": false,
+              "italic": true
+            }
+          ]
+        },
+        {
+          "id": "row_1_role",
+          "kind": "text",
+          "x": 3657600,
+          "y": 1874520,
+          "w": 3474720,
+          "h": 365760,
+          "fontName": "Sarabun",
+          "fontSizePt": 13,
+          "color": "#24333D",
+          "bold": true,
+          "italic": false,
+          "align": "left",
+          "value": "Closes a moment warmly"
+        },
+        {
+          "id": "row_1_usage",
+          "kind": "text",
+          "x": 3657600,
+          "y": 2286000,
+          "w": 3474720,
+          "h": 365760,
+          "fontName": "Sarabun",
+          "fontSizePt": 15,
+          "color": "#566873",
+          "bold": false,
+          "italic": false,
+          "align": "left",
+          "value": "After help, service, or a small kindness"
+        },
+        {
+          "id": "row_2_thai",
+          "kind": "text",
+          "x": 1051560.0,
+          "y": 3200400.0,
+          "w": 2743200.0,
+          "h": 685800.0,
+          "fontName": "Sarabun",
+          "fontSizePt": 23,
+          "color": "#24333D",
+          "bold": true,
+          "italic": false,
+          "align": "left",
+          "value": "ขอโทษ (khǎaw-thôot)",
+          "segments": [
+            {
+              "text": "ขอโทษ",
+              "fontName": "Sarabun",
+              "fontSizePt": 23.0,
+              "color": "#24333D",
+              "bold": true,
+              "italic": false
+            },
+            {
+              "text": " (khǎaw-thôot)",
+              "fontName": "Sarabun",
+              "fontSizePt": 15.0,
+              "color": "#566873",
+              "bold": false,
+              "italic": true
+            }
+          ]
+        },
+        {
+          "id": "row_2_role",
+          "kind": "text",
+          "x": 3657600,
+          "y": 3246120,
+          "w": 3474720,
+          "h": 365760,
+          "fontName": "Sarabun",
+          "fontSizePt": 13,
+          "color": "#24333D",
+          "bold": true,
+          "italic": false,
+          "align": "left",
+          "value": "Opens a repair"
+        },
+        {
+          "id": "row_2_usage",
+          "kind": "text",
+          "x": 3657600,
+          "y": 3657600,
+          "w": 3474720,
+          "h": 365760,
+          "fontName": "Sarabun",
+          "fontSizePt": 15,
+          "color": "#566873",
+          "bold": false,
+          "italic": false,
+          "align": "left",
+          "value": "To interrupt gently or apologise"
+        },
+        {
+          "id": "row_3_thai",
+          "kind": "text",
+          "x": 1051560.0,
+          "y": 4572000.0,
+          "w": 2743200.0,
+          "h": 685800.0,
+          "fontName": "Sarabun",
+          "fontSizePt": 23,
+          "color": "#24333D",
+          "bold": true,
+          "italic": false,
+          "align": "left",
+          "value": "ไม่เป็นไร (mâi bpen rai)",
+          "segments": [
+            {
+              "text": "ไม่เป็นไร",
+              "fontName": "Sarabun",
+              "fontSizePt": 23.0,
+              "color": "#24333D",
+              "bold": true,
+              "italic": false
+            },
+            {
+              "text": " (mâi bpen rai)",
+              "fontName": "Sarabun",
+              "fontSizePt": 15.0,
+              "color": "#566873",
+              "bold": false,
+              "italic": true
+            }
+          ]
+        },
+        {
+          "id": "row_3_role",
+          "kind": "text",
+          "x": 3657600,
+          "y": 4617720,
+          "w": 3474720,
+          "h": 365760,
+          "fontName": "Sarabun",
+          "fontSizePt": 13,
+          "color": "#24333D",
+          "bold": true,
+          "italic": false,
+          "align": "left",
+          "value": "Smooths everything out"
+        },
+        {
+          "id": "row_3_usage",
+          "kind": "text",
+          "x": 3657600,
+          "y": 5029200,
+          "w": 3474720,
+          "h": 365760,
+          "fontName": "Sarabun",
+          "fontSizePt": 15,
+          "color": "#566873",
+          "bold": false,
+          "italic": false,
+          "align": "left",
+          "value": "Answers a thank-you or small apology"
+        }
+      ]
+    },
+    {
+      "id": "canva-slide-07-polite-endings",
+      "title": "Pick the right polite ending",
+      "layoutFamily": "polite-ending-stack",
+      "backgroundPath": "canva-backgrounds/slide-07.png",
+      "elements": [
+        {
+          "id": "section_label",
+          "kind": "text",
+          "x": 731527,
+          "y": 642588,
+          "w": 1210500,
+          "h": 320100,
+          "fontName": "Sarabun",
+          "fontSizePt": 12,
+          "color": "#FFFFFF",
+          "bold": true,
+          "italic": false,
+          "align": "center",
+          "value": "Section 3"
+        },
+        {
+          "id": "title",
+          "kind": "text",
+          "x": 1942030,
+          "y": 521131,
+          "w": 5943600,
+          "h": 457200,
+          "fontName": "Sarabun",
+          "fontSizePt": 30,
+          "color": "#24333D",
+          "bold": true,
+          "italic": false,
+          "align": "left",
+          "value": "Pick the right polite ending"
+        },
+        {
+          "id": "subtitle",
+          "kind": "text",
+          "x": 731520,
+          "y": 1083553,
+          "w": 6858000,
+          "h": 365700,
+          "fontName": "Sarabun",
+          "fontSizePt": 15,
+          "color": "#566873",
+          "bold": false,
+          "italic": false,
+          "align": "left",
+          "value": "Thai polite endings do real work - they shape the tone of the whole line."
+        },
+        {
+          "id": "row_1_thai",
+          "kind": "text",
+          "x": 868680,
+          "y": 1737360,
+          "w": 1463040,
+          "h": 731520,
+          "fontName": "Sarabun",
+          "fontSizePt": 27,
+          "color": "#24333D",
+          "bold": true,
+          "italic": false,
+          "align": "left",
+          "value": "ครับ (khráp)",
+          "segments": [
+            {
+              "text": "ครับ",
+              "fontName": "Sarabun",
+              "fontSizePt": 27.0,
+              "color": "#24333D",
+              "bold": true,
+              "italic": false
+            },
+            {
+              "text": " (khráp)",
+              "fontName": "Sarabun",
+              "fontSizePt": 16.7,
+              "color": "#566873",
+              "bold": false,
+              "italic": true
+            }
+          ]
+        },
+        {
+          "id": "row_1_support",
+          "kind": "text",
+          "x": 2560320,
+          "y": 1645920,
+          "w": 4572000,
+          "h": 640080,
+          "fontName": "Sarabun",
+          "fontSizePt": 16,
+          "color": "#24333D",
+          "bold": false,
+          "italic": false,
+          "align": "left",
+          "value": "khráp  -  male polite ending\nUse for statements and questions"
+        },
+        {
+          "id": "row_2_thai",
+          "kind": "text",
+          "x": 868680,
+          "y": 2971800,
+          "w": 1463040,
+          "h": 731520,
+          "fontName": "Sarabun",
+          "fontSizePt": 27,
+          "color": "#24333D",
+          "bold": true,
+          "italic": false,
+          "align": "left",
+          "value": "ค่ะ (khâ)",
+          "segments": [
+            {
+              "text": "ค่ะ",
+              "fontName": "Sarabun",
+              "fontSizePt": 27.0,
+              "color": "#24333D",
+              "bold": true,
+              "italic": false
+            },
+            {
+              "text": " (khâ)",
+              "fontName": "Sarabun",
+              "fontSizePt": 16.7,
+              "color": "#566873",
+              "bold": false,
+              "italic": true
+            }
+          ]
+        },
+        {
+          "id": "row_2_support",
+          "kind": "text",
+          "x": 2560320,
+          "y": 2880360,
+          "w": 4572000,
+          "h": 640080,
+          "fontName": "Sarabun",
+          "fontSizePt": 16,
+          "color": "#24333D",
+          "bold": false,
+          "italic": false,
+          "align": "left",
+          "value": "khâ  -  female statement ending\nUse for statements and answers"
+        },
+        {
+          "id": "row_3_thai",
+          "kind": "text",
+          "x": 868680,
+          "y": 4206240,
+          "w": 1463040,
+          "h": 731520,
+          "fontName": "Sarabun",
+          "fontSizePt": 27,
+          "color": "#24333D",
+          "bold": true,
+          "italic": false,
+          "align": "left",
+          "value": "คะ (khá)",
+          "segments": [
+            {
+              "text": "คะ",
+              "fontName": "Sarabun",
+              "fontSizePt": 27.0,
+              "color": "#24333D",
+              "bold": true,
+              "italic": false
+            },
+            {
+              "text": " (khá)",
+              "fontName": "Sarabun",
+              "fontSizePt": 16.7,
+              "color": "#566873",
+              "bold": false,
+              "italic": true
+            }
+          ]
+        },
+        {
+          "id": "row_3_support",
+          "kind": "text",
+          "x": 2560320,
+          "y": 4114800,
+          "w": 4572000,
+          "h": 640080,
+          "fontName": "Sarabun",
+          "fontSizePt": 16,
+          "color": "#24333D",
+          "bold": false,
+          "italic": false,
+          "align": "left",
+          "value": "khá  -  female question ending\nUse when asking questions"
+        },
+        {
+          "id": "rule_note",
+          "kind": "text",
+          "x": 731525,
+          "y": 5394943,
+          "w": 6858000,
+          "h": 731400,
+          "fontName": "Sarabun",
+          "fontSizePt": 12,
+          "color": "#FFFFFF",
+          "bold": true,
+          "italic": false,
+          "align": "center",
+          "value": "Beginner rule: learn ครับ (khráp) and ค่ะ (khâ) first for safe polite statements.",
+          "segments": [
+            {
+              "text": "Beginner rule: learn ",
+              "fontName": "Sarabun",
+              "fontSizePt": 12.0,
+              "color": "#FFFFFF",
+              "bold": true,
+              "italic": false
+            },
+            {
+              "text": "ครับ",
+              "fontName": "Sarabun",
+              "fontSizePt": 12.0,
+              "color": "#FFFFFF",
+              "bold": true,
+              "italic": false
+            },
+            {
+              "text": " (khráp)",
+              "fontName": "Sarabun",
+              "fontSizePt": 15.0,
+              "color": "#566873",
+              "bold": false,
+              "italic": true
+            },
+            {
+              "text": " and ",
+              "fontName": "Sarabun",
+              "fontSizePt": 12.0,
+              "color": "#FFFFFF",
+              "bold": true,
+              "italic": false
+            },
+            {
+              "text": "ค่ะ",
+              "fontName": "Sarabun",
+              "fontSizePt": 12.0,
+              "color": "#FFFFFF",
+              "bold": true,
+              "italic": false
+            },
+            {
+              "text": " (khâ)",
+              "fontName": "Sarabun",
+              "fontSizePt": 15.0,
+              "color": "#566873",
+              "bold": false,
+              "italic": true
+            },
+            {
+              "text": " first for safe polite statements.",
+              "fontName": "Sarabun",
+              "fontSizePt": 12.0,
+              "color": "#FFFFFF",
+              "bold": true,
+              "italic": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "canva-slide-08-drills",
+      "title": "Substitution drill",
+      "layoutFamily": "drill-rows",
+      "backgroundPath": "canva-backgrounds/slide-08.png",
+      "elements": [
+        {
+          "id": "section_label",
+          "kind": "text",
+          "x": 731527,
+          "y": 642588,
+          "w": 1210500,
+          "h": 320100,
+          "fontName": "Sarabun",
+          "fontSizePt": 12,
+          "color": "#FFFFFF",
+          "bold": true,
+          "italic": false,
+          "align": "center",
+          "value": "Section 3"
+        },
+        {
+          "id": "title",
+          "kind": "text",
+          "x": 2063268,
+          "y": 505418,
+          "w": 5943600,
+          "h": 457200,
+          "fontName": "Sarabun",
+          "fontSizePt": 30,
+          "color": "#24333D",
+          "bold": true,
+          "italic": false,
+          "align": "left",
+          "value": "Substitution drill"
+        },
+        {
+          "id": "subtitle",
+          "kind": "text",
+          "x": 731520,
+          "y": 1075703,
+          "w": 6858000,
+          "h": 365700,
+          "fontName": "Sarabun",
+          "fontSizePt": 15,
+          "color": "#566873",
+          "bold": false,
+          "italic": false,
+          "align": "left",
+          "value": "Say each line with the correct polite ending:"
+        },
+        {
+          "id": "row_1_prompt_thai",
+          "kind": "text",
+          "x": 1188720.0,
+          "y": 1627632.0,
+          "w": 3200400.0,
+          "h": 658368.0,
+          "fontName": "Sarabun",
+          "fontSizePt": 23,
+          "color": "#24333D",
+          "bold": true,
+          "italic": false,
+          "align": "left",
+          "value": "1. สวัสดี___ (sà-wàt-dii ___)",
+          "segments": [
+            {
+              "text": "1. สวัสดี___",
+              "fontName": "Sarabun",
+              "fontSizePt": 23.0,
+              "color": "#24333D",
+              "bold": true,
+              "italic": false
+            },
+            {
+              "text": " (sà-wàt-dii ___)",
+              "fontName": "Sarabun",
+              "fontSizePt": 15.0,
+              "color": "#566873",
+              "bold": false,
+              "italic": true
+            }
+          ]
+        },
+        {
+          "id": "row_1_instruction",
+          "kind": "text",
+          "x": 4846320,
+          "y": 1737360,
+          "w": 2286000,
+          "h": 365760,
+          "fontName": "Sarabun",
+          "fontSizePt": 13,
+          "color": "#24333D",
+          "bold": true,
+          "italic": false,
+          "align": "left",
+          "value": "Add ครับ (khráp) or ค่ะ (khâ)",
+          "segments": [
+            {
+              "text": "Add ",
+              "fontName": "Sarabun",
+              "fontSizePt": 13.0,
+              "color": "#24333D",
+              "bold": true,
+              "italic": false
+            },
+            {
+              "text": "ครับ",
+              "fontName": "Sarabun",
+              "fontSizePt": 13.0,
+              "color": "#24333D",
+              "bold": true,
+              "italic": false
+            },
+            {
+              "text": " (khráp)",
+              "fontName": "Sarabun",
+              "fontSizePt": 15.0,
+              "color": "#566873",
+              "bold": false,
+              "italic": true
+            },
+            {
+              "text": " or ",
+              "fontName": "Sarabun",
+              "fontSizePt": 13.0,
+              "color": "#24333D",
+              "bold": true,
+              "italic": false
+            },
+            {
+              "text": "ค่ะ",
+              "fontName": "Sarabun",
+              "fontSizePt": 13.0,
+              "color": "#24333D",
+              "bold": true,
+              "italic": false
+            },
+            {
+              "text": " (khâ)",
+              "fontName": "Sarabun",
+              "fontSizePt": 15.0,
+              "color": "#566873",
+              "bold": false,
+              "italic": true
+            }
+          ]
+        },
+        {
+          "id": "row_2_prompt_thai",
+          "kind": "text",
+          "x": 1188720.0,
+          "y": 2478024.0,
+          "w": 3200400.0,
+          "h": 658368.0,
+          "fontName": "Sarabun",
+          "fontSizePt": 23,
+          "color": "#24333D",
+          "bold": true,
+          "italic": false,
+          "align": "left",
+          "value": "2. ขอบคุณ___ (khàawp-khun ___)",
+          "segments": [
+            {
+              "text": "2. ขอบคุณ___",
+              "fontName": "Sarabun",
+              "fontSizePt": 23.0,
+              "color": "#24333D",
+              "bold": true,
+              "italic": false
+            },
+            {
+              "text": " (khàawp-khun ___)",
+              "fontName": "Sarabun",
+              "fontSizePt": 15.0,
+              "color": "#566873",
+              "bold": false,
+              "italic": true
+            }
+          ]
+        },
+        {
+          "id": "row_2_instruction",
+          "kind": "text",
+          "x": 4846320,
+          "y": 2587752,
+          "w": 2286000,
+          "h": 365760,
+          "fontName": "Sarabun",
+          "fontSizePt": 13,
+          "color": "#24333D",
+          "bold": true,
+          "italic": false,
+          "align": "left",
+          "value": "Add ครับ (khráp) or ค่ะ (khâ)",
+          "segments": [
+            {
+              "text": "Add ",
+              "fontName": "Sarabun",
+              "fontSizePt": 13.0,
+              "color": "#24333D",
+              "bold": true,
+              "italic": false
+            },
+            {
+              "text": "ครับ",
+              "fontName": "Sarabun",
+              "fontSizePt": 13.0,
+              "color": "#24333D",
+              "bold": true,
+              "italic": false
+            },
+            {
+              "text": " (khráp)",
+              "fontName": "Sarabun",
+              "fontSizePt": 15.0,
+              "color": "#566873",
+              "bold": false,
+              "italic": true
+            },
+            {
+              "text": " or ",
+              "fontName": "Sarabun",
+              "fontSizePt": 13.0,
+              "color": "#24333D",
+              "bold": true,
+              "italic": false
+            },
+            {
+              "text": "ค่ะ",
+              "fontName": "Sarabun",
+              "fontSizePt": 13.0,
+              "color": "#24333D",
+              "bold": true,
+              "italic": false
+            },
+            {
+              "text": " (khâ)",
+              "fontName": "Sarabun",
+              "fontSizePt": 15.0,
+              "color": "#566873",
+              "bold": false,
+              "italic": true
+            }
+          ]
+        },
+        {
+          "id": "row_3_prompt_thai",
+          "kind": "text",
+          "x": 1188720.0,
+          "y": 3328416.0,
+          "w": 3200400.0,
+          "h": 658368.0,
+          "fontName": "Sarabun",
+          "fontSizePt": 23,
+          "color": "#24333D",
+          "bold": true,
+          "italic": false,
+          "align": "left",
+          "value": "3. ขอโทษ___ (khǎaw-thôot ___)",
+          "segments": [
+            {
+              "text": "3. ขอโทษ___",
+              "fontName": "Sarabun",
+              "fontSizePt": 23.0,
+              "color": "#24333D",
+              "bold": true,
+              "italic": false
+            },
+            {
+              "text": " (khǎaw-thôot ___)",
+              "fontName": "Sarabun",
+              "fontSizePt": 15.0,
+              "color": "#566873",
+              "bold": false,
+              "italic": true
+            }
+          ]
+        },
+        {
+          "id": "row_3_instruction",
+          "kind": "text",
+          "x": 4846320,
+          "y": 3438144,
+          "w": 2286000,
+          "h": 365760,
+          "fontName": "Sarabun",
+          "fontSizePt": 13,
+          "color": "#24333D",
+          "bold": true,
+          "italic": false,
+          "align": "left",
+          "value": "Add ครับ (khráp) or ค่ะ (khâ)",
+          "segments": [
+            {
+              "text": "Add ",
+              "fontName": "Sarabun",
+              "fontSizePt": 13.0,
+              "color": "#24333D",
+              "bold": true,
+              "italic": false
+            },
+            {
+              "text": "ครับ",
+              "fontName": "Sarabun",
+              "fontSizePt": 13.0,
+              "color": "#24333D",
+              "bold": true,
+              "italic": false
+            },
+            {
+              "text": " (khráp)",
+              "fontName": "Sarabun",
+              "fontSizePt": 15.0,
+              "color": "#566873",
+              "bold": false,
+              "italic": true
+            },
+            {
+              "text": " or ",
+              "fontName": "Sarabun",
+              "fontSizePt": 13.0,
+              "color": "#24333D",
+              "bold": true,
+              "italic": false
+            },
+            {
+              "text": "ค่ะ",
+              "fontName": "Sarabun",
+              "fontSizePt": 13.0,
+              "color": "#24333D",
+              "bold": true,
+              "italic": false
+            },
+            {
+              "text": " (khâ)",
+              "fontName": "Sarabun",
+              "fontSizePt": 15.0,
+              "color": "#566873",
+              "bold": false,
+              "italic": true
+            }
+          ]
+        },
+        {
+          "id": "row_4_prompt_thai",
+          "kind": "text",
+          "x": 1188720.0,
+          "y": 4178808.0,
+          "w": 3200400.0,
+          "h": 658368.0,
+          "fontName": "Sarabun",
+          "fontSizePt": 23,
+          "color": "#24333D",
+          "bold": true,
+          "italic": false,
+          "align": "left",
+          "value": "4. ใช่___ (châi ___)",
+          "segments": [
+            {
+              "text": "4. ใช่___",
+              "fontName": "Sarabun",
+              "fontSizePt": 23.0,
+              "color": "#24333D",
+              "bold": true,
+              "italic": false
+            },
+            {
+              "text": " (châi ___)",
+              "fontName": "Sarabun",
+              "fontSizePt": 15.0,
+              "color": "#566873",
+              "bold": false,
+              "italic": true
+            }
+          ]
+        },
+        {
+          "id": "row_4_instruction",
+          "kind": "text",
+          "x": 4846320,
+          "y": 4288536,
+          "w": 2286000,
+          "h": 365760,
+          "fontName": "Sarabun",
+          "fontSizePt": 13,
+          "color": "#24333D",
+          "bold": true,
+          "italic": false,
+          "align": "left",
+          "value": "Add ครับ (khráp) or ค่ะ (khâ)",
+          "segments": [
+            {
+              "text": "Add ",
+              "fontName": "Sarabun",
+              "fontSizePt": 13.0,
+              "color": "#24333D",
+              "bold": true,
+              "italic": false
+            },
+            {
+              "text": "ครับ",
+              "fontName": "Sarabun",
+              "fontSizePt": 13.0,
+              "color": "#24333D",
+              "bold": true,
+              "italic": false
+            },
+            {
+              "text": " (khráp)",
+              "fontName": "Sarabun",
+              "fontSizePt": 15.0,
+              "color": "#566873",
+              "bold": false,
+              "italic": true
+            },
+            {
+              "text": " or ",
+              "fontName": "Sarabun",
+              "fontSizePt": 13.0,
+              "color": "#24333D",
+              "bold": true,
+              "italic": false
+            },
+            {
+              "text": "ค่ะ",
+              "fontName": "Sarabun",
+              "fontSizePt": 13.0,
+              "color": "#24333D",
+              "bold": true,
+              "italic": false
+            },
+            {
+              "text": " (khâ)",
+              "fontName": "Sarabun",
+              "fontSizePt": 15.0,
+              "color": "#566873",
+              "bold": false,
+              "italic": true
+            }
+          ]
+        },
+        {
+          "id": "row_5_prompt_thai",
+          "kind": "text",
+          "x": 1188720.0,
+          "y": 5029200.0,
+          "w": 3200400.0,
+          "h": 658368.0,
+          "fontName": "Sarabun",
+          "fontSizePt": 23,
+          "color": "#24333D",
+          "bold": true,
+          "italic": false,
+          "align": "left",
+          "value": "5. ไม่เป็นไร___ (mâi bpen rai ___)",
+          "segments": [
+            {
+              "text": "5. ไม่เป็นไร___",
+              "fontName": "Sarabun",
+              "fontSizePt": 23.0,
+              "color": "#24333D",
+              "bold": true,
+              "italic": false
+            },
+            {
+              "text": " (mâi bpen rai ___)",
+              "fontName": "Sarabun",
+              "fontSizePt": 15.0,
+              "color": "#566873",
+              "bold": false,
+              "italic": true
+            }
+          ]
+        },
+        {
+          "id": "row_5_instruction",
+          "kind": "text",
+          "x": 4846320,
+          "y": 5138928,
+          "w": 2286000,
+          "h": 365760,
+          "fontName": "Sarabun",
+          "fontSizePt": 13,
+          "color": "#24333D",
+          "bold": true,
+          "italic": false,
+          "align": "left",
+          "value": "Add ครับ (khráp) or ค่ะ (khâ)",
+          "segments": [
+            {
+              "text": "Add ",
+              "fontName": "Sarabun",
+              "fontSizePt": 13.0,
+              "color": "#24333D",
+              "bold": true,
+              "italic": false
+            },
+            {
+              "text": "ครับ",
+              "fontName": "Sarabun",
+              "fontSizePt": 13.0,
+              "color": "#24333D",
+              "bold": true,
+              "italic": false
+            },
+            {
+              "text": " (khráp)",
+              "fontName": "Sarabun",
+              "fontSizePt": 15.0,
+              "color": "#566873",
+              "bold": false,
+              "italic": true
+            },
+            {
+              "text": " or ",
+              "fontName": "Sarabun",
+              "fontSizePt": 13.0,
+              "color": "#24333D",
+              "bold": true,
+              "italic": false
+            },
+            {
+              "text": "ค่ะ",
+              "fontName": "Sarabun",
+              "fontSizePt": 13.0,
+              "color": "#24333D",
+              "bold": true,
+              "italic": false
+            },
+            {
+              "text": " (khâ)",
+              "fontName": "Sarabun",
+              "fontSizePt": 15.0,
+              "color": "#566873",
+              "bold": false,
+              "italic": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "canva-slide-09-responses",
+      "title": "Answer yes, no, and no problem",
+      "layoutFamily": "response-triad",
+      "backgroundPath": "canva-backgrounds/slide-09.png",
+      "elements": [
+        {
+          "id": "section_label",
+          "kind": "text",
+          "x": 731527,
+          "y": 809138,
+          "w": 1210500,
+          "h": 320100,
+          "fontName": "Sarabun",
+          "fontSizePt": 12,
+          "color": "#FFFFFF",
+          "bold": true,
+          "italic": false,
+          "align": "center",
+          "value": "Section 4"
+        },
+        {
+          "id": "title",
+          "kind": "text",
+          "x": 2029374,
+          "y": 720278,
+          "w": 7030500,
+          "h": 621900,
+          "fontName": "Sarabun",
+          "fontSizePt": 30,
+          "color": "#24333D",
+          "bold": true,
+          "italic": false,
+          "align": "left",
+          "value": "Answer yes, no, and no problem"
+        },
+        {
+          "id": "subtitle",
+          "kind": "text",
+          "x": 731520,
+          "y": 1193328,
+          "w": 6858000,
+          "h": 365700,
+          "fontName": "Sarabun",
+          "fontSizePt": 15,
+          "color": "#566873",
+          "bold": false,
+          "italic": false,
+          "align": "left",
+          "value": "Three response tools - two answer the idea, one softens the moment."
+        },
+        {
+          "id": "answers_label",
+          "kind": "text",
+          "x": 731533,
+          "y": 1623118,
+          "w": 1645800,
+          "h": 274200,
+          "fontName": "Sarabun",
+          "fontSizePt": 13,
+          "color": "#24333D",
+          "bold": true,
+          "italic": false,
+          "align": "left",
+          "value": "Direct answers"
+        },
+        {
+          "id": "row_1_thai",
+          "kind": "text",
+          "x": 1051560.0,
+          "y": 2057400.0,
+          "w": 2286000.0,
+          "h": 731520.0,
+          "fontName": "Sarabun",
+          "fontSizePt": 23,
+          "color": "#24333D",
+          "bold": true,
+          "italic": false,
+          "align": "left",
+          "value": "ใช่ (châi)",
+          "segments": [
+            {
+              "text": "ใช่",
+              "fontName": "Sarabun",
+              "fontSizePt": 23.0,
+              "color": "#24333D",
+              "bold": true,
+              "italic": false
+            },
+            {
+              "text": " (châi)",
+              "fontName": "Sarabun",
+              "fontSizePt": 15.0,
+              "color": "#566873",
+              "bold": false,
+              "italic": true
+            }
+          ]
+        },
+        {
+          "id": "row_1_meaning",
+          "kind": "text",
+          "x": 3474720,
+          "y": 2148840,
+          "w": 3657600,
+          "h": 365760,
+          "fontName": "Sarabun",
+          "fontSizePt": 13,
+          "color": "#24333D",
+          "bold": true,
+          "italic": false,
+          "align": "left",
+          "value": "yes / that is right"
+        },
+        {
+          "id": "row_1_usage",
+          "kind": "text",
+          "x": 3474720,
+          "y": 2514600,
+          "w": 3657600,
+          "h": 365760,
+          "fontName": "Sarabun",
+          "fontSizePt": 15,
+          "color": "#566873",
+          "bold": false,
+          "italic": false,
+          "align": "left",
+          "value": "Confirms the idea"
+        },
+        {
+          "id": "row_2_thai",
+          "kind": "text",
+          "x": 1051560.0,
+          "y": 3291840.0,
+          "w": 2286000.0,
+          "h": 731520.0,
+          "fontName": "Sarabun",
+          "fontSizePt": 23,
+          "color": "#24333D",
+          "bold": true,
+          "italic": false,
+          "align": "left",
+          "value": "ไม่ใช่ (mâi châi)",
+          "segments": [
+            {
+              "text": "ไม่ใช่",
+              "fontName": "Sarabun",
+              "fontSizePt": 23.0,
+              "color": "#24333D",
+              "bold": true,
+              "italic": false
+            },
+            {
+              "text": " (mâi châi)",
+              "fontName": "Sarabun",
+              "fontSizePt": 15.0,
+              "color": "#566873",
+              "bold": false,
+              "italic": true
+            }
+          ]
+        },
+        {
+          "id": "row_2_meaning",
+          "kind": "text",
+          "x": 3474720,
+          "y": 3383280,
+          "w": 3657600,
+          "h": 365760,
+          "fontName": "Sarabun",
+          "fontSizePt": 13,
+          "color": "#24333D",
+          "bold": true,
+          "italic": false,
+          "align": "left",
+          "value": "no / not right"
+        },
+        {
+          "id": "row_2_usage",
+          "kind": "text",
+          "x": 3474720,
+          "y": 3749040,
+          "w": 3657600,
+          "h": 365760,
+          "fontName": "Sarabun",
+          "fontSizePt": 15,
+          "color": "#566873",
+          "bold": false,
+          "italic": false,
+          "align": "left",
+          "value": "Corrects the idea - not aggressive"
+        },
+        {
+          "id": "softener_label",
+          "kind": "text",
+          "x": 731520,
+          "y": 4594866,
+          "w": 1828800,
+          "h": 274200,
+          "fontName": "Sarabun",
+          "fontSizePt": 13,
+          "color": "#24333D",
+          "bold": true,
+          "italic": false,
+          "align": "left",
+          "value": "Social softener"
+        },
+        {
+          "id": "row_3_meaning",
+          "kind": "text",
+          "x": 3474670,
+          "y": 5120700,
+          "w": 3657600,
+          "h": 365700,
+          "fontName": "Sarabun",
+          "fontSizePt": 13,
+          "color": "#24333D",
+          "bold": true,
+          "italic": false,
+          "align": "left",
+          "value": "it is okay / no problem"
+        },
+        {
+          "id": "row_3_usage",
+          "kind": "text",
+          "x": 3474670,
+          "y": 5486348,
+          "w": 3657600,
+          "h": 365700,
+          "fontName": "Sarabun",
+          "fontSizePt": 15,
+          "color": "#566873",
+          "bold": false,
+          "italic": false,
+          "align": "left",
+          "value": "Softens the situation - not a yes/no answer"
+        }
+      ]
+    },
+    {
+      "id": "canva-slide-10-roleplay",
+      "title": "Roleplay: First check-in",
+      "layoutFamily": "roleplay-ladder",
+      "backgroundPath": "canva-backgrounds/slide-10.png",
+      "elements": [
+        {
+          "id": "title",
+          "kind": "text",
+          "x": 731520,
+          "y": 429768,
+          "w": 6858000,
+          "h": 457200,
+          "fontName": "Sarabun",
+          "fontSizePt": 30,
+          "color": "#24333D",
+          "bold": true,
+          "italic": false,
+          "align": "left",
+          "value": "Roleplay: First check-in"
+        },
+        {
+          "id": "subtitle",
+          "kind": "text",
+          "x": 731520,
+          "y": 992138,
+          "w": 6858000,
+          "h": 365700,
+          "fontName": "Sarabun",
+          "fontSizePt": 15,
+          "color": "#566873",
+          "bold": false,
+          "italic": false,
+          "align": "left",
+          "value": "At a reception desk - practise the full exchange"
+        },
+        {
+          "id": "turn_1_speaker",
+          "kind": "text",
+          "x": 731520,
+          "y": 1463040,
+          "w": 1097280,
+          "h": 292608,
+          "fontName": "Sarabun",
+          "fontSizePt": 12,
+          "color": "#FFFFFF",
+          "bold": true,
+          "italic": false,
+          "align": "center",
+          "value": "Learner"
+        },
+        {
+          "id": "turn_1_thai",
+          "kind": "text",
+          "x": 2011680,
+          "y": 1339583,
+          "w": 5303400,
+          "h": 411600,
+          "fontName": "Sarabun",
+          "fontSizePt": 23,
+          "color": "#24333D",
+          "bold": true,
+          "italic": false,
+          "align": "left",
+          "value": "ขอโทษครับ สวัสดีครับ (khǎaw-thôot khráp sà-wàt-dii khráp)",
+          "segments": [
+            {
+              "text": "ขอโทษครับ สวัสดีครับ",
+              "fontName": "Sarabun",
+              "fontSizePt": 23.0,
+              "color": "#24333D",
+              "bold": true,
+              "italic": false
+            },
+            {
+              "text": " (khǎaw-thôot khráp sà-wàt-dii khráp)",
+              "fontName": "Sarabun",
+              "fontSizePt": 15.0,
+              "color": "#566873",
+              "bold": false,
+              "italic": true
+            }
+          ]
+        },
+        {
+          "id": "turn_1_support",
+          "kind": "text",
+          "x": 2011693,
+          "y": 1721362,
+          "w": 5303400,
+          "h": 320100,
+          "fontName": "Sarabun",
+          "fontSizePt": 15,
+          "color": "#566873",
+          "bold": false,
+          "italic": false,
+          "align": "left",
+          "value": "Excuse me, hello."
+        },
+        {
+          "id": "turn_2_speaker",
+          "kind": "text",
+          "x": 731520,
+          "y": 2199095,
+          "w": 1097400,
+          "h": 292500,
+          "fontName": "Sarabun",
+          "fontSizePt": 12,
+          "color": "#FFFFFF",
+          "bold": true,
+          "italic": false,
+          "align": "center",
+          "value": "Staff"
+        },
+        {
+          "id": "turn_2_thai",
+          "kind": "text",
+          "x": 2011743,
+          "y": 2048200,
+          "w": 5303400,
+          "h": 411600,
+          "fontName": "Sarabun",
+          "fontSizePt": 23,
+          "color": "#24333D",
+          "bold": true,
+          "italic": false,
+          "align": "left",
+          "value": "สวัสดีค่ะ (sà-wàt-dii khâ)",
+          "segments": [
+            {
+              "text": "สวัสดีค่ะ",
+              "fontName": "Sarabun",
+              "fontSizePt": 23.0,
+              "color": "#24333D",
+              "bold": true,
+              "italic": false
+            },
+            {
+              "text": " (sà-wàt-dii khâ)",
+              "fontName": "Sarabun",
+              "fontSizePt": 15.0,
+              "color": "#566873",
+              "bold": false,
+              "italic": true
+            }
+          ]
+        },
+        {
+          "id": "turn_2_support",
+          "kind": "text",
+          "x": 2011693,
+          "y": 2482592,
+          "w": 5303400,
+          "h": 320100,
+          "fontName": "Sarabun",
+          "fontSizePt": 15,
+          "color": "#566873",
+          "bold": false,
+          "italic": false,
+          "align": "left",
+          "value": "Hello."
+        },
+        {
+          "id": "turn_3_speaker",
+          "kind": "text",
+          "x": 731583,
+          "y": 2962650,
+          "w": 1097400,
+          "h": 292500,
+          "fontName": "Sarabun",
+          "fontSizePt": 12,
+          "color": "#FFFFFF",
+          "bold": true,
+          "italic": false,
+          "align": "center",
+          "value": "Learner (your turn — say the next line before I show it)"
+        },
+        {
+          "id": "turn_3_thai",
+          "kind": "text",
+          "x": 2011693,
+          "y": 2878130,
+          "w": 5303400,
+          "h": 411600,
+          "fontName": "Sarabun",
+          "fontSizePt": 23,
+          "color": "#24333D",
+          "bold": true,
+          "italic": false,
+          "align": "left",
+          "value": "นี่ใช่ไหมครับ (nîi châi mái khráp)",
+          "segments": [
+            {
+              "text": "นี่ใช่ไหมครับ",
+              "fontName": "Sarabun",
+              "fontSizePt": 23.0,
+              "color": "#24333D",
+              "bold": true,
+              "italic": false
+            },
+            {
+              "text": " (nîi châi mái khráp)",
+              "fontName": "Sarabun",
+              "fontSizePt": 15.0,
+              "color": "#566873",
+              "bold": false,
+              "italic": true
+            }
+          ]
+        },
+        {
+          "id": "turn_3_support",
+          "kind": "text",
+          "x": 2011693,
+          "y": 3253010,
+          "w": 5303400,
+          "h": 320100,
+          "fontName": "Sarabun",
+          "fontSizePt": 15,
+          "color": "#566873",
+          "bold": false,
+          "italic": false,
+          "align": "left",
+          "value": "Is this right?"
+        },
+        {
+          "id": "turn_4_speaker",
+          "kind": "text",
+          "x": 731583,
+          "y": 3726205,
+          "w": 1097400,
+          "h": 292500,
+          "fontName": "Sarabun",
+          "fontSizePt": 12,
+          "color": "#FFFFFF",
+          "bold": true,
+          "italic": false,
+          "align": "center",
+          "value": "Staff"
+        },
+        {
+          "id": "turn_4_thai",
+          "kind": "text",
+          "x": 2011693,
+          "y": 3666773,
+          "w": 5303400,
+          "h": 411600,
+          "fontName": "Sarabun",
+          "fontSizePt": 23,
+          "color": "#24333D",
+          "bold": true,
+          "italic": false,
+          "align": "left",
+          "value": "ใช่ค่ะ (châi khâ)",
+          "segments": [
+            {
+              "text": "ใช่ค่ะ",
+              "fontName": "Sarabun",
+              "fontSizePt": 23.0,
+              "color": "#24333D",
+              "bold": true,
+              "italic": false
+            },
+            {
+              "text": " (châi khâ)",
+              "fontName": "Sarabun",
+              "fontSizePt": 15.0,
+              "color": "#566873",
+              "bold": false,
+              "italic": true
+            }
+          ]
+        },
+        {
+          "id": "turn_4_support",
+          "kind": "text",
+          "x": 2011680,
+          "y": 4072527,
+          "w": 5303400,
+          "h": 320100,
+          "fontName": "Sarabun",
+          "fontSizePt": 15,
+          "color": "#566873",
+          "bold": false,
+          "italic": false,
+          "align": "left",
+          "value": "Yes."
+        },
+        {
+          "id": "turn_5_speaker",
+          "kind": "text",
+          "x": 791795,
+          "y": 4489760,
+          "w": 1097400,
+          "h": 292500,
+          "fontName": "Sarabun",
+          "fontSizePt": 12,
+          "color": "#FFFFFF",
+          "bold": true,
+          "italic": false,
+          "align": "center",
+          "value": "Learner (your turn — what do you say after receiving help?)"
+        },
+        {
+          "id": "turn_5_thai",
+          "kind": "text",
+          "x": 2011755,
+          "y": 4366290,
+          "w": 5303400,
+          "h": 411600,
+          "fontName": "Sarabun",
+          "fontSizePt": 23,
+          "color": "#24333D",
+          "bold": true,
+          "italic": false,
+          "align": "left",
+          "value": "ขอบคุณครับ (khàawp-khun khráp)",
+          "segments": [
+            {
+              "text": "ขอบคุณครับ",
+              "fontName": "Sarabun",
+              "fontSizePt": 23.0,
+              "color": "#24333D",
+              "bold": true,
+              "italic": false
+            },
+            {
+              "text": " (khàawp-khun khráp)",
+              "fontName": "Sarabun",
+              "fontSizePt": 15.0,
+              "color": "#566873",
+              "bold": false,
+              "italic": true
+            }
+          ]
+        },
+        {
+          "id": "turn_5_support",
+          "kind": "text",
+          "x": 2011693,
+          "y": 4759532,
+          "w": 5303400,
+          "h": 320100,
+          "fontName": "Sarabun",
+          "fontSizePt": 15,
+          "color": "#566873",
+          "bold": false,
+          "italic": false,
+          "align": "left",
+          "value": "Thank you."
+        },
+        {
+          "id": "turn_6_speaker",
+          "kind": "text",
+          "x": 731633,
+          "y": 5253290,
+          "w": 1097400,
+          "h": 292500,
+          "fontName": "Sarabun",
+          "fontSizePt": 12,
+          "color": "#FFFFFF",
+          "bold": true,
+          "italic": false,
+          "align": "center",
+          "value": "Staff"
+        },
+        {
+          "id": "turn_6_thai",
+          "kind": "text",
+          "x": 2011680,
+          "y": 5175433,
+          "w": 5303400,
+          "h": 411600,
+          "fontName": "Sarabun",
+          "fontSizePt": 23,
+          "color": "#24333D",
+          "bold": true,
+          "italic": false,
+          "align": "left",
+          "value": "ไม่เป็นไรค่ะ (mâi bpen rai khâ)",
+          "segments": [
+            {
+              "text": "ไม่เป็นไรค่ะ",
+              "fontName": "Sarabun",
+              "fontSizePt": 23.0,
+              "color": "#24333D",
+              "bold": true,
+              "italic": false
+            },
+            {
+              "text": " (mâi bpen rai khâ)",
+              "fontName": "Sarabun",
+              "fontSizePt": 15.0,
+              "color": "#566873",
+              "bold": false,
+              "italic": true
+            }
+          ]
+        },
+        {
+          "id": "turn_6_support",
+          "kind": "text",
+          "x": 2011693,
+          "y": 5571112,
+          "w": 5303400,
+          "h": 320100,
+          "fontName": "Sarabun",
+          "fontSizePt": 15,
+          "color": "#566873",
+          "bold": false,
+          "italic": false,
+          "align": "left",
+          "value": "No problem."
+        }
+      ]
+    },
+    {
+      "id": "canva-slide-11-recap",
+      "title": "Recap",
+      "layoutFamily": "recap-checklist",
+      "backgroundPath": "canva-backgrounds/slide-11.png",
+      "elements": [
+        {
+          "id": "title",
+          "kind": "text",
+          "x": 1137970,
+          "y": 1015518,
+          "w": 6858000,
+          "h": 457200,
+          "fontName": "Sarabun",
+          "fontSizePt": 30,
+          "color": "#24333D",
+          "bold": true,
+          "italic": false,
+          "align": "left",
+          "value": "Recap"
+        },
+        {
+          "id": "item_1",
+          "kind": "text",
+          "x": 1097280,
+          "y": 1776945,
+          "w": 6400800,
+          "h": 457200,
+          "fontName": "Sarabun",
+          "fontSizePt": 16,
+          "color": "#24333D",
+          "bold": false,
+          "italic": false,
+          "align": "left",
+          "value": "Look away and try: how do you say hello politely as a male speaker? Say it before looking back."
+        },
+        {
+          "id": "item_2",
+          "kind": "text",
+          "x": 1097280,
+          "y": 2437455,
+          "w": 6400800,
+          "h": 457200,
+          "fontName": "Sarabun",
+          "fontSizePt": 16,
+          "color": "#24333D",
+          "bold": false,
+          "italic": false,
+          "align": "left",
+          "value": "What is the difference between ขอบคุณ (khàawp-khun) and ขอโทษ (khǎaw-thôot)? One closes warmly, one repairs politely.",
+          "segments": [
+            {
+              "text": "What is the difference between ",
+              "fontName": "Sarabun",
+              "fontSizePt": 16.0,
+              "color": "#24333D",
+              "bold": false,
+              "italic": false
+            },
+            {
+              "text": "ขอบคุณ",
+              "fontName": "Sarabun",
+              "fontSizePt": 16.0,
+              "color": "#24333D",
+              "bold": false,
+              "italic": false
+            },
+            {
+              "text": " (khàawp-khun)",
+              "fontName": "Sarabun",
+              "fontSizePt": 15.0,
+              "color": "#566873",
+              "bold": false,
+              "italic": true
+            },
+            {
+              "text": " and ",
+              "fontName": "Sarabun",
+              "fontSizePt": 16.0,
+              "color": "#24333D",
+              "bold": false,
+              "italic": false
+            },
+            {
+              "text": "ขอโทษ",
+              "fontName": "Sarabun",
+              "fontSizePt": 16.0,
+              "color": "#24333D",
+              "bold": false,
+              "italic": false
+            },
+            {
+              "text": " (khǎaw-thôot)",
+              "fontName": "Sarabun",
+              "fontSizePt": 15.0,
+              "color": "#566873",
+              "bold": false,
+              "italic": true
+            },
+            {
+              "text": "? One closes warmly, one repairs politely.",
+              "fontName": "Sarabun",
+              "fontSizePt": 16.0,
+              "color": "#24333D",
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "id": "item_3",
+          "kind": "text",
+          "x": 1005855,
+          "y": 3097940,
+          "w": 6400800,
+          "h": 457200,
+          "fontName": "Sarabun",
+          "fontSizePt": 16,
+          "color": "#24333D",
+          "bold": false,
+          "italic": false,
+          "align": "left",
+          "value": "Someone says ขอโทษ (khǎaw-thôot) to you. What do you say back? ไม่เป็นไร (mâi bpen rai).",
+          "segments": [
+            {
+              "text": "Someone says ",
+              "fontName": "Sarabun",
+              "fontSizePt": 16.0,
+              "color": "#24333D",
+              "bold": false,
+              "italic": false
+            },
+            {
+              "text": "ขอโทษ",
+              "fontName": "Sarabun",
+              "fontSizePt": 16.0,
+              "color": "#24333D",
+              "bold": false,
+              "italic": false
+            },
+            {
+              "text": " (khǎaw-thôot)",
+              "fontName": "Sarabun",
+              "fontSizePt": 15.0,
+              "color": "#566873",
+              "bold": false,
+              "italic": true
+            },
+            {
+              "text": " to you. What do you say back? ",
+              "fontName": "Sarabun",
+              "fontSizePt": 16.0,
+              "color": "#24333D",
+              "bold": false,
+              "italic": false
+            },
+            {
+              "text": "ไม่เป็นไร",
+              "fontName": "Sarabun",
+              "fontSizePt": 16.0,
+              "color": "#24333D",
+              "bold": false,
+              "italic": false
+            },
+            {
+              "text": " (mâi bpen rai)",
+              "fontName": "Sarabun",
+              "fontSizePt": 15.0,
+              "color": "#566873",
+              "bold": false,
+              "italic": true
+            },
+            {
+              "text": ".",
+              "fontName": "Sarabun",
+              "fontSizePt": 16.0,
+              "color": "#24333D",
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "id": "item_4",
+          "kind": "text",
+          "x": 1097280,
+          "y": 3686175,
+          "w": 6400800,
+          "h": 457200,
+          "fontName": "Sarabun",
+          "fontSizePt": 16,
+          "color": "#24333D",
+          "bold": false,
+          "italic": false,
+          "align": "left",
+          "value": "What do ครับ (khráp) and ค่ะ (khâ) do? They are the polite endings that tell the listener how your line should land.",
+          "segments": [
+            {
+              "text": "What do ",
+              "fontName": "Sarabun",
+              "fontSizePt": 16.0,
+              "color": "#24333D",
+              "bold": false,
+              "italic": false
+            },
+            {
+              "text": "ครับ",
+              "fontName": "Sarabun",
+              "fontSizePt": 16.0,
+              "color": "#24333D",
+              "bold": false,
+              "italic": false
+            },
+            {
+              "text": " (khráp)",
+              "fontName": "Sarabun",
+              "fontSizePt": 15.0,
+              "color": "#566873",
+              "bold": false,
+              "italic": true
+            },
+            {
+              "text": " and ",
+              "fontName": "Sarabun",
+              "fontSizePt": 16.0,
+              "color": "#24333D",
+              "bold": false,
+              "italic": false
+            },
+            {
+              "text": "ค่ะ",
+              "fontName": "Sarabun",
+              "fontSizePt": 16.0,
+              "color": "#24333D",
+              "bold": false,
+              "italic": false
+            },
+            {
+              "text": " (khâ)",
+              "fontName": "Sarabun",
+              "fontSizePt": 15.0,
+              "color": "#566873",
+              "bold": false,
+              "italic": true
+            },
+            {
+              "text": " do? They are the polite endings that tell the listener how your line should land.",
+              "fontName": "Sarabun",
+              "fontSizePt": 16.0,
+              "color": "#24333D",
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "id": "item_5",
+          "kind": "text",
+          "x": 1005855,
+          "y": 4412835,
+          "w": 6400800,
+          "h": 457200,
+          "fontName": "Sarabun",
+          "fontSizePt": 16,
+          "color": "#24333D",
+          "bold": false,
+          "italic": false,
+          "align": "left",
+          "value": "Practise the full exchange - greeting to thank-you to no-problem"
+        }
+      ]
+    },
+    {
+      "id": "canva-slide-12-closing",
+      "title": "Closing",
+      "layoutFamily": "closing",
+      "backgroundPath": "canva-backgrounds/slide-12.png",
+      "elements": [
+        {
+          "id": "lesson_id",
+          "kind": "text",
+          "x": 731520,
+          "y": 1371600,
+          "w": 6858000,
+          "h": 365760,
+          "fontName": "Sarabun",
+          "fontSizePt": 19,
+          "color": "#566873",
+          "bold": false,
+          "italic": false,
+          "align": "left",
+          "value": "M01-L001"
+        },
+        {
+          "id": "title",
+          "kind": "text",
+          "x": 731520,
+          "y": 1920240,
+          "w": 6858000,
+          "h": 914400,
+          "fontName": "Sarabun",
+          "fontSizePt": 38,
+          "color": "#24333D",
+          "bold": true,
+          "italic": false,
+          "align": "left",
+          "value": "You can now greet, thank,\napologise, and respond politely."
+        },
+        {
+          "id": "line_1",
+          "kind": "text",
+          "x": 731520,
+          "y": 3200400,
+          "w": 6858000,
+          "h": 411480,
+          "fontName": "Sarabun",
+          "fontSizePt": 16,
+          "color": "#24333D",
+          "bold": false,
+          "italic": false,
+          "align": "left",
+          "value": "You have the smallest courtesy toolkit that already works."
+        },
+        {
+          "id": "line_2",
+          "kind": "text",
+          "x": 731520,
+          "y": 3657600,
+          "w": 6858000,
+          "h": 411480,
+          "fontName": "Sarabun",
+          "fontSizePt": 16,
+          "color": "#24333D",
+          "bold": false,
+          "italic": false,
+          "align": "left",
+          "value": "Next lesson: names and countries - introducing yourself."
+        },
+        {
+          "id": "brand",
+          "kind": "text",
+          "x": 731520,
+          "y": 5303520,
+          "w": 6858000,
+          "h": 365760,
+          "fontName": "Sarabun",
+          "fontSizePt": 15,
+          "color": "#566873",
+          "bold": false,
+          "italic": false,
+          "align": "left",
+          "value": "Immersion Thai with Nine"
+        }
+      ]
+    }
+  ]
+}

@@ -1,95 +1,115 @@
-# Spoken Script — M01-L001
+# M01-L001 — Hello and Basic Courtesy — Spoken Script
 
-## Opening
-In Thai, first contact is small, but it matters.
+## Section 1: Say hello the Thai way
 
-A few polite words can make you sound calmer, friendlier, and much easier to respond to.
+Let's start with the first thing you will say in Thai: สวัสดี sà-wàt-dii. Listen first. สวัสดี.
 
-Today we build the smallest courtesy toolkit that already works in real life.
+Now say it with me: สวัสดี. Good. This is your safe, polite hello in any first meeting.
 
----
+In real Thai, a greeting sounds more complete when you finish with a polite ending. If you are male, say สวัสดีครับ sà-wàt-dii khráp. If you are female, say สวัสดีค่ะ sà-wàt-dii khâ.
 
-## Section 1 — Say hello the Thai way
-Start with สวัสดี | sà-wàt-dii | hello.
+So learn สวัสดี as the body, and ครับ or ค่ะ as the ending that tells the listener who is speaking.
 
-This is a safe, polite greeting for a first meeting.
-
-But real Thai usually sounds more complete when a polite ending is attached.
-
-So do not stop at hello alone forever. Learn the greeting as a full social line.
-
-- สวัสดี | sà-wàt-dii | hello
-- สวัสดีครับ | sà-wàt-dii khráp | hello (male speaker)
-- สวัสดีค่ะ | sà-wàt-dii khâ | hello (female speaker)
-
-Practice: say all three slowly.
+**Drills:**
+- Listen and repeat three times: สวัสดี, สวัสดีครับ, สวัสดีค่ะ.
+- Your turn: I will point to a male or female role. Say the correct full greeting aloud before I show the answer.
+- Substitution drill: replace the ending — say สวัสดี with ครับ, now with ค่ะ.
 
 ---
 
-## Section 2 — Thank, apologise, and soften the moment
-Now add the two most useful courtesy phrases after hello.
+## Section 2: Thank, apologise, and soften the moment
 
-- ขอบคุณ | khàawp-khun | thank you
-- ขอโทษ | khǎaw-thôot | excuse me / sorry
-- ไม่เป็นไร | mâi bpen rai | it is okay / no problem
+These next courtesy phrases do different social jobs. Listen first to all three: ขอบคุณ khàawp-khun, ขอโทษ khǎaw-thôot, ไม่เป็นไร mâi bpen rai.
 
-ขอบคุณ closes the moment warmly.
+ขอบคุณ closes a small moment warmly — after help, service, or kindness. Someone holds the door? ขอบคุณครับ.
 
-ขอโทษ opens a repair. You can use it to interrupt gently or apologise.
+ขอโทษ opens a repair. It helps you interrupt gently or apologise without crashing into the conversation. Need to get past someone? ขอโทษครับ.
 
-And ไม่เป็นไร often answers a small apology or a thank-you moment by smoothing everything out.
+ไม่เป็นไร smooths the moment afterwards. Someone says ขอโทษ to you? You say ไม่เป็นไร — it is okay, no problem, never mind.
 
----
+Notice that สวัสดี opens the meeting, ขอบคุณ closes a kind moment, and ขอโทษ repairs a bump. Three lines, three social jobs.
 
-## Section 3 — Pick the right polite ending
-Thai polite endings do real work.
-
-- ครับ | khráp | male polite ending
-- ค่ะ | khâ | female statement ending
-- คะ | khá | female question ending
-
-At beginner level, keep one practical rule.
-
-If you are learning safe polite statements, focus first on ครับ and ค่ะ.
-
-Notice คะ as the question-flavoured partner, but do not panic if you are still learning the difference.
-
-The important thing is to hear that these endings are not random. They shape the tone of the whole line.
+**Drills:**
+- Discrimination drill: I describe a situation. Choose ขอบคุณ or ขอโทษ — which one fits? Say it aloud.
+- Response-building drill: I say ขอโทษครับ. Your turn — what do you say back? Pause and answer before I show it.
+- Substitution drill: say ขอบคุณ with ครับ, now with ค่ะ. Now say ขอโทษ with ครับ, now with ค่ะ.
 
 ---
 
-## Section 4 — Answer yes, no, and no problem naturally
-Now add three simple responses.
+## Section 3: Pick the right polite ending
 
-- ใช่ | châi | yes / that is right
-- ไม่ใช่ | mâi châi | no / not right
-- ไม่เป็นไร | mâi bpen rai | it is okay / no problem
+Polite endings are not decoration. Think of them as the final signal telling the listener how your line should land.
 
-ใช่ and ไม่ใช่ answer the idea.
+ครับ khráp is the common male polite ending. ค่ะ khâ is the common female ending for statements. คะ khá is the lighter female ending often heard with questions.
 
-But ไม่เป็นไร does a different job. It softens the situation. It says it is okay, no problem, never mind.
+For this lesson, keep one safe beginner rule: learn ครับ and ค่ะ first for polite statements, and notice คะ as the question partner rather than forcing it into every line.
 
-That difference matters. Otherwise, you can answer politely but still sound odd in context.
+Now let's practise. Add ครับ or ค่ะ to every phrase you already know. สวัสดีครับ. ขอบคุณค่ะ. ขอโทษครับ. ไม่เป็นไรค่ะ.
+
+**Drills:**
+- Substitution drill: I say a bare phrase. You add the correct polite ending. สวัสดี — your turn. ขอบคุณ — your turn. ขอโทษ — your turn.
+- Discrimination drill: I say ค่ะ or คะ. Is the speaker making a statement or asking a question? Choose before I tell you.
+- Substitution drill round 2: now try it with ไม่เป็นไร and ใช่. Add ครับ or ค่ะ.
 
 ---
 
-## Roleplay — First check-in at a reception desk
-Learner: ขอโทษครับ สวัสดีครับ | khǎaw-thôot khráp sà-wàt-dii khráp | Excuse me, hello.
+## Section 4: Answer yes, no, and no problem naturally
 
-Staff: สวัสดีค่ะ | sà-wàt-dii khâ | Hello.
+Now add two response tools: ใช่ châi and ไม่ใช่ mâi châi.
 
-Learner: ที่นี่ใช่ไหมครับ | thîi-nîi châi mái khráp | Is this the right place?
+ใช่ and ไม่ใช่ answer the idea. They tell someone yes, that is right, or no, that is not right. You already know ไม่เป็นไร — that does a different job. It manages the feeling of the moment.
 
-Staff: ใช่ค่ะ | châi khâ | Yes.
+That difference matters. ใช่ answers the question. ไม่เป็นไร answers the emotion. Otherwise you may answer correctly but still sound strange.
 
-Learner: ขอบคุณครับ | khàawp-khun khráp | Thank you.
+Let's see all your tools together now. สวัสดี opens the meeting. ขอบคุณ closes a kind moment. ขอโทษ repairs a bump. ใช่ and ไม่ใช่ answer the idea. ไม่เป็นไร softens everything.
 
-Staff: ไม่เป็นไรค่ะ | mâi bpen rai khâ | No problem.
+**Drills:**
+- Pause-and-produce: I ask a yes/no question. Say ใช่ or ไม่ใช่ before I show the answer.
+- Response-building: I say ขอโทษครับ. What do you say back? Then I say ขอบคุณค่ะ. What do you say back?
+- Substitution drill: say ใช่ with ครับ, now with ค่ะ. Say ไม่ใช่ with ครับ, now with ค่ะ.
+
+---
+
+## Section 5: Pronunciation — hearing Thai tones for the first time
+
+Before we roleplay, let's train your ear. Thai is a tone language — the pitch of your voice changes the meaning of a word.
+
+You have already heard two different tones in this lesson. Listen: khráp — that is a high tone, it rises up sharply. Now listen: khâ — that is a falling tone, it starts high and drops down.
+
+Try it. Say khráp with your voice going up. Now say khâ with your voice starting high and dropping. Can you hear the difference?
+
+Here is another pair from this lesson: châi — that is a falling tone. And mâi — also a falling tone. But khàawp in ขอบคุณ has a low tone — your voice stays down. Listen: khàawp-khun.
+
+Do not try to master all five Thai tones right now. Just notice: pitch matters. We will practise more tones every lesson.
+
+**Drills:**
+- Tone echo: I say ครับ khráp. Repeat it. Now I say ค่ะ khâ. Repeat it. Can you feel the difference?
+- Minimal pair choice: I say two words. Which one is ครับ and which is ค่ะ? Point to the answer.
+
+---
+
+## Roleplay: First polite exchange at a reception desk
+
+*The learner approaches a reception desk.*
+
+**Learner:** ขอโทษครับ สวัสดีครับ — Excuse me, hello.
+
+**Staff:** สวัสดีค่ะ — Hello.
+
+**Learner (your turn):** นี่ใช่ไหมครับ — Is this right?
+
+**Staff:** ใช่ค่ะ — Yes.
+
+**Learner (your turn):** ขอบคุณครับ — Thank you.
+
+**Staff:** ไม่เป็นไรค่ะ — No problem.
 
 ---
 
 ## Recap
-- Start with สวัสดี and add a polite ending.
-- Use ขอบคุณ to thank and ขอโทษ to repair politely.
-- Learn polite endings as social meaning, not decoration.
-- Use ใช่ and ไม่ใช่ for answers, and ไม่เป็นไร to calm the moment.
+
+- Look away and try: how do you say hello politely as a male speaker? Say it before looking back.
+- What is the difference between ขอบคุณ and ขอโทษ? One closes warmly, one repairs politely.
+- Someone says ขอโทษ to you. What do you say back? ไม่เป็นไร.
+- What do ครับ and ค่ะ do? They are the polite endings that tell the listener how your line should land.
+- Which two words answer the idea — yes or no? ใช่ and ไม่ใช่.

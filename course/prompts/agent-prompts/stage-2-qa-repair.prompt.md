@@ -48,6 +48,7 @@ Typical fixes include:
 - correcting transliteration drift
 - fixing malformed triplets
 - adding missing drills
+- tightening, adding, or removing concise conceptual anchors for high-risk concepts
 - extending weak sections to meet the section minimum
 - extending roleplay to meet the line minimum
 - tightening recap items to reach the minimum of 3
@@ -67,6 +68,11 @@ For every `languageFocus` item:
 - keep `vocabId`
 
 Do not add `vocabId` to roleplay lines.
+
+Keep conceptual anchors:
+- short and spoken-first
+- accurate enough that they do not teach a false English-style equivalence
+- inside existing lesson fields only
 
 For `visualPlan` repairs:
 - preserve the lesson's left-panel teaching layout

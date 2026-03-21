@@ -14,18 +14,20 @@ test("lesson review loader returns complete lesson data for rebuilt lesson", asy
   assert.equal(review.checks.editorialQaPass, true);
   assert.equal(review.checks.visualQaPass, true);
   assert.equal(review.checks.assessmentQaPass, true);
+  assert.equal(review.previews.deckExists, true);
   assert.equal(review.previews.pdfExists, true);
+  assert.ok(review.checks.slideCount > 0);
   assert.ok(review.content.briefMd);
   assert.ok(review.content.scriptSpokenMd);
   assert.ok(review.content.scriptVisualMd);
 });
 
 test("lesson review loader degrades gracefully for partial lesson", async () => {
-  const review = await loadMissionControlLessonReview("M01-L005");
+  const review = await loadMissionControlLessonReview("M02-L001");
 
   assert.ok(review);
-  assert.equal(review.lesson.id, "M01-L005");
-  assert.equal(review.status.state, "DRAFT");
+  assert.equal(review.lesson.id, "M02-L001");
+  assert.equal(review.status.state, "BACKLOG");
   assert.equal(review.content.briefMd, null);
   assert.equal(review.content.scriptSpokenMd, null);
   assert.equal(review.content.editorialQaReportMd, null);

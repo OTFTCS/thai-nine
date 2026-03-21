@@ -22,6 +22,25 @@ export interface Lexeme {
   english: string;
   notes?: string;
   vocabId?: string;
+  type?: "word" | "chunk";
+}
+
+export interface MinimalPairEntry {
+  thai: string;
+  translit: string;
+  english: string;
+}
+
+export interface MinimalPair {
+  a: MinimalPairEntry;
+  b: MinimalPairEntry;
+}
+
+export interface PronunciationFocus {
+  targetSounds: string[];
+  minimalPairs: MinimalPair[];
+  mouthMapAnchor: string;
+  tonePattern?: string;
 }
 
 export type VisualLayout =
@@ -30,6 +49,72 @@ export type VisualLayout =
   | "dialogue-ladder"
   | "drill-stack"
   | "image-anchored";
+
+export type DeckSlideRole =
+  | "opener"
+  | "objectives"
+  | "teaching"
+  | "roleplay"
+  | "recap"
+  | "closing";
+
+export type DeckLayout =
+  | VisualLayout
+  | "lesson-opener"
+  | "objectives-list"
+  | "roleplay-dialogue"
+  | "recap-checklist"
+  | "lesson-closing";
+
+export interface CanvaTextSegment {
+  text: string;
+  fontName?: string;
+  fontSizePt?: number;
+  color?: string;
+  bold?: boolean;
+  italic?: boolean;
+}
+
+export interface CanvaSlideElement {
+  id: string;
+  kind: "text" | "image";
+  x: number;
+  y: number;
+  w: number;
+  h: number;
+  fontName?: string;
+  fontSizePt?: number;
+  color?: string;
+  bold?: boolean;
+  italic?: boolean;
+  align?: "left" | "center" | "right";
+  value?: string;
+  localPath?: string;
+  segments?: CanvaTextSegment[];
+}
+
+export interface CanvaSlide {
+  id: string;
+  title: string;
+  layoutFamily: string;
+  backgroundPath: string;
+  elements: CanvaSlideElement[];
+}
+
+export interface CanvaContent {
+  schemaVersion: 1;
+  lessonId: string;
+  sourceDeck: string;
+  layoutContract: string;
+  theme: {
+    thaiFont: string;
+    latinFont: string;
+    backgroundColor: string;
+    rightZoneTint: string;
+    accentColors: string[];
+  };
+  slides: CanvaSlide[];
+}
 
 export interface SectionVisualPlan {
   leftPanelLayout: VisualLayout;
@@ -98,6 +183,7 @@ export interface ScriptMaster {
     transliteration: "PTM_ADAPTED_INLINE_TONES";
     imageSourcing: "INTERNET_FIRST_NO_GENERATIVE_DEFAULT";
   };
+  pronunciationFocus?: PronunciationFocus;
 }
 
 export interface RemotionPlan {
@@ -146,15 +232,92 @@ export interface AssetProvenance {
   assets: Array<{
     assetId: string;
     kind: "image" | "icon" | "video";
-    sourceUrl: string;
-    license: string;
+    status?: "resolved" | "fallback-text-only" | "not-needed";
+    slideId?: string;
+    sourceProvider?: "openverse" | "wikimedia" | "none";
+    sourceUrl?: string;
+    license?: string;
     usage: string;
     query?: string;
     sourcePolicy?: "internet-first";
+    localPath?: string;
+    fallbackReason?: string;
     rationale?: string;
     sourceHints?: string[];
     aiFallbackPrompt?: string;
   }>;
+}
+
+export interface DeckTextBlock {
+  id: string;
+  kind:
+    | "eyebrow"
+    | "bullet-list"
+    | "triplet-list"
+    | "dialogue"
+    | "recap-list"
+    | "closing-list"
+    | "note";
+  heading?: string;
+  lines: string[];
+}
+
+export interface DeckVisualStrategy {
+  onScreenGoal: string;
+  teachingVisuals: string[];
+  teacherCues: string[];
+  imageUsage: "real-image" | "icon" | "text-only";
+  rationale: string;
+}
+
+export interface DeckAsset {
+  assetId: string;
+  kind: "image";
+  query: string;
+  sourcePolicy: "internet-first";
+  status: "resolved" | "fallback-text-only" | "not-needed";
+  sourceProvider: "openverse" | "wikimedia" | "none";
+  sourceUrl?: string;
+  license?: string;
+  localPath?: string;
+  usageNotes?: string;
+  fallbackReason?: string;
+}
+
+export interface DeckSlide {
+  id: string;
+  role: DeckSlideRole;
+  title: string;
+  estimatedSeconds: number;
+  layout: DeckLayout;
+  speakerNotes: string[];
+  textBlocks: DeckTextBlock[];
+  thaiFocus: Array<{ thai: string; translit: string; english: string }>;
+  visualStrategy: DeckVisualStrategy;
+  assets: DeckAsset[];
+}
+
+export interface DeckSource {
+  schemaVersion: 1;
+  lessonId: string;
+  sourceScript: string;
+  canvas: {
+    width: number;
+    height: number;
+    leftTeachingFraction: number;
+    rightCameraFraction: number;
+    safeZoneLabel: string;
+  };
+  theme: {
+    id: string;
+    name: string;
+    thaiFont: string;
+    latinFont: string;
+    backgroundColor: string;
+    rightZoneTint: string;
+    accentColors: string[];
+  };
+  slides: DeckSlide[];
 }
 
 export interface PdfSource {

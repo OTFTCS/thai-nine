@@ -26,10 +26,10 @@
     },
     {
       "id": "m01-l002-c03",
-      "vocabId": "v-33248cf209",
-      "front": "ฉันชื่อ...",
-      "back": "my name is ...",
-      "translit": "chǎn chûue...",
+      "vocabId": "v-ce7cc833ec",
+      "front": "มาจาก",
+      "back": "come from",
+      "translit": "maa-jàak",
       "tags": [
         "M01-L002",
         "core"
@@ -37,39 +37,6 @@
     },
     {
       "id": "m01-l002-c04",
-      "vocabId": "v-d5ec4d10d2",
-      "front": "ผมชื่อ...",
-      "back": "my name is ... (male speaker)",
-      "translit": "phǒm chûue...",
-      "tags": [
-        "M01-L002",
-        "core"
-      ]
-    },
-    {
-      "id": "m01-l002-c05",
-      "vocabId": "v-0ab46f92e7",
-      "front": "ฉัน",
-      "back": "I",
-      "translit": "chǎn",
-      "tags": [
-        "M01-L002",
-        "core"
-      ]
-    },
-    {
-      "id": "m01-l002-c06",
-      "vocabId": "v-796f86a0f6",
-      "front": "ผม",
-      "back": "I (male)",
-      "translit": "phǒm",
-      "tags": [
-        "M01-L002",
-        "core"
-      ]
-    },
-    {
-      "id": "m01-l002-c07",
       "vocabId": "v-d0c316cc2c",
       "front": "ประเทศ",
       "back": "country",
@@ -80,11 +47,44 @@
       ]
     },
     {
+      "id": "m01-l002-c05",
+      "vocabId": "v-f0b2ddeed3",
+      "front": "ไทย",
+      "back": "Thailand / Thai",
+      "translit": "thai",
+      "tags": [
+        "M01-L002",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l002-c06",
+      "vocabId": "v-8adc81e330",
+      "front": "อังกฤษ",
+      "back": "England / English",
+      "translit": "ang-grìt",
+      "tags": [
+        "M01-L002",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l002-c07",
+      "vocabId": "v-9ca06d0136",
+      "front": "อเมริกา",
+      "back": "America",
+      "translit": "à-mee-rí-kaa",
+      "tags": [
+        "M01-L002",
+        "core"
+      ]
+    },
+    {
       "id": "m01-l002-c08",
-      "vocabId": "v-dfd8165dd5",
-      "front": "มาจาก",
-      "back": "come from / be from",
-      "translit": "maa-jàak",
+      "vocabId": "v-6bb42f6e5c",
+      "front": "คน",
+      "back": "person",
+      "translit": "khon",
       "tags": [
         "M01-L002",
         "core"
@@ -92,39 +92,6 @@
     },
     {
       "id": "m01-l002-c09",
-      "vocabId": "v-317510cace",
-      "front": "มาจากไทย",
-      "back": "be from Thailand",
-      "translit": "maa-jàak thai",
-      "tags": [
-        "M01-L002",
-        "core"
-      ]
-    },
-    {
-      "id": "m01-l002-c10",
-      "vocabId": "v-15a452b73b",
-      "front": "มาจากอังกฤษ",
-      "back": "be from England",
-      "translit": "maa-jàak ang-grìt",
-      "tags": [
-        "M01-L002",
-        "core"
-      ]
-    },
-    {
-      "id": "m01-l002-c11",
-      "vocabId": "v-b845ab6bae",
-      "front": "มาจากอเมริกา",
-      "back": "be from America",
-      "translit": "maa-jàak à-mee-rí-gaa",
-      "tags": [
-        "M01-L002",
-        "core"
-      ]
-    },
-    {
-      "id": "m01-l002-c12",
       "vocabId": "v-c9337e2739",
       "front": "สวัสดี",
       "back": "hello",
@@ -135,7 +102,7 @@
       ]
     },
     {
-      "id": "m01-l002-c13",
+      "id": "m01-l002-c10",
       "vocabId": "v-217b46aa5a",
       "front": "ขอบคุณ",
       "back": "thank you",
@@ -146,22 +113,11 @@
       ]
     },
     {
-      "id": "m01-l002-c14",
-      "vocabId": "v-b2f0acf56a",
-      "front": "ฉันมาจาก...",
-      "back": "I am from ...",
-      "translit": "chǎn maa-jàak...",
-      "tags": [
-        "M01-L002",
-        "core"
-      ]
-    },
-    {
-      "id": "m01-l002-c15",
-      "vocabId": "v-64f9ed0e55",
-      "front": "ผมมาจาก...",
-      "back": "I am from ... (male)",
-      "translit": "phǒm maa-jàak...",
+      "id": "m01-l002-c11",
+      "vocabId": "v-51bd1e627d",
+      "front": "ชื่อ",
+      "back": "name (falling tone)",
+      "translit": "chûue",
       "tags": [
         "M01-L002",
         "core"
