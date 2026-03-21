@@ -783,9 +783,9 @@ def render_opener(slide, slide_data: dict[str, Any], row: dict[str, str], transl
     eyebrow = f"{row.get('module_title', '').strip()}  ·  {row.get('cefr_band', '').strip()}".strip(" ·")
     add_textbox(slide, CONTENT_LEFT, Inches(1.75), CONTENT_WIDTH_BESIDE_PIP, Inches(0.25), eyebrow or "Immersion Thai with Nine", font_name=FONT_LATIN, font_size=SIZE_LABEL, color=ACCENT_GOLD, bold=True, translit_entries=translit_entries)
     add_textbox(slide, CONTENT_LEFT, Inches(2.18), CONTENT_WIDTH_BESIDE_PIP, Inches(0.36), row.get("lesson_id", slide_data["id"]), font_name=FONT_LATIN, font_size=Pt(20), color=INK_MEDIUM, translit_entries=translit_entries)
-    add_textbox(slide, CONTENT_LEFT, Inches(2.78), CONTENT_WIDTH_BESIDE_PIP, Inches(0.9), slide_data["title"], font_name=FONT_LATIN, font_size=Pt(42), bold=True, translit_entries=translit_entries)
+    add_textbox(slide, CONTENT_LEFT, Inches(2.78), CONTENT_WIDTH_BESIDE_PIP, Inches(1.2), slide_data["title"], font_name=FONT_LATIN, font_size=Pt(32), bold=True, translit_entries=translit_entries)
     note_lines = slide_data["textBlocks"][0]["lines"][:2]
-    add_bullet_block(slide, CONTENT_LEFT, Inches(4.35), Inches(5.8), "Lesson focus", note_lines, ACCENT_GOLD, translit_entries)
+    add_bullet_block(slide, CONTENT_LEFT, Inches(4.5), CONTENT_WIDTH_BESIDE_PIP, "Lesson focus", note_lines, ACCENT_GOLD, translit_entries)
     add_textbox(slide, CONTENT_LEFT, Inches(6.2), CONTENT_WIDTH, Inches(0.25), "Immersion Thai with Nine", font_name=FONT_LATIN, font_size=SIZE_LABEL, color=INK_LIGHT)
 
 
@@ -2605,6 +2605,8 @@ def render_canva_deck(lesson_root: Path, canva_content: dict[str, Any], output_p
                 )
             elif element.get("kind") == "text":
                 add_canva_text_element(slide, element)
+        # Add PiP placeholder on top of all content
+        _add_pip_placeholder(slide)
 
     output_pptx.parent.mkdir(parents=True, exist_ok=True)
     prs.save(output_pptx)
