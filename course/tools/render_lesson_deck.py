@@ -2748,16 +2748,9 @@ def main() -> int:
 
     deck_source_path.write_text(json.dumps(deck_source, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     provenance_path.write_text(json.dumps(provenance, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    render_deck(deck_source, row, lesson_root, output_pptx, translit_entries)
-    canva_content = build_canva_content(repo_root, lesson_id, script, row, deck_source, translit_entries)
-    canva_content_path.write_text(
-        json.dumps(canva_content, ensure_ascii=False, indent=2) + "\n",
-        encoding="utf-8",
-    )
-    render_canva_backgrounds(repo_root, lesson_root, canva_content)
-    render_canva_deck(lesson_root, canva_content, canva_deck_path)
-    write_canva_import_guide(lesson_root, lesson_id, canva_content, canva_import_guide_path)
-    print(f"Rendered {lesson_id} -> {output_pptx} and {canva_deck_path}")
+    # Single deck output — render directly to canva-deck.pptx
+    render_deck(deck_source, row, lesson_root, canva_deck_path, translit_entries)
+    print(f"Rendered {lesson_id} -> {canva_deck_path}")
     return 0
 
 
