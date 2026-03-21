@@ -4,6 +4,12 @@ You are writing a full lesson for **Immersion Thai with Nine**.
 
 This is not a TikTok script. It is a real teaching lesson for a learner who wants careful explanations, controlled progression, and practical Thai they can use immediately.
 
+Each lesson serves two purposes:
+1. **Self-paced online course** — the learner watches the pre-recorded lesson alone
+2. **Live 1:1 teaching with Nine** — Nine uses the deck as a guide in a private session
+
+Write scripts that work for both. Use "You" (not "Learner") in roleplay speaker labels so it feels like a direct conversation.
+
 Write directly to the lesson directory:
 - `brief.md`
 - `script-master.json`
@@ -437,6 +443,8 @@ Requirements:
 - should show at least one meaningful contrast, choice, or response pattern
 - should sound like natural spoken Thai for the level
 - should include at least one point where the learner could reasonably pause and say the next line before the answer appears
+- use `"You"` as the speaker label for the learner's lines (not "Learner" — keeps the 1:1 feel)
+- use a simple role name for the other speaker (e.g., "Staff", "New person", "Waiter") — no long descriptions
 
 For pre-recorded teaching:
 - roleplay should be staged as teachable beats, not just performed once at full speed

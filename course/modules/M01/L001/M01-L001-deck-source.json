@@ -425,15 +425,16 @@
     {
       "id": "slide-08-roleplay",
       "role": "roleplay",
-      "title": "First polite exchange at a reception desk. The learner approaches, greets, confirms something, and thanks the staff.",
-      "estimatedSeconds": 30,
+      "title": "Roleplay",
+      "estimatedSeconds": 22,
       "layout": "roleplay-dialogue",
       "speakerNotes": [
-        "Learner | ขอโทษครับ สวัสดีครับ | khǎaw-thôot khráp sà-wàt-dii khráp | Excuse me, hello.",
+        "First polite exchange at a reception desk. The learner approaches, greets, confirms something, and thanks the staff.",
+        "You | ขอโทษครับ สวัสดีครับ | khǎaw-thôot khráp sà-wàt-dii khráp | Excuse me, hello.",
         "Staff | สวัสดีค่ะ | sà-wàt-dii khâ | Hello.",
-        "Learner (your turn — say the next line before I show it) | นี่ใช่ไหมครับ | nîi châi mái khráp | Is this right?",
+        "You | นี่ใช่ไหมครับ | nîi châi mái khráp | Is this right?",
         "Staff | ใช่ค่ะ | châi khâ | Yes.",
-        "Learner (your turn — what do you say after receiving help?) | ขอบคุณครับ | khàawp-khun khráp | Thank you.",
+        "You | ขอบคุณครับ | khàawp-khun khráp | Thank you.",
         "Staff | ไม่เป็นไรค่ะ | mâi bpen rai khâ | No problem."
       ],
       "textBlocks": [
@@ -442,11 +443,11 @@
           "kind": "dialogue",
           "heading": "Dialogue",
           "lines": [
-            "Learner | ขอโทษครับ สวัสดีครับ | khǎaw-thôot khráp sà-wàt-dii khráp | Excuse me, hello.",
+            "You | ขอโทษครับ สวัสดีครับ | khǎaw-thôot khráp sà-wàt-dii khráp | Excuse me, hello.",
             "Staff | สวัสดีค่ะ | sà-wàt-dii khâ | Hello.",
-            "Learner (your turn — say the next line before I show it) | นี่ใช่ไหมครับ | nîi châi mái khráp | Is this right?",
+            "You | นี่ใช่ไหมครับ | nîi châi mái khráp | Is this right?",
             "Staff | ใช่ค่ะ | châi khâ | Yes.",
-            "Learner (your turn — what do you say after receiving help?) | ขอบคุณครับ | khàawp-khun khráp | Thank you.",
+            "You | ขอบคุณครับ | khàawp-khun khráp | Thank you.",
             "Staff | ไม่เป็นไรค่ะ | mâi bpen rai khâ | No problem."
           ]
         }
@@ -490,7 +491,7 @@
         ],
         "teacherCues": [
           "Record against the dialogue ladder.",
-          "Leave the right third camera-safe."
+          "Bottom-right PiP reserved for camera."
         ],
         "imageUsage": "text-only",
         "rationale": "The dialogue itself is the teaching focus."

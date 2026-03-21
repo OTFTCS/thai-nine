@@ -392,7 +392,7 @@
         "english": "Hello! What is your name?"
       },
       {
-        "speaker": "Learner (your turn — answer with your name)",
+        "speaker": "You",
         "thai": "สวัสดีครับ ผมชื่อ Oliver ครับ",
         "translit": "sà-wàt-dii khráp phǒm chûue Oliver khráp",
         "english": "Hello! My name is Oliver."
@@ -404,7 +404,7 @@
         "english": "Nice to meet you. Where are you from?"
       },
       {
-        "speaker": "Learner (your turn — say where you are from)",
+        "speaker": "You",
         "thai": "ผมมาจากอังกฤษครับ",
         "translit": "phǒm maa-jàak ang-grìt khráp",
         "english": "I am from England."
@@ -416,7 +416,7 @@
         "english": "Oh, an English person! Welcome."
       },
       {
-        "speaker": "Learner",
+        "speaker": "You",
         "thai": "ขอบคุณครับ",
         "translit": "khàawp-khun khráp",
         "english": "Thank you."

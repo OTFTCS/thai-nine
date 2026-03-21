@@ -381,16 +381,17 @@
     {
       "id": "slide-07-roleplay",
       "role": "roleplay",
-      "title": "Meeting a new person at a coffee shop. The learner introduces themselves after a greeting.",
-      "estimatedSeconds": 42,
+      "title": "Roleplay",
+      "estimatedSeconds": 37,
       "layout": "roleplay-dialogue",
       "speakerNotes": [
+        "Meeting a new person at a coffee shop. The learner introduces themselves after a greeting.",
         "New person | สวัสดีค่ะ คุณชื่ออะไรคะ | sà-wàt-dii khâ khun chûue à-rai khá | Hello! What is your name?",
-        "Learner (your turn — answer with your name) | สวัสดีครับ ผมชื่อ Oliver ครับ | sà-wàt-dii khráp phǒm chûue Oliver khráp | Hello! My name is Oliver.",
+        "You | สวัสดีครับ ผมชื่อ Oliver ครับ | sà-wàt-dii khráp phǒm chûue Oliver khráp | Hello! My name is Oliver.",
         "New person | ยินดีที่ได้รู้จักค่ะ คุณมาจากไหนคะ | yin-dii thîi dâai rúu-jàk khâ khun maa-jàak nǎi khá | Nice to meet you. Where are you from?",
-        "Learner (your turn — say where you are from) | ผมมาจากอังกฤษครับ | phǒm maa-jàak ang-grìt khráp | I am from England.",
+        "You | ผมมาจากอังกฤษครับ | phǒm maa-jàak ang-grìt khráp | I am from England.",
         "New person | อ๋อ คนอังกฤษ ยินดีต้อนรับค่ะ | ǎw khon ang-grìt yin-dii dtâwn-ráp khâ | Oh, an English person! Welcome.",
-        "Learner | ขอบคุณครับ | khàawp-khun khráp | Thank you."
+        "You | ขอบคุณครับ | khàawp-khun khráp | Thank you."
       ],
       "textBlocks": [
         {
@@ -399,11 +400,11 @@
           "heading": "Dialogue",
           "lines": [
             "New person | สวัสดีค่ะ คุณชื่ออะไรคะ | sà-wàt-dii khâ khun chûue à-rai khá | Hello! What is your name?",
-            "Learner (your turn — answer with your name) | สวัสดีครับ ผมชื่อ Oliver ครับ | sà-wàt-dii khráp phǒm chûue Oliver khráp | Hello! My name is Oliver.",
+            "You | สวัสดีครับ ผมชื่อ Oliver ครับ | sà-wàt-dii khráp phǒm chûue Oliver khráp | Hello! My name is Oliver.",
             "New person | ยินดีที่ได้รู้จักค่ะ คุณมาจากไหนคะ | yin-dii thîi dâai rúu-jàk khâ khun maa-jàak nǎi khá | Nice to meet you. Where are you from?",
-            "Learner (your turn — say where you are from) | ผมมาจากอังกฤษครับ | phǒm maa-jàak ang-grìt khráp | I am from England.",
+            "You | ผมมาจากอังกฤษครับ | phǒm maa-jàak ang-grìt khráp | I am from England.",
             "New person | อ๋อ คนอังกฤษ ยินดีต้อนรับค่ะ | ǎw khon ang-grìt yin-dii dtâwn-ráp khâ | Oh, an English person! Welcome.",
-            "Learner | ขอบคุณครับ | khàawp-khun khráp | Thank you."
+            "You | ขอบคุณครับ | khàawp-khun khráp | Thank you."
           ]
         }
       ],
@@ -446,7 +447,7 @@
         ],
         "teacherCues": [
           "Record against the dialogue ladder.",
-          "Leave the right third camera-safe."
+          "Bottom-right PiP reserved for camera."
         ],
         "imageUsage": "text-only",
         "rationale": "The dialogue itself is the teaching focus."

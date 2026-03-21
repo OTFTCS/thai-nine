@@ -360,7 +360,7 @@
     "scenario": "First polite exchange at a reception desk. The learner approaches, greets, confirms something, and thanks the staff.",
     "lines": [
       {
-        "speaker": "Learner",
+        "speaker": "You",
         "thai": "ขอโทษครับ สวัสดีครับ",
         "translit": "khǎaw-thôot khráp sà-wàt-dii khráp",
         "english": "Excuse me, hello."
@@ -372,7 +372,7 @@
         "english": "Hello."
       },
       {
-        "speaker": "Learner (your turn — say the next line before I show it)",
+        "speaker": "You",
         "thai": "นี่ใช่ไหมครับ",
         "translit": "nîi châi mái khráp",
         "english": "Is this right?"
@@ -384,7 +384,7 @@
         "english": "Yes."
       },
       {
-        "speaker": "Learner (your turn — what do you say after receiving help?)",
+        "speaker": "You",
         "thai": "ขอบคุณครับ",
         "translit": "khàawp-khun khráp",
         "english": "Thank you."

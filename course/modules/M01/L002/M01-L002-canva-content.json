@@ -1297,7 +1297,7 @@
           "bold": true,
           "italic": false,
           "align": "center",
-          "value": "Learner (your turn — answer with your name)"
+          "value": "You"
         },
         {
           "id": "turn_2_thai",
@@ -1423,7 +1423,7 @@
           "bold": true,
           "italic": false,
           "align": "center",
-          "value": "Learner (your turn — say where you are from)"
+          "value": "You"
         },
         {
           "id": "turn_4_thai",
@@ -1549,7 +1549,7 @@
           "bold": true,
           "italic": false,
           "align": "center",
-          "value": "Learner"
+          "value": "You"
         },
         {
           "id": "turn_6_thai",

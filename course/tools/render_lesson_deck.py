@@ -804,11 +804,12 @@ def render_teaching(
         add_phrase_card(slide, content_left, top, left_column_width, first["thai"], first["translit"], first["english"])
 
     if drill_block:
+        # Use full teaching width for practice drills (they contain long Thai+translit text)
         add_bullet_block(
             slide,
             content_left,
             Inches(4.85),
-            left_column_width,
+            CONTENT_WIDTH,
             drill_block.get("heading") or "Practice",
             drill_block["lines"][:4],
             ACCENT_CLAY,
@@ -999,7 +1000,8 @@ def build_deck_source(
     roleplay_lines = [
         " | ".join(
             [
-                line.get("speaker", ""),
+                # Normalize speaker: "Learner" → "You", strip parenthetical cues
+                (lambda s: s.split("(")[0].strip())(line.get("speaker", "").replace("Learner", "You")),
                 line.get("thai", ""),
                 line.get("translit", ""),
                 line.get("english", ""),
@@ -1007,14 +1009,15 @@ def build_deck_source(
         )
         for line in script.get("roleplay", {}).get("lines", [])
     ]
+    scenario = script.get("roleplay", {}).get("scenario", "Roleplay")
     slides.append(
         {
             "id": f"slide-{len(slides) + 1:02d}-roleplay",
             "role": "roleplay",
-            "title": script.get("roleplay", {}).get("scenario", "Roleplay"),
+            "title": "Roleplay",
             "estimatedSeconds": estimate_seconds(roleplay_lines, 22),
             "layout": "roleplay-dialogue",
-            "speakerNotes": roleplay_lines or [script.get("roleplay", {}).get("scenario", "Roleplay")],
+            "speakerNotes": [scenario] + (roleplay_lines or []),
             "textBlocks": [
                 {
                     "id": "roleplay-dialogue",
@@ -1034,7 +1037,7 @@ def build_deck_source(
             "visualStrategy": {
                 "onScreenGoal": "Support the roleplay recording with clean turn-taking.",
                 "teachingVisuals": [script.get("roleplay", {}).get("scenario", "Roleplay ladder")],
-                "teacherCues": ["Record against the dialogue ladder.", "Leave the right third camera-safe."],
+                "teacherCues": ["Record against the dialogue ladder.", "Bottom-right PiP reserved for camera."],
                 "imageUsage": "text-only",
                 "rationale": "The dialogue itself is the teaching focus.",
             },

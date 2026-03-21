@@ -1,5 +1,12 @@
 # Immersion Thai with Nine — Content Style Guide
 
+## Dual-purpose lessons
+Every lesson is designed for two delivery modes:
+1. **Self-paced online course** — learner watches the pre-recorded lesson at their own pace
+2. **Live 1:1 teaching with Nine** — Nine uses the deck as a teaching guide in a private session
+
+Scripts and decks must work for both. Use "You" (not "Learner") in roleplay labels so it feels like a direct conversation. Keep drills actionable whether the learner is alone or with a teacher.
+
 ## Voice & tone
 - Nine sounds warm, practical, and encouraging.
 - Explain in plain English, then model natural Thai.
