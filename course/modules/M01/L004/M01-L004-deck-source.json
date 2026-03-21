@@ -1,0 +1,630 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "M01-L004",
+  "sourceScript": "M01-L004-script-master.json",
+  "canvas": {
+    "width": 1920,
+    "height": 1080,
+    "leftTeachingFraction": 1.0,
+    "rightCameraFraction": 0.0,
+    "pipCameraWidth": 4.2,
+    "pipCameraHeight": 3.15,
+    "pipPosition": "bottom-right",
+    "safeZoneLabel": "Bottom-right PiP reserved for recording / camera"
+  },
+  "theme": {
+    "id": "thai-nine-canva-bridge-v1",
+    "name": "Canva Bridge Deck",
+    "thaiFont": "Sarabun",
+    "latinFont": "Sarabun",
+    "backgroundColor": "#F5F7F8",
+    "rightZoneTint": "#DBE7EC",
+    "accentColors": [
+      "#355C7D",
+      "#7A8F54",
+      "#C96F4A"
+    ]
+  },
+  "slides": [
+    {
+      "id": "slide-01-opener",
+      "role": "opener",
+      "title": "Numbers 0 to 10",
+      "estimatedSeconds": 12,
+      "layout": "lesson-opener",
+      "speakerNotes": [
+        "Open with a room number said too quickly at a hotel desk, then show how knowing just eleven short Thai words solves the problem immediately.",
+        "You can understand and say the digits needed for age, room numbers, and basic counting."
+      ],
+      "textBlocks": [
+        {
+          "id": "opener-focus",
+          "kind": "bullet-list",
+          "heading": "Lesson focus",
+          "lines": [
+            "You can understand and say the digits needed for age, room numbers, and basic counting.",
+            "Say your age, count objects, and give a simple number clearly."
+          ]
+        }
+      ],
+      "thaiFocus": [],
+      "visualStrategy": {
+        "onScreenGoal": "Introduce the lesson clearly and set the recording tone.",
+        "teachingVisuals": [
+          "Numbers 0 to 10",
+          "First Contact and Courtesy"
+        ],
+        "teacherCues": [
+          "Use the deck title as the recording opener.",
+          "Keep the right third clear."
+        ],
+        "imageUsage": "text-only",
+        "rationale": "The opener should establish identity and objective without visual clutter."
+      },
+      "assets": []
+    },
+    {
+      "id": "slide-02-objectives",
+      "role": "objectives",
+      "title": "What you will learn",
+      "estimatedSeconds": 18,
+      "layout": "objectives-list",
+      "speakerNotes": [
+        "You can understand and say the digits needed for age, room numbers, and basic counting.",
+        "You can recycle recent vocabulary while using number pronunciation control in short controlled output.",
+        "Say your age, count objects, and give a simple number clearly.",
+        "Recognize slowly spoken digits in age and number contexts."
+      ],
+      "textBlocks": [
+        {
+          "id": "objectives-list",
+          "kind": "bullet-list",
+          "heading": "Objectives",
+          "lines": [
+            "You can understand and say the digits needed for age, room numbers, and basic counting.",
+            "You can recycle recent vocabulary while using number pronunciation control in short controlled output.",
+            "Say your age, count objects, and give a simple number clearly.",
+            "Recognize slowly spoken digits in age and number contexts."
+          ]
+        }
+      ],
+      "thaiFocus": [],
+      "visualStrategy": {
+        "onScreenGoal": "Make the lesson goals visible before the teaching slides begin.",
+        "teachingVisuals": [
+          "You can understand and say the digits needed for age, room numbers, and basic counting.",
+          "You can recycle recent vocabulary while using number pronunciation control in short controlled output.",
+          "Say your age, count objects, and give a simple number clearly.",
+          "Recognize slowly spoken digits in age and number contexts."
+        ],
+        "teacherCues": [
+          "Pause briefly after each objective.",
+          "Keep the slide readable from a distance."
+        ],
+        "imageUsage": "text-only",
+        "rationale": "Objectives are clearer as cards than as decorative visuals."
+      },
+      "assets": []
+    },
+    {
+      "id": "slide-03-the-first-six-digits-0-t",
+      "role": "teaching",
+      "title": "The first six digits: 0 to 5",
+      "estimatedSeconds": 39,
+      "layout": "focus-card",
+      "speakerNotes": [
+        "Let's start with the first six digits you will hear constantly in Thailand. Listen first: ศูนย์ sǔun, หนึ่ง nùeng, สอง sǎawng, สาม sǎam, สี่ sìi, ห้า hâa.",
+        "Now say them with me: ศูนย์, หนึ่ง, สอง, สาม, สี่, ห้า. Good.",
+        "One important thing. For room numbers, phone numbers, and queue numbers, Thai usually says each digit separately. Room 502 is not five-hundred-and-two. It is ห้า-ศูนย์-สอง. Digit by digit, like a code.",
+        "Notice that สี่ sìi has a low tone — your voice stays flat and low. Do not lift it up. If you say sǐi with a rising tone, that sounds like the word for colour, not the number four."
+      ],
+      "textBlocks": [
+        {
+          "id": "slide-03-the-first-six-digits-0-t-triplets",
+          "kind": "triplet-list",
+          "heading": "Key language",
+          "lines": [
+            "ศูนย์ | sǔun | zero",
+            "หนึ่ง | nùeng | one",
+            "สอง | sǎawng | two",
+            "สาม | sǎam | three"
+          ]
+        },
+        {
+          "id": "slide-03-the-first-six-digits-0-t-practice",
+          "kind": "bullet-list",
+          "heading": "Practice",
+          "lines": [
+            "Listen and repeat three times: ศูนย์-หนึ่ง-สอง-สาม-สี่-ห้า. Then say the same line backwards: ห้า-สี่-สาม-สอง-หนึ่ง-ศูนย์.",
+            "Your turn: I say a digit in English. You say the Thai word aloud before I show the answer. Ready? Two. Four. Zero. Five. One. Three."
+          ]
+        }
+      ],
+      "thaiFocus": [
+        {
+          "thai": "ศูนย์",
+          "translit": "sǔun",
+          "english": "zero"
+        },
+        {
+          "thai": "หนึ่ง",
+          "translit": "nùeng",
+          "english": "one"
+        },
+        {
+          "thai": "สอง",
+          "translit": "sǎawng",
+          "english": "two"
+        },
+        {
+          "thai": "สาม",
+          "translit": "sǎam",
+          "english": "three"
+        },
+        {
+          "thai": "สี่",
+          "translit": "sìi",
+          "english": "four"
+        },
+        {
+          "thai": "ห้า",
+          "translit": "hâa",
+          "english": "five"
+        }
+      ],
+      "visualStrategy": {
+        "onScreenGoal": "Show the first six digits as a clean memory set with large Thai script and Arabic numerals.",
+        "teachingVisuals": [
+          "Large stacked cards for 0-5 with Thai script, transliteration, and Arabic numeral grouped together on the left.",
+          "A simple code-reading line showing ห้า-ศูนย์-สอง = room 502 read digit by digit."
+        ],
+        "teacherCues": [
+          "Pause after each digit and let the learner echo before moving on.",
+          "Point to the Arabic numeral only after the learner has heard the Thai form."
+        ],
+        "imageUsage": "text-only",
+        "rationale": "The digits themselves are the teaching target, so a photograph would add clutter without helping recall."
+      },
+      "assets": []
+    },
+    {
+      "id": "slide-04-finish-the-set-6-to-10",
+      "role": "teaching",
+      "title": "Finish the set: 6 to 10",
+      "estimatedSeconds": 38,
+      "layout": "contrast-board",
+      "speakerNotes": [
+        "Now add the rest: หก hòk, เจ็ด jèt, แปด bpàet, เก้า gâo, สิบ sìp. Listen first.",
+        "Notice the shapes. หก and เจ็ด are short and clipped — your mouth closes quickly. แปด starts with a bp- sound that has no puff of air. เก้า is longer with a falling tone.",
+        "Try them with me: หก, เจ็ด, แปด, เก้า, สิบ. Good. Now the full set from zero to ten: ศูนย์, หนึ่ง, สอง, สาม, สี่, ห้า, หก, เจ็ด, แปด, เก้า, สิบ.",
+        "If you stretch หก or soften the ending in เจ็ด, it sounds mushy. Keep them sharp. Think of them like a quick tap, not a long note."
+      ],
+      "textBlocks": [
+        {
+          "id": "slide-04-finish-the-set-6-to-10-triplets",
+          "kind": "triplet-list",
+          "heading": "Key language",
+          "lines": [
+            "หก | hòk | six",
+            "เจ็ด | jèt | seven",
+            "แปด | bpàet | eight",
+            "เก้า | gâo | nine"
+          ]
+        },
+        {
+          "id": "slide-04-finish-the-set-6-to-10-practice",
+          "kind": "bullet-list",
+          "heading": "Practice",
+          "lines": [
+            "Clap drill: clap once per digit from หก to สิบ, keeping หก, เจ็ด, แปด, and สิบ short and controlled.",
+            "Random recall: I say a number in English. You say the Thai word before I show it. Seven. Ten. Eight. Six. Nine.",
+            "Substitution drill: I start a room-number code. You finish it. ห้า-ศูนย์-... say สอง. Now สาม-ศูนย์-... say หก. Now เก้า-ศูนย์-... say แปด."
+          ]
+        }
+      ],
+      "thaiFocus": [
+        {
+          "thai": "หก",
+          "translit": "hòk",
+          "english": "six"
+        },
+        {
+          "thai": "เจ็ด",
+          "translit": "jèt",
+          "english": "seven"
+        },
+        {
+          "thai": "แปด",
+          "translit": "bpàet",
+          "english": "eight"
+        },
+        {
+          "thai": "เก้า",
+          "translit": "gâo",
+          "english": "nine"
+        },
+        {
+          "thai": "สิบ",
+          "translit": "sìp",
+          "english": "ten"
+        }
+      ],
+      "visualStrategy": {
+        "onScreenGoal": "Contrast the sound-shapes of 6-10 so you can see which are short/clipped and which are longer.",
+        "teachingVisuals": [
+          "Two-column board: short clipped digits (หก, เจ็ด, แปด, สิบ) versus longer open ones (เก้า).",
+          "A rhythm bar under each digit showing hold-length visually."
+        ],
+        "teacherCues": [
+          "Model each digit once naturally, then once slowly.",
+          "Use a hand chop for short sounds and a sustained palm for longer ones."
+        ],
+        "imageUsage": "text-only",
+        "rationale": "This section is about pronunciation shape and timing, so graphic rhythm cues teach better than stock imagery."
+      },
+      "assets": []
+    },
+    {
+      "id": "slide-05-ask-for-a-number-and-say",
+      "role": "teaching",
+      "title": "Ask for a number and say your age",
+      "estimatedSeconds": 47,
+      "layout": "image-anchored",
+      "speakerNotes": [
+        "Now make the digits useful. First, a question you will hear everywhere: เบอร์อะไร ber à-rai — what number? You hear this with rooms, tables, phones, and queue tickets. เบอร์ is a borrowed word for a number label.",
+        "Listen and repeat: เบอร์อะไรครับ. เบอร์อะไรค่ะ. Good. Now answer: someone asks เบอร์อะไร and the room is 307. You say สาม-ศูนย์-เจ็ด. Digit by digit.",
+        "Next, the age pattern. You already know ฉัน and เขา from the last lesson. Now add: ฉันอายุ...ปี chǎn aa-yú ... bpii — I am ... years old. Drop any number into the slot. ฉันอายุห้าปี. ฉันอายุสิบปี.",
+        "Notice there is no word for am in the Thai pattern. You do not say I am five years old. You say I age five year. The pattern is: pronoun, then อายุ, then the number, then ปี."
+      ],
+      "textBlocks": [
+        {
+          "id": "slide-05-ask-for-a-number-and-say-triplets",
+          "kind": "triplet-list",
+          "heading": "Key language",
+          "lines": [
+            "เบอร์อะไร | ber à-rai | what number?",
+            "ฉันอายุ...ปี | chǎn aa-yú ... bpii | I am ... years old",
+            "เขาอายุ...ปี | khǎo aa-yú ... bpii | he/she is ... years old"
+          ]
+        },
+        {
+          "id": "slide-05-ask-for-a-number-and-say-practice",
+          "kind": "bullet-list",
+          "heading": "Practice",
+          "lines": [
+            "Prompt drill: I ask เบอร์อะไร. You answer with a digit string. Room 205? สอง-ศูนย์-ห้า. Room 409? สี่-ศูนย์-เก้า. Your turn.",
+            "Pattern drill: I give you a number. You build the age sentence. Five? ฉันอายุห้าปี. Eight? ฉันอายุแปดปี. Ten? ฉันอายุสิบปี.",
+            "Substitution drill: now change the pronoun. I say a number and a pronoun. เขา, seven? เขาอายุเจ็ดปี. ผม, nine? ผมอายุเก้าปี."
+          ]
+        }
+      ],
+      "thaiFocus": [
+        {
+          "thai": "เบอร์อะไร",
+          "translit": "ber à-rai",
+          "english": "what number?"
+        },
+        {
+          "thai": "ฉันอายุ...ปี",
+          "translit": "chǎn aa-yú ... bpii",
+          "english": "I am ... years old"
+        }
+      ],
+      "visualStrategy": {
+        "onScreenGoal": "Anchor digit use in a real-world number context and show the age pattern as a fill-in frame.",
+        "teachingVisuals": [
+          "Room-number example: สาม-ศูนย์-เจ็ด with each digit spoken separately, anchored by a room-sign photo.",
+          "Age pattern frame: [pronoun] + อายุ + [___] + ปี with an open slot for the number."
+        ],
+        "teacherCues": [
+          "Keep the room-number example large on the left, photo as subtle background.",
+          "Show the age pattern as a sentence frame with a visible slot, not as a finished sentence."
+        ],
+        "imageUsage": "real-image",
+        "rationale": "A real hotel room-number plaque makes the use case instantly concrete and shows why Thai digits are said one by one."
+      },
+      "assets": [
+        {
+          "assetId": "slide-05-ask-for-a-number-and-say-asset-1",
+          "kind": "image",
+          "query": "Thailand hotel room number door plaque",
+          "sourcePolicy": "internet-first",
+          "status": "fallback-text-only",
+          "sourceProvider": "none",
+          "fallbackReason": "No acceptable Openverse or Wikimedia asset could be downloaded automatically.",
+          "usageNotes": "A real hotel room-number plaque makes the use case instantly concrete and shows why Thai digits are said one by one."
+        }
+      ]
+    },
+    {
+      "id": "slide-06-numbers-in-real-exchange",
+      "role": "teaching",
+      "title": "Numbers in real exchanges",
+      "estimatedSeconds": 40,
+      "layout": "drill-stack",
+      "speakerNotes": [
+        "Now put everything together. You already know สวัสดี for greeting, ขอบคุณ for thanking, and ขอโทษ for getting attention. You know ฉัน, ผม, คุณ, and เขา for talking about people. Now numbers plug straight into that system.",
+        "Imagine someone asks คุณอายุเท่าไหร่ — how old are you? You answer: ฉันอายุแปดปี. Or ผมอายุสิบปี. Same pattern, different pronoun, different number.",
+        "If you miss a number, do not freeze. Say ขอโทษครับ or ขอโทษค่ะ, then listen again. A repair phrase keeps the exchange moving.",
+        "Let's practise a short exchange. I ask เบอร์อะไร. You answer with a room number. Then I ask อายุเท่าไหร่. You answer with your age pattern. Say your lines before I show the answer."
+      ],
+      "textBlocks": [
+        {
+          "id": "slide-06-numbers-in-real-exchange-triplets",
+          "kind": "triplet-list",
+          "heading": "Key language",
+          "lines": [
+            "คุณอายุเท่าไหร่ | khun aa-yú thâo-rài | how old are you?",
+            "ฉันอายุแปดปี | chǎn aa-yú bpàet bpii | I am eight years old",
+            "ขอโทษครับ / ค่ะ | khǎaw-thôot khráp / khâ | excuse me (polite)"
+          ]
+        },
+        {
+          "id": "slide-06-numbers-in-real-exchange-practice",
+          "kind": "bullet-list",
+          "heading": "Practice",
+          "lines": [
+            "Response-building drill: I ask เบอร์อะไรครับ. You answer with room 601. Then I ask คุณอายุเท่าไหร่. You answer with age seven. Say your lines before looking.",
+            "Repair drill: I say a three-digit room number once, fast. If you catch it, repeat it back. If you miss it, say ขอโทษครับ or ขอโทษค่ะ, then I repeat and you try again.",
+            "Substitution drill: change the person. เขาอายุสามปี. Now change the number: เขาอายุหกปี. Now change both: ฉันอายุสิบปี."
+          ]
+        }
+      ],
+      "thaiFocus": [
+        {
+          "thai": "ฉัน",
+          "translit": "chǎn",
+          "english": "I"
+        },
+        {
+          "thai": "เขา",
+          "translit": "khǎo",
+          "english": "he / she"
+        },
+        {
+          "thai": "ขอโทษ",
+          "translit": "khǎaw-thôot",
+          "english": "excuse me / sorry"
+        },
+        {
+          "thai": "ขอบคุณ",
+          "translit": "khàawp-khun",
+          "english": "thank you"
+        }
+      ],
+      "visualStrategy": {
+        "onScreenGoal": "Show combined exchanges that use digits with pronouns and courtesy phrases as a unified system.",
+        "teachingVisuals": [
+          "A compact exchange ladder: question on top, answer below, with the number slot highlighted.",
+          "A repair mini-dialogue showing ขอโทษ before the number is repeated."
+        ],
+        "teacherCues": [
+          "Tie the age pattern back to pronouns from lesson 3 explicitly.",
+          "Keep the repair drill moving quickly — the point is that ขอโทษ buys time."
+        ],
+        "imageUsage": "text-only",
+        "rationale": "This section is about combining known material with new numbers, so a clean drill stack teaches better than imagery."
+      },
+      "assets": []
+    },
+    {
+      "id": "slide-07-pronunciation-beat-low-t",
+      "role": "teaching",
+      "title": "Pronunciation beat: low tone vs rising tone",
+      "estimatedSeconds": 56,
+      "layout": "focus-card",
+      "speakerNotes": [
+        "Before the roleplay, let's sharpen your ear. Thai tones change meaning. You have been practising this since lesson one with ครับ and ค่ะ. Today the key contrast is low tone versus rising tone.",
+        "Listen: สี่ sìi — that is a low tone. Your voice stays flat and low, like a calm, steady statement. Now listen: สี sǐi — that is a rising tone. Your voice lifts up from low to high, like asking really? in English.",
+        "สี่ with a low tone means four. สี with a rising tone means colour. Wrong tone, wrong word. Try it. Say สี่ sìi — keep it low and flat. Now say สี sǐi — lift it up.",
+        "Here is another contrast from this lesson. เก้า gâo — falling tone, means nine. เข้า khâo — also a falling tone, but different first sound. For now, just notice that the tone on เก้า drops down firmly, like saying no with conviction."
+      ],
+      "textBlocks": [
+        {
+          "id": "slide-07-pronunciation-beat-low-t-triplets",
+          "kind": "triplet-list",
+          "heading": "Key language",
+          "lines": [
+            "สี่ | sìi | four (low tone — voice stays low and flat)",
+            "สี | sǐi | colour (rising tone — voice lifts up)",
+            "เก้า | gâo | nine (falling tone — voice drops down)"
+          ]
+        },
+        {
+          "id": "slide-07-pronunciation-beat-low-t-practice",
+          "kind": "bullet-list",
+          "heading": "Practice",
+          "lines": [
+            "Tone echo: I say สี่ sìi. Repeat it with a low tone. Now I say สี sǐi. Repeat it with a rising tone. Can you feel the difference?",
+            "Minimal pair choice: I say one word. Is it four or colour? Point to the answer, then say the word back to me."
+          ]
+        }
+      ],
+      "thaiFocus": [
+        {
+          "thai": "สี่",
+          "translit": "sìi",
+          "english": "four (low tone)"
+        }
+      ],
+      "visualStrategy": {
+        "onScreenGoal": "Show tone direction arrows next to the transliteration to visualize pitch movement for low vs rising.",
+        "teachingVisuals": [
+          "Two large cards: สี่ sìi with a flat-low arrow, สี sǐi with an upward arrow.",
+          "Simple pitch contour line showing low tone as flat-low and rising tone as lifting up."
+        ],
+        "teacherCues": [
+          "Model each tone slowly and clearly, exaggerating the difference.",
+          "Use hand gestures: flat palm for low tone, palm lifting for rising tone."
+        ],
+        "imageUsage": "text-only",
+        "rationale": "Tone arrows and pitch contour lines teach pronunciation better than any photograph."
+      },
+      "assets": []
+    },
+    {
+      "id": "slide-08-roleplay",
+      "role": "roleplay",
+      "title": "Roleplay",
+      "estimatedSeconds": 33,
+      "layout": "roleplay-dialogue",
+      "speakerNotes": [
+        "You are checking in at a small hotel. You need to get your room number and give your age for a registration form.",
+        "You | สวัสดีครับ | sà-wàt-dii khráp | Hello.",
+        "Staff | สวัสดีค่ะ ห้องเบอร์อะไรคะ | sà-wàt-dii khâ hâawng ber à-rai khá | Hello. What is the room number?",
+        "You | ห้า-ศูนย์-สองครับ | hâa-sǔun-sǎawng khráp | Five-zero-two.",
+        "Staff | ค่ะ คุณอายุเท่าไหร่คะ | khâ khun aa-yú thâo-rài khá | Okay. How old are you?",
+        "You | ผมอายุสิบปีครับ | phǒm aa-yú sìp bpii khráp | I am ten years old.",
+        "Staff | สิบปีค่ะ ขอบคุณค่ะ | sìp bpii khâ khàawp-khun khâ | Ten years old. Thank you.",
+        "You | ขอบคุณครับ | khàawp-khun khráp | Thank you."
+      ],
+      "textBlocks": [
+        {
+          "id": "roleplay-dialogue",
+          "kind": "dialogue",
+          "heading": "Dialogue",
+          "lines": [
+            "You | สวัสดีครับ | sà-wàt-dii khráp | Hello.",
+            "Staff | สวัสดีค่ะ ห้องเบอร์อะไรคะ | sà-wàt-dii khâ hâawng ber à-rai khá | Hello. What is the room number?",
+            "You | ห้า-ศูนย์-สองครับ | hâa-sǔun-sǎawng khráp | Five-zero-two.",
+            "Staff | ค่ะ คุณอายุเท่าไหร่คะ | khâ khun aa-yú thâo-rài khá | Okay. How old are you?",
+            "You | ผมอายุสิบปีครับ | phǒm aa-yú sìp bpii khráp | I am ten years old.",
+            "Staff | สิบปีค่ะ ขอบคุณค่ะ | sìp bpii khâ khàawp-khun khâ | Ten years old. Thank you."
+          ]
+        }
+      ],
+      "thaiFocus": [
+        {
+          "thai": "สวัสดีครับ",
+          "translit": "sà-wàt-dii khráp",
+          "english": "Hello."
+        },
+        {
+          "thai": "สวัสดีค่ะ ห้องเบอร์อะไรคะ",
+          "translit": "sà-wàt-dii khâ hâawng ber à-rai khá",
+          "english": "Hello. What is the room number?"
+        },
+        {
+          "thai": "ห้า-ศูนย์-สองครับ",
+          "translit": "hâa-sǔun-sǎawng khráp",
+          "english": "Five-zero-two."
+        },
+        {
+          "thai": "ค่ะ คุณอายุเท่าไหร่คะ",
+          "translit": "khâ khun aa-yú thâo-rài khá",
+          "english": "Okay. How old are you?"
+        },
+        {
+          "thai": "ผมอายุสิบปีครับ",
+          "translit": "phǒm aa-yú sìp bpii khráp",
+          "english": "I am ten years old."
+        },
+        {
+          "thai": "สิบปีค่ะ ขอบคุณค่ะ",
+          "translit": "sìp bpii khâ khàawp-khun khâ",
+          "english": "Ten years old. Thank you."
+        },
+        {
+          "thai": "ขอบคุณครับ",
+          "translit": "khàawp-khun khráp",
+          "english": "Thank you."
+        }
+      ],
+      "visualStrategy": {
+        "onScreenGoal": "Support the roleplay recording with clean turn-taking.",
+        "teachingVisuals": [
+          "You are checking in at a small hotel. You need to get your room number and give your age for a registration form."
+        ],
+        "teacherCues": [
+          "Record against the dialogue ladder.",
+          "Bottom-right PiP reserved for camera."
+        ],
+        "imageUsage": "text-only",
+        "rationale": "The dialogue itself is the teaching focus."
+      },
+      "assets": []
+    },
+    {
+      "id": "slide-09-recap",
+      "role": "recap",
+      "title": "Recap",
+      "estimatedSeconds": 33,
+      "layout": "recap-checklist",
+      "speakerNotes": [
+        "Look away and count from zero to ten in Thai. Say each digit aloud before looking back: ศูนย์, หนึ่ง, สอง, สาม, สี่, ห้า, หก, เจ็ด, แปด, เก้า, สิบ.",
+        "How do you ask for a room number or table number? เบอร์อะไร.",
+        "How do you say I am eight years old? ฉันอายุแปดปี — pronoun, then อายุ, then the number, then ปี.",
+        "What is the difference between สี่ sìi and สี sǐi? Low tone means four. Rising tone means colour.",
+        "If you miss a number, what do you say? ขอโทษครับ or ขอโทษค่ะ, then listen again."
+      ],
+      "textBlocks": [
+        {
+          "id": "recap-list",
+          "kind": "recap-list",
+          "heading": "What you can now do",
+          "lines": [
+            "Look away and count from zero to ten in Thai. Say each digit aloud before looking back: ศูนย์, หนึ่ง, สอง, สาม, สี่, ห้า, หก, เจ็ด, แปด, เก้า, สิบ.",
+            "How do you ask for a room number or table number? เบอร์อะไร.",
+            "How do you say I am eight years old? ฉันอายุแปดปี — pronoun, then อายุ, then the number, then ปี.",
+            "What is the difference between สี่ sìi and สี sǐi? Low tone means four. Rising tone means colour.",
+            "If you miss a number, what do you say? ขอโทษครับ or ขอโทษค่ะ, then listen again."
+          ]
+        }
+      ],
+      "thaiFocus": [],
+      "visualStrategy": {
+        "onScreenGoal": "Finish with a simple, memorable checklist.",
+        "teachingVisuals": [
+          "Look away and count from zero to ten in Thai. Say each digit aloud before looking back: ศูนย์, หนึ่ง, สอง, สาม, สี่, ห้า, หก, เจ็ด, แปด, เก้า, สิบ.",
+          "How do you ask for a room number or table number? เบอร์อะไร.",
+          "How do you say I am eight years old? ฉันอายุแปดปี — pronoun, then อายุ, then the number, then ปี.",
+          "What is the difference between สี่ sìi and สี sǐi? Low tone means four. Rising tone means colour.",
+          "If you miss a number, what do you say? ขอโทษครับ or ขอโทษค่ะ, then listen again."
+        ],
+        "teacherCues": [
+          "Use this slide as the summary.",
+          "Keep the ending calm and uncluttered."
+        ],
+        "imageUsage": "text-only",
+        "rationale": "A recap slide should be compact and memorable."
+      },
+      "assets": []
+    },
+    {
+      "id": "slide-10-closing",
+      "role": "closing",
+      "title": "Closing",
+      "estimatedSeconds": 10,
+      "layout": "lesson-closing",
+      "speakerNotes": [
+        "By the end, you can hear, repeat, and produce Thai digits 0-10 in room-number, counting, and simple age exchanges.",
+        "Next: First Contact and Courtesy continues."
+      ],
+      "textBlocks": [
+        {
+          "id": "closing-list",
+          "kind": "closing-list",
+          "heading": "Takeaway",
+          "lines": [
+            "By the end, you can hear, repeat, and produce Thai digits 0-10 in room-number, counting, and simple age exchanges.",
+            "Next: First Contact and Courtesy continues."
+          ]
+        }
+      ],
+      "thaiFocus": [],
+      "visualStrategy": {
+        "onScreenGoal": "Give Nine a clean final slide to close the recording.",
+        "teachingVisuals": [
+          "By the end, you can hear, repeat, and produce Thai digits 0-10 in room-number, counting, and simple age exchanges.",
+          "Next: First Contact and Courtesy continues."
+        ],
+        "teacherCues": [
+          "Use the closing as the final spoken wrap-up."
+        ],
+        "imageUsage": "text-only",
+        "rationale": "The closing slide is a presenter anchor, not a new teaching beat."
+      },
+      "assets": []
+    }
+  ]
+}

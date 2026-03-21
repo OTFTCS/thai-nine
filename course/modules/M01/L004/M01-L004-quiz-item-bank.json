@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "lessonId": "M01-L004",
-  "generatedAt": "2026-03-11T08:12:08.468Z",
+  "generatedAt": "2026-03-21T09:41:58.230Z",
   "sourceScript": "M01-L004-script-master.json",
   "items": [
     {
@@ -557,14 +557,14 @@
       "rationale": "Checks contextual understanding while preserving triplet exposure."
     },
     {
-      "id": "v-1dbb23ed34-thai-to-english",
-      "vocabId": "v-1dbb23ed34",
+      "id": "v-18e34df5c5-thai-to-english",
+      "vocabId": "v-18e34df5c5",
       "type": "thai_to_english",
       "displayMode": "thai_only",
       "prompt": {
         "text": "What is the best meaning of แปด?",
         "thai": "แปด",
-        "translit": "bpàaet"
+        "translit": "bpàet"
       },
       "options": [
         "eight",
@@ -576,8 +576,8 @@
       "rationale": "Maps Thai form to target meaning from script languageFocus."
     },
     {
-      "id": "v-1dbb23ed34-english-to-thai",
-      "vocabId": "v-1dbb23ed34",
+      "id": "v-18e34df5c5-english-to-thai",
+      "vocabId": "v-18e34df5c5",
       "type": "english_to_thai",
       "displayMode": "english_only",
       "prompt": {
@@ -594,26 +594,26 @@
       "rationale": "Reverses mapping for active recall."
     },
     {
-      "id": "v-1dbb23ed34-fill-translit",
-      "vocabId": "v-1dbb23ed34",
+      "id": "v-18e34df5c5-fill-translit",
+      "vocabId": "v-18e34df5c5",
       "type": "fill_translit",
       "displayMode": "thai_only",
       "prompt": {
         "text": "Type the PTM transliteration for แปด.",
         "thai": "แปด"
       },
-      "answer": "bpàaet",
+      "answer": "bpàet",
       "rationale": "Forces transliteration production with inline tone marks."
     },
     {
-      "id": "v-1dbb23ed34-context-mcq",
-      "vocabId": "v-1dbb23ed34",
+      "id": "v-18e34df5c5-context-mcq",
+      "vocabId": "v-18e34df5c5",
       "type": "context_mcq",
       "displayMode": "triplet",
       "prompt": {
         "text": "Choose the sentence that keeps the lesson meaning of this phrase.",
         "thai": "แปด",
-        "translit": "bpàaet",
+        "translit": "bpàet",
         "english": "eight"
       },
       "options": [
@@ -626,14 +626,14 @@
       "rationale": "Checks contextual understanding while preserving triplet exposure."
     },
     {
-      "id": "v-cac367e6fd-thai-to-english",
-      "vocabId": "v-cac367e6fd",
+      "id": "v-61140bdbc1-thai-to-english",
+      "vocabId": "v-61140bdbc1",
       "type": "thai_to_english",
       "displayMode": "thai_only",
       "prompt": {
         "text": "What is the best meaning of เก้า?",
         "thai": "เก้า",
-        "translit": "gâao"
+        "translit": "gâo"
       },
       "options": [
         "nine",
@@ -645,8 +645,8 @@
       "rationale": "Maps Thai form to target meaning from script languageFocus."
     },
     {
-      "id": "v-cac367e6fd-english-to-thai",
-      "vocabId": "v-cac367e6fd",
+      "id": "v-61140bdbc1-english-to-thai",
+      "vocabId": "v-61140bdbc1",
       "type": "english_to_thai",
       "displayMode": "english_only",
       "prompt": {
@@ -663,26 +663,26 @@
       "rationale": "Reverses mapping for active recall."
     },
     {
-      "id": "v-cac367e6fd-fill-translit",
-      "vocabId": "v-cac367e6fd",
+      "id": "v-61140bdbc1-fill-translit",
+      "vocabId": "v-61140bdbc1",
       "type": "fill_translit",
       "displayMode": "thai_only",
       "prompt": {
         "text": "Type the PTM transliteration for เก้า.",
         "thai": "เก้า"
       },
-      "answer": "gâao",
+      "answer": "gâo",
       "rationale": "Forces transliteration production with inline tone marks."
     },
     {
-      "id": "v-cac367e6fd-context-mcq",
-      "vocabId": "v-cac367e6fd",
+      "id": "v-61140bdbc1-context-mcq",
+      "vocabId": "v-61140bdbc1",
       "type": "context_mcq",
       "displayMode": "triplet",
       "prompt": {
         "text": "Choose the sentence that keeps the lesson meaning of this phrase.",
         "thai": "เก้า",
-        "translit": "gâao",
+        "translit": "gâo",
         "english": "nine"
       },
       "options": [
@@ -833,141 +833,141 @@
       "rationale": "Checks contextual understanding while preserving triplet exposure."
     },
     {
-      "id": "v-03d6876d5b-thai-to-english",
-      "vocabId": "v-03d6876d5b",
+      "id": "v-2d97b680f6-thai-to-english",
+      "vocabId": "v-2d97b680f6",
       "type": "thai_to_english",
       "displayMode": "thai_only",
       "prompt": {
-        "text": "What is the best meaning of ฉันอายุสิบปี?",
-        "thai": "ฉันอายุสิบปี",
-        "translit": "chǎn aa-yú sìp bpii"
+        "text": "What is the best meaning of ฉันอายุ...ปี?",
+        "thai": "ฉันอายุ...ปี",
+        "translit": "chǎn aa-yú ... bpii"
       },
       "options": [
-        "I am ten years old",
+        "I am ... years old",
         "zero",
         "one",
         "two"
       ],
-      "answer": "I am ten years old",
+      "answer": "I am ... years old",
       "rationale": "Maps Thai form to target meaning from script languageFocus."
     },
     {
-      "id": "v-03d6876d5b-english-to-thai",
-      "vocabId": "v-03d6876d5b",
+      "id": "v-2d97b680f6-english-to-thai",
+      "vocabId": "v-2d97b680f6",
       "type": "english_to_thai",
       "displayMode": "english_only",
       "prompt": {
-        "text": "Select Thai for: I am ten years old",
-        "english": "I am ten years old"
+        "text": "Select Thai for: I am ... years old",
+        "english": "I am ... years old"
       },
       "options": [
-        "ฉันอายุสิบปี",
+        "ฉันอายุ...ปี",
         "ศูนย์",
         "หนึ่ง",
         "สอง"
       ],
-      "answer": "ฉันอายุสิบปี",
+      "answer": "ฉันอายุ...ปี",
       "rationale": "Reverses mapping for active recall."
     },
     {
-      "id": "v-03d6876d5b-fill-translit",
-      "vocabId": "v-03d6876d5b",
+      "id": "v-2d97b680f6-fill-translit",
+      "vocabId": "v-2d97b680f6",
       "type": "fill_translit",
       "displayMode": "thai_only",
       "prompt": {
-        "text": "Type the PTM transliteration for ฉันอายุสิบปี.",
-        "thai": "ฉันอายุสิบปี"
+        "text": "Type the PTM transliteration for ฉันอายุ...ปี.",
+        "thai": "ฉันอายุ...ปี"
       },
-      "answer": "chǎn aa-yú sìp bpii",
+      "answer": "chǎn aa-yú ... bpii",
       "rationale": "Forces transliteration production with inline tone marks."
     },
     {
-      "id": "v-03d6876d5b-context-mcq",
-      "vocabId": "v-03d6876d5b",
+      "id": "v-2d97b680f6-context-mcq",
+      "vocabId": "v-2d97b680f6",
       "type": "context_mcq",
       "displayMode": "triplet",
       "prompt": {
         "text": "Choose the sentence that keeps the lesson meaning of this phrase.",
-        "thai": "ฉันอายุสิบปี",
-        "translit": "chǎn aa-yú sìp bpii",
-        "english": "I am ten years old"
+        "thai": "ฉันอายุ...ปี",
+        "translit": "chǎn aa-yú ... bpii",
+        "english": "I am ... years old"
       },
       "options": [
-        "Use ฉันอายุสิบปี in polite beginner conversation",
+        "Use ฉันอายุ...ปี in polite beginner conversation",
         "Use ศูนย์ in polite beginner conversation",
         "Use หนึ่ง in polite beginner conversation",
         "Use สอง in polite beginner conversation"
       ],
-      "answer": "Use ฉันอายุสิบปี in polite beginner conversation",
+      "answer": "Use ฉันอายุ...ปี in polite beginner conversation",
       "rationale": "Checks contextual understanding while preserving triplet exposure."
     },
     {
-      "id": "v-9bf9593428-thai-to-english",
-      "vocabId": "v-9bf9593428",
+      "id": "v-a2028c5b78-thai-to-english",
+      "vocabId": "v-a2028c5b78",
       "type": "thai_to_english",
       "displayMode": "thai_only",
       "prompt": {
-        "text": "What is the best meaning of เขาอายุเก้าปี?",
-        "thai": "เขาอายุเก้าปี",
-        "translit": "khǎo aa-yú gâao bpii"
+        "text": "What is the best meaning of สี่?",
+        "thai": "สี่",
+        "translit": "sìi"
       },
       "options": [
-        "he / she is nine years old",
+        "four (low tone)",
         "zero",
         "one",
         "two"
       ],
-      "answer": "he / she is nine years old",
+      "answer": "four (low tone)",
       "rationale": "Maps Thai form to target meaning from script languageFocus."
     },
     {
-      "id": "v-9bf9593428-english-to-thai",
-      "vocabId": "v-9bf9593428",
+      "id": "v-a2028c5b78-english-to-thai",
+      "vocabId": "v-a2028c5b78",
       "type": "english_to_thai",
       "displayMode": "english_only",
       "prompt": {
-        "text": "Select Thai for: he / she is nine years old",
-        "english": "he / she is nine years old"
+        "text": "Select Thai for: four (low tone)",
+        "english": "four (low tone)"
       },
       "options": [
-        "เขาอายุเก้าปี",
+        "สี่",
         "ศูนย์",
         "หนึ่ง",
         "สอง"
       ],
-      "answer": "เขาอายุเก้าปี",
+      "answer": "สี่",
       "rationale": "Reverses mapping for active recall."
     },
     {
-      "id": "v-9bf9593428-fill-translit",
-      "vocabId": "v-9bf9593428",
+      "id": "v-a2028c5b78-fill-translit",
+      "vocabId": "v-a2028c5b78",
       "type": "fill_translit",
       "displayMode": "thai_only",
       "prompt": {
-        "text": "Type the PTM transliteration for เขาอายุเก้าปี.",
-        "thai": "เขาอายุเก้าปี"
+        "text": "Type the PTM transliteration for สี่.",
+        "thai": "สี่"
       },
-      "answer": "khǎo aa-yú gâao bpii",
+      "answer": "sìi",
       "rationale": "Forces transliteration production with inline tone marks."
     },
     {
-      "id": "v-9bf9593428-context-mcq",
-      "vocabId": "v-9bf9593428",
+      "id": "v-a2028c5b78-context-mcq",
+      "vocabId": "v-a2028c5b78",
       "type": "context_mcq",
       "displayMode": "triplet",
       "prompt": {
         "text": "Choose the sentence that keeps the lesson meaning of this phrase.",
-        "thai": "เขาอายุเก้าปี",
-        "translit": "khǎo aa-yú gâao bpii",
-        "english": "he / she is nine years old"
+        "thai": "สี่",
+        "translit": "sìi",
+        "english": "four (low tone)"
       },
       "options": [
-        "Use เขาอายุเก้าปี in polite beginner conversation",
+        "Use สี่ in polite beginner conversation",
         "Use ศูนย์ in polite beginner conversation",
         "Use หนึ่ง in polite beginner conversation",
         "Use สอง in polite beginner conversation"
       ],
-      "answer": "Use เขาอายุเก้าปี in polite beginner conversation",
+      "answer": "Use สี่ in polite beginner conversation",
       "rationale": "Checks contextual understanding while preserving triplet exposure."
     }
   ],
@@ -1015,12 +1015,12 @@
         "itemCount": 4
       },
       {
-        "vocabId": "v-1dbb23ed34",
+        "vocabId": "v-18e34df5c5",
         "thai": "แปด",
         "itemCount": 4
       },
       {
-        "vocabId": "v-cac367e6fd",
+        "vocabId": "v-61140bdbc1",
         "thai": "เก้า",
         "itemCount": 4
       },
@@ -1035,13 +1035,13 @@
         "itemCount": 4
       },
       {
-        "vocabId": "v-03d6876d5b",
-        "thai": "ฉันอายุสิบปี",
+        "vocabId": "v-2d97b680f6",
+        "thai": "ฉันอายุ...ปี",
         "itemCount": 4
       },
       {
-        "vocabId": "v-9bf9593428",
-        "thai": "เขาอายุเก้าปี",
+        "vocabId": "v-a2028c5b78",
+        "thai": "สี่",
         "itemCount": 4
       }
     ],

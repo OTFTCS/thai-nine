@@ -154,3 +154,9 @@
 
 ## 2026-03-21 13:25:10 +07
 - Set M01-L002 state to READY_TO_RECORD.
+
+## 2026-03-21 16:30:36 +07
+- Set M01-L004 state to DRAFT.
+
+## 2026-03-21 16:42:22 +07
+- Set M01-L004 state to READY_TO_RECORD.

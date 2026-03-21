@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
   "lessonId": "M01-L004",
-  "title": "M01-L004 — Numbers 0 to 10: Age, Room Numbers, and Basic Counting",
+  "title": "M01-L004 — Numbers 0 to 10",
   "sections": [
     {
       "heading": "What you will be able to say after this lesson",
       "body": [
         "Target runtime: 9-12 minutes",
-        "Scenario: A beginner needs to catch digits in real life, repeat them back clearly, and survive a short number exchange without freezing.",
-        "Learner takeaway: By the end, the learner can hear, repeat, and use Thai digits 0-10 in room-number, counting, and simple age practice."
+        "Scenario: You need to catch digits in real life — room numbers, ages, queue numbers — and repeat them back clearly without freezing.",
+        "Learner takeaway: By the end, you can hear, repeat, and produce Thai digits 0-10 in room-number, counting, and simple age exchanges."
       ]
     },
     {
@@ -22,57 +22,66 @@
         "ห้า | hâa | five",
         "หก | hòk | six",
         "เจ็ด | jèt | seven",
-        "แปด | bpàaet | eight",
-        "เก้า | gâao | nine",
+        "แปด | bpàet | eight",
+        "เก้า | gâo | nine",
         "สิบ | sìp | ten",
         "เบอร์อะไร | ber à-rai | what number?",
+        "ฉันอายุ...ปี | chǎn aa-yú ... bpii | I am ... years old",
         "ฉัน | chǎn | I",
         "เขา | khǎo | he / she",
-        "ฉันอายุสิบปี | chǎn aa-yú sìp bpii | I am ten years old",
-        "เขาอายุเก้าปี | khǎo aa-yú gâao bpii | he / she is nine years old",
-        "ขอโทษ | khǎaw-thôot | excuse me / sorry"
+        "ขอโทษ | khǎaw-thôot | excuse me / sorry",
+        "ขอบคุณ | khàawp-khun | thank you",
+        "สี่ | sìi | four (low tone)"
       ]
     },
     {
       "heading": "Teaching notes and explanation cues",
       "body": [
-        "Build the first digit map: 0 to 3: Give the learner a clean starting map for zero through three and explain that everyday Thai codes are usually said digit by digit.",
-        "Start with the first four digits you will hear all the time: ศูนย์ sǔun, หนึ่ง nùeng, สอง sǎawng, สาม sǎam.",
-        "For room numbers, phone numbers, and queue numbers, Thai usually says each digit one by one, not as one big math word.",
-        "Add 4 to 7 with pronunciation control: Teach the middle set where beginners often blur vowels or rush final consonants, especially with สี่, ห้า, หก, and เจ็ด.",
-        "Now add the middle set: สี่ sìi, ห้า hâa, หก hòk, เจ็ด jèt.",
-        "Do not treat these as just English labels with Thai written next to them. Hear the shape of each word: สี่ is long, หก is clipped, and เจ็ด ends sharply.",
-        "Finish 8 to 10 and ask for a number: Complete the 0-10 set and introduce เบอร์อะไร as a practical chunk for asking about room numbers, table numbers, and other everyday number labels.",
-        "Finish the set with แปด bpàaet, เก้า gâao, and สิบ sìp.",
-        "สิบ means ten, but for now the real job is not mental arithmetic. The real job is hearing each digit clearly and saying it back clearly.",
-        "Use numbers in short real phrases: Move from isolated digits into usable age and room-number phrases while explicitly reusing the pronoun and identity material from the rebuilt foundation lessons.",
-        "Numbers become much more useful when they plug into the people language you already know. From lesson three, you can now drop digits into frames such as ฉันอายุสิบปี or เขาอายุเก้าปี.",
-        "You already know pronouns like ฉัน, ผม, คุณ, and เขา. That means numbers are no longer floating on their own; they attach to real people, room numbers, and simple personal facts."
+        "The first six digits: 0 to 5: Give you a clean starting map for zero through five and show that Thai codes are usually read digit by digit.",
+        "Let's start with the first six digits you will hear constantly in Thailand. Listen first: ศูนย์ sǔun, หนึ่ง nùeng, สอง sǎawng, สาม sǎam, สี่ sìi, ห้า hâa.",
+        "Now say them with me: ศูนย์, หนึ่ง, สอง, สาม, สี่, ห้า. Good.",
+        "Finish the set: 6 to 10: Complete the digit set from six to ten, with attention to the short clipped sounds that beginners tend to stretch.",
+        "Now add the rest: หก hòk, เจ็ด jèt, แปด bpàet, เก้า gâo, สิบ sìp. Listen first.",
+        "Notice the shapes. หก and เจ็ด are short and clipped — your mouth closes quickly. แปด starts with a bp- sound that has no puff of air. เก้า is longer with a falling tone.",
+        "Ask for a number and say your age: Introduce the two practical chunks เบอร์อะไร and ฉันอายุ...ปี so digits become immediately usable in real exchanges.",
+        "Now make the digits useful. First, a question you will hear everywhere: เบอร์อะไร ber à-rai — what number? You hear this with rooms, tables, phones, and queue tickets. เบอร์ is a borrowed word for a number label.",
+        "Listen and repeat: เบอร์อะไรครับ. เบอร์อะไรค่ะ. Good. Now answer: someone asks เบอร์อะไร and the room is 307. You say สาม-ศูนย์-เจ็ด. Digit by digit.",
+        "Numbers in real exchanges: Move from isolated practice into short exchanges that combine numbers with known pronouns, courtesy phrases, and the age pattern, recycling prior material.",
+        "Now put everything together. You already know สวัสดี for greeting, ขอบคุณ for thanking, and ขอโทษ for getting attention. You know ฉัน, ผม, คุณ, and เขา for talking about people. Now numbers plug straight into that system.",
+        "Imagine someone asks คุณอายุเท่าไหร่ — how old are you? You answer: ฉันอายุแปดปี. Or ผมอายุสิบปี. Same pattern, different pronoun, different number.",
+        "Pronunciation beat: low tone vs rising tone: Train your ear on the low tone vs rising tone contrast that changes meaning in this lesson's vocabulary, specifically สี่ (four) vs สี (colour).",
+        "Before the roleplay, let's sharpen your ear. Thai tones change meaning. You have been practising this since lesson one with ครับ and ค่ะ. Today the key contrast is low tone versus rising tone.",
+        "Listen: สี่ sìi — that is a low tone. Your voice stays flat and low, like a calm, steady statement. Now listen: สี sǐi — that is a rising tone. Your voice lifts up from low to high, like asking really? in English."
       ]
     },
     {
       "heading": "Mini dialogues / role-play",
       "body": [
-        "A: สวัสดีค่ะ ขอโทษนะคะ คนนี้คือใครคะ | sà-wàt-dii khâ khǎaw-thôot ná khá khon níi kheuu khrai khá | Hello, excuse me, who is this person?",
-        "B: คนนี้คือมีนครับ | khon níi kheuu Miin khráp | This is Min.",
-        "A: เขาอายุเก้าปีใช่ไหมคะ | khǎo aa-yú gâao bpii châi mái khá | She is nine years old, right?",
-        "B: ใช่ครับ | châi khráp | Yes.",
-        "A: ห้องเบอร์อะไรคะ | hâawng ber à-rai khá | What is the room number?",
-        "B: ห้า-ศูนย์-สองครับ | hâa-sǔun-sǎawng khráp | Five-zero-two.",
-        "A: ขอบคุณค่ะ | khàawp-khun khâ | Thank you."
+        "You: สวัสดีครับ | sà-wàt-dii khráp | Hello.",
+        "Staff: สวัสดีค่ะ ห้องเบอร์อะไรคะ | sà-wàt-dii khâ hâawng ber à-rai khá | Hello. What is the room number?",
+        "You: ห้า-ศูนย์-สองครับ | hâa-sǔun-sǎawng khráp | Five-zero-two.",
+        "Staff: ค่ะ คุณอายุเท่าไหร่คะ | khâ khun aa-yú thâo-rài khá | Okay. How old are you?",
+        "You: ผมอายุสิบปีครับ | phǒm aa-yú sìp bpii khráp | I am ten years old.",
+        "Staff: สิบปีค่ะ ขอบคุณค่ะ | sìp bpii khâ khàawp-khun khâ | Ten years old. Thank you.",
+        "You: ขอบคุณครับ | khàawp-khun khráp | Thank you."
       ]
     },
     {
       "heading": "Practice drills (self-study)",
       "body": [
-        "Listen and repeat: ศูนย์-หนึ่ง-สอง-สาม, then say the same line backwards.",
-        "Tutor says one digit; learner points to 0, 1, 2, or 3 and then repeats the Thai word aloud.",
-        "Clap once for each digit: สี่-ห้า-หก-เจ็ด, keeping หก and เจ็ด short and controlled.",
-        "Minimal-cue drill: teacher says a digit in Thai, learner repeats only that digit without translating first.",
-        "Call-and-response: teacher says the Arabic numeral 8, 9, or 10; learner answers in Thai.",
-        "Prompt drill: teacher asks เบอร์อะไร and learner answers with a short digit string such as ห้า-ศูนย์-สอง.",
-        "Pattern drill: teacher gives a digit from zero to ten; learner builds ฉันอายุ...ปี or เขาอายุ...ปี with that digit.",
-        "Repair drill: learner hears a room number once, then must respond with either the number or ขอโทษ before hearing it again and repeating it back."
+        "Listen and repeat three times: ศูนย์-หนึ่ง-สอง-สาม-สี่-ห้า. Then say the same line backwards: ห้า-สี่-สาม-สอง-หนึ่ง-ศูนย์.",
+        "Your turn: I say a digit in English. You say the Thai word aloud before I show the answer. Ready? Two. Four. Zero. Five. One. Three.",
+        "Clap drill: clap once per digit from หก to สิบ, keeping หก, เจ็ด, แปด, and สิบ short and controlled.",
+        "Random recall: I say a number in English. You say the Thai word before I show it. Seven. Ten. Eight. Six. Nine.",
+        "Substitution drill: I start a room-number code. You finish it. ห้า-ศูนย์-... say สอง. Now สาม-ศูนย์-... say หก. Now เก้า-ศูนย์-... say แปด.",
+        "Prompt drill: I ask เบอร์อะไร. You answer with a digit string. Room 205? สอง-ศูนย์-ห้า. Room 409? สี่-ศูนย์-เก้า. Your turn.",
+        "Pattern drill: I give you a number. You build the age sentence. Five? ฉันอายุห้าปี. Eight? ฉันอายุแปดปี. Ten? ฉันอายุสิบปี.",
+        "Substitution drill: now change the pronoun. I say a number and a pronoun. เขา, seven? เขาอายุเจ็ดปี. ผม, nine? ผมอายุเก้าปี.",
+        "Response-building drill: I ask เบอร์อะไรครับ. You answer with room 601. Then I ask คุณอายุเท่าไหร่. You answer with age seven. Say your lines before looking.",
+        "Repair drill: I say a three-digit room number once, fast. If you catch it, repeat it back. If you miss it, say ขอโทษครับ or ขอโทษค่ะ, then I repeat and you try again.",
+        "Substitution drill: change the person. เขาอายุสามปี. Now change the number: เขาอายุหกปี. Now change both: ฉันอายุสิบปี.",
+        "Tone echo: I say สี่ sìi. Repeat it with a low tone. Now I say สี sǐi. Repeat it with a rising tone. Can you feel the difference?",
+        "Minimal pair choice: I say one word. Is it four or colour? Point to the answer, then say the word back to me."
       ]
     },
     {
@@ -86,42 +95,50 @@
         "ห้า | hâa | five",
         "หก | hòk | six",
         "เจ็ด | jèt | seven",
-        "แปด | bpàaet | eight",
-        "เก้า | gâao | nine",
+        "แปด | bpàet | eight",
+        "เก้า | gâo | nine",
         "สิบ | sìp | ten",
         "เบอร์อะไร | ber à-rai | what number?",
+        "ฉันอายุ...ปี | chǎn aa-yú ... bpii | I am ... years old",
         "ฉัน | chǎn | I",
         "เขา | khǎo | he / she",
-        "ฉันอายุสิบปี | chǎn aa-yú sìp bpii | I am ten years old",
-        "เขาอายุเก้าปี | khǎo aa-yú gâao bpii | he / she is nine years old",
-        "ขอโทษ | khǎaw-thôot | excuse me / sorry"
+        "ขอโทษ | khǎaw-thôot | excuse me / sorry",
+        "ขอบคุณ | khàawp-khun | thank you",
+        "สี่ | sìi | four (low tone)"
       ]
     },
     {
       "heading": "Quick recap + memory aids",
       "body": [
-        "Thai digits are most useful when they are attached to a real beginner job such as a room number or an age.",
-        "Reuse pronouns from the previous lesson so numbers describe people, not just abstract counting.",
-        "Use อายุ + number + ปี for beginner age practice, then expand the range later.",
-        "If you miss a number, recycle ขอโทษ or another repair phrase instead of going silent."
+        "Look away and count from zero to ten in Thai. Say each digit aloud before looking back: ศูนย์, หนึ่ง, สอง, สาม, สี่, ห้า, หก, เจ็ด, แปด, เก้า, สิบ.",
+        "How do you ask for a room number or table number? เบอร์อะไร.",
+        "How do you say I am eight years old? ฉันอายุแปดปี — pronoun, then อายุ, then the number, then ปี.",
+        "What is the difference between สี่ sìi and สี sǐi? Low tone means four. Rising tone means colour.",
+        "If you miss a number, what do you say? ขอโทษครับ or ขอโทษค่ะ, then listen again."
       ]
     }
   ],
   "drills": [
-    "Listen and repeat: ศูนย์-หนึ่ง-สอง-สาม, then say the same line backwards.",
-    "Tutor says one digit; learner points to 0, 1, 2, or 3 and then repeats the Thai word aloud.",
-    "Clap once for each digit: สี่-ห้า-หก-เจ็ด, keeping หก and เจ็ด short and controlled.",
-    "Minimal-cue drill: teacher says a digit in Thai, learner repeats only that digit without translating first.",
-    "Call-and-response: teacher says the Arabic numeral 8, 9, or 10; learner answers in Thai.",
-    "Prompt drill: teacher asks เบอร์อะไร and learner answers with a short digit string such as ห้า-ศูนย์-สอง.",
-    "Pattern drill: teacher gives a digit from zero to ten; learner builds ฉันอายุ...ปี or เขาอายุ...ปี with that digit.",
-    "Repair drill: learner hears a room number once, then must respond with either the number or ขอโทษ before hearing it again and repeating it back."
+    "Listen and repeat three times: ศูนย์-หนึ่ง-สอง-สาม-สี่-ห้า. Then say the same line backwards: ห้า-สี่-สาม-สอง-หนึ่ง-ศูนย์.",
+    "Your turn: I say a digit in English. You say the Thai word aloud before I show the answer. Ready? Two. Four. Zero. Five. One. Three.",
+    "Clap drill: clap once per digit from หก to สิบ, keeping หก, เจ็ด, แปด, and สิบ short and controlled.",
+    "Random recall: I say a number in English. You say the Thai word before I show it. Seven. Ten. Eight. Six. Nine.",
+    "Substitution drill: I start a room-number code. You finish it. ห้า-ศูนย์-... say สอง. Now สาม-ศูนย์-... say หก. Now เก้า-ศูนย์-... say แปด.",
+    "Prompt drill: I ask เบอร์อะไร. You answer with a digit string. Room 205? สอง-ศูนย์-ห้า. Room 409? สี่-ศูนย์-เก้า. Your turn.",
+    "Pattern drill: I give you a number. You build the age sentence. Five? ฉันอายุห้าปี. Eight? ฉันอายุแปดปี. Ten? ฉันอายุสิบปี.",
+    "Substitution drill: now change the pronoun. I say a number and a pronoun. เขา, seven? เขาอายุเจ็ดปี. ผม, nine? ผมอายุเก้าปี.",
+    "Response-building drill: I ask เบอร์อะไรครับ. You answer with room 601. Then I ask คุณอายุเท่าไหร่. You answer with age seven. Say your lines before looking.",
+    "Repair drill: I say a three-digit room number once, fast. If you catch it, repeat it back. If you miss it, say ขอโทษครับ or ขอโทษค่ะ, then I repeat and you try again.",
+    "Substitution drill: change the person. เขาอายุสามปี. Now change the number: เขาอายุหกปี. Now change both: ฉันอายุสิบปี.",
+    "Tone echo: I say สี่ sìi. Repeat it with a low tone. Now I say สี sǐi. Repeat it with a rising tone. Can you feel the difference?",
+    "Minimal pair choice: I say one word. Is it four or colour? Point to the answer, then say the word back to me."
   ],
   "answerKey": [
     "Use PTM inline transliteration marks in every practice line.",
-    "Thai digits are most useful when they are attached to a real beginner job such as a room number or an age.",
-    "Reuse pronouns from the previous lesson so numbers describe people, not just abstract counting.",
-    "Use อายุ + number + ปี for beginner age practice, then expand the range later.",
-    "If you miss a number, recycle ขอโทษ or another repair phrase instead of going silent."
+    "Look away and count from zero to ten in Thai. Say each digit aloud before looking back: ศูนย์, หนึ่ง, สอง, สาม, สี่, ห้า, หก, เจ็ด, แปด, เก้า, สิบ.",
+    "How do you ask for a room number or table number? เบอร์อะไร.",
+    "How do you say I am eight years old? ฉันอายุแปดปี — pronoun, then อายุ, then the number, then ปี.",
+    "What is the difference between สี่ sìi and สี sǐi? Low tone means four. Rising tone means colour.",
+    "If you miss a number, what do you say? ขอโทษครับ or ขอโทษค่ะ, then listen again."
   ]
 }

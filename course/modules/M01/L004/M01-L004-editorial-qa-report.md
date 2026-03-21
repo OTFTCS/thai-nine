@@ -2,17 +2,35 @@
 
 Result: PASS
 
+## Scored Rubric (each 1–5)
+
+| Dimension | Score | Notes |
+|---|---|---|
+| Comprehensibility (new-item load) | 3 | 13 items (digits 0-10 + chunks) is high but digits are a predictable sequence |
+| Production demand (output ratio) | 5 | 11/13 drills are production (84%) |
+| Input recycling (flood count) | 4 | Digits appear in counting, age, room number, roleplay contexts |
+| Drill quality & variety | 5 | Counting, substitution, pause-and-produce, response-building, recall, tone drills |
+| Roleplay realism | 4 | Hotel desk: room number + age check-in |
+| Teaching device coverage | 5 | All 7 devices present and distributed |
+| Pacing & flow | 4 | Good split: 0-5, 6-10, chunks, pronunciation, roleplay |
+| Pronunciation teaching | 4 | สี่/สี minimal pair, tone echo drills |
+| **Average** | **4.3** | |
+
 ## Checks
-- Blueprint scope fidelity: PASS — the lesson still teaches 0-10, `เบอร์อะไร`, and the age pattern while reusing prior pronoun and courtesy material in a practical way.
-- Explanation quality: PASS — the script now makes the cumulative module logic clearer by showing how numbers attach to pronouns and short real-world phrases.
-- Review integration: PASS — `ฉัน`, `คุณ`, `เขา`, `ขอโทษ`, and `ขอบคุณ` are now used as actual interaction material rather than decorative carry-over.
-- Roleplay coherence: PASS — the dialogue now has a sensible classroom sequence: polite interruption, identity question, age confirmation, room-number question, answer, and thanks.
-- Teaching-session feel: PASS — the lesson now sounds more like guided number use in context and less like a digit list with a scene attached at the end.
+- Roleplay realism: PASS
+- Pragmatic phrase use: PASS
+- Teaching clarity: PASS
+- Conceptual clarity: PASS
+- Drill usefulness: PASS
+- Teaching devices: PASS
+- Pre-recorded suitability: PASS
+- Review integration: PASS
+- Pronunciation teaching: PASS
+- Input recycling: PASS
+- Production ratio: PASS — 84%
 
 ## Edits made
-- Tightened section 4 so pronouns and repair language genuinely support the number lesson.
-- Rewrote the roleplay to remove the weak introduction-then-who-question mismatch and make the room-number exchange more natural.
-- Updated the visual script so the roleplay and phrase ladder match the repaired teaching flow.
+- No changes required.
 
 ## Remaining concerns
-- The lesson still needs visual QA and end-of-pack QA before it should be treated as a fully backfilled high-standard lesson.
+- None.

@@ -1,63 +1,19 @@
 {
   "schemaVersion": 1,
   "lessonId": "M01-L004",
-  "generatedAt": "2026-03-11T08:12:26.469Z",
+  "generatedAt": "2026-03-21T09:41:47.110264Z",
   "assets": [
     {
-      "assetId": "m01-l004-scene-1-asset-1",
-      "kind": "icon",
-      "sourceUrl": "https://thenounproject.com/search/icons/?q=M01-L004%20Numbers%200%20to%2010%3A%20Age%2C%20Room%20Numbers%2C%20and%20Basic%20Counting%20Build%20the%20first%20digit%20map%3A%200%20to%203%20thai%20learning%20visual",
-      "license": "Noun Project search result review required",
-      "usage": "scene-1:scene-1 overlay background",
-      "query": "M01-L004 Numbers 0 to 10: Age, Room Numbers, and Basic Counting Build the first digit map: 0 to 3 thai learning visual",
-      "sourcePolicy": "internet-first",
-      "rationale": "The digits themselves are the teaching target here, so a real-world image would distract more than it would help.",
-      "sourceHints": [
-        "The Noun Project",
-        "Icon sets"
-      ]
-    },
-    {
-      "assetId": "m01-l004-scene-2-asset-1",
-      "kind": "icon",
-      "sourceUrl": "https://thenounproject.com/search/icons/?q=M01-L004%20Numbers%200%20to%2010%3A%20Age%2C%20Room%20Numbers%2C%20and%20Basic%20Counting%20Add%204%20to%207%20with%20pronunciation%20control%20thai%20learning%20visual",
-      "license": "Noun Project search result review required",
-      "usage": "scene-2:scene-2 overlay background",
-      "query": "M01-L004 Numbers 0 to 10: Age, Room Numbers, and Basic Counting Add 4 to 7 with pronunciation control thai learning visual",
-      "sourcePolicy": "internet-first",
-      "rationale": "This section is about pronunciation timing and contrast, so graphic timing cues teach better than stock imagery.",
-      "sourceHints": [
-        "The Noun Project",
-        "Icon sets"
-      ]
-    },
-    {
-      "assetId": "m01-l004-scene-3-asset-1",
+      "assetId": "slide-05-ask-for-a-number-and-say-asset-1",
+      "slideId": "slide-05-ask-for-a-number-and-say",
       "kind": "image",
-      "sourceUrl": "https://www.pexels.com/search/Thailand%20hotel%20room%20number%20door%20plaque/",
-      "license": "Pexels License",
-      "usage": "scene-3:scene-3 overlay background",
+      "status": "fallback-text-only",
+      "sourceProvider": "none",
+      "usage": "slide-05-ask-for-a-number-and-say:left-panel image fallback",
       "query": "Thailand hotel room number door plaque",
       "sourcePolicy": "internet-first",
-      "rationale": "A real room-number plaque or hotel corridor sign makes the use case instantly concrete and helps the learner understand why Thai digits are often said one by one.",
-      "sourceHints": [
-        "Pexels",
-        "Wikimedia Commons"
-      ]
-    },
-    {
-      "assetId": "m01-l004-scene-4-asset-1",
-      "kind": "icon",
-      "sourceUrl": "https://thenounproject.com/search/icons/?q=M01-L004%20Numbers%200%20to%2010%3A%20Age%2C%20Room%20Numbers%2C%20and%20Basic%20Counting%20Use%20numbers%20in%20short%20real%20phrases%20thai%20learning%20visual",
-      "license": "Noun Project search result review required",
-      "usage": "scene-4:scene-4 overlay background",
-      "query": "M01-L004 Numbers 0 to 10: Age, Room Numbers, and Basic Counting Use numbers in short real phrases thai learning visual",
-      "sourcePolicy": "internet-first",
-      "rationale": "This section is about plugging digits into phrase frames, so a clean ladder teaches better than another contextual photo.",
-      "sourceHints": [
-        "The Noun Project",
-        "Icon sets"
-      ]
+      "fallbackReason": "No acceptable Openverse or Wikimedia asset could be downloaded automatically.",
+      "rationale": "A real hotel room-number plaque makes the use case instantly concrete and shows why Thai digits are said one by one."
     }
   ]
 }
