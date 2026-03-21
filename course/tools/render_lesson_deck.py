@@ -592,36 +592,36 @@ def add_divider(slide, left, top, width, color=DIVIDER_COLOR, height=Pt(2)):
     return shape
 
 
-def add_phrase_card(slide, left, top, width, thai, translit, english):
-    add_card(slide, left, top, width, Inches(1.72))
-    accent = slide.shapes.add_shape(MSO_SHAPE.RECTANGLE, left + Inches(0.15), top + Inches(0.22), Inches(0.08), Inches(1.25))
+def add_phrase_card(slide, left, top, width, thai, translit, english, compact=False):
+    card_h = Inches(0.75) if compact else Inches(1.72)
+    accent_h = Inches(0.45) if compact else Inches(1.25)
+    add_card(slide, left, top, width, card_h)
+    accent = slide.shapes.add_shape(MSO_SHAPE.RECTANGLE, left + Inches(0.15), top + Inches(0.12 if compact else 0.22), Inches(0.08), accent_h)
     accent.fill.solid()
     accent.fill.fore_color.rgb = ACCENT_GOLD
     accent.line.fill.background()
     text_left = left + Inches(0.38)
-    add_textbox(
-        slide,
-        text_left,
-        top + Inches(0.12),
-        width - Inches(0.5),
-        Inches(0.72),
-        thai,
-        font_name=FONT_THAI,
-        font_size=SIZE_THAI_LARGE,
-        bold=True,
-        translit_entries=[(thai, translit)],
-    )
-    add_textbox(
-        slide,
-        text_left,
-        top + Inches(0.96),
-        width - Inches(0.5),
-        Inches(0.3),
-        english,
-        font_name=FONT_LATIN,
-        font_size=SIZE_ENGLISH,
-        color=INK_LIGHT,
-    )
+    if compact:
+        # Compact: Thai + translit on one line, English on next, smaller fonts
+        add_textbox(
+            slide, text_left, top + Inches(0.08), width - Inches(0.5), Inches(0.35),
+            thai, font_name=FONT_THAI, font_size=SIZE_THAI_SMALL, bold=True,
+            translit_entries=[(thai, translit)],
+        )
+        add_textbox(
+            slide, text_left, top + Inches(0.42), width - Inches(0.5), Inches(0.25),
+            english, font_name=FONT_LATIN, font_size=Pt(13), color=INK_LIGHT,
+        )
+    else:
+        add_textbox(
+            slide, text_left, top + Inches(0.12), width - Inches(0.5), Inches(0.72),
+            thai, font_name=FONT_THAI, font_size=SIZE_THAI_LARGE, bold=True,
+            translit_entries=[(thai, translit)],
+        )
+        add_textbox(
+            slide, text_left, top + Inches(0.96), width - Inches(0.5), Inches(0.3),
+            english, font_name=FONT_LATIN, font_size=SIZE_ENGLISH, color=INK_LIGHT,
+        )
 
 
 def add_section_header(slide, title, eyebrow, translit_entries: list[tuple[str, str]] | None = None):
@@ -668,10 +668,13 @@ def parse_triplet_lines(lines: list[str]) -> list[tuple[str, str, str]]:
 
 
 def add_triplet_rows(slide, left, top, width, lines: list[str]) -> float:
+    parsed = parse_triplet_lines(lines[:6])
+    compact = len(parsed) > 4
+    spacing = Inches(1.92) if len(parsed) <= 3 else Inches(1.4) if len(parsed) <= 4 else Inches(0.88)
     current_top = top
-    for thai, translit, english in parse_triplet_lines(lines[:4]):
-        add_phrase_card(slide, left, current_top, width, thai, translit, english)
-        current_top += Inches(1.92)
+    for thai, translit, english in parsed:
+        add_phrase_card(slide, left, current_top, width, thai, translit, english, compact=compact)
+        current_top += spacing
     return current_top
 
 
@@ -915,7 +918,7 @@ def build_teaching_slide(
             "id": f"{slide_id}-triplets",
             "kind": "triplet-list",
             "heading": "Key language",
-            "lines": section.get("onScreenBullets", [])[:4],
+            "lines": section.get("onScreenBullets", [])[:6],
         },
         {
             "id": f"{slide_id}-practice",
