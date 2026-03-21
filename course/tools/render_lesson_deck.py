@@ -642,15 +642,17 @@ def add_section_header(slide, title, eyebrow, translit_entries: list[tuple[str, 
             bold=True,
             translit_entries=translit_entries,
         )
+    # Use smaller font for long titles to prevent wrapping overlap
+    title_font = Pt(28) if len(title) > 35 else SIZE_TITLE
     add_textbox(
         slide,
         CONTENT_LEFT,
         Inches(0.58),
         header_width,
-        Inches(0.5),
+        Inches(0.7),
         title,
         font_name=FONT_LATIN,
-        font_size=SIZE_TITLE,
+        font_size=title_font,
         bold=True,
         translit_entries=translit_entries,
     )
@@ -1009,12 +1011,12 @@ def build_deck_source(
     )
 
     objective_lines = [
-        row.get("lesson_primary_outcome", ""),
-        row.get("lesson_secondary_outcome", ""),
-        row.get("speaking_target", ""),
-        row.get("listening_target", ""),
+        _you(row.get("lesson_primary_outcome", "")),
+        _you(row.get("lesson_secondary_outcome", "")),
+        _you(row.get("speaking_target", "")),
+        _you(row.get("listening_target", "")),
     ]
-    objective_lines = [line for line in objective_lines if line][:4] or [script.get("objective", "")]
+    objective_lines = [line for line in objective_lines if line][:4] or [_you(script.get("objective", ""))]
     slides.append(
         {
             "id": "slide-02-objectives",

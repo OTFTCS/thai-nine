@@ -70,8 +70,8 @@
       "estimatedSeconds": 19,
       "layout": "objectives-list",
       "speakerNotes": [
-        "Learner can greet people politely, thank others, apologize, and respond yes/no in a friendly first encounter.",
-        "Learner can recycle recent vocabulary while using basic affirmation and negation in short controlled output.",
+        "You can greet people politely, thank others, apologize, and respond yes/no in a friendly first encounter.",
+        "You can recycle recent vocabulary while using basic affirmation and negation in short controlled output.",
         "Deliver a 2-line greeting exchange with the correct polite ending.",
         "Catch greetings, thanks, apologies, and polite particles in slow speech."
       ],
@@ -81,8 +81,8 @@
           "kind": "bullet-list",
           "heading": "Objectives",
           "lines": [
-            "Learner can greet people politely, thank others, apologize, and respond yes/no in a friendly first encounter.",
-            "Learner can recycle recent vocabulary while using basic affirmation and negation in short controlled output.",
+            "You can greet people politely, thank others, apologize, and respond yes/no in a friendly first encounter.",
+            "You can recycle recent vocabulary while using basic affirmation and negation in short controlled output.",
             "Deliver a 2-line greeting exchange with the correct polite ending.",
             "Catch greetings, thanks, apologies, and polite particles in slow speech."
           ]
@@ -92,8 +92,8 @@
       "visualStrategy": {
         "onScreenGoal": "Make the lesson goals visible before the teaching slides begin.",
         "teachingVisuals": [
-          "Learner can greet people politely, thank others, apologize, and respond yes/no in a friendly first encounter.",
-          "Learner can recycle recent vocabulary while using basic affirmation and negation in short controlled output.",
+          "You can greet people politely, thank others, apologize, and respond yes/no in a friendly first encounter.",
+          "You can recycle recent vocabulary while using basic affirmation and negation in short controlled output.",
           "Deliver a 2-line greeting exchange with the correct polite ending.",
           "Catch greetings, thanks, apologies, and polite particles in slow speech."
         ],
