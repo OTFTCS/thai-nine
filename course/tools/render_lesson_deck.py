@@ -63,13 +63,13 @@ FONT_LATIN = "Sarabun"
 FONT_TRANSLIT = "Sarabun"
 
 SIZE_TITLE = Pt(36)
-SIZE_THAI_LARGE = Pt(32)
-SIZE_THAI_MED = Pt(26)
-SIZE_THAI_SMALL = Pt(22)
-SIZE_TRANSLIT = Pt(15)
-SIZE_ENGLISH = Pt(15)
-SIZE_BODY = Pt(19)
-SIZE_BODY_SMALL = Pt(15)
+SIZE_THAI_LARGE = Pt(36)
+SIZE_THAI_MED = Pt(30)
+SIZE_THAI_SMALL = Pt(26)
+SIZE_TRANSLIT = Pt(17)
+SIZE_ENGLISH = Pt(17)
+SIZE_BODY = Pt(22)
+SIZE_BODY_SMALL = Pt(17)
 SIZE_LABEL = Pt(12)
 
 OPENVERSE_ENDPOINT = "https://api.openverse.org/v1/images/"
@@ -575,12 +575,11 @@ def add_paragraphs(
     return box
 
 
-def add_card(slide, left, top, width, height, fill=CARD_BG):
+def add_card(slide, left, top, width, height, fill=None):
+    """Invisible layout spacer — no visible box drawn."""
     card = slide.shapes.add_shape(MSO_SHAPE.ROUNDED_RECTANGLE, left, top, width, height)
-    card.fill.solid()
-    card.fill.fore_color.rgb = fill
-    card.line.color.rgb = CARD_BORDER
-    card.adjustments[0] = 0.06
+    card.fill.background()  # Transparent
+    card.line.fill.background()  # No border
     return card
 
 
@@ -688,7 +687,11 @@ def add_bullet_block(
     accent_color=ACCENT_TEAL,
     translit_entries: list[tuple[str, str]] | None = None,
 ):
-    add_card(slide, left, top, width, Inches(0.65 + 0.38 * max(2, len(lines))))
+    # Cap lines to fit within slide bottom
+    available_height = SLIDE_HEIGHT - top - Inches(0.3)
+    max_lines = max(1, int((available_height - Inches(0.48)) / Inches(0.38)))
+    display_lines = lines[:min(5, max_lines)]
+
     add_textbox(
         slide,
         left + Inches(0.22),
@@ -703,7 +706,7 @@ def add_bullet_block(
         translit_entries=translit_entries,
     )
     current_top = top + Inches(0.48)
-    for line in lines[:5]:
+    for line in display_lines:
         dot = slide.shapes.add_shape(MSO_SHAPE.OVAL, left + Inches(0.22), current_top + Inches(0.1), Inches(0.09), Inches(0.09))
         dot.fill.solid()
         dot.fill.fore_color.rgb = accent_color
