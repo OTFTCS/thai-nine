@@ -829,45 +829,22 @@ def render_teaching(
     right_column_left = CONTENT_LEFT + usable_width * 0.58
     right_column_width = usable_width * 0.40
 
-    resolved_asset = next((asset for asset in slide_data["assets"] if asset.get("status") == "resolved" and asset.get("localPath")), None)
-    image_usage = slide_data["visualStrategy"]["imageUsage"]
+    # Text-only slides — no image fetching or rendering. Add images in Canva if needed.
     triplet_blocks = next((block for block in slide_data["textBlocks"] if block["kind"] == "triplet-list"), None)
     drill_block = next((block for block in slide_data["textBlocks"] if block["kind"] in {"bullet-list", "note"}), None)
 
-    if resolved_asset and image_usage == "real-image":
-        add_card(slide, right_column_left, top, right_column_width, Inches(2.45))
-        fit_picture(
-            slide,
-            lesson_root / resolved_asset["localPath"],
-            right_column_left + Inches(0.18),
-            top + Inches(0.18),
-            Inches(3.6),
-            Inches(2.08),
-        )
-        add_bullet_block(
-            slide,
-            right_column_left,
-            Inches(4.05),
-            right_column_width,
-            "Visual rationale",
-            [slide_data["visualStrategy"]["rationale"]],
-            translit_entries=translit_entries,
-        )
-    else:
-        # Teacher cues go to speaker notes only, not visible on slide
-        pass
-
     content_bottom = top
     if triplet_blocks:
-        content_bottom = add_triplet_rows(slide, content_left, top, left_column_width, triplet_blocks["lines"])
+        # Use full constrained width for triplet cards
+        content_bottom = add_triplet_rows(slide, content_left, top, usable_width, triplet_blocks["lines"])
     elif slide_data["thaiFocus"]:
         first = slide_data["thaiFocus"][0]
-        add_phrase_card(slide, content_left, top, left_column_width, first["thai"], first["translit"], first["english"])
+        add_phrase_card(slide, content_left, top, usable_width, first["thai"], first["translit"], first["english"])
         content_bottom = top + Inches(1.92)
 
     if drill_block:
-        # Place drill block below content with a gap, using full width
-        drill_top = max(content_bottom + Inches(0.2), Inches(4.85))
+        # Place drill block below content with a small gap — don't push too far down
+        drill_top = content_bottom + Inches(0.15)
         add_bullet_block(
             slide,
             content_left,
