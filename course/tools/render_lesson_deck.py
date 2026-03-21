@@ -41,7 +41,7 @@ PIP_Y = Inches(0)              # Top-right
 LEFT_ZONE_W = SLIDE_WIDTH  # Full width (legacy alias, kept for opener divider)
 CONTENT_LEFT = Inches(0.8)
 CONTENT_TOP = Inches(1.15)
-CONTENT_WIDTH_BESIDE_PIP = PIP_X - CONTENT_LEFT - Inches(0.2)  # ~8.1" (beside PiP)
+CONTENT_WIDTH_BESIDE_PIP = PIP_X - CONTENT_LEFT - Inches(0.6)  # ~7.7" (beside PiP, with margin)
 CONTENT_WIDTH = Inches(11.0)                                     # Full width (below PiP)
 PIP_BOTTOM = PIP_Y + PIP_H  # Y threshold: below this, full width is safe
 
@@ -115,6 +115,19 @@ def to_hex(color: RGBColor) -> str:
 def slugify(value: str) -> str:
     slug = re.sub(r"[^a-zA-Z0-9]+", "-", value.strip().lower()).strip("-")
     return slug or "asset"
+
+
+def _you(text: str) -> str:
+    """Replace 'Learner' with 'You' in user-facing text (2nd person for 1:1 feel)."""
+    return (text
+            .replace("Learner can ", "You can ")
+            .replace("learner can ", "you can ")
+            .replace("The learner ", "You ")
+            .replace("the learner ", "you ")
+            .replace("A learner ", "You ")
+            .replace("a learner ", "you ")
+            .replace("Learner ", "You ")
+            .replace("learner ", "you "))
 
 
 def contains_thai(text: str) -> bool:
@@ -978,8 +991,8 @@ def build_deck_source(
                     "kind": "bullet-list",
                     "heading": "Lesson focus",
                     "lines": [
-                        row.get("lesson_primary_outcome", "") or script.get("objective", ""),
-                        row.get("speaking_target", "") or script.get("teachingFrame", {}).get("learnerTakeaway", ""),
+                        _you(row.get("lesson_primary_outcome", "") or script.get("objective", "")),
+                        _you(row.get("speaking_target", "") or script.get("teachingFrame", {}).get("learnerTakeaway", "")),
                     ],
                 }
             ],
@@ -1091,7 +1104,7 @@ def build_deck_source(
         }
     )
 
-    recap_lines = script.get("recap", [])[:5] or [script.get("objective", "")]
+    recap_lines = [_you(line) for line in (script.get("recap", [])[:5] or [script.get("objective", "")])]
     slides.append(
         {
             "id": f"slide-{len(slides) + 1:02d}-recap",
@@ -1121,7 +1134,7 @@ def build_deck_source(
     )
 
     closing_lines = [
-        script.get("teachingFrame", {}).get("learnerTakeaway", ""),
+        _you(script.get("teachingFrame", {}).get("learnerTakeaway", "")),
         f"Next: {row.get('module_title', '').strip()} continues.",
     ]
     closing_lines = [line for line in closing_lines if line]
