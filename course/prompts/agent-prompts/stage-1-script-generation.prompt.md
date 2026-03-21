@@ -342,17 +342,17 @@ At least 1 drill per lesson must be a pronunciation drill. Good pronunciation dr
 
 Do not skip pronunciation. Thai tones are the #1 challenge for Western learners, and every lesson is an opportunity to train the ear.
 
-## Cognitive load limits
+## Cognitive load and vocabulary scope
 
-Do not overwhelm the learner with too many new items.
+The blueprint defines WHAT to teach. You define HOW to scaffold it.
 
-Hard limits:
-- **Max 5–7 new vocabulary items per lesson** (A0 level); up to 8–10 for A2+
-- **Max 2–3 new items per section** before practice begins
+Rules:
+- **Teach ALL vocabulary from `new_vocab_core` and `new_chunks_core` in the blueprint.** Never skip or deprioritize blueprint vocabulary.
+- **Scaffold by splitting across sections** — max 5–6 new items per section before practice begins
 - Each new item must appear in **3+ varied contexts** within the lesson (explanation, drill, roleplay, recap — not just its own section)
-- **95% comprehensibility rule**: the learner should understand 95%+ of what they hear in any given section; only 1–2 things should be genuinely new at any moment
+- **95% comprehensibility rule**: within any given section, only the items being taught in that section should be genuinely new; the rest should be known or just introduced
 
-If a lesson has too much vocabulary from the blueprint, split teaching across sections and prioritize the highest-frequency items. Flag lower-frequency items as "exposure only" in notes.
+If the blueprint has many items (e.g., numbers 0-10 = 11 words), split them across 2-3 teaching sections (e.g., 0-5 in section 1, 6-10 in section 2, chunks in section 3). Do not cap the total — the blueprint is the source of truth.
 
 ## Pushed output requirements
 

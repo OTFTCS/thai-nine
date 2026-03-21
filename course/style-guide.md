@@ -47,7 +47,7 @@ Scripts and decks must work for both. Use "You" (not "Learner") in roleplay labe
 - Reuse vocabulary in at least 3 different contexts per lesson.
 - One micro-quiz per lesson (5–8 items).
 - No unseen vocabulary in quiz.
-- Max 5–7 new vocabulary items per lesson (A0); 8–10 for A2+.
+- Teach ALL vocabulary from the blueprint. Scaffold across sections (max 5–6 per section).
 - Max 2–3 new items per section before practice begins.
 - At least 40% of drill moments must require learner production (speaking), not just recognition.
 - Each new item must appear in 3+ varied contexts across the lesson.

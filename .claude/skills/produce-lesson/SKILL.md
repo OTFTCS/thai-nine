@@ -82,7 +82,7 @@ Following the rules in `stage-1-script-generation.prompt.md`, write these 4 file
 - `policies.imageSourcing: "INTERNET_FIRST_NO_GENERATIVE_DEFAULT"`
 
 **Pedagogy requirements:**
-- Max 5-7 new vocab items total, 2-3 per section
+- Teach ALL vocabulary from the blueprint's `new_vocab_core` and `new_chunks_core` — never skip items. Scaffold by splitting across sections (max 5-6 per section)
 - 40%+ production drills (substitution, response-building, pause-and-produce)
 - Each new item in 3+ contexts across the lesson (input flood)
 - At least 1 drill format used twice with different content (task repetition)
