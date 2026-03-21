@@ -136,10 +136,10 @@
     },
     {
       "id": "m01-l004-c13",
-      "vocabId": "v-2d97b680f6",
-      "front": "ฉันอายุ...ปี",
-      "back": "I am ... years old",
-      "translit": "chǎn aa-yú ... bpii",
+      "vocabId": "v-09bb666e5f",
+      "front": "อายุ",
+      "back": "age",
+      "translit": "aa-yú",
       "tags": [
         "M01-L004",
         "core"
@@ -147,10 +147,10 @@
     },
     {
       "id": "m01-l004-c14",
-      "vocabId": "v-0ab46f92e7",
-      "front": "ฉัน",
-      "back": "I",
-      "translit": "chǎn",
+      "vocabId": "v-8b9cee2530",
+      "front": "ปี",
+      "back": "year(s) — used for adult ages",
+      "translit": "bpii",
       "tags": [
         "M01-L004",
         "core"
@@ -158,10 +158,10 @@
     },
     {
       "id": "m01-l004-c15",
-      "vocabId": "v-e3ef8a701b",
-      "front": "เขา",
-      "back": "he / she",
-      "translit": "khǎo",
+      "vocabId": "v-c9337e2739",
+      "front": "สวัสดี",
+      "back": "hello",
+      "translit": "sà-wàt-dii",
       "tags": [
         "M01-L004",
         "core"
@@ -169,17 +169,6 @@
     },
     {
       "id": "m01-l004-c16",
-      "vocabId": "v-6fce5e8c2c",
-      "front": "ขอโทษ",
-      "back": "excuse me / sorry",
-      "translit": "khǎaw-thôot",
-      "tags": [
-        "M01-L004",
-        "core"
-      ]
-    },
-    {
-      "id": "m01-l004-c17",
       "vocabId": "v-217b46aa5a",
       "front": "ขอบคุณ",
       "back": "thank you",
@@ -190,7 +179,40 @@
       ]
     },
     {
+      "id": "m01-l004-c17",
+      "vocabId": "v-0ab46f92e7",
+      "front": "ฉัน",
+      "back": "I",
+      "translit": "chǎn",
+      "tags": [
+        "M01-L004",
+        "core"
+      ]
+    },
+    {
       "id": "m01-l004-c18",
+      "vocabId": "v-acdc9c7f8e",
+      "front": "ผม",
+      "back": "I (male)",
+      "translit": "phǒm",
+      "tags": [
+        "M01-L004",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l004-c19",
+      "vocabId": "v-e3ef8a701b",
+      "front": "เขา",
+      "back": "he / she",
+      "translit": "khǎo",
+      "tags": [
+        "M01-L004",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l004-c20",
       "vocabId": "v-a2028c5b78",
       "front": "สี่",
       "back": "four (low tone)",

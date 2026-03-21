@@ -424,6 +424,8 @@ Bad drills:
 
 ## Teaching the content, not about the content
 
+Every section's `languageFocus` must contain NEW items from the blueprint. Do not fill sections with review vocabulary as the primary focus items. Review vocab goes into drills, roleplay, and narration naturally — not into `languageFocus` as filler.
+
 Each section must teach the actual words and patterns with listen → repeat → use in context.
 
 Do NOT spend teaching sections on:

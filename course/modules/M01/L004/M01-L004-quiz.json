@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "lessonId": "M01-L004",
   "passScore": 80,
-  "generatedAt": "2026-03-21T09:41:58.231Z",
+  "generatedAt": "2026-03-21T13:58:29.897Z",
   "itemBankPath": "M01-L004-quiz-item-bank.json",
   "questions": [
     {
@@ -247,26 +247,46 @@
     },
     {
       "id": "q13",
-      "vocabId": "v-2d97b680f6",
+      "vocabId": "v-09bb666e5f",
       "type": "thai_to_english",
       "displayMode": "thai_only",
       "prompt": {
-        "text": "What is the best meaning of ฉันอายุ...ปี?",
-        "thai": "ฉันอายุ...ปี",
-        "translit": "chǎn aa-yú ... bpii"
+        "text": "What is the best meaning of อายุ?",
+        "thai": "อายุ",
+        "translit": "aa-yú"
       },
       "options": [
-        "I am ... years old",
+        "age",
         "zero",
         "one",
         "two"
       ],
-      "answer": "I am ... years old",
+      "answer": "age",
       "rationale": "Maps Thai form to target meaning from script languageFocus.",
-      "bankItemId": "v-2d97b680f6-thai-to-english"
+      "bankItemId": "v-09bb666e5f-thai-to-english"
     },
     {
       "id": "q14",
+      "vocabId": "v-8b9cee2530",
+      "type": "thai_to_english",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "What is the best meaning of ปี?",
+        "thai": "ปี",
+        "translit": "bpii"
+      },
+      "options": [
+        "year(s) — used for adult ages",
+        "zero",
+        "one",
+        "two"
+      ],
+      "answer": "year(s) — used for adult ages",
+      "rationale": "Maps Thai form to target meaning from script languageFocus.",
+      "bankItemId": "v-8b9cee2530-thai-to-english"
+    },
+    {
+      "id": "q15",
       "vocabId": "v-a2028c5b78",
       "type": "thai_to_english",
       "displayMode": "thai_only",
@@ -286,7 +306,7 @@
       "bankItemId": "v-a2028c5b78-thai-to-english"
     },
     {
-      "id": "q15",
+      "id": "q16",
       "vocabId": "v-871c9bd62f",
       "type": "english_to_thai",
       "displayMode": "english_only",
@@ -303,19 +323,6 @@
       "answer": "ศูนย์",
       "rationale": "Reverses mapping for active recall.",
       "bankItemId": "v-871c9bd62f-english-to-thai"
-    },
-    {
-      "id": "q16",
-      "vocabId": "v-871c9bd62f",
-      "type": "fill_translit",
-      "displayMode": "thai_only",
-      "prompt": {
-        "text": "Type the PTM transliteration for ศูนย์.",
-        "thai": "ศูนย์"
-      },
-      "answer": "sǔun",
-      "rationale": "Forces transliteration production with inline tone marks.",
-      "bankItemId": "v-871c9bd62f-fill-translit"
     }
   ],
   "coverage": {
@@ -324,7 +331,7 @@
       {
         "vocabId": "v-871c9bd62f",
         "thai": "ศูนย์",
-        "quizItemCount": 3
+        "quizItemCount": 2
       },
       {
         "vocabId": "v-6ad6888f1d",
@@ -382,8 +389,13 @@
         "quizItemCount": 1
       },
       {
-        "vocabId": "v-2d97b680f6",
-        "thai": "ฉันอายุ...ปี",
+        "vocabId": "v-09bb666e5f",
+        "thai": "อายุ",
+        "quizItemCount": 1
+      },
+      {
+        "vocabId": "v-8b9cee2530",
+        "thai": "ปี",
         "quizItemCount": 1
       },
       {

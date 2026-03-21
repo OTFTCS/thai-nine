@@ -90,6 +90,7 @@ Following the rules in `stage-1-script-generation.prompt.md`, write these 4 file
 - All 7 teaching devices present and distributed
 
 **Teaching quality — CRITICAL:**
+- Every section's languageFocus must contain NEW items from the blueprint — do NOT create filler sections with only review vocab
 - Each section must TEACH the content (listen → repeat → use in scenario), not ANALYZE it
 - Do NOT write sections about pronunciation theory, sound shapes, or linguistic observations — that goes in the pronunciation beat ONLY
 - Every section should end with the learner USING the new words in a mini-scenario
