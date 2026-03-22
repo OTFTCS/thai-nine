@@ -687,9 +687,9 @@ def add_bullet_block(
     accent_color=ACCENT_TEAL,
     translit_entries: list[tuple[str, str]] | None = None,
 ):
-    # Cap lines to fit within slide bottom
+    # Cap lines to fit within slide bottom (estimate conservatively)
     available_height = SLIDE_HEIGHT - top - Inches(0.3)
-    max_lines = max(1, int((available_height - Inches(0.48)) / Inches(0.38)))
+    max_lines = max(1, int((available_height - Inches(0.48)) / Inches(0.45)))
     display_lines = lines[:min(5, max_lines)]
 
     add_textbox(
@@ -706,7 +706,13 @@ def add_bullet_block(
         translit_entries=translit_entries,
     )
     current_top = top + Inches(0.48)
+    text_width = width - Inches(0.55)
+    # Estimate ~7 chars per inch at body-small size for mixed Thai/English
+    chars_per_line = max(1, int(text_width / 914400 * 7))
     for line in display_lines:
+        # Estimate wrapped line count and set textbox height accordingly
+        est_lines = max(1, -(-len(line) // chars_per_line))  # ceiling division
+        line_height = Inches(0.22) * est_lines + Inches(0.08)
         dot = slide.shapes.add_shape(MSO_SHAPE.OVAL, left + Inches(0.22), current_top + Inches(0.1), Inches(0.09), Inches(0.09))
         dot.fill.solid()
         dot.fill.fore_color.rgb = accent_color
@@ -715,15 +721,16 @@ def add_bullet_block(
             slide,
             left + Inches(0.38),
             current_top,
-            width - Inches(0.55),
-            Inches(0.3),
+            text_width,
+            line_height,
             line,
             font_name=FONT_LATIN,
             font_size=SIZE_BODY_SMALL,
             color=INK_DARK,
             translit_entries=translit_entries,
         )
-        current_top += Inches(0.34)
+        current_top += line_height + Inches(0.06)
+    return current_top
 
 
 def add_dialogue_turn(slide, left, top, width, speaker, thai, translit, english, learner=False):
@@ -880,10 +887,11 @@ def render_roleplay(slide, slide_data: dict[str, Any], translit_entries: list[tu
 def render_recap(slide, slide_data: dict[str, Any], translit_entries: list[tuple[str, str]] | None = None):
     add_section_header(slide, slide_data["title"], "Recap", translit_entries)
     # Top block is beside PiP — constrained width
-    add_bullet_block(slide, CONTENT_LEFT, Inches(1.55), CONTENT_WIDTH_BESIDE_PIP, "What you can now do", slide_data["textBlocks"][0]["lines"][:5], ACCENT_GOLD, translit_entries)
+    block_bottom = add_bullet_block(slide, CONTENT_LEFT, Inches(1.55), CONTENT_WIDTH_BESIDE_PIP, "What you can now do", slide_data["textBlocks"][0]["lines"][:5], ACCENT_GOLD, translit_entries)
     takeaway = slide_data["speakerNotes"][-1] if slide_data["speakerNotes"] else "Ready to record."
-    # Bottom block is below PiP — full width OK
-    add_bullet_block(slide, CONTENT_LEFT, Inches(4.55), CONTENT_WIDTH, "Remember", [takeaway], ACCENT_TEAL, translit_entries)
+    # Bottom block positioned below top block with gap — full width OK (below PiP)
+    remember_top = max(block_bottom + Inches(0.3), Inches(4.55))
+    add_bullet_block(slide, CONTENT_LEFT, remember_top, CONTENT_WIDTH, "Remember", [takeaway], ACCENT_TEAL, translit_entries)
 
 
 def render_closing(slide, slide_data: dict[str, Any], translit_entries: list[tuple[str, str]] | None = None):
