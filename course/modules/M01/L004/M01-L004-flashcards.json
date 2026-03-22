@@ -4,9 +4,9 @@
   "cards": [
     {
       "id": "m01-l004-c01",
-      "vocabId": "v-871c9bd62f",
+      "vocabId": "v-28499d926c",
       "front": "ศูนย์",
-      "back": "zero",
+      "back": "zero (0)",
       "translit": "sǔun",
       "tags": [
         "M01-L004",
@@ -15,9 +15,9 @@
     },
     {
       "id": "m01-l004-c02",
-      "vocabId": "v-6ad6888f1d",
+      "vocabId": "v-d5112f8a63",
       "front": "หนึ่ง",
-      "back": "one",
+      "back": "one (1)",
       "translit": "nùeng",
       "tags": [
         "M01-L004",
@@ -26,9 +26,9 @@
     },
     {
       "id": "m01-l004-c03",
-      "vocabId": "v-afdf936166",
+      "vocabId": "v-123bdecbd4",
       "front": "สอง",
-      "back": "two",
+      "back": "two (2)",
       "translit": "sǎawng",
       "tags": [
         "M01-L004",
@@ -37,9 +37,9 @@
     },
     {
       "id": "m01-l004-c04",
-      "vocabId": "v-368c7c205d",
+      "vocabId": "v-914a79ebbb",
       "front": "สาม",
-      "back": "three",
+      "back": "three (3)",
       "translit": "sǎam",
       "tags": [
         "M01-L004",
@@ -48,9 +48,9 @@
     },
     {
       "id": "m01-l004-c05",
-      "vocabId": "v-cf99ffc78e",
+      "vocabId": "v-0e247b83bd",
       "front": "สี่",
-      "back": "four",
+      "back": "four (4)",
       "translit": "sìi",
       "tags": [
         "M01-L004",
@@ -59,9 +59,9 @@
     },
     {
       "id": "m01-l004-c06",
-      "vocabId": "v-f028feb896",
+      "vocabId": "v-6c137e71d9",
       "front": "ห้า",
-      "back": "five",
+      "back": "five (5)",
       "translit": "hâa",
       "tags": [
         "M01-L004",
@@ -70,9 +70,9 @@
     },
     {
       "id": "m01-l004-c07",
-      "vocabId": "v-f6b67b4e6f",
+      "vocabId": "v-42ac27384d",
       "front": "หก",
-      "back": "six",
+      "back": "six (6)",
       "translit": "hòk",
       "tags": [
         "M01-L004",
@@ -81,9 +81,9 @@
     },
     {
       "id": "m01-l004-c08",
-      "vocabId": "v-73bffabf48",
+      "vocabId": "v-1569f39457",
       "front": "เจ็ด",
-      "back": "seven",
+      "back": "seven (7)",
       "translit": "jèt",
       "tags": [
         "M01-L004",
@@ -92,10 +92,10 @@
     },
     {
       "id": "m01-l004-c09",
-      "vocabId": "v-18e34df5c5",
+      "vocabId": "v-f2b6d018d8",
       "front": "แปด",
-      "back": "eight",
-      "translit": "bpàet",
+      "back": "eight (8)",
+      "translit": "bpàaet",
       "tags": [
         "M01-L004",
         "core"
@@ -103,9 +103,9 @@
     },
     {
       "id": "m01-l004-c10",
-      "vocabId": "v-61140bdbc1",
+      "vocabId": "v-d03227860c",
       "front": "เก้า",
-      "back": "nine",
+      "back": "nine (9)",
       "translit": "gâo",
       "tags": [
         "M01-L004",
@@ -114,9 +114,9 @@
     },
     {
       "id": "m01-l004-c11",
-      "vocabId": "v-31da0816ab",
+      "vocabId": "v-43a5e0b3f2",
       "front": "สิบ",
-      "back": "ten",
+      "back": "ten (10)",
       "translit": "sìp",
       "tags": [
         "M01-L004",
@@ -136,10 +136,10 @@
     },
     {
       "id": "m01-l004-c13",
-      "vocabId": "v-09bb666e5f",
-      "front": "อายุ",
-      "back": "age",
-      "translit": "aa-yú",
+      "vocabId": "v-2d97b680f6",
+      "front": "ฉันอายุ...ปี",
+      "back": "I am ... years old",
+      "translit": "chǎn aa-yú ... bpii",
       "tags": [
         "M01-L004",
         "core"
@@ -147,10 +147,10 @@
     },
     {
       "id": "m01-l004-c14",
-      "vocabId": "v-b30c0e11f5",
-      "front": "ปี",
-      "back": "year(s)",
-      "translit": "bpii",
+      "vocabId": "v-356fe4743b",
+      "front": "ห้อง",
+      "back": "room",
+      "translit": "hâwng",
       "tags": [
         "M01-L004",
         "core"
@@ -158,43 +158,10 @@
     },
     {
       "id": "m01-l004-c15",
-      "vocabId": "v-0ab46f92e7",
-      "front": "ฉัน",
-      "back": "I",
-      "translit": "chǎn",
-      "tags": [
-        "M01-L004",
-        "core"
-      ]
-    },
-    {
-      "id": "m01-l004-c16",
-      "vocabId": "v-796f86a0f6",
-      "front": "ผม",
-      "back": "I (male)",
-      "translit": "phǒm",
-      "tags": [
-        "M01-L004",
-        "core"
-      ]
-    },
-    {
-      "id": "m01-l004-c17",
-      "vocabId": "v-184e325026",
-      "front": "เขา",
-      "back": "he/she",
-      "translit": "khǎo",
-      "tags": [
-        "M01-L004",
-        "core"
-      ]
-    },
-    {
-      "id": "m01-l004-c18",
-      "vocabId": "v-a2028c5b78",
-      "front": "สี่",
-      "back": "four (low tone)",
-      "translit": "sìi",
+      "vocabId": "v-19ba2f5428",
+      "front": "สาม",
+      "back": "three (rising tone)",
+      "translit": "sǎam",
       "tags": [
         "M01-L004",
         "core"

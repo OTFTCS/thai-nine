@@ -1,82 +1,123 @@
-# Visual Script — M01-L004 (Numbers 0 to 10)
+# M01-L004 — Numbers 0 to 10 — Visual Script
 
-## Frame rule
-- Keep all teaching visuals in the left two-thirds.
-- The right third stays clear for Nine's talking head.
-- Prioritise number clarity, phrase frames, and code-style reading over decorative imagery.
+Layout: 16:9, top-right PiP placeholder for Nine.
+All teaching content in left two-thirds. Right third reserved for camera.
 
-## Section 1 — The first six digits: 0 to 5
-- Layout: focus-card
-- Learning focus: first digit set plus digit-by-digit code reading
-- Highlighted terms:
-  - ศูนย์ | sǔun | zero
-  - หนึ่ง | nùeng | one
-  - สอง | sǎawng | two
-  - สาม | sǎam | three
-  - สี่ | sìi | four
-  - ห้า | hâa | five
-- On-screen plan:
-  - Large stacked digit cards (0-5) with Thai script, transliteration, and Arabic numeral
-  - Code-reading example: ห้า-ศูนย์-สอง = room 502
-- Visual support choice: text-only
-- Stays inside left panel with plenty of breathing room
+---
 
-## Section 2 — Finish the set: 6 to 10
-- Layout: contrast-board
-- Learning focus: short clipped vs longer open digit shapes
-- Highlighted terms:
-  - หก | hòk | six
-  - เจ็ด | jèt | seven
-  - แปด | bpàet | eight
-  - เก้า | gâo | nine
-  - สิบ | sìp | ten
-- On-screen plan:
-  - Two-column board: short clipped (หก, เจ็ด, แปด, สิบ) vs longer (เก้า)
-  - Rhythm bar under each digit showing hold-length
-- Visual support choice: text-only with rhythm indicators
+## Slide 1: Title / Opening Hook
 
-## Section 3 — Ask for a number and say your age
-- Layout: image-anchored
-- Learning focus: practical chunks เบอร์อะไร and age pattern
-- Highlighted terms:
+- **Layout:** focus-card
+- **On screen:** Lesson title "Numbers 0 to 10" with module badge M01-L004
+- **Thai highlight:** None (title slide)
+- **Image:** None — clean title card
+- **Teaching area:** Left panel only, large text
+
+---
+
+## Slide 2: Section 1 — Zero, one, two
+
+- **Layout:** focus-card
+- **On screen:** Three triplet cards stacked vertically:
+  - ศูนย์ | sǔun | 0 — zero
+  - หนึ่ง | nùeng | 1 — one
+  - สอง | sǎawng | 2 — two
+- **Thai highlight:** Each card revealed one at a time as Nine introduces it
+- **Image:** None — text-only digit cards
+- **Teaching area:** Three large focus cards in left panel, each with Thai in large font, translit below, numeral + English to the right
+
+---
+
+## Slide 3: Section 2 — Three, four, five
+
+- **Layout:** focus-card
+- **On screen:** Three triplet cards:
+  - สาม | sǎam | 3 — three
+  - สี่ | sìi | 4 — four
+  - ห้า | hâa | 5 — five
+- **Thai highlight:** Each card revealed progressively
+- **Image:** None — text-only
+- **Teaching area:** Same layout as slide 2
+
+---
+
+## Slide 4: Section 3 — Six, seven, eight
+
+- **Layout:** focus-card
+- **On screen:** Three triplet cards:
+  - หก | hòk | 6 — six
+  - เจ็ด | jèt | 7 — seven
+  - แปด | bpàaet | 8 — eight
+- **Thai highlight:** Each card revealed progressively
+- **Image:** None — text-only
+- **Teaching area:** Same layout as slides 2-3
+
+---
+
+## Slide 5: Section 4 — Nine, ten
+
+- **Layout:** focus-card
+- **On screen:** Two triplet cards:
+  - เก้า | gâo | 9 — nine
+  - สิบ | sìp | 10 — ten
+- **Thai highlight:** Each card revealed, then full 0-10 sequence appears below
+- **Image:** None — text-only
+- **Teaching area:** Two cards at top, compact counting row 0-10 at bottom
+
+---
+
+## Slide 6: Section 5 — Numbers in real life (chunks)
+
+- **Layout:** drill-stack
+- **On screen:** Three chunk frames with slot markers:
   - เบอร์อะไร | ber à-rai | what number?
-  - ฉันอายุ...ปี | chǎn aa-yú ... bpii | I am ... years old
-- On-screen plan:
-  - Room-number example: สาม-ศูนย์-เจ็ด with digit-by-digit reading, anchored by room-sign photo
-  - Age pattern frame: [pronoun] + อายุ + [___] + ปี with visible open slot
-- Real-world image helpful: yes, supporting
-- Search ideas:
-  - Thailand hotel room number door plaque
-  - Hotel corridor room number sign
-- Keep photo as subtle left-panel background, not dominant
+  - ฉันอายุ [___] ปี | chǎn aa-yú ... bpii | I am ... years old
+  - ห้อง [___] | hâwng ... | room ...
+- **Thai highlight:** Chunk frames with blank slots that get filled with digits during drill
+- **Image:** None — slot-frame layout is more effective
+- **Teaching area:** Stacked drill frames in left panel with clear slot indicators
 
-## Section 4 — Numbers in real exchanges
-- Layout: drill-stack
-- Learning focus: combining digits with known pronouns and courtesy phrases
-- Highlighted terms:
-  - คุณอายุเท่าไหร่ | khun aa-yú thâo-rài | how old are you?
-  - ฉันอายุแปดปี | chǎn aa-yú bpàet bpii | I am eight years old
-  - ขอโทษครับ / ค่ะ | khǎaw-thôot khráp / khâ | excuse me (polite)
-- On-screen plan:
-  - Exchange ladder: question on top, answer below, number slot highlighted
-  - Repair mini-dialogue: ขอโทษ before the number is repeated
-- Visual support choice: text-only drill prompts
+---
 
-## Section 5 — Pronunciation beat: low tone vs rising tone
-- Layout: focus-card
-- Learning focus: สี่ sìi (four, low) vs สี sǐi (colour, rising)
-- Highlighted terms:
-  - สี่ | sìi | four (low tone)
-  - สี | sǐi | colour (rising tone)
-  - เก้า | gâo | nine (falling tone)
-- On-screen plan:
-  - Two large cards with tone arrows: สี่ flat-low arrow, สี upward arrow
-  - Simple pitch contour line showing low vs rising
-- Visual support choice: text-only with tone direction arrows
+## Slide 7: Section 6 — Pronunciation beat
 
-## Roleplay beat
-- Show one turn at a time on the left side
-- Keep the room-number question and age question visually separate
-- Let ห้า-ศูนย์-สอง appear digit by digit, not as one block
-- Staff lines and You lines alternate cleanly in a dialogue ladder
-- Do not let any background image crowd the right-third camera zone
+- **Layout:** contrast-board
+- **On screen:** Two-column tone contrast:
+  - Left column "Rising ↗": สาม sǎam, สอง sǎawng
+  - Right column "Falling ↘": ห้า hâa, เก้า gâo
+  - Bottom row "Low →": สี่ sìi
+- **Thai highlight:** Tone direction arrows next to each word
+- **Image:** None — tone arrows teach better than images
+- **Teaching area:** Compact contrast board in left panel
+
+---
+
+## Slide 8: Roleplay — Hotel check-in
+
+- **Layout:** dialogue-ladder
+- **On screen:** Alternating speaker lines:
+  - Staff: สวัสดีค่ะ ห้องอะไรคะ
+  - You: ห้องห้าครับ
+  - Staff: อายุเท่าไหร่คะ
+  - You: ฉันอายุสามสิบปีครับ
+  - Staff: เบอร์อะไรคะ
+  - You: ศูนย์ แปด เก้า หนึ่ง สอง สาม
+  - Staff: ขอบคุณค่ะ
+  - You: ขอบคุณครับ
+- **Thai highlight:** Learner lines highlighted or revealed with pause cues
+- **Image:** None — dialogue ladder format
+- **Teaching area:** Turn-by-turn ladder in left panel with speaker labels
+
+---
+
+## Slide 9: Recap
+
+- **Layout:** drill-stack
+- **On screen:** Five retrieval prompts:
+  1. Count 0 to 5 in Thai. Go.
+  2. Count 6 to 10 in Thai. Go.
+  3. How do you ask "what number?" in Thai?
+  4. Say "I am ten years old" in Thai.
+  5. Say "room seven" in Thai.
+- **Image:** None
+- **Teaching area:** Clean numbered list in left panel

@@ -1,8 +1,8 @@
 {
   "lessonId": "M01-L003",
   "state": "READY_TO_RECORD",
-  "updatedAt": "2026-03-22T02:17:07.416Z",
-  "validatedAt": "2026-03-22T02:17:07.417Z",
+  "updatedAt": "2026-03-22T03:47:25.756Z",
+  "validatedAt": "2026-03-22T03:47:25.756Z",
   "stageResults": {
     "0": "PASS",
     "1": "SKIP",
@@ -12,8 +12,5 @@
     "5": "PASS",
     "6": "PASS",
     "7": "PASS"
-  },
-  "notes": [
-    "slides=9"
-  ]
+  }
 }

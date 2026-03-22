@@ -2,12 +2,12 @@
   "schemaVersion": 1,
   "lessonId": "M01-L003",
   "passScore": 80,
-  "generatedAt": "2026-03-22T02:15:19.937Z",
+  "generatedAt": "2026-03-22T03:46:44.823Z",
   "itemBankPath": "M01-L003-quiz-item-bank.json",
   "questions": [
     {
       "id": "q01",
-      "vocabId": "v-684ee1797b",
+      "vocabId": "v-9018ed36ec",
       "type": "thai_to_english",
       "displayMode": "thai_only",
       "prompt": {
@@ -16,18 +16,18 @@
         "translit": "chǎn"
       },
       "options": [
-        "I (general)",
-        "I (male, polite)",
-        "you",
+        "I (female / neutral)",
+        "I (male polite)",
+        "you (polite)",
         "he / she"
       ],
-      "answer": "I (general)",
+      "answer": "I (female / neutral)",
       "rationale": "Maps Thai form to target meaning from script languageFocus.",
-      "bankItemId": "v-684ee1797b-thai-to-english"
+      "bankItemId": "v-9018ed36ec-thai-to-english"
     },
     {
       "id": "q02",
-      "vocabId": "v-692a0b8b53",
+      "vocabId": "v-d16cfe595c",
       "type": "thai_to_english",
       "displayMode": "thai_only",
       "prompt": {
@@ -36,18 +36,18 @@
         "translit": "phǒm"
       },
       "options": [
-        "I (male, polite)",
-        "I (general)",
-        "you",
+        "I (male polite)",
+        "I (female / neutral)",
+        "you (polite)",
         "he / she"
       ],
-      "answer": "I (male, polite)",
+      "answer": "I (male polite)",
       "rationale": "Maps Thai form to target meaning from script languageFocus.",
-      "bankItemId": "v-692a0b8b53-thai-to-english"
+      "bankItemId": "v-d16cfe595c-thai-to-english"
     },
     {
       "id": "q03",
-      "vocabId": "v-267bceea3d",
+      "vocabId": "v-3bde86ee71",
       "type": "thai_to_english",
       "displayMode": "thai_only",
       "prompt": {
@@ -56,14 +56,14 @@
         "translit": "khun"
       },
       "options": [
-        "you",
-        "I (general)",
-        "I (male, polite)",
+        "you (polite)",
+        "I (female / neutral)",
+        "I (male polite)",
         "he / she"
       ],
-      "answer": "you",
+      "answer": "you (polite)",
       "rationale": "Maps Thai form to target meaning from script languageFocus.",
-      "bankItemId": "v-267bceea3d-thai-to-english"
+      "bankItemId": "v-3bde86ee71-thai-to-english"
     },
     {
       "id": "q04",
@@ -77,9 +77,9 @@
       },
       "options": [
         "he / she",
-        "I (general)",
-        "I (male, polite)",
-        "you"
+        "I (female / neutral)",
+        "I (male polite)",
+        "you (polite)"
       ],
       "answer": "he / she",
       "rationale": "Maps Thai form to target meaning from script languageFocus.",
@@ -97,9 +97,9 @@
       },
       "options": [
         "this",
-        "I (general)",
-        "I (male, polite)",
-        "you"
+        "I (female / neutral)",
+        "I (male polite)",
+        "you (polite)"
       ],
       "answer": "this",
       "rationale": "Maps Thai form to target meaning from script languageFocus.",
@@ -107,43 +107,43 @@
     },
     {
       "id": "q06",
-      "vocabId": "v-6621c19168",
+      "vocabId": "v-6695e84f1f",
       "type": "thai_to_english",
       "displayMode": "thai_only",
       "prompt": {
         "text": "What is the best meaning of คือ?",
         "thai": "คือ",
-        "translit": "khuue"
+        "translit": "khuu"
       },
       "options": [
-        "is (identity)",
-        "I (general)",
-        "I (male, polite)",
-        "you"
+        "is",
+        "I (female / neutral)",
+        "I (male polite)",
+        "you (polite)"
       ],
-      "answer": "is (identity)",
+      "answer": "is",
       "rationale": "Maps Thai form to target meaning from script languageFocus.",
-      "bankItemId": "v-6621c19168-thai-to-english"
+      "bankItemId": "v-6695e84f1f-thai-to-english"
     },
     {
       "id": "q07",
-      "vocabId": "v-73609842f0",
+      "vocabId": "v-d0ca2ea000",
       "type": "thai_to_english",
       "displayMode": "thai_only",
       "prompt": {
         "text": "What is the best meaning of นี่คือ...?",
         "thai": "นี่คือ...",
-        "translit": "nîi khuue..."
+        "translit": "nîi khuu..."
       },
       "options": [
         "this is...",
-        "I (general)",
-        "I (male, polite)",
-        "you"
+        "I (female / neutral)",
+        "I (male polite)",
+        "you (polite)"
       ],
       "answer": "this is...",
       "rationale": "Maps Thai form to target meaning from script languageFocus.",
-      "bankItemId": "v-73609842f0-thai-to-english"
+      "bankItemId": "v-d0ca2ea000-thai-to-english"
     },
     {
       "id": "q08",
@@ -157,9 +157,9 @@
       },
       "options": [
         "who",
-        "I (general)",
-        "I (male, polite)",
-        "you"
+        "I (female / neutral)",
+        "I (male polite)",
+        "you (polite)"
       ],
       "answer": "who",
       "rationale": "Maps Thai form to target meaning from script languageFocus.",
@@ -167,112 +167,72 @@
     },
     {
       "id": "q09",
-      "vocabId": "v-b09f56f5b1",
+      "vocabId": "v-c3c09e205c",
       "type": "thai_to_english",
       "displayMode": "thai_only",
       "prompt": {
         "text": "What is the best meaning of เขาคือใคร?",
         "thai": "เขาคือใคร",
-        "translit": "khǎo khuue khrai"
+        "translit": "khǎo khuu khrai"
       },
       "options": [
         "who is he/she?",
-        "I (general)",
-        "I (male, polite)",
-        "you"
+        "I (female / neutral)",
+        "I (male polite)",
+        "you (polite)"
       ],
       "answer": "who is he/she?",
       "rationale": "Maps Thai form to target meaning from script languageFocus.",
-      "bankItemId": "v-b09f56f5b1-thai-to-english"
+      "bankItemId": "v-c3c09e205c-thai-to-english"
     },
     {
       "id": "q10",
-      "vocabId": "v-82ab06c0ca",
+      "vocabId": "v-2ec09cf64e",
       "type": "thai_to_english",
       "displayMode": "thai_only",
       "prompt": {
         "text": "What is the best meaning of คุณคือ...ใช่ไหม?",
         "thai": "คุณคือ...ใช่ไหม",
-        "translit": "khun khuue...châi mǎi"
+        "translit": "khun khuu... châi mái"
       },
       "options": [
-        "you are...right?",
-        "I (general)",
-        "I (male, polite)",
-        "you"
+        "you are... right?",
+        "I (female / neutral)",
+        "I (male polite)",
+        "you (polite)"
       ],
-      "answer": "you are...right?",
+      "answer": "you are... right?",
       "rationale": "Maps Thai form to target meaning from script languageFocus.",
-      "bankItemId": "v-82ab06c0ca-thai-to-english"
+      "bankItemId": "v-2ec09cf64e-thai-to-english"
     },
     {
       "id": "q11",
-      "vocabId": "v-6fce5e8c2c",
+      "vocabId": "v-941eb951af",
       "type": "thai_to_english",
       "displayMode": "thai_only",
       "prompt": {
-        "text": "What is the best meaning of ขอโทษ?",
-        "thai": "ขอโทษ",
-        "translit": "khǎaw-thôot"
+        "text": "What is the best meaning of ฉัน?",
+        "thai": "ฉัน",
+        "translit": "chǎn"
       },
       "options": [
-        "excuse me / sorry",
-        "I (general)",
-        "I (male, polite)",
-        "you"
+        "I (rising tone)",
+        "I (female / neutral)",
+        "I (male polite)",
+        "you (polite)"
       ],
-      "answer": "excuse me / sorry",
+      "answer": "I (rising tone)",
       "rationale": "Maps Thai form to target meaning from script languageFocus.",
-      "bankItemId": "v-6fce5e8c2c-thai-to-english"
+      "bankItemId": "v-941eb951af-thai-to-english"
     },
     {
       "id": "q12",
-      "vocabId": "v-568b383f0b",
-      "type": "thai_to_english",
-      "displayMode": "thai_only",
-      "prompt": {
-        "text": "What is the best meaning of ประเทศ?",
-        "thai": "ประเทศ",
-        "translit": "prà-thêet"
-      },
-      "options": [
-        "country",
-        "I (general)",
-        "I (male, polite)",
-        "you"
-      ],
-      "answer": "country",
-      "rationale": "Maps Thai form to target meaning from script languageFocus.",
-      "bankItemId": "v-568b383f0b-thai-to-english"
-    },
-    {
-      "id": "q13",
-      "vocabId": "v-f0b2ddeed3",
-      "type": "thai_to_english",
-      "displayMode": "thai_only",
-      "prompt": {
-        "text": "What is the best meaning of ไทย?",
-        "thai": "ไทย",
-        "translit": "thai"
-      },
-      "options": [
-        "Thailand / Thai",
-        "I (general)",
-        "I (male, polite)",
-        "you"
-      ],
-      "answer": "Thailand / Thai",
-      "rationale": "Maps Thai form to target meaning from script languageFocus.",
-      "bankItemId": "v-f0b2ddeed3-thai-to-english"
-    },
-    {
-      "id": "q14",
-      "vocabId": "v-684ee1797b",
+      "vocabId": "v-9018ed36ec",
       "type": "english_to_thai",
       "displayMode": "english_only",
       "prompt": {
-        "text": "Select Thai for: I (general)",
-        "english": "I (general)"
+        "text": "Select Thai for: I (female / neutral)",
+        "english": "I (female / neutral)"
       },
       "options": [
         "ฉัน",
@@ -282,11 +242,11 @@
       ],
       "answer": "ฉัน",
       "rationale": "Reverses mapping for active recall.",
-      "bankItemId": "v-684ee1797b-english-to-thai"
+      "bankItemId": "v-9018ed36ec-english-to-thai"
     },
     {
-      "id": "q15",
-      "vocabId": "v-684ee1797b",
+      "id": "q13",
+      "vocabId": "v-9018ed36ec",
       "type": "fill_translit",
       "displayMode": "thai_only",
       "prompt": {
@@ -295,18 +255,18 @@
       },
       "answer": "chǎn",
       "rationale": "Forces transliteration production with inline tone marks.",
-      "bankItemId": "v-684ee1797b-fill-translit"
+      "bankItemId": "v-9018ed36ec-fill-translit"
     },
     {
-      "id": "q16",
-      "vocabId": "v-684ee1797b",
+      "id": "q14",
+      "vocabId": "v-9018ed36ec",
       "type": "context_mcq",
       "displayMode": "triplet",
       "prompt": {
         "text": "Choose the sentence that keeps the lesson meaning of this phrase.",
         "thai": "ฉัน",
         "translit": "chǎn",
-        "english": "I (general)"
+        "english": "I (female / neutral)"
       },
       "options": [
         "Use ฉัน in polite beginner conversation",
@@ -316,24 +276,56 @@
       ],
       "answer": "Use ฉัน in polite beginner conversation",
       "rationale": "Checks contextual understanding while preserving triplet exposure.",
-      "bankItemId": "v-684ee1797b-context-mcq"
+      "bankItemId": "v-9018ed36ec-context-mcq"
+    },
+    {
+      "id": "q15",
+      "vocabId": "v-d16cfe595c",
+      "type": "english_to_thai",
+      "displayMode": "english_only",
+      "prompt": {
+        "text": "Select Thai for: I (male polite)",
+        "english": "I (male polite)"
+      },
+      "options": [
+        "ผม",
+        "ฉัน",
+        "คุณ",
+        "เขา"
+      ],
+      "answer": "ผม",
+      "rationale": "Reverses mapping for active recall.",
+      "bankItemId": "v-d16cfe595c-english-to-thai"
+    },
+    {
+      "id": "q16",
+      "vocabId": "v-d16cfe595c",
+      "type": "fill_translit",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "Type the PTM transliteration for ผม.",
+        "thai": "ผม"
+      },
+      "answer": "phǒm",
+      "rationale": "Forces transliteration production with inline tone marks.",
+      "bankItemId": "v-d16cfe595c-fill-translit"
     }
   ],
   "coverage": {
     "minimumQuizItemsPerNewVocab": 1,
     "perVocab": [
       {
-        "vocabId": "v-684ee1797b",
+        "vocabId": "v-9018ed36ec",
         "thai": "ฉัน",
         "quizItemCount": 4
       },
       {
-        "vocabId": "v-692a0b8b53",
+        "vocabId": "v-d16cfe595c",
         "thai": "ผม",
-        "quizItemCount": 1
+        "quizItemCount": 3
       },
       {
-        "vocabId": "v-267bceea3d",
+        "vocabId": "v-3bde86ee71",
         "thai": "คุณ",
         "quizItemCount": 1
       },
@@ -348,12 +340,12 @@
         "quizItemCount": 1
       },
       {
-        "vocabId": "v-6621c19168",
+        "vocabId": "v-6695e84f1f",
         "thai": "คือ",
         "quizItemCount": 1
       },
       {
-        "vocabId": "v-73609842f0",
+        "vocabId": "v-d0ca2ea000",
         "thai": "นี่คือ...",
         "quizItemCount": 1
       },
@@ -363,28 +355,18 @@
         "quizItemCount": 1
       },
       {
-        "vocabId": "v-b09f56f5b1",
+        "vocabId": "v-c3c09e205c",
         "thai": "เขาคือใคร",
         "quizItemCount": 1
       },
       {
-        "vocabId": "v-82ab06c0ca",
+        "vocabId": "v-2ec09cf64e",
         "thai": "คุณคือ...ใช่ไหม",
         "quizItemCount": 1
       },
       {
-        "vocabId": "v-6fce5e8c2c",
-        "thai": "ขอโทษ",
-        "quizItemCount": 1
-      },
-      {
-        "vocabId": "v-568b383f0b",
-        "thai": "ประเทศ",
-        "quizItemCount": 1
-      },
-      {
-        "vocabId": "v-f0b2ddeed3",
-        "thai": "ไทย",
+        "vocabId": "v-941eb951af",
+        "thai": "ฉัน",
         "quizItemCount": 1
       }
     ],

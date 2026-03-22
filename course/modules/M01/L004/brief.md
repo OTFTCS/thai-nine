@@ -1,71 +1,67 @@
-# M01-L004 — Numbers 0 to 10
+# Production Brief — M01-L004: Numbers 0 to 10
 
 ## Lesson identity
 - **Lesson ID:** M01-L004
+- **Title:** Numbers 0 to 10
 - **Module:** M01 — First Contact and Courtesy
-- **CEFR:** A0
-- **Target runtime:** 9-12 minutes
-- **Register target:** Neutral to polite
+- **CEFR band:** A0
+- **Target runtime:** 10–14 minutes
 
-## Primary objective
-You can understand and say the digits needed for age, room numbers, and basic counting.
+## Objectives
+- **Primary:** Count 0-10 in Thai, ask and say phone/room numbers, say age.
+- **Secondary:** Recycle recent vocabulary while using number pronunciation control in short controlled output.
 
-## Secondary objective
-You can recycle recent vocabulary while using number pronunciation control in short controlled output.
-
-## Scenario / teaching frame
-You are checking into a hotel or meeting someone new, and need to catch a room number, give your age, or count a small set of items. Numbers show up immediately in real Thai life and this lesson makes them usable from day one.
+## Teaching frame
+- **Scenario:** You are checking into a hotel and need to give your room number, confirm your age on a form, and exchange phone numbers with a new friend.
+- **Hook:** "Every number you see in Thailand — prices, floors, phone numbers — starts with these eleven sounds."
+- **Takeaway:** By the end, you can count to ten, say your age, ask for a number, and give a room number in Thai.
 
 ## Must-teach outcomes
-1. Hear and say Thai digits 0-10 with stable pronunciation
-2. Understand that Thai room numbers and codes are said digit by digit
-3. Use the chunk เบอร์อะไร | ber à-rai | what number?
-4. Build the age pattern ฉันอายุ...ปี | chǎn aa-yú ... bpii | I am ... years old
-5. Reuse prior pronouns (ฉัน, ผม, คุณ, เขา) and courtesy phrases naturally with numbers
+1. Recognize and produce all digits 0-10 in Thai
+2. Ask "what number?" using เบอร์อะไร
+3. Say age using ฉันอายุ...ปี
+4. Give a room number using ห้อง...
 
-## Core vocabulary
-| Thai | Translit | English | Type |
-|---|---|---|---|
-| ศูนย์ | sǔun | zero | word |
-| หนึ่ง | nùeng | one | word |
-| สอง | sǎawng | two | word |
-| สาม | sǎam | three | word |
-| สี่ | sìi | four | word |
-| ห้า | hâa | five | word |
-| หก | hòk | six | word |
-| เจ็ด | jèt | seven | word |
-| แปด | bpàet | eight | word |
-| เก้า | gâo | nine | word |
-| สิบ | sìp | ten | word |
+## Core vocabulary (triplets)
+| Thai | Translit | English |
+|------|----------|---------|
+| ศูนย์ | sǔun | zero (0) |
+| หนึ่ง | nùeng | one (1) |
+| สอง | sǎawng | two (2) |
+| สาม | sǎam | three (3) |
+| สี่ | sìi | four (4) |
+| ห้า | hâa | five (5) |
+| หก | hòk | six (6) |
+| เจ็ด | jèt | seven (7) |
+| แปด | bpàaet | eight (8) |
+| เก้า | gâo | nine (9) |
+| สิบ | sìp | ten (10) |
 
 ## Core chunks
 | Thai | Translit | English |
-|---|---|---|
+|------|----------|---------|
 | เบอร์อะไร | ber à-rai | what number? |
 | ฉันอายุ...ปี | chǎn aa-yú ... bpii | I am ... years old |
+| ห้อง... | hâwng ... | room ... |
 
-## Pronunciation focus
-- **Target:** Low tone (sìi) vs rising tone (sǐi) — meaning-changing contrast
-- **Minimal pair:** สี่ sìi (four) vs สี sǐi (colour) — wrong tone, wrong word
-- **Secondary contrast:** Short clipped finals (hòk, jèt, bpàet) vs long open vowels (sìi, hâa, gâo)
-- **Mouth-map anchor:** Low tone keeps your voice flat and low, like a calm statement. Rising tone lifts up from low to high, like asking "really?" in English.
+## Review vocabulary
+คุณ (khun), ชื่อ (chêuu), อะไร (à-rai), ครับ (khráp), ค่ะ (khâ)
 
 ## Teaching constraints
-- 13 new items total — split across 3 teaching sections (0-5, 6-10, chunks)
-- Max 2-3 genuinely new concepts per section before practice
+- 11 new words (digits) split across 4 sections (3+3+3+2)
+- 3 chunks taught in section 5 after all digits are established
+- Every digit must be individually introduced before appearing in any chunk or drill
+- Each digit gets its own triplet card on screen
 - 40%+ production drills
-- Each item in 3+ contexts
-- Pronunciation beat as dedicated section 5
-- Review at least 2 prior items (pronouns, courtesy phrases)
 
 ## Likely learner mistakes
-1. Saying สี่ with a rising tone (sounds like "colour" instead of "four")
-2. Stretching หก and เจ็ด — they should be short and clipped
-3. Reading room numbers as one big number instead of digit by digit
-4. Forgetting to use a pronoun before อายุ (saying อายุสิบปี instead of ฉันอายุสิบปี)
-5. Flat tone on all digits — no tone discrimination yet
+- Confusing สี่ (sìi, four) with สี (sǐi, color)
+- Missing the clipped ending on เจ็ด and แปด (stop consonant finals)
+- Pronouncing สอง and สาม with the wrong tone (both rising)
+- Forgetting ศูนย์ because zero is used less often in counting
 
-## Image and visual notes
-- Most sections stay text-first with large digit cards
-- One supporting real-world image in section 3: hotel room-number plaque
-- Section 5 pronunciation beat uses tone arrows, no photo needed
+## Visual notes
+- Text-only focus cards for all digit sections — no images needed
+- Each digit shown as a large triplet card
+- Chunks shown in drill-stack format with slot markers
+- Keep slides to 2-3 cards maximum per slide

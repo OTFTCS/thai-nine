@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
   "lessonId": "M01-L004",
-  "generatedAt": "2026-03-21T09:41:58.230Z",
+  "generatedAt": "2026-03-22T03:47:49.817Z",
   "sourceScript": "M01-L004-script-master.json",
   "items": [
     {
-      "id": "v-871c9bd62f-thai-to-english",
-      "vocabId": "v-871c9bd62f",
+      "id": "v-28499d926c-thai-to-english",
+      "vocabId": "v-28499d926c",
       "type": "thai_to_english",
       "displayMode": "thai_only",
       "prompt": {
@@ -15,22 +15,22 @@
         "translit": "sǔun"
       },
       "options": [
-        "zero",
-        "one",
-        "two",
-        "three"
+        "zero (0)",
+        "one (1)",
+        "two (2)",
+        "three (3)"
       ],
-      "answer": "zero",
+      "answer": "zero (0)",
       "rationale": "Maps Thai form to target meaning from script languageFocus."
     },
     {
-      "id": "v-871c9bd62f-english-to-thai",
-      "vocabId": "v-871c9bd62f",
+      "id": "v-28499d926c-english-to-thai",
+      "vocabId": "v-28499d926c",
       "type": "english_to_thai",
       "displayMode": "english_only",
       "prompt": {
-        "text": "Select Thai for: zero",
-        "english": "zero"
+        "text": "Select Thai for: zero (0)",
+        "english": "zero (0)"
       },
       "options": [
         "ศูนย์",
@@ -42,8 +42,8 @@
       "rationale": "Reverses mapping for active recall."
     },
     {
-      "id": "v-871c9bd62f-fill-translit",
-      "vocabId": "v-871c9bd62f",
+      "id": "v-28499d926c-fill-translit",
+      "vocabId": "v-28499d926c",
       "type": "fill_translit",
       "displayMode": "thai_only",
       "prompt": {
@@ -54,15 +54,15 @@
       "rationale": "Forces transliteration production with inline tone marks."
     },
     {
-      "id": "v-871c9bd62f-context-mcq",
-      "vocabId": "v-871c9bd62f",
+      "id": "v-28499d926c-context-mcq",
+      "vocabId": "v-28499d926c",
       "type": "context_mcq",
       "displayMode": "triplet",
       "prompt": {
         "text": "Choose the sentence that keeps the lesson meaning of this phrase.",
         "thai": "ศูนย์",
         "translit": "sǔun",
-        "english": "zero"
+        "english": "zero (0)"
       },
       "options": [
         "Use ศูนย์ in polite beginner conversation",
@@ -74,8 +74,8 @@
       "rationale": "Checks contextual understanding while preserving triplet exposure."
     },
     {
-      "id": "v-6ad6888f1d-thai-to-english",
-      "vocabId": "v-6ad6888f1d",
+      "id": "v-d5112f8a63-thai-to-english",
+      "vocabId": "v-d5112f8a63",
       "type": "thai_to_english",
       "displayMode": "thai_only",
       "prompt": {
@@ -84,22 +84,22 @@
         "translit": "nùeng"
       },
       "options": [
-        "one",
-        "zero",
-        "two",
-        "three"
+        "one (1)",
+        "zero (0)",
+        "two (2)",
+        "three (3)"
       ],
-      "answer": "one",
+      "answer": "one (1)",
       "rationale": "Maps Thai form to target meaning from script languageFocus."
     },
     {
-      "id": "v-6ad6888f1d-english-to-thai",
-      "vocabId": "v-6ad6888f1d",
+      "id": "v-d5112f8a63-english-to-thai",
+      "vocabId": "v-d5112f8a63",
       "type": "english_to_thai",
       "displayMode": "english_only",
       "prompt": {
-        "text": "Select Thai for: one",
-        "english": "one"
+        "text": "Select Thai for: one (1)",
+        "english": "one (1)"
       },
       "options": [
         "หนึ่ง",
@@ -111,8 +111,8 @@
       "rationale": "Reverses mapping for active recall."
     },
     {
-      "id": "v-6ad6888f1d-fill-translit",
-      "vocabId": "v-6ad6888f1d",
+      "id": "v-d5112f8a63-fill-translit",
+      "vocabId": "v-d5112f8a63",
       "type": "fill_translit",
       "displayMode": "thai_only",
       "prompt": {
@@ -123,15 +123,15 @@
       "rationale": "Forces transliteration production with inline tone marks."
     },
     {
-      "id": "v-6ad6888f1d-context-mcq",
-      "vocabId": "v-6ad6888f1d",
+      "id": "v-d5112f8a63-context-mcq",
+      "vocabId": "v-d5112f8a63",
       "type": "context_mcq",
       "displayMode": "triplet",
       "prompt": {
         "text": "Choose the sentence that keeps the lesson meaning of this phrase.",
         "thai": "หนึ่ง",
         "translit": "nùeng",
-        "english": "one"
+        "english": "one (1)"
       },
       "options": [
         "Use หนึ่ง in polite beginner conversation",
@@ -143,8 +143,8 @@
       "rationale": "Checks contextual understanding while preserving triplet exposure."
     },
     {
-      "id": "v-afdf936166-thai-to-english",
-      "vocabId": "v-afdf936166",
+      "id": "v-123bdecbd4-thai-to-english",
+      "vocabId": "v-123bdecbd4",
       "type": "thai_to_english",
       "displayMode": "thai_only",
       "prompt": {
@@ -153,22 +153,22 @@
         "translit": "sǎawng"
       },
       "options": [
-        "two",
-        "zero",
-        "one",
-        "three"
+        "two (2)",
+        "zero (0)",
+        "one (1)",
+        "three (3)"
       ],
-      "answer": "two",
+      "answer": "two (2)",
       "rationale": "Maps Thai form to target meaning from script languageFocus."
     },
     {
-      "id": "v-afdf936166-english-to-thai",
-      "vocabId": "v-afdf936166",
+      "id": "v-123bdecbd4-english-to-thai",
+      "vocabId": "v-123bdecbd4",
       "type": "english_to_thai",
       "displayMode": "english_only",
       "prompt": {
-        "text": "Select Thai for: two",
-        "english": "two"
+        "text": "Select Thai for: two (2)",
+        "english": "two (2)"
       },
       "options": [
         "สอง",
@@ -180,8 +180,8 @@
       "rationale": "Reverses mapping for active recall."
     },
     {
-      "id": "v-afdf936166-fill-translit",
-      "vocabId": "v-afdf936166",
+      "id": "v-123bdecbd4-fill-translit",
+      "vocabId": "v-123bdecbd4",
       "type": "fill_translit",
       "displayMode": "thai_only",
       "prompt": {
@@ -192,15 +192,15 @@
       "rationale": "Forces transliteration production with inline tone marks."
     },
     {
-      "id": "v-afdf936166-context-mcq",
-      "vocabId": "v-afdf936166",
+      "id": "v-123bdecbd4-context-mcq",
+      "vocabId": "v-123bdecbd4",
       "type": "context_mcq",
       "displayMode": "triplet",
       "prompt": {
         "text": "Choose the sentence that keeps the lesson meaning of this phrase.",
         "thai": "สอง",
         "translit": "sǎawng",
-        "english": "two"
+        "english": "two (2)"
       },
       "options": [
         "Use สอง in polite beginner conversation",
@@ -212,8 +212,8 @@
       "rationale": "Checks contextual understanding while preserving triplet exposure."
     },
     {
-      "id": "v-368c7c205d-thai-to-english",
-      "vocabId": "v-368c7c205d",
+      "id": "v-914a79ebbb-thai-to-english",
+      "vocabId": "v-914a79ebbb",
       "type": "thai_to_english",
       "displayMode": "thai_only",
       "prompt": {
@@ -222,22 +222,22 @@
         "translit": "sǎam"
       },
       "options": [
-        "three",
-        "zero",
-        "one",
-        "two"
+        "three (3)",
+        "zero (0)",
+        "one (1)",
+        "two (2)"
       ],
-      "answer": "three",
+      "answer": "three (3)",
       "rationale": "Maps Thai form to target meaning from script languageFocus."
     },
     {
-      "id": "v-368c7c205d-english-to-thai",
-      "vocabId": "v-368c7c205d",
+      "id": "v-914a79ebbb-english-to-thai",
+      "vocabId": "v-914a79ebbb",
       "type": "english_to_thai",
       "displayMode": "english_only",
       "prompt": {
-        "text": "Select Thai for: three",
-        "english": "three"
+        "text": "Select Thai for: three (3)",
+        "english": "three (3)"
       },
       "options": [
         "สาม",
@@ -249,8 +249,8 @@
       "rationale": "Reverses mapping for active recall."
     },
     {
-      "id": "v-368c7c205d-fill-translit",
-      "vocabId": "v-368c7c205d",
+      "id": "v-914a79ebbb-fill-translit",
+      "vocabId": "v-914a79ebbb",
       "type": "fill_translit",
       "displayMode": "thai_only",
       "prompt": {
@@ -261,15 +261,15 @@
       "rationale": "Forces transliteration production with inline tone marks."
     },
     {
-      "id": "v-368c7c205d-context-mcq",
-      "vocabId": "v-368c7c205d",
+      "id": "v-914a79ebbb-context-mcq",
+      "vocabId": "v-914a79ebbb",
       "type": "context_mcq",
       "displayMode": "triplet",
       "prompt": {
         "text": "Choose the sentence that keeps the lesson meaning of this phrase.",
         "thai": "สาม",
         "translit": "sǎam",
-        "english": "three"
+        "english": "three (3)"
       },
       "options": [
         "Use สาม in polite beginner conversation",
@@ -281,8 +281,8 @@
       "rationale": "Checks contextual understanding while preserving triplet exposure."
     },
     {
-      "id": "v-cf99ffc78e-thai-to-english",
-      "vocabId": "v-cf99ffc78e",
+      "id": "v-0e247b83bd-thai-to-english",
+      "vocabId": "v-0e247b83bd",
       "type": "thai_to_english",
       "displayMode": "thai_only",
       "prompt": {
@@ -291,22 +291,22 @@
         "translit": "sìi"
       },
       "options": [
-        "four",
-        "zero",
-        "one",
-        "two"
+        "four (4)",
+        "zero (0)",
+        "one (1)",
+        "two (2)"
       ],
-      "answer": "four",
+      "answer": "four (4)",
       "rationale": "Maps Thai form to target meaning from script languageFocus."
     },
     {
-      "id": "v-cf99ffc78e-english-to-thai",
-      "vocabId": "v-cf99ffc78e",
+      "id": "v-0e247b83bd-english-to-thai",
+      "vocabId": "v-0e247b83bd",
       "type": "english_to_thai",
       "displayMode": "english_only",
       "prompt": {
-        "text": "Select Thai for: four",
-        "english": "four"
+        "text": "Select Thai for: four (4)",
+        "english": "four (4)"
       },
       "options": [
         "สี่",
@@ -318,8 +318,8 @@
       "rationale": "Reverses mapping for active recall."
     },
     {
-      "id": "v-cf99ffc78e-fill-translit",
-      "vocabId": "v-cf99ffc78e",
+      "id": "v-0e247b83bd-fill-translit",
+      "vocabId": "v-0e247b83bd",
       "type": "fill_translit",
       "displayMode": "thai_only",
       "prompt": {
@@ -330,15 +330,15 @@
       "rationale": "Forces transliteration production with inline tone marks."
     },
     {
-      "id": "v-cf99ffc78e-context-mcq",
-      "vocabId": "v-cf99ffc78e",
+      "id": "v-0e247b83bd-context-mcq",
+      "vocabId": "v-0e247b83bd",
       "type": "context_mcq",
       "displayMode": "triplet",
       "prompt": {
         "text": "Choose the sentence that keeps the lesson meaning of this phrase.",
         "thai": "สี่",
         "translit": "sìi",
-        "english": "four"
+        "english": "four (4)"
       },
       "options": [
         "Use สี่ in polite beginner conversation",
@@ -350,8 +350,8 @@
       "rationale": "Checks contextual understanding while preserving triplet exposure."
     },
     {
-      "id": "v-f028feb896-thai-to-english",
-      "vocabId": "v-f028feb896",
+      "id": "v-6c137e71d9-thai-to-english",
+      "vocabId": "v-6c137e71d9",
       "type": "thai_to_english",
       "displayMode": "thai_only",
       "prompt": {
@@ -360,22 +360,22 @@
         "translit": "hâa"
       },
       "options": [
-        "five",
-        "zero",
-        "one",
-        "two"
+        "five (5)",
+        "zero (0)",
+        "one (1)",
+        "two (2)"
       ],
-      "answer": "five",
+      "answer": "five (5)",
       "rationale": "Maps Thai form to target meaning from script languageFocus."
     },
     {
-      "id": "v-f028feb896-english-to-thai",
-      "vocabId": "v-f028feb896",
+      "id": "v-6c137e71d9-english-to-thai",
+      "vocabId": "v-6c137e71d9",
       "type": "english_to_thai",
       "displayMode": "english_only",
       "prompt": {
-        "text": "Select Thai for: five",
-        "english": "five"
+        "text": "Select Thai for: five (5)",
+        "english": "five (5)"
       },
       "options": [
         "ห้า",
@@ -387,8 +387,8 @@
       "rationale": "Reverses mapping for active recall."
     },
     {
-      "id": "v-f028feb896-fill-translit",
-      "vocabId": "v-f028feb896",
+      "id": "v-6c137e71d9-fill-translit",
+      "vocabId": "v-6c137e71d9",
       "type": "fill_translit",
       "displayMode": "thai_only",
       "prompt": {
@@ -399,15 +399,15 @@
       "rationale": "Forces transliteration production with inline tone marks."
     },
     {
-      "id": "v-f028feb896-context-mcq",
-      "vocabId": "v-f028feb896",
+      "id": "v-6c137e71d9-context-mcq",
+      "vocabId": "v-6c137e71d9",
       "type": "context_mcq",
       "displayMode": "triplet",
       "prompt": {
         "text": "Choose the sentence that keeps the lesson meaning of this phrase.",
         "thai": "ห้า",
         "translit": "hâa",
-        "english": "five"
+        "english": "five (5)"
       },
       "options": [
         "Use ห้า in polite beginner conversation",
@@ -419,8 +419,8 @@
       "rationale": "Checks contextual understanding while preserving triplet exposure."
     },
     {
-      "id": "v-f6b67b4e6f-thai-to-english",
-      "vocabId": "v-f6b67b4e6f",
+      "id": "v-42ac27384d-thai-to-english",
+      "vocabId": "v-42ac27384d",
       "type": "thai_to_english",
       "displayMode": "thai_only",
       "prompt": {
@@ -429,22 +429,22 @@
         "translit": "hòk"
       },
       "options": [
-        "six",
-        "zero",
-        "one",
-        "two"
+        "six (6)",
+        "zero (0)",
+        "one (1)",
+        "two (2)"
       ],
-      "answer": "six",
+      "answer": "six (6)",
       "rationale": "Maps Thai form to target meaning from script languageFocus."
     },
     {
-      "id": "v-f6b67b4e6f-english-to-thai",
-      "vocabId": "v-f6b67b4e6f",
+      "id": "v-42ac27384d-english-to-thai",
+      "vocabId": "v-42ac27384d",
       "type": "english_to_thai",
       "displayMode": "english_only",
       "prompt": {
-        "text": "Select Thai for: six",
-        "english": "six"
+        "text": "Select Thai for: six (6)",
+        "english": "six (6)"
       },
       "options": [
         "หก",
@@ -456,8 +456,8 @@
       "rationale": "Reverses mapping for active recall."
     },
     {
-      "id": "v-f6b67b4e6f-fill-translit",
-      "vocabId": "v-f6b67b4e6f",
+      "id": "v-42ac27384d-fill-translit",
+      "vocabId": "v-42ac27384d",
       "type": "fill_translit",
       "displayMode": "thai_only",
       "prompt": {
@@ -468,15 +468,15 @@
       "rationale": "Forces transliteration production with inline tone marks."
     },
     {
-      "id": "v-f6b67b4e6f-context-mcq",
-      "vocabId": "v-f6b67b4e6f",
+      "id": "v-42ac27384d-context-mcq",
+      "vocabId": "v-42ac27384d",
       "type": "context_mcq",
       "displayMode": "triplet",
       "prompt": {
         "text": "Choose the sentence that keeps the lesson meaning of this phrase.",
         "thai": "หก",
         "translit": "hòk",
-        "english": "six"
+        "english": "six (6)"
       },
       "options": [
         "Use หก in polite beginner conversation",
@@ -488,8 +488,8 @@
       "rationale": "Checks contextual understanding while preserving triplet exposure."
     },
     {
-      "id": "v-73bffabf48-thai-to-english",
-      "vocabId": "v-73bffabf48",
+      "id": "v-1569f39457-thai-to-english",
+      "vocabId": "v-1569f39457",
       "type": "thai_to_english",
       "displayMode": "thai_only",
       "prompt": {
@@ -498,22 +498,22 @@
         "translit": "jèt"
       },
       "options": [
-        "seven",
-        "zero",
-        "one",
-        "two"
+        "seven (7)",
+        "zero (0)",
+        "one (1)",
+        "two (2)"
       ],
-      "answer": "seven",
+      "answer": "seven (7)",
       "rationale": "Maps Thai form to target meaning from script languageFocus."
     },
     {
-      "id": "v-73bffabf48-english-to-thai",
-      "vocabId": "v-73bffabf48",
+      "id": "v-1569f39457-english-to-thai",
+      "vocabId": "v-1569f39457",
       "type": "english_to_thai",
       "displayMode": "english_only",
       "prompt": {
-        "text": "Select Thai for: seven",
-        "english": "seven"
+        "text": "Select Thai for: seven (7)",
+        "english": "seven (7)"
       },
       "options": [
         "เจ็ด",
@@ -525,8 +525,8 @@
       "rationale": "Reverses mapping for active recall."
     },
     {
-      "id": "v-73bffabf48-fill-translit",
-      "vocabId": "v-73bffabf48",
+      "id": "v-1569f39457-fill-translit",
+      "vocabId": "v-1569f39457",
       "type": "fill_translit",
       "displayMode": "thai_only",
       "prompt": {
@@ -537,15 +537,15 @@
       "rationale": "Forces transliteration production with inline tone marks."
     },
     {
-      "id": "v-73bffabf48-context-mcq",
-      "vocabId": "v-73bffabf48",
+      "id": "v-1569f39457-context-mcq",
+      "vocabId": "v-1569f39457",
       "type": "context_mcq",
       "displayMode": "triplet",
       "prompt": {
         "text": "Choose the sentence that keeps the lesson meaning of this phrase.",
         "thai": "เจ็ด",
         "translit": "jèt",
-        "english": "seven"
+        "english": "seven (7)"
       },
       "options": [
         "Use เจ็ด in polite beginner conversation",
@@ -557,32 +557,32 @@
       "rationale": "Checks contextual understanding while preserving triplet exposure."
     },
     {
-      "id": "v-18e34df5c5-thai-to-english",
-      "vocabId": "v-18e34df5c5",
+      "id": "v-f2b6d018d8-thai-to-english",
+      "vocabId": "v-f2b6d018d8",
       "type": "thai_to_english",
       "displayMode": "thai_only",
       "prompt": {
         "text": "What is the best meaning of แปด?",
         "thai": "แปด",
-        "translit": "bpàet"
+        "translit": "bpàaet"
       },
       "options": [
-        "eight",
-        "zero",
-        "one",
-        "two"
+        "eight (8)",
+        "zero (0)",
+        "one (1)",
+        "two (2)"
       ],
-      "answer": "eight",
+      "answer": "eight (8)",
       "rationale": "Maps Thai form to target meaning from script languageFocus."
     },
     {
-      "id": "v-18e34df5c5-english-to-thai",
-      "vocabId": "v-18e34df5c5",
+      "id": "v-f2b6d018d8-english-to-thai",
+      "vocabId": "v-f2b6d018d8",
       "type": "english_to_thai",
       "displayMode": "english_only",
       "prompt": {
-        "text": "Select Thai for: eight",
-        "english": "eight"
+        "text": "Select Thai for: eight (8)",
+        "english": "eight (8)"
       },
       "options": [
         "แปด",
@@ -594,27 +594,27 @@
       "rationale": "Reverses mapping for active recall."
     },
     {
-      "id": "v-18e34df5c5-fill-translit",
-      "vocabId": "v-18e34df5c5",
+      "id": "v-f2b6d018d8-fill-translit",
+      "vocabId": "v-f2b6d018d8",
       "type": "fill_translit",
       "displayMode": "thai_only",
       "prompt": {
         "text": "Type the PTM transliteration for แปด.",
         "thai": "แปด"
       },
-      "answer": "bpàet",
+      "answer": "bpàaet",
       "rationale": "Forces transliteration production with inline tone marks."
     },
     {
-      "id": "v-18e34df5c5-context-mcq",
-      "vocabId": "v-18e34df5c5",
+      "id": "v-f2b6d018d8-context-mcq",
+      "vocabId": "v-f2b6d018d8",
       "type": "context_mcq",
       "displayMode": "triplet",
       "prompt": {
         "text": "Choose the sentence that keeps the lesson meaning of this phrase.",
         "thai": "แปด",
-        "translit": "bpàet",
-        "english": "eight"
+        "translit": "bpàaet",
+        "english": "eight (8)"
       },
       "options": [
         "Use แปด in polite beginner conversation",
@@ -626,8 +626,8 @@
       "rationale": "Checks contextual understanding while preserving triplet exposure."
     },
     {
-      "id": "v-61140bdbc1-thai-to-english",
-      "vocabId": "v-61140bdbc1",
+      "id": "v-d03227860c-thai-to-english",
+      "vocabId": "v-d03227860c",
       "type": "thai_to_english",
       "displayMode": "thai_only",
       "prompt": {
@@ -636,22 +636,22 @@
         "translit": "gâo"
       },
       "options": [
-        "nine",
-        "zero",
-        "one",
-        "two"
+        "nine (9)",
+        "zero (0)",
+        "one (1)",
+        "two (2)"
       ],
-      "answer": "nine",
+      "answer": "nine (9)",
       "rationale": "Maps Thai form to target meaning from script languageFocus."
     },
     {
-      "id": "v-61140bdbc1-english-to-thai",
-      "vocabId": "v-61140bdbc1",
+      "id": "v-d03227860c-english-to-thai",
+      "vocabId": "v-d03227860c",
       "type": "english_to_thai",
       "displayMode": "english_only",
       "prompt": {
-        "text": "Select Thai for: nine",
-        "english": "nine"
+        "text": "Select Thai for: nine (9)",
+        "english": "nine (9)"
       },
       "options": [
         "เก้า",
@@ -663,8 +663,8 @@
       "rationale": "Reverses mapping for active recall."
     },
     {
-      "id": "v-61140bdbc1-fill-translit",
-      "vocabId": "v-61140bdbc1",
+      "id": "v-d03227860c-fill-translit",
+      "vocabId": "v-d03227860c",
       "type": "fill_translit",
       "displayMode": "thai_only",
       "prompt": {
@@ -675,15 +675,15 @@
       "rationale": "Forces transliteration production with inline tone marks."
     },
     {
-      "id": "v-61140bdbc1-context-mcq",
-      "vocabId": "v-61140bdbc1",
+      "id": "v-d03227860c-context-mcq",
+      "vocabId": "v-d03227860c",
       "type": "context_mcq",
       "displayMode": "triplet",
       "prompt": {
         "text": "Choose the sentence that keeps the lesson meaning of this phrase.",
         "thai": "เก้า",
         "translit": "gâo",
-        "english": "nine"
+        "english": "nine (9)"
       },
       "options": [
         "Use เก้า in polite beginner conversation",
@@ -695,8 +695,8 @@
       "rationale": "Checks contextual understanding while preserving triplet exposure."
     },
     {
-      "id": "v-31da0816ab-thai-to-english",
-      "vocabId": "v-31da0816ab",
+      "id": "v-43a5e0b3f2-thai-to-english",
+      "vocabId": "v-43a5e0b3f2",
       "type": "thai_to_english",
       "displayMode": "thai_only",
       "prompt": {
@@ -705,22 +705,22 @@
         "translit": "sìp"
       },
       "options": [
-        "ten",
-        "zero",
-        "one",
-        "two"
+        "ten (10)",
+        "zero (0)",
+        "one (1)",
+        "two (2)"
       ],
-      "answer": "ten",
+      "answer": "ten (10)",
       "rationale": "Maps Thai form to target meaning from script languageFocus."
     },
     {
-      "id": "v-31da0816ab-english-to-thai",
-      "vocabId": "v-31da0816ab",
+      "id": "v-43a5e0b3f2-english-to-thai",
+      "vocabId": "v-43a5e0b3f2",
       "type": "english_to_thai",
       "displayMode": "english_only",
       "prompt": {
-        "text": "Select Thai for: ten",
-        "english": "ten"
+        "text": "Select Thai for: ten (10)",
+        "english": "ten (10)"
       },
       "options": [
         "สิบ",
@@ -732,8 +732,8 @@
       "rationale": "Reverses mapping for active recall."
     },
     {
-      "id": "v-31da0816ab-fill-translit",
-      "vocabId": "v-31da0816ab",
+      "id": "v-43a5e0b3f2-fill-translit",
+      "vocabId": "v-43a5e0b3f2",
       "type": "fill_translit",
       "displayMode": "thai_only",
       "prompt": {
@@ -744,15 +744,15 @@
       "rationale": "Forces transliteration production with inline tone marks."
     },
     {
-      "id": "v-31da0816ab-context-mcq",
-      "vocabId": "v-31da0816ab",
+      "id": "v-43a5e0b3f2-context-mcq",
+      "vocabId": "v-43a5e0b3f2",
       "type": "context_mcq",
       "displayMode": "triplet",
       "prompt": {
         "text": "Choose the sentence that keeps the lesson meaning of this phrase.",
         "thai": "สิบ",
         "translit": "sìp",
-        "english": "ten"
+        "english": "ten (10)"
       },
       "options": [
         "Use สิบ in polite beginner conversation",
@@ -775,9 +775,9 @@
       },
       "options": [
         "what number?",
-        "zero",
-        "one",
-        "two"
+        "zero (0)",
+        "one (1)",
+        "two (2)"
       ],
       "answer": "what number?",
       "rationale": "Maps Thai form to target meaning from script languageFocus."
@@ -844,9 +844,9 @@
       },
       "options": [
         "I am ... years old",
-        "zero",
-        "one",
-        "two"
+        "zero (0)",
+        "one (1)",
+        "two (2)"
       ],
       "answer": "I am ... years old",
       "rationale": "Maps Thai form to target meaning from script languageFocus."
@@ -902,72 +902,141 @@
       "rationale": "Checks contextual understanding while preserving triplet exposure."
     },
     {
-      "id": "v-a2028c5b78-thai-to-english",
-      "vocabId": "v-a2028c5b78",
+      "id": "v-356fe4743b-thai-to-english",
+      "vocabId": "v-356fe4743b",
       "type": "thai_to_english",
       "displayMode": "thai_only",
       "prompt": {
-        "text": "What is the best meaning of สี่?",
-        "thai": "สี่",
-        "translit": "sìi"
+        "text": "What is the best meaning of ห้อง?",
+        "thai": "ห้อง",
+        "translit": "hâwng"
       },
       "options": [
-        "four (low tone)",
-        "zero",
-        "one",
-        "two"
+        "room",
+        "zero (0)",
+        "one (1)",
+        "two (2)"
       ],
-      "answer": "four (low tone)",
+      "answer": "room",
       "rationale": "Maps Thai form to target meaning from script languageFocus."
     },
     {
-      "id": "v-a2028c5b78-english-to-thai",
-      "vocabId": "v-a2028c5b78",
+      "id": "v-356fe4743b-english-to-thai",
+      "vocabId": "v-356fe4743b",
       "type": "english_to_thai",
       "displayMode": "english_only",
       "prompt": {
-        "text": "Select Thai for: four (low tone)",
-        "english": "four (low tone)"
+        "text": "Select Thai for: room",
+        "english": "room"
       },
       "options": [
-        "สี่",
+        "ห้อง",
         "ศูนย์",
         "หนึ่ง",
         "สอง"
       ],
-      "answer": "สี่",
+      "answer": "ห้อง",
       "rationale": "Reverses mapping for active recall."
     },
     {
-      "id": "v-a2028c5b78-fill-translit",
-      "vocabId": "v-a2028c5b78",
+      "id": "v-356fe4743b-fill-translit",
+      "vocabId": "v-356fe4743b",
       "type": "fill_translit",
       "displayMode": "thai_only",
       "prompt": {
-        "text": "Type the PTM transliteration for สี่.",
-        "thai": "สี่"
+        "text": "Type the PTM transliteration for ห้อง.",
+        "thai": "ห้อง"
       },
-      "answer": "sìi",
+      "answer": "hâwng",
       "rationale": "Forces transliteration production with inline tone marks."
     },
     {
-      "id": "v-a2028c5b78-context-mcq",
-      "vocabId": "v-a2028c5b78",
+      "id": "v-356fe4743b-context-mcq",
+      "vocabId": "v-356fe4743b",
       "type": "context_mcq",
       "displayMode": "triplet",
       "prompt": {
         "text": "Choose the sentence that keeps the lesson meaning of this phrase.",
-        "thai": "สี่",
-        "translit": "sìi",
-        "english": "four (low tone)"
+        "thai": "ห้อง",
+        "translit": "hâwng",
+        "english": "room"
       },
       "options": [
-        "Use สี่ in polite beginner conversation",
+        "Use ห้อง in polite beginner conversation",
         "Use ศูนย์ in polite beginner conversation",
         "Use หนึ่ง in polite beginner conversation",
         "Use สอง in polite beginner conversation"
       ],
-      "answer": "Use สี่ in polite beginner conversation",
+      "answer": "Use ห้อง in polite beginner conversation",
+      "rationale": "Checks contextual understanding while preserving triplet exposure."
+    },
+    {
+      "id": "v-19ba2f5428-thai-to-english",
+      "vocabId": "v-19ba2f5428",
+      "type": "thai_to_english",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "What is the best meaning of สาม?",
+        "thai": "สาม",
+        "translit": "sǎam"
+      },
+      "options": [
+        "three (rising tone)",
+        "zero (0)",
+        "one (1)",
+        "two (2)"
+      ],
+      "answer": "three (rising tone)",
+      "rationale": "Maps Thai form to target meaning from script languageFocus."
+    },
+    {
+      "id": "v-19ba2f5428-english-to-thai",
+      "vocabId": "v-19ba2f5428",
+      "type": "english_to_thai",
+      "displayMode": "english_only",
+      "prompt": {
+        "text": "Select Thai for: three (rising tone)",
+        "english": "three (rising tone)"
+      },
+      "options": [
+        "สาม",
+        "ศูนย์",
+        "หนึ่ง",
+        "สอง"
+      ],
+      "answer": "สาม",
+      "rationale": "Reverses mapping for active recall."
+    },
+    {
+      "id": "v-19ba2f5428-fill-translit",
+      "vocabId": "v-19ba2f5428",
+      "type": "fill_translit",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "Type the PTM transliteration for สาม.",
+        "thai": "สาม"
+      },
+      "answer": "sǎam",
+      "rationale": "Forces transliteration production with inline tone marks."
+    },
+    {
+      "id": "v-19ba2f5428-context-mcq",
+      "vocabId": "v-19ba2f5428",
+      "type": "context_mcq",
+      "displayMode": "triplet",
+      "prompt": {
+        "text": "Choose the sentence that keeps the lesson meaning of this phrase.",
+        "thai": "สาม",
+        "translit": "sǎam",
+        "english": "three (rising tone)"
+      },
+      "options": [
+        "Use สาม in polite beginner conversation",
+        "Use ศูนย์ in polite beginner conversation",
+        "Use หนึ่ง in polite beginner conversation",
+        "Use สอง in polite beginner conversation"
+      ],
+      "answer": "Use สาม in polite beginner conversation",
       "rationale": "Checks contextual understanding while preserving triplet exposure."
     }
   ],
@@ -975,57 +1044,57 @@
     "minimumItemsPerNewVocab": 3,
     "perVocab": [
       {
-        "vocabId": "v-871c9bd62f",
+        "vocabId": "v-28499d926c",
         "thai": "ศูนย์",
         "itemCount": 4
       },
       {
-        "vocabId": "v-6ad6888f1d",
+        "vocabId": "v-d5112f8a63",
         "thai": "หนึ่ง",
         "itemCount": 4
       },
       {
-        "vocabId": "v-afdf936166",
+        "vocabId": "v-123bdecbd4",
         "thai": "สอง",
         "itemCount": 4
       },
       {
-        "vocabId": "v-368c7c205d",
+        "vocabId": "v-914a79ebbb",
         "thai": "สาม",
         "itemCount": 4
       },
       {
-        "vocabId": "v-cf99ffc78e",
+        "vocabId": "v-0e247b83bd",
         "thai": "สี่",
         "itemCount": 4
       },
       {
-        "vocabId": "v-f028feb896",
+        "vocabId": "v-6c137e71d9",
         "thai": "ห้า",
         "itemCount": 4
       },
       {
-        "vocabId": "v-f6b67b4e6f",
+        "vocabId": "v-42ac27384d",
         "thai": "หก",
         "itemCount": 4
       },
       {
-        "vocabId": "v-73bffabf48",
+        "vocabId": "v-1569f39457",
         "thai": "เจ็ด",
         "itemCount": 4
       },
       {
-        "vocabId": "v-18e34df5c5",
+        "vocabId": "v-f2b6d018d8",
         "thai": "แปด",
         "itemCount": 4
       },
       {
-        "vocabId": "v-61140bdbc1",
+        "vocabId": "v-d03227860c",
         "thai": "เก้า",
         "itemCount": 4
       },
       {
-        "vocabId": "v-31da0816ab",
+        "vocabId": "v-43a5e0b3f2",
         "thai": "สิบ",
         "itemCount": 4
       },
@@ -1040,8 +1109,13 @@
         "itemCount": 4
       },
       {
-        "vocabId": "v-a2028c5b78",
-        "thai": "สี่",
+        "vocabId": "v-356fe4743b",
+        "thai": "ห้อง",
+        "itemCount": 4
+      },
+      {
+        "vocabId": "v-19ba2f5428",
+        "thai": "สาม",
         "itemCount": 4
       }
     ],

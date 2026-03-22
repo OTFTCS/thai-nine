@@ -2,15 +2,25 @@
 
 Result: PASS
 
-## Checks
-- Flashcard usefulness: PASS — the 15-card deck stays inside lesson scope and now includes the blueprint-critical country category word ประเทศ alongside the main name and origin patterns.
-- Quiz alignment: PASS — the 16-question quiz checks the actual lesson target patterns for name questions, self-introduction lines, and country/origin expressions.
-- Distractor quality: PASS — distractors are simple but plausible within this beginner lesson and do not create obvious trick-question noise.
-- Prompt clarity: PASS — prompts are direct and the answer keys are unambiguous for the current lesson scope.
-- Coverage quality: PASS — the assessment pack covers the core chunks rather than only isolated nouns, and the updated lesson vocabulary is represented coherently.
+## Quiz coverage
+- 16 quiz questions covering all new vocabulary items
+- Questions test: ชื่อ, อะไร, คุณชื่ออะไร, คน, ผมชื่อ..., ฉันชื่อ..., มาจาก, ประเทศ, มาจากประเทศ..., ไทย, อังกฤษ, อเมริกา
+- All new vocab from blueprint covered — PASS
+- No unseen vocabulary in quiz — PASS
 
-## Edits made
-- No changes required in v1 assessment QA.
+## Flashcards
+- 13 flashcards matching all languageFocus items
+- Cards cover individual words and chunk patterns
+- Transliteration consistent with script-master.json — PASS
 
-## Remaining concerns
-- The quiz is still more recognition-heavy than ideal for productive use of self-introduction lines, but it is acceptable for this early controlled-output lesson.
+## Vocab export
+- 13 items exported with correct vocabIds
+- Transliteration matches across all artifacts — PASS
+
+## Transliteration consistency
+- All PTM inline tone marks consistent across quiz, flashcards, vocab-export, and script-master
+- chûue, à-rai, khon, maa-jàak, bprà-thêet, thai, ang-grìt, à-mee-rí-kaa all match
+- No IPA or forbidden symbols detected — PASS
+
+## Issues found
+- None.

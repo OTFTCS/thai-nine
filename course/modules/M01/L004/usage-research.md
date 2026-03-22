@@ -1,23 +1,27 @@
-# Usage Research — M01-L004 Numbers 0 to 10
+# Usage Research — M01-L004: Numbers 0-10
 
-## How Thai numbers appear in beginner life
+## How Thai digits are used in daily conversation
 
-1. **Room numbers and codes** — Thai reads multi-digit codes digit by digit: room 502 is ห้า-ศูนย์-สอง, not ห้าร้อยสอง. This is the single most practical number skill at A0.
+### Phone numbers
+Thai speakers read phone numbers digit by digit. A mobile number like 089-123-4567 is read as individual digits. The question เบอร์อะไร (ber à-rai) means "what number?" and is the standard way to ask for someone's phone number. Often shortened to เบอร์อะไรครับ/คะ in polite speech.
 
-2. **Age** — The pattern is PRONOUN + อายุ + NUMBER + ปี. At this level, single-digit and สิบ are enough. Thai does not use a verb "to be" in this pattern; English speakers may want to insert one.
+### Room numbers
+Hotel rooms, apartment numbers, and classroom numbers use digits read individually. ห้อง (hâwng) means "room" and precedes the number: ห้องสาม = room 3, ห้องห้า = room 5.
 
-3. **Counting objects** — Digits alone work for very simple counting (นับ). Classifiers come later. For now, pointing and saying a digit is sufficient and natural in market or classroom contexts.
+### Age
+Thai uses อายุ (aa-yú) for age. The pattern is: ฉันอายุ + number + ปี (bpii, meaning "year"). For example: ฉันอายุสิบปี = I am 10 years old. Note: ขวบ (khùap) is used for small children but ปี is the safe default for beginners.
 
-4. **เบอร์อะไร** — เบอร์ is borrowed from English "number" but narrowed to label-type numbers (room, table, phone, queue). It does not mean "number" in the mathematical sense. อะไร is already partly known from คุณชื่ออะไร.
+### Counting
+Simple counting 0-10 follows the same pattern as English — just the digits in sequence. Thai has no irregularities in the basic 0-10 range.
 
-## Pronunciation notes for digits
+## Tone patterns in Thai numbers
+The digits have varied tones, which makes them useful for pronunciation practice:
+- Rising: ศูนย์ (sǔun), สอง (sǎawng), สาม (sǎam)
+- Low: สี่ (sìi), หก (hòk), เจ็ด (jèt), แปด (bpàaet), สิบ (sìp), หนึ่ง (nùeng)
+- Falling: ห้า (hâa), เก้า (gâo)
 
-- หนึ่ง nùeng: the falling tone and the -ng final are both challenging. Beginners often say it flat.
-- สี่ sìi vs สี่ sǐi: the low tone is correct; a rising tone would sound like "colour" (สี).
-- หก hòk and เจ็ด jèt: both are short and clipped. Beginners tend to stretch them.
-- แปด bpàet: the bp- onset and the short vowel are both unfamiliar. Keep it crisp.
-- เก้า gâo: falling tone. Beginners may confuse it with เข้า khâo (enter).
-
-## Register
-
-All digits are register-neutral. The age pattern and เบอร์อะไร are informal-to-neutral. Adding ครับ/ค่ะ makes any number exchange polite enough for any context at this level.
+## Common beginner mistakes
+- Confusing สี่ (sìi, four) with สี (sǐi, color) — different tone
+- Pronouncing หก with aspiration (should be unaspirated h-)
+- Missing the glottal quality in เจ็ด (short vowel, clipped ending)
+- Saying แปด with a long vowel (the final stop cuts it)

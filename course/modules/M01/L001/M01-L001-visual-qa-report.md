@@ -2,18 +2,29 @@
 
 Result: PASS
 
-## Checks
-- Layout clarity: PASS — the 12-slide deck keeps each beat focused, and the rewritten copy now fits the fixed L001 placement system more cleanly.
-- Camera-safe compliance: PASS — the teaching content remains left-weighted and the right-third recording zone stays protected.
-- Visual usefulness: PASS — this lesson is strongest as a text-first teaching deck, and the chosen card, ladder, and checklist layouts support teaching instead of decoration.
-- Spoken/visual alignment: PASS — the rewritten script now matches the slide logic more closely, especially for the courtesy “social job” framing and the polite-ending hierarchy.
-- Slide pacing: PASS — the denser teaching beats are now broken into smaller readable chunks that suit presenter-led recording.
-- Canva handoff quality: PASS — the Canva export uses locked backgrounds, editable text/image fields only, and explicit Thai run metadata plus theme-level Thai font mapping for `Noto Sans Thai Looped`.
+## Slide count
+10 slides total (opener, objectives, 5 teaching, roleplay, recap, closing). Reasonable for a 9-12 minute lesson.
 
-## Edits made
-- Regenerated stage 3 after the script rewrite.
-- Updated the Canva export path so Thai text runs write `th-TH` language metadata and explicit `latin`, `ea`, and `cs` typefaces for `Noto Sans Thai Looped`.
-- Updated the exported deck theme so Thai script maps to `Noto Sans Thai Looped` and the Latin theme font maps to `Open Sans`.
+## thaiFocus coverage
+- Opener (slide-01): 0 thaiFocus — expected for opener
+- Objectives (slide-02): 0 thaiFocus — expected for objectives
+- Teaching slides (slides 03-07): all have 1+ thaiFocus items — PASS
+- Roleplay (slide-08): 8 thaiFocus items — PASS
+- Recap (slide-09): 0 thaiFocus — expected for recap (retrieval prompts)
+- Closing (slide-10): 0 thaiFocus — expected for closing
+
+## PiP zone
+Canvas uses bottom-right PiP layout. All teaching content is in text blocks positioned in the left teaching area. No overlap concerns with text-only layouts.
+
+## Roleplay slide
+- Title: "Roleplay" — PASS (not the full scenario)
+- Speaker labels: "You" and "Staff" — PASS (not "Learner")
+- Dialogue lines properly formatted with speaker | Thai | translit | English
+
+## Layout quality
+- All teaching slides use appropriate layouts (focus-card, contrast-board, dialogue-ladder)
+- No dense bullet walls
+- All slides are text-only, which is appropriate for abstract courtesy vocabulary
 
 ## Remaining concerns
 - None.

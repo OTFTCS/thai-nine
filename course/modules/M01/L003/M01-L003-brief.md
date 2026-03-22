@@ -1,46 +1,63 @@
-# Production Brief — M01-L003
+# Production Brief — M01-L003: Pronouns and Who Questions
 
 ## Lesson
 - **ID:** M01-L003
 - **Title:** Pronouns and Who Questions
-- **Module:** M01 – First Contact and Courtesy
+- **Module:** M01 — First Contact and Courtesy
 - **CEFR:** A0
 
-## Runtime
-9–12 minutes
+## Target runtime
+10–13 minutes
 
-## Objectives
-- **Primary:** Use basic pronouns and ask who someone is.
-- **Secondary:** Recycle recent vocabulary while using identity questions with ใคร in short controlled output.
+## Primary objective
+Use basic pronouns (I, you, he/she) and ask who someone is using คือ and ใคร.
 
-## Scenario / Teaching Frame
-You are at a small gathering. Someone points to a person across the room. You ask who they are, get an answer, and confirm it.
+## Secondary objective
+Recycle recent vocabulary while using identity questions in short controlled output.
+
+## Scenario / teaching frame
+You are at a small gathering and need to introduce someone, ask who another person is, and confirm identities politely.
 
 ## Must-teach outcomes
-1. Use ฉัน / ผม / คุณ / เขา correctly in context
-2. Build "this is..." sentences with นี่คือ...
-3. Ask "who is that?" with เขาคือใคร
-4. Confirm identity with คุณคือ...ใช่ไหม
+- Choose the correct pronoun for "I" (ฉัน for female, ผม for male)
+- Address someone as คุณ and refer to a third person as เขา
+- Build introductions using นี่คือ...
+- Ask identity questions using เขาคือใคร
+- Confirm identity using คุณคือ...ใช่ไหม
 
-## Core vocabulary (7 words + 3 chunks)
-| Thai | Translit | English | Type |
-|------|----------|---------|------|
-| ฉัน | chǎn | I (general) | word |
-| ผม | phǒm | I (male, polite) | word |
-| คุณ | khun | you | word |
-| เขา | khǎo | he / she | word |
-| ใคร | khrai | who | word |
-| นี่ | nîi | this | word |
-| คือ | khuue | is / to be | word |
-| นี่คือ... | nîi khuue... | this is... | chunk |
-| เขาคือใคร | khǎo khuue khrai | who is he/she? | chunk |
-| คุณคือ...ใช่ไหม | khun khuue...châi mǎi | you are...right? | chunk |
+## Core vocabulary (triplets)
+| Thai | Translit | English |
+|------|----------|---------|
+| ฉัน | chǎn | I (female / neutral) |
+| ผม | phǒm | I (male polite) |
+| คุณ | khun | you (polite) |
+| เขา | khǎo | he / she |
+| ใคร | khrai | who |
+| นี่ | nîi | this |
+| คือ | khuu | is |
+
+## Core chunks
+| Thai | Translit | English |
+|------|----------|---------|
+| นี่คือ... | nîi khuu... | this is... |
+| เขาคือใคร | khǎo khuu khrai | who is he/she? |
+| คุณคือ...ใช่ไหม | khun khuu... châi mái | you are... right? |
 
 ## Review vocabulary
-ขอโทษ, ใช่, ชื่อ, คน, ประเทศ, ไทย
+ขอโทษ, ใช่, ชื่อ, คน, ประเทศ, ไทย (from L001–L002)
+
+## Teaching constraints
+- Every word introduced individually before appearing in any chunk
+- Section structure: teach 2-3 words → combine into chunk → drill
+- 40%+ production drills
+- Each new item in 3+ contexts
+- Pronunciation beat: rising tone vs mid tone contrast
 
 ## Likely learner mistakes
-- Confusing ฉัน and ผม (gendered I)
-- Dropping คือ in identity sentences
-- Wrong tone on ใคร (rising) vs ไกล (far)
-- Forgetting polite endings ครับ/ค่ะ after questions
+- Using ฉัน when male (should use ผม in polite settings)
+- Putting ใคร at the beginning like English ("Who is he?") instead of Thai word order (เขาคือใคร)
+- Confusing คือ (identity copula) with other forms of "is" in Thai
+- Flat tone on rising-tone pronouns (ฉัน, ผม, เขา all need rising tone)
+
+## Image and visual notes
+Text-heavy lesson. All sections use text-based layouts (contrast-board, focus-card, drill-stack). No photographic images needed.

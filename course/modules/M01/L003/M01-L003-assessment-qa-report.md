@@ -2,15 +2,34 @@
 
 Result: PASS
 
-## Checks
-- Flashcard usefulness: PASS — the 15-card deck stays inside lesson scope and covers the core pronouns, identity frames, who-questions, and review items that matter for this lesson.
-- Quiz alignment: PASS — the 16-question quiz tests the intended pronoun/identity-question distinctions and does not drift away from the lesson objective.
-- Distractor quality: PASS — distractors are simple but plausible within this early controlled-output lesson and do not introduce noisy alternatives.
-- Prompt clarity: PASS — prompts are direct and answer keys are unambiguous for the current lesson scope.
-- Coverage quality: PASS — the assessment pack includes both the core new chunks and the key review hooks such as `ขอโทษนะ`, `ประเทศ`, and the identity-confirmation pattern.
+## Flashcard check
+- 11 flashcards generated covering all 10 languageFocus items (7 words + 3 chunks) plus 1 pronunciation-focused duplicate for ฉัน
+- All cards have complete Thai/translit/English triplets
+- Transliteration consistent: chǎn, phǒm, khun, khǎo, nîi, khuu, khrai, châi mái
+- All cards tagged M01-L003 and core
 
-## Edits made
-- No changes required in v1 assessment QA.
+## Quiz item bank check
+- Quiz covers all new vocab items with multiple question types per item
+- Question types: thai_to_english, english_to_thai, fill_translit, context_mcq
+- Distractors are plausible (other pronouns as distractors for pronoun questions)
+- No unseen vocabulary in quiz — all options drawn from lesson content
+- Transliteration consistent across all quiz items
 
-## Remaining concerns
-- The quiz is still more recognition-heavy than ideal for productive dialogue building, but it is acceptable for this early lesson.
+## Vocab export check
+- 11 cards exported matching languageFocus items
+- All transliterations match script-master.json exactly
+- No drift detected between quiz, flashcard, and script transliterations
+
+## Transliteration consistency
+- ฉัน = chǎn (consistent across all artifacts)
+- ผม = phǒm (consistent)
+- คุณ = khun (consistent)
+- เขา = khǎo (consistent)
+- นี่ = nîi (consistent)
+- คือ = khuu (consistent)
+- ใคร = khrai (consistent)
+- เขาคือใคร = khǎo khuu khrai (consistent)
+- คุณคือ...ใช่ไหม = khun khuu... châi mái (consistent)
+
+## Issues found
+- None.

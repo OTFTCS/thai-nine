@@ -1,47 +1,90 @@
 # M01-L001 — Hello and Basic Courtesy — Visual Script
 
 Layout: 16:9 (1920x1080), right third reserved for Nine's camera.
+All primary teaching visuals must fit in the left two-thirds (~7.7 inches beside PiP).
+Font: Sarabun for Thai, transliteration, and English.
 
-## Section 1: Say hello the Thai way
-- **Layout:** focus-card
-- **On screen:** Large สวัสดี with transliteration and English, then two smaller cards for สวัสดีครับ and สวัสดีค่ะ
-- **Highlighted Thai:** สวัสดี, สวัสดีครับ, สวัสดีค่ะ
-- **Images:** None — text-only greeting card. The word itself is the teaching target.
-- **Notes:** Keep the greeting large and centered in the left panel. Reveal ครับ/ค่ะ versions after the base form.
+---
 
-## Section 2: Thank, apologise, and soften the moment
-- **Layout:** contrast-board
-- **On screen:** Two-column board — left column: ขอบคุณ (close warmly) / right column: ขอโทษ (repair politely). Arrow from both to ไม่เป็นไร below.
-- **Highlighted Thai:** ขอบคุณ, ขอโทษ, ไม่เป็นไร
-- **Images:** None — contrast board with arrow diagram teaches function better than photos.
-- **Notes:** Show function labels above each phrase (close / repair / soften).
+## Section 1: Your first Thai word: สวัสดี
+**Layout:** focus-card
+**On screen:** Single large triplet card for สวัสดี | sà-wàt-dii | hello
+- Thai script displayed large and prominent
+- Transliteration below in smaller text
+- English meaning below that
+- Clean background, no images — the word is the star
+**Teaching focus:** First word introduction — listen, repeat, use in scenario
 
-## Section 3: Pick the right polite ending
-- **Layout:** drill-stack
-- **On screen:** Three stacked chips: ครับ (male, statements), ค่ะ (female, statements), คะ (female, questions). Substitution line below showing สวัสดี + ending.
-- **Highlighted Thai:** ครับ, ค่ะ, คะ
-- **Images:** None — functional choice system taught through labelled chips.
-- **Notes:** Keep it simple — one rule, then drill. No grammar wall.
+---
 
-## Section 4: Answer yes, no, and no problem naturally
-- **Layout:** dialogue-ladder
-- **On screen:** Three-step response ladder: ใช่ (answers the idea) / ไม่ใช่ (answers the idea) / ไม่เป็นไร (answers the emotion). Mini-scenario showing apology then ไม่เป็นไร.
-- **Highlighted Thai:** ใช่, ไม่ใช่, ไม่เป็นไร
-- **Images:** None — compact dialogue ladder is clearest.
-- **Notes:** Visually distinguish "answer" from "soften" with colour or grouping.
+## Section 2: Polite endings: ครับ and ค่ะ
+**Layout:** contrast-board
+**On screen (phase 1 — individual words):**
+- Two individual triplet cards side by side:
+  - Left: ครับ | khráp | polite ending (male)
+  - Right: ค่ะ | khâ | polite ending (female)
+**On screen (phase 2 — combined chunks):**
+- Below the individual cards, two combined greeting cards:
+  - สวัสดีครับ | sà-wàt-dii khráp | hello (male, polite)
+  - สวัสดีค่ะ | sà-wàt-dii khâ | hello (female, polite)
+**Teaching focus:** Teach ครับ and ค่ะ individually first, then combine into polite greetings
 
-## Section 5: Pronunciation — hearing Thai tones
-- **Layout:** focus-card
-- **On screen:** Two large cards: khráp with upward arrow (high tone), khâ with downward arrow (falling tone). Simple pitch contour line below showing high vs falling vs low.
-- **Highlighted Thai:** ครับ, ค่ะ, ขอบคุณ (for low tone)
-- **Images:** None — tone arrows and pitch contour lines teach better than photographs.
-- **Notes:** Nine should use hand gestures to show pitch direction alongside the visual arrows.
+---
 
-## Roleplay
-- **Layout:** dialogue-ladder
-- **On screen:** Turn-by-turn exchange at reception desk. Your lines highlighted. Two "your turn" prompts marked "your turn".
-- **Notes:** Keep all text in left two-thirds. Right third for Nine demonstrating the interaction.
+## Section 3: Thank you and sorry: ขอบคุณ and ขอโทษ
+**Layout:** focus-card
+**On screen (phase 1 — individual words):**
+- Individual triplet card: ขอบคุณ | khàawp-khun | thank you
+- Individual triplet card: ขอโทษ | khǎaw-thôot | sorry / excuse me
+**On screen (phase 2 — polite chunks):**
+- ขอบคุณครับ | khàawp-khun khráp | thank you (male, polite)
+- ขอโทษค่ะ | khǎaw-thôot khâ | sorry (female, polite)
+**Teaching focus:** Each word taught individually, then combined with polite endings from section 2
+
+---
+
+## Section 4: Respond naturally: ไม่เป็นไร, ใช่, ไม่ใช่
+**Layout:** dialogue-ladder
+**On screen (phase 1 — individual words):**
+- Individual triplet card: ไม่เป็นไร | mâi bpen rai | it is okay / no problem
+- Individual triplet card: ใช่ | châi | yes / that is right
+- Individual triplet card: ไม่ใช่ | mâi châi | no / not right
+**On screen (phase 2 — exchange pattern):**
+- Mini-exchange ladder:
+  - ขอโทษครับ → ไม่เป็นไร
+  - ใช่ไหม? → ใช่ / ไม่ใช่
+**Teaching focus:** Teach each response individually, then show in context of mini-exchanges
+
+---
+
+## Section 5: Pronunciation beat — hearing Thai tones
+**Layout:** focus-card
+**On screen:**
+- Two large tone-contrast cards:
+  - ครับ | khráp | high tone (upward arrow indicator)
+  - ค่ะ | khâ | falling tone (downward arrow indicator)
+- Simple pitch direction arrows showing the contrast
+- ขอบคุณ | khàawp-khun | with note about low tone on khàawp
+**Teaching focus:** Tone awareness — high tone vs falling tone using words already learned
+
+---
+
+## Roleplay: At the hotel reception desk
+**Layout:** dialogue-ladder
+**On screen:**
+- Turn-by-turn exchange with speaker labels:
+  - You: สวัสดีครับ → Staff: สวัสดีค่ะ
+  - You: ขอโทษครับ ใช่ไหมครับ → Staff: ใช่ค่ะ
+  - You: ขอบคุณครับ → Staff: ไม่เป็นไรค่ะ
+  - You: สวัสดีครับ → Staff: สวัสดีค่ะ
+- Speaker labels: "You" and "Staff"
+- Production prompt highlighted before the thank-you turn
+
+---
 
 ## Recap
-- **Layout:** recap-checklist
-- **On screen:** 5 retrieval prompts. Show question first, then reveal answer on click/advance.
+**Layout:** drill-stack
+**On screen:**
+- 5 short retrieval prompts — displayed one at a time
+- Each prompt asks the learner to recall before showing the answer
+- No full triplet listings — retrieval first

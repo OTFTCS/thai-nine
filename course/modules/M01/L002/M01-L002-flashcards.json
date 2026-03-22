@@ -15,6 +15,17 @@
     },
     {
       "id": "m01-l002-c02",
+      "vocabId": "v-fbd69c240c",
+      "front": "อะไร",
+      "back": "what",
+      "translit": "à-rai",
+      "tags": [
+        "M01-L002",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l002-c03",
       "vocabId": "v-a79c6af3af",
       "front": "คุณชื่ออะไร",
       "back": "what is your name?",
@@ -25,62 +36,7 @@
       ]
     },
     {
-      "id": "m01-l002-c03",
-      "vocabId": "v-ce7cc833ec",
-      "front": "มาจาก",
-      "back": "come from",
-      "translit": "maa-jàak",
-      "tags": [
-        "M01-L002",
-        "core"
-      ]
-    },
-    {
       "id": "m01-l002-c04",
-      "vocabId": "v-d0c316cc2c",
-      "front": "ประเทศ",
-      "back": "country",
-      "translit": "bprà-thêet",
-      "tags": [
-        "M01-L002",
-        "core"
-      ]
-    },
-    {
-      "id": "m01-l002-c05",
-      "vocabId": "v-f0b2ddeed3",
-      "front": "ไทย",
-      "back": "Thailand / Thai",
-      "translit": "thai",
-      "tags": [
-        "M01-L002",
-        "core"
-      ]
-    },
-    {
-      "id": "m01-l002-c06",
-      "vocabId": "v-8adc81e330",
-      "front": "อังกฤษ",
-      "back": "England / English",
-      "translit": "ang-grìt",
-      "tags": [
-        "M01-L002",
-        "core"
-      ]
-    },
-    {
-      "id": "m01-l002-c07",
-      "vocabId": "v-9ca06d0136",
-      "front": "อเมริกา",
-      "back": "America",
-      "translit": "à-mee-rí-kaa",
-      "tags": [
-        "M01-L002",
-        "core"
-      ]
-    },
-    {
-      "id": "m01-l002-c08",
       "vocabId": "v-6bb42f6e5c",
       "front": "คน",
       "back": "person",
@@ -91,11 +47,55 @@
       ]
     },
     {
+      "id": "m01-l002-c05",
+      "vocabId": "v-0c96493114",
+      "front": "ผมชื่อ...",
+      "back": "my name is... (male speaker)",
+      "translit": "phǒm chûue...",
+      "tags": [
+        "M01-L002",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l002-c06",
+      "vocabId": "v-37278dd418",
+      "front": "ฉันชื่อ...",
+      "back": "my name is... (female speaker)",
+      "translit": "chǎn chûue...",
+      "tags": [
+        "M01-L002",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l002-c07",
+      "vocabId": "v-ce7cc833ec",
+      "front": "มาจาก",
+      "back": "come from",
+      "translit": "maa-jàak",
+      "tags": [
+        "M01-L002",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l002-c08",
+      "vocabId": "v-d0c316cc2c",
+      "front": "ประเทศ",
+      "back": "country",
+      "translit": "bprà-thêet",
+      "tags": [
+        "M01-L002",
+        "core"
+      ]
+    },
+    {
       "id": "m01-l002-c09",
-      "vocabId": "v-c9337e2739",
-      "front": "สวัสดี",
-      "back": "hello",
-      "translit": "sà-wàt-dii",
+      "vocabId": "v-4118683fb1",
+      "front": "มาจากประเทศ...",
+      "back": "come from (country)...",
+      "translit": "maa-jàak bprà-thêet...",
       "tags": [
         "M01-L002",
         "core"
@@ -103,10 +103,10 @@
     },
     {
       "id": "m01-l002-c10",
-      "vocabId": "v-217b46aa5a",
-      "front": "ขอบคุณ",
-      "back": "thank you",
-      "translit": "khàawp-khun",
+      "vocabId": "v-f0b2ddeed3",
+      "front": "ไทย",
+      "back": "Thailand / Thai",
+      "translit": "thai",
       "tags": [
         "M01-L002",
         "core"
@@ -114,10 +114,32 @@
     },
     {
       "id": "m01-l002-c11",
-      "vocabId": "v-51bd1e627d",
-      "front": "ชื่อ",
-      "back": "name (falling tone)",
-      "translit": "chûue",
+      "vocabId": "v-8adc81e330",
+      "front": "อังกฤษ",
+      "back": "England / English",
+      "translit": "ang-grìt",
+      "tags": [
+        "M01-L002",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l002-c12",
+      "vocabId": "v-9ca06d0136",
+      "front": "อเมริกา",
+      "back": "America",
+      "translit": "à-mee-rí-kaa",
+      "tags": [
+        "M01-L002",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l002-c13",
+      "vocabId": "v-cb1d881a6d",
+      "front": "ประเทศ",
+      "back": "country (pronunciation focus)",
+      "translit": "bprà-thêet",
       "tags": [
         "M01-L002",
         "core"

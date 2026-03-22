@@ -1,40 +1,19 @@
-# Visual Research — M01-L004 Numbers 0 to 10
+# Visual Research — M01-L004: Numbers 0-10
 
-## General approach
-Numbers are abstract, so most sections should be text-only with large, clear digit cards. The one exception is section 3, where a real-world room-number photo anchors the practical use case.
+## Visual strategy
+Numbers are abstract — they don't benefit from photographs the way concrete nouns do. The primary visual approach is text-based focus cards showing each digit as a triplet (Thai | translit | English/numeral).
 
-## Section-by-section
+## Layout decisions
+- Each digit gets its own triplet card in onScreenBullets so the learner can see, hear, and read each number individually before combining them.
+- Sections 1-4 use focus-card layout: large Thai numeral, transliteration, and the digit below.
+- Section 5 (chunks) uses drill-stack layout to show frame patterns with slots.
+- Pronunciation beat uses contrast-board to show tone pairs.
+- Roleplay uses dialogue-ladder.
 
-### S1 — Digits 0-5
-- Layout: focus-card with stacked digit cards
-- Large Thai script, transliteration underneath, Arabic numeral to the left
-- No image needed — digits are the visual
+## Image assessment
+- Images are NOT helpful for teaching digits — they add clutter without aiding memory.
+- The one place images could help: showing a hotel door number or phone screen to anchor the "real-world usage" section. But even this is optional.
+- All sections should use text-only or icon-based layouts.
 
-### S2 — Digits 6-10
-- Layout: contrast-board showing long vs short vowel shapes
-- Rhythm indicators (long bar vs short bar) under each digit
-- No image needed — pronunciation shape is the focus
-
-### S3 — Chunks in context
-- Layout: image-anchored
-- One supporting photo: Thai hotel room-number plaque or door sign
-- Search: "Thailand hotel room number door plaque" on Pexels or Wikimedia
-- Prompt card for เบอร์อะไร overlaid on left panel
-- Keep image as background anchor, not dominant
-
-### S4 — Age pattern and review
-- Layout: drill-stack
-- Phrase frame: PRONOUN + อายุ + [number slot] + ปี
-- Show the slot clearly so the learner sees it as a fill-in pattern
-- No image needed
-
-### S5 — Pronunciation beat
-- Layout: focus-card
-- Tone arrows for sìi (low) vs sǐi (rising) minimal pair
-- Mouth-map description card
-- No image needed
-
-### Roleplay beat
-- Dialogue ladder, one turn per beat
-- Left panel only
-- Room-number answer shown digit by digit
+## Key visual principle
+Keep slides clean and simple. Each teaching slide should show 2-3 digit cards maximum, not all 11 at once. The progressive reveal (sections 1-4) naturally limits visual density.

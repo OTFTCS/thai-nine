@@ -1,23 +1,37 @@
 # Assessment QA Report — M01-L001
 
 Result: PASS
-Date: 2026-03-18
-Reviewer: Codex
 
-## Summary
+## Quiz coverage
+All new vocabulary items from the lesson are covered in the quiz item bank:
+- สวัสดี (hello) -- quiz items present
+- ครับ (polite ending, male) -- quiz items present
+- ค่ะ (polite ending, female) -- quiz items present
+- สวัสดีครับ (hello, male polite) -- quiz items present
+- สวัสดีค่ะ (hello, female polite) -- quiz items present
+- ขอบคุณ (thank you) -- quiz items present
+- ขอโทษ (sorry / excuse me) -- quiz items present
+- ขอบคุณครับ (thank you, male polite) -- quiz items present
+- ขอโทษค่ะ (sorry, female polite) -- quiz items present
+- ไม่เป็นไร (it is okay / no problem) -- quiz items present
+- ใช่ (yes / that is right) -- quiz items present
+- ไม่ใช่ (no / not right) -- quiz items present
 
-- The assessment pack remains aligned to the rewritten lesson scope, and the regenerated artifacts still give clean beginner coverage.
+## Flashcard/vocab export check
+13 cards in vocab-export.json covering all languageFocus items across all sections. All cards have correct Thai, translit, and English fields.
 
-## Findings
+## Transliteration consistency
+- sà-wàt-dii: consistent across script-master, deck-source, quiz, and vocab-export
+- khráp: consistent across all artifacts
+- khâ: consistent across all artifacts
+- khàawp-khun: consistent across all artifacts
+- khǎaw-thôot: consistent across all artifacts
+- mâi bpen rai: consistent across all artifacts
+- châi: consistent across all artifacts
+- mâi châi: consistent across all artifacts
 
-- No blocking assessment issues remain in the current flashcards, quiz item bank, or quiz outputs.
+## No unseen vocabulary in quiz
+All quiz items reference vocabulary taught in the lesson. No unseen vocabulary detected.
 
-## Actions
-
-- Regenerated the deterministic assessment artifacts after the lesson script rewrite.
-- Rechecked the current flashcards, quiz item bank, and quiz against the updated wording and roleplay.
-
-## Checks
-
-- Assessment quality: PASS — the current 11 flashcards, 44-item bank entries, and 16-question quiz stay inside lesson scope and still cover greetings, courtesy phrases, polite endings, and basic yes/no response handling appropriately for L001.
-- Transliteration consistency: PASS — `course/tools/pipeline-cli.ts translit-audit --lesson M01-L001` passes, and the regenerated assessment outputs remain consistent with the lesson transliteration layer.
+## Remaining concerns
+- None.

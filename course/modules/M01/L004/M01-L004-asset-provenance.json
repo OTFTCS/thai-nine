@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
   "lessonId": "M01-L004",
-  "generatedAt": "2026-03-21T09:41:47.110264Z",
+  "generatedAt": "2026-03-22T03:46:29.249139Z",
   "assets": [
     {
-      "assetId": "slide-05-ask-for-a-number-and-say-asset-1",
-      "slideId": "slide-05-ask-for-a-number-and-say",
+      "assetId": "slide-07-numbers-in-real-life-asset-1",
+      "slideId": "slide-07-numbers-in-real-life",
       "kind": "image",
       "status": "fallback-text-only",
       "sourceProvider": "none",
-      "usage": "slide-05-ask-for-a-number-and-say:left-panel image fallback",
-      "query": "Thailand hotel room number door plaque",
+      "usage": "slide-07-numbers-in-real-life:left-panel image fallback",
+      "query": "hotel room door number Thailand",
       "sourcePolicy": "internet-first",
       "fallbackReason": "No acceptable Openverse or Wikimedia asset could be downloaded automatically.",
-      "rationale": "A real hotel room-number plaque makes the use case instantly concrete and shows why Thai digits are said one by one."
+      "rationale": "A hotel room door number grounds the abstract digits in a real-world context the learner will encounter."
     }
   ]
 }

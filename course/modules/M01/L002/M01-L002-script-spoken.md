@@ -1,92 +1,127 @@
 # M01-L002 — Names and Countries — Spoken Script
 
-## Section 1: Ask and give your name
+## Opening
 
-After สวัสดี, the next thing someone usually asks is: คุณชื่ออะไร khun chûue à-rai — what is your name? Listen first: คุณชื่ออะไรครับ.
+What if someone in Thailand asks your name and where you are from? After this lesson, you will answer confidently in Thai. Let's go.
 
-ชื่อ chûue means name. อะไร à-rai means what. So คุณชื่ออะไร literally asks: you, name, what?
+## Section 1: Your name in Thai
 
-To answer, say ผมชื่อ phǒm chûue if you are male, or ฉันชื่อ chǎn chûue if you are female, then your name. ผมชื่อ Oliver ครับ.
+Let's start with two words you will use every time you meet someone new in Thailand.
 
-Let's practise the full exchange. สวัสดีครับ — คุณชื่ออะไรครับ — ผมชื่อ Oliver ครับ. Three lines and you have introduced yourself.
+First word: ชื่อ chûue. Listen first. [THAI: ชื่อ] This means "name." Say it with me: ชื่อ. Notice the falling tone — your voice starts high and drops.
 
-**Drills:**
-- Listen and repeat: คุณชื่ออะไรครับ. Now say it yourself.
-- Pause-and-produce: I ask คุณชื่ออะไรครับ. Say your answer before I show it.
-- Substitution drill: say ผมชื่อ with your name, then ฉันชื่อ with your name.
+Second word: อะไร à-rai. Listen first. [THAI: อะไร] This means "what." Say it with me: อะไร.
 
----
+Now we combine them. To ask someone's name politely, you say: [THAI: คุณชื่ออะไร] khun chûue à-rai — what is your name? คุณ means "you" and adds politeness. Listen again: คุณชื่ออะไร.
 
-## Section 2: Say where you are from
+In real Thai, you always add a polite ending. Male speakers: [THAI: คุณชื่ออะไรครับ]. Female speakers: [THAI: คุณชื่ออะไรคะ]. Your turn — say the full question with your polite ending. [PAUSE 5s]
 
-After your name, the next natural question is: where are you from? In Thai, you say มาจาก maa-jàak — come from.
+**Drill 1:** Listen and repeat. ชื่อ. [PAUSE 3s] Again. อะไร. [PAUSE 3s] Now the full question: คุณชื่ออะไร. [PAUSE 5s]
 
-ผมมาจากอังกฤษครับ phǒm maa-jàak ang-grìt khráp — I come from England. ฉันมาจากอเมริกาค่ะ chǎn maa-jàak à-mee-rí-kaa khâ — I come from America.
+**Drill 2:** Pause and produce. You want to ask someone their name politely. Say the full question now. [PAUSE 5s] The answer: คุณชื่ออะไรครับ or คุณชื่ออะไรคะ.
 
-ประเทศ bprà-thêet means country. ประเทศไทย bprà-thêet thai means Thailand. But in daily speech, Thai people often just say ไทย.
+**Drill 3:** Tone echo. ชื่อ has a falling tone. Say ชื่อ three times, exaggerating the fall. [PAUSE 5s]
 
-So now you can do the whole introduction: สวัสดีครับ — ผมชื่อ Oliver ครับ — ผมมาจากอังกฤษครับ. Three lines and you have said hello, your name, and where you are from.
+## Section 2: Say your name
 
-**Drills:**
-- Listen and repeat: ผมมาจากอังกฤษครับ. Now with อเมริกา.
-- Substitution drill: say มาจาก with อังกฤษ, now with อเมริกา, now with ไทย.
-- Response-building: I ask คุณมาจากไหนครับ. Say where you are from before I show the answer.
+Now you can ask a name. But you need to answer too. First, one more new word.
 
----
+[THAI: คน] khon. Listen first. คน. This means "person." Say it with me: คน. You will hear this word everywhere in Thai — คนไทย means Thai person, คนอังกฤษ means English person. For now, just know คน means person.
 
-## Section 3: The word for person and putting it together
+To say your own name, use this pattern: [THAI: ผมชื่อ...] phǒm chûue... if you are male. [THAI: ฉันชื่อ...] chǎn chûue... if you are female. ผม and ฉัน both mean "I" — ผม for men, ฉัน for women.
 
-One more useful word: คน khon means person. คนไทย khon thai means a Thai person. คนอังกฤษ khon ang-grìt means an English person.
+Let me model it. [THAI: ผมชื่อ Nine ครับ] My name is Nine. Notice: no word for "is" — Thai skips it. Just: I + ชื่อ + your name.
 
-This is how Thai describes nationality — person plus country name. Simple and predictable.
+Your turn. Say your own name using ผมชื่อ or ฉันชื่อ. Add ครับ or ค่ะ at the end. [PAUSE 5s]
 
-Now let's put everything together. After สวัสดี, you say your name with ชื่อ, then where you are from with มาจาก. If someone thanks you, you already know ขอบคุณ and ไม่เป็นไร from the last lesson.
+**Drill 1:** Response-building. I ask: [THAI: คุณชื่ออะไรครับ] — now you answer with your real name. [PAUSE 5s]
 
-**Drills:**
-- Substitution drill: say คน + country. คนไทย — your turn. คนอังกฤษ — your turn.
-- Substitution drill (same format, different content): now use มาจาก + country.
-- Recall drill: without looking, how do you say 'thank you' from last lesson? Say it before I show.
+**Drill 2:** Substitution drill. Say ผมชื่อ Nine ครับ. [PAUSE 3s] Now replace Nine with your own name. [PAUSE 5s] Now say it with ฉัน and ค่ะ instead. [PAUSE 5s]
 
----
+**Drill 3:** Pause and produce. Someone asks you คุณชื่ออะไร — what do you say? [PAUSE 5s]
 
-## Section 4: Pronunciation — the falling tone on ชื่อ
+## Section 3: Where you come from
 
-Let's train your ear again. In lesson 1 you heard the high tone on ครับ and the falling tone on ค่ะ. Now notice two more tones.
+Now you can say your name. Next: where you come from.
 
-Listen: ชื่อ chûue. That is a falling tone — your voice starts high and drops. It sounds like the ค่ะ you already know. ชื่อ, ค่ะ — both falling.
+First word: [THAI: มาจาก] maa-jàak. Listen first. มาจาก. This means "come from." Say it with me: มาจาก. Two parts — มา means come, จาก means from — but learn it as one unit: come from.
 
-Now listen: มา maa. That is a mid tone — your voice stays flat in the middle, no rise, no fall. And จาก jàak has a low tone — your voice dips down.
+Second word: [THAI: ประเทศ] bprà-thêet. Listen first. ประเทศ. This means "country." Say it with me: ประเทศ. The bpr sound at the start is new — put your lips together like b but release without a puff of air.
 
-Try the contrast: ชื่อ — falling, voice drops. มา — mid, voice stays flat. Can you feel the difference?
+Now combine them: [THAI: มาจากประเทศ...] maa-jàak bprà-thêet — come from country... You add the country name at the end.
 
-You now know three tones: high (ครับ), falling (ชื่อ, ค่ะ), and mid (มา). We will keep adding more each lesson.
+Full sentence example coming in the next section — first you need the country names. For now, just practise the frame: [THAI: ผมมาจากประเทศ...] phǒm maa-jàak bprà-thêet... Your turn — say มาจากประเทศ three times until it feels smooth. [PAUSE 5s]
 
-**Drills:**
-- Tone echo: I say ชื่อ. Repeat with falling tone. Now มา. Repeat flat.
-- Minimal pair choice: I say two words. Which has the falling tone?
+**Drill 1:** Listen and repeat. มาจาก. [PAUSE 3s] ประเทศ. [PAUSE 3s] มาจากประเทศ. [PAUSE 5s]
 
----
+**Drill 2:** Substitution drill. Say มาจากประเทศ slowly. [PAUSE 3s] Now say ผมมาจากประเทศ with ครับ. [PAUSE 5s] Now say ฉันมาจากประเทศ with ค่ะ. [PAUSE 5s]
 
-## Roleplay: Meeting a new person at a coffee shop
+**Drill 3:** Pause and produce. How do you say "come from country"? Say it before I show the answer. [PAUSE 5s] มาจากประเทศ.
 
-**New person:** สวัสดีค่ะ คุณชื่ออะไรคะ — Hello! What is your name?
+## Section 4: Thailand, England, and America
 
-**You (your turn):** สวัสดีครับ ผมชื่อ Oliver ครับ — Hello! My name is Oliver.
+You have the pattern. Now let's fill it with country names.
 
-**New person:** ยินดีที่ได้รู้จักค่ะ คุณมาจากไหนคะ — Nice to meet you. Where are you from?
+First country: [THAI: ไทย] thai. Listen first. ไทย. This means Thailand or Thai. Say it with me: ไทย. Mid tone — keep your voice flat and even. Easy.
 
-**You (your turn):** ผมมาจากอังกฤษครับ — I am from England.
+Second country: [THAI: อังกฤษ] ang-grìt. Listen first. อังกฤษ. This means England or English. Say it with me: อังกฤษ. It sounds quite different from the English word — listen again: อังกฤษ ang-grìt.
 
-**New person:** อ๋อ คนอังกฤษ ยินดีต้อนรับค่ะ — Oh, an English person! Welcome.
+Third country: [THAI: อเมริกา] à-mee-rí-kaa. Listen first. อเมริกา. This means America. Say it with me: อเมริกา.
 
-**You:** ขอบคุณครับ — Thank you.
+Now put them into sentences. [THAI: ผมมาจากประเทศไทยครับ] — I come from Thailand. [THAI: ฉันมาจากประเทศอังกฤษค่ะ] — I come from England. [THAI: ผมมาจากประเทศอเมริกาครับ] — I come from America.
 
----
+Remember คน from earlier? [THAI: คนไทย] khon thai means Thai person. [THAI: คนอังกฤษ] khon ang-grìt means English person. Your turn — what is คนอเมริกา? [PAUSE 3s] คนอเมริกา khon à-mee-rí-kaa — American person.
+
+**Drill 1:** Listen and repeat. ไทย. [PAUSE 3s] อังกฤษ. [PAUSE 3s] อเมริกา. [PAUSE 3s] Say each one twice.
+
+**Drill 2:** Substitution drill. Say ผมมาจากประเทศไทยครับ. [PAUSE 5s] Now swap ไทย for อังกฤษ. [PAUSE 5s] Now swap for อเมริกา. [PAUSE 5s]
+
+**Drill 3:** Pause and produce. What is "Thai person" in Thai? [PAUSE 3s] คนไทย. Now "English person"? [PAUSE 3s] คนอังกฤษ. Now "American person"? [PAUSE 3s] คนอเมริกา.
+
+## Section 5: Pronunciation — the bp sound
+
+Let's train your mouth on a new Thai sound. You heard ประเทศ bprà-thêet earlier. That bpr at the start is tricky for English speakers.
+
+In English, you always add a puff of air to p — like in "pot." Thai has two kinds of p-sound. One with air: ph, like in [THAI: ผม] phǒm. One without air: bp, like in [THAI: ประเทศ] bprà-thêet.
+
+Try this: hold your hand in front of your mouth. Say "pot" — you feel air. Now say "spot" — less air on the p. That "spot" feeling is closer to Thai bp. Try: bprà-thêet. [PAUSE 5s]
+
+Minimal pair: listen carefully. [THAI: ป่า] bpàa means forest. [THAI: ผ้า] phâa means cloth. One has no air puff: bpàa. One has an air puff: phâa. Which one means forest? Say it. [PAUSE 3s]
+
+This bp versus ph contrast appears in many Thai words. For now, practise ประเทศ until the bpr feels natural. Say it three more times. [PAUSE 5s]
+
+## Roleplay
+
+Now let's put it all together. You meet a new Thai person at a café. Introduce yourself and ask their name and where they are from.
+
+[THAI: สวัสดีครับ] — Hello.
+
+[THAI: สวัสดีค่ะ] — Hello.
+
+Your turn — say your name and ask theirs. [PAUSE 5s]
+
+[THAI: ผมชื่อ Mark ครับ คุณชื่ออะไรครับ] — My name is Mark. What is your name?
+
+[THAI: ฉันชื่อ Nine ค่ะ] — My name is Nine.
+
+[THAI: คุณมาจากประเทศอะไรคะ] — What country are you from?
+
+Your turn — answer where you are from. [PAUSE 5s]
+
+[THAI: ผมมาจากประเทศอังกฤษครับ] — I come from England.
+
+[THAI: คุณเป็นคนไทยใช่ไหมครับ] — You are Thai, right?
+
+[THAI: ใช่ค่ะ ฉันเป็นคนไทยค่ะ] — Yes, I am Thai.
+
+[THAI: ขอบคุณครับ] — Thank you.
 
 ## Recap
 
-- Look away and try: how do you ask someone's name? คุณชื่ออะไร.
-- How do you say where you are from? ผม/ฉัน มาจาก + country.
-- What does คน mean? Person. How do you say 'Thai person'? คนไทย.
-- From lesson 1: how do you say thank you? ขอบคุณ.
-- Tone check: ชื่อ has a falling tone. มา has a mid tone.
+Look away and try before I show the answers.
+
+1. How do you ask someone's name in Thai? Say it now.
+2. Say "my name is..." using your real name.
+3. How do you say "I come from America"?
+4. What does คนไทย mean?
+5. What is the difference between bp and ph sounds?

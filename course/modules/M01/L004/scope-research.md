@@ -1,36 +1,33 @@
-# Scope Research — M01-L004 Numbers 0 to 10
+# Scope Research — M01-L004: Numbers 0-10
 
-## Scope decision
+## In scope
+- Thai digits 0-10 as individual vocabulary items (ศูนย์ through สิบ)
+- Counting sequence: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+- Chunk: เบอร์อะไร (what number?) for asking phone/room numbers
+- Chunk: ฉันอายุ...ปี (I am ... years old) for saying age
+- Chunk: ห้อง... (room ...) for room numbers
+- Review vocab from prior lessons: คุณ, ชื่อ, อะไร, ครับ, ค่ะ
+- Digit-by-digit reading of phone numbers and room numbers (not compound numbers like 11, 12, etc.)
+- Age statements using ปี (for adults)
 
-This lesson teaches Thai digits 0-10 plus two practical chunks (เบอร์อะไร, ฉันอายุ...ปี). The blueprint lists 13 new items total, which exceeds the A0 cap of 5-7. The solution: split digits into two teaching batches (0-5 in section 1, 6-10 in section 2), then teach the chunks in section 3 where they combine with known pronouns. The digits are low cognitive weight individually since they map directly to familiar Arabic numerals.
+## Out of scope
+- Compound numbers (11-99, hundreds, thousands)
+- Thai counting classifiers
+- ขวบ (khùap) for children's age — too much nuance for this lesson
+- Price/money expressions
+- Ordinal numbers (first, second, etc.)
+- Thai script reading rules for number characters (๐-๙)
+- Telephone etiquette beyond asking "what number?"
 
-## Items taught
+## Vocabulary budget
+- 11 new standalone words (digits 0-10) — split across 4 teaching sections
+- 3 new chunks — taught in section 5 after all digits are known
+- Review: คุณ, ชื่อ, อะไร, ครับ, ค่ะ woven into drills and roleplay
 
-### Section 1 — Digits 0-5
-- ศูนย์ sǔun = zero
-- หนึ่ง nùeng = one
-- สอง sǎawng = two
-- สาม sǎam = three
-- สี่ sìi = four
-- ห้า hâa = five
-
-### Section 2 — Digits 6-10
-- หก hòk = six
-- เจ็ด jèt = seven
-- แปด bpàet = eight
-- เก้า gâo = nine
-- สิบ sìp = ten
-
-### Section 3 — Practical chunks
-- เบอร์อะไร ber à-rai = what number? (chunk)
-- ฉันอายุ...ปี chǎn aa-yú ... bpii = I am ... years old (chunk)
-
-## Review integration
-- From L003: ฉัน, ผม, คุณ, เขา (pronouns slot into age pattern)
-- From L002: มาจาก, ประเทศ, ไทย (recycled lightly in roleplay)
-- From L001: สวัสดี, ขอบคุณ, ขอโทษ, ครับ/ค่ะ (courtesy frame in roleplay)
-
-## What is excluded
-- Teen numbers (สิบเอ็ด, สิบสอง) — deferred to a later lesson
-- Classifier + number patterns — too early
-- Phone number conventions — exposure only via เบอร์อะไร
+## Scaffolding plan
+- Section 1: ศูนย์, หนึ่ง, สอง → counting drill
+- Section 2: สาม, สี่, ห้า → counting 0-5 drill
+- Section 3: หก, เจ็ด, แปด → drill
+- Section 4: เก้า, สิบ → counting 0-10 drill
+- Section 5: chunks (เบอร์อะไร, ฉันอายุ...ปี, ห้อง...) → real-world usage drill
+- Section 6: Pronunciation beat (tones in numbers)

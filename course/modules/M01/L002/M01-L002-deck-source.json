@@ -29,12 +29,12 @@
     {
       "id": "slide-01-opener",
       "role": "opener",
-      "title": "Names and Countries",
+      "title": "Names and Countries — Introducing Yourself",
       "estimatedSeconds": 12,
       "layout": "lesson-opener",
       "speakerNotes": [
-        "Open with the moment right after สวัสดี — someone wants to know your name and where you are from.",
-        "Ask someone's name, say your own name, and state where you are from using a short polite self-introduction."
+        "Open by asking: what if someone in Thailand asks your name and where you are from? After this lesson, you can answer confidently in Thai.",
+        "Say your name, ask someone's name, say where you come from, and use the origin pattern with มาจาก in a short self-introduction."
       ],
       "textBlocks": [
         {
@@ -51,7 +51,7 @@
       "visualStrategy": {
         "onScreenGoal": "Introduce the lesson clearly and set the recording tone.",
         "teachingVisuals": [
-          "Names and Countries",
+          "Names and Countries — Introducing Yourself",
           "First Contact and Courtesy"
         ],
         "teacherCues": [
@@ -107,37 +107,37 @@
       "assets": []
     },
     {
-      "id": "slide-03-ask-and-give-your-name",
+      "id": "slide-03-your-name-in-thai",
       "role": "teaching",
-      "title": "Ask and give your name",
-      "estimatedSeconds": 29,
+      "title": "Your name in Thai",
+      "estimatedSeconds": 42,
       "layout": "focus-card",
       "speakerNotes": [
-        "After สวัสดี, the next thing someone usually asks is: คุณชื่ออะไร khun chûue à-rai — what is your name? Listen first: คุณชื่ออะไรครับ.",
-        "ชื่อ chûue means name. อะไร à-rai means what. So คุณชื่ออะไร literally asks: you, name, what?",
-        "To answer, say ผมชื่อ phǒm chûue if you are male, or ฉันชื่อ chǎn chûue if you are female, then your name. ผมชื่อ Oliver ครับ.",
-        "Let's practise the full exchange. สวัสดีครับ — คุณชื่ออะไรครับ — ผมชื่อ Oliver ครับ. Three lines and you have introduced yourself."
+        "Let's start with two words you will use every time you meet someone new in Thailand.",
+        "First word: ชื่อ chûue. Listen first. ชื่อ. This means 'name'. Say it with me: ชื่อ. Notice the falling tone — your voice starts high and drops.",
+        "Second word: อะไร à-rai. Listen first. อะไร. This means 'what'. Say it with me: อะไร.",
+        "Now we combine them. To ask someone's name politely, you say: คุณชื่ออะไร khun chûue à-rai — what is your name? คุณ means 'you' and adds politeness. Listen again: คุณชื่ออะไร.",
+        "In real Thai, you always add a polite ending. Male speakers: คุณชื่ออะไรครับ. Female speakers: คุณชื่ออะไรคะ. Your turn — say the full question with your polite ending before I show the answer."
       ],
       "textBlocks": [
         {
-          "id": "slide-03-ask-and-give-your-name-triplets",
+          "id": "slide-03-your-name-in-thai-triplets",
           "kind": "triplet-list",
           "heading": "Key language",
           "lines": [
             "ชื่อ | chûue | name",
-            "คุณชื่ออะไร | khun chûue à-rai | what is your name?",
-            "ผมชื่อ... | phǒm chûue... | my name is... (male)",
-            "ฉันชื่อ... | chǎn chûue... | my name is... (female)"
+            "อะไร | à-rai | what",
+            "คุณชื่ออะไร | khun chûue à-rai | what is your name?"
           ]
         },
         {
-          "id": "slide-03-ask-and-give-your-name-practice",
+          "id": "slide-03-your-name-in-thai-practice",
           "kind": "bullet-list",
           "heading": "Practice",
           "lines": [
-            "Listen and repeat: คุณชื่ออะไรครับ. Now say it yourself.",
-            "Pause-and-produce: I ask คุณชื่ออะไรครับ. Say your answer — ผมชื่อ or ฉันชื่อ plus your name — before I show it.",
-            "Substitution drill: say ผมชื่อ with your name, then say ฉันชื่อ with your name."
+            "Listen and repeat: ชื่อ chûue. Again. Now อะไร à-rai. Again. Now the full question: คุณชื่ออะไร.",
+            "Pause-and-produce: I want to ask someone their name politely. Say the full question with ครับ or คะ before I show the answer.",
+            "Tone echo: ชื่อ has a falling tone — voice goes high then drops. Say ชื่อ three times, exaggerating the fall each time."
           ]
         }
       ],
@@ -148,58 +148,130 @@
           "english": "name"
         },
         {
+          "thai": "อะไร",
+          "translit": "à-rai",
+          "english": "what"
+        },
+        {
           "thai": "คุณชื่ออะไร",
           "translit": "khun chûue à-rai",
           "english": "what is your name?"
         }
       ],
       "visualStrategy": {
-        "onScreenGoal": "Show the name question and answer pattern as a compact exchange.",
+        "onScreenGoal": "Show each new word as its own triplet card first, then reveal the combined question chunk.",
         "teachingVisuals": [
-          "Large card: คุณชื่ออะไร with transliteration and English.",
-          "Below: answer frame ผมชื่อ___ / ฉันชื่อ___ with a blank slot."
+          "Large triplet card for ชื่อ alone, then a second card for อะไร alone.",
+          "Combined chunk card for คุณชื่ออะไร with all three parts visible."
         ],
         "teacherCues": [
-          "Model the full exchange naturally before breaking it down.",
-          "Recycle สวัสดีครับ from L001 to open the exchange."
+          "Model each word slowly before combining.",
+          "Point to each part of the chunk as you say it."
         ],
         "imageUsage": "text-only",
-        "rationale": "The question-answer pattern is the teaching target. Text cards with a slot frame teach more clearly than imagery."
+        "rationale": "Abstract vocabulary — text triplets teach better than any image."
       },
       "assets": []
     },
     {
-      "id": "slide-04-say-where-you-are-from",
+      "id": "slide-04-say-your-name",
       "role": "teaching",
-      "title": "Say where you are from",
-      "estimatedSeconds": 32,
-      "layout": "focus-card",
+      "title": "Say your name",
+      "estimatedSeconds": 51,
+      "layout": "drill-stack",
       "speakerNotes": [
-        "After your name, the next natural question is: where are you from? In Thai, you say มาจาก maa-jàak — come from.",
-        "ผมมาจากอังกฤษครับ phǒm maa-jàak ang-grìt khráp — I come from England. ฉันมาจากอเมริกาค่ะ chǎn maa-jàak à-mee-rí-kaa khâ — I come from America.",
-        "ประเทศ bprà-thêet means country. ประเทศไทย bprà-thêet thai means Thailand. But in daily speech, Thai people often just say ไทย.",
-        "So now you can do the whole introduction: สวัสดีครับ — ผมชื่อ Oliver ครับ — ผมมาจากอังกฤษครับ. Three lines and you have said hello, your name, and where you are from."
+        "Now you can ask a name. But you need to answer too. First, one more new word.",
+        "คน khon. Listen first. คน. This means 'person'. Say it with me: คน. You will hear this word everywhere in Thai — คนไทย means Thai person, คนอังกฤษ means English person. For now, just know คน means person.",
+        "To say your own name, use this pattern: ผมชื่อ... phǒm chûue... if you are male. ฉันชื่อ... chǎn chûue... if you are female. ผม and ฉัน both mean 'I' — ผม for men, ฉัน for women.",
+        "Let me model it. ผมชื่อ Nine ครับ. My name is Nine. Notice: no word for 'is' — Thai skips it. Just: I + name + your name.",
+        "Your turn. Say your own name using ผมชื่อ or ฉันชื่อ. Add ครับ or ค่ะ at the end. Pause and say it now before I continue."
       ],
       "textBlocks": [
         {
-          "id": "slide-04-say-where-you-are-from-triplets",
+          "id": "slide-04-say-your-name-triplets",
+          "kind": "triplet-list",
+          "heading": "Key language",
+          "lines": [
+            "คน | khon | person",
+            "ผมชื่อ... | phǒm chûue... | my name is... (male)",
+            "ฉันชื่อ... | chǎn chûue... | my name is... (female)"
+          ]
+        },
+        {
+          "id": "slide-04-say-your-name-practice",
+          "kind": "bullet-list",
+          "heading": "Practice",
+          "lines": [
+            "Response-building: I ask คุณชื่ออะไรครับ — now you answer with your real name using ผมชื่อ or ฉันชื่อ. Say it aloud.",
+            "Substitution drill: say ผมชื่อ Nine ครับ. Now replace Nine with your own name. Now say it with ฉัน and ค่ะ instead.",
+            "Pause-and-produce: someone asks you คุณชื่ออะไร — what do you say? Answer before I show it."
+          ]
+        }
+      ],
+      "thaiFocus": [
+        {
+          "thai": "คน",
+          "translit": "khon",
+          "english": "person"
+        },
+        {
+          "thai": "ผมชื่อ...",
+          "translit": "phǒm chûue...",
+          "english": "my name is... (male speaker)"
+        },
+        {
+          "thai": "ฉันชื่อ...",
+          "translit": "chǎn chûue...",
+          "english": "my name is... (female speaker)"
+        }
+      ],
+      "visualStrategy": {
+        "onScreenGoal": "Show คน as its own card, then the two name-answer patterns stacked for comparison.",
+        "teachingVisuals": [
+          "Triplet card for คน alone.",
+          "Two pattern cards side by side: ผมชื่อ... (male) and ฉันชื่อ... (female)."
+        ],
+        "teacherCues": [
+          "Model the full sentence with a real name before asking the learner to substitute.",
+          "Emphasise that Thai has no 'is' — this is the number one beginner trap here."
+        ],
+        "imageUsage": "text-only",
+        "rationale": "Pattern teaching — the sentence frame itself is the visual anchor."
+      },
+      "assets": []
+    },
+    {
+      "id": "slide-05-where-you-come-from",
+      "role": "teaching",
+      "title": "Where you come from",
+      "estimatedSeconds": 50,
+      "layout": "focus-card",
+      "speakerNotes": [
+        "Now you can say your name. Next: where you come from.",
+        "First word: มาจาก maa-jàak. Listen first. มาจาก. This means 'come from'. Say it with me: มาจาก. It is two parts — มา means come, จาก means from — but learn it as one unit: come from.",
+        "Second word: ประเทศ bprà-thêet. Listen first. ประเทศ. This means 'country'. Say it with me: ประเทศ. The bpr sound at the start is new — put your lips together like 'b' but release without a puff of air.",
+        "Now combine them: มาจากประเทศ... maa-jàak bprà-thêet — come from country... You add the country name at the end.",
+        "Full sentence example coming in the next section — first you need the country names. For now, just practise the frame: ผมมาจากประเทศ... phǒm maa-jàak bprà-thêet... Your turn — say มาจากประเทศ three times until it feels smooth."
+      ],
+      "textBlocks": [
+        {
+          "id": "slide-05-where-you-come-from-triplets",
           "kind": "triplet-list",
           "heading": "Key language",
           "lines": [
             "มาจาก | maa-jàak | come from",
             "ประเทศ | bprà-thêet | country",
-            "ไทย | thai | Thailand / Thai",
-            "อังกฤษ | ang-grìt | England / English"
+            "มาจากประเทศ... | maa-jàak bprà-thêet... | come from (country)..."
           ]
         },
         {
-          "id": "slide-04-say-where-you-are-from-practice",
+          "id": "slide-05-where-you-come-from-practice",
           "kind": "bullet-list",
           "heading": "Practice",
           "lines": [
-            "Listen and repeat: ผมมาจากอังกฤษครับ. Now with อเมริกา: ผมมาจากอเมริกาครับ.",
-            "Substitution drill: say มาจาก with อังกฤษ, now with อเมริกา, now with ไทย.",
-            "Response-building: I ask คุณมาจากไหนครับ. Your turn — say where you are from before I show the answer."
+            "Listen and repeat: มาจาก. Again. ประเทศ. Again. มาจากประเทศ. Again.",
+            "Substitution drill: say มาจากประเทศ slowly. Now say ผมมาจากประเทศ with ครับ. Now say ฉันมาจากประเทศ with ค่ะ.",
+            "Pause-and-produce: how do you say 'come from country'? Say it before I show the answer. มาจากประเทศ."
           ]
         }
       ],
@@ -214,6 +286,62 @@
           "translit": "bprà-thêet",
           "english": "country"
         },
+        {
+          "thai": "มาจากประเทศ...",
+          "translit": "maa-jàak bprà-thêet...",
+          "english": "come from (country)..."
+        }
+      ],
+      "visualStrategy": {
+        "onScreenGoal": "Show each word individually first, then the combined origin pattern frame.",
+        "teachingVisuals": [
+          "Triplet card for มาจาก alone, then ประเทศ alone.",
+          "Combined pattern card: มาจากประเทศ... with a blank slot for country name."
+        ],
+        "teacherCues": [
+          "Model the bpr sound carefully — it trips English speakers.",
+          "Show the full sentence with a country name to make the pattern concrete."
+        ],
+        "imageUsage": "text-only",
+        "rationale": "The sentence frame is the teaching focus — no image needed."
+      },
+      "assets": []
+    },
+    {
+      "id": "slide-06-thailand-england-and-ame",
+      "role": "teaching",
+      "title": "Thailand, England, and America",
+      "estimatedSeconds": 52,
+      "layout": "contrast-board",
+      "speakerNotes": [
+        "You have the pattern. Now let's fill it with country names.",
+        "First country: ไทย thai. Listen first. ไทย. This means Thailand or Thai. Say it with me: ไทย. Mid tone — keep your voice flat and even. Easy.",
+        "Second country: อังกฤษ ang-grìt. Listen first. อังกฤษ. This means England or English. Say it with me: อังกฤษ. It sounds quite different from the English word — listen again: อังกฤษ ang-grìt.",
+        "Third country: อเมริกา à-mee-rí-kaa. Listen first. อเมริกา. This means America. Say it with me: อเมริกา. Closer to the English word, but the stress is different.",
+        "Now put them into sentences. ผมมาจากประเทศไทยครับ — I come from Thailand. ฉันมาจากประเทศอังกฤษค่ะ — I come from England. ผมมาจากประเทศอเมริกาครับ — I come from America.",
+        "Remember คน from earlier? คนไทย khon thai means Thai person. คนอังกฤษ khon ang-grìt means English person. Your turn — what is คนอเมริกา? Say it before I tell you."
+      ],
+      "textBlocks": [
+        {
+          "id": "slide-06-thailand-england-and-ame-triplets",
+          "kind": "triplet-list",
+          "heading": "Key language",
+          "lines": [
+            "ไทย | thai | Thailand / Thai",
+            "อังกฤษ | ang-grìt | England / English",
+            "อเมริกา | à-mee-rí-kaa | America"
+          ]
+        },
+        {
+          "id": "slide-06-thailand-england-and-ame-practice",
+          "kind": "bullet-list",
+          "heading": "Practice",
+          "lines": [
+            "Teach ไทย (Thailand), อังกฤษ (England), and อเมริกา (America) individually, then use them in full origin sentences with the pattern from section 3."
+          ]
+        }
+      ],
+      "thaiFocus": [
         {
           "thai": "ไทย",
           "translit": "thai",
@@ -231,166 +359,185 @@
         }
       ],
       "visualStrategy": {
-        "onScreenGoal": "Show the origin pattern มาจาก + country as a slot frame with swappable countries.",
+        "onScreenGoal": "Show three country names as triplet cards, then full origin sentences using the pattern.",
         "teachingVisuals": [
-          "Frame: ผม/ฉัน + มาจาก + ___ with country options below.",
-          "Three country cards: ไทย, อังกฤษ, อเมริกา."
+          "Three triplet cards for ไทย, อังกฤษ, อเมริกา with small flag icons.",
+          "Pattern frame: ผม/ฉันมาจากประเทศ___ครับ/ค่ะ with country slot highlighted."
         ],
         "teacherCues": [
-          "Model the full three-line introduction: สวัสดี → ชื่อ → มาจาก.",
-          "Recycle ครับ/ค่ะ from L001 on every line."
+          "Model อังกฤษ carefully — it surprises English speakers.",
+          "Show คน + country to preview the person pattern."
         ],
         "imageUsage": "real-image",
-        "rationale": "Small flag icons for Thailand, UK, and US could help anchor country names visually."
+        "rationale": "Small flag icons help anchor country names visually."
       },
       "assets": [
         {
-          "assetId": "slide-04-say-where-you-are-from-asset-1",
+          "assetId": "slide-06-thailand-england-and-ame-asset-1",
           "kind": "image",
-          "query": "Thailand flag icon",
+          "query": "Thai flag icon",
           "sourcePolicy": "internet-first",
-          "status": "fallback-text-only",
-          "sourceProvider": "none",
-          "fallbackReason": "No acceptable Openverse or Wikimedia asset could be downloaded automatically.",
-          "usageNotes": "Small flag icons for Thailand, UK, and US could help anchor country names visually."
+          "status": "resolved",
+          "sourceProvider": "openverse",
+          "sourceUrl": "https://www.rawpixel.com/image/7196924/png-sticker-public-domain",
+          "license": "cc0 1.0",
+          "localPath": "slide-assets/slide-06-thailand-england-and-ame-thai-flag-icon.png",
+          "usageNotes": "Small flag icons help anchor country names visually."
         }
       ]
     },
     {
-      "id": "slide-05-the-word-for-person-and-",
+      "id": "slide-07-thailand-england-and-ame",
       "role": "teaching",
-      "title": "The word for person and putting it together",
-      "estimatedSeconds": 31,
+      "title": "Thailand, England, and America",
+      "estimatedSeconds": 52,
       "layout": "contrast-board",
       "speakerNotes": [
-        "One more useful word: คน khon means person. คนไทย khon thai means a Thai person. คนอังกฤษ khon ang-grìt means an English person.",
-        "This is how Thai describes nationality — person plus country name. Simple and predictable.",
-        "Now let's put everything together. After สวัสดี, you say your name with ชื่อ, then where you are from with มาจาก. If someone thanks you, you already know ขอบคุณ and ไม่เป็นไร from the last lesson.",
-        "Substitution practice: say คนไทย, now คนอังกฤษ, now คนอเมริกา. You are swapping the country each time."
+        "You have the pattern. Now let's fill it with country names.",
+        "First country: ไทย thai. Listen first. ไทย. This means Thailand or Thai. Say it with me: ไทย. Mid tone — keep your voice flat and even. Easy.",
+        "Second country: อังกฤษ ang-grìt. Listen first. อังกฤษ. This means England or English. Say it with me: อังกฤษ. It sounds quite different from the English word — listen again: อังกฤษ ang-grìt.",
+        "Third country: อเมริกา à-mee-rí-kaa. Listen first. อเมริกา. This means America. Say it with me: อเมริกา. Closer to the English word, but the stress is different.",
+        "Now put them into sentences. ผมมาจากประเทศไทยครับ — I come from Thailand. ฉันมาจากประเทศอังกฤษค่ะ — I come from England. ผมมาจากประเทศอเมริกาครับ — I come from America.",
+        "Remember คน from earlier? คนไทย khon thai means Thai person. คนอังกฤษ khon ang-grìt means English person. Your turn — what is คนอเมริกา? Say it before I tell you."
       ],
       "textBlocks": [
         {
-          "id": "slide-05-the-word-for-person-and--triplets",
+          "id": "slide-07-thailand-england-and-ame-triplets",
           "kind": "triplet-list",
           "heading": "Key language",
           "lines": [
-            "คน | khon | person",
             "คนไทย | khon thai | Thai person",
             "คนอังกฤษ | khon ang-grìt | English person"
           ]
         },
         {
-          "id": "slide-05-the-word-for-person-and--practice",
+          "id": "slide-07-thailand-england-and-ame-practice",
           "kind": "bullet-list",
           "heading": "Practice",
           "lines": [
-            "Substitution drill: say คน + country. คนไทย — your turn. คนอังกฤษ — your turn. คนอเมริกา — your turn.",
-            "Substitution drill (same format, different content): now use มาจาก + country. มาจากไทย — your turn. มาจากอังกฤษ — your turn.",
-            "Recall drill: without looking, how do you say 'thank you' from last lesson? Say it before I show. ขอบคุณครับ."
+            "Listen and repeat: ไทย, อังกฤษ, อเมริกา. Say each one twice.",
+            "Substitution drill: say ผมมาจากประเทศไทยครับ. Now swap ไทย for อังกฤษ. Now swap for อเมริกา.",
+            "Pause-and-produce: what is 'Thai person' in Thai? Say it. Now 'English person'. Now 'American person'."
           ]
         }
       ],
       "thaiFocus": [
         {
-          "thai": "คน",
-          "translit": "khon",
-          "english": "person"
+          "thai": "ไทย",
+          "translit": "thai",
+          "english": "Thailand / Thai"
         },
         {
-          "thai": "สวัสดี",
-          "translit": "sà-wàt-dii",
-          "english": "hello"
+          "thai": "อังกฤษ",
+          "translit": "ang-grìt",
+          "english": "England / English"
         },
         {
-          "thai": "ขอบคุณ",
-          "translit": "khàawp-khun",
-          "english": "thank you"
+          "thai": "อเมริกา",
+          "translit": "à-mee-rí-kaa",
+          "english": "America"
         }
       ],
       "visualStrategy": {
-        "onScreenGoal": "Show the คน + country pattern alongside the มาจาก + country pattern.",
+        "onScreenGoal": "Show three country names as triplet cards, then full origin sentences using the pattern.",
         "teachingVisuals": [
-          "Two-column: Left = คน + country (who you are). Right = มาจาก + country (where you are from).",
-          "Same country names in both columns to show the pattern."
+          "Three triplet cards for ไทย, อังกฤษ, อเมริกา with small flag icons.",
+          "Pattern frame: ผม/ฉันมาจากประเทศ___ครับ/ค่ะ with country slot highlighted."
         ],
         "teacherCues": [
-          "Recycle ขอบคุณ from L001 in the recall drill.",
-          "Keep the substitution drills fast-paced."
+          "Model อังกฤษ carefully — it surprises English speakers.",
+          "Show คน + country to preview the person pattern."
         ],
-        "imageUsage": "text-only",
-        "rationale": "The pattern comparison is clearer as a two-column text board than with images."
+        "imageUsage": "real-image",
+        "rationale": "Small flag icons help anchor country names visually."
       },
-      "assets": []
+      "assets": [
+        {
+          "assetId": "slide-07-thailand-england-and-ame-asset-1",
+          "kind": "image",
+          "query": "Thai flag icon",
+          "sourcePolicy": "internet-first",
+          "status": "resolved",
+          "sourceProvider": "openverse",
+          "sourceUrl": "https://www.rawpixel.com/image/7196924/png-sticker-public-domain",
+          "license": "cc0 1.0",
+          "localPath": "slide-assets/slide-07-thailand-england-and-ame-thai-flag-icon.png",
+          "usageNotes": "Small flag icons help anchor country names visually."
+        }
+      ]
     },
     {
-      "id": "slide-06-pronunciation-the-fallin",
+      "id": "slide-08-pronunciation-the-bp-sou",
       "role": "teaching",
-      "title": "Pronunciation: the falling tone on ชื่อ and rising tone on ไหน",
-      "estimatedSeconds": 48,
-      "layout": "focus-card",
+      "title": "Pronunciation: the bp sound",
+      "estimatedSeconds": 54,
+      "layout": "contrast-board",
       "speakerNotes": [
-        "Let's train your ear again. In lesson 1 you heard the high tone on ครับ and the falling tone on ค่ะ. Now notice two more tones in today's words.",
-        "Listen: ชื่อ chûue. That is a falling tone — your voice starts high and drops. It sounds like the ค่ะ you already know. ชื่อ, ค่ะ — both falling.",
-        "Now listen: มา maa. That is a mid tone — your voice stays flat in the middle, no rise, no fall. And จาก jàak has a low tone — your voice dips down.",
-        "Try the contrast: ชื่อ — falling, voice drops. มา — mid, voice stays flat. Can you feel the difference?",
-        "Good. You now know three tones: high (ครับ), falling (ชื่อ, ค่ะ), and mid (มา). We will keep adding one or two each lesson."
+        "Let's train your mouth on a new Thai sound. You heard ประเทศ bprà-thêet earlier. That bpr at the start is tricky for English speakers.",
+        "In English, you always add a puff of air to p — like in 'pot'. Thai has two kinds of p-sound. One with air: ph, like in ผม phǒm. One without air: bp, like in ประเทศ bprà-thêet.",
+        "Try this: hold your hand in front of your mouth. Say 'pot' — you feel air. Now say 'spot' — less air on the p. That 'spot' feeling is closer to Thai bp. Try: bprà-thêet.",
+        "Minimal pair: listen carefully. ป่า bpàa means forest. ผ้า phâa means cloth. One has no air puff: bpàa. One has an air puff: phâa. Which one means forest? Say it.",
+        "This bp versus ph contrast appears in many Thai words. For now, practise ประเทศ until the bpr feels natural. Say it three more times."
       ],
       "textBlocks": [
         {
-          "id": "slide-06-pronunciation-the-fallin-triplets",
+          "id": "slide-08-pronunciation-the-bp-sou-triplets",
           "kind": "triplet-list",
           "heading": "Key language",
           "lines": [
-            "ชื่อ | chûue | falling tone — voice starts high, drops",
-            "มา | maa | mid tone — voice stays flat",
-            "จาก | jàak | low tone — voice dips down"
+            "ประเทศ | bprà-thêet | country (bp — no air puff)",
+            "ป่า | bpàa | forest (bp — no air puff)",
+            "ผ้า | phâa | cloth (ph — air puff)"
           ]
         },
         {
-          "id": "slide-06-pronunciation-the-fallin-practice",
+          "id": "slide-08-pronunciation-the-bp-sou-practice",
           "kind": "bullet-list",
           "heading": "Practice",
           "lines": [
-            "Tone echo: I say ชื่อ. Repeat it with a falling tone. Now I say มา. Repeat it flat. Can you feel the difference?",
-            "Minimal pair choice: I say two words from this lesson. Tell me which one has the falling tone."
+            "Tone echo: say ประเทศ bprà-thêet three times. Focus on keeping the bp without an air puff.",
+            "Minimal pair choice: I say two words — bpàa and phâa. Which one is forest and which is cloth? Point before I tell you."
           ]
         }
       ],
       "thaiFocus": [
         {
-          "thai": "ชื่อ",
-          "translit": "chûue",
-          "english": "name (falling tone)"
+          "thai": "ประเทศ",
+          "translit": "bprà-thêet",
+          "english": "country (pronunciation focus)"
         }
       ],
       "visualStrategy": {
-        "onScreenGoal": "Show tone direction arrows for falling, mid, and low tones alongside this lesson's vocabulary.",
+        "onScreenGoal": "Show the bp vs ph contrast with clear labels for air puff vs no air puff.",
         "teachingVisuals": [
-          "Three cards: ชื่อ with downward arrow, มา with flat line, จาก with slight dip arrow.",
-          "Connection note: ชื่อ and ค่ะ (from L001) share the falling tone."
+          "Two-column contrast: bp (no air) on left, ph (air) on right.",
+          "Minimal pair cards: ป่า bpàa vs ผ้า phâa."
         ],
         "teacherCues": [
-          "Connect to L001: 'ชื่อ has the same falling tone as ค่ะ — can you hear it?'",
-          "Use hand gestures for pitch direction."
+          "Hold hand in front of mouth to demonstrate air puff difference.",
+          "Model each word slowly and clearly."
         ],
         "imageUsage": "text-only",
-        "rationale": "Tone arrows and pitch contour lines are the clearest teaching tool here."
+        "rationale": "Sound contrast is best taught with text labels and teacher modeling."
       },
       "assets": []
     },
     {
-      "id": "slide-07-roleplay",
+      "id": "slide-09-roleplay",
       "role": "roleplay",
       "title": "Roleplay",
-      "estimatedSeconds": 37,
+      "estimatedSeconds": 48,
       "layout": "roleplay-dialogue",
       "speakerNotes": [
-        "Meeting a new person at a coffee shop. You introduce themselves after a greeting.",
-        "New person | สวัสดีค่ะ คุณชื่ออะไรคะ | sà-wàt-dii khâ khun chûue à-rai khá | Hello! What is your name?",
-        "You | สวัสดีครับ ผมชื่อ Oliver ครับ | sà-wàt-dii khráp phǒm chûue Oliver khráp | Hello! My name is Oliver.",
-        "New person | ยินดีที่ได้รู้จักค่ะ คุณมาจากไหนคะ | yin-dii thîi dâai rúu-jàk khâ khun maa-jàak nǎi khá | Nice to meet you. Where are you from?",
-        "You | ผมมาจากอังกฤษครับ | phǒm maa-jàak ang-grìt khráp | I am from England.",
-        "New person | อ๋อ คนอังกฤษ ยินดีต้อนรับค่ะ | ǎw khon ang-grìt yin-dii dtâwn-ráp khâ | Oh, an English person! Welcome.",
+        "You meet a new Thai person at a café. Introduce yourself and ask their name and where they are from.",
+        "You | สวัสดีครับ | sà-wàt-dii khráp | Hello.",
+        "New person | สวัสดีค่ะ | sà-wàt-dii khâ | Hello.",
+        "You | ผมชื่อ Mark ครับ คุณชื่ออะไรครับ | phǒm chûue Mark khráp khun chûue à-rai khráp | My name is Mark. What is your name?",
+        "New person | ฉันชื่อ Nine ค่ะ คุณมาจากประเทศอะไรคะ | chǎn chûue Nine khâ khun maa-jàak bprà-thêet à-rai khá | My name is Nine. What country are you from?",
+        "You | ผมมาจากประเทศอังกฤษครับ | phǒm maa-jàak bprà-thêet ang-grìt khráp | I come from England.",
+        "New person | คนอังกฤษคะ | khon ang-grìt khá | An English person?",
+        "You | ใช่ครับ ผมเป็นคนอังกฤษครับ | châi khráp phǒm bpen khon ang-grìt khráp | Yes, I am English.",
+        "New person | ฉันเป็นคนไทยค่ะ | chǎn bpen khon thai khâ | I am Thai.",
         "You | ขอบคุณครับ | khàawp-khun khráp | Thank you."
       ],
       "textBlocks": [
@@ -399,40 +546,55 @@
           "kind": "dialogue",
           "heading": "Dialogue",
           "lines": [
-            "New person | สวัสดีค่ะ คุณชื่ออะไรคะ | sà-wàt-dii khâ khun chûue à-rai khá | Hello! What is your name?",
-            "You | สวัสดีครับ ผมชื่อ Oliver ครับ | sà-wàt-dii khráp phǒm chûue Oliver khráp | Hello! My name is Oliver.",
-            "New person | ยินดีที่ได้รู้จักค่ะ คุณมาจากไหนคะ | yin-dii thîi dâai rúu-jàk khâ khun maa-jàak nǎi khá | Nice to meet you. Where are you from?",
-            "You | ผมมาจากอังกฤษครับ | phǒm maa-jàak ang-grìt khráp | I am from England.",
-            "New person | อ๋อ คนอังกฤษ ยินดีต้อนรับค่ะ | ǎw khon ang-grìt yin-dii dtâwn-ráp khâ | Oh, an English person! Welcome.",
-            "You | ขอบคุณครับ | khàawp-khun khráp | Thank you."
+            "You | สวัสดีครับ | sà-wàt-dii khráp | Hello.",
+            "New person | สวัสดีค่ะ | sà-wàt-dii khâ | Hello.",
+            "You | ผมชื่อ Mark ครับ คุณชื่ออะไรครับ | phǒm chûue Mark khráp khun chûue à-rai khráp | My name is Mark. What is your name?",
+            "New person | ฉันชื่อ Nine ค่ะ คุณมาจากประเทศอะไรคะ | chǎn chûue Nine khâ khun maa-jàak bprà-thêet à-rai khá | My name is Nine. What country are you from?",
+            "You | ผมมาจากประเทศอังกฤษครับ | phǒm maa-jàak bprà-thêet ang-grìt khráp | I come from England.",
+            "New person | คนอังกฤษคะ | khon ang-grìt khá | An English person?"
           ]
         }
       ],
       "thaiFocus": [
         {
-          "thai": "สวัสดีค่ะ คุณชื่ออะไรคะ",
-          "translit": "sà-wàt-dii khâ khun chûue à-rai khá",
-          "english": "Hello! What is your name?"
+          "thai": "สวัสดีครับ",
+          "translit": "sà-wàt-dii khráp",
+          "english": "Hello."
         },
         {
-          "thai": "สวัสดีครับ ผมชื่อ Oliver ครับ",
-          "translit": "sà-wàt-dii khráp phǒm chûue Oliver khráp",
-          "english": "Hello! My name is Oliver."
+          "thai": "สวัสดีค่ะ",
+          "translit": "sà-wàt-dii khâ",
+          "english": "Hello."
         },
         {
-          "thai": "ยินดีที่ได้รู้จักค่ะ คุณมาจากไหนคะ",
-          "translit": "yin-dii thîi dâai rúu-jàk khâ khun maa-jàak nǎi khá",
-          "english": "Nice to meet you. Where are you from?"
+          "thai": "ผมชื่อ Mark ครับ คุณชื่ออะไรครับ",
+          "translit": "phǒm chûue Mark khráp khun chûue à-rai khráp",
+          "english": "My name is Mark. What is your name?"
         },
         {
-          "thai": "ผมมาจากอังกฤษครับ",
-          "translit": "phǒm maa-jàak ang-grìt khráp",
-          "english": "I am from England."
+          "thai": "ฉันชื่อ Nine ค่ะ คุณมาจากประเทศอะไรคะ",
+          "translit": "chǎn chûue Nine khâ khun maa-jàak bprà-thêet à-rai khá",
+          "english": "My name is Nine. What country are you from?"
         },
         {
-          "thai": "อ๋อ คนอังกฤษ ยินดีต้อนรับค่ะ",
-          "translit": "ǎw khon ang-grìt yin-dii dtâwn-ráp khâ",
-          "english": "Oh, an English person! Welcome."
+          "thai": "ผมมาจากประเทศอังกฤษครับ",
+          "translit": "phǒm maa-jàak bprà-thêet ang-grìt khráp",
+          "english": "I come from England."
+        },
+        {
+          "thai": "คนอังกฤษคะ",
+          "translit": "khon ang-grìt khá",
+          "english": "An English person?"
+        },
+        {
+          "thai": "ใช่ครับ ผมเป็นคนอังกฤษครับ",
+          "translit": "châi khráp phǒm bpen khon ang-grìt khráp",
+          "english": "Yes, I am English."
+        },
+        {
+          "thai": "ฉันเป็นคนไทยค่ะ",
+          "translit": "chǎn bpen khon thai khâ",
+          "english": "I am Thai."
         },
         {
           "thai": "ขอบคุณครับ",
@@ -443,7 +605,7 @@
       "visualStrategy": {
         "onScreenGoal": "Support the roleplay recording with clean turn-taking.",
         "teachingVisuals": [
-          "Meeting a new person at a coffee shop. You introduce themselves after a greeting."
+          "You meet a new Thai person at a café. Introduce yourself and ask their name and where they are from."
         ],
         "teacherCues": [
           "Record against the dialogue ladder.",
@@ -455,17 +617,17 @@
       "assets": []
     },
     {
-      "id": "slide-08-recap",
+      "id": "slide-10-recap",
       "role": "recap",
       "title": "Recap",
-      "estimatedSeconds": 28,
+      "estimatedSeconds": 15,
       "layout": "recap-checklist",
       "speakerNotes": [
-        "Look away and try: how do you ask someone's name in Thai? Say it before looking. คุณชื่ออะไร.",
-        "How do you say where you are from? ผม/ฉัน มาจาก + country.",
-        "What does คน mean? Person. How do you say 'Thai person'? คนไทย.",
-        "From lesson 1: how do you say thank you? ขอบคุณ. How do you respond to thanks? ไม่เป็นไร.",
-        "Tone check: ชื่อ has a falling tone — voice drops. มา has a mid tone — voice stays flat."
+        "How do you ask someone's name in Thai? Say it now.",
+        "Say 'my name is...' using your real name.",
+        "How do you say 'I come from America'?",
+        "What does คนไทย mean?",
+        "What is the difference between bp and ph sounds?"
       ],
       "textBlocks": [
         {
@@ -473,11 +635,11 @@
           "kind": "recap-list",
           "heading": "What you can now do",
           "lines": [
-            "Look away and try: how do you ask someone's name in Thai? Say it before looking. คุณชื่ออะไร.",
-            "How do you say where you are from? ผม/ฉัน มาจาก + country.",
-            "What does คน mean? Person. How do you say 'Thai person'? คนไทย.",
-            "From lesson 1: how do you say thank you? ขอบคุณ. How do you respond to thanks? ไม่เป็นไร.",
-            "Tone check: ชื่อ has a falling tone — voice drops. มา has a mid tone — voice stays flat."
+            "How do you ask someone's name in Thai? Say it now.",
+            "Say 'my name is...' using your real name.",
+            "How do you say 'I come from America'?",
+            "What does คนไทย mean?",
+            "What is the difference between bp and ph sounds?"
           ]
         }
       ],
@@ -485,11 +647,11 @@
       "visualStrategy": {
         "onScreenGoal": "Finish with a simple, memorable checklist.",
         "teachingVisuals": [
-          "Look away and try: how do you ask someone's name in Thai? Say it before looking. คุณชื่ออะไร.",
-          "How do you say where you are from? ผม/ฉัน มาจาก + country.",
-          "What does คน mean? Person. How do you say 'Thai person'? คนไทย.",
-          "From lesson 1: how do you say thank you? ขอบคุณ. How do you respond to thanks? ไม่เป็นไร.",
-          "Tone check: ชื่อ has a falling tone — voice drops. มา has a mid tone — voice stays flat."
+          "How do you ask someone's name in Thai? Say it now.",
+          "Say 'my name is...' using your real name.",
+          "How do you say 'I come from America'?",
+          "What does คนไทย mean?",
+          "What is the difference between bp and ph sounds?"
         ],
         "teacherCues": [
           "Use this slide as the summary.",
@@ -501,13 +663,13 @@
       "assets": []
     },
     {
-      "id": "slide-09-closing",
+      "id": "slide-11-closing",
       "role": "closing",
       "title": "Closing",
-      "estimatedSeconds": 11,
+      "estimatedSeconds": 10,
       "layout": "lesson-closing",
       "speakerNotes": [
-        "By the end, you can greet, ask a name, give a name, and say where they are from in a compact polite exchange.",
+        "By the end, you can introduce yourself with your name and country of origin in a natural 3–4 line Thai exchange.",
         "Next: First Contact and Courtesy continues."
       ],
       "textBlocks": [
@@ -516,7 +678,7 @@
           "kind": "closing-list",
           "heading": "Takeaway",
           "lines": [
-            "By the end, you can greet, ask a name, give a name, and say where they are from in a compact polite exchange.",
+            "By the end, you can introduce yourself with your name and country of origin in a natural 3–4 line Thai exchange.",
             "Next: First Contact and Courtesy continues."
           ]
         }
@@ -525,7 +687,7 @@
       "visualStrategy": {
         "onScreenGoal": "Give Nine a clean final slide to close the recording.",
         "teachingVisuals": [
-          "By the end, you can greet, ask a name, give a name, and say where they are from in a compact polite exchange.",
+          "By the end, you can introduce yourself with your name and country of origin in a natural 3–4 line Thai exchange.",
           "Next: First Contact and Courtesy continues."
         ],
         "teacherCues": [

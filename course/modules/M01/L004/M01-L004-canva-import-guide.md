@@ -29,9 +29,8 @@
 - `opener`
 - `objectives-list`
 - `single-focus-card`
-- `response-triad`
-- `stacked-phrase-cards`
 - `drill-rows`
+- `response-triad`
 - `roleplay-ladder`
 - `recap-checklist`
 - `closing`

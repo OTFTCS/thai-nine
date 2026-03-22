@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "lessonId": "M01-L001",
   "passScore": 80,
-  "generatedAt": "2026-03-21T05:57:59.903Z",
+  "generatedAt": "2026-03-22T03:43:00.511Z",
   "itemBankPath": "M01-L001-quiz-item-bank.json",
   "questions": [
     {
@@ -17,9 +17,9 @@
       },
       "options": [
         "hello",
-        "hello (male speaker)",
-        "hello (female speaker)",
-        "thank you"
+        "polite ending (male)",
+        "polite ending (female)",
+        "hello (male, polite)"
       ],
       "answer": "hello",
       "rationale": "Maps Thai form to target meaning from script languageFocus.",
@@ -27,7 +27,47 @@
     },
     {
       "id": "q02",
-      "vocabId": "v-e653eb5319",
+      "vocabId": "v-7a1bb3ff29",
+      "type": "thai_to_english",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "What is the best meaning of ครับ?",
+        "thai": "ครับ",
+        "translit": "khráp"
+      },
+      "options": [
+        "polite ending (male)",
+        "hello",
+        "polite ending (female)",
+        "hello (male, polite)"
+      ],
+      "answer": "polite ending (male)",
+      "rationale": "Maps Thai form to target meaning from script languageFocus.",
+      "bankItemId": "v-7a1bb3ff29-thai-to-english"
+    },
+    {
+      "id": "q03",
+      "vocabId": "v-b88f7c47a8",
+      "type": "thai_to_english",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "What is the best meaning of ค่ะ?",
+        "thai": "ค่ะ",
+        "translit": "khâ"
+      },
+      "options": [
+        "polite ending (female)",
+        "hello",
+        "polite ending (male)",
+        "hello (male, polite)"
+      ],
+      "answer": "polite ending (female)",
+      "rationale": "Maps Thai form to target meaning from script languageFocus.",
+      "bankItemId": "v-b88f7c47a8-thai-to-english"
+    },
+    {
+      "id": "q04",
+      "vocabId": "v-6075c52054",
       "type": "thai_to_english",
       "displayMode": "thai_only",
       "prompt": {
@@ -36,18 +76,18 @@
         "translit": "sà-wàt-dii khráp"
       },
       "options": [
-        "hello (male speaker)",
+        "hello (male, polite)",
         "hello",
-        "hello (female speaker)",
-        "thank you"
+        "polite ending (male)",
+        "polite ending (female)"
       ],
-      "answer": "hello (male speaker)",
+      "answer": "hello (male, polite)",
       "rationale": "Maps Thai form to target meaning from script languageFocus.",
-      "bankItemId": "v-e653eb5319-thai-to-english"
+      "bankItemId": "v-6075c52054-thai-to-english"
     },
     {
-      "id": "q03",
-      "vocabId": "v-bccbe506b3",
+      "id": "q05",
+      "vocabId": "v-c37375d587",
       "type": "thai_to_english",
       "displayMode": "thai_only",
       "prompt": {
@@ -56,17 +96,17 @@
         "translit": "sà-wàt-dii khâ"
       },
       "options": [
-        "hello (female speaker)",
+        "hello (female, polite)",
         "hello",
-        "hello (male speaker)",
-        "thank you"
+        "polite ending (male)",
+        "polite ending (female)"
       ],
-      "answer": "hello (female speaker)",
+      "answer": "hello (female, polite)",
       "rationale": "Maps Thai form to target meaning from script languageFocus.",
-      "bankItemId": "v-bccbe506b3-thai-to-english"
+      "bankItemId": "v-c37375d587-thai-to-english"
     },
     {
-      "id": "q04",
+      "id": "q06",
       "vocabId": "v-217b46aa5a",
       "type": "thai_to_english",
       "displayMode": "thai_only",
@@ -78,16 +118,16 @@
       "options": [
         "thank you",
         "hello",
-        "hello (male speaker)",
-        "hello (female speaker)"
+        "polite ending (male)",
+        "polite ending (female)"
       ],
       "answer": "thank you",
       "rationale": "Maps Thai form to target meaning from script languageFocus.",
       "bankItemId": "v-217b46aa5a-thai-to-english"
     },
     {
-      "id": "q05",
-      "vocabId": "v-6fce5e8c2c",
+      "id": "q07",
+      "vocabId": "v-48f2e095d6",
       "type": "thai_to_english",
       "displayMode": "thai_only",
       "prompt": {
@@ -96,17 +136,57 @@
         "translit": "khǎaw-thôot"
       },
       "options": [
-        "excuse me / sorry",
+        "sorry / excuse me",
         "hello",
-        "hello (male speaker)",
-        "hello (female speaker)"
+        "polite ending (male)",
+        "polite ending (female)"
       ],
-      "answer": "excuse me / sorry",
+      "answer": "sorry / excuse me",
       "rationale": "Maps Thai form to target meaning from script languageFocus.",
-      "bankItemId": "v-6fce5e8c2c-thai-to-english"
+      "bankItemId": "v-48f2e095d6-thai-to-english"
     },
     {
-      "id": "q06",
+      "id": "q08",
+      "vocabId": "v-c202b97d17",
+      "type": "thai_to_english",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "What is the best meaning of ขอบคุณครับ?",
+        "thai": "ขอบคุณครับ",
+        "translit": "khàawp-khun khráp"
+      },
+      "options": [
+        "thank you (male, polite)",
+        "hello",
+        "polite ending (male)",
+        "polite ending (female)"
+      ],
+      "answer": "thank you (male, polite)",
+      "rationale": "Maps Thai form to target meaning from script languageFocus.",
+      "bankItemId": "v-c202b97d17-thai-to-english"
+    },
+    {
+      "id": "q09",
+      "vocabId": "v-c77c1d6a16",
+      "type": "thai_to_english",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "What is the best meaning of ขอโทษค่ะ?",
+        "thai": "ขอโทษค่ะ",
+        "translit": "khǎaw-thôot khâ"
+      },
+      "options": [
+        "sorry (female, polite)",
+        "hello",
+        "polite ending (male)",
+        "polite ending (female)"
+      ],
+      "answer": "sorry (female, polite)",
+      "rationale": "Maps Thai form to target meaning from script languageFocus.",
+      "bankItemId": "v-c77c1d6a16-thai-to-english"
+    },
+    {
+      "id": "q10",
       "vocabId": "v-03cc3fe123",
       "type": "thai_to_english",
       "displayMode": "thai_only",
@@ -118,75 +198,15 @@
       "options": [
         "it is okay / no problem",
         "hello",
-        "hello (male speaker)",
-        "hello (female speaker)"
+        "polite ending (male)",
+        "polite ending (female)"
       ],
       "answer": "it is okay / no problem",
       "rationale": "Maps Thai form to target meaning from script languageFocus.",
       "bankItemId": "v-03cc3fe123-thai-to-english"
     },
     {
-      "id": "q07",
-      "vocabId": "v-a34b9ddfd4",
-      "type": "thai_to_english",
-      "displayMode": "thai_only",
-      "prompt": {
-        "text": "What is the best meaning of ครับ?",
-        "thai": "ครับ",
-        "translit": "khráp"
-      },
-      "options": [
-        "male polite ending",
-        "hello",
-        "hello (male speaker)",
-        "hello (female speaker)"
-      ],
-      "answer": "male polite ending",
-      "rationale": "Maps Thai form to target meaning from script languageFocus.",
-      "bankItemId": "v-a34b9ddfd4-thai-to-english"
-    },
-    {
-      "id": "q08",
-      "vocabId": "v-e5c357ab24",
-      "type": "thai_to_english",
-      "displayMode": "thai_only",
-      "prompt": {
-        "text": "What is the best meaning of ค่ะ?",
-        "thai": "ค่ะ",
-        "translit": "khâ"
-      },
-      "options": [
-        "female statement ending",
-        "hello",
-        "hello (male speaker)",
-        "hello (female speaker)"
-      ],
-      "answer": "female statement ending",
-      "rationale": "Maps Thai form to target meaning from script languageFocus.",
-      "bankItemId": "v-e5c357ab24-thai-to-english"
-    },
-    {
-      "id": "q09",
-      "vocabId": "v-8637eb381c",
-      "type": "thai_to_english",
-      "displayMode": "thai_only",
-      "prompt": {
-        "text": "What is the best meaning of คะ?",
-        "thai": "คะ",
-        "translit": "khá"
-      },
-      "options": [
-        "female question ending",
-        "hello",
-        "hello (male speaker)",
-        "hello (female speaker)"
-      ],
-      "answer": "female question ending",
-      "rationale": "Maps Thai form to target meaning from script languageFocus.",
-      "bankItemId": "v-8637eb381c-thai-to-english"
-    },
-    {
-      "id": "q10",
+      "id": "q11",
       "vocabId": "v-f40371ec59",
       "type": "thai_to_english",
       "displayMode": "thai_only",
@@ -198,15 +218,15 @@
       "options": [
         "yes / that is right",
         "hello",
-        "hello (male speaker)",
-        "hello (female speaker)"
+        "polite ending (male)",
+        "polite ending (female)"
       ],
       "answer": "yes / that is right",
       "rationale": "Maps Thai form to target meaning from script languageFocus.",
       "bankItemId": "v-f40371ec59-thai-to-english"
     },
     {
-      "id": "q11",
+      "id": "q12",
       "vocabId": "v-cda55f5b5e",
       "type": "thai_to_english",
       "displayMode": "thai_only",
@@ -218,15 +238,35 @@
       "options": [
         "no / not right",
         "hello",
-        "hello (male speaker)",
-        "hello (female speaker)"
+        "polite ending (male)",
+        "polite ending (female)"
       ],
       "answer": "no / not right",
       "rationale": "Maps Thai form to target meaning from script languageFocus.",
       "bankItemId": "v-cda55f5b5e-thai-to-english"
     },
     {
-      "id": "q12",
+      "id": "q13",
+      "vocabId": "v-4b01f636c7",
+      "type": "thai_to_english",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "What is the best meaning of ครับ?",
+        "thai": "ครับ",
+        "translit": "khráp"
+      },
+      "options": [
+        "polite ending — high tone",
+        "hello",
+        "polite ending (male)",
+        "polite ending (female)"
+      ],
+      "answer": "polite ending — high tone",
+      "rationale": "Maps Thai form to target meaning from script languageFocus.",
+      "bankItemId": "v-4b01f636c7-thai-to-english"
+    },
+    {
+      "id": "q14",
       "vocabId": "v-c9337e2739",
       "type": "english_to_thai",
       "displayMode": "english_only",
@@ -236,16 +276,16 @@
       },
       "options": [
         "สวัสดี",
-        "สวัสดีครับ",
-        "สวัสดีค่ะ",
-        "ขอบคุณ"
+        "ครับ",
+        "ค่ะ",
+        "สวัสดีครับ"
       ],
       "answer": "สวัสดี",
       "rationale": "Reverses mapping for active recall.",
       "bankItemId": "v-c9337e2739-english-to-thai"
     },
     {
-      "id": "q13",
+      "id": "q15",
       "vocabId": "v-c9337e2739",
       "type": "fill_translit",
       "displayMode": "thai_only",
@@ -258,7 +298,7 @@
       "bankItemId": "v-c9337e2739-fill-translit"
     },
     {
-      "id": "q14",
+      "id": "q16",
       "vocabId": "v-c9337e2739",
       "type": "context_mcq",
       "displayMode": "triplet",
@@ -270,45 +310,13 @@
       },
       "options": [
         "Use สวัสดี in polite beginner conversation",
-        "Use สวัสดีครับ in polite beginner conversation",
-        "Use สวัสดีค่ะ in polite beginner conversation",
-        "Use ขอบคุณ in polite beginner conversation"
+        "Use ครับ in polite beginner conversation",
+        "Use ค่ะ in polite beginner conversation",
+        "Use สวัสดีครับ in polite beginner conversation"
       ],
       "answer": "Use สวัสดี in polite beginner conversation",
       "rationale": "Checks contextual understanding while preserving triplet exposure.",
       "bankItemId": "v-c9337e2739-context-mcq"
-    },
-    {
-      "id": "q15",
-      "vocabId": "v-e653eb5319",
-      "type": "english_to_thai",
-      "displayMode": "english_only",
-      "prompt": {
-        "text": "Select Thai for: hello (male speaker)",
-        "english": "hello (male speaker)"
-      },
-      "options": [
-        "สวัสดีครับ",
-        "สวัสดี",
-        "สวัสดีค่ะ",
-        "ขอบคุณ"
-      ],
-      "answer": "สวัสดีครับ",
-      "rationale": "Reverses mapping for active recall.",
-      "bankItemId": "v-e653eb5319-english-to-thai"
-    },
-    {
-      "id": "q16",
-      "vocabId": "v-e653eb5319",
-      "type": "fill_translit",
-      "displayMode": "thai_only",
-      "prompt": {
-        "text": "Type the PTM transliteration for สวัสดีครับ.",
-        "thai": "สวัสดีครับ"
-      },
-      "answer": "sà-wàt-dii khráp",
-      "rationale": "Forces transliteration production with inline tone marks.",
-      "bankItemId": "v-e653eb5319-fill-translit"
     }
   ],
   "coverage": {
@@ -320,12 +328,22 @@
         "quizItemCount": 4
       },
       {
-        "vocabId": "v-e653eb5319",
-        "thai": "สวัสดีครับ",
-        "quizItemCount": 3
+        "vocabId": "v-7a1bb3ff29",
+        "thai": "ครับ",
+        "quizItemCount": 1
       },
       {
-        "vocabId": "v-bccbe506b3",
+        "vocabId": "v-b88f7c47a8",
+        "thai": "ค่ะ",
+        "quizItemCount": 1
+      },
+      {
+        "vocabId": "v-6075c52054",
+        "thai": "สวัสดีครับ",
+        "quizItemCount": 1
+      },
+      {
+        "vocabId": "v-c37375d587",
         "thai": "สวัสดีค่ะ",
         "quizItemCount": 1
       },
@@ -335,28 +353,23 @@
         "quizItemCount": 1
       },
       {
-        "vocabId": "v-6fce5e8c2c",
+        "vocabId": "v-48f2e095d6",
         "thai": "ขอโทษ",
+        "quizItemCount": 1
+      },
+      {
+        "vocabId": "v-c202b97d17",
+        "thai": "ขอบคุณครับ",
+        "quizItemCount": 1
+      },
+      {
+        "vocabId": "v-c77c1d6a16",
+        "thai": "ขอโทษค่ะ",
         "quizItemCount": 1
       },
       {
         "vocabId": "v-03cc3fe123",
         "thai": "ไม่เป็นไร",
-        "quizItemCount": 1
-      },
-      {
-        "vocabId": "v-a34b9ddfd4",
-        "thai": "ครับ",
-        "quizItemCount": 1
-      },
-      {
-        "vocabId": "v-e5c357ab24",
-        "thai": "ค่ะ",
-        "quizItemCount": 1
-      },
-      {
-        "vocabId": "v-8637eb381c",
-        "thai": "คะ",
         "quizItemCount": 1
       },
       {
@@ -367,6 +380,11 @@
       {
         "vocabId": "v-cda55f5b5e",
         "thai": "ไม่ใช่",
+        "quizItemCount": 1
+      },
+      {
+        "vocabId": "v-4b01f636c7",
+        "thai": "ครับ",
         "quizItemCount": 1
       }
     ],

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-03-21T09:41:58.063Z",
+  "generatedAt": "2026-03-22T03:47:45.477Z",
   "source": "pipeline-cli",
   "lessons": [
     "M01-L004"
@@ -8,10 +8,10 @@
   "cards": [
     {
       "id": "m01-l004-c01",
-      "vocabId": "v-871c9bd62f",
+      "vocabId": "v-28499d926c",
       "thai": "ศูนย์",
       "translit": "sǔun",
-      "english": "zero",
+      "english": "zero (0)",
       "lessonId": "M01-L004",
       "tags": [
         "M01-L004",
@@ -20,10 +20,10 @@
     },
     {
       "id": "m01-l004-c02",
-      "vocabId": "v-6ad6888f1d",
+      "vocabId": "v-d5112f8a63",
       "thai": "หนึ่ง",
       "translit": "nùeng",
-      "english": "one",
+      "english": "one (1)",
       "lessonId": "M01-L004",
       "tags": [
         "M01-L004",
@@ -32,10 +32,10 @@
     },
     {
       "id": "m01-l004-c03",
-      "vocabId": "v-afdf936166",
+      "vocabId": "v-123bdecbd4",
       "thai": "สอง",
       "translit": "sǎawng",
-      "english": "two",
+      "english": "two (2)",
       "lessonId": "M01-L004",
       "tags": [
         "M01-L004",
@@ -44,10 +44,10 @@
     },
     {
       "id": "m01-l004-c04",
-      "vocabId": "v-368c7c205d",
+      "vocabId": "v-914a79ebbb",
       "thai": "สาม",
       "translit": "sǎam",
-      "english": "three",
+      "english": "three (3)",
       "lessonId": "M01-L004",
       "tags": [
         "M01-L004",
@@ -56,10 +56,10 @@
     },
     {
       "id": "m01-l004-c05",
-      "vocabId": "v-cf99ffc78e",
+      "vocabId": "v-0e247b83bd",
       "thai": "สี่",
       "translit": "sìi",
-      "english": "four",
+      "english": "four (4)",
       "lessonId": "M01-L004",
       "tags": [
         "M01-L004",
@@ -68,10 +68,10 @@
     },
     {
       "id": "m01-l004-c06",
-      "vocabId": "v-f028feb896",
+      "vocabId": "v-6c137e71d9",
       "thai": "ห้า",
       "translit": "hâa",
-      "english": "five",
+      "english": "five (5)",
       "lessonId": "M01-L004",
       "tags": [
         "M01-L004",
@@ -80,10 +80,10 @@
     },
     {
       "id": "m01-l004-c07",
-      "vocabId": "v-f6b67b4e6f",
+      "vocabId": "v-42ac27384d",
       "thai": "หก",
       "translit": "hòk",
-      "english": "six",
+      "english": "six (6)",
       "lessonId": "M01-L004",
       "tags": [
         "M01-L004",
@@ -92,10 +92,10 @@
     },
     {
       "id": "m01-l004-c08",
-      "vocabId": "v-73bffabf48",
+      "vocabId": "v-1569f39457",
       "thai": "เจ็ด",
       "translit": "jèt",
-      "english": "seven",
+      "english": "seven (7)",
       "lessonId": "M01-L004",
       "tags": [
         "M01-L004",
@@ -104,10 +104,10 @@
     },
     {
       "id": "m01-l004-c09",
-      "vocabId": "v-18e34df5c5",
+      "vocabId": "v-f2b6d018d8",
       "thai": "แปด",
-      "translit": "bpàet",
-      "english": "eight",
+      "translit": "bpàaet",
+      "english": "eight (8)",
       "lessonId": "M01-L004",
       "tags": [
         "M01-L004",
@@ -116,10 +116,10 @@
     },
     {
       "id": "m01-l004-c10",
-      "vocabId": "v-61140bdbc1",
+      "vocabId": "v-d03227860c",
       "thai": "เก้า",
       "translit": "gâo",
-      "english": "nine",
+      "english": "nine (9)",
       "lessonId": "M01-L004",
       "tags": [
         "M01-L004",
@@ -128,10 +128,10 @@
     },
     {
       "id": "m01-l004-c11",
-      "vocabId": "v-31da0816ab",
+      "vocabId": "v-43a5e0b3f2",
       "thai": "สิบ",
       "translit": "sìp",
-      "english": "ten",
+      "english": "ten (10)",
       "lessonId": "M01-L004",
       "tags": [
         "M01-L004",
@@ -164,10 +164,10 @@
     },
     {
       "id": "m01-l004-c14",
-      "vocabId": "v-0ab46f92e7",
-      "thai": "ฉัน",
-      "translit": "chǎn",
-      "english": "I",
+      "vocabId": "v-356fe4743b",
+      "thai": "ห้อง",
+      "translit": "hâwng",
+      "english": "room",
       "lessonId": "M01-L004",
       "tags": [
         "M01-L004",
@@ -176,46 +176,10 @@
     },
     {
       "id": "m01-l004-c15",
-      "vocabId": "v-e3ef8a701b",
-      "thai": "เขา",
-      "translit": "khǎo",
-      "english": "he / she",
-      "lessonId": "M01-L004",
-      "tags": [
-        "M01-L004",
-        "core"
-      ]
-    },
-    {
-      "id": "m01-l004-c16",
-      "vocabId": "v-6fce5e8c2c",
-      "thai": "ขอโทษ",
-      "translit": "khǎaw-thôot",
-      "english": "excuse me / sorry",
-      "lessonId": "M01-L004",
-      "tags": [
-        "M01-L004",
-        "core"
-      ]
-    },
-    {
-      "id": "m01-l004-c17",
-      "vocabId": "v-217b46aa5a",
-      "thai": "ขอบคุณ",
-      "translit": "khàawp-khun",
-      "english": "thank you",
-      "lessonId": "M01-L004",
-      "tags": [
-        "M01-L004",
-        "core"
-      ]
-    },
-    {
-      "id": "m01-l004-c18",
-      "vocabId": "v-a2028c5b78",
-      "thai": "สี่",
-      "translit": "sìi",
-      "english": "four (low tone)",
+      "vocabId": "v-19ba2f5428",
+      "thai": "สาม",
+      "translit": "sǎam",
+      "english": "three (rising tone)",
       "lessonId": "M01-L004",
       "tags": [
         "M01-L004",

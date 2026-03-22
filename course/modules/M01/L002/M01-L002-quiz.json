@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "lessonId": "M01-L002",
   "passScore": 80,
-  "generatedAt": "2026-03-21T06:25:09.882Z",
+  "generatedAt": "2026-03-22T03:52:32.433Z",
   "itemBankPath": "M01-L002-quiz-item-bank.json",
   "questions": [
     {
@@ -17,9 +17,9 @@
       },
       "options": [
         "name",
+        "what",
         "what is your name?",
-        "come from",
-        "country"
+        "person"
       ],
       "answer": "name",
       "rationale": "Maps Thai form to target meaning from script languageFocus.",
@@ -27,6 +27,26 @@
     },
     {
       "id": "q02",
+      "vocabId": "v-fbd69c240c",
+      "type": "thai_to_english",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "What is the best meaning of อะไร?",
+        "thai": "อะไร",
+        "translit": "à-rai"
+      },
+      "options": [
+        "what",
+        "name",
+        "what is your name?",
+        "person"
+      ],
+      "answer": "what",
+      "rationale": "Maps Thai form to target meaning from script languageFocus.",
+      "bankItemId": "v-fbd69c240c-thai-to-english"
+    },
+    {
+      "id": "q03",
       "vocabId": "v-a79c6af3af",
       "type": "thai_to_english",
       "displayMode": "thai_only",
@@ -38,115 +58,15 @@
       "options": [
         "what is your name?",
         "name",
-        "come from",
-        "country"
+        "what",
+        "person"
       ],
       "answer": "what is your name?",
       "rationale": "Maps Thai form to target meaning from script languageFocus.",
       "bankItemId": "v-a79c6af3af-thai-to-english"
     },
     {
-      "id": "q03",
-      "vocabId": "v-ce7cc833ec",
-      "type": "thai_to_english",
-      "displayMode": "thai_only",
-      "prompt": {
-        "text": "What is the best meaning of มาจาก?",
-        "thai": "มาจาก",
-        "translit": "maa-jàak"
-      },
-      "options": [
-        "come from",
-        "name",
-        "what is your name?",
-        "country"
-      ],
-      "answer": "come from",
-      "rationale": "Maps Thai form to target meaning from script languageFocus.",
-      "bankItemId": "v-ce7cc833ec-thai-to-english"
-    },
-    {
       "id": "q04",
-      "vocabId": "v-d0c316cc2c",
-      "type": "thai_to_english",
-      "displayMode": "thai_only",
-      "prompt": {
-        "text": "What is the best meaning of ประเทศ?",
-        "thai": "ประเทศ",
-        "translit": "bprà-thêet"
-      },
-      "options": [
-        "country",
-        "name",
-        "what is your name?",
-        "come from"
-      ],
-      "answer": "country",
-      "rationale": "Maps Thai form to target meaning from script languageFocus.",
-      "bankItemId": "v-d0c316cc2c-thai-to-english"
-    },
-    {
-      "id": "q05",
-      "vocabId": "v-f0b2ddeed3",
-      "type": "thai_to_english",
-      "displayMode": "thai_only",
-      "prompt": {
-        "text": "What is the best meaning of ไทย?",
-        "thai": "ไทย",
-        "translit": "thai"
-      },
-      "options": [
-        "Thailand / Thai",
-        "name",
-        "what is your name?",
-        "come from"
-      ],
-      "answer": "Thailand / Thai",
-      "rationale": "Maps Thai form to target meaning from script languageFocus.",
-      "bankItemId": "v-f0b2ddeed3-thai-to-english"
-    },
-    {
-      "id": "q06",
-      "vocabId": "v-8adc81e330",
-      "type": "thai_to_english",
-      "displayMode": "thai_only",
-      "prompt": {
-        "text": "What is the best meaning of อังกฤษ?",
-        "thai": "อังกฤษ",
-        "translit": "ang-grìt"
-      },
-      "options": [
-        "England / English",
-        "name",
-        "what is your name?",
-        "come from"
-      ],
-      "answer": "England / English",
-      "rationale": "Maps Thai form to target meaning from script languageFocus.",
-      "bankItemId": "v-8adc81e330-thai-to-english"
-    },
-    {
-      "id": "q07",
-      "vocabId": "v-9ca06d0136",
-      "type": "thai_to_english",
-      "displayMode": "thai_only",
-      "prompt": {
-        "text": "What is the best meaning of อเมริกา?",
-        "thai": "อเมริกา",
-        "translit": "à-mee-rí-kaa"
-      },
-      "options": [
-        "America",
-        "name",
-        "what is your name?",
-        "come from"
-      ],
-      "answer": "America",
-      "rationale": "Maps Thai form to target meaning from script languageFocus.",
-      "bankItemId": "v-9ca06d0136-thai-to-english"
-    },
-    {
-      "id": "q08",
       "vocabId": "v-6bb42f6e5c",
       "type": "thai_to_english",
       "displayMode": "thai_only",
@@ -158,35 +78,195 @@
       "options": [
         "person",
         "name",
-        "what is your name?",
-        "come from"
+        "what",
+        "what is your name?"
       ],
       "answer": "person",
       "rationale": "Maps Thai form to target meaning from script languageFocus.",
       "bankItemId": "v-6bb42f6e5c-thai-to-english"
     },
     {
-      "id": "q09",
-      "vocabId": "v-51bd1e627d",
+      "id": "q05",
+      "vocabId": "v-0c96493114",
       "type": "thai_to_english",
       "displayMode": "thai_only",
       "prompt": {
-        "text": "What is the best meaning of ชื่อ?",
-        "thai": "ชื่อ",
-        "translit": "chûue"
+        "text": "What is the best meaning of ผมชื่อ...?",
+        "thai": "ผมชื่อ...",
+        "translit": "phǒm chûue..."
       },
       "options": [
-        "name (falling tone)",
+        "my name is... (male speaker)",
         "name",
-        "what is your name?",
-        "come from"
+        "what",
+        "what is your name?"
       ],
-      "answer": "name (falling tone)",
+      "answer": "my name is... (male speaker)",
       "rationale": "Maps Thai form to target meaning from script languageFocus.",
-      "bankItemId": "v-51bd1e627d-thai-to-english"
+      "bankItemId": "v-0c96493114-thai-to-english"
+    },
+    {
+      "id": "q06",
+      "vocabId": "v-37278dd418",
+      "type": "thai_to_english",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "What is the best meaning of ฉันชื่อ...?",
+        "thai": "ฉันชื่อ...",
+        "translit": "chǎn chûue..."
+      },
+      "options": [
+        "my name is... (female speaker)",
+        "name",
+        "what",
+        "what is your name?"
+      ],
+      "answer": "my name is... (female speaker)",
+      "rationale": "Maps Thai form to target meaning from script languageFocus.",
+      "bankItemId": "v-37278dd418-thai-to-english"
+    },
+    {
+      "id": "q07",
+      "vocabId": "v-ce7cc833ec",
+      "type": "thai_to_english",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "What is the best meaning of มาจาก?",
+        "thai": "มาจาก",
+        "translit": "maa-jàak"
+      },
+      "options": [
+        "come from",
+        "name",
+        "what",
+        "what is your name?"
+      ],
+      "answer": "come from",
+      "rationale": "Maps Thai form to target meaning from script languageFocus.",
+      "bankItemId": "v-ce7cc833ec-thai-to-english"
+    },
+    {
+      "id": "q08",
+      "vocabId": "v-d0c316cc2c",
+      "type": "thai_to_english",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "What is the best meaning of ประเทศ?",
+        "thai": "ประเทศ",
+        "translit": "bprà-thêet"
+      },
+      "options": [
+        "country",
+        "name",
+        "what",
+        "what is your name?"
+      ],
+      "answer": "country",
+      "rationale": "Maps Thai form to target meaning from script languageFocus.",
+      "bankItemId": "v-d0c316cc2c-thai-to-english"
+    },
+    {
+      "id": "q09",
+      "vocabId": "v-4118683fb1",
+      "type": "thai_to_english",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "What is the best meaning of มาจากประเทศ...?",
+        "thai": "มาจากประเทศ...",
+        "translit": "maa-jàak bprà-thêet..."
+      },
+      "options": [
+        "come from (country)...",
+        "name",
+        "what",
+        "what is your name?"
+      ],
+      "answer": "come from (country)...",
+      "rationale": "Maps Thai form to target meaning from script languageFocus.",
+      "bankItemId": "v-4118683fb1-thai-to-english"
     },
     {
       "id": "q10",
+      "vocabId": "v-f0b2ddeed3",
+      "type": "thai_to_english",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "What is the best meaning of ไทย?",
+        "thai": "ไทย",
+        "translit": "thai"
+      },
+      "options": [
+        "Thailand / Thai",
+        "name",
+        "what",
+        "what is your name?"
+      ],
+      "answer": "Thailand / Thai",
+      "rationale": "Maps Thai form to target meaning from script languageFocus.",
+      "bankItemId": "v-f0b2ddeed3-thai-to-english"
+    },
+    {
+      "id": "q11",
+      "vocabId": "v-8adc81e330",
+      "type": "thai_to_english",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "What is the best meaning of อังกฤษ?",
+        "thai": "อังกฤษ",
+        "translit": "ang-grìt"
+      },
+      "options": [
+        "England / English",
+        "name",
+        "what",
+        "what is your name?"
+      ],
+      "answer": "England / English",
+      "rationale": "Maps Thai form to target meaning from script languageFocus.",
+      "bankItemId": "v-8adc81e330-thai-to-english"
+    },
+    {
+      "id": "q12",
+      "vocabId": "v-9ca06d0136",
+      "type": "thai_to_english",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "What is the best meaning of อเมริกา?",
+        "thai": "อเมริกา",
+        "translit": "à-mee-rí-kaa"
+      },
+      "options": [
+        "America",
+        "name",
+        "what",
+        "what is your name?"
+      ],
+      "answer": "America",
+      "rationale": "Maps Thai form to target meaning from script languageFocus.",
+      "bankItemId": "v-9ca06d0136-thai-to-english"
+    },
+    {
+      "id": "q13",
+      "vocabId": "v-cb1d881a6d",
+      "type": "thai_to_english",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "What is the best meaning of ประเทศ?",
+        "thai": "ประเทศ",
+        "translit": "bprà-thêet"
+      },
+      "options": [
+        "country (pronunciation focus)",
+        "name",
+        "what",
+        "what is your name?"
+      ],
+      "answer": "country (pronunciation focus)",
+      "rationale": "Maps Thai form to target meaning from script languageFocus.",
+      "bankItemId": "v-cb1d881a6d-thai-to-english"
+    },
+    {
+      "id": "q14",
       "vocabId": "v-6acb169e4b",
       "type": "english_to_thai",
       "displayMode": "english_only",
@@ -196,16 +276,16 @@
       },
       "options": [
         "ชื่อ",
+        "อะไร",
         "คุณชื่ออะไร",
-        "มาจาก",
-        "ประเทศ"
+        "คน"
       ],
       "answer": "ชื่อ",
       "rationale": "Reverses mapping for active recall.",
       "bankItemId": "v-6acb169e4b-english-to-thai"
     },
     {
-      "id": "q11",
+      "id": "q15",
       "vocabId": "v-6acb169e4b",
       "type": "fill_translit",
       "displayMode": "thai_only",
@@ -218,7 +298,7 @@
       "bankItemId": "v-6acb169e4b-fill-translit"
     },
     {
-      "id": "q12",
+      "id": "q16",
       "vocabId": "v-6acb169e4b",
       "type": "context_mcq",
       "displayMode": "triplet",
@@ -230,85 +310,13 @@
       },
       "options": [
         "Use ชื่อ in polite beginner conversation",
+        "Use อะไร in polite beginner conversation",
         "Use คุณชื่ออะไร in polite beginner conversation",
-        "Use มาจาก in polite beginner conversation",
-        "Use ประเทศ in polite beginner conversation"
+        "Use คน in polite beginner conversation"
       ],
       "answer": "Use ชื่อ in polite beginner conversation",
       "rationale": "Checks contextual understanding while preserving triplet exposure.",
       "bankItemId": "v-6acb169e4b-context-mcq"
-    },
-    {
-      "id": "q13",
-      "vocabId": "v-a79c6af3af",
-      "type": "english_to_thai",
-      "displayMode": "english_only",
-      "prompt": {
-        "text": "Select Thai for: what is your name?",
-        "english": "what is your name?"
-      },
-      "options": [
-        "คุณชื่ออะไร",
-        "ชื่อ",
-        "มาจาก",
-        "ประเทศ"
-      ],
-      "answer": "คุณชื่ออะไร",
-      "rationale": "Reverses mapping for active recall.",
-      "bankItemId": "v-a79c6af3af-english-to-thai"
-    },
-    {
-      "id": "q14",
-      "vocabId": "v-a79c6af3af",
-      "type": "fill_translit",
-      "displayMode": "thai_only",
-      "prompt": {
-        "text": "Type the PTM transliteration for คุณชื่ออะไร.",
-        "thai": "คุณชื่ออะไร"
-      },
-      "answer": "khun chûue à-rai",
-      "rationale": "Forces transliteration production with inline tone marks.",
-      "bankItemId": "v-a79c6af3af-fill-translit"
-    },
-    {
-      "id": "q15",
-      "vocabId": "v-a79c6af3af",
-      "type": "context_mcq",
-      "displayMode": "triplet",
-      "prompt": {
-        "text": "Choose the sentence that keeps the lesson meaning of this phrase.",
-        "thai": "คุณชื่ออะไร",
-        "translit": "khun chûue à-rai",
-        "english": "what is your name?"
-      },
-      "options": [
-        "Use คุณชื่ออะไร in polite beginner conversation",
-        "Use ชื่อ in polite beginner conversation",
-        "Use มาจาก in polite beginner conversation",
-        "Use ประเทศ in polite beginner conversation"
-      ],
-      "answer": "Use คุณชื่ออะไร in polite beginner conversation",
-      "rationale": "Checks contextual understanding while preserving triplet exposure.",
-      "bankItemId": "v-a79c6af3af-context-mcq"
-    },
-    {
-      "id": "q16",
-      "vocabId": "v-ce7cc833ec",
-      "type": "english_to_thai",
-      "displayMode": "english_only",
-      "prompt": {
-        "text": "Select Thai for: come from",
-        "english": "come from"
-      },
-      "options": [
-        "มาจาก",
-        "ชื่อ",
-        "คุณชื่ออะไร",
-        "ประเทศ"
-      ],
-      "answer": "มาจาก",
-      "rationale": "Reverses mapping for active recall.",
-      "bankItemId": "v-ce7cc833ec-english-to-thai"
     }
   ],
   "coverage": {
@@ -320,18 +328,43 @@
         "quizItemCount": 4
       },
       {
+        "vocabId": "v-fbd69c240c",
+        "thai": "อะไร",
+        "quizItemCount": 1
+      },
+      {
         "vocabId": "v-a79c6af3af",
         "thai": "คุณชื่ออะไร",
-        "quizItemCount": 4
+        "quizItemCount": 1
+      },
+      {
+        "vocabId": "v-6bb42f6e5c",
+        "thai": "คน",
+        "quizItemCount": 1
+      },
+      {
+        "vocabId": "v-0c96493114",
+        "thai": "ผมชื่อ...",
+        "quizItemCount": 1
+      },
+      {
+        "vocabId": "v-37278dd418",
+        "thai": "ฉันชื่อ...",
+        "quizItemCount": 1
       },
       {
         "vocabId": "v-ce7cc833ec",
         "thai": "มาจาก",
-        "quizItemCount": 2
+        "quizItemCount": 1
       },
       {
         "vocabId": "v-d0c316cc2c",
         "thai": "ประเทศ",
+        "quizItemCount": 1
+      },
+      {
+        "vocabId": "v-4118683fb1",
+        "thai": "มาจากประเทศ...",
         "quizItemCount": 1
       },
       {
@@ -350,13 +383,8 @@
         "quizItemCount": 1
       },
       {
-        "vocabId": "v-6bb42f6e5c",
-        "thai": "คน",
-        "quizItemCount": 1
-      },
-      {
-        "vocabId": "v-51bd1e627d",
-        "thai": "ชื่อ",
+        "vocabId": "v-cb1d881a6d",
+        "thai": "ประเทศ",
         "quizItemCount": 1
       }
     ],

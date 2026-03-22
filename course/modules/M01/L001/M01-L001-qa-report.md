@@ -24,7 +24,7 @@ Result: PASS
 - ✅ drills: Each section includes active drill (Each section has >=1 drill)
 - ✅ section-count: Lesson contains at least 4 teaching sections (Legacy lesson exemption applied with 5 sections)
 - ✅ section-depth: Each section includes at least 3 spoken narration lines (Legacy lesson exemption applied)
-- ✅ roleplay: Scenario roleplay included and substantial (Roleplay contains 6 lines)
+- ✅ roleplay: Scenario roleplay included and substantial (Roleplay contains 8 lines)
 - ✅ roleplay-duplicates: Roleplay does not repeat exact lines (All roleplay lines are distinct)
 - ✅ roleplay-turn-taking: Roleplay alternates speakers cleanly (Roleplay alternates speakers line by line)
 - ✅ roleplay-answer-logic: Yes/no answer particles appear only after a nearby question or confirmation turn (Answer particles follow question-like turns when used)
