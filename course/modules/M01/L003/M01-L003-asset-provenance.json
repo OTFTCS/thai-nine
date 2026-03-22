@@ -1,31 +1,6 @@
 {
   "schemaVersion": 1,
   "lessonId": "M01-L003",
-  "generatedAt": "2026-03-19T04:16:21.557843Z",
-  "assets": [
-    {
-      "assetId": "slide-04-use-to-introduce-and-ide-asset-1",
-      "slideId": "slide-04-use-to-introduce-and-ide",
-      "kind": "image",
-      "status": "fallback-text-only",
-      "sourceProvider": "none",
-      "usage": "slide-04-use-to-introduce-and-ide:left-panel image fallback",
-      "query": "two people introducing a third person in classroom",
-      "sourcePolicy": "internet-first",
-      "fallbackReason": "No acceptable Openverse or Wikimedia asset could be downloaded automatically.",
-      "rationale": "A simple real-world social image helps the learner understand that นี่คือ... is used to introduce a person standing there, not only to label objects."
-    },
-    {
-      "assetId": "slide-05-ask-who-someone-is-with-asset-1",
-      "slideId": "slide-05-ask-who-someone-is-with",
-      "kind": "image",
-      "status": "fallback-text-only",
-      "sourceProvider": "none",
-      "usage": "slide-05-ask-who-someone-is-with:left-panel image fallback",
-      "query": "single person portrait simple background looking at camera",
-      "sourcePolicy": "internet-first",
-      "fallbackReason": "No acceptable Openverse or Wikimedia asset could be downloaded automatically.",
-      "rationale": "A single person photo or portrait card makes the who-question concrete and supports pointing-based practice."
-    }
-  ]
+  "generatedAt": "2026-03-22T02:17:07.347426Z",
+  "assets": []
 }

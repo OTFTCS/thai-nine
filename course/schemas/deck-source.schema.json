@@ -32,8 +32,11 @@
       "properties": {
         "width": { "type": "number", "minimum": 1 },
         "height": { "type": "number", "minimum": 1 },
-        "leftTeachingFraction": { "type": "number", "minimum": 0.1, "maximum": 1 },
-        "rightCameraFraction": { "type": "number", "minimum": 0.1, "maximum": 1 },
+        "leftTeachingFraction": { "type": "number", "minimum": 0, "maximum": 1 },
+        "rightCameraFraction": { "type": "number", "minimum": 0, "maximum": 1 },
+        "pipCameraWidth": { "type": "number", "minimum": 0 },
+        "pipCameraHeight": { "type": "number", "minimum": 0 },
+        "pipPosition": { "type": "string", "enum": ["top-right", "bottom-right"] },
         "safeZoneLabel": { "type": "string", "minLength": 1 }
       }
     },

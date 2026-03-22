@@ -1,42 +1,46 @@
-# Brief — M01-L003
+# Production Brief — M01-L003
 
-- Lesson: `M01-L003` — `Pronouns and Who Questions`
-- Module: `M01` — `First Contact and Courtesy`
-- CEFR: `A0`
-- Target runtime: `10-13 minutes`
-- Primary objective: Learner can use basic pronouns and ask who someone is.
-- Secondary objective: Learner can recycle recent vocabulary while using identity question with `ใคร` in short controlled output.
-- Teaching frame: A learner arrives in a small class or social setting, hears introductions, and needs to identify who another person is.
+## Lesson
+- **ID:** M01-L003
+- **Title:** Pronouns and Who Questions
+- **Module:** M01 – First Contact and Courtesy
+- **CEFR:** A0
+
+## Runtime
+9–12 minutes
+
+## Objectives
+- **Primary:** Use basic pronouns and ask who someone is.
+- **Secondary:** Recycle recent vocabulary while using identity questions with ใคร in short controlled output.
+
+## Scenario / Teaching Frame
+You are at a small gathering. Someone points to a person across the room. You ask who they are, get an answer, and confirm it.
 
 ## Must-teach outcomes
-- Use `ฉัน | chǎn | I`, `ผม | phǒm | I (male speaker)`, and `เขา | khǎo | he / she` as practical speaker labels.
-- Use `นี่คือ... | nîi kheuu... | this is ...` to introduce a person or identify someone in front of you.
-- Ask `เขาคือใคร | khǎo kheuu khrai | who is he / she?` and `คนนี้คือใคร | khon níi kheuu khrai | who is this person?`.
-- Reuse review material such as `คุณชื่ออะไร | khun chûue à-rai | what is your name?`, `ชื่อ | chûue | name`, `ใช่ | châi | yes / that is right`, and `ประเทศ | bprà-thêet | country`.
+1. Use ฉัน / ผม / คุณ / เขา correctly in context
+2. Build "this is..." sentences with นี่คือ...
+3. Ask "who is that?" with เขาคือใคร
+4. Confirm identity with คุณคือ...ใช่ไหม
 
-## Core vocabulary and chunks
-- `ฉัน | chǎn | I`
-- `ผม | phǒm | I (male speaker)`
-- `เขา | khǎo | he / she`
-- `นี่คือ... | nîi kheuu... | this is ...`
-- `เขาคือใคร | khǎo kheuu khrai | who is he / she?`
-- `คนนี้คือใคร | khon níi kheuu khrai | who is this person?`
-- `คุณคือ...ใช่ไหม | khun kheuu... châi mái | you are ... right?`
-- `เขามาจากไทย | khǎo maa-jàak thai | he / she is from Thailand`
+## Core vocabulary (7 words + 3 chunks)
+| Thai | Translit | English | Type |
+|------|----------|---------|------|
+| ฉัน | chǎn | I (general) | word |
+| ผม | phǒm | I (male, polite) | word |
+| คุณ | khun | you | word |
+| เขา | khǎo | he / she | word |
+| ใคร | khrai | who | word |
+| นี่ | nîi | this | word |
+| คือ | khuue | is / to be | word |
+| นี่คือ... | nîi khuue... | this is... | chunk |
+| เขาคือใคร | khǎo khuue khrai | who is he/she? | chunk |
+| คุณคือ...ใช่ไหม | khun khuue...châi mǎi | you are...right? | chunk |
 
-## Teaching constraints
-- Keep the lesson chunk-first, not chart-first.
-- Explain the job of `คือ` simply and avoid turning it into a heavy grammar lecture.
-- Keep the left two-thirds visually readable; right third stays clear for Nine.
-- Use real-world images only where they make identity and pointing more concrete.
+## Review vocabulary
+ขอโทษ, ใช่, ชื่อ, คน, ประเทศ, ไทย
 
 ## Likely learner mistakes
-- Treating `เขาคือใคร` as the same function as `คุณชื่ออะไร`.
-- Overtranslating `คือ` as a rigid English equals sign.
-- Trying to memorise a full pronoun table instead of using a small practical set.
-- Forgetting that review items from earlier lessons should still appear inside the new exchange.
-
-## Image and visual notes
-- Section 2 benefits from a simple social introduction photo.
-- Section 3 benefits from a single portrait or person card to anchor the who-question.
-- Sections 1 and 4 should stay text-led so the sentence frames remain dominant.
+- Confusing ฉัน and ผม (gendered I)
+- Dropping คือ in identity sentences
+- Wrong tone on ใคร (rising) vs ไกล (far)
+- Forgetting polite endings ครับ/ค่ะ after questions

@@ -1,151 +1,60 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-03-21T09:42:22.319Z",
+  "generatedAt": "2026-03-22T02:15:30.933Z",
   "entries": [
     {
-      "id": "v-0a54507804",
-      "thai": "เขาคือใคร",
-      "translit": "khǎo kheuu khrai",
-      "english": "who is he / she?",
-      "key": "เขาคือใคร|khǎo kheuu khrai|who is he / she?",
+      "id": "v-267bceea3d",
+      "thai": "คุณ",
+      "translit": "khun",
+      "english": "you",
+      "key": "คุณ|khun|you",
       "firstSeenLesson": "M01-L003",
       "lessons": [
         "M01-L003"
       ]
     },
     {
-      "id": "v-0ab46f92e7",
+      "id": "v-568b383f0b",
+      "thai": "ประเทศ",
+      "translit": "prà-thêet",
+      "english": "country",
+      "key": "ประเทศ|prà-thêet|country",
+      "firstSeenLesson": "M01-L003",
+      "lessons": [
+        "M01-L003"
+      ]
+    },
+    {
+      "id": "v-6621c19168",
+      "thai": "คือ",
+      "translit": "khuue",
+      "english": "is (identity)",
+      "key": "คือ|khuue|is (identity)",
+      "firstSeenLesson": "M01-L003",
+      "lessons": [
+        "M01-L003"
+      ]
+    },
+    {
+      "id": "v-684ee1797b",
       "thai": "ฉัน",
       "translit": "chǎn",
-      "english": "I",
-      "key": "ฉัน|chǎn|i",
-      "firstSeenLesson": "M01-L003",
-      "lessons": [
-        "M01-L003",
-        "M01-L004"
-      ]
-    },
-    {
-      "id": "v-18e34df5c5",
-      "thai": "แปด",
-      "translit": "bpàet",
-      "english": "eight",
-      "key": "แปด|bpàet|eight",
-      "firstSeenLesson": "M01-L004",
-      "lessons": [
-        "M01-L004"
-      ]
-    },
-    {
-      "id": "v-217b46aa5a",
-      "thai": "ขอบคุณ",
-      "translit": "khàawp-khun",
-      "english": "thank you",
-      "key": "ขอบคุณ|khàawp-khun|thank you",
-      "firstSeenLesson": "M01-L002",
-      "lessons": [
-        "M01-L002",
-        "M01-L004"
-      ]
-    },
-    {
-      "id": "v-2d97b680f6",
-      "thai": "ฉันอายุ...ปี",
-      "translit": "chǎn aa-yú ... bpii",
-      "english": "I am ... years old",
-      "key": "ฉันอายุ...ปี|chǎn aa-yú ... bpii|i am ... years old",
-      "firstSeenLesson": "M01-L004",
-      "lessons": [
-        "M01-L004"
-      ]
-    },
-    {
-      "id": "v-31da0816ab",
-      "thai": "สิบ",
-      "translit": "sìp",
-      "english": "ten",
-      "key": "สิบ|sìp|ten",
-      "firstSeenLesson": "M01-L004",
-      "lessons": [
-        "M01-L004"
-      ]
-    },
-    {
-      "id": "v-368c7c205d",
-      "thai": "สาม",
-      "translit": "sǎam",
-      "english": "three",
-      "key": "สาม|sǎam|three",
-      "firstSeenLesson": "M01-L004",
-      "lessons": [
-        "M01-L004"
-      ]
-    },
-    {
-      "id": "v-51bd1e627d",
-      "thai": "ชื่อ",
-      "translit": "chûue",
-      "english": "name (falling tone)",
-      "key": "ชื่อ|chûue|name (falling tone)",
-      "firstSeenLesson": "M01-L002",
-      "lessons": [
-        "M01-L002"
-      ]
-    },
-    {
-      "id": "v-61140bdbc1",
-      "thai": "เก้า",
-      "translit": "gâo",
-      "english": "nine",
-      "key": "เก้า|gâo|nine",
-      "firstSeenLesson": "M01-L004",
-      "lessons": [
-        "M01-L004"
-      ]
-    },
-    {
-      "id": "v-688905b601",
-      "thai": "คนนี้คือใคร",
-      "translit": "khon níi kheuu khrai",
-      "english": "who is this person?",
-      "key": "คนนี้คือใคร|khon níi kheuu khrai|who is this person?",
+      "english": "I (general)",
+      "key": "ฉัน|chǎn|i (general)",
       "firstSeenLesson": "M01-L003",
       "lessons": [
         "M01-L003"
       ]
     },
     {
-      "id": "v-6acb169e4b",
-      "thai": "ชื่อ",
-      "translit": "chûue",
-      "english": "name",
-      "key": "ชื่อ|chûue|name",
-      "firstSeenLesson": "M01-L002",
+      "id": "v-692a0b8b53",
+      "thai": "ผม",
+      "translit": "phǒm",
+      "english": "I (male, polite)",
+      "key": "ผม|phǒm|i (male, polite)",
+      "firstSeenLesson": "M01-L003",
       "lessons": [
-        "M01-L002",
         "M01-L003"
-      ]
-    },
-    {
-      "id": "v-6ad6888f1d",
-      "thai": "หนึ่ง",
-      "translit": "nùeng",
-      "english": "one",
-      "key": "หนึ่ง|nùeng|one",
-      "firstSeenLesson": "M01-L004",
-      "lessons": [
-        "M01-L004"
-      ]
-    },
-    {
-      "id": "v-6bb42f6e5c",
-      "thai": "คน",
-      "translit": "khon",
-      "english": "person",
-      "key": "คน|khon|person",
-      "firstSeenLesson": "M01-L002",
-      "lessons": [
-        "M01-L002"
       ]
     },
     {
@@ -154,217 +63,61 @@
       "translit": "khǎaw-thôot",
       "english": "excuse me / sorry",
       "key": "ขอโทษ|khǎaw-thôot|excuse me / sorry",
-      "firstSeenLesson": "M01-L004",
-      "lessons": [
-        "M01-L004"
-      ]
-    },
-    {
-      "id": "v-73bffabf48",
-      "thai": "เจ็ด",
-      "translit": "jèt",
-      "english": "seven",
-      "key": "เจ็ด|jèt|seven",
-      "firstSeenLesson": "M01-L004",
-      "lessons": [
-        "M01-L004"
-      ]
-    },
-    {
-      "id": "v-7597900aeb",
-      "thai": "คุณคือ...ใช่ไหม",
-      "translit": "khun kheuu... châi mái",
-      "english": "you are ... right?",
-      "key": "คุณคือ...ใช่ไหม|khun kheuu... châi mái|you are ... right?",
       "firstSeenLesson": "M01-L003",
       "lessons": [
         "M01-L003"
       ]
     },
     {
-      "id": "v-7a0154647c",
+      "id": "v-73609842f0",
       "thai": "นี่คือ...",
-      "translit": "nîi kheuu...",
-      "english": "this is ...",
-      "key": "นี่คือ...|nîi kheuu...|this is ...",
+      "translit": "nîi khuue...",
+      "english": "this is...",
+      "key": "นี่คือ...|nîi khuue...|this is...",
       "firstSeenLesson": "M01-L003",
       "lessons": [
         "M01-L003"
       ]
     },
     {
-      "id": "v-871c9bd62f",
-      "thai": "ศูนย์",
-      "translit": "sǔun",
-      "english": "zero",
-      "key": "ศูนย์|sǔun|zero",
-      "firstSeenLesson": "M01-L004",
-      "lessons": [
-        "M01-L004"
-      ]
-    },
-    {
-      "id": "v-8adc81e330",
-      "thai": "อังกฤษ",
-      "translit": "ang-grìt",
-      "english": "England / English",
-      "key": "อังกฤษ|ang-grìt|england / english",
-      "firstSeenLesson": "M01-L002",
-      "lessons": [
-        "M01-L002"
-      ]
-    },
-    {
-      "id": "v-9ca06d0136",
-      "thai": "อเมริกา",
-      "translit": "à-mee-rí-kaa",
-      "english": "America",
-      "key": "อเมริกา|à-mee-rí-kaa|america",
-      "firstSeenLesson": "M01-L002",
-      "lessons": [
-        "M01-L002"
-      ]
-    },
-    {
-      "id": "v-a2028c5b78",
-      "thai": "สี่",
-      "translit": "sìi",
-      "english": "four (low tone)",
-      "key": "สี่|sìi|four (low tone)",
-      "firstSeenLesson": "M01-L004",
-      "lessons": [
-        "M01-L004"
-      ]
-    },
-    {
-      "id": "v-a79c6af3af",
-      "thai": "คุณชื่ออะไร",
-      "translit": "khun chûue à-rai",
-      "english": "what is your name?",
-      "key": "คุณชื่ออะไร|khun chûue à-rai|what is your name?",
-      "firstSeenLesson": "M01-L002",
-      "lessons": [
-        "M01-L002",
-        "M01-L003"
-      ]
-    },
-    {
-      "id": "v-acdc9c7f8e",
-      "thai": "ผม",
-      "translit": "phǒm",
-      "english": "I (male speaker)",
-      "key": "ผม|phǒm|i (male speaker)",
+      "id": "v-783ab7837a",
+      "thai": "ใคร",
+      "translit": "khrai",
+      "english": "who",
+      "key": "ใคร|khrai|who",
       "firstSeenLesson": "M01-L003",
       "lessons": [
         "M01-L003"
       ]
     },
     {
-      "id": "v-af0f28e039",
-      "thai": "เขามาจากไทย",
-      "translit": "khǎo maa-jàak thai",
-      "english": "he / she is from Thailand",
-      "key": "เขามาจากไทย|khǎo maa-jàak thai|he / she is from thailand",
+      "id": "v-82ab06c0ca",
+      "thai": "คุณคือ...ใช่ไหม",
+      "translit": "khun khuue...châi mǎi",
+      "english": "you are...right?",
+      "key": "คุณคือ...ใช่ไหม|khun khuue...châi mǎi|you are...right?",
       "firstSeenLesson": "M01-L003",
       "lessons": [
         "M01-L003"
       ]
     },
     {
-      "id": "v-afdf936166",
-      "thai": "สอง",
-      "translit": "sǎawng",
-      "english": "two",
-      "key": "สอง|sǎawng|two",
-      "firstSeenLesson": "M01-L004",
-      "lessons": [
-        "M01-L004"
-      ]
-    },
-    {
-      "id": "v-ba4059e504",
-      "thai": "เบอร์อะไร",
-      "translit": "ber à-rai",
-      "english": "what number?",
-      "key": "เบอร์อะไร|ber à-rai|what number?",
-      "firstSeenLesson": "M01-L004",
-      "lessons": [
-        "M01-L004"
-      ]
-    },
-    {
-      "id": "v-c9337e2739",
-      "thai": "สวัสดี",
-      "translit": "sà-wàt-dii",
-      "english": "hello",
-      "key": "สวัสดี|sà-wàt-dii|hello",
-      "firstSeenLesson": "M01-L002",
-      "lessons": [
-        "M01-L002"
-      ]
-    },
-    {
-      "id": "v-cda55f5b5e",
-      "thai": "ไม่ใช่",
-      "translit": "mâi châi",
-      "english": "no / not right",
-      "key": "ไม่ใช่|mâi châi|no / not right",
+      "id": "v-b083e63c50",
+      "thai": "นี่",
+      "translit": "nîi",
+      "english": "this",
+      "key": "นี่|nîi|this",
       "firstSeenLesson": "M01-L003",
       "lessons": [
         "M01-L003"
       ]
     },
     {
-      "id": "v-ce7cc833ec",
-      "thai": "มาจาก",
-      "translit": "maa-jàak",
-      "english": "come from",
-      "key": "มาจาก|maa-jàak|come from",
-      "firstSeenLesson": "M01-L002",
-      "lessons": [
-        "M01-L002"
-      ]
-    },
-    {
-      "id": "v-cf99ffc78e",
-      "thai": "สี่",
-      "translit": "sìi",
-      "english": "four",
-      "key": "สี่|sìi|four",
-      "firstSeenLesson": "M01-L004",
-      "lessons": [
-        "M01-L004"
-      ]
-    },
-    {
-      "id": "v-d0c316cc2c",
-      "thai": "ประเทศ",
-      "translit": "bprà-thêet",
-      "english": "country",
-      "key": "ประเทศ|bprà-thêet|country",
-      "firstSeenLesson": "M01-L002",
-      "lessons": [
-        "M01-L002",
-        "M01-L003"
-      ]
-    },
-    {
-      "id": "v-e288d14433",
-      "thai": "เขาคือ...",
-      "translit": "khǎo kheuu...",
-      "english": "he / she is ...",
-      "key": "เขาคือ...|khǎo kheuu...|he / she is ...",
-      "firstSeenLesson": "M01-L003",
-      "lessons": [
-        "M01-L003"
-      ]
-    },
-    {
-      "id": "v-e2c4943d2f",
-      "thai": "ขอโทษนะ",
-      "translit": "khǎaw-thôot ná",
-      "english": "excuse me",
-      "key": "ขอโทษนะ|khǎaw-thôot ná|excuse me",
+      "id": "v-b09f56f5b1",
+      "thai": "เขาคือใคร",
+      "translit": "khǎo khuue khrai",
+      "english": "who is he/she?",
+      "key": "เขาคือใคร|khǎo khuue khrai|who is he/she?",
       "firstSeenLesson": "M01-L003",
       "lessons": [
         "M01-L003"
@@ -378,19 +131,7 @@
       "key": "เขา|khǎo|he / she",
       "firstSeenLesson": "M01-L003",
       "lessons": [
-        "M01-L003",
-        "M01-L004"
-      ]
-    },
-    {
-      "id": "v-f028feb896",
-      "thai": "ห้า",
-      "translit": "hâa",
-      "english": "five",
-      "key": "ห้า|hâa|five",
-      "firstSeenLesson": "M01-L004",
-      "lessons": [
-        "M01-L004"
+        "M01-L003"
       ]
     },
     {
@@ -399,31 +140,9 @@
       "translit": "thai",
       "english": "Thailand / Thai",
       "key": "ไทย|thai|thailand / thai",
-      "firstSeenLesson": "M01-L002",
-      "lessons": [
-        "M01-L002"
-      ]
-    },
-    {
-      "id": "v-f40371ec59",
-      "thai": "ใช่",
-      "translit": "châi",
-      "english": "yes / that is right",
-      "key": "ใช่|châi|yes / that is right",
       "firstSeenLesson": "M01-L003",
       "lessons": [
         "M01-L003"
-      ]
-    },
-    {
-      "id": "v-f6b67b4e6f",
-      "thai": "หก",
-      "translit": "hòk",
-      "english": "six",
-      "key": "หก|hòk|six",
-      "firstSeenLesson": "M01-L004",
-      "lessons": [
-        "M01-L004"
       ]
     }
   ]

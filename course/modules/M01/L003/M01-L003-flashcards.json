@@ -4,9 +4,9 @@
   "cards": [
     {
       "id": "m01-l003-c01",
-      "vocabId": "v-0ab46f92e7",
+      "vocabId": "v-684ee1797b",
       "front": "ฉัน",
-      "back": "I",
+      "back": "I (general)",
       "translit": "chǎn",
       "tags": [
         "M01-L003",
@@ -15,9 +15,9 @@
     },
     {
       "id": "m01-l003-c02",
-      "vocabId": "v-acdc9c7f8e",
+      "vocabId": "v-692a0b8b53",
       "front": "ผม",
-      "back": "I (male speaker)",
+      "back": "I (male, polite)",
       "translit": "phǒm",
       "tags": [
         "M01-L003",
@@ -26,6 +26,17 @@
     },
     {
       "id": "m01-l003-c03",
+      "vocabId": "v-267bceea3d",
+      "front": "คุณ",
+      "back": "you",
+      "translit": "khun",
+      "tags": [
+        "M01-L003",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l003-c04",
       "vocabId": "v-e3ef8a701b",
       "front": "เขา",
       "back": "he / she",
@@ -36,22 +47,11 @@
       ]
     },
     {
-      "id": "m01-l003-c04",
-      "vocabId": "v-a79c6af3af",
-      "front": "คุณชื่ออะไร",
-      "back": "what is your name?",
-      "translit": "khun chûue à-rai",
-      "tags": [
-        "M01-L003",
-        "core"
-      ]
-    },
-    {
       "id": "m01-l003-c05",
-      "vocabId": "v-7a0154647c",
-      "front": "นี่คือ...",
-      "back": "this is ...",
-      "translit": "nîi kheuu...",
+      "vocabId": "v-b083e63c50",
+      "front": "นี่",
+      "back": "this",
+      "translit": "nîi",
       "tags": [
         "M01-L003",
         "core"
@@ -59,10 +59,10 @@
     },
     {
       "id": "m01-l003-c06",
-      "vocabId": "v-e288d14433",
-      "front": "เขาคือ...",
-      "back": "he / she is ...",
-      "translit": "khǎo kheuu...",
+      "vocabId": "v-6621c19168",
+      "front": "คือ",
+      "back": "is (identity)",
+      "translit": "khuue",
       "tags": [
         "M01-L003",
         "core"
@@ -70,10 +70,10 @@
     },
     {
       "id": "m01-l003-c07",
-      "vocabId": "v-7597900aeb",
-      "front": "คุณคือ...ใช่ไหม",
-      "back": "you are ... right?",
-      "translit": "khun kheuu... châi mái",
+      "vocabId": "v-73609842f0",
+      "front": "นี่คือ...",
+      "back": "this is...",
+      "translit": "nîi khuue...",
       "tags": [
         "M01-L003",
         "core"
@@ -81,10 +81,10 @@
     },
     {
       "id": "m01-l003-c08",
-      "vocabId": "v-cda55f5b5e",
-      "front": "ไม่ใช่",
-      "back": "no / not right",
-      "translit": "mâi châi",
+      "vocabId": "v-783ab7837a",
+      "front": "ใคร",
+      "back": "who",
+      "translit": "khrai",
       "tags": [
         "M01-L003",
         "core"
@@ -92,10 +92,10 @@
     },
     {
       "id": "m01-l003-c09",
-      "vocabId": "v-0a54507804",
+      "vocabId": "v-b09f56f5b1",
       "front": "เขาคือใคร",
-      "back": "who is he / she?",
-      "translit": "khǎo kheuu khrai",
+      "back": "who is he/she?",
+      "translit": "khǎo khuue khrai",
       "tags": [
         "M01-L003",
         "core"
@@ -103,10 +103,10 @@
     },
     {
       "id": "m01-l003-c10",
-      "vocabId": "v-688905b601",
-      "front": "คนนี้คือใคร",
-      "back": "who is this person?",
-      "translit": "khon níi kheuu khrai",
+      "vocabId": "v-82ab06c0ca",
+      "front": "คุณคือ...ใช่ไหม",
+      "back": "you are...right?",
+      "translit": "khun khuue...châi mǎi",
       "tags": [
         "M01-L003",
         "core"
@@ -114,10 +114,10 @@
     },
     {
       "id": "m01-l003-c11",
-      "vocabId": "v-6acb169e4b",
-      "front": "ชื่อ",
-      "back": "name",
-      "translit": "chûue",
+      "vocabId": "v-6fce5e8c2c",
+      "front": "ขอโทษ",
+      "back": "excuse me / sorry",
+      "translit": "khǎaw-thôot",
       "tags": [
         "M01-L003",
         "core"
@@ -125,10 +125,10 @@
     },
     {
       "id": "m01-l003-c12",
-      "vocabId": "v-f40371ec59",
-      "front": "ใช่",
-      "back": "yes / that is right",
-      "translit": "châi",
+      "vocabId": "v-568b383f0b",
+      "front": "ประเทศ",
+      "back": "country",
+      "translit": "prà-thêet",
       "tags": [
         "M01-L003",
         "core"
@@ -136,32 +136,10 @@
     },
     {
       "id": "m01-l003-c13",
-      "vocabId": "v-e2c4943d2f",
-      "front": "ขอโทษนะ",
-      "back": "excuse me",
-      "translit": "khǎaw-thôot ná",
-      "tags": [
-        "M01-L003",
-        "core"
-      ]
-    },
-    {
-      "id": "m01-l003-c14",
-      "vocabId": "v-d0c316cc2c",
-      "front": "ประเทศ",
-      "back": "country",
-      "translit": "bprà-thêet",
-      "tags": [
-        "M01-L003",
-        "core"
-      ]
-    },
-    {
-      "id": "m01-l003-c15",
-      "vocabId": "v-af0f28e039",
-      "front": "เขามาจากไทย",
-      "back": "he / she is from Thailand",
-      "translit": "khǎo maa-jàak thai",
+      "vocabId": "v-f0b2ddeed3",
+      "front": "ไทย",
+      "back": "Thailand / Thai",
+      "translit": "thai",
       "tags": [
         "M01-L003",
         "core"

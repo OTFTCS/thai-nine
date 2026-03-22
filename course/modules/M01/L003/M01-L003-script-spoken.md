@@ -1,92 +1,96 @@
-# Spoken Script — M01-L003
+# Spoken Script — M01-L003: Pronouns and Who Questions
 
 ## Opening
-Sometimes the next problem in a conversation is not your own name.
 
-It is this: someone points at another person, and you want to ask who that person is.
+You already know how to say hello and introduce your name. But what about other people? Today you learn the words for I, you, he, she — and how to ask who someone is.
 
-Today we build the Thai you need for that moment, and we connect it to the greeting, name, and country material you already learned.
+## Section 1 — I and you: the first pronouns
 
----
+Let's start with the most important words in any conversation — I and you.
 
-## Section 1 — Use pronouns as practical speaker labels
-Start with a very small useful set.
+In Thai, there are different words for I. The general one is ฉัน chǎn. If you are male and want to sound polite, use ผม phǒm instead.
 
-- ฉัน | chǎn | I
-- ผม | phǒm | I (male speaker)
-- เขา | khǎo | he / she
-- คุณชื่ออะไร | khun chûue à-rai | what is your name?
+For you, the safe polite word is คุณ khun. You already know this from คุณชื่ออะไร — what is your name. คุณ means you.
 
-Do not treat this like a huge grammar chart.
+So if someone asks who you are, you can say ฉันชื่อ... chǎn chûue... — I am called... Or if you are male: ผมชื่อ... phǒm chûue...
 
-The real goal is simple: say who is speaking, and point to another person when needed.
+**Drills:**
+- Listen and repeat: ฉัน, ผม, คุณ. Say each one twice.
+- Pause-and-produce: male or female speaker? Say the right word for I.
+- Response-building: I ask คุณชื่ออะไร. You answer with ฉันชื่อ... or ผมชื่อ... and your name.
 
-Notice that you already know คุณ inside คุณชื่ออะไร. So this lesson expands what you can do with people words you are already hearing.
+## Section 2 — He, she, and this: pointing to people
 
----
+Now let's talk about other people. เขา khǎo means he or she. Thai uses the same word for both.
 
-## Section 2 — Use นี่คือ... to introduce and identify
-Now add the frame that lets you introduce someone.
+นี่ nîi means this. And คือ khuue means is. So when you put them together: นี่คือ... nîi khuue... means this is...
 
-- นี่คือ... | nîi kheuu... | this is ...
-- เขาคือ... | khǎo kheuu... | he / she is ...
-- คุณคือ...ใช่ไหม | khun kheuu... châi mái | you are ... right?
-- ไม่ใช่ | mâi châi | no / not right
+Try it: นี่คือไมค์ nîi khuue Mike — this is Mike.
 
-The word คือ is a linker here. It connects the person you are talking about with the name or identity that follows.
+คือ is special — it connects a name or identity to a person. Think of it as the equals sign.
 
-So instead of translating every word one by one, hear the whole pattern as an introduction frame.
+**Drills:**
+- Listen and repeat: เขา, นี่, คือ. Now together: นี่คือ...
+- Substitution: I give a name. You say นี่คือ... with that name.
+- Pause-and-produce: I ask เขาชื่ออะไร. You answer เขาชื่อ... with a name.
 
----
+## Section 3 — Ask who someone is
 
-## Section 3 — Ask who someone is with ใคร
-Now ask the real lesson question.
+Now the question word: ใคร khrai means who.
 
-- เขาคือใคร | khǎo kheuu khrai | who is he / she?
-- คนนี้คือใคร | khon níi kheuu khrai | who is this person?
-- ชื่อ | chûue | name
-- ใช่ | châi | yes / that is right
+To ask who is he or she: เขาคือใคร khǎo khuue khrai. Literally: he/she is who?
 
-This is not the same as คุณชื่ออะไร.
+And to confirm: คุณคือ...ใช่ไหม khun khuue...châi mǎi — you are... right?
 
-คุณชื่ออะไร asks directly for the name. เขาคือใคร asks for identity first, often when you are looking at another person or a photo.
+Try the full exchange: เขาคือใคร — เขาคือไมค์ — ไมค์ใช่ไหม — ใช่ครับ.
 
-That distinction matters because it makes your Thai feel more natural and less translated from English.
+**Drills:**
+- Listen and repeat: ใคร. Now the full question: เขาคือใคร.
+- Response-building: I ask เขาคือใคร. You answer เขาคือ... with any name.
+- Pause-and-produce: I say a name. You build: คุณคือ[name]ใช่ไหม.
 
----
+## Section 4 — Put it together: a mini identity exchange
 
-## Section 4 — Build a mini identity exchange with review
-Now we connect the new lesson to the earlier first-contact material.
+Let's use everything. Imagine you are at a gathering and see someone you don't know.
 
-You can greet, ask who someone is, and then confirm one more detail such as the country.
+You ask: เขาคือใคร — who is that?
 
-This is where review matters. We reuse ชื่อ, ประเทศ, ใช่, and มาจากไทย so the learner builds a small network instead of isolated lesson boxes.
+Your friend answers: นี่คือแอน. เขามาจากประเทศไทย — she comes from Thailand.
 
-Notice the progression: first identify the person with คนนี้คือใคร or เขาคือใคร, then name the person, then confirm one more fact such as the country.
+You confirm: แอนใช่ไหม — Anne, right? ใช่ครับ — yes.
 
----
+**Drills:**
+- Role swap: You ask เขาคือใคร. I answer. You confirm with ใช่ไหม.
+- Substitution: different names and countries each time.
+- Production challenge: introduce yourself, then ask who someone else is.
 
-## Roleplay — Asking about another student
-A: สวัสดีค่ะ | sà-wàt-dii khâ | Hello.
+## Pronunciation beat
 
-B: สวัสดีครับ | sà-wàt-dii khráp | Hello.
+Focus on the rising tone. ใคร and ผม both rise — your voice starts low and climbs.
 
-A: ขอโทษนะคะ คนนี้คือใครคะ | khǎaw-thôot ná khá khon níi kheuu khrai khá | Excuse me, who is this person?
+Tone echo: ใคร khrai — repeat. ผม phǒm — repeat.
 
-B: คนนี้คือไมค์ครับ | khon níi kheuu Mike khráp | This is Mike.
+Minimal pair: ใคร (who, rising) vs a flat mid tone. Can you hear the climb?
 
-A: เขามาจากประเทศอะไรคะ | khǎo maa-jàak bprà-thêet à-rai khá | What country is he from?
+## Roleplay
 
-B: เขามาจากอังกฤษครับ | khǎo maa-jàak ang-grìt khráp | He is from England.
+At a gathering, you ask your friend who someone is.
 
-A: อังกฤษใช่ไหมคะ | ang-grìt châi mái khá | England, right?
-
-B: ใช่ครับ | châi khráp | Yes.
-
----
+- You: ขอโทษครับ เขาคือใครครับ — Excuse me, who is he/she?
+- Friend: นี่คือแอนค่ะ — This is Anne.
+- You: เขามาจากประเทศอะไรครับ — What country is she from?
+- Friend: เขามาจากประเทศไทยค่ะ — She's from Thailand.
+- You: คนไทยใช่ไหมครับ — A Thai person, right?
+- Friend: ใช่ค่ะ — Yes.
 
 ## Recap
-- Use a small pronoun set practically, not as a memorised chart.
-- Use `นี่คือ...` and `เขาคือ...` to introduce or identify.
-- Use `เขาคือใคร` and `คนนี้คือใคร` when you want identity first, not just a name.
-- Reuse `ชื่อ`, `ประเทศ`, greetings, and country language so the dialogue grows naturally.
+
+- How do you say I if you are male? ผม.
+- How do you say this is...? นี่คือ...
+- How do you ask who someone is? เขาคือใคร.
+- How do you confirm identity? คุณคือ...ใช่ไหม.
+- What does คือ mean? It connects a person to their identity.
+
+## Closing
+
+You can now use pronouns, point to people and say who they are, and ask who someone is. Next lesson: numbers and counting.
