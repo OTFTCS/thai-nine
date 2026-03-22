@@ -843,18 +843,26 @@ def render_teaching(
         content_bottom = top + Inches(1.92)
 
     if drill_block:
-        # Place drill block below content with a small gap — don't push too far down
+        # Place drill block below content — but only if there's room on the slide
         drill_top = content_bottom + Inches(0.15)
-        add_bullet_block(
-            slide,
-            content_left,
-            drill_top,
-            CONTENT_WIDTH,
-            drill_block.get("heading") or "Practice",
-            drill_block["lines"][:4],
-            ACCENT_CLAY,
-            translit_entries=translit_entries,
-        )
+        min_drill_height = Inches(0.9)  # heading + at least 1 line
+        if drill_top + min_drill_height <= SLIDE_HEIGHT:
+            add_bullet_block(
+                slide,
+                content_left,
+                drill_top,
+                CONTENT_WIDTH,
+                drill_block.get("heading") or "Practice",
+                drill_block["lines"][:4],
+                ACCENT_CLAY,
+                translit_entries=translit_entries,
+            )
+        else:
+            # Not enough room — put drill text in speaker notes only
+            notes = slide.notes_slide.notes_text_frame
+            notes.text += "\n\n[Practice — moved to notes, no room on slide]\n"
+            for line in drill_block["lines"][:4]:
+                notes.text += f"• {line}\n"
 
 
 def render_roleplay(slide, slide_data: dict[str, Any], translit_entries: list[tuple[str, str]] | None = None):
@@ -1217,16 +1225,15 @@ def render_deck(
     # Validate layout before saving
     layout_issues = validate_slide_layout(prs)
     if layout_issues:
-        print("LAYOUT VALIDATION ISSUES:", file=sys.stderr)
+        print("LAYOUT VALIDATION FAILED — deck not saved:", file=sys.stderr)
         for issue in layout_issues:
-            print(f"  - {issue}", file=sys.stderr)
+            print(f"  ✗ {issue}", file=sys.stderr)
+        print(f"\n{len(layout_issues)} layout violation(s). Fix the renderer before producing decks.", file=sys.stderr)
+        sys.exit(1)
 
     output_pptx.parent.mkdir(parents=True, exist_ok=True)
     prs.save(output_pptx)
     patch_theme_fonts(output_pptx)
-
-    if layout_issues:
-        print(f"WARNING: {len(layout_issues)} layout issue(s) found. Review slides.", file=sys.stderr)
 
 
 def _rects_overlap(r1: tuple, r2: tuple) -> bool:
@@ -1235,24 +1242,71 @@ def _rects_overlap(r1: tuple, r2: tuple) -> bool:
 
 
 def validate_slide_layout(prs: Presentation) -> list[str]:
-    """Check all slides for text-text bounding box overlaps."""
+    """Check all slides for boundary violations, PiP zone intrusions, and text overlaps.
+
+    Returns a list of issue strings. Any non-empty list = hard fail.
+    """
     issues: list[str] = []
+    pip_x_emu = PIP_X
+    pip_bottom_emu = PIP_BOTTOM
+    slide_w_emu = SLIDE_WIDTH
+    slide_h_emu = SLIDE_HEIGHT
+
     for slide_idx, slide in enumerate(prs.slides):
+        all_shapes = []
         text_shapes = []
+
         for shape in slide.shapes:
-            # Skip PiP placeholder and non-text shapes
+            # Skip PiP placeholder itself
             if getattr(shape, "name", "") == "__pip_placeholder__":
                 continue
-            if not shape.has_text_frame:
-                continue
-            # Skip empty text frames
-            text = shape.text_frame.text.strip()
-            if not text:
-                continue
-            rect = (shape.left, shape.top, shape.left + shape.width, shape.top + shape.height)
-            text_shapes.append((shape, rect, text[:40]))
 
-        # Check pairwise overlaps
+            left = shape.left
+            top = shape.top
+            right = left + shape.width
+            bottom = top + shape.height
+
+            # Skip thin decorative bars (top accent stripe, bottom dividers)
+            # These are full-width design elements < 0.15" tall
+            if shape.height < 137160 and not (shape.has_text_frame and shape.text_frame.text.strip()):
+                continue
+            label = ""
+            if shape.has_text_frame:
+                label = shape.text_frame.text.strip()[:50]
+            if not label:
+                label = getattr(shape, "name", "shape")
+
+            # Check 1: PiP zone intrusion — shape crosses into camera zone
+            # Camera zone: top-right rectangle from (PIP_X, 0) to (SLIDE_WIDTH, PIP_BOTTOM)
+            if top < pip_bottom_emu and right > pip_x_emu:
+                issues.append(
+                    f"Slide {slide_idx + 1}: PiP zone intrusion — "
+                    f"'{label}' extends into camera zone "
+                    f"(right={right / 914400:.1f}\" > PiP left={pip_x_emu / 914400:.1f}\")"
+                )
+
+            # Check 2: Off-screen bottom
+            if bottom > slide_h_emu:
+                issues.append(
+                    f"Slide {slide_idx + 1}: off-screen bottom — "
+                    f"'{label}' extends below slide "
+                    f"(bottom={bottom / 914400:.1f}\" > slide height={slide_h_emu / 914400:.1f}\")"
+                )
+
+            # Check 3: Off-screen right
+            if right > slide_w_emu:
+                issues.append(
+                    f"Slide {slide_idx + 1}: off-screen right — "
+                    f"'{label}' extends past slide edge "
+                    f"(right={right / 914400:.1f}\" > slide width={slide_w_emu / 914400:.1f}\")"
+                )
+
+            # Collect text shapes for overlap checks
+            if shape.has_text_frame and shape.text_frame.text.strip():
+                rect = (left, top, right, bottom)
+                text_shapes.append((shape, rect, label))
+
+        # Check 4: Text-text overlaps
         for i, (s1, r1, t1) in enumerate(text_shapes):
             for j, (s2, r2, t2) in enumerate(text_shapes[i + 1:], start=i + 1):
                 if _rects_overlap(r1, r2):
@@ -1265,8 +1319,8 @@ def validate_slide_layout(prs: Presentation) -> list[str]:
                     y_overlap = min(r1[3], r2[3]) - max(r1[1], r2[1])
                     if y_overlap > 137160:  # > 0.15 inch
                         issues.append(
-                            f"Slide {slide_idx + 1}: text overlap "
-                            f"('{t1}...' and '{t2}...')"
+                            f"Slide {slide_idx + 1}: text overlap — "
+                            f"'{t1}' and '{t2}'"
                         )
     return issues
 
