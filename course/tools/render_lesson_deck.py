@@ -592,35 +592,33 @@ def add_divider(slide, left, top, width, color=DIVIDER_COLOR, height=Pt(2)):
 
 
 def add_phrase_card(slide, left, top, width, thai, translit, english, compact=False):
-    card_h = Inches(0.75) if compact else Inches(1.72)
-    accent_h = Inches(0.45) if compact else Inches(1.25)
+    # Three-line layout: Thai / Transliteration / English on separate lines
+    card_h = Inches(0.88) if compact else Inches(1.72)
+    accent_h = Inches(0.6) if compact else Inches(1.25)
     add_card(slide, left, top, width, card_h)
     accent = slide.shapes.add_shape(MSO_SHAPE.RECTANGLE, left + Inches(0.15), top + Inches(0.12 if compact else 0.22), Inches(0.08), accent_h)
     accent.fill.solid()
     accent.fill.fore_color.rgb = ACCENT_GOLD
     accent.line.fill.background()
     text_left = left + Inches(0.38)
+    text_w = width - Inches(0.5)
+    line_size = SIZE_BODY_SMALL
     if compact:
-        # Compact: Thai + translit on one line, English on next, smaller fonts
-        add_textbox(
-            slide, text_left, top + Inches(0.08), width - Inches(0.5), Inches(0.35),
-            thai, font_name=FONT_THAI, font_size=SIZE_THAI_SMALL, bold=True,
-            translit_entries=[(thai, translit)],
-        )
-        add_textbox(
-            slide, text_left, top + Inches(0.42), width - Inches(0.5), Inches(0.25),
-            english, font_name=FONT_LATIN, font_size=Pt(13), color=INK_LIGHT,
-        )
+        # Compact: 3 lines, tighter spacing
+        add_textbox(slide, text_left, top + Inches(0.08), text_w, Inches(0.25),
+                    thai, font_name=FONT_THAI, font_size=line_size)
+        add_textbox(slide, text_left, top + Inches(0.33), text_w, Inches(0.22),
+                    translit, font_name=FONT_LATIN, font_size=line_size, color=INK_MEDIUM, italic=True)
+        add_textbox(slide, text_left, top + Inches(0.55), text_w, Inches(0.22),
+                    english, font_name=FONT_LATIN, font_size=line_size, color=INK_LIGHT)
     else:
-        add_textbox(
-            slide, text_left, top + Inches(0.12), width - Inches(0.5), Inches(0.72),
-            thai, font_name=FONT_THAI, font_size=SIZE_THAI_LARGE, bold=True,
-            translit_entries=[(thai, translit)],
-        )
-        add_textbox(
-            slide, text_left, top + Inches(0.96), width - Inches(0.5), Inches(0.3),
-            english, font_name=FONT_LATIN, font_size=SIZE_ENGLISH, color=INK_LIGHT,
-        )
+        # Normal: 3 lines, generous spacing
+        add_textbox(slide, text_left, top + Inches(0.15), text_w, Inches(0.35),
+                    thai, font_name=FONT_THAI, font_size=line_size)
+        add_textbox(slide, text_left, top + Inches(0.55), text_w, Inches(0.3),
+                    translit, font_name=FONT_LATIN, font_size=line_size, color=INK_MEDIUM, italic=True)
+        add_textbox(slide, text_left, top + Inches(0.96), text_w, Inches(0.3),
+                    english, font_name=FONT_LATIN, font_size=line_size, color=INK_LIGHT)
 
 
 def add_section_header(slide, title, eyebrow, translit_entries: list[tuple[str, str]] | None = None):
@@ -754,29 +752,16 @@ def add_dialogue_turn(slide, left, top, width, speaker, thai, translit, english,
     run.font.color.rgb = WHITE
     run.font.bold = True
     apply_run_font_metadata(run)
-    add_textbox(
-        slide,
-        left + Inches(1.35),
-        top - Inches(0.03),
-        width - Inches(1.35),
-        Inches(0.42),
-        thai,
-        font_name=FONT_THAI,
-        font_size=SIZE_THAI_SMALL,
-        bold=True,
-        translit_entries=[(thai, translit)],
-    )
-    add_textbox(
-        slide,
-        left + Inches(1.35),
-        top + Inches(0.28),
-        width - Inches(1.35),
-        Inches(0.25),
-        english,
-        font_name=FONT_LATIN,
-        font_size=Pt(13),
-        color=INK_MEDIUM,
-    )
+    # Three-line layout: Thai / Transliteration / English on separate lines
+    text_left = left + Inches(1.35)
+    text_w = width - Inches(1.35)
+    line_size = SIZE_BODY_SMALL
+    add_textbox(slide, text_left, top - Inches(0.03), text_w, Inches(0.25),
+                thai, font_name=FONT_THAI, font_size=line_size)
+    add_textbox(slide, text_left, top + Inches(0.22), text_w, Inches(0.22),
+                translit, font_name=FONT_LATIN, font_size=line_size, color=INK_MEDIUM, italic=True)
+    add_textbox(slide, text_left, top + Inches(0.44), text_w, Inches(0.22),
+                english, font_name=FONT_LATIN, font_size=line_size, color=INK_MEDIUM)
 
 
 def fit_picture(slide, image_path: Path, left, top, max_width, max_height):
@@ -876,12 +861,12 @@ def render_roleplay(slide, slide_data: dict[str, Any], translit_entries: list[tu
     # Use short "Roleplay" heading; full scenario goes to speaker notes only
     add_section_header(slide, "Roleplay", "Roleplay", translit_entries)
     current_top = Inches(1.2)
-    for index, line in enumerate(slide_data["textBlocks"][0]["lines"][:6]):
+    for index, line in enumerate(slide_data["textBlocks"][0]["lines"][:5]):
         speaker, thai, translit, english = [part.strip() for part in line.split("|", 3)]
         # Use constrained width when beside PiP, full width when below
         turn_width = CONTENT_WIDTH_BESIDE_PIP if current_top < PIP_BOTTOM else CONTENT_WIDTH
         add_dialogue_turn(slide, CONTENT_LEFT, current_top, turn_width, speaker, thai, translit, english, learner=index % 2 == 1)
-        current_top += Inches(0.85)
+        current_top += Inches(1.0)
 
 
 def render_recap(slide, slide_data: dict[str, Any], translit_entries: list[tuple[str, str]] | None = None):
