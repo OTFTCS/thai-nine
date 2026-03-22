@@ -1029,18 +1029,47 @@ def build_deck_source(
         }
     )
 
-    for index, section in enumerate(script.get("sections", []), start=3):
-        slide_id = build_slide_id(index, section.get("heading", f"section-{index - 2}"))
-        slide, provenance = build_teaching_slide(
-            slide_id,
-            section.get("heading", f"Section {index - 2}"),
-            section,
-            script.get("title", lesson_id),
-            lesson_root,
-            assets_dir,
-        )
-        slides.append(slide)
-        provenance_assets.extend(provenance)
+    slide_index = 3
+    for section_num, section in enumerate(script.get("sections", []), start=1):
+        bullets = section.get("onScreenBullets", [])
+        heading = section.get("heading", f"Section {section_num}")
+
+        if len(bullets) > 4:
+            # Split into multiple slides: first slide gets items 1-3, second gets the rest
+            for chunk_idx, chunk_start in enumerate(range(0, len(bullets), 3)):
+                chunk_bullets = bullets[chunk_start:chunk_start + 3]
+                chunk_section = {**section, "onScreenBullets": chunk_bullets}
+                # Only put drills on the last chunk slide
+                if chunk_start + 3 < len(bullets):
+                    chunk_section = {**chunk_section, "drills": []}
+                # Filter languageFocus to match the chunk's bullets
+                chunk_thai = set()
+                for b in chunk_bullets:
+                    parts = b.split("|")
+                    if parts:
+                        chunk_thai.add(parts[0].strip())
+                chunk_lf = [lf for lf in section.get("languageFocus", []) if lf.get("thai", "") in chunk_thai]
+                if not chunk_lf:
+                    chunk_lf = section.get("languageFocus", [])
+                chunk_section["languageFocus"] = chunk_lf
+
+                slide_id = build_slide_id(slide_index, f"{heading} ({chunk_idx + 1})")
+                slide, provenance = build_teaching_slide(
+                    slide_id, heading, chunk_section,
+                    script.get("title", lesson_id), lesson_root, assets_dir,
+                )
+                slides.append(slide)
+                provenance_assets.extend(provenance)
+                slide_index += 1
+        else:
+            slide_id = build_slide_id(slide_index, heading)
+            slide, provenance = build_teaching_slide(
+                slide_id, heading, section,
+                script.get("title", lesson_id), lesson_root, assets_dir,
+            )
+            slides.append(slide)
+            provenance_assets.extend(provenance)
+            slide_index += 1
 
     roleplay_lines = [
         " | ".join(

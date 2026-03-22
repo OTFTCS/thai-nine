@@ -183,7 +183,21 @@ Count occurrences of each new `languageFocus` item across:
 
 If any new item appears fewer than 3 times total, flag it.
 
-### 10. Production ratio
+### 10. Explicit individual word teaching (HARD FAIL)
+
+Every new word from the blueprint's `new_vocab_core` MUST be explicitly introduced as an individual item BEFORE it is used in any chunk, sentence, drill, or roleplay.
+
+For each word in `new_vocab_core`:
+1. Find the FIRST section where that word appears anywhere (languageFocus, onScreenBullets, drills, spokenNarration)
+2. Verify that section's `onScreenBullets` contains that word as a **standalone triplet line** (e.g., `"คือ | khuue | is"`) — NOT only inside a chunk (e.g., `"นี่คือ... | nîi khuue... | this is..."`)
+3. Verify the `spokenNarration` in that section explicitly says the word, gives the transliteration, and explains its meaning
+4. Check that the word does NOT appear in any earlier section's drills, roleplay lines, or chunks before this introduction
+
+If any word from `new_vocab_core` is used before being individually introduced → **HARD FAIL**.
+
+Also check: if a chunk in `new_chunks_core` contains words that haven't been individually introduced in an earlier or same section, → **HARD FAIL**.
+
+### 11. Production ratio
 
 Check whether at least 40% of drill moments require the learner to **produce** language (speak, construct, or recall), not just choose or recognize.
 

@@ -83,6 +83,9 @@ Following the rules in `stage-1-script-generation.prompt.md`, write these 4 file
 
 **Pedagogy requirements:**
 - Teach ALL vocabulary from the blueprint's `new_vocab_core` and `new_chunks_core` — never skip items. Scaffold by splitting across sections (max 5-6 per section)
+- **Every new word MUST be explicitly introduced individually** (shown alone on screen with Thai + translit + English, spoken by Nine, explained) BEFORE it appears in any chunk, sentence, drill, or roleplay. This is a HARD FAIL if violated.
+- Section structure: introduce 2-3 new words individually first → then combine into a chunk/pattern → then drill. Max 3 new standalone words per section + 1 chunk.
+- If a chunk contains words not yet individually taught, those words MUST be taught in an earlier section first.
 - 40%+ production drills (substitution, response-building, pause-and-produce)
 - Each new item in 3+ contexts across the lesson (input flood)
 - At least 1 drill format used twice with different content (task repetition)
