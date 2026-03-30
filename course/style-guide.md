@@ -14,7 +14,7 @@ Scripts and decks must work for both. Use "You" (not "Learner") in roleplay labe
 
 ## Script formatting
 - Thai line format: `THAI | PTM-adapted transliteration | English`.
-- Transliteration standard file: `/course/transliteration-ptm-vowels.json`.
+- Transliteration standard file: `course/transliteration-ptm-vowels.json`.
 - Spoken script markers:
   - `[THAI: ...]` Thai lines Nine says naturally.
   - `[PAUSE 3s]` / `[PAUSE 5s]` learner response window.
@@ -32,7 +32,7 @@ Scripts and decks must work for both. Use "You" (not "Learner") in roleplay labe
 - Examples: `mái`, `khâo`, `rót`, `gàao`.
 
 ## Consonant transliteration policy (PTM-consistent)
-- Consonant mapping source file: `/course/transliteration-ptm-consonants.json`.
+- Consonant mapping source file: `course/transliteration-ptm-consonants.json`.
 - Preserve key PTM contrasts:
   - `b` vs `bp`
   - `d` vs `dt`
@@ -96,10 +96,10 @@ Every lesson includes a 60–90 second pronunciation micro-segment with:
 
 ## Visual asset sourcing policy (cost control)
 - **Default rule:** use internet-sourced images first (royalty-free / reusable) for PPTX lesson decks.
-- Prioritize:
+- Source order:
   1) Openverse
   2) Wikimedia Commons
-  3) Existing local asset library
+  3) Local themed shapes/cards only when imagery is not genuinely helpful
 - **Do not** use generated-image tools unless explicitly approved for a specific lesson.
 - `deck-source.json` and `asset-provenance.json` must record what each image is teaching and where it came from.
 - If no suitable internet image is found quickly, fall back to a text-only or card-based PPTX layout and continue production.

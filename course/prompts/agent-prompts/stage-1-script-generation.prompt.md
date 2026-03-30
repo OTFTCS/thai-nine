@@ -69,7 +69,7 @@ You will be given:
 - `course/transliteration-policy.md`
 - `course/schemas/script-master.schema.json`
 - `course/schemas/deck-source.schema.json`
-- the current PPTX design system in `course/Start with L001 and Review Uploaded Files/design_system.py`
+- the current PPTX design system in `course/reference/design_system.py`
 
 Treat these as binding:
 - schema is binding

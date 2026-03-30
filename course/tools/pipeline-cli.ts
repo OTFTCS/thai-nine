@@ -16,7 +16,6 @@ import {
 import { compareLessonIds, lessonIdFromDir, parseLessonRef } from "./lib/lesson-ids.ts";
 import { listReusableLessonIds, readReusableLessonScript } from "./lib/reusable-lessons.ts";
 import {
-  remotionEpisodePathForLesson,
   validateAll,
   validateAllSchemas,
   validateLessonDir,
@@ -46,7 +45,7 @@ import type {
   QuizItem,
   QuizItemBank,
   QuizSet,
-  RemotionPlan,
+
   ScriptMaster,
   StageId,
   ValidationIssue,
@@ -928,113 +927,6 @@ function runFixupVocabIds(): number {
   return 0;
 }
 
-function stage3Remotion(script: ScriptMaster): RemotionPlan {
-  const titleQuery = `${script.lessonId} ${script.title}`;
-  return {
-    schemaVersion: 1,
-    lessonId: script.lessonId,
-    sourceScript: lessonFile(script.lessonId, "script-master.json").split("/").pop() ?? "script-master.json",
-    canvas: {
-      width: 1920,
-      height: 1080,
-      leftTeachingFraction: 0.6667,
-      rightCameraFraction: 0.3333,
-      safeZoneLabel: "Right third reserved for Nine camera",
-    },
-    scenes: script.sections.map((section, idx) => {
-      const visualPlan = section.visualPlan;
-      const searchQuery =
-        visualPlan?.imageSupport.searchQueries[0] ??
-        `${titleQuery} ${section.heading} thai learning visual`;
-      const imageUsage =
-        visualPlan?.imageSupport.helpful === false &&
-        visualPlan?.imageSupport.priority === "avoid"
-          ? ("text-only" as const)
-          : visualPlan?.imageSupport.helpful === true
-          ? ("real-image" as const)
-          : ("icon" as const);
-      const assetId = `${script.lessonId.toLowerCase()}-scene-${idx + 1}-asset-1`;
-      const sourceUrl = imageUsage === "real-image"
-        ? `https://www.pexels.com/search/${encodeURIComponent(searchQuery)}/`
-        : `https://thenounproject.com/search/icons/?q=${encodeURIComponent(searchQuery)}`;
-      const assetKind = imageUsage === "real-image" ? ("image" as const) : ("icon" as const);
-      const sceneOverlays = [
-        section.heading,
-        visualPlan?.onScreenGoal ?? section.purpose,
-        ...section.onScreenBullets.slice(0, 3),
-      ];
-      const totalWords = section.spokenNarration.join(" ").split(/\s+/).filter(Boolean).length;
-      const seconds = Math.max(36, Math.min(72, Math.round(totalWords / 2.6)));
-
-      return {
-        id: `scene-${idx + 1}`,
-        seconds,
-        voiceover: section.spokenNarration,
-        overlays: sceneOverlays,
-        teachingObjective: section.purpose,
-        layout: visualPlan?.leftPanelLayout ?? "focus-card",
-        visualStrategy: {
-          onScreenGoal: visualPlan?.onScreenGoal ?? section.purpose,
-          teachingVisuals:
-            visualPlan?.teachingVisuals.length
-              ? visualPlan.teachingVisuals
-              : [section.heading, ...section.onScreenBullets.slice(0, 2)],
-          teacherCues:
-            visualPlan?.teacherCues.length
-              ? visualPlan.teacherCues
-              : ["Keep visuals in the left teaching area.", "Avoid covering the camera safe zone."],
-          imageUsage,
-          rationale:
-            visualPlan?.imageSupport.rationale ??
-            "Use a single supporting visual anchor while the spoken lesson carries the explanation.",
-        },
-        thaiFocus: section.languageFocus.map((l) => ({ thai: l.thai, translit: l.translit, english: l.english })),
-        assets: [
-          {
-            assetId,
-            kind: assetKind,
-            query: searchQuery,
-            sourcePolicy: "internet-first" as const,
-            sourceUrl,
-            license: imageUsage === "real-image" ? "Pexels License" : "Noun Project search result review required",
-            usageNotes: imageUsage === "real-image"
-              ? "Use as left-panel supporting visual only; keep text dominant."
-              : imageUsage === "text-only"
-              ? "Text-first scene. Optional icon fallback only if the layout needs a minimal anchor."
-              : "Use as a simple icon/diagram anchor in the left panel only.",
-            aiFallbackPrompt:
-              visualPlan?.imageSupport.aiFallbackPrompt &&
-              visualPlan.imageSupport.aiFallbackPrompt.trim().length > 0
-                ? visualPlan.imageSupport.aiFallbackPrompt
-                : undefined,
-          },
-        ],
-      };
-    }),
-  };
-}
-
-function stage3Provenance(remotion: RemotionPlan): AssetProvenance {
-  return {
-    schemaVersion: 1,
-    lessonId: remotion.lessonId,
-    generatedAt: nowIso(),
-    assets: remotion.scenes.flatMap((scene) =>
-      scene.assets.map((asset) => ({
-        assetId: asset.assetId,
-        kind: asset.kind,
-        sourceUrl: asset.sourceUrl,
-        license: asset.license,
-        usage: `${scene.id}:${scene.id} overlay background`,
-        query: asset.query,
-        sourcePolicy: asset.sourcePolicy,
-        rationale: scene.visualStrategy?.rationale ?? asset.usageNotes,
-        sourceHints: scene.visualStrategy?.imageUsage === "real-image" ? ["Pexels", "Wikimedia Commons"] : ["The Noun Project", "Icon sets"],
-        aiFallbackPrompt: asset.aiFallbackPrompt,
-      })),
-    ),
-  };
-}
 
 function stage4Pdf(script: ScriptMaster): PdfSource {
   const lexicon = dedupeLexemes(script.sections.flatMap((s) => s.languageFocus));

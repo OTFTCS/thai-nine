@@ -186,44 +186,6 @@ export interface ScriptMaster {
   pronunciationFocus?: PronunciationFocus;
 }
 
-export interface RemotionPlan {
-  schemaVersion: 1;
-  lessonId: string;
-  sourceScript: string;
-  canvas?: {
-    width: number;
-    height: number;
-    leftTeachingFraction: number;
-    rightCameraFraction: number;
-    safeZoneLabel: string;
-  };
-  scenes: Array<{
-    id: string;
-    seconds: number;
-    voiceover: string[];
-    overlays: string[];
-    thaiFocus: Array<{ thai: string; translit: string; english: string }>;
-    teachingObjective?: string;
-    layout?: VisualLayout;
-    visualStrategy?: {
-      onScreenGoal: string;
-      teachingVisuals: string[];
-      teacherCues: string[];
-      imageUsage: "real-image" | "icon" | "text-only";
-      rationale: string;
-    };
-    assets: Array<{
-      assetId: string;
-      kind: "image" | "icon" | "video";
-      query: string;
-      sourcePolicy: "internet-first";
-      sourceUrl: string;
-      license: string;
-      usageNotes?: string;
-      aiFallbackPrompt?: string;
-    }>;
-  }>;
-}
 
 export interface AssetProvenance {
   schemaVersion: 1;

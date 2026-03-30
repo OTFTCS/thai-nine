@@ -1,4 +1,4 @@
-import { existsSync, readFileSync, readdirSync, statSync } from "node:fs";
+import { existsSync, readFileSync } from "node:fs";
 import { basename, join } from "node:path";
 import { listLessonDirs, readJson, resolveLessonDirArtifactPath } from "./fs.ts";
 import { compareLessonIds } from "./lesson-ids.ts";
@@ -17,7 +17,7 @@ import type {
   QuizItem,
   QuizItemBank,
   QuizSet,
-  RemotionPlan,
+
   ScriptMaster,
   ValidationIssue,
   VocabExport,
@@ -76,11 +76,6 @@ function lessonArtifactPathForDir(lessonDir: string, baseName: string): string {
   );
 }
 
-export function remotionEpisodePathForLesson(root: string, lessonId: string): string {
-  const lessonNum = Number((lessonId.split("-")[1] ?? "L000").replace(/^L/, ""));
-  const episodeNum = String(Math.max(lessonNum, 0)).padStart(3, "0");
-  return join(root, "thaiwith-nine-remotion", "src", "data", `episode-${episodeNum}.json`);
-}
 
 function pushPolicyIssues(text: string, label: string, issues: ValidationIssue[], requireToneMark = false): void {
   const check = checkTransliterationPolicy(text, requireToneMark);
@@ -118,6 +113,11 @@ function checkScriptMaster(path: string): ValidationIssue[] {
       if (isBlank(data.teachingFrame.openingHook) || isBlank(data.teachingFrame.scenario) || isBlank(data.teachingFrame.learnerTakeaway)) {
         issues.push({ path, message: "teachingFrame must include openingHook, scenario, and learnerTakeaway" });
       }
+    }
+
+    // pronunciationFocus required from M01-L002 onwards
+    if (compareLessonIds(data.lessonId, "M01-L001") > 0 && !data.pronunciationFocus) {
+      issues.push({ path, message: "pronunciationFocus required for lessons after M01-L001" });
     }
   }
 
@@ -188,58 +188,6 @@ function checkContext(path: string): ValidationIssue[] {
   return issues;
 }
 
-function checkRemotion(path: string): ValidationIssue[] {
-  const issues: ValidationIssue[] = [];
-  const data = parseJsonFile<RemotionPlan>(path);
-  const isLegacyLesson = compareLessonIds(data.lessonId, "M01-L004") < 0;
-
-  if (data.scenes.some((s) => s.assets.some((a) => a.sourcePolicy !== "internet-first"))) {
-    issues.push({ path, message: "remotion assets must use internet-first policy" });
-  }
-
-  if (!isLegacyLesson) {
-    if (!data.canvas) {
-      issues.push({ path, message: "non-legacy remotion plans require canvas metadata" });
-    } else {
-      if (Math.abs(data.canvas.leftTeachingFraction - 0.6667) > 0.02 || Math.abs(data.canvas.rightCameraFraction - 0.3333) > 0.02) {
-        issues.push({ path, message: "remotion canvas must reserve roughly the right third for camera and left two-thirds for teaching" });
-      }
-    }
-  }
-
-  for (const [sceneIdx, scene] of data.scenes.entries()) {
-    for (const [idx, tf] of scene.thaiFocus.entries()) {
-      enforceTriplet(tf, `${path}#scenes[${sceneIdx}].thaiFocus[${idx}]`, issues);
-    }
-
-    for (const [assetIdx, asset] of scene.assets.entries()) {
-      if (!asset.sourceUrl.startsWith("https://")) {
-        issues.push({ path, message: `scene[${sceneIdx}] asset[${assetIdx}] sourceUrl must be https://` });
-      }
-      if (isBlank(asset.license)) {
-        issues.push({ path, message: `scene[${sceneIdx}] asset[${assetIdx}] missing license` });
-      }
-    }
-
-    if (!isLegacyLesson) {
-      if (!scene.visualStrategy) {
-        issues.push({ path, message: `scene[${sceneIdx}] missing visualStrategy` });
-      } else {
-        if (scene.visualStrategy.teachingVisuals.length < 1) {
-          issues.push({ path, message: `scene[${sceneIdx}] visualStrategy needs teaching visuals` });
-        }
-        if (scene.visualStrategy.teacherCues.length < 1) {
-          issues.push({ path, message: `scene[${sceneIdx}] visualStrategy needs teacher cues` });
-        }
-      }
-      if (!scene.layout) {
-        issues.push({ path, message: `scene[${sceneIdx}] missing layout` });
-      }
-    }
-  }
-
-  return issues;
-}
 
 function checkDeckSource(path: string, lessonDir: string): ValidationIssue[] {
   const issues: ValidationIssue[] = [];
@@ -636,63 +584,6 @@ function checkVocabIndex(path: string): ValidationIssue[] {
   return issues;
 }
 
-export function validateRemotionDataFile(path: string): ValidationIssue[] {
-  const issues: ValidationIssue[] = [];
-  if (!existsSync(path)) return issues;
-
-  let data: unknown;
-  try {
-    data = parseJsonFile<unknown>(path);
-  } catch {
-    issues.push({ path, message: "remotion episode data is not valid JSON" });
-    return issues;
-  }
-
-  if (!Array.isArray(data)) {
-    issues.push({ path, message: "remotion episode data must be an array" });
-    return issues;
-  }
-
-  for (const [idx, scene] of data.entries()) {
-    if (!scene || typeof scene !== "object") continue;
-    const obj = scene as Record<string, unknown>;
-    const phonetics = typeof obj.phonetics === "string" ? obj.phonetics : null;
-    if (phonetics) {
-      pushPolicyIssues(phonetics, `${path}#scene[${idx}].phonetics`, issues);
-      continue;
-    }
-
-    if (obj.type === "term") {
-      issues.push({ path: `${path}#scene[${idx}]`, message: "term scene is missing phonetics transliteration" });
-    }
-  }
-
-  const raw = readFileSync(path, "utf8");
-  issues.push(...checkMarkdownForbiddenSymbols(raw, path));
-
-  return issues;
-}
-
-export function validateRemotionDataForLesson(root: string, lessonId: string): ValidationIssue[] {
-  const episodePath = remotionEpisodePathForLesson(root, lessonId);
-  if (!existsSync(episodePath)) return [];
-  return validateRemotionDataFile(episodePath);
-}
-
-export function validateAllRemotionData(root: string): ValidationIssue[] {
-  const dataDir = join(root, "thaiwith-nine-remotion", "src", "data");
-  if (!existsSync(dataDir) || !statSync(dataDir).isDirectory()) return [];
-
-  const issues: ValidationIssue[] = [];
-  const files = readdirSync(dataDir)
-    .filter((file) => /^episode-\d{3}\.json$/.test(file))
-    .sort();
-  for (const file of files) {
-    issues.push(...validateRemotionDataFile(join(dataDir, file)));
-  }
-
-  return issues;
-}
 
 function lessonSchemaTargets(lessonDir: string): Array<{ path: string; schemaFile: string; required?: boolean }> {
   return [

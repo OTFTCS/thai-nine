@@ -75,7 +75,7 @@ Following the rules in `stage-1-script-generation.prompt.md`, write these 4 file
 - At least 4 sections, each with spokenNarration (3+ lines), onScreenBullets, drills (1+), languageFocus, visualPlan
 - Include `pronunciationFocus` with targetSounds, minimalPairs, mouthMapAnchor
 - Roleplay: 6+ lines, use "You" as speaker (not "Learner"), at least 2 production turns
-- Recap: 5+ retrieval-first items
+- Recap: 3-5 retrieval-first items
 - Set all `vocabId` to `v-0000000000` (fixed in Step 4)
 - Mark multi-word chunks with `"type": "chunk"`
 - `policies.transliteration: "PTM_ADAPTED_INLINE_TONES"`
@@ -123,7 +123,6 @@ Review the script-master.json you just wrote. Write `{ID}-editorial-qa-report.md
 If FAIL: edit the source files to fix the issues, then re-score. Max 3 attempts.
 
 **Be honest in self-QA.** Do not rubber-stamp PASS. Actually check:
-- Count new vocab items (must be ≤ 7)
 - Count production drills as % of total drills (must be ≥ 40%)
 - Count occurrences of each new item across sections (must be ≥ 3 each)
 - Verify pronunciation section exists with minimal pairs

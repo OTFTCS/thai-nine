@@ -332,7 +332,7 @@ function buildStage1Packet(lessonId: string, blueprintRow: BlueprintLessonRow) {
   const deckDesignSystemPath = join(
     root,
     "course",
-    "Start with L001 and Review Uploaded Files",
+    "reference",
     "design_system.py"
   );
 
