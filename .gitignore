@@ -41,8 +41,13 @@ yarn-error.log*
 next-env.d.ts
 .next-dev-3002.log
 
+# Python
+__pycache__/
+*.pyc
+
 # Large media files
 thai_with_nine_tiktok/media/input/
+media/
 *.mov
 
 # Pipeline build artifacts (generated on-demand, not committed)

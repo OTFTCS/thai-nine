@@ -1,0 +1,49 @@
+{
+  "resolution": { "width": 1920, "height": 1080 },
+  "aspectRatio": "16:9",
+  "fps": 30,
+  "layout": {
+    "contentZone": {
+      "leftFrac": 0.0,
+      "rightFrac": 0.6667,
+      "note": "Left 2/3 for Manim content"
+    },
+    "cameraZone": {
+      "leftFrac": 0.6667,
+      "rightFrac": 1.0,
+      "note": "Right 1/3 for Nine's camera"
+    }
+  },
+  "background": {
+    "color": "#F5F7F8",
+    "cardColor": "#FFFFFF",
+    "cardBorder": "#D7DEE3",
+    "cardRadius": 12
+  },
+  "fonts": {
+    "thai": { "family": "Sarabun", "weight": "Medium", "sizePt": 44 },
+    "translit": { "family": "Sarabun", "weight": "Regular", "sizePt": 28 },
+    "english": { "family": "Sarabun", "weight": "Regular", "sizePt": 24 },
+    "heading": { "family": "Sarabun", "weight": "Bold", "sizePt": 32 },
+    "drill": { "family": "Sarabun", "weight": "Medium", "sizePt": 22 }
+  },
+  "colors": {
+    "thai": "#313D44",
+    "translit": "#8BB4CD",
+    "english": "#9BA4A9",
+    "heading": "#3A7599",
+    "accent": "#3A7599",
+    "wrong": "#B34033",
+    "correct": "#66BB6A",
+    "drillCue": "#3A7599",
+    "speakerYou": "#3A7599",
+    "speakerOther": "#313D44"
+  },
+  "animations": {
+    "cardRevealSec": 0.4,
+    "textFadeInSec": 0.3,
+    "sectionTransitionSec": 0.6,
+    "highlightPulseSec": 0.5,
+    "drillPauseCueSec": 0.3
+  }
+}
