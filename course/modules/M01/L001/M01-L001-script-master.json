@@ -383,15 +383,15 @@
       },
       {
         "speaker": "You",
-        "thai": "ขอโทษครับ ใช่ไหมครับ",
-        "translit": "khǎaw-thôot khráp châi mái khráp",
-        "english": "Excuse me, is this right?"
+        "thai": "ขอโทษครับ นี่โรงแรมสยามใช่ไหมครับ",
+        "translit": "khǎaw-thôot khráp nîi roong-raem sǎ-yǎam châi mái khráp",
+        "english": "Excuse me, is this the Siam Hotel?"
       },
       {
         "speaker": "Staff",
         "thai": "ใช่ค่ะ",
         "translit": "châi khâ",
-        "english": "Yes."
+        "english": "Yes, it is."
       },
       {
         "speaker": "You",
