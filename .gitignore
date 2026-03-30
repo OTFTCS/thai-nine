@@ -41,6 +41,10 @@ yarn-error.log*
 next-env.d.ts
 .next-dev-3002.log
 
+# Large media files
+thai_with_nine_tiktok/media/input/
+*.mov
+
 # Pipeline build artifacts (generated on-demand, not committed)
 course/modules/**/.build/
 course/modules/**/canva-backgrounds/

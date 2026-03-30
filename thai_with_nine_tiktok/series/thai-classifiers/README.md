@@ -24,6 +24,9 @@ This series is intentionally separate from the Immersion Thai course. The goal i
 - ชิ้น
 - แก้ว
 - ขวด
+- ครั้ง
+- รอบ
+- ที่
 
 ## Wave 2 reserve
 
@@ -31,13 +34,12 @@ This series is intentionally separate from the Immersion Thai course. The goal i
 - คู่
 - ห้อง
 - ฉบับ
-- ครั้ง
 - ชุด
 
 ## Implementation notes
 
 - Use the `overview` runtime profile for episode 1.
-- Use the `short` runtime profile for episodes 2-7.
+- Use the `short` runtime profile for episodes 2-8.
 - Keep the first two seconds punchy: start on the mistake, mismatch, or contrast.
 - Skip greetings, branding intros, and any line that explains the obvious before the viewer has seen an example.
 - Episode 1 must open on bad direct-translation attempts, correct them fast, and explain classifiers in counting, demonstrative phrases, and descriptive phrases.

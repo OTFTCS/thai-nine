@@ -3,9 +3,9 @@
     "slug": "thai-classifiers",
     "title": "Thai Classifier Series",
     "standaloneFromCourse": true,
-    "creativeGoal": "Maximize retention and shareability while teaching high-utility Thai classifiers with minimal filler.",
-    "wave1Classifiers": ["อัน", "คน", "ตัว", "ใบ", "เล่ม", "คัน", "เครื่อง", "ลูก", "ชิ้น", "แก้ว", "ขวด"],
-    "wave2Reserve": ["หลัง", "คู่", "ห้อง", "ฉบับ", "ครั้ง", "ชุด"]
+    "creativeGoal": "Maximize retention and shareability by performing weird literal English glosses as comedy, using show-before-tell structure, and adding real pauses on challenge beats.",
+    "wave1Classifiers": ["อัน", "คน", "ตัว", "ใบ", "เล่ม", "คัน", "เครื่อง", "ลูก", "ชิ้น", "แก้ว", "ขวด", "ครั้ง", "รอบ", "ที่"],
+    "wave2Reserve": ["หลัง", "คู่", "ห้อง", "ฉบับ", "ชุด"]
   },
   "runtimeContract": {
     "standardEpisodeSeconds": {
@@ -22,14 +22,19 @@
     "ctaMaxSeconds": 8
   },
   "globalRules": [
-    "Start with the contrast or mistake inside the first 2 seconds.",
+    "Start with examples or contrast inside the first 2 seconds — never state the rule first.",
     "No greeting, branding intro, or 'today we're learning' opener.",
-    "Give the rule in one sentence, then move straight into examples.",
-    "Keep examples short, concrete, and visual.",
+    "Show examples BEFORE naming the rule. Flip from lecture to discovery.",
+    "Every Thai example's literal English gloss must be performed out loud with exaggerated delivery, marked [PERFORM] in scripts.",
     "Show every Thai example with a literal word-for-word gloss on screen as well as the natural meaning.",
-    "Use one challenge beat per video so viewers choose the classifier themselves.",
+    "Use the weird literal English as comedy — 'dog BODY big very' is a punchline, not a footnote.",
+    "Use one challenge beat per video with a [PAUSE 3s] and 'YOUR TURN' graphic before the reveal.",
     "Do not repeat the basic classifier explanation after episode 1.",
     "No explanation stretch should run longer than 10 seconds without a concrete example.",
+    "No mid-video recap sections — replace with wrong-answer traps or situational examples.",
+    "Include 1-2 situational mini-scenes per episode (ordering, market, pointing at something).",
+    "End every episode with a forward hook teasing the next classifier pair.",
+    "Vary CTA format across episodes — no two consecutive episodes use the same CTA type.",
     "Keep the English framing plain and practical."
   ],
   "episodes": [
@@ -44,35 +49,35 @@
         "ideal": 125,
         "max": 140
       },
-      "hook": "Direct translation gives you broken Thai. The memory trick is to read the correct Thai back in weird literal English.",
-      "openingContrast": "Show the three bad direct-translation attempts with red X marks first, ask 'What was wrong with these sentences?', then replace them with ขอน้ำเปล่าสองขวด, ผมชอบหนังสือเล่มนี้, and มันเป็นหมาตัวใหญ่มาก before naming the rule.",
+      "hook": "Say the wrong Thai confidently, then reveal the corrections with performed literal glosses.",
+      "openerFormat": "Wrong Thai said with confidence → correction reveal with exaggerated glosses",
+      "openingContrast": "Deliver three bad direct-translation attempts confidently to camera, beat, then reveal corrections with [PERFORM] glosses: 'ask plain-water two BOTTLES', 'I like book VOLUME this', 'it is dog BODY big very'.",
       "ruleLine": "A classifier is the extra word Thai uses to show what kind of thing the noun is, and it appears in counting, in pointing phrases, and in descriptions.",
-      "focus": "Teach classifiers from zero through bad-direct-translation corrections, literal word-for-word glosses, and practical use cases instead of previewing the whole arc.",
+      "focus": "Teach classifiers from zero through performed weird-English glosses as the memory trick, with a cafe mini-scene.",
       "openingMistakes": [
-        { "spoken": "kaaw 2 naam bplao", "intendedMeaning": "Please can I have 2 waters", "correctionThai": "ขอน้ำเปล่าสองขวด", "correctionEnglish": "Please can I have 2 bottles of water" },
-        { "spoken": "pom chawp nangseu nii", "intendedMeaning": "I like this book", "correctionThai": "ผมชอบหนังสือเล่มนี้", "correctionEnglish": "I like this book" },
-        { "spoken": "man bpen maa yai maak", "intendedMeaning": "That's a big dog", "correctionThai": "มันเป็นหมาตัวใหญ่มาก", "correctionEnglish": "That's a very big dog" }
+        { "spoken": "kaaw 2 naam bplao", "intendedMeaning": "Please can I have 2 waters", "correctionThai": "ขอน้ำเปล่าสองขวด", "performGloss": "Ask plain-water two BOTTLES" },
+        { "spoken": "pom chawp nangseu nii", "intendedMeaning": "I like this book", "correctionThai": "ผมชอบหนังสือเล่มนี้", "performGloss": "I like book VOLUME this" },
+        { "spoken": "man bpen maa yai maak", "intendedMeaning": "That's a big dog", "correctionThai": "มันเป็นหมาตัวใหญ่มาก", "performGloss": "It is dog BODY big very" }
       ],
       "useCaseExamples": [
-        { "thai": "ขอน้ำเปล่าสองขวด", "english": "two bottles of water", "classifier": "ขวด", "function": "counting" },
-        { "thai": "เห็นแมวสี่ตัว", "english": "I see four cats", "classifier": "ตัว", "function": "counting" },
-        { "thai": "ผมชอบหนังสือเล่มนี้", "english": "I like this book", "classifier": "เล่ม", "function": "demonstrative" },
-        { "thai": "หมาตัวใหญ่", "english": "big dog", "classifier": "ตัว", "function": "descriptive" },
-        { "thai": "หนังสือเล่มนั้น", "english": "that book", "classifier": "เล่ม", "function": "demonstrative" },
-        { "thai": "หนังสือเล่มใหญ่", "english": "big book", "classifier": "เล่ม", "function": "descriptive" },
-        { "thai": "โทรศัพท์เครื่องนี้", "english": "this phone", "classifier": "เครื่อง", "function": "demonstrative" }
+        { "thai": "ขอน้ำเปล่าสองขวด", "performGloss": "Plain-water two BOTTLES", "classifier": "ขวด", "function": "counting" },
+        { "thai": "เห็นตั๋วสามใบ", "performGloss": "See ticket three FLAT-THINGS", "classifier": "ใบ", "function": "counting" },
+        { "thai": "โทรศัพท์เครื่องนั้น", "performGloss": "Phone MACHINE that", "classifier": "เครื่อง", "function": "demonstrative" },
+        { "thai": "กาแฟแก้วใหญ่", "performGloss": "Coffee GLASS big", "classifier": "แก้ว", "function": "descriptive" }
       ],
+      "miniScene": "Ordering water at a cafe — wrong Thai then correct Thai with performed gloss.",
       "challenge": {
-        "prompt": "Quick check: how would you say 'four dogs'?",
-        "answerThai": "หมาสี่ตัว",
-        "answerEnglish": "four dogs"
+        "prompt": "How do you say 'I see two fish'?",
+        "answerThai": "เห็นปลาสองตัว",
+        "performGloss": "See fish two BODIES"
       },
       "transferCheck": {
-        "prompt": "End on a new phrase: how would you say 'this phone'?",
-        "answerThai": "โทรศัพท์เครื่องนี้",
-        "answerEnglish": "this phone"
+        "prompt": "How would you say 'this coffee'?",
+        "answerThai": "กาแฟแก้วนี้",
+        "performGloss": "Coffee GLASS this"
       },
-      "cta": "Follow and stay tuned for in-depth videos on the most-used classifiers in Thai."
+      "forwardHook": "But why is a cat counted differently from a person? That's next.",
+      "cta": "Follow for the full classifier series."
     },
     {
       "episode": 2,
@@ -85,28 +90,32 @@
         "ideal": 85,
         "max": 100
       },
-      "hook": "Why is one cat not counted like one person in Thai?",
-      "openingContrast": "Flash between one student and one cat before naming the rule.",
+      "hook": "One student. One cat. Different word at the end. Why?",
+      "openerFormat": "Side-by-side visual flash of examples THEN the question",
+      "openingContrast": "Flash นักเรียนหนึ่งคน and แมวหนึ่งตัว on screen, THEN ask why they're different.",
       "ruleLine": "Use คน for people and ตัว for animals or body-shaped nouns.",
-      "focus": "Make the people-vs-animal split feel automatic.",
+      "focus": "Make the people-vs-animal split feel automatic through performed glosses. Lean into 'BODY' being weird.",
       "examples": [
-        { "thai": "นักเรียนหนึ่งคน", "english": "one student", "classifier": "คน" },
-        { "thai": "ครูสองคน", "english": "two teachers", "classifier": "คน" },
-        { "thai": "แมวหนึ่งตัว", "english": "one cat", "classifier": "ตัว" },
-        { "thai": "หมาสองตัว", "english": "two dogs", "classifier": "ตัว" },
-        { "thai": "ตุ๊กตาหนึ่งตัว", "english": "one doll", "classifier": "ตัว" }
+        { "thai": "นักเรียนหนึ่งคน", "performGloss": "Student one PERSON", "classifier": "คน" },
+        { "thai": "หมอสองคน", "performGloss": "Doctor two PEOPLE", "classifier": "คน" },
+        { "thai": "แมวหนึ่งตัว", "performGloss": "Cat one BODY", "classifier": "ตัว" },
+        { "thai": "เป็ดหนึ่งตัว", "performGloss": "Duck one BODY", "classifier": "ตัว" },
+        { "thai": "นกสองตัว", "performGloss": "Bird two BODIES", "classifier": "ตัว" },
+        { "thai": "ตุ๊กตาหนึ่งตัว", "performGloss": "Doll one BODY — Thai thinks dolls have bodies", "classifier": "ตัว" }
       ],
+      "miniScene": "Pointing at ducks at a market — 'see duck three BODIES'.",
       "challenge": {
-        "prompt": "What about 'one fish'?",
-        "answerThai": "ปลาหนึ่งตัว",
-        "answerEnglish": "one fish"
+        "prompt": "One horse?",
+        "answerThai": "ม้าหนึ่งตัว",
+        "performGloss": "Horse one BODY"
       },
       "transferCheck": {
-        "prompt": "New noun at the end: 'one friend' should be what?",
+        "prompt": "One friend?",
         "answerThai": "เพื่อนหนึ่งคน",
-        "answerEnglish": "one friend"
+        "performGloss": "Friend one PERSON"
       },
-      "cta": "Comment a noun and I'll tell you if it takes คน or ตัว."
+      "forwardHook": "So คน is people, ตัว is animals. But what do you use for everything else?",
+      "cta": "Duet this and say the weird English before I show the answer."
     },
     {
       "episode": 3,
@@ -119,26 +128,33 @@
         "ideal": 85,
         "max": 100
       },
-      "hook": "If you use อัน for everything, Thai will notice fast.",
-      "openingContrast": "Show one remote, one cat, and one phone together before naming which one actually takes อัน.",
+      "hook": "Three rapid-fire wrong uses of อัน with buzzer energy.",
+      "openerFormat": "Rapid-fire wrong examples with buzzers, then correct uses",
+      "openingContrast": "Fire off แมวหนึ่งอัน, นักเรียนหนึ่งอัน, พัดลมหนึ่งอัน with buzzer sounds before showing what อัน actually works for.",
       "ruleLine": "Use อัน for many small general objects, but not for people, animals, or nouns with a strong specific classifier.",
-      "focus": "Give viewers a useful fallback without turning it into a fake rule for everything.",
+      "focus": "อัน is the fallback, not the cheat code. Comedy comes from the buzzer contrast.",
       "examples": [
-        { "thai": "รีโมตหนึ่งอัน", "english": "one remote", "classifier": "อัน" },
-        { "thai": "ไม้หนึ่งอัน", "english": "one stick", "classifier": "อัน" },
-        { "thai": "ค้อนหนึ่งอัน", "english": "one hammer", "classifier": "อัน" }
+        { "thai": "รีโมตหนึ่งอัน", "performGloss": "Remote one ITEM — that works", "classifier": "อัน" },
+        { "thai": "ไม้หนึ่งอัน", "performGloss": "Stick one ITEM — that works", "classifier": "อัน" },
+        { "thai": "ค้อนหนึ่งอัน", "performGloss": "Hammer one ITEM — that works too", "classifier": "อัน" }
+      ],
+      "wrongExamples": [
+        { "wrong": "แมวหนึ่งอัน", "correct": "แมวหนึ่งตัว", "performGloss": "Cat one BODY — not ITEM" },
+        { "wrong": "นักเรียนหนึ่งอัน", "correct": "นักเรียนหนึ่งคน", "performGloss": "Student one PERSON — not ITEM" },
+        { "wrong": "พัดลมหนึ่งอัน", "correct": "พัดลมหนึ่งเครื่อง", "performGloss": "Fan one MACHINE — not ITEM" }
       ],
       "challenge": {
-        "prompt": "Which one sounds right: แมวหนึ่งอัน or แมวหนึ่งตัว?",
+        "prompt": "Which sounds right: แมวหนึ่งอัน or แมวหนึ่งตัว?",
         "answerThai": "แมวหนึ่งตัว",
-        "answerEnglish": "one cat"
+        "performGloss": "Cat one BODY — always"
       },
       "transferCheck": {
-        "prompt": "New noun at the end: 'one book' should be what, not อัน?",
-        "answerThai": "หนังสือหนึ่งเล่ม",
-        "answerEnglish": "one book"
+        "prompt": "One magazine — อัน or something else?",
+        "answerThai": "นิตยสารหนึ่งเล่ม",
+        "performGloss": "Magazine one VOLUME — not ITEM"
       },
-      "cta": "Comment a noun and I'll tell you if อัน works or not."
+      "forwardHook": "Next: a ticket and a book look nothing alike, so why would Thai count them the same way?",
+      "cta": "Stitch this with a noun and I'll tell you if อัน works or not."
     },
     {
       "episode": 4,
@@ -151,28 +167,31 @@
         "ideal": 85,
         "max": 100
       },
-      "hook": "A ticket and a book are not the same kind of 'one' in Thai.",
-      "openingContrast": "Show ticket vs book as a pure visual contrast before explaining flat items vs bound items.",
+      "hook": "In English, these are both 'one.' In Thai? Completely different word.",
+      "openerFormat": "Hold up ticket and book — visual contrast before words",
+      "openingContrast": "Hold or show ticket in one hand, book in other, before explaining flat vs bound.",
       "ruleLine": "Use ใบ for flat paper-like items and เล่ม for books or bound items.",
-      "focus": "Teach the visual split fast enough that viewers can guess the classifier on sight.",
+      "focus": "Teach the visual split fast. 'FLAT-THING' is inherently funny — lean in.",
       "examples": [
-        { "thai": "ตั๋วหนึ่งใบ", "english": "one ticket", "classifier": "ใบ" },
-        { "thai": "บัตรหนึ่งใบ", "english": "one card", "classifier": "ใบ" },
-        { "thai": "ใบเสร็จหนึ่งใบ", "english": "one receipt", "classifier": "ใบ" },
-        { "thai": "หนังสือหนึ่งเล่ม", "english": "one book", "classifier": "เล่ม" },
-        { "thai": "สมุดหนึ่งเล่ม", "english": "one notebook", "classifier": "เล่ม" },
-        { "thai": "พาสปอร์ตหนึ่งเล่ม", "english": "one passport", "classifier": "เล่ม" }
+        { "thai": "ตั๋วหนึ่งใบ", "performGloss": "Ticket one FLAT-THING", "classifier": "ใบ" },
+        { "thai": "บัตรหนึ่งใบ", "performGloss": "Card one FLAT-THING", "classifier": "ใบ" },
+        { "thai": "ใบเสร็จหนึ่งใบ", "performGloss": "Receipt one FLAT-THING — Thai really said flat-thing", "classifier": "ใบ" },
+        { "thai": "หนังสือหนึ่งเล่ม", "performGloss": "Book one VOLUME", "classifier": "เล่ม" },
+        { "thai": "สมุดหนึ่งเล่ม", "performGloss": "Notebook one VOLUME", "classifier": "เล่ม" },
+        { "thai": "พาสปอร์ตหนึ่งเล่ม", "performGloss": "Passport one VOLUME — because it's bound, like a tiny book", "classifier": "เล่ม" }
       ],
+      "miniScene": "Getting a receipt at 7-Eleven — 'receipt one FLAT-THING'.",
       "challenge": {
-        "prompt": "Which one is 'one notebook'?",
+        "prompt": "One notebook?",
         "answerThai": "สมุดหนึ่งเล่ม",
-        "answerEnglish": "one notebook"
+        "performGloss": "Notebook one VOLUME"
       },
       "transferCheck": {
-        "prompt": "Finish on a new noun: 'one queue ticket' should be what?",
+        "prompt": "One queue ticket?",
         "answerThai": "บัตรคิวหนึ่งใบ",
-        "answerEnglish": "one queue ticket"
+        "performGloss": "Queue-ticket one FLAT-THING"
       },
+      "forwardHook": "Now what about your car and your phone? Same classifier? Nope.",
       "cta": "Save this if ใบ and เล่ม always trip you up."
     },
     {
@@ -186,28 +205,31 @@
         "ideal": 85,
         "max": 100
       },
-      "hook": "A car and a phone do not use the same classifier.",
-      "openingContrast": "Cut from one car to one phone and force the split before any explanation.",
+      "hook": "Thai counts a car and a phone completely differently.",
+      "openerFormat": "Cut between car and phone with Thai on screen, no explanation yet",
+      "openingContrast": "Cut from car to phone with Thai text visible, force the split before any explanation.",
       "ruleLine": "Use คัน for vehicles and เครื่อง for machines or devices.",
-      "focus": "Lock in transport vs device logic with highly familiar nouns.",
+      "focus": "Lock in transport vs device. 'Refrigerator one MACHINE' gets a comedy beat.",
       "examples": [
-        { "thai": "รถหนึ่งคัน", "english": "one car", "classifier": "คัน" },
-        { "thai": "จักรยานหนึ่งคัน", "english": "one bicycle", "classifier": "คัน" },
-        { "thai": "มอเตอร์ไซค์หนึ่งคัน", "english": "one motorbike", "classifier": "คัน" },
-        { "thai": "โทรศัพท์หนึ่งเครื่อง", "english": "one phone", "classifier": "เครื่อง" },
-        { "thai": "คอมพิวเตอร์หนึ่งเครื่อง", "english": "one computer", "classifier": "เครื่อง" },
-        { "thai": "ตู้เย็นหนึ่งเครื่อง", "english": "one refrigerator", "classifier": "เครื่อง" }
+        { "thai": "รถหนึ่งคัน", "performGloss": "Car one VEHICLE", "classifier": "คัน" },
+        { "thai": "จักรยานหนึ่งคัน", "performGloss": "Bicycle one VEHICLE", "classifier": "คัน" },
+        { "thai": "มอเตอร์ไซค์หนึ่งคัน", "performGloss": "Motorbike one VEHICLE", "classifier": "คัน" },
+        { "thai": "โทรศัพท์หนึ่งเครื่อง", "performGloss": "Phone one MACHINE", "classifier": "เครื่อง" },
+        { "thai": "คอมพิวเตอร์หนึ่งเครื่อง", "performGloss": "Computer one MACHINE", "classifier": "เครื่อง" },
+        { "thai": "ตู้เย็นหนึ่งเครื่อง", "performGloss": "Refrigerator one MACHINE — your fridge is a machine, apparently", "classifier": "เครื่อง" }
       ],
+      "miniScene": "Pointing at motorbikes on a Thai street — 'motorbike three VEHICLES'.",
       "challenge": {
-        "prompt": "What classifier should you use for 'one laptop'?",
+        "prompt": "One laptop?",
         "answerThai": "แล็ปท็อปหนึ่งเครื่อง",
-        "answerEnglish": "one laptop"
+        "performGloss": "Laptop one MACHINE"
       },
       "transferCheck": {
-        "prompt": "New noun to end: 'one taxi' should be what?",
+        "prompt": "One taxi?",
         "answerThai": "แท็กซี่หนึ่งคัน",
-        "answerEnglish": "one taxi"
+        "performGloss": "Taxi one VEHICLE"
       },
+      "forwardHook": "Okay, so things have classifiers. But what about food? One orange and one slice of cake are not the same...",
       "cta": "Comment the weirdest vehicle or gadget noun you want checked."
     },
     {
@@ -221,28 +243,31 @@
         "ideal": 85,
         "max": 100
       },
-      "hook": "One orange and one piece of cake count differently.",
+      "hook": "One orange. One piece of cake. In English, both just 'one.' In Thai?",
+      "openerFormat": "Whole fruit next to cake slice, both labeled 'one ___'",
       "openingContrast": "Show a whole fruit next to a cake slice before naming the classifiers.",
       "ruleLine": "Use ลูก for round or whole items like fruit and balls, and ชิ้น for pieces, slices, or portions.",
-      "focus": "Make food and market Thai feel instantly usable.",
+      "focus": "Make food and market Thai instantly usable. 'ROUND-THING' is the comedy anchor.",
       "examples": [
-        { "thai": "ส้มหนึ่งลูก", "english": "one orange", "classifier": "ลูก" },
-        { "thai": "มะม่วงสองลูก", "english": "two mangoes", "classifier": "ลูก" },
-        { "thai": "ลูกบอลหนึ่งลูก", "english": "one ball", "classifier": "ลูก" },
-        { "thai": "เค้กหนึ่งชิ้น", "english": "one piece of cake", "classifier": "ชิ้น" },
-        { "thai": "พิซซ่าหนึ่งชิ้น", "english": "one slice of pizza", "classifier": "ชิ้น" },
-        { "thai": "ขนมปังหนึ่งชิ้น", "english": "one piece of bread", "classifier": "ชิ้น" }
+        { "thai": "ส้มหนึ่งลูก", "performGloss": "Orange one ROUND-THING", "classifier": "ลูก" },
+        { "thai": "ทุเรียนสองลูก", "performGloss": "Durian two ROUND-THINGS", "classifier": "ลูก" },
+        { "thai": "ลูกบอลหนึ่งลูก", "performGloss": "Ball one ROUND-THING — and the word for ball starts with ลูก too", "classifier": "ลูก" },
+        { "thai": "เค้กหนึ่งชิ้น", "performGloss": "Cake one PIECE", "classifier": "ชิ้น" },
+        { "thai": "พิซซ่าหนึ่งชิ้น", "performGloss": "Pizza one PIECE", "classifier": "ชิ้น" },
+        { "thai": "ขนมปังหนึ่งชิ้น", "performGloss": "Bread one PIECE", "classifier": "ชิ้น" }
       ],
+      "miniScene": "At a fruit stall — 'durian three ROUND-THINGS'.",
       "challenge": {
-        "prompt": "What about 'one watermelon'?",
+        "prompt": "One watermelon?",
         "answerThai": "แตงโมหนึ่งลูก",
-        "answerEnglish": "one watermelon"
+        "performGloss": "Watermelon one ROUND-THING"
       },
       "transferCheck": {
-        "prompt": "End with a new food noun: 'one piece of salmon' should be what?",
+        "prompt": "One piece of salmon?",
         "answerThai": "ปลาแซลมอนหนึ่งชิ้น",
-        "answerEnglish": "one piece of salmon"
+        "performGloss": "Salmon one PIECE"
       },
+      "forwardHook": "Last one: same water, two completely different classifiers. How?",
       "cta": "Comment a food noun and I'll tell you if it's ลูก or ชิ้น."
     },
     {
@@ -256,29 +281,73 @@
         "ideal": 85,
         "max": 100
       },
-      "hook": "Same water, different classifier.",
-      "openingContrast": "Put one glass of water and one bottle of water on screen at the same time.",
+      "hook": "Same water. Two different words.",
+      "openerFormat": "Pour water into glass, hold up bottle — physical action before words",
+      "openingContrast": "Pour water into a glass and hold up a bottle of water on screen at the same time.",
       "ruleLine": "Use แก้ว when you're talking about a glass serving and ขวด when you're talking about a bottle.",
-      "focus": "Finish the arc with a classifier pair viewers can use in cafes, shops, and daily life immediately.",
+      "focus": "Finish the arc with a full cafe ordering mini-scene. Comedy is that the noun stays identical.",
       "examples": [
-        { "thai": "น้ำหนึ่งแก้ว", "english": "one glass of water", "classifier": "แก้ว" },
-        { "thai": "กาแฟหนึ่งแก้ว", "english": "one cup of coffee", "classifier": "แก้ว" },
-        { "thai": "ชาไทยหนึ่งแก้ว", "english": "one glass of Thai tea", "classifier": "แก้ว" },
-        { "thai": "น้ำหนึ่งขวด", "english": "one bottle of water", "classifier": "ขวด" },
-        { "thai": "โค้กหนึ่งขวด", "english": "one bottle of Coke", "classifier": "ขวด" },
-        { "thai": "น้ำผลไม้หนึ่งขวด", "english": "one bottle of juice", "classifier": "ขวด" }
+        { "thai": "น้ำหนึ่งแก้ว", "performGloss": "Water one GLASS", "classifier": "แก้ว" },
+        { "thai": "กาแฟหนึ่งแก้ว", "performGloss": "Coffee one GLASS", "classifier": "แก้ว" },
+        { "thai": "ชาไทยหนึ่งแก้ว", "performGloss": "Thai-tea one GLASS — you're at a cafe, this is what you say", "classifier": "แก้ว" },
+        { "thai": "น้ำหนึ่งขวด", "performGloss": "Water one BOTTLE", "classifier": "ขวด" },
+        { "thai": "โค้กหนึ่งขวด", "performGloss": "Coke one BOTTLE", "classifier": "ขวด" },
+        { "thai": "น้ำผลไม้หนึ่งขวด", "performGloss": "Fruit-juice one BOTTLE", "classifier": "ขวด" }
       ],
+      "miniScene": "Full cafe ordering scene — one iced coffee (แก้ว) and one bottle of water (ขวด) in one exchange.",
       "challenge": {
-        "prompt": "In a cafe, how would you say 'one iced coffee'?",
+        "prompt": "One iced coffee?",
         "answerThai": "กาแฟเย็นหนึ่งแก้ว",
-        "answerEnglish": "one iced coffee"
+        "performGloss": "Iced-coffee one GLASS"
       },
       "transferCheck": {
-        "prompt": "New noun at the end: in a shop, what is 'one bottle of milk'?",
+        "prompt": "One bottle of milk?",
         "answerThai": "นมหนึ่งขวด",
-        "answerEnglish": "one bottle of milk"
+        "performGloss": "Milk one BOTTLE"
       },
-      "cta": "If you want wave 2 classifiers, comment 'part 2'."
+      "forwardHook": "But what about things you can't even see or hold? Times, turns, rounds — Thai has classifiers for those too.",
+      "cta": "Save this for your next cafe trip."
+    },
+    {
+      "episode": 8,
+      "slug": "times-rounds-ordinals",
+      "title": "ครั้ง + รอบ + ที่",
+      "template": "contrast-hook",
+      "runtimeProfile": "short",
+      "targetSeconds": {
+        "min": 70,
+        "ideal": 85,
+        "max": 100
+      },
+      "hook": "You've learned classifiers for things you can see. But Thai also counts things you can't hold.",
+      "openerFormat": "Conceptual twist — classifiers for invisible things (events, cycles, order)",
+      "openingContrast": "Show three quick examples of invisible classifiers before naming any rules: go two TIMES, watch movie two ROUNDS, time PLACE two.",
+      "ruleLine": "ครั้ง counts times or occasions, รอบ counts rounds or cycles, ที่ makes things ordinal.",
+      "focus": "The twist: classifiers aren't just for physical objects. These count events and order. ครั้งที่สองดีที่สุด is the comedy peak — double ที่.",
+      "examples": [
+        { "thai": "ไปสองครั้ง", "performGloss": "Go two TIMES", "classifier": "ครั้ง", "function": "counting" },
+        { "thai": "เคยไปเมืองไทยสามครั้ง", "performGloss": "Ever go Thailand three TIMES", "classifier": "ครั้ง", "function": "counting" },
+        { "thai": "ครั้งนี้", "performGloss": "TIME this", "classifier": "ครั้ง", "function": "demonstrative" },
+        { "thai": "ดูหนังสองรอบ", "performGloss": "Watch movie two ROUNDS", "classifier": "รอบ", "function": "counting" },
+        { "thai": "รอบหน้า", "performGloss": "ROUND next", "classifier": "รอบ", "function": "demonstrative" },
+        { "thai": "ครั้งที่สอง", "performGloss": "Time PLACE two", "classifier": "ที่", "function": "ordinal" },
+        { "thai": "ร้านที่สาม", "performGloss": "Shop PLACE three", "classifier": "ที่", "function": "ordinal" },
+        { "thai": "คนที่หนึ่ง", "performGloss": "Person PLACE one", "classifier": "ที่", "function": "ordinal" }
+      ],
+      "miniScene": "Telling a friend about a trip — 'been to Thailand three times, the second time was the best'. ครั้งที่สองดีที่สุด gets a comedy beat for the double ที่.",
+      "challenge": {
+        "prompt": "The first time?",
+        "answerThai": "ครั้งที่หนึ่ง",
+        "performGloss": "Time PLACE one"
+      },
+      "transferCheck": {
+        "prompt": "Watched it three rounds?",
+        "answerThai": "ดูสามรอบ",
+        "performGloss": "Watch three ROUNDS"
+      },
+      "seriesCloser": "Rapid montage callback of best weird-English glosses from all 8 episodes: 'Dog BODY big very', 'Shirt three BODIES', 'Hammer ITEM big', 'Ticket FLAT-THING that', 'Phone MACHINE new', 'Orange ROUND-THING this', 'Coffee GLASS big', 'Time PLACE two'.",
+      "forwardHook": "Tease wave 2 classifiers.",
+      "cta": "Comment 'wave 2' if you want the next batch."
     }
   ]
 }

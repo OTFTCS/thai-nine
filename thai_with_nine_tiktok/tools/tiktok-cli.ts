@@ -50,6 +50,22 @@ Examples:
   node --experimental-strip-types thai_with_nine_tiktok/tools/tiktok-cli.ts build-post --video ~/Desktop/raw.mp4 --transcript notes/transcript.srt
   node --experimental-strip-types thai_with_nine_tiktok/tools/tiktok-cli.ts build-post --video ~/Desktop/raw.mp4 --transcript notes/transcript.srt --aligner whisperx --lang th
   node --experimental-strip-types thai_with_nine_tiktok/tools/tiktok-cli.ts build-post --video ~/Desktop/raw.mp4 --transcript notes/transcript.srt --aligner whisperx --audio ~/Desktop/raw-audio.wav --max-cps 14
+
+  manim-produce --recording <path> --script <path> [--episode-json <path>] [--episode-id <id>]
+               [--timestamps <csv>] [--scene-file <path>] [--skip-render] [--output-dir <path>]
+
+manim-produce: Generate Manim overlay from recording + script, composite final TikTok video.
+  --recording    Nine's phone recording (.mp4)
+  --script       Episode script (.md)
+  --episode-json episodes.json for classifier enrichment
+  --episode-id   Episode number from episodes.json
+  --timestamps   Manual timestamp CSV (fallback for WhisperX)
+  --scene-file   Use existing Manim scene .py instead of Claude generation
+  --skip-render  Stop after scene generation
+  --output-dir   Output directory (default: out/tiktok)
+
+Examples:
+  node --experimental-strip-types thai_with_nine_tiktok/tools/tiktok-cli.ts manim-produce --recording recordings/ep02.mp4 --script series/thai-classifiers/scripts/episode-02-khon-vs-dtua.md --episode-id 2
 `);
 }
 
@@ -271,6 +287,50 @@ function runBuildPost(): number {
   return 0;
 }
 
+function runManimProduce(): number {
+  const recording = getArg("--recording");
+  const script = getArg("--script");
+  if (!recording || !script) {
+    console.error("Missing required --recording and --script arguments");
+    return 1;
+  }
+
+  const args: string[] = [
+    "scripts/generate_tiktok_manim.py",
+    "--recording", resolve(process.cwd(), recording),
+    "--script", resolve(process.cwd(), script),
+  ];
+
+  const episodeJson = getArg("--episode-json");
+  if (episodeJson) args.push("--episode-json", resolve(process.cwd(), episodeJson));
+
+  const episodeId = getArg("--episode-id");
+  if (episodeId) args.push("--episode-id", episodeId);
+
+  const timestamps = getArg("--timestamps");
+  if (timestamps) args.push("--timestamps", resolve(process.cwd(), timestamps));
+
+  const sceneFile = getArg("--scene-file");
+  if (sceneFile) args.push("--scene-file", resolve(process.cwd(), sceneFile));
+
+  if (hasFlag("--skip-render")) args.push("--skip-render");
+
+  const outputDir = getArg("--output-dir");
+  if (outputDir) args.push("--output-dir", resolve(process.cwd(), outputDir));
+
+  const cliRoot = resolve(__dirname, "..");
+  try {
+    execSync(`python3 ${args.map((a) => `"${a}"`).join(" ")}`, {
+      cwd: cliRoot,
+      stdio: "inherit",
+    });
+    return 0;
+  } catch {
+    console.error("manim-produce pipeline failed");
+    return 1;
+  }
+}
+
 function main(): number {
   const cmd = process.argv[2];
   if (!cmd) {
@@ -285,6 +345,8 @@ function main(): number {
       return runValidateScript();
     case "build-post":
       return runBuildPost();
+    case "manim-produce":
+      return runManimProduce();
     default:
       usage();
       return 1;

@@ -1,0 +1,68 @@
+{
+  "resolution": { "width": 1080, "height": 1920 },
+  "aspectRatio": "9:16",
+  "fps": 30,
+  "layout": {
+    "cameraZone": {
+      "topFrac": 0.0,
+      "bottomFrac": 0.6,
+      "note": "Top 60% for Nine's face"
+    },
+    "overlayZone": {
+      "topFrac": 0.6,
+      "bottomFrac": 1.0,
+      "note": "Bottom 40% for text/graphics with translucent backdrop"
+    }
+  },
+  "translucentBar": {
+    "color": "#000000",
+    "opacity": 0.55,
+    "note": "Semi-transparent dark backdrop behind all overlay text"
+  },
+  "fonts": {
+    "thai": {
+      "family": "Sarabun",
+      "weight": "Medium",
+      "path": "assets/fonts/Sarabun-Medium.ttf",
+      "sizePt": 48
+    },
+    "translit": {
+      "family": "Sarabun",
+      "weight": "Regular",
+      "path": "assets/fonts/Sarabun-Regular.ttf",
+      "sizePt": 32
+    },
+    "english": {
+      "family": "Sarabun",
+      "weight": "Regular",
+      "path": "assets/fonts/Sarabun-Regular.ttf",
+      "sizePt": 28
+    },
+    "perform": {
+      "family": "Sarabun",
+      "weight": "Bold",
+      "path": "assets/fonts/Sarabun-Bold.ttf",
+      "sizePt": 44
+    }
+  },
+  "colors": {
+    "thai": "#FFFFFF",
+    "translit": "#B0BEC5",
+    "english": "#90A4AE",
+    "performText": "#FFFFFF",
+    "performBg": "#1a5276",
+    "accent": "#FFD54F",
+    "wrong": "#EF5350",
+    "correct": "#66BB6A",
+    "classifierHighlight": "#FFD54F",
+    "countdownText": "#FFFFFF"
+  },
+  "animations": {
+    "tripletRevealDurationSec": 0.6,
+    "performBounceDurationSec": 0.5,
+    "redXSlamDurationSec": 0.3,
+    "countdownDigitDurationSec": 1.0,
+    "transitionWipeDurationSec": 0.4,
+    "fadeOutDurationSec": 0.3
+  }
+}

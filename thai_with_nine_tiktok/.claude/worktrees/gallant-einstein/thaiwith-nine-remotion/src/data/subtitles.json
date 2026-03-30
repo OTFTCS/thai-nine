@@ -1,0 +1,62 @@
+[
+    {
+        "startFrame": 0,
+        "endFrame": 150,
+        "heroText": "3 Thai Slang Words You MUST Know \ud83c\uddf9\ud83c\udded",
+        "type": "hook"
+    },
+    {
+        "startFrame": 160,
+        "endFrame": 350,
+        "heroText": "\u0e1b\u0e31\u0e07",
+        "heroSubText": "(bpang)",
+        "type": "term"
+    },
+    {
+        "startFrame": 370,
+        "endFrame": 600,
+        "heroText": "\u0e1b\u0e31\u0e07",
+        "thaiScript": "\u0e0a\u0e38\u0e14\u0e19\u0e35\u0e49\u0e1b\u0e31\u0e07\u0e21\u0e32\u0e01!",
+        "phonetics": "ch\u00fat n\u00edi bpang m\u00e2ak!",
+        "englishTranslate": "This outfit is slaying! \u2728\ud83d\udc85",
+        "type": "term"
+    },
+    {
+        "startFrame": 620,
+        "endFrame": 800,
+        "heroText": "\u0e41\u0e01\u0e07",
+        "heroSubText": "(gaeng)",
+        "type": "term"
+    },
+    {
+        "startFrame": 820,
+        "endFrame": 1000,
+        "heroText": "\u0e41\u0e01\u0e07",
+        "thaiScript": "\u0e2d\u0e22\u0e48\u0e32\u0e21\u0e32\u0e41\u0e01\u0e07\u0e09\u0e31\u0e19\u0e19\u0e30!",
+        "phonetics": "y\u00e0a maa gaeng ch\u01ce\u0000n n\u00e1!",
+        "englishTranslate": "Don't prank me! \u274c",
+        "type": "term"
+    },
+    {
+        "startFrame": 1020,
+        "endFrame": 1200,
+        "heroText": "\u0e19\u0e01",
+        "heroSubText": "(n\u00f3k)",
+        "type": "term"
+    },
+    {
+        "startFrame": 1220,
+        "endFrame": 1400,
+        "heroText": "\u0e19\u0e01",
+        "thaiScript": "\u0e27\u0e31\u0e19\u0e19\u0e35\u0e49\u0e09\u0e31\u0e19\u0e19\u0e01\u0e2d\u0e35\u0e01\u0e41\u0e25\u0e49\u0e27",
+        "phonetics": "wan-n\u00edi ch\u01ce\u0000n n\u00f3k \u00ecik-l\u00e1ew",
+        "englishTranslate": "Today I struck out again \ud83d\ude2d",
+        "type": "term"
+    },
+    {
+        "startFrame": 1420,
+        "endFrame": 1800,
+        "heroText": "Comment below! \ud83d\udc47\ud83d\udcac",
+        "type": "outro"
+    }
+]
