@@ -420,8 +420,6 @@ test("reusable lesson gating excludes legacy ready lessons", () => {
     lessonId: "M01-L004",
     title: "Reusable",
     teachingFrame: {
-      targetRuntimeMin: 8,
-      targetRuntimeMax: 10,
       openingHook: "Hook",
       scenario: "Scenario",
       learnerTakeaway: "Takeaway",

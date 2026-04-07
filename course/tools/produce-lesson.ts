@@ -823,9 +823,16 @@ function assessmentQaSourcePaths(lessonId: string): string[] {
 }
 
 function visualStage3OutputPaths(lessonId: string): string[] {
-  return ["deck-source.json", "deck.pptx", "asset-provenance.json"].map((file) =>
-    resolveLessonFilePath(lessonId, file)
-  );
+  // Include both legacy PPTX and new Canva artifacts
+  const basePaths = ["deck-source.json", "asset-provenance.json"];
+  // Check if Canva pipeline is active
+  const canvaConfigPath = join(root, "course", "canva-pipeline-config.json");
+  if (existsSync(canvaConfigPath) && process.env.STAGE3_MODE !== "pptx") {
+    basePaths.push("canva-action-plan.json");
+  } else {
+    basePaths.push("deck.pptx");
+  }
+  return basePaths.map((file) => resolveLessonFilePath(lessonId, file));
 }
 
 function sourcesNeedStage3Regeneration(lessonId: string): boolean {

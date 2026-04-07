@@ -10,7 +10,7 @@ from __future__ import annotations
 
 import re
 
-from .types import TimedSlide
+from .models import TimedSlide
 
 # Regex patterns for parsing generated scenes
 _SLIDE_MARKER_RE = re.compile(

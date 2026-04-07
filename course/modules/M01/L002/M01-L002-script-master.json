@@ -4,8 +4,6 @@
   "title": "Names and Countries — Introducing Yourself",
   "objective": "Say your name, ask someone's name, say where you come from, and use the origin pattern with มาจาก in a short self-introduction.",
   "teachingFrame": {
-    "targetRuntimeMin": 10,
-    "targetRuntimeMax": 13,
     "openingHook": "Open by asking: what if someone in Thailand asks your name and where you are from? After this lesson, you can answer confidently in Thai.",
     "scenario": "You meet a new Thai person at a café or co-working space. You need to introduce yourself, ask their name, and share where you are from.",
     "learnerTakeaway": "By the end, you can introduce yourself with your name and country of origin in a natural 3–4 line Thai exchange."

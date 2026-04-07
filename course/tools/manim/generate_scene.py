@@ -12,7 +12,7 @@ import shutil
 import subprocess
 from pathlib import Path
 
-from .types import TimedSlide
+from .models import TimedSlide
 
 _HERE = Path(__file__).resolve().parent
 _COURSE_DIR = _HERE.parent.parent       # course/

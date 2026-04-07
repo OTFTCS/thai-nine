@@ -278,3 +278,25 @@ export function buildPlacementRecommendation(
 export function shouldShowToneQuizCta(summary: AssessmentScoreSummary) {
   return summary.score >= 70;
 }
+
+/**
+ * Simple correct-percentage over a subset of question IDs.
+ * Used for adaptive branching at the quiz midpoint — not for final scoring.
+ */
+export function computeMidQuizScore(
+  answers: Record<string, AssessmentAnswer>,
+  questionIds: string[]
+): number {
+  let answered = 0;
+  let correct = 0;
+
+  for (const qId of questionIds) {
+    const answer = answers[qId];
+    if (!answer) continue;
+    answered += 1;
+    if (answer.isCorrect) correct += 1;
+  }
+
+  if (answered === 0) return 0;
+  return Math.round((correct / answered) * 100);
+}

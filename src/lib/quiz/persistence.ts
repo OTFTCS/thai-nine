@@ -213,6 +213,7 @@ function normalizeAttempt(
     completedAt:
       typeof rawAttempt.completedAt === "string" ? rawAttempt.completedAt : undefined,
     advisory: Boolean(rawAttempt.advisory),
+    phase2Resolved: Boolean(rawAttempt.phase2Resolved),
   };
 
   return {

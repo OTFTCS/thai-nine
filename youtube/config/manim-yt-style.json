@@ -1,0 +1,69 @@
+{
+  "resolution": { "width": 1920, "height": 1080 },
+  "aspectRatio": "16:9",
+  "fps": 30,
+
+  "layout": {
+    "phase": 1,
+    "textWidthFrac": 0.85,
+    "overlayZone": {
+      "bottomFracFromTop": 0.35,
+      "note": "Bottom 35% of frame for text overlays"
+    },
+    "pip": {
+      "enabled": false,
+      "widthPx": 480,
+      "heightPx": 270,
+      "xPx": 1440,
+      "yPx": 0,
+      "note": "Phase 2 — top-right PiP camera. Enable to constrain text width."
+    }
+  },
+
+  "translucentBar": {
+    "color": "#000000",
+    "opacity": 0.55,
+    "note": "Semi-transparent dark backdrop behind bottom text zone"
+  },
+
+  "colors": {
+    "thai":        "#FFFFFF",
+    "thaiCentre":  "#FFFFFF",
+    "vocabThai":   "#FFFFFF",
+    "translit":    "#FFD54F",
+    "english":     "#B3E5FC",
+    "drillPrompt": "#FFD54F",
+    "thaiSplit":   "#FFFFFF",
+    "highlight":   "#FFD54F",
+    "cardBg":      "#1B2631",
+    "cardBgOpacity": 0.85
+  },
+
+  "fonts": {
+    "thai":        { "family": "Sarabun", "weight": "Medium",   "sizePt": 44 },
+    "thaiCentre":  { "family": "Sarabun", "weight": "Medium",   "sizePt": 58 },
+    "vocabThai":   { "family": "Sarabun", "weight": "SemiBold", "sizePt": 72 },
+    "thaiSplit":   { "family": "Sarabun", "weight": "Medium",   "sizePt": 44 },
+    "translit":    { "family": "Sarabun", "weight": "Regular",  "sizePt": 28 },
+    "english":     { "family": "Sarabun", "weight": "Regular",  "sizePt": 28 },
+    "drillPrompt": { "family": "Sarabun", "weight": "Bold",     "sizePt": 36 }
+  },
+
+  "spacing": {
+    "textLineBuff": 0.15,
+    "cardPadX": 0.6,
+    "cardPadY": 0.35,
+    "cardCornerRadius": 0.15,
+    "cardOpacity": 0.82
+  },
+
+  "animations": {
+    "fadeInSec":        0.35,
+    "fadeOutSec":       0.30,
+    "snapInSec":        0.0,
+    "cardRevealSec":    0.4,
+    "breakdownDelaySec": 1.0,
+    "drillTrySec":      1.0,
+    "transitionSec":    0.4
+  }
+}

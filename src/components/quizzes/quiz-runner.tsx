@@ -5,6 +5,7 @@ import { useRouter } from "next/navigation";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import type {
+  AssessmentAttempt,
   AssessmentQuestion,
   AssessmentQuizKind,
   LearnerTrack,
@@ -21,6 +22,11 @@ import {
   shouldShowAudioPromptThai,
   shouldShowLearnerTransliteration,
 } from "@/lib/quiz/display";
+import { buildChoiceOrderForQuestion } from "@/lib/quiz/choice-order";
+
+interface MidpointResult {
+  additionalQuestionIds: string[];
+}
 
 interface QuizRunnerProps {
   quizKind: AssessmentQuizKind;
@@ -32,6 +38,8 @@ interface QuizRunnerProps {
   defaultTrack?: LearnerTrack;
   resolveQuestionIds?: (track?: LearnerTrack) => string[];
   minimumAnswersForAdvisory?: number;
+  midpointIndex?: number;
+  onMidpointReached?: (attempt: AssessmentAttempt) => MidpointResult | null;
 }
 
 function formatDuration(ms: number) {
@@ -49,6 +57,8 @@ export function QuizRunner({
   defaultTrack,
   resolveQuestionIds,
   minimumAnswersForAdvisory = 6,
+  midpointIndex,
+  onMidpointReached,
 }: QuizRunnerProps) {
   const router = useRouter();
   const questionStartedAtMs = useRef<number>(0);
@@ -247,6 +257,46 @@ export function QuizRunner({
       return;
     }
 
+    const nextIndex = attempt.currentIndex + 1;
+
+    // Adaptive midpoint: resolve phase-2 questions BEFORE the completion check,
+    // because at the midpoint currentIndex === questions.length - 1 (last phase-1 Q).
+    if (
+      onMidpointReached &&
+      midpointIndex !== undefined &&
+      !attempt.phase2Resolved &&
+      nextIndex === midpointIndex
+    ) {
+      const result = onMidpointReached(attempt);
+      if (result && result.additionalQuestionIds.length > 0) {
+        // Only append IDs that resolve to real questions in the bank
+        const validQuestions = result.additionalQuestionIds
+          .map((id) => questionLookup[id])
+          .filter((q): q is AssessmentQuestion => Boolean(q));
+
+        if (validQuestions.length > 0) {
+          const validIds = validQuestions.map((q) => q.id);
+          const newChoiceOrders: Record<string, string[]> = {};
+          validQuestions.forEach((q) => {
+            newChoiceOrders[q.id] = buildChoiceOrderForQuestion(attempt.attemptId, q);
+          });
+
+          updateAttempt((prev) => ({
+            ...prev,
+            questionIds: [...prev.questionIds, ...validIds],
+            choiceOrderByQuestion: {
+              ...prev.choiceOrderByQuestion,
+              ...newChoiceOrders,
+            },
+            currentIndex: nextIndex,
+            phase2Resolved: true,
+            updatedAt: new Date().toISOString(),
+          }));
+          return;
+        }
+      }
+    }
+
     if (attempt.currentIndex >= questions.length - 1) {
       completeAttempt(false);
       return;
@@ -254,7 +304,7 @@ export function QuizRunner({
 
     updateAttempt((prev) => ({
       ...prev,
-      currentIndex: prev.currentIndex + 1,
+      currentIndex: nextIndex,
       updatedAt: new Date().toISOString(),
     }));
   };
@@ -386,7 +436,7 @@ export function QuizRunner({
           <div className="h-2 w-full rounded-full bg-muted overflow-hidden">
             <div
               className="h-full bg-primary transition-all"
-              style={{ width: `${((attempt.currentIndex + 1) / questions.length) * 100}%` }}
+              style={{ width: `${(answeredCount / questions.length) * 100}%` }}
             />
           </div>
 

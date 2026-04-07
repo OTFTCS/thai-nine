@@ -73,38 +73,39 @@ function teachFirstForBandAndGaps(
   const recs: string[] = [];
 
   if (band === "A1.0") {
-    recs.push("Begin with Thai phonology: 5 vowel clusters and 3 tone tiers before any vocabulary.");
+    recs.push("Start with M01 (First Contact and Courtesy). Begin with Thai phonology: 5 vowel clusters and 3 tone tiers before any vocabulary.");
     recs.push("Teach 'สวัสดี' greeting + polite particle (ครับ/ค่ะ) as the first production target.");
     recs.push("Introduce numbers 1–10 with visual anchors before any transactional language.");
-    recs.push("Use audio-first drills; written Thai script can wait until basic listening accuracy is established.");
+    recs.push("Use audio-first drills; written Thai script can wait until M02 (Sounds) establishes basic listening accuracy.");
   } else if (band === "A1.1" || band === "A1.2") {
-    recs.push("Consolidate greetings cluster fully before moving to new topics — ensure automatic recall, not recognition.");
+    recs.push(`Start with ${band === "A1.1" ? "M02 (Sounds)" : "M03 (Building Simple Sentences)"}. Consolidate greetings cluster fully before moving to new topics — ensure automatic recall, not recognition.`);
     if (gapTopics.includes("question_words")) {
-      recs.push("Prioritise question words (อะไร, ที่ไหน, ใคร, เมื่อไร) — these unlock productive communication immediately.");
+      recs.push("Prioritise question words (อะไร, ที่ไหน, ใคร, เมื่อไร) — these unlock productive communication immediately (covered in M06 Questions).");
     }
     if (gapTopics.includes("numbers")) {
-      recs.push("Drill numbers 1–100 with price-pointing exercises (shopping context = real motivation).");
+      recs.push("Drill numbers 1–100 with price-pointing exercises (M04 Numbers provides structured progression).");
     }
     if (gapTopics.includes("time") || gapTopics.includes("days")) {
-      recs.push("Teach time + days together as a paired unit; schedule-building tasks make retention stick.");
+      recs.push("Teach time + days together as a paired unit; schedule-building tasks make retention stick (see M10 Time).");
     }
     recs.push("Use call-and-response patterns over translation drills — this learner needs audio feedback loops.");
   } else if (band === "A2.0" || band === "A2.1") {
+    recs.push(`Start with ${band === "A2.0" ? "M07 (Reading Fluency and Pronunciation Control)" : "M08 (Food)"}.`);
     if (gapTopics.includes("grammar")) {
       recs.push("Tackle mid-sentence particle placement first (ก็, แต่, เพราะ) — this is the highest-leverage grammar gap.");
     }
     if (gapTopics.includes("scheduling") || gapTopics.includes("directions")) {
-      recs.push("Introduce directions + transport language together using a real Bangkok route as practice context.");
+      recs.push("Introduce directions + transport language together using a real Bangkok route as practice context (M09 Travel).");
     }
     if (gapTopics.includes("ordering")) {
-      recs.push("Role-play a restaurant scenario using authentic menu items — ordering language has immediate real-world payoff.");
+      recs.push("Role-play a restaurant scenario using authentic menu items — ordering language has immediate real-world payoff (M08 Food).");
     }
     recs.push("Introduce concept of rising-falling tone contrast explicitly with minimal pairs.");
     recs.push("Build from sentence templates rather than word lists — learner is ready for productive pattern drilling.");
   } else {
-    recs.push("Focus on fluency acceleration: connected speech patterns and tone reduction in fast speech.");
+    recs.push("Start with M11 (Friends). Focus on fluency acceleration: connected speech patterns and tone reduction in fast speech.");
     recs.push("Target remaining vocabulary gaps with spaced-repetition flashcard drills.");
-    recs.push("Introduce formal vs. informal register differentiation (polite vs. casual Thai).");
+    recs.push("Introduce formal vs. informal register differentiation (polite vs. casual Thai — see M15 Formal Requests).");
     if (gapTopics.includes("grammar") || gapTopics.includes("particles")) {
       recs.push("Deep-dive into sentence-final particles (นะ, สิ, ล่ะ) for naturalness.");
     }

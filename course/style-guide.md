@@ -53,6 +53,9 @@ Scripts and decks must work for both. Use "You" (not "Learner") in roleplay labe
 - Each new item must appear in 3+ varied contexts across the lesson.
 - At least 1 drill format should appear twice with different content (task repetition with variation).
 - Multi-word chunks (ไม่เป็นไร, ยินดีที่ได้รู้จัก) are taught as whole units first, then optionally decomposed.
+- Every drill must include a **situational context** — no pure mechanical substitution. Drills should require the learner to choose the right word for a scenario, not just append or swap.
+- At least **2 drills per lesson** must recall vocabulary from earlier sections (interleaved recall).
+- Every lesson ends with a short **Immersion Tips** sign-off (2-3 lesson-specific tips, always mentioning the flashcard deck).
 
 ## Thai pronunciation pedagogy
 
@@ -94,15 +97,15 @@ Every lesson includes a 60–90 second pronunciation micro-segment with:
 - Flag register-sensitive forms (formal vs casual).
 - Avoid textbook-literal translations when natural equivalents exist.
 
-## Visual asset sourcing policy (cost control)
-- **Default rule:** use internet-sourced images first (royalty-free / reusable) for PPTX lesson decks.
-- Source order:
-  1) Openverse
-  2) Wikimedia Commons
-  3) Local themed shapes/cards only when imagery is not genuinely helpful
-- **Do not** use generated-image tools unless explicitly approved for a specific lesson.
+## Visual asset sourcing policy
+- **Primary rule:** use AI-generated watercolour sketch illustrations for lesson decks.
+- **Model:** Gemini 3.1 Flash Image Preview (`gemini-3.1-flash-image-preview`) via Google AI Studio API key.
+- **Style:** Watercolour sketch, soft brushstrokes, warm earthy palette, hand-drawn travel journal style, no text in images.
+- **Cost:** ~$0.045 per image at low resolution. Budget ~8 images/lesson × 180 lessons ≈ $65.
+- **Prompt field:** `visualStrategy.imagePrompt` in `deck-source.json` — a vivid English scene description (no Thai characters). The style prefix is applied automatically by `generate_lesson_images.py`.
+- **Fallback sources** (if AI generation is unavailable): Openverse → Wikimedia Commons → text-only layout.
 - `deck-source.json` and `asset-provenance.json` must record what each image is teaching and where it came from.
-- If no suitable internet image is found quickly, fall back to a text-only or card-based PPTX layout and continue production.
+- Images are placed bottom-right on slides (below PiP camera zone) via `fit_picture()` in `render_lesson_deck.py`.
 - Stage 3 should also emit a Canva-first pack with locked `canva-backgrounds/slide-XX.png`, `canva-content.json`, and `canva-deck.pptx`.
 - Canva exports must use `Sarabun` for Thai, transliteration, and English so mixed learner-facing lines stay in one stable family.
 - On learner-facing beginner slides, visible Thai should render as `Thai (PTM transliteration)` while English support remains visible where helpful.

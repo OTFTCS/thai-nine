@@ -4,8 +4,6 @@
   "title": "Where and What Questions: Here, There, and Simple Location Help",
   "objective": "Use อะไร and ที่ไหน with อยู่ to ask what something is, ask where something is, and understand short location answers such as here and there.",
   "teachingFrame": {
-    "targetRuntimeMin": 10,
-    "targetRuntimeMax": 13,
     "openingHook": "Open on a new learner holding a map at a school desk and not knowing what the object is or where to go next.",
     "scenario": "A beginner arrives at a small school or community centre, points to an object, asks what it is, and then asks where the bathroom and room 103 are.",
     "learnerTakeaway": "By the end, the learner can ask what this/that is, ask where a place is, and handle a short help-seeking exchange using here/there answers."

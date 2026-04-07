@@ -58,10 +58,22 @@
           "Use the deck title as the recording opener.",
           "Keep the right third clear."
         ],
-        "imageUsage": "text-only",
-        "rationale": "The opener should establish identity and objective without visual clutter."
+        "imageUsage": "generated-ai",
+        "rationale": "The opener should establish identity and objective without visual clutter.",
+        "imagePrompt": "A young Thai man and a Western traveller shaking hands and smiling in a sunlit Bangkok park, tropical trees in the background, friendly first-meeting energy"
       },
-      "assets": []
+      "assets": [
+        {
+          "assetId": "slide-01-opener-asset-1",
+          "kind": "image",
+          "query": "A young Thai man and a Western traveller shaking hands and smiling in a sunlit Bangkok park, tropical trees in the background, friendly first-meeting energy",
+          "sourcePolicy": "ai-generated",
+          "status": "resolved",
+          "sourceProvider": "gemini-3.1-flash-image-preview",
+          "license": "ai-generated",
+          "localPath": "slide-assets/slide-01-opener-names-and-countries-introducing-yourself.png"
+        }
+      ]
     },
     {
       "id": "slide-02-objectives",
@@ -168,10 +180,22 @@
           "Model each word slowly before combining.",
           "Point to each part of the chunk as you say it."
         ],
-        "imageUsage": "text-only",
-        "rationale": "Abstract vocabulary — text triplets teach better than any image."
+        "imageUsage": "generated-ai",
+        "rationale": "Abstract vocabulary — text triplets teach better than any image.",
+        "imagePrompt": "A Thai woman at a street food stall pointing warmly to a handwritten name tag on her apron, a curious Western customer leaning in, warm evening light and colourful market lanterns"
       },
-      "assets": []
+      "assets": [
+        {
+          "assetId": "slide-03-your-name-in-thai-asset-1",
+          "kind": "image",
+          "query": "A Thai woman at a street food stall pointing warmly to a handwritten name tag on her apron, a curious Western customer leaning in, warm evening light and colourful market lanterns",
+          "sourcePolicy": "ai-generated",
+          "status": "resolved",
+          "sourceProvider": "gemini-3.1-flash-image-preview",
+          "license": "ai-generated",
+          "localPath": "slide-assets/slide-03-your-name-in-thai-your-name-in-thai.png"
+        }
+      ]
     },
     {
       "id": "slide-04-say-your-name",
@@ -235,10 +259,22 @@
           "Model the full sentence with a real name before asking the learner to substitute.",
           "Emphasise that Thai has no 'is' — this is the number one beginner trap here."
         ],
-        "imageUsage": "text-only",
-        "rationale": "Pattern teaching — the sentence frame itself is the visual anchor."
+        "imageUsage": "generated-ai",
+        "rationale": "Pattern teaching — the sentence frame itself is the visual anchor.",
+        "imagePrompt": "Two people exchanging small hand-written cards with their names at an outdoor Thai coffee shop, iced drinks on the wooden table, a leafy garden wall in the background"
       },
-      "assets": []
+      "assets": [
+        {
+          "assetId": "slide-04-say-your-name-asset-1",
+          "kind": "image",
+          "query": "Two people exchanging small hand-written cards with their names at an outdoor Thai coffee shop, iced drinks on the wooden table, a leafy garden wall in the background",
+          "sourcePolicy": "ai-generated",
+          "status": "resolved",
+          "sourceProvider": "gemini-3.1-flash-image-preview",
+          "license": "ai-generated",
+          "localPath": "slide-assets/slide-04-say-your-name-say-your-name.png"
+        }
+      ]
     },
     {
       "id": "slide-05-where-you-come-from",
@@ -302,10 +338,22 @@
           "Model the bpr sound carefully — it trips English speakers.",
           "Show the full sentence with a country name to make the pattern concrete."
         ],
-        "imageUsage": "text-only",
-        "rationale": "The sentence frame is the teaching focus — no image needed."
+        "imageUsage": "generated-ai",
+        "rationale": "The sentence frame is the teaching focus — no image needed.",
+        "imagePrompt": "A traveller pointing at a well-worn world map pinned to the wall of a cosy Bangkok hostel common room, backpacks and postcards visible, warm lamplight"
       },
-      "assets": []
+      "assets": [
+        {
+          "assetId": "slide-05-where-you-come-from-asset-1",
+          "kind": "image",
+          "query": "A traveller pointing at a well-worn world map pinned to the wall of a cosy Bangkok hostel common room, backpacks and postcards visible, warm lamplight",
+          "sourcePolicy": "ai-generated",
+          "status": "resolved",
+          "sourceProvider": "gemini-3.1-flash-image-preview",
+          "license": "ai-generated",
+          "localPath": "slide-assets/slide-05-where-you-come-from-where-you-come-from.png"
+        }
+      ]
     },
     {
       "id": "slide-06-thailand-england-and-ame",
@@ -368,21 +416,20 @@
           "Model อังกฤษ carefully — it surprises English speakers.",
           "Show คน + country to preview the person pattern."
         ],
-        "imageUsage": "real-image",
-        "rationale": "Small flag icons help anchor country names visually."
+        "imageUsage": "generated-ai",
+        "rationale": "Small flag icons help anchor country names visually.",
+        "imagePrompt": "Three small watercolour vignettes side by side: a golden Thai temple spire, the Tower Bridge of London, and the Statue of Liberty, connected by gentle brushstroke borders like stamps in a passport"
       },
       "assets": [
         {
           "assetId": "slide-06-thailand-england-and-ame-asset-1",
           "kind": "image",
-          "query": "Thai flag icon",
-          "sourcePolicy": "internet-first",
+          "query": "Three small watercolour vignettes side by side: a golden Thai temple spire, the Tower Bridge of London, and the Statue of Liberty, connected by gentle brushstroke borders like stamps in a passport",
+          "sourcePolicy": "ai-generated",
           "status": "resolved",
-          "sourceProvider": "openverse",
-          "sourceUrl": "https://www.rawpixel.com/image/7196924/png-sticker-public-domain",
-          "license": "cc0 1.0",
-          "localPath": "slide-assets/slide-06-thailand-england-and-ame-thai-flag-icon.png",
-          "usageNotes": "Small flag icons help anchor country names visually."
+          "sourceProvider": "gemini-3.1-flash-image-preview",
+          "license": "ai-generated",
+          "localPath": "slide-assets/slide-06-thailand-england-and-ame-thailand-england-and-america.png"
         }
       ]
     },
@@ -448,21 +495,20 @@
           "Model อังกฤษ carefully — it surprises English speakers.",
           "Show คน + country to preview the person pattern."
         ],
-        "imageUsage": "real-image",
-        "rationale": "Small flag icons help anchor country names visually."
+        "imageUsage": "generated-ai",
+        "rationale": "Small flag icons help anchor country names visually.",
+        "imagePrompt": "Three friends of different nationalities chatting together at a riverside bar in Bangkok, the Chao Phraya River and temple rooftops visible at sunset"
       },
       "assets": [
         {
           "assetId": "slide-07-thailand-england-and-ame-asset-1",
           "kind": "image",
-          "query": "Thai flag icon",
-          "sourcePolicy": "internet-first",
+          "query": "Three friends of different nationalities chatting together at a riverside bar in Bangkok, the Chao Phraya River and temple rooftops visible at sunset",
+          "sourcePolicy": "ai-generated",
           "status": "resolved",
-          "sourceProvider": "openverse",
-          "sourceUrl": "https://www.rawpixel.com/image/7196924/png-sticker-public-domain",
-          "license": "cc0 1.0",
-          "localPath": "slide-assets/slide-07-thailand-england-and-ame-thai-flag-icon.png",
-          "usageNotes": "Small flag icons help anchor country names visually."
+          "sourceProvider": "gemini-3.1-flash-image-preview",
+          "license": "ai-generated",
+          "localPath": "slide-assets/slide-07-thailand-england-and-ame-thailand-england-and-america.png"
         }
       ]
     },
@@ -611,10 +657,22 @@
           "Record against the dialogue ladder.",
           "Bottom-right PiP reserved for camera."
         ],
-        "imageUsage": "text-only",
-        "rationale": "The dialogue itself is the teaching focus."
+        "imageUsage": "generated-ai",
+        "rationale": "The dialogue itself is the teaching focus.",
+        "imagePrompt": "A Western man and a Thai woman sitting across from each other at a small marble-top cafe table, steaming cups of Thai iced tea between them, a chalkboard menu in the background"
       },
-      "assets": []
+      "assets": [
+        {
+          "assetId": "slide-09-roleplay-asset-1",
+          "kind": "image",
+          "query": "A Western man and a Thai woman sitting across from each other at a small marble-top cafe table, steaming cups of Thai iced tea between them, a chalkboard menu in the background",
+          "sourcePolicy": "ai-generated",
+          "status": "resolved",
+          "sourceProvider": "gemini-3.1-flash-image-preview",
+          "license": "ai-generated",
+          "localPath": "slide-assets/slide-09-roleplay-roleplay.png"
+        }
+      ]
     },
     {
       "id": "slide-10-recap",
@@ -657,10 +715,22 @@
           "Use this slide as the summary.",
           "Keep the ending calm and uncluttered."
         ],
-        "imageUsage": "text-only",
-        "rationale": "A recap slide should be compact and memorable."
+        "imageUsage": "generated-ai",
+        "rationale": "A recap slide should be compact and memorable.",
+        "imagePrompt": "A hand-drawn travel journal lying open on a wooden desk, with small watercolour sketches of a wai greeting, a Thai flag, and a coffee cup, a pen resting beside it, warm afternoon light"
       },
-      "assets": []
+      "assets": [
+        {
+          "assetId": "slide-10-recap-asset-1",
+          "kind": "image",
+          "query": "A hand-drawn travel journal lying open on a wooden desk, with small watercolour sketches of a wai greeting, a Thai flag, and a coffee cup, a pen resting beside it, warm afternoon light",
+          "sourcePolicy": "ai-generated",
+          "status": "resolved",
+          "sourceProvider": "gemini-3.1-flash-image-preview",
+          "license": "ai-generated",
+          "localPath": "slide-assets/slide-10-recap-recap.png"
+        }
+      ]
     },
     {
       "id": "slide-11-closing",

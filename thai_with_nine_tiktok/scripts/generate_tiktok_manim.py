@@ -52,6 +52,9 @@ from align_beats import (
     align_beats_to_transcript,
     timed_beats_to_json,
 )
+from qa_beats import run_beat_qa
+from qa_layout import run_layout_qa
+from fix_tiktok_timing import fix_tiktok_timing_file
 
 _PROJECT_ROOT = _SCRIPTS_DIR.parent  # thai_with_nine_tiktok/
 _PROMPT_PATH = _PROJECT_ROOT / "prompts" / "manim-generation.prompt.md"
@@ -394,6 +397,12 @@ def run_pipeline(args: argparse.Namespace) -> Path:
     # Step 1: Parse
     beats = step_parse_script(script, episode_json, episode_id)
 
+    # QA gate: beat structure
+    beat_qa = run_beat_qa(beats)
+    beat_qa.report()
+    if not beat_qa.passed and not getattr(args, 'force', False):
+        raise RuntimeError("Beat QA failed — halting pipeline. Use --force to override.")
+
     # Step 2: Transcribe
     segments, duration = step_transcribe(recording, timestamps_csv)
 
@@ -410,12 +419,29 @@ def run_pipeline(args: argparse.Namespace) -> Path:
     scene_path = output_dir / f"{stem}-scene.py"
     step_generate_manim(timed_beats, scene_path, scene_file)
 
-    # Step 4.5: Timing QA
+    # Post-generation timing fix
+    try:
+        changed = fix_tiktok_timing_file(scene_path, beat_sheet_path)
+        if changed:
+            print("  → Applied post-generation timing fix")
+    except Exception as e:
+        print(f"  ⚠ Post-generation timing fix skipped: {e}")
+
+    # QA gate: layout
+    layout_qa = run_layout_qa(scene_path)
+    layout_qa.report()
+    if not layout_qa.passed and not getattr(args, 'force', False):
+        raise RuntimeError("Layout QA failed — halting pipeline. Use --force to override.")
+
+    # QA gate: timing
     from qa_timing import run_qa
     print(f"[4.5/6] Timing QA...")
     qa_ok = run_qa(scene_path, beat_sheet_path, duration)
     if not qa_ok:
-        print("  ⚠ Timing QA flagged drift — check report above")
+        if getattr(args, 'force', False):
+            print("  ⚠ Timing QA flagged drift — continuing (--force)")
+        else:
+            raise RuntimeError("Timing QA failed — halting pipeline. Use --force to override.")
 
     if args.skip_render:
         print("\n✓ Stopped after scene generation (--skip-render)")
@@ -468,6 +494,10 @@ def main():
     parser.add_argument(
         "--skip-render", action="store_true",
         help="Stop after Manim scene generation (don't render or composite)",
+    )
+    parser.add_argument(
+        "--force", action="store_true",
+        help="Continue past QA failures (beat, layout, timing)",
     )
     parser.add_argument(
         "--output-dir", default="out/tiktok",

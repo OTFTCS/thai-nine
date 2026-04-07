@@ -1,0 +1,280 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://thai-nine.local/schemas/yt-script.schema.json",
+  "title": "YouTube Episode Script",
+  "description": "Teleprompter script for Thai with Nine YouTube episodes (v2). Each block is a timed segment with mode, language layers, and visual cues. English narration is a first-class element — every section must be introduced with spoken English that Nine reads aloud. This is the single source of truth that drives recording, subtitle generation, and video editing.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "episodeId",
+    "seriesId",
+    "title",
+    "topic",
+    "level",
+    "vocab",
+    "blocks",
+    "imagePrompts"
+  ],
+  "properties": {
+    "schemaVersion": { "const": 2 },
+    "episodeId": {
+      "type": "string",
+      "pattern": "^YT-S\\d{2}-E\\d{2}$",
+      "description": "e.g. YT-S01-E03 = Series 1, Episode 3"
+    },
+    "seriesId": {
+      "type": "string",
+      "pattern": "^S\\d{2}$",
+      "description": "Series identifier, e.g. S01"
+    },
+    "seriesName": { "type": "string" },
+    "title": {
+      "type": "string",
+      "minLength": 1,
+      "description": "YouTube video title"
+    },
+    "topic": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Topic slug, e.g. 'ordering-food'"
+    },
+    "level": {
+      "enum": ["A0", "A1", "A2", "B1", "B2"],
+      "description": "CEFR-ish level"
+    },
+    "lessonRef": {
+      "type": "string",
+      "pattern": "^M\\d{2}-L\\d{3}$",
+      "description": "Optional link to course lesson this episode maps to"
+    },
+    "estimatedDuration": {
+      "type": "string",
+      "pattern": "^\\d{1,2}:\\d{2}$",
+      "description": "Estimated runtime, e.g. '12:30'"
+    },
+    "vocab": {
+      "type": "array",
+      "minItems": 1,
+      "description": "All vocabulary items featured in this episode",
+      "items": {
+        "$ref": "#/$defs/vocabItem"
+      }
+    },
+    "blocks": {
+      "type": "array",
+      "minItems": 3,
+      "description": "Ordered sequence of script blocks. Each block is one on-screen moment.",
+      "items": {
+        "$ref": "#/$defs/block"
+      }
+    },
+    "imagePrompts": {
+      "type": "array",
+      "minItems": 1,
+      "description": "AI image generation prompts for this episode's visuals",
+      "items": {
+        "$ref": "#/$defs/imagePrompt"
+      }
+    },
+    "shortFormClips": {
+      "type": "array",
+      "description": "Planned short-form clip extraction points",
+      "items": {
+        "$ref": "#/$defs/clipMarker"
+      }
+    }
+  },
+  "$defs": {
+    "vocabItem": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "thai", "english"],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^v-\\d{3}$",
+          "description": "Local vocab ID within this episode, e.g. v-001"
+        },
+        "thai": { "type": "string", "minLength": 1 },
+        "translit": { "type": "string", "minLength": 1 },
+        "english": { "type": "string", "minLength": 1 },
+        "thaiSplit": {
+          "type": "string",
+          "description": "Space-separated Thai for reading aid"
+        },
+        "explanation": {
+          "type": "string",
+          "description": "English explanation Nine reads aloud — usage notes, grammar position, cultural context, common mistakes. This is the teaching content, not just a translation. Target 2-4 sentences."
+        },
+        "exampleSentences": {
+          "type": "array",
+          "description": "Example sentences using this vocab item, with English explanation",
+          "items": {
+            "type": "object",
+            "required": ["thai", "english"],
+            "properties": {
+              "thai": { "type": "string" },
+              "translit": { "type": "string" },
+              "english": { "type": "string" },
+              "note": { "type": "string", "description": "Optional English explanation Nine reads aloud about this specific example" }
+            }
+          }
+        },
+        "notes": { "type": "string" },
+        "imageRef": {
+          "type": "string",
+          "description": "References an imagePrompt id for the vocab card visual"
+        }
+      }
+    },
+    "block": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "mode", "lines"],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^b-\\d{3}$",
+          "description": "Block ID, e.g. b-001"
+        },
+        "mode": {
+          "enum": [
+            "hook",
+            "natural-listen",
+            "breakdown",
+            "vocab-card",
+            "vocab-explain",
+            "drill-prompt",
+            "drill-answer",
+            "shadowing",
+            "explain",
+            "section-intro",
+            "recap",
+            "teaser"
+          ],
+          "description": "Screen mode — determines layout, text display rules, and subtitle timing. 'section-intro' is English narration Nine reads aloud to introduce a section. 'vocab-explain' is per-word English teaching (usage, grammar, cultural notes). 'explain' is general English narration."
+        },
+        "speakerNote": {
+          "type": "string",
+          "description": "Teleprompter direction for Nine (not shown on screen). e.g. 'Say this slowly, pause 2s before the English'"
+        },
+        "transition": {
+          "type": "string",
+          "description": "Optional English line Nine says after this block to bridge to the next section. e.g. 'OK, now let's hear all of those together.' Spoken by Nine, not shown on screen."
+        },
+        "imageRef": {
+          "type": "string",
+          "description": "Which imagePrompt to show as background during this block"
+        },
+        "vocabRefs": {
+          "type": "array",
+          "items": { "type": "string", "pattern": "^v-\\d{3}$" },
+          "description": "Vocab items to show as cards during this block"
+        },
+        "lines": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/line"
+          }
+        }
+      }
+    },
+    "line": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "lang"],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^l-\\d{4}$",
+          "description": "Line ID, e.g. l-0001. Used to match Whisper timestamps."
+        },
+        "lang": {
+          "enum": ["th", "th-split", "translit", "en", "mixed"],
+          "description": "Primary language of this line"
+        },
+        "thai": {
+          "type": "string",
+          "description": "Thai script text (if applicable)"
+        },
+        "thaiSplit": {
+          "type": "string",
+          "description": "Space-separated Thai (if applicable)"
+        },
+        "translit": {
+          "type": "string",
+          "description": "PTM transliteration (if applicable)"
+        },
+        "english": {
+          "type": "string",
+          "description": "English text (if applicable)"
+        },
+        "display": {
+          "enum": ["immediate", "delayed-1s", "delayed-2s", "on-reveal", "hidden"],
+          "default": "immediate",
+          "description": "When this line appears relative to the audio. 'delayed-1s' means 1 second after Nine starts speaking this block. 'on-reveal' means it appears when the next line starts."
+        },
+        "highlight": {
+          "type": "boolean",
+          "default": false,
+          "description": "Whether to use karaoke-style word highlighting (shadowing mode)"
+        },
+        "spoken": {
+          "type": "boolean",
+          "default": true,
+          "description": "Whether Nine actually speaks this line (false = on-screen only)"
+        },
+        "anchor": {
+          "type": "string",
+          "description": "Optional English phrase Nine speaks as a timing anchor (e.g. 'sentence three'). Matched with high priority against Whisper output for reliable timestamp alignment."
+        }
+      }
+    },
+    "imagePrompt": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "prompt", "style"],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^img-\\d{3}$"
+        },
+        "prompt": {
+          "type": "string",
+          "minLength": 10,
+          "description": "AI image generation prompt"
+        },
+        "style": {
+          "enum": ["watercolour", "flat-illustration", "photo-realistic", "minimal-icon"],
+          "default": "watercolour"
+        },
+        "subject": {
+          "type": "string",
+          "description": "What the image depicts, for alt-text and matching"
+        }
+      }
+    },
+    "clipMarker": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "type", "startBlock", "endBlock"],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^clip-\\d{2}$"
+        },
+        "type": {
+          "enum": ["phrase-of-day", "can-you-understand", "repeat-after", "culture-moment", "grammar-hack"]
+        },
+        "startBlock": { "type": "string", "pattern": "^b-\\d{3}$" },
+        "endBlock": { "type": "string", "pattern": "^b-\\d{3}$" },
+        "hookText": {
+          "type": "string",
+          "description": "Text overlay for the first frame of the short-form clip"
+        }
+      }
+    }
+  }
+}

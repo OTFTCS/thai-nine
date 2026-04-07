@@ -125,6 +125,25 @@ COL_COUNTDOWN = STYLE["colors"]["countdownText"]
 BAR_COLOR = STYLE["translucentBar"]["color"]
 BAR_OPACITY = STYLE["translucentBar"]["opacity"]
 
+# Font sizes (from style contract — single source of truth)
+SIZE_THAI = STYLE["fonts"]["thai"]["sizePt"]
+SIZE_TRANSLIT = STYLE["fonts"]["translit"]["sizePt"]
+SIZE_ENGLISH = STYLE["fonts"]["english"]["sizePt"]
+SIZE_PERFORM = STYLE["fonts"]["perform"]["sizePt"]
+SIZE_YOUR_TURN = STYLE["fonts"]["yourTurnHeader"]["sizePt"]
+SIZE_COUNTDOWN = STYLE["fonts"]["countdownDigit"]["sizePt"]
+SIZE_ENGLISH_SUB = STYLE["fonts"]["englishSubtitle"]["sizePt"]
+
+# Spacing (from style contract)
+_SP = STYLE["spacing"]
+BUFF_TEXT_LINE = _SP["textLineBuff"]
+PAD_TRIPLET_X = _SP["tripletPadX"]
+PAD_TRIPLET_Y = _SP["tripletPadY"]
+PAD_PERFORM_X = _SP["performPadX"]
+PAD_PERFORM_Y = _SP["performPadY"]
+BUBBLE_CORNER_RADIUS = _SP["bubbleCornerRadius"]
+BUBBLE_OPACITY = _SP["bubbleOpacity"]
+
 # Animation durations
 DUR_TRIPLET = STYLE["animations"]["tripletRevealDurationSec"]
 DUR_PERFORM = STYLE["animations"]["performBounceDurationSec"]
@@ -218,28 +237,31 @@ class ThaiTripletGroup(VGroup):
         classifier_highlight: str | None = None,
         **kwargs,
     ):
-        self.thai_line = thai_text(thai_str, font_size=24, color=COL_THAI, weight="MEDIUM")
+        self.thai_line = thai_text(thai_str, font_size=SIZE_THAI, color=COL_THAI, weight="MEDIUM")
         self.translit_line = thai_text(
-            translit_str, font_size=16, color=COL_TRANSLIT, weight="NORMAL"
+            translit_str, font_size=SIZE_TRANSLIT, color=COL_TRANSLIT, weight="NORMAL"
         )
         self.english_line = thai_text(
-            english_str, font_size=14, color=COL_ENGLISH, weight="NORMAL"
+            english_str, font_size=SIZE_ENGLISH, color=COL_ENGLISH, weight="NORMAL"
         )
 
         # Stack text lines
         self._text_group = VGroup(
             self.thai_line, self.translit_line, self.english_line,
         )
-        self._text_group.arrange(DOWN, buff=0.08)
+        self._text_group.arrange(DOWN, buff=BUFF_TEXT_LINE)
+
+        # Overflow guard — scale down if text group exceeds max width
+        if self._text_group.width > MAX_TEXT_WIDTH:
+            self._text_group.scale_to_fit_width(MAX_TEXT_WIDTH)
 
         # Bubble background
-        pad_x, pad_y = 0.25, 0.15
         self.bubble = RoundedRectangle(
-            width=min(self._text_group.width + pad_x * 2, FRAME_WIDTH * 0.92),
-            height=self._text_group.height + pad_y * 2,
-            corner_radius=0.15,
+            width=min(self._text_group.width + PAD_TRIPLET_X * 2, FRAME_WIDTH * 0.92),
+            height=self._text_group.height + PAD_TRIPLET_Y * 2,
+            corner_radius=BUBBLE_CORNER_RADIUS,
             fill_color="#1B2631",
-            fill_opacity=0.80,
+            fill_opacity=BUBBLE_OPACITY,
             stroke_width=0,
         )
         self.bubble.move_to(self._text_group.get_center())
@@ -272,18 +294,20 @@ class PerformGloss(VGroup):
     def __init__(self, text: str, **kwargs):
         self.label = thai_text(
             text,
-            font_size=20,
+            font_size=SIZE_PERFORM,
             color=COL_PERFORM_TEXT,
             font="Sarabun",
             weight="BOLD",
         )
-        pad_x, pad_y = 0.2, 0.1
+        # Overflow guard
+        if self.label.width > MAX_TEXT_WIDTH:
+            self.label.scale_to_fit_width(MAX_TEXT_WIDTH)
         self.bg = RoundedRectangle(
-            width=min(self.label.width + pad_x * 2, FRAME_WIDTH * 0.92),
-            height=self.label.height + pad_y * 2,
-            corner_radius=0.15,
+            width=min(self.label.width + PAD_PERFORM_X * 2, FRAME_WIDTH * 0.92),
+            height=self.label.height + PAD_PERFORM_Y * 2,
+            corner_radius=BUBBLE_CORNER_RADIUS,
             fill_color=COL_PERFORM_BG,
-            fill_opacity=0.85,
+            fill_opacity=BUBBLE_OPACITY,
             stroke_width=0,
         )
         super().__init__(self.bg, self.label, **kwargs)
@@ -301,7 +325,7 @@ class PerformGloss(VGroup):
 class RedXSlam(VGroup):
     """Red X graphic that slams over content."""
 
-    def __init__(self, scale: float = 1.5, **kwargs):
+    def __init__(self, scale: float = 2.0, **kwargs):
         line1 = Text("✕", font_size=60 * scale, color=COL_WRONG, weight="BOLD")
         super().__init__(line1, **kwargs)
         self.move_to([0, OVERLAY_CENTER_Y, 0])
@@ -322,7 +346,7 @@ class YourTurnCountdown(VGroup):
         self.seconds = seconds
         self.header = thai_text(
             "YOUR TURN",
-            font_size=28,
+            font_size=SIZE_YOUR_TURN,
             color=COL_COUNTDOWN,
             font="Sarabun",
             weight="BOLD",
@@ -336,7 +360,7 @@ class YourTurnCountdown(VGroup):
         for i in range(self.seconds, 0, -1):
             digit = thai_text(
                 str(i),
-                font_size=36,
+                font_size=SIZE_COUNTDOWN,
                 color=COL_ACCENT,
                 weight="BOLD",
             )
@@ -496,7 +520,7 @@ class ThaiTikTokScene(Scene):
         Fits clear + fade-in + hold within that budget.
         """
         clear_time = self.clear_overlay()
-        label = thai_text(text, font_size=18, color=COL_THAI, weight="BOLD")
+        label = thai_text(text, font_size=SIZE_ENGLISH_SUB, color=COL_THAI, weight="BOLD")
         label.move_to([0, OVERLAY_CENTER_Y, 0])
         self._other = VGroup(label)
         self.play(FadeIn(label, run_time=0.3))

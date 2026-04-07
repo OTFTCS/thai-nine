@@ -233,10 +233,6 @@ export default async function MissionControlLessonReviewPage({
                   {review.content.scriptMasterJson?.teachingFrame ? (
                     <div className="mt-3 space-y-2 text-sm text-slate-200">
                       <p>{review.content.scriptMasterJson.objective || "No explicit script objective."}</p>
-                      <p>
-                        Runtime: {review.content.scriptMasterJson.teachingFrame.targetRuntimeMin ?? "—"}-
-                        {review.content.scriptMasterJson.teachingFrame.targetRuntimeMax ?? "—"} minutes
-                      </p>
                       <p>{review.content.scriptMasterJson.teachingFrame.openingHook || "No opening hook."}</p>
                       <p>{review.content.scriptMasterJson.teachingFrame.scenario || "No scenario."}</p>
                       <p>{review.content.scriptMasterJson.teachingFrame.learnerTakeaway || "No learner takeaway."}</p>

@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "M01-L001",
+  "designId": "DAHFrnpt6rY",
+  "brandKitId": null,
+  "generatedAt": "2026-04-02T05:25:00.000Z",
+  "canvaUrl": "https://www.canva.com/d/sjnxpR54g1BR7MZ",
+  "slideCount": 10,
+  "editPassApplied": true,
+  "imagesStripped": true,
+  "fontConfig": {
+    "thaiFontFamily": "Noto Sans Thai Looped",
+    "latinFontFamily": "Sarabun"
+  },
+  "sourceFiles": {
+    "deckSource": "M01-L001-deck-source.json",
+    "canvaContent": "M01-L001-canva-content.json"
+  },
+  "editPassSummary": {
+    "imagesDeleted": 20,
+    "textElementsRepositioned": 31,
+    "textReplacements": 31
+  }
+}

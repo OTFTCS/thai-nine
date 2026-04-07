@@ -4,8 +4,6 @@
   "title": "Numbers 0 to 10",
   "objective": "Count 0-10 in Thai, ask and say phone and room numbers, and say your age using digits in real daily contexts.",
   "teachingFrame": {
-    "targetRuntimeMin": 10,
-    "targetRuntimeMax": 14,
     "openingHook": "Every number you see in Thailand — prices, floors, phone numbers — starts with these eleven sounds. Learn them now and the whole country opens up.",
     "scenario": "You are checking into a hotel, confirming your room number, and exchanging phone numbers with a new friend.",
     "learnerTakeaway": "By the end, you can count to ten, say your age, ask for a number, and give a room number in Thai."

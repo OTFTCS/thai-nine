@@ -11,6 +11,7 @@ A Thai language course (Immersion Thai with Nine) with 180 lessons across 18 mod
 - `course/schemas/` — JSON schemas for all artifacts
 
 ## Sub-projects
+- `youtube/` — YouTube longform series. Scripts, Whisper alignment, subtitle generation. See YouTube pipeline below.
 - `thai_with_nine_tiktok/` — TikTok shortform series. Python + Manim pipeline for scripting, rendering, and QA. Active series: Thai Classifiers (8 episodes).
 - `Thai images/` — Vocabulary image carousels for Instagram/TikTok. Managed by `/produce-carousel`.
 - `src/` — Next.js web app (quiz system, course viewer).
@@ -28,6 +29,20 @@ npm run course:validate:lesson -- M01-L001     # Validate one
 npm run course:translit-audit                  # Transliteration check
 ```
 
+## Google Slides pipeline
+```bash
+# Generate AI watercolour images for a lesson (Gemini 3.1 Flash)
+python3 course/tools/generate_lesson_images.py --repo-root . --lesson M01-L002
+
+# Render PPTX with images placed
+python3 course/tools/render_lesson_deck.py --repo-root . --lesson M01-L002
+
+# Upload to Google Slides + Thai font pass
+python3 course/tools/upload_gslides.py --repo-root . --lesson M01-L002
+python3 course/tools/gslides_font_pass.py --repo-root . --lesson M01-L002
+```
+Or use the skill: `/render-gslides M01-L002`
+
 ## Style rules
 - **Transliteration:** PTM-adapted inline tone marks only (no superscript). Mid tone = unmarked.
 - **Person:** Use "You" not "Learner" in all user-facing text. 2nd person for 1:1 feel.
@@ -43,6 +58,62 @@ npm run course:translit-audit                  # Transliteration check
 - Chunks taught as whole units first (type: "chunk")
 - Scored editorial QA rubric: 8 dimensions, avg 3.0+, no dimension below 2
 
+## YouTube pipeline
+```bash
+# Key directories:
+# youtube/examples/       — episode script JSONs (YT-S01-E01.json etc.)
+# youtube/recordings/     — raw audio files (M4A/WAV)
+# youtube/timed/          — Whisper-aligned timed scripts
+# youtube/subtitles/      — generated subtitle files (ASS, SRT, overlays JSON)
+# youtube/tools/          — pipeline scripts
+# youtube/schemas/        — yt-script.schema.json
+
+# Step 1: Validate script
+PATH="/opt/homebrew/bin:$PATH" /usr/bin/python3 youtube/tools/validate_script.py youtube/examples/YT-S01-E01.json
+
+# Step 2: Whisper alignment (audio + script → timed JSON)
+PATH="/opt/homebrew/bin:$PATH" /usr/bin/python3 youtube/tools/align_whisper.py \
+  --script youtube/examples/YT-S01-E01.json \
+  --audio youtube/recordings/YT-S01-E01.m4a \
+  --output youtube/timed/YT-S01-E01.timed.json \
+  --model medium
+
+# Step 3: Generate subtitles (timed JSON → ASS/SRT/overlays)
+PATH="/opt/homebrew/bin:$PATH" /usr/bin/python3 youtube/tools/generate_subtitles.py \
+  --script youtube/examples/YT-S01-E01.json \
+  --timed youtube/timed/YT-S01-E01.timed.json \
+  --outdir youtube/subtitles/YT-S01-E01/
+
+# Step 4: Generate teleprompter + on-screen docs
+PATH="/opt/homebrew/bin:$PATH" /usr/bin/python3 youtube/tools/generate_docs.py \
+  --script youtube/examples/YT-S01-E01.json
+
+# Step 5: Manim video pipeline (audio + overlays → finished MP4)
+PATH="/opt/homebrew/bin:/usr/local/bin:$PATH" /opt/homebrew/bin/python3 \
+  -m youtube.tools.manim.pipeline --episode YT-S01-E01
+
+# Scene generation only (review before render):
+... --skip-render
+
+# Use existing scene file (skip Claude CLI generation):
+... --scene-file youtube/out/YT-S01-E01/YT-S01-E01-scene.py
+
+# Force past QA failures:
+... --force
+
+# Dependencies: pip install openai-whisper manim; brew install ffmpeg
+# Note: /usr/bin/python3 has whisper installed; /opt/homebrew/bin/python3 has manim
+# Note: PATH must include /usr/local/bin for claude CLI and /opt/homebrew/bin for ffmpeg
+```
+
+## Manim pipeline rules
+- **Never use raw `displayEnd - displayStart` for Manim durations** — overlays JSON uses `displayEnd` = end of entire block (for concurrent subtitle display). Pre-compute `manimDuration` = time to next overlay's `displayStart` within block.
+- **Always `self.remove(old_mobject)` before replacing** — Manim's scene graph doesn't auto-remove. Assign through `_set_layer()` helper.
+- **Always add/animate the tracked object, not a child** — if layer tracks `VGroup(label)`, do `self.add(group)` not `self.add(label)`. Otherwise the label survives removal of the VGroup.
+- **Use `FadeIn()` not `animate.set_opacity()`** for nested submobjects inside VGroups/TextCards.
+- See `insights/manim-pipeline-lessons.md` for full details.
+
 ## Skills
 - `/produce-lesson M01-L004` — full 12-stage lesson pipeline from blueprint to READY_TO_RECORD
+- `/render-gslides M01-L002` — generate AI images, render PPTX, upload to Google Slides with font pass
 - `/produce-carousel "Topic"` — vocabulary image carousel from topic to finished PNGs

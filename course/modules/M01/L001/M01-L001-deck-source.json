@@ -51,17 +51,27 @@
       "visualStrategy": {
         "onScreenGoal": "Introduce the lesson clearly and set the recording tone.",
         "teachingVisuals": [
-          "Hello and Basic Courtesy",
-          "First Contact and Courtesy"
+          "Two people greeting each other with a traditional Thai wai gesture in a sunny Bangkok street"
         ],
         "teacherCues": [
           "Use the deck title as the recording opener.",
           "Keep the right third clear."
         ],
-        "imageUsage": "text-only",
+        "imageUsage": "generated-ai",
         "rationale": "The opener should establish identity and objective without visual clutter."
       },
-      "assets": []
+      "assets": [
+        {
+          "assetId": "slide-01-opener-asset-1",
+          "kind": "image",
+          "query": "Two people greeting each other with a traditional Thai wai gesture in a sunny Bangkok street",
+          "sourcePolicy": "ai-generated",
+          "status": "resolved",
+          "sourceProvider": "gemini-3.1-flash-image-preview",
+          "license": "ai-generated",
+          "localPath": "slide-assets/slide-01-opener-hello-and-basic-courtesy.png"
+        }
+      ]
     },
     {
       "id": "slide-02-objectives",
@@ -154,10 +164,21 @@
           "Model the word slowly and clearly before explaining it.",
           "Use a warm tone — this is the learner's very first Thai word."
         ],
-        "imageUsage": "text-only",
+        "imageUsage": "generated-ai",
         "rationale": "The greeting word itself is the teaching target. A photo would add clutter without helping recall."
       },
-      "assets": []
+      "assets": [
+        {
+          "assetId": "slide-03-your-first-thai-word-asset-1",
+          "kind": "image",
+          "query": "A smiling Thai shopkeeper waving hello at the entrance of a colourful Bangkok market stall",
+          "sourcePolicy": "ai-generated",
+          "status": "resolved",
+          "sourceProvider": "gemini-3.1-flash-image-preview",
+          "license": "ai-generated",
+          "localPath": "slide-assets/slide-03-your-first-thai-word-your-first-thai-word.png"
+        }
+      ]
     },
     {
       "id": "slide-04-polite-endings-and",
@@ -434,14 +455,14 @@
       "id": "slide-08-roleplay",
       "role": "roleplay",
       "title": "Roleplay",
-      "estimatedSeconds": 28,
+      "estimatedSeconds": 30,
       "layout": "roleplay-dialogue",
       "speakerNotes": [
         "You approach a reception desk at a hotel in Bangkok. Greet the staff, confirm something, thank them, and handle a small exchange politely.",
         "You | สวัสดีครับ | sà-wàt-dii khráp | Hello.",
         "Staff | สวัสดีค่ะ | sà-wàt-dii khâ | Hello.",
-        "You | ขอโทษครับ ใช่ไหมครับ | khǎaw-thôot khráp châi mái khráp | Excuse me, is this right?",
-        "Staff | ใช่ค่ะ | châi khâ | Yes.",
+        "You | ขอโทษครับ นี่โรงแรมสยามใช่ไหมครับ | khǎaw-thôot khráp nîi roong-raem sǎ-yǎam châi mái khráp | Excuse me, is this the Siam Hotel?",
+        "Staff | ใช่ค่ะ | châi khâ | Yes, it is.",
         "You | ขอบคุณครับ | khàawp-khun khráp | Thank you.",
         "Staff | ไม่เป็นไรค่ะ | mâi bpen rai khâ | No problem.",
         "You | สวัสดีครับ | sà-wàt-dii khráp | Goodbye.",
@@ -455,8 +476,8 @@
           "lines": [
             "You | สวัสดีครับ | sà-wàt-dii khráp | Hello.",
             "Staff | สวัสดีค่ะ | sà-wàt-dii khâ | Hello.",
-            "You | ขอโทษครับ ใช่ไหมครับ | khǎaw-thôot khráp châi mái khráp | Excuse me, is this right?",
-            "Staff | ใช่ค่ะ | châi khâ | Yes.",
+            "You | ขอโทษครับ นี่โรงแรมสยามใช่ไหมครับ | khǎaw-thôot khráp nîi roong-raem sǎ-yǎam châi mái khráp | Excuse me, is this the Siam Hotel?",
+            "Staff | ใช่ค่ะ | châi khâ | Yes, it is.",
             "You | ขอบคุณครับ | khàawp-khun khráp | Thank you.",
             "Staff | ไม่เป็นไรค่ะ | mâi bpen rai khâ | No problem."
           ]
@@ -474,14 +495,14 @@
           "english": "Hello."
         },
         {
-          "thai": "ขอโทษครับ ใช่ไหมครับ",
-          "translit": "khǎaw-thôot khráp châi mái khráp",
-          "english": "Excuse me, is this right?"
+          "thai": "ขอโทษครับ นี่โรงแรมสยามใช่ไหมครับ",
+          "translit": "khǎaw-thôot khráp nîi roong-raem sǎ-yǎam châi mái khráp",
+          "english": "Excuse me, is this the Siam Hotel?"
         },
         {
           "thai": "ใช่ค่ะ",
           "translit": "châi khâ",
-          "english": "Yes."
+          "english": "Yes, it is."
         },
         {
           "thai": "ขอบคุณครับ",
@@ -513,10 +534,21 @@
           "Record against the dialogue ladder.",
           "Bottom-right PiP reserved for camera."
         ],
-        "imageUsage": "text-only",
+        "imageUsage": "generated-ai",
         "rationale": "The dialogue itself is the teaching focus."
       },
-      "assets": []
+      "assets": [
+        {
+          "assetId": "slide-08-roleplay-asset-1",
+          "kind": "image",
+          "query": "A cosy Bangkok hotel reception desk with a friendly Thai receptionist greeting a guest",
+          "sourcePolicy": "ai-generated",
+          "status": "resolved",
+          "sourceProvider": "gemini-3.1-flash-image-preview",
+          "license": "ai-generated",
+          "localPath": "slide-assets/slide-08-roleplay-roleplay.png"
+        }
+      ]
     },
     {
       "id": "slide-09-recap",

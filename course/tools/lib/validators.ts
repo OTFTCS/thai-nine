@@ -107,9 +107,6 @@ function checkScriptMaster(path: string): ValidationIssue[] {
     if (!data.teachingFrame) {
       issues.push({ path, message: "non-legacy lessons require teachingFrame" });
     } else {
-      if (data.teachingFrame.targetRuntimeMin <= 0 || data.teachingFrame.targetRuntimeMax < data.teachingFrame.targetRuntimeMin) {
-        issues.push({ path, message: "teachingFrame runtime bounds are invalid" });
-      }
       if (isBlank(data.teachingFrame.openingHook) || isBlank(data.teachingFrame.scenario) || isBlank(data.teachingFrame.learnerTakeaway)) {
         issues.push({ path, message: "teachingFrame must include openingHook, scenario, and learnerTakeaway" });
       }

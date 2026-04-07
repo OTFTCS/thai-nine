@@ -11,7 +11,7 @@ from __future__ import annotations
 
 import re
 
-from .types import QAResult, SlideSpec, RoleplayLine
+from .models import QAResult, SlideSpec, RoleplayLine
 
 
 def run_content_qa(slides: list[SlideSpec]) -> QAResult:

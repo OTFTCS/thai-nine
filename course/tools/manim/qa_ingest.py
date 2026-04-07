@@ -6,7 +6,7 @@ and has correct PTM transliteration before scene generation.
 
 from __future__ import annotations
 
-from .types import QAResult, SlideSpec
+from .models import QAResult, SlideSpec
 from .qa_transliteration import validate_translit
 
 

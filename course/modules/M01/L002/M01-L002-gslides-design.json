@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 2,
+  "lessonId": "M01-L002",
+  "presentationId": "1hfDOSf5VXPCEGnIGBCJMehKk70ukEzTwyHVGhNXi4Go",
+  "url": "https://docs.google.com/presentation/d/1hfDOSf5VXPCEGnIGBCJMehKk70ukEzTwyHVGhNXi4Go/edit?usp=drivesdk",
+  "slideCount": 11,
+  "pipeline": "pptx-upload-convert",
+  "sourcePptx": "M01-L002-canva-deck.pptx",
+  "fonts": {
+    "thai": "Noto Sans Thai Looped",
+    "latin": "Sarabun",
+    "translit": "Sarabun"
+  },
+  "fontPassApplied": true
+}

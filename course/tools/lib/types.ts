@@ -132,8 +132,6 @@ export interface SectionVisualPlan {
 }
 
 export interface TeachingFrame {
-  targetRuntimeMin: number;
-  targetRuntimeMax: number;
   openingHook: string;
   scenario: string;
   learnerTakeaway: string;

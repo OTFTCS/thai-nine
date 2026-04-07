@@ -16,7 +16,7 @@
   },
   "translucentBar": {
     "color": "#000000",
-    "opacity": 0.55,
+    "opacity": 0.65,
     "note": "Semi-transparent dark backdrop behind all overlay text"
   },
   "fonts": {
@@ -24,31 +24,58 @@
       "family": "Sarabun",
       "weight": "Medium",
       "path": "assets/fonts/Sarabun-Medium.ttf",
-      "sizePt": 48
+      "sizePt": 32
     },
     "translit": {
       "family": "Sarabun",
       "weight": "Regular",
       "path": "assets/fonts/Sarabun-Regular.ttf",
-      "sizePt": 32
+      "sizePt": 20
     },
     "english": {
       "family": "Sarabun",
       "weight": "Regular",
       "path": "assets/fonts/Sarabun-Regular.ttf",
-      "sizePt": 28
+      "sizePt": 18
     },
     "perform": {
       "family": "Sarabun",
       "weight": "Bold",
       "path": "assets/fonts/Sarabun-Bold.ttf",
+      "sizePt": 26
+    },
+    "yourTurnHeader": {
+      "family": "Sarabun",
+      "weight": "Bold",
+      "path": "assets/fonts/Sarabun-Bold.ttf",
+      "sizePt": 34
+    },
+    "countdownDigit": {
+      "family": "Sarabun",
+      "weight": "Bold",
+      "path": "assets/fonts/Sarabun-Bold.ttf",
       "sizePt": 44
+    },
+    "englishSubtitle": {
+      "family": "Sarabun",
+      "weight": "Bold",
+      "path": "assets/fonts/Sarabun-Bold.ttf",
+      "sizePt": 24
     }
+  },
+  "spacing": {
+    "textLineBuff": 0.12,
+    "tripletPadX": 0.35,
+    "tripletPadY": 0.22,
+    "performPadX": 0.3,
+    "performPadY": 0.15,
+    "bubbleCornerRadius": 0.2,
+    "bubbleOpacity": 0.85
   },
   "colors": {
     "thai": "#FFFFFF",
-    "translit": "#B0BEC5",
-    "english": "#90A4AE",
+    "translit": "#CFD8DC",
+    "english": "#B0BEC5",
     "performText": "#FFFFFF",
     "performBg": "#1a5276",
     "accent": "#FFD54F",

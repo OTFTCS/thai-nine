@@ -12,12 +12,12 @@ const BLUEPRINT_PATH = path.join(
 );
 
 const BAND_TO_MODULE_ID: Record<PlacementBand, string> = {
-  "A1.0": "M01",
-  "A1.1": "M02",
-  "A1.2": "M03",
-  "A2.0": "M06",
-  "A2.1": "M08",
-  "B1-ish": "M10",
+  "A1.0": "M01", // A0: First Contact and Courtesy
+  "A1.1": "M02", // A0: Sounds
+  "A1.2": "M03", // A1: Building Simple Sentences
+  "A2.0": "M07", // A2: Reading Fluency and Pronunciation Control
+  "A2.1": "M08", // A2: Food
+  "B1-ish": "M11", // B1: Friends
 };
 
 type BlueprintRow = {

@@ -9,7 +9,7 @@ from __future__ import annotations
 import json
 from pathlib import Path
 
-from .types import (
+from .models import (
     DrillSpec,
     LexemeDisplay,
     MinimalPair,
@@ -86,7 +86,7 @@ def ingest_lesson(script_master_path: Path) -> list[SlideSpec]:
             tf.get("openingHook", ""),
             tf.get("scenario", ""),
         ],
-        estimated_seconds=15.0,
+        estimated_seconds=5.0,  # title flash, not a teaching moment
     ))
 
     # --- Teaching sections ---

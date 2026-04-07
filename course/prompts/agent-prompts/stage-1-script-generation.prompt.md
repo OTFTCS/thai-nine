@@ -107,8 +107,6 @@ Requirements:
 - use the exact lesson id
 - include the provided `context` object unchanged
 - include `teachingFrame` with:
-  - `targetRuntimeMin`
-  - `targetRuntimeMax`
   - `openingHook`
   - `scenario`
   - `learnerTakeaway`
@@ -415,42 +413,48 @@ If a section would need more than 3 new words, split it into two sections.
 **Example of WRONG structure:**
 - Section 1: Show นี่คือ... as a chunk without first teaching นี่ and คือ as standalone words
 
-## Required teaching devices
+## Teaching devices
 
-Every lesson must include all of the following somewhere in the script:
-- at least 1 `listen first` model moment before explanation
-- at least 1 explicit repeat / echo / call-and-response cycle
-- at least 1 discrimination or choice task
-- at least 1 substitution or response-building drill
-- at least 1 pause-and-produce retrieval moment
-- at least 1 realistic micro-roleplay
-- at least 1 recap that asks the learner to recall before the answer is shown
+The following devices are available. Use them where they serve the content — do not force them into every lesson:
+- `listen first` model moment before explanation
+- explicit repeat / echo / call-and-response cycle
+- discrimination or choice task
+- substitution or response-building drill
+- pause-and-produce retrieval moment
+- realistic micro-roleplay
+- recap that asks the learner to recall before the answer is shown
 
-These devices should be distributed naturally across the lesson.
-Do not dump them all into one section.
+Let the vocabulary count and complexity dictate how many devices a lesson needs. A lesson with 4 simple words needs fewer drills than a lesson with 12 pattern items. Do not pad a light lesson with extra devices to hit a count.
 
 ## Drill design
 
-Drills should be active and specific.
+Drills should be active, specific, and situational.
+
+Every drill must include a **situational context** — a concrete scenario the learner can picture. Do not write drills that are pure mechanical substitution (e.g., “say X with ครับ, now with ค่ะ”). Instead, embed the same practice in a situation that forces the learner to **choose** the right word, not just append a suffix.
+
+At least **2 drills per lesson** must recall vocabulary from earlier sections (interleaved recall). Do not let each section only drill its own words — later drills should force retrieval of material introduced earlier in the lesson.
 
 Good drills:
 - listen and repeat
 - listen once before repeating
 - minimal-pair or contrast choice
 - spot-the-right-answer
-- substitution
-- choose the right form
-- response building
+- situational substitution (swap one slot in a frame within a scenario)
+- choose the right form for a given situation
+- response building from a situational cue
 - short cue-to-line production
 - pause-and-produce
 - recall-before-reveal
 - mini role-play turns
+- mixed recall (learner chooses from all words taught so far, not just current section)
 
 Bad drills:
 - vague review prompts
 - generic “practice this”
 - repeated phrase lists without transformation
 - long explanation followed by no learner action
+- mechanical substitution without situational context (e.g., “say X with ครับ, now with ค่ะ”)
+- drills that only test the current section's vocabulary with no recall of earlier sections
 
 ## Teaching the content, not about the content
 
@@ -583,6 +587,20 @@ Bad visual planning:
 - dense bullet walls
 - decorative stock-photo backgrounds with no teaching role
 - asking for images without saying what they teach
+
+## Immersion Tips (required)
+
+Every lesson must end with a short **Immersion Tips** section after the Recap. This is a quick sign-off nudge — 2-3 tips in ~20-30 seconds, not a full teaching section.
+
+Rules:
+- Tips must be **lesson-specific** — tied to what was just taught (e.g., "Try greeting someone with สวัสดีครับ today")
+- Always **mention the course flashcard deck** — remind learners to review today's words
+- Mix in one broader self-study habit where appropriate: making Thai friends, shadowing lesson audio, listening to Thai music, labelling things at home
+- Keep it actionable and quick — no lengthy explanations of study methodology
+
+In `script-master.json`, include the tips as an `immersionTips` array of strings (2-3 items).
+
+In `script-spoken.md`, write the tips as a natural spoken sign-off under the heading `## Immersion Tips`.
 
 ## Quality bar
 

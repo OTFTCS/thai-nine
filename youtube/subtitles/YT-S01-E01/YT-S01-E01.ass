@@ -1,0 +1,84 @@
+[Script Info]
+Title: Thai with Nine — YT-S01-E01
+ScriptType: v4.00+
+PlayResX: 1920
+PlayResY: 1080
+WrapStyle: 0
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Thai,Sarabun,72,&H00FFFFFF,&H00FFFFFF,&H00000000,&H80000000,-1,0,0,0,100,100,0,0,1,3,2,2,40,40,60,1
+Style: ThaiCentre,Sarabun,84,&H00FFFFFF,&H00FFFFFF,&H00000000,&H80000000,-1,0,0,0,100,100,0,0,1,3,2,5,40,40,0,1
+Style: ThaiSplit,Sarabun,64,&H00FFFFFF,&H00FFFFFF,&H00000000,&H80000000,-1,0,0,0,100,100,2,0,1,3,2,5,80,80,0,1
+Style: Translit,Inter,42,&H0040C0F0,&H00FFFFFF,&H00000000,&H80000000,0,0,0,0,100,100,0,0,1,2,2,2,40,40,30,1
+Style: TranslitCentre,Inter,48,&H0040C0F0,&H00FFFFFF,&H00000000,&H80000000,0,0,0,0,100,100,0,0,1,2,2,5,40,40,0,1
+Style: English,Inter,44,&H00FFD4B0,&H00FFFFFF,&H00000000,&H80000000,0,0,0,0,100,100,0,0,1,2,2,2,40,40,10,1
+Style: EnglishCentre,Inter,50,&H00FFD4B0,&H00FFFFFF,&H00000000,&H80000000,0,0,0,0,100,100,0,0,1,2,2,5,40,40,0,1
+Style: DrillPrompt,Inter,52,&H0040C0F0,&H00FFFFFF,&H00000000,&H80000000,-1,0,0,0,100,100,0,0,1,2,2,5,40,40,0,1
+Style: VocabThai,Sarabun,96,&H00FFFFFF,&H00FFFFFF,&H00000000,&H80000000,-1,0,0,0,100,100,0,0,1,4,2,5,40,40,100,1
+Style: VocabTranslit,Inter,48,&H0040C0F0,&H00FFFFFF,&H00000000,&H80000000,0,0,0,0,100,100,0,0,1,2,2,5,40,40,0,1
+Style: VocabEnglish,Inter,52,&H00FFD4B0,&H00FFFFFF,&H00000000,&H80000000,0,0,0,0,100,100,0,0,1,2,2,5,40,40,0,1
+Style: Highlight,Sarabun,64,&H0040C0F0,&H00FFFFFF,&H00000000,&H2040C0F0,-1,0,0,0,100,100,2,0,3,0,0,5,80,80,0,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 10,0:00:00.94,0:00:41.92,Thai,,0,0,0,,สั่งอะไรดีคะ
+Dialogue: 12,0:00:01.94,0:00:41.92,English,,0,0,0,,{\fad(300,200)}What would you like to order?
+Dialogue: 12,0:00:38.92,0:00:41.92,English,,0,0,0,,{\fad(300,200)}Today you'll learn 8 phrases to order food in Thai like a local.
+Dialogue: 12,0:00:38.92,0:01:03.00,English,,0,0,0,,When I first moved to Bangkok, there was this noodle stall near my apartment. Every morning, the same aunty would shout at me — สั่งอะไรดีคะ — and I had no idea what to say. I just pointed at the picture.
+Dialogue: 10,0:00:38.92,0:01:03.00,Thai,,0,0,0,,สั่งอะไรดีคะ
+Dialogue: 12,0:01:00.00,0:01:03.00,English,,0,0,0,,By the end of this video, you won't need to point. You'll order in Thai, ask for recommendations, tell them how spicy you want it, and get the bill — all in Thai.
+Dialogue: 10,0:01:45.12,0:06:47.94,VocabThai,,0,0,0,,สั่ง
+Dialogue: 10,0:01:53.36,0:06:47.94,VocabThai,,0,0,0,,{\fad(300,200)}คุณอยากสั่งอะไร
+Dialogue: 10,0:03:01.10,0:06:47.94,VocabThai,,0,0,0,,เผ็ด
+Dialogue: 10,0:03:13.44,0:06:47.94,VocabThai,,0,0,0,,ไม่เผ็ด
+Dialogue: 10,0:03:21.46,0:06:47.94,VocabThai,,0,0,0,,{\fad(300,200)}ไม่เอาเผ็ดนะคะ
+Dialogue: 10,0:03:52.20,0:06:47.94,VocabThai,,0,0,0,,อร่อย
+Dialogue: 10,0:03:59.14,0:06:47.94,VocabThai,,0,0,0,,{\fad(300,200)}อร่อยมาก
+Dialogue: 10,0:04:15.72,0:06:47.94,VocabThai,,0,0,0,,ขอ
+Dialogue: 10,0:04:32.50,0:06:47.94,VocabThai,,0,0,0,,{\fad(300,200)}ขอผัดไทยหนึ่งจานค่ะ
+Dialogue: 10,0:05:22.20,0:06:47.94,VocabThai,,0,0,0,,เก็บเงิน
+Dialogue: 10,0:05:43.70,0:06:47.94,VocabThai,,0,0,0,,{\fad(300,200)}เก็บเงินด้วยค่ะ
+Dialogue: 10,0:06:02.54,0:06:47.94,VocabThai,,0,0,0,,แนะนำ
+Dialogue: 10,0:06:08.74,0:06:47.94,VocabThai,,0,0,0,,{\fad(300,200)}แนะนำอะไรดีคะ
+Dialogue: 10,0:06:35.46,0:06:47.94,VocabThai,,0,0,0,,อิ่ม
+Dialogue: 10,0:06:46.76,0:06:47.94,VocabThai,,0,0,0,,{\fad(300,200)}อิ่มแล้วค่ะ
+Dialogue: 10,0:07:50.52,0:10:47.98,ThaiCentre,,0,0,0,,แนะนำอะไรดีคะ
+Dialogue: 10,0:09:08.00,0:10:47.98,ThaiCentre,,0,0,0,,ขอผัดไทยหนึ่งจานค่ะ
+Dialogue: 10,0:09:37.58,0:10:47.98,ThaiCentre,,0,0,0,,ไม่เอาเผ็ดนะคะ
+Dialogue: 10,0:10:06.72,0:10:47.98,ThaiCentre,,0,0,0,,อร่อยมาก
+Dialogue: 10,0:10:26.98,0:10:47.98,ThaiCentre,,0,0,0,,อิ่มแล้วค่ะ
+Dialogue: 10,0:10:46.08,0:10:47.98,ThaiCentre,,0,0,0,,เก็บเงินด้วยค่ะ
+Dialogue: 10,0:11:41.44,0:12:24.92,Thai,,0,0,0,,แนะนำอะไรดีคะ
+Dialogue: 11,0:11:42.44,0:12:24.92,Translit,,0,0,0,,{\fad(300,200)}náe-nam a-rai dii khá
+Dialogue: 12,0:11:43.44,0:12:24.92,English,,0,0,0,,{\fad(300,200)}What do you recommend?
+Dialogue: 10,0:11:44.30,0:12:24.92,Thai,,0,0,0,,ขอผัดไทยหนึ่งจานค่ะ
+Dialogue: 11,0:11:45.30,0:12:24.92,Translit,,0,0,0,,{\fad(300,200)}khǎaw phàt-thai nùeng jaan khâ
+Dialogue: 12,0:11:46.30,0:12:24.92,English,,0,0,0,,{\fad(300,200)}I'd like one Pad Thai, please.
+Dialogue: 10,0:11:58.60,0:12:24.92,Thai,,0,0,0,,ไม่เอาเผ็ดนะคะ
+Dialogue: 11,0:11:59.60,0:12:24.92,Translit,,0,0,0,,{\fad(300,200)}mâi ao phèt ná khá
+Dialogue: 12,0:12:00.60,0:12:24.92,English,,0,0,0,,{\fad(300,200)}No spicy, please.
+Dialogue: 10,0:12:06.90,0:12:24.92,Thai,,0,0,0,,อร่อยมาก
+Dialogue: 11,0:12:07.90,0:12:24.92,Translit,,0,0,0,,{\fad(300,200)}a-ròoy mâak
+Dialogue: 12,0:12:08.90,0:12:24.92,English,,0,0,0,,{\fad(300,200)}Very delicious!
+Dialogue: 10,0:12:22.82,0:12:24.92,Thai,,0,0,0,,เก็บเงินด้วยค่ะ
+Dialogue: 11,0:12:23.82,0:12:24.92,Translit,,0,0,0,,{\fad(300,200)}gèp ngern dûuay khâ
+Dialogue: 12,0:12:24.82,0:12:25.32,English,,0,0,0,,{\fad(300,200)}Can I have the bill, please?
+Dialogue: 12,0:13:02.76,0:13:06.58,DrillPrompt,,0,0,0,,How would you say: 'I'd like one Pad Thai, please'?
+Dialogue: 12,0:13:03.76,0:13:06.58,DrillPrompt,,0,0,0,,{\fad(300,200)}Try saying it now...
+Dialogue: 10,0:13:12.54,0:13:16.44,Thai,,0,0,0,,ขอผัดไทยหนึ่งจานค่ะ
+Dialogue: 12,0:13:26.98,0:13:30.18,DrillPrompt,,0,0,0,,How would you say: 'No spicy, please'?
+Dialogue: 12,0:13:27.98,0:13:30.18,DrillPrompt,,0,0,0,,{\fad(300,200)}Try saying it now...
+Dialogue: 10,0:13:37.12,0:13:38.44,Thai,,0,0,0,,ไม่เอาเผ็ดนะคะ
+Dialogue: 12,0:14:19.86,0:14:21.76,DrillPrompt,,0,0,0,,How would you say: 'Can I have the bill, please'?
+Dialogue: 12,0:14:20.86,0:14:21.76,DrillPrompt,,0,0,0,,{\fad(300,200)}Try saying it now...
+Dialogue: 10,0:15:04.96,0:15:06.52,Thai,,0,0,0,,เก็บเงินด้วยค่ะ
+Dialogue: 10,0:15:09.02,0:15:16.94,ThaiSplit,,0,0,0,,แนะ นำ อะไร ดี คะ
+Dialogue: 10,0:15:09.92,0:15:16.94,ThaiSplit,,0,0,0,,ขอ ผัด ไทย หนึ่ง จาน ค่ะ
+Dialogue: 10,0:15:09.92,0:15:16.94,ThaiSplit,,0,0,0,,ไม่ เอา เผ็ด นะ คะ
+Dialogue: 10,0:15:09.92,0:15:16.94,ThaiSplit,,0,0,0,,อร่อย มาก
+Dialogue: 10,0:15:12.80,0:15:16.94,ThaiSplit,,0,0,0,,อิ่ม แล้ว ค่ะ
+Dialogue: 10,0:15:13.94,0:15:16.94,ThaiSplit,,0,0,0,,เก็บ เงิน ด้วย ค่ะ
+Dialogue: 12,0:15:13.94,0:15:16.94,English,,0,0,0,,Quick recap — here are your 8 phrases for ordering food in Thai.
+Dialogue: 12,0:15:13.94,0:15:33.24,English,,0,0,0,,Next time — asking for directions. You'll learn how to say 'where is...?' and understand the answer.
+Dialogue: 10,0:15:31.24,0:15:33.24,Thai,,0,0,0,,{\fad(300,200)}...อยู่ที่ไหนคะ

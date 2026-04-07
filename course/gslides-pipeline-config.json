@@ -1,0 +1,12 @@
+{
+  "oauthClientPath": "course/oauth-client.json",
+  "serviceAccountKeyPath": "course/gen-lang-client-0739488282-468fd4351ce6.json",
+  "templatePresentationId": null,
+  "targetDriveFolderId": null,
+  "shareWith": ["otoppo01@googlemail.com"],
+  "thaiFontFamily": "Noto Sans Thai Looped",
+  "latinFontFamily": "Sarabun",
+  "translitFontFamily": "Sarabun",
+  "teachingAssets": {},
+  "_comment": "serviceAccountKeyPath: path to GCP service account JSON key (gitignored). templatePresentationId: optional master deck to clone from. targetDriveFolderId: Google Drive folder ID to save generated decks. shareWith: array of email addresses to auto-share presentations with (e.g. Nine's email). teachingAssets: { slug: { url, description } } for custom images (tone diagrams etc)."
+}

@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Thai with Nine — Screen Layout Mockups</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Sarabun:wght@400;600;700&family=Inter:wght@400;500;600;700&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Inter', sans-serif; background: #1a1a2e; color: #e0e0e0; padding: 30px; }
+
+  h1 { text-align: center; font-size: 28px; margin-bottom: 8px; color: #fff; }
+  .subtitle { text-align: center; color: #888; margin-bottom: 40px; font-size: 14px; }
+
+  .mode-section { margin-bottom: 60px; }
+  .mode-title { font-size: 20px; color: #f0c040; margin-bottom: 6px; font-weight: 700; }
+  .mode-desc { color: #aaa; margin-bottom: 20px; font-size: 14px; line-height: 1.5; max-width: 900px; }
+
+  .screen {
+    width: 900px;
+    height: 506px;
+    background: #0d1117;
+    border-radius: 12px;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid #333;
+    margin-bottom: 12px;
+  }
+
+  .screen-label {
+    position: absolute;
+    top: 12px;
+    left: 16px;
+    background: rgba(240, 192, 64, 0.9);
+    color: #000;
+    font-size: 11px;
+    font-weight: 700;
+    padding: 3px 10px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    z-index: 10;
+  }
+
+  /* Nine PiP styles */
+  .nine-pip {
+    position: absolute;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 2px solid rgba(255,255,255,0.15);
+  }
+  .nine-pip-inner {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    color: rgba(255,255,255,0.7);
+    font-size: 13px;
+  }
+
+  /* Background image placeholder */
+  .bg-image {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    color: rgba(255,255,255,0.3);
+  }
+
+  /* Text overlay area */
+  .text-overlay {
+    position: absolute;
+    z-index: 5;
+  }
+
+  .thai-text {
+    font-family: 'Sarabun', sans-serif;
+    font-weight: 700;
+    color: #fff;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.8), 0 0 20px rgba(0,0,0,0.5);
+    line-height: 1.4;
+  }
+  .translit-text {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    color: #f0c040;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.8);
+    line-height: 1.3;
+  }
+  .english-text {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    color: #b0d4ff;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.8);
+    line-height: 1.3;
+  }
+  .dim-text {
+    opacity: 0.4;
+  }
+
+  /* Vocab card */
+  .vocab-card {
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.12);
+    border-radius: 16px;
+    padding: 30px;
+    text-align: center;
+  }
+
+  /* Drill prompt */
+  .drill-prompt {
+    background: rgba(240, 192, 64, 0.12);
+    border: 1px solid rgba(240, 192, 64, 0.3);
+    border-radius: 12px;
+    padding: 20px 30px;
+    text-align: center;
+  }
+
+  /* Progress bar */
+  .progress-bar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    background: #f0c040;
+    z-index: 20;
+  }
+
+  /* Highlight word */
+  .highlight {
+    color: #f0c040;
+    background: rgba(240, 192, 64, 0.15);
+    padding: 0 4px;
+    border-radius: 3px;
+  }
+
+  /* Gradient overlays */
+  .gradient-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 200px;
+    background: linear-gradient(transparent, rgba(0,0,0,0.85));
+    z-index: 2;
+  }
+  .gradient-full {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(13,17,23,0.7), rgba(13,17,23,0.4));
+    z-index: 1;
+  }
+
+  /* Tab navigation */
+  .tabs {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+  }
+  .tab {
+    padding: 8px 18px;
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 8px;
+    font-size: 13px;
+    color: #aaa;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  .tab:hover { background: rgba(255,255,255,0.1); color: #fff; }
+  .tab.active { background: rgba(240, 192, 64, 0.15); border-color: rgba(240, 192, 64, 0.4); color: #f0c040; }
+
+  .option-label {
+    display: inline-block;
+    font-size: 11px;
+    color: #666;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+  }
+  .notes {
+    font-size: 13px;
+    color: #777;
+    line-height: 1.6;
+    max-width: 900px;
+    margin-top: 8px;
+  }
+
+  .divider {
+    border: none;
+    border-top: 1px solid #2a2a3e;
+    margin: 50px 0;
+  }
+
+  .vs-label {
+    text-align: center;
+    color: #555;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 24px 0;
+  }
+</style>
+</head>
+<body>
+
+<h1>Thai with Nine — Screen Layout Mockups</h1>
+<p class="subtitle">Six screen modes showing how text, Nine, and images work together</p>
+
+<hr class="divider">
+
+<!-- ==================== MODE 1: NATURAL LISTEN ==================== -->
+<div class="mode-section">
+  <div class="mode-title">Mode 1 — Natural Speed Listen</div>
+  <p class="mode-desc">Nine speaks Thai at natural speed. The viewer is testing their comprehension. Thai script is on screen, no English. The AI background image sets the scene for the topic.</p>
+
+  <p class="option-label">Option A — Bottom text, Nine in corner</p>
+  <div class="screen">
+    <div class="screen-label">Natural Listen</div>
+    <div class="bg-image" style="background: linear-gradient(135deg, #2d4a3e, #1a3a2a); font-size: 14px;">
+      <span style="opacity:0.4;">[ AI image: Thai street food market scene ]</span>
+    </div>
+    <div class="gradient-bottom"></div>
+    <div class="nine-pip" style="top: 20px; right: 20px; width: 200px; height: 150px; background: linear-gradient(135deg, #3a2a4a, #2a1a3a);">
+      <div class="nine-pip-inner">Nine (camera)</div>
+    </div>
+    <div class="text-overlay" style="bottom: 40px; left: 40px; right: 40px;">
+      <div class="thai-text" style="font-size: 32px;">คุณชอบอาหารไทยไหม</div>
+    </div>
+    <div class="progress-bar" style="width: 25%;"></div>
+  </div>
+  <p class="notes">Clean and simple. Thai only. Forces the viewer to listen and read simultaneously. The background image gives context without words.</p>
+
+  <br>
+  <p class="option-label">Option B — Centre text, no Nine visible (full immersion)</p>
+  <div class="screen">
+    <div class="screen-label">Natural Listen</div>
+    <div class="bg-image" style="background: linear-gradient(135deg, #2d4a3e, #1a3a2a);">
+      <span style="opacity:0.4;">[ AI image: Thai street food market scene ]</span>
+    </div>
+    <div class="gradient-full"></div>
+    <div class="text-overlay" style="top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; width: 80%;">
+      <div class="thai-text" style="font-size: 40px;">คุณชอบอาหารไทยไหม</div>
+    </div>
+    <div class="progress-bar" style="width: 25%;"></div>
+  </div>
+  <p class="notes">More cinematic. Nine's voice is heard but not seen. Good for pure listening immersion. Could alternate with Option A.</p>
+</div>
+
+<hr class="divider">
+
+<!-- ==================== MODE 2: SENTENCE BREAKDOWN ==================== -->
+<div class="mode-section">
+  <div class="mode-title">Mode 2 — Sentence Breakdown</div>
+  <p class="mode-desc">The core teaching moment. Nine says a Thai sentence, it appears on screen. Then transliteration. Then English fades in after a beat. Three stacked lines. This is what needs to be perfectly synced.</p>
+
+  <p class="option-label">Option A — Three-line stack, bottom of screen</p>
+  <div class="screen">
+    <div class="screen-label">Breakdown</div>
+    <div class="bg-image" style="background: linear-gradient(135deg, #2d3a4a, #1a2a3a);">
+      <span style="opacity:0.4;">[ AI image: softly blurred ]</span>
+    </div>
+    <div class="gradient-bottom" style="height: 280px;"></div>
+    <div class="nine-pip" style="top: 20px; right: 20px; width: 200px; height: 150px; background: linear-gradient(135deg, #3a2a4a, #2a1a3a);">
+      <div class="nine-pip-inner">Nine (camera)</div>
+    </div>
+    <div class="text-overlay" style="bottom: 40px; left: 40px; right: 40px;">
+      <div class="thai-text" style="font-size: 30px; margin-bottom: 8px;">ฉันชอบอาหารไทยมาก</div>
+      <div class="translit-text" style="font-size: 18px; margin-bottom: 8px;">chǎn chɔ̂ɔp aa-hǎan thai mâak</div>
+      <div class="english-text" style="font-size: 20px;">"I like Thai food very much."</div>
+    </div>
+    <div class="progress-bar" style="width: 45%;"></div>
+  </div>
+  <p class="notes">The money shot. Thai script is always the largest. Transliteration in gold sits between. English in blue is the smallest — it's the safety net, not the focus. The three colours (white / gold / blue) make it instantly scannable.</p>
+
+  <br>
+  <p class="option-label">Option B — Three-line stack, centred (no Nine visible during breakdown)</p>
+  <div class="screen">
+    <div class="screen-label">Breakdown</div>
+    <div class="bg-image" style="background: #0d1117;"></div>
+    <div class="text-overlay" style="top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; width: 85%;">
+      <div class="thai-text" style="font-size: 36px; margin-bottom: 12px;">ฉันชอบอาหารไทยมาก</div>
+      <div class="translit-text" style="font-size: 20px; margin-bottom: 12px;">chǎn chɔ̂ɔp aa-hǎan thai mâak</div>
+      <div class="english-text" style="font-size: 22px;">"I like Thai food very much."</div>
+    </div>
+    <div class="progress-bar" style="width: 45%;"></div>
+  </div>
+  <p class="notes">Cleaner. Easier to read. No visual distraction from Nine's face. Could use this for the actual sentence display, then cut back to Nine when she explains the grammar.</p>
+
+  <br>
+  <p class="option-label">Option C — Staged reveal (how the three lines appear over time)</p>
+  <div style="display: flex; gap: 16px;">
+    <!-- Stage 1: Thai only -->
+    <div class="screen" style="width: 290px; height: 163px;">
+      <div style="position:absolute;top:6px;left:8px;font-size:9px;color:#f0c040;font-weight:700;">STEP 1</div>
+      <div class="text-overlay" style="top:50%;left:50%;transform:translate(-50%,-50%);text-align:center;width:85%;">
+        <div class="thai-text" style="font-size: 18px;">ฉันชอบอาหารไทยมาก</div>
+        <div class="translit-text dim-text" style="font-size: 11px; margin-top: 6px;">—</div>
+        <div class="english-text dim-text" style="font-size: 11px; margin-top: 4px;">—</div>
+      </div>
+    </div>
+    <!-- Stage 2: Thai + translit -->
+    <div class="screen" style="width: 290px; height: 163px;">
+      <div style="position:absolute;top:6px;left:8px;font-size:9px;color:#f0c040;font-weight:700;">STEP 2</div>
+      <div class="text-overlay" style="top:50%;left:50%;transform:translate(-50%,-50%);text-align:center;width:85%;">
+        <div class="thai-text" style="font-size: 18px;">ฉันชอบอาหารไทยมาก</div>
+        <div class="translit-text" style="font-size: 11px; margin-top: 6px;">chǎn chɔ̂ɔp aa-hǎan thai mâak</div>
+        <div class="english-text dim-text" style="font-size: 11px; margin-top: 4px;">—</div>
+      </div>
+    </div>
+    <!-- Stage 3: All three -->
+    <div class="screen" style="width: 290px; height: 163px;">
+      <div style="position:absolute;top:6px;left:8px;font-size:9px;color:#f0c040;font-weight:700;">STEP 3</div>
+      <div class="text-overlay" style="top:50%;left:50%;transform:translate(-50%,-50%);text-align:center;width:85%;">
+        <div class="thai-text" style="font-size: 18px;">ฉันชอบอาหารไทยมาก</div>
+        <div class="translit-text" style="font-size: 11px; margin-top: 6px;">chǎn chɔ̂ɔp aa-hǎan thai mâak</div>
+        <div class="english-text" style="font-size: 11px; margin-top: 4px;">"I like Thai food very much."</div>
+      </div>
+    </div>
+  </div>
+  <p class="notes">The staged reveal is key. Thai appears when Nine says it. Transliteration fades in after 1 second. English reveals after another beat. This gives the viewer a moment to try reading before getting the answer. Whisper timestamps drive when each line appears.</p>
+</div>
+
+<hr class="divider">
+
+<!-- ==================== MODE 3: VOCABULARY CARD ==================== -->
+<div class="mode-section">
+  <div class="mode-title">Mode 3 — Vocabulary Card</div>
+  <p class="mode-desc">When a new word is introduced. Full screen takeover with the word, transliteration, meaning, and an AI image of the thing. Like a flashcard that appears mid-video.</p>
+
+  <div class="screen">
+    <div class="screen-label">Vocab Card</div>
+    <div class="bg-image" style="background: #0d1117;"></div>
+    <div style="position: absolute; inset: 0; display: flex; z-index: 5;">
+      <!-- Left: AI image -->
+      <div style="flex: 1; display: flex; align-items: center; justify-content: center; padding: 40px;">
+        <div style="width: 300px; height: 300px; border-radius: 20px; background: linear-gradient(135deg, #4a3a2a, #6a4a2a); display: flex; align-items: center; justify-content: center; border: 2px solid rgba(255,255,255,0.1);">
+          <span style="color: rgba(255,255,255,0.4); font-size: 13px;">[ AI image: shrimp ]</span>
+        </div>
+      </div>
+      <!-- Right: text -->
+      <div style="flex: 1; display: flex; flex-direction: column; justify-content: center; padding: 40px;">
+        <div class="thai-text" style="font-size: 56px; margin-bottom: 12px;">กุ้ง</div>
+        <div class="translit-text" style="font-size: 24px; margin-bottom: 16px;">gûng</div>
+        <div class="english-text" style="font-size: 28px; margin-bottom: 30px;">shrimp</div>
+        <div style="border-top: 1px solid rgba(255,255,255,0.1); padding-top: 20px;">
+          <div class="thai-text" style="font-size: 20px; margin-bottom: 6px;">ฉันแพ้กุ้ง กินกุ้งไม่ได้เลย</div>
+          <div class="english-text" style="font-size: 15px; opacity: 0.7;">"I'm allergic to shrimp. I can't eat shrimp at all."</div>
+        </div>
+      </div>
+    </div>
+    <div class="progress-bar" style="width: 55%;"></div>
+  </div>
+  <p class="notes">Image on left, text stack on right. The example sentence anchors the word in context. These frames also work perfectly as standalone Instagram/TikTok image posts or carousel slides.</p>
+</div>
+
+<hr class="divider">
+
+<!-- ==================== MODE 4: PRODUCTION DRILL ==================== -->
+<div class="mode-section">
+  <div class="mode-title">Mode 4 — Production Drill</div>
+  <p class="mode-desc">Nine gives a prompt in English. The viewer has a few seconds to try saying it in Thai. Then Nine gives the answer. Two-stage reveal.</p>
+
+  <div style="display: flex; gap: 16px;">
+    <!-- Stage 1: Prompt -->
+    <div class="screen" style="width: 440px; height: 248px;">
+      <div style="position:absolute;top:6px;left:8px;font-size:9px;color:#f0c040;font-weight:700;">PROMPT</div>
+      <div class="nine-pip" style="top: 14px; right: 14px; width: 120px; height: 90px; background: linear-gradient(135deg, #3a2a4a, #2a1a3a);">
+        <div class="nine-pip-inner" style="font-size:10px;">Nine</div>
+      </div>
+      <div class="text-overlay" style="top:50%;left:50%;transform:translate(-50%,-50%);text-align:center;width:80%;">
+        <div class="drill-prompt">
+          <div class="english-text" style="font-size: 18px; margin-bottom: 10px;">How would you say:</div>
+          <div class="english-text" style="font-size: 20px; font-weight: 700;">"I like Thai food very much"</div>
+        </div>
+        <div style="color: #666; font-size: 13px; margin-top: 14px;">⏸ Try saying it now...</div>
+      </div>
+    </div>
+    <!-- Stage 2: Answer -->
+    <div class="screen" style="width: 440px; height: 248px;">
+      <div style="position:absolute;top:6px;left:8px;font-size:9px;color:#4adf8a;font-weight:700;">ANSWER</div>
+      <div class="nine-pip" style="top: 14px; right: 14px; width: 120px; height: 90px; background: linear-gradient(135deg, #3a2a4a, #2a1a3a);">
+        <div class="nine-pip-inner" style="font-size:10px;">Nine</div>
+      </div>
+      <div class="text-overlay" style="top:50%;left:50%;transform:translate(-50%,-50%);text-align:center;width:80%;">
+        <div class="thai-text" style="font-size: 24px; margin-bottom: 8px;">ฉันชอบอาหารไทยมาก</div>
+        <div class="translit-text" style="font-size: 14px; margin-bottom: 8px;">chǎn chɔ̂ɔp aa-hǎan thai mâak</div>
+        <div class="english-text" style="font-size: 15px;">"I like Thai food very much."</div>
+      </div>
+    </div>
+  </div>
+  <p class="notes">The pause moment is crucial — it's what separates this from passive watching. The prompt-then-reveal format also makes perfect standalone Shorts ("Can you say this in Thai?").</p>
+</div>
+
+<hr class="divider">
+
+<!-- ==================== MODE 5: SHADOWING ==================== -->
+<div class="mode-section">
+  <div class="mode-title">Mode 5 — Shadowing Practice</div>
+  <p class="mode-desc">Nine speaks slowly. The full paragraph is on screen in split-word Thai. The current word/phrase highlights as she speaks it. The viewer repeats along.</p>
+
+  <div class="screen">
+    <div class="screen-label">Shadowing</div>
+    <div class="bg-image" style="background: #0a0e14;"></div>
+    <div class="nine-pip" style="bottom: 20px; right: 20px; width: 200px; height: 150px; background: linear-gradient(135deg, #3a2a4a, #2a1a3a);">
+      <div class="nine-pip-inner">Nine (camera)</div>
+    </div>
+    <div class="text-overlay" style="top: 50px; left: 50px; right: 260px;">
+      <div style="margin-bottom: 16px;">
+        <span class="thai-text" style="font-size: 28px; line-height: 2.2;">
+          ฉัน <span class="highlight">ชอบ</span> อาหาร ไทย มาก
+        </span>
+      </div>
+      <div style="margin-bottom: 16px;">
+        <span class="thai-text" style="font-size: 28px; line-height: 2.2; opacity: 0.4;">
+          คุณ ชอบ อาหาร ไทย ไหม
+        </span>
+      </div>
+      <div>
+        <span class="thai-text" style="font-size: 28px; line-height: 2.2; opacity: 0.4;">
+          คุณ กิน เผ็ด ได้ ไหม
+        </span>
+      </div>
+      <div style="margin-top: 20px;">
+        <div class="translit-text" style="font-size: 16px;">chǎn <span style="color:#fff;font-weight:700;">chɔ̂ɔp</span> aa-hǎan thai mâak</div>
+      </div>
+    </div>
+    <div class="progress-bar" style="width: 70%;"></div>
+  </div>
+  <p class="notes">Split-word Thai with the current word highlighted in gold. Upcoming sentences are dimmed. Transliteration for the active sentence only. This is karaoke-style word tracking — Whisper word-level timestamps drive the highlight position.</p>
+</div>
+
+<hr class="divider">
+
+<!-- ==================== MODE 6: NINE EXPLAINS ==================== -->
+<div class="mode-section">
+  <div class="mode-title">Mode 6 — Nine Explains (English)</div>
+  <p class="mode-desc">Nine switches to English to explain a grammar point or cultural note. The Thai word/phrase she's referencing stays pinned on screen as a reference.</p>
+
+  <div class="screen">
+    <div class="screen-label">Explanation</div>
+    <div class="bg-image" style="background: linear-gradient(135deg, #1a2030, #0d1117);"></div>
+    <!-- Nine is larger here, main focus -->
+    <div style="position: absolute; left: 0; top: 0; bottom: 0; width: 55%; background: linear-gradient(135deg, #2a1a3a, #1a1030); display: flex; align-items: center; justify-content: center; z-index: 3;">
+      <span style="color: rgba(255,255,255,0.5); font-size: 16px; font-weight: 600;">Nine (half screen)</span>
+    </div>
+    <!-- Reference text pinned on right -->
+    <div class="text-overlay" style="right: 30px; top: 50%; transform: translateY(-50%); width: 38%; text-align: center;">
+      <div class="vocab-card">
+        <div class="thai-text" style="font-size: 36px; margin-bottom: 8px;">ชอบ</div>
+        <div class="translit-text" style="font-size: 18px; margin-bottom: 8px;">chɔ̂ɔp</div>
+        <div class="english-text" style="font-size: 20px; margin-bottom: 16px;">to like</div>
+        <div style="border-top: 1px solid rgba(255,255,255,0.1); padding-top: 14px;">
+          <div style="color: #888; font-size: 13px; line-height: 1.6; text-align: left;">
+            Used for preferences.<br>
+            Always comes before the object.<br>
+            <span style="color: #f0c040;">ชอบ + noun</span> = like (something)<br>
+            <span style="color: #f0c040;">ชอบ + verb</span> = like doing
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="progress-bar" style="width: 60%;"></div>
+  </div>
+  <p class="notes">Nine takes up more screen space here — she's the focus, talking to camera. The reference card on the right keeps the Thai visible so the viewer connects her English explanation to the Thai word. Grammar notes can be bullet points or pattern formulas.</p>
+</div>
+
+<hr class="divider">
+
+<!-- ==================== COLOUR SYSTEM ==================== -->
+<div class="mode-section">
+  <div class="mode-title">Colour System Summary</div>
+  <p class="mode-desc">Consistent colour coding across all modes so viewers instantly know what language they're looking at.</p>
+  <div style="display: flex; gap: 30px; margin-top: 16px;">
+    <div style="display: flex; align-items: center; gap: 12px;">
+      <div style="width: 40px; height: 40px; border-radius: 8px; background: #ffffff; border: 1px solid #333;"></div>
+      <div>
+        <div style="font-weight: 700; color: #fff; font-size: 15px;">White</div>
+        <div style="color: #888; font-size: 13px;">Thai script (always largest)</div>
+      </div>
+    </div>
+    <div style="display: flex; align-items: center; gap: 12px;">
+      <div style="width: 40px; height: 40px; border-radius: 8px; background: #f0c040;"></div>
+      <div>
+        <div style="font-weight: 700; color: #f0c040; font-size: 15px;">Gold</div>
+        <div style="color: #888; font-size: 13px;">Transliteration + highlights</div>
+      </div>
+    </div>
+    <div style="display: flex; align-items: center; gap: 12px;">
+      <div style="width: 40px; height: 40px; border-radius: 8px; background: #b0d4ff;"></div>
+      <div>
+        <div style="font-weight: 700; color: #b0d4ff; font-size: 15px;">Light blue</div>
+        <div style="color: #888; font-size: 13px;">English translation</div>
+      </div>
+    </div>
+  </div>
+
+  <div style="margin-top: 30px;">
+    <div class="mode-title" style="font-size: 16px;">Font hierarchy</div>
+    <div style="margin-top: 10px; display: flex; flex-direction: column; gap: 8px;">
+      <div style="display: flex; align-items: baseline; gap: 16px;">
+        <span class="thai-text" style="font-size: 36px; font-family: 'Sarabun', sans-serif;">อาหาร</span>
+        <span style="color: #666; font-size: 13px;">Thai — Sarabun Bold, largest</span>
+      </div>
+      <div style="display: flex; align-items: baseline; gap: 16px;">
+        <span class="translit-text" style="font-size: 20px;">aa-hǎan</span>
+        <span style="color: #666; font-size: 13px;">Transliteration — Inter Medium, mid-size</span>
+      </div>
+      <div style="display: flex; align-items: baseline; gap: 16px;">
+        <span class="english-text" style="font-size: 20px;">"food"</span>
+        <span style="color: #666; font-size: 13px;">English — Inter Medium, same or smaller</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

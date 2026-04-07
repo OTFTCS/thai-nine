@@ -11,7 +11,7 @@ from __future__ import annotations
 import re
 from pathlib import Path
 
-from .types import QAResult
+from .models import QAResult
 
 
 def run_layout_qa(scene_path: Path) -> QAResult:

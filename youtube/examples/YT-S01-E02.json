@@ -1,0 +1,648 @@
+{
+  "schemaVersion": 1,
+  "episodeId": "YT-S01-E02",
+  "seriesId": "S01",
+  "seriesName": "Thai Survival Phrases",
+  "title": "Asking for Directions in Thai — Where Is...?",
+  "topic": "asking-directions",
+  "level": "A0",
+  "lessonRef": "M01-L005",
+  "estimatedDuration": "12:00",
+  "vocab": [
+    {
+      "id": "v-001",
+      "thai": "อยู่ที่ไหน",
+      "translit": "yùu thîi nǎi",
+      "english": "where is (it)?",
+      "thaiSplit": "อยู่ ที่ไหน",
+      "imageRef": "img-002"
+    },
+    {
+      "id": "v-002",
+      "thai": "ตรงไป",
+      "translit": "trong bpai",
+      "english": "go straight",
+      "thaiSplit": "ตรง ไป",
+      "imageRef": "img-003"
+    },
+    {
+      "id": "v-003",
+      "thai": "เลี้ยวซ้าย",
+      "translit": "líiaw sáai",
+      "english": "turn left",
+      "thaiSplit": "เลี้ยว ซ้าย",
+      "imageRef": "img-004"
+    },
+    {
+      "id": "v-004",
+      "thai": "เลี้ยวขวา",
+      "translit": "líiaw khwǎa",
+      "english": "turn right",
+      "thaiSplit": "เลี้ยว ขวา"
+    },
+    {
+      "id": "v-005",
+      "thai": "ใกล้",
+      "translit": "glâi",
+      "english": "near / close",
+      "thaiSplit": "ใกล้"
+    },
+    {
+      "id": "v-006",
+      "thai": "ไกล",
+      "translit": "glai",
+      "english": "far",
+      "thaiSplit": "ไกล"
+    },
+    {
+      "id": "v-007",
+      "thai": "ห้องน้ำ",
+      "translit": "hâwng náam",
+      "english": "bathroom / toilet",
+      "thaiSplit": "ห้อง น้ำ",
+      "imageRef": "img-005"
+    },
+    {
+      "id": "v-008",
+      "thai": "สถานีรถไฟฟ้า",
+      "translit": "sa-thǎa-nii rót-fai-fáa",
+      "english": "BTS station",
+      "thaiSplit": "สถานี รถไฟฟ้า"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "b-001",
+      "mode": "hook",
+      "speakerNote": "Energetic, look to camera. Say the Thai phrase naturally, pause 1 beat.",
+      "imageRef": "img-001",
+      "lines": [
+        {
+          "id": "l-0001",
+          "lang": "th",
+          "thai": "ห้องน้ำอยู่ที่ไหนคะ",
+          "translit": "hâwng náam yùu thîi nǎi khá",
+          "display": "immediate",
+          "spoken": true
+        },
+        {
+          "id": "l-0002",
+          "lang": "en",
+          "english": "Where is the bathroom?",
+          "display": "delayed-1s",
+          "spoken": false
+        },
+        {
+          "id": "l-0003",
+          "lang": "en",
+          "english": "Today you'll learn how to ask 'where is...?' and understand the answer.",
+          "display": "delayed-2s",
+          "spoken": true
+        }
+      ]
+    },
+    {
+      "id": "b-002",
+      "mode": "explain",
+      "speakerNote": "Warm, personal. Tell your real story about getting lost in Bangkok. Make it relatable and funny.",
+      "imageRef": "img-001",
+      "lines": [
+        {
+          "id": "l-0004",
+          "lang": "en",
+          "english": "My first week in Bangkok, I got completely lost trying to find a BTS station. The signs were all in Thai, my phone was dead, and I was sweating in 35-degree heat. I stopped an old lady and just said 'BTS?' with a confused face. She laughed, grabbed my arm, and walked me there herself. Thai people are incredibly kind — but it's so much better when you can actually ask properly.",
+          "display": "immediate",
+          "spoken": true
+        },
+        {
+          "id": "l-0005",
+          "lang": "th",
+          "thai": "ขอโทษค่ะ สถานีรถไฟฟ้าอยู่ที่ไหนคะ",
+          "translit": "khǎaw-thôot khâ sa-thǎa-nii rót-fai-fáa yùu thîi nǎi khá",
+          "display": "immediate",
+          "spoken": true
+        },
+        {
+          "id": "l-0006",
+          "lang": "en",
+          "english": "By the end of this video, you'll know how to ask where anything is — and understand directions like 'go straight' and 'turn left'.",
+          "display": "immediate",
+          "spoken": true
+        }
+      ]
+    },
+    {
+      "id": "b-003",
+      "mode": "vocab-card",
+      "speakerNote": "One word at a time. Say the Thai clearly, pause for the card animation, then the example sentence. Use hand gestures for directions — point straight, mime left and right turns, hands close together for near, spread apart for far.",
+      "vocabRefs": ["v-001", "v-002", "v-003", "v-004", "v-005", "v-006", "v-007", "v-008"],
+      "lines": [
+        {
+          "id": "l-0007",
+          "lang": "th",
+          "thai": "อยู่ที่ไหน",
+          "translit": "yùu thîi nǎi",
+          "english": "where is (it)?",
+          "display": "immediate",
+          "spoken": true
+        },
+        {
+          "id": "l-0008",
+          "lang": "th",
+          "thai": "ร้านกาแฟอยู่ที่ไหนคะ",
+          "translit": "ráan gaa-fae yùu thîi nǎi khá",
+          "english": "Where is the coffee shop?",
+          "display": "delayed-1s",
+          "spoken": true
+        },
+        {
+          "id": "l-0009",
+          "lang": "th",
+          "thai": "ตรงไป",
+          "translit": "trong bpai",
+          "english": "go straight",
+          "display": "immediate",
+          "spoken": true
+        },
+        {
+          "id": "l-0010",
+          "lang": "th",
+          "thai": "เลี้ยวซ้าย",
+          "translit": "líiaw sáai",
+          "english": "turn left",
+          "display": "immediate",
+          "spoken": true
+        },
+        {
+          "id": "l-0011",
+          "lang": "th",
+          "thai": "เลี้ยวขวา",
+          "translit": "líiaw khwǎa",
+          "english": "turn right",
+          "display": "immediate",
+          "spoken": true
+        },
+        {
+          "id": "l-0012",
+          "lang": "th",
+          "thai": "ตรงไปแล้วเลี้ยวซ้ายค่ะ",
+          "translit": "trong bpai láaew líiaw sáai khâ",
+          "english": "Go straight then turn left.",
+          "display": "delayed-1s",
+          "spoken": true
+        },
+        {
+          "id": "l-0013",
+          "lang": "th",
+          "thai": "ใกล้",
+          "translit": "glâi",
+          "english": "near / close",
+          "display": "immediate",
+          "spoken": true
+        },
+        {
+          "id": "l-0014",
+          "lang": "th",
+          "thai": "ไกล",
+          "translit": "glai",
+          "english": "far",
+          "display": "immediate",
+          "spoken": true
+        },
+        {
+          "id": "l-0015",
+          "lang": "th",
+          "thai": "ใกล้ไหมคะ",
+          "translit": "glâi mǎi khá",
+          "english": "Is it near?",
+          "display": "delayed-1s",
+          "spoken": true
+        },
+        {
+          "id": "l-0016",
+          "lang": "th",
+          "thai": "ห้องน้ำ",
+          "translit": "hâwng náam",
+          "english": "bathroom / toilet",
+          "display": "immediate",
+          "spoken": true
+        },
+        {
+          "id": "l-0017",
+          "lang": "th",
+          "thai": "ห้องน้ำอยู่ที่ไหนคะ",
+          "translit": "hâwng náam yùu thîi nǎi khá",
+          "english": "Where is the bathroom?",
+          "display": "delayed-1s",
+          "spoken": true
+        },
+        {
+          "id": "l-0018",
+          "lang": "th",
+          "thai": "สถานีรถไฟฟ้า",
+          "translit": "sa-thǎa-nii rót-fai-fáa",
+          "english": "BTS station",
+          "display": "immediate",
+          "spoken": true
+        },
+        {
+          "id": "l-0019",
+          "lang": "th",
+          "thai": "สถานีรถไฟฟ้าอยู่ที่ไหนคะ",
+          "translit": "sa-thǎa-nii rót-fai-fáa yùu thîi nǎi khá",
+          "english": "Where is the BTS station?",
+          "display": "delayed-1s",
+          "spoken": true
+        }
+      ]
+    },
+    {
+      "id": "b-004",
+      "mode": "natural-listen",
+      "speakerNote": "Natural conversational speed. Act out a street conversation — you stopped someone to ask directions and they're helping you.",
+      "imageRef": "img-001",
+      "lines": [
+        {
+          "id": "l-0020",
+          "lang": "th",
+          "thai": "ขอโทษค่ะ สถานีรถไฟฟ้าอยู่ที่ไหนคะ",
+          "translit": "khǎaw-thôot khâ sa-thǎa-nii rót-fai-fáa yùu thîi nǎi khá",
+          "display": "immediate",
+          "spoken": true
+        },
+        {
+          "id": "l-0021",
+          "lang": "th",
+          "thai": "ตรงไปแล้วเลี้ยวซ้ายค่ะ",
+          "translit": "trong bpai láaew líiaw sáai khâ",
+          "display": "immediate",
+          "spoken": true
+        },
+        {
+          "id": "l-0022",
+          "lang": "th",
+          "thai": "ใกล้ไหมคะ",
+          "translit": "glâi mǎi khá",
+          "display": "immediate",
+          "spoken": true
+        },
+        {
+          "id": "l-0023",
+          "lang": "th",
+          "thai": "ใกล้ค่ะ ห้านาทีค่ะ",
+          "translit": "glâi khâ hâa naa-thii khâ",
+          "display": "immediate",
+          "spoken": true
+        },
+        {
+          "id": "l-0024",
+          "lang": "th",
+          "thai": "ขอบคุณค่ะ",
+          "translit": "khàawp-khun khâ",
+          "display": "immediate",
+          "spoken": true
+        }
+      ]
+    },
+    {
+      "id": "b-005",
+      "mode": "breakdown",
+      "speakerNote": "Slow and clear. Say Thai, pause 1 beat for transliteration, pause 1 more beat for English.",
+      "lines": [
+        {
+          "id": "l-0025",
+          "lang": "th",
+          "thai": "ขอโทษค่ะ สถานีรถไฟฟ้าอยู่ที่ไหนคะ",
+          "translit": "khǎaw-thôot khâ sa-thǎa-nii rót-fai-fáa yùu thîi nǎi khá",
+          "english": "Excuse me, where is the BTS station?",
+          "display": "immediate",
+          "spoken": true
+        },
+        {
+          "id": "l-0026",
+          "lang": "translit",
+          "translit": "khǎaw-thôot khâ sa-thǎa-nii rót-fai-fáa yùu thîi nǎi khá",
+          "display": "delayed-1s",
+          "spoken": false
+        },
+        {
+          "id": "l-0027",
+          "lang": "en",
+          "english": "Excuse me, where is the BTS station?",
+          "display": "delayed-2s",
+          "spoken": false
+        },
+        {
+          "id": "l-0028",
+          "lang": "th",
+          "thai": "ตรงไปแล้วเลี้ยวซ้ายค่ะ",
+          "translit": "trong bpai láaew líiaw sáai khâ",
+          "english": "Go straight then turn left.",
+          "display": "immediate",
+          "spoken": true
+        },
+        {
+          "id": "l-0029",
+          "lang": "translit",
+          "translit": "trong bpai láaew líiaw sáai khâ",
+          "display": "delayed-1s",
+          "spoken": false
+        },
+        {
+          "id": "l-0030",
+          "lang": "en",
+          "english": "Go straight then turn left.",
+          "display": "delayed-2s",
+          "spoken": false
+        },
+        {
+          "id": "l-0031",
+          "lang": "th",
+          "thai": "ใกล้ค่ะ ห้านาทีค่ะ",
+          "translit": "glâi khâ hâa naa-thii khâ",
+          "english": "It's close. Five minutes.",
+          "display": "immediate",
+          "spoken": true
+        },
+        {
+          "id": "l-0032",
+          "lang": "translit",
+          "translit": "glâi khâ hâa naa-thii khâ",
+          "display": "delayed-1s",
+          "spoken": false
+        },
+        {
+          "id": "l-0033",
+          "lang": "en",
+          "english": "It's close. Five minutes.",
+          "display": "delayed-2s",
+          "spoken": false
+        }
+      ]
+    },
+    {
+      "id": "b-006",
+      "mode": "drill-prompt",
+      "speakerNote": "Look to camera. Ask the question, then wait 3 seconds in silence.",
+      "lines": [
+        {
+          "id": "l-0034",
+          "lang": "en",
+          "english": "How would you say: 'Where is the bathroom?'",
+          "display": "immediate",
+          "spoken": true
+        },
+        {
+          "id": "l-0035",
+          "lang": "en",
+          "english": "Try saying it now...",
+          "display": "delayed-1s",
+          "spoken": false
+        }
+      ]
+    },
+    {
+      "id": "b-007",
+      "mode": "drill-answer",
+      "speakerNote": "Smile, say it clearly.",
+      "lines": [
+        {
+          "id": "l-0036",
+          "lang": "th",
+          "thai": "ห้องน้ำอยู่ที่ไหนคะ",
+          "translit": "hâwng náam yùu thîi nǎi khá",
+          "english": "Where is the bathroom?",
+          "display": "immediate",
+          "spoken": true
+        }
+      ]
+    },
+    {
+      "id": "b-008",
+      "mode": "drill-prompt",
+      "lines": [
+        {
+          "id": "l-0037",
+          "lang": "en",
+          "english": "How would you say: 'Go straight then turn right'?",
+          "display": "immediate",
+          "spoken": true
+        },
+        {
+          "id": "l-0038",
+          "lang": "en",
+          "english": "Try saying it now...",
+          "display": "delayed-1s",
+          "spoken": false
+        }
+      ]
+    },
+    {
+      "id": "b-009",
+      "mode": "drill-answer",
+      "lines": [
+        {
+          "id": "l-0039",
+          "lang": "th",
+          "thai": "ตรงไปแล้วเลี้ยวขวาค่ะ",
+          "translit": "trong bpai láaew líiaw khwǎa khâ",
+          "english": "Go straight then turn right.",
+          "display": "immediate",
+          "spoken": true
+        }
+      ]
+    },
+    {
+      "id": "b-010",
+      "mode": "drill-prompt",
+      "lines": [
+        {
+          "id": "l-0040",
+          "lang": "en",
+          "english": "Someone asks you: 'Is it near?' How do you answer: 'It's far'?",
+          "display": "immediate",
+          "spoken": true
+        },
+        {
+          "id": "l-0041",
+          "lang": "en",
+          "english": "Try saying it now...",
+          "display": "delayed-1s",
+          "spoken": false
+        }
+      ]
+    },
+    {
+      "id": "b-011",
+      "mode": "drill-answer",
+      "lines": [
+        {
+          "id": "l-0042",
+          "lang": "th",
+          "thai": "ไกลค่ะ",
+          "translit": "glai khâ",
+          "english": "It's far.",
+          "display": "immediate",
+          "spoken": true
+        }
+      ]
+    },
+    {
+      "id": "b-012",
+      "mode": "shadowing",
+      "speakerNote": "Very slow. Pause 2 seconds between each sentence for the viewer to repeat.",
+      "lines": [
+        {
+          "id": "l-0043",
+          "lang": "th-split",
+          "thai": "ห้องน้ำอยู่ที่ไหนคะ",
+          "thaiSplit": "ห้อง น้ำ อยู่ ที่ไหน คะ",
+          "translit": "hâwng náam yùu thîi nǎi khá",
+          "display": "immediate",
+          "highlight": true,
+          "spoken": true
+        },
+        {
+          "id": "l-0044",
+          "lang": "th-split",
+          "thai": "ตรงไปแล้วเลี้ยวซ้ายค่ะ",
+          "thaiSplit": "ตรง ไป แล้ว เลี้ยว ซ้าย ค่ะ",
+          "translit": "trong bpai láaew líiaw sáai khâ",
+          "display": "immediate",
+          "highlight": true,
+          "spoken": true
+        },
+        {
+          "id": "l-0045",
+          "lang": "th-split",
+          "thai": "ตรงไปแล้วเลี้ยวขวาค่ะ",
+          "thaiSplit": "ตรง ไป แล้ว เลี้ยว ขวา ค่ะ",
+          "translit": "trong bpai láaew líiaw khwǎa khâ",
+          "display": "immediate",
+          "highlight": true,
+          "spoken": true
+        },
+        {
+          "id": "l-0046",
+          "lang": "th-split",
+          "thai": "ใกล้ไหมคะ",
+          "thaiSplit": "ใกล้ ไหม คะ",
+          "translit": "glâi mǎi khá",
+          "display": "immediate",
+          "highlight": true,
+          "spoken": true
+        },
+        {
+          "id": "l-0047",
+          "lang": "th-split",
+          "thai": "ขอบคุณค่ะ",
+          "thaiSplit": "ขอบ คุณ ค่ะ",
+          "translit": "khàawp-khun khâ",
+          "display": "immediate",
+          "highlight": true,
+          "spoken": true
+        }
+      ]
+    },
+    {
+      "id": "b-013",
+      "mode": "recap",
+      "speakerNote": "Quick energy. Flash through the vocab cards.",
+      "vocabRefs": ["v-001", "v-002", "v-003", "v-004", "v-005", "v-006", "v-007", "v-008"],
+      "lines": [
+        {
+          "id": "l-0048",
+          "lang": "en",
+          "english": "Quick recap — here are your 8 direction phrases in Thai.",
+          "display": "immediate",
+          "spoken": true
+        }
+      ]
+    },
+    {
+      "id": "b-014",
+      "mode": "teaser",
+      "speakerNote": "Tease next episode — taking a taxi.",
+      "lines": [
+        {
+          "id": "l-0049",
+          "lang": "en",
+          "english": "Next time — taking a taxi. You'll learn how to tell the driver where to go and ask them to use the meter.",
+          "display": "immediate",
+          "spoken": true
+        },
+        {
+          "id": "l-0050",
+          "lang": "th",
+          "thai": "เปิดมิเตอร์ด้วยค่ะ",
+          "translit": "bpèrt mí-dtêr dûuay khâ",
+          "english": "Please use the meter.",
+          "display": "delayed-1s",
+          "spoken": true
+        }
+      ]
+    }
+  ],
+  "imagePrompts": [
+    {
+      "id": "img-001",
+      "prompt": "Watercolour illustration of a bustling Bangkok street corner with BTS Skytrain in the background, a tourist looking at a map, warm afternoon light, Thai shop signs visible",
+      "style": "watercolour",
+      "subject": "Bangkok street scene with BTS"
+    },
+    {
+      "id": "img-002",
+      "prompt": "Watercolour illustration of a hand pointing forward down a street with directional arrows overlaid, warm tropical colours, friendly style",
+      "style": "watercolour",
+      "subject": "Pointing directions"
+    },
+    {
+      "id": "img-003",
+      "prompt": "Watercolour illustration of a straight road with an arrow pointing forward, simple clean composition, warm tones",
+      "style": "watercolour",
+      "subject": "Go straight"
+    },
+    {
+      "id": "img-004",
+      "prompt": "Watercolour illustration of a road fork with a left-turn arrow highlighted, warm tropical colours, Bangkok street context",
+      "style": "watercolour",
+      "subject": "Turn left"
+    },
+    {
+      "id": "img-005",
+      "prompt": "Watercolour illustration of a bathroom sign with Thai text, clean modern interior, warm soft lighting",
+      "style": "watercolour",
+      "subject": "Bathroom sign"
+    }
+  ],
+  "shortFormClips": [
+    {
+      "id": "clip-01",
+      "type": "phrase-of-day",
+      "startBlock": "b-001",
+      "endBlock": "b-001",
+      "hookText": "How to ask 'where is...?' in Thai 🇹🇭"
+    },
+    {
+      "id": "clip-02",
+      "type": "phrase-of-day",
+      "startBlock": "b-003",
+      "endBlock": "b-003",
+      "hookText": "Left, right, straight — directions in Thai"
+    },
+    {
+      "id": "clip-03",
+      "type": "can-you-understand",
+      "startBlock": "b-004",
+      "endBlock": "b-004",
+      "hookText": "Can you understand these Thai directions? 🤔"
+    },
+    {
+      "id": "clip-04",
+      "type": "repeat-after",
+      "startBlock": "b-006",
+      "endBlock": "b-007",
+      "hookText": "Can you say this in Thai?"
+    }
+  ]
+}

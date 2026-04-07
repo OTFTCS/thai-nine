@@ -49,6 +49,15 @@ __pycache__/
 thai_with_nine_tiktok/media/input/
 media/
 *.mov
+*.mp4
+*.m4a
+*.wav
+
+# YouTube pipeline outputs (rendered on-demand)
+youtube/out/
+
+# Google OAuth client secrets
+client_secret_*
 
 # Pipeline build artifacts (generated on-demand, not committed)
 course/modules/**/.build/
@@ -68,6 +77,11 @@ course/modules/**/*-script-visual.md
 course/modules/**/*-script-change-notes.md
 course/modules/**/brief.md
 course/modules/**/codex-*
+
+# Google API credentials & tokens
+course/oauth-client.json
+course/.gslides-token.json
+course/gen-lang-client-*.json
 course/modules/**/produce-lesson-state.json
 course/modules/**/*-editorial-qa-report.md
 course/modules/**/*-visual-qa-report.md

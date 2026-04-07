@@ -6,7 +6,7 @@ short beats, no huge gaps, monotonic timestamps.
 
 from __future__ import annotations
 
-from .types import QAResult, TimedSlide
+from .models import QAResult, TimedSlide
 
 
 def run_timing_qa(

@@ -37,7 +37,7 @@ import sys
 from datetime import datetime, timezone
 from pathlib import Path
 
-from .types import QAResult, SlideSpec, TimedEvent, TimedSlide, TranscriptSegment
+from .models import QAResult, SlideSpec, TimedEvent, TimedSlide, TranscriptSegment
 from .ingest import ingest_lesson, slides_to_json
 from .qa_ingest import run_ingest_qa
 from .qa_transliteration import validate_translit
@@ -112,16 +112,21 @@ def step_transcribe(
         return segments, duration
 
     # Option 2: faster-whisper transcription
+    # Use 'tiny' model — 39MB, loads in seconds, sufficient for alignment
+    # (we're fuzzy-matching slide boundaries, not translating)
     try:
+        import signal
         from faster_whisper import WhisperModel
 
-        print("  → Loading faster-whisper model (medium)...")
-        model = WhisperModel("medium", device="cpu", compute_type="int8")
+        print("  → Loading faster-whisper model (small)...")
+        model = WhisperModel("small", device="cpu", compute_type="int8",
+                             cpu_threads=4)
 
-        print("  → Transcribing (th)...")
+        # Auto-detect language — lessons are spoken in English with Thai words.
+        # Forcing "th" produces Thai-only output that can't match English speaker notes.
+        print("  → Transcribing (auto-detect)...")
         segments_gen, info = model.transcribe(
             str(recording_path),
-            language="th",
             word_timestamps=True,
         )
 
@@ -141,6 +146,10 @@ def step_transcribe(
     except ImportError:
         print("  ⚠ faster-whisper not installed — using proportional fallback")
         print("    Install with: pip install faster-whisper")
+        return [], duration
+    except (OSError, RuntimeError) as e:
+        print(f"  ⚠ faster-whisper failed: {e}")
+        print("    Falling back to proportional alignment")
         return [], duration
 
 
@@ -173,14 +182,18 @@ def _normalize(text: str) -> str:
 
 
 def _slide_match_text(slide: SlideSpec) -> str:
-    """Build a searchable text from a slide's speaker_notes for fuzzy matching."""
-    parts = []
+    """Build a searchable text from a slide's first speaker note.
+
+    Use only the opening sentence — it's the anchor for when the speaker
+    enters this slide. Concatenating all notes dilutes the match score
+    (a 10-word segment vs 200-word blob = low ratio even if it's a hit).
+    """
+    # First non-empty speaker note line is the best anchor
     for note in slide.speaker_notes:
-        if note:
-            parts.append(note)
-    # Also include lexeme Thai text as matching hints
-    for lex in slide.lexemes:
-        parts.append(lex.thai)
+        if note and note.strip():
+            return note.strip()
+    # Fallback: lexeme Thai text
+    parts = [lex.thai for lex in slide.lexemes if lex.thai]
     return " ".join(parts)
 
 
@@ -190,6 +203,11 @@ def _best_segment_match(
     search_range: range,
 ) -> tuple[float, int]:
     """Find best matching segment for slide text within search_range.
+
+    Uses substring containment + SequenceMatcher. The slide text (speaker note)
+    is typically longer than a single Whisper segment, so we check if the segment
+    text is a rough substring of the slide text — not a full ratio comparison,
+    which penalises length mismatches.
 
     Returns (score, segment_index). Score 0.0 = no match.
     """
@@ -202,13 +220,26 @@ def _best_segment_match(
 
     for si in search_range:
         seg = segments[si]
-        score = difflib.SequenceMatcher(
-            None, norm_slide, _normalize(seg.text)
-        ).ratio()
-        if score > best_score + 0.05:
-            best_score = score
-            best_idx = si
-        elif score > best_score and best_idx == -1:
+        norm_seg = _normalize(seg.text)
+        if not norm_seg or len(norm_seg) < 10:
+            continue
+
+        # Score by how well the segment is contained within the slide text.
+        # Use SequenceMatcher on the shorter string against a window of the
+        # longer string to avoid length-mismatch penalty.
+        if len(norm_seg) <= len(norm_slide):
+            # Segment is shorter — check if it's a substring of slide text
+            matcher = difflib.SequenceMatcher(None, norm_slide, norm_seg)
+            # get_matching_blocks gives the longest common subsequences
+            blocks = matcher.get_matching_blocks()
+            matched_chars = sum(b.size for b in blocks)
+            # Score = fraction of segment text that matched
+            score = matched_chars / len(norm_seg) if norm_seg else 0.0
+        else:
+            # Segment longer than slide text (unusual) — standard ratio
+            score = difflib.SequenceMatcher(None, norm_slide, norm_seg).ratio()
+
+        if score > best_score + 0.03:
             best_score = score
             best_idx = si
 
@@ -263,14 +294,23 @@ def _align_with_anchors(
 
     # --- Pass 1: High-confidence anchors ---
     seg_cursor = 0
-    lookahead = min(5, max(3, n_segs // n_slides + 2))
+    lookahead = max(5, n_segs // n_slides + 3)  # wide enough for long lessons
 
     for si, slide in enumerate(slides):
+        # Pin opener at 0.0s — it's a title card with no spoken content
+        if slide.role == "opener":
+            matched_start[si] = 0.0
+            matched_end[si] = min(slide.estimated_seconds, segments[0].start_sec if segments else 5.0)
+            print(f"  Slide {si} ({slide.id}): pinned opener [0.0s]")
+            continue
+
         text = match_texts[si]
         if not text.strip():
             continue
 
-        search_end = min(seg_cursor + lookahead, n_segs)
+        # Search all remaining segments — dataset is small (~200 segs),
+        # and a narrow window causes false positives when sections vary in length.
+        search_end = n_segs
         score, seg_idx = _best_segment_match(text, segments, range(seg_cursor, search_end))
 
         if score >= 0.5 and seg_idx >= 0:
@@ -474,12 +514,22 @@ def _generate_sub_events(slide: SlideSpec, start: float, end: float) -> list[Tim
     t = start
 
     if slide.role == "opener":
+        # Brief title card — show for allocated time then auto-advance.
+        # Opener is a flash, not a teaching moment.
+        show_dur = min(total_dur, 5.0)
         events.append(TimedEvent(
             type="heading_show",
             start_sec=round(t, 3),
-            end_sec=round(end, 3),
+            end_sec=round(t + show_dur, 3),
             data={"title": slide.title, "hook": slide.hook_text, "objective": slide.objective_text},
         ))
+        if total_dur > show_dur:
+            events.append(TimedEvent(
+                type="transition_wipe",
+                start_sec=round(t + show_dur, 3),
+                end_sec=round(end, 3),
+                data={},
+            ))
         return events
 
     # Section header: 2s or 15% of total, whichever is smaller
@@ -636,6 +686,12 @@ def step_render(scene_path: Path, output_dir: Path) -> Path:
     """Render Manim scene to transparent .mov."""
     print(f"[5/7] Rendering Manim scene...")
 
+    # Ensure scene_base.py is accessible from the scene file's directory
+    base_src = _HERE / "scene_base.py"
+    base_link = scene_path.parent / "scene_base.py"
+    if not base_link.exists() and base_src.exists():
+        base_link.symlink_to(base_src)
+
     media_dir = output_dir / "media"
 
     cmd = [
@@ -681,16 +737,23 @@ def step_composite(
 
     output_path.parent.mkdir(parents=True, exist_ok=True)
 
+    # Camera zone: right 1/3 of 1920×1080 = 640×1080.
+    # The Manim overlay leaves this zone transparent.
+    # Scale the camera to fill the zone, preserving aspect ratio and
+    # cropping overflow (center-crop for landscape, top-crop for portrait).
+    cam_w, cam_h = 640, 1080
+    cam_x = 1920 - cam_w  # 1280
+
     cmd = [
         "ffmpeg", "-y",
-        "-i", str(recording_path),
-        "-i", str(overlay_path),
+        "-i", str(overlay_path),      # base: Manim content at 1920×1080
+        "-i", str(recording_path),     # camera feed (portrait or landscape)
         "-filter_complex",
-        "[0:v]scale=640:1080:force_original_aspect_ratio=decrease,pad=640:1080:(ow-iw)/2:(oh-ih)/2[cam];"
-        "[1:v]scale=1280:1080[content];"
-        "[content][cam]hstack=inputs=2[out]",
+        # Scale camera to fill zone (may overflow one axis), then crop to fit.
+        f"[1:v]scale={cam_w}:-2,crop={cam_w}:{cam_h}:0:0[cam];"
+        f"[0:v][cam]overlay={cam_x}:0[out]",
         "-map", "[out]",
-        "-map", "0:a:0?",
+        "-map", "1:a:0?",
         "-c:v", "libx264",
         "-preset", "medium",
         "-crf", "18",

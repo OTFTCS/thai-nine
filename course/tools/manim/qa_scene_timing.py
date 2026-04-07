@@ -16,7 +16,7 @@ import re
 from dataclasses import dataclass, field
 from pathlib import Path
 
-from .types import QAResult, TimedSlide
+from .models import QAResult, TimedSlide
 
 # Regex patterns matching the generated scene format
 _SLIDE_MARKER_RE = re.compile(

@@ -77,6 +77,7 @@ export interface AssessmentAttempt {
   updatedAt: string;
   completedAt?: string;
   advisory: boolean;
+  phase2Resolved?: boolean;
 }
 
 export interface TopicSubscore {

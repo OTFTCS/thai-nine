@@ -1,0 +1,682 @@
+{
+  "schemaVersion": 1,
+  "episodeId": "YT-S01-E03",
+  "seriesId": "S01",
+  "seriesName": "Thai Survival Phrases",
+  "title": "Taking a Taxi in Thai — Tell the Driver Where to Go",
+  "topic": "taking-taxi",
+  "level": "A0",
+  "lessonRef": "M01-L005",
+  "estimatedDuration": "12:00",
+  "vocab": [
+    {
+      "id": "v-001",
+      "thai": "ไป",
+      "translit": "bpai",
+      "english": "to go",
+      "thaiSplit": "ไป",
+      "imageRef": "img-002"
+    },
+    {
+      "id": "v-002",
+      "thai": "จอดตรงนี้",
+      "translit": "jàwt trong níi",
+      "english": "stop here",
+      "thaiSplit": "จอด ตรง นี้",
+      "imageRef": "img-003"
+    },
+    {
+      "id": "v-003",
+      "thai": "เปิดมิเตอร์",
+      "translit": "bpèrt mí-dtêr",
+      "english": "use the meter",
+      "thaiSplit": "เปิด มิเตอร์",
+      "imageRef": "img-004"
+    },
+    {
+      "id": "v-004",
+      "thai": "เท่าไหร่",
+      "translit": "thâo-rài",
+      "english": "how much?",
+      "thaiSplit": "เท่า ไหร่"
+    },
+    {
+      "id": "v-005",
+      "thai": "แพง",
+      "translit": "phaeng",
+      "english": "expensive",
+      "thaiSplit": "แพง"
+    },
+    {
+      "id": "v-006",
+      "thai": "ลดได้ไหม",
+      "translit": "lót dâai mǎi",
+      "english": "can you reduce (the price)?",
+      "thaiSplit": "ลด ได้ ไหม"
+    },
+    {
+      "id": "v-007",
+      "thai": "ซ้ายมือ",
+      "translit": "sáai muu",
+      "english": "on the left side",
+      "thaiSplit": "ซ้าย มือ"
+    },
+    {
+      "id": "v-008",
+      "thai": "ขวามือ",
+      "translit": "khwǎa muu",
+      "english": "on the right side",
+      "thaiSplit": "ขวา มือ"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "b-001",
+      "mode": "hook",
+      "speakerNote": "Energetic, look to camera. Say the Thai phrase like you're talking to a taxi driver.",
+      "imageRef": "img-001",
+      "lines": [
+        {
+          "id": "l-0001",
+          "lang": "th",
+          "thai": "ไปสยามค่ะ",
+          "translit": "bpai sa-yǎam khâ",
+          "display": "immediate",
+          "spoken": true
+        },
+        {
+          "id": "l-0002",
+          "lang": "en",
+          "english": "Go to Siam, please.",
+          "display": "delayed-1s",
+          "spoken": false
+        },
+        {
+          "id": "l-0003",
+          "lang": "en",
+          "english": "Today you'll learn everything you need to take a taxi in Bangkok.",
+          "display": "delayed-2s",
+          "spoken": true
+        }
+      ]
+    },
+    {
+      "id": "b-002",
+      "mode": "explain",
+      "speakerNote": "Conversational, personal. Tell your story about the Bangkok taxi scam. Laugh about it — it's a rite of passage.",
+      "imageRef": "img-001",
+      "lines": [
+        {
+          "id": "l-0004",
+          "lang": "en",
+          "english": "OK, story time. The first taxi I ever took in Bangkok, the driver looked at me and said 'two hundred baht'. I had no idea if that was a lot or a little — so I said yes. Turns out the meter would have been sixty baht. I paid three times the price because I didn't know one phrase.",
+          "display": "immediate",
+          "spoken": true
+        },
+        {
+          "id": "l-0005",
+          "lang": "th",
+          "thai": "เปิดมิเตอร์ด้วยค่ะ",
+          "translit": "bpèrt mí-dtêr dûuay khâ",
+          "display": "immediate",
+          "spoken": true
+        },
+        {
+          "id": "l-0006",
+          "lang": "en",
+          "english": "That phrase right there would have saved me 140 baht. Let's make sure it doesn't happen to you.",
+          "display": "immediate",
+          "spoken": true
+        }
+      ]
+    },
+    {
+      "id": "b-003",
+      "mode": "vocab-card",
+      "speakerNote": "One word at a time. Say the Thai clearly, pause for the card animation, then the example sentence. Mime pulling over for จอดตรงนี้, point left/right for ซ้ายมือ/ขวามือ.",
+      "vocabRefs": ["v-001", "v-003", "v-002", "v-007", "v-008", "v-004", "v-005", "v-006"],
+      "lines": [
+        {
+          "id": "l-0007",
+          "lang": "th",
+          "thai": "ไป",
+          "translit": "bpai",
+          "english": "to go",
+          "display": "immediate",
+          "spoken": true
+        },
+        {
+          "id": "l-0008",
+          "lang": "th",
+          "thai": "ไปสยามค่ะ",
+          "translit": "bpai sa-yǎam khâ",
+          "english": "Go to Siam, please.",
+          "display": "delayed-1s",
+          "spoken": true
+        },
+        {
+          "id": "l-0009",
+          "lang": "th",
+          "thai": "ไปสุขุมวิทค่ะ",
+          "translit": "bpai su-khǔm-wít khâ",
+          "english": "Go to Sukhumvit, please.",
+          "display": "delayed-1s",
+          "spoken": true
+        },
+        {
+          "id": "l-0010",
+          "lang": "th",
+          "thai": "เปิดมิเตอร์",
+          "translit": "bpèrt mí-dtêr",
+          "english": "use the meter",
+          "display": "immediate",
+          "spoken": true
+        },
+        {
+          "id": "l-0011",
+          "lang": "th",
+          "thai": "เปิดมิเตอร์ด้วยค่ะ",
+          "translit": "bpèrt mí-dtêr dûuay khâ",
+          "english": "Please use the meter.",
+          "display": "delayed-1s",
+          "spoken": true
+        },
+        {
+          "id": "l-0012",
+          "lang": "th",
+          "thai": "จอดตรงนี้",
+          "translit": "jàwt trong níi",
+          "english": "stop here",
+          "display": "immediate",
+          "spoken": true
+        },
+        {
+          "id": "l-0013",
+          "lang": "th",
+          "thai": "จอดตรงนี้ด้วยค่ะ",
+          "translit": "jàwt trong níi dûuay khâ",
+          "english": "Please stop here.",
+          "display": "delayed-1s",
+          "spoken": true
+        },
+        {
+          "id": "l-0014",
+          "lang": "th",
+          "thai": "ซ้ายมือ",
+          "translit": "sáai muu",
+          "english": "on the left side",
+          "display": "immediate",
+          "spoken": true
+        },
+        {
+          "id": "l-0015",
+          "lang": "th",
+          "thai": "ขวามือ",
+          "translit": "khwǎa muu",
+          "english": "on the right side",
+          "display": "immediate",
+          "spoken": true
+        },
+        {
+          "id": "l-0016",
+          "lang": "th",
+          "thai": "จอดซ้ายมือค่ะ",
+          "translit": "jàwt sáai muu khâ",
+          "english": "Stop on the left side.",
+          "display": "delayed-1s",
+          "spoken": true
+        },
+        {
+          "id": "l-0017",
+          "lang": "th",
+          "thai": "เท่าไหร่",
+          "translit": "thâo-rài",
+          "english": "how much?",
+          "display": "immediate",
+          "spoken": true
+        },
+        {
+          "id": "l-0018",
+          "lang": "th",
+          "thai": "แพง",
+          "translit": "phaeng",
+          "english": "expensive",
+          "display": "immediate",
+          "spoken": true
+        },
+        {
+          "id": "l-0019",
+          "lang": "th",
+          "thai": "ลดได้ไหมคะ",
+          "translit": "lót dâai mǎi khá",
+          "english": "Can you reduce the price?",
+          "display": "delayed-1s",
+          "spoken": true
+        }
+      ]
+    },
+    {
+      "id": "b-004",
+      "mode": "natural-listen",
+      "speakerNote": "Natural speed. Act out a complete taxi ride — getting in, telling the driver where to go, directing, stopping, paying. Full conversation flow.",
+      "imageRef": "img-001",
+      "lines": [
+        {
+          "id": "l-0020",
+          "lang": "th",
+          "thai": "สวัสดีค่ะ ไปสยามค่ะ",
+          "translit": "sa-wàt-dii khâ bpai sa-yǎam khâ",
+          "display": "immediate",
+          "spoken": true
+        },
+        {
+          "id": "l-0021",
+          "lang": "th",
+          "thai": "เปิดมิเตอร์ด้วยนะคะ",
+          "translit": "bpèrt mí-dtêr dûuay ná khá",
+          "display": "immediate",
+          "spoken": true
+        },
+        {
+          "id": "l-0022",
+          "lang": "th",
+          "thai": "เลี้ยวซ้ายตรงนี้ค่ะ",
+          "translit": "líiaw sáai trong níi khâ",
+          "display": "immediate",
+          "spoken": true
+        },
+        {
+          "id": "l-0023",
+          "lang": "th",
+          "thai": "จอดตรงนี้ด้วยค่ะ",
+          "translit": "jàwt trong níi dûuay khâ",
+          "display": "immediate",
+          "spoken": true
+        },
+        {
+          "id": "l-0024",
+          "lang": "th",
+          "thai": "เท่าไหร่คะ",
+          "translit": "thâo-rài khá",
+          "display": "immediate",
+          "spoken": true
+        },
+        {
+          "id": "l-0025",
+          "lang": "th",
+          "thai": "ขอบคุณค่ะ",
+          "translit": "khàawp-khun khâ",
+          "display": "immediate",
+          "spoken": true
+        }
+      ]
+    },
+    {
+      "id": "b-005",
+      "mode": "breakdown",
+      "speakerNote": "Slow and clear. Say Thai, pause 1 beat for transliteration, pause 1 more for English.",
+      "lines": [
+        {
+          "id": "l-0026",
+          "lang": "th",
+          "thai": "ไปสยามค่ะ",
+          "translit": "bpai sa-yǎam khâ",
+          "english": "Go to Siam, please.",
+          "display": "immediate",
+          "spoken": true
+        },
+        {
+          "id": "l-0027",
+          "lang": "translit",
+          "translit": "bpai sa-yǎam khâ",
+          "display": "delayed-1s",
+          "spoken": false
+        },
+        {
+          "id": "l-0028",
+          "lang": "en",
+          "english": "Go to Siam, please.",
+          "display": "delayed-2s",
+          "spoken": false
+        },
+        {
+          "id": "l-0029",
+          "lang": "th",
+          "thai": "เปิดมิเตอร์ด้วยนะคะ",
+          "translit": "bpèrt mí-dtêr dûuay ná khá",
+          "english": "Please use the meter.",
+          "display": "immediate",
+          "spoken": true
+        },
+        {
+          "id": "l-0030",
+          "lang": "translit",
+          "translit": "bpèrt mí-dtêr dûuay ná khá",
+          "display": "delayed-1s",
+          "spoken": false
+        },
+        {
+          "id": "l-0031",
+          "lang": "en",
+          "english": "Please use the meter.",
+          "display": "delayed-2s",
+          "spoken": false
+        },
+        {
+          "id": "l-0032",
+          "lang": "th",
+          "thai": "จอดตรงนี้ด้วยค่ะ",
+          "translit": "jàwt trong níi dûuay khâ",
+          "english": "Please stop here.",
+          "display": "immediate",
+          "spoken": true
+        },
+        {
+          "id": "l-0033",
+          "lang": "translit",
+          "translit": "jàwt trong níi dûuay khâ",
+          "display": "delayed-1s",
+          "spoken": false
+        },
+        {
+          "id": "l-0034",
+          "lang": "en",
+          "english": "Please stop here.",
+          "display": "delayed-2s",
+          "spoken": false
+        },
+        {
+          "id": "l-0035",
+          "lang": "th",
+          "thai": "เท่าไหร่คะ",
+          "translit": "thâo-rài khá",
+          "english": "How much?",
+          "display": "immediate",
+          "spoken": true
+        },
+        {
+          "id": "l-0036",
+          "lang": "translit",
+          "translit": "thâo-rài khá",
+          "display": "delayed-1s",
+          "spoken": false
+        },
+        {
+          "id": "l-0037",
+          "lang": "en",
+          "english": "How much?",
+          "display": "delayed-2s",
+          "spoken": false
+        }
+      ]
+    },
+    {
+      "id": "b-006",
+      "mode": "drill-prompt",
+      "speakerNote": "Look to camera. Ask the question, then wait 3 seconds in silence.",
+      "lines": [
+        {
+          "id": "l-0038",
+          "lang": "en",
+          "english": "You get in a taxi. How do you say: 'Go to Sukhumvit, please'?",
+          "display": "immediate",
+          "spoken": true
+        },
+        {
+          "id": "l-0039",
+          "lang": "en",
+          "english": "Try saying it now...",
+          "display": "delayed-1s",
+          "spoken": false
+        }
+      ]
+    },
+    {
+      "id": "b-007",
+      "mode": "drill-answer",
+      "speakerNote": "Smile, say it clearly.",
+      "lines": [
+        {
+          "id": "l-0040",
+          "lang": "th",
+          "thai": "ไปสุขุมวิทค่ะ",
+          "translit": "bpai su-khǔm-wít khâ",
+          "english": "Go to Sukhumvit, please.",
+          "display": "immediate",
+          "spoken": true
+        }
+      ]
+    },
+    {
+      "id": "b-008",
+      "mode": "drill-prompt",
+      "lines": [
+        {
+          "id": "l-0041",
+          "lang": "en",
+          "english": "The driver wants to charge you a flat rate. How do you say: 'Please use the meter'?",
+          "display": "immediate",
+          "spoken": true
+        },
+        {
+          "id": "l-0042",
+          "lang": "en",
+          "english": "Try saying it now...",
+          "display": "delayed-1s",
+          "spoken": false
+        }
+      ]
+    },
+    {
+      "id": "b-009",
+      "mode": "drill-answer",
+      "lines": [
+        {
+          "id": "l-0043",
+          "lang": "th",
+          "thai": "เปิดมิเตอร์ด้วยค่ะ",
+          "translit": "bpèrt mí-dtêr dûuay khâ",
+          "english": "Please use the meter.",
+          "display": "immediate",
+          "spoken": true
+        }
+      ]
+    },
+    {
+      "id": "b-010",
+      "mode": "drill-prompt",
+      "lines": [
+        {
+          "id": "l-0044",
+          "lang": "en",
+          "english": "You've arrived. How do you say: 'Please stop here'?",
+          "display": "immediate",
+          "spoken": true
+        },
+        {
+          "id": "l-0045",
+          "lang": "en",
+          "english": "Try saying it now...",
+          "display": "delayed-1s",
+          "spoken": false
+        }
+      ]
+    },
+    {
+      "id": "b-011",
+      "mode": "drill-answer",
+      "lines": [
+        {
+          "id": "l-0046",
+          "lang": "th",
+          "thai": "จอดตรงนี้ด้วยค่ะ",
+          "translit": "jàwt trong níi dûuay khâ",
+          "english": "Please stop here.",
+          "display": "immediate",
+          "spoken": true
+        }
+      ]
+    },
+    {
+      "id": "b-012",
+      "mode": "shadowing",
+      "speakerNote": "Very slow. Pause 2 seconds between each sentence for the viewer to repeat.",
+      "lines": [
+        {
+          "id": "l-0047",
+          "lang": "th-split",
+          "thai": "ไปสยามค่ะ",
+          "thaiSplit": "ไป สยาม ค่ะ",
+          "translit": "bpai sa-yǎam khâ",
+          "display": "immediate",
+          "highlight": true,
+          "spoken": true
+        },
+        {
+          "id": "l-0048",
+          "lang": "th-split",
+          "thai": "เปิดมิเตอร์ด้วยค่ะ",
+          "thaiSplit": "เปิด มิเตอร์ ด้วย ค่ะ",
+          "translit": "bpèrt mí-dtêr dûuay khâ",
+          "display": "immediate",
+          "highlight": true,
+          "spoken": true
+        },
+        {
+          "id": "l-0049",
+          "lang": "th-split",
+          "thai": "เลี้ยวซ้ายตรงนี้ค่ะ",
+          "thaiSplit": "เลี้ยว ซ้าย ตรง นี้ ค่ะ",
+          "translit": "líiaw sáai trong níi khâ",
+          "display": "immediate",
+          "highlight": true,
+          "spoken": true
+        },
+        {
+          "id": "l-0050",
+          "lang": "th-split",
+          "thai": "จอดตรงนี้ด้วยค่ะ",
+          "thaiSplit": "จอด ตรง นี้ ด้วย ค่ะ",
+          "translit": "jàwt trong níi dûuay khâ",
+          "display": "immediate",
+          "highlight": true,
+          "spoken": true
+        },
+        {
+          "id": "l-0051",
+          "lang": "th-split",
+          "thai": "เท่าไหร่คะ",
+          "thaiSplit": "เท่า ไหร่ คะ",
+          "translit": "thâo-rài khá",
+          "display": "immediate",
+          "highlight": true,
+          "spoken": true
+        },
+        {
+          "id": "l-0052",
+          "lang": "th-split",
+          "thai": "ขอบคุณค่ะ",
+          "thaiSplit": "ขอบ คุณ ค่ะ",
+          "translit": "khàawp-khun khâ",
+          "display": "immediate",
+          "highlight": true,
+          "spoken": true
+        }
+      ]
+    },
+    {
+      "id": "b-013",
+      "mode": "recap",
+      "speakerNote": "Quick energy. Flash through the vocab cards.",
+      "vocabRefs": ["v-001", "v-002", "v-003", "v-004", "v-005", "v-006", "v-007", "v-008"],
+      "lines": [
+        {
+          "id": "l-0053",
+          "lang": "en",
+          "english": "Quick recap — here are your 8 taxi phrases in Thai.",
+          "display": "immediate",
+          "spoken": true
+        }
+      ]
+    },
+    {
+      "id": "b-014",
+      "mode": "teaser",
+      "speakerNote": "Tease next episode — shopping at the market.",
+      "lines": [
+        {
+          "id": "l-0054",
+          "lang": "en",
+          "english": "Next time — shopping at the market. You'll learn how to ask the price, bargain, and say 'too expensive'.",
+          "display": "immediate",
+          "spoken": true
+        },
+        {
+          "id": "l-0055",
+          "lang": "th",
+          "thai": "แพงไปค่ะ",
+          "translit": "phaeng bpai khâ",
+          "english": "Too expensive!",
+          "display": "delayed-1s",
+          "spoken": true
+        }
+      ]
+    }
+  ],
+  "imagePrompts": [
+    {
+      "id": "img-001",
+      "prompt": "Watercolour illustration of a bright pink Bangkok taxi on a busy street, meter visible on dashboard, warm evening light, friendly atmosphere",
+      "style": "watercolour",
+      "subject": "Bangkok taxi scene"
+    },
+    {
+      "id": "img-002",
+      "prompt": "Watercolour illustration of a person pointing forward through a taxi windshield at a Bangkok street, warm colours, motion blur effect",
+      "style": "watercolour",
+      "subject": "Directing the driver"
+    },
+    {
+      "id": "img-003",
+      "prompt": "Watercolour illustration of a taxi pulled over at a kerb with a passenger getting out, Bangkok shophouse background, warm tones",
+      "style": "watercolour",
+      "subject": "Stop here - taxi stopping"
+    },
+    {
+      "id": "img-004",
+      "prompt": "Watercolour close-up of a taxi meter display showing a fare, warm dashboard lighting, Bangkok context",
+      "style": "watercolour",
+      "subject": "Taxi meter"
+    }
+  ],
+  "shortFormClips": [
+    {
+      "id": "clip-01",
+      "type": "phrase-of-day",
+      "startBlock": "b-001",
+      "endBlock": "b-001",
+      "hookText": "How to take a taxi in Thai 🇹🇭"
+    },
+    {
+      "id": "clip-02",
+      "type": "phrase-of-day",
+      "startBlock": "b-003",
+      "endBlock": "b-003",
+      "hookText": "This phrase saves you money in Bangkok taxis"
+    },
+    {
+      "id": "clip-03",
+      "type": "can-you-understand",
+      "startBlock": "b-004",
+      "endBlock": "b-004",
+      "hookText": "Can you follow this Thai taxi conversation? 🤔"
+    },
+    {
+      "id": "clip-04",
+      "type": "repeat-after",
+      "startBlock": "b-008",
+      "endBlock": "b-009",
+      "hookText": "Can you say this to a Bangkok taxi driver?"
+    }
+  ]
+}

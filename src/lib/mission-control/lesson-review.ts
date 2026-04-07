@@ -58,8 +58,6 @@ type LessonStatus = {
 type ScriptMaster = {
   objective?: string;
   teachingFrame?: {
-    targetRuntimeMin?: number;
-    targetRuntimeMax?: number;
     openingHook?: string;
     scenario?: string;
     learnerTakeaway?: string;

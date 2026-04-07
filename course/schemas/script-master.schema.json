@@ -25,15 +25,11 @@
       "type": "object",
       "additionalProperties": false,
       "required": [
-        "targetRuntimeMin",
-        "targetRuntimeMax",
         "openingHook",
         "scenario",
         "learnerTakeaway"
       ],
       "properties": {
-        "targetRuntimeMin": { "type": "number", "minimum": 1 },
-        "targetRuntimeMax": { "type": "number", "minimum": 1 },
         "openingHook": { "type": "string", "minLength": 1 },
         "scenario": { "type": "string", "minLength": 1 },
         "learnerTakeaway": { "type": "string", "minLength": 1 }
@@ -188,6 +184,12 @@
         "transliteration": { "const": "PTM_ADAPTED_INLINE_TONES" },
         "imageSourcing": { "const": "INTERNET_FIRST_NO_GENERATIVE_DEFAULT" }
       }
+    },
+    "immersionTips": {
+      "type": "array",
+      "minItems": 2,
+      "maxItems": 3,
+      "items": { "type": "string", "minLength": 1 }
     },
     "pronunciationFocus": {
       "type": "object",

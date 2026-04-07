@@ -4,8 +4,6 @@
   "title": "Hello and Basic Courtesy",
   "objective": "Greet politely, thank and apologise, respond to thanks, and handle simple yes/no in a friendly first encounter.",
   "teachingFrame": {
-    "targetRuntimeMin": 9,
-    "targetRuntimeMax": 12,
     "openingHook": "The first five seconds of meeting someone in Thailand set the whole tone. With just a few polite words, you can open any conversation warmly.",
     "scenario": "You meet staff or a new person for the first time and need to sound friendly, respectful, and calm.",
     "learnerTakeaway": "By the end, you can greet, thank, apologise, respond to thanks, and answer yes or no politely."
