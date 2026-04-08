@@ -53,29 +53,37 @@ def run_timing_qa(
         drift = abs(simulated - target)
         max_drift = max(max_drift, drift)
 
-        if drift > 1.5:
+        if drift > 0.5:
             issues.append(
-                f"Block {event.get('block', '?')}: drift {drift:.1f}s "
+                f"Block {event.get('block', '?')}: drift {drift:.2f}s "
                 f"(target={target:.1f}s, simulated={simulated:.1f}s)"
             )
-        elif drift > 0.5:
+        elif drift > 0.1:
             warnings.append(
-                f"Block {event.get('block', '?')}: drift {drift:.1f}s "
+                f"Block {event.get('block', '?')}: drift {drift:.2f}s "
                 f"(target={target:.1f}s, simulated={simulated:.1f}s)"
             )
 
-    # Total duration check
+    # Total duration check — asymmetric:
+    # Scene LONGER than audio is a hard fail (overlays desync from speech)
+    # Scene SHORTER is normal (silence/outro after last overlay)
     if simulated_events and audio_duration:
         final_elapsed = simulated_events[-1]["simulated"] + simulated_events[-1].get("duration", 0)
-        duration_drift = abs(final_elapsed - audio_duration)
-        if duration_drift > 5.0:
+        overshoot = final_elapsed - audio_duration  # positive = scene too long
+        if overshoot > 2.0:
             issues.append(
-                f"Total duration drift: {duration_drift:.1f}s "
+                f"Scene overshoots audio by {overshoot:.1f}s "
                 f"(simulated={final_elapsed:.1f}s, audio={audio_duration:.1f}s)"
             )
-        elif duration_drift > 2.0:
+        elif overshoot > 0.5:
             warnings.append(
-                f"Total duration drift: {duration_drift:.1f}s "
+                f"Scene overshoots audio by {overshoot:.1f}s "
+                f"(simulated={final_elapsed:.1f}s, audio={audio_duration:.1f}s)"
+            )
+        undershoot = audio_duration - final_elapsed  # positive = scene ends early
+        if undershoot > 30.0:
+            warnings.append(
+                f"Scene ends {undershoot:.1f}s before audio ends "
                 f"(simulated={final_elapsed:.1f}s, audio={audio_duration:.1f}s)"
             )
 
@@ -106,12 +114,13 @@ def run_timing_qa(
 def _simulate_timing(code: str) -> list[dict]:
     """Parse scene code and simulate elapsed counter.
 
-    Looks for patterns:
-    - wait_gap = X - elapsed  → target timestamp
-    - self.wait(X)            → elapsed += X
-    - self.show_*(... duration=X) → elapsed += X
-    - elapsed += X            → direct elapsed update
-    - elapsed = X             → direct assignment
+    Handles deterministic codegen patterns:
+    - wait_gap = X - elapsed  → record target timestamp X
+    - elapsed += wait_gap     → advance elapsed to target (variable wait_gap)
+    - elapsed += X            → advance elapsed by literal X
+    - elapsed += self.clear_overlay(...) → advance by 0.3s
+    - self.show_*(...)        → record visual event at current elapsed
+    - duration=X              → capture duration for pending event
 
     Returns list of {target, simulated, block, duration} dicts.
     """
@@ -121,15 +130,15 @@ def _simulate_timing(code: str) -> list[dict]:
 
     # Patterns
     wait_gap_re = re.compile(r"wait_gap\s*=\s*([\d.]+)\s*-\s*elapsed")
-    self_wait_re = re.compile(r"self\.wait\(([\d.]+)\)")
     duration_re = re.compile(r"duration\s*=\s*([\d.]+)")
-    elapsed_assign_re = re.compile(r"^\s*elapsed\s*=\s*([\d.]+)")
-    elapsed_plus_re = re.compile(r"^\s*elapsed\s*\+=\s*([\d.]+)")
+    elapsed_plus_lit_re = re.compile(r"^\s*elapsed\s*\+=\s*([\d.]+)\s*$")
+    elapsed_plus_var_re = re.compile(r"^\s*elapsed\s*\+=\s*wait_gap\s*$")
+    elapsed_plus_clear_re = re.compile(r"^\s*elapsed\s*\+=\s*self\.clear_overlay")
     block_re = re.compile(r"# === Block:\s+(\S+)")
     show_re = re.compile(r"self\.show_\w+\(")
-    clear_re = re.compile(r"self\.clear_overlay\(")
 
     pending_target = None
+    pending_event = None  # event waiting for duration from multi-line call
 
     for line in code.split("\n"):
         stripped = line.strip()
@@ -144,39 +153,53 @@ def _simulate_timing(code: str) -> list[dict]:
         if wg:
             pending_target = float(wg.group(1))
 
-        # elapsed = X → direct assignment
-        ea = elapsed_assign_re.match(stripped)
-        if ea and "elapsed =" in stripped and "+=" not in stripped:
-            elapsed = float(ea.group(1))
+        # elapsed += wait_gap (variable) → advance to pending target
+        if elapsed_plus_var_re.match(stripped):
+            if pending_target is not None:
+                elapsed = pending_target
+            continue
 
-        # self.wait(X)
-        sw = self_wait_re.search(stripped)
-        if sw and "wait_gap" not in stripped:
-            elapsed += float(sw.group(1))
+        # elapsed += self.clear_overlay(...) → advance by 0.3s
+        if elapsed_plus_clear_re.match(stripped):
+            elapsed += 0.3
+            continue
 
-        # self.show_*(..., duration=X)
+        # elapsed += X (literal) → advance elapsed
+        ep = elapsed_plus_lit_re.match(stripped)
+        if ep:
+            val = float(ep.group(1))
+            # Backfill duration on pending event
+            if pending_event is not None:
+                pending_event["duration"] = val
+                pending_event = None
+            elapsed += val
+            continue
+
+        # self.show_*(...) → record visual event
         if show_re.search(stripped):
+            target = pending_target if pending_target is not None else elapsed
+            dm = duration_re.search(stripped)
+            dur = float(dm.group(1)) if dm else 0.0
+            event = {
+                "target": target,
+                "simulated": elapsed,
+                "block": current_block,
+                "duration": dur,
+            }
+            events.append(event)
+            pending_target = None
+            if dur > 0:
+                # Single-line call with duration — elapsed will be advanced by elapsed += X
+                pending_event = None
+            else:
+                # Multi-line call — duration will come from elapsed += X later
+                pending_event = event
+            continue
+
+        # Capture duration= on continuation lines of multi-line calls
+        if pending_event is not None and "duration=" in stripped:
             dm = duration_re.search(stripped)
             if dm:
-                dur = float(dm.group(1))
-                target = pending_target if pending_target is not None else elapsed
-                events.append({
-                    "target": target,
-                    "simulated": elapsed,
-                    "block": current_block,
-                    "duration": dur,
-                })
-                elapsed += dur
-                pending_target = None
-
-        # self.clear_overlay() — typically returns 0.3s
-        if clear_re.search(stripped):
-            elapsed += 0.3  # DUR_FADE_OUT default
-
-        # elapsed += X
-        ep = elapsed_plus_re.match(stripped)
-        if ep:
-            # Don't double-count — only apply if not already handled by show/wait
-            pass  # The show_* duration handling above covers this
+                pending_event["duration"] = float(dm.group(1))
 
     return events

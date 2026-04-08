@@ -90,9 +90,37 @@ OVERLAY_CENTER_Y = (OVERLAY_TOP + OVERLAY_BOTTOM) / 2  # ~-2.6
 # Centre zone (for natural-listen, shadowing)
 CENTER_Y = 0.0
 
+# Card zone (centre of frame for teaching cards)
+_CARD_CFG = STYLE["layout"]["cardZone"]
+CARD_ZONE_Y = FRAME_HEIGHT * (0.5 - _CARD_CFG["yFrac"])  # 0.0 when yFrac=0.5
+CARD_MAX_WIDTH_FRAC = _CARD_CFG["maxWidthFrac"]  # 0.75
+
+# Subtitle zone (bottom strip, independent of card zone)
+_SUB_CFG = STYLE["layout"]["subtitleZone"]
+SUBTITLE_FRAC = _SUB_CFG["bottomFrac"]  # 0.12
+SUBTITLE_HEIGHT = FRAME_HEIGHT * SUBTITLE_FRAC  # ~0.96
+SUBTITLE_BOTTOM = -FRAME_HEIGHT / 2  # -4.0
+SUBTITLE_TOP = SUBTITLE_BOTTOM + SUBTITLE_HEIGHT  # ~-3.04
+SUBTITLE_CENTER_Y = (SUBTITLE_TOP + SUBTITLE_BOTTOM) / 2  # ~-3.52
+SUBTITLE_BAR_OPACITY = _SUB_CFG["barOpacity"]  # 0.65
+
+# PiP zone (Manim coord space, top-right)
+_PIP_CFG = STYLE["layout"]["pip"]
+PIP_ENABLED = _PIP_CFG["enabled"]
+PIP_MANIM_WIDTH = _PIP_CFG["widthPx"] / config.pixel_width * FRAME_WIDTH  # ~3.56
+PIP_MANIM_HEIGHT = _PIP_CFG["heightPx"] / config.pixel_height * FRAME_HEIGHT  # ~2.0
+PIP_MANIM_RIGHT = FRAME_WIDTH / 2
+PIP_MANIM_TOP = FRAME_HEIGHT / 2
+
 # Text width
 TEXT_WIDTH_FRAC = STYLE["layout"]["textWidthFrac"]  # 0.85
 MAX_TEXT_WIDTH = FRAME_WIDTH * TEXT_WIDTH_FRAC  # ~12.09
+TEXT_WIDTH_PIP = FRAME_WIDTH - PIP_MANIM_WIDTH - 0.5  # ~10.16 when PiP enabled
+
+
+def effective_text_width() -> float:
+    """Return max text width, accounting for PiP zone if enabled."""
+    return TEXT_WIDTH_PIP if PIP_ENABLED else MAX_TEXT_WIDTH
 
 # ---------------------------------------------------------------------------
 # Colors
@@ -121,6 +149,7 @@ SIZE_TRANSLIT = STYLE["fonts"]["translit"]["sizePt"]
 SIZE_ENGLISH = STYLE["fonts"]["english"]["sizePt"]
 SIZE_DRILL = STYLE["fonts"]["drillPrompt"]["sizePt"]
 SIZE_THAI_SPLIT = STYLE["fonts"]["thaiSplit"]["sizePt"]
+SIZE_SUBTITLE = STYLE["fonts"]["subtitle"]["sizePt"]
 
 # Spacing
 _SP = STYLE["spacing"]
@@ -196,6 +225,26 @@ class TranslucentBar(Rectangle):
 
 
 # ---------------------------------------------------------------------------
+# SubtitleBar — dark backdrop for bottom subtitle zone
+# ---------------------------------------------------------------------------
+
+
+class SubtitleBar(Rectangle):
+    """Semi-transparent dark rectangle for the bottom subtitle strip."""
+
+    def __init__(self, **kwargs):
+        super().__init__(
+            width=FRAME_WIDTH + 0.2,
+            height=SUBTITLE_HEIGHT + 0.1,
+            fill_color=BAR_COLOR,
+            fill_opacity=SUBTITLE_BAR_OPACITY,
+            stroke_width=0,
+            **kwargs,
+        )
+        self.move_to([0, SUBTITLE_CENTER_Y, 0])
+
+
+# ---------------------------------------------------------------------------
 # TextCard — rounded card with dark background
 # ---------------------------------------------------------------------------
 
@@ -239,10 +288,16 @@ class YouTubeScene(Scene):
         self.bar = TranslucentBar()
         self.add(self.bar)
 
+        self.subtitle_bar = SubtitleBar()
+        self.add(self.subtitle_bar)
+
         self._primary: VGroup | None = None
         self._secondary: VGroup | None = None
         self._accent: VGroup | None = None
+        self._subtitle: VGroup | None = None
         self._accum_stack: list[VGroup] = []
+
+        self._add_pip_placeholder()
 
     # --- Clear methods ---
 
@@ -255,7 +310,7 @@ class YouTubeScene(Scene):
     def clear_overlay(self, run_time: float = DUR_FADE_OUT) -> float:
         """Fade out all overlay layers. Returns time consumed (0 if empty)."""
         to_fade = []
-        for attr in ("_primary", "_secondary", "_accent"):
+        for attr in ("_primary", "_secondary", "_accent", "_subtitle"):
             obj = getattr(self, attr)
             if obj is not None:
                 to_fade.append(FadeOut(obj, run_time=run_time))
@@ -268,7 +323,7 @@ class YouTubeScene(Scene):
 
     def snap_clear(self):
         """Instantly remove all overlay content (no animation, 0 time)."""
-        for attr in ("_primary", "_secondary", "_accent"):
+        for attr in ("_primary", "_secondary", "_accent", "_subtitle"):
             obj = getattr(self, attr)
             if obj is not None:
                 self.remove(obj)
@@ -411,7 +466,7 @@ class YouTubeScene(Scene):
         stack.arrange(DOWN, buff=BUFF_TEXT_LINE)
 
         card = TextCard(stack)
-        card.move_to([0, OVERLAY_CENTER_Y, 0])
+        card.move_to([0, CARD_ZONE_Y, 0])
 
         # Initially hide translit and english
         translit_label.set_opacity(0)
@@ -473,7 +528,7 @@ class YouTubeScene(Scene):
         stack.arrange(DOWN, buff=BUFF_TEXT_LINE)
 
         card = TextCard(stack)
-        card.move_to([0, OVERLAY_CENTER_Y + 0.3, 0])
+        card.move_to([0, CARD_ZONE_Y + 0.3, 0])
 
         self._set_layer("_primary", card)
         self.play(GrowFromCenter(card, run_time=DUR_CARD_REVEAL))
@@ -486,7 +541,7 @@ class YouTubeScene(Scene):
                 elapsed += wait_for_example
 
             ex_label = yt_text(example, font_size=SIZE_THAI, color=COL_THAI, weight="NORMAL")
-            ex_label.move_to([0, OVERLAY_CENTER_Y - 1.0, 0])
+            ex_label.move_to([0, CARD_ZONE_Y - 1.0, 0])
             ex_group = VGroup(ex_label)
             self._set_layer("_secondary", ex_group)
             self.play(FadeIn(ex_group, run_time=DUR_FADE_IN))
@@ -511,10 +566,10 @@ class YouTubeScene(Scene):
         Consumes exactly `duration` seconds.
         """
         q_label = yt_text(question, font_size=SIZE_DRILL, color=COL_DRILL, weight="BOLD")
-        q_label.move_to([0, OVERLAY_CENTER_Y + 0.3, 0])
+        q_label.move_to([0, CARD_ZONE_Y + 0.3, 0])
 
         card = TextCard(VGroup(q_label))
-        card.move_to([0, OVERLAY_CENTER_Y + 0.3, 0])
+        card.move_to([0, CARD_ZONE_Y + 0.3, 0])
 
         self._set_layer("_primary", card)
         self.play(FadeIn(card, run_time=DUR_FADE_IN))
@@ -532,7 +587,7 @@ class YouTubeScene(Scene):
                 color=COL_ENGLISH,
                 weight="NORMAL",
             )
-            try_label.move_to([0, OVERLAY_CENTER_Y - 0.5, 0])
+            try_label.move_to([0, CARD_ZONE_Y - 0.5, 0])
             try_group = VGroup(try_label)
             self._set_layer("_secondary", try_group)
             self.play(FadeIn(try_group, run_time=DUR_FADE_IN))
@@ -629,7 +684,7 @@ class YouTubeScene(Scene):
         self.add(stack)
         # Fade in just the new line
         label.set_opacity(0)
-        self.play(label.animate.set_opacity(1), run_time=DUR_FADE_IN)
+        self.play(FadeIn(label, run_time=DUR_FADE_IN))
 
         remaining = duration - DUR_FADE_IN
         if remaining > 0:
@@ -679,3 +734,89 @@ class YouTubeScene(Scene):
         remaining = duration - elapsed
         if remaining > 0:
             self.wait(remaining)
+
+    # --- PiP placeholder ---
+
+    def _add_pip_placeholder(self) -> None:
+        """Render a subtle border rectangle where PiP video will be composited."""
+        if not PIP_ENABLED:
+            return
+        border = Rectangle(
+            width=PIP_MANIM_WIDTH,
+            height=PIP_MANIM_HEIGHT,
+            stroke_color=_PIP_CFG["borderColor"],
+            stroke_opacity=_PIP_CFG["borderOpacity"],
+            stroke_width=_PIP_CFG["borderWidth"],
+            fill_opacity=0,
+        )
+        border.move_to([
+            PIP_MANIM_RIGHT - PIP_MANIM_WIDTH / 2,
+            PIP_MANIM_TOP - PIP_MANIM_HEIGHT / 2,
+            0,
+        ])
+        self.add(border)
+
+    # --- show_subtitle ---
+
+    def show_subtitle(
+        self,
+        text: str,
+        duration: float,
+        *,
+        lang: str = "en",
+        translit: str | None = None,
+        fade_in: bool = True,
+    ):
+        """Display a running subtitle in the bottom strip.
+
+        Independent of card zone overlays (_primary/_secondary/_accent).
+        For lang="th" with translit, shows Thai + translit stacked.
+        Consumes exactly `duration` seconds.
+        """
+        if lang == "th" and translit:
+            thai_label = yt_text(
+                text, font_size=SIZE_SUBTITLE, color=COL_THAI, weight="MEDIUM",
+                max_width=effective_text_width(),
+            )
+            tr_label = yt_text(
+                translit, font_size=SIZE_SUBTITLE * 0.8, color=COL_TRANSLIT,
+                weight="NORMAL", max_width=effective_text_width(),
+            )
+            content = VGroup(thai_label, tr_label)
+            content.arrange(DOWN, buff=0.08)
+        else:
+            color = COL_ENGLISH if lang == "en" else COL_THAI
+            label = yt_text(
+                text, font_size=SIZE_SUBTITLE, color=color, weight="NORMAL",
+                max_width=effective_text_width(),
+            )
+            content = VGroup(label)
+
+        content.move_to([0, SUBTITLE_CENTER_Y, 0])
+
+        # Remove old subtitle without animation
+        old = self._subtitle
+        if old is not None:
+            self.remove(old)
+        self._subtitle = content
+
+        anim_time = DUR_FADE_IN if fade_in else 0.05
+        if fade_in:
+            self.play(FadeIn(content, run_time=anim_time))
+        else:
+            self.add(content)
+            self.wait(anim_time)
+
+        remaining = duration - anim_time
+        if remaining > 0:
+            self.wait(remaining)
+
+    # --- clear_subtitle ---
+
+    def clear_subtitle(self, run_time: float = DUR_FADE_OUT) -> float:
+        """Fade out just the subtitle layer. Returns time consumed."""
+        if self._subtitle is not None:
+            self.play(FadeOut(self._subtitle, run_time=run_time))
+            self._subtitle = None
+            return run_time
+        return 0.0

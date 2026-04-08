@@ -16,7 +16,20 @@
       "heightPx": 270,
       "xPx": 1440,
       "yPx": 0,
-      "note": "Phase 2 — top-right PiP camera. Enable to constrain text width."
+      "borderColor": "#FFFFFF",
+      "borderOpacity": 0.15,
+      "borderWidth": 2,
+      "note": "Top-right PiP camera. Enable to constrain text width."
+    },
+    "cardZone": {
+      "yFrac": 0.5,
+      "maxWidthFrac": 0.75,
+      "note": "Centre of frame for teaching cards (vocab, breakdown, drill)"
+    },
+    "subtitleZone": {
+      "bottomFrac": 0.12,
+      "barOpacity": 0.65,
+      "note": "Bottom strip for running subtitles, independent of card zone"
     }
   },
 
@@ -46,7 +59,8 @@
     "thaiSplit":   { "family": "Sarabun", "weight": "Medium",   "sizePt": 44 },
     "translit":    { "family": "Sarabun", "weight": "Regular",  "sizePt": 28 },
     "english":     { "family": "Sarabun", "weight": "Regular",  "sizePt": 28 },
-    "drillPrompt": { "family": "Sarabun", "weight": "Bold",     "sizePt": 36 }
+    "drillPrompt": { "family": "Sarabun", "weight": "Bold",     "sizePt": 36 },
+    "subtitle":    { "family": "Sarabun", "weight": "Regular",  "sizePt": 24 }
   },
 
   "spacing": {

@@ -5,11 +5,12 @@ Static analysis of the generated scene .py file.
 
 from __future__ import annotations
 
+import json
 import re
 from pathlib import Path
 
 
-def run_layout_qa(scene_path: Path) -> dict:
+def run_layout_qa(scene_path: Path, overlays_path: Path | None = None) -> dict:
     """Analyze a generated scene file for layout issues.
 
     Returns dict with: passed, issues, warnings, metadata.
@@ -92,6 +93,27 @@ def run_layout_qa(scene_path: Path) -> dict:
 
     if visual_count < 3:
         warnings.append(f"Very few visual method calls ({visual_count})")
+
+    # Transliteration enforcement — check preprocessed overlays (post-enrichment)
+    # Note: raw overlays lack translit; preprocessing enriches from the script.
+    # The codegen itself validates translit and raises ValueError if missing.
+    # This check runs on preprocessed data if provided as a list, or skips
+    # if only a raw file path is given (codegen already enforced).
+    if isinstance(overlays_path, list):
+        # Preprocessed overlay dicts passed directly
+        missing_translit = 0
+        for ov in overlays_path:
+            if ov.get("skipInScene"):
+                continue
+            if ov.get("lang") in ("th", "th-split") and not ov.get("translit"):
+                missing_translit += 1
+                if missing_translit <= 5:
+                    issues.append(
+                        f"Thai overlay {ov.get('lineId', '?')} missing translit: "
+                        f"{ov.get('text', '')[:30]}"
+                    )
+        if missing_translit > 5:
+            issues.append(f"... and {missing_translit - 5} more Thai overlays missing translit")
 
     metadata = {
         "visual_event_count": visual_count,
