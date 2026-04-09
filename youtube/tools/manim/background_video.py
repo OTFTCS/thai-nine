@@ -1,6 +1,7 @@
 """Generate a per-block background video from AI-generated images.
 
-Reads block timestamps from timed JSON + imageRef from script JSON.
+Reads block timestamps and imageRef from script JSON (timestamps are
+written directly into lines by timestamp_audio.py).
 Produces an FFmpeg concat video that transitions between images
 at block boundaries.
 """
@@ -14,7 +15,6 @@ from pathlib import Path
 
 def generate_background_video(
     script_path: Path,
-    timed_path: Path,
     images_dir: Path,
     output_path: Path,
     *,
@@ -24,7 +24,7 @@ def generate_background_video(
     """Build a background video from per-block images.
 
     Algorithm:
-    1. Parse blocks from script JSON (for imageRef) and timed JSON (for timestamps)
+    1. Parse blocks from script JSON (imageRef + line timestamps)
     2. Map each block's imageRef to an actual PNG in images_dir
     3. Build segments: [(image_path, start_time, duration)]
     4. Generate FFmpeg concat with xfade transitions
@@ -33,15 +33,14 @@ def generate_background_video(
     Returns output_path, or None if no images available.
     """
     script = json.loads(script_path.read_text(encoding="utf-8"))
-    timed = json.loads(timed_path.read_text(encoding="utf-8"))
 
     # Build imageRef -> file mapping
     image_files = _map_image_files(script, images_dir)
     if not image_files:
         return None
 
-    # Build segments from timed blocks
-    segments = _build_segments(script, timed, image_files, audio_duration)
+    # Build segments from script block timestamps
+    segments = _build_segments(script, image_files, audio_duration)
     if not segments:
         return None
 
@@ -67,13 +66,11 @@ def _map_image_files(script: dict, images_dir: Path) -> dict[str, Path]:
 
 def _build_segments(
     script: dict,
-    timed: dict,
     image_files: dict[str, Path],
     audio_duration: float | None,
 ) -> list[dict]:
     """Build ordered segments: [{image, start, duration}]."""
     blocks = script.get("blocks", [])
-    timed_blocks = {tb["id"]: tb for tb in timed.get("timedBlocks", [])}
 
     # Find default image (first available)
     default_image = next(iter(image_files.values()), None)
@@ -82,12 +79,22 @@ def _build_segments(
     prev_end = 0.0
 
     for block in blocks:
-        tb = timed_blocks.get(block["id"])
-        if not tb:
+        # Derive block start/end from line timestamps
+        line_starts = [
+            line["displayStart"]
+            for line in block.get("lines", [])
+            if line.get("displayStart") is not None
+        ]
+        line_ends = [
+            line["displayEnd"]
+            for line in block.get("lines", [])
+            if line.get("displayEnd") is not None
+        ]
+        if not line_starts:
             continue
 
-        start = tb.get("startTime", 0.0)
-        end = tb.get("endTime", start)
+        start = min(line_starts)
+        end = max(line_ends) if line_ends else start
 
         image_ref = block.get("imageRef")
         image_path = image_files.get(image_ref) if image_ref else None

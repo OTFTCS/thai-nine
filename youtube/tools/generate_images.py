@@ -142,7 +142,7 @@ def main():
     # Load API key
     try:
         from dotenv import load_dotenv
-        load_dotenv(_REPO_ROOT / ".env")
+        load_dotenv(_REPO_ROOT / ".env", override=True)
     except ImportError:
         pass
 

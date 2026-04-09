@@ -1,8 +1,8 @@
 """Deterministic Manim scene code generator.
 
-Reads preprocessed overlays JSON and emits a valid Python scene file
-with direct mode-to-method mapping and pure arithmetic elapsed tracking.
-Replaces the non-deterministic Claude CLI generation.
+Reads a script JSON (with timestamps), builds an overlay list internally,
+preprocesses it, and emits a valid Python scene file with direct
+mode-to-method mapping and pure arithmetic elapsed tracking.
 """
 
 from __future__ import annotations
@@ -10,6 +10,108 @@ from __future__ import annotations
 import json
 from dataclasses import dataclass
 from pathlib import Path
+from typing import Optional
+
+
+# ---------------------------------------------------------------------------
+# Overlay building from script JSON (replaces generate_subtitles.py)
+# ---------------------------------------------------------------------------
+
+
+def _get_display_text(line: dict) -> str:
+    """Get the text to display for a given line, based on language."""
+    lang = line.get("lang", "th")
+    if lang == "th":
+        return line.get("thai", "")
+    elif lang == "th-split":
+        return line.get("thaiSplit", line.get("thai", ""))
+    elif lang == "translit":
+        return line.get("translit", "")
+    elif lang == "en":
+        return line.get("english", "")
+    elif lang == "mixed":
+        parts = []
+        if line.get("thai"):
+            parts.append(line["thai"])
+        if line.get("english"):
+            parts.append(line["english"])
+        return " — ".join(parts)
+    return ""
+
+
+def _get_style_for_mode_and_lang(mode: str, lang: str) -> str:
+    """Map mode + language to an ASS/overlay style name."""
+    if mode == "vocab-card":
+        if lang in ("th", "th-split"):
+            return "VocabThai"
+        elif lang == "translit":
+            return "VocabTranslit"
+        else:
+            return "VocabEnglish"
+    elif mode == "natural-listen":
+        if lang in ("th", "th-split"):
+            return "ThaiCentre"
+        else:
+            return "EnglishCentre"
+    elif mode == "drill-prompt":
+        return "DrillPrompt"
+    elif mode == "shadowing":
+        if lang in ("th", "th-split"):
+            return "ThaiSplit"
+        elif lang == "translit":
+            return "TranslitCentre"
+        else:
+            return "EnglishCentre"
+    else:
+        if lang in ("th", "th-split"):
+            return "Thai"
+        elif lang == "translit":
+            return "Translit"
+        else:
+            return "English"
+
+
+def build_overlays_from_script(script: dict) -> list[dict]:
+    """Build a flat overlay list from a timestamped script JSON.
+
+    Produces the same dict format that generate_subtitles.generate_overlay_json()
+    used to produce, so _preprocess_overlays() and SceneCodegen work unchanged.
+    """
+    overlays: list[dict] = []
+
+    for block in script.get("blocks", []):
+        block_id = block["id"]
+        mode = block.get("mode", "explain")
+
+        for line in block.get("lines", []):
+            display_start = line.get("displayStart")
+            if display_start is None:
+                continue
+
+            display_end = line.get("displayEnd")
+            if display_end is None:
+                display_end = display_start + 5.0
+
+            text = _get_display_text(line)
+            if not text:
+                continue
+
+            lang = line.get("lang", "th")
+            overlay: dict = {
+                "lineId": line["id"],
+                "blockId": block_id,
+                "mode": mode,
+                "lang": lang,
+                "text": text,
+                "displayStart": display_start,
+                "displayEnd": display_end,
+                "style": _get_style_for_mode_and_lang(mode, lang),
+                "highlight": line.get("highlight", False),
+                "fadeIn": line.get("display", "immediate") != "immediate",
+            }
+            overlays.append(overlay)
+
+    return overlays
 
 
 # ---------------------------------------------------------------------------
@@ -456,29 +558,29 @@ class SceneCodegen:
 # ---------------------------------------------------------------------------
 
 def generate_scene_deterministic(
-    overlays_json: str,
     output_path: Path,
     *,
-    script_path: Path | None = None,
+    script_path: Path,
 ) -> Path:
-    """Generate a deterministic Manim scene file.
+    """Generate a deterministic Manim scene file from a timestamped script.
 
-    1. Preprocess overlays (reuses existing _preprocess_overlays)
-    2. Run SceneCodegen
-    3. Write to output_path
+    1. Build overlays from script JSON (replaces generate_subtitles.py)
+    2. Preprocess overlays (reuses existing _preprocess_overlays)
+    3. Run SceneCodegen
+    4. Write to output_path
 
     Returns path to the generated scene file.
     """
     from .generate_scene import _preprocess_overlays
 
+    script_data = json.loads(script_path.read_text(encoding="utf-8"))
+    overlays = build_overlays_from_script(script_data)
+    overlays_json = json.dumps(overlays, ensure_ascii=False, indent=2)
+
     processed_json = _preprocess_overlays(overlays_json, script_path=script_path)
-    overlays = json.loads(processed_json)
+    processed = json.loads(processed_json)
 
-    script_data = None
-    if script_path and script_path.exists():
-        script_data = json.loads(script_path.read_text(encoding="utf-8"))
-
-    codegen = SceneCodegen(overlays, script_data=script_data)
+    codegen = SceneCodegen(processed, script_data=script_data)
     code = codegen.generate()
 
     output_path.parent.mkdir(parents=True, exist_ok=True)

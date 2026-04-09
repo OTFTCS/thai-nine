@@ -65,33 +65,33 @@ Or use the skill: `/render-gslides M01-L002`
 ```bash
 # Key directories:
 # youtube/examples/       — episode script JSONs (YT-S01-E01.json etc.)
+#                           Single source of truth: content + timestamps
 # youtube/recordings/     — raw audio files (M4A/WAV)
-# youtube/timed/          — Whisper-aligned timed scripts
-# youtube/subtitles/      — generated subtitle files (ASS, SRT, overlays JSON)
 # youtube/tools/          — pipeline scripts
-# youtube/schemas/        — yt-script.schema.json
+# youtube/out/            — rendered output (scene.py, .mov, .mp4)
 
 # Step 1: Validate script
 PATH="/opt/homebrew/bin:$PATH" /usr/bin/python3 youtube/tools/validate_script.py youtube/examples/YT-S01-E01.json
 
-# Step 2: Whisper alignment (audio + script → timed JSON)
-PATH="/opt/homebrew/bin:$PATH" /usr/bin/python3 youtube/tools/align_whisper.py \
+# Step 2: Timestamp audio (manual tap-to-timestamp)
+#   Plays audio, tap spacebar at each spoken line. Writes displayStart/displayEnd
+#   directly into the script JSON. ~40 spoken lines, ~20 auto-computed.
+PATH="/opt/homebrew/bin:$PATH" /usr/bin/python3 youtube/tools/timestamp_audio.py \
   --script youtube/examples/YT-S01-E01.json \
-  --audio youtube/recordings/YT-S01-E01.m4a \
-  --output youtube/timed/YT-S01-E01.timed.json \
-  --model medium
+  --audio youtube/recordings/YT-S01-E01.m4a
 
-# Step 3: Generate subtitles (timed JSON → ASS/SRT/overlays)
-PATH="/opt/homebrew/bin:$PATH" /usr/bin/python3 youtube/tools/generate_subtitles.py \
-  --script youtube/examples/YT-S01-E01.json \
-  --timed youtube/timed/YT-S01-E01.timed.json \
-  --outdir youtube/subtitles/YT-S01-E01/
+# Preview timestamps (replay audio with text printed at each timestamp):
+... --preview
 
-# Step 4: Generate teleprompter + on-screen docs
+# Re-time a single line:
+... --retune l-0015
+
+# Step 3: Generate teleprompter + on-screen docs
 PATH="/opt/homebrew/bin:$PATH" /usr/bin/python3 youtube/tools/generate_docs.py \
   --script youtube/examples/YT-S01-E01.json
 
-# Step 5: Manim video pipeline (audio + overlays → finished MP4)
+# Step 4: Manim video pipeline (script → finished MP4)
+#   Builds overlays internally from script JSON, runs codegen, renders, composites.
 PATH="/opt/homebrew/bin:/usr/local/bin:$PATH" /opt/homebrew/bin/python3 \
   -m youtube.tools.manim.pipeline --episode YT-S01-E01
 
@@ -104,18 +104,20 @@ PATH="/opt/homebrew/bin:/usr/local/bin:$PATH" /opt/homebrew/bin/python3 \
 # Force past QA failures:
 ... --force
 
-# Dependencies: pip install openai-whisper manim; brew install ffmpeg
-# Note: /usr/bin/python3 has whisper installed; /opt/homebrew/bin/python3 has manim
-# Note: Scene generation is now deterministic codegen (no Claude CLI needed)
+# Dependencies: pip install manim; brew install ffmpeg
+# Note: /opt/homebrew/bin/python3 has manim
+# Note: Scene generation is deterministic codegen (no Claude CLI, no Whisper)
 ```
 
 ## Manim pipeline architecture
-- **Scene generation is deterministic** — `youtube/tools/manim/codegen.py` (SceneCodegen class) replaces the old Claude CLI generation. Zero LLM, zero retries, pure Python codegen.
+- **Single-file architecture** — script JSON (`youtube/examples/`) is the sole source of truth. Contains content, timestamps, and all metadata. No intermediate timed.json or overlays.json.
+- **Manual timestamping** — `youtube/tools/timestamp_audio.py` replaces Whisper alignment. Tap spacebar per spoken line, delayed lines auto-computed.
+- **Scene generation is deterministic** — `youtube/tools/manim/codegen.py` builds overlays from script JSON internally (`build_overlays_from_script()`), preprocesses them, and emits a Manim scene file. Zero LLM, zero retries, pure Python codegen.
 - **4-zone screen layout**: PiP (top-right, FFmpeg), Background image (FFmpeg), Card zone (centre, Manim), Subtitle zone (bottom strip, Manim)
 - **`_preprocess_overlays()`** in `generate_scene.py` is still used — it computes manimDuration, groups triplets/vocab/drills, enriches translit/english
-- **`fix_scene_timing.py`** is no longer called (deterministic codegen has zero drift)
-- **Background video**: `background_video.py` generates per-block FFmpeg xfade video from AI images + block timestamps
+- **Background video**: `background_video.py` generates per-block FFmpeg xfade video from AI images + block timestamps (derived from script line timestamps)
 - **Transliteration enforced**: codegen fails if any Thai overlay lacks translit
+- **Deprecated files**: `align_whisper.py` and `generate_subtitles.py` are kept for reference but no longer used in the pipeline
 
 ## Manim pipeline rules
 - **Never use raw `displayEnd - displayStart` for Manim durations** — overlays JSON uses `displayEnd` = end of entire block (for concurrent subtitle display). Pre-compute `manimDuration` = time to next overlay's `displayStart` within block.

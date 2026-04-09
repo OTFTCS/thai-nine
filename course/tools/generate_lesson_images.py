@@ -178,7 +178,7 @@ def main():
 
     # Load API key from .env
     from dotenv import load_dotenv
-    load_dotenv(repo_root / ".env")
+    load_dotenv(repo_root / ".env", override=True)
 
     api_key = os.environ.get("GEMINI_API_KEY")
     if not api_key:

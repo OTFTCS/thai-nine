@@ -1,17 +1,27 @@
 {
   "episodeId": "YT-S01-E01",
-  "audioDuration": 946.5,
-  "alignmentQuality": 0.804,
+  "audioDuration": 948.58,
+  "alignmentQuality": 0.587,
   "unmatchedLines": [
     "l-0003",
     "l-0004",
     "l-0006",
+    "l-0028",
+    "l-0043",
+    "l-0045",
+    "l-0046",
+    "l-0048",
+    "l-0049",
+    "l-0051",
+    "l-0052",
     "l-0053",
     "l-0054",
     "l-0055",
+    "l-0056",
     "l-0057",
     "l-0058",
-    "l-0059"
+    "l-0059",
+    "l-0060"
   ],
   "timedBlocks": [
     {
@@ -25,15 +35,15 @@
           "startTime": 0.94,
           "endTime": 14.58,
           "displayStart": 0.94,
-          "displayEnd": 41.92,
+          "displayEnd": 15.58,
           "confidence": 0.96
         },
         {
           "id": "l-0002",
           "startTime": null,
           "endTime": null,
-          "displayStart": 1.94,
-          "displayEnd": 41.92,
+          "displayStart": 15.58,
+          "displayEnd": 38.92,
           "confidence": null
         },
         {
@@ -49,31 +59,31 @@
     {
       "id": "b-002",
       "mode": "explain",
-      "startTime": 38.92,
-      "endTime": 63.0,
+      "startTime": 62.2,
+      "endTime": 124.14,
       "lines": [
         {
           "id": "l-0004",
-          "startTime": 38.92,
-          "endTime": 41.92,
-          "displayStart": 38.92,
-          "displayEnd": 63.0,
+          "startTime": 62.2,
+          "endTime": 65.2,
+          "displayStart": 62.2,
+          "displayEnd": 113.48,
           "confidence": 0.0
         },
         {
           "id": "l-0005",
-          "startTime": 38.92,
-          "endTime": 45.02,
-          "displayStart": 38.92,
-          "displayEnd": 63.0,
-          "confidence": 0.96
+          "startTime": 113.48,
+          "endTime": 114.36,
+          "displayStart": 113.48,
+          "displayEnd": 121.14,
+          "confidence": 0.71
         },
         {
           "id": "l-0006",
-          "startTime": 60.0,
-          "endTime": 63.0,
-          "displayStart": 60.0,
-          "displayEnd": 63.0,
+          "startTime": 121.14,
+          "endTime": 124.14,
+          "displayStart": 121.14,
+          "displayEnd": 124.14,
           "confidence": 0.0
         }
       ]
@@ -81,183 +91,183 @@
     {
       "id": "b-003",
       "mode": "vocab-card",
-      "startTime": 105.12,
-      "endTime": 407.94,
+      "startTime": 134.2,
+      "endTime": 407.86,
       "lines": [
         {
           "id": "l-0007",
-          "startTime": 105.12,
-          "endTime": 106.16,
-          "displayStart": 105.12,
-          "displayEnd": 407.94,
+          "startTime": 134.2,
+          "endTime": 134.2,
+          "displayStart": 134.2,
+          "displayEnd": 134.7,
           "confidence": 1.0
         },
         {
           "id": "l-0008",
-          "startTime": 113.36,
-          "endTime": 113.94,
-          "displayStart": 113.36,
-          "displayEnd": 407.94,
-          "confidence": 0.53
+          "startTime": 134.2,
+          "endTime": 134.2,
+          "displayStart": 134.2,
+          "displayEnd": 174.62,
+          "confidence": 0.52
         },
         {
           "id": "l-0009",
-          "startTime": 181.1,
-          "endTime": 181.4,
-          "displayStart": 181.1,
-          "displayEnd": 407.94,
+          "startTime": 174.62,
+          "endTime": 177.62,
+          "displayStart": 174.62,
+          "displayEnd": 179.9,
           "confidence": 1.0
         },
         {
           "id": "l-0010",
-          "startTime": 193.44,
-          "endTime": 194.0,
-          "displayStart": 193.44,
-          "displayEnd": 407.94,
+          "startTime": 179.9,
+          "endTime": 181.5,
+          "displayStart": 179.9,
+          "displayEnd": 201.42,
           "confidence": 1.0
         },
         {
           "id": "l-0011",
-          "startTime": 201.46,
+          "startTime": 201.42,
           "endTime": 203.24,
-          "displayStart": 201.46,
-          "displayEnd": 407.94,
-          "confidence": 0.96
+          "displayStart": 201.42,
+          "displayEnd": 213.64,
+          "confidence": 1.0
         },
         {
           "id": "l-0012",
-          "startTime": 232.2,
-          "endTime": 232.6,
-          "displayStart": 232.2,
-          "displayEnd": 407.94,
+          "startTime": 213.64,
+          "endTime": 214.96,
+          "displayStart": 213.64,
+          "displayEnd": 231.46,
           "confidence": 1.0
         },
         {
           "id": "l-0013",
-          "startTime": 239.14,
-          "endTime": 240.28,
-          "displayStart": 239.14,
-          "displayEnd": 407.94,
+          "startTime": 231.46,
+          "endTime": 233.48,
+          "displayStart": 231.46,
+          "displayEnd": 249.8,
           "confidence": 1.0
         },
         {
           "id": "l-0014",
-          "startTime": 255.72,
-          "endTime": 257.14,
-          "displayStart": 255.72,
-          "displayEnd": 407.94,
+          "startTime": 249.8,
+          "endTime": 250.88,
+          "displayStart": 249.8,
+          "displayEnd": 272.04,
           "confidence": 1.0
         },
         {
           "id": "l-0015",
-          "startTime": 272.5,
-          "endTime": 275.06,
-          "displayStart": 272.5,
-          "displayEnd": 407.94,
-          "confidence": 0.97
+          "startTime": 272.04,
+          "endTime": 275.5,
+          "displayStart": 272.04,
+          "displayEnd": 321.9,
+          "confidence": 0.94
         },
         {
           "id": "l-0016",
-          "startTime": 322.2,
+          "startTime": 321.9,
           "endTime": 323.86,
-          "displayStart": 322.2,
-          "displayEnd": 407.94,
+          "displayStart": 321.9,
+          "displayEnd": 343.68,
           "confidence": 1.0
         },
         {
           "id": "l-0017",
-          "startTime": 343.7,
-          "endTime": 345.18,
-          "displayStart": 343.7,
-          "displayEnd": 407.94,
+          "startTime": 343.68,
+          "endTime": 345.2,
+          "displayStart": 343.68,
+          "displayEnd": 361.8,
           "confidence": 0.96
         },
         {
           "id": "l-0018",
-          "startTime": 362.54,
-          "endTime": 363.58,
-          "displayStart": 362.54,
-          "displayEnd": 407.94,
+          "startTime": 361.8,
+          "endTime": 363.72,
+          "displayStart": 361.8,
+          "displayEnd": 369.24,
           "confidence": 1.0
         },
         {
           "id": "l-0019",
-          "startTime": 368.74,
-          "endTime": 370.98,
-          "displayStart": 368.74,
-          "displayEnd": 407.94,
-          "confidence": 0.96
+          "startTime": 369.24,
+          "endTime": 371.16,
+          "displayStart": 369.24,
+          "displayEnd": 395.64,
+          "confidence": 1.0
         },
         {
           "id": "l-0020",
-          "startTime": 395.46,
-          "endTime": 398.68,
-          "displayStart": 395.46,
-          "displayEnd": 407.94,
+          "startTime": 395.64,
+          "endTime": 397.58,
+          "displayStart": 395.64,
+          "displayEnd": 406.26,
           "confidence": 1.0
         },
         {
           "id": "l-0021",
-          "startTime": 406.76,
-          "endTime": 407.94,
-          "displayStart": 406.76,
-          "displayEnd": 407.94,
-          "confidence": 0.94
+          "startTime": 406.26,
+          "endTime": 407.86,
+          "displayStart": 406.26,
+          "displayEnd": 407.86,
+          "confidence": 1.0
         }
       ]
     },
     {
       "id": "b-004",
       "mode": "natural-listen",
-      "startTime": 470.52,
-      "endTime": 647.98,
+      "startTime": 470.54,
+      "endTime": 744.9,
       "lines": [
         {
           "id": "l-0022",
-          "startTime": 470.52,
-          "endTime": 471.96,
-          "displayStart": 470.52,
-          "displayEnd": 647.98,
-          "confidence": 0.96
+          "startTime": 470.54,
+          "endTime": 471.9,
+          "displayStart": 470.54,
+          "displayEnd": 709.14,
+          "confidence": 1.0
         },
         {
           "id": "l-0023",
-          "startTime": 548.0,
-          "endTime": 550.34,
-          "displayStart": 548.0,
-          "displayEnd": 647.98,
+          "startTime": 709.14,
+          "endTime": 711.86,
+          "displayStart": 709.14,
+          "displayEnd": 711.86,
           "confidence": 0.97
         },
         {
           "id": "l-0024",
-          "startTime": 577.58,
-          "endTime": 579.38,
-          "displayStart": 577.58,
-          "displayEnd": 647.98,
+          "startTime": 711.86,
+          "endTime": 720.78,
+          "displayStart": 711.86,
+          "displayEnd": 721.86,
           "confidence": 0.96
         },
         {
           "id": "l-0025",
-          "startTime": 606.72,
-          "endTime": 608.42,
-          "displayStart": 606.72,
-          "displayEnd": 647.98,
-          "confidence": 0.93
+          "startTime": 721.86,
+          "endTime": 731.22,
+          "displayStart": 721.86,
+          "displayEnd": 731.22,
+          "confidence": 1.0
         },
         {
           "id": "l-0026",
-          "startTime": 626.98,
-          "endTime": 628.44,
-          "displayStart": 626.98,
-          "displayEnd": 647.98,
-          "confidence": 0.94
+          "startTime": 731.22,
+          "endTime": 741.04,
+          "displayStart": 731.22,
+          "displayEnd": 742.56,
+          "confidence": 1.0
         },
         {
           "id": "l-0027",
-          "startTime": 646.08,
-          "endTime": 647.98,
-          "displayStart": 646.08,
-          "displayEnd": 647.98,
+          "startTime": 742.56,
+          "endTime": 744.9,
+          "displayStart": 742.56,
+          "displayEnd": 744.9,
           "confidence": 0.96
         }
       ]
@@ -265,127 +275,127 @@
     {
       "id": "b-005",
       "mode": "breakdown",
-      "startTime": 701.44,
-      "endTime": 744.92,
+      "startTime": 744.9,
+      "endTime": 857.56,
       "lines": [
         {
           "id": "l-0028",
-          "startTime": 701.44,
-          "endTime": 704.3,
-          "displayStart": 701.44,
-          "displayEnd": 744.92,
-          "confidence": 0.92
+          "startTime": 744.9,
+          "endTime": 747.9,
+          "displayStart": 744.9,
+          "displayEnd": 748.9,
+          "confidence": 0.0
         },
         {
           "id": "l-0029",
           "startTime": null,
           "endTime": null,
-          "displayStart": 702.44,
-          "displayEnd": 744.92,
+          "displayStart": 748.9,
+          "displayEnd": 749.9,
           "confidence": null
         },
         {
           "id": "l-0030",
           "startTime": null,
           "endTime": null,
-          "displayStart": 703.44,
-          "displayEnd": 744.92,
+          "displayStart": 749.9,
+          "displayEnd": 791.9,
           "confidence": null
         },
         {
           "id": "l-0031",
-          "startTime": 704.3,
-          "endTime": 711.86,
-          "displayStart": 704.3,
-          "displayEnd": 744.92,
-          "confidence": 0.97
+          "startTime": 791.9,
+          "endTime": 798.82,
+          "displayStart": 791.9,
+          "displayEnd": 799.82,
+          "confidence": 0.94
         },
         {
           "id": "l-0032",
           "startTime": null,
           "endTime": null,
-          "displayStart": 705.3,
-          "displayEnd": 744.92,
+          "displayStart": 799.82,
+          "displayEnd": 800.82,
           "confidence": null
         },
         {
           "id": "l-0033",
           "startTime": null,
           "endTime": null,
-          "displayStart": 706.3,
-          "displayEnd": 744.92,
+          "displayStart": 800.82,
+          "displayEnd": 816.74,
           "confidence": null
         },
         {
           "id": "l-0034",
-          "startTime": 718.6,
-          "endTime": 721.42,
-          "displayStart": 718.6,
-          "displayEnd": 744.92,
-          "confidence": 0.96
+          "startTime": 816.74,
+          "endTime": 826.5,
+          "displayStart": 816.74,
+          "displayEnd": 827.5,
+          "confidence": 1.0
         },
         {
           "id": "l-0035",
           "startTime": null,
           "endTime": null,
-          "displayStart": 719.6,
-          "displayEnd": 744.92,
+          "displayStart": 827.5,
+          "displayEnd": 828.5,
           "confidence": null
         },
         {
           "id": "l-0036",
           "startTime": null,
           "endTime": null,
-          "displayStart": 720.6,
-          "displayEnd": 744.92,
+          "displayStart": 828.5,
+          "displayEnd": 836.82,
           "confidence": null
         },
         {
           "id": "l-0037",
-          "startTime": 726.9,
-          "endTime": 729.26,
-          "displayStart": 726.9,
-          "displayEnd": 744.92,
-          "confidence": 0.93
+          "startTime": 836.82,
+          "endTime": 842.32,
+          "displayStart": 836.82,
+          "displayEnd": 843.32,
+          "confidence": 1.0
         },
         {
           "id": "l-0038",
           "startTime": null,
           "endTime": null,
-          "displayStart": 727.9,
-          "displayEnd": 744.92,
+          "displayStart": 843.32,
+          "displayEnd": 844.32,
           "confidence": null
         },
         {
           "id": "l-0039",
           "startTime": null,
           "endTime": null,
-          "displayStart": 728.9,
-          "displayEnd": 744.92,
+          "displayStart": 844.32,
+          "displayEnd": 855.04,
           "confidence": null
         },
         {
           "id": "l-0040",
-          "startTime": 742.82,
-          "endTime": 744.92,
-          "displayStart": 742.82,
-          "displayEnd": 744.92,
+          "startTime": 855.04,
+          "endTime": 857.56,
+          "displayStart": 855.04,
+          "displayEnd": 858.56,
           "confidence": 0.96
         },
         {
           "id": "l-0041",
           "startTime": null,
           "endTime": null,
-          "displayStart": 743.82,
-          "displayEnd": 744.92,
+          "displayStart": 858.56,
+          "displayEnd": 859.56,
           "confidence": null
         },
         {
           "id": "l-0042",
           "startTime": null,
           "endTime": null,
-          "displayStart": 744.82,
-          "displayEnd": 745.32,
+          "displayStart": 859.56,
+          "displayEnd": 860.06,
           "confidence": null
         }
       ]
@@ -393,23 +403,23 @@
     {
       "id": "b-006",
       "mode": "drill-prompt",
-      "startTime": 782.76,
-      "endTime": 786.58,
+      "startTime": 857.56,
+      "endTime": 860.56,
       "lines": [
         {
           "id": "l-0043",
-          "startTime": 782.76,
-          "endTime": 786.58,
-          "displayStart": 782.76,
-          "displayEnd": 786.58,
-          "confidence": 0.64
+          "startTime": 857.56,
+          "endTime": 860.56,
+          "displayStart": 857.56,
+          "displayEnd": 861.56,
+          "confidence": 0.0
         },
         {
           "id": "l-0044",
           "startTime": null,
           "endTime": null,
-          "displayStart": 783.76,
-          "displayEnd": 786.58,
+          "displayStart": 861.56,
+          "displayEnd": 862.06,
           "confidence": null
         }
       ]
@@ -417,39 +427,39 @@
     {
       "id": "b-007",
       "mode": "drill-answer",
-      "startTime": 792.54,
-      "endTime": 796.44,
+      "startTime": 947.62,
+      "endTime": 950.62,
       "lines": [
         {
           "id": "l-0045",
-          "startTime": 792.54,
-          "endTime": 796.44,
-          "displayStart": 792.54,
-          "displayEnd": 796.44,
-          "confidence": 0.91
+          "startTime": 947.62,
+          "endTime": 950.62,
+          "displayStart": 947.62,
+          "displayEnd": 950.62,
+          "confidence": 0.0
         }
       ]
     },
     {
       "id": "b-008",
       "mode": "drill-prompt",
-      "startTime": 806.98,
-      "endTime": 810.18,
+      "startTime": 947.8,
+      "endTime": 950.8,
       "lines": [
         {
           "id": "l-0046",
-          "startTime": 806.98,
-          "endTime": 810.18,
-          "displayStart": 806.98,
-          "displayEnd": 810.18,
-          "confidence": 0.86
+          "startTime": 947.8,
+          "endTime": 950.8,
+          "displayStart": 947.8,
+          "displayEnd": 951.8,
+          "confidence": 0.0
         },
         {
           "id": "l-0047",
           "startTime": null,
           "endTime": null,
-          "displayStart": 807.98,
-          "displayEnd": 810.18,
+          "displayStart": 951.8,
+          "displayEnd": 952.3,
           "confidence": null
         }
       ]
@@ -457,39 +467,39 @@
     {
       "id": "b-009",
       "mode": "drill-answer",
-      "startTime": 817.12,
-      "endTime": 818.44,
+      "startTime": 947.8,
+      "endTime": 950.8,
       "lines": [
         {
           "id": "l-0048",
-          "startTime": 817.12,
-          "endTime": 818.44,
-          "displayStart": 817.12,
-          "displayEnd": 818.44,
-          "confidence": 0.96
+          "startTime": 947.8,
+          "endTime": 950.8,
+          "displayStart": 947.8,
+          "displayEnd": 950.8,
+          "confidence": 0.0
         }
       ]
     },
     {
       "id": "b-010",
       "mode": "drill-prompt",
-      "startTime": 859.86,
-      "endTime": 861.76,
+      "startTime": 947.8,
+      "endTime": 950.8,
       "lines": [
         {
           "id": "l-0049",
-          "startTime": 859.86,
-          "endTime": 861.76,
-          "displayStart": 859.86,
-          "displayEnd": 861.76,
-          "confidence": 0.75
+          "startTime": 947.8,
+          "endTime": 950.8,
+          "displayStart": 947.8,
+          "displayEnd": 951.8,
+          "confidence": 0.0
         },
         {
           "id": "l-0050",
           "startTime": null,
           "endTime": null,
-          "displayStart": 860.86,
-          "displayEnd": 861.76,
+          "displayStart": 951.8,
+          "displayEnd": 952.3,
           "confidence": null
         }
       ]
@@ -497,71 +507,71 @@
     {
       "id": "b-011",
       "mode": "drill-answer",
-      "startTime": 904.96,
-      "endTime": 906.52,
+      "startTime": 947.8,
+      "endTime": 950.8,
       "lines": [
         {
           "id": "l-0051",
-          "startTime": 904.96,
-          "endTime": 906.52,
-          "displayStart": 904.96,
-          "displayEnd": 906.52,
-          "confidence": 0.76
+          "startTime": 947.8,
+          "endTime": 950.8,
+          "displayStart": 947.8,
+          "displayEnd": 950.8,
+          "confidence": 0.0
         }
       ]
     },
     {
       "id": "b-012",
       "mode": "shadowing",
-      "startTime": 909.02,
-      "endTime": 916.94,
+      "startTime": 947.8,
+      "endTime": 950.8,
       "lines": [
         {
           "id": "l-0052",
-          "startTime": 909.02,
-          "endTime": 909.92,
-          "displayStart": 909.02,
-          "displayEnd": 916.94,
-          "confidence": 0.56
+          "startTime": 947.8,
+          "endTime": 950.8,
+          "displayStart": 947.8,
+          "displayEnd": 948.3,
+          "confidence": 0.0
         },
         {
           "id": "l-0053",
-          "startTime": 909.92,
-          "endTime": 912.92,
-          "displayStart": 909.92,
-          "displayEnd": 916.94,
+          "startTime": 947.8,
+          "endTime": 950.8,
+          "displayStart": 947.8,
+          "displayEnd": 948.3,
           "confidence": 0.0
         },
         {
           "id": "l-0054",
-          "startTime": 909.92,
-          "endTime": 912.92,
-          "displayStart": 909.92,
-          "displayEnd": 916.94,
+          "startTime": 947.8,
+          "endTime": 950.8,
+          "displayStart": 947.8,
+          "displayEnd": 948.3,
           "confidence": 0.0
         },
         {
           "id": "l-0055",
-          "startTime": 909.92,
-          "endTime": 912.92,
-          "displayStart": 909.92,
-          "displayEnd": 916.94,
+          "startTime": 947.8,
+          "endTime": 950.8,
+          "displayStart": 947.8,
+          "displayEnd": 948.3,
           "confidence": 0.0
         },
         {
           "id": "l-0056",
-          "startTime": 912.8,
-          "endTime": 913.94,
-          "displayStart": 912.8,
-          "displayEnd": 916.94,
-          "confidence": 0.55
+          "startTime": 947.8,
+          "endTime": 950.8,
+          "displayStart": 947.8,
+          "displayEnd": 948.3,
+          "confidence": 0.0
         },
         {
           "id": "l-0057",
-          "startTime": 913.94,
-          "endTime": 916.94,
-          "displayStart": 913.94,
-          "displayEnd": 916.94,
+          "startTime": 947.8,
+          "endTime": 950.8,
+          "displayStart": 947.8,
+          "displayEnd": 950.8,
           "confidence": 0.0
         }
       ]
@@ -569,15 +579,15 @@
     {
       "id": "b-013",
       "mode": "recap",
-      "startTime": 913.94,
-      "endTime": 916.94,
+      "startTime": 947.8,
+      "endTime": 950.8,
       "lines": [
         {
           "id": "l-0058",
-          "startTime": 913.94,
-          "endTime": 916.94,
-          "displayStart": 913.94,
-          "displayEnd": 916.94,
+          "startTime": 947.8,
+          "endTime": 950.8,
+          "displayStart": 947.8,
+          "displayEnd": 950.8,
           "confidence": 0.0
         }
       ]
@@ -585,24 +595,24 @@
     {
       "id": "b-014",
       "mode": "teaser",
-      "startTime": 913.94,
-      "endTime": 933.24,
+      "startTime": 947.8,
+      "endTime": 950.8,
       "lines": [
         {
           "id": "l-0059",
-          "startTime": 913.94,
-          "endTime": 916.94,
-          "displayStart": 913.94,
-          "displayEnd": 933.24,
+          "startTime": 947.8,
+          "endTime": 950.8,
+          "displayStart": 947.8,
+          "displayEnd": 948.3,
           "confidence": 0.0
         },
         {
           "id": "l-0060",
-          "startTime": 931.24,
-          "endTime": 933.24,
-          "displayStart": 931.24,
-          "displayEnd": 933.24,
-          "confidence": 0.83
+          "startTime": 947.8,
+          "endTime": 950.8,
+          "displayStart": 947.8,
+          "displayEnd": 950.8,
+          "confidence": 0.0
         }
       ]
     }

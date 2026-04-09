@@ -1,5 +1,17 @@
 #!/usr/bin/env python3
 """
+DEPRECATED — overlay generation moved to youtube/tools/manim/codegen.py
+(build_overlays_from_script function).
+
+The new pipeline reads timestamps directly from the script JSON and builds
+overlays internally in codegen. No intermediate timed.json or overlays.json.
+
+ASS/SRT export can still be done with this script if needed, but it would
+need to be updated to read timestamps from the script JSON instead of a
+separate timed JSON file.
+
+---
+
 generate_subtitles.py — Generate layered subtitle files from a timed script.
 
 Outputs:

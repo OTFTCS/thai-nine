@@ -1,5 +1,15 @@
 #!/usr/bin/env python3
 """
+DEPRECATED — replaced by timestamp_audio.py (manual tap-to-timestamp).
+
+Whisper auto-alignment fails on mixed Thai+English speech (~54% accuracy).
+The new pipeline writes displayStart/displayEnd directly into the script
+JSON via manual timestamping, eliminating the timed.json intermediate file.
+
+See: youtube/tools/timestamp_audio.py
+
+---
+
 align_whisper.py — Align a YouTube episode script to audio using Whisper
 word-level timestamps. Produces a timed script JSON that the subtitle
 generator uses.
@@ -142,7 +152,7 @@ def run_whisper(audio_path: str, model_name: str = "large-v3") -> tuple[list[Tim
     print(f"Transcribing: {audio_path}")
     result = model.transcribe(
         audio_path,
-        language="th",  # Primary language is Thai
+        language="th",  # Primary language is Thai; cursor fix handles English mismatches
         word_timestamps=True,
         verbose=False
     )
@@ -224,7 +234,7 @@ def _sliding_window_match(
     best_start = None
     best_end = None
 
-    max_search = min(search_start_idx + 400, len(whisper_words))
+    max_search = min(search_start_idx + 600, len(whisper_words))
 
     for start_idx in range(search_start_idx, max_search):
         concat = ""
@@ -267,9 +277,9 @@ def calculate_display_times(
     if display == "immediate":
         start = spoken_start
     elif display == "delayed-1s":
-        start = spoken_start + 1.0
+        start = spoken_end + 1.0
     elif display == "delayed-2s":
-        start = spoken_start + 2.0
+        start = spoken_end + 2.0
     elif display == "on-reveal":
         # Appears when the NEXT spoken line starts
         start = spoken_end
@@ -353,6 +363,11 @@ def align_script(
                     last_spoken_start = start_time
                     last_spoken_end = end_time
 
+                    # Advance cursor past estimated region so next match
+                    # doesn't search from a stale position
+                    estimated_words = max(3, len(spoken_text.split()) * 2) if spoken_text else 5
+                    word_cursor = min(word_cursor + estimated_words, len(whisper_words) - 1)
+
                     if block_spoken_start is None:
                         block_spoken_start = start_time
                     block_spoken_end = end_time
@@ -406,11 +421,19 @@ def align_script(
         timed_block["startTime"] = block_spoken_start or last_spoken_end
         timed_block["endTime"] = block_spoken_end or (last_spoken_end + 2.0)
 
-        # Now fill in displayEnd for all lines (lines persist until block ends).
-        # Hidden lines have displayStart=None — leave them as None.
+        # Fill in displayEnd per line: each line is visible until the next
+        # line's displayStart (not block end), giving correct sequential timing.
         block_end = timed_block["endTime"]
-        for tl in timed_block["lines"]:
-            if tl["displayEnd"] is None and tl.get("displayStart") is not None:
+        visible_lines = [tl for tl in timed_block["lines"]
+                         if tl.get("displayStart") is not None]
+        for i, tl in enumerate(visible_lines):
+            if tl["displayEnd"] is not None:
+                continue
+            # Next visible line's displayStart, or block end for last line
+            if i + 1 < len(visible_lines):
+                next_start = visible_lines[i + 1]["displayStart"]
+                tl["displayEnd"] = round(max(next_start, tl["displayStart"] + 0.5), 3)
+            else:
                 tl["displayEnd"] = round(max(block_end, tl["displayStart"] + 0.5), 3)
 
         result.timed_blocks.append(timed_block)
@@ -501,9 +524,16 @@ def generate_mock_alignment(script: dict) -> AlignmentResult:
 
         timed_block["endTime"] = round(current_time, 3)
 
-        # Fill displayEnd — ensure it's never before displayStart
-        for tl in timed_block["lines"]:
-            if tl["displayEnd"] is None and tl.get("displayStart") is not None:
+        # Fill displayEnd per line: each visible until next line starts
+        visible_lines = [tl for tl in timed_block["lines"]
+                         if tl.get("displayStart") is not None]
+        for i, tl in enumerate(visible_lines):
+            if tl["displayEnd"] is not None:
+                continue
+            if i + 1 < len(visible_lines):
+                next_start = visible_lines[i + 1]["displayStart"]
+                tl["displayEnd"] = round(max(next_start, tl["displayStart"] + 0.5), 3)
+            else:
                 tl["displayEnd"] = round(max(timed_block["endTime"], tl["displayStart"] + 0.5), 3)
 
         result.timed_blocks.append(timed_block)

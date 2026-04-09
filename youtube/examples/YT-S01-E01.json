@@ -135,7 +135,16 @@
       "id": "b-003",
       "mode": "vocab-card",
       "speakerNote": "One word at a time. Say the Thai clearly, pause for the card animation, then the example sentence. Keep energy up — this is the core learning block.",
-      "vocabRefs": ["v-001", "v-003", "v-004", "v-002", "v-006", "v-005", "v-008", "v-007"],
+      "vocabRefs": [
+        "v-001",
+        "v-003",
+        "v-004",
+        "v-002",
+        "v-006",
+        "v-005",
+        "v-008",
+        "v-007"
+      ],
       "lines": [
         {
           "id": "l-0007",
@@ -630,7 +639,16 @@
       "id": "b-013",
       "mode": "recap",
       "speakerNote": "Quick energy. Flash through the vocab cards.",
-      "vocabRefs": ["v-001", "v-002", "v-003", "v-004", "v-005", "v-006", "v-007", "v-008"],
+      "vocabRefs": [
+        "v-001",
+        "v-002",
+        "v-003",
+        "v-004",
+        "v-005",
+        "v-006",
+        "v-007",
+        "v-008"
+      ],
       "lines": [
         {
           "id": "l-0058",

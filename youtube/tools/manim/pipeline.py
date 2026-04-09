@@ -46,8 +46,6 @@ def _resolve_paths(episode_id: str, output_dir: Path | None = None) -> dict[str,
     out = output_dir or (_YT_DIR / "out" / episode_id)
     return {
         "script": _YT_DIR / "examples" / f"{episode_id}.json",
-        "timed": _YT_DIR / "timed" / f"{episode_id}.timed.json",
-        "overlays": _YT_DIR / "subtitles" / episode_id / f"{episode_id}.overlays.json",
         "audio": _YT_DIR / "recordings" / f"{episode_id}.m4a",
         "images_dir": _YT_DIR / "images" / episode_id,
         "style": _YT_DIR / "config" / "manim-yt-style.json",
@@ -65,9 +63,9 @@ def _resolve_paths(episode_id: str, output_dir: Path | None = None) -> dict[str,
 # ---------------------------------------------------------------------------
 
 def step_validate(paths: dict[str, Path]) -> None:
-    """Verify all required input files exist."""
-    print("[0/7] Validating inputs...")
-    required = ["script", "timed", "overlays", "audio"]
+    """Verify all required input files exist and script has timestamps."""
+    print("[0/6] Validating inputs...")
+    required = ["script", "audio"]
     missing = [k for k in required if not paths[k].exists()]
     if missing:
         for k in missing:
@@ -76,6 +74,20 @@ def step_validate(paths: dict[str, Path]) -> None:
     for k in required:
         print(f"  ✓ {k}: {paths[k].name}")
 
+    # Check script has timestamps
+    script = json.loads(paths["script"].read_text(encoding="utf-8"))
+    has_timestamps = any(
+        line.get("displayStart") is not None
+        for block in script.get("blocks", [])
+        for line in block.get("lines", [])
+    )
+    if not has_timestamps:
+        raise ValueError(
+            "Script has no timestamps. Run timestamp_audio.py first:\n"
+            f"  python3 youtube/tools/timestamp_audio.py "
+            f"--script {paths['script']} --audio {paths['audio']}"
+        )
+
 
 # ---------------------------------------------------------------------------
 # Step 1: Image generation
@@ -83,7 +95,7 @@ def step_validate(paths: dict[str, Path]) -> None:
 
 def step_images(paths: dict[str, Path], episode_id: str, *, skip: bool = False, regenerate: bool = False) -> None:
     """Generate background images via Gemini."""
-    print("[1/7] Background images...")
+    print("[1/6] Background images...")
 
     if skip:
         print("  Skipped (--skip-images)")
@@ -127,7 +139,7 @@ def step_images(paths: dict[str, Path], episode_id: str, *, skip: bool = False, 
 
 def step_background_video(paths: dict[str, Path], *, skip: bool = False) -> Path | None:
     """Generate per-block background video from AI images."""
-    print("[1.5/7] Generating background video...")
+    print("[1.5/6] Generating background video...")
 
     if skip:
         print("  Skipped")
@@ -141,7 +153,6 @@ def step_background_video(paths: dict[str, Path], *, skip: bool = False) -> Path
     try:
         result = generate_background_video(
             script_path=paths["script"],
-            timed_path=paths["timed"],
             images_dir=paths["images_dir"],
             output_path=output,
             audio_duration=audio_duration,
@@ -162,8 +173,8 @@ def step_background_video(paths: dict[str, Path], *, skip: bool = False) -> Path
 # ---------------------------------------------------------------------------
 
 def step_generate(paths: dict[str, Path], *, scene_file: Path | None = None) -> Path:
-    """Generate Manim scene file from overlays JSON (deterministic codegen)."""
-    print("[2/7] Generating Manim scene (deterministic)...")
+    """Generate Manim scene file from script JSON (deterministic codegen)."""
+    print("[2/6] Generating Manim scene (deterministic)...")
 
     if scene_file:
         print(f"  Using existing scene: {scene_file}")
@@ -175,12 +186,11 @@ def step_generate(paths: dict[str, Path], *, scene_file: Path | None = None) -> 
 
     from .codegen import generate_scene_deterministic
 
-    overlays_json = paths["overlays"].read_text(encoding="utf-8")
     output_path = paths["scene"]
     output_path.parent.mkdir(parents=True, exist_ok=True)
 
     return generate_scene_deterministic(
-        overlays_json, output_path,
+        output_path,
         script_path=paths["script"],
     )
 
@@ -189,29 +199,24 @@ def step_generate(paths: dict[str, Path], *, scene_file: Path | None = None) -> 
 # Step 3: Timing fix
 # ---------------------------------------------------------------------------
 
-def step_timing_fix(paths: dict[str, Path]) -> None:
-    """Timing fix — no-op with deterministic codegen."""
-    print("[3/7] Timing fix (skipped — deterministic codegen)")
-
-
-# ---------------------------------------------------------------------------
-# Step 4: QA gates
-# ---------------------------------------------------------------------------
-
 def step_qa(paths: dict[str, Path], *, force: bool = False) -> list[dict]:
     """Run layout + timing QA gates."""
-    print("[4/7] Running QA gates...")
+    print("[3/6] Running QA gates...")
 
     from .qa_layout import run_layout_qa
     from .qa_timing import run_timing_qa
 
     qa_results = []
 
-    # Load preprocessed overlays for QA (same enrichment codegen uses)
+    # Build preprocessed overlays from script (same path codegen uses)
+    from .codegen import build_overlays_from_script
     from .generate_scene import _preprocess_overlays
-    raw_json = paths["overlays"].read_text(encoding="utf-8")
+
+    script_data = json.loads(paths["script"].read_text(encoding="utf-8"))
+    overlays = build_overlays_from_script(script_data)
+    overlays_json = json.dumps(overlays, ensure_ascii=False, indent=2)
     preprocessed = json.loads(
-        _preprocess_overlays(raw_json, script_path=paths.get("script"))
+        _preprocess_overlays(overlays_json, script_path=paths.get("script"))
     )
 
     # Layout QA (includes transliteration enforcement on preprocessed data)
@@ -221,12 +226,11 @@ def step_qa(paths: dict[str, Path], *, force: bool = False) -> list[dict]:
 
     # Timing QA
     scene_code = paths["scene"].read_text(encoding="utf-8")
-    overlays = preprocessed
 
     # Get audio duration
     audio_duration = _get_audio_duration(paths["audio"])
 
-    timing_qa = run_timing_qa(scene_code, overlays, audio_duration)
+    timing_qa = run_timing_qa(scene_code, preprocessed, audio_duration)
     qa_results.append(timing_qa)
     _report_gate(timing_qa)
 
@@ -247,7 +251,7 @@ def step_qa(paths: dict[str, Path], *, force: bool = False) -> list[dict]:
 
 def step_render(paths: dict[str, Path]) -> Path:
     """Render Manim scene to transparent .mov."""
-    print("[5/7] Rendering Manim scene...")
+    print("[4/6] Rendering Manim scene...")
 
     scene_path = paths["scene"]
     output_dir = paths["output_dir"]
@@ -299,7 +303,7 @@ def step_composite(
     background_video: Path | None = None,
 ) -> Path:
     """Composite: background + Manim overlay + audio [+ PiP] → final MP4."""
-    print("[6/7] Compositing final video...")
+    print("[5/6] Compositing final video...")
 
     final_path = paths["final_mp4"]
     final_path.parent.mkdir(parents=True, exist_ok=True)
@@ -395,7 +399,7 @@ def step_report(
     paths: dict[str, Path],
 ) -> Path:
     """Write QA report JSON."""
-    print("[7/7] Writing QA report...")
+    print("[6/6] Writing QA report...")
 
     report = {
         "episode": episode_id,
@@ -489,10 +493,7 @@ def run_pipeline(args: argparse.Namespace) -> Path:
     scene_file = Path(args.scene_file).resolve() if args.scene_file else None
     scene_path = step_generate(paths, scene_file=scene_file)
 
-    # Step 3: Timing fix (no-op with deterministic codegen)
-    step_timing_fix(paths)
-
-    # Step 4: QA gates
+    # Step 3: QA gates
     qa_results = step_qa(paths, force=args.force)
 
     if args.skip_render:
