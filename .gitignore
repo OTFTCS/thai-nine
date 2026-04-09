@@ -90,3 +90,17 @@ course/modules/**/*-qa-report.md
 course/modules/**/scope-research.md
 course/modules/**/usage-research.md
 course/modules/**/visual-research.md
+
+# Generated slide assets (AI images, regenerable)
+course/modules/**/slide-assets/
+
+# Carousel outputs (regenerable)
+Thai images/**/art/
+Thai images/**/out/
+Thai images/**/*.pptx
+
+# Archive (old snapshots, not source)
+archive/
+
+# Claude worktrees (ephemeral)
+.claude/worktrees/
