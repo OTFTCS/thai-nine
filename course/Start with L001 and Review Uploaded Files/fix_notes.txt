@@ -1,9 +1,0 @@
-L001 visual review notes:
-- Slide 1 (opener): Clean, good layout, right zone tint works well
-- Slide 3 (greeting focus): Thai renders well, card looks good, but content could use more vertical space
-- Slide 5 (contrast board): ISSUE — title text "Thank, apologise, and soften" wraps and overlaps with the column headers. Need to either shorten the title or move the column headers down. Also the ไม่เป็นไร card has overlapping text between the translit/english and the explanation line.
-
-Fixes needed:
-1. Slide 5: Shorten section header title or reduce font size, push content down
-2. Slide 5: Fix ไม่เป็นไร card — increase card height or adjust text positions
-3. Check all other slides for similar overlap issues
