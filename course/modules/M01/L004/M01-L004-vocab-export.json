@@ -1,0 +1,190 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-03-22T03:47:45.477Z",
+  "source": "pipeline-cli",
+  "lessons": [
+    "M01-L004"
+  ],
+  "cards": [
+    {
+      "id": "m01-l004-c01",
+      "vocabId": "v-28499d926c",
+      "thai": "ศูนย์",
+      "translit": "sǔun",
+      "english": "zero (0)",
+      "lessonId": "M01-L004",
+      "tags": [
+        "M01-L004",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l004-c02",
+      "vocabId": "v-d5112f8a63",
+      "thai": "หนึ่ง",
+      "translit": "nùeng",
+      "english": "one (1)",
+      "lessonId": "M01-L004",
+      "tags": [
+        "M01-L004",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l004-c03",
+      "vocabId": "v-123bdecbd4",
+      "thai": "สอง",
+      "translit": "sǎawng",
+      "english": "two (2)",
+      "lessonId": "M01-L004",
+      "tags": [
+        "M01-L004",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l004-c04",
+      "vocabId": "v-914a79ebbb",
+      "thai": "สาม",
+      "translit": "sǎam",
+      "english": "three (3)",
+      "lessonId": "M01-L004",
+      "tags": [
+        "M01-L004",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l004-c05",
+      "vocabId": "v-0e247b83bd",
+      "thai": "สี่",
+      "translit": "sìi",
+      "english": "four (4)",
+      "lessonId": "M01-L004",
+      "tags": [
+        "M01-L004",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l004-c06",
+      "vocabId": "v-6c137e71d9",
+      "thai": "ห้า",
+      "translit": "hâa",
+      "english": "five (5)",
+      "lessonId": "M01-L004",
+      "tags": [
+        "M01-L004",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l004-c07",
+      "vocabId": "v-42ac27384d",
+      "thai": "หก",
+      "translit": "hòk",
+      "english": "six (6)",
+      "lessonId": "M01-L004",
+      "tags": [
+        "M01-L004",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l004-c08",
+      "vocabId": "v-1569f39457",
+      "thai": "เจ็ด",
+      "translit": "jèt",
+      "english": "seven (7)",
+      "lessonId": "M01-L004",
+      "tags": [
+        "M01-L004",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l004-c09",
+      "vocabId": "v-f2b6d018d8",
+      "thai": "แปด",
+      "translit": "bpàaet",
+      "english": "eight (8)",
+      "lessonId": "M01-L004",
+      "tags": [
+        "M01-L004",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l004-c10",
+      "vocabId": "v-d03227860c",
+      "thai": "เก้า",
+      "translit": "gâo",
+      "english": "nine (9)",
+      "lessonId": "M01-L004",
+      "tags": [
+        "M01-L004",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l004-c11",
+      "vocabId": "v-43a5e0b3f2",
+      "thai": "สิบ",
+      "translit": "sìp",
+      "english": "ten (10)",
+      "lessonId": "M01-L004",
+      "tags": [
+        "M01-L004",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l004-c12",
+      "vocabId": "v-ba4059e504",
+      "thai": "เบอร์อะไร",
+      "translit": "ber à-rai",
+      "english": "what number?",
+      "lessonId": "M01-L004",
+      "tags": [
+        "M01-L004",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l004-c13",
+      "vocabId": "v-2d97b680f6",
+      "thai": "ฉันอายุ...ปี",
+      "translit": "chǎn aa-yú ... bpii",
+      "english": "I am ... years old",
+      "lessonId": "M01-L004",
+      "tags": [
+        "M01-L004",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l004-c14",
+      "vocabId": "v-356fe4743b",
+      "thai": "ห้อง",
+      "translit": "hâwng",
+      "english": "room",
+      "lessonId": "M01-L004",
+      "tags": [
+        "M01-L004",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l004-c15",
+      "vocabId": "v-19ba2f5428",
+      "thai": "สาม",
+      "translit": "sǎam",
+      "english": "three (rising tone)",
+      "lessonId": "M01-L004",
+      "tags": [
+        "M01-L004",
+        "core"
+      ]
+    }
+  ]
+}

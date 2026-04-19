@@ -1,0 +1,2187 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "M01-L002",
+  "lessonDir": "/Users/Shared/work/thai-nine/course/modules/M01/L002",
+  "blueprintRow": {
+    "trackId": "T01",
+    "trackTitle": "Foundations",
+    "cefrBand": "A0",
+    "moduleId": "M01",
+    "moduleTitle": "First Contact and Courtesy",
+    "moduleExitOutcome": "Learner can greet people politely, introduce themselves at a basic level, ask who/what/where questions, and survive the first minute of a conversation.",
+    "lessonId": "M01-L002",
+    "lessonTitle": "Names and Countries",
+    "lessonPrimaryOutcome": "Learner can say your name, ask someone's name, and state where you are from.",
+    "lessonSecondaryOutcome": "Learner can recycle recent vocabulary while using origin pattern with มาจาก in short controlled output.",
+    "grammarFunctionPrimary": "name question pattern with ชื่อ",
+    "grammarFunctionSecondary": "origin pattern with มาจาก",
+    "newVocabCore": "ชื่อ = name; คน = person; ประเทศ = country; ไทย = Thailand / Thai; อังกฤษ = England / British; อเมริกา = America; มาจาก = come from",
+    "newChunksCore": "คุณชื่ออะไร = what is your name?; ฉัน/ผมชื่อ... = my name is ...; ฉัน/ผมมาจาก... = I am from ...",
+    "reviewVocabRequired": "สวัสดี = hello; ขอบคุณ = thank you; ขอโทษ = sorry / excuse me; ใช่ = yes",
+    "scriptTarget": "Read and match simple identity lines such as ชื่อ and ประเทศ.",
+    "listeningTarget": "Recognize names and country statements in short self-introductions.",
+    "speakingTarget": "Introduce yourself with name and country in 2-3 lines.",
+    "lessonQuizFocus": "Question formation with ชื่ออะไร and origin statements with มาจาก.",
+    "moduleQuizLink": "M01-QUIZ",
+    "flashcardTags": "M01; L002; first-contact;politeness;survival",
+    "notes": "Primary pattern lesson. Keep output controlled and highly scaffolded.",
+    "sourceInspiration": "Thai With Fah first-contact pragmatics; ThaiPod101 introduction lessons; internal backwards planning."
+  },
+  "promptPath": "/Users/Shared/work/thai-nine/course/prompts/agent-prompts/stage-6-assessment-qa.prompt.md",
+  "promptMd": "# Stage 6.5 — Assessment QA Review\n\nYou are the assessment QA agent for **Immersion Thai with Nine**.\n\nYour job is to review the generated flashcards and end-of-lesson quiz after deterministic stages 5 and 6.\n\nThis review is blocking.\n\n## Inputs\n\nYou will receive:\n- lesson id\n- blueprint row\n- `brief.md`\n- `script-master.json`\n- `flashcards.json`\n- `quiz-item-bank.json`\n- `quiz.json`\n\n## Required output\n\nWrite:\n- `assessment-qa-report.md`\n\nDo not edit:\n- `script-master.json`\n- `flashcards.json`\n- `quiz-item-bank.json`\n- `quiz.json`\n\nThose files are deterministic outputs and will be regenerated after your review.\n\n## Mission\n\nCatch assessment-quality failures such as:\n- flashcards that are too noisy, too abstract, or not worth memorising\n- quiz items that test trivial surface recognition instead of lesson understanding\n- distractors that are obviously wrong\n- prompts that are ambiguous or mismatched to the answer key\n- assessment content that technically passes coverage rules but does not really test the lesson\n\n## Review standard\n\nThe flashcards should be worth studying.\nThe quiz should tell us whether the learner remembered and understood the lesson.\n\nThis is not a schema audit.\nThis is an editorial assessment-quality review.\n\n## Specific checks\n\n### 1. Flashcard usefulness\n\nCheck whether:\n- the exported cards represent lesson-worthy vocabulary or chunks\n- the cards are not cluttered with low-value grammatical residue\n- the set feels coherent for spaced repetition review\n\n### 2. Quiz alignment\n\nCheck whether:\n- questions match the lesson objective\n- the quiz tests what the lesson explicitly taught\n- there is enough contextual understanding, not only isolated translation\n\n### 3. Distractor quality\n\nCheck whether wrong answers are plausible enough to test recall.\n\nWeak distractors include:\n- obviously unrelated meanings\n- random Thai forms from elsewhere\n- options that fail by grammar or category in a trivial way\n\n### 4. Ambiguity\n\nCheck whether:\n- prompts have one clear best answer\n- answer keys match the prompt as displayed\n- transliteration prompts are teachable and fair\n\n## Repair approach\n\nIf the real problem is source content, report it clearly as a blocker.\n\nDo not patch deterministic assessment outputs by hand.\nThose outputs will be regenerated after your review.\n\n## Report format\n\nUse this exact structure:\n\n# Assessment QA Report — Mxx-Lyyy\n\nResult: PASS or FAIL\n\n## Checks\n- Flashcard usefulness: PASS/FAIL — short reason\n- Quiz alignment: PASS/FAIL — short reason\n- Distractor quality: PASS/FAIL — short reason\n- Prompt clarity: PASS/FAIL — short reason\n- Coverage quality: PASS/FAIL — short reason\n\n## Edits made\n- short bullet list of what you changed\n- if no changes were needed, say `- No changes required.`\n\n## Remaining concerns\n- if PASS: `- None.`\n- if FAIL: list unresolved blockers clearly\n\n## Decision rule\n\nWrite `Result: PASS` only if the flashcards and quiz would be acceptable as learner-facing study and assessment materials.\n\nIf the pack is still technically valid but educationally weak, write `Result: FAIL`.\n",
+  "briefPath": "/Users/Shared/work/thai-nine/course/modules/M01/L002/brief.md",
+  "briefMd": "# M01-L002 — Names and Countries\n\n- **Module:** M01 — First Contact and Courtesy\n- **Level:** A0\n- **Target runtime:** 10-13 minutes\n- **Primary objective:** Learner can ask someone’s name, say your own name, and state where you are from.\n- **Secondary objective:** Learner can reuse the previous greeting/courtesy lesson while building a two- or three-line self-introduction.\n- **Teaching frame:** First meeting at a class, event, or reception desk.\n\n## Must-teach outcomes\n1. Ask and answer the name question.\n2. Recognise and use ชื่อ as the core name word.\n3. Say where you are from with มาจาก.\n4. Produce a short self-introduction with hello, name, and country.\n5. Reuse at least two previous courtesy items naturally.\n\n## Core vocabulary and chunks\n| Thai | Transliteration | English |\n|---|---|---|\n| ชื่อ | chûue | name |\n| คุณชื่ออะไร | khun chûue à-rai | what is your name? |\n| ฉันชื่อ... | chǎn chûue... | my name is ... |\n| ผมชื่อ... | phǒm chûue... | my name is ... (male speaker) |\n| ฉัน | chǎn | I |\n| ผม | phǒm | I (male) |\n| คุณ | khun | you |\n| คน | khon | person |\n| ประเทศ | bprà-thêet | country |\n| มาจาก | maa-jàak | come from / be from |\n| ไทย | thai | Thailand / Thai |\n| อังกฤษ | ang-grìt | England / British |\n| อเมริกา | à-mee-rí-gaa | America |\n\n## Teaching constraints\n- Keep the name and country patterns highly scaffolded.\n- Reuse greeting/courtesy naturally instead of introducing identity language in isolation.\n- Keep map/flag support small and secondary to the sentence frame.\n\n## Likely learner mistakes\n1. Translating word by word instead of treating the name question as a fixed chunk.\n2. Freezing over pronoun choice instead of committing to one clear beginner frame.\n3. Memorising country words without learning the มาจาก pattern.\n4. Dropping the greeting so the self-introduction sounds abrupt.\n\n## Image and visual notes\n- Most sections should stay text-first.\n- Only the country section benefits from a light visual anchor such as simple flags or map cues.\n",
+  "scriptMasterPath": "/Users/Shared/work/thai-nine/course/modules/M01/L002/script-master.json",
+  "scriptMaster": {
+    "schemaVersion": 1,
+    "lessonId": "M01-L002",
+    "title": "Names and Countries: Simple Self-Introduction Thai",
+    "objective": "Ask someone’s name, say your own name, and state where you are from using a short polite self-introduction.",
+    "teachingFrame": {
+      "targetRuntimeMin": 10,
+      "targetRuntimeMax": 13,
+      "openingHook": "Open with the moment right after hello, when someone asks your name and where you are from.",
+      "scenario": "A learner meets someone for the first time and wants to introduce themselves in two or three clean lines.",
+      "learnerTakeaway": "By the end, the learner can greet, ask a name, give a name, and say where they are from in a compact polite exchange."
+    },
+    "context": {
+      "schemaVersion": 1,
+      "lessonId": "M01-L002",
+      "priorLessons": [
+        "M01-L001"
+      ],
+      "knownVocabulary": [
+        {
+          "thai": "สวัสดี",
+          "translit": "sà-wàt-dii",
+          "english": "hello",
+          "vocabId": "v-c9337e2739"
+        },
+        {
+          "thai": "สวัสดีครับ",
+          "translit": "sà-wàt-dii khráp",
+          "english": "hello (male speaker)",
+          "vocabId": "v-e653eb5319"
+        },
+        {
+          "thai": "สวัสดีค่ะ",
+          "translit": "sà-wàt-dii khâ",
+          "english": "hello (female speaker)",
+          "vocabId": "v-bccbe506b3"
+        },
+        {
+          "thai": "ขอบคุณ",
+          "translit": "khàawp-khun",
+          "english": "thank you",
+          "vocabId": "v-217b46aa5a"
+        },
+        {
+          "thai": "ขอโทษ",
+          "translit": "khǎaw-thôot",
+          "english": "excuse me / sorry",
+          "vocabId": "v-6fce5e8c2c"
+        },
+        {
+          "thai": "ไม่เป็นไร",
+          "translit": "mâi bpen rai",
+          "english": "it is okay / no problem",
+          "vocabId": "v-03cc3fe123"
+        },
+        {
+          "thai": "ครับ",
+          "translit": "khráp",
+          "english": "male polite ending",
+          "vocabId": "v-a34b9ddfd4"
+        },
+        {
+          "thai": "ค่ะ",
+          "translit": "khâ",
+          "english": "female statement ending",
+          "vocabId": "v-e5c357ab24"
+        },
+        {
+          "thai": "คะ",
+          "translit": "khá",
+          "english": "female question ending",
+          "vocabId": "v-8637eb381c"
+        },
+        {
+          "thai": "ใช่",
+          "translit": "châi",
+          "english": "yes / that is right",
+          "vocabId": "v-f40371ec59"
+        },
+        {
+          "thai": "ไม่ใช่",
+          "translit": "mâi châi",
+          "english": "no / not right",
+          "vocabId": "v-cda55f5b5e"
+        }
+      ],
+      "knownGrammar": [
+        "Explain what ครับ, ค่ะ, and คะ do so the learner does not memorize them as random decoration.",
+        "Give the learner a small response toolkit so a first encounter can continue instead of stopping at one memorised line.",
+        "Teach the core greeting and show that politeness is built into the line, not added as an afterthought.",
+        "Teach the two highest-value courtesy phrases and explain that one form repairs the interaction while the other closes it warmly."
+      ],
+      "reviewBuckets": [
+        {
+          "bucket": "last",
+          "offset": 1,
+          "lessonId": "M01-L001",
+          "vocabIds": [
+            "v-c9337e2739",
+            "v-e653eb5319",
+            "v-bccbe506b3",
+            "v-217b46aa5a"
+          ],
+          "sample": [
+            {
+              "thai": "สวัสดี",
+              "translit": "sà-wàt-dii",
+              "english": "hello",
+              "vocabId": "v-c9337e2739"
+            },
+            {
+              "thai": "สวัสดีครับ",
+              "translit": "sà-wàt-dii khráp",
+              "english": "hello (male speaker)",
+              "vocabId": "v-e653eb5319"
+            },
+            {
+              "thai": "สวัสดีค่ะ",
+              "translit": "sà-wàt-dii khâ",
+              "english": "hello (female speaker)",
+              "vocabId": "v-bccbe506b3"
+            },
+            {
+              "thai": "ขอบคุณ",
+              "translit": "khàawp-khun",
+              "english": "thank you",
+              "vocabId": "v-217b46aa5a"
+            }
+          ]
+        },
+        {
+          "bucket": "minus3",
+          "offset": 3,
+          "lessonId": null,
+          "vocabIds": [],
+          "sample": []
+        },
+        {
+          "bucket": "minus6",
+          "offset": 6,
+          "lessonId": null,
+          "vocabIds": [],
+          "sample": []
+        },
+        {
+          "bucket": "minus8",
+          "offset": 8,
+          "lessonId": null,
+          "vocabIds": [],
+          "sample": []
+        }
+      ]
+    },
+    "sections": [
+      {
+        "id": "s1",
+        "heading": "Ask and answer the name question",
+        "purpose": "Teach the core name pattern with ชื่อ and อะไร so the learner can ask and answer the most basic identity question immediately.",
+        "spokenNarration": [
+          "The first new question is คุณชื่ออะไร khun chûue à-rai. Literally, it is your name what, but functionally it means what is your name?",
+          "The answer is simple and formulaic: ฉันชื่อ... chǎn chûue... or ผมชื่อ... phǒm chûue.... This is good news for a beginner because the pattern is very stable.",
+          "Do not try to translate every word one by one in real time. Learn the question and the answer as a pair that belongs together."
+        ],
+        "onScreenBullets": [
+          "ชื่อ | chûue | name",
+          "คุณชื่ออะไร | khun chûue à-rai | what is your name?",
+          "ฉันชื่อ... | chǎn chûue... | my name is ...",
+          "ผมชื่อ... | phǒm chûue... | my name is ... (male speaker)"
+        ],
+        "drills": [
+          "Teacher asks คุณชื่ออะไร; learner answers with ฉันชื่อ... or ผมชื่อ....",
+          "Substitution drill: change only the name while keeping the full pattern intact."
+        ],
+        "languageFocus": [
+          {
+            "thai": "ชื่อ",
+            "translit": "chûue",
+            "english": "name",
+            "vocabId": "v-6acb169e4b"
+          },
+          {
+            "thai": "คุณชื่ออะไร",
+            "translit": "khun chûue à-rai",
+            "english": "what is your name?",
+            "vocabId": "v-a79c6af3af"
+          },
+          {
+            "thai": "ฉันชื่อ...",
+            "translit": "chǎn chûue...",
+            "english": "my name is ...",
+            "vocabId": "v-33248cf209"
+          },
+          {
+            "thai": "ผมชื่อ...",
+            "translit": "phǒm chûue...",
+            "english": "my name is ... (male speaker)",
+            "vocabId": "v-d5ec4d10d2"
+          }
+        ],
+        "visualPlan": {
+          "leftPanelLayout": "dialogue-ladder",
+          "onScreenGoal": "Show the question-and-answer name pair as one reusable exchange on the left side.",
+          "teachingVisuals": [
+            "A two-step dialogue ladder with the question on top and the answer below.",
+            "Name-slot highlight showing only the personal name changes."
+          ],
+          "teacherCues": [
+            "Keep the pattern whole before zooming in on the word ชื่อ.",
+            "Use a placeholder name slot instead of many example names at once."
+          ],
+          "imageSupport": {
+            "helpful": false,
+            "priority": "avoid",
+            "rationale": "The pattern itself is the lesson, so dialogue structure teaches better than a photo.",
+            "searchQueries": [],
+            "sourceHints": [
+              "text-only dialogue ladder"
+            ]
+          }
+        }
+      },
+      {
+        "id": "s2",
+        "heading": "Use ฉัน and ผม naturally",
+        "purpose": "Explain the beginner-level pronoun choice so the learner can produce self-introduction lines without freezing over identity wording.",
+        "spokenNarration": [
+          "Thai gives you more than one way to say I. In this course at beginner level, we use ฉัน chǎn as a common all-purpose learning form and ผม phǒm for a clearly male self-reference.",
+          "One small support word here is คน khon, person. It helps you hear that this is a conversation between people, not just a set of labels, and it keeps the pronoun choice grounded in who is speaking.",
+          "The important point is still practical: choose one pronoun confidently and keep the full line stable as ฉันชื่อ... or ผมชื่อ...."
+        ],
+        "onScreenBullets": [
+          "ฉัน | chǎn | I",
+          "ผม | phǒm | I (male)",
+          "ฉันชื่อ... | chǎn chûue... | my name is ...",
+          "ผมชื่อ... | phǒm chûue... | my name is ... (male speaker)"
+        ],
+        "drills": [
+          "Prompt drill: teacher gives the role, learner starts the sentence with ฉัน or ผม and finishes the name line.",
+          "Quick recognition drill: hear คน and identify who the speaking person is in the line before repeating it."
+        ],
+        "languageFocus": [
+          {
+            "thai": "ฉัน",
+            "translit": "chǎn",
+            "english": "I",
+            "vocabId": "v-0ab46f92e7"
+          },
+          {
+            "thai": "ผม",
+            "translit": "phǒm",
+            "english": "I (male)",
+            "vocabId": "v-796f86a0f6"
+          },
+          {
+            "thai": "ฉันชื่อ...",
+            "translit": "chǎn chûue...",
+            "english": "my name is ...",
+            "vocabId": "v-33248cf209"
+          },
+          {
+            "thai": "ผมชื่อ...",
+            "translit": "phǒm chûue...",
+            "english": "my name is ... (male speaker)",
+            "vocabId": "v-d5ec4d10d2"
+          }
+        ],
+        "visualPlan": {
+          "leftPanelLayout": "contrast-board",
+          "onScreenGoal": "Keep pronoun choice practical by showing the speaking person clearly and returning fast to full introduction lines.",
+          "teachingVisuals": [
+            "Two short speaker cards for ฉัน and ผม.",
+            "A small support chip for คน to anchor the idea of the person speaking."
+          ],
+          "teacherCues": [
+            "Keep the explanation short and return quickly to full sentences.",
+            "Use คน only as a support word, not as a new grammar detour."
+          ],
+          "imageSupport": {
+            "helpful": false,
+            "priority": "avoid",
+            "rationale": "Role contrast is clearer with labelled speaker cards than with photos.",
+            "searchQueries": [],
+            "sourceHints": [
+              "text-only role cards"
+            ]
+          }
+        }
+      },
+      {
+        "id": "s3",
+        "heading": "Say where you are from with มาจาก",
+        "purpose": "Teach the origin pattern so the learner can complete a basic introduction with country information instead of stopping after the name.",
+        "spokenNarration": [
+          "Before the country examples, learn ประเทศ bprà-thêet. It means country, and it gives you the category that ties the place words together.",
+          "To say where you are from, Thai often uses มาจาก maa-jàak, literally come from. So the practical beginner frame is ฉันมาจาก... or ผมมาจาก....",
+          "Today we keep the country set small: ไทย thai, อังกฤษ ang-grìt, and อเมริกา à-mee-rí-gaa. Learn the category word ประเทศ and then plug the country into the stable frame."
+        ],
+        "onScreenBullets": [
+          "ประเทศ | bprà-thêet | country",
+          "มาจาก | maa-jàak | come from / be from",
+          "มาจากไทย | maa-jàak thai | be from Thailand",
+          "มาจากอังกฤษ | maa-jàak ang-grìt | be from England",
+          "มาจากอเมริกา | maa-jàak à-mee-rí-gaa | be from America"
+        ],
+        "drills": [
+          "Category drill: teacher says ประเทศ and the learner points to the country words that belong under it.",
+          "Country substitution drill: keep ฉันมาจาก... or ผมมาจาก... and swap only the country.",
+          "Listening drill: hear a country line and point to ไทย, อังกฤษ, or อเมริกา before repeating it."
+        ],
+        "languageFocus": [
+          {
+            "thai": "ประเทศ",
+            "translit": "bprà-thêet",
+            "english": "country",
+            "vocabId": "v-d0c316cc2c"
+          },
+          {
+            "thai": "มาจาก",
+            "translit": "maa-jàak",
+            "english": "come from / be from",
+            "vocabId": "v-dfd8165dd5"
+          },
+          {
+            "thai": "มาจากไทย",
+            "translit": "maa-jàak thai",
+            "english": "be from Thailand",
+            "vocabId": "v-317510cace"
+          },
+          {
+            "thai": "มาจากอังกฤษ",
+            "translit": "maa-jàak ang-grìt",
+            "english": "be from England",
+            "vocabId": "v-15a452b73b"
+          },
+          {
+            "thai": "มาจากอเมริกา",
+            "translit": "maa-jàak à-mee-rí-gaa",
+            "english": "be from America",
+            "vocabId": "v-b845ab6bae"
+          }
+        ],
+        "visualPlan": {
+          "leftPanelLayout": "image-anchored",
+          "onScreenGoal": "Show ประเทศ as the category word, then keep the มาจาก sentence frame larger than the country examples.",
+          "teachingVisuals": [
+            "A category chip for ประเทศ above the sentence frame.",
+            "Sentence frame card for ฉันมาจาก... / ผมมาจาก....",
+            "Three compact country labels with a simple map or flag cue."
+          ],
+          "teacherCues": [
+            "Teach ประเทศ first so the learner hears the country words as one group.",
+            "Keep the sentence frame larger than the country cues so grammar stays primary.",
+            "Use the visual only to help memory, not to turn the scene into a travel poster."
+          ],
+          "imageSupport": {
+            "helpful": true,
+            "priority": "supporting",
+            "rationale": "A very light map or flag anchor helps learners separate the country words quickly while the spoken pattern remains the main teaching target.",
+            "searchQueries": [
+              "simple Thailand England America flags flat lay",
+              "country flag icons Thailand England America"
+            ],
+            "sourceHints": [
+              "Wikimedia Commons",
+              "The Noun Project",
+              "simple flag icons"
+            ]
+          }
+        }
+      },
+      {
+        "id": "s4",
+        "heading": "Build a full two-line self-introduction",
+        "purpose": "Combine the greeting from lesson 1 with the new identity patterns so the learner can produce a practical mini-introduction.",
+        "spokenNarration": [
+          "Now connect the old lesson and the new one. Start with สวัสดี, then give your name, and then give your country.",
+          "If you need to begin politely, you can still borrow ขอโทษ from the last lesson to get attention before the question. If you are checking what you heard, ใช่ helps you confirm it.",
+          "So the learner goal is a compact social sequence: hello, name, country, and a polite response that sounds human instead of abrupt."
+        ],
+        "onScreenBullets": [
+          "สวัสดีครับ/ค่ะ | sà-wàt-dii khráp/khâ | hello",
+          "ขอโทษ | khǎaw-thôot | excuse me / sorry",
+          "ฉันชื่อ... / ผมชื่อ... | chǎn/phǒm chûue... | my name is ...",
+          "ฉันมาจาก... / ผมมาจาก... | chǎn/phǒm maa-jàak... | I am from ...",
+          "ใช่ | châi | yes / that is right",
+          "ขอบคุณ | khàawp-khun | thank you"
+        ],
+        "drills": [
+          "Build drill: learner says hello, name, and country as one three-step sequence.",
+          "Partner drill: one learner starts with ขอโทษ and คุณชื่ออะไร, the other answers with name and country, then the first learner confirms with ใช่."
+        ],
+        "languageFocus": [
+          {
+            "thai": "สวัสดี",
+            "translit": "sà-wàt-dii",
+            "english": "hello",
+            "vocabId": "v-c9337e2739"
+          },
+          {
+            "thai": "ขอบคุณ",
+            "translit": "khàawp-khun",
+            "english": "thank you",
+            "vocabId": "v-217b46aa5a"
+          },
+          {
+            "thai": "ฉันมาจาก...",
+            "translit": "chǎn maa-jàak...",
+            "english": "I am from ...",
+            "vocabId": "v-b2f0acf56a"
+          },
+          {
+            "thai": "ผมมาจาก...",
+            "translit": "phǒm maa-jàak...",
+            "english": "I am from ... (male)",
+            "vocabId": "v-64f9ed0e55"
+          }
+        ],
+        "visualPlan": {
+          "leftPanelLayout": "dialogue-ladder",
+          "onScreenGoal": "Show the learner how the old greeting and courtesy lines stack with the new identity lines into one usable mini-introduction.",
+          "teachingVisuals": [
+            "A four-step introduction ladder: hello -> excuse me/question -> name -> country.",
+            "Two small review chips for ใช่ and ขอบคุณ to show natural follow-up moves."
+          ],
+          "teacherCues": [
+            "Make the sequence feel performable, not theoretical.",
+            "Keep the core name and country lines visually dominant over the review chips."
+          ],
+          "imageSupport": {
+            "helpful": false,
+            "priority": "avoid",
+            "rationale": "The learner needs a sentence sequence here, so a dialogue ladder teaches better than another image.",
+            "searchQueries": [],
+            "sourceHints": [
+              "text-only introduction ladder"
+            ]
+          }
+        }
+      }
+    ],
+    "roleplay": {
+      "scenario": "Meeting someone for the first time at a class or event.",
+      "lines": [
+        {
+          "speaker": "A",
+          "thai": "สวัสดีค่ะ",
+          "translit": "sà-wàt-dii khâ",
+          "english": "Hello."
+        },
+        {
+          "speaker": "B",
+          "thai": "สวัสดีครับ",
+          "translit": "sà-wàt-dii khráp",
+          "english": "Hello."
+        },
+        {
+          "speaker": "A",
+          "thai": "ขอโทษค่ะ คุณชื่ออะไรคะ",
+          "translit": "khǎaw-thôot khâ khun chûue à-rai khá",
+          "english": "Excuse me, what is your name?"
+        },
+        {
+          "speaker": "B",
+          "thai": "ผมชื่อแดนครับ",
+          "translit": "phǒm chûue Daen khráp",
+          "english": "My name is Dan."
+        },
+        {
+          "speaker": "A",
+          "thai": "มาจากประเทศอะไรคะ",
+          "translit": "maa-jàak bprà-thêet à-rai khá",
+          "english": "What country are you from?"
+        },
+        {
+          "speaker": "B",
+          "thai": "ผมมาจากอังกฤษครับ",
+          "translit": "phǒm maa-jàak ang-grìt khráp",
+          "english": "I am from England."
+        },
+        {
+          "speaker": "A",
+          "thai": "อังกฤษใช่ไหมคะ",
+          "translit": "ang-grìt châi mái khá",
+          "english": "England, right?"
+        },
+        {
+          "speaker": "B",
+          "thai": "ใช่ครับ",
+          "translit": "châi khráp",
+          "english": "Yes."
+        },
+        {
+          "speaker": "A",
+          "thai": "ขอบคุณค่ะ",
+          "translit": "khàawp-khun khâ",
+          "english": "Thank you."
+        }
+      ]
+    },
+    "recap": [
+      "Learn คุณชื่ออะไร and its answer as one fixed beginner pair.",
+      "Choose one stable self-pronoun and focus on producing the full line confidently.",
+      "Use มาจาก to say where you are from and keep the country slot flexible.",
+      "Carry over สวัสดี and ขอบคุณ so the introduction sounds social, not robotic."
+    ],
+    "qaChecks": [
+      {
+        "id": "tone-inline",
+        "description": "All transliteration uses PTM inline tone marks; superscripts forbidden",
+        "pass": true,
+        "evidence": "All transliteration strings passed inline-tone checks"
+      },
+      {
+        "id": "triplets",
+        "description": "Thai/translit/English triplets are complete for learner-facing script content",
+        "pass": true,
+        "evidence": "Sections and on-screen bullets contain complete triplets"
+      },
+      {
+        "id": "drills",
+        "description": "Each section includes active drill",
+        "pass": true,
+        "evidence": "Each section has >=1 drill"
+      },
+      {
+        "id": "section-count",
+        "description": "Lesson contains at least 4 teaching sections",
+        "pass": true,
+        "evidence": "Legacy lesson exemption applied with 4 sections"
+      },
+      {
+        "id": "section-depth",
+        "description": "Each section includes at least 3 spoken narration lines",
+        "pass": true,
+        "evidence": "Legacy lesson exemption applied"
+      },
+      {
+        "id": "roleplay",
+        "description": "Scenario roleplay included and substantial",
+        "pass": true,
+        "evidence": "Roleplay contains 9 lines"
+      },
+      {
+        "id": "roleplay-duplicates",
+        "description": "Roleplay does not repeat exact lines",
+        "pass": true,
+        "evidence": "All roleplay lines are distinct"
+      },
+      {
+        "id": "roleplay-turn-taking",
+        "description": "Roleplay alternates speakers cleanly",
+        "pass": true,
+        "evidence": "Roleplay alternates speakers line by line"
+      },
+      {
+        "id": "roleplay-answer-logic",
+        "description": "Yes/no answer particles appear only after a nearby question or confirmation turn",
+        "pass": true,
+        "evidence": "Answer particles follow question-like turns when used"
+      },
+      {
+        "id": "roleplay-question-target",
+        "description": "Question-target lessons include at least one question-like roleplay turn",
+        "pass": true,
+        "evidence": "Roleplay includes a question-like turn"
+      },
+      {
+        "id": "recap",
+        "description": "Recap includes at least 3 review items",
+        "pass": true,
+        "evidence": "Recap contains 4 items"
+      },
+      {
+        "id": "review-reuse",
+        "description": "Lesson reuses at least 2 prior items when prior lesson context exists",
+        "pass": true,
+        "evidence": "Reused 2 prior vocabulary items in language focus"
+      },
+      {
+        "id": "teaching-frame",
+        "description": "Lesson includes a clear teaching frame with runtime and learner takeaway",
+        "pass": true,
+        "evidence": "Legacy lesson exemption applied"
+      },
+      {
+        "id": "visual-plan",
+        "description": "Each section includes a left-panel visual plan and explicit image decision",
+        "pass": true,
+        "evidence": "Legacy lesson exemption applied"
+      },
+      {
+        "id": "asset-research",
+        "description": "Lesson provides at least one concrete image research query when visuals would help",
+        "pass": true,
+        "evidence": "Legacy lesson exemption applied"
+      },
+      {
+        "id": "policy",
+        "description": "Transliteration + image sourcing policies are declared",
+        "pass": true,
+        "evidence": "Policy object present with required enum values"
+      }
+    ],
+    "policies": {
+      "transliteration": "PTM_ADAPTED_INLINE_TONES",
+      "imageSourcing": "INTERNET_FIRST_NO_GENERATIVE_DEFAULT"
+    }
+  },
+  "flashcardsPath": "/Users/Shared/work/thai-nine/course/modules/M01/L002/flashcards.json",
+  "flashcardsJson": {
+    "schemaVersion": 1,
+    "lessonId": "M01-L002",
+    "cards": [
+      {
+        "id": "m01-l002-c01",
+        "vocabId": "v-6acb169e4b",
+        "front": "ชื่อ",
+        "back": "name",
+        "translit": "chûue",
+        "tags": [
+          "M01-L002",
+          "core"
+        ]
+      },
+      {
+        "id": "m01-l002-c02",
+        "vocabId": "v-a79c6af3af",
+        "front": "คุณชื่ออะไร",
+        "back": "what is your name?",
+        "translit": "khun chûue à-rai",
+        "tags": [
+          "M01-L002",
+          "core"
+        ]
+      },
+      {
+        "id": "m01-l002-c03",
+        "vocabId": "v-33248cf209",
+        "front": "ฉันชื่อ...",
+        "back": "my name is ...",
+        "translit": "chǎn chûue...",
+        "tags": [
+          "M01-L002",
+          "core"
+        ]
+      },
+      {
+        "id": "m01-l002-c04",
+        "vocabId": "v-d5ec4d10d2",
+        "front": "ผมชื่อ...",
+        "back": "my name is ... (male speaker)",
+        "translit": "phǒm chûue...",
+        "tags": [
+          "M01-L002",
+          "core"
+        ]
+      },
+      {
+        "id": "m01-l002-c05",
+        "vocabId": "v-0ab46f92e7",
+        "front": "ฉัน",
+        "back": "I",
+        "translit": "chǎn",
+        "tags": [
+          "M01-L002",
+          "core"
+        ]
+      },
+      {
+        "id": "m01-l002-c06",
+        "vocabId": "v-796f86a0f6",
+        "front": "ผม",
+        "back": "I (male)",
+        "translit": "phǒm",
+        "tags": [
+          "M01-L002",
+          "core"
+        ]
+      },
+      {
+        "id": "m01-l002-c07",
+        "vocabId": "v-d0c316cc2c",
+        "front": "ประเทศ",
+        "back": "country",
+        "translit": "bprà-thêet",
+        "tags": [
+          "M01-L002",
+          "core"
+        ]
+      },
+      {
+        "id": "m01-l002-c08",
+        "vocabId": "v-dfd8165dd5",
+        "front": "มาจาก",
+        "back": "come from / be from",
+        "translit": "maa-jàak",
+        "tags": [
+          "M01-L002",
+          "core"
+        ]
+      },
+      {
+        "id": "m01-l002-c09",
+        "vocabId": "v-317510cace",
+        "front": "มาจากไทย",
+        "back": "be from Thailand",
+        "translit": "maa-jàak thai",
+        "tags": [
+          "M01-L002",
+          "core"
+        ]
+      },
+      {
+        "id": "m01-l002-c10",
+        "vocabId": "v-15a452b73b",
+        "front": "มาจากอังกฤษ",
+        "back": "be from England",
+        "translit": "maa-jàak ang-grìt",
+        "tags": [
+          "M01-L002",
+          "core"
+        ]
+      },
+      {
+        "id": "m01-l002-c11",
+        "vocabId": "v-b845ab6bae",
+        "front": "มาจากอเมริกา",
+        "back": "be from America",
+        "translit": "maa-jàak à-mee-rí-gaa",
+        "tags": [
+          "M01-L002",
+          "core"
+        ]
+      },
+      {
+        "id": "m01-l002-c12",
+        "vocabId": "v-c9337e2739",
+        "front": "สวัสดี",
+        "back": "hello",
+        "translit": "sà-wàt-dii",
+        "tags": [
+          "M01-L002",
+          "core"
+        ]
+      },
+      {
+        "id": "m01-l002-c13",
+        "vocabId": "v-217b46aa5a",
+        "front": "ขอบคุณ",
+        "back": "thank you",
+        "translit": "khàawp-khun",
+        "tags": [
+          "M01-L002",
+          "core"
+        ]
+      },
+      {
+        "id": "m01-l002-c14",
+        "vocabId": "v-b2f0acf56a",
+        "front": "ฉันมาจาก...",
+        "back": "I am from ...",
+        "translit": "chǎn maa-jàak...",
+        "tags": [
+          "M01-L002",
+          "core"
+        ]
+      },
+      {
+        "id": "m01-l002-c15",
+        "vocabId": "v-64f9ed0e55",
+        "front": "ผมมาจาก...",
+        "back": "I am from ... (male)",
+        "translit": "phǒm maa-jàak...",
+        "tags": [
+          "M01-L002",
+          "core"
+        ]
+      }
+    ]
+  },
+  "quizItemBankPath": "/Users/Shared/work/thai-nine/course/modules/M01/L002/quiz-item-bank.json",
+  "quizItemBankJson": {
+    "schemaVersion": 1,
+    "lessonId": "M01-L002",
+    "generatedAt": "2026-03-11T07:28:59.649Z",
+    "sourceScript": "script-master.json",
+    "items": [
+      {
+        "id": "v-6acb169e4b-thai-to-english",
+        "vocabId": "v-6acb169e4b",
+        "type": "thai_to_english",
+        "displayMode": "thai_only",
+        "prompt": {
+          "text": "What is the best meaning of ชื่อ?",
+          "thai": "ชื่อ",
+          "translit": "chûue"
+        },
+        "options": [
+          "name",
+          "what is your name?",
+          "my name is ...",
+          "my name is ... (male speaker)"
+        ],
+        "answer": "name",
+        "rationale": "Maps Thai form to target meaning from script languageFocus."
+      },
+      {
+        "id": "v-6acb169e4b-english-to-thai",
+        "vocabId": "v-6acb169e4b",
+        "type": "english_to_thai",
+        "displayMode": "english_only",
+        "prompt": {
+          "text": "Select Thai for: name",
+          "english": "name"
+        },
+        "options": [
+          "ชื่อ",
+          "คุณชื่ออะไร",
+          "ฉันชื่อ...",
+          "ผมชื่อ..."
+        ],
+        "answer": "ชื่อ",
+        "rationale": "Reverses mapping for active recall."
+      },
+      {
+        "id": "v-6acb169e4b-fill-translit",
+        "vocabId": "v-6acb169e4b",
+        "type": "fill_translit",
+        "displayMode": "thai_only",
+        "prompt": {
+          "text": "Type the PTM transliteration for ชื่อ.",
+          "thai": "ชื่อ"
+        },
+        "answer": "chûue",
+        "rationale": "Forces transliteration production with inline tone marks."
+      },
+      {
+        "id": "v-6acb169e4b-context-mcq",
+        "vocabId": "v-6acb169e4b",
+        "type": "context_mcq",
+        "displayMode": "triplet",
+        "prompt": {
+          "text": "Choose the sentence that keeps the lesson meaning of this phrase.",
+          "thai": "ชื่อ",
+          "translit": "chûue",
+          "english": "name"
+        },
+        "options": [
+          "Use ชื่อ in polite beginner conversation",
+          "Use คุณชื่ออะไร in polite beginner conversation",
+          "Use ฉันชื่อ... in polite beginner conversation",
+          "Use ผมชื่อ... in polite beginner conversation"
+        ],
+        "answer": "Use ชื่อ in polite beginner conversation",
+        "rationale": "Checks contextual understanding while preserving triplet exposure."
+      },
+      {
+        "id": "v-a79c6af3af-thai-to-english",
+        "vocabId": "v-a79c6af3af",
+        "type": "thai_to_english",
+        "displayMode": "thai_only",
+        "prompt": {
+          "text": "What is the best meaning of คุณชื่ออะไร?",
+          "thai": "คุณชื่ออะไร",
+          "translit": "khun chûue à-rai"
+        },
+        "options": [
+          "what is your name?",
+          "name",
+          "my name is ...",
+          "my name is ... (male speaker)"
+        ],
+        "answer": "what is your name?",
+        "rationale": "Maps Thai form to target meaning from script languageFocus."
+      },
+      {
+        "id": "v-a79c6af3af-english-to-thai",
+        "vocabId": "v-a79c6af3af",
+        "type": "english_to_thai",
+        "displayMode": "english_only",
+        "prompt": {
+          "text": "Select Thai for: what is your name?",
+          "english": "what is your name?"
+        },
+        "options": [
+          "คุณชื่ออะไร",
+          "ชื่อ",
+          "ฉันชื่อ...",
+          "ผมชื่อ..."
+        ],
+        "answer": "คุณชื่ออะไร",
+        "rationale": "Reverses mapping for active recall."
+      },
+      {
+        "id": "v-a79c6af3af-fill-translit",
+        "vocabId": "v-a79c6af3af",
+        "type": "fill_translit",
+        "displayMode": "thai_only",
+        "prompt": {
+          "text": "Type the PTM transliteration for คุณชื่ออะไร.",
+          "thai": "คุณชื่ออะไร"
+        },
+        "answer": "khun chûue à-rai",
+        "rationale": "Forces transliteration production with inline tone marks."
+      },
+      {
+        "id": "v-a79c6af3af-context-mcq",
+        "vocabId": "v-a79c6af3af",
+        "type": "context_mcq",
+        "displayMode": "triplet",
+        "prompt": {
+          "text": "Choose the sentence that keeps the lesson meaning of this phrase.",
+          "thai": "คุณชื่ออะไร",
+          "translit": "khun chûue à-rai",
+          "english": "what is your name?"
+        },
+        "options": [
+          "Use คุณชื่ออะไร in polite beginner conversation",
+          "Use ชื่อ in polite beginner conversation",
+          "Use ฉันชื่อ... in polite beginner conversation",
+          "Use ผมชื่อ... in polite beginner conversation"
+        ],
+        "answer": "Use คุณชื่ออะไร in polite beginner conversation",
+        "rationale": "Checks contextual understanding while preserving triplet exposure."
+      },
+      {
+        "id": "v-33248cf209-thai-to-english",
+        "vocabId": "v-33248cf209",
+        "type": "thai_to_english",
+        "displayMode": "thai_only",
+        "prompt": {
+          "text": "What is the best meaning of ฉันชื่อ...?",
+          "thai": "ฉันชื่อ...",
+          "translit": "chǎn chûue..."
+        },
+        "options": [
+          "my name is ...",
+          "name",
+          "what is your name?",
+          "my name is ... (male speaker)"
+        ],
+        "answer": "my name is ...",
+        "rationale": "Maps Thai form to target meaning from script languageFocus."
+      },
+      {
+        "id": "v-33248cf209-english-to-thai",
+        "vocabId": "v-33248cf209",
+        "type": "english_to_thai",
+        "displayMode": "english_only",
+        "prompt": {
+          "text": "Select Thai for: my name is ...",
+          "english": "my name is ..."
+        },
+        "options": [
+          "ฉันชื่อ...",
+          "ชื่อ",
+          "คุณชื่ออะไร",
+          "ผมชื่อ..."
+        ],
+        "answer": "ฉันชื่อ...",
+        "rationale": "Reverses mapping for active recall."
+      },
+      {
+        "id": "v-33248cf209-fill-translit",
+        "vocabId": "v-33248cf209",
+        "type": "fill_translit",
+        "displayMode": "thai_only",
+        "prompt": {
+          "text": "Type the PTM transliteration for ฉันชื่อ....",
+          "thai": "ฉันชื่อ..."
+        },
+        "answer": "chǎn chûue...",
+        "rationale": "Forces transliteration production with inline tone marks."
+      },
+      {
+        "id": "v-33248cf209-context-mcq",
+        "vocabId": "v-33248cf209",
+        "type": "context_mcq",
+        "displayMode": "triplet",
+        "prompt": {
+          "text": "Choose the sentence that keeps the lesson meaning of this phrase.",
+          "thai": "ฉันชื่อ...",
+          "translit": "chǎn chûue...",
+          "english": "my name is ..."
+        },
+        "options": [
+          "Use ฉันชื่อ... in polite beginner conversation",
+          "Use ชื่อ in polite beginner conversation",
+          "Use คุณชื่ออะไร in polite beginner conversation",
+          "Use ผมชื่อ... in polite beginner conversation"
+        ],
+        "answer": "Use ฉันชื่อ... in polite beginner conversation",
+        "rationale": "Checks contextual understanding while preserving triplet exposure."
+      },
+      {
+        "id": "v-d5ec4d10d2-thai-to-english",
+        "vocabId": "v-d5ec4d10d2",
+        "type": "thai_to_english",
+        "displayMode": "thai_only",
+        "prompt": {
+          "text": "What is the best meaning of ผมชื่อ...?",
+          "thai": "ผมชื่อ...",
+          "translit": "phǒm chûue..."
+        },
+        "options": [
+          "my name is ... (male speaker)",
+          "name",
+          "what is your name?",
+          "my name is ..."
+        ],
+        "answer": "my name is ... (male speaker)",
+        "rationale": "Maps Thai form to target meaning from script languageFocus."
+      },
+      {
+        "id": "v-d5ec4d10d2-english-to-thai",
+        "vocabId": "v-d5ec4d10d2",
+        "type": "english_to_thai",
+        "displayMode": "english_only",
+        "prompt": {
+          "text": "Select Thai for: my name is ... (male speaker)",
+          "english": "my name is ... (male speaker)"
+        },
+        "options": [
+          "ผมชื่อ...",
+          "ชื่อ",
+          "คุณชื่ออะไร",
+          "ฉันชื่อ..."
+        ],
+        "answer": "ผมชื่อ...",
+        "rationale": "Reverses mapping for active recall."
+      },
+      {
+        "id": "v-d5ec4d10d2-fill-translit",
+        "vocabId": "v-d5ec4d10d2",
+        "type": "fill_translit",
+        "displayMode": "thai_only",
+        "prompt": {
+          "text": "Type the PTM transliteration for ผมชื่อ....",
+          "thai": "ผมชื่อ..."
+        },
+        "answer": "phǒm chûue...",
+        "rationale": "Forces transliteration production with inline tone marks."
+      },
+      {
+        "id": "v-d5ec4d10d2-context-mcq",
+        "vocabId": "v-d5ec4d10d2",
+        "type": "context_mcq",
+        "displayMode": "triplet",
+        "prompt": {
+          "text": "Choose the sentence that keeps the lesson meaning of this phrase.",
+          "thai": "ผมชื่อ...",
+          "translit": "phǒm chûue...",
+          "english": "my name is ... (male speaker)"
+        },
+        "options": [
+          "Use ผมชื่อ... in polite beginner conversation",
+          "Use ชื่อ in polite beginner conversation",
+          "Use คุณชื่ออะไร in polite beginner conversation",
+          "Use ฉันชื่อ... in polite beginner conversation"
+        ],
+        "answer": "Use ผมชื่อ... in polite beginner conversation",
+        "rationale": "Checks contextual understanding while preserving triplet exposure."
+      },
+      {
+        "id": "v-0ab46f92e7-thai-to-english",
+        "vocabId": "v-0ab46f92e7",
+        "type": "thai_to_english",
+        "displayMode": "thai_only",
+        "prompt": {
+          "text": "What is the best meaning of ฉัน?",
+          "thai": "ฉัน",
+          "translit": "chǎn"
+        },
+        "options": [
+          "I",
+          "name",
+          "what is your name?",
+          "my name is ..."
+        ],
+        "answer": "I",
+        "rationale": "Maps Thai form to target meaning from script languageFocus."
+      },
+      {
+        "id": "v-0ab46f92e7-english-to-thai",
+        "vocabId": "v-0ab46f92e7",
+        "type": "english_to_thai",
+        "displayMode": "english_only",
+        "prompt": {
+          "text": "Select Thai for: I",
+          "english": "I"
+        },
+        "options": [
+          "ฉัน",
+          "ชื่อ",
+          "คุณชื่ออะไร",
+          "ฉันชื่อ..."
+        ],
+        "answer": "ฉัน",
+        "rationale": "Reverses mapping for active recall."
+      },
+      {
+        "id": "v-0ab46f92e7-fill-translit",
+        "vocabId": "v-0ab46f92e7",
+        "type": "fill_translit",
+        "displayMode": "thai_only",
+        "prompt": {
+          "text": "Type the PTM transliteration for ฉัน.",
+          "thai": "ฉัน"
+        },
+        "answer": "chǎn",
+        "rationale": "Forces transliteration production with inline tone marks."
+      },
+      {
+        "id": "v-0ab46f92e7-context-mcq",
+        "vocabId": "v-0ab46f92e7",
+        "type": "context_mcq",
+        "displayMode": "triplet",
+        "prompt": {
+          "text": "Choose the sentence that keeps the lesson meaning of this phrase.",
+          "thai": "ฉัน",
+          "translit": "chǎn",
+          "english": "I"
+        },
+        "options": [
+          "Use ฉัน in polite beginner conversation",
+          "Use ชื่อ in polite beginner conversation",
+          "Use คุณชื่ออะไร in polite beginner conversation",
+          "Use ฉันชื่อ... in polite beginner conversation"
+        ],
+        "answer": "Use ฉัน in polite beginner conversation",
+        "rationale": "Checks contextual understanding while preserving triplet exposure."
+      },
+      {
+        "id": "v-796f86a0f6-thai-to-english",
+        "vocabId": "v-796f86a0f6",
+        "type": "thai_to_english",
+        "displayMode": "thai_only",
+        "prompt": {
+          "text": "What is the best meaning of ผม?",
+          "thai": "ผม",
+          "translit": "phǒm"
+        },
+        "options": [
+          "I (male)",
+          "name",
+          "what is your name?",
+          "my name is ..."
+        ],
+        "answer": "I (male)",
+        "rationale": "Maps Thai form to target meaning from script languageFocus."
+      },
+      {
+        "id": "v-796f86a0f6-english-to-thai",
+        "vocabId": "v-796f86a0f6",
+        "type": "english_to_thai",
+        "displayMode": "english_only",
+        "prompt": {
+          "text": "Select Thai for: I (male)",
+          "english": "I (male)"
+        },
+        "options": [
+          "ผม",
+          "ชื่อ",
+          "คุณชื่ออะไร",
+          "ฉันชื่อ..."
+        ],
+        "answer": "ผม",
+        "rationale": "Reverses mapping for active recall."
+      },
+      {
+        "id": "v-796f86a0f6-fill-translit",
+        "vocabId": "v-796f86a0f6",
+        "type": "fill_translit",
+        "displayMode": "thai_only",
+        "prompt": {
+          "text": "Type the PTM transliteration for ผม.",
+          "thai": "ผม"
+        },
+        "answer": "phǒm",
+        "rationale": "Forces transliteration production with inline tone marks."
+      },
+      {
+        "id": "v-796f86a0f6-context-mcq",
+        "vocabId": "v-796f86a0f6",
+        "type": "context_mcq",
+        "displayMode": "triplet",
+        "prompt": {
+          "text": "Choose the sentence that keeps the lesson meaning of this phrase.",
+          "thai": "ผม",
+          "translit": "phǒm",
+          "english": "I (male)"
+        },
+        "options": [
+          "Use ผม in polite beginner conversation",
+          "Use ชื่อ in polite beginner conversation",
+          "Use คุณชื่ออะไร in polite beginner conversation",
+          "Use ฉันชื่อ... in polite beginner conversation"
+        ],
+        "answer": "Use ผม in polite beginner conversation",
+        "rationale": "Checks contextual understanding while preserving triplet exposure."
+      },
+      {
+        "id": "v-d0c316cc2c-thai-to-english",
+        "vocabId": "v-d0c316cc2c",
+        "type": "thai_to_english",
+        "displayMode": "thai_only",
+        "prompt": {
+          "text": "What is the best meaning of ประเทศ?",
+          "thai": "ประเทศ",
+          "translit": "bprà-thêet"
+        },
+        "options": [
+          "country",
+          "name",
+          "what is your name?",
+          "my name is ..."
+        ],
+        "answer": "country",
+        "rationale": "Maps Thai form to target meaning from script languageFocus."
+      },
+      {
+        "id": "v-d0c316cc2c-english-to-thai",
+        "vocabId": "v-d0c316cc2c",
+        "type": "english_to_thai",
+        "displayMode": "english_only",
+        "prompt": {
+          "text": "Select Thai for: country",
+          "english": "country"
+        },
+        "options": [
+          "ประเทศ",
+          "ชื่อ",
+          "คุณชื่ออะไร",
+          "ฉันชื่อ..."
+        ],
+        "answer": "ประเทศ",
+        "rationale": "Reverses mapping for active recall."
+      },
+      {
+        "id": "v-d0c316cc2c-fill-translit",
+        "vocabId": "v-d0c316cc2c",
+        "type": "fill_translit",
+        "displayMode": "thai_only",
+        "prompt": {
+          "text": "Type the PTM transliteration for ประเทศ.",
+          "thai": "ประเทศ"
+        },
+        "answer": "bprà-thêet",
+        "rationale": "Forces transliteration production with inline tone marks."
+      },
+      {
+        "id": "v-d0c316cc2c-context-mcq",
+        "vocabId": "v-d0c316cc2c",
+        "type": "context_mcq",
+        "displayMode": "triplet",
+        "prompt": {
+          "text": "Choose the sentence that keeps the lesson meaning of this phrase.",
+          "thai": "ประเทศ",
+          "translit": "bprà-thêet",
+          "english": "country"
+        },
+        "options": [
+          "Use ประเทศ in polite beginner conversation",
+          "Use ชื่อ in polite beginner conversation",
+          "Use คุณชื่ออะไร in polite beginner conversation",
+          "Use ฉันชื่อ... in polite beginner conversation"
+        ],
+        "answer": "Use ประเทศ in polite beginner conversation",
+        "rationale": "Checks contextual understanding while preserving triplet exposure."
+      },
+      {
+        "id": "v-dfd8165dd5-thai-to-english",
+        "vocabId": "v-dfd8165dd5",
+        "type": "thai_to_english",
+        "displayMode": "thai_only",
+        "prompt": {
+          "text": "What is the best meaning of มาจาก?",
+          "thai": "มาจาก",
+          "translit": "maa-jàak"
+        },
+        "options": [
+          "come from / be from",
+          "name",
+          "what is your name?",
+          "my name is ..."
+        ],
+        "answer": "come from / be from",
+        "rationale": "Maps Thai form to target meaning from script languageFocus."
+      },
+      {
+        "id": "v-dfd8165dd5-english-to-thai",
+        "vocabId": "v-dfd8165dd5",
+        "type": "english_to_thai",
+        "displayMode": "english_only",
+        "prompt": {
+          "text": "Select Thai for: come from / be from",
+          "english": "come from / be from"
+        },
+        "options": [
+          "มาจาก",
+          "ชื่อ",
+          "คุณชื่ออะไร",
+          "ฉันชื่อ..."
+        ],
+        "answer": "มาจาก",
+        "rationale": "Reverses mapping for active recall."
+      },
+      {
+        "id": "v-dfd8165dd5-fill-translit",
+        "vocabId": "v-dfd8165dd5",
+        "type": "fill_translit",
+        "displayMode": "thai_only",
+        "prompt": {
+          "text": "Type the PTM transliteration for มาจาก.",
+          "thai": "มาจาก"
+        },
+        "answer": "maa-jàak",
+        "rationale": "Forces transliteration production with inline tone marks."
+      },
+      {
+        "id": "v-dfd8165dd5-context-mcq",
+        "vocabId": "v-dfd8165dd5",
+        "type": "context_mcq",
+        "displayMode": "triplet",
+        "prompt": {
+          "text": "Choose the sentence that keeps the lesson meaning of this phrase.",
+          "thai": "มาจาก",
+          "translit": "maa-jàak",
+          "english": "come from / be from"
+        },
+        "options": [
+          "Use มาจาก in polite beginner conversation",
+          "Use ชื่อ in polite beginner conversation",
+          "Use คุณชื่ออะไร in polite beginner conversation",
+          "Use ฉันชื่อ... in polite beginner conversation"
+        ],
+        "answer": "Use มาจาก in polite beginner conversation",
+        "rationale": "Checks contextual understanding while preserving triplet exposure."
+      },
+      {
+        "id": "v-317510cace-thai-to-english",
+        "vocabId": "v-317510cace",
+        "type": "thai_to_english",
+        "displayMode": "thai_only",
+        "prompt": {
+          "text": "What is the best meaning of มาจากไทย?",
+          "thai": "มาจากไทย",
+          "translit": "maa-jàak thai"
+        },
+        "options": [
+          "be from Thailand",
+          "name",
+          "what is your name?",
+          "my name is ..."
+        ],
+        "answer": "be from Thailand",
+        "rationale": "Maps Thai form to target meaning from script languageFocus."
+      },
+      {
+        "id": "v-317510cace-english-to-thai",
+        "vocabId": "v-317510cace",
+        "type": "english_to_thai",
+        "displayMode": "english_only",
+        "prompt": {
+          "text": "Select Thai for: be from Thailand",
+          "english": "be from Thailand"
+        },
+        "options": [
+          "มาจากไทย",
+          "ชื่อ",
+          "คุณชื่ออะไร",
+          "ฉันชื่อ..."
+        ],
+        "answer": "มาจากไทย",
+        "rationale": "Reverses mapping for active recall."
+      },
+      {
+        "id": "v-317510cace-fill-translit",
+        "vocabId": "v-317510cace",
+        "type": "fill_translit",
+        "displayMode": "thai_only",
+        "prompt": {
+          "text": "Type the PTM transliteration for มาจากไทย.",
+          "thai": "มาจากไทย"
+        },
+        "answer": "maa-jàak thai",
+        "rationale": "Forces transliteration production with inline tone marks."
+      },
+      {
+        "id": "v-317510cace-context-mcq",
+        "vocabId": "v-317510cace",
+        "type": "context_mcq",
+        "displayMode": "triplet",
+        "prompt": {
+          "text": "Choose the sentence that keeps the lesson meaning of this phrase.",
+          "thai": "มาจากไทย",
+          "translit": "maa-jàak thai",
+          "english": "be from Thailand"
+        },
+        "options": [
+          "Use มาจากไทย in polite beginner conversation",
+          "Use ชื่อ in polite beginner conversation",
+          "Use คุณชื่ออะไร in polite beginner conversation",
+          "Use ฉันชื่อ... in polite beginner conversation"
+        ],
+        "answer": "Use มาจากไทย in polite beginner conversation",
+        "rationale": "Checks contextual understanding while preserving triplet exposure."
+      },
+      {
+        "id": "v-15a452b73b-thai-to-english",
+        "vocabId": "v-15a452b73b",
+        "type": "thai_to_english",
+        "displayMode": "thai_only",
+        "prompt": {
+          "text": "What is the best meaning of มาจากอังกฤษ?",
+          "thai": "มาจากอังกฤษ",
+          "translit": "maa-jàak ang-grìt"
+        },
+        "options": [
+          "be from England",
+          "name",
+          "what is your name?",
+          "my name is ..."
+        ],
+        "answer": "be from England",
+        "rationale": "Maps Thai form to target meaning from script languageFocus."
+      },
+      {
+        "id": "v-15a452b73b-english-to-thai",
+        "vocabId": "v-15a452b73b",
+        "type": "english_to_thai",
+        "displayMode": "english_only",
+        "prompt": {
+          "text": "Select Thai for: be from England",
+          "english": "be from England"
+        },
+        "options": [
+          "มาจากอังกฤษ",
+          "ชื่อ",
+          "คุณชื่ออะไร",
+          "ฉันชื่อ..."
+        ],
+        "answer": "มาจากอังกฤษ",
+        "rationale": "Reverses mapping for active recall."
+      },
+      {
+        "id": "v-15a452b73b-fill-translit",
+        "vocabId": "v-15a452b73b",
+        "type": "fill_translit",
+        "displayMode": "thai_only",
+        "prompt": {
+          "text": "Type the PTM transliteration for มาจากอังกฤษ.",
+          "thai": "มาจากอังกฤษ"
+        },
+        "answer": "maa-jàak ang-grìt",
+        "rationale": "Forces transliteration production with inline tone marks."
+      },
+      {
+        "id": "v-15a452b73b-context-mcq",
+        "vocabId": "v-15a452b73b",
+        "type": "context_mcq",
+        "displayMode": "triplet",
+        "prompt": {
+          "text": "Choose the sentence that keeps the lesson meaning of this phrase.",
+          "thai": "มาจากอังกฤษ",
+          "translit": "maa-jàak ang-grìt",
+          "english": "be from England"
+        },
+        "options": [
+          "Use มาจากอังกฤษ in polite beginner conversation",
+          "Use ชื่อ in polite beginner conversation",
+          "Use คุณชื่ออะไร in polite beginner conversation",
+          "Use ฉันชื่อ... in polite beginner conversation"
+        ],
+        "answer": "Use มาจากอังกฤษ in polite beginner conversation",
+        "rationale": "Checks contextual understanding while preserving triplet exposure."
+      },
+      {
+        "id": "v-b845ab6bae-thai-to-english",
+        "vocabId": "v-b845ab6bae",
+        "type": "thai_to_english",
+        "displayMode": "thai_only",
+        "prompt": {
+          "text": "What is the best meaning of มาจากอเมริกา?",
+          "thai": "มาจากอเมริกา",
+          "translit": "maa-jàak à-mee-rí-gaa"
+        },
+        "options": [
+          "be from America",
+          "name",
+          "what is your name?",
+          "my name is ..."
+        ],
+        "answer": "be from America",
+        "rationale": "Maps Thai form to target meaning from script languageFocus."
+      },
+      {
+        "id": "v-b845ab6bae-english-to-thai",
+        "vocabId": "v-b845ab6bae",
+        "type": "english_to_thai",
+        "displayMode": "english_only",
+        "prompt": {
+          "text": "Select Thai for: be from America",
+          "english": "be from America"
+        },
+        "options": [
+          "มาจากอเมริกา",
+          "ชื่อ",
+          "คุณชื่ออะไร",
+          "ฉันชื่อ..."
+        ],
+        "answer": "มาจากอเมริกา",
+        "rationale": "Reverses mapping for active recall."
+      },
+      {
+        "id": "v-b845ab6bae-fill-translit",
+        "vocabId": "v-b845ab6bae",
+        "type": "fill_translit",
+        "displayMode": "thai_only",
+        "prompt": {
+          "text": "Type the PTM transliteration for มาจากอเมริกา.",
+          "thai": "มาจากอเมริกา"
+        },
+        "answer": "maa-jàak à-mee-rí-gaa",
+        "rationale": "Forces transliteration production with inline tone marks."
+      },
+      {
+        "id": "v-b845ab6bae-context-mcq",
+        "vocabId": "v-b845ab6bae",
+        "type": "context_mcq",
+        "displayMode": "triplet",
+        "prompt": {
+          "text": "Choose the sentence that keeps the lesson meaning of this phrase.",
+          "thai": "มาจากอเมริกา",
+          "translit": "maa-jàak à-mee-rí-gaa",
+          "english": "be from America"
+        },
+        "options": [
+          "Use มาจากอเมริกา in polite beginner conversation",
+          "Use ชื่อ in polite beginner conversation",
+          "Use คุณชื่ออะไร in polite beginner conversation",
+          "Use ฉันชื่อ... in polite beginner conversation"
+        ],
+        "answer": "Use มาจากอเมริกา in polite beginner conversation",
+        "rationale": "Checks contextual understanding while preserving triplet exposure."
+      },
+      {
+        "id": "v-b2f0acf56a-thai-to-english",
+        "vocabId": "v-b2f0acf56a",
+        "type": "thai_to_english",
+        "displayMode": "thai_only",
+        "prompt": {
+          "text": "What is the best meaning of ฉันมาจาก...?",
+          "thai": "ฉันมาจาก...",
+          "translit": "chǎn maa-jàak..."
+        },
+        "options": [
+          "I am from ...",
+          "name",
+          "what is your name?",
+          "my name is ..."
+        ],
+        "answer": "I am from ...",
+        "rationale": "Maps Thai form to target meaning from script languageFocus."
+      },
+      {
+        "id": "v-b2f0acf56a-english-to-thai",
+        "vocabId": "v-b2f0acf56a",
+        "type": "english_to_thai",
+        "displayMode": "english_only",
+        "prompt": {
+          "text": "Select Thai for: I am from ...",
+          "english": "I am from ..."
+        },
+        "options": [
+          "ฉันมาจาก...",
+          "ชื่อ",
+          "คุณชื่ออะไร",
+          "ฉันชื่อ..."
+        ],
+        "answer": "ฉันมาจาก...",
+        "rationale": "Reverses mapping for active recall."
+      },
+      {
+        "id": "v-b2f0acf56a-fill-translit",
+        "vocabId": "v-b2f0acf56a",
+        "type": "fill_translit",
+        "displayMode": "thai_only",
+        "prompt": {
+          "text": "Type the PTM transliteration for ฉันมาจาก....",
+          "thai": "ฉันมาจาก..."
+        },
+        "answer": "chǎn maa-jàak...",
+        "rationale": "Forces transliteration production with inline tone marks."
+      },
+      {
+        "id": "v-b2f0acf56a-context-mcq",
+        "vocabId": "v-b2f0acf56a",
+        "type": "context_mcq",
+        "displayMode": "triplet",
+        "prompt": {
+          "text": "Choose the sentence that keeps the lesson meaning of this phrase.",
+          "thai": "ฉันมาจาก...",
+          "translit": "chǎn maa-jàak...",
+          "english": "I am from ..."
+        },
+        "options": [
+          "Use ฉันมาจาก... in polite beginner conversation",
+          "Use ชื่อ in polite beginner conversation",
+          "Use คุณชื่ออะไร in polite beginner conversation",
+          "Use ฉันชื่อ... in polite beginner conversation"
+        ],
+        "answer": "Use ฉันมาจาก... in polite beginner conversation",
+        "rationale": "Checks contextual understanding while preserving triplet exposure."
+      },
+      {
+        "id": "v-64f9ed0e55-thai-to-english",
+        "vocabId": "v-64f9ed0e55",
+        "type": "thai_to_english",
+        "displayMode": "thai_only",
+        "prompt": {
+          "text": "What is the best meaning of ผมมาจาก...?",
+          "thai": "ผมมาจาก...",
+          "translit": "phǒm maa-jàak..."
+        },
+        "options": [
+          "I am from ... (male)",
+          "name",
+          "what is your name?",
+          "my name is ..."
+        ],
+        "answer": "I am from ... (male)",
+        "rationale": "Maps Thai form to target meaning from script languageFocus."
+      },
+      {
+        "id": "v-64f9ed0e55-english-to-thai",
+        "vocabId": "v-64f9ed0e55",
+        "type": "english_to_thai",
+        "displayMode": "english_only",
+        "prompt": {
+          "text": "Select Thai for: I am from ... (male)",
+          "english": "I am from ... (male)"
+        },
+        "options": [
+          "ผมมาจาก...",
+          "ชื่อ",
+          "คุณชื่ออะไร",
+          "ฉันชื่อ..."
+        ],
+        "answer": "ผมมาจาก...",
+        "rationale": "Reverses mapping for active recall."
+      },
+      {
+        "id": "v-64f9ed0e55-fill-translit",
+        "vocabId": "v-64f9ed0e55",
+        "type": "fill_translit",
+        "displayMode": "thai_only",
+        "prompt": {
+          "text": "Type the PTM transliteration for ผมมาจาก....",
+          "thai": "ผมมาจาก..."
+        },
+        "answer": "phǒm maa-jàak...",
+        "rationale": "Forces transliteration production with inline tone marks."
+      },
+      {
+        "id": "v-64f9ed0e55-context-mcq",
+        "vocabId": "v-64f9ed0e55",
+        "type": "context_mcq",
+        "displayMode": "triplet",
+        "prompt": {
+          "text": "Choose the sentence that keeps the lesson meaning of this phrase.",
+          "thai": "ผมมาจาก...",
+          "translit": "phǒm maa-jàak...",
+          "english": "I am from ... (male)"
+        },
+        "options": [
+          "Use ผมมาจาก... in polite beginner conversation",
+          "Use ชื่อ in polite beginner conversation",
+          "Use คุณชื่ออะไร in polite beginner conversation",
+          "Use ฉันชื่อ... in polite beginner conversation"
+        ],
+        "answer": "Use ผมมาจาก... in polite beginner conversation",
+        "rationale": "Checks contextual understanding while preserving triplet exposure."
+      }
+    ],
+    "coverage": {
+      "minimumItemsPerNewVocab": 3,
+      "perVocab": [
+        {
+          "vocabId": "v-6acb169e4b",
+          "thai": "ชื่อ",
+          "itemCount": 4
+        },
+        {
+          "vocabId": "v-a79c6af3af",
+          "thai": "คุณชื่ออะไร",
+          "itemCount": 4
+        },
+        {
+          "vocabId": "v-33248cf209",
+          "thai": "ฉันชื่อ...",
+          "itemCount": 4
+        },
+        {
+          "vocabId": "v-d5ec4d10d2",
+          "thai": "ผมชื่อ...",
+          "itemCount": 4
+        },
+        {
+          "vocabId": "v-0ab46f92e7",
+          "thai": "ฉัน",
+          "itemCount": 4
+        },
+        {
+          "vocabId": "v-796f86a0f6",
+          "thai": "ผม",
+          "itemCount": 4
+        },
+        {
+          "vocabId": "v-d0c316cc2c",
+          "thai": "ประเทศ",
+          "itemCount": 4
+        },
+        {
+          "vocabId": "v-dfd8165dd5",
+          "thai": "มาจาก",
+          "itemCount": 4
+        },
+        {
+          "vocabId": "v-317510cace",
+          "thai": "มาจากไทย",
+          "itemCount": 4
+        },
+        {
+          "vocabId": "v-15a452b73b",
+          "thai": "มาจากอังกฤษ",
+          "itemCount": 4
+        },
+        {
+          "vocabId": "v-b845ab6bae",
+          "thai": "มาจากอเมริกา",
+          "itemCount": 4
+        },
+        {
+          "vocabId": "v-b2f0acf56a",
+          "thai": "ฉันมาจาก...",
+          "itemCount": 4
+        },
+        {
+          "vocabId": "v-64f9ed0e55",
+          "thai": "ผมมาจาก...",
+          "itemCount": 4
+        }
+      ],
+      "pass": true
+    }
+  },
+  "quizPath": "/Users/Shared/work/thai-nine/course/modules/M01/L002/quiz.json",
+  "quizJson": {
+    "schemaVersion": 1,
+    "lessonId": "M01-L002",
+    "passScore": 80,
+    "generatedAt": "2026-03-11T07:28:59.650Z",
+    "itemBankPath": "quiz-item-bank.json",
+    "questions": [
+      {
+        "id": "q01",
+        "vocabId": "v-6acb169e4b",
+        "type": "thai_to_english",
+        "displayMode": "thai_only",
+        "prompt": {
+          "text": "What is the best meaning of ชื่อ?",
+          "thai": "ชื่อ",
+          "translit": "chûue"
+        },
+        "options": [
+          "name",
+          "what is your name?",
+          "my name is ...",
+          "my name is ... (male speaker)"
+        ],
+        "answer": "name",
+        "rationale": "Maps Thai form to target meaning from script languageFocus.",
+        "bankItemId": "v-6acb169e4b-thai-to-english"
+      },
+      {
+        "id": "q02",
+        "vocabId": "v-a79c6af3af",
+        "type": "thai_to_english",
+        "displayMode": "thai_only",
+        "prompt": {
+          "text": "What is the best meaning of คุณชื่ออะไร?",
+          "thai": "คุณชื่ออะไร",
+          "translit": "khun chûue à-rai"
+        },
+        "options": [
+          "what is your name?",
+          "name",
+          "my name is ...",
+          "my name is ... (male speaker)"
+        ],
+        "answer": "what is your name?",
+        "rationale": "Maps Thai form to target meaning from script languageFocus.",
+        "bankItemId": "v-a79c6af3af-thai-to-english"
+      },
+      {
+        "id": "q03",
+        "vocabId": "v-33248cf209",
+        "type": "thai_to_english",
+        "displayMode": "thai_only",
+        "prompt": {
+          "text": "What is the best meaning of ฉันชื่อ...?",
+          "thai": "ฉันชื่อ...",
+          "translit": "chǎn chûue..."
+        },
+        "options": [
+          "my name is ...",
+          "name",
+          "what is your name?",
+          "my name is ... (male speaker)"
+        ],
+        "answer": "my name is ...",
+        "rationale": "Maps Thai form to target meaning from script languageFocus.",
+        "bankItemId": "v-33248cf209-thai-to-english"
+      },
+      {
+        "id": "q04",
+        "vocabId": "v-d5ec4d10d2",
+        "type": "thai_to_english",
+        "displayMode": "thai_only",
+        "prompt": {
+          "text": "What is the best meaning of ผมชื่อ...?",
+          "thai": "ผมชื่อ...",
+          "translit": "phǒm chûue..."
+        },
+        "options": [
+          "my name is ... (male speaker)",
+          "name",
+          "what is your name?",
+          "my name is ..."
+        ],
+        "answer": "my name is ... (male speaker)",
+        "rationale": "Maps Thai form to target meaning from script languageFocus.",
+        "bankItemId": "v-d5ec4d10d2-thai-to-english"
+      },
+      {
+        "id": "q05",
+        "vocabId": "v-0ab46f92e7",
+        "type": "thai_to_english",
+        "displayMode": "thai_only",
+        "prompt": {
+          "text": "What is the best meaning of ฉัน?",
+          "thai": "ฉัน",
+          "translit": "chǎn"
+        },
+        "options": [
+          "I",
+          "name",
+          "what is your name?",
+          "my name is ..."
+        ],
+        "answer": "I",
+        "rationale": "Maps Thai form to target meaning from script languageFocus.",
+        "bankItemId": "v-0ab46f92e7-thai-to-english"
+      },
+      {
+        "id": "q06",
+        "vocabId": "v-796f86a0f6",
+        "type": "thai_to_english",
+        "displayMode": "thai_only",
+        "prompt": {
+          "text": "What is the best meaning of ผม?",
+          "thai": "ผม",
+          "translit": "phǒm"
+        },
+        "options": [
+          "I (male)",
+          "name",
+          "what is your name?",
+          "my name is ..."
+        ],
+        "answer": "I (male)",
+        "rationale": "Maps Thai form to target meaning from script languageFocus.",
+        "bankItemId": "v-796f86a0f6-thai-to-english"
+      },
+      {
+        "id": "q07",
+        "vocabId": "v-d0c316cc2c",
+        "type": "thai_to_english",
+        "displayMode": "thai_only",
+        "prompt": {
+          "text": "What is the best meaning of ประเทศ?",
+          "thai": "ประเทศ",
+          "translit": "bprà-thêet"
+        },
+        "options": [
+          "country",
+          "name",
+          "what is your name?",
+          "my name is ..."
+        ],
+        "answer": "country",
+        "rationale": "Maps Thai form to target meaning from script languageFocus.",
+        "bankItemId": "v-d0c316cc2c-thai-to-english"
+      },
+      {
+        "id": "q08",
+        "vocabId": "v-dfd8165dd5",
+        "type": "thai_to_english",
+        "displayMode": "thai_only",
+        "prompt": {
+          "text": "What is the best meaning of มาจาก?",
+          "thai": "มาจาก",
+          "translit": "maa-jàak"
+        },
+        "options": [
+          "come from / be from",
+          "name",
+          "what is your name?",
+          "my name is ..."
+        ],
+        "answer": "come from / be from",
+        "rationale": "Maps Thai form to target meaning from script languageFocus.",
+        "bankItemId": "v-dfd8165dd5-thai-to-english"
+      },
+      {
+        "id": "q09",
+        "vocabId": "v-317510cace",
+        "type": "thai_to_english",
+        "displayMode": "thai_only",
+        "prompt": {
+          "text": "What is the best meaning of มาจากไทย?",
+          "thai": "มาจากไทย",
+          "translit": "maa-jàak thai"
+        },
+        "options": [
+          "be from Thailand",
+          "name",
+          "what is your name?",
+          "my name is ..."
+        ],
+        "answer": "be from Thailand",
+        "rationale": "Maps Thai form to target meaning from script languageFocus.",
+        "bankItemId": "v-317510cace-thai-to-english"
+      },
+      {
+        "id": "q10",
+        "vocabId": "v-15a452b73b",
+        "type": "thai_to_english",
+        "displayMode": "thai_only",
+        "prompt": {
+          "text": "What is the best meaning of มาจากอังกฤษ?",
+          "thai": "มาจากอังกฤษ",
+          "translit": "maa-jàak ang-grìt"
+        },
+        "options": [
+          "be from England",
+          "name",
+          "what is your name?",
+          "my name is ..."
+        ],
+        "answer": "be from England",
+        "rationale": "Maps Thai form to target meaning from script languageFocus.",
+        "bankItemId": "v-15a452b73b-thai-to-english"
+      },
+      {
+        "id": "q11",
+        "vocabId": "v-b845ab6bae",
+        "type": "thai_to_english",
+        "displayMode": "thai_only",
+        "prompt": {
+          "text": "What is the best meaning of มาจากอเมริกา?",
+          "thai": "มาจากอเมริกา",
+          "translit": "maa-jàak à-mee-rí-gaa"
+        },
+        "options": [
+          "be from America",
+          "name",
+          "what is your name?",
+          "my name is ..."
+        ],
+        "answer": "be from America",
+        "rationale": "Maps Thai form to target meaning from script languageFocus.",
+        "bankItemId": "v-b845ab6bae-thai-to-english"
+      },
+      {
+        "id": "q12",
+        "vocabId": "v-b2f0acf56a",
+        "type": "thai_to_english",
+        "displayMode": "thai_only",
+        "prompt": {
+          "text": "What is the best meaning of ฉันมาจาก...?",
+          "thai": "ฉันมาจาก...",
+          "translit": "chǎn maa-jàak..."
+        },
+        "options": [
+          "I am from ...",
+          "name",
+          "what is your name?",
+          "my name is ..."
+        ],
+        "answer": "I am from ...",
+        "rationale": "Maps Thai form to target meaning from script languageFocus.",
+        "bankItemId": "v-b2f0acf56a-thai-to-english"
+      },
+      {
+        "id": "q13",
+        "vocabId": "v-64f9ed0e55",
+        "type": "thai_to_english",
+        "displayMode": "thai_only",
+        "prompt": {
+          "text": "What is the best meaning of ผมมาจาก...?",
+          "thai": "ผมมาจาก...",
+          "translit": "phǒm maa-jàak..."
+        },
+        "options": [
+          "I am from ... (male)",
+          "name",
+          "what is your name?",
+          "my name is ..."
+        ],
+        "answer": "I am from ... (male)",
+        "rationale": "Maps Thai form to target meaning from script languageFocus.",
+        "bankItemId": "v-64f9ed0e55-thai-to-english"
+      },
+      {
+        "id": "q14",
+        "vocabId": "v-6acb169e4b",
+        "type": "english_to_thai",
+        "displayMode": "english_only",
+        "prompt": {
+          "text": "Select Thai for: name",
+          "english": "name"
+        },
+        "options": [
+          "ชื่อ",
+          "คุณชื่ออะไร",
+          "ฉันชื่อ...",
+          "ผมชื่อ..."
+        ],
+        "answer": "ชื่อ",
+        "rationale": "Reverses mapping for active recall.",
+        "bankItemId": "v-6acb169e4b-english-to-thai"
+      },
+      {
+        "id": "q15",
+        "vocabId": "v-6acb169e4b",
+        "type": "fill_translit",
+        "displayMode": "thai_only",
+        "prompt": {
+          "text": "Type the PTM transliteration for ชื่อ.",
+          "thai": "ชื่อ"
+        },
+        "answer": "chûue",
+        "rationale": "Forces transliteration production with inline tone marks.",
+        "bankItemId": "v-6acb169e4b-fill-translit"
+      },
+      {
+        "id": "q16",
+        "vocabId": "v-6acb169e4b",
+        "type": "context_mcq",
+        "displayMode": "triplet",
+        "prompt": {
+          "text": "Choose the sentence that keeps the lesson meaning of this phrase.",
+          "thai": "ชื่อ",
+          "translit": "chûue",
+          "english": "name"
+        },
+        "options": [
+          "Use ชื่อ in polite beginner conversation",
+          "Use คุณชื่ออะไร in polite beginner conversation",
+          "Use ฉันชื่อ... in polite beginner conversation",
+          "Use ผมชื่อ... in polite beginner conversation"
+        ],
+        "answer": "Use ชื่อ in polite beginner conversation",
+        "rationale": "Checks contextual understanding while preserving triplet exposure.",
+        "bankItemId": "v-6acb169e4b-context-mcq"
+      }
+    ],
+    "coverage": {
+      "minimumQuizItemsPerNewVocab": 1,
+      "perVocab": [
+        {
+          "vocabId": "v-6acb169e4b",
+          "thai": "ชื่อ",
+          "quizItemCount": 4
+        },
+        {
+          "vocabId": "v-a79c6af3af",
+          "thai": "คุณชื่ออะไร",
+          "quizItemCount": 1
+        },
+        {
+          "vocabId": "v-33248cf209",
+          "thai": "ฉันชื่อ...",
+          "quizItemCount": 1
+        },
+        {
+          "vocabId": "v-d5ec4d10d2",
+          "thai": "ผมชื่อ...",
+          "quizItemCount": 1
+        },
+        {
+          "vocabId": "v-0ab46f92e7",
+          "thai": "ฉัน",
+          "quizItemCount": 1
+        },
+        {
+          "vocabId": "v-796f86a0f6",
+          "thai": "ผม",
+          "quizItemCount": 1
+        },
+        {
+          "vocabId": "v-d0c316cc2c",
+          "thai": "ประเทศ",
+          "quizItemCount": 1
+        },
+        {
+          "vocabId": "v-dfd8165dd5",
+          "thai": "มาจาก",
+          "quizItemCount": 1
+        },
+        {
+          "vocabId": "v-317510cace",
+          "thai": "มาจากไทย",
+          "quizItemCount": 1
+        },
+        {
+          "vocabId": "v-15a452b73b",
+          "thai": "มาจากอังกฤษ",
+          "quizItemCount": 1
+        },
+        {
+          "vocabId": "v-b845ab6bae",
+          "thai": "มาจากอเมริกา",
+          "quizItemCount": 1
+        },
+        {
+          "vocabId": "v-b2f0acf56a",
+          "thai": "ฉันมาจาก...",
+          "quizItemCount": 1
+        },
+        {
+          "vocabId": "v-64f9ed0e55",
+          "thai": "ผมมาจาก...",
+          "quizItemCount": 1
+        }
+      ],
+      "pass": true
+    }
+  },
+  "outputReportPath": "/Users/Shared/work/thai-nine/course/modules/M01/L002/assessment-qa-report.md"
+}

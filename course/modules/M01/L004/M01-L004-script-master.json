@@ -1,0 +1,631 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "M01-L004",
+  "title": "Numbers 0 to 10",
+  "objective": "Count 0-10 in Thai, ask and say phone and room numbers, and say your age using digits in real daily contexts.",
+  "teachingFrame": {
+    "openingHook": "Every number you see in Thailand — prices, floors, phone numbers — starts with these eleven sounds. Learn them now and the whole country opens up.",
+    "scenario": "You are checking into a hotel, confirming your room number, and exchanging phone numbers with a new friend.",
+    "learnerTakeaway": "By the end, you can count to ten, say your age, ask for a number, and give a room number in Thai."
+  },
+  "context": {
+    "schemaVersion": 1,
+    "lessonId": "M01-L004",
+    "priorLessons": [],
+    "knownVocabulary": [],
+    "knownGrammar": [],
+    "reviewBuckets": [
+      {
+        "bucket": "last",
+        "offset": 1,
+        "lessonId": null,
+        "vocabIds": [],
+        "sample": []
+      },
+      {
+        "bucket": "minus3",
+        "offset": 3,
+        "lessonId": null,
+        "vocabIds": [],
+        "sample": []
+      },
+      {
+        "bucket": "minus6",
+        "offset": 6,
+        "lessonId": null,
+        "vocabIds": [],
+        "sample": []
+      },
+      {
+        "bucket": "minus8",
+        "offset": 8,
+        "lessonId": null,
+        "vocabIds": [],
+        "sample": []
+      }
+    ]
+  },
+  "sections": [
+    {
+      "id": "s1",
+      "heading": "Zero, one, two",
+      "purpose": "Teach the first three digits individually so you can begin counting immediately.",
+      "spokenNarration": [
+        "Let's learn to count in Thai. We will start with just three numbers: zero, one, and two.",
+        "Listen first. ศูนย์ sǔun. That means zero. Say it with me: ศูนย์.",
+        "Next: หนึ่ง nùeng. That means one. Your turn: หนึ่ง.",
+        "And: สอง sǎawng. That means two. Repeat: สอง.",
+        "Now let's count together from zero: ศูนย์, หนึ่ง, สอง. Your turn — count from zero to two before I show the answer."
+      ],
+      "onScreenBullets": [
+        "ศูนย์ | sǔun | 0 — zero",
+        "หนึ่ง | nùeng | 1 — one",
+        "สอง | sǎawng | 2 — two"
+      ],
+      "drills": [
+        "Listen and repeat: ศูนย์, หนึ่ง, สอง. Say each one clearly after me.",
+        "Pause-and-produce: count from zero to two in Thai. Go.",
+        "Discrimination drill: I say a number. Is it ศูนย์, หนึ่ง, or สอง? Point to the answer."
+      ],
+      "languageFocus": [
+        {
+          "thai": "ศูนย์",
+          "translit": "sǔun",
+          "english": "zero (0)",
+          "vocabId": "v-28499d926c",
+          "type": "word"
+        },
+        {
+          "thai": "หนึ่ง",
+          "translit": "nùeng",
+          "english": "one (1)",
+          "vocabId": "v-d5112f8a63",
+          "type": "word"
+        },
+        {
+          "thai": "สอง",
+          "translit": "sǎawng",
+          "english": "two (2)",
+          "vocabId": "v-123bdecbd4",
+          "type": "word"
+        }
+      ],
+      "visualPlan": {
+        "leftPanelLayout": "focus-card",
+        "onScreenGoal": "Show each digit as a large individual triplet card so the learner sees, hears, and reads each number one at a time.",
+        "teachingVisuals": [
+          "Large triplet card for ศูนย์ with numeral 0.",
+          "Large triplet card for หนึ่ง with numeral 1.",
+          "Large triplet card for สอง with numeral 2."
+        ],
+        "teacherCues": [
+          "Introduce each digit one at a time. Pause between each.",
+          "Model clearly — the learner should hear each number before reading it."
+        ],
+        "imageSupport": {
+          "helpful": false,
+          "priority": "avoid",
+          "rationale": "Digits are abstract. Text-only triplet cards teach better than images.",
+          "searchQueries": [],
+          "sourceHints": [
+            "text-only"
+          ]
+        }
+      }
+    },
+    {
+      "id": "s2",
+      "heading": "Three, four, five",
+      "purpose": "Teach the next three digits and drill counting from zero to five.",
+      "spokenNarration": [
+        "You already know ศูนย์, หนึ่ง, สอง. Now let's add three more.",
+        "Listen first. สาม sǎam. That means three. Say it with me: สาม.",
+        "Next: สี่ sìi. That means four. Your turn: สี่. Notice the low tone — your voice stays down.",
+        "And: ห้า hâa. That means five. Repeat: ห้า. This one has a falling tone — start high, drop down.",
+        "Now count from zero to five: ศูนย์, หนึ่ง, สอง, สาม, สี่, ห้า. Your turn — say the whole sequence before I show it."
+      ],
+      "onScreenBullets": [
+        "สาม | sǎam | 3 — three",
+        "สี่ | sìi | 4 — four",
+        "ห้า | hâa | 5 — five"
+      ],
+      "drills": [
+        "Listen and repeat: สาม, สี่, ห้า. Say each one after me.",
+        "Pause-and-produce: count from zero to five in Thai. Go.",
+        "Substitution drill: I say a numeral. You say the Thai word. 3 — your turn. 1 — your turn. 5 — your turn. 0 — your turn."
+      ],
+      "languageFocus": [
+        {
+          "thai": "สาม",
+          "translit": "sǎam",
+          "english": "three (3)",
+          "vocabId": "v-914a79ebbb",
+          "type": "word"
+        },
+        {
+          "thai": "สี่",
+          "translit": "sìi",
+          "english": "four (4)",
+          "vocabId": "v-0e247b83bd",
+          "type": "word"
+        },
+        {
+          "thai": "ห้า",
+          "translit": "hâa",
+          "english": "five (5)",
+          "vocabId": "v-6c137e71d9",
+          "type": "word"
+        }
+      ],
+      "visualPlan": {
+        "leftPanelLayout": "focus-card",
+        "onScreenGoal": "Show three new digit triplet cards, then a counting sequence 0-5.",
+        "teachingVisuals": [
+          "Large triplet card for สาม with numeral 3.",
+          "Large triplet card for สี่ with numeral 4.",
+          "Large triplet card for ห้า with numeral 5."
+        ],
+        "teacherCues": [
+          "Introduce each digit one at a time. Pause between each.",
+          "After all three, run the counting sequence 0-5 as a fluency builder."
+        ],
+        "imageSupport": {
+          "helpful": false,
+          "priority": "avoid",
+          "rationale": "Digits are abstract. Text-only triplet cards teach better than images.",
+          "searchQueries": [],
+          "sourceHints": [
+            "text-only"
+          ]
+        }
+      }
+    },
+    {
+      "id": "s3",
+      "heading": "Six, seven, eight",
+      "purpose": "Teach digits 6-8 and build counting fluency up to eight.",
+      "spokenNarration": [
+        "Good progress. You can count to five. Now let's add หก, เจ็ด, and แปด.",
+        "Listen first. หก hòk. That means six. Say it with me: หก.",
+        "Next: เจ็ด jèt. That means seven. Your turn: เจ็ด. Notice the short, clipped ending — your tongue hits the roof of your mouth.",
+        "And: แปด bpàaet. That means eight. Repeat: แปด. Another clipped ending — the sound stops sharply.",
+        "Now count from ศูนย์ to แปด: ศูนย์, หนึ่ง, สอง, สาม, สี่, ห้า, หก, เจ็ด, แปด. Your turn."
+      ],
+      "onScreenBullets": [
+        "หก | hòk | 6 — six",
+        "เจ็ด | jèt | 7 — seven",
+        "แปด | bpàaet | 8 — eight"
+      ],
+      "drills": [
+        "Listen and repeat: หก, เจ็ด, แปด. Say each one after me.",
+        "Pause-and-produce: count from zero to eight. Go.",
+        "Discrimination drill: I say a number between zero and eight. Say the English meaning before I show it."
+      ],
+      "languageFocus": [
+        {
+          "thai": "หก",
+          "translit": "hòk",
+          "english": "six (6)",
+          "vocabId": "v-42ac27384d",
+          "type": "word"
+        },
+        {
+          "thai": "เจ็ด",
+          "translit": "jèt",
+          "english": "seven (7)",
+          "vocabId": "v-1569f39457",
+          "type": "word"
+        },
+        {
+          "thai": "แปด",
+          "translit": "bpàaet",
+          "english": "eight (8)",
+          "vocabId": "v-f2b6d018d8",
+          "type": "word"
+        }
+      ],
+      "visualPlan": {
+        "leftPanelLayout": "focus-card",
+        "onScreenGoal": "Show three new digit triplet cards for 6, 7, 8.",
+        "teachingVisuals": [
+          "Large triplet card for หก with numeral 6.",
+          "Large triplet card for เจ็ด with numeral 7.",
+          "Large triplet card for แปด with numeral 8."
+        ],
+        "teacherCues": [
+          "Emphasise the clipped stop endings on เจ็ด and แปด.",
+          "After teaching all three, run the full 0-8 count."
+        ],
+        "imageSupport": {
+          "helpful": false,
+          "priority": "avoid",
+          "rationale": "Digits are abstract. Text-only triplet cards teach better than images.",
+          "searchQueries": [],
+          "sourceHints": [
+            "text-only"
+          ]
+        }
+      }
+    },
+    {
+      "id": "s4",
+      "heading": "Nine, ten — the full count",
+      "purpose": "Teach the final two digits and drill the complete 0-10 counting sequence.",
+      "spokenNarration": [
+        "Almost there. Just two more numbers and you will have the full set.",
+        "Listen first. เก้า gâo. That means nine. Say it with me: เก้า. Falling tone — start high, drop down.",
+        "And the last one: สิบ sìp. That means ten. Your turn: สิบ.",
+        "Now the big moment. Count from zero to ten: ศูนย์, หนึ่ง, สอง, สาม, สี่, ห้า, หก, เจ็ด, แปด, เก้า, สิบ.",
+        "Your turn — count from zero to ten before I show the answer. Take your time."
+      ],
+      "onScreenBullets": [
+        "เก้า | gâo | 9 — nine",
+        "สิบ | sìp | 10 — ten"
+      ],
+      "drills": [
+        "Listen and repeat: เก้า, สิบ. Say each one after me.",
+        "Pause-and-produce: count from zero to ten in Thai. The full sequence. Go.",
+        "Substitution drill: I say a numeral, you say the Thai word. 7 — your turn. 10 — your turn. 4 — your turn. 9 — your turn. 2 — your turn."
+      ],
+      "languageFocus": [
+        {
+          "thai": "เก้า",
+          "translit": "gâo",
+          "english": "nine (9)",
+          "vocabId": "v-d03227860c",
+          "type": "word"
+        },
+        {
+          "thai": "สิบ",
+          "translit": "sìp",
+          "english": "ten (10)",
+          "vocabId": "v-43a5e0b3f2",
+          "type": "word"
+        }
+      ],
+      "visualPlan": {
+        "leftPanelLayout": "focus-card",
+        "onScreenGoal": "Show two new digit triplet cards for 9 and 10, then the full 0-10 sequence.",
+        "teachingVisuals": [
+          "Large triplet card for เก้า with numeral 9.",
+          "Large triplet card for สิบ with numeral 10.",
+          "Full counting sequence 0-10 in a compact row."
+        ],
+        "teacherCues": [
+          "Build excitement — the learner is completing the full set.",
+          "After the full count, celebrate the achievement briefly."
+        ],
+        "imageSupport": {
+          "helpful": false,
+          "priority": "avoid",
+          "rationale": "Text-only counting sequence is clearest.",
+          "searchQueries": [],
+          "sourceHints": [
+            "text-only"
+          ]
+        }
+      }
+    },
+    {
+      "id": "s5",
+      "heading": "Numbers in real life",
+      "purpose": "Teach three practical chunks that use digits in real daily situations: asking a number, saying age, and giving a room number.",
+      "spokenNarration": [
+        "You can count to ten. Now let's use those digits in real life.",
+        "First chunk: เบอร์อะไร ber à-rai. It means what number? You use this to ask for a phone number or any number. Listen first: เบอร์อะไรครับ.",
+        "Your turn: เบอร์อะไรครับ or เบอร์อะไรคะ. Good. If someone asks you เบอร์อะไร, you answer digit by digit: ศูนย์ แปด เก้า.",
+        "Next chunk: ฉันอายุ...ปี chǎn aa-yú ... bpii. It means I am ... years old. Put any number in the slot. ฉันอายุสิบปี — I am ten years old. ฉันอายุแปดปี — I am eight years old.",
+        "Last chunk: ห้อง hâwng. It means room. Add a number after it: ห้องสาม — room three. ห้องเจ็ด — room seven. ห้องห้า — room five.",
+        "Let's practise using all three. Someone asks เบอร์อะไรครับ and you answer with digits. Someone asks your age and you say ฉันอายุ...ปี. You need a room and you say ห้อง plus the number."
+      ],
+      "onScreenBullets": [
+        "เบอร์อะไร | ber à-rai | what number?",
+        "ฉันอายุ...ปี | chǎn aa-yú ... bpii | I am ... years old",
+        "ห้อง... | hâwng ... | room ..."
+      ],
+      "drills": [
+        "Response-building: I ask เบอร์อะไรครับ. Give me a three-digit number using Thai digits. Your turn.",
+        "Substitution drill: say your age using ฉันอายุ...ปี. Try with สิบ, then with เก้า, then with ห้า.",
+        "Substitution drill: say a room number using ห้อง. Try ห้องสาม, ห้องหก, ห้องสิบ.",
+        "Pause-and-produce: I say a room number in English. You say it in Thai. Room 4 — your turn. Room 9 — your turn."
+      ],
+      "languageFocus": [
+        {
+          "thai": "เบอร์อะไร",
+          "translit": "ber à-rai",
+          "english": "what number?",
+          "vocabId": "v-ba4059e504",
+          "type": "chunk"
+        },
+        {
+          "thai": "ฉันอายุ...ปี",
+          "translit": "chǎn aa-yú ... bpii",
+          "english": "I am ... years old",
+          "vocabId": "v-2d97b680f6",
+          "type": "chunk"
+        },
+        {
+          "thai": "ห้อง",
+          "translit": "hâwng",
+          "english": "room",
+          "vocabId": "v-356fe4743b",
+          "type": "word"
+        }
+      ],
+      "visualPlan": {
+        "leftPanelLayout": "drill-stack",
+        "onScreenGoal": "Show three chunk frames with digit slots clearly marked.",
+        "teachingVisuals": [
+          "Chunk frame: เบอร์อะไร with example digits filled in.",
+          "Chunk frame: ฉันอายุ [___] ปี with slot for number.",
+          "Chunk frame: ห้อง [___] with slot for number."
+        ],
+        "teacherCues": [
+          "Model each chunk slowly, then have the learner substitute different digits.",
+          "Recycle digits from all four previous sections in the examples."
+        ],
+        "imageSupport": {
+          "helpful": true,
+          "priority": "supporting",
+          "rationale": "A hotel room door number grounds the abstract digits in a real-world context the learner will encounter.",
+          "searchQueries": [
+            "hotel room door number Thailand",
+            "Thai hotel room number sign"
+          ],
+          "sourceHints": [
+            "Pexels",
+            "Wikimedia Commons"
+          ]
+        }
+      }
+    },
+    {
+      "id": "s6",
+      "heading": "Pronunciation: tones in Thai numbers",
+      "purpose": "Train the ear to hear rising versus falling tones using number vocabulary from this lesson.",
+      "spokenNarration": [
+        "Let's train your ear. Thai numbers have different tones, and mixing them up can cause confusion.",
+        "Listen to these two: สาม sǎam — rising tone, your voice lifts up. Now: ห้า hâa — falling tone, your voice starts high and drops.",
+        "Try it. Say สาม with your voice going up. Now say ห้า with your voice going down. Can you feel the difference?",
+        "Here is another pair: สอง sǎawng — rising tone. And เก้า gâo — falling tone. Rising goes up, falling goes down.",
+        "One more contrast: สี่ sìi has a low tone — your voice stays flat and low. Compare with ห้า hâa falling tone — starts high, drops. Say สี่, then ห้า. Low, then falling."
+      ],
+      "onScreenBullets": [
+        "สาม | sǎam | rising tone ↗",
+        "ห้า | hâa | falling tone ↘",
+        "สี่ | sìi | low tone →"
+      ],
+      "drills": [
+        "Tone echo: I say สาม. Repeat. Now I say ห้า. Repeat. Can you hear the tone difference?",
+        "Minimal pair choice: I say two numbers. Which one has the rising tone — สาม or ห้า? Point before I tell you."
+      ],
+      "languageFocus": [
+        {
+          "thai": "สาม",
+          "translit": "sǎam",
+          "english": "three (rising tone)",
+          "notes": "Pronunciation focus: rising tone lifts upward.",
+          "vocabId": "v-19ba2f5428",
+          "type": "word"
+        }
+      ],
+      "visualPlan": {
+        "leftPanelLayout": "contrast-board",
+        "onScreenGoal": "Show tone direction arrows next to number pairs to visualize pitch contrast.",
+        "teachingVisuals": [
+          "Two-column contrast: rising tone numbers (สาม, สอง) vs falling tone numbers (ห้า, เก้า).",
+          "Simple pitch arrow: rising arrow for rising, falling arrow for falling, flat arrow for low."
+        ],
+        "teacherCues": [
+          "Model each tone slowly and use hand gestures for pitch direction.",
+          "Keep this beat short — 60 to 90 seconds."
+        ],
+        "imageSupport": {
+          "helpful": false,
+          "priority": "avoid",
+          "rationale": "Tone arrows and contrast layout teach better than photographs.",
+          "searchQueries": [],
+          "sourceHints": [
+            "text-only"
+          ]
+        }
+      }
+    }
+  ],
+  "roleplay": {
+    "scenario": "Checking into a hotel — you give your room number, confirm your age, and exchange phone digits with the receptionist.",
+    "lines": [
+      {
+        "speaker": "Staff",
+        "thai": "สวัสดีค่ะ ห้องอะไรคะ",
+        "translit": "sà-wàt-dii khâ hâwng à-rai khá",
+        "english": "Hello. What room?"
+      },
+      {
+        "speaker": "You",
+        "thai": "ห้องห้าครับ",
+        "translit": "hâwng hâa khráp",
+        "english": "Room five."
+      },
+      {
+        "speaker": "Staff",
+        "thai": "อายุเท่าไหร่คะ",
+        "translit": "aa-yú thâo-rài khá",
+        "english": "How old are you?"
+      },
+      {
+        "speaker": "You",
+        "thai": "ฉันอายุสามสิบปีครับ",
+        "translit": "chǎn aa-yú sǎam-sìp bpii khráp",
+        "english": "I am thirty years old."
+      },
+      {
+        "speaker": "Staff",
+        "thai": "เบอร์อะไรคะ",
+        "translit": "ber à-rai khá",
+        "english": "What is your number?"
+      },
+      {
+        "speaker": "You",
+        "thai": "ศูนย์ แปด เก้า หนึ่ง สอง สาม",
+        "translit": "sǔun bpàaet gâo nùeng sǎawng sǎam",
+        "english": "0-8-9-1-2-3."
+      },
+      {
+        "speaker": "Staff",
+        "thai": "ขอบคุณค่ะ",
+        "translit": "khàawp-khun khâ",
+        "english": "Thank you."
+      },
+      {
+        "speaker": "You",
+        "thai": "ขอบคุณครับ",
+        "translit": "khàawp-khun khráp",
+        "english": "Thank you."
+      }
+    ]
+  },
+  "recap": [
+    "Count 0 to 5 in Thai. Go.",
+    "Count 6 to 10 in Thai. Go.",
+    "How do you ask 'what number?' in Thai?",
+    "Say 'I am ten years old' in Thai.",
+    "Say 'room seven' in Thai."
+  ],
+  "qaChecks": [
+    {
+      "id": "tone-inline",
+      "description": "All transliteration uses PTM inline tone marks; superscripts forbidden",
+      "pass": true,
+      "evidence": "All transliteration strings passed inline-tone checks"
+    },
+    {
+      "id": "triplets",
+      "description": "Thai/translit/English triplets are complete for learner-facing script content",
+      "pass": true,
+      "evidence": "Sections and on-screen bullets contain complete triplets"
+    },
+    {
+      "id": "drills",
+      "description": "Each section includes active drill",
+      "pass": true,
+      "evidence": "Each section has >=1 drill"
+    },
+    {
+      "id": "section-count",
+      "description": "Lesson contains at least 4 teaching sections",
+      "pass": true,
+      "evidence": "Lesson contains 6 sections"
+    },
+    {
+      "id": "section-depth",
+      "description": "Each section includes at least 3 spoken narration lines",
+      "pass": true,
+      "evidence": "Each section has >=3 spoken narration lines"
+    },
+    {
+      "id": "roleplay",
+      "description": "Scenario roleplay included and substantial",
+      "pass": true,
+      "evidence": "Roleplay contains 8 lines"
+    },
+    {
+      "id": "roleplay-duplicates",
+      "description": "Roleplay does not repeat exact lines",
+      "pass": true,
+      "evidence": "All roleplay lines are distinct"
+    },
+    {
+      "id": "roleplay-turn-taking",
+      "description": "Roleplay alternates speakers cleanly",
+      "pass": true,
+      "evidence": "Roleplay alternates speakers line by line"
+    },
+    {
+      "id": "roleplay-answer-logic",
+      "description": "Yes/no answer particles appear only after a nearby question or confirmation turn",
+      "pass": true,
+      "evidence": "Answer particles follow question-like turns when used"
+    },
+    {
+      "id": "roleplay-question-target",
+      "description": "Question-target lessons include at least one question-like roleplay turn",
+      "pass": true,
+      "evidence": "Roleplay includes a question-like turn"
+    },
+    {
+      "id": "recap",
+      "description": "Recap includes at least 3 review items",
+      "pass": true,
+      "evidence": "Recap contains 5 items"
+    },
+    {
+      "id": "review-reuse",
+      "description": "Lesson reuses at least 2 prior items when prior lesson context exists",
+      "pass": true,
+      "evidence": "No prior lessons available; review reuse check not required"
+    },
+    {
+      "id": "teaching-frame",
+      "description": "Lesson includes a clear teaching frame with runtime and learner takeaway",
+      "pass": true,
+      "evidence": "Teaching frame targets 10-14 minutes"
+    },
+    {
+      "id": "visual-plan",
+      "description": "Each section includes a left-panel visual plan and explicit image decision",
+      "pass": true,
+      "evidence": "Every section includes visualPlan with usable teaching visuals and image rationale"
+    },
+    {
+      "id": "asset-research",
+      "description": "Lesson provides at least one concrete image research query when visuals would help",
+      "pass": true,
+      "evidence": "Sections with concrete asset research queries: 1"
+    },
+    {
+      "id": "policy",
+      "description": "Transliteration + image sourcing policies are declared",
+      "pass": true,
+      "evidence": "Policy object present with required enum values"
+    }
+  ],
+  "policies": {
+    "transliteration": "PTM_ADAPTED_INLINE_TONES",
+    "imageSourcing": "INTERNET_FIRST_NO_GENERATIVE_DEFAULT"
+  },
+  "pronunciationFocus": {
+    "targetSounds": [
+      "rising tone (sǎam, sǎawng) vs falling tone (hâa, gâo)",
+      "low tone (sìi, hòk, sìp) awareness"
+    ],
+    "minimalPairs": [
+      {
+        "a": {
+          "thai": "สาม",
+          "translit": "sǎam",
+          "english": "three (rising tone)"
+        },
+        "b": {
+          "thai": "ห้า",
+          "translit": "hâa",
+          "english": "five (falling tone)"
+        }
+      },
+      {
+        "a": {
+          "thai": "สี่",
+          "translit": "sìi",
+          "english": "four (low tone)"
+        },
+        "b": {
+          "thai": "ห้า",
+          "translit": "hâa",
+          "english": "five (falling tone)"
+        }
+      }
+    ],
+    "mouthMapAnchor": "Rising tone: your voice starts low and lifts upward, like asking a surprised question. Falling tone: your voice starts high and drops sharply, like saying 'No!' firmly. Low tone: your voice stays flat and low, like mumbling quietly.",
+    "tonePattern": "rising vs falling vs low"
+  }
+}

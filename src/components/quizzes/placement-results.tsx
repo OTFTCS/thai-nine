@@ -163,8 +163,8 @@ export function PlacementResults({
         <Link href="/quiz">
           <Button variant="outline">Retake Placement Quiz</Button>
         </Link>
-        <Link href="/admin/quizzes">
-          <Button variant="ghost">Open Nine Mode</Button>
+        <Link href="/links">
+          <Button variant="ghost">Back to Links</Button>
         </Link>
       </div>
     </div>

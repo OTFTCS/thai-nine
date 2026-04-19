@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<title>Thai Classifiers Cheat Sheet — Concept B</title>
+<link href="https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400&display=swap" rel="stylesheet">
+<style>
+  @page {
+    size: A4;
+    margin: 10mm 11mm 10mm 11mm;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Sarabun', sans-serif;
+    font-size: 9pt;
+    line-height: 1.5;
+    color: #1a1a1a;
+    background: #eef1f6;
+  }
+
+  /* ── Compact Header (page 1 only) ── */
+  .header {
+    background: linear-gradient(135deg, #003DA5 0%, #1a5dc9 50%, #003DA5 100%);
+    color: #fff;
+    text-align: center;
+    padding: 10px 16px 8px;
+    border-radius: 0 0 16px 16px;
+    margin-bottom: 8px;
+    position: relative;
+  }
+  .logo-placeholder {
+    position: absolute;
+    top: 8px;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 5.5pt;
+    font-weight: 700;
+    color: rgba(255,255,255,0.6);
+  }
+  .logo-left { left: 12px; }
+  .logo-right { right: 12px; }
+  .header h1 {
+    font-size: 17pt;
+    font-weight: 800;
+    letter-spacing: 0.3px;
+    line-height: 1.1;
+  }
+  .header .subtitle {
+    font-size: 8pt;
+    font-weight: 400;
+    opacity: 0.85;
+    margin-top: 1px;
+  }
+
+  /* ── Grid ── */
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  /* ── Page break ── */
+  .page-break {
+    break-before: page;
+    page-break-before: always;
+  }
+
+  /* ── Card ── */
+  .card {
+    background: #fff;
+    border-radius: 16px;
+    overflow: hidden;
+    page-break-inside: avoid;
+    break-inside: avoid;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.07);
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Subtle organic tilts */
+  .card.tilt-1 { transform: rotate(-0.3deg); }
+  .card.tilt-2 { transform: rotate(0.35deg); }
+  .card.tilt-3 { transform: rotate(0deg); }
+  .card.tilt-4 { transform: rotate(-0.25deg); }
+  .card.tilt-5 { transform: rotate(0.3deg); }
+
+  /* ── Card header ── */
+  .card-header {
+    padding: 10px 12px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 16px 16px 0 0;
+  }
+  .card-header.blue { background: linear-gradient(135deg, #003DA5, #1a5dc9); color: #fff; }
+  .card-header.red  { background: linear-gradient(135deg, #ED1C24, #f74a50); color: #fff; }
+
+  .card-header-img {
+    width: 80px;
+    height: auto;
+    max-height: 70px;
+    border-radius: 10px;
+    object-fit: cover;
+    border: 2px solid rgba(255,255,255,0.35);
+    flex-shrink: 0;
+  }
+  .card-header-text {
+    flex: 1;
+    min-width: 0;
+  }
+  .card-header .thai {
+    font-size: 20pt;
+    font-weight: 800;
+    line-height: 1.1;
+  }
+  .card-header .translit {
+    font-size: 11pt;
+    font-weight: 700;
+    opacity: 0.95;
+  }
+  .card-header .desc {
+    font-size: 7pt;
+    opacity: 0.75;
+    line-height: 1.2;
+    margin-top: 1px;
+  }
+  .card-header .gloss {
+    font-size: 8.5pt;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    background: rgba(255,255,255,0.25);
+    padding: 3px 9px;
+    border-radius: 12px;
+    align-self: flex-start;
+    margin-top: 2px;
+    flex-shrink: 0;
+    white-space: nowrap;
+  }
+
+  /* ── Examples ── */
+  .card-examples {
+    padding: 4px 10px 2px;
+    flex: 1;
+  }
+  .example-row {
+    display: flex;
+    gap: 0;
+    padding: 3px 6px;
+    border-radius: 6px;
+    align-items: baseline;
+    margin-bottom: 1px;
+  }
+  .example-row:nth-child(odd) { background: #f5f7fa; }
+  .example-row:nth-child(even) { background: #fff; }
+
+  .example-row .thai {
+    font-size: 13pt;
+    font-weight: 600;
+    color: #1a1a1a;
+    min-width: 50px;
+    flex-shrink: 0;
+    margin-right: 6px;
+  }
+  .example-row .translit {
+    font-size: 10pt;
+    color: #333;
+    font-weight: 700;
+    flex: 1;
+    min-width: 0;
+  }
+  .example-row .english {
+    font-size: 9pt;
+    color: #555;
+    text-align: right;
+    flex-shrink: 0;
+    margin-left: 2px;
+  }
+
+  /* ── Example sentence ── */
+  .card-sentence {
+    padding: 5px 10px;
+    border-radius: 0 0 16px 16px;
+    font-size: 7.5pt;
+    line-height: 1.35;
+  }
+  .card-sentence.blue-bg { background: #e8f0fe; }
+  .card-sentence.red-bg  { background: #fde8e8; }
+
+  .card-sentence .sent-thai {
+    font-size: 10pt;
+    font-weight: 700;
+    color: #1a1a1a;
+  }
+  .card-sentence .sent-translit {
+    font-size: 8.5pt;
+    font-weight: 600;
+    color: #444;
+  }
+  .card-sentence .sent-english {
+    font-size: 7.5pt;
+    color: #666;
+    font-style: italic;
+  }
+
+  /* ── Footer ── */
+  .footer {
+    background: linear-gradient(135deg, #003DA5, #1a5dc9);
+    color: #fff;
+    text-align: center;
+    padding: 8px 14px;
+    margin-top: 8px;
+    border-radius: 16px 16px 0 0;
+    font-size: 8pt;
+  }
+  .footer .brand {
+    font-weight: 800;
+    font-size: 9pt;
+  }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="logo-placeholder logo-left">LOGO</div>
+  <div class="logo-placeholder logo-right">LOGO</div>
+  <h1>Thai Classifiers Cheat Sheet</h1>
+  <div class="subtitle">24 Counter Words That Cover 95% of Thai Nouns</div>
+</div>
+
+<script>
+const data = CLASSIFIER_DATA;
+const images = IMAGE_MAP_DATA;
+const PER_PAGE = 6;
+const tilts = ['tilt-1', 'tilt-2', 'tilt-3', 'tilt-4', 'tilt-5', 'tilt-3'];
+const clfs = data.classifiers;
+
+function getImageSrc(imageKey) {
+  return images[imageKey] || '';
+}
+
+let html = '<div class="grid">';
+
+clfs.forEach((clf, idx) => {
+  // Page break after every 6 cards
+  if (idx > 0 && idx % PER_PAGE === 0) {
+    html += '</div>';
+    html += '<div class="page-break"></div>';
+    html += '<div class="grid">';
+  }
+
+  const colorClass = idx % 2 === 0 ? 'blue' : 'red';
+  const tiltClass = tilts[idx % tilts.length];
+  const imgSrc = getImageSrc(clf.imageKey);
+  const imgTag = imgSrc ? `<img class="card-header-img" src="${imgSrc}" alt="${clf.gloss}">` : '';
+  const sentBg = idx % 2 === 0 ? 'blue-bg' : 'red-bg';
+
+  const examples = clf.examples.map(ex => `
+    <div class="example-row">
+      <span class="thai">${ex.thai}</span>
+      <span class="translit">${ex.translit}</span>
+      <span class="english">${ex.english}</span>
+    </div>
+  `).join('');
+
+  const sentenceHtml = clf.sentence ? `
+    <div class="card-sentence ${sentBg}">
+      <span class="sent-thai">${clf.sentence.thai}</span><br>
+      <span class="sent-translit">${clf.sentence.translit}</span><br>
+      <span class="sent-english">${clf.sentence.english}</span>
+    </div>
+  ` : '';
+
+  html += `
+    <div class="card ${tiltClass}">
+      <div class="card-header ${colorClass}">
+        ${imgTag}
+        <div class="card-header-text">
+          <div class="thai">${clf.thai}</div>
+          <div class="translit">${clf.translit}</div>
+          <div class="desc">${clf.description}</div>
+        </div>
+        <span class="gloss">${clf.gloss}</span>
+      </div>
+      <div class="card-examples">${examples}</div>
+      ${sentenceHtml}
+    </div>
+  `;
+});
+
+html += '</div>';
+document.write(html);
+</script>
+
+<div class="footer">
+  <span class="brand">thaiwith.nine</span> — get free Thai PDFs, link in bio.
+</div>
+
+</body>
+</html>

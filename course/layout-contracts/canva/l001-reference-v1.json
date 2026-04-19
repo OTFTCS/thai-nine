@@ -1,0 +1,427 @@
+{
+  "schemaVersion": 1,
+  "id": "l001-reference-v1",
+  "sourceReferencePptx": "course/Start with L001 and Review Uploaded Files/M01-L001-layout-reference.pptx",
+  "canvas": {
+    "widthEmu": 12191694,
+    "heightEmu": 6858000
+  },
+  "theme": {
+    "thaiFont": "Sarabun",
+    "latinFont": "Sarabun",
+    "colors": {
+      "background": "#F5F7F8",
+      "rightZone": "#DBE7EC",
+      "primary": "#355C7D",
+      "secondary": "#7A8F54",
+      "tertiary": "#C96F4A",
+      "card": "#FFFFFF",
+      "cardBorder": "#D7DEE3",
+      "ink": "#24333D",
+      "inkMedium": "#566873",
+      "inkLight": "#82909A",
+      "white": "#FFFFFF"
+    }
+  },
+  "fontRoles": {
+    "eyebrow": {
+      "fontName": "Sarabun",
+      "fontSizePt": 12,
+      "bold": true,
+      "color": "primary"
+    },
+    "lessonId": {
+      "fontName": "Sarabun",
+      "fontSizePt": 19,
+      "bold": false,
+      "color": "inkMedium"
+    },
+    "titleDisplay": {
+      "fontName": "Sarabun",
+      "fontSizePt": 38,
+      "bold": true,
+      "color": "ink"
+    },
+    "title": {
+      "fontName": "Sarabun",
+      "fontSizePt": 30,
+      "bold": true,
+      "color": "ink"
+    },
+    "subtitle": {
+      "fontName": "Sarabun",
+      "fontSizePt": 15,
+      "bold": false,
+      "color": "inkMedium"
+    },
+    "sectionTag": {
+      "fontName": "Sarabun",
+      "fontSizePt": 12,
+      "bold": true,
+      "color": "white",
+      "align": "center"
+    },
+    "thaiHero": {
+      "fontName": "Sarabun",
+      "fontSizePt": 32,
+      "bold": true,
+      "color": "ink"
+    },
+    "thaiLarge": {
+      "fontName": "Sarabun",
+      "fontSizePt": 27,
+      "bold": true,
+      "color": "ink"
+    },
+    "thaiMedium": {
+      "fontName": "Sarabun",
+      "fontSizePt": 23,
+      "bold": true,
+      "color": "ink"
+    },
+    "translit": {
+      "fontName": "Sarabun",
+      "fontSizePt": 16,
+      "italic": true,
+      "color": "inkMedium"
+    },
+    "english": {
+      "fontName": "Sarabun",
+      "fontSizePt": 15,
+      "color": "inkLight"
+    },
+    "body": {
+      "fontName": "Sarabun",
+      "fontSizePt": 16,
+      "color": "ink"
+    },
+    "bodySmall": {
+      "fontName": "Sarabun",
+      "fontSizePt": 15,
+      "color": "inkMedium"
+    },
+    "label": {
+      "fontName": "Sarabun",
+      "fontSizePt": 13,
+      "bold": true,
+      "color": "ink"
+    },
+    "speaker": {
+      "fontName": "Sarabun",
+      "fontSizePt": 12,
+      "bold": true,
+      "color": "white",
+      "align": "center"
+    }
+  },
+  "slideFamilies": [
+    {
+      "name": "opener",
+      "referenceSlide": 1,
+      "backgroundElements": [
+        { "type": "rect", "x": 8128101, "y": 0, "w": 4063593, "h": 6858000, "fill": "rightZone" },
+        { "type": "rect", "x": 0, "y": 0, "w": 8128101, "h": 76200, "fill": "primary" },
+        { "type": "rect", "x": 731520, "y": 5760720, "w": 1828800, "h": 38100, "fill": "secondary" }
+      ],
+      "placeholders": [
+        { "id": "eyebrow", "kind": "text", "x": 731520, "y": 1645920, "w": 6858000, "h": 365760, "fontRole": "eyebrow" },
+        { "id": "lesson_id", "kind": "text", "x": 731520, "y": 2103120, "w": 6858000, "h": 457200, "fontRole": "lessonId" },
+        { "id": "title", "kind": "text", "x": 731520, "y": 2651760, "w": 6858000, "h": 914400, "fontRole": "titleDisplay" },
+        { "id": "brand", "kind": "text", "x": 731520, "y": 5303520, "w": 6858000, "h": 365760, "fontRole": "bodySmall" }
+      ]
+    },
+    {
+      "name": "objectives-list",
+      "referenceSlide": 2,
+      "backgroundElements": [
+        { "type": "rect", "x": 8128101, "y": 0, "w": 4063593, "h": 6858000, "fill": "rightZone" },
+        { "type": "rect", "x": 0, "y": 0, "w": 8128101, "h": 50800, "fill": "primary" }
+      ],
+      "placeholders": [
+        { "id": "title", "kind": "text", "x": 731520, "y": 1061443, "w": 6858000, "h": 457200, "fontRole": "title" },
+        { "id": "objective_1", "kind": "text", "x": 1280047, "y": 1964720, "w": 6217800, "h": 457200, "fontRole": "body" },
+        { "id": "objective_2", "kind": "text", "x": 1280047, "y": 2649225, "w": 6217800, "h": 457200, "fontRole": "body" },
+        { "id": "objective_3", "kind": "text", "x": 1280047, "y": 3333730, "w": 6217800, "h": 457200, "fontRole": "body" },
+        { "id": "objective_4", "kind": "text", "x": 1280160, "y": 4018260, "w": 6217800, "h": 457200, "fontRole": "body" },
+        { "id": "objective_5", "kind": "text", "x": 1280160, "y": 4690815, "w": 6217800, "h": 457200, "fontRole": "body" }
+      ]
+    },
+    {
+      "name": "single-focus-card",
+      "referenceSlide": 3,
+      "backgroundElements": [
+        { "type": "rect", "x": 8128101, "y": 0, "w": 4063593, "h": 6858000, "fill": "rightZone" },
+        { "type": "rect", "x": 0, "y": 0, "w": 8128101, "h": 50800, "fill": "primary" },
+        { "type": "roundRect", "x": 731527, "y": 1719200, "w": 1210500, "h": 320100, "fill": "primary" },
+        { "type": "roundRect", "x": 731520, "y": 2267875, "w": 5943600, "h": 1645800, "fill": "card", "line": "cardBorder" },
+        { "type": "rect", "x": 895855, "y": 2542133, "w": 73200, "h": 1097400, "fill": "primary" }
+      ],
+      "placeholders": [
+        { "id": "section_label", "kind": "text", "x": 731527, "y": 1719200, "w": 1210500, "h": 320100, "fontRole": "sectionTag" },
+        { "id": "title", "kind": "text", "x": 2063268, "y": 1582106, "w": 5943600, "h": 457200, "fontRole": "title" },
+        { "id": "thai", "kind": "text", "x": 1142988, "y": 2332605, "w": 5303400, "h": 640200, "fontRole": "thaiHero" },
+        { "id": "translit", "kind": "text", "x": 1142988, "y": 3008965, "w": 5303400, "h": 365700, "fontRole": "translit" },
+        { "id": "english", "kind": "text", "x": 1143000, "y": 3374675, "w": 5303400, "h": 365700, "fontRole": "english" },
+        { "id": "note", "kind": "text", "x": 731520, "y": 4142240, "w": 6858000, "h": 914400, "fontRole": "body" }
+      ]
+    },
+    {
+      "name": "stacked-phrase-cards",
+      "referenceSlide": 4,
+      "backgroundElements": [
+        { "type": "rect", "x": 8128101, "y": 0, "w": 4063593, "h": 6858000, "fill": "rightZone" },
+        { "type": "rect", "x": 0, "y": 0, "w": 8128101, "h": 50800, "fill": "primary" },
+        { "type": "roundRect", "x": 731527, "y": 694913, "w": 1210500, "h": 320100, "fill": "primary" },
+        { "type": "roundRect", "x": 731520, "y": 1511300, "w": 6400800, "h": 1234500, "fill": "card", "line": "cardBorder" },
+        { "type": "rect", "x": 841248, "y": 1728130, "w": 73200, "h": 868800, "fill": "primary" },
+        { "type": "roundRect", "x": 731520, "y": 2907788, "w": 6400800, "h": 1234500, "fill": "card", "line": "cardBorder" },
+        { "type": "rect", "x": 841248, "y": 3087443, "w": 73200, "h": 868800, "fill": "primary" },
+        { "type": "roundRect", "x": 731520, "y": 4297750, "w": 6400800, "h": 1234500, "fill": "card", "line": "cardBorder" },
+        { "type": "rect", "x": 841248, "y": 4480668, "w": 73200, "h": 868800, "fill": "primary" }
+      ],
+      "placeholders": [
+        { "id": "section_label", "kind": "text", "x": 731527, "y": 694913, "w": 1210500, "h": 320100, "fontRole": "sectionTag" },
+        { "id": "title", "kind": "text", "x": 2063268, "y": 552443, "w": 5943600, "h": 457200, "fontRole": "title" },
+        { "id": "subtitle", "kind": "text", "x": 731520, "y": 1051560, "w": 6858000, "h": 365700, "fontRole": "bodySmall" },
+        { "id": "card_1_thai", "kind": "text", "x": 1097280, "y": 1659140, "w": 5029200, "h": 502800, "fontRole": "thaiLarge" },
+        { "id": "card_1_translit", "kind": "text", "x": 1097280, "y": 2197343, "w": 5029200, "h": 320000, "fontRole": "translit" },
+        { "id": "card_1_english", "kind": "text", "x": 1097280, "y": 2475000, "w": 5029200, "h": 280000, "fontRole": "english" },
+        { "id": "card_2_thai", "kind": "text", "x": 1097280, "y": 3063303, "w": 5029200, "h": 502800, "fontRole": "thaiLarge" },
+        { "id": "card_2_translit", "kind": "text", "x": 1097280, "y": 3589043, "w": 5029200, "h": 320000, "fontRole": "translit" },
+        { "id": "card_2_english", "kind": "text", "x": 1097280, "y": 3865000, "w": 5029200, "h": 280000, "fontRole": "english" },
+        { "id": "card_3_thai", "kind": "text", "x": 1165180, "y": 4477940, "w": 5029200, "h": 502800, "fontRole": "thaiLarge" },
+        { "id": "card_3_translit", "kind": "text", "x": 1165180, "y": 4980755, "w": 5029200, "h": 320000, "fontRole": "translit" },
+        { "id": "card_3_english", "kind": "text", "x": 1165180, "y": 5250000, "w": 5029200, "h": 280000, "fontRole": "english" }
+      ]
+    },
+    {
+      "name": "dual-card-shared-reply",
+      "referenceSlide": 5,
+      "backgroundElements": [
+        { "type": "rect", "x": 8128101, "y": 0, "w": 4063593, "h": 6858000, "fill": "rightZone" },
+        { "type": "rect", "x": 0, "y": 0, "w": 8128101, "h": 50800, "fill": "primary" },
+        { "type": "roundRect", "x": 731527, "y": 954588, "w": 1210500, "h": 320100, "fill": "primary" },
+        { "type": "roundRect", "x": 731495, "y": 1572645, "w": 3108900, "h": 411600, "fill": "secondary" },
+        { "type": "roundRect", "x": 4114775, "y": 1547395, "w": 3108900, "h": 411600, "fill": "tertiary" },
+        { "type": "roundRect", "x": 731520, "y": 2146430, "w": 3108900, "h": 1463100, "fill": "card", "line": "cardBorder" },
+        { "type": "rect", "x": 850110, "y": 2329335, "w": 73200, "h": 1097400, "fill": "secondary" },
+        { "type": "roundRect", "x": 4114800, "y": 2133805, "w": 3108900, "h": 1463100, "fill": "card", "line": "cardBorder" },
+        { "type": "rect", "x": 4246990, "y": 2316685, "w": 73200, "h": 1097400, "fill": "tertiary" },
+        { "type": "roundRect", "x": 1624200, "y": 3771833, "w": 3108900, "h": 411600, "fill": "primary" },
+        { "type": "roundRect", "x": 1624200, "y": 4401850, "w": 4981200, "h": 1683900, "fill": "card", "line": "cardBorder" },
+        { "type": "rect", "x": 1783080, "y": 4740880, "w": 73200, "h": 1005900, "fill": "primary" }
+      ],
+      "placeholders": [
+        { "id": "section_label", "kind": "text", "x": 731527, "y": 954588, "w": 1210500, "h": 320100, "fontRole": "sectionTag" },
+        { "id": "title", "kind": "text", "x": 1942043, "y": 870018, "w": 5943600, "h": 457200, "fontRole": "title" },
+        { "id": "left_label", "kind": "text", "x": 731520, "y": 1618433, "w": 3108900, "h": 365700, "fontRole": "sectionTag" },
+        { "id": "right_label", "kind": "text", "x": 4114800, "y": 1593171, "w": 3108900, "h": 365700, "fontRole": "sectionTag" },
+        { "id": "left_thai", "kind": "text", "x": 1051547, "y": 2178469, "w": 2651700, "h": 502800, "fontRole": "thaiLarge" },
+        { "id": "left_translit", "kind": "text", "x": 1051597, "y": 2740853, "w": 2651700, "h": 274200, "fontRole": "translit" },
+        { "id": "left_english", "kind": "text", "x": 1051560, "y": 3074630, "w": 2651700, "h": 274200, "fontRole": "english" },
+        { "id": "right_thai", "kind": "text", "x": 4434840, "y": 2178469, "w": 2651700, "h": 502800, "fontRole": "thaiLarge" },
+        { "id": "right_translit", "kind": "text", "x": 4434840, "y": 2728165, "w": 2651700, "h": 274200, "fontRole": "translit" },
+        { "id": "right_english", "kind": "text", "x": 4434840, "y": 3074630, "w": 2651700, "h": 274200, "fontRole": "english" },
+        { "id": "shared_label", "kind": "text", "x": 1624195, "y": 3816533, "w": 3108900, "h": 365700, "fontRole": "sectionTag" },
+        { "id": "shared_thai", "kind": "text", "x": 2103120, "y": 4525340, "w": 4023300, "h": 502800, "fontRole": "thaiLarge" },
+        { "id": "shared_translit", "kind": "text", "x": 2133451, "y": 5072274, "w": 4877100, "h": 320100, "fontRole": "translit" },
+        { "id": "shared_english", "kind": "text", "x": 2103150, "y": 5370163, "w": 4023300, "h": 593100, "fontRole": "bodySmall" }
+      ]
+    },
+    {
+      "name": "social-job-stack",
+      "referenceSlide": 6,
+      "backgroundElements": [
+        { "type": "rect", "x": 8128101, "y": 0, "w": 4063500, "h": 6858000, "fill": "rightZone" },
+        { "type": "rect", "x": 0, "y": 0, "w": 8128101, "h": 50800, "fill": "primary" },
+        { "type": "roundRect", "x": 731527, "y": 896075, "w": 1210500, "h": 320100, "fill": "primary" },
+        { "type": "roundRect", "x": 731520, "y": 1737360, "w": 6583680, "h": 1234440, "fill": "card", "line": "cardBorder" },
+        { "type": "rect", "x": 822960, "y": 1920240, "w": 73152, "h": 868680, "fill": "secondary" },
+        { "type": "roundRect", "x": 731520, "y": 3108960, "w": 6583680, "h": 1234440, "fill": "card", "line": "cardBorder" },
+        { "type": "rect", "x": 822960, "y": 3291840, "w": 73152, "h": 868680, "fill": "tertiary" },
+        { "type": "roundRect", "x": 731520, "y": 4480560, "w": 6583680, "h": 1234440, "fill": "card", "line": "cardBorder" },
+        { "type": "rect", "x": 822960, "y": 4663440, "w": 73152, "h": 868680, "fill": "primary" }
+      ],
+      "placeholders": [
+        { "id": "section_label", "kind": "text", "x": 731527, "y": 896075, "w": 1210500, "h": 320100, "fontRole": "sectionTag" },
+        { "id": "title", "kind": "text", "x": 2000375, "y": 811779, "w": 7057500, "h": 667500, "fontRole": "title" },
+        { "id": "subtitle", "kind": "text", "x": 731520, "y": 1293880, "w": 6858000, "h": 457200, "fontRole": "body" },
+        { "id": "row_1_thai", "kind": "text", "x": 1051560, "y": 1828800, "w": 2743200, "h": 457200, "fontRole": "thaiMedium" },
+        { "id": "row_1_translit", "kind": "text", "x": 1051560, "y": 2240280, "w": 2743200, "h": 274320, "fontRole": "translit" },
+        { "id": "row_1_role", "kind": "text", "x": 3657600, "y": 1874520, "w": 3474720, "h": 365760, "fontRole": "label" },
+        { "id": "row_1_usage", "kind": "text", "x": 3657600, "y": 2286000, "w": 3474720, "h": 365760, "fontRole": "bodySmall" },
+        { "id": "row_2_thai", "kind": "text", "x": 1051560, "y": 3200400, "w": 2743200, "h": 457200, "fontRole": "thaiMedium" },
+        { "id": "row_2_translit", "kind": "text", "x": 1051560, "y": 3611880, "w": 2743200, "h": 274320, "fontRole": "translit" },
+        { "id": "row_2_role", "kind": "text", "x": 3657600, "y": 3246120, "w": 3474720, "h": 365760, "fontRole": "label" },
+        { "id": "row_2_usage", "kind": "text", "x": 3657600, "y": 3657600, "w": 3474720, "h": 365760, "fontRole": "bodySmall" },
+        { "id": "row_3_thai", "kind": "text", "x": 1051560, "y": 4572000, "w": 2743200, "h": 457200, "fontRole": "thaiMedium" },
+        { "id": "row_3_translit", "kind": "text", "x": 1051560, "y": 4983480, "w": 2743200, "h": 274320, "fontRole": "translit" },
+        { "id": "row_3_role", "kind": "text", "x": 3657600, "y": 4617720, "w": 3474720, "h": 365760, "fontRole": "label" },
+        { "id": "row_3_usage", "kind": "text", "x": 3657600, "y": 5029200, "w": 3474720, "h": 365760, "fontRole": "bodySmall" }
+      ]
+    },
+    {
+      "name": "polite-ending-stack",
+      "referenceSlide": 7,
+      "backgroundElements": [
+        { "type": "rect", "x": 8128101, "y": 0, "w": 4063593, "h": 6858000, "fill": "rightZone" },
+        { "type": "rect", "x": 0, "y": 0, "w": 8128101, "h": 50800, "fill": "primary" },
+        { "type": "roundRect", "x": 731527, "y": 642588, "w": 1210500, "h": 320100, "fill": "primary" },
+        { "type": "roundRect", "x": 731520, "y": 1554480, "w": 6583680, "h": 1097280, "fill": "card", "line": "cardBorder" },
+        { "type": "roundRect", "x": 731520, "y": 2788920, "w": 6583680, "h": 1097280, "fill": "card", "line": "cardBorder" },
+        { "type": "roundRect", "x": 731520, "y": 4023360, "w": 6583680, "h": 1097280, "fill": "card", "line": "cardBorder" },
+        { "type": "roundRect", "x": 731525, "y": 5394943, "w": 6858000, "h": 731400, "fill": "secondary" }
+      ],
+      "placeholders": [
+        { "id": "section_label", "kind": "text", "x": 731527, "y": 642588, "w": 1210500, "h": 320100, "fontRole": "sectionTag" },
+        { "id": "title", "kind": "text", "x": 1942030, "y": 521131, "w": 5943600, "h": 457200, "fontRole": "title" },
+        { "id": "subtitle", "kind": "text", "x": 731520, "y": 1083553, "w": 6858000, "h": 365700, "fontRole": "bodySmall" },
+        { "id": "row_1_thai", "kind": "text", "x": 868680, "y": 1737360, "w": 1463040, "h": 731520, "fontRole": "thaiLarge" },
+        { "id": "row_1_support", "kind": "text", "x": 2560320, "y": 1645920, "w": 4572000, "h": 640080, "fontRole": "body" },
+        { "id": "row_2_thai", "kind": "text", "x": 868680, "y": 2971800, "w": 1463040, "h": 731520, "fontRole": "thaiLarge" },
+        { "id": "row_2_support", "kind": "text", "x": 2560320, "y": 2880360, "w": 4572000, "h": 640080, "fontRole": "body" },
+        { "id": "row_3_thai", "kind": "text", "x": 868680, "y": 4206240, "w": 1463040, "h": 731520, "fontRole": "thaiLarge" },
+        { "id": "row_3_support", "kind": "text", "x": 2560320, "y": 4114800, "w": 4572000, "h": 640080, "fontRole": "body" },
+        { "id": "rule_note", "kind": "text", "x": 731525, "y": 5394943, "w": 6858000, "h": 731400, "fontRole": "sectionTag" }
+      ]
+    },
+    {
+      "name": "drill-rows",
+      "referenceSlide": 8,
+      "backgroundElements": [
+        { "type": "rect", "x": 8128101, "y": 0, "w": 4063593, "h": 6858000, "fill": "rightZone" },
+        { "type": "rect", "x": 0, "y": 0, "w": 8128101, "h": 50800, "fill": "primary" },
+        { "type": "roundRect", "x": 731527, "y": 642588, "w": 1210500, "h": 320100, "fill": "primary" },
+        { "type": "roundRect", "x": 731520, "y": 1554480, "w": 6583680, "h": 777240, "fill": "card", "line": "cardBorder" },
+        { "type": "roundRect", "x": 731520, "y": 3255264, "w": 6583680, "h": 777240, "fill": "card", "line": "cardBorder" },
+        { "type": "roundRect", "x": 731520, "y": 4956048, "w": 6583680, "h": 777240, "fill": "card", "line": "cardBorder" },
+        { "type": "roundRect", "x": 731520, "y": 2404872, "w": 6583680, "h": 777240, "fill": "card", "line": "cardBorder" },
+        { "type": "roundRect", "x": 731520, "y": 4105656, "w": 6583680, "h": 777240, "fill": "card", "line": "cardBorder" }
+      ],
+      "placeholders": [
+        { "id": "section_label", "kind": "text", "x": 731527, "y": 642588, "w": 1210500, "h": 320100, "fontRole": "sectionTag" },
+        { "id": "title", "kind": "text", "x": 2063268, "y": 505418, "w": 5943600, "h": 457200, "fontRole": "title" },
+        { "id": "subtitle", "kind": "text", "x": 731520, "y": 1075703, "w": 6858000, "h": 365700, "fontRole": "bodySmall" },
+        { "id": "row_1_prompt_thai", "kind": "text", "x": 1188720, "y": 1627632, "w": 3200400, "h": 411480, "fontRole": "thaiMedium" },
+        { "id": "row_1_prompt_translit", "kind": "text", "x": 1188720, "y": 2011680, "w": 3200400, "h": 274320, "fontRole": "translit" },
+        { "id": "row_1_instruction", "kind": "text", "x": 4846320, "y": 1737360, "w": 2286000, "h": 365760, "fontRole": "label" },
+        { "id": "row_2_prompt_thai", "kind": "text", "x": 1188720, "y": 2478024, "w": 3200400, "h": 411480, "fontRole": "thaiMedium" },
+        { "id": "row_2_prompt_translit", "kind": "text", "x": 1188720, "y": 2862072, "w": 3200400, "h": 274320, "fontRole": "translit" },
+        { "id": "row_2_instruction", "kind": "text", "x": 4846320, "y": 2587752, "w": 2286000, "h": 365760, "fontRole": "label" },
+        { "id": "row_3_prompt_thai", "kind": "text", "x": 1188720, "y": 3328416, "w": 3200400, "h": 411480, "fontRole": "thaiMedium" },
+        { "id": "row_3_prompt_translit", "kind": "text", "x": 1188720, "y": 3712464, "w": 3200400, "h": 274320, "fontRole": "translit" },
+        { "id": "row_3_instruction", "kind": "text", "x": 4846320, "y": 3438144, "w": 2286000, "h": 365760, "fontRole": "label" },
+        { "id": "row_4_prompt_thai", "kind": "text", "x": 1188720, "y": 4178808, "w": 3200400, "h": 411480, "fontRole": "thaiMedium" },
+        { "id": "row_4_prompt_translit", "kind": "text", "x": 1188720, "y": 4562856, "w": 3200400, "h": 274320, "fontRole": "translit" },
+        { "id": "row_4_instruction", "kind": "text", "x": 4846320, "y": 4288536, "w": 2286000, "h": 365760, "fontRole": "label" },
+        { "id": "row_5_prompt_thai", "kind": "text", "x": 1188720, "y": 5029200, "w": 3200400, "h": 411480, "fontRole": "thaiMedium" },
+        { "id": "row_5_prompt_translit", "kind": "text", "x": 1188720, "y": 5413248, "w": 3200400, "h": 274320, "fontRole": "translit" },
+        { "id": "row_5_instruction", "kind": "text", "x": 4846320, "y": 5138928, "w": 2286000, "h": 365760, "fontRole": "label" }
+      ]
+    },
+    {
+      "name": "response-triad",
+      "referenceSlide": 9,
+      "backgroundElements": [
+        { "type": "rect", "x": 8128101, "y": 0, "w": 4063593, "h": 6858000, "fill": "rightZone" },
+        { "type": "rect", "x": 0, "y": 0, "w": 8128101, "h": 50800, "fill": "primary" },
+        { "type": "roundRect", "x": 731527, "y": 809138, "w": 1210500, "h": 320100, "fill": "primary" },
+        { "type": "roundRect", "x": 731520, "y": 2011680, "w": 6583680, "h": 1097280, "fill": "card", "line": "cardBorder" },
+        { "type": "roundRect", "x": 731520, "y": 3246120, "w": 6583680, "h": 1097280, "fill": "card", "line": "cardBorder" },
+        { "type": "roundRect", "x": 731457, "y": 4983490, "w": 6583800, "h": 1097400, "fill": "card", "line": "cardBorder" }
+      ],
+      "placeholders": [
+        { "id": "section_label", "kind": "text", "x": 731527, "y": 809138, "w": 1210500, "h": 320100, "fontRole": "sectionTag" },
+        { "id": "title", "kind": "text", "x": 2029374, "y": 720278, "w": 7030500, "h": 621900, "fontRole": "title" },
+        { "id": "subtitle", "kind": "text", "x": 731520, "y": 1193328, "w": 6858000, "h": 365700, "fontRole": "bodySmall" },
+        { "id": "answers_label", "kind": "text", "x": 731533, "y": 1623118, "w": 1645800, "h": 274200, "fontRole": "label" },
+        { "id": "row_1_thai", "kind": "text", "x": 1051560, "y": 2057400, "w": 2286000, "h": 457200, "fontRole": "thaiMedium" },
+        { "id": "row_1_translit", "kind": "text", "x": 1051560, "y": 2514600, "w": 2286000, "h": 274320, "fontRole": "translit" },
+        { "id": "row_1_meaning", "kind": "text", "x": 3474720, "y": 2148840, "w": 3657600, "h": 365760, "fontRole": "label" },
+        { "id": "row_1_usage", "kind": "text", "x": 3474720, "y": 2514600, "w": 3657600, "h": 365760, "fontRole": "bodySmall" },
+        { "id": "row_2_thai", "kind": "text", "x": 1051560, "y": 3291840, "w": 2286000, "h": 457200, "fontRole": "thaiMedium" },
+        { "id": "row_2_translit", "kind": "text", "x": 1051560, "y": 3749040, "w": 2286000, "h": 274320, "fontRole": "translit" },
+        { "id": "row_2_meaning", "kind": "text", "x": 3474720, "y": 3383280, "w": 3657600, "h": 365760, "fontRole": "label" },
+        { "id": "row_2_usage", "kind": "text", "x": 3474720, "y": 3749040, "w": 3657600, "h": 365760, "fontRole": "bodySmall" },
+        { "id": "softener_label", "kind": "text", "x": 731520, "y": 4594866, "w": 1828800, "h": 274200, "fontRole": "label" },
+        { "id": "row_3_thai", "kind": "text", "x": 1042422, "y": 5029235, "w": 2286000, "h": 457200, "fontRole": "thaiMedium" },
+        { "id": "row_3_translit", "kind": "text", "x": 1042422, "y": 5532123, "w": 2286000, "h": 274200, "fontRole": "translit" },
+        { "id": "row_3_meaning", "kind": "text", "x": 3474670, "y": 5120700, "w": 3657600, "h": 365700, "fontRole": "label" },
+        { "id": "row_3_usage", "kind": "text", "x": 3474670, "y": 5486348, "w": 3657600, "h": 365700, "fontRole": "bodySmall" }
+      ]
+    },
+    {
+      "name": "roleplay-ladder",
+      "referenceSlide": 10,
+      "backgroundElements": [
+        { "type": "rect", "x": 8128101, "y": 0, "w": 4063593, "h": 6858000, "fill": "rightZone" },
+        { "type": "rect", "x": 0, "y": 0, "w": 8128101, "h": 50800, "fill": "primary" },
+        { "type": "roundRect", "x": 731520, "y": 1463040, "w": 1097280, "h": 292608, "fill": "primary" },
+        { "type": "roundRect", "x": 731520, "y": 2199095, "w": 1097400, "h": 292500, "fill": "secondary" },
+        { "type": "roundRect", "x": 731583, "y": 2962650, "w": 1097400, "h": 292500, "fill": "primary" },
+        { "type": "roundRect", "x": 731583, "y": 3726205, "w": 1097400, "h": 292500, "fill": "secondary" },
+        { "type": "roundRect", "x": 791795, "y": 4489760, "w": 1097400, "h": 292500, "fill": "primary" },
+        { "type": "roundRect", "x": 731633, "y": 5253290, "w": 1097400, "h": 292500, "fill": "secondary" }
+      ],
+      "placeholders": [
+        { "id": "title", "kind": "text", "x": 731520, "y": 429768, "w": 6858000, "h": 457200, "fontRole": "title" },
+        { "id": "subtitle", "kind": "text", "x": 731520, "y": 992138, "w": 6858000, "h": 365700, "fontRole": "bodySmall" },
+        { "id": "turn_1_speaker", "kind": "text", "x": 731520, "y": 1463040, "w": 1097280, "h": 292608, "fontRole": "speaker" },
+        { "id": "turn_1_thai", "kind": "text", "x": 2011680, "y": 1339583, "w": 5303400, "h": 411600, "fontRole": "thaiMedium" },
+        { "id": "turn_1_support", "kind": "text", "x": 2011693, "y": 1721362, "w": 5303400, "h": 320100, "fontRole": "bodySmall" },
+        { "id": "turn_2_speaker", "kind": "text", "x": 731520, "y": 2199095, "w": 1097400, "h": 292500, "fontRole": "speaker" },
+        { "id": "turn_2_thai", "kind": "text", "x": 2011743, "y": 2048200, "w": 5303400, "h": 411600, "fontRole": "thaiMedium" },
+        { "id": "turn_2_support", "kind": "text", "x": 2011693, "y": 2482592, "w": 5303400, "h": 320100, "fontRole": "bodySmall" },
+        { "id": "turn_3_speaker", "kind": "text", "x": 731583, "y": 2962650, "w": 1097400, "h": 292500, "fontRole": "speaker" },
+        { "id": "turn_3_thai", "kind": "text", "x": 2011693, "y": 2878130, "w": 5303400, "h": 411600, "fontRole": "thaiMedium" },
+        { "id": "turn_3_support", "kind": "text", "x": 2011693, "y": 3253010, "w": 5303400, "h": 320100, "fontRole": "bodySmall" },
+        { "id": "turn_4_speaker", "kind": "text", "x": 731583, "y": 3726205, "w": 1097400, "h": 292500, "fontRole": "speaker" },
+        { "id": "turn_4_thai", "kind": "text", "x": 2011693, "y": 3666773, "w": 5303400, "h": 411600, "fontRole": "thaiMedium" },
+        { "id": "turn_4_support", "kind": "text", "x": 2011680, "y": 4072527, "w": 5303400, "h": 320100, "fontRole": "bodySmall" },
+        { "id": "turn_5_speaker", "kind": "text", "x": 791795, "y": 4489760, "w": 1097400, "h": 292500, "fontRole": "speaker" },
+        { "id": "turn_5_thai", "kind": "text", "x": 2011755, "y": 4366290, "w": 5303400, "h": 411600, "fontRole": "thaiMedium" },
+        { "id": "turn_5_support", "kind": "text", "x": 2011693, "y": 4759532, "w": 5303400, "h": 320100, "fontRole": "bodySmall" },
+        { "id": "turn_6_speaker", "kind": "text", "x": 731633, "y": 5253290, "w": 1097400, "h": 292500, "fontRole": "speaker" },
+        { "id": "turn_6_thai", "kind": "text", "x": 2011680, "y": 5175433, "w": 5303400, "h": 411600, "fontRole": "thaiMedium" },
+        { "id": "turn_6_support", "kind": "text", "x": 2011693, "y": 5571112, "w": 5303400, "h": 320100, "fontRole": "bodySmall" }
+      ]
+    },
+    {
+      "name": "recap-checklist",
+      "referenceSlide": 11,
+      "backgroundElements": [
+        { "type": "rect", "x": 8128101, "y": 0, "w": 4063593, "h": 6858000, "fill": "rightZone" },
+        { "type": "rect", "x": 0, "y": 0, "w": 8128101, "h": 50800, "fill": "primary" },
+        { "type": "ellipse", "x": 731529, "y": 1821210, "w": 512100, "h": 539100, "fill": "secondary" },
+        { "type": "ellipse", "x": 731529, "y": 2396497, "w": 512100, "h": 539100, "fill": "secondary" },
+        { "type": "ellipse", "x": 731529, "y": 3053935, "w": 512100, "h": 539100, "fill": "secondary" },
+        { "type": "ellipse", "x": 731529, "y": 3693972, "w": 512100, "h": 539100, "fill": "secondary" },
+        { "type": "ellipse", "x": 731529, "y": 4371872, "w": 512100, "h": 539100, "fill": "secondary" }
+      ],
+      "placeholders": [
+        { "id": "title", "kind": "text", "x": 1137970, "y": 1015518, "w": 6858000, "h": 457200, "fontRole": "title" },
+        { "id": "item_1", "kind": "text", "x": 1097280, "y": 1776945, "w": 6400800, "h": 457200, "fontRole": "body" },
+        { "id": "item_2", "kind": "text", "x": 1097280, "y": 2437455, "w": 6400800, "h": 457200, "fontRole": "body" },
+        { "id": "item_3", "kind": "text", "x": 1005855, "y": 3097940, "w": 6400800, "h": 457200, "fontRole": "body" },
+        { "id": "item_4", "kind": "text", "x": 1097280, "y": 3686175, "w": 6400800, "h": 457200, "fontRole": "body" },
+        { "id": "item_5", "kind": "text", "x": 1005855, "y": 4412835, "w": 6400800, "h": 457200, "fontRole": "body" }
+      ]
+    },
+    {
+      "name": "closing",
+      "referenceSlide": 12,
+      "backgroundElements": [
+        { "type": "rect", "x": 8128101, "y": 0, "w": 4063593, "h": 6858000, "fill": "rightZone" },
+        { "type": "rect", "x": 0, "y": 0, "w": 8128101, "h": 76200, "fill": "primary" },
+        { "type": "rect", "x": 731520, "y": 5760720, "w": 1828800, "h": 38100, "fill": "secondary" }
+      ],
+      "placeholders": [
+        { "id": "lesson_id", "kind": "text", "x": 731520, "y": 1371600, "w": 6858000, "h": 365760, "fontRole": "lessonId" },
+        { "id": "title", "kind": "text", "x": 731520, "y": 1920240, "w": 6858000, "h": 914400, "fontRole": "titleDisplay" },
+        { "id": "line_1", "kind": "text", "x": 731520, "y": 3200400, "w": 6858000, "h": 411480, "fontRole": "body" },
+        { "id": "line_2", "kind": "text", "x": 731520, "y": 3657600, "w": 6858000, "h": 411480, "fontRole": "body" },
+        { "id": "brand", "kind": "text", "x": 731520, "y": 5303520, "w": 6858000, "h": 365760, "fontRole": "bodySmall" }
+      ]
+    }
+  ]
+}

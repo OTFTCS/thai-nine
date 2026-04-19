@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<title>Thai Classifiers Cheat Sheet — Concept C</title>
+<link href="https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400&display=swap" rel="stylesheet">
+<style>
+  @page {
+    size: A4;
+    margin: 10mm 12mm 12mm 12mm;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Sarabun', sans-serif;
+    font-size: 8.5pt;
+    line-height: 1.45;
+    color: #1a1a1a;
+    background: #fff;
+  }
+
+  /* ── Header ── */
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 16px;
+    margin-bottom: 8px;
+    background: linear-gradient(135deg, #003DA5 0%, #1a5dc9 100%);
+    border-radius: 14px;
+    color: #fff;
+    position: relative;
+  }
+  .logo-placeholder {
+    position: absolute;
+    top: 8px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 5.5pt;
+    font-weight: 700;
+    color: rgba(255,255,255,0.6);
+  }
+  .logo-left { left: 10px; }
+  .logo-right { right: 10px; }
+
+  .header-left {
+    margin-left: 36px;
+  }
+  .header-left h1 {
+    font-size: 16pt;
+    font-weight: 800;
+    line-height: 1.1;
+  }
+  .header-left .subtitle {
+    font-size: 8pt;
+    opacity: 0.85;
+  }
+  .header-right {
+    text-align: right;
+    font-size: 7.5pt;
+    opacity: 0.75;
+    max-width: 200px;
+    margin-right: 36px;
+  }
+
+  /* ── Section bar ── */
+  .section-bar {
+    background: linear-gradient(90deg, #003DA5, #1a5dc9);
+    color: #fff;
+    font-size: 8.5pt;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    padding: 5px 14px;
+    margin-top: 8px;
+    margin-bottom: 6px;
+    border-radius: 10px;
+    page-break-after: avoid;
+  }
+  .section-bar.bonus {
+    background: linear-gradient(90deg, #ED1C24, #f74a50);
+  }
+
+  /* ── Classifier rows ── */
+  .clf-block {
+    display: flex;
+    gap: 0;
+    margin-bottom: 10px;
+    border-radius: 12px;
+    overflow: hidden;
+    page-break-inside: avoid;
+    break-inside: avoid;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+  }
+  .clf-block:nth-child(odd) { background: #f8f9fb; }
+  .clf-block:nth-child(even) { background: #fff; }
+
+  .clf-identity {
+    width: 100px;
+    min-width: 100px;
+    padding: 10px 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-right: 2px solid #e8ecf2;
+  }
+  .clf-img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #fff;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+    margin-bottom: 3px;
+  }
+  .clf-thai-big {
+    font-size: 20pt;
+    font-weight: 800;
+    color: #1a1a1a;
+    line-height: 1.1;
+  }
+  .clf-translit-bold {
+    font-size: 9pt;
+    font-weight: 700;
+    color: #333;
+  }
+  .clf-gloss-badge {
+    display: inline-block;
+    font-size: 6pt;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    color: #fff;
+    padding: 2px 7px;
+    border-radius: 10px;
+    margin-top: 3px;
+  }
+  .clf-gloss-badge.blue { background: #003DA5; }
+  .clf-gloss-badge.red  { background: #ED1C24; }
+
+  .clf-content {
+    flex: 1;
+    padding: 6px 10px;
+  }
+  .clf-desc {
+    font-size: 7pt;
+    color: #888;
+    font-style: italic;
+    padding-bottom: 3px;
+  }
+
+  /* ── Examples as 2-col grid ── */
+  .ex-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1px 14px;
+  }
+  .ex-item {
+    display: flex;
+    gap: 4px;
+    padding: 2.5px 6px;
+    border-radius: 6px;
+    align-items: baseline;
+  }
+  .ex-item:nth-child(odd) { background: rgba(0, 61, 165, 0.04); }
+  .ex-th {
+    font-size: 11pt;
+    font-weight: 600;
+    min-width: 50px;
+  }
+  .ex-tr {
+    font-size: 8pt;
+    color: #333;
+    font-weight: 700;
+    min-width: 65px;
+  }
+  .ex-en {
+    font-size: 7.5pt;
+    color: #666;
+    margin-left: auto;
+  }
+
+  /* ── Footer ── */
+  .footer {
+    text-align: center;
+    margin-top: 8px;
+    padding: 8px 14px;
+    background: linear-gradient(135deg, #003DA5 0%, #1a5dc9 100%);
+    border-radius: 10px;
+    color: #fff;
+    font-size: 8pt;
+  }
+  .footer .brand {
+    font-weight: 800;
+    font-size: 9pt;
+  }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="logo-placeholder logo-left">LOGO</div>
+  <div class="header-left">
+    <h1>Thai Classifiers<br>Cheat Sheet</h1>
+    <div class="subtitle">19 Counter Words That Cover 95% of Thai Nouns</div>
+  </div>
+  <div class="header-right">
+    Thai uses counter words ("classifiers") between numbers and nouns. These 19 cover almost everything you'll ever say.
+  </div>
+  <div class="logo-placeholder logo-right">LOGO</div>
+</div>
+
+<div class="section-bar">MAIN — 14 Everyday Classifiers</div>
+
+<script>
+const data = CLASSIFIER_DATA;
+const images = IMAGE_MAP_DATA;
+
+function getImageSrc(gloss) {
+  const key = gloss.toLowerCase().replace(/-/g, '_');
+  return images[key] || '';
+}
+
+data.sections.forEach(section => {
+  if (section.name === 'BONUS') {
+    document.write('<div class="section-bar bonus">BONUS — ' + section.label + '</div>');
+  }
+
+  section.classifiers.forEach((clf, i) => {
+    const badgeColor = section.name === 'BONUS' ? 'red' : 'blue';
+    const imgSrc = getImageSrc(clf.gloss);
+    const imgTag = imgSrc ? `<img class="clf-img" src="${imgSrc}" alt="${clf.gloss}">` : '';
+
+    const exItems = clf.examples.map(ex => `
+      <div class="ex-item">
+        <span class="ex-th">${ex.thai}</span>
+        <span class="ex-tr">${ex.translit}</span>
+        <span class="ex-en">${ex.english}</span>
+      </div>
+    `).join('');
+
+    document.write(`
+      <div class="clf-block">
+        <div class="clf-identity">
+          ${imgTag}
+          <div class="clf-thai-big">${clf.thai}</div>
+          <div class="clf-translit-bold">${clf.translit}</div>
+          <span class="clf-gloss-badge ${badgeColor}">${clf.gloss}</span>
+        </div>
+        <div class="clf-content">
+          <div class="clf-desc">${clf.description}</div>
+          <div class="ex-grid">${exItems}</div>
+        </div>
+      </div>
+    `);
+  });
+});
+</script>
+
+<div class="footer">
+  <span class="brand">thaiwith.nine</span> — get free Thai PDFs, link in bio.
+</div>
+
+</body>
+</html>

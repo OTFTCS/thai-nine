@@ -1,0 +1,149 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "M01-L001",
+  "cards": [
+    {
+      "id": "m01-l001-c01",
+      "vocabId": "v-c9337e2739",
+      "front": "สวัสดี",
+      "back": "hello",
+      "translit": "sà-wàt-dii",
+      "tags": [
+        "M01-L001",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l001-c02",
+      "vocabId": "v-7a1bb3ff29",
+      "front": "ครับ",
+      "back": "polite ending (male)",
+      "translit": "khráp",
+      "tags": [
+        "M01-L001",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l001-c03",
+      "vocabId": "v-b88f7c47a8",
+      "front": "ค่ะ",
+      "back": "polite ending (female)",
+      "translit": "khâ",
+      "tags": [
+        "M01-L001",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l001-c04",
+      "vocabId": "v-6075c52054",
+      "front": "สวัสดีครับ",
+      "back": "hello (male, polite)",
+      "translit": "sà-wàt-dii khráp",
+      "tags": [
+        "M01-L001",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l001-c05",
+      "vocabId": "v-c37375d587",
+      "front": "สวัสดีค่ะ",
+      "back": "hello (female, polite)",
+      "translit": "sà-wàt-dii khâ",
+      "tags": [
+        "M01-L001",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l001-c06",
+      "vocabId": "v-217b46aa5a",
+      "front": "ขอบคุณ",
+      "back": "thank you",
+      "translit": "khàawp-khun",
+      "tags": [
+        "M01-L001",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l001-c07",
+      "vocabId": "v-48f2e095d6",
+      "front": "ขอโทษ",
+      "back": "sorry / excuse me",
+      "translit": "khǎaw-thôot",
+      "tags": [
+        "M01-L001",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l001-c08",
+      "vocabId": "v-c202b97d17",
+      "front": "ขอบคุณครับ",
+      "back": "thank you (male, polite)",
+      "translit": "khàawp-khun khráp",
+      "tags": [
+        "M01-L001",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l001-c09",
+      "vocabId": "v-c77c1d6a16",
+      "front": "ขอโทษค่ะ",
+      "back": "sorry (female, polite)",
+      "translit": "khǎaw-thôot khâ",
+      "tags": [
+        "M01-L001",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l001-c10",
+      "vocabId": "v-03cc3fe123",
+      "front": "ไม่เป็นไร",
+      "back": "it is okay / no problem",
+      "translit": "mâi bpen rai",
+      "tags": [
+        "M01-L001",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l001-c11",
+      "vocabId": "v-f40371ec59",
+      "front": "ใช่",
+      "back": "yes / that is right",
+      "translit": "châi",
+      "tags": [
+        "M01-L001",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l001-c12",
+      "vocabId": "v-cda55f5b5e",
+      "front": "ไม่ใช่",
+      "back": "no / not right",
+      "translit": "mâi châi",
+      "tags": [
+        "M01-L001",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l001-c13",
+      "vocabId": "v-4b01f636c7",
+      "front": "ครับ",
+      "back": "polite ending — high tone",
+      "translit": "khráp",
+      "tags": [
+        "M01-L001",
+        "core"
+      ]
+    }
+  ]
+}

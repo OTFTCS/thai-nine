@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "M01-L001",
+  "priorLessons": [],
+  "knownVocabulary": [],
+  "knownGrammar": [],
+  "reviewBuckets": [
+    {
+      "bucket": "last",
+      "offset": 1,
+      "lessonId": null,
+      "vocabIds": [],
+      "sample": []
+    },
+    {
+      "bucket": "minus3",
+      "offset": 3,
+      "lessonId": null,
+      "vocabIds": [],
+      "sample": []
+    },
+    {
+      "bucket": "minus6",
+      "offset": 6,
+      "lessonId": null,
+      "vocabIds": [],
+      "sample": []
+    },
+    {
+      "bucket": "minus8",
+      "offset": 8,
+      "lessonId": null,
+      "vocabIds": [],
+      "sample": []
+    }
+  ]
+}

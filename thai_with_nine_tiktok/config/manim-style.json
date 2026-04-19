@@ -1,0 +1,95 @@
+{
+  "resolution": { "width": 1080, "height": 1920 },
+  "aspectRatio": "9:16",
+  "fps": 30,
+  "layout": {
+    "cameraZone": {
+      "topFrac": 0.0,
+      "bottomFrac": 0.6,
+      "note": "Top 60% for Nine's face"
+    },
+    "overlayZone": {
+      "topFrac": 0.6,
+      "bottomFrac": 1.0,
+      "note": "Bottom 40% for text/graphics with translucent backdrop"
+    }
+  },
+  "translucentBar": {
+    "color": "#000000",
+    "opacity": 0.65,
+    "note": "Semi-transparent dark backdrop behind all overlay text"
+  },
+  "fonts": {
+    "thai": {
+      "family": "Sarabun",
+      "weight": "Medium",
+      "path": "assets/fonts/Sarabun-Medium.ttf",
+      "sizePt": 32
+    },
+    "translit": {
+      "family": "Sarabun",
+      "weight": "Regular",
+      "path": "assets/fonts/Sarabun-Regular.ttf",
+      "sizePt": 20
+    },
+    "english": {
+      "family": "Sarabun",
+      "weight": "Regular",
+      "path": "assets/fonts/Sarabun-Regular.ttf",
+      "sizePt": 18
+    },
+    "perform": {
+      "family": "Sarabun",
+      "weight": "Bold",
+      "path": "assets/fonts/Sarabun-Bold.ttf",
+      "sizePt": 26
+    },
+    "yourTurnHeader": {
+      "family": "Sarabun",
+      "weight": "Bold",
+      "path": "assets/fonts/Sarabun-Bold.ttf",
+      "sizePt": 34
+    },
+    "countdownDigit": {
+      "family": "Sarabun",
+      "weight": "Bold",
+      "path": "assets/fonts/Sarabun-Bold.ttf",
+      "sizePt": 44
+    },
+    "englishSubtitle": {
+      "family": "Sarabun",
+      "weight": "Bold",
+      "path": "assets/fonts/Sarabun-Bold.ttf",
+      "sizePt": 24
+    }
+  },
+  "spacing": {
+    "textLineBuff": 0.12,
+    "tripletPadX": 0.35,
+    "tripletPadY": 0.22,
+    "performPadX": 0.3,
+    "performPadY": 0.15,
+    "bubbleCornerRadius": 0.2,
+    "bubbleOpacity": 0.85
+  },
+  "colors": {
+    "thai": "#FFFFFF",
+    "translit": "#CFD8DC",
+    "english": "#B0BEC5",
+    "performText": "#FFFFFF",
+    "performBg": "#1a5276",
+    "accent": "#FFD54F",
+    "wrong": "#EF5350",
+    "correct": "#66BB6A",
+    "classifierHighlight": "#FFD54F",
+    "countdownText": "#FFFFFF"
+  },
+  "animations": {
+    "tripletRevealDurationSec": 0.6,
+    "performBounceDurationSec": 0.5,
+    "redXSlamDurationSec": 0.3,
+    "countdownDigitDurationSec": 1.0,
+    "transitionWipeDurationSec": 0.4,
+    "fadeOutDurationSec": 0.3
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "episode": "YT-S01-E03",
+  "timestamp": "2026-04-11T15:30:50.597135+00:00",
+  "gates": {
+    "layout": {
+      "pass": true,
+      "issues": [],
+      "warnings": [],
+      "visual_event_count": 52,
+      "clear_event_count": 41,
+      "block_marker_count": 42,
+      "elapsed_tracking_count": 421,
+      "total_lines": 1589
+    },
+    "timing": {
+      "pass": true,
+      "issues": [],
+      "warnings": [],
+      "simulated_events": 59,
+      "max_drift_sec": 0.0,
+      "overlay_count": 94
+    }
+  },
+  "overall": "PASS"
+}

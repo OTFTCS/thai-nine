@@ -1,0 +1,976 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "M01-L001",
+  "generatedAt": "2026-03-22T03:43:00.510Z",
+  "sourceScript": "M01-L001-script-master.json",
+  "items": [
+    {
+      "id": "v-c9337e2739-thai-to-english",
+      "vocabId": "v-c9337e2739",
+      "type": "thai_to_english",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "What is the best meaning of สวัสดี?",
+        "thai": "สวัสดี",
+        "translit": "sà-wàt-dii"
+      },
+      "options": [
+        "hello",
+        "polite ending (male)",
+        "polite ending (female)",
+        "hello (male, polite)"
+      ],
+      "answer": "hello",
+      "rationale": "Maps Thai form to target meaning from script languageFocus."
+    },
+    {
+      "id": "v-c9337e2739-english-to-thai",
+      "vocabId": "v-c9337e2739",
+      "type": "english_to_thai",
+      "displayMode": "english_only",
+      "prompt": {
+        "text": "Select Thai for: hello",
+        "english": "hello"
+      },
+      "options": [
+        "สวัสดี",
+        "ครับ",
+        "ค่ะ",
+        "สวัสดีครับ"
+      ],
+      "answer": "สวัสดี",
+      "rationale": "Reverses mapping for active recall."
+    },
+    {
+      "id": "v-c9337e2739-fill-translit",
+      "vocabId": "v-c9337e2739",
+      "type": "fill_translit",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "Type the PTM transliteration for สวัสดี.",
+        "thai": "สวัสดี"
+      },
+      "answer": "sà-wàt-dii",
+      "rationale": "Forces transliteration production with inline tone marks."
+    },
+    {
+      "id": "v-c9337e2739-context-mcq",
+      "vocabId": "v-c9337e2739",
+      "type": "context_mcq",
+      "displayMode": "triplet",
+      "prompt": {
+        "text": "Choose the sentence that keeps the lesson meaning of this phrase.",
+        "thai": "สวัสดี",
+        "translit": "sà-wàt-dii",
+        "english": "hello"
+      },
+      "options": [
+        "Use สวัสดี in polite beginner conversation",
+        "Use ครับ in polite beginner conversation",
+        "Use ค่ะ in polite beginner conversation",
+        "Use สวัสดีครับ in polite beginner conversation"
+      ],
+      "answer": "Use สวัสดี in polite beginner conversation",
+      "rationale": "Checks contextual understanding while preserving triplet exposure."
+    },
+    {
+      "id": "v-7a1bb3ff29-thai-to-english",
+      "vocabId": "v-7a1bb3ff29",
+      "type": "thai_to_english",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "What is the best meaning of ครับ?",
+        "thai": "ครับ",
+        "translit": "khráp"
+      },
+      "options": [
+        "polite ending (male)",
+        "hello",
+        "polite ending (female)",
+        "hello (male, polite)"
+      ],
+      "answer": "polite ending (male)",
+      "rationale": "Maps Thai form to target meaning from script languageFocus."
+    },
+    {
+      "id": "v-7a1bb3ff29-english-to-thai",
+      "vocabId": "v-7a1bb3ff29",
+      "type": "english_to_thai",
+      "displayMode": "english_only",
+      "prompt": {
+        "text": "Select Thai for: polite ending (male)",
+        "english": "polite ending (male)"
+      },
+      "options": [
+        "ครับ",
+        "สวัสดี",
+        "ค่ะ",
+        "สวัสดีครับ"
+      ],
+      "answer": "ครับ",
+      "rationale": "Reverses mapping for active recall."
+    },
+    {
+      "id": "v-7a1bb3ff29-fill-translit",
+      "vocabId": "v-7a1bb3ff29",
+      "type": "fill_translit",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "Type the PTM transliteration for ครับ.",
+        "thai": "ครับ"
+      },
+      "answer": "khráp",
+      "rationale": "Forces transliteration production with inline tone marks."
+    },
+    {
+      "id": "v-7a1bb3ff29-context-mcq",
+      "vocabId": "v-7a1bb3ff29",
+      "type": "context_mcq",
+      "displayMode": "triplet",
+      "prompt": {
+        "text": "Choose the sentence that keeps the lesson meaning of this phrase.",
+        "thai": "ครับ",
+        "translit": "khráp",
+        "english": "polite ending (male)"
+      },
+      "options": [
+        "Use ครับ in polite beginner conversation",
+        "Use สวัสดี in polite beginner conversation",
+        "Use ค่ะ in polite beginner conversation",
+        "Use สวัสดีครับ in polite beginner conversation"
+      ],
+      "answer": "Use ครับ in polite beginner conversation",
+      "rationale": "Checks contextual understanding while preserving triplet exposure."
+    },
+    {
+      "id": "v-b88f7c47a8-thai-to-english",
+      "vocabId": "v-b88f7c47a8",
+      "type": "thai_to_english",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "What is the best meaning of ค่ะ?",
+        "thai": "ค่ะ",
+        "translit": "khâ"
+      },
+      "options": [
+        "polite ending (female)",
+        "hello",
+        "polite ending (male)",
+        "hello (male, polite)"
+      ],
+      "answer": "polite ending (female)",
+      "rationale": "Maps Thai form to target meaning from script languageFocus."
+    },
+    {
+      "id": "v-b88f7c47a8-english-to-thai",
+      "vocabId": "v-b88f7c47a8",
+      "type": "english_to_thai",
+      "displayMode": "english_only",
+      "prompt": {
+        "text": "Select Thai for: polite ending (female)",
+        "english": "polite ending (female)"
+      },
+      "options": [
+        "ค่ะ",
+        "สวัสดี",
+        "ครับ",
+        "สวัสดีครับ"
+      ],
+      "answer": "ค่ะ",
+      "rationale": "Reverses mapping for active recall."
+    },
+    {
+      "id": "v-b88f7c47a8-fill-translit",
+      "vocabId": "v-b88f7c47a8",
+      "type": "fill_translit",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "Type the PTM transliteration for ค่ะ.",
+        "thai": "ค่ะ"
+      },
+      "answer": "khâ",
+      "rationale": "Forces transliteration production with inline tone marks."
+    },
+    {
+      "id": "v-b88f7c47a8-context-mcq",
+      "vocabId": "v-b88f7c47a8",
+      "type": "context_mcq",
+      "displayMode": "triplet",
+      "prompt": {
+        "text": "Choose the sentence that keeps the lesson meaning of this phrase.",
+        "thai": "ค่ะ",
+        "translit": "khâ",
+        "english": "polite ending (female)"
+      },
+      "options": [
+        "Use ค่ะ in polite beginner conversation",
+        "Use สวัสดี in polite beginner conversation",
+        "Use ครับ in polite beginner conversation",
+        "Use สวัสดีครับ in polite beginner conversation"
+      ],
+      "answer": "Use ค่ะ in polite beginner conversation",
+      "rationale": "Checks contextual understanding while preserving triplet exposure."
+    },
+    {
+      "id": "v-6075c52054-thai-to-english",
+      "vocabId": "v-6075c52054",
+      "type": "thai_to_english",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "What is the best meaning of สวัสดีครับ?",
+        "thai": "สวัสดีครับ",
+        "translit": "sà-wàt-dii khráp"
+      },
+      "options": [
+        "hello (male, polite)",
+        "hello",
+        "polite ending (male)",
+        "polite ending (female)"
+      ],
+      "answer": "hello (male, polite)",
+      "rationale": "Maps Thai form to target meaning from script languageFocus."
+    },
+    {
+      "id": "v-6075c52054-english-to-thai",
+      "vocabId": "v-6075c52054",
+      "type": "english_to_thai",
+      "displayMode": "english_only",
+      "prompt": {
+        "text": "Select Thai for: hello (male, polite)",
+        "english": "hello (male, polite)"
+      },
+      "options": [
+        "สวัสดีครับ",
+        "สวัสดี",
+        "ครับ",
+        "ค่ะ"
+      ],
+      "answer": "สวัสดีครับ",
+      "rationale": "Reverses mapping for active recall."
+    },
+    {
+      "id": "v-6075c52054-fill-translit",
+      "vocabId": "v-6075c52054",
+      "type": "fill_translit",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "Type the PTM transliteration for สวัสดีครับ.",
+        "thai": "สวัสดีครับ"
+      },
+      "answer": "sà-wàt-dii khráp",
+      "rationale": "Forces transliteration production with inline tone marks."
+    },
+    {
+      "id": "v-6075c52054-context-mcq",
+      "vocabId": "v-6075c52054",
+      "type": "context_mcq",
+      "displayMode": "triplet",
+      "prompt": {
+        "text": "Choose the sentence that keeps the lesson meaning of this phrase.",
+        "thai": "สวัสดีครับ",
+        "translit": "sà-wàt-dii khráp",
+        "english": "hello (male, polite)"
+      },
+      "options": [
+        "Use สวัสดีครับ in polite beginner conversation",
+        "Use สวัสดี in polite beginner conversation",
+        "Use ครับ in polite beginner conversation",
+        "Use ค่ะ in polite beginner conversation"
+      ],
+      "answer": "Use สวัสดีครับ in polite beginner conversation",
+      "rationale": "Checks contextual understanding while preserving triplet exposure."
+    },
+    {
+      "id": "v-c37375d587-thai-to-english",
+      "vocabId": "v-c37375d587",
+      "type": "thai_to_english",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "What is the best meaning of สวัสดีค่ะ?",
+        "thai": "สวัสดีค่ะ",
+        "translit": "sà-wàt-dii khâ"
+      },
+      "options": [
+        "hello (female, polite)",
+        "hello",
+        "polite ending (male)",
+        "polite ending (female)"
+      ],
+      "answer": "hello (female, polite)",
+      "rationale": "Maps Thai form to target meaning from script languageFocus."
+    },
+    {
+      "id": "v-c37375d587-english-to-thai",
+      "vocabId": "v-c37375d587",
+      "type": "english_to_thai",
+      "displayMode": "english_only",
+      "prompt": {
+        "text": "Select Thai for: hello (female, polite)",
+        "english": "hello (female, polite)"
+      },
+      "options": [
+        "สวัสดีค่ะ",
+        "สวัสดี",
+        "ครับ",
+        "ค่ะ"
+      ],
+      "answer": "สวัสดีค่ะ",
+      "rationale": "Reverses mapping for active recall."
+    },
+    {
+      "id": "v-c37375d587-fill-translit",
+      "vocabId": "v-c37375d587",
+      "type": "fill_translit",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "Type the PTM transliteration for สวัสดีค่ะ.",
+        "thai": "สวัสดีค่ะ"
+      },
+      "answer": "sà-wàt-dii khâ",
+      "rationale": "Forces transliteration production with inline tone marks."
+    },
+    {
+      "id": "v-c37375d587-context-mcq",
+      "vocabId": "v-c37375d587",
+      "type": "context_mcq",
+      "displayMode": "triplet",
+      "prompt": {
+        "text": "Choose the sentence that keeps the lesson meaning of this phrase.",
+        "thai": "สวัสดีค่ะ",
+        "translit": "sà-wàt-dii khâ",
+        "english": "hello (female, polite)"
+      },
+      "options": [
+        "Use สวัสดีค่ะ in polite beginner conversation",
+        "Use สวัสดี in polite beginner conversation",
+        "Use ครับ in polite beginner conversation",
+        "Use ค่ะ in polite beginner conversation"
+      ],
+      "answer": "Use สวัสดีค่ะ in polite beginner conversation",
+      "rationale": "Checks contextual understanding while preserving triplet exposure."
+    },
+    {
+      "id": "v-217b46aa5a-thai-to-english",
+      "vocabId": "v-217b46aa5a",
+      "type": "thai_to_english",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "What is the best meaning of ขอบคุณ?",
+        "thai": "ขอบคุณ",
+        "translit": "khàawp-khun"
+      },
+      "options": [
+        "thank you",
+        "hello",
+        "polite ending (male)",
+        "polite ending (female)"
+      ],
+      "answer": "thank you",
+      "rationale": "Maps Thai form to target meaning from script languageFocus."
+    },
+    {
+      "id": "v-217b46aa5a-english-to-thai",
+      "vocabId": "v-217b46aa5a",
+      "type": "english_to_thai",
+      "displayMode": "english_only",
+      "prompt": {
+        "text": "Select Thai for: thank you",
+        "english": "thank you"
+      },
+      "options": [
+        "ขอบคุณ",
+        "สวัสดี",
+        "ครับ",
+        "ค่ะ"
+      ],
+      "answer": "ขอบคุณ",
+      "rationale": "Reverses mapping for active recall."
+    },
+    {
+      "id": "v-217b46aa5a-fill-translit",
+      "vocabId": "v-217b46aa5a",
+      "type": "fill_translit",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "Type the PTM transliteration for ขอบคุณ.",
+        "thai": "ขอบคุณ"
+      },
+      "answer": "khàawp-khun",
+      "rationale": "Forces transliteration production with inline tone marks."
+    },
+    {
+      "id": "v-217b46aa5a-context-mcq",
+      "vocabId": "v-217b46aa5a",
+      "type": "context_mcq",
+      "displayMode": "triplet",
+      "prompt": {
+        "text": "Choose the sentence that keeps the lesson meaning of this phrase.",
+        "thai": "ขอบคุณ",
+        "translit": "khàawp-khun",
+        "english": "thank you"
+      },
+      "options": [
+        "Use ขอบคุณ in polite beginner conversation",
+        "Use สวัสดี in polite beginner conversation",
+        "Use ครับ in polite beginner conversation",
+        "Use ค่ะ in polite beginner conversation"
+      ],
+      "answer": "Use ขอบคุณ in polite beginner conversation",
+      "rationale": "Checks contextual understanding while preserving triplet exposure."
+    },
+    {
+      "id": "v-48f2e095d6-thai-to-english",
+      "vocabId": "v-48f2e095d6",
+      "type": "thai_to_english",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "What is the best meaning of ขอโทษ?",
+        "thai": "ขอโทษ",
+        "translit": "khǎaw-thôot"
+      },
+      "options": [
+        "sorry / excuse me",
+        "hello",
+        "polite ending (male)",
+        "polite ending (female)"
+      ],
+      "answer": "sorry / excuse me",
+      "rationale": "Maps Thai form to target meaning from script languageFocus."
+    },
+    {
+      "id": "v-48f2e095d6-english-to-thai",
+      "vocabId": "v-48f2e095d6",
+      "type": "english_to_thai",
+      "displayMode": "english_only",
+      "prompt": {
+        "text": "Select Thai for: sorry / excuse me",
+        "english": "sorry / excuse me"
+      },
+      "options": [
+        "ขอโทษ",
+        "สวัสดี",
+        "ครับ",
+        "ค่ะ"
+      ],
+      "answer": "ขอโทษ",
+      "rationale": "Reverses mapping for active recall."
+    },
+    {
+      "id": "v-48f2e095d6-fill-translit",
+      "vocabId": "v-48f2e095d6",
+      "type": "fill_translit",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "Type the PTM transliteration for ขอโทษ.",
+        "thai": "ขอโทษ"
+      },
+      "answer": "khǎaw-thôot",
+      "rationale": "Forces transliteration production with inline tone marks."
+    },
+    {
+      "id": "v-48f2e095d6-context-mcq",
+      "vocabId": "v-48f2e095d6",
+      "type": "context_mcq",
+      "displayMode": "triplet",
+      "prompt": {
+        "text": "Choose the sentence that keeps the lesson meaning of this phrase.",
+        "thai": "ขอโทษ",
+        "translit": "khǎaw-thôot",
+        "english": "sorry / excuse me"
+      },
+      "options": [
+        "Use ขอโทษ in polite beginner conversation",
+        "Use สวัสดี in polite beginner conversation",
+        "Use ครับ in polite beginner conversation",
+        "Use ค่ะ in polite beginner conversation"
+      ],
+      "answer": "Use ขอโทษ in polite beginner conversation",
+      "rationale": "Checks contextual understanding while preserving triplet exposure."
+    },
+    {
+      "id": "v-c202b97d17-thai-to-english",
+      "vocabId": "v-c202b97d17",
+      "type": "thai_to_english",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "What is the best meaning of ขอบคุณครับ?",
+        "thai": "ขอบคุณครับ",
+        "translit": "khàawp-khun khráp"
+      },
+      "options": [
+        "thank you (male, polite)",
+        "hello",
+        "polite ending (male)",
+        "polite ending (female)"
+      ],
+      "answer": "thank you (male, polite)",
+      "rationale": "Maps Thai form to target meaning from script languageFocus."
+    },
+    {
+      "id": "v-c202b97d17-english-to-thai",
+      "vocabId": "v-c202b97d17",
+      "type": "english_to_thai",
+      "displayMode": "english_only",
+      "prompt": {
+        "text": "Select Thai for: thank you (male, polite)",
+        "english": "thank you (male, polite)"
+      },
+      "options": [
+        "ขอบคุณครับ",
+        "สวัสดี",
+        "ครับ",
+        "ค่ะ"
+      ],
+      "answer": "ขอบคุณครับ",
+      "rationale": "Reverses mapping for active recall."
+    },
+    {
+      "id": "v-c202b97d17-fill-translit",
+      "vocabId": "v-c202b97d17",
+      "type": "fill_translit",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "Type the PTM transliteration for ขอบคุณครับ.",
+        "thai": "ขอบคุณครับ"
+      },
+      "answer": "khàawp-khun khráp",
+      "rationale": "Forces transliteration production with inline tone marks."
+    },
+    {
+      "id": "v-c202b97d17-context-mcq",
+      "vocabId": "v-c202b97d17",
+      "type": "context_mcq",
+      "displayMode": "triplet",
+      "prompt": {
+        "text": "Choose the sentence that keeps the lesson meaning of this phrase.",
+        "thai": "ขอบคุณครับ",
+        "translit": "khàawp-khun khráp",
+        "english": "thank you (male, polite)"
+      },
+      "options": [
+        "Use ขอบคุณครับ in polite beginner conversation",
+        "Use สวัสดี in polite beginner conversation",
+        "Use ครับ in polite beginner conversation",
+        "Use ค่ะ in polite beginner conversation"
+      ],
+      "answer": "Use ขอบคุณครับ in polite beginner conversation",
+      "rationale": "Checks contextual understanding while preserving triplet exposure."
+    },
+    {
+      "id": "v-c77c1d6a16-thai-to-english",
+      "vocabId": "v-c77c1d6a16",
+      "type": "thai_to_english",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "What is the best meaning of ขอโทษค่ะ?",
+        "thai": "ขอโทษค่ะ",
+        "translit": "khǎaw-thôot khâ"
+      },
+      "options": [
+        "sorry (female, polite)",
+        "hello",
+        "polite ending (male)",
+        "polite ending (female)"
+      ],
+      "answer": "sorry (female, polite)",
+      "rationale": "Maps Thai form to target meaning from script languageFocus."
+    },
+    {
+      "id": "v-c77c1d6a16-english-to-thai",
+      "vocabId": "v-c77c1d6a16",
+      "type": "english_to_thai",
+      "displayMode": "english_only",
+      "prompt": {
+        "text": "Select Thai for: sorry (female, polite)",
+        "english": "sorry (female, polite)"
+      },
+      "options": [
+        "ขอโทษค่ะ",
+        "สวัสดี",
+        "ครับ",
+        "ค่ะ"
+      ],
+      "answer": "ขอโทษค่ะ",
+      "rationale": "Reverses mapping for active recall."
+    },
+    {
+      "id": "v-c77c1d6a16-fill-translit",
+      "vocabId": "v-c77c1d6a16",
+      "type": "fill_translit",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "Type the PTM transliteration for ขอโทษค่ะ.",
+        "thai": "ขอโทษค่ะ"
+      },
+      "answer": "khǎaw-thôot khâ",
+      "rationale": "Forces transliteration production with inline tone marks."
+    },
+    {
+      "id": "v-c77c1d6a16-context-mcq",
+      "vocabId": "v-c77c1d6a16",
+      "type": "context_mcq",
+      "displayMode": "triplet",
+      "prompt": {
+        "text": "Choose the sentence that keeps the lesson meaning of this phrase.",
+        "thai": "ขอโทษค่ะ",
+        "translit": "khǎaw-thôot khâ",
+        "english": "sorry (female, polite)"
+      },
+      "options": [
+        "Use ขอโทษค่ะ in polite beginner conversation",
+        "Use สวัสดี in polite beginner conversation",
+        "Use ครับ in polite beginner conversation",
+        "Use ค่ะ in polite beginner conversation"
+      ],
+      "answer": "Use ขอโทษค่ะ in polite beginner conversation",
+      "rationale": "Checks contextual understanding while preserving triplet exposure."
+    },
+    {
+      "id": "v-03cc3fe123-thai-to-english",
+      "vocabId": "v-03cc3fe123",
+      "type": "thai_to_english",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "What is the best meaning of ไม่เป็นไร?",
+        "thai": "ไม่เป็นไร",
+        "translit": "mâi bpen rai"
+      },
+      "options": [
+        "it is okay / no problem",
+        "hello",
+        "polite ending (male)",
+        "polite ending (female)"
+      ],
+      "answer": "it is okay / no problem",
+      "rationale": "Maps Thai form to target meaning from script languageFocus."
+    },
+    {
+      "id": "v-03cc3fe123-english-to-thai",
+      "vocabId": "v-03cc3fe123",
+      "type": "english_to_thai",
+      "displayMode": "english_only",
+      "prompt": {
+        "text": "Select Thai for: it is okay / no problem",
+        "english": "it is okay / no problem"
+      },
+      "options": [
+        "ไม่เป็นไร",
+        "สวัสดี",
+        "ครับ",
+        "ค่ะ"
+      ],
+      "answer": "ไม่เป็นไร",
+      "rationale": "Reverses mapping for active recall."
+    },
+    {
+      "id": "v-03cc3fe123-fill-translit",
+      "vocabId": "v-03cc3fe123",
+      "type": "fill_translit",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "Type the PTM transliteration for ไม่เป็นไร.",
+        "thai": "ไม่เป็นไร"
+      },
+      "answer": "mâi bpen rai",
+      "rationale": "Forces transliteration production with inline tone marks."
+    },
+    {
+      "id": "v-03cc3fe123-context-mcq",
+      "vocabId": "v-03cc3fe123",
+      "type": "context_mcq",
+      "displayMode": "triplet",
+      "prompt": {
+        "text": "Choose the sentence that keeps the lesson meaning of this phrase.",
+        "thai": "ไม่เป็นไร",
+        "translit": "mâi bpen rai",
+        "english": "it is okay / no problem"
+      },
+      "options": [
+        "Use ไม่เป็นไร in polite beginner conversation",
+        "Use สวัสดี in polite beginner conversation",
+        "Use ครับ in polite beginner conversation",
+        "Use ค่ะ in polite beginner conversation"
+      ],
+      "answer": "Use ไม่เป็นไร in polite beginner conversation",
+      "rationale": "Checks contextual understanding while preserving triplet exposure."
+    },
+    {
+      "id": "v-f40371ec59-thai-to-english",
+      "vocabId": "v-f40371ec59",
+      "type": "thai_to_english",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "What is the best meaning of ใช่?",
+        "thai": "ใช่",
+        "translit": "châi"
+      },
+      "options": [
+        "yes / that is right",
+        "hello",
+        "polite ending (male)",
+        "polite ending (female)"
+      ],
+      "answer": "yes / that is right",
+      "rationale": "Maps Thai form to target meaning from script languageFocus."
+    },
+    {
+      "id": "v-f40371ec59-english-to-thai",
+      "vocabId": "v-f40371ec59",
+      "type": "english_to_thai",
+      "displayMode": "english_only",
+      "prompt": {
+        "text": "Select Thai for: yes / that is right",
+        "english": "yes / that is right"
+      },
+      "options": [
+        "ใช่",
+        "สวัสดี",
+        "ครับ",
+        "ค่ะ"
+      ],
+      "answer": "ใช่",
+      "rationale": "Reverses mapping for active recall."
+    },
+    {
+      "id": "v-f40371ec59-fill-translit",
+      "vocabId": "v-f40371ec59",
+      "type": "fill_translit",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "Type the PTM transliteration for ใช่.",
+        "thai": "ใช่"
+      },
+      "answer": "châi",
+      "rationale": "Forces transliteration production with inline tone marks."
+    },
+    {
+      "id": "v-f40371ec59-context-mcq",
+      "vocabId": "v-f40371ec59",
+      "type": "context_mcq",
+      "displayMode": "triplet",
+      "prompt": {
+        "text": "Choose the sentence that keeps the lesson meaning of this phrase.",
+        "thai": "ใช่",
+        "translit": "châi",
+        "english": "yes / that is right"
+      },
+      "options": [
+        "Use ใช่ in polite beginner conversation",
+        "Use สวัสดี in polite beginner conversation",
+        "Use ครับ in polite beginner conversation",
+        "Use ค่ะ in polite beginner conversation"
+      ],
+      "answer": "Use ใช่ in polite beginner conversation",
+      "rationale": "Checks contextual understanding while preserving triplet exposure."
+    },
+    {
+      "id": "v-cda55f5b5e-thai-to-english",
+      "vocabId": "v-cda55f5b5e",
+      "type": "thai_to_english",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "What is the best meaning of ไม่ใช่?",
+        "thai": "ไม่ใช่",
+        "translit": "mâi châi"
+      },
+      "options": [
+        "no / not right",
+        "hello",
+        "polite ending (male)",
+        "polite ending (female)"
+      ],
+      "answer": "no / not right",
+      "rationale": "Maps Thai form to target meaning from script languageFocus."
+    },
+    {
+      "id": "v-cda55f5b5e-english-to-thai",
+      "vocabId": "v-cda55f5b5e",
+      "type": "english_to_thai",
+      "displayMode": "english_only",
+      "prompt": {
+        "text": "Select Thai for: no / not right",
+        "english": "no / not right"
+      },
+      "options": [
+        "ไม่ใช่",
+        "สวัสดี",
+        "ครับ",
+        "ค่ะ"
+      ],
+      "answer": "ไม่ใช่",
+      "rationale": "Reverses mapping for active recall."
+    },
+    {
+      "id": "v-cda55f5b5e-fill-translit",
+      "vocabId": "v-cda55f5b5e",
+      "type": "fill_translit",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "Type the PTM transliteration for ไม่ใช่.",
+        "thai": "ไม่ใช่"
+      },
+      "answer": "mâi châi",
+      "rationale": "Forces transliteration production with inline tone marks."
+    },
+    {
+      "id": "v-cda55f5b5e-context-mcq",
+      "vocabId": "v-cda55f5b5e",
+      "type": "context_mcq",
+      "displayMode": "triplet",
+      "prompt": {
+        "text": "Choose the sentence that keeps the lesson meaning of this phrase.",
+        "thai": "ไม่ใช่",
+        "translit": "mâi châi",
+        "english": "no / not right"
+      },
+      "options": [
+        "Use ไม่ใช่ in polite beginner conversation",
+        "Use สวัสดี in polite beginner conversation",
+        "Use ครับ in polite beginner conversation",
+        "Use ค่ะ in polite beginner conversation"
+      ],
+      "answer": "Use ไม่ใช่ in polite beginner conversation",
+      "rationale": "Checks contextual understanding while preserving triplet exposure."
+    },
+    {
+      "id": "v-4b01f636c7-thai-to-english",
+      "vocabId": "v-4b01f636c7",
+      "type": "thai_to_english",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "What is the best meaning of ครับ?",
+        "thai": "ครับ",
+        "translit": "khráp"
+      },
+      "options": [
+        "polite ending — high tone",
+        "hello",
+        "polite ending (male)",
+        "polite ending (female)"
+      ],
+      "answer": "polite ending — high tone",
+      "rationale": "Maps Thai form to target meaning from script languageFocus."
+    },
+    {
+      "id": "v-4b01f636c7-english-to-thai",
+      "vocabId": "v-4b01f636c7",
+      "type": "english_to_thai",
+      "displayMode": "english_only",
+      "prompt": {
+        "text": "Select Thai for: polite ending — high tone",
+        "english": "polite ending — high tone"
+      },
+      "options": [
+        "ครับ",
+        "สวัสดี",
+        "ค่ะ",
+        "สวัสดีครับ"
+      ],
+      "answer": "ครับ",
+      "rationale": "Reverses mapping for active recall."
+    },
+    {
+      "id": "v-4b01f636c7-fill-translit",
+      "vocabId": "v-4b01f636c7",
+      "type": "fill_translit",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "Type the PTM transliteration for ครับ.",
+        "thai": "ครับ"
+      },
+      "answer": "khráp",
+      "rationale": "Forces transliteration production with inline tone marks."
+    },
+    {
+      "id": "v-4b01f636c7-context-mcq",
+      "vocabId": "v-4b01f636c7",
+      "type": "context_mcq",
+      "displayMode": "triplet",
+      "prompt": {
+        "text": "Choose the sentence that keeps the lesson meaning of this phrase.",
+        "thai": "ครับ",
+        "translit": "khráp",
+        "english": "polite ending — high tone"
+      },
+      "options": [
+        "Use ครับ in polite beginner conversation",
+        "Use สวัสดี in polite beginner conversation",
+        "Use ค่ะ in polite beginner conversation",
+        "Use สวัสดีครับ in polite beginner conversation"
+      ],
+      "answer": "Use ครับ in polite beginner conversation",
+      "rationale": "Checks contextual understanding while preserving triplet exposure."
+    }
+  ],
+  "coverage": {
+    "minimumItemsPerNewVocab": 3,
+    "perVocab": [
+      {
+        "vocabId": "v-c9337e2739",
+        "thai": "สวัสดี",
+        "itemCount": 4
+      },
+      {
+        "vocabId": "v-7a1bb3ff29",
+        "thai": "ครับ",
+        "itemCount": 4
+      },
+      {
+        "vocabId": "v-b88f7c47a8",
+        "thai": "ค่ะ",
+        "itemCount": 4
+      },
+      {
+        "vocabId": "v-6075c52054",
+        "thai": "สวัสดีครับ",
+        "itemCount": 4
+      },
+      {
+        "vocabId": "v-c37375d587",
+        "thai": "สวัสดีค่ะ",
+        "itemCount": 4
+      },
+      {
+        "vocabId": "v-217b46aa5a",
+        "thai": "ขอบคุณ",
+        "itemCount": 4
+      },
+      {
+        "vocabId": "v-48f2e095d6",
+        "thai": "ขอโทษ",
+        "itemCount": 4
+      },
+      {
+        "vocabId": "v-c202b97d17",
+        "thai": "ขอบคุณครับ",
+        "itemCount": 4
+      },
+      {
+        "vocabId": "v-c77c1d6a16",
+        "thai": "ขอโทษค่ะ",
+        "itemCount": 4
+      },
+      {
+        "vocabId": "v-03cc3fe123",
+        "thai": "ไม่เป็นไร",
+        "itemCount": 4
+      },
+      {
+        "vocabId": "v-f40371ec59",
+        "thai": "ใช่",
+        "itemCount": 4
+      },
+      {
+        "vocabId": "v-cda55f5b5e",
+        "thai": "ไม่ใช่",
+        "itemCount": 4
+      },
+      {
+        "vocabId": "v-4b01f636c7",
+        "thai": "ครับ",
+        "itemCount": 4
+      }
+    ],
+    "pass": true
+  }
+}

@@ -1,0 +1,171 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "M01-L004",
+  "cards": [
+    {
+      "id": "m01-l004-c01",
+      "vocabId": "v-28499d926c",
+      "front": "ศูนย์",
+      "back": "zero (0)",
+      "translit": "sǔun",
+      "tags": [
+        "M01-L004",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l004-c02",
+      "vocabId": "v-d5112f8a63",
+      "front": "หนึ่ง",
+      "back": "one (1)",
+      "translit": "nùeng",
+      "tags": [
+        "M01-L004",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l004-c03",
+      "vocabId": "v-123bdecbd4",
+      "front": "สอง",
+      "back": "two (2)",
+      "translit": "sǎawng",
+      "tags": [
+        "M01-L004",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l004-c04",
+      "vocabId": "v-914a79ebbb",
+      "front": "สาม",
+      "back": "three (3)",
+      "translit": "sǎam",
+      "tags": [
+        "M01-L004",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l004-c05",
+      "vocabId": "v-0e247b83bd",
+      "front": "สี่",
+      "back": "four (4)",
+      "translit": "sìi",
+      "tags": [
+        "M01-L004",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l004-c06",
+      "vocabId": "v-6c137e71d9",
+      "front": "ห้า",
+      "back": "five (5)",
+      "translit": "hâa",
+      "tags": [
+        "M01-L004",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l004-c07",
+      "vocabId": "v-42ac27384d",
+      "front": "หก",
+      "back": "six (6)",
+      "translit": "hòk",
+      "tags": [
+        "M01-L004",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l004-c08",
+      "vocabId": "v-1569f39457",
+      "front": "เจ็ด",
+      "back": "seven (7)",
+      "translit": "jèt",
+      "tags": [
+        "M01-L004",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l004-c09",
+      "vocabId": "v-f2b6d018d8",
+      "front": "แปด",
+      "back": "eight (8)",
+      "translit": "bpàaet",
+      "tags": [
+        "M01-L004",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l004-c10",
+      "vocabId": "v-d03227860c",
+      "front": "เก้า",
+      "back": "nine (9)",
+      "translit": "gâo",
+      "tags": [
+        "M01-L004",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l004-c11",
+      "vocabId": "v-43a5e0b3f2",
+      "front": "สิบ",
+      "back": "ten (10)",
+      "translit": "sìp",
+      "tags": [
+        "M01-L004",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l004-c12",
+      "vocabId": "v-ba4059e504",
+      "front": "เบอร์อะไร",
+      "back": "what number?",
+      "translit": "ber à-rai",
+      "tags": [
+        "M01-L004",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l004-c13",
+      "vocabId": "v-2d97b680f6",
+      "front": "ฉันอายุ...ปี",
+      "back": "I am ... years old",
+      "translit": "chǎn aa-yú ... bpii",
+      "tags": [
+        "M01-L004",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l004-c14",
+      "vocabId": "v-356fe4743b",
+      "front": "ห้อง",
+      "back": "room",
+      "translit": "hâwng",
+      "tags": [
+        "M01-L004",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l004-c15",
+      "vocabId": "v-19ba2f5428",
+      "front": "สาม",
+      "back": "three (rising tone)",
+      "translit": "sǎam",
+      "tags": [
+        "M01-L004",
+        "core"
+      ]
+    }
+  ]
+}

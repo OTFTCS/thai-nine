@@ -1,0 +1,409 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "M01-L004",
+  "passScore": 80,
+  "generatedAt": "2026-03-22T03:47:49.818Z",
+  "itemBankPath": "M01-L004-quiz-item-bank.json",
+  "questions": [
+    {
+      "id": "q01",
+      "vocabId": "v-28499d926c",
+      "type": "thai_to_english",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "What is the best meaning of ศูนย์?",
+        "thai": "ศูนย์",
+        "translit": "sǔun"
+      },
+      "options": [
+        "zero (0)",
+        "one (1)",
+        "two (2)",
+        "three (3)"
+      ],
+      "answer": "zero (0)",
+      "rationale": "Maps Thai form to target meaning from script languageFocus.",
+      "bankItemId": "v-28499d926c-thai-to-english"
+    },
+    {
+      "id": "q02",
+      "vocabId": "v-d5112f8a63",
+      "type": "thai_to_english",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "What is the best meaning of หนึ่ง?",
+        "thai": "หนึ่ง",
+        "translit": "nùeng"
+      },
+      "options": [
+        "one (1)",
+        "zero (0)",
+        "two (2)",
+        "three (3)"
+      ],
+      "answer": "one (1)",
+      "rationale": "Maps Thai form to target meaning from script languageFocus.",
+      "bankItemId": "v-d5112f8a63-thai-to-english"
+    },
+    {
+      "id": "q03",
+      "vocabId": "v-123bdecbd4",
+      "type": "thai_to_english",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "What is the best meaning of สอง?",
+        "thai": "สอง",
+        "translit": "sǎawng"
+      },
+      "options": [
+        "two (2)",
+        "zero (0)",
+        "one (1)",
+        "three (3)"
+      ],
+      "answer": "two (2)",
+      "rationale": "Maps Thai form to target meaning from script languageFocus.",
+      "bankItemId": "v-123bdecbd4-thai-to-english"
+    },
+    {
+      "id": "q04",
+      "vocabId": "v-914a79ebbb",
+      "type": "thai_to_english",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "What is the best meaning of สาม?",
+        "thai": "สาม",
+        "translit": "sǎam"
+      },
+      "options": [
+        "three (3)",
+        "zero (0)",
+        "one (1)",
+        "two (2)"
+      ],
+      "answer": "three (3)",
+      "rationale": "Maps Thai form to target meaning from script languageFocus.",
+      "bankItemId": "v-914a79ebbb-thai-to-english"
+    },
+    {
+      "id": "q05",
+      "vocabId": "v-0e247b83bd",
+      "type": "thai_to_english",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "What is the best meaning of สี่?",
+        "thai": "สี่",
+        "translit": "sìi"
+      },
+      "options": [
+        "four (4)",
+        "zero (0)",
+        "one (1)",
+        "two (2)"
+      ],
+      "answer": "four (4)",
+      "rationale": "Maps Thai form to target meaning from script languageFocus.",
+      "bankItemId": "v-0e247b83bd-thai-to-english"
+    },
+    {
+      "id": "q06",
+      "vocabId": "v-6c137e71d9",
+      "type": "thai_to_english",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "What is the best meaning of ห้า?",
+        "thai": "ห้า",
+        "translit": "hâa"
+      },
+      "options": [
+        "five (5)",
+        "zero (0)",
+        "one (1)",
+        "two (2)"
+      ],
+      "answer": "five (5)",
+      "rationale": "Maps Thai form to target meaning from script languageFocus.",
+      "bankItemId": "v-6c137e71d9-thai-to-english"
+    },
+    {
+      "id": "q07",
+      "vocabId": "v-42ac27384d",
+      "type": "thai_to_english",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "What is the best meaning of หก?",
+        "thai": "หก",
+        "translit": "hòk"
+      },
+      "options": [
+        "six (6)",
+        "zero (0)",
+        "one (1)",
+        "two (2)"
+      ],
+      "answer": "six (6)",
+      "rationale": "Maps Thai form to target meaning from script languageFocus.",
+      "bankItemId": "v-42ac27384d-thai-to-english"
+    },
+    {
+      "id": "q08",
+      "vocabId": "v-1569f39457",
+      "type": "thai_to_english",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "What is the best meaning of เจ็ด?",
+        "thai": "เจ็ด",
+        "translit": "jèt"
+      },
+      "options": [
+        "seven (7)",
+        "zero (0)",
+        "one (1)",
+        "two (2)"
+      ],
+      "answer": "seven (7)",
+      "rationale": "Maps Thai form to target meaning from script languageFocus.",
+      "bankItemId": "v-1569f39457-thai-to-english"
+    },
+    {
+      "id": "q09",
+      "vocabId": "v-f2b6d018d8",
+      "type": "thai_to_english",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "What is the best meaning of แปด?",
+        "thai": "แปด",
+        "translit": "bpàaet"
+      },
+      "options": [
+        "eight (8)",
+        "zero (0)",
+        "one (1)",
+        "two (2)"
+      ],
+      "answer": "eight (8)",
+      "rationale": "Maps Thai form to target meaning from script languageFocus.",
+      "bankItemId": "v-f2b6d018d8-thai-to-english"
+    },
+    {
+      "id": "q10",
+      "vocabId": "v-d03227860c",
+      "type": "thai_to_english",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "What is the best meaning of เก้า?",
+        "thai": "เก้า",
+        "translit": "gâo"
+      },
+      "options": [
+        "nine (9)",
+        "zero (0)",
+        "one (1)",
+        "two (2)"
+      ],
+      "answer": "nine (9)",
+      "rationale": "Maps Thai form to target meaning from script languageFocus.",
+      "bankItemId": "v-d03227860c-thai-to-english"
+    },
+    {
+      "id": "q11",
+      "vocabId": "v-43a5e0b3f2",
+      "type": "thai_to_english",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "What is the best meaning of สิบ?",
+        "thai": "สิบ",
+        "translit": "sìp"
+      },
+      "options": [
+        "ten (10)",
+        "zero (0)",
+        "one (1)",
+        "two (2)"
+      ],
+      "answer": "ten (10)",
+      "rationale": "Maps Thai form to target meaning from script languageFocus.",
+      "bankItemId": "v-43a5e0b3f2-thai-to-english"
+    },
+    {
+      "id": "q12",
+      "vocabId": "v-ba4059e504",
+      "type": "thai_to_english",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "What is the best meaning of เบอร์อะไร?",
+        "thai": "เบอร์อะไร",
+        "translit": "ber à-rai"
+      },
+      "options": [
+        "what number?",
+        "zero (0)",
+        "one (1)",
+        "two (2)"
+      ],
+      "answer": "what number?",
+      "rationale": "Maps Thai form to target meaning from script languageFocus.",
+      "bankItemId": "v-ba4059e504-thai-to-english"
+    },
+    {
+      "id": "q13",
+      "vocabId": "v-2d97b680f6",
+      "type": "thai_to_english",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "What is the best meaning of ฉันอายุ...ปี?",
+        "thai": "ฉันอายุ...ปี",
+        "translit": "chǎn aa-yú ... bpii"
+      },
+      "options": [
+        "I am ... years old",
+        "zero (0)",
+        "one (1)",
+        "two (2)"
+      ],
+      "answer": "I am ... years old",
+      "rationale": "Maps Thai form to target meaning from script languageFocus.",
+      "bankItemId": "v-2d97b680f6-thai-to-english"
+    },
+    {
+      "id": "q14",
+      "vocabId": "v-356fe4743b",
+      "type": "thai_to_english",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "What is the best meaning of ห้อง?",
+        "thai": "ห้อง",
+        "translit": "hâwng"
+      },
+      "options": [
+        "room",
+        "zero (0)",
+        "one (1)",
+        "two (2)"
+      ],
+      "answer": "room",
+      "rationale": "Maps Thai form to target meaning from script languageFocus.",
+      "bankItemId": "v-356fe4743b-thai-to-english"
+    },
+    {
+      "id": "q15",
+      "vocabId": "v-19ba2f5428",
+      "type": "thai_to_english",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "What is the best meaning of สาม?",
+        "thai": "สาม",
+        "translit": "sǎam"
+      },
+      "options": [
+        "three (rising tone)",
+        "zero (0)",
+        "one (1)",
+        "two (2)"
+      ],
+      "answer": "three (rising tone)",
+      "rationale": "Maps Thai form to target meaning from script languageFocus.",
+      "bankItemId": "v-19ba2f5428-thai-to-english"
+    },
+    {
+      "id": "q16",
+      "vocabId": "v-28499d926c",
+      "type": "english_to_thai",
+      "displayMode": "english_only",
+      "prompt": {
+        "text": "Select Thai for: zero (0)",
+        "english": "zero (0)"
+      },
+      "options": [
+        "ศูนย์",
+        "หนึ่ง",
+        "สอง",
+        "สาม"
+      ],
+      "answer": "ศูนย์",
+      "rationale": "Reverses mapping for active recall.",
+      "bankItemId": "v-28499d926c-english-to-thai"
+    }
+  ],
+  "coverage": {
+    "minimumQuizItemsPerNewVocab": 1,
+    "perVocab": [
+      {
+        "vocabId": "v-28499d926c",
+        "thai": "ศูนย์",
+        "quizItemCount": 2
+      },
+      {
+        "vocabId": "v-d5112f8a63",
+        "thai": "หนึ่ง",
+        "quizItemCount": 1
+      },
+      {
+        "vocabId": "v-123bdecbd4",
+        "thai": "สอง",
+        "quizItemCount": 1
+      },
+      {
+        "vocabId": "v-914a79ebbb",
+        "thai": "สาม",
+        "quizItemCount": 1
+      },
+      {
+        "vocabId": "v-0e247b83bd",
+        "thai": "สี่",
+        "quizItemCount": 1
+      },
+      {
+        "vocabId": "v-6c137e71d9",
+        "thai": "ห้า",
+        "quizItemCount": 1
+      },
+      {
+        "vocabId": "v-42ac27384d",
+        "thai": "หก",
+        "quizItemCount": 1
+      },
+      {
+        "vocabId": "v-1569f39457",
+        "thai": "เจ็ด",
+        "quizItemCount": 1
+      },
+      {
+        "vocabId": "v-f2b6d018d8",
+        "thai": "แปด",
+        "quizItemCount": 1
+      },
+      {
+        "vocabId": "v-d03227860c",
+        "thai": "เก้า",
+        "quizItemCount": 1
+      },
+      {
+        "vocabId": "v-43a5e0b3f2",
+        "thai": "สิบ",
+        "quizItemCount": 1
+      },
+      {
+        "vocabId": "v-ba4059e504",
+        "thai": "เบอร์อะไร",
+        "quizItemCount": 1
+      },
+      {
+        "vocabId": "v-2d97b680f6",
+        "thai": "ฉันอายุ...ปี",
+        "quizItemCount": 1
+      },
+      {
+        "vocabId": "v-356fe4743b",
+        "thai": "ห้อง",
+        "quizItemCount": 1
+      },
+      {
+        "vocabId": "v-19ba2f5428",
+        "thai": "สาม",
+        "quizItemCount": 1
+      }
+    ],
+    "pass": true
+  }
+}

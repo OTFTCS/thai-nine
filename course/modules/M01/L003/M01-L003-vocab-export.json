@@ -1,0 +1,142 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-03-22T03:46:40.360Z",
+  "source": "pipeline-cli",
+  "lessons": [
+    "M01-L003"
+  ],
+  "cards": [
+    {
+      "id": "m01-l003-c01",
+      "vocabId": "v-9018ed36ec",
+      "thai": "ฉัน",
+      "translit": "chǎn",
+      "english": "I (female / neutral)",
+      "lessonId": "M01-L003",
+      "tags": [
+        "M01-L003",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l003-c02",
+      "vocabId": "v-d16cfe595c",
+      "thai": "ผม",
+      "translit": "phǒm",
+      "english": "I (male polite)",
+      "lessonId": "M01-L003",
+      "tags": [
+        "M01-L003",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l003-c03",
+      "vocabId": "v-3bde86ee71",
+      "thai": "คุณ",
+      "translit": "khun",
+      "english": "you (polite)",
+      "lessonId": "M01-L003",
+      "tags": [
+        "M01-L003",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l003-c04",
+      "vocabId": "v-e3ef8a701b",
+      "thai": "เขา",
+      "translit": "khǎo",
+      "english": "he / she",
+      "lessonId": "M01-L003",
+      "tags": [
+        "M01-L003",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l003-c05",
+      "vocabId": "v-b083e63c50",
+      "thai": "นี่",
+      "translit": "nîi",
+      "english": "this",
+      "lessonId": "M01-L003",
+      "tags": [
+        "M01-L003",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l003-c06",
+      "vocabId": "v-6695e84f1f",
+      "thai": "คือ",
+      "translit": "khuu",
+      "english": "is",
+      "lessonId": "M01-L003",
+      "tags": [
+        "M01-L003",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l003-c07",
+      "vocabId": "v-d0ca2ea000",
+      "thai": "นี่คือ...",
+      "translit": "nîi khuu...",
+      "english": "this is...",
+      "lessonId": "M01-L003",
+      "tags": [
+        "M01-L003",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l003-c08",
+      "vocabId": "v-783ab7837a",
+      "thai": "ใคร",
+      "translit": "khrai",
+      "english": "who",
+      "lessonId": "M01-L003",
+      "tags": [
+        "M01-L003",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l003-c09",
+      "vocabId": "v-c3c09e205c",
+      "thai": "เขาคือใคร",
+      "translit": "khǎo khuu khrai",
+      "english": "who is he/she?",
+      "lessonId": "M01-L003",
+      "tags": [
+        "M01-L003",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l003-c10",
+      "vocabId": "v-2ec09cf64e",
+      "thai": "คุณคือ...ใช่ไหม",
+      "translit": "khun khuu... châi mái",
+      "english": "you are... right?",
+      "lessonId": "M01-L003",
+      "tags": [
+        "M01-L003",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l003-c11",
+      "vocabId": "v-941eb951af",
+      "thai": "ฉัน",
+      "translit": "chǎn",
+      "english": "I (rising tone)",
+      "lessonId": "M01-L003",
+      "tags": [
+        "M01-L003",
+        "core"
+      ]
+    }
+  ]
+}

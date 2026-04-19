@@ -1,0 +1,24 @@
+Visual QA Notes — All 4 Decks
+================================
+
+L001 (12 slides): GOOD
+- Title overlap fixed on slides 5, 9
+- Thai rendering clean
+- Roleplay dialogue well-spaced
+- Right-zone tint consistent
+
+L002 (11 slides): GOOD
+- Pronoun contrast board (slide 5) clean layout
+- Country cards well-aligned
+- Self-intro ladder (slide 8) clear step numbering
+
+L003 (10 slides): GOOD
+- Pronoun overview (slide 3) — color-coded tags look great
+- Confirmation pattern (slide 6) clear Q&A layout
+
+L004 (12 slides): GOOD
+- Numbers 0-5 (slide 3) — clean tabular layout with digit circles
+- Counting grid (slide 7) — "10" wraps in the circle (minor), Thai text clear
+- Age pattern and scenarios well-structured
+
+Overall: All decks consistent in design system. Ready for delivery.

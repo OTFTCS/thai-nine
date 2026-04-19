@@ -1,0 +1,166 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-03-22T03:52:27.697Z",
+  "source": "pipeline-cli",
+  "lessons": [
+    "M01-L002"
+  ],
+  "cards": [
+    {
+      "id": "m01-l002-c01",
+      "vocabId": "v-6acb169e4b",
+      "thai": "ชื่อ",
+      "translit": "chûue",
+      "english": "name",
+      "lessonId": "M01-L002",
+      "tags": [
+        "M01-L002",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l002-c02",
+      "vocabId": "v-fbd69c240c",
+      "thai": "อะไร",
+      "translit": "à-rai",
+      "english": "what",
+      "lessonId": "M01-L002",
+      "tags": [
+        "M01-L002",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l002-c03",
+      "vocabId": "v-a79c6af3af",
+      "thai": "คุณชื่ออะไร",
+      "translit": "khun chûue à-rai",
+      "english": "what is your name?",
+      "lessonId": "M01-L002",
+      "tags": [
+        "M01-L002",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l002-c04",
+      "vocabId": "v-6bb42f6e5c",
+      "thai": "คน",
+      "translit": "khon",
+      "english": "person",
+      "lessonId": "M01-L002",
+      "tags": [
+        "M01-L002",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l002-c05",
+      "vocabId": "v-0c96493114",
+      "thai": "ผมชื่อ...",
+      "translit": "phǒm chûue...",
+      "english": "my name is... (male speaker)",
+      "lessonId": "M01-L002",
+      "tags": [
+        "M01-L002",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l002-c06",
+      "vocabId": "v-37278dd418",
+      "thai": "ฉันชื่อ...",
+      "translit": "chǎn chûue...",
+      "english": "my name is... (female speaker)",
+      "lessonId": "M01-L002",
+      "tags": [
+        "M01-L002",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l002-c07",
+      "vocabId": "v-ce7cc833ec",
+      "thai": "มาจาก",
+      "translit": "maa-jàak",
+      "english": "come from",
+      "lessonId": "M01-L002",
+      "tags": [
+        "M01-L002",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l002-c08",
+      "vocabId": "v-d0c316cc2c",
+      "thai": "ประเทศ",
+      "translit": "bprà-thêet",
+      "english": "country",
+      "lessonId": "M01-L002",
+      "tags": [
+        "M01-L002",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l002-c09",
+      "vocabId": "v-4118683fb1",
+      "thai": "มาจากประเทศ...",
+      "translit": "maa-jàak bprà-thêet...",
+      "english": "come from (country)...",
+      "lessonId": "M01-L002",
+      "tags": [
+        "M01-L002",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l002-c10",
+      "vocabId": "v-f0b2ddeed3",
+      "thai": "ไทย",
+      "translit": "thai",
+      "english": "Thailand / Thai",
+      "lessonId": "M01-L002",
+      "tags": [
+        "M01-L002",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l002-c11",
+      "vocabId": "v-8adc81e330",
+      "thai": "อังกฤษ",
+      "translit": "ang-grìt",
+      "english": "England / English",
+      "lessonId": "M01-L002",
+      "tags": [
+        "M01-L002",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l002-c12",
+      "vocabId": "v-9ca06d0136",
+      "thai": "อเมริกา",
+      "translit": "à-mee-rí-kaa",
+      "english": "America",
+      "lessonId": "M01-L002",
+      "tags": [
+        "M01-L002",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l002-c13",
+      "vocabId": "v-cb1d881a6d",
+      "thai": "ประเทศ",
+      "translit": "bprà-thêet",
+      "english": "country (pronunciation focus)",
+      "lessonId": "M01-L002",
+      "tags": [
+        "M01-L002",
+        "core"
+      ]
+    }
+  ]
+}

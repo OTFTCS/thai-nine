@@ -1,0 +1,16 @@
+{
+  "lessonId": "M01-L002",
+  "state": "READY_TO_RECORD",
+  "updatedAt": "2026-03-22T03:53:35.356Z",
+  "validatedAt": "2026-03-22T03:53:35.356Z",
+  "stageResults": {
+    "0": "PASS",
+    "1": "SKIP",
+    "2": "PASS",
+    "3": "PASS",
+    "4": "PASS",
+    "5": "PASS",
+    "6": "PASS",
+    "7": "PASS"
+  }
+}

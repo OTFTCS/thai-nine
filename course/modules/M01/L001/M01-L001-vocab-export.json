@@ -1,0 +1,166 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-03-22T03:42:55.771Z",
+  "source": "pipeline-cli",
+  "lessons": [
+    "M01-L001"
+  ],
+  "cards": [
+    {
+      "id": "m01-l001-c01",
+      "vocabId": "v-c9337e2739",
+      "thai": "สวัสดี",
+      "translit": "sà-wàt-dii",
+      "english": "hello",
+      "lessonId": "M01-L001",
+      "tags": [
+        "M01-L001",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l001-c02",
+      "vocabId": "v-7a1bb3ff29",
+      "thai": "ครับ",
+      "translit": "khráp",
+      "english": "polite ending (male)",
+      "lessonId": "M01-L001",
+      "tags": [
+        "M01-L001",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l001-c03",
+      "vocabId": "v-b88f7c47a8",
+      "thai": "ค่ะ",
+      "translit": "khâ",
+      "english": "polite ending (female)",
+      "lessonId": "M01-L001",
+      "tags": [
+        "M01-L001",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l001-c04",
+      "vocabId": "v-6075c52054",
+      "thai": "สวัสดีครับ",
+      "translit": "sà-wàt-dii khráp",
+      "english": "hello (male, polite)",
+      "lessonId": "M01-L001",
+      "tags": [
+        "M01-L001",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l001-c05",
+      "vocabId": "v-c37375d587",
+      "thai": "สวัสดีค่ะ",
+      "translit": "sà-wàt-dii khâ",
+      "english": "hello (female, polite)",
+      "lessonId": "M01-L001",
+      "tags": [
+        "M01-L001",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l001-c06",
+      "vocabId": "v-217b46aa5a",
+      "thai": "ขอบคุณ",
+      "translit": "khàawp-khun",
+      "english": "thank you",
+      "lessonId": "M01-L001",
+      "tags": [
+        "M01-L001",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l001-c07",
+      "vocabId": "v-48f2e095d6",
+      "thai": "ขอโทษ",
+      "translit": "khǎaw-thôot",
+      "english": "sorry / excuse me",
+      "lessonId": "M01-L001",
+      "tags": [
+        "M01-L001",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l001-c08",
+      "vocabId": "v-c202b97d17",
+      "thai": "ขอบคุณครับ",
+      "translit": "khàawp-khun khráp",
+      "english": "thank you (male, polite)",
+      "lessonId": "M01-L001",
+      "tags": [
+        "M01-L001",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l001-c09",
+      "vocabId": "v-c77c1d6a16",
+      "thai": "ขอโทษค่ะ",
+      "translit": "khǎaw-thôot khâ",
+      "english": "sorry (female, polite)",
+      "lessonId": "M01-L001",
+      "tags": [
+        "M01-L001",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l001-c10",
+      "vocabId": "v-03cc3fe123",
+      "thai": "ไม่เป็นไร",
+      "translit": "mâi bpen rai",
+      "english": "it is okay / no problem",
+      "lessonId": "M01-L001",
+      "tags": [
+        "M01-L001",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l001-c11",
+      "vocabId": "v-f40371ec59",
+      "thai": "ใช่",
+      "translit": "châi",
+      "english": "yes / that is right",
+      "lessonId": "M01-L001",
+      "tags": [
+        "M01-L001",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l001-c12",
+      "vocabId": "v-cda55f5b5e",
+      "thai": "ไม่ใช่",
+      "translit": "mâi châi",
+      "english": "no / not right",
+      "lessonId": "M01-L001",
+      "tags": [
+        "M01-L001",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l001-c13",
+      "vocabId": "v-4b01f636c7",
+      "thai": "ครับ",
+      "translit": "khráp",
+      "english": "polite ending — high tone",
+      "lessonId": "M01-L001",
+      "tags": [
+        "M01-L001",
+        "core"
+      ]
+    }
+  ]
+}

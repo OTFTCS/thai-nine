@@ -1,0 +1,271 @@
+      "heading": "Say where you are from with มาจาก",
+      "purpose": "Teach the origin pattern so the learner can complete a basic introduction with country information instead of stopping after the name.",
+      "spokenNarration": [
+        "To say where you are from, Thai often uses มาจาก maa-jàak, literally come from.",
+        "So the pattern becomes ฉันมาจาก... chǎn maa-jàak... or ผมมาจาก... phǒm maa-jàak.... Again, the frame is stable and only the country changes.",
+        "Today we use a small country set: ไทย thai, อังกฤษ ang-grìt, and อเมริกา à-mee-rí-gaa. Learn them as useful introduction words, not as a geography test."
+      ],
+      "onScreenBullets": [
+        "ประเทศ | bprà-thêet | country",
+        "มาจาก | maa-jàak | come from / be from",
+        "มาจากไทย | maa-jàak thai | be from Thailand",
+        "มาจากอังกฤษ | maa-jàak ang-grìt | be from England",
+        "มาจากอเมริกา | maa-jàak à-mee-rí-gaa | be from America"
+      ],
+      "drills": [
+        "Country substitution drill: keep ฉันมาจาก... or ผมมาจาก... and swap only the country.",
+        "Listening drill: hear a country line and point to ไทย, อังกฤษ, or อเมริกา before repeating it."
+      ],
+      "languageFocus": [
+        {
+          "thai": "ประเทศ",
+          "translit": "bprà-thêet",
+          "english": "country",
+          "vocabId": "v-d0c316cc2c"
+        },
+        {
+          "thai": "มาจาก",
+          "translit": "maa-jàak",
+          "english": "come from / be from",
+          "vocabId": "v-dfd8165dd5"
+        },
+        {
+          "thai": "มาจากไทย",
+          "translit": "maa-jàak thai",
+          "english": "be from Thailand",
+          "vocabId": "v-317510cace"
+        },
+        {
+          "thai": "มาจากอังกฤษ",
+          "translit": "maa-jàak ang-grìt",
+          "english": "be from England",
+          "vocabId": "v-15a452b73b"
+        },
+        {
+          "thai": "มาจากอเมริกา",
+          "translit": "maa-jàak à-mee-rí-gaa",
+          "english": "be from America",
+          "vocabId": "v-b845ab6bae"
+        }
+      ],
+      "visualPlan": {
+        "leftPanelLayout": "image-anchored",
+        "onScreenGoal": "Anchor the country pattern with a small map-or-flag style reference while keeping the sentence frame dominant.",
+        "teachingVisuals": [
+          "Sentence frame card for ฉันมาจาก... / ผมมาจาก....",
+          "Three compact country labels with a simple map or flag cue."
+        ],
+        "teacherCues": [
+          "Keep the sentence frame larger than the country cues so grammar stays primary.",
+          "Use the visual only to help memory, not to turn the scene into a travel poster."
+        ],
+        "imageSupport": {
+          "helpful": true,
+          "priority": "supporting",
+          "rationale": "A very light map or flag anchor helps learners separate the country words quickly while the spoken pattern remains the main teaching target.",
+          "searchQueries": [
+            "simple Thailand England America flags flat lay",
+            "country flag icons Thailand England America"
+          ],
+          "sourceHints": [
+            "Wikimedia Commons",
+            "The Noun Project",
+            "simple flag icons"
+          ]
+        }
+      }
+    },
+    {
+      "id": "s4",
+      "heading": "Build a full two-line self-introduction",
+      "purpose": "Combine the greeting from lesson 1 with the new identity patterns so the learner can produce a practical mini-introduction.",
+      "spokenNarration": [
+        "Now connect the old lesson and the new one. Start with สวัสดี, then give your name, and then give your country.",
+        "This is where review becomes useful, not decorative. A real first encounter starts with hello, then moves into identity.",
+        "So the learner goal is not one isolated sentence. The goal is a compact social sequence that sounds friendly and complete."
+      ],
+      "onScreenBullets": [
+        "สวัสดีครับ/ค่ะ | sà-wàt-dii khráp/khâ | hello",
+        "ฉันชื่อ... | chǎn chûue... | my name is ...",
+        "ฉันมาจาก... | chǎn maa-jàak... | I am from ...",
+        "ขอบคุณ | khàawp-khun | thank you"
+      ],
+      "drills": [
+        "Build drill: learner says hello, name, and country as one three-step sequence.",
+        "Partner drill: one learner asks คุณชื่ออะไร and the other answers with name plus country."
+      ],
+      "languageFocus": [
+        {
+          "thai": "สวัสดี",
+          "translit": "sà-wàt-dii",
+          "english": "hello",
+          "vocabId": "v-c9337e2739"
+        },
+        {
+          "thai": "ขอบคุณ",
+          "translit": "khàawp-khun",
+          "english": "thank you",
+          "vocabId": "v-217b46aa5a"
+        },
+        {
+          "thai": "ฉันมาจาก...",
+          "translit": "chǎn maa-jàak...",
+          "english": "I am from ...",
+          "vocabId": "v-b2f0acf56a"
+        },
+        {
+          "thai": "ผมมาจาก...",
+          "translit": "phǒm maa-jàak...",
+          "english": "I am from ... (male)",
+          "vocabId": "v-64f9ed0e55"
+        }
+      ],
+      "visualPlan": {
+        "leftPanelLayout": "dialogue-ladder",
+        "onScreenGoal": "Show the learner how the old greeting and the new identity lines stack into one usable mini-introduction.",
+        "teachingVisuals": [
+          "Three-step introduction ladder: hello -> name -> country.",
+          "A closing thank-you chip to show how the exchange can end politely."
+        ],
+        "teacherCues": [
+          "Make the sequence feel performable, not theoretical.",
+          "Keep the three steps vertically separated so the learner can rehearse them in order."
+        ],
+        "imageSupport": {
+          "helpful": false,
+          "priority": "avoid",
+          "rationale": "The learner needs a sentence sequence here, so a dialogue ladder teaches better than another image.",
+          "searchQueries": [],
+          "sourceHints": [
+            "text-only introduction ladder"
+          ]
+        }
+      }
+    }
+  ],
+  "roleplay": {
+    "scenario": "Meeting someone for the first time at a class or event.",
+    "lines": [
+      {
+        "speaker": "A",
+        "thai": "สวัสดีค่ะ",
+        "translit": "sà-wàt-dii khâ",
+        "english": "Hello."
+      },
+      {
+        "speaker": "B",
+        "thai": "สวัสดีครับ",
+        "translit": "sà-wàt-dii khráp",
+        "english": "Hello."
+      },
+      {
+        "speaker": "A",
+        "thai": "คุณชื่ออะไรคะ",
+        "translit": "khun chûue à-rai khá",
+        "english": "What is your name?"
+      },
+      {
+        "speaker": "B",
+        "thai": "ผมชื่อแดนครับ",
+        "translit": "phǒm chûue Daen khráp",
+        "english": "My name is Dan."
+      },
+      {
+        "speaker": "A",
+        "thai": "คุณมาจากไหนคะ",
+        "translit": "khun maa-jàak nǎi khá",
+        "english": "Where are you from?"
+      },
+      {
+        "speaker": "B",
+        "thai": "ผมมาจากอังกฤษครับ",
+        "translit": "phǒm maa-jàak ang-grìt khráp",
+        "english": "I am from England."
+      }
+    ]
+  },
+  "recap": [
+    "Learn คุณชื่ออะไร and its answer as one fixed beginner pair.",
+    "Choose one stable self-pronoun and focus on producing the full line confidently.",
+    "Use มาจาก to say where you are from and keep the country slot flexible.",
+    "Carry over สวัสดี and ขอบคุณ so the introduction sounds social, not robotic."
+  ],
+  "qaChecks": [
+    {
+      "id": "tone-inline",
+      "description": "All transliteration uses PTM inline tone marks; superscripts forbidden",
+      "pass": true,
+      "evidence": "All transliteration strings passed inline-tone checks"
+    },
+    {
+      "id": "triplets",
+      "description": "Thai/translit/English triplets are complete for learner-facing script content",
+      "pass": true,
+      "evidence": "Sections and on-screen bullets contain complete triplets"
+    },
+    {
+      "id": "drills",
+      "description": "Each section includes active drill",
+      "pass": true,
+      "evidence": "Each section has >=1 drill"
+    },
+    {
+      "id": "section-count",
+      "description": "Lesson contains at least 4 teaching sections",
+      "pass": true,
+      "evidence": "Legacy lesson exemption applied with 4 sections"
+    },
+    {
+      "id": "section-depth",
+      "description": "Each section includes at least 3 spoken narration lines",
+      "pass": true,
+      "evidence": "Legacy lesson exemption applied"
+    },
+    {
+      "id": "roleplay",
+      "description": "Scenario roleplay included and substantial",
+      "pass": true,
+      "evidence": "Roleplay contains 6 lines"
+    },
+    {
+      "id": "recap",
+      "description": "Recap includes at least 3 review items",
+      "pass": true,
+      "evidence": "Recap contains 4 items"
+    },
+    {
+      "id": "review-reuse",
+      "description": "Lesson reuses at least 2 prior items when prior lesson context exists",
+      "pass": true,
+      "evidence": "Reused 2 prior vocabulary items in language focus"
+    },
+    {
+      "id": "teaching-frame",
+      "description": "Lesson includes a clear teaching frame with runtime and learner takeaway",
+      "pass": true,
+      "evidence": "Legacy lesson exemption applied"
+    },
+    {
+      "id": "visual-plan",
+      "description": "Each section includes a left-panel visual plan and explicit image decision",
+      "pass": true,
+      "evidence": "Legacy lesson exemption applied"
+    },
+    {
+      "id": "asset-research",
+      "description": "Lesson provides at least one concrete image research query when visuals would help",
+      "pass": true,
+      "evidence": "Legacy lesson exemption applied"
+    },
+    {
+      "id": "policy",
+      "description": "Transliteration + image sourcing policies are declared",
+      "pass": true,
+      "evidence": "Policy object present with required enum values"
+    }
+  ],
+  "policies": {
+    "transliteration": "PTM_ADAPTED_INLINE_TONES",
+    "imageSourcing": "INTERNET_FIRST_NO_GENERATIVE_DEFAULT"
+  }
+}

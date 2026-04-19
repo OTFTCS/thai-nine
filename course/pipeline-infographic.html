@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Thai with Nine — Lesson Production Pipeline</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --navy: #355C7D;
+    --navy-light: #4a7a9b;
+    --sage: #7A8F54;
+    --sage-light: #a3b87e;
+    --clay: #C96F4A;
+    --clay-light: #e09474;
+    --ivory: #F5F7F8;
+    --dark: #24333D;
+    --medium: #566873;
+    --light-text: #82909A;
+    --white: #FFFFFF;
+    --divider: #C9D7DE;
+    --right-tint: #DBE7EC;
+    --card-shadow: 0 2px 12px rgba(53,92,125,0.12);
+    --card-shadow-hover: 0 4px 20px rgba(53,92,125,0.18);
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Sarabun', sans-serif;
+    background: var(--ivory);
+    color: var(--dark);
+    line-height: 1.5;
+  }
+
+  /* ── Header ── */
+  .header {
+    background: linear-gradient(135deg, var(--navy) 0%, #2a4a66 100%);
+    color: var(--white);
+    padding: 48px 32px 40px;
+    text-align: center;
+  }
+  .header h1 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    margin-bottom: 8px;
+  }
+  .header .subtitle {
+    font-size: 1.1rem;
+    font-weight: 300;
+    opacity: 0.85;
+  }
+  .header .update-badge {
+    display: inline-block;
+    margin-top: 14px;
+    background: rgba(255,255,255,0.15);
+    border: 1px solid rgba(255,255,255,0.3);
+    border-radius: 20px;
+    padding: 4px 16px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+  }
+
+  /* ── Layout ── */
+  .container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 24px 80px;
+  }
+
+  /* ── Source of Truth banner ── */
+  .source-banner {
+    background: var(--white);
+    border: 2px solid var(--navy);
+    border-radius: 12px;
+    padding: 20px 28px;
+    text-align: center;
+    margin-bottom: 12px;
+    box-shadow: var(--card-shadow);
+  }
+  .source-banner .label {
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--navy);
+    margin-bottom: 4px;
+  }
+  .source-banner .file {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--dark);
+    font-family: 'Courier New', monospace;
+  }
+  .source-banner .desc {
+    font-size: 0.85rem;
+    color: var(--medium);
+    margin-top: 2px;
+  }
+
+  /* ── Connector line ── */
+  .connector {
+    width: 3px;
+    height: 32px;
+    background: var(--divider);
+    margin: 0 auto;
+  }
+  .connector.short { height: 20px; }
+
+  /* ── Command banner ── */
+  .command-banner {
+    background: var(--dark);
+    color: #b8d4e3;
+    border-radius: 8px;
+    padding: 12px 20px;
+    text-align: center;
+    font-family: 'Courier New', monospace;
+    font-size: 0.9rem;
+    margin-bottom: 12px;
+    box-shadow: var(--card-shadow);
+  }
+  .command-banner span { color: var(--sage-light); }
+
+  /* ── Stage card ── */
+  .stage-card {
+    background: var(--white);
+    border-radius: 14px;
+    padding: 0;
+    margin-bottom: 0;
+    box-shadow: var(--card-shadow);
+    overflow: hidden;
+    transition: box-shadow 0.2s;
+  }
+  .stage-card:hover { box-shadow: var(--card-shadow-hover); }
+
+  .stage-head {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 18px 24px 14px;
+  }
+  .stage-num {
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--white);
+    flex-shrink: 0;
+  }
+  .stage-num.auto { background: var(--sage); }
+  .stage-num.human { background: var(--clay); }
+  .stage-num.qa { background: var(--navy); }
+
+  .stage-title {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--dark);
+  }
+  .stage-mode {
+    display: inline-block;
+    font-size: 0.65rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    padding: 2px 10px;
+    border-radius: 10px;
+    margin-left: 8px;
+    position: relative;
+    top: -1px;
+  }
+  .stage-mode.auto { background: #eef3e8; color: var(--sage); }
+  .stage-mode.human { background: #fae8e0; color: var(--clay); }
+  .stage-mode.qa { background: #dde6ed; color: var(--navy); }
+
+  .stage-body {
+    padding: 0 24px 20px;
+  }
+  .stage-desc {
+    font-size: 0.9rem;
+    color: var(--medium);
+    margin-bottom: 12px;
+  }
+
+  /* ── Outputs grid ── */
+  .outputs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+  .output-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    background: var(--ivory);
+    border: 1px solid var(--divider);
+    border-radius: 6px;
+    padding: 4px 10px;
+    font-size: 0.78rem;
+    font-family: 'Courier New', monospace;
+    color: var(--dark);
+    white-space: nowrap;
+  }
+  .output-chip .icon { font-style: normal; font-size: 0.85rem; }
+  .output-chip.primary {
+    background: #eef3e8;
+    border-color: var(--sage-light);
+    font-weight: 600;
+  }
+
+  /* ── QA Gate ── */
+  .qa-gate {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background: var(--navy);
+    color: var(--white);
+    border-radius: 10px;
+    padding: 12px 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    box-shadow: var(--card-shadow);
+  }
+  .qa-gate .gate-icon {
+    font-size: 1.2rem;
+  }
+
+  /* ── Pause marker ── */
+  .pause-marker {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background: #fae8e0;
+    border: 2px dashed var(--clay);
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--clay);
+  }
+
+  /* ── Stage 3 detail box ── */
+  .detail-box {
+    background: var(--ivory);
+    border: 1px solid var(--divider);
+    border-radius: 10px;
+    padding: 16px 20px;
+    margin-top: 14px;
+  }
+  .detail-box h4 {
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--navy);
+    margin-bottom: 10px;
+  }
+
+  /* ── Slide layout visual ── */
+  .slide-layout {
+    display: flex;
+    border: 2px solid var(--navy);
+    border-radius: 8px;
+    overflow: hidden;
+    height: 90px;
+    margin: 12px 0;
+    max-width: 360px;
+  }
+  .slide-left {
+    flex: 2;
+    background: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    border-right: 2px solid var(--navy);
+  }
+  .slide-left .zone-label {
+    font-size: 0.7rem;
+    font-weight: 700;
+    color: var(--navy);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  .slide-left .zone-detail {
+    font-size: 0.65rem;
+    color: var(--medium);
+  }
+  .slide-right {
+    flex: 1;
+    background: var(--right-tint);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+  }
+  .slide-right .zone-label {
+    font-size: 0.7rem;
+    font-weight: 700;
+    color: var(--navy);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  .slide-right .zone-detail {
+    font-size: 0.65rem;
+    color: var(--medium);
+  }
+
+  /* ── Sub-pipeline ── */
+  .sub-pipeline {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+    margin-top: 10px;
+  }
+  .sub-step {
+    background: var(--white);
+    border: 1px solid var(--divider);
+    border-radius: 8px;
+    padding: 10px 12px;
+  }
+  .sub-step .fn-name {
+    font-family: 'Courier New', monospace;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--sage);
+    margin-bottom: 2px;
+  }
+  .sub-step .fn-desc {
+    font-size: 0.72rem;
+    color: var(--medium);
+  }
+  .sub-step .fn-out {
+    font-family: 'Courier New', monospace;
+    font-size: 0.7rem;
+    color: var(--dark);
+    margin-top: 3px;
+  }
+
+  /* ── Repair loop visual ── */
+  .repair-loop {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 12px;
+    padding: 12px 16px;
+    background: #fff8f5;
+    border: 1px solid #f0d4c4;
+    border-radius: 8px;
+  }
+  .repair-loop .loop-arrow {
+    font-size: 1.6rem;
+    color: var(--clay);
+  }
+  .repair-loop .loop-text {
+    font-size: 0.82rem;
+    color: var(--medium);
+  }
+  .repair-loop .loop-text strong { color: var(--clay); }
+
+  /* ── Bottom panels ── */
+  .panels {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-top: 48px;
+  }
+  .panel {
+    background: var(--white);
+    border-radius: 14px;
+    padding: 24px;
+    box-shadow: var(--card-shadow);
+  }
+  .panel h3 {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 14px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid var(--ivory);
+  }
+  .panel ul {
+    list-style: none;
+    padding: 0;
+  }
+  .panel li {
+    font-size: 0.82rem;
+    color: var(--medium);
+    padding: 4px 0;
+    border-bottom: 1px solid var(--ivory);
+  }
+  .panel li:last-child { border-bottom: none; }
+  .panel li code {
+    font-family: 'Courier New', monospace;
+    font-size: 0.78rem;
+    color: var(--dark);
+    background: var(--ivory);
+    padding: 1px 5px;
+    border-radius: 3px;
+  }
+
+  /* ── Lifecycle bar ── */
+  .lifecycle {
+    display: flex;
+    align-items: center;
+    gap: 0;
+    margin-top: 14px;
+  }
+  .lifecycle-step {
+    flex: 1;
+    text-align: center;
+    padding: 10px 8px;
+    font-size: 0.78rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    position: relative;
+  }
+  .lifecycle-step.backlog { background: #e8e8e8; color: var(--light-text); border-radius: 8px 0 0 8px; }
+  .lifecycle-step.planned { background: #dde6ed; color: var(--navy); }
+  .lifecycle-step.draft { background: #fae8e0; color: var(--clay); }
+  .lifecycle-step.ready { background: #eef3e8; color: var(--sage); border-radius: 0 8px 8px 0; }
+  .lifecycle-arrow {
+    width: 0; height: 0;
+    border-top: 18px solid transparent;
+    border-bottom: 18px solid transparent;
+    border-left: 12px solid;
+    flex-shrink: 0;
+  }
+  .lifecycle-arrow.a1 { border-left-color: #e8e8e8; }
+  .lifecycle-arrow.a2 { border-left-color: #dde6ed; }
+  .lifecycle-arrow.a3 { border-left-color: #fae8e0; }
+
+  /* ── Canva callout ── */
+  .canva-callout {
+    background: linear-gradient(135deg, #f7f0ff 0%, #f0f4ff 100%);
+    border: 1px solid #d4c8e8;
+    border-radius: 12px;
+    padding: 20px 24px;
+    margin-top: 20px;
+  }
+  .canva-callout h4 {
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: #6b47a0;
+    margin-bottom: 8px;
+  }
+  .canva-callout p {
+    font-size: 0.82rem;
+    color: var(--medium);
+    margin-bottom: 4px;
+  }
+  .canva-callout .rule {
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: #6b47a0;
+    margin-top: 8px;
+    padding-top: 8px;
+    border-top: 1px solid #d4c8e8;
+  }
+
+  /* ── Legend ── */
+  .legend {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    margin-bottom: 32px;
+    flex-wrap: wrap;
+  }
+  .legend-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.8rem;
+    color: var(--medium);
+  }
+  .legend-dot {
+    width: 14px;
+    height: 14px;
+    border-radius: 5px;
+  }
+  .legend-dot.auto { background: var(--sage); }
+  .legend-dot.human { background: var(--clay); }
+  .legend-dot.qa { background: var(--navy); }
+
+  /* ── Footer ── */
+  .footer {
+    text-align: center;
+    padding: 32px;
+    font-size: 0.75rem;
+    color: var(--light-text);
+  }
+
+  @media (max-width: 768px) {
+    .panels { grid-template-columns: 1fr; }
+    .sub-pipeline { grid-template-columns: 1fr; }
+    .lifecycle { flex-wrap: wrap; }
+    .lifecycle-arrow { display: none; }
+    .lifecycle-step { border-radius: 6px !important; margin: 2px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ═══ HEADER ═══ -->
+<div class="header">
+  <h1>Lesson Production Pipeline</h1>
+  <div class="subtitle">Thai with Nine — 8-Stage Gated Workflow</div>
+  <div class="update-badge">PPTX-First &middot; March 2026</div>
+</div>
+
+<div class="container">
+
+  <!-- Legend -->
+  <div class="legend">
+    <div class="legend-item"><div class="legend-dot auto"></div> Automatic / Deterministic</div>
+    <div class="legend-item"><div class="legend-dot human"></div> Human-in-the-Loop</div>
+    <div class="legend-item"><div class="legend-dot qa"></div> QA Gate</div>
+  </div>
+
+  <!-- Source of Truth -->
+  <div class="source-banner">
+    <div class="label">Source of Truth</div>
+    <div class="file">course/exports/full-thai-course-blueprint.csv</div>
+    <div class="desc">80 lessons &times; 22 columns &mdash; outcomes, vocabulary, grammar, quiz focus</div>
+  </div>
+
+  <div class="connector"></div>
+
+  <!-- Command -->
+  <div class="command-banner">
+    <span>$</span> npm run course:produce -- --lesson <span>M01-L004</span>
+  </div>
+
+  <div class="connector short"></div>
+
+  <!-- ═══ STAGE 0 ═══ -->
+  <div class="stage-card">
+    <div class="stage-head">
+      <div class="stage-num auto">0</div>
+      <div>
+        <span class="stage-title">Context Loader</span>
+        <span class="stage-mode auto">Auto</span>
+      </div>
+    </div>
+    <div class="stage-body">
+      <div class="stage-desc">Reads prior lessons' <code>script-master.json</code> files. Builds spaced review buckets (last lesson, &minus;3, &minus;6, &minus;8) for vocabulary recycling.</div>
+      <div class="outputs">
+        <div class="output-chip primary"><em class="icon">&#x1F4C4;</em> context.json</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="connector"></div>
+
+  <!-- ═══ STAGE 1 ═══ -->
+  <div class="stage-card">
+    <div class="stage-head">
+      <div class="stage-num human">1</div>
+      <div>
+        <span class="stage-title">Script Authoring</span>
+        <span class="stage-mode human">Human / Claude</span>
+      </div>
+    </div>
+    <div class="stage-body">
+      <div class="stage-desc">Pipeline writes a work order (<code>codex-stage1-work-order.md</code>), then <strong>pauses</strong>. A human or Claude authors the lesson's core files: script, spoken notes, and visual plan.</div>
+      <div class="outputs">
+        <div class="output-chip primary"><em class="icon">&#x2B50;</em> script-master.json</div>
+        <div class="output-chip"><em class="icon">&#x1F399;</em> script-spoken.md</div>
+        <div class="output-chip"><em class="icon">&#x1F399;</em> script-spoken.html</div>
+        <div class="output-chip"><em class="icon">&#x1F3A8;</em> script-visual.md</div>
+        <div class="output-chip"><em class="icon">&#x1F4CB;</em> brief.md</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="connector short"></div>
+  <div class="pause-marker">&#x23F8;&#xFE0F; Pipeline pauses &mdash; waiting for human to author files</div>
+  <div class="connector short"></div>
+
+  <!-- ═══ STAGE 2 ═══ -->
+  <div class="stage-card">
+    <div class="stage-head">
+      <div class="stage-num qa">2</div>
+      <div>
+        <span class="stage-title">QA &amp; Repair Loop</span>
+        <span class="stage-mode qa">QA Gate</span>
+      </div>
+    </div>
+    <div class="stage-body">
+      <div class="stage-desc">Two-layer validation: <strong>Editorial QA</strong> (content, flow, objectives) and <strong>Deterministic QA</strong> (transliteration policy, vocab IDs, schema compliance).</div>
+      <div class="outputs">
+        <div class="output-chip"><em class="icon">&#x1F4DD;</em> editorial-qa-report.md</div>
+        <div class="output-chip"><em class="icon">&#x2705;</em> qa-report.md</div>
+      </div>
+      <div class="repair-loop">
+        <div class="loop-arrow">&#x21BB;</div>
+        <div class="loop-text">If QA <strong>fails</strong> &rarr; repair packet generated &rarr; script regenerated &rarr; retry (max <strong>3&times;</strong>)</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="connector"></div>
+
+  <!-- ═══ STAGE 3 ═══ -->
+  <div class="stage-card">
+    <div class="stage-head">
+      <div class="stage-num auto">3</div>
+      <div>
+        <span class="stage-title">PPTX Deck Build</span>
+        <span class="stage-mode auto">Python &middot; Deterministic</span>
+      </div>
+    </div>
+    <div class="stage-body">
+      <div class="stage-desc">Transforms <code>script-master.json</code> into a recording-ready PowerPoint deck and Canva integration files via <code>render_lesson_deck.py</code>.</div>
+
+      <!-- Slide layout visual -->
+      <div class="detail-box">
+        <h4>Slide Layout &mdash; 1920 &times; 1080</h4>
+        <div class="slide-layout">
+          <div class="slide-left">
+            <div class="zone-label">Teaching Zone</div>
+            <div class="zone-detail">67% &middot; Sarabun font</div>
+            <div class="zone-detail" style="font-size:0.6rem;color:var(--sage)">focus-card &middot; contrast-board &middot; dialogue-ladder</div>
+          </div>
+          <div class="slide-right">
+            <div class="zone-label">Camera</div>
+            <div class="zone-detail">33% &middot; Nine</div>
+          </div>
+        </div>
+
+        <h4 style="margin-top:14px">Rendering Sub-Pipeline</h4>
+        <div class="sub-pipeline">
+          <div class="sub-step">
+            <div class="fn-name">build_deck_source()</div>
+            <div class="fn-desc">Parse sections &rarr; slide roles &amp; layout families. Fetch images (Openverse/Wikimedia).</div>
+            <div class="fn-out">&rarr; deck-source.json</div>
+          </div>
+          <div class="sub-step">
+            <div class="fn-name">render_deck()</div>
+            <div class="fn-desc">Apply theme, render layouts, embed Thai/translit/English triplets.</div>
+            <div class="fn-out">&rarr; deck.pptx</div>
+          </div>
+          <div class="sub-step">
+            <div class="fn-name">build_canva_content()</div>
+            <div class="fn-desc">Mirror slides with element positions (x, y, w, h) for Canva import.</div>
+            <div class="fn-out">&rarr; canva-content.json</div>
+          </div>
+          <div class="sub-step">
+            <div class="fn-name">render_canva_*()</div>
+            <div class="fn-desc">PNG backgrounds (locked geometry) + bootstrap PPTX + import guide.</div>
+            <div class="fn-out">&rarr; canva-deck.pptx + PNGs</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="outputs" style="margin-top:14px">
+        <div class="output-chip primary"><em class="icon">&#x1F4CA;</em> deck-source.json</div>
+        <div class="output-chip primary"><em class="icon">&#x1F4BD;</em> deck.pptx</div>
+        <div class="output-chip"><em class="icon">&#x1F5BC;</em> asset-provenance.json</div>
+        <div class="output-chip"><em class="icon">&#x1F3A8;</em> canva-content.json</div>
+        <div class="output-chip"><em class="icon">&#x1F4BD;</em> canva-deck.pptx</div>
+        <div class="output-chip"><em class="icon">&#x1F4D6;</em> canva-import-guide.md</div>
+        <div class="output-chip"><em class="icon">&#x1F5BC;</em> canva-backgrounds/*.png</div>
+      </div>
+
+      <!-- Canva callout -->
+      <div class="canva-callout">
+        <h4>&#x1F3A8; Canva Finishing (Optional)</h4>
+        <p>Import <code>canva-deck.pptx</code> into Canva with Sarabun in Brand Kit.</p>
+        <p>Use <code>canva-backgrounds/*.png</code> as locked slide backgrounds.</p>
+        <p>Adjust text overlays using positions from <code>canva-content.json</code>.</p>
+        <div class="rule">Source of truth stays in the repo. Backport layout improvements to <code>layout-contracts/</code>.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="connector short"></div>
+
+  <!-- Visual QA Gate -->
+  <div class="qa-gate">
+    <span class="gate-icon">&#x1F6E1;</span>
+    Visual QA Gate &mdash; <code style="color:#b8d4e3;margin:0 4px">visual-qa-report.md</code> must be PASS
+  </div>
+
+  <div class="connector short"></div>
+
+  <!-- ═══ STAGE 4 ═══ -->
+  <div class="stage-card">
+    <div class="stage-head">
+      <div class="stage-num auto">4</div>
+      <div>
+        <span class="stage-title">PDF Worksheet</span>
+        <span class="stage-mode auto">Deterministic</span>
+      </div>
+    </div>
+    <div class="stage-body">
+      <div class="stage-desc">Generates a printable teacher/learner worksheet with drills, exercises, and answer key.</div>
+      <div class="outputs">
+        <div class="output-chip"><em class="icon">&#x1F4C4;</em> pdf-source.json</div>
+        <div class="output-chip"><em class="icon">&#x1F4C4;</em> pdf.md</div>
+        <div class="output-chip primary"><em class="icon">&#x1F4D5;</em> pdf.pdf</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="connector short"></div>
+
+  <!-- ═══ STAGE 5 ═══ -->
+  <div class="stage-card">
+    <div class="stage-head">
+      <div class="stage-num auto">5</div>
+      <div>
+        <span class="stage-title">Flashcard Deck</span>
+        <span class="stage-mode auto">Deterministic</span>
+      </div>
+    </div>
+    <div class="stage-body">
+      <div class="stage-desc">Creates spaced-repetition flashcards (Thai front / English back / PTM transliteration). Rebuilds global vocab index.</div>
+      <div class="outputs">
+        <div class="output-chip primary"><em class="icon">&#x1F0CF;</em> flashcards.json</div>
+        <div class="output-chip"><em class="icon">&#x1F4DA;</em> vocab-export.json</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="connector short"></div>
+
+  <!-- ═══ STAGE 6 ═══ -->
+  <div class="stage-card">
+    <div class="stage-head">
+      <div class="stage-num auto">6</div>
+      <div>
+        <span class="stage-title">Quiz Generation</span>
+        <span class="stage-mode auto">Deterministic</span>
+      </div>
+    </div>
+    <div class="stage-body">
+      <div class="stage-desc">Generates assessment items (thai&rarr;eng, eng&rarr;thai, fill_translit, context MCQ). Min 3 items per new vocab word. Assessment QA validates coverage.</div>
+      <div class="outputs">
+        <div class="output-chip"><em class="icon">&#x1F4DD;</em> quiz-item-bank.json</div>
+        <div class="output-chip primary"><em class="icon">&#x2753;</em> quiz.json</div>
+        <div class="output-chip"><em class="icon">&#x1F4DD;</em> assessment-qa-report.md</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="connector"></div>
+
+  <!-- ═══ STAGE 7 ═══ -->
+  <div class="stage-card">
+    <div class="stage-head">
+      <div class="stage-num qa">7</div>
+      <div>
+        <span class="stage-title">Release Gate</span>
+        <span class="stage-mode qa">Validation</span>
+      </div>
+    </div>
+    <div class="stage-body">
+      <div class="stage-desc">All 3 QA reports must be <strong>PASS</strong>. Validates every artifact against JSON schemas. On success, marks lesson as ready.</div>
+      <div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px">
+        <div class="output-chip" style="background:#eef3e8;border-color:var(--sage)"><em class="icon">&#x2705;</em> editorial-qa</div>
+        <div class="output-chip" style="background:#eef3e8;border-color:var(--sage)"><em class="icon">&#x2705;</em> visual-qa</div>
+        <div class="output-chip" style="background:#eef3e8;border-color:var(--sage)"><em class="icon">&#x2705;</em> assessment-qa</div>
+      </div>
+      <div class="outputs">
+        <div class="output-chip primary" style="background:#eef3e8;border-color:var(--sage);font-weight:700;font-family:'Sarabun',sans-serif;font-size:0.85rem">
+          &#x2705; status.json = READY_TO_RECORD
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══ LIFECYCLE BAR ═══ -->
+  <div style="margin-top:48px">
+    <div style="text-align:center;font-size:0.75rem;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;color:var(--navy);margin-bottom:12px">Lesson Lifecycle</div>
+    <div class="lifecycle">
+      <div class="lifecycle-step backlog">Backlog</div>
+      <div class="lifecycle-arrow a1"></div>
+      <div class="lifecycle-step planned">Planned</div>
+      <div class="lifecycle-arrow a2"></div>
+      <div class="lifecycle-step draft">Draft</div>
+      <div class="lifecycle-arrow a3"></div>
+      <div class="lifecycle-step ready">Ready to Record</div>
+    </div>
+  </div>
+
+  <!-- ═══ BOTTOM PANELS ═══ -->
+  <div class="panels">
+    <!-- Artifact list -->
+    <div class="panel">
+      <h3>&#x1F4C1; Artifacts Per Lesson (~25 files)</h3>
+      <ul>
+        <li><strong>Stage 0:</strong> <code>context.json</code></li>
+        <li><strong>Stage 1:</strong> <code>brief.md</code> &middot; <code>script-master.json</code> &middot; <code>script-spoken.md</code> &middot; <code>script-spoken.html</code> &middot; <code>script-visual.md</code></li>
+        <li><strong>QA:</strong> <code>editorial-qa-report.md</code> &middot; <code>qa-report.md</code> &middot; <code>visual-qa-report.md</code> &middot; <code>assessment-qa-report.md</code></li>
+        <li><strong>Stage 3:</strong> <code>deck-source.json</code> &middot; <code>deck.pptx</code> &middot; <code>asset-provenance.json</code> &middot; <code>canva-content.json</code> &middot; <code>canva-deck.pptx</code> &middot; <code>canva-import-guide.md</code> &middot; <code>canva-backgrounds/*.png</code></li>
+        <li><strong>Stage 4:</strong> <code>pdf-source.json</code> &middot; <code>pdf.md</code> &middot; <code>pdf.pdf</code></li>
+        <li><strong>Stage 5:</strong> <code>flashcards.json</code> &middot; <code>vocab-export.json</code></li>
+        <li><strong>Stage 6:</strong> <code>quiz-item-bank.json</code> &middot; <code>quiz.json</code></li>
+        <li><strong>State:</strong> <code>status.json</code> &middot; <code>produce-lesson-state.json</code></li>
+      </ul>
+    </div>
+
+    <!-- Key files -->
+    <div class="panel">
+      <h3>&#x1F527; Key Pipeline Files</h3>
+      <ul>
+        <li><code>course/tools/produce-lesson.ts</code> &mdash; Orchestrator</li>
+        <li><code>course/tools/pipeline-cli.ts</code> &mdash; CLI &amp; stage runner</li>
+        <li><code>course/tools/render_lesson_deck.py</code> &mdash; PPTX renderer</li>
+        <li><code>course/tools/lib/types.ts</code> &mdash; TypeScript models</li>
+        <li><code>course/tools/lib/validators.ts</code> &mdash; Schema validation</li>
+        <li><code>course/schemas/*.schema.json</code> &mdash; JSON Schemas</li>
+        <li><code>course/prompts/agent-prompts/</code> &mdash; Stage prompts</li>
+        <li><code>course/layout-contracts/canva/</code> &mdash; Layout specs</li>
+        <li><code>course/OPERATIONS.md</code> &mdash; Runbook</li>
+        <li><code>course/LESSON_PRODUCTION_SOP.md</code> &mdash; Checklist</li>
+        <li><code>course/style-guide.md</code> &mdash; Design system</li>
+      </ul>
+    </div>
+  </div>
+
+</div>
+
+<div class="footer">
+  Thai with Nine &middot; Lesson Production Pipeline Infographic &middot; Updated March 2026
+</div>
+
+</body>
+</html>

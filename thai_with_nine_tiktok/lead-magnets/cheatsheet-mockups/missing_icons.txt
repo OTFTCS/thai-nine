@@ -1,0 +1,3 @@
+beer-bottle
+floor-tile
+wall-tile

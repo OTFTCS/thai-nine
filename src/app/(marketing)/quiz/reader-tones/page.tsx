@@ -6,11 +6,11 @@ export default function ReaderToneQuizPage() {
     <QuizRunner
       quizKind="reader_tones"
       title="Reader Tone + Script Discrimination Quiz"
-      description="Audio-to-script discrimination with confusable Thai spellings and tones."
+      description="Advanced audio-to-script discrimination for Thai readers, using tighter confusable sets and less prompt scaffolding."
       questionBank={readerToneQuestionBank}
       defaultTrack="reader"
       resultHref="/quiz/results"
-      minimumAnswersForAdvisory={4}
+      minimumAnswersForAdvisory={6}
     />
   );
 }

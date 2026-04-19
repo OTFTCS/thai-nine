@@ -1,0 +1,127 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "M01-L003",
+  "cards": [
+    {
+      "id": "m01-l003-c01",
+      "vocabId": "v-9018ed36ec",
+      "front": "ฉัน",
+      "back": "I (female / neutral)",
+      "translit": "chǎn",
+      "tags": [
+        "M01-L003",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l003-c02",
+      "vocabId": "v-d16cfe595c",
+      "front": "ผม",
+      "back": "I (male polite)",
+      "translit": "phǒm",
+      "tags": [
+        "M01-L003",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l003-c03",
+      "vocabId": "v-3bde86ee71",
+      "front": "คุณ",
+      "back": "you (polite)",
+      "translit": "khun",
+      "tags": [
+        "M01-L003",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l003-c04",
+      "vocabId": "v-e3ef8a701b",
+      "front": "เขา",
+      "back": "he / she",
+      "translit": "khǎo",
+      "tags": [
+        "M01-L003",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l003-c05",
+      "vocabId": "v-b083e63c50",
+      "front": "นี่",
+      "back": "this",
+      "translit": "nîi",
+      "tags": [
+        "M01-L003",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l003-c06",
+      "vocabId": "v-6695e84f1f",
+      "front": "คือ",
+      "back": "is",
+      "translit": "khuu",
+      "tags": [
+        "M01-L003",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l003-c07",
+      "vocabId": "v-d0ca2ea000",
+      "front": "นี่คือ...",
+      "back": "this is...",
+      "translit": "nîi khuu...",
+      "tags": [
+        "M01-L003",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l003-c08",
+      "vocabId": "v-783ab7837a",
+      "front": "ใคร",
+      "back": "who",
+      "translit": "khrai",
+      "tags": [
+        "M01-L003",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l003-c09",
+      "vocabId": "v-c3c09e205c",
+      "front": "เขาคือใคร",
+      "back": "who is he/she?",
+      "translit": "khǎo khuu khrai",
+      "tags": [
+        "M01-L003",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l003-c10",
+      "vocabId": "v-2ec09cf64e",
+      "front": "คุณคือ...ใช่ไหม",
+      "back": "you are... right?",
+      "translit": "khun khuu... châi mái",
+      "tags": [
+        "M01-L003",
+        "core"
+      ]
+    },
+    {
+      "id": "m01-l003-c11",
+      "vocabId": "v-941eb951af",
+      "front": "ฉัน",
+      "back": "I (rising tone)",
+      "translit": "chǎn",
+      "tags": [
+        "M01-L003",
+        "core"
+      ]
+    }
+  ]
+}

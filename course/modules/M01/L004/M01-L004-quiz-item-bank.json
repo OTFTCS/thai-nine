@@ -1,0 +1,1124 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "M01-L004",
+  "generatedAt": "2026-03-22T03:47:49.817Z",
+  "sourceScript": "M01-L004-script-master.json",
+  "items": [
+    {
+      "id": "v-28499d926c-thai-to-english",
+      "vocabId": "v-28499d926c",
+      "type": "thai_to_english",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "What is the best meaning of ศูนย์?",
+        "thai": "ศูนย์",
+        "translit": "sǔun"
+      },
+      "options": [
+        "zero (0)",
+        "one (1)",
+        "two (2)",
+        "three (3)"
+      ],
+      "answer": "zero (0)",
+      "rationale": "Maps Thai form to target meaning from script languageFocus."
+    },
+    {
+      "id": "v-28499d926c-english-to-thai",
+      "vocabId": "v-28499d926c",
+      "type": "english_to_thai",
+      "displayMode": "english_only",
+      "prompt": {
+        "text": "Select Thai for: zero (0)",
+        "english": "zero (0)"
+      },
+      "options": [
+        "ศูนย์",
+        "หนึ่ง",
+        "สอง",
+        "สาม"
+      ],
+      "answer": "ศูนย์",
+      "rationale": "Reverses mapping for active recall."
+    },
+    {
+      "id": "v-28499d926c-fill-translit",
+      "vocabId": "v-28499d926c",
+      "type": "fill_translit",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "Type the PTM transliteration for ศูนย์.",
+        "thai": "ศูนย์"
+      },
+      "answer": "sǔun",
+      "rationale": "Forces transliteration production with inline tone marks."
+    },
+    {
+      "id": "v-28499d926c-context-mcq",
+      "vocabId": "v-28499d926c",
+      "type": "context_mcq",
+      "displayMode": "triplet",
+      "prompt": {
+        "text": "Choose the sentence that keeps the lesson meaning of this phrase.",
+        "thai": "ศูนย์",
+        "translit": "sǔun",
+        "english": "zero (0)"
+      },
+      "options": [
+        "Use ศูนย์ in polite beginner conversation",
+        "Use หนึ่ง in polite beginner conversation",
+        "Use สอง in polite beginner conversation",
+        "Use สาม in polite beginner conversation"
+      ],
+      "answer": "Use ศูนย์ in polite beginner conversation",
+      "rationale": "Checks contextual understanding while preserving triplet exposure."
+    },
+    {
+      "id": "v-d5112f8a63-thai-to-english",
+      "vocabId": "v-d5112f8a63",
+      "type": "thai_to_english",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "What is the best meaning of หนึ่ง?",
+        "thai": "หนึ่ง",
+        "translit": "nùeng"
+      },
+      "options": [
+        "one (1)",
+        "zero (0)",
+        "two (2)",
+        "three (3)"
+      ],
+      "answer": "one (1)",
+      "rationale": "Maps Thai form to target meaning from script languageFocus."
+    },
+    {
+      "id": "v-d5112f8a63-english-to-thai",
+      "vocabId": "v-d5112f8a63",
+      "type": "english_to_thai",
+      "displayMode": "english_only",
+      "prompt": {
+        "text": "Select Thai for: one (1)",
+        "english": "one (1)"
+      },
+      "options": [
+        "หนึ่ง",
+        "ศูนย์",
+        "สอง",
+        "สาม"
+      ],
+      "answer": "หนึ่ง",
+      "rationale": "Reverses mapping for active recall."
+    },
+    {
+      "id": "v-d5112f8a63-fill-translit",
+      "vocabId": "v-d5112f8a63",
+      "type": "fill_translit",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "Type the PTM transliteration for หนึ่ง.",
+        "thai": "หนึ่ง"
+      },
+      "answer": "nùeng",
+      "rationale": "Forces transliteration production with inline tone marks."
+    },
+    {
+      "id": "v-d5112f8a63-context-mcq",
+      "vocabId": "v-d5112f8a63",
+      "type": "context_mcq",
+      "displayMode": "triplet",
+      "prompt": {
+        "text": "Choose the sentence that keeps the lesson meaning of this phrase.",
+        "thai": "หนึ่ง",
+        "translit": "nùeng",
+        "english": "one (1)"
+      },
+      "options": [
+        "Use หนึ่ง in polite beginner conversation",
+        "Use ศูนย์ in polite beginner conversation",
+        "Use สอง in polite beginner conversation",
+        "Use สาม in polite beginner conversation"
+      ],
+      "answer": "Use หนึ่ง in polite beginner conversation",
+      "rationale": "Checks contextual understanding while preserving triplet exposure."
+    },
+    {
+      "id": "v-123bdecbd4-thai-to-english",
+      "vocabId": "v-123bdecbd4",
+      "type": "thai_to_english",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "What is the best meaning of สอง?",
+        "thai": "สอง",
+        "translit": "sǎawng"
+      },
+      "options": [
+        "two (2)",
+        "zero (0)",
+        "one (1)",
+        "three (3)"
+      ],
+      "answer": "two (2)",
+      "rationale": "Maps Thai form to target meaning from script languageFocus."
+    },
+    {
+      "id": "v-123bdecbd4-english-to-thai",
+      "vocabId": "v-123bdecbd4",
+      "type": "english_to_thai",
+      "displayMode": "english_only",
+      "prompt": {
+        "text": "Select Thai for: two (2)",
+        "english": "two (2)"
+      },
+      "options": [
+        "สอง",
+        "ศูนย์",
+        "หนึ่ง",
+        "สาม"
+      ],
+      "answer": "สอง",
+      "rationale": "Reverses mapping for active recall."
+    },
+    {
+      "id": "v-123bdecbd4-fill-translit",
+      "vocabId": "v-123bdecbd4",
+      "type": "fill_translit",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "Type the PTM transliteration for สอง.",
+        "thai": "สอง"
+      },
+      "answer": "sǎawng",
+      "rationale": "Forces transliteration production with inline tone marks."
+    },
+    {
+      "id": "v-123bdecbd4-context-mcq",
+      "vocabId": "v-123bdecbd4",
+      "type": "context_mcq",
+      "displayMode": "triplet",
+      "prompt": {
+        "text": "Choose the sentence that keeps the lesson meaning of this phrase.",
+        "thai": "สอง",
+        "translit": "sǎawng",
+        "english": "two (2)"
+      },
+      "options": [
+        "Use สอง in polite beginner conversation",
+        "Use ศูนย์ in polite beginner conversation",
+        "Use หนึ่ง in polite beginner conversation",
+        "Use สาม in polite beginner conversation"
+      ],
+      "answer": "Use สอง in polite beginner conversation",
+      "rationale": "Checks contextual understanding while preserving triplet exposure."
+    },
+    {
+      "id": "v-914a79ebbb-thai-to-english",
+      "vocabId": "v-914a79ebbb",
+      "type": "thai_to_english",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "What is the best meaning of สาม?",
+        "thai": "สาม",
+        "translit": "sǎam"
+      },
+      "options": [
+        "three (3)",
+        "zero (0)",
+        "one (1)",
+        "two (2)"
+      ],
+      "answer": "three (3)",
+      "rationale": "Maps Thai form to target meaning from script languageFocus."
+    },
+    {
+      "id": "v-914a79ebbb-english-to-thai",
+      "vocabId": "v-914a79ebbb",
+      "type": "english_to_thai",
+      "displayMode": "english_only",
+      "prompt": {
+        "text": "Select Thai for: three (3)",
+        "english": "three (3)"
+      },
+      "options": [
+        "สาม",
+        "ศูนย์",
+        "หนึ่ง",
+        "สอง"
+      ],
+      "answer": "สาม",
+      "rationale": "Reverses mapping for active recall."
+    },
+    {
+      "id": "v-914a79ebbb-fill-translit",
+      "vocabId": "v-914a79ebbb",
+      "type": "fill_translit",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "Type the PTM transliteration for สาม.",
+        "thai": "สาม"
+      },
+      "answer": "sǎam",
+      "rationale": "Forces transliteration production with inline tone marks."
+    },
+    {
+      "id": "v-914a79ebbb-context-mcq",
+      "vocabId": "v-914a79ebbb",
+      "type": "context_mcq",
+      "displayMode": "triplet",
+      "prompt": {
+        "text": "Choose the sentence that keeps the lesson meaning of this phrase.",
+        "thai": "สาม",
+        "translit": "sǎam",
+        "english": "three (3)"
+      },
+      "options": [
+        "Use สาม in polite beginner conversation",
+        "Use ศูนย์ in polite beginner conversation",
+        "Use หนึ่ง in polite beginner conversation",
+        "Use สอง in polite beginner conversation"
+      ],
+      "answer": "Use สาม in polite beginner conversation",
+      "rationale": "Checks contextual understanding while preserving triplet exposure."
+    },
+    {
+      "id": "v-0e247b83bd-thai-to-english",
+      "vocabId": "v-0e247b83bd",
+      "type": "thai_to_english",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "What is the best meaning of สี่?",
+        "thai": "สี่",
+        "translit": "sìi"
+      },
+      "options": [
+        "four (4)",
+        "zero (0)",
+        "one (1)",
+        "two (2)"
+      ],
+      "answer": "four (4)",
+      "rationale": "Maps Thai form to target meaning from script languageFocus."
+    },
+    {
+      "id": "v-0e247b83bd-english-to-thai",
+      "vocabId": "v-0e247b83bd",
+      "type": "english_to_thai",
+      "displayMode": "english_only",
+      "prompt": {
+        "text": "Select Thai for: four (4)",
+        "english": "four (4)"
+      },
+      "options": [
+        "สี่",
+        "ศูนย์",
+        "หนึ่ง",
+        "สอง"
+      ],
+      "answer": "สี่",
+      "rationale": "Reverses mapping for active recall."
+    },
+    {
+      "id": "v-0e247b83bd-fill-translit",
+      "vocabId": "v-0e247b83bd",
+      "type": "fill_translit",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "Type the PTM transliteration for สี่.",
+        "thai": "สี่"
+      },
+      "answer": "sìi",
+      "rationale": "Forces transliteration production with inline tone marks."
+    },
+    {
+      "id": "v-0e247b83bd-context-mcq",
+      "vocabId": "v-0e247b83bd",
+      "type": "context_mcq",
+      "displayMode": "triplet",
+      "prompt": {
+        "text": "Choose the sentence that keeps the lesson meaning of this phrase.",
+        "thai": "สี่",
+        "translit": "sìi",
+        "english": "four (4)"
+      },
+      "options": [
+        "Use สี่ in polite beginner conversation",
+        "Use ศูนย์ in polite beginner conversation",
+        "Use หนึ่ง in polite beginner conversation",
+        "Use สอง in polite beginner conversation"
+      ],
+      "answer": "Use สี่ in polite beginner conversation",
+      "rationale": "Checks contextual understanding while preserving triplet exposure."
+    },
+    {
+      "id": "v-6c137e71d9-thai-to-english",
+      "vocabId": "v-6c137e71d9",
+      "type": "thai_to_english",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "What is the best meaning of ห้า?",
+        "thai": "ห้า",
+        "translit": "hâa"
+      },
+      "options": [
+        "five (5)",
+        "zero (0)",
+        "one (1)",
+        "two (2)"
+      ],
+      "answer": "five (5)",
+      "rationale": "Maps Thai form to target meaning from script languageFocus."
+    },
+    {
+      "id": "v-6c137e71d9-english-to-thai",
+      "vocabId": "v-6c137e71d9",
+      "type": "english_to_thai",
+      "displayMode": "english_only",
+      "prompt": {
+        "text": "Select Thai for: five (5)",
+        "english": "five (5)"
+      },
+      "options": [
+        "ห้า",
+        "ศูนย์",
+        "หนึ่ง",
+        "สอง"
+      ],
+      "answer": "ห้า",
+      "rationale": "Reverses mapping for active recall."
+    },
+    {
+      "id": "v-6c137e71d9-fill-translit",
+      "vocabId": "v-6c137e71d9",
+      "type": "fill_translit",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "Type the PTM transliteration for ห้า.",
+        "thai": "ห้า"
+      },
+      "answer": "hâa",
+      "rationale": "Forces transliteration production with inline tone marks."
+    },
+    {
+      "id": "v-6c137e71d9-context-mcq",
+      "vocabId": "v-6c137e71d9",
+      "type": "context_mcq",
+      "displayMode": "triplet",
+      "prompt": {
+        "text": "Choose the sentence that keeps the lesson meaning of this phrase.",
+        "thai": "ห้า",
+        "translit": "hâa",
+        "english": "five (5)"
+      },
+      "options": [
+        "Use ห้า in polite beginner conversation",
+        "Use ศูนย์ in polite beginner conversation",
+        "Use หนึ่ง in polite beginner conversation",
+        "Use สอง in polite beginner conversation"
+      ],
+      "answer": "Use ห้า in polite beginner conversation",
+      "rationale": "Checks contextual understanding while preserving triplet exposure."
+    },
+    {
+      "id": "v-42ac27384d-thai-to-english",
+      "vocabId": "v-42ac27384d",
+      "type": "thai_to_english",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "What is the best meaning of หก?",
+        "thai": "หก",
+        "translit": "hòk"
+      },
+      "options": [
+        "six (6)",
+        "zero (0)",
+        "one (1)",
+        "two (2)"
+      ],
+      "answer": "six (6)",
+      "rationale": "Maps Thai form to target meaning from script languageFocus."
+    },
+    {
+      "id": "v-42ac27384d-english-to-thai",
+      "vocabId": "v-42ac27384d",
+      "type": "english_to_thai",
+      "displayMode": "english_only",
+      "prompt": {
+        "text": "Select Thai for: six (6)",
+        "english": "six (6)"
+      },
+      "options": [
+        "หก",
+        "ศูนย์",
+        "หนึ่ง",
+        "สอง"
+      ],
+      "answer": "หก",
+      "rationale": "Reverses mapping for active recall."
+    },
+    {
+      "id": "v-42ac27384d-fill-translit",
+      "vocabId": "v-42ac27384d",
+      "type": "fill_translit",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "Type the PTM transliteration for หก.",
+        "thai": "หก"
+      },
+      "answer": "hòk",
+      "rationale": "Forces transliteration production with inline tone marks."
+    },
+    {
+      "id": "v-42ac27384d-context-mcq",
+      "vocabId": "v-42ac27384d",
+      "type": "context_mcq",
+      "displayMode": "triplet",
+      "prompt": {
+        "text": "Choose the sentence that keeps the lesson meaning of this phrase.",
+        "thai": "หก",
+        "translit": "hòk",
+        "english": "six (6)"
+      },
+      "options": [
+        "Use หก in polite beginner conversation",
+        "Use ศูนย์ in polite beginner conversation",
+        "Use หนึ่ง in polite beginner conversation",
+        "Use สอง in polite beginner conversation"
+      ],
+      "answer": "Use หก in polite beginner conversation",
+      "rationale": "Checks contextual understanding while preserving triplet exposure."
+    },
+    {
+      "id": "v-1569f39457-thai-to-english",
+      "vocabId": "v-1569f39457",
+      "type": "thai_to_english",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "What is the best meaning of เจ็ด?",
+        "thai": "เจ็ด",
+        "translit": "jèt"
+      },
+      "options": [
+        "seven (7)",
+        "zero (0)",
+        "one (1)",
+        "two (2)"
+      ],
+      "answer": "seven (7)",
+      "rationale": "Maps Thai form to target meaning from script languageFocus."
+    },
+    {
+      "id": "v-1569f39457-english-to-thai",
+      "vocabId": "v-1569f39457",
+      "type": "english_to_thai",
+      "displayMode": "english_only",
+      "prompt": {
+        "text": "Select Thai for: seven (7)",
+        "english": "seven (7)"
+      },
+      "options": [
+        "เจ็ด",
+        "ศูนย์",
+        "หนึ่ง",
+        "สอง"
+      ],
+      "answer": "เจ็ด",
+      "rationale": "Reverses mapping for active recall."
+    },
+    {
+      "id": "v-1569f39457-fill-translit",
+      "vocabId": "v-1569f39457",
+      "type": "fill_translit",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "Type the PTM transliteration for เจ็ด.",
+        "thai": "เจ็ด"
+      },
+      "answer": "jèt",
+      "rationale": "Forces transliteration production with inline tone marks."
+    },
+    {
+      "id": "v-1569f39457-context-mcq",
+      "vocabId": "v-1569f39457",
+      "type": "context_mcq",
+      "displayMode": "triplet",
+      "prompt": {
+        "text": "Choose the sentence that keeps the lesson meaning of this phrase.",
+        "thai": "เจ็ด",
+        "translit": "jèt",
+        "english": "seven (7)"
+      },
+      "options": [
+        "Use เจ็ด in polite beginner conversation",
+        "Use ศูนย์ in polite beginner conversation",
+        "Use หนึ่ง in polite beginner conversation",
+        "Use สอง in polite beginner conversation"
+      ],
+      "answer": "Use เจ็ด in polite beginner conversation",
+      "rationale": "Checks contextual understanding while preserving triplet exposure."
+    },
+    {
+      "id": "v-f2b6d018d8-thai-to-english",
+      "vocabId": "v-f2b6d018d8",
+      "type": "thai_to_english",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "What is the best meaning of แปด?",
+        "thai": "แปด",
+        "translit": "bpàaet"
+      },
+      "options": [
+        "eight (8)",
+        "zero (0)",
+        "one (1)",
+        "two (2)"
+      ],
+      "answer": "eight (8)",
+      "rationale": "Maps Thai form to target meaning from script languageFocus."
+    },
+    {
+      "id": "v-f2b6d018d8-english-to-thai",
+      "vocabId": "v-f2b6d018d8",
+      "type": "english_to_thai",
+      "displayMode": "english_only",
+      "prompt": {
+        "text": "Select Thai for: eight (8)",
+        "english": "eight (8)"
+      },
+      "options": [
+        "แปด",
+        "ศูนย์",
+        "หนึ่ง",
+        "สอง"
+      ],
+      "answer": "แปด",
+      "rationale": "Reverses mapping for active recall."
+    },
+    {
+      "id": "v-f2b6d018d8-fill-translit",
+      "vocabId": "v-f2b6d018d8",
+      "type": "fill_translit",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "Type the PTM transliteration for แปด.",
+        "thai": "แปด"
+      },
+      "answer": "bpàaet",
+      "rationale": "Forces transliteration production with inline tone marks."
+    },
+    {
+      "id": "v-f2b6d018d8-context-mcq",
+      "vocabId": "v-f2b6d018d8",
+      "type": "context_mcq",
+      "displayMode": "triplet",
+      "prompt": {
+        "text": "Choose the sentence that keeps the lesson meaning of this phrase.",
+        "thai": "แปด",
+        "translit": "bpàaet",
+        "english": "eight (8)"
+      },
+      "options": [
+        "Use แปด in polite beginner conversation",
+        "Use ศูนย์ in polite beginner conversation",
+        "Use หนึ่ง in polite beginner conversation",
+        "Use สอง in polite beginner conversation"
+      ],
+      "answer": "Use แปด in polite beginner conversation",
+      "rationale": "Checks contextual understanding while preserving triplet exposure."
+    },
+    {
+      "id": "v-d03227860c-thai-to-english",
+      "vocabId": "v-d03227860c",
+      "type": "thai_to_english",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "What is the best meaning of เก้า?",
+        "thai": "เก้า",
+        "translit": "gâo"
+      },
+      "options": [
+        "nine (9)",
+        "zero (0)",
+        "one (1)",
+        "two (2)"
+      ],
+      "answer": "nine (9)",
+      "rationale": "Maps Thai form to target meaning from script languageFocus."
+    },
+    {
+      "id": "v-d03227860c-english-to-thai",
+      "vocabId": "v-d03227860c",
+      "type": "english_to_thai",
+      "displayMode": "english_only",
+      "prompt": {
+        "text": "Select Thai for: nine (9)",
+        "english": "nine (9)"
+      },
+      "options": [
+        "เก้า",
+        "ศูนย์",
+        "หนึ่ง",
+        "สอง"
+      ],
+      "answer": "เก้า",
+      "rationale": "Reverses mapping for active recall."
+    },
+    {
+      "id": "v-d03227860c-fill-translit",
+      "vocabId": "v-d03227860c",
+      "type": "fill_translit",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "Type the PTM transliteration for เก้า.",
+        "thai": "เก้า"
+      },
+      "answer": "gâo",
+      "rationale": "Forces transliteration production with inline tone marks."
+    },
+    {
+      "id": "v-d03227860c-context-mcq",
+      "vocabId": "v-d03227860c",
+      "type": "context_mcq",
+      "displayMode": "triplet",
+      "prompt": {
+        "text": "Choose the sentence that keeps the lesson meaning of this phrase.",
+        "thai": "เก้า",
+        "translit": "gâo",
+        "english": "nine (9)"
+      },
+      "options": [
+        "Use เก้า in polite beginner conversation",
+        "Use ศูนย์ in polite beginner conversation",
+        "Use หนึ่ง in polite beginner conversation",
+        "Use สอง in polite beginner conversation"
+      ],
+      "answer": "Use เก้า in polite beginner conversation",
+      "rationale": "Checks contextual understanding while preserving triplet exposure."
+    },
+    {
+      "id": "v-43a5e0b3f2-thai-to-english",
+      "vocabId": "v-43a5e0b3f2",
+      "type": "thai_to_english",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "What is the best meaning of สิบ?",
+        "thai": "สิบ",
+        "translit": "sìp"
+      },
+      "options": [
+        "ten (10)",
+        "zero (0)",
+        "one (1)",
+        "two (2)"
+      ],
+      "answer": "ten (10)",
+      "rationale": "Maps Thai form to target meaning from script languageFocus."
+    },
+    {
+      "id": "v-43a5e0b3f2-english-to-thai",
+      "vocabId": "v-43a5e0b3f2",
+      "type": "english_to_thai",
+      "displayMode": "english_only",
+      "prompt": {
+        "text": "Select Thai for: ten (10)",
+        "english": "ten (10)"
+      },
+      "options": [
+        "สิบ",
+        "ศูนย์",
+        "หนึ่ง",
+        "สอง"
+      ],
+      "answer": "สิบ",
+      "rationale": "Reverses mapping for active recall."
+    },
+    {
+      "id": "v-43a5e0b3f2-fill-translit",
+      "vocabId": "v-43a5e0b3f2",
+      "type": "fill_translit",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "Type the PTM transliteration for สิบ.",
+        "thai": "สิบ"
+      },
+      "answer": "sìp",
+      "rationale": "Forces transliteration production with inline tone marks."
+    },
+    {
+      "id": "v-43a5e0b3f2-context-mcq",
+      "vocabId": "v-43a5e0b3f2",
+      "type": "context_mcq",
+      "displayMode": "triplet",
+      "prompt": {
+        "text": "Choose the sentence that keeps the lesson meaning of this phrase.",
+        "thai": "สิบ",
+        "translit": "sìp",
+        "english": "ten (10)"
+      },
+      "options": [
+        "Use สิบ in polite beginner conversation",
+        "Use ศูนย์ in polite beginner conversation",
+        "Use หนึ่ง in polite beginner conversation",
+        "Use สอง in polite beginner conversation"
+      ],
+      "answer": "Use สิบ in polite beginner conversation",
+      "rationale": "Checks contextual understanding while preserving triplet exposure."
+    },
+    {
+      "id": "v-ba4059e504-thai-to-english",
+      "vocabId": "v-ba4059e504",
+      "type": "thai_to_english",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "What is the best meaning of เบอร์อะไร?",
+        "thai": "เบอร์อะไร",
+        "translit": "ber à-rai"
+      },
+      "options": [
+        "what number?",
+        "zero (0)",
+        "one (1)",
+        "two (2)"
+      ],
+      "answer": "what number?",
+      "rationale": "Maps Thai form to target meaning from script languageFocus."
+    },
+    {
+      "id": "v-ba4059e504-english-to-thai",
+      "vocabId": "v-ba4059e504",
+      "type": "english_to_thai",
+      "displayMode": "english_only",
+      "prompt": {
+        "text": "Select Thai for: what number?",
+        "english": "what number?"
+      },
+      "options": [
+        "เบอร์อะไร",
+        "ศูนย์",
+        "หนึ่ง",
+        "สอง"
+      ],
+      "answer": "เบอร์อะไร",
+      "rationale": "Reverses mapping for active recall."
+    },
+    {
+      "id": "v-ba4059e504-fill-translit",
+      "vocabId": "v-ba4059e504",
+      "type": "fill_translit",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "Type the PTM transliteration for เบอร์อะไร.",
+        "thai": "เบอร์อะไร"
+      },
+      "answer": "ber à-rai",
+      "rationale": "Forces transliteration production with inline tone marks."
+    },
+    {
+      "id": "v-ba4059e504-context-mcq",
+      "vocabId": "v-ba4059e504",
+      "type": "context_mcq",
+      "displayMode": "triplet",
+      "prompt": {
+        "text": "Choose the sentence that keeps the lesson meaning of this phrase.",
+        "thai": "เบอร์อะไร",
+        "translit": "ber à-rai",
+        "english": "what number?"
+      },
+      "options": [
+        "Use เบอร์อะไร in polite beginner conversation",
+        "Use ศูนย์ in polite beginner conversation",
+        "Use หนึ่ง in polite beginner conversation",
+        "Use สอง in polite beginner conversation"
+      ],
+      "answer": "Use เบอร์อะไร in polite beginner conversation",
+      "rationale": "Checks contextual understanding while preserving triplet exposure."
+    },
+    {
+      "id": "v-2d97b680f6-thai-to-english",
+      "vocabId": "v-2d97b680f6",
+      "type": "thai_to_english",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "What is the best meaning of ฉันอายุ...ปี?",
+        "thai": "ฉันอายุ...ปี",
+        "translit": "chǎn aa-yú ... bpii"
+      },
+      "options": [
+        "I am ... years old",
+        "zero (0)",
+        "one (1)",
+        "two (2)"
+      ],
+      "answer": "I am ... years old",
+      "rationale": "Maps Thai form to target meaning from script languageFocus."
+    },
+    {
+      "id": "v-2d97b680f6-english-to-thai",
+      "vocabId": "v-2d97b680f6",
+      "type": "english_to_thai",
+      "displayMode": "english_only",
+      "prompt": {
+        "text": "Select Thai for: I am ... years old",
+        "english": "I am ... years old"
+      },
+      "options": [
+        "ฉันอายุ...ปี",
+        "ศูนย์",
+        "หนึ่ง",
+        "สอง"
+      ],
+      "answer": "ฉันอายุ...ปี",
+      "rationale": "Reverses mapping for active recall."
+    },
+    {
+      "id": "v-2d97b680f6-fill-translit",
+      "vocabId": "v-2d97b680f6",
+      "type": "fill_translit",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "Type the PTM transliteration for ฉันอายุ...ปี.",
+        "thai": "ฉันอายุ...ปี"
+      },
+      "answer": "chǎn aa-yú ... bpii",
+      "rationale": "Forces transliteration production with inline tone marks."
+    },
+    {
+      "id": "v-2d97b680f6-context-mcq",
+      "vocabId": "v-2d97b680f6",
+      "type": "context_mcq",
+      "displayMode": "triplet",
+      "prompt": {
+        "text": "Choose the sentence that keeps the lesson meaning of this phrase.",
+        "thai": "ฉันอายุ...ปี",
+        "translit": "chǎn aa-yú ... bpii",
+        "english": "I am ... years old"
+      },
+      "options": [
+        "Use ฉันอายุ...ปี in polite beginner conversation",
+        "Use ศูนย์ in polite beginner conversation",
+        "Use หนึ่ง in polite beginner conversation",
+        "Use สอง in polite beginner conversation"
+      ],
+      "answer": "Use ฉันอายุ...ปี in polite beginner conversation",
+      "rationale": "Checks contextual understanding while preserving triplet exposure."
+    },
+    {
+      "id": "v-356fe4743b-thai-to-english",
+      "vocabId": "v-356fe4743b",
+      "type": "thai_to_english",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "What is the best meaning of ห้อง?",
+        "thai": "ห้อง",
+        "translit": "hâwng"
+      },
+      "options": [
+        "room",
+        "zero (0)",
+        "one (1)",
+        "two (2)"
+      ],
+      "answer": "room",
+      "rationale": "Maps Thai form to target meaning from script languageFocus."
+    },
+    {
+      "id": "v-356fe4743b-english-to-thai",
+      "vocabId": "v-356fe4743b",
+      "type": "english_to_thai",
+      "displayMode": "english_only",
+      "prompt": {
+        "text": "Select Thai for: room",
+        "english": "room"
+      },
+      "options": [
+        "ห้อง",
+        "ศูนย์",
+        "หนึ่ง",
+        "สอง"
+      ],
+      "answer": "ห้อง",
+      "rationale": "Reverses mapping for active recall."
+    },
+    {
+      "id": "v-356fe4743b-fill-translit",
+      "vocabId": "v-356fe4743b",
+      "type": "fill_translit",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "Type the PTM transliteration for ห้อง.",
+        "thai": "ห้อง"
+      },
+      "answer": "hâwng",
+      "rationale": "Forces transliteration production with inline tone marks."
+    },
+    {
+      "id": "v-356fe4743b-context-mcq",
+      "vocabId": "v-356fe4743b",
+      "type": "context_mcq",
+      "displayMode": "triplet",
+      "prompt": {
+        "text": "Choose the sentence that keeps the lesson meaning of this phrase.",
+        "thai": "ห้อง",
+        "translit": "hâwng",
+        "english": "room"
+      },
+      "options": [
+        "Use ห้อง in polite beginner conversation",
+        "Use ศูนย์ in polite beginner conversation",
+        "Use หนึ่ง in polite beginner conversation",
+        "Use สอง in polite beginner conversation"
+      ],
+      "answer": "Use ห้อง in polite beginner conversation",
+      "rationale": "Checks contextual understanding while preserving triplet exposure."
+    },
+    {
+      "id": "v-19ba2f5428-thai-to-english",
+      "vocabId": "v-19ba2f5428",
+      "type": "thai_to_english",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "What is the best meaning of สาม?",
+        "thai": "สาม",
+        "translit": "sǎam"
+      },
+      "options": [
+        "three (rising tone)",
+        "zero (0)",
+        "one (1)",
+        "two (2)"
+      ],
+      "answer": "three (rising tone)",
+      "rationale": "Maps Thai form to target meaning from script languageFocus."
+    },
+    {
+      "id": "v-19ba2f5428-english-to-thai",
+      "vocabId": "v-19ba2f5428",
+      "type": "english_to_thai",
+      "displayMode": "english_only",
+      "prompt": {
+        "text": "Select Thai for: three (rising tone)",
+        "english": "three (rising tone)"
+      },
+      "options": [
+        "สาม",
+        "ศูนย์",
+        "หนึ่ง",
+        "สอง"
+      ],
+      "answer": "สาม",
+      "rationale": "Reverses mapping for active recall."
+    },
+    {
+      "id": "v-19ba2f5428-fill-translit",
+      "vocabId": "v-19ba2f5428",
+      "type": "fill_translit",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "Type the PTM transliteration for สาม.",
+        "thai": "สาม"
+      },
+      "answer": "sǎam",
+      "rationale": "Forces transliteration production with inline tone marks."
+    },
+    {
+      "id": "v-19ba2f5428-context-mcq",
+      "vocabId": "v-19ba2f5428",
+      "type": "context_mcq",
+      "displayMode": "triplet",
+      "prompt": {
+        "text": "Choose the sentence that keeps the lesson meaning of this phrase.",
+        "thai": "สาม",
+        "translit": "sǎam",
+        "english": "three (rising tone)"
+      },
+      "options": [
+        "Use สาม in polite beginner conversation",
+        "Use ศูนย์ in polite beginner conversation",
+        "Use หนึ่ง in polite beginner conversation",
+        "Use สอง in polite beginner conversation"
+      ],
+      "answer": "Use สาม in polite beginner conversation",
+      "rationale": "Checks contextual understanding while preserving triplet exposure."
+    }
+  ],
+  "coverage": {
+    "minimumItemsPerNewVocab": 3,
+    "perVocab": [
+      {
+        "vocabId": "v-28499d926c",
+        "thai": "ศูนย์",
+        "itemCount": 4
+      },
+      {
+        "vocabId": "v-d5112f8a63",
+        "thai": "หนึ่ง",
+        "itemCount": 4
+      },
+      {
+        "vocabId": "v-123bdecbd4",
+        "thai": "สอง",
+        "itemCount": 4
+      },
+      {
+        "vocabId": "v-914a79ebbb",
+        "thai": "สาม",
+        "itemCount": 4
+      },
+      {
+        "vocabId": "v-0e247b83bd",
+        "thai": "สี่",
+        "itemCount": 4
+      },
+      {
+        "vocabId": "v-6c137e71d9",
+        "thai": "ห้า",
+        "itemCount": 4
+      },
+      {
+        "vocabId": "v-42ac27384d",
+        "thai": "หก",
+        "itemCount": 4
+      },
+      {
+        "vocabId": "v-1569f39457",
+        "thai": "เจ็ด",
+        "itemCount": 4
+      },
+      {
+        "vocabId": "v-f2b6d018d8",
+        "thai": "แปด",
+        "itemCount": 4
+      },
+      {
+        "vocabId": "v-d03227860c",
+        "thai": "เก้า",
+        "itemCount": 4
+      },
+      {
+        "vocabId": "v-43a5e0b3f2",
+        "thai": "สิบ",
+        "itemCount": 4
+      },
+      {
+        "vocabId": "v-ba4059e504",
+        "thai": "เบอร์อะไร",
+        "itemCount": 4
+      },
+      {
+        "vocabId": "v-2d97b680f6",
+        "thai": "ฉันอายุ...ปี",
+        "itemCount": 4
+      },
+      {
+        "vocabId": "v-356fe4743b",
+        "thai": "ห้อง",
+        "itemCount": 4
+      },
+      {
+        "vocabId": "v-19ba2f5428",
+        "thai": "สาม",
+        "itemCount": 4
+      }
+    ],
+    "pass": true
+  }
+}

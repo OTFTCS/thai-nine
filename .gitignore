@@ -33,6 +33,47 @@ yarn-error.log*
 # env files (can opt-in for committing if needed)
 .env*
 
+# local data
+/data
+
+# large rendered outputs and recordings — source files only, not binaries
+recordings/
+archive/
+media/
+Thai\ images/
+thai_with_nine_tiktok/out/
+youtube/out/**/visual-qa-frames/
+youtube/out/**/media/
+youtube/recordings/
+youtube/images/
+thai_with_nine_remotion
+thaiwith-nine-remotion/out/
+
+# claude workspace settings (may contain tokens)
+.claude/
+
+# oauth tokens and credentials
+**/.gslides-token.json
+**/*.token.json
+**/token.json
+course/oauth-client.json
+course/client_secret_*.json
+course/gen-lang-client-*.json
+
+# audio / video
+*.mp4
+*.mp3
+*.m4a
+*.mov
+*.wav
+*.avi
+*.mkv
+
+# python cache
+__pycache__/
+*.pyc
+*.pyo
+
 # vercel
 .vercel
 

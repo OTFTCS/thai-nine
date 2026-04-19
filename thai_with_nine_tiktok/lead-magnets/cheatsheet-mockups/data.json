@@ -1,0 +1,395 @@
+{
+  "title": "Thai Classifiers Cheat Sheet",
+  "subtitle": "24 Counter Words That Cover 95% of Thai Nouns",
+  "intro": "Thai uses counter words (\"classifiers\") between numbers and nouns. These 24 cover almost everything you'll ever say.",
+  "classifiers": [
+    {
+      "thai": "คน",
+      "translit": "khon",
+      "gloss": "PERSON",
+      "imageKey": "person",
+      "description": "For people; anyone human.",
+      "examples": [
+        { "thai": "ผู้หญิง", "translit": "phûu-yǐng", "english": "woman", "iconSlug": "woman" },
+        { "thai": "ผู้ชาย", "translit": "phûu-chaai", "english": "man", "iconSlug": "man" },
+        { "thai": "ลูกค้า", "translit": "lûuk-kháa", "english": "customer", "iconSlug": "person-shopping" },
+        { "thai": "คนขับรถ", "translit": "khon-khàp-rót", "english": "driver", "iconSlug": "man-construction-worker" },
+        { "thai": "พี่", "translit": "phîi", "english": "older sibling", "iconSlug": "older-person" },
+        { "thai": "หมอ", "translit": "mǎaw", "english": "doctor", "iconSlug": "stethoscope" }
+      ],
+      "sentence": { "thai": "มีคนสามคนที่ร้าน", "translit": "mii khon sǎam khon thîi ráan", "english": "There are three people at the shop." }
+    },
+    {
+      "thai": "ตัว",
+      "translit": "dtua",
+      "gloss": "BODY",
+      "imageKey": "body",
+      "description": "For animals, clothing, and body-shaped things.",
+      "examples": [
+        { "thai": "ปลา", "translit": "bplaa", "english": "fish", "iconSlug": "fish" },
+        { "thai": "ผีเสื้อ", "translit": "phǐi-sûuea", "english": "butterfly", "iconSlug": "butterfly" },
+        { "thai": "กระต่าย", "translit": "grà-dtàai", "english": "rabbit", "iconSlug": "rabbit" },
+        { "thai": "เสื้อยืด", "translit": "sûuea-yûuet", "english": "t-shirt", "iconSlug": "t-shirt" },
+        { "thai": "แมว", "translit": "maaeo", "english": "cat", "iconSlug": "cat" },
+        { "thai": "กล้อง", "translit": "glâawng", "english": "camera", "iconSlug": "camera" }
+      ],
+      "sentence": { "thai": "เขามีแมวสองตัว", "translit": "khǎo mii maaeo sǎawng dtua", "english": "He has two cats." }
+    },
+    {
+      "thai": "อัน",
+      "translit": "an",
+      "gloss": "ITEM",
+      "imageKey": "item",
+      "description": "The fallback; for small objects with no specific classifier.",
+      "examples": [
+        { "thai": "รีโมท", "translit": "rii-môot", "english": "remote control", "iconSlug": "remote-control" },
+        { "thai": "ไม้จิ้มฟัน", "translit": "máai-jîm-fan", "english": "toothpick", "iconSlug": "toothpick" },
+        { "thai": "ยางลบ", "translit": "yaang-lóp", "english": "eraser", "iconSlug": "eraser" },
+        { "thai": "ไฟแช็ก", "translit": "fai-cháek", "english": "lighter", "iconSlug": "lighter" },
+        { "thai": "แว่นตา", "translit": "wâaen-dtaa", "english": "glasses", "iconSlug": "glasses" },
+        { "thai": "หนังยาง", "translit": "nǎng-yaang", "english": "rubber band", "iconSlug": "rubber-band" }
+      ],
+      "sentence": { "thai": "ขอยางลบอันนึง", "translit": "khǎaw yaang-lóp an nùeng", "english": "Can I have one eraser?" }
+    },
+    {
+      "thai": "ใบ",
+      "translit": "bai",
+      "gloss": "FLAT-THING",
+      "imageKey": "flat_thing",
+      "description": "For flat, thin, or paper-like items.",
+      "examples": [
+        { "thai": "ใบขับขี่", "translit": "bai-khàp-khìi", "english": "driving licence", "iconSlug": "identification-card" },
+        { "thai": "ใบเสร็จ", "translit": "bai-sèt", "english": "receipt", "iconSlug": "receipt" },
+        { "thai": "กระเป๋า", "translit": "grà-bpǎo", "english": "bag", "iconSlug": "handbag" },
+        { "thai": "ใบไม้", "translit": "bai-máai", "english": "leaf", "iconSlug": "maple-leaf" },
+        { "thai": "หมวก", "translit": "mùuak", "english": "hat", "iconSlug": "billed-cap" },
+        { "thai": "บัตร", "translit": "bàt", "english": "card", "iconSlug": "credit-card" }
+      ],
+      "sentence": { "thai": "ขอใบเสร็จหนึ่งใบ", "translit": "khǎaw bai-sèt nùeng bai", "english": "Can I have one receipt?" }
+    },
+    {
+      "thai": "เล่ม",
+      "translit": "lêm",
+      "gloss": "VOLUME",
+      "imageKey": "volume",
+      "description": "For books, bound items, and bladed things.",
+      "examples": [
+        { "thai": "หนังสือ", "translit": "nǎng-sǔue", "english": "book", "iconSlug": "open-book" },
+        { "thai": "ไดอารี่", "translit": "dai-aa-rîi", "english": "diary", "iconSlug": "notebook" },
+        { "thai": "กรรไกร", "translit": "gan-grai", "english": "scissors", "iconSlug": "scissors" },
+        { "thai": "พจนานุกรม", "translit": "phót-jà-naa-nú-grom", "english": "dictionary", "iconSlug": "blue-book" },
+        { "thai": "หนังสือการ์ตูน", "translit": "nǎng-sǔue-gaa-tûun", "english": "comic book", "iconSlug": "books" },
+        { "thai": "มีด", "translit": "mîit", "english": "knife", "iconSlug": "kitchen-knife" }
+      ],
+      "sentence": { "thai": "ซื้อหนังสือสองเล่ม", "translit": "súue nǎng-sǔue sǎawng lêm", "english": "I bought two books." }
+    },
+    {
+      "thai": "คัน",
+      "translit": "khan",
+      "gloss": "VEHICLE",
+      "imageKey": "vehicle",
+      "description": "For vehicles and things you steer.",
+      "examples": [
+        { "thai": "รถยนต์", "translit": "rót-yon", "english": "car", "iconSlug": "automobile" },
+        { "thai": "รถบัส", "translit": "rót-bát", "english": "bus", "iconSlug": "bus" },
+        { "thai": "รถตู้", "translit": "rót-dtûu", "english": "van", "iconSlug": "minibus" },
+        { "thai": "สกู๊ตเตอร์", "translit": "sà-gúut-dtooe", "english": "scooter", "iconSlug": "motor-scooter" },
+        { "thai": "ร่ม", "translit": "rôm", "english": "umbrella", "iconSlug": "umbrella" },
+        { "thai": "ช้อน", "translit": "cháawn", "english": "spoon", "iconSlug": "spoon" }
+      ],
+      "sentence": { "thai": "จอดรถสามคัน", "translit": "jàwt rót sǎam khan", "english": "Three cars are parked." }
+    },
+    {
+      "thai": "เครื่อง",
+      "translit": "khrûueang",
+      "gloss": "MACHINE",
+      "imageKey": "machine",
+      "description": "For machines, devices, and appliances.",
+      "examples": [
+        { "thai": "เครื่องปั่น", "translit": "khrûueang-bpàn", "english": "blender", "iconSlug": "blender" },
+        { "thai": "ไมโครเวฟ", "translit": "mai-khroo-wéep", "english": "microwave", "iconSlug": "microwave" },
+        { "thai": "โทรทัศน์", "translit": "thoo-rá-thát", "english": "TV", "iconSlug": "television" },
+        { "thai": "แท็บเล็ต", "translit": "tháep-lét", "english": "tablet", "iconSlug": "tablet-device" },
+        { "thai": "เครื่องซักผ้า", "translit": "khrûueang-sák-phâa", "english": "washing machine", "iconSlug": "washing-machine" },
+        { "thai": "โทรศัพท์", "translit": "thoo-rá-sàp", "english": "phone", "iconSlug": "mobile-phone" }
+      ],
+      "sentence": { "thai": "มีโทรศัพท์กี่เครื่อง", "translit": "mii thoo-rá-sàp gìi khrûueang", "english": "How many phones do you have?" }
+    },
+    {
+      "thai": "ลูก",
+      "translit": "lûuk",
+      "gloss": "ROUND-THING",
+      "imageKey": "round_thing",
+      "description": "For round or spherical objects.",
+      "examples": [
+        { "thai": "มะพร้าว", "translit": "má-phráao", "english": "coconut", "iconSlug": "coconut" },
+        { "thai": "แอปเปิ้ล", "translit": "àaep-bpôen", "english": "apple", "iconSlug": "red-apple" },
+        { "thai": "ลูกบอล", "translit": "lûuk-bawn", "english": "ball", "iconSlug": "soccer-ball" },
+        { "thai": "มะนาว", "translit": "má-naao", "english": "lime", "iconSlug": "lemon" },
+        { "thai": "ส้ม", "translit": "sôm", "english": "orange", "iconSlug": "tangerine" },
+        { "thai": "ลูกเต๋า", "translit": "lûuk-dtǎo", "english": "dice", "iconSlug": "game-die" }
+      ],
+      "sentence": { "thai": "ซื้อส้มห้าลูก", "translit": "súue sôm hâa lûuk", "english": "I bought five oranges." }
+    },
+    {
+      "thai": "ชิ้น",
+      "translit": "chín",
+      "gloss": "PIECE",
+      "imageKey": "piece",
+      "description": "For pieces, slices, or portions of something.",
+      "examples": [
+        { "thai": "ช็อกโกแลต", "translit": "cháwk-goo-láaet", "english": "chocolate", "iconSlug": "chocolate-bar" },
+        { "thai": "เนื้อ", "translit": "núuea", "english": "meat", "iconSlug": "cut-of-meat" },
+        { "thai": "แตงโม", "translit": "dtaaeng-moo", "english": "watermelon", "iconSlug": "watermelon" },
+        { "thai": "เค้ก", "translit": "khéek", "english": "cake", "iconSlug": "shortcake" },
+        { "thai": "ขนมปัง", "translit": "khà-nǒm-bpang", "english": "bread", "iconSlug": "bread" },
+        { "thai": "พิซซ่า", "translit": "phít-sâa", "english": "pizza", "iconSlug": "pizza" }
+      ],
+      "sentence": { "thai": "ขอเค้กสองชิ้น", "translit": "khǎaw khéek sǎawng chín", "english": "Can I have two slices of cake?" }
+    },
+    {
+      "thai": "แก้ว",
+      "translit": "gâaeo",
+      "gloss": "GLASS",
+      "imageKey": "glass",
+      "description": "For drinks served in a glass or cup.",
+      "examples": [
+        { "thai": "โอเลี้ยง", "translit": "oo-lîiang", "english": "Thai iced coffee", "iconSlug": "thai-iced-coffee" },
+        { "thai": "น้ำมะนาว", "translit": "náam-má-naao", "english": "limeade", "iconSlug": "tropical-drink" },
+        { "thai": "สมูทตี้", "translit": "sà-múut-thîi", "english": "smoothie", "iconSlug": "bubble-tea" },
+        { "thai": "น้ำอัดลม", "translit": "náam-àt-lom", "english": "fizzy drink", "iconSlug": "cup-with-straw" },
+        { "thai": "ชา", "translit": "chaa", "english": "tea", "iconSlug": "teacup-without-handle" },
+        { "thai": "น้ำผลไม้", "translit": "náam-phǒn-lá-máai", "english": "fruit juice", "iconSlug": "juice-glass" }
+      ],
+      "sentence": { "thai": "สั่งกาแฟสองแก้ว", "translit": "sàng gaa-faae sǎawng gâaeo", "english": "I ordered two coffees." }
+    },
+    {
+      "thai": "ขวด",
+      "translit": "khùat",
+      "gloss": "BOTTLE",
+      "imageKey": "bottle",
+      "description": "For anything in a bottle.",
+      "examples": [
+        { "thai": "แชมพู", "translit": "chaaem-phuu", "english": "shampoo", "iconSlug": "lotion-bottle" },
+        { "thai": "น้ำผึ้ง", "translit": "náam-phûeng", "english": "honey", "iconSlug": "honey-pot" },
+        { "thai": "ซอสพริก", "translit": "sáwt-phrík", "english": "chilli sauce", "iconSlug": "hot-sauce" },
+        { "thai": "ไวน์", "translit": "waai", "english": "wine", "iconSlug": "wine-bottle" },
+        { "thai": "น้ำปลา", "translit": "náam-bplaa", "english": "fish sauce", "iconSlug": "fish-sauce" },
+        { "thai": "เบียร์", "translit": "bia", "english": "beer", "iconSlug": "beer-bottle" }
+      ],
+      "sentence": { "thai": "ซื้อน้ำสามขวด", "translit": "súue náam sǎam khùat", "english": "I bought three bottles of water." }
+    },
+    {
+      "thai": "จาน / ชาม",
+      "translit": "jaan / chaam",
+      "gloss": "PLATE / BOWL",
+      "imageKey": "plate_bowl",
+      "description": "จาน for plates of food, ชาม for bowls. Depends on the dish!",
+      "examples": [
+        { "thai": "ข้าวผัด", "translit": "khâao-phàt", "english": "fried rice (จาน)", "iconSlug": "cooked-rice" },
+        { "thai": "ผัดไทย", "translit": "phàt-thai", "english": "pad thai (จาน)", "iconSlug": "pad-thai" },
+        { "thai": "ก๋วยเตี๋ยว", "translit": "gǔuai-dtǐiao", "english": "noodle soup (ชาม)", "iconSlug": "steaming-bowl" },
+        { "thai": "ต้มยำ", "translit": "dtôm-yam", "english": "tom yum (ชาม)", "iconSlug": "pot-of-food" },
+        { "thai": "ผัดกะเพรา", "translit": "phàt-gà-phrao", "english": "basil stir-fry (จาน)", "iconSlug": "herb" },
+        { "thai": "ข้าวมันไก่", "translit": "khâao-man-gài", "english": "chicken rice (จาน)", "iconSlug": "poultry-leg" }
+      ],
+      "sentence": { "thai": "ขอก๋วยเตี๋ยวหนึ่งชาม", "translit": "khǎaw gǔuai-dtǐiao nùeng chaam", "english": "One bowl of noodles, please." }
+    },
+    {
+      "thai": "เรื่อง",
+      "translit": "rûueang",
+      "gloss": "STORY",
+      "imageKey": "story",
+      "description": "For movies, TV shows, novels, and matters.",
+      "examples": [
+        { "thai": "หนัง", "translit": "nǎng", "english": "movie", "iconSlug": "clapper-board" },
+        { "thai": "ซีรีส์", "translit": "sii-rîit", "english": "TV series", "iconSlug": "television" },
+        { "thai": "นิทาน", "translit": "ní-thaan", "english": "folktale", "iconSlug": "open-book" },
+        { "thai": "ข่าว", "translit": "khàao", "english": "news story", "iconSlug": "newspaper" },
+        { "thai": "นิยาย", "translit": "ní-yaai", "english": "novel", "iconSlug": "books" }
+      ],
+      "sentence": { "thai": "ดูหนังสองเรื่อง", "translit": "duu nǎng sǎawng rûueang", "english": "I watched two movies." }
+    },
+    {
+      "thai": "ต้น",
+      "translit": "dtôn",
+      "gloss": "TREE",
+      "imageKey": "tree",
+      "description": "For trees and plants.",
+      "examples": [
+        { "thai": "ต้นมะพร้าว", "translit": "dtôn má-phráao", "english": "coconut palm", "iconSlug": "palm-tree" },
+        { "thai": "ต้นกล้วย", "translit": "dtôn glûuai", "english": "banana tree", "iconSlug": "banana-tree" },
+        { "thai": "ต้นมะม่วง", "translit": "dtôn má-mûuang", "english": "mango tree", "iconSlug": "mango-tree" },
+        { "thai": "ต้นทุเรียน", "translit": "dtôn thú-riian", "english": "durian tree", "iconSlug": "durian-tree" },
+        { "thai": "ต้นมะละกอ", "translit": "dtôn má-lá-gaw", "english": "papaya tree", "iconSlug": "papaya-tree" },
+        { "thai": "ต้นไม้", "translit": "dtôn máai", "english": "tree (generic)", "iconSlug": "deciduous-tree" }
+      ],
+      "sentence": { "thai": "ปลูกต้นไม้สามต้น", "translit": "bplùuk dtôn-máai sǎam dtôn", "english": "I planted three trees." }
+    },
+    {
+      "thai": "ถุง",
+      "translit": "thǔng",
+      "gloss": "BAG",
+      "imageKey": "bag",
+      "description": "For anything in a bag, packets and sachets.",
+      "examples": [
+        { "thai": "ข้าวเหนียว", "translit": "khâao-nǐiao", "english": "sticky rice", "iconSlug": "sticky-rice-basket" },
+        { "thai": "น้ำแข็ง", "translit": "náam-khǎeng", "english": "ice", "iconSlug": "ice" },
+        { "thai": "ขนม", "translit": "khà-nǒm", "english": "snacks", "iconSlug": "candy" },
+        { "thai": "ผลไม้", "translit": "phǒn-lá-máai", "english": "fruit", "iconSlug": "red-apple" },
+        { "thai": "มันฝรั่ง", "translit": "man-fà-ràng", "english": "crisps / chips", "iconSlug": "french-fries" },
+        { "thai": "กาแฟ", "translit": "gaa-faae", "english": "coffee (sachet)", "iconSlug": "hot-beverage" }
+      ],
+      "sentence": { "thai": "ซื้อข้าวเหนียวสองถุง", "translit": "súue khâao-nǐiao sǎawng thǔng", "english": "I bought two bags of sticky rice." }
+    },
+    {
+      "thai": "เส้น",
+      "translit": "sên",
+      "gloss": "STRAND",
+      "imageKey": "strand",
+      "description": "For noodles, roads, strings, and hair.",
+      "examples": [
+        { "thai": "ถนน", "translit": "thà-nǒn", "english": "road", "iconSlug": "motorway" },
+        { "thai": "เส้นผม", "translit": "sên-phǒm", "english": "hair strand", "iconSlug": "hair-strand" },
+        { "thai": "เชือก", "translit": "chûueak", "english": "rope", "iconSlug": "lasso" },
+        { "thai": "เนกไท", "translit": "nék-thai", "english": "necktie", "iconSlug": "necktie" },
+        { "thai": "ริบบิ้น", "translit": "ríp-bîn", "english": "ribbon", "iconSlug": "ribbon" },
+        { "thai": "เส้นทาง", "translit": "sên-thaang", "english": "route / path", "iconSlug": "world-map" }
+      ],
+      "sentence": { "thai": "ถนนเส้นนี้ยาวมาก", "translit": "thà-nǒn sên níi yaao mâak", "english": "This road is very long." }
+    },
+    {
+      "thai": "ครั้ง",
+      "translit": "khráng",
+      "gloss": "TIMES",
+      "imageKey": "times",
+      "description": "For counting occasions or attempts.",
+      "examples": [
+        { "thai": "หลายครั้ง", "translit": "lǎai khráng", "english": "many times", "iconSlug": "hundred-points" },
+        { "thai": "ครั้งหน้า", "translit": "khráng-nâa", "english": "next time", "iconSlug": "right-arrow" },
+        { "thai": "บางครั้ง", "translit": "baang khráng", "english": "sometimes", "iconSlug": "calendar" },
+        { "thai": "สองครั้ง", "translit": "sǎawng khráng", "english": "twice", "iconSlug": "keycap-2" },
+        { "thai": "ครั้งแรก", "translit": "khráng-râaek", "english": "first time", "iconSlug": "1st-place-medal" },
+        { "thai": "ทุกครั้ง", "translit": "thúk khráng", "english": "every time", "iconSlug": "repeat-button" }
+      ],
+      "sentence": { "thai": "ไปเมืองไทยสามครั้งแล้ว", "translit": "bpai muueang-thai sǎam khráng láaeo", "english": "I've been to Thailand three times." }
+    },
+    {
+      "thai": "รอบ",
+      "translit": "râwp",
+      "gloss": "ROUNDS",
+      "imageKey": "rounds",
+      "description": "For cycles, laps, or showings.",
+      "examples": [
+        { "thai": "รอบแรก", "translit": "râwp-râaek", "english": "first round", "iconSlug": "1st-place-medal" },
+        { "thai": "รอบบ่าย", "translit": "râwp-bàai", "english": "afternoon showing", "iconSlug": "sun" },
+        { "thai": "อีกรอบ", "translit": "ìik râwp", "english": "one more round", "iconSlug": "repeat-button" },
+        { "thai": "รอบสุดท้าย", "translit": "râwp-sùt-tháai", "english": "final round", "iconSlug": "trophy" },
+        { "thai": "รอบเช้า", "translit": "râwp-cháo", "english": "morning showing", "iconSlug": "sunrise" },
+        { "thai": "รอบค่ำ", "translit": "râwp-khâm", "english": "evening round", "iconSlug": "night-with-stars" }
+      ],
+      "sentence": { "thai": "วิ่งสามรอบแล้ว", "translit": "wîng sǎam râwp láaeo", "english": "I've already run three laps." }
+    },
+    {
+      "thai": "ที่",
+      "translit": "thîi",
+      "gloss": "ORDINAL",
+      "imageKey": "ordinal",
+      "description": "Turns numbers into 1st, 2nd, 3rd.",
+      "examples": [
+        { "thai": "ที่หนึ่ง", "translit": "thîi nùeng", "english": "1st / first", "iconSlug": "1st-place-medal" },
+        { "thai": "ชั้นที่สาม", "translit": "chán thîi sǎam", "english": "3rd floor", "iconSlug": "office-building" },
+        { "thai": "ร้านที่สอง", "translit": "ráan thîi sǎawng", "english": "the 2nd shop", "iconSlug": "2nd-place-medal" },
+        { "thai": "ที่สาม", "translit": "thîi sǎam", "english": "3rd place", "iconSlug": "3rd-place-medal" },
+        { "thai": "ที่นั่งที่สี่", "translit": "thîi-nâng thîi sìi", "english": "seat four", "iconSlug": "seat" },
+        { "thai": "วันที่สิบ", "translit": "wan thîi sìp", "english": "the 10th (date)", "iconSlug": "spiral-calendar" }
+      ],
+      "sentence": { "thai": "เขามาถึงคนที่หนึ่ง", "translit": "khǎo maa-thǔeng khon thîi nùeng", "english": "He arrived first." }
+    },
+    {
+      "thai": "แผ่น",
+      "translit": "phàen",
+      "gloss": "SHEET",
+      "imageKey": "sheet",
+      "description": "For flat, sheet-like items: paper, tiles, CDs, slices.",
+      "examples": [
+        { "thai": "กระดาษ", "translit": "grà-dàat", "english": "paper", "iconSlug": "page-facing-up" },
+        { "thai": "รูป", "translit": "rûup", "english": "photo", "iconSlug": "framed-picture" },
+        { "thai": "กระเบื้องพื้น", "translit": "grà-bûueang-phúuen", "english": "floor tile", "iconSlug": "floor-tile" },
+        { "thai": "กระเบื้องผนัง", "translit": "grà-bûueang-phà-nǎng", "english": "wall tile", "iconSlug": "wall-tile" },
+        { "thai": "ซีดี", "translit": "sii-dii", "english": "CD", "iconSlug": "optical-disk" },
+        { "thai": "ขนมปัง", "translit": "khà-nǒm-bpang", "english": "sliced bread", "iconSlug": "bread" }
+      ],
+      "sentence": { "thai": "ขอกระดาษหนึ่งแผ่น", "translit": "khǎaw grà-dàat nùeng phàen", "english": "One sheet of paper, please." }
+    },
+    {
+      "thai": "คู่",
+      "translit": "khûu",
+      "gloss": "PAIR",
+      "imageKey": "pair",
+      "description": "For things that come in pairs.",
+      "examples": [
+        { "thai": "ถุงมือ", "translit": "thǔng-muue", "english": "gloves", "iconSlug": "gloves" },
+        { "thai": "รองเท้าแตะ", "translit": "rawng-tháao-dtàe", "english": "flip-flops", "iconSlug": "thong-sandal" },
+        { "thai": "ตะเกียบ", "translit": "dtà-gìiap", "english": "chopsticks", "iconSlug": "chopsticks" },
+        { "thai": "ต่างหู", "translit": "dtàang-hǔu", "english": "earrings", "iconSlug": "earrings" },
+        { "thai": "ถุงเท้า", "translit": "thǔng-tháao", "english": "socks", "iconSlug": "socks" },
+        { "thai": "รองเท้าส้นสูง", "translit": "rawng-tháao-sôn-sǔung", "english": "high heels", "iconSlug": "high-heeled-shoe" }
+      ],
+      "sentence": { "thai": "ซื้อรองเท้าสองคู่", "translit": "súue rawng-tháao sǎawng khûu", "english": "I bought two pairs of shoes." }
+    },
+    {
+      "thai": "ห้อง",
+      "translit": "hâwng",
+      "gloss": "ROOM",
+      "imageKey": "room",
+      "description": "For rooms.",
+      "examples": [
+        { "thai": "ห้องนั่งเล่น", "translit": "hâwng-nâng-lên", "english": "living room", "iconSlug": "couch-and-lamp" },
+        { "thai": "ห้องพัก", "translit": "hâwng-phák", "english": "hotel room", "iconSlug": "bed" },
+        { "thai": "ห้องเรียน", "translit": "hâwng-riian", "english": "classroom", "iconSlug": "school" },
+        { "thai": "ห้องครัว", "translit": "hâwng-khrua", "english": "kitchen", "iconSlug": "fork-and-knife" },
+        { "thai": "ห้องน้ำ", "translit": "hâwng-náam", "english": "bathroom", "iconSlug": "bathtub" },
+        { "thai": "ห้องประชุม", "translit": "hâwng-bprà-chum", "english": "meeting room", "iconSlug": "meeting-room" }
+      ],
+      "sentence": { "thai": "โรงแรมมีสิบห้อง", "translit": "roong-raaem mii sìp hâwng", "english": "The hotel has ten rooms." }
+    },
+    {
+      "thai": "ฉบับ",
+      "translit": "chà-bàp",
+      "gloss": "COPY",
+      "imageKey": "copy",
+      "description": "For documents, newspapers, and official papers.",
+      "examples": [
+        { "thai": "ใบสมัคร", "translit": "bai-sà-màk", "english": "application", "iconSlug": "page-facing-up" },
+        { "thai": "ข้อสอบ", "translit": "khâw-sàwp", "english": "exam paper", "iconSlug": "memo" },
+        { "thai": "รายงาน", "translit": "raai-ngaan", "english": "report", "iconSlug": "ledger" },
+        { "thai": "หนังสือพิมพ์", "translit": "nǎng-sǔue-phim", "english": "newspaper", "iconSlug": "newspaper" },
+        { "thai": "สัญญา", "translit": "sǎn-yaa", "english": "contract", "iconSlug": "scroll" },
+        { "thai": "จดหมาย", "translit": "jòt-mǎai", "english": "letter", "iconSlug": "envelope-with-arrow" }
+      ],
+      "sentence": { "thai": "เซ็นสัญญาสามฉบับ", "translit": "sen sǎn-yaa sǎam chà-bàp", "english": "I signed three contracts." }
+    },
+    {
+      "thai": "ชุด",
+      "translit": "chút",
+      "gloss": "SET",
+      "imageKey": "set",
+      "description": "For sets, outfits, and matching groups.",
+      "examples": [
+        { "thai": "ชุดว่ายน้ำ", "translit": "chút-wâai-náam", "english": "swimsuit", "iconSlug": "one-piece-swimsuit" },
+        { "thai": "ชุดจาน", "translit": "chút-jaan", "english": "dish set", "iconSlug": "fork-and-knife-with-plate" },
+        { "thai": "ชุดเครื่องมือ", "translit": "chút-khrûueang-muue", "english": "tool kit", "iconSlug": "toolbox" },
+        { "thai": "สูท", "translit": "sùut", "english": "suit", "iconSlug": "coat" },
+        { "thai": "ชุดนักเรียน", "translit": "chút-nák-riian", "english": "school uniform", "iconSlug": "backpack" },
+        { "thai": "ชุดโซฟา", "translit": "chút-soo-faa", "english": "sofa set", "iconSlug": "couch-and-lamp" }
+      ],
+      "sentence": { "thai": "ใส่ชุดนักเรียนทุกวัน", "translit": "sài chút-nák-riian thúk wan", "english": "I wear a school uniform every day." }
+    }
+  ],
+  "footer": {
+    "cta": "Want the structured path? The Immersion Thai course is launching soon. Join the waitlist.",
+    "brand": "thaiwith.nine",
+    "tagline": "get free Thai PDFs, link in bio."
+  }
+}

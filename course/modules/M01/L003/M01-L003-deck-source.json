@@ -1,0 +1,606 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "M01-L003",
+  "sourceScript": "M01-L003-script-master.json",
+  "canvas": {
+    "width": 1920,
+    "height": 1080,
+    "leftTeachingFraction": 1.0,
+    "rightCameraFraction": 0.0,
+    "pipCameraWidth": 4.2,
+    "pipCameraHeight": 3.15,
+    "pipPosition": "bottom-right",
+    "safeZoneLabel": "Bottom-right PiP reserved for recording / camera"
+  },
+  "theme": {
+    "id": "thai-nine-canva-bridge-v1",
+    "name": "Canva Bridge Deck",
+    "thaiFont": "Sarabun",
+    "latinFont": "Sarabun",
+    "backgroundColor": "#F5F7F8",
+    "rightZoneTint": "#DBE7EC",
+    "accentColors": [
+      "#355C7D",
+      "#7A8F54",
+      "#C96F4A"
+    ]
+  },
+  "slides": [
+    {
+      "id": "slide-01-opener",
+      "role": "opener",
+      "title": "Pronouns and Who Questions",
+      "estimatedSeconds": 12,
+      "layout": "lesson-opener",
+      "speakerNotes": [
+        "You can already say hello and introduce your name. But what about 'I', 'you', 'he', 'she'? And how do you ask who someone is? Let's learn the words that let you talk about people.",
+        "Use basic pronouns and ask who someone is using คือ and ใคร in short controlled exchanges."
+      ],
+      "textBlocks": [
+        {
+          "id": "opener-focus",
+          "kind": "bullet-list",
+          "heading": "Lesson focus",
+          "lines": [
+            "You can use basic pronouns and ask who someone is.",
+            "Point, identify, and ask who someone is in a mini-dialogue."
+          ]
+        }
+      ],
+      "thaiFocus": [],
+      "visualStrategy": {
+        "onScreenGoal": "Introduce the lesson clearly and set the recording tone.",
+        "teachingVisuals": [
+          "Pronouns and Who Questions",
+          "First Contact and Courtesy"
+        ],
+        "teacherCues": [
+          "Use the deck title as the recording opener.",
+          "Keep the right third clear."
+        ],
+        "imageUsage": "text-only",
+        "rationale": "The opener should establish identity and objective without visual clutter."
+      },
+      "assets": []
+    },
+    {
+      "id": "slide-02-objectives",
+      "role": "objectives",
+      "title": "What you will learn",
+      "estimatedSeconds": 16,
+      "layout": "objectives-list",
+      "speakerNotes": [
+        "You can use basic pronouns and ask who someone is.",
+        "You can recycle recent vocabulary while using identity question with ใคร in short controlled output.",
+        "Point, identify, and ask who someone is in a mini-dialogue.",
+        "Distinguish pronouns and who-questions in short exchanges."
+      ],
+      "textBlocks": [
+        {
+          "id": "objectives-list",
+          "kind": "bullet-list",
+          "heading": "Objectives",
+          "lines": [
+            "You can use basic pronouns and ask who someone is.",
+            "You can recycle recent vocabulary while using identity question with ใคร in short controlled output.",
+            "Point, identify, and ask who someone is in a mini-dialogue.",
+            "Distinguish pronouns and who-questions in short exchanges."
+          ]
+        }
+      ],
+      "thaiFocus": [],
+      "visualStrategy": {
+        "onScreenGoal": "Make the lesson goals visible before the teaching slides begin.",
+        "teachingVisuals": [
+          "You can use basic pronouns and ask who someone is.",
+          "You can recycle recent vocabulary while using identity question with ใคร in short controlled output.",
+          "Point, identify, and ask who someone is in a mini-dialogue.",
+          "Distinguish pronouns and who-questions in short exchanges."
+        ],
+        "teacherCues": [
+          "Pause briefly after each objective.",
+          "Keep the slide readable from a distance."
+        ],
+        "imageUsage": "text-only",
+        "rationale": "Objectives are clearer as cards than as decorative visuals."
+      },
+      "assets": []
+    },
+    {
+      "id": "slide-03-two-ways-to-say-i",
+      "role": "teaching",
+      "title": "Two ways to say I",
+      "estimatedSeconds": 44,
+      "layout": "contrast-board",
+      "speakerNotes": [
+        "In English, everyone says 'I'. In Thai, you choose which 'I' to use. Let's learn both.",
+        "Listen first. ฉัน chǎn. This means 'I'. Female speakers use ฉัน in everyday conversation. Say it with me: ฉัน.",
+        "Now the second one. Listen: ผม phǒm. This also means 'I', but male speakers use ผม in polite conversation. Say it with me: ผม.",
+        "So if you are female, your safe 'I' is ฉัน. If you are male, your safe 'I' is ผม. Both have a rising tone — your voice goes up at the end.",
+        "Quick check: someone asks your name. If you are male, you start with ผมชื่อ... phǒm chûue... If you are female, you say ฉันชื่อ... chǎn chûue... Try it now with your own name."
+      ],
+      "textBlocks": [
+        {
+          "id": "slide-03-two-ways-to-say-i-triplets",
+          "kind": "triplet-list",
+          "heading": "Key language",
+          "lines": [
+            "ฉัน | chǎn | I (female / neutral)",
+            "ผม | phǒm | I (male polite)",
+            "ฉันชื่อ... | chǎn chûue... | my name is... (female)",
+            "ผมชื่อ... | phǒm chûue... | my name is... (male)"
+          ]
+        },
+        {
+          "id": "slide-03-two-ways-to-say-i-practice",
+          "kind": "bullet-list",
+          "heading": "Practice",
+          "lines": [
+            "Listen and repeat: ฉัน chǎn. Again. ผม phǒm. Again.",
+            "Choose the right 'I': I describe a speaker. Say ฉัน or ผม before I show the answer. Male teacher introducing himself? Your turn. Female student talking about herself? Your turn.",
+            "Substitution drill: say 'my name is...' using ผม first — ผมชื่อ... Now switch to ฉัน — ฉันชื่อ..."
+          ]
+        }
+      ],
+      "thaiFocus": [
+        {
+          "thai": "ฉัน",
+          "translit": "chǎn",
+          "english": "I (female / neutral)"
+        },
+        {
+          "thai": "ผม",
+          "translit": "phǒm",
+          "english": "I (male polite)"
+        }
+      ],
+      "visualStrategy": {
+        "onScreenGoal": "Show the two pronouns side by side with clear male/female labels.",
+        "teachingVisuals": [
+          "Two large triplet cards: ฉัน on left, ผม on right, with gender labels.",
+          "Below: short example lines ฉันชื่อ... and ผมชื่อ... recycling L002 vocab."
+        ],
+        "teacherCues": [
+          "Model each pronoun slowly before the learner repeats.",
+          "Point to the correct pronoun when doing the choice drill."
+        ],
+        "imageUsage": "text-only",
+        "rationale": "Pronoun contrast is clearest as a text-based comparison board. Photos would add clutter."
+      },
+      "assets": []
+    },
+    {
+      "id": "slide-04-talking-about-you-and-so",
+      "role": "teaching",
+      "title": "Talking about you and someone else",
+      "estimatedSeconds": 44,
+      "layout": "focus-card",
+      "speakerNotes": [
+        "You know how to say 'I'. Now let's add 'you' and 'he' or 'she'.",
+        "Listen first. คุณ khun. This means 'you'. It is polite and safe in any situation. Say it with me: คุณ.",
+        "คุณ is also the word you heard in lesson two: คุณชื่ออะไร — what is your name? That คุณ is the same word — 'you'.",
+        "Now listen: เขา khǎo. This means 'he' or 'she'. Thai does not separate he and she — เขา covers both. Say it with me: เขา.",
+        "Let's use all four. ฉันชื่อนิ chǎn chûue ní — I am called Ni. คุณชื่ออะไร khun chûue à-rai — what is your name? เขาชื่อมาร์ค khǎo chûue máak — he is called Mark. Your turn — say เขาชื่อ with any name."
+      ],
+      "textBlocks": [
+        {
+          "id": "slide-04-talking-about-you-and-so-triplets",
+          "kind": "triplet-list",
+          "heading": "Key language",
+          "lines": [
+            "คุณ | khun | you (polite)",
+            "เขา | khǎo | he / she",
+            "คุณชื่ออะไร | khun chûue à-rai | what is your name?",
+            "เขาชื่อ... | khǎo chûue... | he/she is called..."
+          ]
+        },
+        {
+          "id": "slide-04-talking-about-you-and-so-practice",
+          "kind": "bullet-list",
+          "heading": "Practice",
+          "lines": [
+            "Listen and repeat: คุณ khun. เขา khǎo. Again faster.",
+            "Response-building: I point to someone and ask คุณชื่ออะไร. Pause and answer with ฉันชื่อ... or ผมชื่อ... using your real name.",
+            "Substitution drill: say 'his/her name is...' — เขาชื่อ... Try it with three different names."
+          ]
+        }
+      ],
+      "thaiFocus": [
+        {
+          "thai": "คุณ",
+          "translit": "khun",
+          "english": "you (polite)"
+        },
+        {
+          "thai": "เขา",
+          "translit": "khǎo",
+          "english": "he / she"
+        }
+      ],
+      "visualStrategy": {
+        "onScreenGoal": "Show คุณ and เขา as new pronoun cards, then combine with ชื่อ pattern from L002.",
+        "teachingVisuals": [
+          "Two triplet cards: คุณ and เขา.",
+          "Below: sentence frames using all four pronouns with ชื่อ."
+        ],
+        "teacherCues": [
+          "Recycle คุณชื่ออะไร from L002 to anchor คุณ.",
+          "Pause for the learner to build their own sentence with เขาชื่อ."
+        ],
+        "imageUsage": "text-only",
+        "rationale": "Pronoun teaching is clearest with text cards and sentence frames."
+      },
+      "assets": []
+    },
+    {
+      "id": "slide-05-this-is-introducing-some",
+      "role": "teaching",
+      "title": "This is... — introducing someone",
+      "estimatedSeconds": 44,
+      "layout": "focus-card",
+      "speakerNotes": [
+        "Now you can say I, you, and he/she. Let's learn to introduce someone: 'This is...'",
+        "Listen first. นี่ nîi. This means 'this'. You use it when pointing to something or someone close by. Say it with me: นี่.",
+        "Now listen. คือ khuu. This means 'is' — it connects two things. X คือ Y means X is Y. Say it with me: คือ.",
+        "Put them together: นี่คือ... nîi khuu... This is... Listen: นี่คือเพื่อน nîi khuu phûuean — this is a friend. Now you try: นี่คือ... and add a name or word you know.",
+        "Let's recycle. นี่คือคุณมาร์ค nîi khuu khun máak — this is Khun Mark. นี่คือคนไทย nîi khuu khon thai — this is a Thai person. Your turn — introduce someone using นี่คือ."
+      ],
+      "textBlocks": [
+        {
+          "id": "slide-05-this-is-introducing-some-triplets",
+          "kind": "triplet-list",
+          "heading": "Key language",
+          "lines": [
+            "นี่ | nîi | this",
+            "คือ | khuu | is",
+            "นี่คือ... | nîi khuu... | this is...",
+            "นี่คือคนไทย | nîi khuu khon thai | this is a Thai person"
+          ]
+        },
+        {
+          "id": "slide-05-this-is-introducing-some-practice",
+          "kind": "bullet-list",
+          "heading": "Practice",
+          "lines": [
+            "Listen and repeat: นี่ nîi. คือ khuu. นี่คือ nîi khuu.",
+            "Substitution drill: I give you a word, you build the introduction. เพื่อน — say นี่คือเพื่อน. คนไทย — say นี่คือคนไทย. คุณนิ — say นี่คือคุณนิ.",
+            "Pause-and-produce: I point to someone. Say 'this is...' in Thai before I show the answer. Your turn."
+          ]
+        }
+      ],
+      "thaiFocus": [
+        {
+          "thai": "นี่",
+          "translit": "nîi",
+          "english": "this"
+        },
+        {
+          "thai": "คือ",
+          "translit": "khuu",
+          "english": "is"
+        },
+        {
+          "thai": "นี่คือ...",
+          "translit": "nîi khuu...",
+          "english": "this is..."
+        }
+      ],
+      "visualStrategy": {
+        "onScreenGoal": "Show นี่ and คือ individually first, then the combined chunk นี่คือ... with examples.",
+        "teachingVisuals": [
+          "Individual triplet cards for นี่ and คือ.",
+          "Combined chunk card: นี่คือ... with arrow showing the build-up.",
+          "Example sentences using คนไทย and names."
+        ],
+        "teacherCues": [
+          "Teach each word individually before combining.",
+          "Use pointing gestures with นี่ to anchor the meaning physically."
+        ],
+        "imageUsage": "text-only",
+        "rationale": "The pattern build-up from individual words to chunk is the visual anchor. No image needed."
+      },
+      "assets": []
+    },
+    {
+      "id": "slide-06-who-is-that-asking-ident",
+      "role": "teaching",
+      "title": "Who is that? — asking identity questions",
+      "estimatedSeconds": 49,
+      "layout": "drill-stack",
+      "speakerNotes": [
+        "You can introduce someone with นี่คือ. But what if you want to ask who someone is?",
+        "Listen first. ใคร khrai. This means 'who'. Say it with me: ใคร.",
+        "In Thai, the question word goes at the end. So 'who is he?' becomes เขาคือใคร khǎo khuu khrai — literally 'he is who'. Listen again: เขาคือใคร. Now say it.",
+        "You can also confirm identity with a tag question. คุณคือคุณมาร์คใช่ไหม khun khuu khun máak châi mái — you are Khun Mark, right? You already know ใช่ from lesson one — ใช่ไหม means 'right?' or 'is that so?' Listen: คุณคือคุณนิใช่ไหม. Your turn — try it with any name.",
+        "Let's put it all together. Someone walks in. You ask เขาคือใคร — who is he? Someone answers นี่คือคุณมาร์ค. You confirm คุณคือคุณมาร์คใช่ไหม. They say ใช่ครับ. Now you have a complete identity exchange."
+      ],
+      "textBlocks": [
+        {
+          "id": "slide-06-who-is-that-asking-ident-triplets",
+          "kind": "triplet-list",
+          "heading": "Key language",
+          "lines": [
+            "ใคร | khrai | who",
+            "เขาคือใคร | khǎo khuu khrai | who is he/she?",
+            "คุณคือ...ใช่ไหม | khun khuu... châi mái | you are... right?",
+            "คุณคือคุณนิใช่ไหม | khun khuu khun ní châi mái | you are Khun Ni, right?"
+          ]
+        },
+        {
+          "id": "slide-06-who-is-that-asking-ident-practice",
+          "kind": "bullet-list",
+          "heading": "Practice",
+          "lines": [
+            "Listen and repeat: ใคร khrai. เขาคือใคร khǎo khuu khrai. คุณคือ...ใช่ไหม khun khuu... châi mái.",
+            "Response-building: I point to a person. Ask เขาคือใคร. I answer. Then confirm with คุณคือ...ใช่ไหม. Build the full exchange.",
+            "Substitution drill: ask 'who is he/she?' — เขาคือใคร. Now confirm identity: คุณคือคุณนิใช่ไหม. Try with another name: คุณคือคุณมาร์คใช่ไหม."
+          ]
+        }
+      ],
+      "thaiFocus": [
+        {
+          "thai": "ใคร",
+          "translit": "khrai",
+          "english": "who"
+        },
+        {
+          "thai": "เขาคือใคร",
+          "translit": "khǎo khuu khrai",
+          "english": "who is he/she?"
+        },
+        {
+          "thai": "คุณคือ...ใช่ไหม",
+          "translit": "khun khuu... châi mái",
+          "english": "you are... right?"
+        }
+      ],
+      "visualStrategy": {
+        "onScreenGoal": "Show ใคร as the question word, then the two question patterns built from known parts.",
+        "teachingVisuals": [
+          "Triplet card for ใคร.",
+          "Two pattern cards: เขาคือใคร and คุณคือ...ใช่ไหม with slot markers.",
+          "Mini exchange showing the full identity question flow."
+        ],
+        "teacherCues": [
+          "Highlight that Thai puts the question word at the end, not the beginning.",
+          "Pause for the learner to build each question before revealing the answer."
+        ],
+        "imageUsage": "text-only",
+        "rationale": "Question patterns are best shown as text-based slot frames, not images."
+      },
+      "assets": []
+    },
+    {
+      "id": "slide-07-pronunciation-rising-ton",
+      "role": "teaching",
+      "title": "Pronunciation: rising tones in pronouns",
+      "estimatedSeconds": 47,
+      "layout": "focus-card",
+      "speakerNotes": [
+        "Three of today's pronouns share the same tone. Listen: ฉัน chǎn, ผม phǒm, เขา khǎo. Can you hear it? They all rise up at the end. This is the rising tone.",
+        "The rising tone starts low and lifts up, like you are asking a question in English. Try it: chǎn. Your voice dips down then goes up. Again: phǒm. Again: khǎo.",
+        "Now compare. คุณ khun — that is a mid tone, flat and steady. เขา khǎo — rising, your voice goes up. Listen again: khun, khǎo. Can you hear the difference?",
+        "One more pair. ใคร khrai — mid tone, flat. ไข่ khài — low tone, your voice stays low. Different tones, different meanings. Listen: khrai — who. khài — egg. Which one means 'who'? Point before I tell you."
+      ],
+      "textBlocks": [
+        {
+          "id": "slide-07-pronunciation-rising-ton-triplets",
+          "kind": "triplet-list",
+          "heading": "Key language",
+          "lines": [
+            "ฉัน | chǎn | rising tone ↗",
+            "ผม | phǒm | rising tone ↗",
+            "เขา | khǎo | rising tone ↗",
+            "คุณ | khun | mid tone →"
+          ]
+        },
+        {
+          "id": "slide-07-pronunciation-rising-ton-practice",
+          "kind": "bullet-list",
+          "heading": "Practice",
+          "lines": [
+            "Tone echo: I say ฉัน chǎn. Repeat it. Now ผม phǒm. Repeat. Now เขา khǎo. Repeat. Feel the rise.",
+            "Minimal pair choice: I say two words — khun and khǎo. Which one is 'you' and which is 'he/she'? Point to the answer."
+          ]
+        }
+      ],
+      "thaiFocus": [
+        {
+          "thai": "ฉัน",
+          "translit": "chǎn",
+          "english": "I (rising tone)"
+        }
+      ],
+      "visualStrategy": {
+        "onScreenGoal": "Show the three rising-tone pronouns with tone direction arrows alongside the mid-tone contrast.",
+        "teachingVisuals": [
+          "Three pronoun cards with rising arrow beside each.",
+          "One contrasting card for คุณ with flat arrow to show the mid tone."
+        ],
+        "teacherCues": [
+          "Model each tone slowly and use hand gestures to show pitch direction.",
+          "Pause between the minimal pair words so the learner can hear the difference."
+        ],
+        "imageUsage": "text-only",
+        "rationale": "Tone arrows and pitch direction markers teach better than any photograph."
+      },
+      "assets": []
+    },
+    {
+      "id": "slide-08-roleplay",
+      "role": "roleplay",
+      "title": "Roleplay",
+      "estimatedSeconds": 49,
+      "layout": "roleplay-dialogue",
+      "speakerNotes": [
+        "At a small gathering, you meet a friend's colleague and need to ask who they are, introduce yourself, and confirm their identity.",
+        "You | ขอโทษครับ เขาคือใคร | khǎaw-thôot khráp khǎo khuu khrai | Excuse me, who is he/she?",
+        "Friend | นี่คือคุณนิค่ะ | nîi khuu khun ní khâ | This is Khun Ni.",
+        "You | คุณคือคุณนิใช่ไหมครับ | khun khuu khun ní châi mái khráp | You are Khun Ni, right?",
+        "Friend | ใช่ค่ะ | châi khâ | Yes.",
+        "You | สวัสดีครับ ผมชื่อมาร์คครับ | sà-wàt-dii khráp phǒm chûue máak khráp | Hello, my name is Mark.",
+        "Friend | สวัสดีค่ะ คุณมาจากประเทศอะไรคะ | sà-wàt-dii khâ khun maa-jàak bprà-thêet à-rai khá | Hello, what country are you from?",
+        "You | ผมมาจากประเทศอังกฤษครับ | phǒm maa-jàak bprà-thêet ang-grìt khráp | I am from England.",
+        "Friend | คุณมาจากประเทศอังกฤษใช่ไหมคะ | khun maa-jàak bprà-thêet ang-grìt châi mái khá | You are from England, right?",
+        "You | ใช่ครับ ขอบคุณครับ | châi khráp khàawp-khun khráp | Yes. Thank you."
+      ],
+      "textBlocks": [
+        {
+          "id": "roleplay-dialogue",
+          "kind": "dialogue",
+          "heading": "Dialogue",
+          "lines": [
+            "You | ขอโทษครับ เขาคือใคร | khǎaw-thôot khráp khǎo khuu khrai | Excuse me, who is he/she?",
+            "Friend | นี่คือคุณนิค่ะ | nîi khuu khun ní khâ | This is Khun Ni.",
+            "You | คุณคือคุณนิใช่ไหมครับ | khun khuu khun ní châi mái khráp | You are Khun Ni, right?",
+            "Friend | ใช่ค่ะ | châi khâ | Yes.",
+            "You | สวัสดีครับ ผมชื่อมาร์คครับ | sà-wàt-dii khráp phǒm chûue máak khráp | Hello, my name is Mark.",
+            "Friend | สวัสดีค่ะ คุณมาจากประเทศอะไรคะ | sà-wàt-dii khâ khun maa-jàak bprà-thêet à-rai khá | Hello, what country are you from?"
+          ]
+        }
+      ],
+      "thaiFocus": [
+        {
+          "thai": "ขอโทษครับ เขาคือใคร",
+          "translit": "khǎaw-thôot khráp khǎo khuu khrai",
+          "english": "Excuse me, who is he/she?"
+        },
+        {
+          "thai": "นี่คือคุณนิค่ะ",
+          "translit": "nîi khuu khun ní khâ",
+          "english": "This is Khun Ni."
+        },
+        {
+          "thai": "คุณคือคุณนิใช่ไหมครับ",
+          "translit": "khun khuu khun ní châi mái khráp",
+          "english": "You are Khun Ni, right?"
+        },
+        {
+          "thai": "ใช่ค่ะ",
+          "translit": "châi khâ",
+          "english": "Yes."
+        },
+        {
+          "thai": "สวัสดีครับ ผมชื่อมาร์คครับ",
+          "translit": "sà-wàt-dii khráp phǒm chûue máak khráp",
+          "english": "Hello, my name is Mark."
+        },
+        {
+          "thai": "สวัสดีค่ะ คุณมาจากประเทศอะไรคะ",
+          "translit": "sà-wàt-dii khâ khun maa-jàak bprà-thêet à-rai khá",
+          "english": "Hello, what country are you from?"
+        },
+        {
+          "thai": "ผมมาจากประเทศอังกฤษครับ",
+          "translit": "phǒm maa-jàak bprà-thêet ang-grìt khráp",
+          "english": "I am from England."
+        },
+        {
+          "thai": "คุณมาจากประเทศอังกฤษใช่ไหมคะ",
+          "translit": "khun maa-jàak bprà-thêet ang-grìt châi mái khá",
+          "english": "You are from England, right?"
+        },
+        {
+          "thai": "ใช่ครับ ขอบคุณครับ",
+          "translit": "châi khráp khàawp-khun khráp",
+          "english": "Yes. Thank you."
+        }
+      ],
+      "visualStrategy": {
+        "onScreenGoal": "Support the roleplay recording with clean turn-taking.",
+        "teachingVisuals": [
+          "At a small gathering, you meet a friend's colleague and need to ask who they are, introduce yourself, and confirm their identity."
+        ],
+        "teacherCues": [
+          "Record against the dialogue ladder.",
+          "Bottom-right PiP reserved for camera."
+        ],
+        "imageUsage": "text-only",
+        "rationale": "The dialogue itself is the teaching focus."
+      },
+      "assets": []
+    },
+    {
+      "id": "slide-09-recap",
+      "role": "recap",
+      "title": "Recap",
+      "estimatedSeconds": 19,
+      "layout": "recap-checklist",
+      "speakerNotes": [
+        "How do you say 'I' as a male speaker? Say it before looking.",
+        "Point to someone and say 'who is he?' in Thai.",
+        "Introduce a friend: say 'this is Khun Ni' in Thai.",
+        "Confirm identity: say 'you are Khun Mark, right?' in Thai.",
+        "What word means 'this'? And what word means 'is'?"
+      ],
+      "textBlocks": [
+        {
+          "id": "recap-list",
+          "kind": "recap-list",
+          "heading": "What you can now do",
+          "lines": [
+            "How do you say 'I' as a male speaker? Say it before looking.",
+            "Point to someone and say 'who is he?' in Thai.",
+            "Introduce a friend: say 'this is Khun Ni' in Thai.",
+            "Confirm identity: say 'you are Khun Mark, right?' in Thai.",
+            "What word means 'this'? And what word means 'is'?"
+          ]
+        }
+      ],
+      "thaiFocus": [],
+      "visualStrategy": {
+        "onScreenGoal": "Finish with a simple, memorable checklist.",
+        "teachingVisuals": [
+          "How do you say 'I' as a male speaker? Say it before looking.",
+          "Point to someone and say 'who is he?' in Thai.",
+          "Introduce a friend: say 'this is Khun Ni' in Thai.",
+          "Confirm identity: say 'you are Khun Mark, right?' in Thai.",
+          "What word means 'this'? And what word means 'is'?"
+        ],
+        "teacherCues": [
+          "Use this slide as the summary.",
+          "Keep the ending calm and uncluttered."
+        ],
+        "imageUsage": "text-only",
+        "rationale": "A recap slide should be compact and memorable."
+      },
+      "assets": []
+    },
+    {
+      "id": "slide-10-closing",
+      "role": "closing",
+      "title": "Closing",
+      "estimatedSeconds": 10,
+      "layout": "lesson-closing",
+      "speakerNotes": [
+        "By the end, you can say I, you, he/she, introduce someone with 'this is...', and ask 'who is that?' in Thai.",
+        "Next: First Contact and Courtesy continues."
+      ],
+      "textBlocks": [
+        {
+          "id": "closing-list",
+          "kind": "closing-list",
+          "heading": "Takeaway",
+          "lines": [
+            "By the end, you can say I, you, he/she, introduce someone with 'this is...', and ask 'who is that?' in Thai.",
+            "Next: First Contact and Courtesy continues."
+          ]
+        }
+      ],
+      "thaiFocus": [],
+      "visualStrategy": {
+        "onScreenGoal": "Give Nine a clean final slide to close the recording.",
+        "teachingVisuals": [
+          "By the end, you can say I, you, he/she, introduce someone with 'this is...', and ask 'who is that?' in Thai.",
+          "Next: First Contact and Courtesy continues."
+        ],
+        "teacherCues": [
+          "Use the closing as the final spoken wrap-up."
+        ],
+        "imageUsage": "text-only",
+        "rationale": "The closing slide is a presenter anchor, not a new teaching beat."
+      },
+      "assets": []
+    }
+  ]
+}

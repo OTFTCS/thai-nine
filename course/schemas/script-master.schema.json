@@ -1,0 +1,240 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://thai-nine.local/schemas/script-master.schema.json",
+  "title": "Script Master",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "lessonId",
+    "title",
+    "objective",
+    "context",
+    "sections",
+    "roleplay",
+    "recap",
+    "qaChecks",
+    "policies"
+  ],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "lessonId": { "type": "string", "pattern": "^M\\d{2}-L\\d{3}$" },
+    "title": { "type": "string", "minLength": 1 },
+    "objective": { "type": "string", "minLength": 1 },
+    "teachingFrame": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "openingHook",
+        "scenario",
+        "learnerTakeaway"
+      ],
+      "properties": {
+        "openingHook": { "type": "string", "minLength": 1 },
+        "scenario": { "type": "string", "minLength": 1 },
+        "learnerTakeaway": { "type": "string", "minLength": 1 }
+      }
+    },
+    "context": { "type": "object" },
+    "sections": {
+      "type": "array",
+      "minItems": 4,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "heading",
+          "purpose",
+          "spokenNarration",
+          "onScreenBullets",
+          "drills",
+          "languageFocus"
+        ],
+        "properties": {
+          "id": { "type": "string", "minLength": 1 },
+          "heading": { "type": "string", "minLength": 1 },
+          "purpose": { "type": "string", "minLength": 1 },
+          "spokenNarration": { "type": "array", "minItems": 1, "items": { "type": "string", "minLength": 1 } },
+          "onScreenBullets": { "type": "array", "minItems": 1, "items": { "type": "string", "minLength": 1 } },
+          "drills": { "type": "array", "minItems": 1, "items": { "type": "string", "minLength": 1 } },
+          "languageFocus": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["thai", "translit", "english", "vocabId"],
+              "properties": {
+                "thai": { "type": "string", "minLength": 1 },
+                "translit": { "type": "string", "minLength": 1 },
+                "english": { "type": "string", "minLength": 1 },
+                "notes": { "type": "string" },
+                "vocabId": { "type": "string", "pattern": "^v-[a-f0-9]{10}$" },
+                "type": { "enum": ["word", "chunk"], "default": "word" }
+              }
+            }
+          },
+          "visualPlan": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "leftPanelLayout",
+              "onScreenGoal",
+              "teachingVisuals",
+              "teacherCues",
+              "imageSupport"
+            ],
+            "properties": {
+              "leftPanelLayout": {
+                "enum": [
+                  "focus-card",
+                  "contrast-board",
+                  "dialogue-ladder",
+                  "drill-stack",
+                  "image-anchored"
+                ]
+              },
+              "onScreenGoal": { "type": "string", "minLength": 1 },
+              "teachingVisuals": {
+                "type": "array",
+                "minItems": 1,
+                "items": { "type": "string", "minLength": 1 }
+              },
+              "teacherCues": {
+                "type": "array",
+                "minItems": 1,
+                "items": { "type": "string", "minLength": 1 }
+              },
+              "imageSupport": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "helpful",
+                  "priority",
+                  "rationale",
+                  "searchQueries",
+                  "sourceHints"
+                ],
+                "properties": {
+                  "helpful": { "type": "boolean" },
+                  "priority": { "enum": ["essential", "supporting", "avoid"] },
+                  "rationale": { "type": "string", "minLength": 1 },
+                  "searchQueries": {
+                    "type": "array",
+                    "items": { "type": "string", "minLength": 1 }
+                  },
+                  "sourceHints": {
+                    "type": "array",
+                    "minItems": 1,
+                    "items": { "type": "string", "minLength": 1 }
+                  },
+                  "aiFallbackPrompt": { "type": "string", "minLength": 1 }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "roleplay": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["scenario", "lines"],
+      "properties": {
+        "scenario": { "type": "string", "minLength": 1 },
+        "lines": {
+          "type": "array",
+          "minItems": 6,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["speaker", "thai", "translit", "english"],
+            "properties": {
+              "speaker": { "type": "string", "minLength": 1 },
+              "thai": { "type": "string", "minLength": 1 },
+              "translit": { "type": "string", "minLength": 1 },
+              "english": { "type": "string", "minLength": 1 }
+            }
+          }
+        }
+      }
+    },
+    "recap": { "type": "array", "minItems": 3, "items": { "type": "string", "minLength": 1 } },
+    "qaChecks": {
+      "type": "array",
+      "minItems": 5,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "description", "pass", "evidence"],
+        "properties": {
+          "id": { "type": "string", "minLength": 1 },
+          "description": { "type": "string", "minLength": 1 },
+          "pass": { "type": "boolean" },
+          "evidence": { "type": "string", "minLength": 1 }
+        }
+      }
+    },
+    "policies": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["transliteration", "imageSourcing"],
+      "properties": {
+        "transliteration": { "const": "PTM_ADAPTED_INLINE_TONES" },
+        "imageSourcing": { "const": "INTERNET_FIRST_NO_GENERATIVE_DEFAULT" }
+      }
+    },
+    "immersionTips": {
+      "type": "array",
+      "minItems": 2,
+      "maxItems": 3,
+      "items": { "type": "string", "minLength": 1 }
+    },
+    "pronunciationFocus": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["targetSounds", "minimalPairs", "mouthMapAnchor"],
+      "properties": {
+        "targetSounds": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "type": "string", "minLength": 1 }
+        },
+        "minimalPairs": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["a", "b"],
+            "properties": {
+              "a": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": ["thai", "translit", "english"],
+                "properties": {
+                  "thai": { "type": "string", "minLength": 1 },
+                  "translit": { "type": "string", "minLength": 1 },
+                  "english": { "type": "string", "minLength": 1 }
+                }
+              },
+              "b": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": ["thai", "translit", "english"],
+                "properties": {
+                  "thai": { "type": "string", "minLength": 1 },
+                  "translit": { "type": "string", "minLength": 1 },
+                  "english": { "type": "string", "minLength": 1 }
+                }
+              }
+            }
+          }
+        },
+        "mouthMapAnchor": { "type": "string", "minLength": 1 },
+        "tonePattern": { "type": "string", "minLength": 1 }
+      }
+    }
+  }
+}

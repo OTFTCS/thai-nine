@@ -1,0 +1,931 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "M01-L005",
+  "title": "Where and What Questions: Here, There, and Simple Location Help",
+  "objective": "Use อะไร and ที่ไหน with อยู่ to ask what something is, ask where something is, and understand short location answers such as here and there.",
+  "teachingFrame": {
+    "openingHook": "Open on a new learner holding a map at a school desk and not knowing what the object is or where to go next.",
+    "scenario": "A beginner arrives at a small school or community centre, points to an object, asks what it is, and then asks where the bathroom and room 103 are.",
+    "learnerTakeaway": "By the end, the learner can ask what this/that is, ask where a place is, and handle a short help-seeking exchange using here/there answers."
+  },
+  "context": {
+    "schemaVersion": 1,
+    "lessonId": "M01-L005",
+    "priorLessons": [
+      "M01-L001",
+      "M01-L002",
+      "M01-L003",
+      "M01-L004"
+    ],
+    "knownVocabulary": [
+      {
+        "thai": "สวัสดี",
+        "translit": "sà-wàt-dii",
+        "english": "hello",
+        "vocabId": "v-c9337e2739"
+      },
+      {
+        "thai": "สวัสดีครับ",
+        "translit": "sà-wàt-dii khráp",
+        "english": "hello (male speaker)",
+        "vocabId": "v-e653eb5319"
+      },
+      {
+        "thai": "สวัสดีค่ะ",
+        "translit": "sà-wàt-dii khâ",
+        "english": "hello (female speaker)",
+        "vocabId": "v-bccbe506b3"
+      },
+      {
+        "thai": "ขอบคุณ",
+        "translit": "khàawp-khun",
+        "english": "thank you",
+        "vocabId": "v-217b46aa5a"
+      },
+      {
+        "thai": "ขอโทษ",
+        "translit": "khǎaw-thôot",
+        "english": "excuse me / sorry",
+        "vocabId": "v-6fce5e8c2c"
+      },
+      {
+        "thai": "ไม่เป็นไร",
+        "translit": "mâi bpen rai",
+        "english": "it is okay / no problem",
+        "vocabId": "v-03cc3fe123"
+      },
+      {
+        "thai": "ครับ",
+        "translit": "khráp",
+        "english": "male polite ending",
+        "vocabId": "v-a34b9ddfd4"
+      },
+      {
+        "thai": "ค่ะ",
+        "translit": "khâ",
+        "english": "female statement ending",
+        "vocabId": "v-e5c357ab24"
+      },
+      {
+        "thai": "คะ",
+        "translit": "khá",
+        "english": "female question ending",
+        "vocabId": "v-8637eb381c"
+      },
+      {
+        "thai": "ใช่",
+        "translit": "châi",
+        "english": "yes / that is right",
+        "vocabId": "v-f40371ec59"
+      },
+      {
+        "thai": "ไม่ใช่",
+        "translit": "mâi châi",
+        "english": "no / not right",
+        "vocabId": "v-cda55f5b5e"
+      },
+      {
+        "thai": "ชื่อ",
+        "translit": "chûue",
+        "english": "name",
+        "vocabId": "v-6acb169e4b"
+      },
+      {
+        "thai": "คุณชื่ออะไร",
+        "translit": "khun chûue à-rai",
+        "english": "what is your name?",
+        "vocabId": "v-a79c6af3af"
+      },
+      {
+        "thai": "ฉันชื่อ...",
+        "translit": "chǎn chûue...",
+        "english": "my name is ...",
+        "vocabId": "v-33248cf209"
+      },
+      {
+        "thai": "ผมชื่อ...",
+        "translit": "phǒm chûue...",
+        "english": "my name is ... (male speaker)",
+        "vocabId": "v-d5ec4d10d2"
+      },
+      {
+        "thai": "ฉัน",
+        "translit": "chǎn",
+        "english": "I",
+        "vocabId": "v-0ab46f92e7"
+      },
+      {
+        "thai": "ผม",
+        "translit": "phǒm",
+        "english": "I (male)",
+        "vocabId": "v-796f86a0f6"
+      },
+      {
+        "thai": "ประเทศ",
+        "translit": "bprà-thêet",
+        "english": "country",
+        "vocabId": "v-d0c316cc2c"
+      },
+      {
+        "thai": "มาจาก",
+        "translit": "maa-jàak",
+        "english": "come from / be from",
+        "vocabId": "v-dfd8165dd5"
+      },
+      {
+        "thai": "มาจากไทย",
+        "translit": "maa-jàak thai",
+        "english": "be from Thailand",
+        "vocabId": "v-317510cace"
+      },
+      {
+        "thai": "มาจากอังกฤษ",
+        "translit": "maa-jàak ang-grìt",
+        "english": "be from England",
+        "vocabId": "v-15a452b73b"
+      },
+      {
+        "thai": "มาจากอเมริกา",
+        "translit": "maa-jàak à-mee-rí-gaa",
+        "english": "be from America",
+        "vocabId": "v-b845ab6bae"
+      },
+      {
+        "thai": "ฉันมาจาก...",
+        "translit": "chǎn maa-jàak...",
+        "english": "I am from ...",
+        "vocabId": "v-b2f0acf56a"
+      },
+      {
+        "thai": "ผมมาจาก...",
+        "translit": "phǒm maa-jàak...",
+        "english": "I am from ... (male)",
+        "vocabId": "v-64f9ed0e55"
+      },
+      {
+        "thai": "ผม",
+        "translit": "phǒm",
+        "english": "I (male speaker)",
+        "vocabId": "v-acdc9c7f8e"
+      },
+      {
+        "thai": "เขา",
+        "translit": "khǎo",
+        "english": "he / she",
+        "vocabId": "v-e3ef8a701b"
+      },
+      {
+        "thai": "นี่คือ...",
+        "translit": "nîi kheuu...",
+        "english": "this is ...",
+        "vocabId": "v-7a0154647c"
+      },
+      {
+        "thai": "เขาคือ...",
+        "translit": "khǎo kheuu...",
+        "english": "he / she is ...",
+        "vocabId": "v-e288d14433"
+      },
+      {
+        "thai": "คุณคือ...ใช่ไหม",
+        "translit": "khun kheuu... châi mái",
+        "english": "you are ... right?",
+        "vocabId": "v-7597900aeb"
+      },
+      {
+        "thai": "เขาคือใคร",
+        "translit": "khǎo kheuu khrai",
+        "english": "who is he / she?",
+        "vocabId": "v-0a54507804"
+      },
+      {
+        "thai": "คนนี้คือใคร",
+        "translit": "khon níi kheuu khrai",
+        "english": "who is this person?",
+        "vocabId": "v-688905b601"
+      },
+      {
+        "thai": "ขอโทษนะ",
+        "translit": "khǎaw-thôot ná",
+        "english": "excuse me",
+        "vocabId": "v-e2c4943d2f"
+      },
+      {
+        "thai": "เขามาจากไทย",
+        "translit": "khǎo maa-jàak thai",
+        "english": "he / she is from Thailand",
+        "vocabId": "v-af0f28e039"
+      },
+      {
+        "thai": "ศูนย์",
+        "translit": "sǔun",
+        "english": "zero",
+        "vocabId": "v-871c9bd62f"
+      },
+      {
+        "thai": "หนึ่ง",
+        "translit": "nùeng",
+        "english": "one",
+        "vocabId": "v-6ad6888f1d",
+        "notes": "Teach the careful full form first."
+      },
+      {
+        "thai": "สอง",
+        "translit": "sǎawng",
+        "english": "two",
+        "vocabId": "v-afdf936166"
+      },
+      {
+        "thai": "สาม",
+        "translit": "sǎam",
+        "english": "three",
+        "vocabId": "v-368c7c205d"
+      },
+      {
+        "thai": "สี่",
+        "translit": "sìi",
+        "english": "four",
+        "vocabId": "v-cf99ffc78e"
+      },
+      {
+        "thai": "ห้า",
+        "translit": "hâa",
+        "english": "five",
+        "vocabId": "v-f028feb896"
+      },
+      {
+        "thai": "หก",
+        "translit": "hòk",
+        "english": "six",
+        "vocabId": "v-f6b67b4e6f"
+      },
+      {
+        "thai": "เจ็ด",
+        "translit": "jèt",
+        "english": "seven",
+        "vocabId": "v-73bffabf48"
+      },
+      {
+        "thai": "แปด",
+        "translit": "bpàaet",
+        "english": "eight",
+        "vocabId": "v-1dbb23ed34"
+      },
+      {
+        "thai": "เก้า",
+        "translit": "gâao",
+        "english": "nine",
+        "vocabId": "v-cac367e6fd"
+      },
+      {
+        "thai": "สิบ",
+        "translit": "sìp",
+        "english": "ten",
+        "vocabId": "v-31da0816ab"
+      },
+      {
+        "thai": "เบอร์อะไร",
+        "translit": "ber à-rai",
+        "english": "what number?",
+        "vocabId": "v-ba4059e504",
+        "notes": "Useful for room numbers, phone numbers, and other labelled numbers."
+      },
+      {
+        "thai": "ฉันอายุสิบปี",
+        "translit": "chǎn aa-yú sìp bpii",
+        "english": "I am ten years old",
+        "vocabId": "v-03d6876d5b"
+      },
+      {
+        "thai": "เขาอายุเก้าปี",
+        "translit": "khǎo aa-yú gâao bpii",
+        "english": "he / she is nine years old",
+        "vocabId": "v-9bf9593428"
+      }
+    ],
+    "knownGrammar": [
+      "Combine the greeting from lesson 1 with the new identity patterns so the learner can produce a practical mini-introduction.",
+      "Combine the new who-question pattern with earlier name and country material so the learner can follow and produce a short first-meeting dialogue.",
+      "Complete the 0-10 set and introduce เบอร์อะไร as a practical chunk for asking about room numbers, table numbers, and other everyday number labels.",
+      "Explain how คือ works in beginner identity lines so the learner can introduce someone or identify what is in front of them without treating it as a rigid English equals sign.",
+      "Explain the beginner-level pronoun choice so the learner can produce self-introduction lines without freezing over identity wording.",
+      "Explain what ครับ, ค่ะ, and คะ do so the learner does not memorize them as random decoration.",
+      "Give the learner a clean starting map for zero through three and explain that everyday Thai codes are usually said digit by digit.",
+      "Give the learner a small response toolkit so a first encounter can continue instead of stopping at one memorised line.",
+      "Move from isolated digits into usable age and room-number phrases while explicitly reusing the pronoun and identity material from the rebuilt foundation lessons.",
+      "Teach pronouns as tools for basic interaction, not as abstract dictionary entries, so the learner can point to self and others naturally.",
+      "Teach the core greeting and show that politeness is built into the line, not added as an afterthought.",
+      "Teach the core name pattern with ชื่อ and อะไร so the learner can ask and answer the most basic identity question immediately.",
+      "Teach the identity question with ใคร so the learner can ask who a person is in a short natural exchange and not confuse it with the earlier name question.",
+      "Teach the middle set where beginners often blur vowels or rush final consonants, especially with สี่, ห้า, หก, and เจ็ด.",
+      "Teach the origin pattern so the learner can complete a basic introduction with country information instead of stopping after the name.",
+      "Teach the two highest-value courtesy phrases and explain that one form repairs the interaction while the other closes it warmly."
+    ],
+    "reviewBuckets": [
+      {
+        "bucket": "last",
+        "offset": 1,
+        "lessonId": "M01-L004",
+        "vocabIds": [
+          "v-871c9bd62f",
+          "v-6ad6888f1d",
+          "v-afdf936166",
+          "v-368c7c205d"
+        ],
+        "sample": [
+          {
+            "thai": "ศูนย์",
+            "translit": "sǔun",
+            "english": "zero",
+            "vocabId": "v-871c9bd62f"
+          },
+          {
+            "thai": "หนึ่ง",
+            "translit": "nùeng",
+            "english": "one",
+            "vocabId": "v-6ad6888f1d",
+            "notes": "Teach the careful full form first."
+          },
+          {
+            "thai": "สอง",
+            "translit": "sǎawng",
+            "english": "two",
+            "vocabId": "v-afdf936166"
+          },
+          {
+            "thai": "สาม",
+            "translit": "sǎam",
+            "english": "three",
+            "vocabId": "v-368c7c205d"
+          }
+        ]
+      },
+      {
+        "bucket": "minus3",
+        "offset": 3,
+        "lessonId": "M01-L002",
+        "vocabIds": [
+          "v-6acb169e4b",
+          "v-a79c6af3af",
+          "v-33248cf209",
+          "v-d5ec4d10d2"
+        ],
+        "sample": [
+          {
+            "thai": "ชื่อ",
+            "translit": "chûue",
+            "english": "name",
+            "vocabId": "v-6acb169e4b"
+          },
+          {
+            "thai": "คุณชื่ออะไร",
+            "translit": "khun chûue à-rai",
+            "english": "what is your name?",
+            "vocabId": "v-a79c6af3af"
+          },
+          {
+            "thai": "ฉันชื่อ...",
+            "translit": "chǎn chûue...",
+            "english": "my name is ...",
+            "vocabId": "v-33248cf209"
+          },
+          {
+            "thai": "ผมชื่อ...",
+            "translit": "phǒm chûue...",
+            "english": "my name is ... (male speaker)",
+            "vocabId": "v-d5ec4d10d2"
+          }
+        ]
+      },
+      {
+        "bucket": "minus6",
+        "offset": 6,
+        "lessonId": null,
+        "vocabIds": [],
+        "sample": []
+      },
+      {
+        "bucket": "minus8",
+        "offset": 8,
+        "lessonId": null,
+        "vocabIds": [],
+        "sample": []
+      }
+    ]
+  },
+  "sections": [
+    {
+      "id": "s1",
+      "heading": "Ask what something is with อะไร",
+      "purpose": "Teach อะไร as the beginner what-question and connect it to the pointing words นี่ and นั่น in fixed usable chunks.",
+      "spokenNarration": [
+        "Start with the question word อะไร à-rai, which means what.",
+        "Now plug it into two very useful pointer chunks: นี่อะไร nîi à-rai, what is this, and นั่นอะไร nân à-rai, what is that.",
+        "The important beginner habit is that Thai often leaves the question word near the end, so learn the whole chunk instead of forcing English word order into it."
+      ],
+      "onScreenBullets": [
+        "อะไร | à-rai | what",
+        "นี่ | nîi | this",
+        "นั่น | nân | that",
+        "นี่อะไร | nîi à-rai | what is this?",
+        "นั่นอะไร | nân à-rai | what is that?"
+      ],
+      "drills": [
+        "Pointing drill: teacher points to a near object or far object, learner asks นี่อะไร or นั่นอะไร.",
+        "Chunk drill: learner hears อะไร and chooses whether to start with นี่ or นั่น based on distance."
+      ],
+      "languageFocus": [
+        {
+          "thai": "อะไร",
+          "translit": "à-rai",
+          "english": "what",
+          "vocabId": "v-fbd69c240c"
+        },
+        {
+          "thai": "นี่",
+          "translit": "nîi",
+          "english": "this",
+          "vocabId": "v-b083e63c50"
+        },
+        {
+          "thai": "นั่น",
+          "translit": "nân",
+          "english": "that",
+          "vocabId": "v-918f03085f"
+        },
+        {
+          "thai": "นี่อะไร",
+          "translit": "nîi à-rai",
+          "english": "what is this?",
+          "vocabId": "v-fc2c31bdd6"
+        },
+        {
+          "thai": "นั่นอะไร",
+          "translit": "nân à-rai",
+          "english": "what is that?",
+          "vocabId": "v-6b3b92a96e"
+        }
+      ],
+      "visualPlan": {
+        "leftPanelLayout": "contrast-board",
+        "onScreenGoal": "Show near versus far pointing clearly and make the question-word-at-the-end pattern easy to notice.",
+        "teachingVisuals": [
+          "Two large cards labelled นี่ and นั่น with a near/far visual cue.",
+          "A highlighted underline on อะไร at the end of both question chunks."
+        ],
+        "teacherCues": [
+          "Gesture near and far physically while saying นี่ and นั่น.",
+          "Pause on อะไร so the learner notices the question word position."
+        ],
+        "imageSupport": {
+          "helpful": false,
+          "priority": "avoid",
+          "rationale": "This section teaches a chunk pattern and pointing contrast, so typography and distance cues are clearer than a real-world image.",
+          "searchQueries": [],
+          "sourceHints": [
+            "text-only pointer cards",
+            "simple arrow/distance icons"
+          ]
+        }
+      }
+    },
+    {
+      "id": "s2",
+      "heading": "Ask where something is with ที่ไหน and อยู่",
+      "purpose": "Teach ที่ไหน as where and show how อยู่ carries the practical meaning of be located or live depending on what comes before it.",
+      "spokenNarration": [
+        "Now build the where-question with ที่ไหน thîi-nǎi, where, and อยู่ yùu, which often means be located or live.",
+        "With a place like ห้องน้ำ, อยู่ usually means is located, so ห้องน้ำอยู่ที่ไหน asks where the bathroom is.",
+        "For short answers, do not build full sentences first. Learn the tight beginner replies อยู่ที่นี่, it is here, and อยู่ที่นั่น, it is there."
+      ],
+      "onScreenBullets": [
+        "ที่ไหน | thîi-nǎi | where",
+        "อยู่ | yùu | be located / live",
+        "ที่นี่ | thîi-nîi | here",
+        "ที่นั่น | thîi-nân | there",
+        "ห้องน้ำอยู่ที่ไหน | hâawng-náam yùu thîi-nǎi | where is the bathroom?",
+        "อยู่ที่นี่ / อยู่ที่นั่น | yùu thîi-nîi / yùu thîi-nân | it is here / there"
+      ],
+      "drills": [
+        "Question-answer drill: teacher asks ห้องน้ำอยู่ที่ไหน, learner answers with อยู่ที่นี่ or อยู่ที่นั่น based on the visual cue.",
+        "Meaning drill: learner hears อยู่ and decides whether the chunk is about location or a person living/staying."
+      ],
+      "languageFocus": [
+        {
+          "thai": "ที่ไหน",
+          "translit": "thîi-nǎi",
+          "english": "where",
+          "vocabId": "v-f2b16c634c"
+        },
+        {
+          "thai": "อยู่",
+          "translit": "yùu",
+          "english": "be located / live",
+          "vocabId": "v-9c9780c3dc"
+        },
+        {
+          "thai": "ที่นี่",
+          "translit": "thîi-nîi",
+          "english": "here",
+          "vocabId": "v-db91ba3d37"
+        },
+        {
+          "thai": "ที่นั่น",
+          "translit": "thîi-nân",
+          "english": "there",
+          "vocabId": "v-783175980b"
+        },
+        {
+          "thai": "ห้องน้ำอยู่ที่ไหน",
+          "translit": "hâawng-náam yùu thîi-nǎi",
+          "english": "where is the bathroom?",
+          "vocabId": "v-129ba2bd0c"
+        },
+        {
+          "thai": "คุณอยู่ที่ไหน",
+          "translit": "khun yùu thîi-nǎi",
+          "english": "where do you live / where are you?",
+          "vocabId": "v-042c25f989",
+          "notes": "With a person, อยู่ can mean live, stay, or be depending on context."
+        }
+      ],
+      "visualPlan": {
+        "leftPanelLayout": "image-anchored",
+        "onScreenGoal": "Make the location question concrete with a simple sign and then contrast here versus there as short answer patterns.",
+        "teachingVisuals": [
+          "Large question card for ห้องน้ำอยู่ที่ไหน with a bathroom-sign anchor image kept behind the left panel only.",
+          "Two answer cards underneath: อยู่ที่นี่ and อยู่ที่นั่น with simple arrow cues."
+        ],
+        "teacherCues": [
+          "Explain อยู่ once in plain language, then return to chunks quickly.",
+          "Keep the answer cards visually lighter than the main question so the learner sees the pattern first."
+        ],
+        "imageSupport": {
+          "helpful": true,
+          "priority": "high",
+          "rationale": "A single wayfinding or bathroom-sign image makes the location question feel real and helps the learner connect the chunk to an everyday service situation.",
+          "searchQueries": [
+            "simple bathroom sign indoor wayfinding",
+            "school corridor restroom sign Thailand"
+          ],
+          "sourceHints": [
+            "Wikimedia Commons",
+            "official signage",
+            "Openverse"
+          ]
+        }
+      }
+    },
+    {
+      "id": "s3",
+      "heading": "Recycle people words and numbers inside location questions",
+      "purpose": "Show that the new question system can already combine with review pronouns and digits, especially in simple room-location and person-location lines.",
+      "spokenNarration": [
+        "You already know the review word คุณ from earlier chunks, and you already know เขา, so now the new question frame immediately becomes more useful.",
+        "คุณอยู่ที่ไหน can ask where you live or where you are, and เขาอยู่ที่นี่ is a short answer about a person being here.",
+        "Now bring back the digits from the last lesson and ask ห้องหนึ่ง-ศูนย์-สามอยู่ที่ไหน. The number is no longer isolated. It is part of a real location question."
+      ],
+      "onScreenBullets": [
+        "คุณอยู่ที่ไหน | khun yùu thîi-nǎi | where do you live / where are you?",
+        "เขาอยู่ที่นี่ | khǎo yùu thîi-nîi | he / she is here",
+        "ห้องหนึ่ง-ศูนย์-สามอยู่ที่ไหน | hâawng nùeng-sǔun-sǎam yùu thîi-nǎi | where is room one-zero-three?",
+        "อยู่ที่นั่น | yùu thîi-nân | it is there"
+      ],
+      "drills": [
+        "Swap drill: teacher changes the subject from คุณ to เขา to ห้องหนึ่ง-ศูนย์-สาม, learner keeps the location pattern stable.",
+        "Review drill: learner hears 1-0-3 and says the room question slowly with the digits spoken one by one."
+      ],
+      "languageFocus": [
+        {
+          "thai": "เขา",
+          "translit": "khǎo",
+          "english": "he / she",
+          "vocabId": "v-e3ef8a701b"
+        },
+        {
+          "thai": "ศูนย์",
+          "translit": "sǔun",
+          "english": "zero",
+          "vocabId": "v-871c9bd62f"
+        },
+        {
+          "thai": "หนึ่ง",
+          "translit": "nùeng",
+          "english": "one",
+          "vocabId": "v-6ad6888f1d"
+        },
+        {
+          "thai": "สอง",
+          "translit": "sǎawng",
+          "english": "two",
+          "vocabId": "v-afdf936166"
+        },
+        {
+          "thai": "สาม",
+          "translit": "sǎam",
+          "english": "three",
+          "vocabId": "v-368c7c205d"
+        },
+        {
+          "thai": "เขาอยู่ที่นี่",
+          "translit": "khǎo yùu thîi-nîi",
+          "english": "he / she is here",
+          "vocabId": "v-b6c29d8391"
+        },
+        {
+          "thai": "ห้องหนึ่ง-ศูนย์-สามอยู่ที่ไหน",
+          "translit": "hâawng nùeng-sǔun-sǎam yùu thîi-nǎi",
+          "english": "where is room one-zero-three?",
+          "vocabId": "v-fb065d2389"
+        }
+      ],
+      "visualPlan": {
+        "leftPanelLayout": "drill-stack",
+        "onScreenGoal": "Show how the same where-question frame works with a person and with a room number, while reinforcing the last lesson’s digits.",
+        "teachingVisuals": [
+          "Stacked prompt cards for person question versus room-number question.",
+          "A small 1-0-3 review strip beside the room question to reinforce digit-by-digit reading."
+        ],
+        "teacherCues": [
+          "Say the room digits carefully one by one.",
+          "Keep the review strip small so the new question frame stays visually dominant."
+        ],
+        "imageSupport": {
+          "helpful": false,
+          "priority": "avoid",
+          "rationale": "This section is about combining review vocabulary into a stable pattern, so text-led drills are more useful than another photo.",
+          "searchQueries": [],
+          "sourceHints": [
+            "text-only drill cards",
+            "simple room-number chip"
+          ]
+        }
+      }
+    },
+    {
+      "id": "s4",
+      "heading": "Build a small help-seeking exchange",
+      "purpose": "Turn the new what and where chunks into a coherent first-contact service interaction that reuses courtesy language and confirmation.",
+      "spokenNarration": [
+        "A real beginner does not need a long conversation yet. A short, polite help-seeking exchange is enough.",
+        "Start with ขอโทษ to get attention, ask นี่อะไร if you are pointing at an object, then ask ห้องน้ำอยู่ที่ไหน if you need a place.",
+        "One useful review link is that the answer can reuse the older identity frame นี่คือ..., while the new question is what changes.",
+        "Finally, confirm the room with ใช่ไหม if needed, and close politely with ขอบคุณ and ไม่เป็นไร."
+      ],
+      "onScreenBullets": [
+        "ขอโทษค่ะ | khǎaw-thôot khâ | excuse me",
+        "นี่อะไรคะ | nîi à-rai khá | what is this?",
+        "นี่คือแผนที่ครับ | nîi kheuu phǎaen-thîi khráp | this is a map",
+        "ห้องน้ำอยู่ที่ไหนคะ | hâawng-náam yùu thîi-nǎi khá | where is the bathroom?",
+        "ห้องหนึ่ง-ศูนย์-สามอยู่ที่นี่ใช่ไหมคะ | hâawng nùeng-sǔun-sǎam yùu thîi-nîi châi mái khá | room one-zero-three is here, right?"
+      ],
+      "drills": [
+        "Role swap drill: one learner is the receptionist, one is the new student; switch roles after one full exchange.",
+        "Prompt drill: teacher shows object, bathroom sign, or room 103; learner chooses the correct question chunk."
+      ],
+      "languageFocus": [
+        {
+          "thai": "ขอโทษค่ะ",
+          "translit": "khǎaw-thôot khâ",
+          "english": "excuse me",
+          "vocabId": "v-3cce11ea8b"
+        },
+        {
+          "thai": "นี่อะไรคะ",
+          "translit": "nîi à-rai khá",
+          "english": "what is this?",
+          "vocabId": "v-90589d2f67"
+        },
+        {
+          "thai": "นี่คือแผนที่ครับ",
+          "translit": "nîi kheuu phǎaen-thîi khráp",
+          "english": "this is a map",
+          "vocabId": "v-08c0a56052"
+        },
+        {
+          "thai": "ห้องน้ำอยู่ที่ไหนคะ",
+          "translit": "hâawng-náam yùu thîi-nǎi khá",
+          "english": "where is the bathroom?",
+          "vocabId": "v-ac52dc0a82"
+        },
+        {
+          "thai": "อยู่ที่นั่นครับ",
+          "translit": "yùu thîi-nân khráp",
+          "english": "it is there",
+          "vocabId": "v-574375b60b"
+        },
+        {
+          "thai": "ห้องหนึ่ง-ศูนย์-สามอยู่ที่นี่ใช่ไหมคะ",
+          "translit": "hâawng nùeng-sǔun-sǎam yùu thîi-nîi châi mái khá",
+          "english": "room one-zero-three is here, right?",
+          "vocabId": "v-1968abf1ea"
+        },
+        {
+          "thai": "ใช่ครับ",
+          "translit": "châi khráp",
+          "english": "yes",
+          "vocabId": "v-7648b7d08b"
+        }
+      ],
+      "visualPlan": {
+        "leftPanelLayout": "dialogue-ladder",
+        "onScreenGoal": "Turn the lesson into a readable service-desk exchange with one object question, one location question, and one room confirmation.",
+        "teachingVisuals": [
+          "Dialogue ladder showing the map question, bathroom question, and room confirmation as separate beats.",
+          "A small map or reception counter anchor kept behind the left panel only."
+        ],
+        "teacherCues": [
+          "Keep each question on screen alone before showing the answer.",
+          "Do not let the map anchor compete with the Thai text or spill into the right-third camera zone."
+        ],
+        "imageSupport": {
+          "helpful": true,
+          "priority": "medium",
+          "rationale": "A small reception-desk or map visual helps the learner understand why both a what-question and a where-question appear in the same exchange.",
+          "searchQueries": [
+            "simple reception desk map brochure close up",
+            "classroom room sign 103 corridor"
+          ],
+          "sourceHints": [
+            "Wikimedia Commons",
+            "Openverse",
+            "official signage"
+          ]
+        }
+      }
+    }
+  ],
+  "roleplay": {
+    "scenario": "New student asking for help at a small school reception desk.",
+    "lines": [
+      {
+        "speaker": "A",
+        "thai": "สวัสดีค่ะ ขอโทษค่ะ",
+        "translit": "sà-wàt-dii khâ khǎaw-thôot khâ",
+        "english": "Hello, excuse me."
+      },
+      {
+        "speaker": "B",
+        "thai": "สวัสดีครับ",
+        "translit": "sà-wàt-dii khráp",
+        "english": "Hello."
+      },
+      {
+        "speaker": "A",
+        "thai": "นี่อะไรคะ",
+        "translit": "nîi à-rai khá",
+        "english": "What is this?"
+      },
+      {
+        "speaker": "B",
+        "thai": "นี่คือแผนที่ครับ",
+        "translit": "nîi kheuu phǎaen-thîi khráp",
+        "english": "This is a map."
+      },
+      {
+        "speaker": "A",
+        "thai": "ห้องน้ำอยู่ที่ไหนคะ",
+        "translit": "hâawng-náam yùu thîi-nǎi khá",
+        "english": "Where is the bathroom?"
+      },
+      {
+        "speaker": "B",
+        "thai": "อยู่ที่นั่นครับ",
+        "translit": "yùu thîi-nân khráp",
+        "english": "It is there."
+      },
+      {
+        "speaker": "A",
+        "thai": "ห้องหนึ่ง-ศูนย์-สามอยู่ที่นี่ใช่ไหมคะ",
+        "translit": "hâawng nùeng-sǔun-sǎam yùu thîi-nîi châi mái khá",
+        "english": "Room one-zero-three is here, right?"
+      },
+      {
+        "speaker": "B",
+        "thai": "ใช่ครับ",
+        "translit": "châi khráp",
+        "english": "Yes."
+      },
+      {
+        "speaker": "A",
+        "thai": "ขอบคุณค่ะ",
+        "translit": "khàawp-khun khâ",
+        "english": "Thank you."
+      },
+      {
+        "speaker": "B",
+        "thai": "ไม่เป็นไรครับ",
+        "translit": "mâi bpen rai khráp",
+        "english": "No problem."
+      }
+    ]
+  },
+  "recap": [
+    "Use อะไร at the end of a short chunk to ask what something is.",
+    "Use ที่ไหน with อยู่ to ask where something is.",
+    "Learn อยู่ที่นี่ and อยู่ที่นั่น as quick beginner location answers.",
+    "Recycle คุณ, เขา, and the digits from the last lesson so the new questions stay practical."
+  ],
+  "qaChecks": [
+    {
+      "id": "tone-inline",
+      "description": "All transliteration uses PTM inline tone marks; superscripts forbidden",
+      "pass": true,
+      "evidence": "All transliteration strings passed inline-tone checks"
+    },
+    {
+      "id": "triplets",
+      "description": "Thai/translit/English triplets are complete for learner-facing script content",
+      "pass": true,
+      "evidence": "Sections and on-screen bullets contain complete triplets"
+    },
+    {
+      "id": "drills",
+      "description": "Each section includes active drill",
+      "pass": true,
+      "evidence": "Each section has >=1 drill"
+    },
+    {
+      "id": "section-count",
+      "description": "Lesson contains at least 4 teaching sections",
+      "pass": true,
+      "evidence": "Lesson contains 4 sections"
+    },
+    {
+      "id": "section-depth",
+      "description": "Each section includes at least 3 spoken narration lines",
+      "pass": true,
+      "evidence": "Each section has >=3 spoken narration lines"
+    },
+    {
+      "id": "roleplay",
+      "description": "Scenario roleplay included and substantial",
+      "pass": true,
+      "evidence": "Roleplay contains 10 lines"
+    },
+    {
+      "id": "roleplay-duplicates",
+      "description": "Roleplay does not repeat exact lines",
+      "pass": true,
+      "evidence": "All roleplay lines are distinct"
+    },
+    {
+      "id": "roleplay-turn-taking",
+      "description": "Roleplay alternates speakers cleanly",
+      "pass": true,
+      "evidence": "Roleplay alternates speakers line by line"
+    },
+    {
+      "id": "roleplay-answer-logic",
+      "description": "Yes/no answer particles appear only after a nearby question or confirmation turn",
+      "pass": true,
+      "evidence": "Answer particles follow question-like turns when used"
+    },
+    {
+      "id": "roleplay-question-target",
+      "description": "Question-target lessons include at least one question-like roleplay turn",
+      "pass": true,
+      "evidence": "Roleplay includes a question-like turn"
+    },
+    {
+      "id": "recap",
+      "description": "Recap includes at least 3 review items",
+      "pass": true,
+      "evidence": "Recap contains 4 items"
+    },
+    {
+      "id": "review-reuse",
+      "description": "Lesson reuses at least 2 prior items when prior lesson context exists",
+      "pass": true,
+      "evidence": "Reused 4 prior vocabulary items in language focus"
+    },
+    {
+      "id": "teaching-frame",
+      "description": "Lesson includes a clear teaching frame with runtime and learner takeaway",
+      "pass": true,
+      "evidence": "Teaching frame targets 10-13 minutes"
+    },
+    {
+      "id": "visual-plan",
+      "description": "Each section includes a left-panel visual plan and explicit image decision",
+      "pass": true,
+      "evidence": "Every section includes visualPlan with usable teaching visuals and image rationale"
+    },
+    {
+      "id": "asset-research",
+      "description": "Lesson provides at least one concrete image research query when visuals would help",
+      "pass": true,
+      "evidence": "Sections with concrete asset research queries: 2"
+    },
+    {
+      "id": "policy",
+      "description": "Transliteration + image sourcing policies are declared",
+      "pass": true,
+      "evidence": "Policy object present with required enum values"
+    }
+  ],
+  "policies": {
+    "transliteration": "PTM_ADAPTED_INLINE_TONES",
+    "imageSourcing": "INTERNET_FIRST_NO_GENERATIVE_DEFAULT"
+  }
+}

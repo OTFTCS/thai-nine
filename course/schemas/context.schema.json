@@ -1,0 +1,70 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://thai-nine.local/schemas/context.schema.json",
+  "title": "Lesson Context",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "lessonId",
+    "priorLessons",
+    "knownVocabulary",
+    "knownGrammar",
+    "reviewBuckets"
+  ],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "lessonId": { "type": "string", "pattern": "^M\\d{2}-L\\d{3}$" },
+    "priorLessons": {
+      "type": "array",
+      "items": { "type": "string", "pattern": "^M\\d{2}-L\\d{3}$" }
+    },
+    "knownVocabulary": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["thai", "translit", "english", "vocabId"],
+        "properties": {
+          "thai": { "type": "string", "minLength": 1 },
+          "translit": { "type": "string", "minLength": 1 },
+          "english": { "type": "string", "minLength": 1 },
+          "notes": { "type": "string" },
+          "vocabId": { "type": "string", "pattern": "^v-[a-f0-9]{10}$" }
+        }
+      }
+    },
+    "knownGrammar": { "type": "array", "items": { "type": "string", "minLength": 1 } },
+    "reviewBuckets": {
+      "type": "array",
+      "minItems": 4,
+      "maxItems": 4,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["bucket", "offset", "lessonId", "vocabIds", "sample"],
+        "properties": {
+          "bucket": { "enum": ["last", "minus3", "minus6", "minus8"] },
+          "offset": { "enum": [1, 3, 6, 8] },
+          "lessonId": { "type": ["string", "null"] },
+          "vocabIds": { "type": "array", "items": { "type": "string", "pattern": "^v-[a-f0-9]{10}$" } },
+          "sample": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["thai", "translit", "english", "vocabId"],
+              "properties": {
+                "thai": { "type": "string", "minLength": 1 },
+                "translit": { "type": "string", "minLength": 1 },
+                "english": { "type": "string", "minLength": 1 },
+                "notes": { "type": "string" },
+                "vocabId": { "type": "string", "pattern": "^v-[a-f0-9]{10}$" }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

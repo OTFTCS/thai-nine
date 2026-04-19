@@ -1,0 +1,1740 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "M01-L004",
+  "sourceDeck": "M01-L004-deck-source.json",
+  "layoutContract": "course/layout-contracts/canva/l001-reference-v1.json",
+  "theme": {
+    "thaiFont": "Sarabun",
+    "latinFont": "Sarabun",
+    "backgroundColor": "#F5F7F8",
+    "rightZoneTint": "#DBE7EC",
+    "accentColors": [
+      "#355C7D",
+      "#7A8F54",
+      "#C96F4A"
+    ]
+  },
+  "slides": [
+    {
+      "id": "canva-slide-01",
+      "title": "Numbers 0 to 10",
+      "layoutFamily": "opener",
+      "backgroundPath": "canva-backgrounds/slide-01.png",
+      "elements": [
+        {
+          "id": "eyebrow",
+          "kind": "text",
+          "x": 731520,
+          "y": 1645920,
+          "w": 6858000,
+          "h": 365760,
+          "fontName": "Sarabun",
+          "fontSizePt": 12,
+          "color": "#355C7D",
+          "bold": true,
+          "italic": false,
+          "align": "left",
+          "value": "First Contact and Courtesy  ·  A0"
+        },
+        {
+          "id": "lesson_id",
+          "kind": "text",
+          "x": 731520,
+          "y": 2103120,
+          "w": 6858000,
+          "h": 457200,
+          "fontName": "Sarabun",
+          "fontSizePt": 19,
+          "color": "#566873",
+          "bold": false,
+          "italic": false,
+          "align": "left",
+          "value": "M01-L004"
+        },
+        {
+          "id": "title",
+          "kind": "text",
+          "x": 731520,
+          "y": 2651760,
+          "w": 6858000,
+          "h": 914400,
+          "fontName": "Sarabun",
+          "fontSizePt": 38,
+          "color": "#24333D",
+          "bold": true,
+          "italic": false,
+          "align": "left",
+          "value": "Numbers 0 to 10"
+        },
+        {
+          "id": "brand",
+          "kind": "text",
+          "x": 731520,
+          "y": 5303520,
+          "w": 6858000,
+          "h": 365760,
+          "fontName": "Sarabun",
+          "fontSizePt": 15,
+          "color": "#566873",
+          "bold": false,
+          "italic": false,
+          "align": "left",
+          "value": "Immersion Thai with Nine"
+        }
+      ]
+    },
+    {
+      "id": "canva-slide-02",
+      "title": "What you will learn",
+      "layoutFamily": "objectives-list",
+      "backgroundPath": "canva-backgrounds/slide-02.png",
+      "elements": [
+        {
+          "id": "title",
+          "kind": "text",
+          "x": 731520,
+          "y": 1061443,
+          "w": 6858000,
+          "h": 457200,
+          "fontName": "Sarabun",
+          "fontSizePt": 30,
+          "color": "#24333D",
+          "bold": true,
+          "italic": false,
+          "align": "left",
+          "value": "What you will learn"
+        },
+        {
+          "id": "objective_1",
+          "kind": "text",
+          "x": 1280047,
+          "y": 1964720,
+          "w": 6217800,
+          "h": 457200,
+          "fontName": "Sarabun",
+          "fontSizePt": 16,
+          "color": "#24333D",
+          "bold": false,
+          "italic": false,
+          "align": "left",
+          "value": "1. You can understand and say the digits needed for age, room numbers, and basic counting."
+        },
+        {
+          "id": "objective_2",
+          "kind": "text",
+          "x": 1280047,
+          "y": 2649225,
+          "w": 6217800,
+          "h": 457200,
+          "fontName": "Sarabun",
+          "fontSizePt": 16,
+          "color": "#24333D",
+          "bold": false,
+          "italic": false,
+          "align": "left",
+          "value": "2. You can recycle recent vocabulary while using number pronunciation control in short controlled output."
+        },
+        {
+          "id": "objective_3",
+          "kind": "text",
+          "x": 1280047,
+          "y": 3333730,
+          "w": 6217800,
+          "h": 457200,
+          "fontName": "Sarabun",
+          "fontSizePt": 16,
+          "color": "#24333D",
+          "bold": false,
+          "italic": false,
+          "align": "left",
+          "value": "3. Say your age, count objects, and give a simple number clearly."
+        },
+        {
+          "id": "objective_4",
+          "kind": "text",
+          "x": 1280160,
+          "y": 4018260,
+          "w": 6217800,
+          "h": 457200,
+          "fontName": "Sarabun",
+          "fontSizePt": 16,
+          "color": "#24333D",
+          "bold": false,
+          "italic": false,
+          "align": "left",
+          "value": "4. Recognize slowly spoken digits in age and number contexts."
+        }
+      ]
+    },
+    {
+      "id": "canva-slide-03",
+      "title": "Digits 0 to 5",
+      "layoutFamily": "single-focus-card",
+      "backgroundPath": "canva-backgrounds/slide-03.png",
+      "elements": [
+        {
+          "id": "section_label",
+          "kind": "text",
+          "x": 731527,
+          "y": 1719200,
+          "w": 1210500,
+          "h": 320100,
+          "fontName": "Sarabun",
+          "fontSizePt": 12,
+          "color": "#FFFFFF",
+          "bold": true,
+          "italic": false,
+          "align": "center",
+          "value": "Section 1"
+        },
+        {
+          "id": "title",
+          "kind": "text",
+          "x": 2063268,
+          "y": 1582106,
+          "w": 5943600,
+          "h": 457200,
+          "fontName": "Sarabun",
+          "fontSizePt": 30,
+          "color": "#24333D",
+          "bold": true,
+          "italic": false,
+          "align": "left",
+          "value": "Digits 0 to 5"
+        },
+        {
+          "id": "thai",
+          "kind": "text",
+          "x": 1142988.0,
+          "y": 2332605.0,
+          "w": 5303400.0,
+          "h": 1042060.0,
+          "fontName": "Sarabun",
+          "fontSizePt": 32,
+          "color": "#24333D",
+          "bold": true,
+          "italic": false,
+          "align": "left",
+          "value": "ศูนย์ (sǔun)",
+          "segments": [
+            {
+              "text": "ศูนย์",
+              "fontName": "Sarabun",
+              "fontSizePt": 32.0,
+              "color": "#24333D",
+              "bold": true,
+              "italic": false
+            },
+            {
+              "text": " (sǔun)",
+              "fontName": "Sarabun",
+              "fontSizePt": 19.8,
+              "color": "#566873",
+              "bold": false,
+              "italic": true
+            }
+          ]
+        },
+        {
+          "id": "english",
+          "kind": "text",
+          "x": 1143000,
+          "y": 3374675,
+          "w": 5303400,
+          "h": 365700,
+          "fontName": "Sarabun",
+          "fontSizePt": 15,
+          "color": "#82909A",
+          "bold": false,
+          "italic": false,
+          "align": "left",
+          "value": "zero"
+        },
+        {
+          "id": "note",
+          "kind": "text",
+          "x": 731520,
+          "y": 4142240,
+          "w": 6858000,
+          "h": 914400,
+          "fontName": "Sarabun",
+          "fontSizePt": 16,
+          "color": "#24333D",
+          "bold": false,
+          "italic": false,
+          "align": "left",
+          "value": "ศูนย์ | sǔun | 0 — zero\nหนึ่ง | nùeng | 1 — one"
+        }
+      ]
+    },
+    {
+      "id": "canva-slide-04",
+      "title": "Digits 6 to 10",
+      "layoutFamily": "single-focus-card",
+      "backgroundPath": "canva-backgrounds/slide-04.png",
+      "elements": [
+        {
+          "id": "section_label",
+          "kind": "text",
+          "x": 731527,
+          "y": 1719200,
+          "w": 1210500,
+          "h": 320100,
+          "fontName": "Sarabun",
+          "fontSizePt": 12,
+          "color": "#FFFFFF",
+          "bold": true,
+          "italic": false,
+          "align": "center",
+          "value": "Section 2"
+        },
+        {
+          "id": "title",
+          "kind": "text",
+          "x": 2063268,
+          "y": 1582106,
+          "w": 5943600,
+          "h": 457200,
+          "fontName": "Sarabun",
+          "fontSizePt": 30,
+          "color": "#24333D",
+          "bold": true,
+          "italic": false,
+          "align": "left",
+          "value": "Digits 6 to 10"
+        },
+        {
+          "id": "thai",
+          "kind": "text",
+          "x": 1142988.0,
+          "y": 2332605.0,
+          "w": 5303400.0,
+          "h": 1042060.0,
+          "fontName": "Sarabun",
+          "fontSizePt": 32,
+          "color": "#24333D",
+          "bold": true,
+          "italic": false,
+          "align": "left",
+          "value": "หก (hòk)",
+          "segments": [
+            {
+              "text": "หก",
+              "fontName": "Sarabun",
+              "fontSizePt": 32.0,
+              "color": "#24333D",
+              "bold": true,
+              "italic": false
+            },
+            {
+              "text": " (hòk)",
+              "fontName": "Sarabun",
+              "fontSizePt": 19.8,
+              "color": "#566873",
+              "bold": false,
+              "italic": true
+            }
+          ]
+        },
+        {
+          "id": "english",
+          "kind": "text",
+          "x": 1143000,
+          "y": 3374675,
+          "w": 5303400,
+          "h": 365700,
+          "fontName": "Sarabun",
+          "fontSizePt": 15,
+          "color": "#82909A",
+          "bold": false,
+          "italic": false,
+          "align": "left",
+          "value": "six"
+        },
+        {
+          "id": "note",
+          "kind": "text",
+          "x": 731520,
+          "y": 4142240,
+          "w": 6858000,
+          "h": 914400,
+          "fontName": "Sarabun",
+          "fontSizePt": 16,
+          "color": "#24333D",
+          "bold": false,
+          "italic": false,
+          "align": "left",
+          "value": "หก | hòk | 6 — six\nเจ็ด | jèt | 7 — seven"
+        }
+      ]
+    },
+    {
+      "id": "canva-slide-05",
+      "title": "Ask what number and say your age",
+      "layoutFamily": "drill-rows",
+      "backgroundPath": "canva-backgrounds/slide-05.png",
+      "elements": [
+        {
+          "id": "section_label",
+          "kind": "text",
+          "x": 731527,
+          "y": 642588,
+          "w": 1210500,
+          "h": 320100,
+          "fontName": "Sarabun",
+          "fontSizePt": 12,
+          "color": "#FFFFFF",
+          "bold": true,
+          "italic": false,
+          "align": "center",
+          "value": "Section 3"
+        },
+        {
+          "id": "title",
+          "kind": "text",
+          "x": 2063268,
+          "y": 505418,
+          "w": 5943600,
+          "h": 457200,
+          "fontName": "Sarabun",
+          "fontSizePt": 30,
+          "color": "#24333D",
+          "bold": true,
+          "italic": false,
+          "align": "left",
+          "value": "Ask what number and say your age"
+        },
+        {
+          "id": "subtitle",
+          "kind": "text",
+          "x": 731520,
+          "y": 1075703,
+          "w": 6858000,
+          "h": 365700,
+          "fontName": "Sarabun",
+          "fontSizePt": 15,
+          "color": "#566873",
+          "bold": false,
+          "italic": false,
+          "align": "left",
+          "value": "Show เบอร์อะไร (ber à-rai) question and อายุ...ปี (aa-yú ... bpii) answer frame.",
+          "segments": [
+            {
+              "text": "Show ",
+              "fontName": "Sarabun",
+              "fontSizePt": 15.0,
+              "color": "#566873",
+              "bold": false,
+              "italic": false
+            },
+            {
+              "text": "เบอร์อะไร",
+              "fontName": "Sarabun",
+              "fontSizePt": 15.0,
+              "color": "#566873",
+              "bold": false,
+              "italic": false
+            },
+            {
+              "text": " (ber à-rai)",
+              "fontName": "Sarabun",
+              "fontSizePt": 15.0,
+              "color": "#566873",
+              "bold": false,
+              "italic": true
+            },
+            {
+              "text": " question and ",
+              "fontName": "Sarabun",
+              "fontSizePt": 15.0,
+              "color": "#566873",
+              "bold": false,
+              "italic": false
+            },
+            {
+              "text": "อายุ...ปี",
+              "fontName": "Sarabun",
+              "fontSizePt": 15.0,
+              "color": "#566873",
+              "bold": false,
+              "italic": false
+            },
+            {
+              "text": " (aa-yú ... bpii)",
+              "fontName": "Sarabun",
+              "fontSizePt": 15.0,
+              "color": "#566873",
+              "bold": false,
+              "italic": true
+            },
+            {
+              "text": " answer frame.",
+              "fontName": "Sarabun",
+              "fontSizePt": 15.0,
+              "color": "#566873",
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "id": "row_1_prompt_thai",
+          "kind": "text",
+          "x": 1188720.0,
+          "y": 1627632.0,
+          "w": 3200400.0,
+          "h": 658368.0,
+          "fontName": "Sarabun",
+          "fontSizePt": 23,
+          "color": "#24333D",
+          "bold": true,
+          "italic": false,
+          "align": "left",
+          "value": "1. เบอร์อะไร (ber à-rai)",
+          "segments": [
+            {
+              "text": "1. เบอร์อะไร",
+              "fontName": "Sarabun",
+              "fontSizePt": 23.0,
+              "color": "#24333D",
+              "bold": true,
+              "italic": false
+            },
+            {
+              "text": " (ber à-rai)",
+              "fontName": "Sarabun",
+              "fontSizePt": 15.0,
+              "color": "#566873",
+              "bold": false,
+              "italic": true
+            }
+          ]
+        },
+        {
+          "id": "row_1_instruction",
+          "kind": "text",
+          "x": 4846320,
+          "y": 1737360,
+          "w": 2286000,
+          "h": 365760,
+          "fontName": "Sarabun",
+          "fontSizePt": 13,
+          "color": "#24333D",
+          "bold": true,
+          "italic": false,
+          "align": "left",
+          "value": "เบอร์อะไร (ber à-rai) | ber à-rai | what number?",
+          "segments": [
+            {
+              "text": "เบอร์อะไร",
+              "fontName": "Sarabun",
+              "fontSizePt": 13.0,
+              "color": "#24333D",
+              "bold": true,
+              "italic": false
+            },
+            {
+              "text": " (ber à-rai)",
+              "fontName": "Sarabun",
+              "fontSizePt": 15.0,
+              "color": "#566873",
+              "bold": false,
+              "italic": true
+            },
+            {
+              "text": " | ber à-rai | what number?",
+              "fontName": "Sarabun",
+              "fontSizePt": 13.0,
+              "color": "#24333D",
+              "bold": true,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "id": "row_2_prompt_thai",
+          "kind": "text",
+          "x": 1188720.0,
+          "y": 2478024.0,
+          "w": 3200400.0,
+          "h": 658368.0,
+          "fontName": "Sarabun",
+          "fontSizePt": 23,
+          "color": "#24333D",
+          "bold": true,
+          "italic": false,
+          "align": "left",
+          "value": "2. อายุ (aa-yú)",
+          "segments": [
+            {
+              "text": "2. อายุ",
+              "fontName": "Sarabun",
+              "fontSizePt": 23.0,
+              "color": "#24333D",
+              "bold": true,
+              "italic": false
+            },
+            {
+              "text": " (aa-yú)",
+              "fontName": "Sarabun",
+              "fontSizePt": 15.0,
+              "color": "#566873",
+              "bold": false,
+              "italic": true
+            }
+          ]
+        },
+        {
+          "id": "row_2_instruction",
+          "kind": "text",
+          "x": 4846320,
+          "y": 2587752,
+          "w": 2286000,
+          "h": 365760,
+          "fontName": "Sarabun",
+          "fontSizePt": 13,
+          "color": "#24333D",
+          "bold": true,
+          "italic": false,
+          "align": "left",
+          "value": "อายุ...ปี (aa-yú ... bpii) | aa-yú ... bpii | ... years old",
+          "segments": [
+            {
+              "text": "อายุ...ปี",
+              "fontName": "Sarabun",
+              "fontSizePt": 13.0,
+              "color": "#24333D",
+              "bold": true,
+              "italic": false
+            },
+            {
+              "text": " (aa-yú ... bpii)",
+              "fontName": "Sarabun",
+              "fontSizePt": 15.0,
+              "color": "#566873",
+              "bold": false,
+              "italic": true
+            },
+            {
+              "text": " | aa-yú ... bpii | ... years old",
+              "fontName": "Sarabun",
+              "fontSizePt": 13.0,
+              "color": "#24333D",
+              "bold": true,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "id": "row_3_prompt_thai",
+          "kind": "text",
+          "x": 1188720.0,
+          "y": 3328416.0,
+          "w": 3200400.0,
+          "h": 658368.0,
+          "fontName": "Sarabun",
+          "fontSizePt": 23,
+          "color": "#24333D",
+          "bold": true,
+          "italic": false,
+          "align": "left",
+          "value": "3. ปี (bpii)",
+          "segments": [
+            {
+              "text": "3. ปี",
+              "fontName": "Sarabun",
+              "fontSizePt": 23.0,
+              "color": "#24333D",
+              "bold": true,
+              "italic": false
+            },
+            {
+              "text": " (bpii)",
+              "fontName": "Sarabun",
+              "fontSizePt": 15.0,
+              "color": "#566873",
+              "bold": false,
+              "italic": true
+            }
+          ]
+        },
+        {
+          "id": "row_3_instruction",
+          "kind": "text",
+          "x": 4846320,
+          "y": 3438144,
+          "w": 2286000,
+          "h": 365760,
+          "fontName": "Sarabun",
+          "fontSizePt": 13,
+          "color": "#24333D",
+          "bold": true,
+          "italic": false,
+          "align": "left",
+          "value": "ผมอายุ...ปี (phǒm aa-yú ... bpii) | phǒm aa-yú ... bpii | I am ... years old (male)",
+          "segments": [
+            {
+              "text": "ผมอายุ...ปี",
+              "fontName": "Sarabun",
+              "fontSizePt": 13.0,
+              "color": "#24333D",
+              "bold": true,
+              "italic": false
+            },
+            {
+              "text": " (phǒm aa-yú ... bpii)",
+              "fontName": "Sarabun",
+              "fontSizePt": 15.0,
+              "color": "#566873",
+              "bold": false,
+              "italic": true
+            },
+            {
+              "text": " | phǒm aa-yú ... bpii | I am ... years old (male)",
+              "fontName": "Sarabun",
+              "fontSizePt": 13.0,
+              "color": "#24333D",
+              "bold": true,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "id": "row_4_prompt_thai",
+          "kind": "text",
+          "x": 1188720.0,
+          "y": 4178808.0,
+          "w": 3200400.0,
+          "h": 658368.0,
+          "fontName": "Sarabun",
+          "fontSizePt": 23,
+          "color": "#24333D",
+          "bold": true,
+          "italic": false,
+          "align": "left",
+          "value": "4. ฉัน (chǎn)",
+          "segments": [
+            {
+              "text": "4. ฉัน",
+              "fontName": "Sarabun",
+              "fontSizePt": 23.0,
+              "color": "#24333D",
+              "bold": true,
+              "italic": false
+            },
+            {
+              "text": " (chǎn)",
+              "fontName": "Sarabun",
+              "fontSizePt": 15.0,
+              "color": "#566873",
+              "bold": false,
+              "italic": true
+            }
+          ]
+        },
+        {
+          "id": "row_4_instruction",
+          "kind": "text",
+          "x": 4846320,
+          "y": 4288536,
+          "w": 2286000,
+          "h": 365760,
+          "fontName": "Sarabun",
+          "fontSizePt": 13,
+          "color": "#24333D",
+          "bold": true,
+          "italic": false,
+          "align": "left",
+          "value": "ฉันอายุ...ปี (chǎn aa-yú ... bpii) | chǎn aa-yú ... bpii | I am ... years old",
+          "segments": [
+            {
+              "text": "ฉันอายุ...ปี",
+              "fontName": "Sarabun",
+              "fontSizePt": 13.0,
+              "color": "#24333D",
+              "bold": true,
+              "italic": false
+            },
+            {
+              "text": " (chǎn aa-yú ... bpii)",
+              "fontName": "Sarabun",
+              "fontSizePt": 15.0,
+              "color": "#566873",
+              "bold": false,
+              "italic": true
+            },
+            {
+              "text": " | chǎn aa-yú ... bpii | I am ... years old",
+              "fontName": "Sarabun",
+              "fontSizePt": 13.0,
+              "color": "#24333D",
+              "bold": true,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "id": "row_5_prompt_thai",
+          "kind": "text",
+          "x": 1188720.0,
+          "y": 5029200.0,
+          "w": 3200400.0,
+          "h": 658368.0,
+          "fontName": "Sarabun",
+          "fontSizePt": 23,
+          "color": "#24333D",
+          "bold": true,
+          "italic": false,
+          "align": "left",
+          "value": "5. ผม (phǒm)",
+          "segments": [
+            {
+              "text": "5. ผม",
+              "fontName": "Sarabun",
+              "fontSizePt": 23.0,
+              "color": "#24333D",
+              "bold": true,
+              "italic": false
+            },
+            {
+              "text": " (phǒm)",
+              "fontName": "Sarabun",
+              "fontSizePt": 15.0,
+              "color": "#566873",
+              "bold": false,
+              "italic": true
+            }
+          ]
+        },
+        {
+          "id": "row_5_instruction",
+          "kind": "text",
+          "x": 4846320,
+          "y": 5138928,
+          "w": 2286000,
+          "h": 365760,
+          "fontName": "Sarabun",
+          "fontSizePt": 13,
+          "color": "#24333D",
+          "bold": true,
+          "italic": false,
+          "align": "left",
+          "value": "Practise aloud"
+        }
+      ]
+    },
+    {
+      "id": "canva-slide-06",
+      "title": "Pronunciation: สี่ vs สี",
+      "layoutFamily": "response-triad",
+      "backgroundPath": "canva-backgrounds/slide-06.png",
+      "elements": [
+        {
+          "id": "section_label",
+          "kind": "text",
+          "x": 731527,
+          "y": 809138,
+          "w": 1210500,
+          "h": 320100,
+          "fontName": "Sarabun",
+          "fontSizePt": 12,
+          "color": "#FFFFFF",
+          "bold": true,
+          "italic": false,
+          "align": "center",
+          "value": "Section 4"
+        },
+        {
+          "id": "title",
+          "kind": "text",
+          "x": 2029374,
+          "y": 720278,
+          "w": 7030500,
+          "h": 621900,
+          "fontName": "Sarabun",
+          "fontSizePt": 30,
+          "color": "#24333D",
+          "bold": true,
+          "italic": false,
+          "align": "left",
+          "value": "Pronunciation: สี่ (sìi) vs สี (sǐi)",
+          "segments": [
+            {
+              "text": "Pronunciation: ",
+              "fontName": "Sarabun",
+              "fontSizePt": 30.0,
+              "color": "#24333D",
+              "bold": true,
+              "italic": false
+            },
+            {
+              "text": "สี่",
+              "fontName": "Sarabun",
+              "fontSizePt": 30.0,
+              "color": "#24333D",
+              "bold": true,
+              "italic": false
+            },
+            {
+              "text": " (sìi)",
+              "fontName": "Sarabun",
+              "fontSizePt": 18.6,
+              "color": "#566873",
+              "bold": false,
+              "italic": true
+            },
+            {
+              "text": " vs ",
+              "fontName": "Sarabun",
+              "fontSizePt": 30.0,
+              "color": "#24333D",
+              "bold": true,
+              "italic": false
+            },
+            {
+              "text": "สี",
+              "fontName": "Sarabun",
+              "fontSizePt": 30.0,
+              "color": "#24333D",
+              "bold": true,
+              "italic": false
+            },
+            {
+              "text": " (sǐi)",
+              "fontName": "Sarabun",
+              "fontSizePt": 18.6,
+              "color": "#566873",
+              "bold": false,
+              "italic": true
+            }
+          ]
+        },
+        {
+          "id": "subtitle",
+          "kind": "text",
+          "x": 731520,
+          "y": 1193328,
+          "w": 6858000,
+          "h": 365700,
+          "fontName": "Sarabun",
+          "fontSizePt": 15,
+          "color": "#566873",
+          "bold": false,
+          "italic": false,
+          "align": "left",
+          "value": "Contrast สี (sǐi)่ (four) and สี (colour) with tone arrows.",
+          "segments": [
+            {
+              "text": "Contrast ",
+              "fontName": "Sarabun",
+              "fontSizePt": 15.0,
+              "color": "#566873",
+              "bold": false,
+              "italic": false
+            },
+            {
+              "text": "สี",
+              "fontName": "Sarabun",
+              "fontSizePt": 15.0,
+              "color": "#566873",
+              "bold": false,
+              "italic": false
+            },
+            {
+              "text": " (sǐi)",
+              "fontName": "Sarabun",
+              "fontSizePt": 15.0,
+              "color": "#566873",
+              "bold": false,
+              "italic": true
+            },
+            {
+              "text": "่ (four) and สี (colour) with tone arrows.",
+              "fontName": "Sarabun",
+              "fontSizePt": 15.0,
+              "color": "#566873",
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "id": "answers_label",
+          "kind": "text",
+          "x": 731533,
+          "y": 1623118,
+          "w": 1645800,
+          "h": 274200,
+          "fontName": "Sarabun",
+          "fontSizePt": 13,
+          "color": "#24333D",
+          "bold": true,
+          "italic": false,
+          "align": "left",
+          "value": "Direct answers"
+        },
+        {
+          "id": "row_1_thai",
+          "kind": "text",
+          "x": 1051560.0,
+          "y": 2057400.0,
+          "w": 2286000.0,
+          "h": 731520.0,
+          "fontName": "Sarabun",
+          "fontSizePt": 23,
+          "color": "#24333D",
+          "bold": true,
+          "italic": false,
+          "align": "left",
+          "value": "สี่ (sìi)",
+          "segments": [
+            {
+              "text": "สี่",
+              "fontName": "Sarabun",
+              "fontSizePt": 23.0,
+              "color": "#24333D",
+              "bold": true,
+              "italic": false
+            },
+            {
+              "text": " (sìi)",
+              "fontName": "Sarabun",
+              "fontSizePt": 15.0,
+              "color": "#566873",
+              "bold": false,
+              "italic": true
+            }
+          ]
+        },
+        {
+          "id": "row_1_meaning",
+          "kind": "text",
+          "x": 3474720,
+          "y": 2148840,
+          "w": 3657600,
+          "h": 365760,
+          "fontName": "Sarabun",
+          "fontSizePt": 13,
+          "color": "#24333D",
+          "bold": true,
+          "italic": false,
+          "align": "left",
+          "value": "four (low tone)"
+        },
+        {
+          "id": "row_1_usage",
+          "kind": "text",
+          "x": 3474720,
+          "y": 2514600,
+          "w": 3657600,
+          "h": 365760,
+          "fontName": "Sarabun",
+          "fontSizePt": 15,
+          "color": "#566873",
+          "bold": false,
+          "italic": false,
+          "align": "left",
+          "value": "สี่ (sìi) | sìi | four — low tone (voice stays low)",
+          "segments": [
+            {
+              "text": "สี่",
+              "fontName": "Sarabun",
+              "fontSizePt": 15.0,
+              "color": "#566873",
+              "bold": false,
+              "italic": false
+            },
+            {
+              "text": " (sìi)",
+              "fontName": "Sarabun",
+              "fontSizePt": 15.0,
+              "color": "#566873",
+              "bold": false,
+              "italic": true
+            },
+            {
+              "text": " | sìi | four — low tone (voice stays low)",
+              "fontName": "Sarabun",
+              "fontSizePt": 15.0,
+              "color": "#566873",
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "id": "softener_label",
+          "kind": "text",
+          "x": 731520,
+          "y": 4594866,
+          "w": 1828800,
+          "h": 274200,
+          "fontName": "Sarabun",
+          "fontSizePt": 13,
+          "color": "#24333D",
+          "bold": true,
+          "italic": false,
+          "align": "left",
+          "value": "Softener"
+        }
+      ]
+    },
+    {
+      "id": "canva-slide-07",
+      "title": "Roleplay",
+      "layoutFamily": "roleplay-ladder",
+      "backgroundPath": "canva-backgrounds/slide-07.png",
+      "elements": [
+        {
+          "id": "title",
+          "kind": "text",
+          "x": 731520,
+          "y": 429768,
+          "w": 6858000,
+          "h": 457200,
+          "fontName": "Sarabun",
+          "fontSizePt": 30,
+          "color": "#24333D",
+          "bold": true,
+          "italic": false,
+          "align": "left",
+          "value": "Roleplay"
+        },
+        {
+          "id": "subtitle",
+          "kind": "text",
+          "x": 731520,
+          "y": 992138,
+          "w": 6858000,
+          "h": 365700,
+          "fontName": "Sarabun",
+          "fontSizePt": 15,
+          "color": "#566873",
+          "bold": false,
+          "italic": false,
+          "align": "left",
+          "value": "Support the roleplay recording with clean turn-taking."
+        },
+        {
+          "id": "turn_1_speaker",
+          "kind": "text",
+          "x": 731520,
+          "y": 1463040,
+          "w": 1097280,
+          "h": 292608,
+          "fontName": "Sarabun",
+          "fontSizePt": 12,
+          "color": "#FFFFFF",
+          "bold": true,
+          "italic": false,
+          "align": "center",
+          "value": "You"
+        },
+        {
+          "id": "turn_1_thai",
+          "kind": "text",
+          "x": 2011680,
+          "y": 1339583,
+          "w": 5303400,
+          "h": 411600,
+          "fontName": "Sarabun",
+          "fontSizePt": 23,
+          "color": "#24333D",
+          "bold": true,
+          "italic": false,
+          "align": "left",
+          "value": "สวัสดีครับ (sà-wàt-dii khráp)",
+          "segments": [
+            {
+              "text": "สวัสดีครับ",
+              "fontName": "Sarabun",
+              "fontSizePt": 23.0,
+              "color": "#24333D",
+              "bold": true,
+              "italic": false
+            },
+            {
+              "text": " (sà-wàt-dii khráp)",
+              "fontName": "Sarabun",
+              "fontSizePt": 15.0,
+              "color": "#566873",
+              "bold": false,
+              "italic": true
+            }
+          ]
+        },
+        {
+          "id": "turn_1_support",
+          "kind": "text",
+          "x": 2011693,
+          "y": 1721362,
+          "w": 5303400,
+          "h": 320100,
+          "fontName": "Sarabun",
+          "fontSizePt": 15,
+          "color": "#566873",
+          "bold": false,
+          "italic": false,
+          "align": "left",
+          "value": "Hello."
+        },
+        {
+          "id": "turn_2_speaker",
+          "kind": "text",
+          "x": 731520,
+          "y": 2199095,
+          "w": 1097400,
+          "h": 292500,
+          "fontName": "Sarabun",
+          "fontSizePt": 12,
+          "color": "#FFFFFF",
+          "bold": true,
+          "italic": false,
+          "align": "center",
+          "value": "Staff"
+        },
+        {
+          "id": "turn_2_thai",
+          "kind": "text",
+          "x": 2011743,
+          "y": 2048200,
+          "w": 5303400,
+          "h": 411600,
+          "fontName": "Sarabun",
+          "fontSizePt": 23,
+          "color": "#24333D",
+          "bold": true,
+          "italic": false,
+          "align": "left",
+          "value": "สวัสดีค่ะ เบอร์ห้องอะไรคะ (sà-wàt-dii khâ ber hâwng à-rai khá)",
+          "segments": [
+            {
+              "text": "สวัสดีค่ะ เบอร์ห้องอะไรคะ",
+              "fontName": "Sarabun",
+              "fontSizePt": 23.0,
+              "color": "#24333D",
+              "bold": true,
+              "italic": false
+            },
+            {
+              "text": " (sà-wàt-dii khâ ber hâwng à-rai khá)",
+              "fontName": "Sarabun",
+              "fontSizePt": 15.0,
+              "color": "#566873",
+              "bold": false,
+              "italic": true
+            }
+          ]
+        },
+        {
+          "id": "turn_2_support",
+          "kind": "text",
+          "x": 2011693,
+          "y": 2482592,
+          "w": 5303400,
+          "h": 320100,
+          "fontName": "Sarabun",
+          "fontSizePt": 15,
+          "color": "#566873",
+          "bold": false,
+          "italic": false,
+          "align": "left",
+          "value": "Hello. What room number?"
+        },
+        {
+          "id": "turn_3_speaker",
+          "kind": "text",
+          "x": 731583,
+          "y": 2962650,
+          "w": 1097400,
+          "h": 292500,
+          "fontName": "Sarabun",
+          "fontSizePt": 12,
+          "color": "#FFFFFF",
+          "bold": true,
+          "italic": false,
+          "align": "center",
+          "value": "You"
+        },
+        {
+          "id": "turn_3_thai",
+          "kind": "text",
+          "x": 2011693,
+          "y": 2878130,
+          "w": 5303400,
+          "h": 411600,
+          "fontName": "Sarabun",
+          "fontSizePt": 23,
+          "color": "#24333D",
+          "bold": true,
+          "italic": false,
+          "align": "left",
+          "value": "ห้า-ศูนย์-สองครับ (hâa-sǔun-sǎawng khráp)",
+          "segments": [
+            {
+              "text": "ห้า-ศูนย์-สองครับ",
+              "fontName": "Sarabun",
+              "fontSizePt": 23.0,
+              "color": "#24333D",
+              "bold": true,
+              "italic": false
+            },
+            {
+              "text": " (hâa-sǔun-sǎawng khráp)",
+              "fontName": "Sarabun",
+              "fontSizePt": 15.0,
+              "color": "#566873",
+              "bold": false,
+              "italic": true
+            }
+          ]
+        },
+        {
+          "id": "turn_3_support",
+          "kind": "text",
+          "x": 2011693,
+          "y": 3253010,
+          "w": 5303400,
+          "h": 320100,
+          "fontName": "Sarabun",
+          "fontSizePt": 15,
+          "color": "#566873",
+          "bold": false,
+          "italic": false,
+          "align": "left",
+          "value": "502."
+        },
+        {
+          "id": "turn_4_speaker",
+          "kind": "text",
+          "x": 731583,
+          "y": 3726205,
+          "w": 1097400,
+          "h": 292500,
+          "fontName": "Sarabun",
+          "fontSizePt": 12,
+          "color": "#FFFFFF",
+          "bold": true,
+          "italic": false,
+          "align": "center",
+          "value": "Staff"
+        },
+        {
+          "id": "turn_4_thai",
+          "kind": "text",
+          "x": 2011693,
+          "y": 3666773,
+          "w": 5303400,
+          "h": 411600,
+          "fontName": "Sarabun",
+          "fontSizePt": 23,
+          "color": "#24333D",
+          "bold": true,
+          "italic": false,
+          "align": "left",
+          "value": "ค่ะ คุณอายุเท่าไหร่คะ (khâ khun aa-yú thâo-rài khá)",
+          "segments": [
+            {
+              "text": "ค่ะ คุณอายุเท่าไหร่คะ",
+              "fontName": "Sarabun",
+              "fontSizePt": 23.0,
+              "color": "#24333D",
+              "bold": true,
+              "italic": false
+            },
+            {
+              "text": " (khâ khun aa-yú thâo-rài khá)",
+              "fontName": "Sarabun",
+              "fontSizePt": 15.0,
+              "color": "#566873",
+              "bold": false,
+              "italic": true
+            }
+          ]
+        },
+        {
+          "id": "turn_4_support",
+          "kind": "text",
+          "x": 2011680,
+          "y": 4072527,
+          "w": 5303400,
+          "h": 320100,
+          "fontName": "Sarabun",
+          "fontSizePt": 15,
+          "color": "#566873",
+          "bold": false,
+          "italic": false,
+          "align": "left",
+          "value": "How old are you?"
+        },
+        {
+          "id": "turn_5_speaker",
+          "kind": "text",
+          "x": 791795,
+          "y": 4489760,
+          "w": 1097400,
+          "h": 292500,
+          "fontName": "Sarabun",
+          "fontSizePt": 12,
+          "color": "#FFFFFF",
+          "bold": true,
+          "italic": false,
+          "align": "center",
+          "value": "You"
+        },
+        {
+          "id": "turn_5_thai",
+          "kind": "text",
+          "x": 2011755,
+          "y": 4366290,
+          "w": 5303400,
+          "h": 411600,
+          "fontName": "Sarabun",
+          "fontSizePt": 23,
+          "color": "#24333D",
+          "bold": true,
+          "italic": false,
+          "align": "left",
+          "value": "ผมอายุสามสิบปีครับ (phǒm aa-yú sǎam-sìp bpii khráp)",
+          "segments": [
+            {
+              "text": "ผมอายุสามสิบปีครับ",
+              "fontName": "Sarabun",
+              "fontSizePt": 23.0,
+              "color": "#24333D",
+              "bold": true,
+              "italic": false
+            },
+            {
+              "text": " (phǒm aa-yú sǎam-sìp bpii khráp)",
+              "fontName": "Sarabun",
+              "fontSizePt": 15.0,
+              "color": "#566873",
+              "bold": false,
+              "italic": true
+            }
+          ]
+        },
+        {
+          "id": "turn_5_support",
+          "kind": "text",
+          "x": 2011693,
+          "y": 4759532,
+          "w": 5303400,
+          "h": 320100,
+          "fontName": "Sarabun",
+          "fontSizePt": 15,
+          "color": "#566873",
+          "bold": false,
+          "italic": false,
+          "align": "left",
+          "value": "I am thirty."
+        },
+        {
+          "id": "turn_6_speaker",
+          "kind": "text",
+          "x": 731633,
+          "y": 5253290,
+          "w": 1097400,
+          "h": 292500,
+          "fontName": "Sarabun",
+          "fontSizePt": 12,
+          "color": "#FFFFFF",
+          "bold": true,
+          "italic": false,
+          "align": "center",
+          "value": "Staff"
+        },
+        {
+          "id": "turn_6_thai",
+          "kind": "text",
+          "x": 2011680,
+          "y": 5175433,
+          "w": 5303400,
+          "h": 411600,
+          "fontName": "Sarabun",
+          "fontSizePt": 23,
+          "color": "#24333D",
+          "bold": true,
+          "italic": false,
+          "align": "left",
+          "value": "ขอบคุณค่ะ (khàawp-khun khâ)",
+          "segments": [
+            {
+              "text": "ขอบคุณค่ะ",
+              "fontName": "Sarabun",
+              "fontSizePt": 23.0,
+              "color": "#24333D",
+              "bold": true,
+              "italic": false
+            },
+            {
+              "text": " (khàawp-khun khâ)",
+              "fontName": "Sarabun",
+              "fontSizePt": 15.0,
+              "color": "#566873",
+              "bold": false,
+              "italic": true
+            }
+          ]
+        },
+        {
+          "id": "turn_6_support",
+          "kind": "text",
+          "x": 2011693,
+          "y": 5571112,
+          "w": 5303400,
+          "h": 320100,
+          "fontName": "Sarabun",
+          "fontSizePt": 15,
+          "color": "#566873",
+          "bold": false,
+          "italic": false,
+          "align": "left",
+          "value": "Thank you."
+        }
+      ]
+    },
+    {
+      "id": "canva-slide-08",
+      "title": "Recap",
+      "layoutFamily": "recap-checklist",
+      "backgroundPath": "canva-backgrounds/slide-08.png",
+      "elements": [
+        {
+          "id": "title",
+          "kind": "text",
+          "x": 1137970,
+          "y": 1015518,
+          "w": 6858000,
+          "h": 457200,
+          "fontName": "Sarabun",
+          "fontSizePt": 30,
+          "color": "#24333D",
+          "bold": true,
+          "italic": false,
+          "align": "left",
+          "value": "Recap"
+        },
+        {
+          "id": "item_1",
+          "kind": "text",
+          "x": 1097280,
+          "y": 1776945,
+          "w": 6400800,
+          "h": 457200,
+          "fontName": "Sarabun",
+          "fontSizePt": 16,
+          "color": "#24333D",
+          "bold": false,
+          "italic": false,
+          "align": "left",
+          "value": "Count 0 to 5 in Thai. Go."
+        },
+        {
+          "id": "item_2",
+          "kind": "text",
+          "x": 1097280,
+          "y": 2437455,
+          "w": 6400800,
+          "h": 457200,
+          "fontName": "Sarabun",
+          "fontSizePt": 16,
+          "color": "#24333D",
+          "bold": false,
+          "italic": false,
+          "align": "left",
+          "value": "Now 6 to 10."
+        },
+        {
+          "id": "item_3",
+          "kind": "text",
+          "x": 1005855,
+          "y": 3097940,
+          "w": 6400800,
+          "h": 457200,
+          "fontName": "Sarabun",
+          "fontSizePt": 16,
+          "color": "#24333D",
+          "bold": false,
+          "italic": false,
+          "align": "left",
+          "value": "Ask 'what number?' เบอร์อะไร (ber à-rai).",
+          "segments": [
+            {
+              "text": "Ask 'what number?' ",
+              "fontName": "Sarabun",
+              "fontSizePt": 16.0,
+              "color": "#24333D",
+              "bold": false,
+              "italic": false
+            },
+            {
+              "text": "เบอร์อะไร",
+              "fontName": "Sarabun",
+              "fontSizePt": 16.0,
+              "color": "#24333D",
+              "bold": false,
+              "italic": false
+            },
+            {
+              "text": " (ber à-rai)",
+              "fontName": "Sarabun",
+              "fontSizePt": 15.0,
+              "color": "#566873",
+              "bold": false,
+              "italic": true
+            },
+            {
+              "text": ".",
+              "fontName": "Sarabun",
+              "fontSizePt": 16.0,
+              "color": "#24333D",
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "id": "item_4",
+          "kind": "text",
+          "x": 1097280,
+          "y": 3686175,
+          "w": 6400800,
+          "h": 457200,
+          "fontName": "Sarabun",
+          "fontSizePt": 16,
+          "color": "#24333D",
+          "bold": false,
+          "italic": false,
+          "align": "left",
+          "value": "Say 'I am 30 years old' in Thai."
+        },
+        {
+          "id": "item_5",
+          "kind": "text",
+          "x": 1005855,
+          "y": 4412835,
+          "w": 6400800,
+          "h": 457200,
+          "fontName": "Sarabun",
+          "fontSizePt": 16,
+          "color": "#24333D",
+          "bold": false,
+          "italic": false,
+          "align": "left",
+          "value": "สี่ (sìi) is low tone. Rising tone means what?",
+          "segments": [
+            {
+              "text": "สี่",
+              "fontName": "Sarabun",
+              "fontSizePt": 16.0,
+              "color": "#24333D",
+              "bold": false,
+              "italic": false
+            },
+            {
+              "text": " (sìi)",
+              "fontName": "Sarabun",
+              "fontSizePt": 15.0,
+              "color": "#566873",
+              "bold": false,
+              "italic": true
+            },
+            {
+              "text": " is low tone. Rising tone means what?",
+              "fontName": "Sarabun",
+              "fontSizePt": 16.0,
+              "color": "#24333D",
+              "bold": false,
+              "italic": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "canva-slide-09",
+      "title": "Closing",
+      "layoutFamily": "closing",
+      "backgroundPath": "canva-backgrounds/slide-09.png",
+      "elements": [
+        {
+          "id": "lesson_id",
+          "kind": "text",
+          "x": 731520,
+          "y": 1371600,
+          "w": 6858000,
+          "h": 365760,
+          "fontName": "Sarabun",
+          "fontSizePt": 19,
+          "color": "#566873",
+          "bold": false,
+          "italic": false,
+          "align": "left",
+          "value": "M01-L004"
+        },
+        {
+          "id": "title",
+          "kind": "text",
+          "x": 731520,
+          "y": 1920240,
+          "w": 6858000,
+          "h": 914400,
+          "fontName": "Sarabun",
+          "fontSizePt": 38,
+          "color": "#24333D",
+          "bold": true,
+          "italic": false,
+          "align": "left",
+          "value": "Closing"
+        },
+        {
+          "id": "line_1",
+          "kind": "text",
+          "x": 731520,
+          "y": 3200400,
+          "w": 6858000,
+          "h": 411480,
+          "fontName": "Sarabun",
+          "fontSizePt": 16,
+          "color": "#24333D",
+          "bold": false,
+          "italic": false,
+          "align": "left",
+          "value": "By the end, you can count 0-10, ask what number, say your age, and handle digit-by-digit codes like room numbers."
+        },
+        {
+          "id": "line_2",
+          "kind": "text",
+          "x": 731520,
+          "y": 3657600,
+          "w": 6858000,
+          "h": 411480,
+          "fontName": "Sarabun",
+          "fontSizePt": 16,
+          "color": "#24333D",
+          "bold": false,
+          "italic": false,
+          "align": "left",
+          "value": "Next: First Contact and Courtesy continues."
+        },
+        {
+          "id": "brand",
+          "kind": "text",
+          "x": 731520,
+          "y": 5303520,
+          "w": 6858000,
+          "h": 365760,
+          "fontName": "Sarabun",
+          "fontSizePt": 15,
+          "color": "#566873",
+          "bold": false,
+          "italic": false,
+          "align": "left",
+          "value": "Immersion Thai with Nine"
+        }
+      ]
+    }
+  ]
+}

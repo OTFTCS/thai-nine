@@ -1,0 +1,19 @@
+{
+  "lessonId": "M01-L005",
+  "state": "DRAFT",
+  "updatedAt": "2026-03-11T12:10:14.603Z",
+  "validatedAt": null,
+  "stageResults": {
+    "0": "PASS",
+    "1": "SKIP",
+    "2": "PASS",
+    "3": "PASS",
+    "4": "SKIP",
+    "5": "SKIP",
+    "6": "SKIP",
+    "7": "SKIP"
+  },
+  "notes": [
+    "scenes=4"
+  ]
+}
