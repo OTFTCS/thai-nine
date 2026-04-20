@@ -11,6 +11,7 @@
     "test": "node --test --experimental-strip-types --loader ./tests/unit/alias-loader.mjs tests/unit/*.test.ts"
   },
   "dependencies": {
+    "exceljs": "^4.4.0",
     "next": "16.1.6",
     "react": "19.2.3",
     "react-dom": "19.2.3"

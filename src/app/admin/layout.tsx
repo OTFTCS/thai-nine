@@ -8,6 +8,13 @@ const adminNav = [
   { href: "/admin", label: "Overview", icon: "📊" },
   { href: "/admin/lessons", label: "Lessons", icon: "📚" },
   { href: "/admin/quizzes", label: "Nine Mode", icon: "🧠" },
+  { href: "/admin/creator", label: "What's Next", icon: "🎯" },
+  { href: "/admin/creator/tracker", label: "Content", icon: "📋" },
+  { href: "/admin/creator/schedule", label: "Schedule", icon: "📅" },
+  { href: "/admin/creator/lessons", label: "Course", icon: "🎓" },
+  { href: "/admin/creator/youtube", label: "YouTube", icon: "🎬" },
+  { href: "/admin/creator/tiktok", label: "TikTok", icon: "📱" },
+  { href: "/admin/creator/carousels", label: "Carousels", icon: "🖼" },
 ];
 
 export default function AdminLayout({

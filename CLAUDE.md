@@ -46,3 +46,10 @@ npm run course:translit-audit                  # Transliteration check
 ## Skills
 - `/produce-lesson M01-L004` — full 12-stage lesson pipeline from blueprint to READY_TO_RECORD
 - `/produce-carousel "Topic"` — vocabulary image carousel from topic to finished PNGs
+
+## Publishing safety
+- NEVER post, publish, or upload to any platform (TikTok, YouTube, Instagram, or any other) without explicit per-action user confirmation — even if the user says "publish everything" or similar.
+- NEVER assume a piece of content is live/published unless the platform API confirms it. Derive published status from API responses only, never from filename patterns or xlsx text-matching.
+- When API credentials are missing or the API call fails, fall back to UNKNOWN status — never assume published=true.
+- Scheduling a post (queuing) is allowed. Actually firing the publish API call requires a separate explicit approval.
+- Required env vars for status checks: `TIKTOK_ACCESS_TOKEN` (+ optional `TIKTOK_CLIENT_KEY` / `TIKTOK_CLIENT_SECRET` for future refresh), `YOUTUBE_API_KEY`, `YOUTUBE_CHANNEL_ID` (+ optional `YOUTUBE_OAUTH_TOKEN` for private/unlisted reads). Store in `.env` only, never in source.
