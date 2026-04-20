@@ -1605,6 +1605,128 @@ async function executeStage(lessonId: string, stage: StageId, strict: boolean): 
   writeText(lessonFile(lessonId, "script-spoken.html"), renderSpokenHtml(script));
 
   if (stage === "3") {
+    // Check which deck output mode to use: gslides > canva > pptx
+    const gslidesConfigPath = join(root, "course", "gslides-pipeline-config.json");
+    const canvaConfigPath = join(root, "course", "canva-pipeline-config.json");
+    const stage3Mode = process.env.STAGE3_MODE ?? "";
+    const useGslides = (stage3Mode === "gslides" || (!stage3Mode && existsSync(gslidesConfigPath)));
+    const useCanva = !useGslides && existsSync(canvaConfigPath) && stage3Mode !== "pptx";
+
+    if (useGslides) {
+      // --- Google Slides Stage 3 ---
+      // Step 1: Run legacy render to generate deck-source.json
+      const legacyProcess = spawnSync(
+        "python3",
+        [
+          join(root, "course", "tools", "render_lesson_deck.py"),
+          "--repo-root",
+          root,
+          "--lesson",
+          lessonId,
+        ],
+        { cwd: root, encoding: "utf8" }
+      );
+      if (legacyProcess.stdout) process.stdout.write(legacyProcess.stdout);
+      if (legacyProcess.stderr) process.stderr.write(legacyProcess.stderr);
+      if (legacyProcess.status !== 0) {
+        return { code: legacyProcess.status ?? 1, meta: "deck-source-generation-failed" };
+      }
+
+      // Step 2: Upload PPTX to Google Slides
+      const dryRun = process.env.GSLIDES_DRY_RUN === "1";
+      const uploadArgs = [
+        join(root, "course", "tools", "upload_gslides.py"),
+        "--repo-root",
+        root,
+        "--lesson",
+        lessonId,
+      ];
+      if (dryRun) uploadArgs.push("--dry-run");
+      const uploadProcess = spawnSync("python3", uploadArgs, {
+        cwd: root,
+        encoding: "utf8",
+      });
+      if (uploadProcess.stdout) process.stdout.write(uploadProcess.stdout);
+      if (uploadProcess.stderr) process.stderr.write(uploadProcess.stderr);
+      if (uploadProcess.status !== 0) {
+        return { code: uploadProcess.status ?? 1, meta: "gslides-upload-failed" };
+      }
+
+      // Step 3: Font pass — swap Sarabun → Noto Sans Thai Looped on Thai runs
+      if (!dryRun) {
+        const fontPassArgs = [
+          join(root, "course", "tools", "gslides_font_pass.py"),
+          "--repo-root",
+          root,
+          "--lesson",
+          lessonId,
+        ];
+        const fontPassProcess = spawnSync("python3", fontPassArgs, {
+          cwd: root,
+          encoding: "utf8",
+        });
+        if (fontPassProcess.stdout) process.stdout.write(fontPassProcess.stdout);
+        if (fontPassProcess.stderr) process.stderr.write(fontPassProcess.stderr);
+        if (fontPassProcess.status !== 0) {
+          return { code: fontPassProcess.status ?? 1, meta: "gslides-font-pass-failed" };
+        }
+      }
+
+      const deckSource = readJson<DeckSource>(resolveLessonFile(lessonId, "deck-source.json"));
+      return {
+        code: 0,
+        meta: `slides=${deckSource.slides.length} output=gslides${dryRun ? " (dry-run)" : ""}`,
+      };
+    }
+
+    if (useCanva) {
+      // --- Canva-native Stage 3 ---
+      // Step 1: Run legacy render to generate deck-source.json and canva-content.json
+      //         (these are still needed as the canonical slide spec)
+      const legacyProcess = spawnSync(
+        "python3",
+        [
+          join(root, "course", "tools", "render_lesson_deck.py"),
+          "--repo-root",
+          root,
+          "--lesson",
+          lessonId,
+        ],
+        { cwd: root, encoding: "utf8" }
+      );
+      if (legacyProcess.stdout) process.stdout.write(legacyProcess.stdout);
+      if (legacyProcess.stderr) process.stderr.write(legacyProcess.stderr);
+      if (legacyProcess.status !== 0) {
+        return { code: legacyProcess.status ?? 1, meta: "deck-source-generation-failed" };
+      }
+
+      // Step 2: Generate Canva action plan from deck-source.json
+      const canvaProcess = spawnSync(
+        process.execPath,
+        [
+          "--experimental-strip-types",
+          join(root, "course", "tools", "stage3-canva.ts"),
+          "--repo-root",
+          root,
+          "--lesson",
+          lessonId,
+        ],
+        { cwd: root, encoding: "utf8" }
+      );
+      if (canvaProcess.stdout) process.stdout.write(canvaProcess.stdout);
+      if (canvaProcess.stderr) process.stderr.write(canvaProcess.stderr);
+      if (canvaProcess.status !== 0) {
+        return { code: canvaProcess.status ?? 1, meta: "canva-stage3-failed" };
+      }
+
+      const deckSource = readJson<DeckSource>(resolveLessonFile(lessonId, "deck-source.json"));
+      return {
+        code: 0,
+        meta: `slides=${deckSource.slides.length} canva-action-plan=ready`,
+      };
+    }
+
+    // --- Legacy PPTX Stage 3 (fallback) ---
     const stage3Process = spawnSync(
       "python3",
       [

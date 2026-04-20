@@ -348,6 +348,308 @@
       "seriesCloser": "Rapid montage callback of best weird-English glosses from all 8 episodes: 'Dog BODY big very', 'Shirt three BODIES', 'Hammer ITEM big', 'Ticket FLAT-THING that', 'Phone MACHINE new', 'Orange ROUND-THING this', 'Coffee GLASS big', 'Time PLACE two'.",
       "forwardHook": "Tease wave 2 classifiers.",
       "cta": "Comment 'wave 2' if you want the next batch."
+    },
+    {
+      "episode": 9,
+      "slug": "cheat-sheet",
+      "title": "Every Thai Classifier You Need — Save This",
+      "template": "cheat-sheet",
+      "runtimeProfile": "cheat-sheet",
+      "targetSeconds": {
+        "min": 150,
+        "ideal": 165,
+        "max": 180
+      },
+      "hook": "Nineteen classifiers. They cover over 95% of Thai nouns. Here they are — save this.",
+      "focus": "Rapid-fire reference of all 19 classifiers with one-line explanations and 8 example nouns each — screenshottable, saveable. No teaching, no challenges — pure reference.",
+      "classifierBlocks": [
+        {
+          "classifier": "คน", "translit": "khon", "gloss": "PERSON",
+          "explanation": "For people — anyone human",
+          "wave": 1,
+          "nouns": [
+            { "thai": "นักเรียน", "translit": "nák-riian", "english": "student" },
+            { "thai": "หมอ", "translit": "mǎaw", "english": "doctor" },
+            { "thai": "เพื่อน", "translit": "phûuean", "english": "friend" },
+            { "thai": "ครู", "translit": "khruu", "english": "teacher" },
+            { "thai": "เด็ก", "translit": "dèk", "english": "child" },
+            { "thai": "พนักงาน", "translit": "phá-nák-ngaan", "english": "employee" },
+            { "thai": "แม่", "translit": "mâae", "english": "mother" },
+            { "thai": "พ่อ", "translit": "phâaw", "english": "father" }
+          ]
+        },
+        {
+          "classifier": "ตัว", "translit": "dtua", "gloss": "BODY",
+          "explanation": "For animals, clothing, and body-shaped things",
+          "wave": 1,
+          "nouns": [
+            { "thai": "แมว", "translit": "maaeo", "english": "cat" },
+            { "thai": "หมา", "translit": "mǎa", "english": "dog" },
+            { "thai": "นก", "translit": "nók", "english": "bird" },
+            { "thai": "ช้าง", "translit": "cháang", "english": "elephant" },
+            { "thai": "ปลา", "translit": "bplaa", "english": "fish" },
+            { "thai": "เสื้อ", "translit": "sûuea", "english": "shirt" },
+            { "thai": "ตุ๊กตา", "translit": "dtúk-dtaa", "english": "doll" },
+            { "thai": "กางเกง", "translit": "gaang-geeng", "english": "pants" }
+          ]
+        },
+        {
+          "classifier": "อัน", "translit": "an", "gloss": "ITEM",
+          "explanation": "The fallback — for small objects with no specific classifier",
+          "wave": 1,
+          "nouns": [
+            { "thai": "รีโมต", "translit": "rii-mòht", "english": "remote" },
+            { "thai": "ไม้", "translit": "mái", "english": "stick" },
+            { "thai": "ค้อน", "translit": "khâwn", "english": "hammer" },
+            { "thai": "หมอน", "translit": "mǎawn", "english": "pillow" },
+            { "thai": "ไฟฉาย", "translit": "fai-chǎai", "english": "flashlight" },
+            { "thai": "ของเล่น", "translit": "khǎawng-lên", "english": "toy" },
+            { "thai": "ช้อน", "translit": "cháawn", "english": "spoon" },
+            { "thai": "ส้อม", "translit": "sâwm", "english": "fork" }
+          ]
+        },
+        {
+          "classifier": "ใบ", "translit": "bai", "gloss": "FLAT-THING",
+          "explanation": "For flat, thin, or paper-like items",
+          "wave": 1,
+          "nouns": [
+            { "thai": "ตั๋ว", "translit": "dtǔa", "english": "ticket" },
+            { "thai": "บัตร", "translit": "bàt", "english": "card" },
+            { "thai": "ใบเสร็จ", "translit": "bai-sèt", "english": "receipt" },
+            { "thai": "ใบไม้", "translit": "bai-mái", "english": "leaf" },
+            { "thai": "จาน", "translit": "jaan", "english": "plate" },
+            { "thai": "ถุง", "translit": "thǔng", "english": "bag" },
+            { "thai": "กระเป๋า", "translit": "grà-bpǎo", "english": "handbag" },
+            { "thai": "หมวก", "translit": "mùuak", "english": "hat" }
+          ]
+        },
+        {
+          "classifier": "เล่ม", "translit": "lêm", "gloss": "VOLUME",
+          "explanation": "For books, bound items, and bladed things",
+          "wave": 1,
+          "nouns": [
+            { "thai": "หนังสือ", "translit": "nǎng-sǔue", "english": "book" },
+            { "thai": "สมุด", "translit": "sà-mùt", "english": "notebook" },
+            { "thai": "พาสปอร์ต", "translit": "pháat-sà-bpàwt", "english": "passport" },
+            { "thai": "นิตยสาร", "translit": "nít-dtà-yá-sǎan", "english": "magazine" },
+            { "thai": "ดาบ", "translit": "dàap", "english": "sword" },
+            { "thai": "มีด", "translit": "mîit", "english": "knife" },
+            { "thai": "เทียน", "translit": "thiian", "english": "candle" },
+            { "thai": "กรรไกร", "translit": "gan-grai", "english": "scissors" }
+          ]
+        },
+        {
+          "classifier": "คัน", "translit": "khan", "gloss": "VEHICLE",
+          "explanation": "For vehicles and things you steer",
+          "wave": 1,
+          "nouns": [
+            { "thai": "รถ", "translit": "rót", "english": "car" },
+            { "thai": "จักรยาน", "translit": "jàk-grà-yaan", "english": "bicycle" },
+            { "thai": "มอเตอร์ไซค์", "translit": "maw-dtooe-sai", "english": "motorbike" },
+            { "thai": "ตุ๊กตุ๊ก", "translit": "dtúk-dtúk", "english": "tuk-tuk" },
+            { "thai": "แท็กซี่", "translit": "tháek-sîi", "english": "taxi" },
+            { "thai": "รถเมล์", "translit": "rót-mee", "english": "bus" },
+            { "thai": "ร่ม", "translit": "rôm", "english": "umbrella" },
+            { "thai": "เบ็ด", "translit": "bèt", "english": "fishing rod" }
+          ]
+        },
+        {
+          "classifier": "เครื่อง", "translit": "khrûueang", "gloss": "MACHINE",
+          "explanation": "For machines, devices, and appliances",
+          "wave": 1,
+          "nouns": [
+            { "thai": "โทรศัพท์", "translit": "thoo-rá-sàp", "english": "phone" },
+            { "thai": "คอมพิวเตอร์", "translit": "khawm-phiu-dtooe", "english": "computer" },
+            { "thai": "ตู้เย็น", "translit": "dtûu-yen", "english": "fridge" },
+            { "thai": "เครื่องซักผ้า", "translit": "khrûueang-sák-phâa", "english": "washing machine" },
+            { "thai": "แอร์", "translit": "aae", "english": "air con" },
+            { "thai": "พัดลม", "translit": "phát-lom", "english": "fan" },
+            { "thai": "โทรทัศน์", "translit": "thoo-rá-thát", "english": "TV" },
+            { "thai": "เครื่องปริ้น", "translit": "khrûueang-bprín", "english": "printer" }
+          ]
+        },
+        {
+          "classifier": "ลูก", "translit": "lûuk", "gloss": "ROUND-THING",
+          "explanation": "For round or whole objects",
+          "wave": 1,
+          "nouns": [
+            { "thai": "ส้ม", "translit": "sôm", "english": "orange" },
+            { "thai": "ทุเรียน", "translit": "thú-riian", "english": "durian" },
+            { "thai": "ลูกบอล", "translit": "lûuk-bawn", "english": "ball" },
+            { "thai": "แตงโม", "translit": "dtaaeng-moo", "english": "watermelon" },
+            { "thai": "ไข่", "translit": "khài", "english": "egg" },
+            { "thai": "กุญแจ", "translit": "gun-jaae", "english": "key" },
+            { "thai": "มะม่วง", "translit": "má-mûuang", "english": "mango" },
+            { "thai": "ลูกโป่ง", "translit": "lûuk-bpòong", "english": "balloon" }
+          ]
+        },
+        {
+          "classifier": "ชิ้น", "translit": "chín", "gloss": "PIECE",
+          "explanation": "For pieces, slices, or portions of something",
+          "wave": 1,
+          "nouns": [
+            { "thai": "เค้ก", "translit": "khéek", "english": "cake" },
+            { "thai": "พิซซ่า", "translit": "phít-sâa", "english": "pizza" },
+            { "thai": "ขนมปัง", "translit": "khà-nǒm-bpang", "english": "bread" },
+            { "thai": "เนื้อ", "translit": "núuea", "english": "meat" },
+            { "thai": "ไก่", "translit": "gài", "english": "chicken" },
+            { "thai": "หมู", "translit": "mǔu", "english": "pork" },
+            { "thai": "ผ้า", "translit": "phâa", "english": "fabric" },
+            { "thai": "ช็อกโกแลต", "translit": "cháwk-goo-láet", "english": "chocolate" }
+          ]
+        },
+        {
+          "classifier": "แก้ว", "translit": "gâaeo", "gloss": "GLASS",
+          "explanation": "For drinks served in a glass or cup",
+          "wave": 1,
+          "nouns": [
+            { "thai": "น้ำ", "translit": "náam", "english": "water" },
+            { "thai": "กาแฟ", "translit": "gaa-faae", "english": "coffee" },
+            { "thai": "ชาไทย", "translit": "chaa-thai", "english": "Thai tea" },
+            { "thai": "ชาเย็น", "translit": "chaa-yen", "english": "iced tea" },
+            { "thai": "น้ำส้ม", "translit": "náam-sôm", "english": "orange juice" },
+            { "thai": "นม", "translit": "nom", "english": "milk" },
+            { "thai": "เบียร์", "translit": "biia", "english": "beer (draft)" },
+            { "thai": "ไวน์", "translit": "waai", "english": "wine" }
+          ]
+        },
+        {
+          "classifier": "ขวด", "translit": "khùat", "gloss": "BOTTLE",
+          "explanation": "For anything in a bottle",
+          "wave": 1,
+          "nouns": [
+            { "thai": "น้ำ", "translit": "náam", "english": "water" },
+            { "thai": "โค้ก", "translit": "khóok", "english": "Coke" },
+            { "thai": "น้ำผลไม้", "translit": "náam-phǒn-lá-mái", "english": "juice" },
+            { "thai": "นม", "translit": "nom", "english": "milk" },
+            { "thai": "เบียร์", "translit": "biia", "english": "beer" },
+            { "thai": "ซีอิ๊ว", "translit": "sii-íw", "english": "soy sauce" },
+            { "thai": "น้ำปลา", "translit": "náam-bplaa", "english": "fish sauce" },
+            { "thai": "น้ำมัน", "translit": "náam-man", "english": "cooking oil" }
+          ]
+        },
+        {
+          "classifier": "ครั้ง", "translit": "khráng", "gloss": "TIMES",
+          "explanation": "For counting occasions or attempts",
+          "wave": 1,
+          "usagePhrases": [
+            { "thai": "ไปสามครั้ง", "translit": "bpai sǎam khráng", "english": "went 3 times" },
+            { "thai": "ครั้งนี้", "translit": "khráng-níi", "english": "this time" },
+            { "thai": "ลองสองครั้ง", "translit": "lawng sǎawng khráng", "english": "tried twice" },
+            { "thai": "ครั้งหน้า", "translit": "khráng-nâa", "english": "next time" },
+            { "thai": "กี่ครั้ง", "translit": "gìi khráng", "english": "how many times?" },
+            { "thai": "อีกครั้ง", "translit": "ìik khráng", "english": "one more time" },
+            { "thai": "ทุกครั้ง", "translit": "thúk khráng", "english": "every time" },
+            { "thai": "ครั้งเดียว", "translit": "khráng diiao", "english": "just once" }
+          ]
+        },
+        {
+          "classifier": "รอบ", "translit": "râwp", "gloss": "ROUNDS",
+          "explanation": "For cycles, laps, or showings",
+          "wave": 1,
+          "usagePhrases": [
+            { "thai": "ดูหนังสองรอบ", "translit": "duu nǎng sǎawng râwp", "english": "watched the movie twice" },
+            { "thai": "รอบหน้า", "translit": "râwp-nâa", "english": "next round" },
+            { "thai": "วิ่งสามรอบ", "translit": "wîng sǎam râwp", "english": "ran 3 laps" },
+            { "thai": "รอบแรก", "translit": "râwp-râaek", "english": "first round" },
+            { "thai": "รอบสุดท้าย", "translit": "râwp-sùt-tháai", "english": "last round" },
+            { "thai": "กี่รอบ", "translit": "gìi râwp", "english": "how many rounds?" },
+            { "thai": "รอบเช้า", "translit": "râwp-cháao", "english": "morning showing" },
+            { "thai": "อีกรอบ", "translit": "ìik râwp", "english": "one more round" }
+          ]
+        },
+        {
+          "classifier": "ที่", "translit": "thîi", "gloss": "ORDINAL",
+          "explanation": "Turns numbers into 1st, 2nd, 3rd",
+          "wave": 1,
+          "usagePhrases": [
+            { "thai": "คนที่หนึ่ง", "translit": "khon thîi nùeng", "english": "the 1st person" },
+            { "thai": "ร้านที่สาม", "translit": "ráan thîi sǎam", "english": "the 3rd shop" },
+            { "thai": "ครั้งที่สอง", "translit": "khráng thîi sǎawng", "english": "the 2nd time" },
+            { "thai": "ที่หนึ่ง", "translit": "thîi-nùeng", "english": "1st place" },
+            { "thai": "บ้านที่สอง", "translit": "bâan thîi sǎawng", "english": "the 2nd house" },
+            { "thai": "วันที่สิบ", "translit": "wan thîi sìp", "english": "the 10th day" },
+            { "thai": "ตอนที่สอง", "translit": "dtawn thîi sǎawng", "english": "Episode 2" },
+            { "thai": "อันดับที่หนึ่ง", "translit": "an-dàp thîi nùeng", "english": "1st rank" }
+          ]
+        },
+        {
+          "classifier": "หลัง", "translit": "lǎng", "gloss": "ROOF",
+          "explanation": "For buildings and houses",
+          "wave": 2,
+          "nouns": [
+            { "thai": "บ้าน", "translit": "bâan", "english": "house" },
+            { "thai": "คอนโด", "translit": "khawn-doo", "english": "condo" },
+            { "thai": "ตึก", "translit": "dtùek", "english": "building" },
+            { "thai": "โรงแรม", "translit": "roong-raaem", "english": "hotel" },
+            { "thai": "วัด", "translit": "wát", "english": "temple" },
+            { "thai": "โรงเรียน", "translit": "roong-riian", "english": "school" },
+            { "thai": "โรงพยาบาล", "translit": "roong-phá-yaa-baan", "english": "hospital" },
+            { "thai": "กระท่อม", "translit": "grà-thâwm", "english": "hut" }
+          ]
+        },
+        {
+          "classifier": "คู่", "translit": "khûu", "gloss": "PAIR",
+          "explanation": "For things that come in pairs",
+          "wave": 2,
+          "nouns": [
+            { "thai": "รองเท้า", "translit": "rawng-tháao", "english": "shoes" },
+            { "thai": "ถุงมือ", "translit": "thǔng-muue", "english": "gloves" },
+            { "thai": "ถุงเท้า", "translit": "thǔng-tháao", "english": "socks" },
+            { "thai": "ตะเกียบ", "translit": "dtà-gìiap", "english": "chopsticks" },
+            { "thai": "ต่างหู", "translit": "dtàang-hǔu", "english": "earrings" },
+            { "thai": "รองเท้าแตะ", "translit": "rawng-tháao-dtàe", "english": "flip-flops" },
+            { "thai": "รองเท้าบูท", "translit": "rawng-tháao-bùut", "english": "boots" },
+            { "thai": "ถุงน่อง", "translit": "thǔng-nâwng", "english": "stockings" }
+          ]
+        },
+        {
+          "classifier": "ห้อง", "translit": "hâwng", "gloss": "ROOM",
+          "explanation": "For rooms",
+          "wave": 2,
+          "nouns": [
+            { "thai": "ห้องพัก", "translit": "hâwng-phák", "english": "hotel room" },
+            { "thai": "ห้องนอน", "translit": "hâwng-nawn", "english": "bedroom" },
+            { "thai": "ห้องเรียน", "translit": "hâwng-riian", "english": "classroom" },
+            { "thai": "ห้องน้ำ", "translit": "hâwng-náam", "english": "bathroom" },
+            { "thai": "ห้องครัว", "translit": "hâwng-khruua", "english": "kitchen" },
+            { "thai": "ห้องนั่งเล่น", "translit": "hâwng-nâng-lên", "english": "living room" },
+            { "thai": "ห้องประชุม", "translit": "hâwng-bprà-chum", "english": "meeting room" },
+            { "thai": "ห้องทำงาน", "translit": "hâwng-tham-ngaan", "english": "office" }
+          ]
+        },
+        {
+          "classifier": "ฉบับ", "translit": "chà-bàp", "gloss": "COPY",
+          "explanation": "For documents, newspapers, and official papers",
+          "wave": 2,
+          "nouns": [
+            { "thai": "หนังสือพิมพ์", "translit": "nǎng-sǔue-phim", "english": "newspaper" },
+            { "thai": "สัญญา", "translit": "sǎn-yaa", "english": "contract" },
+            { "thai": "จดหมาย", "translit": "jòt-mǎai", "english": "letter" },
+            { "thai": "เอกสาร", "translit": "èek-gà-sǎan", "english": "document" },
+            { "thai": "ใบสมัคร", "translit": "bai-sà-màk", "english": "application" },
+            { "thai": "ข้อสอบ", "translit": "khâaw-sàwp", "english": "exam" },
+            { "thai": "ใบรับรอง", "translit": "bai-ráp-rawng", "english": "certificate" },
+            { "thai": "รายงาน", "translit": "raai-ngaan", "english": "report" }
+          ]
+        },
+        {
+          "classifier": "ชุด", "translit": "chút", "gloss": "SET",
+          "explanation": "For sets, outfits, and matching groups",
+          "wave": 2,
+          "nouns": [
+            { "thai": "ชุดนักเรียน", "translit": "chút-nák-riian", "english": "school uniform" },
+            { "thai": "สูท", "translit": "sùut", "english": "suit" },
+            { "thai": "ชุดจาน", "translit": "chút-jaan", "english": "set of dishes" },
+            { "thai": "ชุดกีฬา", "translit": "chút-gii-laa", "english": "sportswear" },
+            { "thai": "ชุดว่ายน้ำ", "translit": "chút-wâai-náam", "english": "swimsuit" },
+            { "thai": "ชุดนอน", "translit": "chút-nawn", "english": "pajamas" },
+            { "thai": "ชุดไทย", "translit": "chút-thai", "english": "traditional Thai outfit" },
+            { "thai": "ชุดแต่งงาน", "translit": "chút-dtàaeng-ngaan", "english": "wedding dress" }
+          ]
+        }
+      ],
+      "cta": "Full breakdowns on my profile — one video per classifier. Save this."
     }
   ]
 }

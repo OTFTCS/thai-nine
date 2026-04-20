@@ -26,5 +26,12 @@
     "targetWordCount": 105,
     "teachingBlocks": 2,
     "ctaSeconds": 6
+  },
+  "cheat-sheet": {
+    "label": "Reference compilation — all classifiers rapid-fire",
+    "targetSeconds": 150,
+    "targetWordCount": 220,
+    "teachingBlocks": 19,
+    "ctaSeconds": 5
   }
 }

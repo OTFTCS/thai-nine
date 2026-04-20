@@ -778,7 +778,27 @@ def fit_picture(slide, image_path: Path, left, top, max_width, max_height):
     slide.shapes.add_picture(str(image_path), left, top, width=final_width, height=final_height)
 
 
-def render_opener(slide, slide_data: dict[str, Any], row: dict[str, str], translit_entries: list[tuple[str, str]] | None = None):
+def _place_slide_image(slide, slide_data: dict[str, Any], lesson_root: Path) -> None:
+    """Place a generated-ai image on the slide if available."""
+    vs = slide_data.get("visualStrategy", {})
+    if vs.get("imageUsage") != "generated-ai":
+        return
+    for asset in slide_data.get("assets", []):
+        local_path = asset.get("localPath", "")
+        if not local_path:
+            continue
+        image_path = lesson_root / local_path
+        if image_path.exists():
+            # Place in bottom-right zone, below PiP
+            fit_picture(
+                slide, image_path,
+                left=Inches(8.0), top=Inches(3.6),
+                max_width=Inches(4.8), max_height=Inches(3.4),
+            )
+            return
+
+
+def render_opener(slide, slide_data: dict[str, Any], row: dict[str, str], translit_entries: list[tuple[str, str]] | None = None, lesson_root: Path | None = None):
     add_divider(slide, 0, 0, LEFT_ZONE_W, ACCENT_GOLD, Pt(6))
     eyebrow = f"{row.get('module_title', '').strip()}  ·  {row.get('cefr_band', '').strip()}".strip(" ·")
     add_textbox(slide, CONTENT_LEFT, Inches(1.75), CONTENT_WIDTH_BESIDE_PIP, Inches(0.25), eyebrow or "Immersion Thai with Nine", font_name=FONT_LATIN, font_size=SIZE_LABEL, color=ACCENT_GOLD, bold=True, translit_entries=translit_entries)
@@ -787,6 +807,8 @@ def render_opener(slide, slide_data: dict[str, Any], row: dict[str, str], transl
     note_lines = slide_data["textBlocks"][0]["lines"][:2]
     add_bullet_block(slide, CONTENT_LEFT, Inches(4.5), CONTENT_WIDTH_BESIDE_PIP, "Lesson focus", note_lines, ACCENT_GOLD, translit_entries)
     add_textbox(slide, CONTENT_LEFT, Inches(6.2), CONTENT_WIDTH, Inches(0.25), "Immersion Thai with Nine", font_name=FONT_LATIN, font_size=SIZE_LABEL, color=INK_LIGHT)
+    if lesson_root:
+        _place_slide_image(slide, slide_data, lesson_root)
 
 
 def render_objectives(slide, slide_data: dict[str, Any], translit_entries: list[tuple[str, str]] | None = None):
@@ -856,8 +878,10 @@ def render_teaching(
             for line in drill_block["lines"][:4]:
                 notes.text += f"• {line}\n"
 
+    _place_slide_image(slide, slide_data, lesson_root)
 
-def render_roleplay(slide, slide_data: dict[str, Any], translit_entries: list[tuple[str, str]] | None = None):
+
+def render_roleplay(slide, slide_data: dict[str, Any], translit_entries: list[tuple[str, str]] | None = None, lesson_root: Path | None = None):
     # Use short "Roleplay" heading; full scenario goes to speaker notes only
     add_section_header(slide, "Roleplay", "Roleplay", translit_entries)
     current_top = Inches(1.2)
@@ -867,9 +891,11 @@ def render_roleplay(slide, slide_data: dict[str, Any], translit_entries: list[tu
         turn_width = CONTENT_WIDTH_BESIDE_PIP if current_top < PIP_BOTTOM else CONTENT_WIDTH
         add_dialogue_turn(slide, CONTENT_LEFT, current_top, turn_width, speaker, thai, translit, english, learner=index % 2 == 1)
         current_top += Inches(1.0)
+    if lesson_root:
+        _place_slide_image(slide, slide_data, lesson_root)
 
 
-def render_recap(slide, slide_data: dict[str, Any], translit_entries: list[tuple[str, str]] | None = None):
+def render_recap(slide, slide_data: dict[str, Any], translit_entries: list[tuple[str, str]] | None = None, lesson_root: Path | None = None):
     add_section_header(slide, slide_data["title"], "Recap", translit_entries)
     # Top block is beside PiP — constrained width
     block_bottom = add_bullet_block(slide, CONTENT_LEFT, Inches(1.55), CONTENT_WIDTH_BESIDE_PIP, "What you can now do", slide_data["textBlocks"][0]["lines"][:5], ACCENT_GOLD, translit_entries)
@@ -877,6 +903,8 @@ def render_recap(slide, slide_data: dict[str, Any], translit_entries: list[tuple
     # Bottom block positioned below top block with gap — full width OK (below PiP)
     remember_top = max(block_bottom + Inches(0.3), Inches(4.55))
     add_bullet_block(slide, CONTENT_LEFT, remember_top, CONTENT_WIDTH, "Remember", [takeaway], ACCENT_TEAL, translit_entries)
+    if lesson_root:
+        _place_slide_image(slide, slide_data, lesson_root)
 
 
 def render_closing(slide, slide_data: dict[str, Any], translit_entries: list[tuple[str, str]] | None = None):
@@ -1210,7 +1238,7 @@ def build_deck_source(
     provenance = {
         "schemaVersion": 1,
         "lessonId": lesson_id,
-        "generatedAt": datetime.datetime.now(datetime.UTC).isoformat().replace("+00:00", "Z"),
+        "generatedAt": datetime.datetime.now(datetime.timezone.utc).isoformat().replace("+00:00", "Z"),
         "assets": provenance_assets,
     }
 
@@ -1232,15 +1260,15 @@ def render_deck(
         slide = add_blank_slide(prs)
         role = slide_data["role"]
         if role == "opener":
-            render_opener(slide, slide_data, row, translit_entries)
+            render_opener(slide, slide_data, row, translit_entries, lesson_root=lesson_root)
         elif role == "objectives":
             render_objectives(slide, slide_data, translit_entries)
         elif role == "teaching":
             render_teaching(slide, slide_data, lesson_root, translit_entries)
         elif role == "roleplay":
-            render_roleplay(slide, slide_data, translit_entries)
+            render_roleplay(slide, slide_data, translit_entries, lesson_root=lesson_root)
         elif role == "recap":
-            render_recap(slide, slide_data, translit_entries)
+            render_recap(slide, slide_data, translit_entries, lesson_root=lesson_root)
         else:
             render_closing(slide, slide_data, translit_entries)
 
@@ -2797,6 +2825,26 @@ def main() -> int:
 
     deck_source_path = lesson_root / artifact_name(lesson_id, "deck-source.json")
     provenance_path = lesson_root / artifact_name(lesson_id, "asset-provenance.json")
+
+    # Merge image data from existing deck-source (preserved by generate_lesson_images.py)
+    if deck_source_path.exists():
+        try:
+            existing = json.loads(deck_source_path.read_text(encoding="utf-8"))
+            existing_by_id = {s["id"]: s for s in existing.get("slides", [])}
+            for slide_data in deck_source.get("slides", []):
+                old = existing_by_id.get(slide_data["id"])
+                if not old:
+                    continue
+                old_vs = old.get("visualStrategy", {})
+                if old_vs.get("imageUsage") == "generated-ai":
+                    slide_data["visualStrategy"]["imageUsage"] = "generated-ai"
+                    slide_data["visualStrategy"]["teachingVisuals"] = old_vs.get("teachingVisuals", slide_data["visualStrategy"]["teachingVisuals"])
+                    if old_vs.get("imagePrompt"):
+                        slide_data["visualStrategy"]["imagePrompt"] = old_vs["imagePrompt"]
+                if old.get("assets"):
+                    slide_data["assets"] = old["assets"]
+        except (json.JSONDecodeError, KeyError):
+            pass
     output_pptx = lesson_root / artifact_name(lesson_id, "deck.pptx")
     canva_content_path = lesson_root / artifact_name(lesson_id, "canva-content.json")
     canva_deck_path = lesson_root / artifact_name(lesson_id, "canva-deck.pptx")
