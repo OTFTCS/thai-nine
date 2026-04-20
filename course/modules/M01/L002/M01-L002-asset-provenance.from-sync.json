@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "M01-L002",
+  "generatedAt": "2026-04-02T11:25:43.774378Z",
+  "assets": [
+    {
+      "assetId": "slide-06-thailand-england-and-ame-asset-1",
+      "slideId": "slide-06-thailand-england-and-ame",
+      "kind": "image",
+      "status": "resolved",
+      "sourceProvider": "openverse",
+      "sourceUrl": "https://www.rawpixel.com/image/7196924/png-sticker-public-domain",
+      "license": "cc0 1.0",
+      "usage": "slide-06-thailand-england-and-ame:left-panel image",
+      "query": "Thai flag icon",
+      "sourcePolicy": "internet-first",
+      "localPath": "slide-assets/slide-06-thailand-england-and-ame-thai-flag-icon.png",
+      "rationale": "Small flag icons help anchor country names visually."
+    },
+    {
+      "assetId": "slide-07-thailand-england-and-ame-asset-1",
+      "slideId": "slide-07-thailand-england-and-ame",
+      "kind": "image",
+      "status": "resolved",
+      "sourceProvider": "openverse",
+      "sourceUrl": "https://www.rawpixel.com/image/7196924/png-sticker-public-domain",
+      "license": "cc0 1.0",
+      "usage": "slide-07-thailand-england-and-ame:left-panel image",
+      "query": "Thai flag icon",
+      "sourcePolicy": "internet-first",
+      "localPath": "slide-assets/slide-07-thailand-england-and-ame-thai-flag-icon.png",
+      "rationale": "Small flag icons help anchor country names visually."
+    }
+  ]
+}

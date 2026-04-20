@@ -1,0 +1,86 @@
+{
+  "resolution": { "width": 1920, "height": 1080 },
+  "aspectRatio": "16:9",
+  "fps": 30,
+
+  "layout": {
+    "phase": 2,
+    "textWidthFrac": 0.85,
+    "leftZone": {
+      "widthPx": 1312,
+      "heightPx": 1080,
+      "note": "Everything left of Nine's PiP — image background, cards, and subtitles all live here"
+    },
+    "overlayZone": {
+      "bottomFracFromTop": 0.30,
+      "note": "Bottom 30% of frame for text overlays"
+    },
+    "pip": {
+      "enabled": true,
+      "widthPx": 608,
+      "heightPx": 1080,
+      "xPx": 1312,
+      "yPx": 0,
+      "aspect": "9:16",
+      "note": "Nine's 9:16 PiP fills full right side of frame"
+    },
+    "cardZone": {
+      "yFrac": 0.35,
+      "maxWidthFrac": 0.75,
+      "note": "Upper-centre of left zone for teaching cards (vocab, breakdown, drill). yFrac 0.35 = +1.2 Manim Y."
+    },
+    "subtitleZone": {
+      "bottomFrac": 0.13,
+      "barOpacity": 0.55,
+      "note": "Bottom strip (~140px) spanning left zone only. Sized for Thai + transliteration stack."
+    }
+  },
+
+  "translucentBar": {
+    "color": "#000000",
+    "opacity": 0.55,
+    "note": "Semi-transparent dark backdrop behind bottom text zone"
+  },
+
+  "colors": {
+    "thai":        "#FFFFFF",
+    "thaiCentre":  "#FFFFFF",
+    "vocabThai":   "#FFFFFF",
+    "translit":    "#FFD54F",
+    "english":     "#B3E5FC",
+    "drillPrompt": "#FFD54F",
+    "thaiSplit":   "#FFFFFF",
+    "highlight":   "#FFD54F",
+    "cardBg":      "#1B2631",
+    "cardBgOpacity": 0.85
+  },
+
+  "fonts": {
+    "thai":        { "family": "Sarabun", "weight": "Medium",   "sizePt": 44 },
+    "thaiCentre":  { "family": "Sarabun", "weight": "Medium",   "sizePt": 58 },
+    "vocabThai":   { "family": "Sarabun", "weight": "SemiBold", "sizePt": 72 },
+    "thaiSplit":   { "family": "Sarabun", "weight": "Medium",   "sizePt": 44 },
+    "translit":    { "family": "Sarabun", "weight": "Regular",  "sizePt": 28 },
+    "english":     { "family": "Sarabun", "weight": "Regular",  "sizePt": 28 },
+    "drillPrompt": { "family": "Sarabun", "weight": "Bold",     "sizePt": 36 },
+    "subtitle":    { "family": "Sarabun", "weight": "Regular",  "sizePt": 24 }
+  },
+
+  "spacing": {
+    "textLineBuff": 0.15,
+    "cardPadX": 0.6,
+    "cardPadY": 0.35,
+    "cardCornerRadius": 0.15,
+    "cardOpacity": 0.82
+  },
+
+  "animations": {
+    "fadeInSec":        0.35,
+    "fadeOutSec":       0.30,
+    "snapInSec":        0.0,
+    "cardRevealSec":    0.4,
+    "breakdownDelaySec": 1.0,
+    "drillTrySec":      1.0,
+    "transitionSec":    0.4
+  }
+}

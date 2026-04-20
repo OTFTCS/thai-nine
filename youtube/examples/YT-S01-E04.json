@@ -1,0 +1,1341 @@
+{
+  "schemaVersion": 2,
+  "episodeId": "YT-S01-E04",
+  "seriesId": "S01",
+  "seriesName": "Thai Survival Phrases",
+  "title": "Shopping at a Thai Market — 8 Essential Phrases",
+  "topic": "shopping-at-a-market",
+  "level": "A1",
+  "estimatedDuration": "14:00",
+  "vocab": [
+    {
+      "id": "v-001",
+      "thai": "เท่าไหร่",
+      "translit": "thâo-rài",
+      "english": "how much",
+      "thaiSplit": "เท่า ไหร่",
+      "explanation": "เท่าไหร่ means 'how much' — it's your most important question at any Thai market. You'll put it after the thing you're asking about. So 'อันนี้เท่าไหร่' literally means 'this one how much?' In Thai, the question word goes at the end, not the beginning like in English. You'll use this one constantly.",
+      "exampleSentences": [
+        {
+          "thai": "กระเป๋าใบนี้เท่าไหร่คะ",
+          "translit": "grà-bpǎo bai níi thâo-rài khá",
+          "english": "How much is this bag?",
+          "note": "เท่าไหร่ at the end, after what you're asking about. Same pattern works for anything — just swap in the item."
+        }
+      ],
+      "imageRef": "img-001"
+    },
+    {
+      "id": "v-002",
+      "thai": "แพง",
+      "translit": "phaeng",
+      "english": "expensive",
+      "thaiSplit": "แพง",
+      "explanation": "แพง means 'expensive'. It's a very common word in markets because price negotiation is completely normal in Thailand — it's not rude to say something is too expensive. You'll often hear Thais say 'แพงไป' meaning 'too expensive', which is the polite way to signal you want a lower price. Just add ไป after it.",
+      "exampleSentences": [
+        {
+          "thai": "โรงแรมนี้แพงมากเลย",
+          "translit": "roong-raem níi phaeng mâak loei",
+          "english": "This hotel is really expensive.",
+          "note": "แพง works just like an adjective — place it after the noun. มาก intensifies it to 'very expensive'."
+        }
+      ],
+      "imageRef": "img-002"
+    },
+    {
+      "id": "v-003",
+      "thai": "ลดได้ไหม",
+      "translit": "lót dâai mǎi",
+      "english": "can you reduce (the price)?",
+      "thaiSplit": "ลด ได้ ไหม",
+      "explanation": "ลดได้ไหม is your haggling phrase — it means 'can you come down (on the price)?' Break it apart: ลด means 'reduce', ได้ means 'can' or 'able to', ไหม is the yes/no question particle. So literally you're asking 'reduce can?' This is the most useful phrase if you think the price is too high.",
+      "exampleSentences": [
+        {
+          "thai": "ถ้าซื้อสองอัน ลดได้ไหมคะ",
+          "translit": "thâa súue sǎawng an lót dâai mǎi khá",
+          "english": "If I buy two, can you reduce the price?",
+          "note": "You can add a condition before ลดได้ไหม to make your offer — 'if I buy two, will you come down?'"
+        }
+      ],
+      "imageRef": "img-003"
+    },
+    {
+      "id": "v-004",
+      "thai": "ถูก",
+      "translit": "thùuk",
+      "english": "cheap",
+      "thaiSplit": "ถูก",
+      "explanation": "ถูก means 'cheap' or 'inexpensive'. But watch out — ถูก has another meaning too: 'correct' or 'right'. Context tells you which one. When you're at a market talking about prices, it means cheap. When someone says 'ถูกแล้ว' it means 'that's right'. It's one of those words that trips up a lot of my students at first.",
+      "exampleSentences": [
+        {
+          "thai": "ที่นี่ถูกกว่าห้างมาก",
+          "translit": "thîi-nîi thùuk gwàa hâang mâak",
+          "english": "Here is much cheaper than the mall.",
+          "note": "ถูกกว่า means 'cheaper than'. This is exactly the kind of sentence a market vendor might say to convince you to buy."
+        }
+      ],
+      "imageRef": "img-004"
+    },
+    {
+      "id": "v-005",
+      "thai": "ซื้อ",
+      "translit": "súue",
+      "english": "to buy",
+      "thaiSplit": "ซื้อ",
+      "explanation": "ซื้อ means 'to buy'. Simple, essential. You put it before what you're buying — ซื้อผลไม้ means 'buy fruit'. At the market, vendors will use it to offer you a deal, like ซื้อสามใบ ถูกกว่า — 'buy three, it's cheaper'. The tone is important here: it's a rising tone, so your voice goes up slightly.",
+      "exampleSentences": [
+        {
+          "thai": "อยากซื้อมะม่วงสักอัน",
+          "translit": "yàak súue má-mûuang sàk an",
+          "english": "I'd like to buy a mango.",
+          "note": "อยาก means 'want to', so อยากซื้อ = 'want to buy'. สักอัน softens it — roughly 'just one'."
+        }
+      ],
+      "imageRef": "img-005"
+    },
+    {
+      "id": "v-006",
+      "thai": "ขาย",
+      "translit": "khǎai",
+      "english": "to sell",
+      "thaiSplit": "ขาย",
+      "explanation": "ขาย means 'to sell'. You'll see it on signs all over Thailand — ขาย means 'for sale'. You might also hear vendors say ขายอะไร meaning 'what are you selling?' or ขายถูก meaning 'selling cheap'. Notice ซื้อ and ขาย are a pair — buy and sell. Thai people sometimes joke that foreigners know ซื้อ but forget ขาย.",
+      "exampleSentences": [
+        {
+          "thai": "ร้านนี้ขายผ้าไหม",
+          "translit": "ráan níi khǎai phâa mǎi",
+          "english": "This shop sells silk.",
+          "note": "ขาย goes right before what's being sold — same structure as ซื้อ in that way."
+        }
+      ],
+      "imageRef": "img-005"
+    },
+    {
+      "id": "v-007",
+      "thai": "ใบ",
+      "translit": "bai",
+      "english": "classifier for bags / flat items (piece / item)",
+      "thaiSplit": "ใบ",
+      "explanation": "ใบ is a classifier — Thai uses special counting words for different types of things. ใบ is used for bags, leaves, tickets, and flat or hollow objects. So 'two bags' is สองใบ, not just สอง. This is one of the biggest differences between Thai and English — you can't just say a number alone, you need a classifier. ใบ is one of the most useful ones to know.",
+      "exampleSentences": [
+        {
+          "thai": "ขอถุงพลาสติกสองใบค่ะ",
+          "translit": "khǎaw thǔng-phlát-sà-tìk sǎawng bai khâ",
+          "english": "Can I have two plastic bags, please?",
+          "note": "ถุง is bag. สองใบ = two (of bag-type things). The classifier ใบ comes after the number."
+        }
+      ],
+      "imageRef": "img-001"
+    },
+    {
+      "id": "v-008",
+      "thai": "สี",
+      "translit": "sǐi",
+      "english": "colour",
+      "thaiSplit": "สี",
+      "explanation": "สี means 'colour'. At a market, you'll use it when you want to ask for a specific colour of something — ขอสีแดง means 'I'd like the red one'. You just put สี and then the colour name after ขอ or the item. สีแดง is red, สีน้ำเงิน is blue, สีเขียว is green. Super useful when there are multiple colours on display.",
+      "exampleSentences": [
+        {
+          "thai": "มีสีอื่นไหมคะ",
+          "translit": "mii sǐi ùuen mǎi khá",
+          "english": "Do you have other colours?",
+          "note": "มี = have, สีอื่น = other colour, ไหม = question particle. A great phrase when you want to see more options."
+        }
+      ],
+      "imageRef": "img-002"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "b-001",
+      "mode": "hook",
+      "speakerNote": "Look straight to camera. Say the Thai line naturally and quickly, then pause one beat before the English appears.",
+      "imageRef": "img-001",
+      "lines": [
+        {
+          "id": "l-0001",
+          "lang": "th",
+          "thai": "อันนี้เท่าไหร่คะ",
+          "translit": "an níi thâo-rài khá",
+          "display": "immediate",
+          "spoken": true
+        },
+        {
+          "id": "l-0002",
+          "lang": "en",
+          "english": "How much is this one?",
+          "display": "delayed-1s",
+          "spoken": false
+        },
+        {
+          "id": "l-0003",
+          "lang": "en",
+          "english": "By the end of this video, you'll be able to ask prices, haggle like a local, pick your colour, and walk away with a good deal — all in Thai.",
+          "display": "delayed-2s",
+          "spoken": true
+        }
+      ]
+    },
+    {
+      "id": "b-002",
+      "mode": "explain",
+      "speakerNote": "Pick ONE cultural fact to open with. Option A (default): Chatuchak scale — 35 acres, 15,000 stalls, 200,000 visitors/weekend, 70% Thai locals. Option B: Haggling etiquette — social interaction not confrontation, smile, losing temper = lose face, 10-30% off. Option C: Where haggling works — outdoor markets yes, malls/supermarkets/restaurants no. Delete the unused options after recording.",
+      "imageRef": "img-001",
+      "lines": [
+        {
+          "id": "l-0004",
+          "lang": "en",
+          "english": "Chatuchak Weekend Market in Bangkok is the world's largest weekend market. 35 acres, over 15,000 stalls, and more than 200,000 visitors every single weekend. And here's the thing — 70% of those visitors are Thai locals. This is a real market, not a tourist trap. And at a real market, haggling is completely normal. Two phrases you need to know:",
+          "spoken": true
+        },
+        {
+          "id": "l-0006",
+          "lang": "th",
+          "thai": "แพงไปค่ะ",
+          "translit": "phaeng bpai khâ",
+          "spoken": true
+        },
+        {
+          "id": "l-0007",
+          "lang": "th",
+          "thai": "ลดได้ไหมคะ",
+          "translit": "lót dâai mǎi khá",
+          "spoken": true
+        },
+        {
+          "id": "l-0008",
+          "lang": "en",
+          "english": "Here's the thing — foreigners are always surprised that haggling is completely normal in Thailand. It's not rude. At a market like Chatuchak, the vendor expects it. If you don't haggle, you're probably paying more than you need to.",
+          "spoken": true
+        },
+        {
+          "id": "l-0009",
+          "lang": "en",
+          "english": "Today I'm going to teach you 8 essential phrases for shopping at a Thai market. We'll go through each one, I'll explain what it means and how to use it, then you'll hear them all together in a real haggling conversation, and finally we'll practise together.",
+          "spoken": true
+        }
+      ]
+    },
+    {
+      "id": "b-003",
+      "mode": "section-intro",
+      "speakerNote": "Upbeat. You're introducing the learning section now.",
+      "lines": [
+        {
+          "id": "l-0010",
+          "lang": "en",
+          "english": "Let's start with the vocabulary. I'm going to go through each word one by one. For each one, I'll say the Thai, explain what it means, and show you how to use it in a sentence. Ready? Let's go.",
+          "spoken": true
+        }
+      ]
+    },
+    {
+      "id": "b-004",
+      "mode": "vocab-card",
+      "vocabRefs": ["v-001"],
+      "imageRef": "img-001",
+      "lines": [
+        {
+          "id": "l-0011",
+          "lang": "th",
+          "thai": "เท่าไหร่",
+          "translit": "thâo-rài",
+          "display": "immediate",
+          "spoken": true
+        }
+      ]
+    },
+    {
+      "id": "b-005",
+      "mode": "vocab-explain",
+      "lines": [
+        {
+          "id": "l-0012",
+          "lang": "en",
+          "english": "Our first word is เท่าไหร่ — thâo-rài. This means 'how much'. It's the most important question you'll ask at any market. The key thing to know is that in Thai, the question word goes at the end, not the beginning. So instead of 'How much is this?', you say 'This one — how much?' — อันนี้เท่าไหร่. You'll use this one all day long.",
+          "spoken": true
+        },
+        {
+          "id": "l-0013",
+          "lang": "th",
+          "thai": "กระเป๋าใบนี้เท่าไหร่คะ",
+          "translit": "grà-bpǎo bai níi thâo-rài khá",
+          "spoken": true
+        },
+        {
+          "id": "l-0014",
+          "lang": "en",
+          "english": "That means 'How much is this bag?' See how เท่าไหร่ is right at the end? That's the pattern — item first, then how much.",
+          "spoken": true
+        }
+      ]
+    },
+    {
+      "id": "b-006",
+      "mode": "vocab-card",
+      "vocabRefs": ["v-002"],
+      "imageRef": "img-002",
+      "lines": [
+        {
+          "id": "l-0015",
+          "lang": "en",
+          "english": "OK, next word.",
+          "spoken": true
+        },
+        {
+          "id": "l-0016",
+          "lang": "th",
+          "thai": "แพง",
+          "translit": "phaeng",
+          "display": "immediate",
+          "spoken": true
+        }
+      ]
+    },
+    {
+      "id": "b-007",
+      "mode": "vocab-explain",
+      "lines": [
+        {
+          "id": "l-0017",
+          "lang": "en",
+          "english": "แพง — phaeng. This means 'expensive'. Short, one syllable, easy to remember. But the really useful version is แพงไป — 'too expensive'. ไป here doesn't mean 'go', it means 'too' or 'excessively'. So แพงไป is your signal to the vendor that you want to negotiate. It's polite, it's normal, and every Thai person will understand exactly what you mean.",
+          "spoken": true
+        },
+        {
+          "id": "l-0018",
+          "lang": "th",
+          "thai": "โรงแรมนี้แพงมากเลย",
+          "translit": "roong-raem níi phaeng mâak loei",
+          "spoken": true
+        },
+        {
+          "id": "l-0019",
+          "lang": "en",
+          "english": "That means 'This hotel is really expensive.' แพง after the thing you're describing, then มาก to intensify it. But at the market, you'll mostly just say แพงไปค่ะ — short and to the point.",
+          "spoken": true
+        }
+      ]
+    },
+    {
+      "id": "b-008",
+      "mode": "vocab-card",
+      "vocabRefs": ["v-003"],
+      "imageRef": "img-003",
+      "lines": [
+        {
+          "id": "l-0020",
+          "lang": "en",
+          "english": "This next one is your haggling phrase.",
+          "spoken": true
+        },
+        {
+          "id": "l-0021",
+          "lang": "th",
+          "thai": "ลดได้ไหม",
+          "translit": "lót dâai mǎi",
+          "display": "immediate",
+          "spoken": true
+        }
+      ]
+    },
+    {
+      "id": "b-009",
+      "mode": "vocab-explain",
+      "lines": [
+        {
+          "id": "l-0022",
+          "lang": "en",
+          "english": "ลดได้ไหม — lót dâai mǎi. This is 'can you reduce the price?' Let me break it apart: ลด means 'reduce' or 'lower', ได้ means 'can' or 'able to', and ไหม is the yes/no question particle — it turns any statement into a question. So you're literally asking 'lower, can?' It sounds direct but it's perfectly polite. At a market, this is the phrase that starts the negotiation.",
+          "spoken": true
+        },
+        {
+          "id": "l-0023",
+          "lang": "th",
+          "thai": "ถ้าซื้อสองอัน ลดได้ไหมคะ",
+          "translit": "thâa súue sǎawng an lót dâai mǎi khá",
+          "spoken": true
+        },
+        {
+          "id": "l-0024",
+          "lang": "en",
+          "english": "That means 'If I buy two, can you reduce the price?' You can level up your haggling by adding a condition before ลดได้ไหม — it gives the vendor a reason to say yes.",
+          "spoken": true
+        }
+      ]
+    },
+    {
+      "id": "b-010",
+      "mode": "vocab-card",
+      "vocabRefs": ["v-004"],
+      "imageRef": "img-004",
+      "lines": [
+        {
+          "id": "l-0025",
+          "lang": "en",
+          "english": "OK, next — the opposite of แพง.",
+          "spoken": true
+        },
+        {
+          "id": "l-0026",
+          "lang": "th",
+          "thai": "ถูก",
+          "translit": "thùuk",
+          "display": "immediate",
+          "spoken": true
+        }
+      ]
+    },
+    {
+      "id": "b-011",
+      "mode": "vocab-explain",
+      "lines": [
+        {
+          "id": "l-0027",
+          "lang": "en",
+          "english": "ถูก — thùuk. This means 'cheap'. But here's something I always warn my students about: ถูก has two meanings. At the market, it means cheap. But in other contexts, ถูก means 'correct' or 'right'. So if someone says ถูกแล้ว — that means 'that's right', not 'that's cheap'. Context saves you — if you're talking about prices, it means cheap. If you're answering a question, it means correct.",
+          "spoken": true
+        },
+        {
+          "id": "l-0028",
+          "lang": "th",
+          "thai": "ที่นี่ถูกกว่าห้างมาก",
+          "translit": "thîi-nîi thùuk gwàa hâang mâak",
+          "spoken": true
+        },
+        {
+          "id": "l-0029",
+          "lang": "en",
+          "english": "That means 'Here is much cheaper than the mall.' ถูกกว่า means 'cheaper than' — กว่า is how you make comparisons in Thai. You'll hear vendors say things like this to persuade you.",
+          "spoken": true
+        }
+      ]
+    },
+    {
+      "id": "b-012",
+      "mode": "vocab-card",
+      "vocabRefs": ["v-005"],
+      "imageRef": "img-005",
+      "lines": [
+        {
+          "id": "l-0030",
+          "lang": "en",
+          "english": "Next — to buy.",
+          "spoken": true
+        },
+        {
+          "id": "l-0031",
+          "lang": "th",
+          "thai": "ซื้อ",
+          "translit": "súue",
+          "display": "immediate",
+          "spoken": true
+        }
+      ]
+    },
+    {
+      "id": "b-013",
+      "mode": "vocab-explain",
+      "lines": [
+        {
+          "id": "l-0032",
+          "lang": "en",
+          "english": "ซื้อ — súue. This means 'to buy'. It's a rising tone — your voice goes up, like you're asking a question even though you're not. Put it before what you're buying: ซื้อผลไม้ means 'buy fruit'. You'll also hear it in vendor pitches — they'll say something like ซื้อสามใบ ถูกกว่า, meaning 'buy three, it's cheaper'. That's actually one of our dialogue lines today.",
+          "spoken": true
+        },
+        {
+          "id": "l-0033",
+          "lang": "th",
+          "thai": "อยากซื้อมะม่วงสักอัน",
+          "translit": "yàak súue má-mûuang sàk an",
+          "spoken": true
+        },
+        {
+          "id": "l-0034",
+          "lang": "en",
+          "english": "That means 'I'd like to buy a mango.' อยาก means 'want to', so อยากซื้อ is 'want to buy'. สักอัน softens it — a little like saying 'just one'.",
+          "spoken": true
+        }
+      ]
+    },
+    {
+      "id": "b-014",
+      "mode": "vocab-card",
+      "vocabRefs": ["v-006"],
+      "imageRef": "img-005",
+      "lines": [
+        {
+          "id": "l-0035",
+          "lang": "en",
+          "english": "This next one is the pair of ซื้อ.",
+          "spoken": true
+        },
+        {
+          "id": "l-0036",
+          "lang": "th",
+          "thai": "ขาย",
+          "translit": "khǎai",
+          "display": "immediate",
+          "spoken": true
+        }
+      ]
+    },
+    {
+      "id": "b-015",
+      "mode": "vocab-explain",
+      "lines": [
+        {
+          "id": "l-0037",
+          "lang": "en",
+          "english": "ขาย — khǎai. This means 'to sell'. You'll see it on signs everywhere — ขาย on its own means 'for sale'. ซื้อ and ขาย are a natural pair: buy and sell. At markets you might see signs like ขายถูก — 'selling cheap' — or ขายส่ง — 'wholesale'. Knowing both sides of the transaction makes you sound much more fluent.",
+          "spoken": true
+        },
+        {
+          "id": "l-0038",
+          "lang": "th",
+          "thai": "ร้านนี้ขายผ้าไหม",
+          "translit": "ráan níi khǎai phâa mǎi",
+          "spoken": true
+        },
+        {
+          "id": "l-0039",
+          "lang": "en",
+          "english": "That means 'This shop sells silk.' ขาย goes right before what's being sold, same structure as ซื้อ. Notice ผ้าไหม — phâa mǎi — means 'silk'. ผ้า is fabric, ไหม is silk.",
+          "spoken": true
+        }
+      ]
+    },
+    {
+      "id": "b-016",
+      "mode": "vocab-card",
+      "vocabRefs": ["v-007"],
+      "imageRef": "img-001",
+      "lines": [
+        {
+          "id": "l-0040",
+          "lang": "en",
+          "english": "OK, this next one is really important for markets — it's a classifier.",
+          "spoken": true
+        },
+        {
+          "id": "l-0041",
+          "lang": "th",
+          "thai": "ใบ",
+          "translit": "bai",
+          "display": "immediate",
+          "spoken": true
+        }
+      ]
+    },
+    {
+      "id": "b-017",
+      "mode": "vocab-explain",
+      "lines": [
+        {
+          "id": "l-0042",
+          "lang": "en",
+          "english": "ใบ — bai. This is a classifier. In Thai, when you count things, you can't just say a number — you need a special counting word that matches the type of object. ใบ is used for bags, leaves, tickets, and flat or hollow items. So if you want two bags, you say สองใบ, not just สอง. This is one of the biggest grammar differences from English, but once you get the pattern it becomes second nature.",
+          "spoken": true
+        },
+        {
+          "id": "l-0043",
+          "lang": "th",
+          "thai": "ขอถุงพลาสติกสองใบค่ะ",
+          "translit": "khǎaw thǔng-phlát-sà-tìk sǎawng bai khâ",
+          "spoken": true
+        },
+        {
+          "id": "l-0044",
+          "lang": "en",
+          "english": "That means 'Can I have two plastic bags, please?' ถุง is bag, สองใบ is two (of bag-type things). The classifier ใบ always comes after the number.",
+          "spoken": true
+        }
+      ]
+    },
+    {
+      "id": "b-018",
+      "mode": "vocab-card",
+      "vocabRefs": ["v-008"],
+      "imageRef": "img-002",
+      "lines": [
+        {
+          "id": "l-0045",
+          "lang": "en",
+          "english": "And our last word — really handy when you're choosing between colours.",
+          "spoken": true
+        },
+        {
+          "id": "l-0046",
+          "lang": "th",
+          "thai": "สี",
+          "translit": "sǐi",
+          "display": "immediate",
+          "spoken": true
+        }
+      ]
+    },
+    {
+      "id": "b-019",
+      "mode": "vocab-explain",
+      "lines": [
+        {
+          "id": "l-0047",
+          "lang": "en",
+          "english": "สี — sǐi. This means 'colour'. At a market, you'll use it when you want a specific colour of something. ขอสีแดง means 'I'd like the red one' — ขอ is 'I'd like', สี is 'colour', and แดง is 'red'. Some useful colours: สีแดง is red, สีน้ำเงิน is blue, สีเขียว is green, สีเหลือง is yellow. When there are multiple colours on a stall, just point and say the colour after สี.",
+          "spoken": true
+        },
+        {
+          "id": "l-0048",
+          "lang": "th",
+          "thai": "มีสีอื่นไหมคะ",
+          "translit": "mii sǐi ùuen mǎi khá",
+          "spoken": true
+        },
+        {
+          "id": "l-0049",
+          "lang": "en",
+          "english": "That means 'Do you have other colours?' มี is 'have', สีอื่น is 'other colour', ไหม is the question particle. A great phrase when you want to see more options before you decide.",
+          "spoken": true
+        }
+      ]
+    },
+    {
+      "id": "b-020",
+      "mode": "section-intro",
+      "speakerNote": "Shift energy — you're about to play the full conversation. Get the viewer ready to listen.",
+      "imageRef": "img-003",
+      "lines": [
+        {
+          "id": "l-0050",
+          "lang": "en",
+          "english": "OK, so now you know all eight phrases. What I'm going to do now is put them together into a short conversation — imagine you're at a Bangkok weekend market, picking up some bags, trying to haggle the price down. I'm going to speak at natural speed, the way a Thai person would actually talk. Don't pause the video. Just listen and see how much you can understand. Ready? Here we go.",
+          "spoken": true
+        }
+      ]
+    },
+    {
+      "id": "b-021",
+      "mode": "natural-listen",
+      "speakerNote": "Natural, conversational pace. No pauses between lines. Play the full scene as if you're really there.",
+      "imageRef": "img-003",
+      "lines": [
+        {
+          "id": "l-0051",
+          "lang": "th",
+          "thai": "อันนี้เท่าไหร่คะ",
+          "display": "immediate",
+          "spoken": true
+        },
+        {
+          "id": "l-0052",
+          "lang": "th",
+          "thai": "สามร้อยบาทค่ะ",
+          "display": "immediate",
+          "spoken": true
+        },
+        {
+          "id": "l-0053",
+          "lang": "th",
+          "thai": "แพงไปค่ะ ลดได้ไหมคะ",
+          "display": "immediate",
+          "spoken": true
+        },
+        {
+          "id": "l-0054",
+          "lang": "th",
+          "thai": "สองร้อยห้าสิบค่ะ",
+          "display": "immediate",
+          "spoken": true
+        },
+        {
+          "id": "l-0055",
+          "lang": "th",
+          "thai": "ขอสีแดงสองใบค่ะ",
+          "display": "immediate",
+          "spoken": true
+        },
+        {
+          "id": "l-0056",
+          "lang": "th",
+          "thai": "ซื้อสามใบ ถูกกว่าค่ะ",
+          "display": "immediate",
+          "spoken": true
+        }
+      ]
+    },
+    {
+      "id": "b-022",
+      "mode": "explain",
+      "speakerNote": "Check in with the viewer. Warm and encouraging.",
+      "lines": [
+        {
+          "id": "l-0057",
+          "lang": "en",
+          "english": "How was that? Could you catch some of those phrases? Don't worry if you didn't get everything — that's completely normal. Now let's break it down.",
+          "spoken": true
+        }
+      ]
+    },
+    {
+      "id": "b-023",
+      "mode": "section-intro",
+      "speakerNote": "Reset your energy. Clear and focused for the breakdown section.",
+      "lines": [
+        {
+          "id": "l-0058",
+          "lang": "en",
+          "english": "I'm going to go through that same conversation again, but this time sentence by sentence. I'll say the Thai, and then I'll explain exactly what each part means.",
+          "spoken": true
+        }
+      ]
+    },
+    {
+      "id": "b-024",
+      "mode": "breakdown",
+      "speakerNote": "Say the Thai clearly, pause, let the transliteration and English appear.",
+      "lines": [
+        {
+          "id": "l-0059",
+          "lang": "th",
+          "thai": "อันนี้เท่าไหร่คะ",
+          "translit": "an níi thâo-rài khá",
+          "display": "immediate",
+          "spoken": true
+        },
+        {
+          "id": "l-0060",
+          "lang": "translit",
+          "translit": "an níi thâo-rài khá",
+          "display": "delayed-1s",
+          "spoken": false
+        },
+        {
+          "id": "l-0061",
+          "lang": "en",
+          "english": "How much is this one?",
+          "display": "delayed-2s",
+          "spoken": false
+        }
+      ]
+    },
+    {
+      "id": "b-025",
+      "mode": "explain",
+      "lines": [
+        {
+          "id": "l-0062",
+          "lang": "en",
+          "english": "อันนี้เท่าไหร่คะ. อัน is a general classifier for small items — อันนี้ means 'this one'. เท่าไหร่ is 'how much'. คะ is the polite particle for women. Notice the question word is at the end — 'this one how much?' In English we'd say 'How much is this?' but in Thai, the question word always comes last. That's a pattern you'll see over and over again.",
+          "spoken": true
+        }
+      ]
+    },
+    {
+      "id": "b-026",
+      "mode": "breakdown",
+      "speakerNote": "Switch voice — this is the vendor's reply.",
+      "lines": [
+        {
+          "id": "l-0063",
+          "lang": "th",
+          "thai": "สามร้อยบาทค่ะ",
+          "translit": "sǎam róoi bàat khâ",
+          "display": "immediate",
+          "spoken": true
+        },
+        {
+          "id": "l-0064",
+          "lang": "translit",
+          "translit": "sǎam róoi bàat khâ",
+          "display": "delayed-1s",
+          "spoken": false
+        },
+        {
+          "id": "l-0065",
+          "lang": "en",
+          "english": "Three hundred baht.",
+          "display": "delayed-2s",
+          "spoken": false
+        }
+      ]
+    },
+    {
+      "id": "b-027",
+      "mode": "explain",
+      "lines": [
+        {
+          "id": "l-0066",
+          "lang": "en",
+          "english": "สามร้อยบาทค่ะ. สาม is three, ร้อย is hundred, บาท is baht — the Thai currency. Numbers in Thai stack very logically: three-hundred-baht, in that order, just like English. ค่ะ is the polite ending for women — the vendor is being polite here. You'll get used to hearing prices this way very quickly.",
+          "spoken": true
+        }
+      ]
+    },
+    {
+      "id": "b-028",
+      "mode": "breakdown",
+      "speakerNote": "Back to the customer voice — a little playful.",
+      "lines": [
+        {
+          "id": "l-0067",
+          "lang": "th",
+          "thai": "แพงไปค่ะ ลดได้ไหมคะ",
+          "translit": "phaeng bpai khâ lót dâai mǎi khá",
+          "display": "immediate",
+          "spoken": true
+        },
+        {
+          "id": "l-0068",
+          "lang": "translit",
+          "translit": "phaeng bpai khâ lót dâai mǎi khá",
+          "display": "delayed-1s",
+          "spoken": false
+        },
+        {
+          "id": "l-0069",
+          "lang": "en",
+          "english": "That's too expensive. Can you reduce the price?",
+          "display": "delayed-2s",
+          "spoken": false
+        }
+      ]
+    },
+    {
+      "id": "b-029",
+      "mode": "explain",
+      "lines": [
+        {
+          "id": "l-0070",
+          "lang": "en",
+          "english": "แพงไปค่ะ ลดได้ไหมคะ. Two phrases in one sentence — you've got 'too expensive' followed directly by 'can you reduce it?' That's exactly how Thai people would say it: state the problem, then make the ask. Notice ไป after แพง means 'too' here, not 'go'. And ไหม at the end of ลดได้ไหม is what makes it a question. Without ไหม, it's just a statement.",
+          "spoken": true
+        }
+      ]
+    },
+    {
+      "id": "b-030",
+      "mode": "breakdown",
+      "speakerNote": "Vendor voice — counter-offer.",
+      "lines": [
+        {
+          "id": "l-0071",
+          "lang": "th",
+          "thai": "สองร้อยห้าสิบค่ะ",
+          "translit": "sǎawng róoi hâa-sìp khâ",
+          "display": "immediate",
+          "spoken": true
+        },
+        {
+          "id": "l-0072",
+          "lang": "translit",
+          "translit": "sǎawng róoi hâa-sìp khâ",
+          "display": "delayed-1s",
+          "spoken": false
+        },
+        {
+          "id": "l-0073",
+          "lang": "en",
+          "english": "Two hundred and fifty baht.",
+          "display": "delayed-2s",
+          "spoken": false
+        }
+      ]
+    },
+    {
+      "id": "b-031",
+      "mode": "explain",
+      "lines": [
+        {
+          "id": "l-0074",
+          "lang": "en",
+          "english": "สองร้อยห้าสิบค่ะ. Two-hundred-fifty — สอง is two, ร้อย is hundred, ห้า is five, สิบ is ten. So ห้าสิบ literally means 'five-ten' which is fifty. Thai numbers build like this: you multiply rather than say 'fifty' as one word. It sounds complicated but once you've counted in Thai a few times, it clicks fast.",
+          "spoken": true
+        }
+      ]
+    },
+    {
+      "id": "b-032",
+      "mode": "breakdown",
+      "speakerNote": "Customer choosing — decisive.",
+      "lines": [
+        {
+          "id": "l-0075",
+          "lang": "th",
+          "thai": "ขอสีแดงสองใบค่ะ",
+          "translit": "khǎaw sǐi daeng sǎawng bai khâ",
+          "display": "immediate",
+          "spoken": true
+        },
+        {
+          "id": "l-0076",
+          "lang": "translit",
+          "translit": "khǎaw sǐi daeng sǎawng bai khâ",
+          "display": "delayed-1s",
+          "spoken": false
+        },
+        {
+          "id": "l-0077",
+          "lang": "en",
+          "english": "I'd like two red ones, please.",
+          "display": "delayed-2s",
+          "spoken": false
+        }
+      ]
+    },
+    {
+      "id": "b-033",
+      "mode": "explain",
+      "lines": [
+        {
+          "id": "l-0078",
+          "lang": "en",
+          "english": "ขอสีแดงสองใบค่ะ. ขอ is 'I'd like' or 'may I have' — a polite way to request something. สีแดง is 'red colour' — สี plus แดง. Then สองใบ is 'two' with the classifier ใบ for bag-type items. Notice the order: I'd like — colour-red — two-items. In English we'd say 'two red ones' but in Thai the colour comes before the quantity.",
+          "spoken": true
+        }
+      ]
+    },
+    {
+      "id": "b-034",
+      "mode": "breakdown",
+      "speakerNote": "Vendor pitching — friendly upsell.",
+      "lines": [
+        {
+          "id": "l-0079",
+          "lang": "th",
+          "thai": "ซื้อสามใบ ถูกกว่าค่ะ",
+          "translit": "súue sǎam bai thùuk gwàa khâ",
+          "display": "immediate",
+          "spoken": true
+        },
+        {
+          "id": "l-0080",
+          "lang": "translit",
+          "translit": "súue sǎam bai thùuk gwàa khâ",
+          "display": "delayed-1s",
+          "spoken": false
+        },
+        {
+          "id": "l-0081",
+          "lang": "en",
+          "english": "Buy three, it's cheaper.",
+          "display": "delayed-2s",
+          "spoken": false
+        }
+      ]
+    },
+    {
+      "id": "b-035",
+      "mode": "explain",
+      "lines": [
+        {
+          "id": "l-0082",
+          "lang": "en",
+          "english": "ซื้อสามใบ ถูกกว่าค่ะ. ซื้อ is 'buy', สามใบ is 'three items' — three with the classifier ใบ. Then ถูกกว่า — cheap-more, meaning 'cheaper'. กว่า is how you make comparisons in Thai: ถูกกว่า is cheaper, แพงกว่า is more expensive. The vendor is using your own vocabulary against you here — and honestly, it works.",
+          "spoken": true
+        }
+      ]
+    },
+    {
+      "id": "b-036",
+      "mode": "explain",
+      "speakerNote": "Optional — say the full conversation one more time at natural speed before moving to shadowing.",
+      "lines": [
+        {
+          "id": "l-0083",
+          "lang": "en",
+          "english": "Let me say that whole conversation one more time from the top, now that you know what every word means.",
+          "spoken": true
+        },
+        {
+          "id": "l-0084",
+          "lang": "th",
+          "thai": "อันนี้เท่าไหร่คะ — สามร้อยบาทค่ะ — แพงไปค่ะ ลดได้ไหมคะ — สองร้อยห้าสิบค่ะ — ขอสีแดงสองใบค่ะ — ซื้อสามใบ ถูกกว่าค่ะ",
+          "translit": "an níi thâo-rài khá — sǎam róoi bàat khâ — phaeng bpai khâ lót dâai mǎi khá — sǎawng róoi hâa-sìp khâ — khǎaw sǐi daeng sǎawng bai khâ — súue sǎam bai thùuk gwàa khâ",
+          "spoken": true
+        }
+      ]
+    },
+    {
+      "id": "b-037",
+      "mode": "section-intro",
+      "speakerNote": "Encourage the viewer. Make them feel ready to practise.",
+      "lines": [
+        {
+          "id": "l-0085",
+          "lang": "en",
+          "english": "Now it's your turn to practise. I'm going to say each sentence slowly, and I want you to repeat after me. Don't be shy — say it out loud! Speaking is how you learn. I'll leave a gap after each sentence for you to repeat.",
+          "spoken": true
+        }
+      ]
+    },
+    {
+      "id": "b-038",
+      "mode": "shadowing",
+      "speakerNote": "Slow and clear. Pause 2–3 seconds between each line for the viewer to repeat.",
+      "lines": [
+        {
+          "id": "l-0086",
+          "lang": "th-split",
+          "thai": "อันนี้เท่าไหร่คะ",
+          "thaiSplit": "อัน นี้ เท่า ไหร่ คะ",
+          "translit": "an níi thâo-rài khá",
+          "display": "immediate",
+          "highlight": true,
+          "spoken": true
+        },
+        {
+          "id": "l-0087",
+          "lang": "th-split",
+          "thai": "สามร้อยบาทค่ะ",
+          "thaiSplit": "สาม ร้อย บาท ค่ะ",
+          "translit": "sǎam róoi bàat khâ",
+          "display": "immediate",
+          "highlight": true,
+          "spoken": true
+        },
+        {
+          "id": "l-0088",
+          "lang": "th-split",
+          "thai": "แพงไปค่ะ ลดได้ไหมคะ",
+          "thaiSplit": "แพง ไป ค่ะ ลด ได้ ไหม คะ",
+          "translit": "phaeng bpai khâ lót dâai mǎi khá",
+          "display": "immediate",
+          "highlight": true,
+          "spoken": true
+        },
+        {
+          "id": "l-0089",
+          "lang": "th-split",
+          "thai": "สองร้อยห้าสิบค่ะ",
+          "thaiSplit": "สอง ร้อย ห้า สิบ ค่ะ",
+          "translit": "sǎawng róoi hâa-sìp khâ",
+          "display": "immediate",
+          "highlight": true,
+          "spoken": true
+        },
+        {
+          "id": "l-0090",
+          "lang": "th-split",
+          "thai": "ขอสีแดงสองใบค่ะ",
+          "thaiSplit": "ขอ สี แดง สอง ใบ ค่ะ",
+          "translit": "khǎaw sǐi daeng sǎawng bai khâ",
+          "display": "immediate",
+          "highlight": true,
+          "spoken": true
+        },
+        {
+          "id": "l-0091",
+          "lang": "th-split",
+          "thai": "ซื้อสามใบ ถูกกว่าค่ะ",
+          "thaiSplit": "ซื้อ สาม ใบ ถูก กว่า ค่ะ",
+          "translit": "súue sǎam bai thùuk gwàa khâ",
+          "display": "immediate",
+          "highlight": true,
+          "spoken": true
+        }
+      ]
+    },
+    {
+      "id": "b-039",
+      "mode": "explain",
+      "lines": [
+        {
+          "id": "l-0092",
+          "lang": "en",
+          "english": "Great job! If that felt hard, that's totally fine — rewind and do it again. Repetition is how you get better.",
+          "spoken": true
+        }
+      ]
+    },
+    {
+      "id": "b-040",
+      "mode": "section-intro",
+      "speakerNote": "Quiz energy — fun and a bit challenging.",
+      "lines": [
+        {
+          "id": "l-0093",
+          "lang": "en",
+          "english": "OK, quiz time! I'm going to give you a situation in English, and you need to say the Thai phrase. I'll give you a few seconds to think, and then I'll give you the answer. Ready?",
+          "spoken": true
+        }
+      ]
+    },
+    {
+      "id": "b-041",
+      "mode": "drill-prompt",
+      "speakerNote": "Look to camera. Ask the question then wait 3 seconds in silence.",
+      "lines": [
+        {
+          "id": "l-0094",
+          "lang": "en",
+          "english": "You're at a market stall. You want to know the price of a bag. How do you ask?",
+          "spoken": true
+        },
+        {
+          "id": "l-0095",
+          "lang": "en",
+          "english": "Try saying it now...",
+          "display": "delayed-1s",
+          "spoken": false
+        }
+      ]
+    },
+    {
+      "id": "b-042",
+      "mode": "drill-answer",
+      "speakerNote": "Smile, say it clearly.",
+      "lines": [
+        {
+          "id": "l-0096",
+          "lang": "th",
+          "thai": "อันนี้เท่าไหร่คะ",
+          "translit": "an níi thâo-rài khá",
+          "spoken": true
+        },
+        {
+          "id": "l-0097",
+          "lang": "en",
+          "english": "That's right — อันนี้เท่าไหร่คะ means 'How much is this one?' Remember, เท่าไหร่ goes at the end in Thai.",
+          "spoken": true
+        }
+      ]
+    },
+    {
+      "id": "b-043",
+      "mode": "drill-prompt",
+      "speakerNote": "Look to camera, wait for the viewer.",
+      "lines": [
+        {
+          "id": "l-0098",
+          "lang": "en",
+          "english": "The vendor says three hundred baht. You think it's too expensive and want them to lower the price. What do you say?",
+          "spoken": true
+        },
+        {
+          "id": "l-0099",
+          "lang": "en",
+          "english": "Try saying it now...",
+          "display": "delayed-1s",
+          "spoken": false
+        }
+      ]
+    },
+    {
+      "id": "b-044",
+      "mode": "drill-answer",
+      "speakerNote": "Natural, not too fast.",
+      "lines": [
+        {
+          "id": "l-0100",
+          "lang": "th",
+          "thai": "แพงไปค่ะ ลดได้ไหมคะ",
+          "translit": "phaeng bpai khâ lót dâai mǎi khá",
+          "spoken": true
+        },
+        {
+          "id": "l-0101",
+          "lang": "en",
+          "english": "That's right — แพงไปค่ะ ลดได้ไหมคะ means 'That's too expensive, can you reduce the price?' That's your complete haggling opener in one phrase.",
+          "spoken": true
+        }
+      ]
+    },
+    {
+      "id": "b-045",
+      "mode": "drill-prompt",
+      "speakerNote": "Look to camera, give them a moment.",
+      "lines": [
+        {
+          "id": "l-0102",
+          "lang": "en",
+          "english": "You want two red bags. How do you ask for them?",
+          "spoken": true
+        },
+        {
+          "id": "l-0103",
+          "lang": "en",
+          "english": "Try saying it now...",
+          "display": "delayed-1s",
+          "spoken": false
+        }
+      ]
+    },
+    {
+      "id": "b-046",
+      "mode": "drill-answer",
+      "speakerNote": "Clear and confident.",
+      "lines": [
+        {
+          "id": "l-0104",
+          "lang": "th",
+          "thai": "ขอสีแดงสองใบค่ะ",
+          "translit": "khǎaw sǐi daeng sǎawng bai khâ",
+          "spoken": true
+        },
+        {
+          "id": "l-0105",
+          "lang": "en",
+          "english": "That's right — ขอสีแดงสองใบค่ะ means 'I'd like two red ones, please.' ขอ for the request, สีแดง for the colour, สองใบ for the quantity with classifier.",
+          "spoken": true
+        }
+      ]
+    },
+    {
+      "id": "b-047",
+      "mode": "drill-prompt",
+      "speakerNote": "Last one — a little more challenging.",
+      "lines": [
+        {
+          "id": "l-0106",
+          "lang": "en",
+          "english": "The vendor is trying to upsell you — they want you to buy three instead of two because it's a better deal. How would they say that in Thai?",
+          "spoken": true
+        },
+        {
+          "id": "l-0107",
+          "lang": "en",
+          "english": "Try saying it now...",
+          "display": "delayed-1s",
+          "spoken": false
+        }
+      ]
+    },
+    {
+      "id": "b-048",
+      "mode": "drill-answer",
+      "speakerNote": "Give it a vendor energy.",
+      "lines": [
+        {
+          "id": "l-0108",
+          "lang": "th",
+          "thai": "ซื้อสามใบ ถูกกว่าค่ะ",
+          "translit": "súue sǎam bai thùuk gwàa khâ",
+          "spoken": true
+        },
+        {
+          "id": "l-0109",
+          "lang": "en",
+          "english": "That's right — ซื้อสามใบ ถูกกว่าค่ะ means 'Buy three, it's cheaper.' ซื้อ to buy, สามใบ for three items, ถูกกว่า for cheaper. Classic vendor move!",
+          "spoken": true
+        }
+      ]
+    },
+    {
+      "id": "b-049",
+      "mode": "recap",
+      "speakerNote": "Quick energy. Flash through the vocab cards fast.",
+      "vocabRefs": ["v-001", "v-002", "v-003", "v-004", "v-005", "v-006", "v-007", "v-008"],
+      "lines": [
+        {
+          "id": "l-0110",
+          "lang": "en",
+          "english": "Let's do a quick recap of everything you learned today.",
+          "spoken": true
+        }
+      ]
+    },
+    {
+      "id": "b-050",
+      "mode": "explain",
+      "speakerNote": "Warm sign-off. Look straight to camera.",
+      "lines": [
+        {
+          "id": "l-0111",
+          "lang": "en",
+          "english": "Thanks for watching! If this helped you, give it a thumbs up and subscribe so you don't miss the next one. Next time we're going to cover something really important for daily life in Thailand.",
+          "spoken": true
+        }
+      ]
+    },
+    {
+      "id": "b-051",
+      "mode": "teaser",
+      "speakerNote": "Build a little intrigue for the next episode.",
+      "lines": [
+        {
+          "id": "l-0112",
+          "lang": "en",
+          "english": "In the next episode — what to say when you have a food allergy. This one could actually save you from a very bad meal.",
+          "spoken": true
+        },
+        {
+          "id": "l-0113",
+          "lang": "th",
+          "thai": "ฉันแพ้...",
+          "translit": "chǎn pháe...",
+          "display": "delayed-1s",
+          "spoken": true
+        }
+      ]
+    }
+  ],
+  "imagePrompts": [
+    {
+      "id": "img-001",
+      "prompt": "Watercolour illustration of a vibrant outdoor Bangkok weekend market with colourful stalls packed with bags, accessories and clothing, warm tropical light, busy shoppers, Thai signage on stalls",
+      "style": "watercolour",
+      "subject": "Bangkok weekend market scene"
+    },
+    {
+      "id": "img-002",
+      "prompt": "Watercolour illustration of a market stall covered in colourful bags and purses in many different colours hung up on display racks, warm sunlight, Thai market atmosphere",
+      "style": "watercolour",
+      "subject": "Colourful bags at a market stall"
+    },
+    {
+      "id": "img-003",
+      "prompt": "Watercolour illustration of two women haggling over price at a Thai market stall, one vendor and one customer, both smiling, handwritten price tags visible, warm earthy tones",
+      "style": "watercolour",
+      "subject": "Haggling scene at Thai market"
+    },
+    {
+      "id": "img-004",
+      "prompt": "Watercolour illustration of Thai baht banknotes and coins spread on a wooden surface next to small items for sale, warm golden tones, market setting",
+      "style": "watercolour",
+      "subject": "Thai baht currency at market"
+    },
+    {
+      "id": "img-005",
+      "prompt": "Watercolour illustration of a Thai market fruit stall overflowing with mangoes, dragon fruit, and tropical fruits arranged in neat stacks, vivid warm colours",
+      "style": "watercolour",
+      "subject": "Thai fruit market stall"
+    }
+  ],
+  "shortFormClips": [
+    {
+      "id": "clip-01",
+      "type": "phrase-of-day",
+      "startBlock": "b-001",
+      "endBlock": "b-001",
+      "hookText": "How to ask prices at a Thai market"
+    },
+    {
+      "id": "clip-02",
+      "type": "culture-moment",
+      "startBlock": "b-002",
+      "endBlock": "b-002",
+      "hookText": "Haggling in Thailand is totally normal — here's how"
+    },
+    {
+      "id": "clip-03",
+      "type": "can-you-understand",
+      "startBlock": "b-021",
+      "endBlock": "b-021",
+      "hookText": "Can you understand this Thai market haggle?"
+    },
+    {
+      "id": "clip-04",
+      "type": "repeat-after",
+      "startBlock": "b-037",
+      "endBlock": "b-038",
+      "hookText": "Repeat after me — Thai market phrases"
+    },
+    {
+      "id": "clip-05",
+      "type": "grammar-hack",
+      "startBlock": "b-016",
+      "endBlock": "b-017",
+      "hookText": "Why you can't just say a number in Thai"
+    }
+  ]
+}

@@ -1,0 +1,4572 @@
+{
+  "episodeId": "YT-S01-E01",
+  "sourceFile": "YT-S01-E01-teleprompter-v2.md",
+  "totalChunks": 442,
+  "chunks": [
+    {
+      "chunkId": "pc-0000",
+      "chunkIndex": 0,
+      "blockRef": "b-001",
+      "sectionName": "PART 1 — HOOK",
+      "lang": "th",
+      "text": "สั่งอะไรดีคะ",
+      "translit": "sàng a-rai dii khá",
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0001",
+      "chunkIndex": 1,
+      "blockRef": "b-001",
+      "sectionName": "PART 1 — HOOK",
+      "lang": "en",
+      "text": "By the end of this video,",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0002",
+      "chunkIndex": 2,
+      "blockRef": "b-001",
+      "sectionName": "PART 1 — HOOK",
+      "lang": "en",
+      "text": "you'll be able to order food,",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0003",
+      "chunkIndex": 3,
+      "blockRef": "b-001",
+      "sectionName": "PART 1 — HOOK",
+      "lang": "en",
+      "text": "ask for recommendations,",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0004",
+      "chunkIndex": 4,
+      "blockRef": "b-001",
+      "sectionName": "PART 1 — HOOK",
+      "lang": "en",
+      "text": "tell them how spicy you want it,",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0005",
+      "chunkIndex": 5,
+      "blockRef": "b-001",
+      "sectionName": "PART 1 — HOOK",
+      "lang": "en",
+      "text": "and get the bill — all in Thai.",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0006",
+      "chunkIndex": 6,
+      "blockRef": "b-002",
+      "sectionName": "PART 2 — PERSONAL STORY + TOPIC INTRO",
+      "lang": "en",
+      "text": "When I first moved to Bangkok,",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0007",
+      "chunkIndex": 7,
+      "blockRef": "b-002",
+      "sectionName": "PART 2 — PERSONAL STORY + TOPIC INTRO",
+      "lang": "en",
+      "text": "there was this noodle stall right next to",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0008",
+      "chunkIndex": 8,
+      "blockRef": "b-002",
+      "sectionName": "PART 2 — PERSONAL STORY + TOPIC INTRO",
+      "lang": "en",
+      "text": "my apartment.",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0009",
+      "chunkIndex": 9,
+      "blockRef": "b-002",
+      "sectionName": "PART 2 — PERSONAL STORY + TOPIC INTRO",
+      "lang": "en",
+      "text": "Every single morning,",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0010",
+      "chunkIndex": 10,
+      "blockRef": "b-002",
+      "sectionName": "PART 2 — PERSONAL STORY + TOPIC INTRO",
+      "lang": "en",
+      "text": "the same aunty would look at me and shout",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0011",
+      "chunkIndex": 11,
+      "blockRef": "b-002",
+      "sectionName": "PART 2 — PERSONAL STORY + TOPIC INTRO",
+      "lang": "th",
+      "text": "สั่งอะไรดีคะ",
+      "translit": "sàng a-rai dii khá",
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0012",
+      "chunkIndex": 12,
+      "blockRef": "b-002",
+      "sectionName": "PART 2 — PERSONAL STORY + TOPIC INTRO",
+      "lang": "en",
+      "text": "and I would just stand there.",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0013",
+      "chunkIndex": 13,
+      "blockRef": "b-002",
+      "sectionName": "PART 2 — PERSONAL STORY + TOPIC INTRO",
+      "lang": "en",
+      "text": "I had no idea what she was saying.",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0014",
+      "chunkIndex": 14,
+      "blockRef": "b-002",
+      "sectionName": "PART 2 — PERSONAL STORY + TOPIC INTRO",
+      "lang": "en",
+      "text": "I would just point at the picture on the",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0015",
+      "chunkIndex": 15,
+      "blockRef": "b-002",
+      "sectionName": "PART 2 — PERSONAL STORY + TOPIC INTRO",
+      "lang": "en",
+      "text": "wall and",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0016",
+      "chunkIndex": 16,
+      "blockRef": "b-002",
+      "sectionName": "PART 2 — PERSONAL STORY + TOPIC INTRO",
+      "lang": "en",
+      "text": "hope for the best.",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0017",
+      "chunkIndex": 17,
+      "blockRef": "b-002",
+      "sectionName": "PART 2 — PERSONAL STORY + TOPIC INTRO",
+      "lang": "en",
+      "text": "Sometimes I'd get noodles,",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0018",
+      "chunkIndex": 18,
+      "blockRef": "b-002",
+      "sectionName": "PART 2 — PERSONAL STORY + TOPIC INTRO",
+      "lang": "en",
+      "text": "sometimes I'd get soup, sometimes...",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0019",
+      "chunkIndex": 19,
+      "blockRef": "b-002",
+      "sectionName": "PART 2 — PERSONAL STORY + TOPIC INTRO",
+      "lang": "en",
+      "text": "I honestly don't know what I got.",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0020",
+      "chunkIndex": 20,
+      "blockRef": "b-002",
+      "sectionName": "PART 2 — PERSONAL STORY + TOPIC INTRO",
+      "lang": "th",
+      "text": "สั่งอะไรดีคะ",
+      "translit": "sàng a-rai dii khá",
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0021",
+      "chunkIndex": 21,
+      "blockRef": "b-002",
+      "sectionName": "PART 2 — PERSONAL STORY + TOPIC INTRO",
+      "lang": "en",
+      "text": "it means \"What would you like to order?\"",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0022",
+      "chunkIndex": 22,
+      "blockRef": "b-002",
+      "sectionName": "PART 2 — PERSONAL STORY + TOPIC INTRO",
+      "lang": "en",
+      "text": "And it's one of the first things you'll",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0023",
+      "chunkIndex": 23,
+      "blockRef": "b-002",
+      "sectionName": "PART 2 — PERSONAL STORY + TOPIC INTRO",
+      "lang": "en",
+      "text": "hear at any food stall in Thailand.",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0024",
+      "chunkIndex": 24,
+      "blockRef": "b-002",
+      "sectionName": "PART 2 — PERSONAL STORY + TOPIC INTRO",
+      "lang": "en",
+      "text": "Today I'm going to teach you eight phrases",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0025",
+      "chunkIndex": 25,
+      "blockRef": "b-002",
+      "sectionName": "PART 2 — PERSONAL STORY + TOPIC INTRO",
+      "lang": "en",
+      "text": "that will get you through any meal in",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0026",
+      "chunkIndex": 26,
+      "blockRef": "b-002",
+      "sectionName": "PART 2 — PERSONAL STORY + TOPIC INTRO",
+      "lang": "en",
+      "text": "Thailand.",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0027",
+      "chunkIndex": 27,
+      "blockRef": "b-002",
+      "sectionName": "PART 2 — PERSONAL STORY + TOPIC INTRO",
+      "lang": "en",
+      "text": "We'll go through each one —",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0028",
+      "chunkIndex": 28,
+      "blockRef": "b-002",
+      "sectionName": "PART 2 — PERSONAL STORY + TOPIC INTRO",
+      "lang": "en",
+      "text": "I'll explain what it means, how to use it,",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0029",
+      "chunkIndex": 29,
+      "blockRef": "b-002",
+      "sectionName": "PART 2 — PERSONAL STORY + TOPIC INTRO",
+      "lang": "en",
+      "text": "and when you'd actually say it.",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0030",
+      "chunkIndex": 30,
+      "blockRef": "b-002",
+      "sectionName": "PART 2 — PERSONAL STORY + TOPIC INTRO",
+      "lang": "en",
+      "text": "Then I'll put them all together into a",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0031",
+      "chunkIndex": 31,
+      "blockRef": "b-002",
+      "sectionName": "PART 2 — PERSONAL STORY + TOPIC INTRO",
+      "lang": "en",
+      "text": "short conversation so",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0032",
+      "chunkIndex": 32,
+      "blockRef": "b-002",
+      "sectionName": "PART 2 — PERSONAL STORY + TOPIC INTRO",
+      "lang": "en",
+      "text": "you can hear how they sound at natural",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0033",
+      "chunkIndex": 33,
+      "blockRef": "b-002",
+      "sectionName": "PART 2 — PERSONAL STORY + TOPIC INTRO",
+      "lang": "en",
+      "text": "speed.",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0034",
+      "chunkIndex": 34,
+      "blockRef": "b-002",
+      "sectionName": "PART 2 — PERSONAL STORY + TOPIC INTRO",
+      "lang": "en",
+      "text": "After that,",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0035",
+      "chunkIndex": 35,
+      "blockRef": "b-002",
+      "sectionName": "PART 2 — PERSONAL STORY + TOPIC INTRO",
+      "lang": "en",
+      "text": "we'll break it down sentence by sentence,",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0036",
+      "chunkIndex": 36,
+      "blockRef": "b-002",
+      "sectionName": "PART 2 — PERSONAL STORY + TOPIC INTRO",
+      "lang": "en",
+      "text": "and then you'll get to practise.",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0037",
+      "chunkIndex": 37,
+      "blockRef": "b-002",
+      "sectionName": "PART 2 — PERSONAL STORY + TOPIC INTRO",
+      "lang": "en",
+      "text": "Sound good? Let's go.",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0038",
+      "chunkIndex": 38,
+      "blockRef": "b-003",
+      "sectionName": "Section intro",
+      "lang": "en",
+      "text": "OK, let's start with the vocabulary.",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0039",
+      "chunkIndex": 39,
+      "blockRef": "b-003",
+      "sectionName": "Section intro",
+      "lang": "en",
+      "text": "I'm going to go through each of the eight",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0040",
+      "chunkIndex": 40,
+      "blockRef": "b-003",
+      "sectionName": "Section intro",
+      "lang": "en",
+      "text": "phrases one by one.",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0041",
+      "chunkIndex": 41,
+      "blockRef": "b-003",
+      "sectionName": "Section intro",
+      "lang": "en",
+      "text": "For each one, I'll say the Thai,",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0042",
+      "chunkIndex": 42,
+      "blockRef": "b-003",
+      "sectionName": "Section intro",
+      "lang": "en",
+      "text": "explain what it means,",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0043",
+      "chunkIndex": 43,
+      "blockRef": "b-003",
+      "sectionName": "Section intro",
+      "lang": "en",
+      "text": "and show you how to use it in a sentence.",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0044",
+      "chunkIndex": 44,
+      "blockRef": "b-003",
+      "sectionName": "Section intro",
+      "lang": "en",
+      "text": "Don't worry about memorising everything",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0045",
+      "chunkIndex": 45,
+      "blockRef": "b-003",
+      "sectionName": "Section intro",
+      "lang": "en",
+      "text": "right now —",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0046",
+      "chunkIndex": 46,
+      "blockRef": "b-003",
+      "sectionName": "Section intro",
+      "lang": "en",
+      "text": "we'll practise later.",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0047",
+      "chunkIndex": 47,
+      "blockRef": "b-003",
+      "sectionName": "Vocab 1: สั่ง (sàng) — to order",
+      "lang": "en",
+      "text": "Our first word is",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0048",
+      "chunkIndex": 48,
+      "blockRef": "b-003",
+      "sectionName": "Vocab 1: สั่ง (sàng) — to order",
+      "lang": "th",
+      "text": "สั่ง",
+      "translit": "sàng",
+      "triggerCard": {
+        "type": "vocab-card",
+        "vocabId": "v-001"
+      }
+    },
+    {
+      "chunkId": "pc-0049",
+      "chunkIndex": 49,
+      "blockRef": "b-003",
+      "sectionName": "Vocab 1: สั่ง (sàng) — to order",
+      "lang": "th",
+      "text": "สั่ง",
+      "translit": "sàng",
+      "triggerCard": {
+        "type": "vocab-card",
+        "vocabId": "v-001"
+      }
+    },
+    {
+      "chunkId": "pc-0050",
+      "chunkIndex": 50,
+      "blockRef": "b-003",
+      "sectionName": "Vocab 1: สั่ง (sàng) — to order",
+      "lang": "en",
+      "text": "This means \"to order.\" You use it when",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0051",
+      "chunkIndex": 51,
+      "blockRef": "b-003",
+      "sectionName": "Vocab 1: สั่ง (sàng) — to order",
+      "lang": "en",
+      "text": "you're ordering food,",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0052",
+      "chunkIndex": 52,
+      "blockRef": "b-003",
+      "sectionName": "Vocab 1: สั่ง (sàng) — to order",
+      "lang": "en",
+      "text": "ordering drinks —",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0053",
+      "chunkIndex": 53,
+      "blockRef": "b-003",
+      "sectionName": "Vocab 1: สั่ง (sàng) — to order",
+      "lang": "en",
+      "text": "ordering anything really.",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0054",
+      "chunkIndex": 54,
+      "blockRef": "b-003",
+      "sectionName": "Vocab 1: สั่ง (sàng) — to order",
+      "lang": "en",
+      "text": "It's the most basic word you need at a",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0055",
+      "chunkIndex": 55,
+      "blockRef": "b-003",
+      "sectionName": "Vocab 1: สั่ง (sàng) — to order",
+      "lang": "en",
+      "text": "restaurant or",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0056",
+      "chunkIndex": 56,
+      "blockRef": "b-003",
+      "sectionName": "Vocab 1: สั่ง (sàng) — to order",
+      "lang": "en",
+      "text": "a food stall.",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0057",
+      "chunkIndex": 57,
+      "blockRef": "b-003",
+      "sectionName": "Vocab 1: สั่ง (sàng) — to order",
+      "lang": "en",
+      "text": "If someone asks you",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0058",
+      "chunkIndex": 58,
+      "blockRef": "b-003",
+      "sectionName": "Vocab 1: สั่ง (sàng) — to order",
+      "lang": "th",
+      "text": "สั่งอะไรดีคะ",
+      "translit": "sàng a-rai dii khá",
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0059",
+      "chunkIndex": 59,
+      "blockRef": "b-003",
+      "sectionName": "Vocab 1: สั่ง (sàng) — to order",
+      "lang": "en",
+      "text": "— that's \"what would you like to order?\"",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0060",
+      "chunkIndex": 60,
+      "blockRef": "b-003",
+      "sectionName": "Vocab 1: สั่ง (sàng) — to order",
+      "lang": "th",
+      "text": "สั่ง",
+      "translit": "sàng",
+      "triggerCard": {
+        "type": "vocab-card",
+        "vocabId": "v-001"
+      }
+    },
+    {
+      "chunkId": "pc-0061",
+      "chunkIndex": 61,
+      "blockRef": "b-003",
+      "sectionName": "Vocab 1: สั่ง (sàng) — to order",
+      "lang": "en",
+      "text": "is the key word in there.",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0062",
+      "chunkIndex": 62,
+      "blockRef": "b-003",
+      "sectionName": "Vocab 1: สั่ง (sàng) — to order",
+      "lang": "en",
+      "text": "Let me give you an example sentence",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0063",
+      "chunkIndex": 63,
+      "blockRef": "b-003",
+      "sectionName": "Vocab 1: สั่ง (sàng) — to order",
+      "lang": "th",
+      "text": "คุณอยากสั่งอะไร",
+      "translit": "khun yàak sàng a-rai",
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0064",
+      "chunkIndex": 64,
+      "blockRef": "b-003",
+      "sectionName": "Vocab 1: สั่ง (sàng) — to order",
+      "lang": "en",
+      "text": "— \"What would you like to order?\" You hear",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0065",
+      "chunkIndex": 65,
+      "blockRef": "b-003",
+      "sectionName": "Vocab 1: สั่ง (sàng) — to order",
+      "lang": "th",
+      "text": "สั่ง",
+      "translit": "sàng",
+      "triggerCard": {
+        "type": "vocab-card",
+        "vocabId": "v-001"
+      }
+    },
+    {
+      "chunkId": "pc-0066",
+      "chunkIndex": 66,
+      "blockRef": "b-003",
+      "sectionName": "Vocab 1: สั่ง (sàng) — to order",
+      "lang": "en",
+      "text": "in the middle?",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0067",
+      "chunkIndex": 67,
+      "blockRef": "b-003",
+      "sectionName": "Vocab 1: สั่ง (sàng) — to order",
+      "lang": "th",
+      "text": "คุณอยากสั่งอะไร",
+      "translit": "khun yàak sàng a-rai",
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0068",
+      "chunkIndex": 68,
+      "blockRef": "b-003",
+      "sectionName": "Vocab 2: เผ็ด (phèt) — spicy",
+      "lang": "en",
+      "text": "Next up",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0069",
+      "chunkIndex": 69,
+      "blockRef": "b-003",
+      "sectionName": "Vocab 2: เผ็ด (phèt) — spicy",
+      "lang": "th",
+      "text": "เผ็ด",
+      "translit": "phèt",
+      "triggerCard": {
+        "type": "vocab-card",
+        "vocabId": "v-003"
+      }
+    },
+    {
+      "chunkId": "pc-0070",
+      "chunkIndex": 70,
+      "blockRef": "b-003",
+      "sectionName": "Vocab 2: เผ็ด (phèt) — spicy",
+      "lang": "th",
+      "text": "เผ็ด",
+      "translit": "phèt",
+      "triggerCard": {
+        "type": "vocab-card",
+        "vocabId": "v-003"
+      }
+    },
+    {
+      "chunkId": "pc-0071",
+      "chunkIndex": 71,
+      "blockRef": "b-003",
+      "sectionName": "Vocab 2: เผ็ด (phèt) — spicy",
+      "lang": "en",
+      "text": "This means \"spicy.\" And if you're eating",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0072",
+      "chunkIndex": 72,
+      "blockRef": "b-003",
+      "sectionName": "Vocab 2: เผ็ด (phèt) — spicy",
+      "lang": "en",
+      "text": "in Thailand,",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0073",
+      "chunkIndex": 73,
+      "blockRef": "b-003",
+      "sectionName": "Vocab 2: เผ็ด (phèt) — spicy",
+      "lang": "en",
+      "text": "you NEED this word,",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0074",
+      "chunkIndex": 74,
+      "blockRef": "b-003",
+      "sectionName": "Vocab 2: เผ็ด (phèt) — spicy",
+      "lang": "en",
+      "text": "because Thai food can be seriously spicy.",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0075",
+      "chunkIndex": 75,
+      "blockRef": "b-003",
+      "sectionName": "Vocab 2: เผ็ด (phèt) — spicy",
+      "lang": "en",
+      "text": "Like,",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0076",
+      "chunkIndex": 76,
+      "blockRef": "b-003",
+      "sectionName": "Vocab 2: เผ็ด (phèt) — spicy",
+      "lang": "en",
+      "text": "a completely different level from what you",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0077",
+      "chunkIndex": 77,
+      "blockRef": "b-003",
+      "sectionName": "Vocab 2: เผ็ด (phèt) — spicy",
+      "lang": "en",
+      "text": "might be used to.",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0078",
+      "chunkIndex": 78,
+      "blockRef": "b-003",
+      "sectionName": "Vocab 2: เผ็ด (phèt) — spicy",
+      "lang": "en",
+      "text": "If someone asks you",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0079",
+      "chunkIndex": 79,
+      "blockRef": "b-003",
+      "sectionName": "Vocab 2: เผ็ด (phèt) — spicy",
+      "lang": "th",
+      "text": "เผ็ดไหม",
+      "translit": "phèt mǎi",
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0080",
+      "chunkIndex": 80,
+      "blockRef": "b-003",
+      "sectionName": "Vocab 2: เผ็ด (phèt) — spicy",
+      "lang": "en",
+      "text": "\"Is it spicy?\" —",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0081",
+      "chunkIndex": 81,
+      "blockRef": "b-003",
+      "sectionName": "Vocab 2: เผ็ด (phèt) — spicy",
+      "lang": "en",
+      "text": "you want to know what that means before",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0082",
+      "chunkIndex": 82,
+      "blockRef": "b-003",
+      "sectionName": "Vocab 2: เผ็ด (phèt) — spicy",
+      "lang": "en",
+      "text": "you say yes.",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0083",
+      "chunkIndex": 83,
+      "blockRef": "b-003",
+      "sectionName": "Vocab 3: ไม่เผ็ด (mâi phèt) — not spicy",
+      "lang": "en",
+      "text": "Now, if you can't handle the heat —",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0084",
+      "chunkIndex": 84,
+      "blockRef": "b-003",
+      "sectionName": "Vocab 3: ไม่เผ็ด (mâi phèt) — not spicy",
+      "lang": "en",
+      "text": "and there's no shame in that — you need",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0085",
+      "chunkIndex": 85,
+      "blockRef": "b-003",
+      "sectionName": "Vocab 3: ไม่เผ็ด (mâi phèt) — not spicy",
+      "lang": "th",
+      "text": "ไม่เผ็ด",
+      "translit": "mâi phèt",
+      "triggerCard": {
+        "type": "vocab-card",
+        "vocabId": "v-004"
+      }
+    },
+    {
+      "chunkId": "pc-0086",
+      "chunkIndex": 86,
+      "blockRef": "b-003",
+      "sectionName": "Vocab 3: ไม่เผ็ด (mâi phèt) — not spicy",
+      "lang": "th",
+      "text": "ไม่เผ็ด",
+      "translit": "mâi phèt",
+      "triggerCard": {
+        "type": "vocab-card",
+        "vocabId": "v-004"
+      }
+    },
+    {
+      "chunkId": "pc-0087",
+      "chunkIndex": 87,
+      "blockRef": "b-003",
+      "sectionName": "Vocab 3: ไม่เผ็ด (mâi phèt) — not spicy",
+      "lang": "th",
+      "text": "ไม่",
+      "translit": "mâi",
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0088",
+      "chunkIndex": 88,
+      "blockRef": "b-003",
+      "sectionName": "Vocab 3: ไม่เผ็ด (mâi phèt) — not spicy",
+      "lang": "en",
+      "text": "means \"not\" or \"no.\" So",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0089",
+      "chunkIndex": 89,
+      "blockRef": "b-003",
+      "sectionName": "Vocab 3: ไม่เผ็ด (mâi phèt) — not spicy",
+      "lang": "th",
+      "text": "ไม่เผ็ด",
+      "translit": "mâi phèt",
+      "triggerCard": {
+        "type": "vocab-card",
+        "vocabId": "v-004"
+      }
+    },
+    {
+      "chunkId": "pc-0090",
+      "chunkIndex": 90,
+      "blockRef": "b-003",
+      "sectionName": "Vocab 3: ไม่เผ็ด (mâi phèt) — not spicy",
+      "lang": "en",
+      "text": "is \"not spicy.\" This is really useful",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0091",
+      "chunkIndex": 91,
+      "blockRef": "b-003",
+      "sectionName": "Vocab 3: ไม่เผ็ด (mâi phèt) — not spicy",
+      "lang": "en",
+      "text": "because in Thai,",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0092",
+      "chunkIndex": 92,
+      "blockRef": "b-003",
+      "sectionName": "Vocab 3: ไม่เผ็ด (mâi phèt) — not spicy",
+      "lang": "en",
+      "text": "you make something negative just by",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0093",
+      "chunkIndex": 93,
+      "blockRef": "b-003",
+      "sectionName": "Vocab 3: ไม่เผ็ด (mâi phèt) — not spicy",
+      "lang": "en",
+      "text": "putting",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0094",
+      "chunkIndex": 94,
+      "blockRef": "b-003",
+      "sectionName": "Vocab 3: ไม่เผ็ด (mâi phèt) — not spicy",
+      "lang": "th",
+      "text": "ไม่",
+      "translit": "mâi",
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0095",
+      "chunkIndex": 95,
+      "blockRef": "b-003",
+      "sectionName": "Vocab 3: ไม่เผ็ด (mâi phèt) — not spicy",
+      "lang": "en",
+      "text": "in front of it.",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0096",
+      "chunkIndex": 96,
+      "blockRef": "b-003",
+      "sectionName": "Vocab 3: ไม่เผ็ด (mâi phèt) — not spicy",
+      "lang": "th",
+      "text": "ไม่",
+      "translit": "mâi",
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0097",
+      "chunkIndex": 97,
+      "blockRef": "b-003",
+      "sectionName": "Vocab 3: ไม่เผ็ด (mâi phèt) — not spicy",
+      "lang": "en",
+      "text": "plus whatever.",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0098",
+      "chunkIndex": 98,
+      "blockRef": "b-003",
+      "sectionName": "Vocab 3: ไม่เผ็ด (mâi phèt) — not spicy",
+      "lang": "th",
+      "text": "ไม่เผ็ด",
+      "translit": "mâi phèt",
+      "triggerCard": {
+        "type": "vocab-card",
+        "vocabId": "v-004"
+      }
+    },
+    {
+      "chunkId": "pc-0099",
+      "chunkIndex": 99,
+      "blockRef": "b-003",
+      "sectionName": "Vocab 3: ไม่เผ็ด (mâi phèt) — not spicy",
+      "lang": "en",
+      "text": "not spicy.",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0100",
+      "chunkIndex": 100,
+      "blockRef": "b-003",
+      "sectionName": "Vocab 3: ไม่เผ็ด (mâi phèt) — not spicy",
+      "lang": "en",
+      "text": "And if you want to tell the cook \"no",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0101",
+      "chunkIndex": 101,
+      "blockRef": "b-003",
+      "sectionName": "Vocab 3: ไม่เผ็ด (mâi phèt) — not spicy",
+      "lang": "en",
+      "text": "spicy,",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0102",
+      "chunkIndex": 102,
+      "blockRef": "b-003",
+      "sectionName": "Vocab 3: ไม่เผ็ด (mâi phèt) — not spicy",
+      "lang": "en",
+      "text": "please\" you say",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0103",
+      "chunkIndex": 103,
+      "blockRef": "b-003",
+      "sectionName": "Vocab 3: ไม่เผ็ด (mâi phèt) — not spicy",
+      "lang": "th",
+      "text": "ไม่เอาเผ็ดนะคะ",
+      "translit": "mâi ao phèt ná khá",
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0104",
+      "chunkIndex": 104,
+      "blockRef": "b-003",
+      "sectionName": "Vocab 3: ไม่เผ็ด (mâi phèt) — not spicy",
+      "lang": "en",
+      "text": ". That's the polite way to say it.",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0105",
+      "chunkIndex": 105,
+      "blockRef": "b-003",
+      "sectionName": "Vocab 3: ไม่เผ็ด (mâi phèt) — not spicy",
+      "lang": "th",
+      "text": "ไม่เอาเผ็ดนะคะ",
+      "translit": "mâi ao phèt ná khá",
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0106",
+      "chunkIndex": 106,
+      "blockRef": "b-003",
+      "sectionName": "Vocab 3: ไม่เผ็ด (mâi phèt) — not spicy",
+      "lang": "en",
+      "text": "\"No spicy, please.\"",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0107",
+      "chunkIndex": 107,
+      "blockRef": "b-003",
+      "sectionName": "Vocab 4: อร่อย (a-ròoy) — delicious",
+      "lang": "en",
+      "text": "This next one is one of my favourite Thai",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0108",
+      "chunkIndex": 108,
+      "blockRef": "b-003",
+      "sectionName": "Vocab 4: อร่อย (a-ròoy) — delicious",
+      "lang": "en",
+      "text": "words",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0109",
+      "chunkIndex": 109,
+      "blockRef": "b-003",
+      "sectionName": "Vocab 4: อร่อย (a-ròoy) — delicious",
+      "lang": "th",
+      "text": "อร่อย",
+      "translit": "a-ròoy",
+      "triggerCard": {
+        "type": "vocab-card",
+        "vocabId": "v-002"
+      }
+    },
+    {
+      "chunkId": "pc-0110",
+      "chunkIndex": 110,
+      "blockRef": "b-003",
+      "sectionName": "Vocab 4: อร่อย (a-ròoy) — delicious",
+      "lang": "th",
+      "text": "อร่อย",
+      "translit": "a-ròoy",
+      "triggerCard": {
+        "type": "vocab-card",
+        "vocabId": "v-002"
+      }
+    },
+    {
+      "chunkId": "pc-0111",
+      "chunkIndex": 111,
+      "blockRef": "b-003",
+      "sectionName": "Vocab 4: อร่อย (a-ròoy) — delicious",
+      "lang": "en",
+      "text": "It means \"delicious.\" Thai people LOVE it",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0112",
+      "chunkIndex": 112,
+      "blockRef": "b-003",
+      "sectionName": "Vocab 4: อร่อย (a-ròoy) — delicious",
+      "lang": "en",
+      "text": "when you say this.",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0113",
+      "chunkIndex": 113,
+      "blockRef": "b-003",
+      "sectionName": "Vocab 4: อร่อย (a-ròoy) — delicious",
+      "lang": "en",
+      "text": "If you eat something and you say",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0114",
+      "chunkIndex": 114,
+      "blockRef": "b-003",
+      "sectionName": "Vocab 4: อร่อย (a-ròoy) — delicious",
+      "lang": "th",
+      "text": "อร่อย",
+      "translit": "a-ròoy",
+      "triggerCard": {
+        "type": "vocab-card",
+        "vocabId": "v-002"
+      }
+    },
+    {
+      "chunkId": "pc-0115",
+      "chunkIndex": 115,
+      "blockRef": "b-003",
+      "sectionName": "Vocab 4: อร่อย (a-ròoy) — delicious",
+      "lang": "en",
+      "text": "the cook's face will light up.",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0116",
+      "chunkIndex": 116,
+      "blockRef": "b-003",
+      "sectionName": "Vocab 4: อร่อย (a-ròoy) — delicious",
+      "lang": "en",
+      "text": "It's a compliment. Use it.",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0117",
+      "chunkIndex": 117,
+      "blockRef": "b-003",
+      "sectionName": "Vocab 4: อร่อย (a-ròoy) — delicious",
+      "lang": "en",
+      "text": "And if you really mean it, you can say",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0118",
+      "chunkIndex": 118,
+      "blockRef": "b-003",
+      "sectionName": "Vocab 4: อร่อย (a-ròoy) — delicious",
+      "lang": "th",
+      "text": "อร่อยมาก",
+      "translit": "a-ròoy mâak",
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0119",
+      "chunkIndex": 119,
+      "blockRef": "b-003",
+      "sectionName": "Vocab 4: อร่อย (a-ròoy) — delicious",
+      "lang": "en",
+      "text": "— \"very delicious.\"",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0120",
+      "chunkIndex": 120,
+      "blockRef": "b-003",
+      "sectionName": "Vocab 4: อร่อย (a-ròoy) — delicious",
+      "lang": "th",
+      "text": "มาก",
+      "translit": "mâak",
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0121",
+      "chunkIndex": 121,
+      "blockRef": "b-003",
+      "sectionName": "Vocab 4: อร่อย (a-ròoy) — delicious",
+      "lang": "en",
+      "text": "means \"very\" or \"a lot.\" So",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0122",
+      "chunkIndex": 122,
+      "blockRef": "b-003",
+      "sectionName": "Vocab 4: อร่อย (a-ròoy) — delicious",
+      "lang": "th",
+      "text": "อร่อยมาก",
+      "translit": "a-ròoy mâak",
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0123",
+      "chunkIndex": 123,
+      "blockRef": "b-003",
+      "sectionName": "Vocab 4: อร่อย (a-ròoy) — delicious",
+      "lang": "en",
+      "text": "\"really delicious.\" That's the one that",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0124",
+      "chunkIndex": 124,
+      "blockRef": "b-003",
+      "sectionName": "Vocab 4: อร่อย (a-ròoy) — delicious",
+      "lang": "en",
+      "text": "gets you extra portions.",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0125",
+      "chunkIndex": 125,
+      "blockRef": "b-003",
+      "sectionName": "Vocab 5: ขอ (khǎaw) — may I have / I'd like",
+      "lang": "en",
+      "text": "OK this next one is really important.",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0126",
+      "chunkIndex": 126,
+      "blockRef": "b-003",
+      "sectionName": "Vocab 5: ขอ (khǎaw) — may I have / I'd like",
+      "lang": "th",
+      "text": "ขอ",
+      "translit": "khǎaw",
+      "triggerCard": {
+        "type": "vocab-card",
+        "vocabId": "v-006"
+      }
+    },
+    {
+      "chunkId": "pc-0127",
+      "chunkIndex": 127,
+      "blockRef": "b-003",
+      "sectionName": "Vocab 5: ขอ (khǎaw) — may I have / I'd like",
+      "lang": "th",
+      "text": "ขอ",
+      "translit": "khǎaw",
+      "triggerCard": {
+        "type": "vocab-card",
+        "vocabId": "v-006"
+      }
+    },
+    {
+      "chunkId": "pc-0128",
+      "chunkIndex": 128,
+      "blockRef": "b-003",
+      "sectionName": "Vocab 5: ขอ (khǎaw) — may I have / I'd like",
+      "lang": "en",
+      "text": "This is one of the most useful words in",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0129",
+      "chunkIndex": 129,
+      "blockRef": "b-003",
+      "sectionName": "Vocab 5: ขอ (khǎaw) — may I have / I'd like",
+      "lang": "en",
+      "text": "Thai.",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0130",
+      "chunkIndex": 130,
+      "blockRef": "b-003",
+      "sectionName": "Vocab 5: ขอ (khǎaw) — may I have / I'd like",
+      "lang": "th",
+      "text": "ขอ",
+      "translit": "khǎaw",
+      "triggerCard": {
+        "type": "vocab-card",
+        "vocabId": "v-006"
+      }
+    },
+    {
+      "chunkId": "pc-0131",
+      "chunkIndex": 131,
+      "blockRef": "b-003",
+      "sectionName": "Vocab 5: ขอ (khǎaw) — may I have / I'd like",
+      "lang": "en",
+      "text": "means \"may I have\" or",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0132",
+      "chunkIndex": 132,
+      "blockRef": "b-003",
+      "sectionName": "Vocab 5: ขอ (khǎaw) — may I have / I'd like",
+      "lang": "en",
+      "text": "\"I'd like.\" You put it at the beginning of",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0133",
+      "chunkIndex": 133,
+      "blockRef": "b-003",
+      "sectionName": "Vocab 5: ขอ (khǎaw) — may I have / I'd like",
+      "lang": "en",
+      "text": "your request",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0134",
+      "chunkIndex": 134,
+      "blockRef": "b-003",
+      "sectionName": "Vocab 5: ขอ (khǎaw) — may I have / I'd like",
+      "lang": "th",
+      "text": "ขอ",
+      "translit": "khǎaw",
+      "triggerCard": {
+        "type": "vocab-card",
+        "vocabId": "v-006"
+      }
+    },
+    {
+      "chunkId": "pc-0135",
+      "chunkIndex": 135,
+      "blockRef": "b-003",
+      "sectionName": "Vocab 5: ขอ (khǎaw) — may I have / I'd like",
+      "lang": "en",
+      "text": ", then whatever you want, then",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0136",
+      "chunkIndex": 136,
+      "blockRef": "b-003",
+      "sectionName": "Vocab 5: ขอ (khǎaw) — may I have / I'd like",
+      "lang": "th",
+      "text": "ค่ะ",
+      "translit": "khâ",
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0137",
+      "chunkIndex": 137,
+      "blockRef": "b-003",
+      "sectionName": "Vocab 5: ขอ (khǎaw) — may I have / I'd like",
+      "lang": "th",
+      "text": "ครับ",
+      "translit": "khráp",
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0138",
+      "chunkIndex": 138,
+      "blockRef": "b-003",
+      "sectionName": "Vocab 5: ขอ (khǎaw) — may I have / I'd like",
+      "lang": "en",
+      "text": "at the end to be polite.",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0139",
+      "chunkIndex": 139,
+      "blockRef": "b-003",
+      "sectionName": "Vocab 5: ขอ (khǎaw) — may I have / I'd like",
+      "lang": "en",
+      "text": "So for example",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0140",
+      "chunkIndex": 140,
+      "blockRef": "b-003",
+      "sectionName": "Vocab 5: ขอ (khǎaw) — may I have / I'd like",
+      "lang": "th",
+      "text": "ขอผัดไทยหนึ่งจานค่ะ",
+      "translit": "khǎaw phàt-thai nùeng jaan khâ",
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0141",
+      "chunkIndex": 141,
+      "blockRef": "b-003",
+      "sectionName": "Vocab 5: ขอ (khǎaw) — may I have / I'd like",
+      "lang": "en",
+      "text": "— \"I'd like one Pad Thai,",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0142",
+      "chunkIndex": 142,
+      "blockRef": "b-003",
+      "sectionName": "Vocab 5: ขอ (khǎaw) — may I have / I'd like",
+      "lang": "en",
+      "text": "please.\" Let me break that down.",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0143",
+      "chunkIndex": 143,
+      "blockRef": "b-003",
+      "sectionName": "Vocab 5: ขอ (khǎaw) — may I have / I'd like",
+      "lang": "th",
+      "text": "ขอ",
+      "translit": "khǎaw",
+      "triggerCard": {
+        "type": "vocab-card",
+        "vocabId": "v-006"
+      }
+    },
+    {
+      "chunkId": "pc-0144",
+      "chunkIndex": 144,
+      "blockRef": "b-003",
+      "sectionName": "Vocab 5: ขอ (khǎaw) — may I have / I'd like",
+      "lang": "en",
+      "text": "— \"I'd like.\"",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0145",
+      "chunkIndex": 145,
+      "blockRef": "b-003",
+      "sectionName": "Vocab 5: ขอ (khǎaw) — may I have / I'd like",
+      "lang": "th",
+      "text": "ผัดไทย",
+      "translit": "phàt-thai",
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0146",
+      "chunkIndex": 146,
+      "blockRef": "b-003",
+      "sectionName": "Vocab 5: ขอ (khǎaw) — may I have / I'd like",
+      "lang": "en",
+      "text": "— \"Pad Thai.\"",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0147",
+      "chunkIndex": 147,
+      "blockRef": "b-003",
+      "sectionName": "Vocab 5: ขอ (khǎaw) — may I have / I'd like",
+      "lang": "th",
+      "text": "หนึ่ง",
+      "translit": "nùeng",
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0148",
+      "chunkIndex": 148,
+      "blockRef": "b-003",
+      "sectionName": "Vocab 5: ขอ (khǎaw) — may I have / I'd like",
+      "lang": "en",
+      "text": "— \"one.\"",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0149",
+      "chunkIndex": 149,
+      "blockRef": "b-003",
+      "sectionName": "Vocab 5: ขอ (khǎaw) — may I have / I'd like",
+      "lang": "th",
+      "text": "จาน",
+      "translit": "jaan",
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0150",
+      "chunkIndex": 150,
+      "blockRef": "b-003",
+      "sectionName": "Vocab 5: ขอ (khǎaw) — may I have / I'd like",
+      "lang": "en",
+      "text": "that's the classifier for plates of food.",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0151",
+      "chunkIndex": 151,
+      "blockRef": "b-003",
+      "sectionName": "Vocab 5: ขอ (khǎaw) — may I have / I'd like",
+      "lang": "th",
+      "text": "ค่ะ",
+      "translit": "khâ",
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0152",
+      "chunkIndex": 152,
+      "blockRef": "b-003",
+      "sectionName": "Vocab 5: ขอ (khǎaw) — may I have / I'd like",
+      "lang": "en",
+      "text": "polite ending for women.",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0153",
+      "chunkIndex": 153,
+      "blockRef": "b-003",
+      "sectionName": "Vocab 5: ขอ (khǎaw) — may I have / I'd like",
+      "lang": "th",
+      "text": "ขอผัดไทยหนึ่งจานค่ะ",
+      "translit": "khǎaw phàt-thai nùeng jaan khâ",
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0154",
+      "chunkIndex": 154,
+      "blockRef": "b-003",
+      "sectionName": "Vocab 5: ขอ (khǎaw) — may I have / I'd like",
+      "lang": "en",
+      "text": ". That's a complete order.",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0155",
+      "chunkIndex": 155,
+      "blockRef": "b-003",
+      "sectionName": "Vocab 5: ขอ (khǎaw) — may I have / I'd like",
+      "lang": "en",
+      "text": "You can swap out",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0156",
+      "chunkIndex": 156,
+      "blockRef": "b-003",
+      "sectionName": "Vocab 5: ขอ (khǎaw) — may I have / I'd like",
+      "lang": "th",
+      "text": "ผัดไทย",
+      "translit": "phàt-thai",
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0157",
+      "chunkIndex": 157,
+      "blockRef": "b-003",
+      "sectionName": "Vocab 5: ขอ (khǎaw) — may I have / I'd like",
+      "lang": "en",
+      "text": "for any dish",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0158",
+      "chunkIndex": 158,
+      "blockRef": "b-003",
+      "sectionName": "Vocab 5: ขอ (khǎaw) — may I have / I'd like",
+      "lang": "th",
+      "text": "ขอข้าวผัดหนึ่งจานค่ะ",
+      "translit": "khǎaw khâaw-phàt nùeng jaan khâ",
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0159",
+      "chunkIndex": 159,
+      "blockRef": "b-003",
+      "sectionName": "Vocab 5: ขอ (khǎaw) — may I have / I'd like",
+      "lang": "en",
+      "text": "for fried rice,",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0160",
+      "chunkIndex": 160,
+      "blockRef": "b-003",
+      "sectionName": "Vocab 5: ขอ (khǎaw) — may I have / I'd like",
+      "lang": "th",
+      "text": "ขอส้มตำหนึ่งจานค่ะ",
+      "translit": "khǎaw sôm-tam nùeng jaan khâ",
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0161",
+      "chunkIndex": 161,
+      "blockRef": "b-003",
+      "sectionName": "Vocab 5: ขอ (khǎaw) — may I have / I'd like",
+      "lang": "en",
+      "text": "for papaya salad. Same pattern every time.",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0162",
+      "chunkIndex": 162,
+      "blockRef": "b-003",
+      "sectionName": "Vocab 6: เก็บเงิน (gèp ngern) — check please / bill please",
+      "lang": "en",
+      "text": "When you're done eating, you need this one",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0163",
+      "chunkIndex": 163,
+      "blockRef": "b-003",
+      "sectionName": "Vocab 6: เก็บเงิน (gèp ngern) — check please / bill please",
+      "lang": "th",
+      "text": "เก็บเงิน",
+      "translit": "gèp ngern",
+      "triggerCard": {
+        "type": "vocab-card",
+        "vocabId": "v-005"
+      }
+    },
+    {
+      "chunkId": "pc-0164",
+      "chunkIndex": 164,
+      "blockRef": "b-003",
+      "sectionName": "Vocab 6: เก็บเงิน (gèp ngern) — check please / bill please",
+      "lang": "th",
+      "text": "เก็บเงิน",
+      "translit": "gèp ngern",
+      "triggerCard": {
+        "type": "vocab-card",
+        "vocabId": "v-005"
+      }
+    },
+    {
+      "chunkId": "pc-0165",
+      "chunkIndex": 165,
+      "blockRef": "b-003",
+      "sectionName": "Vocab 6: เก็บเงิน (gèp ngern) — check please / bill please",
+      "lang": "en",
+      "text": "This means \"check please\" or",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0166",
+      "chunkIndex": 166,
+      "blockRef": "b-003",
+      "sectionName": "Vocab 6: เก็บเงิน (gèp ngern) — check please / bill please",
+      "lang": "en",
+      "text": "\"bill please.\"",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0167",
+      "chunkIndex": 167,
+      "blockRef": "b-003",
+      "sectionName": "Vocab 6: เก็บเงิน (gèp ngern) — check please / bill please",
+      "lang": "th",
+      "text": "เก็บ",
+      "translit": "gèp",
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0168",
+      "chunkIndex": 168,
+      "blockRef": "b-003",
+      "sectionName": "Vocab 6: เก็บเงิน (gèp ngern) — check please / bill please",
+      "lang": "en",
+      "text": "means \"to collect\" and",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0169",
+      "chunkIndex": 169,
+      "blockRef": "b-003",
+      "sectionName": "Vocab 6: เก็บเงิน (gèp ngern) — check please / bill please",
+      "lang": "th",
+      "text": "เงิน",
+      "translit": "ngern",
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0170",
+      "chunkIndex": 170,
+      "blockRef": "b-003",
+      "sectionName": "Vocab 6: เก็บเงิน (gèp ngern) — check please / bill please",
+      "lang": "en",
+      "text": "means \"money.\" So literally it's \"collect",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0171",
+      "chunkIndex": 171,
+      "blockRef": "b-003",
+      "sectionName": "Vocab 6: เก็บเงิน (gèp ngern) — check please / bill please",
+      "lang": "en",
+      "text": "money\" —",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0172",
+      "chunkIndex": 172,
+      "blockRef": "b-003",
+      "sectionName": "Vocab 6: เก็บเงิน (gèp ngern) — check please / bill please",
+      "lang": "en",
+      "text": "which is a very direct way of saying \"I'd",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0173",
+      "chunkIndex": 173,
+      "blockRef": "b-003",
+      "sectionName": "Vocab 6: เก็บเงิน (gèp ngern) — check please / bill please",
+      "lang": "en",
+      "text": "like to pay.\"",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0174",
+      "chunkIndex": 174,
+      "blockRef": "b-003",
+      "sectionName": "Vocab 6: เก็บเงิน (gèp ngern) — check please / bill please",
+      "lang": "en",
+      "text": "The full polite version is",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0175",
+      "chunkIndex": 175,
+      "blockRef": "b-003",
+      "sectionName": "Vocab 6: เก็บเงิน (gèp ngern) — check please / bill please",
+      "lang": "th",
+      "text": "เก็บเงินด้วยค่ะ",
+      "translit": "gèp ngern dûuay khâ",
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0176",
+      "chunkIndex": 176,
+      "blockRef": "b-003",
+      "sectionName": "Vocab 6: เก็บเงิน (gèp ngern) — check please / bill please",
+      "lang": "th",
+      "text": "ด้วย",
+      "translit": "dûuay",
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0177",
+      "chunkIndex": 177,
+      "blockRef": "b-003",
+      "sectionName": "Vocab 6: เก็บเงิน (gèp ngern) — check please / bill please",
+      "lang": "en",
+      "text": "makes it softer — like \"also\" or \"please.\"",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0178",
+      "chunkIndex": 178,
+      "blockRef": "b-003",
+      "sectionName": "Vocab 6: เก็บเงิน (gèp ngern) — check please / bill please",
+      "lang": "th",
+      "text": "เก็บเงินด้วยค่ะ",
+      "translit": "gèp ngern dûuay khâ",
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0179",
+      "chunkIndex": 179,
+      "blockRef": "b-003",
+      "sectionName": "Vocab 6: เก็บเงิน (gèp ngern) — check please / bill please",
+      "lang": "en",
+      "text": "\"Can I have the bill, please?\"",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0180",
+      "chunkIndex": 180,
+      "blockRef": "b-003",
+      "sectionName": "Vocab 7: แนะนำ (náe-nam) — to recommend",
+      "lang": "en",
+      "text": "This is a great one for when you look at a",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0181",
+      "chunkIndex": 181,
+      "blockRef": "b-003",
+      "sectionName": "Vocab 7: แนะนำ (náe-nam) — to recommend",
+      "lang": "en",
+      "text": "menu and",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0182",
+      "chunkIndex": 182,
+      "blockRef": "b-003",
+      "sectionName": "Vocab 7: แนะนำ (náe-nam) — to recommend",
+      "lang": "en",
+      "text": "have absolutely no idea what to order",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0183",
+      "chunkIndex": 183,
+      "blockRef": "b-003",
+      "sectionName": "Vocab 7: แนะนำ (náe-nam) — to recommend",
+      "lang": "th",
+      "text": "แนะนำ",
+      "translit": "náe-nam",
+      "triggerCard": {
+        "type": "vocab-card",
+        "vocabId": "v-008"
+      }
+    },
+    {
+      "chunkId": "pc-0184",
+      "chunkIndex": 184,
+      "blockRef": "b-003",
+      "sectionName": "Vocab 7: แนะนำ (náe-nam) — to recommend",
+      "lang": "th",
+      "text": "แนะนำ",
+      "translit": "náe-nam",
+      "triggerCard": {
+        "type": "vocab-card",
+        "vocabId": "v-008"
+      }
+    },
+    {
+      "chunkId": "pc-0185",
+      "chunkIndex": 185,
+      "blockRef": "b-003",
+      "sectionName": "Vocab 7: แนะนำ (náe-nam) — to recommend",
+      "lang": "en",
+      "text": "It means \"to recommend.\" So if you ask",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0186",
+      "chunkIndex": 186,
+      "blockRef": "b-003",
+      "sectionName": "Vocab 7: แนะนำ (náe-nam) — to recommend",
+      "lang": "th",
+      "text": "แนะนำอะไรดีคะ",
+      "translit": "náe-nam a-rai dii khá",
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0187",
+      "chunkIndex": 187,
+      "blockRef": "b-003",
+      "sectionName": "Vocab 7: แนะนำ (náe-nam) — to recommend",
+      "lang": "en",
+      "text": "\"What do you recommend?\" —",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0188",
+      "chunkIndex": 188,
+      "blockRef": "b-003",
+      "sectionName": "Vocab 7: แนะนำ (náe-nam) — to recommend",
+      "lang": "en",
+      "text": "the vendor will pick their best dish for you.",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0189",
+      "chunkIndex": 189,
+      "blockRef": "b-003",
+      "sectionName": "Vocab 7: แนะนำ (náe-nam) — to recommend",
+      "lang": "en",
+      "text": "This is honestly one of the best ways to",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0190",
+      "chunkIndex": 190,
+      "blockRef": "b-003",
+      "sectionName": "Vocab 7: แนะนำ (náe-nam) — to recommend",
+      "lang": "en",
+      "text": "eat in Thailand. Just let them choose.",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0191",
+      "chunkIndex": 191,
+      "blockRef": "b-003",
+      "sectionName": "Vocab 7: แนะนำ (náe-nam) — to recommend",
+      "lang": "th",
+      "text": "แนะนำอะไรดีคะ",
+      "translit": "náe-nam a-rai dii khá",
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0192",
+      "chunkIndex": 192,
+      "blockRef": "b-003",
+      "sectionName": "Vocab 7: แนะนำ (náe-nam) — to recommend",
+      "lang": "en",
+      "text": "\"What do you recommend?\" Notice that the",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0193",
+      "chunkIndex": 193,
+      "blockRef": "b-003",
+      "sectionName": "Vocab 7: แนะนำ (náe-nam) — to recommend",
+      "lang": "en",
+      "text": "question word",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0194",
+      "chunkIndex": 194,
+      "blockRef": "b-003",
+      "sectionName": "Vocab 7: แนะนำ (náe-nam) — to recommend",
+      "lang": "th",
+      "text": "อะไร",
+      "translit": "a-rai",
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0195",
+      "chunkIndex": 195,
+      "blockRef": "b-003",
+      "sectionName": "Vocab 7: แนะนำ (náe-nam) — to recommend",
+      "lang": "en",
+      "text": "goes in the middle in Thai,",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0196",
+      "chunkIndex": 196,
+      "blockRef": "b-003",
+      "sectionName": "Vocab 7: แนะนำ (náe-nam) — to recommend",
+      "lang": "en",
+      "text": "not at the beginning like in English.",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0197",
+      "chunkIndex": 197,
+      "blockRef": "b-003",
+      "sectionName": "Vocab 8: อิ่ม (ìm) — full (not hungry)",
+      "lang": "en",
+      "text": "Last one for today",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0198",
+      "chunkIndex": 198,
+      "blockRef": "b-003",
+      "sectionName": "Vocab 8: อิ่ม (ìm) — full (not hungry)",
+      "lang": "th",
+      "text": "อิ่ม",
+      "translit": "ìm",
+      "triggerCard": {
+        "type": "vocab-card",
+        "vocabId": "v-007"
+      }
+    },
+    {
+      "chunkId": "pc-0199",
+      "chunkIndex": 199,
+      "blockRef": "b-003",
+      "sectionName": "Vocab 8: อิ่ม (ìm) — full (not hungry)",
+      "lang": "th",
+      "text": "อิ่ม",
+      "translit": "ìm",
+      "triggerCard": {
+        "type": "vocab-card",
+        "vocabId": "v-007"
+      }
+    },
+    {
+      "chunkId": "pc-0200",
+      "chunkIndex": 200,
+      "blockRef": "b-003",
+      "sectionName": "Vocab 8: อิ่ม (ìm) — full (not hungry)",
+      "lang": "en",
+      "text": "This means \"full\" —",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0201",
+      "chunkIndex": 201,
+      "blockRef": "b-003",
+      "sectionName": "Vocab 8: อิ่ม (ìm) — full (not hungry)",
+      "lang": "en",
+      "text": "as in \"I'm not hungry anymore.\" After a",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0202",
+      "chunkIndex": 202,
+      "blockRef": "b-003",
+      "sectionName": "Vocab 8: อิ่ม (ìm) — full (not hungry)",
+      "lang": "en",
+      "text": "big meal,",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0203",
+      "chunkIndex": 203,
+      "blockRef": "b-003",
+      "sectionName": "Vocab 8: อิ่ม (ìm) — full (not hungry)",
+      "lang": "en",
+      "text": "you say",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0204",
+      "chunkIndex": 204,
+      "blockRef": "b-003",
+      "sectionName": "Vocab 8: อิ่ม (ìm) — full (not hungry)",
+      "lang": "th",
+      "text": "อิ่มแล้วค่ะ",
+      "translit": "ìm láaew khâ",
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0205",
+      "chunkIndex": 205,
+      "blockRef": "b-003",
+      "sectionName": "Vocab 8: อิ่ม (ìm) — full (not hungry)",
+      "lang": "en",
+      "text": "— \"I'm full.\"",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0206",
+      "chunkIndex": 206,
+      "blockRef": "b-003",
+      "sectionName": "Vocab 8: อิ่ม (ìm) — full (not hungry)",
+      "lang": "th",
+      "text": "แล้ว",
+      "translit": "láaew",
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0207",
+      "chunkIndex": 207,
+      "blockRef": "b-003",
+      "sectionName": "Vocab 8: อิ่ม (ìm) — full (not hungry)",
+      "lang": "en",
+      "text": "means \"already,\" so",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0208",
+      "chunkIndex": 208,
+      "blockRef": "b-003",
+      "sectionName": "Vocab 8: อิ่ม (ìm) — full (not hungry)",
+      "lang": "en",
+      "text": "literally it's \"full already.\"",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0209",
+      "chunkIndex": 209,
+      "blockRef": "b-003",
+      "sectionName": "Vocab 8: อิ่ม (ìm) — full (not hungry)",
+      "lang": "th",
+      "text": "อิ่มแล้วค่ะ",
+      "translit": "ìm láaew khâ",
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0210",
+      "chunkIndex": 210,
+      "blockRef": "b-003",
+      "sectionName": "Vocab 8: อิ่ม (ìm) — full (not hungry)",
+      "lang": "en",
+      "text": "If someone offers you more food and",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0211",
+      "chunkIndex": 211,
+      "blockRef": "b-003",
+      "sectionName": "Vocab 8: อิ่ม (ìm) — full (not hungry)",
+      "lang": "en",
+      "text": "you're done,",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0212",
+      "chunkIndex": 212,
+      "blockRef": "b-003",
+      "sectionName": "Vocab 8: อิ่ม (ìm) — full (not hungry)",
+      "lang": "en",
+      "text": "this is the polite way to say no thanks.",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0213",
+      "chunkIndex": 213,
+      "blockRef": "b-003",
+      "sectionName": "Vocab section close",
+      "lang": "en",
+      "text": "OK! So those are your eight phrases.",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0214",
+      "chunkIndex": 214,
+      "blockRef": "b-003",
+      "sectionName": "Vocab section close",
+      "lang": "th",
+      "text": "สั่ง",
+      "translit": "sàng",
+      "triggerCard": {
+        "type": "vocab-card",
+        "vocabId": "v-001"
+      }
+    },
+    {
+      "chunkId": "pc-0215",
+      "chunkIndex": 215,
+      "blockRef": "b-003",
+      "sectionName": "Vocab section close",
+      "lang": "th",
+      "text": "เผ็ด",
+      "translit": "phèt",
+      "triggerCard": {
+        "type": "vocab-card",
+        "vocabId": "v-003"
+      }
+    },
+    {
+      "chunkId": "pc-0216",
+      "chunkIndex": 216,
+      "blockRef": "b-003",
+      "sectionName": "Vocab section close",
+      "lang": "th",
+      "text": "ไม่เผ็ด",
+      "translit": "mâi phèt",
+      "triggerCard": {
+        "type": "vocab-card",
+        "vocabId": "v-004"
+      }
+    },
+    {
+      "chunkId": "pc-0217",
+      "chunkIndex": 217,
+      "blockRef": "b-003",
+      "sectionName": "Vocab section close",
+      "lang": "th",
+      "text": "อร่อย",
+      "translit": "a-ròoy",
+      "triggerCard": {
+        "type": "vocab-card",
+        "vocabId": "v-002"
+      }
+    },
+    {
+      "chunkId": "pc-0218",
+      "chunkIndex": 218,
+      "blockRef": "b-003",
+      "sectionName": "Vocab section close",
+      "lang": "th",
+      "text": "ขอ",
+      "translit": "khǎaw",
+      "triggerCard": {
+        "type": "vocab-card",
+        "vocabId": "v-006"
+      }
+    },
+    {
+      "chunkId": "pc-0219",
+      "chunkIndex": 219,
+      "blockRef": "b-003",
+      "sectionName": "Vocab section close",
+      "lang": "th",
+      "text": "เก็บเงิน",
+      "translit": "gèp ngern",
+      "triggerCard": {
+        "type": "vocab-card",
+        "vocabId": "v-005"
+      }
+    },
+    {
+      "chunkId": "pc-0220",
+      "chunkIndex": 220,
+      "blockRef": "b-003",
+      "sectionName": "Vocab section close",
+      "lang": "th",
+      "text": "แนะนำ",
+      "translit": "náe-nam",
+      "triggerCard": {
+        "type": "vocab-card",
+        "vocabId": "v-008"
+      }
+    },
+    {
+      "chunkId": "pc-0221",
+      "chunkIndex": 221,
+      "blockRef": "b-003",
+      "sectionName": "Vocab section close",
+      "lang": "en",
+      "text": ", and",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0222",
+      "chunkIndex": 222,
+      "blockRef": "b-003",
+      "sectionName": "Vocab section close",
+      "lang": "th",
+      "text": "อิ่ม",
+      "translit": "ìm",
+      "triggerCard": {
+        "type": "vocab-card",
+        "vocabId": "v-007"
+      }
+    },
+    {
+      "chunkId": "pc-0223",
+      "chunkIndex": 223,
+      "blockRef": "b-003",
+      "sectionName": "Vocab section close",
+      "lang": "en",
+      "text": "Now let's hear them in action.",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0224",
+      "chunkIndex": 224,
+      "blockRef": "b-004",
+      "sectionName": "Section intro",
+      "lang": "en",
+      "text": "What I'm going to do now is put all of",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0225",
+      "chunkIndex": 225,
+      "blockRef": "b-004",
+      "sectionName": "Section intro",
+      "lang": "en",
+      "text": "those phrases together into a short",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0226",
+      "chunkIndex": 226,
+      "blockRef": "b-004",
+      "sectionName": "Section intro",
+      "lang": "en",
+      "text": "conversation.",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0227",
+      "chunkIndex": 227,
+      "blockRef": "b-004",
+      "sectionName": "Section intro",
+      "lang": "en",
+      "text": "Imagine you're at a street food stall in",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0228",
+      "chunkIndex": 228,
+      "blockRef": "b-004",
+      "sectionName": "Section intro",
+      "lang": "en",
+      "text": "Bangkok —",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0229",
+      "chunkIndex": 229,
+      "blockRef": "b-004",
+      "sectionName": "Section intro",
+      "lang": "en",
+      "text": "you sit down, you order, you eat, you pay.",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0230",
+      "chunkIndex": 230,
+      "blockRef": "b-004",
+      "sectionName": "Section intro",
+      "lang": "en",
+      "text": "I'm going to speak at natural speed,",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0231",
+      "chunkIndex": 231,
+      "blockRef": "b-004",
+      "sectionName": "Section intro",
+      "lang": "en",
+      "text": "the way a Thai person would actually talk.",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0232",
+      "chunkIndex": 232,
+      "blockRef": "b-004",
+      "sectionName": "Section intro",
+      "lang": "en",
+      "text": "Don't pause the video.",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0233",
+      "chunkIndex": 233,
+      "blockRef": "b-004",
+      "sectionName": "Section intro",
+      "lang": "en",
+      "text": "Don't try to catch every word.",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0234",
+      "chunkIndex": 234,
+      "blockRef": "b-004",
+      "sectionName": "Section intro",
+      "lang": "en",
+      "text": "Just listen and",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0235",
+      "chunkIndex": 235,
+      "blockRef": "b-004",
+      "sectionName": "Section intro",
+      "lang": "en",
+      "text": "see how much you can understand. Ready?",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0236",
+      "chunkIndex": 236,
+      "blockRef": "b-004",
+      "sectionName": "Section intro",
+      "lang": "en",
+      "text": "Here we go.",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0237",
+      "chunkIndex": 237,
+      "blockRef": "b-004",
+      "sectionName": "Natural speed conversation",
+      "lang": "th",
+      "text": "แนะนำอะไรดีคะ",
+      "translit": "náe-nam a-rai dii khá",
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0238",
+      "chunkIndex": 238,
+      "blockRef": "b-004",
+      "sectionName": "Natural speed conversation",
+      "lang": "th",
+      "text": "ขอผัดไทยหนึ่งจานค่ะ",
+      "translit": "khǎaw phàt-thai nùeng jaan khâ",
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0239",
+      "chunkIndex": 239,
+      "blockRef": "b-004",
+      "sectionName": "Natural speed conversation",
+      "lang": "th",
+      "text": "ไม่เอาเผ็ดนะคะ",
+      "translit": "mâi ao phèt ná khá",
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0240",
+      "chunkIndex": 240,
+      "blockRef": "b-004",
+      "sectionName": "Natural speed conversation",
+      "lang": "th",
+      "text": "อร่อยมาก",
+      "translit": "a-ròoy mâak",
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0241",
+      "chunkIndex": 241,
+      "blockRef": "b-004",
+      "sectionName": "Natural speed conversation",
+      "lang": "th",
+      "text": "อิ่มแล้วค่ะ",
+      "translit": "ìm láaew khâ",
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0242",
+      "chunkIndex": 242,
+      "blockRef": "b-004",
+      "sectionName": "Natural speed conversation",
+      "lang": "th",
+      "text": "เก็บเงินด้วยค่ะ",
+      "translit": "gèp ngern dûuay khâ",
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0243",
+      "chunkIndex": 243,
+      "blockRef": "b-004",
+      "sectionName": "Post-listen check-in",
+      "lang": "en",
+      "text": "How was that?",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0244",
+      "chunkIndex": 244,
+      "blockRef": "b-004",
+      "sectionName": "Post-listen check-in",
+      "lang": "en",
+      "text": "Could you catch some of those phrases?",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0245",
+      "chunkIndex": 245,
+      "blockRef": "b-004",
+      "sectionName": "Post-listen check-in",
+      "lang": "en",
+      "text": "If you got even two or three,",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0246",
+      "chunkIndex": 246,
+      "blockRef": "b-004",
+      "sectionName": "Post-listen check-in",
+      "lang": "en",
+      "text": "that's great —",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0247",
+      "chunkIndex": 247,
+      "blockRef": "b-004",
+      "sectionName": "Post-listen check-in",
+      "lang": "en",
+      "text": "you already know more Thai than I did my",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0248",
+      "chunkIndex": 248,
+      "blockRef": "b-004",
+      "sectionName": "Post-listen check-in",
+      "lang": "en",
+      "text": "first week in Bangkok.",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0249",
+      "chunkIndex": 249,
+      "blockRef": "b-004",
+      "sectionName": "Post-listen check-in",
+      "lang": "en",
+      "text": "Don't worry if you didn't get everything.",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0250",
+      "chunkIndex": 250,
+      "blockRef": "b-004",
+      "sectionName": "Post-listen check-in",
+      "lang": "en",
+      "text": "Now let's break it down sentence by",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0251",
+      "chunkIndex": 251,
+      "blockRef": "b-004",
+      "sectionName": "Post-listen check-in",
+      "lang": "en",
+      "text": "sentence.",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0252",
+      "chunkIndex": 252,
+      "blockRef": "b-005",
+      "sectionName": "Section intro",
+      "lang": "en",
+      "text": "I'm going to go through that same",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0253",
+      "chunkIndex": 253,
+      "blockRef": "b-005",
+      "sectionName": "Section intro",
+      "lang": "en",
+      "text": "conversation again,",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0254",
+      "chunkIndex": 254,
+      "blockRef": "b-005",
+      "sectionName": "Section intro",
+      "lang": "en",
+      "text": "but this time one sentence at a time.",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0255",
+      "chunkIndex": 255,
+      "blockRef": "b-005",
+      "sectionName": "Section intro",
+      "lang": "en",
+      "text": "I'll say the Thai slowly,",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0256",
+      "chunkIndex": 256,
+      "blockRef": "b-005",
+      "sectionName": "Section intro",
+      "lang": "en",
+      "text": "explain what each part means,",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0257",
+      "chunkIndex": 257,
+      "blockRef": "b-005",
+      "sectionName": "Section intro",
+      "lang": "en",
+      "text": "and then you'll see the English",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0258",
+      "chunkIndex": 258,
+      "blockRef": "b-005",
+      "sectionName": "Section intro",
+      "lang": "en",
+      "text": "translation on screen.",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0259",
+      "chunkIndex": 259,
+      "blockRef": "b-005",
+      "sectionName": "Sentence 1: แนะนำอะไรดีคะ",
+      "lang": "th",
+      "text": "แนะนำอะไรดีคะ",
+      "translit": "náe-nam a-rai dii khá",
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0260",
+      "chunkIndex": 260,
+      "blockRef": "b-005",
+      "sectionName": "Sentence 1: แนะนำอะไรดีคะ",
+      "lang": "en",
+      "text": "So this first one",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0261",
+      "chunkIndex": 261,
+      "blockRef": "b-005",
+      "sectionName": "Sentence 1: แนะนำอะไรดีคะ",
+      "lang": "th",
+      "text": "แนะนำอะไรดีคะ",
+      "translit": "náe-nam a-rai dii khá",
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0262",
+      "chunkIndex": 262,
+      "blockRef": "b-005",
+      "sectionName": "Sentence 1: แนะนำอะไรดีคะ",
+      "lang": "en",
+      "text": ". We learned",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0263",
+      "chunkIndex": 263,
+      "blockRef": "b-005",
+      "sectionName": "Sentence 1: แนะนำอะไรดีคะ",
+      "lang": "th",
+      "text": "แนะนำ",
+      "translit": "náe-nam",
+      "triggerCard": {
+        "type": "vocab-card",
+        "vocabId": "v-008"
+      }
+    },
+    {
+      "chunkId": "pc-0264",
+      "chunkIndex": 264,
+      "blockRef": "b-005",
+      "sectionName": "Sentence 1: แนะนำอะไรดีคะ",
+      "lang": "en",
+      "text": "means \"to recommend.\"",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0265",
+      "chunkIndex": 265,
+      "blockRef": "b-005",
+      "sectionName": "Sentence 1: แนะนำอะไรดีคะ",
+      "lang": "th",
+      "text": "อะไร",
+      "translit": "a-rai",
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0266",
+      "chunkIndex": 266,
+      "blockRef": "b-005",
+      "sectionName": "Sentence 1: แนะนำอะไรดีคะ",
+      "lang": "en",
+      "text": "means \"what.\"",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0267",
+      "chunkIndex": 267,
+      "blockRef": "b-005",
+      "sectionName": "Sentence 1: แนะนำอะไรดีคะ",
+      "lang": "th",
+      "text": "ดี",
+      "translit": "dii",
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0268",
+      "chunkIndex": 268,
+      "blockRef": "b-005",
+      "sectionName": "Sentence 1: แนะนำอะไรดีคะ",
+      "lang": "en",
+      "text": "means \"good.\" So literally it's \"recommend",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0269",
+      "chunkIndex": 269,
+      "blockRef": "b-005",
+      "sectionName": "Sentence 1: แนะนำอะไรดีคะ",
+      "lang": "en",
+      "text": "what good?\" —",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0270",
+      "chunkIndex": 270,
+      "blockRef": "b-005",
+      "sectionName": "Sentence 1: แนะนำอะไรดีคะ",
+      "lang": "en",
+      "text": "which in natural English is \"What do you",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0271",
+      "chunkIndex": 271,
+      "blockRef": "b-005",
+      "sectionName": "Sentence 1: แนะนำอะไรดีคะ",
+      "lang": "en",
+      "text": "recommend?\"",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0272",
+      "chunkIndex": 272,
+      "blockRef": "b-005",
+      "sectionName": "Sentence 1: แนะนำอะไรดีคะ",
+      "lang": "en",
+      "text": "One more time",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0273",
+      "chunkIndex": 273,
+      "blockRef": "b-005",
+      "sectionName": "Sentence 1: แนะนำอะไรดีคะ",
+      "lang": "th",
+      "text": "แนะนำอะไรดีคะ",
+      "translit": "náe-nam a-rai dii khá",
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0274",
+      "chunkIndex": 274,
+      "blockRef": "b-005",
+      "sectionName": "Sentence 2: ขอผัดไทยหนึ่งจานค่ะ",
+      "lang": "th",
+      "text": "ขอผัดไทยหนึ่งจานค่ะ",
+      "translit": "khǎaw phàt-thai nùeng jaan khâ",
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0275",
+      "chunkIndex": 275,
+      "blockRef": "b-005",
+      "sectionName": "Sentence 2: ขอผัดไทยหนึ่งจานค่ะ",
+      "lang": "en",
+      "text": "This is our ordering phrase.",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0276",
+      "chunkIndex": 276,
+      "blockRef": "b-005",
+      "sectionName": "Sentence 2: ขอผัดไทยหนึ่งจานค่ะ",
+      "lang": "th",
+      "text": "ขอ",
+      "translit": "khǎaw",
+      "triggerCard": {
+        "type": "vocab-card",
+        "vocabId": "v-006"
+      }
+    },
+    {
+      "chunkId": "pc-0277",
+      "chunkIndex": 277,
+      "blockRef": "b-005",
+      "sectionName": "Sentence 2: ขอผัดไทยหนึ่งจานค่ะ",
+      "lang": "en",
+      "text": "— \"I'd like.\"",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0278",
+      "chunkIndex": 278,
+      "blockRef": "b-005",
+      "sectionName": "Sentence 2: ขอผัดไทยหนึ่งจานค่ะ",
+      "lang": "th",
+      "text": "ผัดไทย",
+      "translit": "phàt-thai",
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0279",
+      "chunkIndex": 279,
+      "blockRef": "b-005",
+      "sectionName": "Sentence 2: ขอผัดไทยหนึ่งจานค่ะ",
+      "lang": "en",
+      "text": "— \"Pad Thai.\"",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0280",
+      "chunkIndex": 280,
+      "blockRef": "b-005",
+      "sectionName": "Sentence 2: ขอผัดไทยหนึ่งจานค่ะ",
+      "lang": "th",
+      "text": "หนึ่ง",
+      "translit": "nùeng",
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0281",
+      "chunkIndex": 281,
+      "blockRef": "b-005",
+      "sectionName": "Sentence 2: ขอผัดไทยหนึ่งจานค่ะ",
+      "lang": "en",
+      "text": "— \"one.\"",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0282",
+      "chunkIndex": 282,
+      "blockRef": "b-005",
+      "sectionName": "Sentence 2: ขอผัดไทยหนึ่งจานค่ะ",
+      "lang": "th",
+      "text": "จาน",
+      "translit": "jaan",
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0283",
+      "chunkIndex": 283,
+      "blockRef": "b-005",
+      "sectionName": "Sentence 2: ขอผัดไทยหนึ่งจานค่ะ",
+      "lang": "en",
+      "text": "— \"plate.\"",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0284",
+      "chunkIndex": 284,
+      "blockRef": "b-005",
+      "sectionName": "Sentence 2: ขอผัดไทยหนึ่งจานค่ะ",
+      "lang": "th",
+      "text": "ค่ะ",
+      "translit": "khâ",
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0285",
+      "chunkIndex": 285,
+      "blockRef": "b-005",
+      "sectionName": "Sentence 2: ขอผัดไทยหนึ่งจานค่ะ",
+      "lang": "en",
+      "text": "polite ending.",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0286",
+      "chunkIndex": 286,
+      "blockRef": "b-005",
+      "sectionName": "Sentence 2: ขอผัดไทยหนึ่งจานค่ะ",
+      "lang": "en",
+      "text": "So: \"I'd like one Pad Thai, please.\"",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0287",
+      "chunkIndex": 287,
+      "blockRef": "b-005",
+      "sectionName": "Sentence 2: ขอผัดไทยหนึ่งจานค่ะ",
+      "lang": "th",
+      "text": "ขอผัดไทยหนึ่งจานค่ะ",
+      "translit": "khǎaw phàt-thai nùeng jaan khâ",
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0288",
+      "chunkIndex": 288,
+      "blockRef": "b-005",
+      "sectionName": "Sentence 3: ไม่เอาเผ็ดนะคะ",
+      "lang": "th",
+      "text": "ไม่เอาเผ็ดนะคะ",
+      "translit": "mâi ao phèt ná khá",
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0289",
+      "chunkIndex": 289,
+      "blockRef": "b-005",
+      "sectionName": "Sentence 3: ไม่เอาเผ็ดนะคะ",
+      "lang": "th",
+      "text": "ไม่",
+      "translit": "mâi",
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0290",
+      "chunkIndex": 290,
+      "blockRef": "b-005",
+      "sectionName": "Sentence 3: ไม่เอาเผ็ดนะคะ",
+      "lang": "en",
+      "text": "— \"not.\"",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0291",
+      "chunkIndex": 291,
+      "blockRef": "b-005",
+      "sectionName": "Sentence 3: ไม่เอาเผ็ดนะคะ",
+      "lang": "th",
+      "text": "เอา",
+      "translit": "ao",
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0292",
+      "chunkIndex": 292,
+      "blockRef": "b-005",
+      "sectionName": "Sentence 3: ไม่เอาเผ็ดนะคะ",
+      "lang": "en",
+      "text": "— \"want\" or \"take.\"",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0293",
+      "chunkIndex": 293,
+      "blockRef": "b-005",
+      "sectionName": "Sentence 3: ไม่เอาเผ็ดนะคะ",
+      "lang": "th",
+      "text": "เผ็ด",
+      "translit": "phèt",
+      "triggerCard": {
+        "type": "vocab-card",
+        "vocabId": "v-003"
+      }
+    },
+    {
+      "chunkId": "pc-0294",
+      "chunkIndex": 294,
+      "blockRef": "b-005",
+      "sectionName": "Sentence 3: ไม่เอาเผ็ดนะคะ",
+      "lang": "en",
+      "text": "— \"spicy.\"",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0295",
+      "chunkIndex": 295,
+      "blockRef": "b-005",
+      "sectionName": "Sentence 3: ไม่เอาเผ็ดนะคะ",
+      "lang": "th",
+      "text": "นะคะ",
+      "translit": "ná khá",
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0296",
+      "chunkIndex": 296,
+      "blockRef": "b-005",
+      "sectionName": "Sentence 3: ไม่เอาเผ็ดนะคะ",
+      "lang": "en",
+      "text": "a softening particle that makes it sound",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0297",
+      "chunkIndex": 297,
+      "blockRef": "b-005",
+      "sectionName": "Sentence 3: ไม่เอาเผ็ดนะคะ",
+      "lang": "en",
+      "text": "polite and",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0298",
+      "chunkIndex": 298,
+      "blockRef": "b-005",
+      "sectionName": "Sentence 3: ไม่เอาเผ็ดนะคะ",
+      "lang": "en",
+      "text": "friendly.",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0299",
+      "chunkIndex": 299,
+      "blockRef": "b-005",
+      "sectionName": "Sentence 3: ไม่เอาเผ็ดนะคะ",
+      "lang": "en",
+      "text": "So together: \"I don't want spicy,",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0300",
+      "chunkIndex": 300,
+      "blockRef": "b-005",
+      "sectionName": "Sentence 3: ไม่เอาเผ็ดนะคะ",
+      "lang": "en",
+      "text": "please.\" Or more naturally: \"No spicy,",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0301",
+      "chunkIndex": 301,
+      "blockRef": "b-005",
+      "sectionName": "Sentence 3: ไม่เอาเผ็ดนะคะ",
+      "lang": "en",
+      "text": "please.\"",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0302",
+      "chunkIndex": 302,
+      "blockRef": "b-005",
+      "sectionName": "Sentence 3: ไม่เอาเผ็ดนะคะ",
+      "lang": "th",
+      "text": "ไม่เอาเผ็ดนะคะ",
+      "translit": "mâi ao phèt ná khá",
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0303",
+      "chunkIndex": 303,
+      "blockRef": "b-005",
+      "sectionName": "Sentence 4: อร่อยมาก",
+      "lang": "th",
+      "text": "อร่อยมาก",
+      "translit": "a-ròoy mâak",
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0304",
+      "chunkIndex": 304,
+      "blockRef": "b-005",
+      "sectionName": "Sentence 4: อร่อยมาก",
+      "lang": "en",
+      "text": "This one's simple.",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0305",
+      "chunkIndex": 305,
+      "blockRef": "b-005",
+      "sectionName": "Sentence 4: อร่อยมาก",
+      "lang": "th",
+      "text": "อร่อย",
+      "translit": "a-ròoy",
+      "triggerCard": {
+        "type": "vocab-card",
+        "vocabId": "v-002"
+      }
+    },
+    {
+      "chunkId": "pc-0306",
+      "chunkIndex": 306,
+      "blockRef": "b-005",
+      "sectionName": "Sentence 4: อร่อยมาก",
+      "lang": "en",
+      "text": "— \"delicious.\"",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0307",
+      "chunkIndex": 307,
+      "blockRef": "b-005",
+      "sectionName": "Sentence 4: อร่อยมาก",
+      "lang": "th",
+      "text": "มาก",
+      "translit": "mâak",
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0308",
+      "chunkIndex": 308,
+      "blockRef": "b-005",
+      "sectionName": "Sentence 4: อร่อยมาก",
+      "lang": "en",
+      "text": "\"very.\" \"Very delicious!\" Remember,",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0309",
+      "chunkIndex": 309,
+      "blockRef": "b-005",
+      "sectionName": "Sentence 4: อร่อยมาก",
+      "lang": "en",
+      "text": "Thai people love hearing this.",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0310",
+      "chunkIndex": 310,
+      "blockRef": "b-005",
+      "sectionName": "Sentence 4: อร่อยมาก",
+      "lang": "th",
+      "text": "อร่อยมาก",
+      "translit": "a-ròoy mâak",
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0311",
+      "chunkIndex": 311,
+      "blockRef": "b-005",
+      "sectionName": "Sentence 5: อิ่มแล้วค่ะ",
+      "lang": "th",
+      "text": "อิ่มแล้วค่ะ",
+      "translit": "ìm láaew khâ",
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0312",
+      "chunkIndex": 312,
+      "blockRef": "b-005",
+      "sectionName": "Sentence 5: อิ่มแล้วค่ะ",
+      "lang": "th",
+      "text": "อิ่ม",
+      "translit": "ìm",
+      "triggerCard": {
+        "type": "vocab-card",
+        "vocabId": "v-007"
+      }
+    },
+    {
+      "chunkId": "pc-0313",
+      "chunkIndex": 313,
+      "blockRef": "b-005",
+      "sectionName": "Sentence 5: อิ่มแล้วค่ะ",
+      "lang": "en",
+      "text": "— \"full.\"",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0314",
+      "chunkIndex": 314,
+      "blockRef": "b-005",
+      "sectionName": "Sentence 5: อิ่มแล้วค่ะ",
+      "lang": "th",
+      "text": "แล้ว",
+      "translit": "láaew",
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0315",
+      "chunkIndex": 315,
+      "blockRef": "b-005",
+      "sectionName": "Sentence 5: อิ่มแล้วค่ะ",
+      "lang": "en",
+      "text": "— \"already.\"",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0316",
+      "chunkIndex": 316,
+      "blockRef": "b-005",
+      "sectionName": "Sentence 5: อิ่มแล้วค่ะ",
+      "lang": "th",
+      "text": "ค่ะ",
+      "translit": "khâ",
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0317",
+      "chunkIndex": 317,
+      "blockRef": "b-005",
+      "sectionName": "Sentence 5: อิ่มแล้วค่ะ",
+      "lang": "en",
+      "text": "polite ending.",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0318",
+      "chunkIndex": 318,
+      "blockRef": "b-005",
+      "sectionName": "Sentence 5: อิ่มแล้วค่ะ",
+      "lang": "en",
+      "text": "\"I'm full already.\" You say this when",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0319",
+      "chunkIndex": 319,
+      "blockRef": "b-005",
+      "sectionName": "Sentence 5: อิ่มแล้วค่ะ",
+      "lang": "en",
+      "text": "you've had enough.",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0320",
+      "chunkIndex": 320,
+      "blockRef": "b-005",
+      "sectionName": "Sentence 5: อิ่มแล้วค่ะ",
+      "lang": "th",
+      "text": "อิ่มแล้วค่ะ",
+      "translit": "ìm láaew khâ",
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0321",
+      "chunkIndex": 321,
+      "blockRef": "b-005",
+      "sectionName": "Sentence 6: เก็บเงินด้วยค่ะ",
+      "lang": "th",
+      "text": "เก็บเงินด้วยค่ะ",
+      "translit": "gèp ngern dûuay khâ",
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0322",
+      "chunkIndex": 322,
+      "blockRef": "b-005",
+      "sectionName": "Sentence 6: เก็บเงินด้วยค่ะ",
+      "lang": "en",
+      "text": "And the last one",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0323",
+      "chunkIndex": 323,
+      "blockRef": "b-005",
+      "sectionName": "Sentence 6: เก็บเงินด้วยค่ะ",
+      "lang": "th",
+      "text": "เก็บ",
+      "translit": "gèp",
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0324",
+      "chunkIndex": 324,
+      "blockRef": "b-005",
+      "sectionName": "Sentence 6: เก็บเงินด้วยค่ะ",
+      "lang": "en",
+      "text": "— \"collect.\"",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0325",
+      "chunkIndex": 325,
+      "blockRef": "b-005",
+      "sectionName": "Sentence 6: เก็บเงินด้วยค่ะ",
+      "lang": "th",
+      "text": "เงิน",
+      "translit": "ngern",
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0326",
+      "chunkIndex": 326,
+      "blockRef": "b-005",
+      "sectionName": "Sentence 6: เก็บเงินด้วยค่ะ",
+      "lang": "en",
+      "text": "— \"money.\"",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0327",
+      "chunkIndex": 327,
+      "blockRef": "b-005",
+      "sectionName": "Sentence 6: เก็บเงินด้วยค่ะ",
+      "lang": "th",
+      "text": "ด้วย",
+      "translit": "dûuay",
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0328",
+      "chunkIndex": 328,
+      "blockRef": "b-005",
+      "sectionName": "Sentence 6: เก็บเงินด้วยค่ะ",
+      "lang": "en",
+      "text": "— \"also\" or \"please.\"",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0329",
+      "chunkIndex": 329,
+      "blockRef": "b-005",
+      "sectionName": "Sentence 6: เก็บเงินด้วยค่ะ",
+      "lang": "th",
+      "text": "ค่ะ",
+      "translit": "khâ",
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0330",
+      "chunkIndex": 330,
+      "blockRef": "b-005",
+      "sectionName": "Sentence 6: เก็บเงินด้วยค่ะ",
+      "lang": "en",
+      "text": "polite. \"Can I have the bill, please?\"",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0331",
+      "chunkIndex": 331,
+      "blockRef": "b-005",
+      "sectionName": "Sentence 6: เก็บเงินด้วยค่ะ",
+      "lang": "th",
+      "text": "เก็บเงินด้วยค่ะ",
+      "translit": "gèp ngern dûuay khâ",
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0332",
+      "chunkIndex": 332,
+      "blockRef": "b-005",
+      "sectionName": "Breakdown close",
+      "lang": "en",
+      "text": "When you break it down, it's not so scary.",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0333",
+      "chunkIndex": 333,
+      "blockRef": "b-005",
+      "sectionName": "Breakdown close",
+      "lang": "en",
+      "text": "Every sentence is just a few words put",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0334",
+      "chunkIndex": 334,
+      "blockRef": "b-005",
+      "sectionName": "Breakdown close",
+      "lang": "en",
+      "text": "together in a pattern.",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0335",
+      "chunkIndex": 335,
+      "blockRef": "b-005",
+      "sectionName": "Breakdown close",
+      "lang": "en",
+      "text": "Once you learn the pattern,",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0336",
+      "chunkIndex": 336,
+      "blockRef": "b-005",
+      "sectionName": "Breakdown close",
+      "lang": "en",
+      "text": "you can swap in different dishes,",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0337",
+      "chunkIndex": 337,
+      "blockRef": "b-005",
+      "sectionName": "Breakdown close",
+      "lang": "en",
+      "text": "different requests —",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0338",
+      "chunkIndex": 338,
+      "blockRef": "b-005",
+      "sectionName": "Breakdown close",
+      "lang": "en",
+      "text": "and suddenly you can order anything.",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0339",
+      "chunkIndex": 339,
+      "blockRef": "b-012",
+      "sectionName": "Section intro",
+      "lang": "en",
+      "text": "Now it's your turn to practise.",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0340",
+      "chunkIndex": 340,
+      "blockRef": "b-012",
+      "sectionName": "Section intro",
+      "lang": "en",
+      "text": "I'm going to say each sentence slowly,",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0341",
+      "chunkIndex": 341,
+      "blockRef": "b-012",
+      "sectionName": "Section intro",
+      "lang": "en",
+      "text": "and I want you to repeat after me.",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0342",
+      "chunkIndex": 342,
+      "blockRef": "b-012",
+      "sectionName": "Section intro",
+      "lang": "en",
+      "text": "Say it out loud —",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0343",
+      "chunkIndex": 343,
+      "blockRef": "b-012",
+      "sectionName": "Section intro",
+      "lang": "en",
+      "text": "don't just say it in your head.",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0344",
+      "chunkIndex": 344,
+      "blockRef": "b-012",
+      "sectionName": "Section intro",
+      "lang": "en",
+      "text": "Speaking is how you learn.",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0345",
+      "chunkIndex": 345,
+      "blockRef": "b-012",
+      "sectionName": "Section intro",
+      "lang": "en",
+      "text": "I'll leave a pause after each one so",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0346",
+      "chunkIndex": 346,
+      "blockRef": "b-012",
+      "sectionName": "Section intro",
+      "lang": "en",
+      "text": "you have time to repeat. Ready?",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0347",
+      "chunkIndex": 347,
+      "blockRef": "b-012",
+      "sectionName": "Shadowing",
+      "lang": "th",
+      "text": "แนะนำอะไรดีคะ",
+      "translit": "náe-nam a-rai dii khá",
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0348",
+      "chunkIndex": 348,
+      "blockRef": "b-012",
+      "sectionName": "Shadowing",
+      "type": "silence",
+      "lang": "silence",
+      "text": "(3-second pause)",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0349",
+      "chunkIndex": 349,
+      "blockRef": "b-012",
+      "sectionName": "Shadowing",
+      "lang": "th",
+      "text": "ขอผัดไทยหนึ่งจานค่ะ",
+      "translit": "khǎaw phàt-thai nùeng jaan khâ",
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0350",
+      "chunkIndex": 350,
+      "blockRef": "b-012",
+      "sectionName": "Shadowing",
+      "type": "silence",
+      "lang": "silence",
+      "text": "(3-second pause)",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0351",
+      "chunkIndex": 351,
+      "blockRef": "b-012",
+      "sectionName": "Shadowing",
+      "lang": "th",
+      "text": "ไม่เอาเผ็ดนะคะ",
+      "translit": "mâi ao phèt ná khá",
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0352",
+      "chunkIndex": 352,
+      "blockRef": "b-012",
+      "sectionName": "Shadowing",
+      "type": "silence",
+      "lang": "silence",
+      "text": "(3-second pause)",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0353",
+      "chunkIndex": 353,
+      "blockRef": "b-012",
+      "sectionName": "Shadowing",
+      "lang": "th",
+      "text": "อร่อยมาก",
+      "translit": "a-ròoy mâak",
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0354",
+      "chunkIndex": 354,
+      "blockRef": "b-012",
+      "sectionName": "Shadowing",
+      "type": "silence",
+      "lang": "silence",
+      "text": "(3-second pause)",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0355",
+      "chunkIndex": 355,
+      "blockRef": "b-012",
+      "sectionName": "Shadowing",
+      "lang": "th",
+      "text": "อิ่มแล้วค่ะ",
+      "translit": "ìm láaew khâ",
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0356",
+      "chunkIndex": 356,
+      "blockRef": "b-012",
+      "sectionName": "Shadowing",
+      "type": "silence",
+      "lang": "silence",
+      "text": "(3-second pause)",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0357",
+      "chunkIndex": 357,
+      "blockRef": "b-012",
+      "sectionName": "Shadowing",
+      "lang": "th",
+      "text": "เก็บเงินด้วยค่ะ",
+      "translit": "gèp ngern dûuay khâ",
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0358",
+      "chunkIndex": 358,
+      "blockRef": "b-012",
+      "sectionName": "Shadowing",
+      "type": "silence",
+      "lang": "silence",
+      "text": "(3-second pause)",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0359",
+      "chunkIndex": 359,
+      "blockRef": "b-012",
+      "sectionName": "Shadowing close",
+      "lang": "en",
+      "text": "Great job!",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0360",
+      "chunkIndex": 360,
+      "blockRef": "b-012",
+      "sectionName": "Shadowing close",
+      "lang": "en",
+      "text": "If that felt hard, don't worry —",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0361",
+      "chunkIndex": 361,
+      "blockRef": "b-012",
+      "sectionName": "Shadowing close",
+      "lang": "en",
+      "text": "that's completely normal.",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0362",
+      "chunkIndex": 362,
+      "blockRef": "b-012",
+      "sectionName": "Shadowing close",
+      "lang": "en",
+      "text": "Rewind and do it again.",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0363",
+      "chunkIndex": 363,
+      "blockRef": "b-012",
+      "sectionName": "Shadowing close",
+      "lang": "en",
+      "text": "Seriously, the more times you say it,",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0364",
+      "chunkIndex": 364,
+      "blockRef": "b-012",
+      "sectionName": "Shadowing close",
+      "lang": "en",
+      "text": "the more natural it'll feel.",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0365",
+      "chunkIndex": 365,
+      "blockRef": "b-006",
+      "sectionName": "Section intro",
+      "lang": "en",
+      "text": "OK, quiz time!",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0366",
+      "chunkIndex": 366,
+      "blockRef": "b-006",
+      "sectionName": "Section intro",
+      "lang": "en",
+      "text": "I'm going to give you a situation in",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0367",
+      "chunkIndex": 367,
+      "blockRef": "b-006",
+      "sectionName": "Section intro",
+      "lang": "en",
+      "text": "English,",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0368",
+      "chunkIndex": 368,
+      "blockRef": "b-006",
+      "sectionName": "Section intro",
+      "lang": "en",
+      "text": "and you have to say the right Thai phrase.",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0369",
+      "chunkIndex": 369,
+      "blockRef": "b-006",
+      "sectionName": "Section intro",
+      "lang": "en",
+      "text": "I'll give you a few seconds to think,",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0370",
+      "chunkIndex": 370,
+      "blockRef": "b-006",
+      "sectionName": "Section intro",
+      "lang": "en",
+      "text": "and then I'll give you the answer.",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0371",
+      "chunkIndex": 371,
+      "blockRef": "b-006",
+      "sectionName": "Section intro",
+      "lang": "en",
+      "text": "Let's see how many you get right.",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0372",
+      "chunkIndex": 372,
+      "blockRef": "b-007",
+      "sectionName": "Drill 1",
+      "lang": "en",
+      "text": "You're at a noodle stall.",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0373",
+      "chunkIndex": 373,
+      "blockRef": "b-007",
+      "sectionName": "Drill 1",
+      "lang": "en",
+      "text": "The cook looks at you.",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0374",
+      "chunkIndex": 374,
+      "blockRef": "b-007",
+      "sectionName": "Drill 1",
+      "lang": "en",
+      "text": "How do you say: \"I'd like one Pad Thai,",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0375",
+      "chunkIndex": 375,
+      "blockRef": "b-007",
+      "sectionName": "Drill 1",
+      "lang": "en",
+      "text": "please\"?",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0376",
+      "chunkIndex": 376,
+      "blockRef": "b-007",
+      "sectionName": "Drill 1",
+      "type": "silence",
+      "lang": "silence",
+      "text": "(3-second pause)",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0377",
+      "chunkIndex": 377,
+      "blockRef": "b-007",
+      "sectionName": "Drill 1",
+      "lang": "th",
+      "text": "ขอผัดไทยหนึ่งจานค่ะ",
+      "translit": "khǎaw phàt-thai nùeng jaan khâ",
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0378",
+      "chunkIndex": 378,
+      "blockRef": "b-007",
+      "sectionName": "Drill 1",
+      "lang": "en",
+      "text": "That's right",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0379",
+      "chunkIndex": 379,
+      "blockRef": "b-007",
+      "sectionName": "Drill 1",
+      "lang": "th",
+      "text": "ขอผัดไทยหนึ่งจานค่ะ",
+      "translit": "khǎaw phàt-thai nùeng jaan khâ",
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0380",
+      "chunkIndex": 380,
+      "blockRef": "b-007",
+      "sectionName": "Drill 1",
+      "lang": "en",
+      "text": "\"I'd like one Pad Thai, please.\"",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0381",
+      "chunkIndex": 381,
+      "blockRef": "b-009",
+      "sectionName": "Drill 2",
+      "lang": "en",
+      "text": "The cook asks if you want it spicy.",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0382",
+      "chunkIndex": 382,
+      "blockRef": "b-009",
+      "sectionName": "Drill 2",
+      "lang": "en",
+      "text": "You don't.",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0383",
+      "chunkIndex": 383,
+      "blockRef": "b-009",
+      "sectionName": "Drill 2",
+      "lang": "en",
+      "text": "How do you say: \"No spicy, please\"?",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0384",
+      "chunkIndex": 384,
+      "blockRef": "b-009",
+      "sectionName": "Drill 2",
+      "type": "silence",
+      "lang": "silence",
+      "text": "(3-second pause)",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0385",
+      "chunkIndex": 385,
+      "blockRef": "b-009",
+      "sectionName": "Drill 2",
+      "lang": "th",
+      "text": "ไม่เอาเผ็ดนะคะ",
+      "translit": "mâi ao phèt ná khá",
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0386",
+      "chunkIndex": 386,
+      "blockRef": "b-009",
+      "sectionName": "Drill 2",
+      "lang": "th",
+      "text": "ไม่เอาเผ็ดนะคะ",
+      "translit": "mâi ao phèt ná khá",
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0387",
+      "chunkIndex": 387,
+      "blockRef": "b-009",
+      "sectionName": "Drill 2",
+      "lang": "en",
+      "text": "\"No spicy, please.\"",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0388",
+      "chunkIndex": 388,
+      "blockRef": "b-011",
+      "sectionName": "Drill 3",
+      "lang": "en",
+      "text": "The food arrives. It's amazing.",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0389",
+      "chunkIndex": 389,
+      "blockRef": "b-011",
+      "sectionName": "Drill 3",
+      "lang": "en",
+      "text": "How do you say: \"Very delicious!\"?",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0390",
+      "chunkIndex": 390,
+      "blockRef": "b-011",
+      "sectionName": "Drill 3",
+      "type": "silence",
+      "lang": "silence",
+      "text": "(3-second pause)",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0391",
+      "chunkIndex": 391,
+      "blockRef": "b-011",
+      "sectionName": "Drill 3",
+      "lang": "th",
+      "text": "อร่อยมาก",
+      "translit": "a-ròoy mâak",
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0392",
+      "chunkIndex": 392,
+      "blockRef": "b-011",
+      "sectionName": "Drill 3",
+      "lang": "th",
+      "text": "อร่อยมาก",
+      "translit": "a-ròoy mâak",
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0393",
+      "chunkIndex": 393,
+      "blockRef": "b-011",
+      "sectionName": "Drill 3",
+      "lang": "en",
+      "text": "\"Very delicious!\" The cook will love you",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0394",
+      "chunkIndex": 394,
+      "blockRef": "b-011",
+      "sectionName": "Drill 3",
+      "lang": "en",
+      "text": "for that.",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0395",
+      "chunkIndex": 395,
+      "blockRef": "b-013",
+      "sectionName": "Drill 4",
+      "lang": "en",
+      "text": "You're done eating.",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0396",
+      "chunkIndex": 396,
+      "blockRef": "b-013",
+      "sectionName": "Drill 4",
+      "lang": "en",
+      "text": "How do you ask for the bill?",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0397",
+      "chunkIndex": 397,
+      "blockRef": "b-013",
+      "sectionName": "Drill 4",
+      "type": "silence",
+      "lang": "silence",
+      "text": "(3-second pause)",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0398",
+      "chunkIndex": 398,
+      "blockRef": "b-013",
+      "sectionName": "Drill 4",
+      "lang": "th",
+      "text": "เก็บเงินด้วยค่ะ",
+      "translit": "gèp ngern dûuay khâ",
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0399",
+      "chunkIndex": 399,
+      "blockRef": "b-013",
+      "sectionName": "Drill 4",
+      "lang": "th",
+      "text": "เก็บเงินด้วยค่ะ",
+      "translit": "gèp ngern dûuay khâ",
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0400",
+      "chunkIndex": 400,
+      "blockRef": "b-013",
+      "sectionName": "Drill 4",
+      "lang": "en",
+      "text": "\"Can I have the bill, please?\"",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0401",
+      "chunkIndex": 401,
+      "blockRef": "b-013",
+      "sectionName": "Drill close",
+      "lang": "en",
+      "text": "How did you do?",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0402",
+      "chunkIndex": 402,
+      "blockRef": "b-013",
+      "sectionName": "Drill close",
+      "lang": "en",
+      "text": "If you got three or four out of four,",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0403",
+      "chunkIndex": 403,
+      "blockRef": "b-013",
+      "sectionName": "Drill close",
+      "lang": "en",
+      "text": "amazing.",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0404",
+      "chunkIndex": 404,
+      "blockRef": "b-013",
+      "sectionName": "Drill close",
+      "lang": "en",
+      "text": "If you got one or two,",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0405",
+      "chunkIndex": 405,
+      "blockRef": "b-013",
+      "sectionName": "Drill close",
+      "lang": "en",
+      "text": "that's still great — you're learning.",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0406",
+      "chunkIndex": 406,
+      "blockRef": "b-013",
+      "sectionName": "Drill close",
+      "lang": "en",
+      "text": "The important thing is that you tried to",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0407",
+      "chunkIndex": 407,
+      "blockRef": "b-013",
+      "sectionName": "Drill close",
+      "lang": "en",
+      "text": "produce the Thai,",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0408",
+      "chunkIndex": 408,
+      "blockRef": "b-013",
+      "sectionName": "Drill close",
+      "lang": "en",
+      "text": "not just listen to it.",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0409",
+      "chunkIndex": 409,
+      "blockRef": "b-013",
+      "sectionName": "Recap",
+      "lang": "en",
+      "text": "Let's do a quick recap of everything you",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0410",
+      "chunkIndex": 410,
+      "blockRef": "b-013",
+      "sectionName": "Recap",
+      "lang": "en",
+      "text": "learned today.",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0411",
+      "chunkIndex": 411,
+      "blockRef": "b-013",
+      "sectionName": "Recap",
+      "lang": "en",
+      "text": "Eight phrases for ordering food in Thai:",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0412",
+      "chunkIndex": 412,
+      "blockRef": "b-013",
+      "sectionName": "Recap",
+      "lang": "th",
+      "text": "สั่ง",
+      "translit": "sàng",
+      "triggerCard": {
+        "type": "vocab-card",
+        "vocabId": "v-001"
+      }
+    },
+    {
+      "chunkId": "pc-0413",
+      "chunkIndex": 413,
+      "blockRef": "b-013",
+      "sectionName": "Recap",
+      "lang": "en",
+      "text": "to order",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0414",
+      "chunkIndex": 414,
+      "blockRef": "b-013",
+      "sectionName": "Recap",
+      "lang": "th",
+      "text": "เผ็ด",
+      "translit": "phèt",
+      "triggerCard": {
+        "type": "vocab-card",
+        "vocabId": "v-003"
+      }
+    },
+    {
+      "chunkId": "pc-0415",
+      "chunkIndex": 415,
+      "blockRef": "b-013",
+      "sectionName": "Recap",
+      "lang": "en",
+      "text": "spicy",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0416",
+      "chunkIndex": 416,
+      "blockRef": "b-013",
+      "sectionName": "Recap",
+      "lang": "th",
+      "text": "ไม่เผ็ด",
+      "translit": "mâi phèt",
+      "triggerCard": {
+        "type": "vocab-card",
+        "vocabId": "v-004"
+      }
+    },
+    {
+      "chunkId": "pc-0417",
+      "chunkIndex": 417,
+      "blockRef": "b-013",
+      "sectionName": "Recap",
+      "lang": "en",
+      "text": "not spicy",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0418",
+      "chunkIndex": 418,
+      "blockRef": "b-013",
+      "sectionName": "Recap",
+      "lang": "th",
+      "text": "อร่อย",
+      "translit": "a-ròoy",
+      "triggerCard": {
+        "type": "vocab-card",
+        "vocabId": "v-002"
+      }
+    },
+    {
+      "chunkId": "pc-0419",
+      "chunkIndex": 419,
+      "blockRef": "b-013",
+      "sectionName": "Recap",
+      "lang": "en",
+      "text": "delicious",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0420",
+      "chunkIndex": 420,
+      "blockRef": "b-013",
+      "sectionName": "Recap",
+      "lang": "th",
+      "text": "ขอ",
+      "translit": "khǎaw",
+      "triggerCard": {
+        "type": "vocab-card",
+        "vocabId": "v-006"
+      }
+    },
+    {
+      "chunkId": "pc-0421",
+      "chunkIndex": 421,
+      "blockRef": "b-013",
+      "sectionName": "Recap",
+      "lang": "en",
+      "text": "I'd like / may I have",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0422",
+      "chunkIndex": 422,
+      "blockRef": "b-013",
+      "sectionName": "Recap",
+      "lang": "th",
+      "text": "เก็บเงิน",
+      "translit": "gèp ngern",
+      "triggerCard": {
+        "type": "vocab-card",
+        "vocabId": "v-005"
+      }
+    },
+    {
+      "chunkId": "pc-0423",
+      "chunkIndex": 423,
+      "blockRef": "b-013",
+      "sectionName": "Recap",
+      "lang": "en",
+      "text": "the bill please",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0424",
+      "chunkIndex": 424,
+      "blockRef": "b-013",
+      "sectionName": "Recap",
+      "lang": "th",
+      "text": "แนะนำ",
+      "translit": "náe-nam",
+      "triggerCard": {
+        "type": "vocab-card",
+        "vocabId": "v-008"
+      }
+    },
+    {
+      "chunkId": "pc-0425",
+      "chunkIndex": 425,
+      "blockRef": "b-013",
+      "sectionName": "Recap",
+      "lang": "en",
+      "text": "to recommend",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0426",
+      "chunkIndex": 426,
+      "blockRef": "b-013",
+      "sectionName": "Recap",
+      "lang": "th",
+      "text": "อิ่ม",
+      "translit": "ìm",
+      "triggerCard": {
+        "type": "vocab-card",
+        "vocabId": "v-007"
+      }
+    },
+    {
+      "chunkId": "pc-0427",
+      "chunkIndex": 427,
+      "blockRef": "b-014",
+      "sectionName": "Teaser",
+      "lang": "en",
+      "text": "In the next episode,",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0428",
+      "chunkIndex": 428,
+      "blockRef": "b-014",
+      "sectionName": "Teaser",
+      "lang": "en",
+      "text": "we're going to learn how to ask for",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0429",
+      "chunkIndex": 429,
+      "blockRef": "b-014",
+      "sectionName": "Teaser",
+      "lang": "en",
+      "text": "directions.",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0430",
+      "chunkIndex": 430,
+      "blockRef": "b-014",
+      "sectionName": "Teaser",
+      "lang": "en",
+      "text": "So when you're wandering around Bangkok",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0431",
+      "chunkIndex": 431,
+      "blockRef": "b-014",
+      "sectionName": "Teaser",
+      "lang": "en",
+      "text": "looking for the BTS station,",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0432",
+      "chunkIndex": 432,
+      "blockRef": "b-014",
+      "sectionName": "Teaser",
+      "lang": "en",
+      "text": "you'll know exactly what to say.",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0433",
+      "chunkIndex": 433,
+      "blockRef": "b-014",
+      "sectionName": "Teaser",
+      "lang": "en",
+      "text": "Here's a little preview:",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0434",
+      "chunkIndex": 434,
+      "blockRef": "b-014",
+      "sectionName": "Teaser",
+      "lang": "th",
+      "text": "อยู่ที่ไหนคะ",
+      "translit": "yùu thîi nǎi khá",
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0435",
+      "chunkIndex": 435,
+      "blockRef": "b-014",
+      "sectionName": "Teaser",
+      "lang": "en",
+      "text": "\"Where is...?\"",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0436",
+      "chunkIndex": 436,
+      "blockRef": "b-014",
+      "sectionName": "Teaser",
+      "lang": "en",
+      "text": "If you want to know how to use that,",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0437",
+      "chunkIndex": 437,
+      "blockRef": "b-014",
+      "sectionName": "Teaser",
+      "lang": "en",
+      "text": "make sure you subscribe so",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0438",
+      "chunkIndex": 438,
+      "blockRef": "b-014",
+      "sectionName": "Teaser",
+      "lang": "en",
+      "text": "you don't miss it.",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0439",
+      "chunkIndex": 439,
+      "blockRef": "b-014",
+      "sectionName": "Teaser",
+      "lang": "en",
+      "text": "Thanks for watching,",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0440",
+      "chunkIndex": 440,
+      "blockRef": "b-014",
+      "sectionName": "Teaser",
+      "lang": "en",
+      "text": "and I'll see you in the next one.",
+      "translit": null,
+      "triggerCard": null
+    },
+    {
+      "chunkId": "pc-0441",
+      "chunkIndex": 441,
+      "blockRef": "b-014",
+      "sectionName": "Teaser",
+      "lang": "th",
+      "text": "สวัสดีค่ะ",
+      "translit": "sà-wàt-dii khâ",
+      "triggerCard": null
+    }
+  ]
+}

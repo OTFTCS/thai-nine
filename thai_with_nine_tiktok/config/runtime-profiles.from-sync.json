@@ -1,0 +1,37 @@
+{
+  "default": {
+    "label": "2-minute teaching post",
+    "targetSeconds": 120,
+    "targetWordCount": 280,
+    "teachingBlocks": 3,
+    "ctaSeconds": 12
+  },
+  "overview": {
+    "label": "110-140 second concept overview",
+    "targetSeconds": 125,
+    "targetWordCount": 260,
+    "teachingBlocks": 4,
+    "ctaSeconds": 8
+  },
+  "short": {
+    "label": "~75 second quick-hit",
+    "targetSeconds": 75,
+    "targetWordCount": 170,
+    "teachingBlocks": 2,
+    "ctaSeconds": 8
+  },
+  "micro": {
+    "label": "~45 second teaser",
+    "targetSeconds": 45,
+    "targetWordCount": 105,
+    "teachingBlocks": 2,
+    "ctaSeconds": 6
+  },
+  "cheat-sheet": {
+    "label": "Reference compilation — all classifiers rapid-fire",
+    "targetSeconds": 150,
+    "targetWordCount": 220,
+    "teachingBlocks": 19,
+    "ctaSeconds": 5
+  }
+}

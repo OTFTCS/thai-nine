@@ -1,0 +1,1418 @@
+{
+  "schemaVersion": 2,
+  "episodeId": "YT-S01-E03",
+  "seriesId": "S01",
+  "seriesName": "Thai Survival Phrases",
+  "title": "Taking a Taxi in Thai — Tell the Driver Where to Go",
+  "topic": "taking-taxi",
+  "level": "A0",
+  "lessonRef": "M04-L006",
+  "estimatedDuration": "13:00",
+  "vocab": [
+    {
+      "id": "v-001",
+      "thai": "ไป",
+      "translit": "bpai",
+      "english": "to go",
+      "thaiSplit": "ไป",
+      "explanation": "ไป means 'to go' and it's the first word you say when you get into a taxi. You say ไป plus the destination — ไปสยาม means 'go to Siam'. That's the complete instruction. No need for 'please take me to' or 'I'd like to go to' — in Thai, ไป and the place name is all you need. Add คะ or ครับ at the end for politeness.",
+      "exampleSentences": [
+        {
+          "thai": "ไปสนามบินสุวรรณภูมิค่ะ",
+          "translit": "bpai sa-nǎam-bin su-wan-na-phuum khâ",
+          "english": "Go to Suvarnabhumi Airport, please.",
+          "note": "สนามบิน means airport. สุวรรณภูมิ is Bangkok's main international airport. Same pattern — ไป + place name + polite particle."
+        }
+      ],
+      "imageRef": "img-002"
+    },
+    {
+      "id": "v-002",
+      "thai": "จอดตรงนี้",
+      "translit": "jàwt trong níi",
+      "english": "stop here",
+      "thaiSplit": "จอด ตรง นี้",
+      "explanation": "จอดตรงนี้ means 'stop here'. จอด means 'to stop' or 'to park', ตรง means 'at' or 'right at this point', and นี้ means 'here'. This is what you say when you want the driver to pull over at a specific spot. You can also say จอดแถวนี้ for 'stop around here' if you're not precise about the exact spot. Add ด้วยค่ะ at the end to sound natural.",
+      "exampleSentences": [
+        {
+          "thai": "จอดตรงหน้าร้านนั้นได้เลยค่ะ",
+          "translit": "jàwt trong nâa ráan nán dâai loei khâ",
+          "english": "You can stop right in front of that shop.",
+          "note": "ตรงหน้า means 'right in front of'. ได้เลย means 'you can go ahead and'. A natural, polite way to direct the driver to a specific spot."
+        }
+      ],
+      "imageRef": "img-003"
+    },
+    {
+      "id": "v-003",
+      "thai": "เปิดมิเตอร์",
+      "translit": "bpèrt mí-dtêr",
+      "english": "use the meter",
+      "thaiSplit": "เปิด มิเตอร์",
+      "explanation": "เปิดมิเตอร์ means 'use the meter' — literally 'open the meter'. เปิด means 'open' or 'turn on', and มิเตอร์ is borrowed from English 'meter'. In Thailand, taxis are supposed to use the meter by law, but especially near tourist areas some drivers will try to quote a flat fare. Knowing this phrase and saying it confidently as soon as you get in protects you every time.",
+      "exampleSentences": [
+        {
+          "thai": "เปิดมิเตอร์ด้วยนะคะ",
+          "translit": "bpèrt mí-dtêr dûuay ná khá",
+          "english": "Please use the meter.",
+          "note": "ด้วย adds 'also' or 'as well' — softens it slightly. นะ is a gentle particle. Together they make the request sound more natural and polite without being aggressive."
+        }
+      ],
+      "imageRef": "img-004"
+    },
+    {
+      "id": "v-004",
+      "thai": "เท่าไหร่",
+      "translit": "thâo-rài",
+      "english": "how much?",
+      "thaiSplit": "เท่า ไหร่",
+      "explanation": "เท่าไหร่ means 'how much?' — it's the price question. In a taxi you'd ask this before getting in if there's no meter, or just to double-check at the end. The question word goes at the end, just like directions: เท่าไหร่คะ on its own means 'how much?' in any shopping or payment context, not just taxis. This is one of the most useful words you'll learn.",
+      "exampleSentences": [
+        {
+          "thai": "ค่าโดยสารเท่าไหร่คะ",
+          "translit": "khâa doi-sǎan thâo-rài khá",
+          "english": "How much is the fare?",
+          "note": "ค่าโดยสาร means 'fare' or 'transport cost'. ค่า means 'cost/fee', โดยสาร means 'to ride as a passenger'. More formal than just เท่าไหร่ on its own."
+        }
+      ],
+      "imageRef": "img-004"
+    },
+    {
+      "id": "v-005",
+      "thai": "แพง",
+      "translit": "phaeng",
+      "english": "expensive",
+      "thaiSplit": "แพง",
+      "explanation": "แพง means 'expensive'. In a taxi context, if a driver tries to charge you a flat rate that seems high, you can say แพงไปค่ะ — 'that's too expensive'. ไป here doesn't mean 'go', it's a particle that means 'excessively' or 'too much'. This is one of the most polite ways to push back on a price — it signals you want to negotiate without being confrontational.",
+      "exampleSentences": [
+        {
+          "thai": "ร้อยห้าสิบบาทแพงไปหน่อยนะคะ",
+          "translit": "ráwi-hâa-sìp bàat phaeng bpai nàuy ná khá",
+          "english": "A hundred and fifty baht is a little expensive.",
+          "note": "นิดหน่อย or หน่อย softens the complaint — 'a little bit much'. นะ adds a gentle, conversational tone. The driver will understand you're negotiating."
+        }
+      ],
+      "imageRef": "img-005"
+    },
+    {
+      "id": "v-006",
+      "thai": "ลดได้ไหม",
+      "translit": "lót dâai mǎi",
+      "english": "can you reduce (the price)?",
+      "thaiSplit": "ลด ได้ ไหม",
+      "explanation": "ลดได้ไหม means 'can you come down on the price?' — your bargaining phrase. ลด means 'reduce', ได้ means 'can' or 'able to', ไหม is the yes/no question particle. You'll mostly use this if a taxi tries to give you a flat rate. Say it calmly — the driver either agrees or you decide whether to get in. No drama, this is just how it works.",
+      "exampleSentences": [
+        {
+          "thai": "สองร้อยบาทลดได้ไหมคะ",
+          "translit": "sǎawng ráwi bàat lót dâai mǎi khá",
+          "english": "Can you bring two hundred baht down a bit?",
+          "note": "You can lead with the price before ลดได้ไหม — it shows you know roughly what the fare should be and you're negotiating from knowledge, not desperation."
+        }
+      ],
+      "imageRef": "img-005"
+    },
+    {
+      "id": "v-007",
+      "thai": "ซ้ายมือ",
+      "translit": "sáai muu",
+      "english": "on the left side",
+      "thaiSplit": "ซ้าย มือ",
+      "explanation": "ซ้ายมือ means 'on the left-hand side'. ซ้าย means 'left' and มือ means 'hand' — so it literally means 'left hand'. This is more precise than just ซ้าย — you're indicating a side, not just a turning direction. When you're guiding a taxi driver to your exact destination, this is the word you use: จอดซ้ายมือค่ะ — 'stop on the left side'.",
+      "exampleSentences": [
+        {
+          "thai": "บ้านอยู่ซ้ายมือค่ะ",
+          "translit": "bâan yùu sáai muu khâ",
+          "english": "The house is on the left side.",
+          "note": "บ้าน means house or home. อยู่ means 'is located'. This is exactly the kind of sentence you'd say when guiding someone to your front door."
+        }
+      ],
+      "imageRef": "img-003"
+    },
+    {
+      "id": "v-008",
+      "thai": "ขวามือ",
+      "translit": "khwǎa muu",
+      "english": "on the right side",
+      "thaiSplit": "ขวา มือ",
+      "explanation": "ขวามือ means 'on the right-hand side'. The pair ซ้ายมือ and ขวามือ — left side and right side — are what you use to direct a taxi to your exact drop-off. Once you're nearly there, you say ซ้ายมือ or ขวามือ so the driver knows which side of the road to pull over. Getting these two solid means you can navigate Bangkok like a local.",
+      "exampleSentences": [
+        {
+          "thai": "ร้านอยู่ขวามือค่ะ ตึกสีขาวค่ะ",
+          "translit": "ráan yùu khwǎa muu khâ dtèuk sǐi khǎao khâ",
+          "english": "The shop is on the right side — the white building.",
+          "note": "Adding a landmark after the direction makes it much clearer — ตึกสีขาว means 'white building'. Thai people routinely give visual landmarks alongside directions."
+        }
+      ],
+      "imageRef": "img-003"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "b-001",
+      "mode": "hook",
+      "speakerNote": "Energetic, look to camera. Say the Thai phrase like you're talking to a taxi driver.",
+      "imageRef": "img-001",
+      "lines": [
+        {
+          "id": "l-0001",
+          "lang": "th",
+          "thai": "ไปสยามค่ะ",
+          "translit": "bpai sa-yǎam khâ",
+          "display": "immediate",
+          "spoken": true,
+          "displayStart": 1.0,
+          "displayEnd": 3.5
+        },
+        {
+          "id": "l-0002",
+          "lang": "en",
+          "english": "Go to Siam, please.",
+          "display": "delayed-1s",
+          "spoken": false,
+          "displayStart": 4.0,
+          "displayEnd": 5.5
+        },
+        {
+          "id": "l-0003",
+          "lang": "en",
+          "english": "By the end of this video, you'll know how to take a taxi anywhere in Bangkok — where to go, use the meter, direct the driver, and pay the right price. All in Thai.",
+          "display": "delayed-2s",
+          "spoken": true,
+          "displayStart": 6.0,
+          "displayEnd": 17.41
+        }
+      ]
+    },
+    {
+      "id": "b-002",
+      "mode": "explain",
+      "speakerNote": "Pick ONE cultural fact to open with. Option A (default): 100,000+ taxis, colours mean something (yellow-green = private, red-blue = rental), meter starts at 35 baht, by law must use meter. Option B: Meter law + tourist area flat fare scam — one phrase saves you money. Option C: Grab/Bolt vs meter taxis — apps charge fixed fare, meter usually cheaper off-peak. Delete the unused options after recording.",
+      "imageRef": "img-001",
+      "lines": [
+        {
+          "id": "l-0004",
+          "lang": "en",
+          "english": "Bangkok has over 100,000 taxis — and the colour of the car actually means something. Yellow-green means privately owned by the driver. Red-blue means the driver rents the car. By law, every taxi has to use the meter — the starting fare is 35 baht, about one US dollar. But near tourist areas, some drivers skip the meter and quote a flat fare instead. That's when you need this phrase:",
+          "spoken": true,
+          "displayStart": 17.91,
+          "displayEnd": 45.99
+        },
+        {
+          "id": "l-0006",
+          "lang": "th",
+          "thai": "เปิดมิเตอร์ด้วยค่ะ",
+          "translit": "bpèrt mí-dtêr dûuay khâ",
+          "spoken": true,
+          "displayStart": 46.49,
+          "displayEnd": 48.99
+        },
+        {
+          "id": "l-0007",
+          "lang": "en",
+          "english": "That one phrase can save you over a hundred baht. Today I'm going to teach you everything you need for a Bangkok taxi — eight phrases that will make you look like you know what you're doing.",
+          "spoken": true,
+          "displayStart": 49.49,
+          "displayEnd": 64.54
+        }
+      ]
+    },
+    {
+      "id": "b-003",
+      "mode": "section-intro",
+      "speakerNote": "Upbeat. Introducing the vocabulary section.",
+      "lines": [
+        {
+          "id": "l-0008",
+          "lang": "en",
+          "english": "Let's do the vocabulary first. Eight words. For each one I'll explain what it means, how to use it, and give you a real example. Let's go.",
+          "spoken": true,
+          "displayStart": 65.04,
+          "displayEnd": 74.7
+        }
+      ]
+    },
+    {
+      "id": "b-004",
+      "mode": "vocab-card",
+      "vocabRefs": [
+        "v-001"
+      ],
+      "imageRef": "img-002",
+      "lines": [
+        {
+          "id": "l-0009",
+          "lang": "th",
+          "thai": "ไป",
+          "translit": "bpai",
+          "display": "immediate",
+          "spoken": true,
+          "displayStart": 75.2,
+          "displayEnd": 77.7
+        }
+      ]
+    },
+    {
+      "id": "b-005",
+      "mode": "vocab-explain",
+      "lines": [
+        {
+          "id": "l-0010",
+          "lang": "en",
+          "english": "ไป — bpai. This means 'to go'. It's the first word out of your mouth when you get in a taxi. You just say ไป and then the destination — that's it. No grammar, no complicated structure. ไปสยาม — go to Siam. ไปสุขุมวิท — go to Sukhumvit. ไปสนามบิน — go to the airport. Simple.",
+          "spoken": true,
+          "displayStart": 78.2,
+          "displayEnd": 97.38
+        },
+        {
+          "id": "l-0011",
+          "lang": "th",
+          "thai": "ไปสนามบินสุวรรณภูมิค่ะ",
+          "translit": "bpai sa-nǎam-bin su-wan-na-phuum khâ",
+          "spoken": true,
+          "displayStart": 97.88,
+          "displayEnd": 100.38
+        },
+        {
+          "id": "l-0012",
+          "lang": "en",
+          "english": "That means 'Go to Suvarnabhumi Airport, please.' สนามบิน is airport. สุวรรณภูมิ is the airport name. ไป + destination + คะ — that's your complete taxi instruction.",
+          "spoken": true,
+          "displayStart": 100.88,
+          "displayEnd": 112.29
+        }
+      ]
+    },
+    {
+      "id": "b-006",
+      "mode": "vocab-card",
+      "vocabRefs": [
+        "v-003"
+      ],
+      "imageRef": "img-004",
+      "lines": [
+        {
+          "id": "l-0013",
+          "lang": "en",
+          "english": "This next one is the phrase that will save you money.",
+          "spoken": true,
+          "displayStart": 112.79,
+          "displayEnd": 116.5
+        },
+        {
+          "id": "l-0014",
+          "lang": "th",
+          "thai": "เปิดมิเตอร์",
+          "translit": "bpèrt mí-dtêr",
+          "display": "immediate",
+          "spoken": true,
+          "displayStart": 117.0,
+          "displayEnd": 119.5
+        }
+      ]
+    },
+    {
+      "id": "b-007",
+      "mode": "vocab-explain",
+      "lines": [
+        {
+          "id": "l-0015",
+          "lang": "en",
+          "english": "เปิดมิเตอร์ — bpèrt mí-dtêr. 'Use the meter' — literally 'turn on the meter'. เปิด means 'open' or 'turn on', and มิเตอร์ is borrowed from English. Say this as soon as you get in, before you tell the driver where to go. Most drivers will comply immediately. If they refuse, you just get out and find another taxi — there are always more.",
+          "spoken": true,
+          "displayStart": 120.0,
+          "displayEnd": 143.59
+        },
+        {
+          "id": "l-0016",
+          "lang": "th",
+          "thai": "เปิดมิเตอร์ด้วยนะคะ",
+          "translit": "bpèrt mí-dtêr dûuay ná khá",
+          "spoken": true,
+          "displayStart": 144.09,
+          "displayEnd": 146.59
+        },
+        {
+          "id": "l-0017",
+          "lang": "en",
+          "english": "That means 'Please use the meter'. ด้วย adds 'also' which softens it, and นะ is a gentle particle. Together they make it sound polite and conversational rather than demanding.",
+          "spoken": true,
+          "displayStart": 147.09,
+          "displayEnd": 159.34
+        }
+      ]
+    },
+    {
+      "id": "b-008",
+      "mode": "vocab-card",
+      "vocabRefs": [
+        "v-002"
+      ],
+      "imageRef": "img-003",
+      "lines": [
+        {
+          "id": "l-0018",
+          "lang": "en",
+          "english": "Now — how to tell the driver to stop.",
+          "spoken": true,
+          "displayStart": 159.84,
+          "displayEnd": 162.43
+        },
+        {
+          "id": "l-0019",
+          "lang": "th",
+          "thai": "จอดตรงนี้",
+          "translit": "jàwt trong níi",
+          "display": "immediate",
+          "spoken": true,
+          "displayStart": 162.93,
+          "displayEnd": 165.43
+        }
+      ]
+    },
+    {
+      "id": "b-009",
+      "mode": "vocab-explain",
+      "lines": [
+        {
+          "id": "l-0020",
+          "lang": "en",
+          "english": "จอดตรงนี้ — jàwt trong níi. This means 'stop here'. จอด means 'stop' or 'park', ตรงนี้ means 'right here'. You say this when you're close to your destination and want the driver to pull over. Add ด้วยค่ะ at the end — จอดตรงนี้ด้วยค่ะ — it's the standard polite version you'll hear Thai people use.",
+          "spoken": true,
+          "displayStart": 165.93,
+          "displayEnd": 186.72
+        },
+        {
+          "id": "l-0021",
+          "lang": "th",
+          "thai": "จอดตรงหน้าร้านนั้นได้เลยค่ะ",
+          "translit": "jàwt trong nâa ráan nán dâai loei khâ",
+          "spoken": true,
+          "displayStart": 187.22,
+          "displayEnd": 189.72
+        },
+        {
+          "id": "l-0022",
+          "lang": "en",
+          "english": "That means 'You can stop right in front of that shop.' ตรงหน้า means 'right in front of', ได้เลย means 'you can go ahead'. A natural way to direct the driver to a specific spot.",
+          "spoken": true,
+          "displayStart": 190.22,
+          "displayEnd": 202.61
+        }
+      ]
+    },
+    {
+      "id": "b-010",
+      "mode": "vocab-card",
+      "vocabRefs": [
+        "v-007"
+      ],
+      "imageRef": "img-003",
+      "lines": [
+        {
+          "id": "l-0023",
+          "lang": "en",
+          "english": "These next two help you direct the driver to exactly the right spot.",
+          "spoken": true,
+          "displayStart": 203.11,
+          "displayEnd": 207.87
+        },
+        {
+          "id": "l-0024",
+          "lang": "th",
+          "thai": "ซ้ายมือ",
+          "translit": "sáai muu",
+          "display": "immediate",
+          "spoken": true,
+          "displayStart": 208.37,
+          "displayEnd": 210.87
+        }
+      ]
+    },
+    {
+      "id": "b-011",
+      "mode": "vocab-explain",
+      "lines": [
+        {
+          "id": "l-0025",
+          "lang": "en",
+          "english": "ซ้ายมือ — sáai muu. 'On the left side' — literally 'left hand'. ซ้าย is left, มือ is hand. This tells the driver which side of the road to stop on. You'll say it once you're in the right street and need to indicate the exact side. Combine it with จอด: จอดซ้ายมือค่ะ — 'stop on the left side'.",
+          "spoken": true,
+          "displayStart": 211.37,
+          "displayEnd": 231.81
+        },
+        {
+          "id": "l-0026",
+          "lang": "th",
+          "thai": "บ้านอยู่ซ้ายมือค่ะ",
+          "translit": "bâan yùu sáai muu khâ",
+          "spoken": true,
+          "displayStart": 232.31,
+          "displayEnd": 234.81
+        },
+        {
+          "id": "l-0027",
+          "lang": "en",
+          "english": "That means 'The house is on the left side.' บ้าน is house, อยู่ is located. Simple, clear. The driver knows exactly where to pull over.",
+          "spoken": true,
+          "displayStart": 235.31,
+          "displayEnd": 244.76
+        }
+      ]
+    },
+    {
+      "id": "b-012",
+      "mode": "vocab-card",
+      "vocabRefs": [
+        "v-008"
+      ],
+      "imageRef": "img-003",
+      "lines": [
+        {
+          "id": "l-0028",
+          "lang": "en",
+          "english": "And the other side.",
+          "spoken": true,
+          "displayStart": 245.26,
+          "displayEnd": 247.26
+        },
+        {
+          "id": "l-0029",
+          "lang": "th",
+          "thai": "ขวามือ",
+          "translit": "khwǎa muu",
+          "display": "immediate",
+          "spoken": true,
+          "displayStart": 247.76,
+          "displayEnd": 250.26
+        }
+      ]
+    },
+    {
+      "id": "b-013",
+      "mode": "vocab-explain",
+      "lines": [
+        {
+          "id": "l-0030",
+          "lang": "en",
+          "english": "ขวามือ — khwǎa muu. 'On the right side'. ขวา is right, มือ is hand. ซ้ายมือ and ขวามือ are the pair — left side and right side. Once you know where you're going and which side of the road your destination is on, these two words are all you need to land the taxi exactly right.",
+          "spoken": true,
+          "displayStart": 250.76,
+          "displayEnd": 270.08
+        },
+        {
+          "id": "l-0031",
+          "lang": "th",
+          "thai": "ร้านอยู่ขวามือค่ะ ตึกสีขาวค่ะ",
+          "translit": "ráan yùu khwǎa muu khâ dtèuk sǐi khǎao khâ",
+          "spoken": true,
+          "displayStart": 270.58,
+          "displayEnd": 273.08
+        },
+        {
+          "id": "l-0032",
+          "lang": "en",
+          "english": "That means 'The shop is on the right side — the white building.' Adding a landmark like ตึกสีขาว — white building — makes it much clearer. Thai people always add a landmark.",
+          "spoken": true,
+          "displayStart": 273.58,
+          "displayEnd": 285.69
+        }
+      ]
+    },
+    {
+      "id": "b-014",
+      "mode": "vocab-card",
+      "vocabRefs": [
+        "v-004"
+      ],
+      "imageRef": "img-004",
+      "lines": [
+        {
+          "id": "l-0033",
+          "lang": "en",
+          "english": "Now — the payment question.",
+          "spoken": true,
+          "displayStart": 286.19,
+          "displayEnd": 288.19
+        },
+        {
+          "id": "l-0034",
+          "lang": "th",
+          "thai": "เท่าไหร่",
+          "translit": "thâo-rài",
+          "display": "immediate",
+          "spoken": true,
+          "displayStart": 288.69,
+          "displayEnd": 291.19
+        }
+      ]
+    },
+    {
+      "id": "b-015",
+      "mode": "vocab-explain",
+      "lines": [
+        {
+          "id": "l-0035",
+          "lang": "en",
+          "english": "เท่าไหร่ — thâo-rài. 'How much?' This is the most universal price question in Thai — you'll use it in markets, restaurants, taxis, everywhere. In a taxi it tells the driver you're checking the fare. If the meter has been running, the driver will just say the number. Question word goes at the end — เท่าไหร่คะ on its own is a complete sentence.",
+          "spoken": true,
+          "displayStart": 291.69,
+          "displayEnd": 315.77
+        },
+        {
+          "id": "l-0036",
+          "lang": "th",
+          "thai": "ค่าโดยสารเท่าไหร่คะ",
+          "translit": "khâa doi-sǎan thâo-rài khá",
+          "spoken": true,
+          "displayStart": 316.27,
+          "displayEnd": 318.77
+        },
+        {
+          "id": "l-0037",
+          "lang": "en",
+          "english": "That means 'How much is the fare?' ค่าโดยสาร is the formal word for fare. You can also just say เท่าไหร่คะ and point at the meter — totally normal.",
+          "spoken": true,
+          "displayStart": 319.27,
+          "displayEnd": 329.56
+        }
+      ]
+    },
+    {
+      "id": "b-016",
+      "mode": "vocab-card",
+      "vocabRefs": [
+        "v-005"
+      ],
+      "imageRef": "img-005",
+      "lines": [
+        {
+          "id": "l-0038",
+          "lang": "en",
+          "english": "Next — for when the price is too high.",
+          "spoken": true,
+          "displayStart": 330.06,
+          "displayEnd": 332.72
+        },
+        {
+          "id": "l-0039",
+          "lang": "th",
+          "thai": "แพง",
+          "translit": "phaeng",
+          "display": "immediate",
+          "spoken": true,
+          "displayStart": 333.22,
+          "displayEnd": 335.72
+        }
+      ]
+    },
+    {
+      "id": "b-017",
+      "mode": "vocab-explain",
+      "lines": [
+        {
+          "id": "l-0040",
+          "lang": "en",
+          "english": "แพง — phaeng. 'Expensive'. If a driver quotes you a flat rate that seems high, say แพงไปค่ะ — 'that's too expensive'. ไป here means 'excessively' or 'too much'. It's polite, it's direct, and every driver understands it as the start of a negotiation. Don't be shy about saying it — bargaining is normal in Thailand, even for taxis.",
+          "spoken": true,
+          "displayStart": 336.22,
+          "displayEnd": 359.32
+        },
+        {
+          "id": "l-0041",
+          "lang": "th",
+          "thai": "ร้อยห้าสิบบาทแพงไปหน่อยนะคะ",
+          "translit": "ráwi-hâa-sìp bàat phaeng bpai nàuy ná khá",
+          "spoken": true,
+          "displayStart": 359.82,
+          "displayEnd": 362.32
+        },
+        {
+          "id": "l-0042",
+          "lang": "en",
+          "english": "That means 'A hundred and fifty baht is a little expensive.' หน่อย and นะ soften it — you're not angry, you're just negotiating. Very natural Thai.",
+          "spoken": true,
+          "displayStart": 362.82,
+          "displayEnd": 373.11
+        }
+      ]
+    },
+    {
+      "id": "b-018",
+      "mode": "vocab-card",
+      "vocabRefs": [
+        "v-006"
+      ],
+      "imageRef": "img-005",
+      "lines": [
+        {
+          "id": "l-0043",
+          "lang": "en",
+          "english": "And the follow-up — can you come down?",
+          "spoken": true,
+          "displayStart": 373.61,
+          "displayEnd": 376.27
+        },
+        {
+          "id": "l-0044",
+          "lang": "th",
+          "thai": "ลดได้ไหม",
+          "translit": "lót dâai mǎi",
+          "display": "immediate",
+          "spoken": true,
+          "displayStart": 376.77,
+          "displayEnd": 379.27
+        }
+      ]
+    },
+    {
+      "id": "b-019",
+      "mode": "vocab-explain",
+      "lines": [
+        {
+          "id": "l-0045",
+          "lang": "en",
+          "english": "ลดได้ไหม — lót dâai mǎi. 'Can you come down on the price?' ลด is 'reduce', ได้ is 'can', ไหม is the yes/no question particle. You use this right after แพงไปค่ะ. Together they're your negotiation combo. Say แพงไปค่ะ, then ลดได้ไหมคะ — the driver will either say yes and name a lower price, or say no and you decide.",
+          "spoken": true,
+          "displayStart": 379.77,
+          "displayEnd": 401.75
+        },
+        {
+          "id": "l-0046",
+          "lang": "th",
+          "thai": "สองร้อยบาทลดได้ไหมคะ",
+          "translit": "sǎawng ráwi bàat lót dâai mǎi khá",
+          "spoken": true,
+          "displayStart": 402.25,
+          "displayEnd": 404.75
+        },
+        {
+          "id": "l-0047",
+          "lang": "en",
+          "english": "That means 'Can you bring two hundred baht down?' Leading with the price you know is fair shows you're informed, not just a tourist. That changes the dynamic completely.",
+          "spoken": true,
+          "displayStart": 405.25,
+          "displayEnd": 417.08
+        }
+      ]
+    },
+    {
+      "id": "b-020",
+      "mode": "section-intro",
+      "speakerNote": "Shift energy — you're about to play the full taxi conversation.",
+      "imageRef": "img-001",
+      "lines": [
+        {
+          "id": "l-0048",
+          "lang": "en",
+          "english": "OK — eight phrases, all covered. Now let's put them together in a full taxi ride — getting in, telling the driver where to go, directing, and paying. I'll speak at natural speed. Don't pause — just listen and see how much you catch.",
+          "spoken": true,
+          "displayStart": 417.58,
+          "displayEnd": 433.82
+        }
+      ]
+    },
+    {
+      "id": "b-021",
+      "mode": "natural-listen",
+      "speakerNote": "Natural speed. Act out a complete taxi ride — getting in, telling the driver where to go, directing, stopping, paying.",
+      "imageRef": "img-001",
+      "lines": [
+        {
+          "id": "l-0049",
+          "lang": "th",
+          "thai": "สวัสดีค่ะ ไปสยามค่ะ",
+          "translit": "sa-wàt-dii khâ bpai sa-yǎam khâ",
+          "display": "immediate",
+          "spoken": true,
+          "displayStart": 434.32,
+          "displayEnd": 436.82
+        },
+        {
+          "id": "l-0050",
+          "lang": "th",
+          "thai": "เปิดมิเตอร์ด้วยนะคะ",
+          "translit": "bpèrt mí-dtêr dûuay ná khá",
+          "display": "immediate",
+          "spoken": true,
+          "displayStart": 437.32,
+          "displayEnd": 439.82
+        },
+        {
+          "id": "l-0051",
+          "lang": "th",
+          "thai": "เลี้ยวซ้ายตรงนี้ค่ะ",
+          "translit": "líiaw sáai trong níi khâ",
+          "display": "immediate",
+          "spoken": true,
+          "displayStart": 440.32,
+          "displayEnd": 442.82
+        },
+        {
+          "id": "l-0052",
+          "lang": "th",
+          "thai": "จอดตรงนี้ด้วยค่ะ",
+          "translit": "jàwt trong níi dûuay khâ",
+          "display": "immediate",
+          "spoken": true,
+          "displayStart": 443.32,
+          "displayEnd": 445.82
+        },
+        {
+          "id": "l-0053",
+          "lang": "th",
+          "thai": "เท่าไหร่คะ",
+          "translit": "thâo-rài khá",
+          "display": "immediate",
+          "spoken": true,
+          "displayStart": 446.32,
+          "displayEnd": 448.82
+        },
+        {
+          "id": "l-0054",
+          "lang": "th",
+          "thai": "ขอบคุณค่ะ",
+          "translit": "khàawp-khun khâ",
+          "display": "immediate",
+          "spoken": true,
+          "displayStart": 449.32,
+          "displayEnd": 451.82
+        }
+      ]
+    },
+    {
+      "id": "b-022",
+      "mode": "explain",
+      "speakerNote": "Check in with the viewer. Warm and encouraging.",
+      "lines": [
+        {
+          "id": "l-0055",
+          "lang": "en",
+          "english": "How was that? Could you follow the conversation? Now let's slow it right down and go through it line by line.",
+          "spoken": true,
+          "displayStart": 452.32,
+          "displayEnd": 459.95
+        }
+      ]
+    },
+    {
+      "id": "b-023",
+      "mode": "section-intro",
+      "speakerNote": "Reset your energy. Clear and focused for the breakdown section.",
+      "lines": [
+        {
+          "id": "l-0056",
+          "lang": "en",
+          "english": "Same conversation — but now I'll say each line, pause, and explain exactly what each part means.",
+          "spoken": true,
+          "displayStart": 460.45,
+          "displayEnd": 467.17
+        }
+      ]
+    },
+    {
+      "id": "b-024",
+      "mode": "breakdown",
+      "speakerNote": "Say the Thai clearly, pause, let the transliteration and English appear.",
+      "imageRef": "img-006",
+      "lines": [
+        {
+          "id": "l-0057",
+          "lang": "th",
+          "thai": "ไปสยามค่ะ",
+          "translit": "bpai sa-yǎam khâ",
+          "display": "immediate",
+          "spoken": true,
+          "displayStart": 467.67,
+          "displayEnd": 470.17
+        },
+        {
+          "id": "l-0058",
+          "lang": "translit",
+          "translit": "bpai sa-yǎam khâ",
+          "display": "delayed-1s",
+          "spoken": false,
+          "displayStart": 470.67,
+          "displayEnd": 472.17
+        },
+        {
+          "id": "l-0059",
+          "lang": "en",
+          "english": "Go to Siam, please.",
+          "display": "delayed-2s",
+          "spoken": false,
+          "displayStart": 472.67,
+          "displayEnd": 474.17
+        }
+      ]
+    },
+    {
+      "id": "b-025",
+      "mode": "explain",
+      "lines": [
+        {
+          "id": "l-0060",
+          "lang": "en",
+          "english": "ไป is 'go'. สยาม is Siam — the area around Siam Paragon and MBK in central Bangkok. ค่ะ is the polite particle for women. No verb 'to take me to', no 'please' word — just ไป, destination, ค่ะ. That's the complete, natural sentence.",
+          "spoken": true,
+          "displayStart": 474.67,
+          "displayEnd": 490.84
+        }
+      ]
+    },
+    {
+      "id": "b-026",
+      "mode": "breakdown",
+      "speakerNote": "Polite but clear — this is the important phrase.",
+      "imageRef": "img-006",
+      "lines": [
+        {
+          "id": "l-0061",
+          "lang": "th",
+          "thai": "เปิดมิเตอร์ด้วยนะคะ",
+          "translit": "bpèrt mí-dtêr dûuay ná khá",
+          "display": "immediate",
+          "spoken": true,
+          "displayStart": 491.34,
+          "displayEnd": 493.84
+        },
+        {
+          "id": "l-0062",
+          "lang": "translit",
+          "translit": "bpèrt mí-dtêr dûuay ná khá",
+          "display": "delayed-1s",
+          "spoken": false,
+          "displayStart": 494.34,
+          "displayEnd": 495.84
+        },
+        {
+          "id": "l-0063",
+          "lang": "en",
+          "english": "Please use the meter.",
+          "display": "delayed-2s",
+          "spoken": false,
+          "displayStart": 496.34,
+          "displayEnd": 497.84
+        }
+      ]
+    },
+    {
+      "id": "b-027",
+      "mode": "explain",
+      "lines": [
+        {
+          "id": "l-0064",
+          "lang": "en",
+          "english": "เปิดมิเตอร์ — turn on the meter. ด้วย adds 'also / as well', นะ is a softening particle. Together they make it sound friendly rather than confrontational. The driver hears this and clicks the meter on — and you're protected.",
+          "spoken": true,
+          "displayStart": 498.34,
+          "displayEnd": 514.02
+        }
+      ]
+    },
+    {
+      "id": "b-028",
+      "mode": "breakdown",
+      "imageRef": "img-006",
+      "lines": [
+        {
+          "id": "l-0065",
+          "lang": "th",
+          "thai": "จอดตรงนี้ด้วยค่ะ",
+          "translit": "jàwt trong níi dûuay khâ",
+          "display": "immediate",
+          "spoken": true,
+          "displayStart": 514.52,
+          "displayEnd": 517.02
+        },
+        {
+          "id": "l-0066",
+          "lang": "translit",
+          "translit": "jàwt trong níi dûuay khâ",
+          "display": "delayed-1s",
+          "spoken": false,
+          "displayStart": 517.52,
+          "displayEnd": 519.02
+        },
+        {
+          "id": "l-0067",
+          "lang": "en",
+          "english": "Please stop here.",
+          "display": "delayed-2s",
+          "spoken": false,
+          "displayStart": 519.52,
+          "displayEnd": 521.02
+        }
+      ]
+    },
+    {
+      "id": "b-029",
+      "mode": "explain",
+      "lines": [
+        {
+          "id": "l-0068",
+          "lang": "en",
+          "english": "จอด is 'stop' or 'park'. ตรงนี้ is 'right here'. ด้วยค่ะ makes it polite. You'd say this while pointing or gesturing to exactly where you want to be dropped off. Short and clear — the driver pulls over immediately.",
+          "spoken": true,
+          "displayStart": 521.52,
+          "displayEnd": 536.5
+        }
+      ]
+    },
+    {
+      "id": "b-030",
+      "mode": "breakdown",
+      "imageRef": "img-006",
+      "lines": [
+        {
+          "id": "l-0069",
+          "lang": "th",
+          "thai": "เท่าไหร่คะ",
+          "translit": "thâo-rài khá",
+          "display": "immediate",
+          "spoken": true,
+          "displayStart": 537.0,
+          "displayEnd": 539.5
+        },
+        {
+          "id": "l-0070",
+          "lang": "translit",
+          "translit": "thâo-rài khá",
+          "display": "delayed-1s",
+          "spoken": false,
+          "displayStart": 540.0,
+          "displayEnd": 541.5
+        },
+        {
+          "id": "l-0071",
+          "lang": "en",
+          "english": "How much?",
+          "display": "delayed-2s",
+          "spoken": false,
+          "displayStart": 542.0,
+          "displayEnd": 543.5
+        }
+      ]
+    },
+    {
+      "id": "b-031",
+      "mode": "explain",
+      "lines": [
+        {
+          "id": "l-0072",
+          "lang": "en",
+          "english": "เท่าไหร่คะ — how much? The question word at the end, just like อยู่ที่ไหน from the last episode. If the meter has been running, the driver will point at it or say the number. You pay the exact meter price — no tipping needed.",
+          "spoken": true,
+          "displayStart": 544.0,
+          "displayEnd": 559.75
+        }
+      ]
+    },
+    {
+      "id": "b-032",
+      "mode": "section-intro",
+      "speakerNote": "Switch to drill mode. Energetic, direct.",
+      "lines": [
+        {
+          "id": "l-0073",
+          "lang": "en",
+          "english": "Let's practise. I'll give you a situation — you say the Thai. Say it out loud before I give the answer.",
+          "spoken": true,
+          "displayStart": 560.25,
+          "displayEnd": 567.46
+        }
+      ]
+    },
+    {
+      "id": "b-033",
+      "mode": "drill-prompt",
+      "speakerNote": "Look to camera. Ask the question, then wait 3 seconds in silence.",
+      "imageRef": "img-007",
+      "lines": [
+        {
+          "id": "l-0074",
+          "lang": "en",
+          "english": "You get in a taxi. How do you say: 'Go to Sukhumvit, please'?",
+          "display": "immediate",
+          "spoken": true,
+          "displayStart": 567.96,
+          "displayEnd": 572.23
+        },
+        {
+          "id": "l-0075",
+          "lang": "en",
+          "english": "Try saying it now...",
+          "display": "delayed-1s",
+          "spoken": false,
+          "displayStart": 572.73,
+          "displayEnd": 574.23
+        }
+      ]
+    },
+    {
+      "id": "b-034",
+      "mode": "drill-answer",
+      "speakerNote": "Smile, say it clearly.",
+      "imageRef": "img-007",
+      "lines": [
+        {
+          "id": "l-0076",
+          "lang": "th",
+          "thai": "ไปสุขุมวิทค่ะ",
+          "translit": "bpai su-khǔm-wít khâ",
+          "display": "immediate",
+          "spoken": true,
+          "displayStart": 574.73,
+          "displayEnd": 577.23
+        },
+        {
+          "id": "l-0077",
+          "lang": "en",
+          "english": "That's right — ไปสุขุมวิท means 'go to Sukhumvit'.",
+          "spoken": true,
+          "displayStart": 577.73,
+          "displayEnd": 581.23
+        }
+      ]
+    },
+    {
+      "id": "b-035",
+      "mode": "drill-prompt",
+      "imageRef": "img-007",
+      "lines": [
+        {
+          "id": "l-0078",
+          "lang": "en",
+          "english": "The driver wants to charge you a flat rate. How do you say: 'Please use the meter'?",
+          "display": "immediate",
+          "spoken": true,
+          "displayStart": 581.73,
+          "displayEnd": 587.54
+        },
+        {
+          "id": "l-0079",
+          "lang": "en",
+          "english": "Try saying it now...",
+          "display": "delayed-1s",
+          "spoken": false,
+          "displayStart": 588.04,
+          "displayEnd": 589.54
+        }
+      ]
+    },
+    {
+      "id": "b-036",
+      "mode": "drill-answer",
+      "imageRef": "img-007",
+      "lines": [
+        {
+          "id": "l-0080",
+          "lang": "th",
+          "thai": "เปิดมิเตอร์ด้วยค่ะ",
+          "translit": "bpèrt mí-dtêr dûuay khâ",
+          "display": "immediate",
+          "spoken": true,
+          "displayStart": 590.04,
+          "displayEnd": 592.54
+        },
+        {
+          "id": "l-0081",
+          "lang": "en",
+          "english": "That's right — เปิดมิเตอร์ด้วยค่ะ means 'please use the meter'.",
+          "spoken": true,
+          "displayStart": 593.04,
+          "displayEnd": 597.45
+        }
+      ]
+    },
+    {
+      "id": "b-037",
+      "mode": "drill-prompt",
+      "imageRef": "img-007",
+      "lines": [
+        {
+          "id": "l-0082",
+          "lang": "en",
+          "english": "You've arrived. How do you say: 'Please stop here'?",
+          "display": "immediate",
+          "spoken": true,
+          "displayStart": 597.95,
+          "displayEnd": 601.52
+        },
+        {
+          "id": "l-0083",
+          "lang": "en",
+          "english": "Try saying it now...",
+          "display": "delayed-1s",
+          "spoken": false,
+          "displayStart": 602.02,
+          "displayEnd": 603.52
+        }
+      ]
+    },
+    {
+      "id": "b-038",
+      "mode": "drill-answer",
+      "imageRef": "img-007",
+      "lines": [
+        {
+          "id": "l-0084",
+          "lang": "th",
+          "thai": "จอดตรงนี้ด้วยค่ะ",
+          "translit": "jàwt trong níi dûuay khâ",
+          "display": "immediate",
+          "spoken": true,
+          "displayStart": 604.02,
+          "displayEnd": 606.52
+        },
+        {
+          "id": "l-0085",
+          "lang": "en",
+          "english": "That's right — จอดตรงนี้ด้วยค่ะ means 'please stop here'.",
+          "spoken": true,
+          "displayStart": 607.02,
+          "displayEnd": 611.01
+        }
+      ]
+    },
+    {
+      "id": "b-039",
+      "mode": "section-intro",
+      "speakerNote": "Shift to shadowing — slower, more deliberate pace.",
+      "lines": [
+        {
+          "id": "l-0086",
+          "lang": "en",
+          "english": "Last section — shadowing. Repeat each phrase after me. Say it out loud. This is where your pronunciation gets locked in.",
+          "spoken": true,
+          "displayStart": 611.51,
+          "displayEnd": 619.91
+        }
+      ]
+    },
+    {
+      "id": "b-040",
+      "mode": "shadowing",
+      "speakerNote": "Very slow. Pause 2 seconds between each sentence for the viewer to repeat.",
+      "lines": [
+        {
+          "id": "l-0087",
+          "lang": "th-split",
+          "thai": "ไปสยามค่ะ",
+          "thaiSplit": "ไป สยาม ค่ะ",
+          "translit": "bpai sa-yǎam khâ",
+          "display": "immediate",
+          "highlight": true,
+          "spoken": true,
+          "displayStart": 620.41,
+          "displayEnd": 622.91
+        },
+        {
+          "id": "l-0088",
+          "lang": "th-split",
+          "thai": "เปิดมิเตอร์ด้วยค่ะ",
+          "thaiSplit": "เปิด มิเตอร์ ด้วย ค่ะ",
+          "translit": "bpèrt mí-dtêr dûuay khâ",
+          "display": "immediate",
+          "highlight": true,
+          "spoken": true,
+          "displayStart": 623.41,
+          "displayEnd": 625.91
+        },
+        {
+          "id": "l-0089",
+          "lang": "th-split",
+          "thai": "เลี้ยวซ้ายตรงนี้ค่ะ",
+          "thaiSplit": "เลี้ยว ซ้าย ตรง นี้ ค่ะ",
+          "translit": "líiaw sáai trong níi khâ",
+          "display": "immediate",
+          "highlight": true,
+          "spoken": true,
+          "displayStart": 626.41,
+          "displayEnd": 628.91
+        },
+        {
+          "id": "l-0090",
+          "lang": "th-split",
+          "thai": "จอดตรงนี้ด้วยค่ะ",
+          "thaiSplit": "จอด ตรง นี้ ด้วย ค่ะ",
+          "translit": "jàwt trong níi dûuay khâ",
+          "display": "immediate",
+          "highlight": true,
+          "spoken": true,
+          "displayStart": 629.41,
+          "displayEnd": 631.91
+        },
+        {
+          "id": "l-0091",
+          "lang": "th-split",
+          "thai": "เท่าไหร่คะ",
+          "thaiSplit": "เท่า ไหร่ คะ",
+          "translit": "thâo-rài khá",
+          "display": "immediate",
+          "highlight": true,
+          "spoken": true,
+          "displayStart": 632.41,
+          "displayEnd": 634.91
+        },
+        {
+          "id": "l-0092",
+          "lang": "th-split",
+          "thai": "ขอบคุณค่ะ",
+          "thaiSplit": "ขอบ คุณ ค่ะ",
+          "translit": "khàawp-khun khâ",
+          "display": "immediate",
+          "highlight": true,
+          "spoken": true,
+          "displayStart": 635.41,
+          "displayEnd": 637.91
+        }
+      ]
+    },
+    {
+      "id": "b-041",
+      "mode": "recap",
+      "speakerNote": "Quick energy. Flash through the vocab cards.",
+      "vocabRefs": [
+        "v-001",
+        "v-002",
+        "v-003",
+        "v-004",
+        "v-005",
+        "v-006",
+        "v-007",
+        "v-008"
+      ],
+      "imageRef": "img-008",
+      "lines": [
+        {
+          "id": "l-0093",
+          "lang": "en",
+          "english": "Quick recap — here are your 8 taxi phrases in Thai.",
+          "display": "immediate",
+          "spoken": true,
+          "displayStart": 638.41,
+          "displayEnd": 641.98
+        }
+      ]
+    },
+    {
+      "id": "b-042",
+      "mode": "teaser",
+      "speakerNote": "Tease next episode — shopping at the market.",
+      "lines": [
+        {
+          "id": "l-0094",
+          "lang": "en",
+          "english": "Next time — shopping at the Thai market. You'll learn how to ask the price, haggle, and say 'too expensive'. See you then.",
+          "display": "immediate",
+          "spoken": true,
+          "displayStart": 642.48,
+          "displayEnd": 651.02
+        },
+        {
+          "id": "l-0095",
+          "lang": "th",
+          "thai": "แพงไปค่ะ",
+          "translit": "phaeng bpai khâ",
+          "english": "Too expensive!",
+          "display": "delayed-1s",
+          "spoken": true,
+          "displayStart": 651.52,
+          "displayEnd": 654.02
+        }
+      ]
+    }
+  ],
+  "imagePrompts": [
+    {
+      "id": "img-001",
+      "prompt": "Watercolour illustration of a bright pink Bangkok taxi on a busy city street at dusk, meter visible on the dashboard through the windshield, warm evening light, Thai signage in the background",
+      "style": "watercolour",
+      "subject": "Bangkok taxi scene"
+    },
+    {
+      "id": "img-002",
+      "prompt": "Watercolour illustration of a passenger in the back of a Bangkok taxi pointing forward through the windshield toward a cityscape, warm colours, sense of forward movement",
+      "style": "watercolour",
+      "subject": "Directing the taxi driver - go"
+    },
+    {
+      "id": "img-003",
+      "prompt": "Watercolour illustration of a Bangkok taxi pulling over to the kerb in front of a Thai shophouse, passenger door opening, afternoon light, friendly atmosphere",
+      "style": "watercolour",
+      "subject": "Taxi stopping - stop here"
+    },
+    {
+      "id": "img-004",
+      "prompt": "Watercolour close-up illustration of a taxi meter display inside a Bangkok cab, numbers glowing on the meter, warm dashboard lighting, city street visible through windows",
+      "style": "watercolour",
+      "subject": "Taxi meter - use the meter"
+    },
+    {
+      "id": "img-005",
+      "prompt": "Watercolour illustration of two people negotiating at a Bangkok street stall, one person gesturing with hand, relaxed friendly atmosphere, Thai market backdrop",
+      "style": "watercolour",
+      "subject": "Price negotiation scene"
+    },
+    {
+      "id": "img-006",
+      "prompt": "Watercolour illustration of an open Thai phrase book or notebook with taxi vocabulary written in Thai and English, warm desk lighting, pencil beside the page",
+      "style": "watercolour",
+      "subject": "Study breakdown - taxi phrases"
+    },
+    {
+      "id": "img-007",
+      "prompt": "Watercolour illustration of a quiz speech bubble with a question mark floating above a Bangkok taxi, bright encouraging colours, soft warm background",
+      "style": "watercolour",
+      "subject": "Practice drill scene"
+    },
+    {
+      "id": "img-008",
+      "prompt": "Watercolour illustration of eight speech bubbles each containing a different taxi phrase in Thai, arranged neatly in a warm minimalist style against a soft background",
+      "style": "watercolour",
+      "subject": "Recap - eight taxi phrases"
+    },
+    {
+      "id": "img-009",
+      "prompt": "Watercolour illustration of a row of colourful Bangkok taxis waiting in a queue on a busy street, vibrant city life, warm golden-hour light",
+      "style": "watercolour",
+      "subject": "Bangkok taxi rank"
+    },
+    {
+      "id": "img-010",
+      "prompt": "Watercolour illustration of a person confidently hailing a Bangkok taxi while holding a phone with a Thai address on screen, city streets at night, warm streetlights",
+      "style": "watercolour",
+      "subject": "Confident taxi rider - Bangkok night scene"
+    }
+  ],
+  "shortFormClips": [
+    {
+      "id": "clip-01",
+      "type": "phrase-of-day",
+      "startBlock": "b-001",
+      "endBlock": "b-001",
+      "hookText": "How to take a taxi in Thai"
+    },
+    {
+      "id": "clip-02",
+      "type": "phrase-of-day",
+      "startBlock": "b-006",
+      "endBlock": "b-007",
+      "hookText": "This phrase saves you money in Bangkok taxis"
+    },
+    {
+      "id": "clip-03",
+      "type": "can-you-understand",
+      "startBlock": "b-021",
+      "endBlock": "b-021",
+      "hookText": "Can you follow this Thai taxi conversation?"
+    },
+    {
+      "id": "clip-04",
+      "type": "repeat-after",
+      "startBlock": "b-035",
+      "endBlock": "b-036",
+      "hookText": "Can you say this to a Bangkok taxi driver?"
+    }
+  ]
+}

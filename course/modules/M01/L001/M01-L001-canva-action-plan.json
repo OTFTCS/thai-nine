@@ -1,0 +1,1060 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "M01-L001",
+  "actions": [
+    {
+      "type": "generate-design-structured",
+      "params": {
+        "topic": "M01-L001: Hello and Basic Courtesy — Thai language lesson",
+        "audience": "educational",
+        "style": "educational",
+        "length": "10 slides",
+        "presentation_outlines": [
+          {
+            "title": "Hello and Basic Courtesy",
+            "description": "[Title / Opener] Introduce the lesson clearly and set the recording tone.\nLesson focus:\n• You can greet people politely, thank others, apologize, and respond yes/no in a friendly first encounter.\n• Deliver a 2-line greeting exchange with the correct polite ending.\n\nLayout: lesson-opener. Use Noto Sans Thai Looped for all Thai and transliteration text. Use Sarabun for English text.\nUse a clean, solid-colour background. Do NOT add any images, illustrations, stock photos, textures, or background patterns.\nIMPORTANT: Keep the right third of the slide completely empty — it is reserved for a camera overlay (PiP zone).\n\nSpeaker notes: The first five seconds of meeting someone in Thailand set the whole tone. With just a few polite words, you can open any conversation warmly. Greet politely, thank and apologise, respond to thanks, and handle simple yes/no in a friendly first encounter."
+          },
+          {
+            "title": "What you will learn",
+            "description": "[Learning Objectives] Make the lesson goals visible before the teaching slides begin.\nObjectives:\n• You can greet people politely, thank others, apologize, and respond yes/no in a friendly first encounter.\n• You can recycle recent vocabulary while using basic affirmation and negation in short controlled output.\n• Deliver a 2-line greeting exchange with the correct polite ending.\n• Catch greetings, thanks, apologies, and polite particles in slow speech.\n\nLayout: objectives-list. Use Noto Sans Thai Looped for all Thai and transliteration text. Use Sarabun for English text.\nUse a clean, solid-colour background. Do NOT add any images, illustrations, stock photos, textures, or background patterns.\nIMPORTANT: Keep the right third of the slide completely empty — it is reserved for a camera overlay (PiP zone).\n\nSpeaker notes: You can greet people politely, thank others, apologize, and respond yes/no in a friendly first encounter. You can recycle recent vocabulary while using basic affirmation and negation in short controlled output."
+          },
+          {
+            "title": "Your first Thai word: สวัสดี",
+            "description": "[Teaching Slide] Show สวัสดี as a single large triplet card — the learner's first Thai word.\nKey language:\n• สวัสดี | sà-wàt-dii | hello\nPractice:\n• Listen and repeat: สวัสดี sà-wàt-dii. Say it three times.\n• Pause-and-produce: you walk into a hotel lobby. What do you say? Say it aloud before I show the answer.\n\nKey vocabulary:\n• สวัสดี (sà-wàt-dii) — hello\n\nLayout: focus-card. Use Noto Sans Thai Looped for all Thai and transliteration text. Use Sarabun for English text.\nUse a clean, solid-colour background. Do NOT add any images, illustrations, stock photos, textures, or background patterns.\nIMPORTANT: Keep the right third of the slide completely empty — it is reserved for a camera overlay (PiP zone).\n\nSpeaker notes: Let's start with the very first word you will ever say in Thai. Listen first: สวัสดี sà-wàt-dii. This one word covers hello, goodbye, good morning, good evening — all of it. สวัสดี is your safe greeting at any time of day."
+          },
+          {
+            "title": "Polite endings: ครับ and ค่ะ",
+            "description": "[Teaching Slide] Show ครับ and ค่ะ as individual cards first, then the combined polite greeting chunks.\nKey language:\n• ครับ | khráp | polite ending (male)\n• ค่ะ | khâ | polite ending (female)\n• สวัสดีครับ | sà-wàt-dii khráp | hello (male, polite)\n• สวัสดีค่ะ | sà-wàt-dii khâ | hello (female, polite)\nPractice:\n• Listen and repeat: ครับ khráp. Now: ค่ะ khâ. Repeat each three times.\n• Substitution drill: I say สวัสดี — you add ครับ. Now I say สวัสดี again — you add ค่ะ.\n• Your turn: I point to male or female. Say the correct full greeting: สวัสดีครับ or สวัสดีค่ะ.\n\nKey vocabulary:\n• ครับ (khráp) — polite ending (male)\n• ค่ะ (khâ) — polite ending (female)\n• สวัสดีครับ (sà-wàt-dii khráp) — hello (male, polite)\n• สวัสดีค่ะ (sà-wàt-dii khâ) — hello (female, polite)\n\nLayout: contrast-board. Use Noto Sans Thai Looped for all Thai and transliteration text. Use Sarabun for English text.\nUse a clean, solid-colour background. Do NOT add any images, illustrations, stock photos, textures, or background patterns.\nIMPORTANT: Keep the right third of the slide completely empty — it is reserved for a camera overlay (PiP zone).\n\nSpeaker notes: In Thai, you finish almost every polite sentence with a small word that signals respect. Let's learn two of them now. First: ครับ khráp. Listen: ครับ. This is the male polite ending. If you are a male speaker, you add ครับ after your sentences. Say it with me: ครับ."
+          },
+          {
+            "title": "Thank you and sorry: ขอบคุณ and ขอโทษ",
+            "description": "[Teaching Slide] Show ขอบคุณ and ขอโทษ as individual triplet cards, then their polite forms.\nKey language:\n• ขอบคุณ | khàawp-khun | thank you\n• ขอโทษ | khǎaw-thôot | sorry / excuse me\n• ขอบคุณครับ | khàawp-khun khráp | thank you (male, polite)\n• ขอโทษค่ะ | khǎaw-thôot khâ | sorry (female, polite)\nPractice:\n• Listen and repeat: ขอบคุณ khàawp-khun. Now: ขอโทษ khǎaw-thôot. Say each three times.\n• Discrimination drill: I describe a situation. You choose ขอบคุณ or ขอโทษ — say it aloud. Situation 1: someone helps you carry a bag. Situation 2: you need to pass through a crowd.\n• Substitution drill: say ขอบคุณ with ครับ. Now with ค่ะ. Say ขอโทษ with ครับ. Now with ค่ะ.\n\nKey vocabulary:\n• ขอบคุณ (khàawp-khun) — thank you\n• ขอโทษ (khǎaw-thôot) — sorry / excuse me\n• ขอบคุณครับ (khàawp-khun khráp) — thank you (male, polite)\n• ขอโทษค่ะ (khǎaw-thôot khâ) — sorry (female, polite)\n\nLayout: focus-card. Use Noto Sans Thai Looped for all Thai and transliteration text. Use Sarabun for English text.\nUse a clean, solid-colour background. Do NOT add any images, illustrations, stock photos, textures, or background patterns.\nIMPORTANT: Keep the right third of the slide completely empty — it is reserved for a camera overlay (PiP zone).\n\nSpeaker notes: Now two more high-value words. Listen first: ขอบคุณ khàawp-khun. This means thank you. ขอบคุณ. Say it with me: ขอบคุณ. You will use this one constantly — after help, after kindness, after service. Someone holds the door? ขอบคุณ."
+          },
+          {
+            "title": "Respond naturally: ไม่เป็นไร, ใช่, ไม่ใช่",
+            "description": "[Teaching Slide] Show three response words individually, then a mini-exchange pattern demonstrating when to use each one.\nKey language:\n• ไม่เป็นไร | mâi bpen rai | it is okay / no problem\n• ใช่ | châi | yes / that is right\n• ไม่ใช่ | mâi châi | no / not right\nPractice:\n• Listen and repeat: ไม่เป็นไร mâi bpen rai. Say it three times. Now: ใช่ châi. Three times. Now: ไม่ใช่ mâi châi. Three times.\n• Response-building drill: I say ขอโทษครับ — what do you say back? Pause and answer. I say ขอบคุณค่ะ — what do you say back?\n• Pause-and-produce: is this สวัสดี? ใช่ or ไม่ใช่? Say it aloud before I show the answer.\n\nKey vocabulary:\n• ไม่เป็นไร (mâi bpen rai) — it is okay / no problem\n• ใช่ (châi) — yes / that is right\n• ไม่ใช่ (mâi châi) — no / not right\n\nLayout: dialogue-ladder. Use Noto Sans Thai Looped for all Thai and transliteration text. Use Sarabun for English text.\nUse a clean, solid-colour background. Do NOT add any images, illustrations, stock photos, textures, or background patterns.\nIMPORTANT: Keep the right third of the slide completely empty — it is reserved for a camera overlay (PiP zone).\n\nSpeaker notes: You can now greet, thank, and apologise. But what happens when someone thanks or apologises to you? You need responses. Let's learn three. First: ไม่เป็นไร mâi bpen rai. Listen: ไม่เป็นไร. This means it is okay, no problem, never mind. Learn it as one whole phrase."
+          },
+          {
+            "title": "Pronunciation beat: hearing Thai tones",
+            "description": "[Teaching Slide] Show tone direction arrows next to the transliteration to visualise pitch movement.\nKey language:\n• ครับ | khráp | high tone — voice rises sharply\n• ค่ะ | khâ | falling tone — starts high, drops down\n• ขอบคุณ | khàawp-khun | low tone on khàawp — voice stays low\nPractice:\n• Tone echo drill: I say ครับ khráp — repeat it. Now I say ค่ะ khâ — repeat it. Feel the difference in your voice.\n• Minimal pair choice: I say two words. Which one is the high tone ครับ and which is the falling tone ค่ะ? Point before I tell you.\n\nKey vocabulary:\n• ครับ (khráp) — polite ending — high tone\n\nLayout: focus-card. Use Noto Sans Thai Looped for all Thai and transliteration text. Use Sarabun for English text.\nUse a clean, solid-colour background. Do NOT add any images, illustrations, stock photos, textures, or background patterns.\nIMPORTANT: Keep the right third of the slide completely empty — it is reserved for a camera overlay (PiP zone).\n\nSpeaker notes: Before we roleplay, let's train your ear. Thai is a tone language — the pitch of your voice changes the meaning of a word. Listen to two words you already know. ครับ khráp — that is a high tone. Your voice rises sharply upward. Now: ค่ะ khâ — that is a falling tone. Your voice starts high and drops down."
+          },
+          {
+            "title": "Roleplay",
+            "description": "[Roleplay Practice] Support the roleplay recording with clean turn-taking.\nDialogue:\n• You | สวัสดีครับ | sà-wàt-dii khráp | Hello.\n• Staff | สวัสดีค่ะ | sà-wàt-dii khâ | Hello.\n• You | ขอโทษครับ ใช่ไหมครับ | khǎaw-thôot khráp châi mái khráp | Excuse me, is this right?\n• Staff | ใช่ค่ะ | châi khâ | Yes.\n• You | ขอบคุณครับ | khàawp-khun khráp | Thank you.\n• Staff | ไม่เป็นไรค่ะ | mâi bpen rai khâ | No problem.\n\nKey vocabulary:\n• สวัสดีครับ (sà-wàt-dii khráp) — Hello.\n• สวัสดีค่ะ (sà-wàt-dii khâ) — Hello.\n• ขอโทษครับ ใช่ไหมครับ (khǎaw-thôot khráp châi mái khráp) — Excuse me, is this right?\n• ใช่ค่ะ (châi khâ) — Yes.\n• ขอบคุณครับ (khàawp-khun khráp) — Thank you.\n• ไม่เป็นไรค่ะ (mâi bpen rai khâ) — No problem.\n• สวัสดีครับ (sà-wàt-dii khráp) — Goodbye.\n• สวัสดีค่ะ (sà-wàt-dii khâ) — Goodbye.\n\nLayout: roleplay-dialogue. Use Noto Sans Thai Looped for all Thai and transliteration text. Use Sarabun for English text.\nUse a clean, solid-colour background. Do NOT add any images, illustrations, stock photos, textures, or background patterns.\nIMPORTANT: Keep the right third of the slide completely empty — it is reserved for a camera overlay (PiP zone).\n\nSpeaker notes: You approach a reception desk at a hotel in Bangkok. Greet the staff, confirm something, thank them, and handle a small exchange politely. You | สวัสดีครับ | sà-wàt-dii khráp | Hello."
+          },
+          {
+            "title": "Recap",
+            "description": "[Lesson Recap] Finish with a simple, memorable checklist.\nWhat you can now do:\n• How do you say hello politely as a male speaker? Say it aloud.\n• Someone helps you. What do you say? Add a polite ending.\n• Someone apologises to you. What is the warm Thai response?\n• What is the difference between ใช่ and ไม่เป็นไร?\n• Say sorry politely as a female speaker.\n\nLayout: recap-checklist. Use Noto Sans Thai Looped for all Thai and transliteration text. Use Sarabun for English text.\nUse a clean, solid-colour background. Do NOT add any images, illustrations, stock photos, textures, or background patterns.\nIMPORTANT: Keep the right third of the slide completely empty — it is reserved for a camera overlay (PiP zone).\n\nSpeaker notes: How do you say hello politely as a male speaker? Say it aloud. Someone helps you. What do you say? Add a polite ending."
+          },
+          {
+            "title": "Closing",
+            "description": "[Closing / Sign-off] Give Nine a clean final slide to close the recording.\nTakeaway:\n• By the end, you can greet, thank, apologise, respond to thanks, and answer yes or no politely.\n• Next: First Contact and Courtesy continues.\n\nLayout: lesson-closing. Use Noto Sans Thai Looped for all Thai and transliteration text. Use Sarabun for English text.\nUse a clean, solid-colour background. Do NOT add any images, illustrations, stock photos, textures, or background patterns.\nIMPORTANT: Keep the right third of the slide completely empty — it is reserved for a camera overlay (PiP zone).\n\nSpeaker notes: By the end, you can greet, thank, apologise, respond to thanks, and answer yes or no politely. Next: First Contact and Courtesy continues."
+          }
+        ]
+      }
+    },
+    {
+      "type": "edit-pass",
+      "params": {
+        "designId": "{{DESIGN_ID}}",
+        "slides": [
+          {
+            "slideIndex": 1,
+            "canvaSlideId": "canva-slide-01-opener",
+            "elements": [
+              {
+                "elementId": "eyebrow",
+                "expectedText": "First Contact and Courtesy  ·  A0",
+                "bold": true,
+                "italic": false,
+                "color": "#355C7D",
+                "fontSizePt": 12
+              },
+              {
+                "elementId": "lesson_id",
+                "expectedText": "M01-L001",
+                "bold": false,
+                "italic": false,
+                "color": "#566873",
+                "fontSizePt": 19
+              },
+              {
+                "elementId": "title",
+                "expectedText": "Hello and Basic Courtesy",
+                "bold": true,
+                "italic": false,
+                "color": "#24333D",
+                "fontSizePt": 38
+              },
+              {
+                "elementId": "brand",
+                "expectedText": "Immersion Thai with Nine",
+                "bold": false,
+                "italic": false,
+                "color": "#566873",
+                "fontSizePt": 15
+              }
+            ]
+          },
+          {
+            "slideIndex": 2,
+            "canvaSlideId": "canva-slide-02-objectives",
+            "elements": [
+              {
+                "elementId": "title",
+                "expectedText": "What you will learn",
+                "bold": true,
+                "italic": false,
+                "color": "#24333D",
+                "fontSizePt": 30
+              },
+              {
+                "elementId": "objective_1",
+                "expectedText": "1. Say hello politely with a correct polite ending",
+                "bold": false,
+                "italic": false,
+                "color": "#24333D",
+                "fontSizePt": 16
+              },
+              {
+                "elementId": "objective_2",
+                "expectedText": "2. Use ขอบคุณ (khàawp-khun) and ขอโทษ (khǎaw-thôot) in the right social moments",
+                "bold": false,
+                "italic": false,
+                "color": "#24333D",
+                "fontSizePt": 16
+              },
+              {
+                "elementId": "objective_3",
+                "expectedText": "3. Distinguish ครับ (khráp), ค่ะ (khâ), and คะ (khá) at a practical level",
+                "bold": false,
+                "italic": false,
+                "color": "#24333D",
+                "fontSizePt": 16
+              },
+              {
+                "elementId": "objective_4",
+                "expectedText": "4. Answer with ใช่ (châi) or ไม่ใช่ (mâi châi) and soften with ไม่เป็นไร (mâi bpen rai)",
+                "bold": false,
+                "italic": false,
+                "color": "#24333D",
+                "fontSizePt": 16
+              },
+              {
+                "elementId": "objective_5",
+                "expectedText": "5. Deliver a short first-contact exchange with politeness",
+                "bold": false,
+                "italic": false,
+                "color": "#24333D",
+                "fontSizePt": 16
+              }
+            ]
+          },
+          {
+            "slideIndex": 3,
+            "canvaSlideId": "canva-slide-03-focus",
+            "elements": [
+              {
+                "elementId": "section_label",
+                "expectedText": "Section 1",
+                "bold": true,
+                "italic": false,
+                "color": "#FFFFFF",
+                "fontSizePt": 12
+              },
+              {
+                "elementId": "title",
+                "expectedText": "Say hello the Thai way",
+                "bold": true,
+                "italic": false,
+                "color": "#24333D",
+                "fontSizePt": 30
+              },
+              {
+                "elementId": "thai",
+                "expectedText": "สวัสดี (sà-wàt-dii)",
+                "bold": true,
+                "italic": false,
+                "color": "#24333D",
+                "fontSizePt": 32
+              },
+              {
+                "elementId": "english",
+                "expectedText": "hello",
+                "bold": false,
+                "italic": false,
+                "color": "#82909A",
+                "fontSizePt": 15
+              },
+              {
+                "elementId": "note",
+                "expectedText": "This is your safe, polite greeting for a first meeting.\nTreat politeness as part of the whole line, not as an extra decoration.",
+                "bold": false,
+                "italic": false,
+                "color": "#24333D",
+                "fontSizePt": 16
+              }
+            ]
+          },
+          {
+            "slideIndex": 4,
+            "canvaSlideId": "canva-slide-04-greeting-stack",
+            "elements": [
+              {
+                "elementId": "section_label",
+                "expectedText": "Section 1",
+                "bold": true,
+                "italic": false,
+                "color": "#FFFFFF",
+                "fontSizePt": 12
+              },
+              {
+                "elementId": "title",
+                "expectedText": "The greeting stack",
+                "bold": true,
+                "italic": false,
+                "color": "#24333D",
+                "fontSizePt": 30
+              },
+              {
+                "elementId": "subtitle",
+                "expectedText": "Learn the greeting as a full social line, not just the base word.",
+                "bold": false,
+                "italic": false,
+                "color": "#566873",
+                "fontSizePt": 15
+              },
+              {
+                "elementId": "card_1_thai",
+                "expectedText": "สวัสดี (sà-wàt-dii)",
+                "bold": true,
+                "italic": false,
+                "color": "#24333D",
+                "fontSizePt": 27
+              },
+              {
+                "elementId": "card_1_english",
+                "expectedText": "hello",
+                "bold": false,
+                "italic": false,
+                "color": "#82909A",
+                "fontSizePt": 15
+              },
+              {
+                "elementId": "card_2_thai",
+                "expectedText": "สวัสดีครับ (sà-wàt-dii khráp)",
+                "bold": true,
+                "italic": false,
+                "color": "#24333D",
+                "fontSizePt": 27
+              },
+              {
+                "elementId": "card_2_english",
+                "expectedText": "hello (male speaker)",
+                "bold": false,
+                "italic": false,
+                "color": "#82909A",
+                "fontSizePt": 15
+              },
+              {
+                "elementId": "card_3_thai",
+                "expectedText": "สวัสดีค่ะ (sà-wàt-dii khâ)",
+                "bold": true,
+                "italic": false,
+                "color": "#24333D",
+                "fontSizePt": 27
+              },
+              {
+                "elementId": "card_3_english",
+                "expectedText": "hello (female speaker)",
+                "bold": false,
+                "italic": false,
+                "color": "#82909A",
+                "fontSizePt": 15
+              }
+            ]
+          },
+          {
+            "slideIndex": 5,
+            "canvaSlideId": "canva-slide-05-courtesy-pairs",
+            "elements": [
+              {
+                "elementId": "section_label",
+                "expectedText": "Section 2",
+                "bold": true,
+                "italic": false,
+                "color": "#FFFFFF",
+                "fontSizePt": 12
+              },
+              {
+                "elementId": "title",
+                "expectedText": "Thank, apologise, and soften",
+                "bold": true,
+                "italic": false,
+                "color": "#24333D",
+                "fontSizePt": 30
+              },
+              {
+                "elementId": "left_label",
+                "expectedText": "Close warmly",
+                "bold": true,
+                "italic": false,
+                "color": "#FFFFFF",
+                "fontSizePt": 12
+              },
+              {
+                "elementId": "right_label",
+                "expectedText": "Interrupt or repair",
+                "bold": true,
+                "italic": false,
+                "color": "#FFFFFF",
+                "fontSizePt": 12
+              },
+              {
+                "elementId": "left_thai",
+                "expectedText": "ขอบคุณ (khàawp-khun)",
+                "bold": true,
+                "italic": false,
+                "color": "#24333D",
+                "fontSizePt": 27
+              },
+              {
+                "elementId": "left_english",
+                "expectedText": "thank you",
+                "bold": false,
+                "italic": false,
+                "color": "#82909A",
+                "fontSizePt": 15
+              },
+              {
+                "elementId": "right_thai",
+                "expectedText": "ขอโทษ (khǎaw-thôot)",
+                "bold": true,
+                "italic": false,
+                "color": "#24333D",
+                "fontSizePt": 27
+              },
+              {
+                "elementId": "right_english",
+                "expectedText": "excuse me / sorry",
+                "bold": false,
+                "italic": false,
+                "color": "#82909A",
+                "fontSizePt": 15
+              },
+              {
+                "elementId": "shared_label",
+                "expectedText": "Natural reply to both",
+                "bold": true,
+                "italic": false,
+                "color": "#FFFFFF",
+                "fontSizePt": 12
+              },
+              {
+                "elementId": "shared_thai",
+                "expectedText": "ไม่เป็นไร (mâi bpen rai)",
+                "bold": true,
+                "italic": false,
+                "color": "#24333D",
+                "fontSizePt": 27
+              },
+              {
+                "elementId": "shared_english",
+                "expectedText": "Smooths the moment after thanks or a small apology.",
+                "bold": false,
+                "italic": false,
+                "color": "#566873",
+                "fontSizePt": 15
+              }
+            ]
+          },
+          {
+            "slideIndex": 6,
+            "canvaSlideId": "canva-slide-06-social-jobs",
+            "elements": [
+              {
+                "elementId": "section_label",
+                "expectedText": "Section 2",
+                "bold": true,
+                "italic": false,
+                "color": "#FFFFFF",
+                "fontSizePt": 12
+              },
+              {
+                "elementId": "title",
+                "expectedText": "How these phrases work together",
+                "bold": true,
+                "italic": false,
+                "color": "#24333D",
+                "fontSizePt": 30
+              },
+              {
+                "elementId": "subtitle",
+                "expectedText": "Each phrase has a social job in the interaction:",
+                "bold": false,
+                "italic": false,
+                "color": "#24333D",
+                "fontSizePt": 16
+              },
+              {
+                "elementId": "row_1_thai",
+                "expectedText": "ขอบคุณ (khàawp-khun)",
+                "bold": true,
+                "italic": false,
+                "color": "#24333D",
+                "fontSizePt": 23
+              },
+              {
+                "elementId": "row_1_role",
+                "expectedText": "Closes a moment warmly",
+                "bold": true,
+                "italic": false,
+                "color": "#24333D",
+                "fontSizePt": 13
+              },
+              {
+                "elementId": "row_1_usage",
+                "expectedText": "After help, service, or a small kindness",
+                "bold": false,
+                "italic": false,
+                "color": "#566873",
+                "fontSizePt": 15
+              },
+              {
+                "elementId": "row_2_thai",
+                "expectedText": "ขอโทษ (khǎaw-thôot)",
+                "bold": true,
+                "italic": false,
+                "color": "#24333D",
+                "fontSizePt": 23
+              },
+              {
+                "elementId": "row_2_role",
+                "expectedText": "Opens a repair",
+                "bold": true,
+                "italic": false,
+                "color": "#24333D",
+                "fontSizePt": 13
+              },
+              {
+                "elementId": "row_2_usage",
+                "expectedText": "To interrupt gently or apologise",
+                "bold": false,
+                "italic": false,
+                "color": "#566873",
+                "fontSizePt": 15
+              },
+              {
+                "elementId": "row_3_thai",
+                "expectedText": "ไม่เป็นไร (mâi bpen rai)",
+                "bold": true,
+                "italic": false,
+                "color": "#24333D",
+                "fontSizePt": 23
+              },
+              {
+                "elementId": "row_3_role",
+                "expectedText": "Smooths everything out",
+                "bold": true,
+                "italic": false,
+                "color": "#24333D",
+                "fontSizePt": 13
+              },
+              {
+                "elementId": "row_3_usage",
+                "expectedText": "Answers a thank-you or small apology",
+                "bold": false,
+                "italic": false,
+                "color": "#566873",
+                "fontSizePt": 15
+              }
+            ]
+          },
+          {
+            "slideIndex": 7,
+            "canvaSlideId": "canva-slide-07-polite-endings",
+            "elements": [
+              {
+                "elementId": "section_label",
+                "expectedText": "Section 3",
+                "bold": true,
+                "italic": false,
+                "color": "#FFFFFF",
+                "fontSizePt": 12
+              },
+              {
+                "elementId": "title",
+                "expectedText": "Pick the right polite ending",
+                "bold": true,
+                "italic": false,
+                "color": "#24333D",
+                "fontSizePt": 30
+              },
+              {
+                "elementId": "subtitle",
+                "expectedText": "Thai polite endings do real work - they shape the tone of the whole line.",
+                "bold": false,
+                "italic": false,
+                "color": "#566873",
+                "fontSizePt": 15
+              },
+              {
+                "elementId": "row_1_thai",
+                "expectedText": "ครับ (khráp)",
+                "bold": true,
+                "italic": false,
+                "color": "#24333D",
+                "fontSizePt": 27
+              },
+              {
+                "elementId": "row_1_support",
+                "expectedText": "khráp  -  male polite ending\nUse for statements and questions",
+                "bold": false,
+                "italic": false,
+                "color": "#24333D",
+                "fontSizePt": 16
+              },
+              {
+                "elementId": "row_2_thai",
+                "expectedText": "ค่ะ (khâ)",
+                "bold": true,
+                "italic": false,
+                "color": "#24333D",
+                "fontSizePt": 27
+              },
+              {
+                "elementId": "row_2_support",
+                "expectedText": "khâ  -  female statement ending\nUse for statements and answers",
+                "bold": false,
+                "italic": false,
+                "color": "#24333D",
+                "fontSizePt": 16
+              },
+              {
+                "elementId": "row_3_thai",
+                "expectedText": "คะ (khá)",
+                "bold": true,
+                "italic": false,
+                "color": "#24333D",
+                "fontSizePt": 27
+              },
+              {
+                "elementId": "row_3_support",
+                "expectedText": "khá  -  female question ending\nUse when asking questions",
+                "bold": false,
+                "italic": false,
+                "color": "#24333D",
+                "fontSizePt": 16
+              },
+              {
+                "elementId": "rule_note",
+                "expectedText": "Beginner rule: learn ครับ (khráp) and ค่ะ (khâ) first for safe polite statements.",
+                "bold": true,
+                "italic": false,
+                "color": "#FFFFFF",
+                "fontSizePt": 12
+              }
+            ]
+          },
+          {
+            "slideIndex": 8,
+            "canvaSlideId": "canva-slide-08-drills",
+            "elements": [
+              {
+                "elementId": "section_label",
+                "expectedText": "Section 3",
+                "bold": true,
+                "italic": false,
+                "color": "#FFFFFF",
+                "fontSizePt": 12
+              },
+              {
+                "elementId": "title",
+                "expectedText": "Substitution drill",
+                "bold": true,
+                "italic": false,
+                "color": "#24333D",
+                "fontSizePt": 30
+              },
+              {
+                "elementId": "subtitle",
+                "expectedText": "Say each line with the correct polite ending:",
+                "bold": false,
+                "italic": false,
+                "color": "#566873",
+                "fontSizePt": 15
+              },
+              {
+                "elementId": "row_1_prompt_thai",
+                "expectedText": "1. สวัสดี___ (sà-wàt-dii ___)",
+                "bold": true,
+                "italic": false,
+                "color": "#24333D",
+                "fontSizePt": 23
+              },
+              {
+                "elementId": "row_1_instruction",
+                "expectedText": "Add ครับ (khráp) or ค่ะ (khâ)",
+                "bold": true,
+                "italic": false,
+                "color": "#24333D",
+                "fontSizePt": 13
+              },
+              {
+                "elementId": "row_2_prompt_thai",
+                "expectedText": "2. ขอบคุณ___ (khàawp-khun ___)",
+                "bold": true,
+                "italic": false,
+                "color": "#24333D",
+                "fontSizePt": 23
+              },
+              {
+                "elementId": "row_2_instruction",
+                "expectedText": "Add ครับ (khráp) or ค่ะ (khâ)",
+                "bold": true,
+                "italic": false,
+                "color": "#24333D",
+                "fontSizePt": 13
+              },
+              {
+                "elementId": "row_3_prompt_thai",
+                "expectedText": "3. ขอโทษ___ (khǎaw-thôot ___)",
+                "bold": true,
+                "italic": false,
+                "color": "#24333D",
+                "fontSizePt": 23
+              },
+              {
+                "elementId": "row_3_instruction",
+                "expectedText": "Add ครับ (khráp) or ค่ะ (khâ)",
+                "bold": true,
+                "italic": false,
+                "color": "#24333D",
+                "fontSizePt": 13
+              },
+              {
+                "elementId": "row_4_prompt_thai",
+                "expectedText": "4. ใช่___ (châi ___)",
+                "bold": true,
+                "italic": false,
+                "color": "#24333D",
+                "fontSizePt": 23
+              },
+              {
+                "elementId": "row_4_instruction",
+                "expectedText": "Add ครับ (khráp) or ค่ะ (khâ)",
+                "bold": true,
+                "italic": false,
+                "color": "#24333D",
+                "fontSizePt": 13
+              },
+              {
+                "elementId": "row_5_prompt_thai",
+                "expectedText": "5. ไม่เป็นไร___ (mâi bpen rai ___)",
+                "bold": true,
+                "italic": false,
+                "color": "#24333D",
+                "fontSizePt": 23
+              },
+              {
+                "elementId": "row_5_instruction",
+                "expectedText": "Add ครับ (khráp) or ค่ะ (khâ)",
+                "bold": true,
+                "italic": false,
+                "color": "#24333D",
+                "fontSizePt": 13
+              }
+            ]
+          },
+          {
+            "slideIndex": 9,
+            "canvaSlideId": "canva-slide-09-responses",
+            "elements": [
+              {
+                "elementId": "section_label",
+                "expectedText": "Section 4",
+                "bold": true,
+                "italic": false,
+                "color": "#FFFFFF",
+                "fontSizePt": 12
+              },
+              {
+                "elementId": "title",
+                "expectedText": "Answer yes, no, and no problem",
+                "bold": true,
+                "italic": false,
+                "color": "#24333D",
+                "fontSizePt": 30
+              },
+              {
+                "elementId": "subtitle",
+                "expectedText": "Three response tools - two answer the idea, one softens the moment.",
+                "bold": false,
+                "italic": false,
+                "color": "#566873",
+                "fontSizePt": 15
+              },
+              {
+                "elementId": "answers_label",
+                "expectedText": "Direct answers",
+                "bold": true,
+                "italic": false,
+                "color": "#24333D",
+                "fontSizePt": 13
+              },
+              {
+                "elementId": "row_1_thai",
+                "expectedText": "ใช่ (châi)",
+                "bold": true,
+                "italic": false,
+                "color": "#24333D",
+                "fontSizePt": 23
+              },
+              {
+                "elementId": "row_1_meaning",
+                "expectedText": "yes / that is right",
+                "bold": true,
+                "italic": false,
+                "color": "#24333D",
+                "fontSizePt": 13
+              },
+              {
+                "elementId": "row_1_usage",
+                "expectedText": "Confirms the idea",
+                "bold": false,
+                "italic": false,
+                "color": "#566873",
+                "fontSizePt": 15
+              },
+              {
+                "elementId": "row_2_thai",
+                "expectedText": "ไม่ใช่ (mâi châi)",
+                "bold": true,
+                "italic": false,
+                "color": "#24333D",
+                "fontSizePt": 23
+              },
+              {
+                "elementId": "row_2_meaning",
+                "expectedText": "no / not right",
+                "bold": true,
+                "italic": false,
+                "color": "#24333D",
+                "fontSizePt": 13
+              },
+              {
+                "elementId": "row_2_usage",
+                "expectedText": "Corrects the idea - not aggressive",
+                "bold": false,
+                "italic": false,
+                "color": "#566873",
+                "fontSizePt": 15
+              },
+              {
+                "elementId": "softener_label",
+                "expectedText": "Social softener",
+                "bold": true,
+                "italic": false,
+                "color": "#24333D",
+                "fontSizePt": 13
+              },
+              {
+                "elementId": "row_3_meaning",
+                "expectedText": "it is okay / no problem",
+                "bold": true,
+                "italic": false,
+                "color": "#24333D",
+                "fontSizePt": 13
+              },
+              {
+                "elementId": "row_3_usage",
+                "expectedText": "Softens the situation - not a yes/no answer",
+                "bold": false,
+                "italic": false,
+                "color": "#566873",
+                "fontSizePt": 15
+              }
+            ]
+          },
+          {
+            "slideIndex": 10,
+            "canvaSlideId": "canva-slide-10-roleplay",
+            "elements": [
+              {
+                "elementId": "title",
+                "expectedText": "Roleplay: First check-in",
+                "bold": true,
+                "italic": false,
+                "color": "#24333D",
+                "fontSizePt": 30
+              },
+              {
+                "elementId": "subtitle",
+                "expectedText": "At a reception desk - practise the full exchange",
+                "bold": false,
+                "italic": false,
+                "color": "#566873",
+                "fontSizePt": 15
+              },
+              {
+                "elementId": "turn_1_speaker",
+                "expectedText": "You",
+                "bold": true,
+                "italic": false,
+                "color": "#FFFFFF",
+                "fontSizePt": 12
+              },
+              {
+                "elementId": "turn_1_thai",
+                "expectedText": "ขอโทษครับ สวัสดีครับ (khǎaw-thôot khráp sà-wàt-dii khráp)",
+                "bold": true,
+                "italic": false,
+                "color": "#24333D",
+                "fontSizePt": 23
+              },
+              {
+                "elementId": "turn_1_support",
+                "expectedText": "Excuse me, hello.",
+                "bold": false,
+                "italic": false,
+                "color": "#566873",
+                "fontSizePt": 15
+              },
+              {
+                "elementId": "turn_2_speaker",
+                "expectedText": "Staff",
+                "bold": true,
+                "italic": false,
+                "color": "#FFFFFF",
+                "fontSizePt": 12
+              },
+              {
+                "elementId": "turn_2_thai",
+                "expectedText": "สวัสดีค่ะ (sà-wàt-dii khâ)",
+                "bold": true,
+                "italic": false,
+                "color": "#24333D",
+                "fontSizePt": 23
+              },
+              {
+                "elementId": "turn_2_support",
+                "expectedText": "Hello.",
+                "bold": false,
+                "italic": false,
+                "color": "#566873",
+                "fontSizePt": 15
+              },
+              {
+                "elementId": "turn_3_speaker",
+                "expectedText": "You",
+                "bold": true,
+                "italic": false,
+                "color": "#FFFFFF",
+                "fontSizePt": 12
+              },
+              {
+                "elementId": "turn_3_thai",
+                "expectedText": "นี่ใช่ไหมครับ (nîi châi mái khráp)",
+                "bold": true,
+                "italic": false,
+                "color": "#24333D",
+                "fontSizePt": 23
+              },
+              {
+                "elementId": "turn_3_support",
+                "expectedText": "Is this right?",
+                "bold": false,
+                "italic": false,
+                "color": "#566873",
+                "fontSizePt": 15
+              },
+              {
+                "elementId": "turn_4_speaker",
+                "expectedText": "Staff",
+                "bold": true,
+                "italic": false,
+                "color": "#FFFFFF",
+                "fontSizePt": 12
+              },
+              {
+                "elementId": "turn_4_thai",
+                "expectedText": "ใช่ค่ะ (châi khâ)",
+                "bold": true,
+                "italic": false,
+                "color": "#24333D",
+                "fontSizePt": 23
+              },
+              {
+                "elementId": "turn_4_support",
+                "expectedText": "Yes.",
+                "bold": false,
+                "italic": false,
+                "color": "#566873",
+                "fontSizePt": 15
+              },
+              {
+                "elementId": "turn_5_speaker",
+                "expectedText": "You",
+                "bold": true,
+                "italic": false,
+                "color": "#FFFFFF",
+                "fontSizePt": 12
+              },
+              {
+                "elementId": "turn_5_thai",
+                "expectedText": "ขอบคุณครับ (khàawp-khun khráp)",
+                "bold": true,
+                "italic": false,
+                "color": "#24333D",
+                "fontSizePt": 23
+              },
+              {
+                "elementId": "turn_5_support",
+                "expectedText": "Thank you.",
+                "bold": false,
+                "italic": false,
+                "color": "#566873",
+                "fontSizePt": 15
+              },
+              {
+                "elementId": "turn_6_speaker",
+                "expectedText": "Staff",
+                "bold": true,
+                "italic": false,
+                "color": "#FFFFFF",
+                "fontSizePt": 12
+              },
+              {
+                "elementId": "turn_6_thai",
+                "expectedText": "ไม่เป็นไรค่ะ (mâi bpen rai khâ)",
+                "bold": true,
+                "italic": false,
+                "color": "#24333D",
+                "fontSizePt": 23
+              },
+              {
+                "elementId": "turn_6_support",
+                "expectedText": "No problem.",
+                "bold": false,
+                "italic": false,
+                "color": "#566873",
+                "fontSizePt": 15
+              }
+            ]
+          },
+          {
+            "slideIndex": 11,
+            "canvaSlideId": "canva-slide-11-recap",
+            "elements": [
+              {
+                "elementId": "title",
+                "expectedText": "Recap",
+                "bold": true,
+                "italic": false,
+                "color": "#24333D",
+                "fontSizePt": 30
+              },
+              {
+                "elementId": "item_1",
+                "expectedText": "Look away and try: how do you say hello politely as a male speaker? Say it before looking back.",
+                "bold": false,
+                "italic": false,
+                "color": "#24333D",
+                "fontSizePt": 16
+              },
+              {
+                "elementId": "item_2",
+                "expectedText": "What is the difference between ขอบคุณ (khàawp-khun) and ขอโทษ (khǎaw-thôot)? One closes warmly, one repairs politely.",
+                "bold": false,
+                "italic": false,
+                "color": "#24333D",
+                "fontSizePt": 16
+              },
+              {
+                "elementId": "item_3",
+                "expectedText": "Someone says ขอโทษ (khǎaw-thôot) to you. What do you say back? ไม่เป็นไร (mâi bpen rai).",
+                "bold": false,
+                "italic": false,
+                "color": "#24333D",
+                "fontSizePt": 16
+              },
+              {
+                "elementId": "item_4",
+                "expectedText": "What do ครับ (khráp) and ค่ะ (khâ) do? They are the polite endings that tell the listener how your line should land.",
+                "bold": false,
+                "italic": false,
+                "color": "#24333D",
+                "fontSizePt": 16
+              },
+              {
+                "elementId": "item_5",
+                "expectedText": "Practise the full exchange - greeting to thank-you to no-problem",
+                "bold": false,
+                "italic": false,
+                "color": "#24333D",
+                "fontSizePt": 16
+              }
+            ]
+          },
+          {
+            "slideIndex": 12,
+            "canvaSlideId": "canva-slide-12-closing",
+            "elements": [
+              {
+                "elementId": "lesson_id",
+                "expectedText": "M01-L001",
+                "bold": false,
+                "italic": false,
+                "color": "#566873",
+                "fontSizePt": 19
+              },
+              {
+                "elementId": "title",
+                "expectedText": "You can now greet, thank,\napologise, and respond politely.",
+                "bold": true,
+                "italic": false,
+                "color": "#24333D",
+                "fontSizePt": 38
+              },
+              {
+                "elementId": "line_1",
+                "expectedText": "You have the smallest courtesy toolkit that already works.",
+                "bold": false,
+                "italic": false,
+                "color": "#24333D",
+                "fontSizePt": 16
+              },
+              {
+                "elementId": "line_2",
+                "expectedText": "Next lesson: names and countries - introducing yourself.",
+                "bold": false,
+                "italic": false,
+                "color": "#24333D",
+                "fontSizePt": 16
+              },
+              {
+                "elementId": "brand",
+                "expectedText": "Immersion Thai with Nine",
+                "bold": false,
+                "italic": false,
+                "color": "#566873",
+                "fontSizePt": 15
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "type": "write-design-record",
+      "params": {
+        "outputPath": "/sessions/bold-zen-hawking/mnt/thai-nine/course/modules/M01/L001/M01-L001-canva-design.json",
+        "lessonId": "M01-L001",
+        "brandKitId": null,
+        "deckSourceFile": "M01-L001-deck-source.json",
+        "canvaContentFile": "M01-L001-canva-content.json",
+        "slideCount": 10
+      }
+    }
+  ]
+}

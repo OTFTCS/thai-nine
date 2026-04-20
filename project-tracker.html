@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thai with Nine — Project Tracker</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sortablejs@1.15.6/Sortable.min.js"></script>
+  <style>
+    [contenteditable]:focus { outline: 2px solid #6366f1; outline-offset: 2px; border-radius: 4px; }
+    .sortable-ghost { opacity: 0.4; }
+    .sortable-drag { box-shadow: 0 8px 25px rgba(0,0,0,0.15); }
+    .task-card { transition: box-shadow 0.15s; }
+    .task-card:hover { box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+    .drag-handle { cursor: grab; user-select: none; }
+    .drag-handle:active { cursor: grabbing; }
+    .section-collapsed .task-list, .section-collapsed .add-task-btn { display: none; }
+    .status-badge { cursor: pointer; user-select: none; font-size: 0.7rem; font-weight: 600; padding: 2px 8px; border-radius: 9999px; white-space: nowrap; }
+    .status-not-started { background: #f3f4f6; color: #6b7280; }
+    .status-in-progress { background: #dbeafe; color: #2563eb; }
+    .status-done { background: #d1fae5; color: #059669; }
+    .status-blocked { background: #fee2e2; color: #dc2626; }
+    .status-needs-nine { background: #fef3c7; color: #d97706; }
+    .workstream-header { cursor: grab; }
+    .workstream-header:active { cursor: grabbing; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
+  </style>
+</head>
+<body class="bg-gray-50 min-h-screen">
+
+  <header class="bg-white border-b border-gray-200 sticky top-0 z-50 px-6 py-4">
+    <div class="max-w-4xl mx-auto flex items-center justify-between">
+      <div>
+        <h1 class="text-xl font-bold text-gray-900">Thai with Nine — Project Tracker</h1>
+        <p class="text-sm text-gray-500 mt-0.5">Drag to reorder. Click text to edit. Click status to cycle.</p>
+      </div>
+      <div class="flex gap-2">
+        <button onclick="exportState()" class="px-3 py-1.5 text-sm bg-indigo-50 text-indigo-700 rounded-lg hover:bg-indigo-100 font-medium">Export JSON</button>
+        <label class="px-3 py-1.5 text-sm bg-gray-100 text-gray-700 rounded-lg hover:bg-gray-200 font-medium cursor-pointer">
+          Import JSON
+          <input type="file" accept=".json" onchange="importState(event)" class="hidden">
+        </label>
+        <button onclick="resetToDefaults()" class="px-3 py-1.5 text-sm bg-red-50 text-red-600 rounded-lg hover:bg-red-100 font-medium">Reset</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="workstreams-container" class="max-w-4xl mx-auto px-6 py-6 space-y-4">
+  </main>
+
+  <script>
+    // ── Status definitions ──
+    const STATUSES = [
+      { key: 'not-started', label: 'Not Started', class: 'status-not-started' },
+      { key: 'in-progress', label: 'In Progress', class: 'status-in-progress' },
+      { key: 'done', label: 'Done', class: 'status-done' },
+      { key: 'blocked', label: 'Blocked', class: 'status-blocked' },
+      { key: 'needs-nine', label: 'Needs Nine', class: 'status-needs-nine' },
+    ];
+
+    // ── Default data ──
+    const DEFAULT_DATA = {
+      workstreams: [
+        {
+          id: 'get-online',
+          title: '1. Get Online (Deploy & Links Page)',
+          collapsed: false,
+          tasks: [
+            { id: 't-001', text: 'Deploy Next.js app to Vercel (free tier)', status: 'not-started' },
+            { id: 't-002', text: 'Set up custom domain (or use .vercel.app initially)', status: 'not-started' },
+            { id: 't-003', text: 'Build /links page for Instagram bio (email signup, quiz link, socials)', status: 'not-started' },
+            { id: 't-004', text: 'Add UTM parameters to links for tracking sources', status: 'not-started' },
+            { id: 't-005', text: 'Add /links URL to Instagram bio', status: 'not-started' },
+          ]
+        },
+        {
+          id: 'lead-magnet',
+          title: '2. Lead Magnet + Email Capture',
+          collapsed: false,
+          tasks: [
+            { id: 't-010', text: 'Finalize classifier cheat sheet PDF (mockups in lead-magnets/cheatsheet-mockups/)', status: 'not-started' },
+            { id: 't-011', text: 'Create Kit account (free tier, 10k subscribers)', status: 'not-started' },
+            { id: 't-012', text: 'Create Kit signup form with cheat sheet as incentive', status: 'not-started' },
+            { id: 't-013', text: 'Embed Kit signup on /links page', status: 'not-started' },
+            { id: 't-014', text: 'Set up welcome sequence in Kit (copy in lead-magnets/welcome-sequence.md)', status: 'not-started' },
+            { id: 't-015', text: 'Set up basic conversion tracking (signups by source)', status: 'not-started' },
+          ]
+        },
+        {
+          id: 'tiktok-carousels',
+          title: '3. TikTok + Carousels (Content Engine)',
+          collapsed: false,
+          tasks: [
+            { id: 't-020', text: 'Render classifier Ep03-Ep10 through Manim pipeline (Oliver can do alone)', status: 'not-started' },
+            { id: 't-021', text: 'Post Ep03-Ep10 to Instagram/TikTok with cheat sheet CTA in every caption', status: 'not-started' },
+            { id: 't-022', text: 'Create 3+ new image carousel topics (only family-members + Thai-fruits exist)', status: 'not-started' },
+            { id: 't-023', text: 'Add TikTok tracking to content inventory CSV', status: 'not-started' },
+            { id: 't-024', text: 'Plan next TikTok series after classifiers', status: 'not-started' },
+          ]
+        },
+        {
+          id: 'content-calendar',
+          title: '4. Content Calendar (Cross-cutting)',
+          collapsed: false,
+          tasks: [
+            { id: 't-030', text: 'Build unified posting schedule: TikTok, carousels, YouTube, newsletter', status: 'not-started' },
+            { id: 't-031', text: 'Define cadence: e.g. 2x/week TikTok, 1x/week carousel, 1x/2wk newsletter', status: 'not-started' },
+            { id: 't-032', text: 'Track in project tracker or simple spreadsheet', status: 'not-started' },
+          ]
+        },
+        {
+          id: 'newsletter',
+          title: '5. Newsletter Pipeline (Claude-assisted SOP)',
+          collapsed: false,
+          tasks: [
+            { id: 't-040', text: 'Design newsletter template in Kit (Thai phrases + mini-lesson format)', status: 'not-started' },
+            { id: 't-041', text: 'Write Claude prompt template for drafting editions', status: 'not-started' },
+            { id: 't-042', text: 'Define workflow: Claude drafts > Oliver reviews > Nine approves Thai > send via Kit', status: 'not-started' },
+            { id: 't-043', text: 'Build as a Claude Code skill or scheduled task', status: 'not-started' },
+            { id: 't-044', text: 'Draft and send first newsletter', status: 'not-started' },
+            { id: 't-045', text: 'Set bi-weekly cadence in content calendar', status: 'not-started' },
+          ]
+        },
+        {
+          id: 'youtube',
+          title: '6. YouTube Series',
+          collapsed: false,
+          tasks: [
+            { id: 't-050', text: 'Publish E01 on YouTube (already rendered with real audio)', status: 'not-started' },
+            { id: 't-051', text: 'Record real audio for E02 — Asking Directions', status: 'needs-nine' },
+            { id: 't-052', text: 'Record real audio for E03 — Taking a Taxi', status: 'needs-nine' },
+            { id: 't-053', text: 'Record real audio for E04 — Market Shopping', status: 'needs-nine' },
+            { id: 't-054', text: 'Re-render E02-E03 with real audio + phrase timestamps', status: 'not-started' },
+            { id: 't-055', text: 'Render E04 (first render, never been through pipeline)', status: 'not-started' },
+            { id: 't-056', text: 'Script E05', status: 'not-started' },
+          ]
+        },
+        {
+          id: 'web-app',
+          title: '7. Web App Features (Later)',
+          collapsed: true,
+          tasks: [
+            { id: 't-060', text: 'Wire up real authentication (replace mock login)', status: 'not-started' },
+            { id: 't-061', text: 'Add database backend (replace localStorage + flat files)', status: 'not-started' },
+            { id: 't-062', text: 'Stripe payment integration', status: 'not-started' },
+            { id: 't-063', text: 'Tutoring calendar / booking system', status: 'not-started' },
+            { id: 't-064', text: 'Connect quiz results to Kit for segmented emails', status: 'not-started' },
+          ]
+        },
+        {
+          id: 'course',
+          title: '8. Course Production (Long-term)',
+          collapsed: true,
+          tasks: [
+            { id: 't-070', text: 'Fix M01-L001 stale editorial QA flag', status: 'not-started' },
+            { id: 't-071', text: 'Complete M01-L005 (stalled at visual QA)', status: 'not-started' },
+            { id: 't-072', text: 'Produce M01-L006 through L010', status: 'not-started' },
+            { id: 't-073', text: 'Record M01 video lessons', status: 'needs-nine' },
+            { id: 't-074', text: 'Scaffold and produce M02+', status: 'not-started' },
+          ]
+        },
+      ]
+    };
+
+    // ── State management ──
+    const STORAGE_KEY = 'thai-nine-tracker';
+    let state;
+    let nextId = 100;
+
+    function loadState() {
+      try {
+        const saved = localStorage.getItem(STORAGE_KEY);
+        if (saved) {
+          state = JSON.parse(saved);
+          return;
+        }
+      } catch (e) { /* fall through */ }
+      state = JSON.parse(JSON.stringify(DEFAULT_DATA));
+    }
+
+    function saveState() {
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
+    }
+
+    function genId() {
+      return 't-' + (Date.now().toString(36)) + '-' + (nextId++);
+    }
+
+    // ── Rendering ──
+    function getStatusInfo(key) {
+      return STATUSES.find(s => s.key === key) || STATUSES[0];
+    }
+
+    function nextStatus(key) {
+      const idx = STATUSES.findIndex(s => s.key === key);
+      return STATUSES[(idx + 1) % STATUSES.length].key;
+    }
+
+    function renderAll() {
+      const container = document.getElementById('workstreams-container');
+      container.innerHTML = '';
+
+      state.workstreams.forEach((ws, wsIdx) => {
+        const section = document.createElement('section');
+        section.className = `bg-white rounded-xl border border-gray-200 overflow-hidden ${ws.collapsed ? 'section-collapsed' : ''}`;
+        section.dataset.workstreamId = ws.id;
+
+        // Header
+        const header = document.createElement('div');
+        header.className = 'workstream-header flex items-center gap-3 px-4 py-3 bg-gray-50 border-b border-gray-100';
+        header.innerHTML = `
+          <span class="drag-handle text-gray-400 text-lg">&#x2807;</span>
+          <button onclick="toggleCollapse('${ws.id}')" class="text-gray-400 hover:text-gray-600 text-sm font-mono w-5">${ws.collapsed ? '+' : '-'}</button>
+          <h2 class="font-semibold text-gray-800 flex-1 text-sm">${ws.title}</h2>
+          <span class="text-xs text-gray-400">${ws.tasks.filter(t => t.status === 'done').length}/${ws.tasks.length} done</span>
+        `;
+        section.appendChild(header);
+
+        // Task list
+        const taskList = document.createElement('div');
+        taskList.className = 'task-list divide-y divide-gray-50';
+        taskList.dataset.workstreamId = ws.id;
+
+        ws.tasks.forEach(task => {
+          const card = createTaskCard(task, ws.id);
+          taskList.appendChild(card);
+        });
+        section.appendChild(taskList);
+
+        // Add button
+        const addBtn = document.createElement('button');
+        addBtn.className = 'add-task-btn w-full px-4 py-2 text-sm text-gray-400 hover:text-indigo-600 hover:bg-indigo-50 text-left transition-colors';
+        addBtn.textContent = '+ Add task';
+        addBtn.onclick = () => addTask(ws.id);
+        section.appendChild(addBtn);
+
+        container.appendChild(section);
+      });
+
+      initSortables();
+      updateNumbers();
+    }
+
+    function createTaskCard(task, workstreamId) {
+      const statusInfo = getStatusInfo(task.status);
+      const card = document.createElement('div');
+      card.className = 'task-card flex items-center gap-3 px-4 py-2.5 bg-white';
+      card.dataset.taskId = task.id;
+
+      card.innerHTML = `
+        <span class="drag-handle text-gray-300 hover:text-gray-500">&#x2807;</span>
+        <span class="status-badge ${statusInfo.class}" onclick="cycleStatus('${workstreamId}', '${task.id}')">${statusInfo.label}</span>
+        <span class="task-text flex-1 text-sm text-gray-700 ${task.status === 'done' ? 'line-through text-gray-400' : ''}"
+              contenteditable="true"
+              onblur="updateTaskText('${workstreamId}', '${task.id}', this.textContent)"
+              onkeydown="if(event.key==='Enter'){event.preventDefault();this.blur();}"
+        >${task.text}</span>
+        <button onclick="deleteTask('${workstreamId}', '${task.id}')"
+                class="text-gray-300 hover:text-red-500 text-lg leading-none px-1 opacity-0 group-hover:opacity-100 transition-opacity"
+                title="Delete task">&times;</button>
+      `;
+
+      // Show delete on hover
+      card.addEventListener('mouseenter', () => card.querySelector('button').style.opacity = '1');
+      card.addEventListener('mouseleave', () => card.querySelector('button').style.opacity = '0');
+
+      return card;
+    }
+
+    // ── Sortable setup ──
+    let sortableInstances = [];
+
+    function initSortables() {
+      sortableInstances.forEach(s => s.destroy());
+      sortableInstances = [];
+
+      // Workstream-level sorting
+      const container = document.getElementById('workstreams-container');
+      sortableInstances.push(new Sortable(container, {
+        animation: 150,
+        handle: '.workstream-header',
+        ghostClass: 'sortable-ghost',
+        dragClass: 'sortable-drag',
+        onEnd(evt) {
+          const moved = state.workstreams.splice(evt.oldIndex, 1)[0];
+          state.workstreams.splice(evt.newIndex, 0, moved);
+          saveState();
+          renderAll();
+        }
+      }));
+
+      // Task-level sorting (within and between workstreams)
+      document.querySelectorAll('.task-list').forEach(list => {
+        sortableInstances.push(new Sortable(list, {
+          group: 'tasks',
+          animation: 150,
+          handle: '.drag-handle',
+          ghostClass: 'sortable-ghost',
+          dragClass: 'sortable-drag',
+          onEnd(evt) {
+            const fromWsId = evt.from.dataset.workstreamId;
+            const toWsId = evt.to.dataset.workstreamId;
+            const taskId = evt.item.dataset.taskId;
+
+            const fromWs = state.workstreams.find(w => w.id === fromWsId);
+            const toWs = state.workstreams.find(w => w.id === toWsId);
+            const taskIdx = fromWs.tasks.findIndex(t => t.id === taskId);
+            const [task] = fromWs.tasks.splice(taskIdx, 1);
+            toWs.tasks.splice(evt.newIndex, 0, task);
+
+            saveState();
+            renderAll();
+          }
+        }));
+      });
+    }
+
+    // ── Actions ──
+    function cycleStatus(wsId, taskId) {
+      const ws = state.workstreams.find(w => w.id === wsId);
+      const task = ws.tasks.find(t => t.id === taskId);
+      task.status = nextStatus(task.status);
+      saveState();
+      renderAll();
+    }
+
+    function updateTaskText(wsId, taskId, newText) {
+      const ws = state.workstreams.find(w => w.id === wsId);
+      const task = ws.tasks.find(t => t.id === taskId);
+      const trimmed = newText.trim();
+      if (trimmed && trimmed !== task.text) {
+        task.text = trimmed;
+        saveState();
+      }
+    }
+
+    function deleteTask(wsId, taskId) {
+      if (!confirm('Delete this task?')) return;
+      const ws = state.workstreams.find(w => w.id === wsId);
+      ws.tasks = ws.tasks.filter(t => t.id !== taskId);
+      saveState();
+      renderAll();
+    }
+
+    function addTask(wsId) {
+      const ws = state.workstreams.find(w => w.id === wsId);
+      const newTask = { id: genId(), text: 'New task', status: 'not-started' };
+      ws.tasks.push(newTask);
+      saveState();
+      renderAll();
+
+      // Focus the new task text
+      const cards = document.querySelectorAll(`[data-workstream-id="${wsId}"] .task-card`);
+      const lastCard = cards[cards.length - 1];
+      if (lastCard) {
+        const textEl = lastCard.querySelector('.task-text');
+        textEl.focus();
+        document.execCommand('selectAll', false, null);
+      }
+    }
+
+    function toggleCollapse(wsId) {
+      const ws = state.workstreams.find(w => w.id === wsId);
+      ws.collapsed = !ws.collapsed;
+      saveState();
+      renderAll();
+    }
+
+    function updateNumbers() {
+      document.querySelectorAll('#workstreams-container > section').forEach((section, idx) => {
+        const h2 = section.querySelector('h2');
+        if (h2) {
+          const wsId = section.dataset.workstreamId;
+          const ws = state.workstreams.find(w => w.id === wsId);
+          // Update title number prefix
+          ws.title = ws.title.replace(/^\d+\./, `${idx + 1}.`);
+          h2.textContent = ws.title;
+          saveState();
+        }
+      });
+    }
+
+    // ── Export / Import ──
+    function exportState() {
+      const blob = new Blob([JSON.stringify(state, null, 2)], { type: 'application/json' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      const date = new Date().toISOString().split('T')[0];
+      a.download = `tracker-backup-${date}.json`;
+      a.click();
+      URL.revokeObjectURL(url);
+    }
+
+    function importState(event) {
+      const file = event.target.files[0];
+      if (!file) return;
+      const reader = new FileReader();
+      reader.onload = (e) => {
+        try {
+          const imported = JSON.parse(e.target.result);
+          if (imported.workstreams && Array.isArray(imported.workstreams)) {
+            state = imported;
+            saveState();
+            renderAll();
+          } else {
+            alert('Invalid tracker file: missing workstreams array');
+          }
+        } catch (err) {
+          alert('Failed to parse JSON: ' + err.message);
+        }
+      };
+      reader.readAsText(file);
+      event.target.value = '';
+    }
+
+    function resetToDefaults() {
+      if (!confirm('Reset all tasks to defaults? This will erase any changes you have made.')) return;
+      state = JSON.parse(JSON.stringify(DEFAULT_DATA));
+      saveState();
+      renderAll();
+    }
+
+    // ── Init ──
+    loadState();
+    renderAll();
+  </script>
+</body>
+</html>

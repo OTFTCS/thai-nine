@@ -1,0 +1,620 @@
+{
+  "episodeId": "YT-S01-E01",
+  "audioDuration": 948.58,
+  "alignmentQuality": 0.587,
+  "unmatchedLines": [
+    "l-0003",
+    "l-0004",
+    "l-0006",
+    "l-0028",
+    "l-0043",
+    "l-0045",
+    "l-0046",
+    "l-0048",
+    "l-0049",
+    "l-0051",
+    "l-0052",
+    "l-0053",
+    "l-0054",
+    "l-0055",
+    "l-0056",
+    "l-0057",
+    "l-0058",
+    "l-0059",
+    "l-0060"
+  ],
+  "timedBlocks": [
+    {
+      "id": "b-001",
+      "mode": "hook",
+      "startTime": 0.94,
+      "endTime": 41.92,
+      "lines": [
+        {
+          "id": "l-0001",
+          "startTime": 0.94,
+          "endTime": 14.58,
+          "displayStart": 0.94,
+          "displayEnd": 15.58,
+          "confidence": 0.96
+        },
+        {
+          "id": "l-0002",
+          "startTime": null,
+          "endTime": null,
+          "displayStart": 15.58,
+          "displayEnd": 38.92,
+          "confidence": null
+        },
+        {
+          "id": "l-0003",
+          "startTime": 38.92,
+          "endTime": 41.92,
+          "displayStart": 38.92,
+          "displayEnd": 41.92,
+          "confidence": 0.0
+        }
+      ]
+    },
+    {
+      "id": "b-002",
+      "mode": "explain",
+      "startTime": 62.2,
+      "endTime": 124.14,
+      "lines": [
+        {
+          "id": "l-0004",
+          "startTime": 62.2,
+          "endTime": 65.2,
+          "displayStart": 62.2,
+          "displayEnd": 113.48,
+          "confidence": 0.0
+        },
+        {
+          "id": "l-0005",
+          "startTime": 113.48,
+          "endTime": 114.36,
+          "displayStart": 113.48,
+          "displayEnd": 121.14,
+          "confidence": 0.71
+        },
+        {
+          "id": "l-0006",
+          "startTime": 121.14,
+          "endTime": 124.14,
+          "displayStart": 121.14,
+          "displayEnd": 124.14,
+          "confidence": 0.0
+        }
+      ]
+    },
+    {
+      "id": "b-003",
+      "mode": "vocab-card",
+      "startTime": 134.2,
+      "endTime": 407.86,
+      "lines": [
+        {
+          "id": "l-0007",
+          "startTime": 134.2,
+          "endTime": 134.2,
+          "displayStart": 134.2,
+          "displayEnd": 134.7,
+          "confidence": 1.0
+        },
+        {
+          "id": "l-0008",
+          "startTime": 134.2,
+          "endTime": 134.2,
+          "displayStart": 134.2,
+          "displayEnd": 174.62,
+          "confidence": 0.52
+        },
+        {
+          "id": "l-0009",
+          "startTime": 174.62,
+          "endTime": 177.62,
+          "displayStart": 174.62,
+          "displayEnd": 179.9,
+          "confidence": 1.0
+        },
+        {
+          "id": "l-0010",
+          "startTime": 179.9,
+          "endTime": 181.5,
+          "displayStart": 179.9,
+          "displayEnd": 201.42,
+          "confidence": 1.0
+        },
+        {
+          "id": "l-0011",
+          "startTime": 201.42,
+          "endTime": 203.24,
+          "displayStart": 201.42,
+          "displayEnd": 213.64,
+          "confidence": 1.0
+        },
+        {
+          "id": "l-0012",
+          "startTime": 213.64,
+          "endTime": 214.96,
+          "displayStart": 213.64,
+          "displayEnd": 231.46,
+          "confidence": 1.0
+        },
+        {
+          "id": "l-0013",
+          "startTime": 231.46,
+          "endTime": 233.48,
+          "displayStart": 231.46,
+          "displayEnd": 249.8,
+          "confidence": 1.0
+        },
+        {
+          "id": "l-0014",
+          "startTime": 249.8,
+          "endTime": 250.88,
+          "displayStart": 249.8,
+          "displayEnd": 272.04,
+          "confidence": 1.0
+        },
+        {
+          "id": "l-0015",
+          "startTime": 272.04,
+          "endTime": 275.5,
+          "displayStart": 272.04,
+          "displayEnd": 321.9,
+          "confidence": 0.94
+        },
+        {
+          "id": "l-0016",
+          "startTime": 321.9,
+          "endTime": 323.86,
+          "displayStart": 321.9,
+          "displayEnd": 343.68,
+          "confidence": 1.0
+        },
+        {
+          "id": "l-0017",
+          "startTime": 343.68,
+          "endTime": 345.2,
+          "displayStart": 343.68,
+          "displayEnd": 361.8,
+          "confidence": 0.96
+        },
+        {
+          "id": "l-0018",
+          "startTime": 361.8,
+          "endTime": 363.72,
+          "displayStart": 361.8,
+          "displayEnd": 369.24,
+          "confidence": 1.0
+        },
+        {
+          "id": "l-0019",
+          "startTime": 369.24,
+          "endTime": 371.16,
+          "displayStart": 369.24,
+          "displayEnd": 395.64,
+          "confidence": 1.0
+        },
+        {
+          "id": "l-0020",
+          "startTime": 395.64,
+          "endTime": 397.58,
+          "displayStart": 395.64,
+          "displayEnd": 406.26,
+          "confidence": 1.0
+        },
+        {
+          "id": "l-0021",
+          "startTime": 406.26,
+          "endTime": 407.86,
+          "displayStart": 406.26,
+          "displayEnd": 407.86,
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "id": "b-004",
+      "mode": "natural-listen",
+      "startTime": 470.54,
+      "endTime": 744.9,
+      "lines": [
+        {
+          "id": "l-0022",
+          "startTime": 470.54,
+          "endTime": 471.9,
+          "displayStart": 470.54,
+          "displayEnd": 709.14,
+          "confidence": 1.0
+        },
+        {
+          "id": "l-0023",
+          "startTime": 709.14,
+          "endTime": 711.86,
+          "displayStart": 709.14,
+          "displayEnd": 711.86,
+          "confidence": 0.97
+        },
+        {
+          "id": "l-0024",
+          "startTime": 711.86,
+          "endTime": 720.78,
+          "displayStart": 711.86,
+          "displayEnd": 721.86,
+          "confidence": 0.96
+        },
+        {
+          "id": "l-0025",
+          "startTime": 721.86,
+          "endTime": 731.22,
+          "displayStart": 721.86,
+          "displayEnd": 731.22,
+          "confidence": 1.0
+        },
+        {
+          "id": "l-0026",
+          "startTime": 731.22,
+          "endTime": 741.04,
+          "displayStart": 731.22,
+          "displayEnd": 742.56,
+          "confidence": 1.0
+        },
+        {
+          "id": "l-0027",
+          "startTime": 742.56,
+          "endTime": 744.9,
+          "displayStart": 742.56,
+          "displayEnd": 744.9,
+          "confidence": 0.96
+        }
+      ]
+    },
+    {
+      "id": "b-005",
+      "mode": "breakdown",
+      "startTime": 744.9,
+      "endTime": 857.56,
+      "lines": [
+        {
+          "id": "l-0028",
+          "startTime": 744.9,
+          "endTime": 747.9,
+          "displayStart": 744.9,
+          "displayEnd": 748.9,
+          "confidence": 0.0
+        },
+        {
+          "id": "l-0029",
+          "startTime": null,
+          "endTime": null,
+          "displayStart": 748.9,
+          "displayEnd": 749.9,
+          "confidence": null
+        },
+        {
+          "id": "l-0030",
+          "startTime": null,
+          "endTime": null,
+          "displayStart": 749.9,
+          "displayEnd": 791.9,
+          "confidence": null
+        },
+        {
+          "id": "l-0031",
+          "startTime": 791.9,
+          "endTime": 798.82,
+          "displayStart": 791.9,
+          "displayEnd": 799.82,
+          "confidence": 0.94
+        },
+        {
+          "id": "l-0032",
+          "startTime": null,
+          "endTime": null,
+          "displayStart": 799.82,
+          "displayEnd": 800.82,
+          "confidence": null
+        },
+        {
+          "id": "l-0033",
+          "startTime": null,
+          "endTime": null,
+          "displayStart": 800.82,
+          "displayEnd": 816.74,
+          "confidence": null
+        },
+        {
+          "id": "l-0034",
+          "startTime": 816.74,
+          "endTime": 826.5,
+          "displayStart": 816.74,
+          "displayEnd": 827.5,
+          "confidence": 1.0
+        },
+        {
+          "id": "l-0035",
+          "startTime": null,
+          "endTime": null,
+          "displayStart": 827.5,
+          "displayEnd": 828.5,
+          "confidence": null
+        },
+        {
+          "id": "l-0036",
+          "startTime": null,
+          "endTime": null,
+          "displayStart": 828.5,
+          "displayEnd": 836.82,
+          "confidence": null
+        },
+        {
+          "id": "l-0037",
+          "startTime": 836.82,
+          "endTime": 842.32,
+          "displayStart": 836.82,
+          "displayEnd": 843.32,
+          "confidence": 1.0
+        },
+        {
+          "id": "l-0038",
+          "startTime": null,
+          "endTime": null,
+          "displayStart": 843.32,
+          "displayEnd": 844.32,
+          "confidence": null
+        },
+        {
+          "id": "l-0039",
+          "startTime": null,
+          "endTime": null,
+          "displayStart": 844.32,
+          "displayEnd": 855.04,
+          "confidence": null
+        },
+        {
+          "id": "l-0040",
+          "startTime": 855.04,
+          "endTime": 857.56,
+          "displayStart": 855.04,
+          "displayEnd": 858.56,
+          "confidence": 0.96
+        },
+        {
+          "id": "l-0041",
+          "startTime": null,
+          "endTime": null,
+          "displayStart": 858.56,
+          "displayEnd": 859.56,
+          "confidence": null
+        },
+        {
+          "id": "l-0042",
+          "startTime": null,
+          "endTime": null,
+          "displayStart": 859.56,
+          "displayEnd": 860.06,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "id": "b-006",
+      "mode": "drill-prompt",
+      "startTime": 857.56,
+      "endTime": 860.56,
+      "lines": [
+        {
+          "id": "l-0043",
+          "startTime": 857.56,
+          "endTime": 860.56,
+          "displayStart": 857.56,
+          "displayEnd": 861.56,
+          "confidence": 0.0
+        },
+        {
+          "id": "l-0044",
+          "startTime": null,
+          "endTime": null,
+          "displayStart": 861.56,
+          "displayEnd": 862.06,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "id": "b-007",
+      "mode": "drill-answer",
+      "startTime": 947.62,
+      "endTime": 950.62,
+      "lines": [
+        {
+          "id": "l-0045",
+          "startTime": 947.62,
+          "endTime": 950.62,
+          "displayStart": 947.62,
+          "displayEnd": 950.62,
+          "confidence": 0.0
+        }
+      ]
+    },
+    {
+      "id": "b-008",
+      "mode": "drill-prompt",
+      "startTime": 947.8,
+      "endTime": 950.8,
+      "lines": [
+        {
+          "id": "l-0046",
+          "startTime": 947.8,
+          "endTime": 950.8,
+          "displayStart": 947.8,
+          "displayEnd": 951.8,
+          "confidence": 0.0
+        },
+        {
+          "id": "l-0047",
+          "startTime": null,
+          "endTime": null,
+          "displayStart": 951.8,
+          "displayEnd": 952.3,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "id": "b-009",
+      "mode": "drill-answer",
+      "startTime": 947.8,
+      "endTime": 950.8,
+      "lines": [
+        {
+          "id": "l-0048",
+          "startTime": 947.8,
+          "endTime": 950.8,
+          "displayStart": 947.8,
+          "displayEnd": 950.8,
+          "confidence": 0.0
+        }
+      ]
+    },
+    {
+      "id": "b-010",
+      "mode": "drill-prompt",
+      "startTime": 947.8,
+      "endTime": 950.8,
+      "lines": [
+        {
+          "id": "l-0049",
+          "startTime": 947.8,
+          "endTime": 950.8,
+          "displayStart": 947.8,
+          "displayEnd": 951.8,
+          "confidence": 0.0
+        },
+        {
+          "id": "l-0050",
+          "startTime": null,
+          "endTime": null,
+          "displayStart": 951.8,
+          "displayEnd": 952.3,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "id": "b-011",
+      "mode": "drill-answer",
+      "startTime": 947.8,
+      "endTime": 950.8,
+      "lines": [
+        {
+          "id": "l-0051",
+          "startTime": 947.8,
+          "endTime": 950.8,
+          "displayStart": 947.8,
+          "displayEnd": 950.8,
+          "confidence": 0.0
+        }
+      ]
+    },
+    {
+      "id": "b-012",
+      "mode": "shadowing",
+      "startTime": 947.8,
+      "endTime": 950.8,
+      "lines": [
+        {
+          "id": "l-0052",
+          "startTime": 947.8,
+          "endTime": 950.8,
+          "displayStart": 947.8,
+          "displayEnd": 948.3,
+          "confidence": 0.0
+        },
+        {
+          "id": "l-0053",
+          "startTime": 947.8,
+          "endTime": 950.8,
+          "displayStart": 947.8,
+          "displayEnd": 948.3,
+          "confidence": 0.0
+        },
+        {
+          "id": "l-0054",
+          "startTime": 947.8,
+          "endTime": 950.8,
+          "displayStart": 947.8,
+          "displayEnd": 948.3,
+          "confidence": 0.0
+        },
+        {
+          "id": "l-0055",
+          "startTime": 947.8,
+          "endTime": 950.8,
+          "displayStart": 947.8,
+          "displayEnd": 948.3,
+          "confidence": 0.0
+        },
+        {
+          "id": "l-0056",
+          "startTime": 947.8,
+          "endTime": 950.8,
+          "displayStart": 947.8,
+          "displayEnd": 948.3,
+          "confidence": 0.0
+        },
+        {
+          "id": "l-0057",
+          "startTime": 947.8,
+          "endTime": 950.8,
+          "displayStart": 947.8,
+          "displayEnd": 950.8,
+          "confidence": 0.0
+        }
+      ]
+    },
+    {
+      "id": "b-013",
+      "mode": "recap",
+      "startTime": 947.8,
+      "endTime": 950.8,
+      "lines": [
+        {
+          "id": "l-0058",
+          "startTime": 947.8,
+          "endTime": 950.8,
+          "displayStart": 947.8,
+          "displayEnd": 950.8,
+          "confidence": 0.0
+        }
+      ]
+    },
+    {
+      "id": "b-014",
+      "mode": "teaser",
+      "startTime": 947.8,
+      "endTime": 950.8,
+      "lines": [
+        {
+          "id": "l-0059",
+          "startTime": 947.8,
+          "endTime": 950.8,
+          "displayStart": 947.8,
+          "displayEnd": 948.3,
+          "confidence": 0.0
+        },
+        {
+          "id": "l-0060",
+          "startTime": 947.8,
+          "endTime": 950.8,
+          "displayStart": 947.8,
+          "displayEnd": 950.8,
+          "confidence": 0.0
+        }
+      ]
+    }
+  ]
+}

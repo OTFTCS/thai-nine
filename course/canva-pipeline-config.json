@@ -1,0 +1,10 @@
+{
+  "brandKitId": "kAHFroxXDgw",
+  "defaultStyle": "educational",
+  "defaultAudience": "educational",
+  "targetFolderId": null,
+  "thaiFontFamily": "Noto Sans Thai Looped",
+  "latinFontFamily": "Sarabun",
+  "teachingAssets": {},
+  "_comment": "Set brandKitId once the 'Thai with Nine Course' brand kit is created in Canva. targetFolderId can be set to organise all lesson decks in one Canva folder. Add teaching assets (tone diagrams, etc.) to teachingAssets as { slug: { url, description } }. Reference them from deck-source.json via imageUsage: 'asset:{slug}'."
+}
