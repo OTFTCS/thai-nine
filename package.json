@@ -28,11 +28,18 @@
     "tiktok:test": "node --experimental-strip-types --test thai_with_nine_tiktok/tools/tests/pipeline.test.ts"
   },
   "dependencies": {
+    "@supabase/ssr": "^0.10.2",
+    "@supabase/supabase-js": "^2.104.1",
+    "date-fns-tz": "^3.2.0",
     "exceljs": "^4.4.0",
+    "googleapis": "^171.4.0",
     "next": "16.1.6",
     "puppeteer-core": "^24.41.0",
     "react": "19.2.3",
-    "react-dom": "19.2.3"
+    "react-dom": "19.2.3",
+    "resend": "^6.12.2",
+    "stripe": "^22.1.0",
+    "zod": "^4.3.6"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
