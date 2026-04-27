@@ -1,0 +1,458 @@
+{
+  "schemaVersion": 1,
+  "scope": "module",
+  "scopeId": "M01",
+  "passScore": 80,
+  "generatedAt": "2026-04-25T02:50:48.726Z",
+  "sourceLessons": [
+    "M01-L001",
+    "M01-L002",
+    "M01-L003",
+    "M01-L004"
+  ],
+  "metadata": {
+    "targetQuestionCount": 20,
+    "actualQuestionCount": 20,
+    "lessonsCovered": 4,
+    "lessonsExpected": 10,
+    "lessonsMissing": [
+      "M01-L005",
+      "M01-L006",
+      "M01-L007",
+      "M01-L008",
+      "M01-L009",
+      "M01-L010"
+    ],
+    "typeMix": {
+      "thai_to_english": 11,
+      "fill_translit": 4,
+      "context_mcq": 3,
+      "listening_link": 2
+    },
+    "gating": {
+      "passScore": 80,
+      "attemptsBeforeCooldown": 3,
+      "cooldownHours": 24,
+      "unlockNote": "Skool gates next module on this quiz; 80% to pass, 3 attempts then 24h cooldown."
+    }
+  },
+  "questions": [
+    {
+      "id": "mq-M01-q01",
+      "sourceLessonId": "M01-L001",
+      "sourceQuestionId": "q01",
+      "bankItemId": "v-c9337e2739-thai-to-english",
+      "vocabId": "v-c9337e2739",
+      "type": "thai_to_english",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "What is the best meaning of สวัสดี?",
+        "thai": "สวัสดี",
+        "translit": "sà-wàt-dii"
+      },
+      "options": [
+        "hello",
+        "polite ending (male)",
+        "polite ending (female)",
+        "hello (male, polite)"
+      ],
+      "answer": "hello",
+      "rationale": "Maps Thai form to target meaning from script languageFocus."
+    },
+    {
+      "id": "mq-M01-q02",
+      "sourceLessonId": "M01-L002",
+      "sourceQuestionId": "q01",
+      "bankItemId": "v-6acb169e4b-thai-to-english",
+      "vocabId": "v-6acb169e4b",
+      "type": "thai_to_english",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "What is the best meaning of ชื่อ?",
+        "thai": "ชื่อ",
+        "translit": "chûue"
+      },
+      "options": [
+        "name",
+        "what",
+        "what is your name?",
+        "person"
+      ],
+      "answer": "name",
+      "rationale": "Maps Thai form to target meaning from script languageFocus."
+    },
+    {
+      "id": "mq-M01-q03",
+      "sourceLessonId": "M01-L003",
+      "sourceQuestionId": "q01",
+      "bankItemId": "v-9018ed36ec-thai-to-english",
+      "vocabId": "v-9018ed36ec",
+      "type": "thai_to_english",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "What is the best meaning of ฉัน?",
+        "thai": "ฉัน",
+        "translit": "chǎn"
+      },
+      "options": [
+        "I (female / neutral)",
+        "I (male polite)",
+        "you (polite)",
+        "he / she"
+      ],
+      "answer": "I (female / neutral)",
+      "rationale": "Maps Thai form to target meaning from script languageFocus."
+    },
+    {
+      "id": "mq-M01-q04",
+      "sourceLessonId": "M01-L004",
+      "sourceQuestionId": "q01",
+      "bankItemId": "v-28499d926c-thai-to-english",
+      "vocabId": "v-28499d926c",
+      "type": "thai_to_english",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "What is the best meaning of ศูนย์?",
+        "thai": "ศูนย์",
+        "translit": "sǔun"
+      },
+      "options": [
+        "zero (0)",
+        "one (1)",
+        "two (2)",
+        "three (3)"
+      ],
+      "answer": "zero (0)",
+      "rationale": "Maps Thai form to target meaning from script languageFocus."
+    },
+    {
+      "id": "mq-M01-q05",
+      "sourceLessonId": "M01-L001",
+      "sourceQuestionId": "q02",
+      "bankItemId": "v-7a1bb3ff29-thai-to-english",
+      "vocabId": "v-7a1bb3ff29",
+      "type": "thai_to_english",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "What is the best meaning of ครับ?",
+        "thai": "ครับ",
+        "translit": "khráp"
+      },
+      "options": [
+        "polite ending (male)",
+        "hello",
+        "polite ending (female)",
+        "hello (male, polite)"
+      ],
+      "answer": "polite ending (male)",
+      "rationale": "Maps Thai form to target meaning from script languageFocus."
+    },
+    {
+      "id": "mq-M01-q06",
+      "sourceLessonId": "M01-L002",
+      "sourceQuestionId": "q02",
+      "bankItemId": "v-fbd69c240c-thai-to-english",
+      "vocabId": "v-fbd69c240c",
+      "type": "thai_to_english",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "What is the best meaning of อะไร?",
+        "thai": "อะไร",
+        "translit": "à-rai"
+      },
+      "options": [
+        "what",
+        "name",
+        "what is your name?",
+        "person"
+      ],
+      "answer": "what",
+      "rationale": "Maps Thai form to target meaning from script languageFocus."
+    },
+    {
+      "id": "mq-M01-q07",
+      "sourceLessonId": "M01-L003",
+      "sourceQuestionId": "q02",
+      "bankItemId": "v-d16cfe595c-thai-to-english",
+      "vocabId": "v-d16cfe595c",
+      "type": "thai_to_english",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "What is the best meaning of ผม?",
+        "thai": "ผม",
+        "translit": "phǒm"
+      },
+      "options": [
+        "I (male polite)",
+        "I (female / neutral)",
+        "you (polite)",
+        "he / she"
+      ],
+      "answer": "I (male polite)",
+      "rationale": "Maps Thai form to target meaning from script languageFocus."
+    },
+    {
+      "id": "mq-M01-q08",
+      "sourceLessonId": "M01-L004",
+      "sourceQuestionId": "q02",
+      "bankItemId": "v-d5112f8a63-thai-to-english",
+      "vocabId": "v-d5112f8a63",
+      "type": "thai_to_english",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "What is the best meaning of หนึ่ง?",
+        "thai": "หนึ่ง",
+        "translit": "nùeng"
+      },
+      "options": [
+        "one (1)",
+        "zero (0)",
+        "two (2)",
+        "three (3)"
+      ],
+      "answer": "one (1)",
+      "rationale": "Maps Thai form to target meaning from script languageFocus."
+    },
+    {
+      "id": "mq-M01-q09",
+      "sourceLessonId": "M01-L001",
+      "sourceQuestionId": "q15",
+      "bankItemId": "v-c9337e2739-fill-translit",
+      "vocabId": "v-c9337e2739",
+      "type": "fill_translit",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "Type the PTM transliteration for สวัสดี.",
+        "thai": "สวัสดี"
+      },
+      "answer": "sà-wàt-dii",
+      "rationale": "Forces transliteration production with inline tone marks."
+    },
+    {
+      "id": "mq-M01-q10",
+      "sourceLessonId": "M01-L002",
+      "sourceQuestionId": "q15",
+      "bankItemId": "v-6acb169e4b-fill-translit",
+      "vocabId": "v-6acb169e4b",
+      "type": "fill_translit",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "Type the PTM transliteration for ชื่อ.",
+        "thai": "ชื่อ"
+      },
+      "answer": "chûue",
+      "rationale": "Forces transliteration production with inline tone marks."
+    },
+    {
+      "id": "mq-M01-q11",
+      "sourceLessonId": "M01-L003",
+      "sourceQuestionId": "q13",
+      "bankItemId": "v-9018ed36ec-fill-translit",
+      "vocabId": "v-9018ed36ec",
+      "type": "fill_translit",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "Type the PTM transliteration for ฉัน.",
+        "thai": "ฉัน"
+      },
+      "answer": "chǎn",
+      "rationale": "Forces transliteration production with inline tone marks."
+    },
+    {
+      "id": "mq-M01-q12",
+      "sourceLessonId": "M01-L003",
+      "sourceQuestionId": "q16",
+      "bankItemId": "v-d16cfe595c-fill-translit",
+      "vocabId": "v-d16cfe595c",
+      "type": "fill_translit",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "Type the PTM transliteration for ผม.",
+        "thai": "ผม"
+      },
+      "answer": "phǒm",
+      "rationale": "Forces transliteration production with inline tone marks."
+    },
+    {
+      "id": "mq-M01-q13",
+      "sourceLessonId": "M01-L001",
+      "sourceQuestionId": "q16",
+      "bankItemId": "v-c9337e2739-context-mcq",
+      "vocabId": "v-c9337e2739",
+      "type": "context_mcq",
+      "displayMode": "triplet",
+      "prompt": {
+        "text": "Choose the sentence that keeps the lesson meaning of this phrase.",
+        "thai": "สวัสดี",
+        "translit": "sà-wàt-dii",
+        "english": "hello"
+      },
+      "options": [
+        "Use สวัสดี in polite beginner conversation",
+        "Use ครับ in polite beginner conversation",
+        "Use ค่ะ in polite beginner conversation",
+        "Use สวัสดีครับ in polite beginner conversation"
+      ],
+      "answer": "Use สวัสดี in polite beginner conversation",
+      "rationale": "Checks contextual understanding while preserving triplet exposure."
+    },
+    {
+      "id": "mq-M01-q14",
+      "sourceLessonId": "M01-L002",
+      "sourceQuestionId": "q16",
+      "bankItemId": "v-6acb169e4b-context-mcq",
+      "vocabId": "v-6acb169e4b",
+      "type": "context_mcq",
+      "displayMode": "triplet",
+      "prompt": {
+        "text": "Choose the sentence that keeps the lesson meaning of this phrase.",
+        "thai": "ชื่อ",
+        "translit": "chûue",
+        "english": "name"
+      },
+      "options": [
+        "Use ชื่อ in polite beginner conversation",
+        "Use อะไร in polite beginner conversation",
+        "Use คุณชื่ออะไร in polite beginner conversation",
+        "Use คน in polite beginner conversation"
+      ],
+      "answer": "Use ชื่อ in polite beginner conversation",
+      "rationale": "Checks contextual understanding while preserving triplet exposure."
+    },
+    {
+      "id": "mq-M01-q15",
+      "sourceLessonId": "M01-L003",
+      "sourceQuestionId": "q14",
+      "bankItemId": "v-9018ed36ec-context-mcq",
+      "vocabId": "v-9018ed36ec",
+      "type": "context_mcq",
+      "displayMode": "triplet",
+      "prompt": {
+        "text": "Choose the sentence that keeps the lesson meaning of this phrase.",
+        "thai": "ฉัน",
+        "translit": "chǎn",
+        "english": "I (female / neutral)"
+      },
+      "options": [
+        "Use ฉัน in polite beginner conversation",
+        "Use ผม in polite beginner conversation",
+        "Use คุณ in polite beginner conversation",
+        "Use เขา in polite beginner conversation"
+      ],
+      "answer": "Use ฉัน in polite beginner conversation",
+      "rationale": "Checks contextual understanding while preserving triplet exposure."
+    },
+    {
+      "id": "mq-M01-q16",
+      "sourceLessonId": "M01-L001",
+      "sourceQuestionId": "q01",
+      "bankItemId": "v-c9337e2739-thai-to-english",
+      "vocabId": "v-c9337e2739",
+      "type": "listening_link",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "Listen to the lesson clip, then choose the best meaning of สวัสดี.",
+        "thai": "สวัสดี",
+        "translit": "sà-wàt-dii",
+        "audioCue": "lesson:M01-L001"
+      },
+      "options": [
+        "hello",
+        "polite ending (male)",
+        "polite ending (female)",
+        "hello (male, polite)"
+      ],
+      "answer": "hello",
+      "rationale": "Listening recall sourced from lesson recording (timestamped link added at export)."
+    },
+    {
+      "id": "mq-M01-q17",
+      "sourceLessonId": "M01-L001",
+      "sourceQuestionId": "q02",
+      "bankItemId": "v-7a1bb3ff29-thai-to-english",
+      "vocabId": "v-7a1bb3ff29",
+      "type": "listening_link",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "Listen to the lesson clip, then choose the best meaning of ครับ.",
+        "thai": "ครับ",
+        "translit": "khráp",
+        "audioCue": "lesson:M01-L001"
+      },
+      "options": [
+        "polite ending (male)",
+        "hello",
+        "polite ending (female)",
+        "hello (male, polite)"
+      ],
+      "answer": "polite ending (male)",
+      "rationale": "Listening recall sourced from lesson recording (timestamped link added at export)."
+    },
+    {
+      "id": "mq-M01-q18",
+      "sourceLessonId": "M01-L001",
+      "sourceQuestionId": "q03",
+      "bankItemId": "v-b88f7c47a8-thai-to-english",
+      "vocabId": "v-b88f7c47a8",
+      "type": "thai_to_english",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "What is the best meaning of ค่ะ?",
+        "thai": "ค่ะ",
+        "translit": "khâ"
+      },
+      "options": [
+        "polite ending (female)",
+        "hello",
+        "polite ending (male)",
+        "hello (male, polite)"
+      ],
+      "answer": "polite ending (female)",
+      "rationale": "Maps Thai form to target meaning from script languageFocus."
+    },
+    {
+      "id": "mq-M01-q19",
+      "sourceLessonId": "M01-L001",
+      "sourceQuestionId": "q04",
+      "bankItemId": "v-6075c52054-thai-to-english",
+      "vocabId": "v-6075c52054",
+      "type": "thai_to_english",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "What is the best meaning of สวัสดีครับ?",
+        "thai": "สวัสดีครับ",
+        "translit": "sà-wàt-dii khráp"
+      },
+      "options": [
+        "hello (male, polite)",
+        "hello",
+        "polite ending (male)",
+        "polite ending (female)"
+      ],
+      "answer": "hello (male, polite)",
+      "rationale": "Maps Thai form to target meaning from script languageFocus."
+    },
+    {
+      "id": "mq-M01-q20",
+      "sourceLessonId": "M01-L001",
+      "sourceQuestionId": "q05",
+      "bankItemId": "v-c37375d587-thai-to-english",
+      "vocabId": "v-c37375d587",
+      "type": "thai_to_english",
+      "displayMode": "thai_only",
+      "prompt": {
+        "text": "What is the best meaning of สวัสดีค่ะ?",
+        "thai": "สวัสดีค่ะ",
+        "translit": "sà-wàt-dii khâ"
+      },
+      "options": [
+        "hello (female, polite)",
+        "hello",
+        "polite ending (male)",
+        "polite ending (female)"
+      ],
+      "answer": "hello (female, polite)",
+      "rationale": "Maps Thai form to target meaning from script languageFocus."
+    }
+  ]
+}

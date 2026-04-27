@@ -1,0 +1,19 @@
+module_id,module_title,module_exit_outcome,cefr_band,stage_id,parallel_track,legacy_track_id
+M01,First Contact and Courtesy,"Learner can greet people politely, introduce themselves at a basic level, ask who/what/where questions, and survive the first minute of a conversation.",A0,S1,main,T01
+M02,"Sounds, Script, and Reading Entry","Learner can map Thai sounds to key script patterns, recognize consonant classes and core vowels, and read very short Thai words with support.",A0,S1,literacy,T01
+M03,Building Simple Sentences,"Learner can build and answer short Thai sentences about identity, possession, qualities, and everyday objects using core beginner structures.",A1,S1,main,T01
+M04,"Numbers, Time, Money, and Movement","Learner can use practical Thai for numbers, time, dates, prices, directions, transport, ordering, and paying in everyday survival situations.",A1,S2,main,T01
+M05,"Home, Family, and Daily Life","Learner can describe family, home, routines, meals, hobbies, likes, dislikes, and simple personal plans in everyday Thai.",A1,S2,main,T01
+M06,"Questions, Repair, and Real-World Understanding","Learner can ask clearer questions, understand practical written input like menus and signs, and repair communication breakdowns politely.",A1-A2,S2,main,T01
+M07,Reading Fluency and Pronunciation Control,"Learner can read common Thai spelling patterns more smoothly, handle short notices and dialogues, and rely less on transliteration.",A2,S3,literacy,T02
+M08,"Food, Markets, and Shopping","Learner can manage restaurant, market, clothes, bargaining, and delivery interactions with more natural vocabulary and comparison language.",A2,S3,main,T02
+M09,"Travel, Transport, and Accommodation","Learner can navigate routes, transport, check-in, accommodation, and basic travel problem solving in Thai.",A2,S3,main,T02
+M10,"Time, Experience, and Personal Stories","Learner can talk about past experiences, future intentions, appointments, obligations, invitations, and short personal stories with clearer sequencing.",A2-B1,S3,main,T02
+M11,"Friends, Feelings, and Social Life","Learner can talk about friendship, personality, emotions, opinions, agreement, compliments, dating-safe conversation, and social plans with more nuance.",B1,S3,main,T02
+M12,"Work, Study, and Essential Services","Learner can manage common work, study, clinic, banking, housing, and repair interactions in Thai.",B1,S3,main,T02
+M13,"Narrating, Explaining, and Connecting Ideas","Learner can narrate longer events, explain causes and choices, connect ideas smoothly, and give supported opinions in Thai.",B1,S4,main,T03
+M14,"Problems, Complaints, and Emergencies","Learner can explain problems clearly, complain appropriately, ask for urgent help, and handle higher-stress interactions in Thai.",B1-B2,S4,main,T03
+M15,Formal Requests and Administrative Thai,"Learner can handle forms, appointments, documents, rules, and polite administrative requests with solid functional control.",B2,S4,main,T03
+M16,"Media, Digital Thai, and Cultural Literacy","Learner can follow online Thai, social media tone, basic news-lite content, cultural references, and etiquette-linked language more independently.",B2,S4,main,T03
+M17,Professional Communication and Abstract Topics,"Learner can discuss goals, work topics, tradeoffs, persuasion, and hypotheticals in lower-stakes professional Thai.",B2,S4,main,T03
+M18,B2 Consolidation and Capstones,"Learner can perform integrated B2-level social, service, professional, reading, and listening tasks with enough control for real-life independent use.",B2,S4,main,T03

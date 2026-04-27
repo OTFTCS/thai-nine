@@ -1,0 +1,13 @@
+M01-L001	rc=0	duration=358s	bytes=53661	start=1777187531	end=1777187889
+M10-L001	rc=0	duration=521s	bytes=1572	start=1777187531	end=1777188052
+M06-L001	rc=0	duration=524s	bytes=68384	start=1777187531	end=1777188055
+M04-L001	rc=1	duration=533s	bytes=90	start=1777187531	end=1777188064
+M05-L001	rc=0	duration=537s	bytes=11527	start=1777187531	end=1777188068
+M07-L001	rc=1	duration=539s	bytes=90	start=1777187531	end=1777188070
+M03-L001	rc=1	duration=555s	bytes=54	start=1777187531	end=1777188086
+M02-L001	rc=0	duration=570s	bytes=12089	start=1777187531	end=1777188101
+M08-L001	rc=0	duration=619s	bytes=15170	start=1777187531	end=1777188150
+M09-L001	rc=0	duration=714s	bytes=31099	start=1777187531	end=1777188245
+M07-L001	rc=1	duration=1s	bytes=54	start=1777191403	end=1777191404
+M03-L001	rc=1	duration=1s	bytes=54	start=1777191403	end=1777191404
+M04-L001	rc=1	duration=2s	bytes=54	start=1777191403	end=1777191405

@@ -1,0 +1,1393 @@
+{
+  "schemaVersion": 2,
+  "episodeId": "YT-S01-E18",
+  "seriesId": "standalone",
+  "seriesName": "Standalone",
+  "title": "Pay, Split, and Tip in Thai — Restaurants, Taxis, and 7-Eleven",
+  "topic": "money-paying-splitting",
+  "level": "A1",
+  "estimatedDuration": "14:00",
+  "vocab": [
+    {
+      "id": "v-001",
+      "thai": "เก็บเงิน",
+      "translit": "gèp ngern",
+      "english": "the bill, please (lit. 'collect money')",
+      "thaiSplit": "เก็บ เงิน",
+      "explanation": "เก็บเงิน is the most natural way to ask for the bill at a Thai restaurant. Literally it means 'collect the money' — you're asking the staff to come and collect what you owe. You'll usually add ด้วย and a polite particle: เก็บเงินด้วยค่ะ. The server understands instantly. This is what locals say at noodle shops, food courts, and even fancy restaurants.",
+      "exampleSentences": [
+        {
+          "thai": "ขอเก็บเงินที่โต๊ะนี้ด้วยค่ะ",
+          "translit": "khǎaw gèp ngern thîi dtó níi dûuai khâ",
+          "english": "Could we have the bill at this table, please.",
+          "note": "ขอ + เก็บเงิน + ที่โต๊ะนี้ (at this table). Useful when the server is across the room and you want to flag exactly where to come."
+        }
+      ],
+      "imageRef": "img-002"
+    },
+    {
+      "id": "v-002",
+      "thai": "เช็คบิล",
+      "translit": "chék-bin",
+      "english": "the bill, please (loanword)",
+      "thaiSplit": "เช็ค บิล",
+      "explanation": "เช็คบิล is the same idea as เก็บเงิน, but it's a loanword — you can hear the English 'check' and 'bill' in there. Thais use them interchangeably, but เช็คบิล tends to feel slightly more upmarket — you'll hear it in cafes and modern restaurants more than at a street stall. Same usage pattern: add ด้วย and a polite particle.",
+      "exampleSentences": [
+        {
+          "thai": "เช็คบิลด้วยครับ ผมรีบ",
+          "translit": "chék-bin dûuai khráp phǒm rîip",
+          "english": "Check, please. I'm in a hurry.",
+          "note": "ผม is the male first-person 'I'. รีบ means 'to hurry'. A useful add-on if you actually need to leave fast."
+        }
+      ],
+      "imageRef": "img-002"
+    },
+    {
+      "id": "v-003",
+      "thai": "หาร",
+      "translit": "hǎan",
+      "english": "to divide / split",
+      "thaiSplit": "หาร",
+      "explanation": "หาร is the Thai word for 'divide' — it comes straight from maths class, but Thais use it for splitting the bill too. The most common form is หารกัน — literally 'divide together' — meaning let's split it. You can also say หารครึ่ง to split in half. Younger Thais split bills more and more, but if there's a senior person at the table, they may insist on paying for everyone — and you let them.",
+      "exampleSentences": [
+        {
+          "thai": "หารกันสามคนนะ",
+          "translit": "hǎan gan sǎam khon ná",
+          "english": "Let's split it three ways.",
+          "note": "สามคน = three people. นะ at the end softens it into a friendly suggestion."
+        }
+      ],
+      "imageRef": "img-003"
+    },
+    {
+      "id": "v-004",
+      "thai": "คนละ",
+      "translit": "khon lá",
+      "english": "per person / each",
+      "thaiSplit": "คน ละ",
+      "explanation": "คนละ means 'per person' or 'each'. It's how you express the per-head amount when splitting a bill. คน means 'person', and ละ means 'each' or 'per'. So คนละสองร้อย is 'two hundred each'. Pair it with หาร and you've got the whole splitting move: หารกันนะ คนละสองร้อย — 'let's split it, two hundred each'.",
+      "exampleSentences": [
+        {
+          "thai": "คนละห้าสิบบาทพอ",
+          "translit": "khon lá hâa-sìp bàat phaaw",
+          "english": "Fifty baht each is enough.",
+          "note": "พอ at the end means 'enough'. Useful for confirming a fair per-person amount."
+        }
+      ],
+      "imageRef": "img-003"
+    },
+    {
+      "id": "v-005",
+      "thai": "บัตร",
+      "translit": "bàt",
+      "english": "card",
+      "thaiSplit": "บัตร",
+      "explanation": "บัตร is a card — credit card, debit card, ID card, even gift card. At a checkout the key question is รับบัตรไหม — 'do you accept card?' Most mid-range and upmarket restaurants in Thailand take cards. Small noodle stalls and street food usually don't. Always have some cash in your wallet — even in Bangkok.",
+      "exampleSentences": [
+        {
+          "thai": "ที่นี่จ่ายบัตรได้ไหมคะ",
+          "translit": "thîi-nîi jàai bàt dâai mǎi khá",
+          "english": "Can I pay by card here?",
+          "note": "จ่าย means 'to pay'. ได้ไหม turns it into 'can I…?' Polite and clear."
+        }
+      ],
+      "imageRef": "img-004"
+    },
+    {
+      "id": "v-006",
+      "thai": "เงินสด",
+      "translit": "ngern sòt",
+      "english": "cash",
+      "thaiSplit": "เงิน สด",
+      "explanation": "เงินสด is 'cash'. เงิน is 'money', สด means 'fresh' — together: cash. Cash is still king at street markets, food carts, and small shops. The unwritten rule: carry small bills. If your meal costs 60 baht and you hand over a 1000-baht note, the vendor will look at you funny and probably have to walk to a neighbour to break it.",
+      "exampleSentences": [
+        {
+          "thai": "ขอจ่ายเงินสดได้ไหมคะ",
+          "translit": "khǎaw jàai ngern sòt dâai mǎi khá",
+          "english": "Can I pay in cash?",
+          "note": "Sometimes useful at modern restaurants where the default assumption is card or QR — this signals you'll go old-school."
+        }
+      ],
+      "imageRef": "img-005"
+    },
+    {
+      "id": "v-007",
+      "thai": "ทอน",
+      "translit": "thaawn",
+      "english": "change (money returned)",
+      "thaiSplit": "ทอน",
+      "explanation": "ทอน is the change you get back when you've paid more than the price. The most useful version is ไม่ต้องทอน — 'no need for change' — which is how you tip a taxi driver, a motorbike rider, or a small vendor. You're letting them keep the difference. This is the standard Thai tipping move — Thais don't really tip in restaurants, but they round up like this all the time.",
+      "exampleSentences": [
+        {
+          "thai": "ทอนเหลือยี่สิบบาทค่ะ",
+          "translit": "thaawn lǔuea yîi-sìp bàat khâ",
+          "english": "Twenty baht in change for you.",
+          "note": "เหลือ means 'remaining'. A vendor might say this to you when handing back your change — listen for the number that comes after."
+        }
+      ],
+      "imageRef": "img-006"
+    },
+    {
+      "id": "v-008",
+      "thai": "เก็บไว้เลย",
+      "translit": "gèp wái loei",
+      "english": "keep it",
+      "thaiSplit": "เก็บ ไว้ เลย",
+      "explanation": "เก็บไว้เลย literally means 'keep it'. It's the warmer, friendlier version of ไม่ต้องทอน. If your taxi was 95 baht and you hand over 100, you can say เก็บไว้เลย — keep it. The เลย at the end gives it a friendly, casual feel. Use it with taxi drivers, motorbike riders, hairdressers — anyone you want to tip a small amount without making a big deal of it.",
+      "exampleSentences": [
+        {
+          "thai": "ไม่เป็นไรค่ะ เก็บไว้เลย",
+          "translit": "mâi bpen rai khâ gèp wái loei",
+          "english": "It's fine, keep it.",
+          "note": "ไม่เป็นไร = 'it's fine / no worries'. Pairs naturally with เก็บไว้เลย to brush off the change without sounding showy."
+        }
+      ],
+      "imageRef": "img-006"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "b-001",
+      "mode": "hook",
+      "speakerNote": "Look straight to camera. Say the Thai line naturally and quickly, then pause one beat before the English appears.",
+      "imageRef": "img-001",
+      "lines": [
+        {
+          "id": "l-0001",
+          "lang": "th",
+          "thai": "เก็บเงินด้วยค่ะ",
+          "translit": "gèp ngern dûuai khâ",
+          "display": "immediate",
+          "spoken": true
+        },
+        {
+          "id": "l-0002",
+          "lang": "en",
+          "english": "Could we have the bill, please.",
+          "display": "delayed-1s",
+          "spoken": false
+        },
+        {
+          "id": "l-0003",
+          "lang": "en",
+          "english": "By the end of this video, you'll be able to ask for the bill, split it with friends, pay by card or cash, and tip a taxi driver — all in Thai.",
+          "display": "delayed-2s",
+          "spoken": true
+        }
+      ]
+    },
+    {
+      "id": "b-002",
+      "mode": "explain",
+      "speakerNote": "Pick ONE cultural fact to open with. Option A (default): PromptPay scale — over 70M accounts in a country of 70M people, even tiny street vendors have a printed QR. Option B: Service charge — most sit-down restaurants add 10%, so tipping is built in; the real tipping move is rounding up taxis and riders. Option C: Cash still king at street food and markets — carry small bills. Delete the unused options after recording.",
+      "imageRef": "img-007",
+      "lines": [
+        {
+          "id": "l-0004",
+          "lang": "en",
+          "english": "Thailand has over 70 million PromptPay accounts — in a country of about 70 million people. PromptPay is the QR-code payment system, and it's everywhere. Even a market lady selling 20-baht mangoes will have a QR code taped to a piece of cardboard. But here's the thing — for foreigners visiting Thailand, you mostly won't be using PromptPay. You'll be using cash, sometimes card, and you'll need to know how to ask for the bill, split it, and tip the right way. Two phrases to start:",
+          "spoken": true
+        },
+        {
+          "id": "l-0005",
+          "lang": "th",
+          "thai": "เก็บเงินด้วยค่ะ",
+          "translit": "gèp ngern dûuai khâ",
+          "spoken": true
+        },
+        {
+          "id": "l-0006",
+          "lang": "th",
+          "thai": "หารกันนะ",
+          "translit": "hǎan gan ná",
+          "spoken": true
+        },
+        {
+          "id": "l-0007",
+          "lang": "en",
+          "english": "One thing that surprises a lot of my students: Thais don't really tip in restaurants the way Americans do. Most sit-down places add a 10% service charge to the bill, so it's already built in. The real tipping move in Thailand is rounding up — taxi drivers, motorbike riders, hairdressers — you let them keep the small change.",
+          "spoken": true
+        },
+        {
+          "id": "l-0008",
+          "lang": "en",
+          "english": "Today I'm going to teach you 8 phrases for paying — at a restaurant, splitting the bill with a friend, choosing between card and cash, and tipping a taxi driver. We'll go through each one, I'll explain how and when to use it, then you'll hear them all together in a real conversation, and finally we'll practise.",
+          "spoken": true
+        }
+      ]
+    },
+    {
+      "id": "b-003",
+      "mode": "section-intro",
+      "speakerNote": "Upbeat. Move into the learning section.",
+      "lines": [
+        {
+          "id": "l-0009",
+          "lang": "en",
+          "english": "Let's start with the vocabulary. I'm going to go through each word one by one. For each one, I'll say the Thai, explain what it means, and show you how to use it in a sentence. Ready? Let's go.",
+          "spoken": true
+        }
+      ]
+    },
+    {
+      "id": "b-004",
+      "mode": "vocab-card",
+      "vocabRefs": ["v-001"],
+      "imageRef": "img-002",
+      "lines": [
+        {
+          "id": "l-0010",
+          "lang": "th",
+          "thai": "เก็บเงิน",
+          "translit": "gèp ngern",
+          "display": "immediate",
+          "spoken": true
+        }
+      ]
+    },
+    {
+      "id": "b-005",
+      "mode": "vocab-explain",
+      "lines": [
+        {
+          "id": "l-0011",
+          "lang": "en",
+          "english": "Our first word is เก็บเงิน — gèp ngern. Literally it means 'collect the money'. It's the most natural way to ask for the bill at a Thai restaurant. You'll add ด้วย and a polite particle on the end: เก็บเงินด้วยค่ะ. The server understands instantly. This is what locals say at noodle shops, food courts, even fancier restaurants. It's the everyday version.",
+          "spoken": true
+        },
+        {
+          "id": "l-0012",
+          "lang": "th",
+          "thai": "ขอเก็บเงินที่โต๊ะนี้ด้วยค่ะ",
+          "translit": "khǎaw gèp ngern thîi dtó níi dûuai khâ",
+          "spoken": true
+        },
+        {
+          "id": "l-0013",
+          "lang": "en",
+          "english": "That means 'Could we have the bill at this table, please.' ที่โต๊ะนี้ is 'at this table' — useful when the server is across the room and you want to flag exactly where to come.",
+          "spoken": true
+        }
+      ]
+    },
+    {
+      "id": "b-006",
+      "mode": "vocab-card",
+      "vocabRefs": ["v-002"],
+      "imageRef": "img-002",
+      "lines": [
+        {
+          "id": "l-0014",
+          "lang": "en",
+          "english": "OK, next one — same idea, different vibe.",
+          "spoken": true
+        },
+        {
+          "id": "l-0015",
+          "lang": "th",
+          "thai": "เช็คบิล",
+          "translit": "chék-bin",
+          "display": "immediate",
+          "spoken": true
+        }
+      ]
+    },
+    {
+      "id": "b-007",
+      "mode": "vocab-explain",
+      "lines": [
+        {
+          "id": "l-0016",
+          "lang": "en",
+          "english": "เช็คบิล — chék-bin. You can hear the English in there, right? Check… bill. It's a loanword. Thais use it interchangeably with เก็บเงิน, but it tends to feel slightly more upmarket. You'll hear it in cafes, brunch places, modern restaurants — more than at a street stall. Same pattern: add ด้วย and a polite particle.",
+          "spoken": true
+        },
+        {
+          "id": "l-0017",
+          "lang": "th",
+          "thai": "เช็คบิลด้วยครับ ผมรีบ",
+          "translit": "chék-bin dûuai khráp phǒm rîip",
+          "spoken": true
+        },
+        {
+          "id": "l-0018",
+          "lang": "en",
+          "english": "That means 'Check, please. I'm in a hurry.' ผม is the male word for 'I'. รีบ means 'to hurry'. Useful add-on if you actually need to leave quickly.",
+          "spoken": true
+        }
+      ]
+    },
+    {
+      "id": "b-008",
+      "mode": "vocab-card",
+      "vocabRefs": ["v-003"],
+      "imageRef": "img-003",
+      "lines": [
+        {
+          "id": "l-0019",
+          "lang": "en",
+          "english": "Next — the splitting word.",
+          "spoken": true
+        },
+        {
+          "id": "l-0020",
+          "lang": "th",
+          "thai": "หาร",
+          "translit": "hǎan",
+          "display": "immediate",
+          "spoken": true
+        }
+      ]
+    },
+    {
+      "id": "b-009",
+      "mode": "vocab-explain",
+      "lines": [
+        {
+          "id": "l-0021",
+          "lang": "en",
+          "english": "หาร — hǎan. This is literally the Thai word for 'divide' — it comes from maths class. But Thais use it for splitting the bill too. The most common form is หารกัน — divide together — let's split it. You can also say หารครึ่ง to split in half. Younger Thais split bills more and more, but heads up: if there's a senior person at the table, they might insist on paying for everyone. And the polite move is to let them.",
+          "spoken": true
+        },
+        {
+          "id": "l-0022",
+          "lang": "th",
+          "thai": "หารกันสามคนนะ",
+          "translit": "hǎan gan sǎam khon ná",
+          "spoken": true
+        },
+        {
+          "id": "l-0023",
+          "lang": "en",
+          "english": "That means 'Let's split it three ways.' สามคน is 'three people'. The นะ at the end softens it into a friendly suggestion — not a command.",
+          "spoken": true
+        }
+      ]
+    },
+    {
+      "id": "b-010",
+      "mode": "vocab-card",
+      "vocabRefs": ["v-004"],
+      "imageRef": "img-003",
+      "lines": [
+        {
+          "id": "l-0024",
+          "lang": "en",
+          "english": "And paired with หาร — the per-person word.",
+          "spoken": true
+        },
+        {
+          "id": "l-0025",
+          "lang": "th",
+          "thai": "คนละ",
+          "translit": "khon lá",
+          "display": "immediate",
+          "spoken": true
+        }
+      ]
+    },
+    {
+      "id": "b-011",
+      "mode": "vocab-explain",
+      "lines": [
+        {
+          "id": "l-0026",
+          "lang": "en",
+          "english": "คนละ — khon lá. This means 'per person' or 'each'. คน is 'person', ละ here means 'each' or 'per'. So คนละสองร้อย is 'two hundred each'. Put it together with หาร and you have the full splitting move: หารกันนะ คนละสองร้อย — 'let's split it, two hundred each'. You'll use this constantly when calculating your share.",
+          "spoken": true
+        },
+        {
+          "id": "l-0027",
+          "lang": "th",
+          "thai": "คนละห้าสิบบาทพอ",
+          "translit": "khon lá hâa-sìp bàat phaaw",
+          "spoken": true
+        },
+        {
+          "id": "l-0028",
+          "lang": "en",
+          "english": "That means 'Fifty baht each is enough.' พอ at the end means 'enough'. A useful sign-off when you've worked out a fair per-person amount and want to confirm it.",
+          "spoken": true
+        }
+      ]
+    },
+    {
+      "id": "b-012",
+      "mode": "vocab-card",
+      "vocabRefs": ["v-005"],
+      "imageRef": "img-004",
+      "lines": [
+        {
+          "id": "l-0029",
+          "lang": "en",
+          "english": "OK, payment methods. First one — card.",
+          "spoken": true
+        },
+        {
+          "id": "l-0030",
+          "lang": "th",
+          "thai": "บัตร",
+          "translit": "bàt",
+          "display": "immediate",
+          "spoken": true
+        }
+      ]
+    },
+    {
+      "id": "b-013",
+      "mode": "vocab-explain",
+      "lines": [
+        {
+          "id": "l-0031",
+          "lang": "en",
+          "english": "บัตร — bàt. A card. Could be a credit card, debit card, ID card, even a gift card. At a checkout, the key question is รับบัตรไหม — 'do you accept card?' Most mid-range and upmarket restaurants in Thailand take cards. But small noodle stalls and street food usually don't. My advice: always have some cash in your wallet, even in Bangkok.",
+          "spoken": true
+        },
+        {
+          "id": "l-0032",
+          "lang": "th",
+          "thai": "ที่นี่จ่ายบัตรได้ไหมคะ",
+          "translit": "thîi-nîi jàai bàt dâai mǎi khá",
+          "spoken": true
+        },
+        {
+          "id": "l-0033",
+          "lang": "en",
+          "english": "That means 'Can I pay by card here?' จ่าย is 'to pay'. ได้ไหม turns it into 'can I…?' Polite, clear, the kind of thing you'd say walking up to the counter.",
+          "spoken": true
+        }
+      ]
+    },
+    {
+      "id": "b-014",
+      "mode": "vocab-card",
+      "vocabRefs": ["v-006"],
+      "imageRef": "img-005",
+      "lines": [
+        {
+          "id": "l-0034",
+          "lang": "en",
+          "english": "And the other half of that pair — cash.",
+          "spoken": true
+        },
+        {
+          "id": "l-0035",
+          "lang": "th",
+          "thai": "เงินสด",
+          "translit": "ngern sòt",
+          "display": "immediate",
+          "spoken": true
+        }
+      ]
+    },
+    {
+      "id": "b-015",
+      "mode": "vocab-explain",
+      "lines": [
+        {
+          "id": "l-0036",
+          "lang": "en",
+          "english": "เงินสด — ngern sòt. Cash. เงิน is 'money', สด means 'fresh'. Put them together: cash. At street markets, food carts, and small shops, cash is still king. Quick tip from someone who's spent a lifetime in Thailand: carry small bills. If your meal costs 60 baht and you hand over a 1000-baht note, the vendor will look at you funny — and probably walk to a neighbouring stall to break it.",
+          "spoken": true
+        },
+        {
+          "id": "l-0037",
+          "lang": "th",
+          "thai": "ขอจ่ายเงินสดได้ไหมคะ",
+          "translit": "khǎaw jàai ngern sòt dâai mǎi khá",
+          "spoken": true
+        },
+        {
+          "id": "l-0038",
+          "lang": "en",
+          "english": "That means 'Can I pay in cash?' Sometimes useful at modern restaurants where the default assumption is card or QR — this signals you're going old-school.",
+          "spoken": true
+        }
+      ]
+    },
+    {
+      "id": "b-016",
+      "mode": "vocab-card",
+      "vocabRefs": ["v-007"],
+      "imageRef": "img-006",
+      "lines": [
+        {
+          "id": "l-0039",
+          "lang": "en",
+          "english": "Now we move to the tipping side. This first word is the change you get back.",
+          "spoken": true
+        },
+        {
+          "id": "l-0040",
+          "lang": "th",
+          "thai": "ทอน",
+          "translit": "thaawn",
+          "display": "immediate",
+          "spoken": true
+        }
+      ]
+    },
+    {
+      "id": "b-017",
+      "mode": "vocab-explain",
+      "lines": [
+        {
+          "id": "l-0041",
+          "lang": "en",
+          "english": "ทอน — thaawn. The change. The money you get back when you've paid more than the price. But the really useful version is ไม่ต้องทอน — 'no need for change' — which is how Thais tip a taxi driver, a motorbike rider, or a small vendor. You're saying 'keep the difference'. This is THE standard Thai tipping move. Thais don't tip in restaurants the way Americans do, but they round up like this all the time.",
+          "spoken": true
+        },
+        {
+          "id": "l-0042",
+          "lang": "th",
+          "thai": "ทอนเหลือยี่สิบบาทค่ะ",
+          "translit": "thaawn lǔuea yîi-sìp bàat khâ",
+          "spoken": true
+        },
+        {
+          "id": "l-0043",
+          "lang": "en",
+          "english": "That means 'Twenty baht in change for you.' เหลือ means 'remaining'. A vendor might say this to you when handing back your change — listen for the number that comes after.",
+          "spoken": true
+        }
+      ]
+    },
+    {
+      "id": "b-018",
+      "mode": "vocab-card",
+      "vocabRefs": ["v-008"],
+      "imageRef": "img-006",
+      "lines": [
+        {
+          "id": "l-0044",
+          "lang": "en",
+          "english": "And our last word — the warmer way to tip.",
+          "spoken": true
+        },
+        {
+          "id": "l-0045",
+          "lang": "th",
+          "thai": "เก็บไว้เลย",
+          "translit": "gèp wái loei",
+          "display": "immediate",
+          "spoken": true
+        }
+      ]
+    },
+    {
+      "id": "b-019",
+      "mode": "vocab-explain",
+      "lines": [
+        {
+          "id": "l-0046",
+          "lang": "en",
+          "english": "เก็บไว้เลย — gèp wái loei. Literally 'keep it'. It's the warmer, friendlier version of ไม่ต้องทอน. If your taxi was 95 baht and you hand over 100, you can say เก็บไว้เลย — keep it. The เลย at the end gives it a casual, friendly feel — like you're brushing it off, not making a big deal. Use it with taxi drivers, motorbike riders, hairdressers, food delivery riders — anyone you want to tip a small amount.",
+          "spoken": true
+        },
+        {
+          "id": "l-0047",
+          "lang": "th",
+          "thai": "ไม่เป็นไรค่ะ เก็บไว้เลย",
+          "translit": "mâi bpen rai khâ gèp wái loei",
+          "spoken": true
+        },
+        {
+          "id": "l-0048",
+          "lang": "en",
+          "english": "That means 'It's fine, keep it.' ไม่เป็นไร is 'it's fine' or 'no worries' — and it pairs perfectly with เก็บไว้เลย. Together they brush off the change without sounding showy.",
+          "spoken": true
+        }
+      ]
+    },
+    {
+      "id": "b-020",
+      "mode": "section-intro",
+      "speakerNote": "Shift energy — about to play the full conversation. Get the viewer ready to listen.",
+      "imageRef": "img-008",
+      "lines": [
+        {
+          "id": "l-0049",
+          "lang": "en",
+          "english": "OK, so now you know all eight phrases. What I'm going to do now is put them together into a short scene — imagine you've just finished dinner with a friend at a Thai restaurant, you're paying the bill and splitting it, and then you take a taxi home. I'm going to speak at natural speed, the way Thai people would actually talk. Don't pause the video. Just listen and see how much you can catch. Ready? Here we go.",
+          "spoken": true
+        }
+      ]
+    },
+    {
+      "id": "b-021",
+      "mode": "natural-listen",
+      "speakerNote": "Natural conversational pace. No pauses between lines. Switch voice for the server (slightly more formal) and again for the customer-to-friend line (relaxed). The last line is in the taxi.",
+      "imageRef": "img-008",
+      "lines": [
+        {
+          "id": "l-0050",
+          "lang": "th",
+          "thai": "ขอเก็บเงินด้วยค่ะ",
+          "translit": "khǎaw gèp ngern dûuai khâ",
+          "display": "immediate",
+          "spoken": true
+        },
+        {
+          "id": "l-0051",
+          "lang": "th",
+          "thai": "ทั้งหมดสามร้อยหกสิบบาทค่ะ",
+          "translit": "tháng-mòt sǎam-róoi hòk-sìp bàat khâ",
+          "display": "immediate",
+          "spoken": true
+        },
+        {
+          "id": "l-0052",
+          "lang": "th",
+          "thai": "หารกันนะ คนละร้อยแปดสิบ",
+          "translit": "hǎan gan ná khon lá róoi bpàet-sìp",
+          "display": "immediate",
+          "spoken": true
+        },
+        {
+          "id": "l-0053",
+          "lang": "th",
+          "thai": "รับบัตรไหมคะ",
+          "translit": "ráp bàt mǎi khá",
+          "display": "immediate",
+          "spoken": true
+        },
+        {
+          "id": "l-0054",
+          "lang": "th",
+          "thai": "รับเงินสดอย่างเดียวค่ะ",
+          "translit": "ráp ngern sòt yàang diiao khâ",
+          "display": "immediate",
+          "spoken": true
+        },
+        {
+          "id": "l-0055",
+          "lang": "th",
+          "thai": "ร้อยนึง ไม่ต้องทอนค่ะ",
+          "translit": "róoi nùeng mâi dtâawng thaawn khâ",
+          "display": "immediate",
+          "spoken": true
+        }
+      ]
+    },
+    {
+      "id": "b-022",
+      "mode": "explain",
+      "speakerNote": "Warm, encouraging check-in.",
+      "lines": [
+        {
+          "id": "l-0056",
+          "lang": "en",
+          "english": "How was that? Could you catch some of those phrases? Don't worry if you didn't get everything — that's completely normal. Now let's break it down.",
+          "spoken": true
+        }
+      ]
+    },
+    {
+      "id": "b-023",
+      "mode": "section-intro",
+      "speakerNote": "Reset energy — clear and focused.",
+      "lines": [
+        {
+          "id": "l-0057",
+          "lang": "en",
+          "english": "I'm going to go through that same scene again, but this time sentence by sentence. I'll say the Thai, and then I'll explain exactly what each part means.",
+          "spoken": true
+        }
+      ]
+    },
+    {
+      "id": "b-024",
+      "mode": "breakdown",
+      "speakerNote": "Customer voice — polite, asking the server.",
+      "lines": [
+        {
+          "id": "l-0058",
+          "lang": "th",
+          "thai": "ขอเก็บเงินด้วยค่ะ",
+          "translit": "khǎaw gèp ngern dûuai khâ",
+          "display": "immediate",
+          "spoken": true
+        },
+        {
+          "id": "l-0059",
+          "lang": "translit",
+          "translit": "khǎaw gèp ngern dûuai khâ",
+          "display": "delayed-1s",
+          "spoken": false
+        },
+        {
+          "id": "l-0060",
+          "lang": "en",
+          "english": "Could we have the bill, please.",
+          "display": "delayed-2s",
+          "spoken": false
+        }
+      ]
+    },
+    {
+      "id": "b-025",
+      "mode": "explain",
+      "lines": [
+        {
+          "id": "l-0061",
+          "lang": "en",
+          "english": "ขอเก็บเงินด้วยค่ะ. ขอ is 'I'd like' or 'may I have' — it makes any request polite. เก็บเงิน is the bill — literally 'collect money'. ด้วย is 'with' or 'as well' — it softens the request, like adding 'please'. ค่ะ is the polite particle for women. So the full structure is request-marker + the thing + softener + politeness. That ขอ … ด้วยค่ะ pattern works for almost any polite request in Thailand.",
+          "spoken": true
+        }
+      ]
+    },
+    {
+      "id": "b-026",
+      "mode": "breakdown",
+      "speakerNote": "Switch to server voice — slightly more formal.",
+      "lines": [
+        {
+          "id": "l-0062",
+          "lang": "th",
+          "thai": "ทั้งหมดสามร้อยหกสิบบาทค่ะ",
+          "translit": "tháng-mòt sǎam-róoi hòk-sìp bàat khâ",
+          "display": "immediate",
+          "spoken": true
+        },
+        {
+          "id": "l-0063",
+          "lang": "translit",
+          "translit": "tháng-mòt sǎam-róoi hòk-sìp bàat khâ",
+          "display": "delayed-1s",
+          "spoken": false
+        },
+        {
+          "id": "l-0064",
+          "lang": "en",
+          "english": "Three hundred and sixty baht in total.",
+          "display": "delayed-2s",
+          "spoken": false
+        }
+      ]
+    },
+    {
+      "id": "b-027",
+      "mode": "explain",
+      "lines": [
+        {
+          "id": "l-0065",
+          "lang": "en",
+          "english": "ทั้งหมดสามร้อยหกสิบบาทค่ะ. ทั้งหมด means 'in total' — useful word, you'll hear it at every bill, every checkout. Then the number: สามร้อย is three hundred, หกสิบ is sixty. Thai numbers stack just like English does — three-hundred-sixty. บาท is baht. ค่ะ — polite particle. Notice the structure: total-amount-currency-politeness. That's how a Thai server delivers a bill almost every time.",
+          "spoken": true
+        }
+      ]
+    },
+    {
+      "id": "b-028",
+      "mode": "breakdown",
+      "speakerNote": "Customer turning to friend — relaxed, friend-to-friend register, no polite particle.",
+      "lines": [
+        {
+          "id": "l-0066",
+          "lang": "th",
+          "thai": "หารกันนะ คนละร้อยแปดสิบ",
+          "translit": "hǎan gan ná khon lá róoi bpàet-sìp",
+          "display": "immediate",
+          "spoken": true
+        },
+        {
+          "id": "l-0067",
+          "lang": "translit",
+          "translit": "hǎan gan ná khon lá róoi bpàet-sìp",
+          "display": "delayed-1s",
+          "spoken": false
+        },
+        {
+          "id": "l-0068",
+          "lang": "en",
+          "english": "Let's split it. A hundred and eighty each.",
+          "display": "delayed-2s",
+          "spoken": false
+        }
+      ]
+    },
+    {
+      "id": "b-029",
+      "mode": "explain",
+      "lines": [
+        {
+          "id": "l-0069",
+          "lang": "en",
+          "english": "หารกันนะ คนละร้อยแปดสิบ. Two phrases in one breath, very Thai. หารกัน is 'divide together' — let's split. นะ softens it into a suggestion, not a command. Then คนละ — per person — followed by the number ร้อยแปดสิบ, one-hundred-eighty. Notice there's no ค่ะ here — that's because Nine is talking to her friend, not the server. With friends, you drop the polite particle. Using it would actually feel a bit cold.",
+          "spoken": true
+        }
+      ]
+    },
+    {
+      "id": "b-030",
+      "mode": "breakdown",
+      "speakerNote": "Customer back to server — polite question.",
+      "lines": [
+        {
+          "id": "l-0070",
+          "lang": "th",
+          "thai": "รับบัตรไหมคะ",
+          "translit": "ráp bàt mǎi khá",
+          "display": "immediate",
+          "spoken": true
+        },
+        {
+          "id": "l-0071",
+          "lang": "translit",
+          "translit": "ráp bàt mǎi khá",
+          "display": "delayed-1s",
+          "spoken": false
+        },
+        {
+          "id": "l-0072",
+          "lang": "en",
+          "english": "Do you accept card?",
+          "display": "delayed-2s",
+          "spoken": false
+        }
+      ]
+    },
+    {
+      "id": "b-031",
+      "mode": "explain",
+      "lines": [
+        {
+          "id": "l-0073",
+          "lang": "en",
+          "english": "รับบัตรไหมคะ. รับ means 'to accept' or 'to receive'. บัตร is 'card'. ไหม is the yes/no question particle — it turns any statement into a question. So literally 'accept card — yes/no?' And คะ at the end is the polite particle for women asking a question. Notice it's คะ with high tone here, not ค่ะ with falling tone — that switch from ค่ะ to คะ when you're asking a question is one of the trickiest details for English speakers.",
+          "spoken": true
+        }
+      ]
+    },
+    {
+      "id": "b-032",
+      "mode": "breakdown",
+      "speakerNote": "Server voice — apologetic but matter-of-fact.",
+      "lines": [
+        {
+          "id": "l-0074",
+          "lang": "th",
+          "thai": "รับเงินสดอย่างเดียวค่ะ",
+          "translit": "ráp ngern sòt yàang diiao khâ",
+          "display": "immediate",
+          "spoken": true
+        },
+        {
+          "id": "l-0075",
+          "lang": "translit",
+          "translit": "ráp ngern sòt yàang diiao khâ",
+          "display": "delayed-1s",
+          "spoken": false
+        },
+        {
+          "id": "l-0076",
+          "lang": "en",
+          "english": "Cash only.",
+          "display": "delayed-2s",
+          "spoken": false
+        }
+      ]
+    },
+    {
+      "id": "b-033",
+      "mode": "explain",
+      "lines": [
+        {
+          "id": "l-0077",
+          "lang": "en",
+          "english": "รับเงินสดอย่างเดียวค่ะ. รับ — accept. เงินสด — cash. อย่างเดียว — 'one type only', meaning 'only'. So 'accept cash only'. อย่างเดียว is a really useful phrase outside of paying too — 'one thing only'. You'll hear it in markets, restaurants, anywhere there's a limit. And notice the server stays polite with ค่ะ even when delivering not-great news.",
+          "spoken": true
+        }
+      ]
+    },
+    {
+      "id": "b-034",
+      "mode": "breakdown",
+      "speakerNote": "Customer to taxi driver now — friendly, casual.",
+      "lines": [
+        {
+          "id": "l-0078",
+          "lang": "th",
+          "thai": "ร้อยนึง ไม่ต้องทอนค่ะ",
+          "translit": "róoi nùeng mâi dtâawng thaawn khâ",
+          "display": "immediate",
+          "spoken": true
+        },
+        {
+          "id": "l-0079",
+          "lang": "translit",
+          "translit": "róoi nùeng mâi dtâawng thaawn khâ",
+          "display": "delayed-1s",
+          "spoken": false
+        },
+        {
+          "id": "l-0080",
+          "lang": "en",
+          "english": "Here's a hundred — no need for change.",
+          "display": "delayed-2s",
+          "spoken": false
+        }
+      ]
+    },
+    {
+      "id": "b-035",
+      "mode": "explain",
+      "lines": [
+        {
+          "id": "l-0081",
+          "lang": "en",
+          "english": "ร้อยนึง ไม่ต้องทอนค่ะ. ร้อยนึง is the casual way to say one hundred — full form is หนึ่งร้อย, but in everyday speech it gets shortened to ร้อยนึง. Then ไม่ต้องทอน — 'no need to give change'. ไม่ต้อง is 'don't have to' or 'no need'. ทอน is the change. Together: keep it. This is exactly the rounding-up tip move I mentioned at the start. The taxi was 95 baht, you give 100, they keep 5. Tiny tip, totally normal.",
+          "spoken": true
+        }
+      ]
+    },
+    {
+      "id": "b-036",
+      "mode": "explain",
+      "speakerNote": "Optional — say the full conversation one more time at natural speed before moving to shadowing.",
+      "lines": [
+        {
+          "id": "l-0082",
+          "lang": "en",
+          "english": "Let me say that whole scene one more time from the top, now that you know what every word means.",
+          "spoken": true
+        },
+        {
+          "id": "l-0083",
+          "lang": "th",
+          "thai": "ขอเก็บเงินด้วยค่ะ — ทั้งหมดสามร้อยหกสิบบาทค่ะ — หารกันนะ คนละร้อยแปดสิบ — รับบัตรไหมคะ — รับเงินสดอย่างเดียวค่ะ — ร้อยนึง ไม่ต้องทอนค่ะ",
+          "translit": "khǎaw gèp ngern dûuai khâ — tháng-mòt sǎam-róoi hòk-sìp bàat khâ — hǎan gan ná khon lá róoi bpàet-sìp — ráp bàt mǎi khá — ráp ngern sòt yàang diiao khâ — róoi nùeng mâi dtâawng thaawn khâ",
+          "spoken": true
+        }
+      ]
+    },
+    {
+      "id": "b-037",
+      "mode": "section-intro",
+      "speakerNote": "Encourage the viewer. Make them feel ready to practise.",
+      "lines": [
+        {
+          "id": "l-0084",
+          "lang": "en",
+          "english": "Now it's your turn to practise. I'm going to say each sentence slowly, and I want you to repeat after me. Don't be shy — say it out loud! Speaking is how you learn. I'll leave a gap after each sentence for you to repeat.",
+          "spoken": true
+        }
+      ]
+    },
+    {
+      "id": "b-038",
+      "mode": "shadowing",
+      "speakerNote": "Slow and clear. Pause 2–3 seconds between each line for the viewer to repeat.",
+      "imageRef": "img-009",
+      "lines": [
+        {
+          "id": "l-0085",
+          "lang": "th-split",
+          "thai": "ขอเก็บเงินด้วยค่ะ",
+          "thaiSplit": "ขอ เก็บ เงิน ด้วย ค่ะ",
+          "translit": "khǎaw gèp ngern dûuai khâ",
+          "display": "immediate",
+          "highlight": true,
+          "spoken": true
+        },
+        {
+          "id": "l-0086",
+          "lang": "th-split",
+          "thai": "ทั้งหมดสามร้อยหกสิบบาทค่ะ",
+          "thaiSplit": "ทั้งหมด สาม ร้อย หก สิบ บาท ค่ะ",
+          "translit": "tháng-mòt sǎam-róoi hòk-sìp bàat khâ",
+          "display": "immediate",
+          "highlight": true,
+          "spoken": true
+        },
+        {
+          "id": "l-0087",
+          "lang": "th-split",
+          "thai": "หารกันนะ คนละร้อยแปดสิบ",
+          "thaiSplit": "หาร กัน นะ คน ละ ร้อย แปด สิบ",
+          "translit": "hǎan gan ná khon lá róoi bpàet-sìp",
+          "display": "immediate",
+          "highlight": true,
+          "spoken": true
+        },
+        {
+          "id": "l-0088",
+          "lang": "th-split",
+          "thai": "รับบัตรไหมคะ",
+          "thaiSplit": "รับ บัตร ไหม คะ",
+          "translit": "ráp bàt mǎi khá",
+          "display": "immediate",
+          "highlight": true,
+          "spoken": true
+        },
+        {
+          "id": "l-0089",
+          "lang": "th-split",
+          "thai": "รับเงินสดอย่างเดียวค่ะ",
+          "thaiSplit": "รับ เงิน สด อย่าง เดียว ค่ะ",
+          "translit": "ráp ngern sòt yàang diiao khâ",
+          "display": "immediate",
+          "highlight": true,
+          "spoken": true
+        },
+        {
+          "id": "l-0090",
+          "lang": "th-split",
+          "thai": "ร้อยนึง ไม่ต้องทอนค่ะ",
+          "thaiSplit": "ร้อย นึง ไม่ ต้อง ทอน ค่ะ",
+          "translit": "róoi nùeng mâi dtâawng thaawn khâ",
+          "display": "immediate",
+          "highlight": true,
+          "spoken": true
+        }
+      ]
+    },
+    {
+      "id": "b-039",
+      "mode": "explain",
+      "lines": [
+        {
+          "id": "l-0091",
+          "lang": "en",
+          "english": "Great job! If that felt hard, that's totally fine — rewind and do it again. Repetition is how you get better.",
+          "spoken": true
+        }
+      ]
+    },
+    {
+      "id": "b-040",
+      "mode": "section-intro",
+      "speakerNote": "Quiz energy — fun and a bit challenging.",
+      "imageRef": "img-010",
+      "lines": [
+        {
+          "id": "l-0092",
+          "lang": "en",
+          "english": "OK, quiz time! I'm going to give you a situation in English, and you need to say the Thai phrase. I'll give you a few seconds to think, and then I'll give you the answer. Ready?",
+          "spoken": true
+        }
+      ]
+    },
+    {
+      "id": "b-041",
+      "mode": "drill-prompt",
+      "speakerNote": "Look to camera. Ask the question, then wait 3 seconds in silence.",
+      "lines": [
+        {
+          "id": "l-0093",
+          "lang": "en",
+          "english": "You've finished your meal at a Thai restaurant and want the bill. What's the everyday way to ask?",
+          "spoken": true
+        },
+        {
+          "id": "l-0094",
+          "lang": "en",
+          "english": "Try saying it now...",
+          "display": "delayed-1s",
+          "spoken": false
+        }
+      ]
+    },
+    {
+      "id": "b-042",
+      "mode": "drill-answer",
+      "speakerNote": "Smile, say it clearly.",
+      "lines": [
+        {
+          "id": "l-0095",
+          "lang": "th",
+          "thai": "ขอเก็บเงินด้วยค่ะ",
+          "translit": "khǎaw gèp ngern dûuai khâ",
+          "spoken": true
+        },
+        {
+          "id": "l-0096",
+          "lang": "en",
+          "english": "That's right — ขอเก็บเงินด้วยค่ะ means 'Could we have the bill, please.' Literally 'collect the money, please' — that's just how Thais say it.",
+          "spoken": true
+        }
+      ]
+    },
+    {
+      "id": "b-043",
+      "mode": "drill-prompt",
+      "speakerNote": "Look to camera, give them time.",
+      "lines": [
+        {
+          "id": "l-0097",
+          "lang": "en",
+          "english": "The bill is 400 baht. You and a friend want to split it. How do you say 'let's split it, two hundred each'?",
+          "spoken": true
+        },
+        {
+          "id": "l-0098",
+          "lang": "en",
+          "english": "Try saying it now...",
+          "display": "delayed-1s",
+          "spoken": false
+        }
+      ]
+    },
+    {
+      "id": "b-044",
+      "mode": "drill-answer",
+      "speakerNote": "Friendly tone, no polite particle since it's friend-to-friend.",
+      "lines": [
+        {
+          "id": "l-0099",
+          "lang": "th",
+          "thai": "หารกันนะ คนละสองร้อย",
+          "translit": "hǎan gan ná khon lá sǎawng-róoi",
+          "spoken": true
+        },
+        {
+          "id": "l-0100",
+          "lang": "en",
+          "english": "That's right — หารกันนะ คนละสองร้อย means 'Let's split it, two hundred each.' Notice no ค่ะ — it's friend-to-friend, so the polite particle gets dropped.",
+          "spoken": true
+        }
+      ]
+    },
+    {
+      "id": "b-045",
+      "mode": "drill-prompt",
+      "speakerNote": "Look to camera.",
+      "lines": [
+        {
+          "id": "l-0101",
+          "lang": "en",
+          "english": "You're at the cashier and want to know if they take card. How do you ask?",
+          "spoken": true
+        },
+        {
+          "id": "l-0102",
+          "lang": "en",
+          "english": "Try saying it now...",
+          "display": "delayed-1s",
+          "spoken": false
+        }
+      ]
+    },
+    {
+      "id": "b-046",
+      "mode": "drill-answer",
+      "speakerNote": "Clear and confident.",
+      "lines": [
+        {
+          "id": "l-0103",
+          "lang": "th",
+          "thai": "รับบัตรไหมคะ",
+          "translit": "ráp bàt mǎi khá",
+          "spoken": true
+        },
+        {
+          "id": "l-0104",
+          "lang": "en",
+          "english": "That's right — รับบัตรไหมคะ means 'Do you accept card?' รับ for accept, บัตร for card, ไหม turns it into a question, คะ for politeness.",
+          "spoken": true
+        }
+      ]
+    },
+    {
+      "id": "b-047",
+      "mode": "drill-prompt",
+      "speakerNote": "Last one — bring some friendly energy.",
+      "lines": [
+        {
+          "id": "l-0105",
+          "lang": "en",
+          "english": "Your taxi was 75 baht. You hand over 100 and want the driver to keep the rest. What do you say?",
+          "spoken": true
+        },
+        {
+          "id": "l-0106",
+          "lang": "en",
+          "english": "Try saying it now...",
+          "display": "delayed-1s",
+          "spoken": false
+        }
+      ]
+    },
+    {
+      "id": "b-048",
+      "mode": "drill-answer",
+      "speakerNote": "Casual, warm — like you actually mean 'keep it'.",
+      "lines": [
+        {
+          "id": "l-0107",
+          "lang": "th",
+          "thai": "ไม่ต้องทอนค่ะ เก็บไว้เลย",
+          "translit": "mâi dtâawng thaawn khâ gèp wái loei",
+          "spoken": true
+        },
+        {
+          "id": "l-0108",
+          "lang": "en",
+          "english": "That's right — ไม่ต้องทอนค่ะ เก็บไว้เลย means 'No change needed — keep it.' Either phrase on its own works too. Combining them just makes it warmer.",
+          "spoken": true
+        }
+      ]
+    },
+    {
+      "id": "b-049",
+      "mode": "recap",
+      "speakerNote": "Quick energy. Flash through the vocab cards fast.",
+      "imageRef": "img-011",
+      "vocabRefs": ["v-001", "v-002", "v-003", "v-004", "v-005", "v-006", "v-007", "v-008"],
+      "lines": [
+        {
+          "id": "l-0109",
+          "lang": "en",
+          "english": "Let's do a quick recap of everything you learned today.",
+          "spoken": true
+        }
+      ]
+    },
+    {
+      "id": "b-050",
+      "mode": "explain",
+      "speakerNote": "Warm sign-off. Look straight to camera.",
+      "lines": [
+        {
+          "id": "l-0110",
+          "lang": "en",
+          "english": "Thanks for watching! If this helped you, give it a thumbs up and subscribe so you don't miss the next one. Next time we're going to look at something a lot of learners don't realise — there are dozens of English words hiding inside Thai, just slightly bent.",
+          "spoken": true
+        }
+      ]
+    },
+    {
+      "id": "b-051",
+      "mode": "teaser",
+      "speakerNote": "Pre-Rev-6 — may need retro-fit when template updates. Build a little intrigue. The Thai phrase is one example loanword that bridges into the next episode on Thai loanwords.",
+      "imageRef": "img-012",
+      "lines": [
+        {
+          "id": "l-0111",
+          "lang": "en",
+          "english": "Quick — what does this Thai word mean?",
+          "spoken": true
+        },
+        {
+          "id": "l-0112",
+          "lang": "th",
+          "thai": "เซเว่น",
+          "translit": "sé-wên",
+          "display": "delayed-1s",
+          "spoken": true
+        }
+      ]
+    }
+  ],
+  "imagePrompts": [
+    {
+      "id": "img-001",
+      "prompt": "Watercolour illustration of a warm, busy Thai restaurant interior at the end of dinner, two friends finishing a meal at a wooden table, plates almost empty, soft warm evening light, Thai signage in background",
+      "style": "watercolour",
+      "subject": "Thai restaurant scene at end of meal"
+    },
+    {
+      "id": "img-002",
+      "prompt": "Watercolour illustration of a small printed bill or receipt in a wooden tray placed on a Thai restaurant table next to a half-empty teacup, warm tones, intimate close-up perspective",
+      "style": "watercolour",
+      "subject": "Bill in tray on Thai restaurant table"
+    },
+    {
+      "id": "img-003",
+      "prompt": "Watercolour illustration of two friends at a cafe table after a meal, each pulling out their wallets, the bill on the table between them, warm light, friendly mood",
+      "style": "watercolour",
+      "subject": "Two friends splitting the bill at a cafe"
+    },
+    {
+      "id": "img-004",
+      "prompt": "Watercolour illustration of a hand holding a credit card up to a small portable card terminal on a wooden Thai restaurant counter, soft warm light, modern but cosy setting",
+      "style": "watercolour",
+      "subject": "Paying by card at a Thai restaurant"
+    },
+    {
+      "id": "img-005",
+      "prompt": "Watercolour illustration of Thai baht banknotes (purple 500, red 100) and small coins arranged on a wooden surface beside a folded receipt, warm golden tones",
+      "style": "watercolour",
+      "subject": "Thai cash and coins on a wooden surface"
+    },
+    {
+      "id": "img-006",
+      "prompt": "Watercolour illustration from inside a Thai taxi, warm dashboard light, a hand passing a 100-baht note across the front-seat divider to the driver, taxi meter visible glowing softly",
+      "style": "watercolour",
+      "subject": "Paying a Thai taxi driver from the back seat"
+    },
+    {
+      "id": "img-007",
+      "prompt": "Watercolour illustration of a Thai street food cart with a PromptPay QR code printed on a piece of cardboard taped to the front of the cart, a smiling vendor in the background, warm daylight, vivid colours",
+      "style": "watercolour",
+      "subject": "Thai street food vendor with PromptPay QR code"
+    },
+    {
+      "id": "img-008",
+      "prompt": "Watercolour illustration of a top-down view of a small Thai restaurant table at the end of a meal — two place settings, finished plates, two glasses, a folded bill in a tray in the centre, warm evening tones",
+      "style": "watercolour",
+      "subject": "Top-down restaurant table after a meal"
+    },
+    {
+      "id": "img-009",
+      "prompt": "Watercolour illustration of a calm study scene with a Thai notebook, an open dictionary, and a cup of Thai tea on a wooden desk, soft afternoon light through a window",
+      "style": "watercolour",
+      "subject": "Calm study scene with notebook and tea"
+    },
+    {
+      "id": "img-010",
+      "prompt": "Watercolour illustration of a playful quiz scene with floating Thai script, question marks, and small drawings of bills, cards, and coins, light blue and warm yellow palette",
+      "style": "watercolour",
+      "subject": "Playful Thai vocabulary quiz scene"
+    },
+    {
+      "id": "img-011",
+      "prompt": "Watercolour montage collage blending the day's vocabulary scenes — bill in tray, friends splitting, card terminal, cash, taxi handoff — soft watercolour edges, warm cohesive palette",
+      "style": "watercolour",
+      "subject": "Recap montage of paying scenes"
+    },
+    {
+      "id": "img-012",
+      "prompt": "Watercolour illustration of a 7-Eleven storefront in urban Bangkok at dusk, bright orange-green-red logo glowing, a few people walking past, atmospheric evening light",
+      "style": "watercolour",
+      "subject": "Thai 7-Eleven storefront at dusk"
+    }
+  ],
+  "shortFormClips": [
+    {
+      "id": "clip-01",
+      "type": "phrase-of-day",
+      "startBlock": "b-001",
+      "endBlock": "b-001",
+      "hookText": "How to ask for the bill in Thai"
+    },
+    {
+      "id": "clip-02",
+      "type": "culture-moment",
+      "startBlock": "b-002",
+      "endBlock": "b-002",
+      "hookText": "Why Thais don't tip in restaurants"
+    },
+    {
+      "id": "clip-03",
+      "type": "can-you-understand",
+      "startBlock": "b-021",
+      "endBlock": "b-021",
+      "hookText": "Can you understand this Thai bill-splitting scene?"
+    },
+    {
+      "id": "clip-04",
+      "type": "repeat-after",
+      "startBlock": "b-037",
+      "endBlock": "b-038",
+      "hookText": "Repeat after me — Thai paying phrases"
+    },
+    {
+      "id": "clip-05",
+      "type": "grammar-hack",
+      "startBlock": "b-008",
+      "endBlock": "b-011",
+      "hookText": "หารกัน + คนละ — the Thai bill-splitting move"
+    }
+  ]
+}

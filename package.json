@@ -21,6 +21,8 @@
     "course:test:translit": "node --experimental-strip-types --test course/tools/tests/transliteration-policy.test.ts",
     "course:pdf": "node --experimental-strip-types course/tools/export-pdf.ts",
     "course:pdf:lesson": "node --experimental-strip-types course/tools/export-pdf.ts --lesson",
+    "course:docs:lesson": "node --experimental-strip-types course/tools/generate_lesson_docs.ts --lesson",
+    "course:docs:cheatsheet": "node --experimental-strip-types course/tools/generate_module_cheatsheet.ts --module",
     "tiktok:script": "node --experimental-strip-types thai_with_nine_tiktok/tools/tiktok-cli.ts generate-script",
     "tiktok:validate-script": "node --experimental-strip-types thai_with_nine_tiktok/tools/tiktok-cli.ts validate-script",
     "tiktok:build-post": "node --experimental-strip-types thai_with_nine_tiktok/tools/tiktok-cli.ts build-post",

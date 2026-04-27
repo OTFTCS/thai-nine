@@ -5,12 +5,6 @@
 create extension if not exists btree_gist;
 create extension if not exists pgcrypto;
 
--- Helper used by every RLS policy (avoids recursive subqueries on profiles).
-create or replace function is_teacher_or_admin(uid uuid) returns boolean
-  language sql security definer stable as $$
-    select exists (select 1 from profiles where id = uid and role in ('teacher','admin'));
-  $$;
-
 -- Profiles (1:1 with auth.users)
 create table profiles (
   id uuid primary key references auth.users(id) on delete restrict,
@@ -20,6 +14,14 @@ create table profiles (
   timezone text not null default 'Europe/London',
   created_at timestamptz not null default now()
 );
+
+-- Helper used by every RLS policy (avoids recursive subqueries on profiles).
+-- Must stay after the profiles table — `language sql` is parsed eagerly, so
+-- reordering above the table breaks the migration.
+create or replace function is_teacher_or_admin(uid uuid) returns boolean
+  language sql security definer stable as $$
+    select exists (select 1 from profiles where id = uid and role in ('teacher','admin'));
+  $$;
 
 -- Weekly recurring availability (teacher-local time)
 create table availability_rules (

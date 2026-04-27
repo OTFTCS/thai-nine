@@ -1,0 +1,46 @@
+{
+  "stages": [
+    {
+      "stage_id": "S1",
+      "stage_title": "Foundations",
+      "module_range": [
+        "M01",
+        "M02",
+        "M03"
+      ]
+    },
+    {
+      "stage_id": "S2",
+      "stage_title": "Survival Thai",
+      "module_range": [
+        "M04",
+        "M05",
+        "M06"
+      ]
+    },
+    {
+      "stage_id": "S3",
+      "stage_title": "Everyday Thai",
+      "module_range": [
+        "M07",
+        "M08",
+        "M09",
+        "M10",
+        "M11",
+        "M12"
+      ]
+    },
+    {
+      "stage_id": "S4",
+      "stage_title": "Functional Fluency",
+      "module_range": [
+        "M13",
+        "M14",
+        "M15",
+        "M16",
+        "M17",
+        "M18"
+      ]
+    }
+  ]
+}

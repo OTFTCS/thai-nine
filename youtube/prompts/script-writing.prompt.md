@@ -48,43 +48,75 @@ One JSON object. No markdown wrapping. No comments. No placeholders. No TODOs. V
 
 Every episode follows this exact structure. Each part maps to specific block modes.
 
-### PART 1 — Hook
+### PART 1 — Cold-open Sketch
 
-**Blocks:** One `hook` block.
+**Blocks:** One `hook` block, written as a 2-person sketch (~25-50 seconds, 8-14 lines).
 
-Nine says one Thai phrase at natural speed. 1-beat pause. English translation appears. One-line promise for the episode.
+Nine plays both characters. In production, this is filmed as a split-frame composition (Nine on left, Nine on right with a wardrobe/lighting/voice cue distinguishing the second character). The sketch demonstrates 3-5 of the target vocab items in natural use, before the viewer has been taught any of them — they should feel the language live, then learn it.
+
+The sketch is designed to be **clipped for social media** (TikTok, Instagram Reels, YouTube Shorts). It must be self-contained: a viewer who lands on the sketch cold should still get value, laugh, or feel they almost understood what just happened.
 
 ```
 Block: mode "hook"
-  Line 1: lang "th", thai + translit, spoken true, display "immediate"
-  Line 2: lang "en", english (translation), spoken false, display "delayed-1s"
-  Line 3: lang "en", english (promise line), spoken true, display "delayed-2s"
+  Multiple lines alternating between speaker "A" and speaker "B".
+  Each line: lang "th", thai + translit + english + speaker ("A" or "B"),
+             spoken true, display "immediate".
+  Use lang "en" + speaker "narrator" sparingly (1 line max) if you need a
+  setup beat before the dialogue starts. No promise line in this block.
 ```
 
-The promise line follows this pattern: *"By the end of this video, you'll be able to [specific outcomes] — all in Thai."*
+**Sketch design rules:**
+
+- **Two speakers minimum.** The schema's `speaker` field is `"A"` or `"B"`. By convention, A is "Nine in role 1" and B is "Nine in role 2"; the `speakerNote` for the block describes who the two characters are this episode (e.g. "A = lost tourist, B = food vendor").
+- **Demonstrate the vocab in context.** At least 3 of the 8 target vocab items should appear in the sketch. They are not glossed here — that happens in PART 3.
+- **Subtitled, not translated.** Every Thai line carries `english` for burned-in subtitle generation, but the sketch is delivered in Thai at natural speed. Nine does not break character to translate.
+- **Land on a beat.** The sketch ends on something the viewer can react to: a punchline, a relatable cringe, an unexpected response, a small moment of warmth. Avoid ending on a generic "OK".
+- **Tight pacing.** ~25-50 seconds is the target. Longer sketches lose their clippability.
+- **Vertical-friendly.** Action stays centered. No props or staging that would crop awkwardly to 9:16.
+
+**Speaker note must include:**
+- Who A and B are this episode (one sentence each)
+- The visual cue distinguishing them (wardrobe element / lighting shift / voice modulation)
+- Recording note for the social clip ("This block is the opening clip — record it as a continuous take that can be lifted as a 30-second short")
+
+**Do not include in PART 1:**
+- A promise line ("By the end of this video..."). That moves to PART 2.
+- A standalone Thai phrase + English translation pattern. That structure is replaced by the sketch.
+- More than 1 narrator line. The sketch is the cold-open; narration belongs to PART 2.
 
 ---
 
-### PART 2 — Cultural Context + Topic Intro
+### PART 2 — Cultural Context + Promise + Roadmap
 
 **Blocks:** One or two `explain` blocks.
 
-Nine shares a **genuine cultural fact** about Thailand related to the episode topic (20–40 seconds). This must be **real, verifiable information** — not a made-up personal story or fabricated anecdote. She naturally bridges to 1–2 Thai phrases, then maps out the episode structure.
+Nine cuts in after the sketch, in her teacher voice. This block does three things in sequence:
 
-**Good openers:**
-- A real statistic ("Bangkok has over 100,000 taxis — and the colour means something.")
-- A cultural fact ("In Thailand, haggling at a market is a social interaction, not a confrontation.")
-- A "did you know" hook ("Thai street addresses don't follow geographic order — number 12 might be next to number 87.")
+1. **Decode the sketch briefly** (1-2 sentences). Name what just happened in Thai ("That sketch? She was asking where the bathroom is, and the vendor was pointing her around the corner. By the end of this video, you'll catch every word of that.").
+2. **Cultural context** (20-30 seconds). A genuine cultural fact about Thailand related to the episode topic. Real, verifiable information — not a made-up anecdote.
+3. **Roadmap** (10 seconds). "Today I'm going to teach you 8 phrases for [topic]. We'll go through each one, I'll explain what it means and how to use it, then you'll hear them all together in a real conversation, and finally we'll practise together."
+
+**Cultural-context openers — pick whichever fits the topic best, and vary the shape across episodes:**
+
+- **Real statistic about Thailand** — verifiable number that surprises and sets stakes ("Thailand has more 7-Elevens than Japan, and most are open 24 hours.")
+- **Cultural fact** — a custom or value foreigners often miss ("In Thailand, haggling at a market is a social interaction, not a confrontation.")
+- **Counterintuitive observation** — a "did you know" that flips an assumption ("Thai street addresses don't follow geographic order — number 12 might be next to number 87.")
+- **Common-mistake reframe** — name a misconception learners arrive with, then promise to fix it ("Most learners say 'thank you' to everyone in Thai, including their grandmother. Here's why that lands wrong, and what to say instead.")
+- **Linguistic puzzle / one-rule unlock** — a tiny pattern that does outsized work ("ใกล้ means 'near', ไกล means 'far'. They look almost identical. One tone decides which.")
+- **Direct English-to-Thai contrast** — name what the viewer's brain expects, then show what Thai actually does ("In English you say 'where is the bathroom?'. In Thai, the question word goes at the end — and that one rule unlocks half this language.")
+- **Sensory or scene hook** — drop the viewer into a moment ("The first thing you'll notice walking into a Thai food court isn't the menu — it's that nobody seems to be ordering.")
+- **Pattern derived from the sketch** — point at something the sketch demonstrated and unpack it ("Did you notice the vendor said it twice? That's not because she didn't hear him — that's the Thai politeness move you're about to learn.")
+
+**Geographic anchoring:** Don't default to Bangkok every episode. Most facts can be framed as "in Thailand" without naming a city. Mention specific cities (Bangkok, Chiang Mai, Phuket, etc.) only when the cultural fact is genuinely city-specific. Repeating "Bangkok" in every episode flattens the course's range.
 
 **DO NOT write:**
 - Fabricated personal stories ("My friend visited and couldn't order...")
 - Made-up teaching anecdotes ("One day my student got lost...")
 - Any story that implies a specific event happened unless it's a real, verified event
 
-Provide 3 options in the block's `speakerNote` so Nine can choose during recording. The default goes in l-0004; alternatives stay in `speakerNote`.
+Provide 3 alternative cultural-context openers in the block's `speakerNote` so Nine can choose during recording — drawn from at least 2 different opener shapes above. The default goes in the line; alternatives stay in `speakerNote`.
 
-The block must end with an explicit roadmap:
-> "Today I'm going to teach you [X phrases / how to do Y]. We'll go through each one, I'll explain what it means and how to use it, then you'll hear them all together in a real conversation, and finally we'll practise together."
+The promise line follows this pattern: *"By the end of this video, you'll be able to [specific outcomes] — all in Thai."*
 
 Lines are mostly `lang: "en"` with occasional `lang: "th"` for embedded Thai phrases.
 

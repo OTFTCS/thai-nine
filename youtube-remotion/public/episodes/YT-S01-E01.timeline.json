@@ -1,0 +1,3166 @@
+{
+  "episodeId": "YT-S01-E01",
+  "episodeTitle": "Ordering Food in Thai — Your First 8 Phrases",
+  "fps": 30,
+  "totalDurationInFrames": 28462,
+  "audioSrc": "audio/YT-S01-E01.m4a",
+  "pipSrc": null,
+  "events": [
+    {
+      "cardKey": "brand:preroll",
+      "cardType": "brand",
+      "startFrame": 0,
+      "durationInFrames": 53,
+      "props": {
+        "episodeTitle": "Ordering Food in Thai — Your First 8 Phrases",
+        "imageSrc": null
+      }
+    },
+    {
+      "cardKey": "th-line:l-0001",
+      "cardType": "text",
+      "startFrame": 53,
+      "durationInFrames": 681,
+      "props": {
+        "thai": "สั่งอะไรดีคะ",
+        "translit": "sàng a-rai dii khá",
+        "english": "",
+        "imageSrc": "images/YT-S01-E01/img-001-thai-wok-street-food-signal.png"
+      }
+    },
+    {
+      "cardKey": "th-line:l-0005",
+      "cardType": "text",
+      "startFrame": 734,
+      "durationInFrames": 1676,
+      "props": {
+        "thai": "สั่งอะไรดีคะ",
+        "translit": "sàng a-rai dii khá",
+        "english": "",
+        "imageSrc": "images/YT-S01-E01/img-001-thai-wok-street-food-signal.png"
+      }
+    },
+    {
+      "cardKey": "vocab:v-001",
+      "cardType": "text",
+      "startFrame": 2410,
+      "durationInFrames": 1871,
+      "props": {
+        "thai": "สั่ง",
+        "translit": "sàng",
+        "english": "to order",
+        "imageSrc": "images/YT-S01-E01/img-002-pointing-hand-ordering.png"
+      }
+    },
+    {
+      "cardKey": "vocab:v-003",
+      "cardType": "text",
+      "startFrame": 4281,
+      "durationInFrames": 906,
+      "props": {
+        "thai": "เผ็ด",
+        "translit": "phèt",
+        "english": "spicy",
+        "imageSrc": "images/YT-S01-E01/img-004-two-crossed-chillies-spicy.png"
+      }
+    },
+    {
+      "cardKey": "vocab:v-004",
+      "cardType": "text",
+      "startFrame": 5187,
+      "durationInFrames": 1270,
+      "props": {
+        "thai": "ไม่เผ็ด",
+        "translit": "mâi phèt",
+        "english": "not spicy",
+        "imageSrc": "images/YT-S01-E01/img-006-chilli-with-x-not-spicy.png"
+      }
+    },
+    {
+      "cardKey": "vocab:v-002",
+      "cardType": "text",
+      "startFrame": 6457,
+      "durationInFrames": 1074,
+      "props": {
+        "thai": "อร่อย",
+        "translit": "a-ròoy",
+        "english": "delicious",
+        "imageSrc": "images/YT-S01-E01/img-003-pad-thai-bowl-delicious.png"
+      }
+    },
+    {
+      "cardKey": "vocab:v-006",
+      "cardType": "text",
+      "startFrame": 7531,
+      "durationInFrames": 2164,
+      "props": {
+        "thai": "ขอ",
+        "translit": "khǎaw",
+        "english": "may I have / I'd like",
+        "imageSrc": "images/YT-S01-E01/img-007-wai-hands-polite-request.png"
+      }
+    },
+    {
+      "cardKey": "vocab:v-005",
+      "cardType": "text",
+      "startFrame": 9695,
+      "durationInFrames": 1213,
+      "props": {
+        "thai": "เก็บเงิน",
+        "translit": "gèp ngern",
+        "english": "check please / bill please",
+        "imageSrc": "images/YT-S01-E01/img-005-receipt-held-in-hand-bill-please.png"
+      }
+    },
+    {
+      "cardKey": "vocab:v-008",
+      "cardType": "text",
+      "startFrame": 10908,
+      "durationInFrames": 1001,
+      "props": {
+        "thai": "แนะนำ",
+        "translit": "náe-nam",
+        "english": "to recommend",
+        "imageSrc": "images/YT-S01-E01/img-009-hand-with-star-recommend.png"
+      }
+    },
+    {
+      "cardKey": "vocab:v-007",
+      "cardType": "text",
+      "startFrame": 11909,
+      "durationInFrames": 925,
+      "props": {
+        "thai": "อิ่ม",
+        "translit": "ìm",
+        "english": "full (not hungry)",
+        "imageSrc": "images/YT-S01-E01/img-008-hands-on-belly-full.png"
+      }
+    },
+    {
+      "cardKey": "vocab:v-001",
+      "cardType": "text",
+      "startFrame": 12834,
+      "durationInFrames": 39,
+      "props": {
+        "thai": "สั่ง",
+        "translit": "sàng",
+        "english": "to order",
+        "imageSrc": "images/YT-S01-E01/img-002-pointing-hand-ordering.png"
+      }
+    },
+    {
+      "cardKey": "vocab:v-003",
+      "cardType": "text",
+      "startFrame": 12873,
+      "durationInFrames": 39,
+      "props": {
+        "thai": "เผ็ด",
+        "translit": "phèt",
+        "english": "spicy",
+        "imageSrc": "images/YT-S01-E01/img-004-two-crossed-chillies-spicy.png"
+      }
+    },
+    {
+      "cardKey": "vocab:v-004",
+      "cardType": "text",
+      "startFrame": 12912,
+      "durationInFrames": 44,
+      "props": {
+        "thai": "ไม่เผ็ด",
+        "translit": "mâi phèt",
+        "english": "not spicy",
+        "imageSrc": "images/YT-S01-E01/img-006-chilli-with-x-not-spicy.png"
+      }
+    },
+    {
+      "cardKey": "vocab:v-002",
+      "cardType": "text",
+      "startFrame": 12956,
+      "durationInFrames": 45,
+      "props": {
+        "thai": "อร่อย",
+        "translit": "a-ròoy",
+        "english": "delicious",
+        "imageSrc": "images/YT-S01-E01/img-003-pad-thai-bowl-delicious.png"
+      }
+    },
+    {
+      "cardKey": "vocab:v-006",
+      "cardType": "text",
+      "startFrame": 13001,
+      "durationInFrames": 48,
+      "props": {
+        "thai": "ขอ",
+        "translit": "khǎaw",
+        "english": "may I have / I'd like",
+        "imageSrc": "images/YT-S01-E01/img-007-wai-hands-polite-request.png"
+      }
+    },
+    {
+      "cardKey": "vocab:v-005",
+      "cardType": "text",
+      "startFrame": 13049,
+      "durationInFrames": 43,
+      "props": {
+        "thai": "เก็บเงิน",
+        "translit": "gèp ngern",
+        "english": "check please / bill please",
+        "imageSrc": "images/YT-S01-E01/img-005-receipt-held-in-hand-bill-please.png"
+      }
+    },
+    {
+      "cardKey": "vocab:v-008",
+      "cardType": "text",
+      "startFrame": 13092,
+      "durationInFrames": 60,
+      "props": {
+        "thai": "แนะนำ",
+        "translit": "náe-nam",
+        "english": "to recommend",
+        "imageSrc": "images/YT-S01-E01/img-009-hand-with-star-recommend.png"
+      }
+    },
+    {
+      "cardKey": "vocab:v-007",
+      "cardType": "text",
+      "startFrame": 13152,
+      "durationInFrames": 1001,
+      "props": {
+        "thai": "อิ่ม",
+        "translit": "ìm",
+        "english": "full (not hungry)",
+        "imageSrc": "images/YT-S01-E01/img-008-hands-on-belly-full.png"
+      }
+    },
+    {
+      "cardKey": "th-line:l-0022",
+      "cardType": "text",
+      "startFrame": 14153,
+      "durationInFrames": 87,
+      "props": {
+        "thai": "แนะนำอะไรดีคะ",
+        "translit": "náe-nam a-rai dii khá",
+        "english": "",
+        "imageSrc": "images/YT-S01-E01/img-001-thai-wok-street-food-signal.png"
+      }
+    },
+    {
+      "cardKey": "th-line:l-0023",
+      "cardType": "text",
+      "startFrame": 14240,
+      "durationInFrames": 62,
+      "props": {
+        "thai": "ขอผัดไทยหนึ่งจานค่ะ",
+        "translit": "khǎaw phàt-thai nùeng jaan khâ",
+        "english": "",
+        "imageSrc": "images/YT-S01-E01/img-001-thai-wok-street-food-signal.png"
+      }
+    },
+    {
+      "cardKey": "th-line:l-0024",
+      "cardType": "text",
+      "startFrame": 14302,
+      "durationInFrames": 69,
+      "props": {
+        "thai": "ไม่เอาเผ็ดนะคะ",
+        "translit": "mâi ao phèt ná khá",
+        "english": "",
+        "imageSrc": "images/YT-S01-E01/img-001-thai-wok-street-food-signal.png"
+      }
+    },
+    {
+      "cardKey": "th-line:l-0025",
+      "cardType": "text",
+      "startFrame": 14371,
+      "durationInFrames": 74,
+      "props": {
+        "thai": "อร่อยมาก",
+        "translit": "a-ròoy mâak",
+        "english": "",
+        "imageSrc": "images/YT-S01-E01/img-001-thai-wok-street-food-signal.png"
+      }
+    },
+    {
+      "cardKey": "th-line:l-0026",
+      "cardType": "text",
+      "startFrame": 14445,
+      "durationInFrames": 82,
+      "props": {
+        "thai": "อิ่มแล้วค่ะ",
+        "translit": "ìm láaew khâ",
+        "english": "",
+        "imageSrc": "images/YT-S01-E01/img-001-thai-wok-street-food-signal.png"
+      }
+    },
+    {
+      "cardKey": "th-line:l-0027",
+      "cardType": "text",
+      "startFrame": 14527,
+      "durationInFrames": 658,
+      "props": {
+        "thai": "เก็บเงินด้วยค่ะ",
+        "translit": "gèp ngern dûuay khâ",
+        "english": "",
+        "imageSrc": "images/YT-S01-E01/img-001-thai-wok-street-food-signal.png"
+      }
+    },
+    {
+      "cardKey": "breakdown:b-005:0",
+      "cardType": "breakdown",
+      "startFrame": 15185,
+      "durationInFrames": 1409,
+      "props": {
+        "thai": "แนะนำอะไรดีคะ",
+        "translit": "náe-nam a-rai dii khá",
+        "english": "What do you recommend?",
+        "imageSrc": "images/YT-S01-E01/img-011-breakdown-magnifier.png"
+      }
+    },
+    {
+      "cardKey": "breakdown:b-005:1",
+      "cardType": "breakdown",
+      "startFrame": 16594,
+      "durationInFrames": 886,
+      "props": {
+        "thai": "ขอผัดไทยหนึ่งจานค่ะ",
+        "translit": "khǎaw phàt-thai nùeng jaan khâ",
+        "english": "I'd like one Pad Thai, please.",
+        "imageSrc": "images/YT-S01-E01/img-011-breakdown-magnifier.png"
+      }
+    },
+    {
+      "cardKey": "breakdown:b-005:2",
+      "cardType": "breakdown",
+      "startFrame": 17480,
+      "durationInFrames": 826,
+      "props": {
+        "thai": "ไม่เอาเผ็ดนะคะ",
+        "translit": "mâi ao phèt ná khá",
+        "english": "No spicy, please.",
+        "imageSrc": "images/YT-S01-E01/img-011-breakdown-magnifier.png"
+      }
+    },
+    {
+      "cardKey": "breakdown:b-005:3",
+      "cardType": "breakdown",
+      "startFrame": 18306,
+      "durationInFrames": 1278,
+      "props": {
+        "thai": "อร่อยมาก",
+        "translit": "a-ròoy mâak",
+        "english": "Very delicious!",
+        "imageSrc": "images/YT-S01-E01/img-011-breakdown-magnifier.png"
+      }
+    },
+    {
+      "cardKey": "breakdown:b-005:4",
+      "cardType": "breakdown",
+      "startFrame": 19584,
+      "durationInFrames": 1729,
+      "props": {
+        "thai": "เก็บเงินด้วยค่ะ",
+        "translit": "gèp ngern dûuay khâ",
+        "english": "Can I have the bill, please?",
+        "imageSrc": "images/YT-S01-E01/img-011-breakdown-magnifier.png"
+      }
+    },
+    {
+      "cardKey": "th-line:l-0052",
+      "cardType": "text",
+      "startFrame": 21313,
+      "durationInFrames": 417,
+      "props": {
+        "thai": "แนะนำอะไรดีคะ",
+        "translit": "náe-nam a-rai dii khá",
+        "english": "",
+        "imageSrc": "images/YT-S01-E01/img-012-speech-bubble-shadowing-practice.png"
+      }
+    },
+    {
+      "cardKey": "th-line:l-0053",
+      "cardType": "text",
+      "startFrame": 21730,
+      "durationInFrames": 275,
+      "props": {
+        "thai": "ขอผัดไทยหนึ่งจานค่ะ",
+        "translit": "khǎaw phàt-thai nùeng jaan khâ",
+        "english": "",
+        "imageSrc": "images/YT-S01-E01/img-012-speech-bubble-shadowing-practice.png"
+      }
+    },
+    {
+      "cardKey": "th-line:l-0054",
+      "cardType": "text",
+      "startFrame": 22005,
+      "durationInFrames": 260,
+      "props": {
+        "thai": "ไม่เอาเผ็ดนะคะ",
+        "translit": "mâi ao phèt ná khá",
+        "english": "",
+        "imageSrc": "images/YT-S01-E01/img-012-speech-bubble-shadowing-practice.png"
+      }
+    },
+    {
+      "cardKey": "th-line:l-0055",
+      "cardType": "text",
+      "startFrame": 22265,
+      "durationInFrames": 207,
+      "props": {
+        "thai": "อร่อยมาก",
+        "translit": "a-ròoy mâak",
+        "english": "",
+        "imageSrc": "images/YT-S01-E01/img-012-speech-bubble-shadowing-practice.png"
+      }
+    },
+    {
+      "cardKey": "th-line:l-0056",
+      "cardType": "text",
+      "startFrame": 22472,
+      "durationInFrames": 57,
+      "props": {
+        "thai": "อิ่มแล้วค่ะ",
+        "translit": "ìm láaew khâ",
+        "english": "",
+        "imageSrc": "images/YT-S01-E01/img-012-speech-bubble-shadowing-practice.png"
+      }
+    },
+    {
+      "cardKey": "th-line:l-0057",
+      "cardType": "text",
+      "startFrame": 22529,
+      "durationInFrames": 458,
+      "props": {
+        "thai": "เก็บเงินด้วยค่ะ",
+        "translit": "gèp ngern dûuay khâ",
+        "english": "",
+        "imageSrc": "images/YT-S01-E01/img-012-speech-bubble-shadowing-practice.png"
+      }
+    },
+    {
+      "cardKey": "drill-prompt:b-006",
+      "cardType": "drillPrompt",
+      "startFrame": 22987,
+      "durationInFrames": 507,
+      "props": {
+        "english": "How would you say: 'I'd like one Pad Thai, please'?",
+        "hint": "Try saying it now...",
+        "imageSrc": "images/YT-S01-E01/img-013-stopwatch-production-drill.png"
+      }
+    },
+    {
+      "cardKey": "drill-answer:b-007",
+      "cardType": "text",
+      "startFrame": 23494,
+      "durationInFrames": 734,
+      "props": {
+        "thai": "ขอผัดไทยหนึ่งจานค่ะ",
+        "translit": "khǎaw phàt-thai nùeng jaan khâ",
+        "english": "I'd like one Pad Thai, please.",
+        "imageSrc": "images/YT-S01-E01/img-013-stopwatch-production-drill.png"
+      }
+    },
+    {
+      "cardKey": "drill-answer:b-009",
+      "cardType": "text",
+      "startFrame": 24228,
+      "durationInFrames": 696,
+      "props": {
+        "thai": "ไม่เอาเผ็ดนะคะ",
+        "translit": "mâi ao phèt ná khá",
+        "english": "No spicy, please.",
+        "imageSrc": "images/YT-S01-E01/img-013-stopwatch-production-drill.png"
+      }
+    },
+    {
+      "cardKey": "drill-answer:b-011",
+      "cardType": "text",
+      "startFrame": 24924,
+      "durationInFrames": 618,
+      "props": {
+        "thai": "เก็บเงินด้วยค่ะ",
+        "translit": "gèp ngern dûuay khâ",
+        "english": "Can I have the bill, please?",
+        "imageSrc": "images/YT-S01-E01/img-013-stopwatch-production-drill.png"
+      }
+    },
+    {
+      "cardKey": "recap:b-013",
+      "cardType": "recapGrid",
+      "startFrame": 25542,
+      "durationInFrames": 2053,
+      "props": {
+        "items": [
+          {
+            "thai": "สั่ง",
+            "translit": "sàng",
+            "english": "to order"
+          },
+          {
+            "thai": "อร่อย",
+            "translit": "a-ròoy",
+            "english": "delicious"
+          },
+          {
+            "thai": "เผ็ด",
+            "translit": "phèt",
+            "english": "spicy"
+          },
+          {
+            "thai": "ไม่เผ็ด",
+            "translit": "mâi phèt",
+            "english": "not spicy"
+          },
+          {
+            "thai": "เก็บเงิน",
+            "translit": "gèp ngern",
+            "english": "check please / bill please"
+          },
+          {
+            "thai": "ขอ",
+            "translit": "khǎaw",
+            "english": "may I have / I'd like"
+          },
+          {
+            "thai": "อิ่ม",
+            "translit": "ìm",
+            "english": "full (not hungry)"
+          },
+          {
+            "thai": "แนะนำ",
+            "translit": "náe-nam",
+            "english": "to recommend"
+          }
+        ],
+        "imageSrc": "images/YT-S01-E01/img-014-eight-icon-grid-recap.png"
+      }
+    },
+    {
+      "cardKey": "brand:b-014",
+      "cardType": "brand",
+      "startFrame": 27595,
+      "durationInFrames": 519,
+      "props": {
+        "episodeTitle": "Ordering Food in Thai — Your First 8 Phrases",
+        "imageSrc": "images/YT-S01-E01/img-015-blank-signpost-teaser-for-directions.png"
+      }
+    },
+    {
+      "cardKey": "th-line:pc-0434",
+      "cardType": "text",
+      "startFrame": 28114,
+      "durationInFrames": 355,
+      "props": {
+        "thai": "อยู่ที่ไหนคะ",
+        "translit": "yùu thîi nǎi khá",
+        "english": "",
+        "imageSrc": "images/YT-S01-E01/img-015-blank-signpost-teaser-for-directions.png"
+      }
+    },
+    {
+      "cardKey": "th-line:pc-0441",
+      "cardType": "text",
+      "startFrame": 28469,
+      "durationInFrames": 1,
+      "props": {
+        "thai": "สวัสดีค่ะ",
+        "translit": "sà-wàt-dii khâ",
+        "english": "",
+        "imageSrc": "images/YT-S01-E01/img-015-blank-signpost-teaser-for-directions.png"
+      }
+    }
+  ],
+  "subtitles": [
+    {
+      "text": "สั่งอะไรดีคะ",
+      "translit": "sàng a-rai dii khá",
+      "lang": "th",
+      "startFrame": 53
+    },
+    {
+      "text": "By the end of this video,",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 117
+    },
+    {
+      "text": "you'll be able to order food,",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 169
+    },
+    {
+      "text": "ask for recommendations,",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 223
+    },
+    {
+      "text": "tell them how spicy you want it,",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 261
+    },
+    {
+      "text": "and get the bill — all in Thai.",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 325
+    },
+    {
+      "text": "When I first moved to Bangkok,",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 429
+    },
+    {
+      "text": "there was this noodle stall right next to",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 494
+    },
+    {
+      "text": "my apartment.",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 579
+    },
+    {
+      "text": "Every single morning,",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 612
+    },
+    {
+      "text": "the same aunty would look at me and shout",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 674
+    },
+    {
+      "text": "สั่งอะไรดีคะ",
+      "translit": "sàng a-rai dii khá",
+      "lang": "th",
+      "startFrame": 734
+    },
+    {
+      "text": "and I would just stand there.",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 781
+    },
+    {
+      "text": "I had no idea what she was saying.",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 853
+    },
+    {
+      "text": "I would just point at the picture on the",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 928
+    },
+    {
+      "text": "wall and",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 991
+    },
+    {
+      "text": "hope for the best.",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 1022
+    },
+    {
+      "text": "Sometimes I'd get noodles,",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 1058
+    },
+    {
+      "text": "sometimes I'd get soup, sometimes...",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 1115
+    },
+    {
+      "text": "I honestly don't know what I got.",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 1170
+    },
+    {
+      "text": "สั่งอะไรดีคะ",
+      "translit": "sàng a-rai dii khá",
+      "lang": "th",
+      "startFrame": 1278
+    },
+    {
+      "text": "it means \"What would you like to order?\"",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 1349
+    },
+    {
+      "text": "And it's one of the first things you'll",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 1425
+    },
+    {
+      "text": "hear at any food stall in Thailand.",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 1491
+    },
+    {
+      "text": "Today I'm going to teach you eight phrases",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 1568
+    },
+    {
+      "text": "that will get you through any meal in",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 1662
+    },
+    {
+      "text": "Thailand.",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 1728
+    },
+    {
+      "text": "We'll go through each one —",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 1765
+    },
+    {
+      "text": "I'll explain what it means, how to use it,",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 1806
+    },
+    {
+      "text": "and when you'd actually say it.",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 1863
+    },
+    {
+      "text": "Then I'll put them all together into a",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 1935
+    },
+    {
+      "text": "short conversation so",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 2014
+    },
+    {
+      "text": "you can hear how they sound at natural",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 2056
+    },
+    {
+      "text": "speed.",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 2130
+    },
+    {
+      "text": "After that,",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 2163
+    },
+    {
+      "text": "we'll break it down sentence by sentence,",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 2182
+    },
+    {
+      "text": "and then you'll get to practise.",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 2247
+    },
+    {
+      "text": "Sound good? Let's go.",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 2296
+    },
+    {
+      "text": "OK, let's start with the vocabulary.",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 2410
+    },
+    {
+      "text": "I'm going to go through each of the eight",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 2525
+    },
+    {
+      "text": "phrases one by one.",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 2588
+    },
+    {
+      "text": "For each one, I'll say the Thai,",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 2653
+    },
+    {
+      "text": "explain what it means,",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 2734
+    },
+    {
+      "text": "and show you how to use it in a sentence.",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 2788
+    },
+    {
+      "text": "Don't worry about memorising everything",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 2883
+    },
+    {
+      "text": "right now —",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 2928
+    },
+    {
+      "text": "we'll practise later.",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 2993
+    },
+    {
+      "text": "Our first word is",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 3041
+    },
+    {
+      "text": "สั่ง",
+      "translit": "sàng",
+      "lang": "th",
+      "startFrame": 3126
+    },
+    {
+      "text": "สั่ง",
+      "translit": "sàng",
+      "lang": "th",
+      "startFrame": 3174
+    },
+    {
+      "text": "This means \"to order.\" You use it when",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 3226
+    },
+    {
+      "text": "you're ordering food,",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 3305
+    },
+    {
+      "text": "ordering drinks —",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 3346
+    },
+    {
+      "text": "ordering anything really.",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 3386
+    },
+    {
+      "text": "It's the most basic word you need at a",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 3442
+    },
+    {
+      "text": "restaurant or",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 3510
+    },
+    {
+      "text": "a food stall.",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 3544
+    },
+    {
+      "text": "If someone asks you",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 3579
+    },
+    {
+      "text": "สั่งอะไรดีคะ",
+      "translit": "sàng a-rai dii khá",
+      "lang": "th",
+      "startFrame": 3624
+    },
+    {
+      "text": "— that's \"what would you like to order?\"",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 3686
+    },
+    {
+      "text": "สั่ง",
+      "translit": "sàng",
+      "lang": "th",
+      "startFrame": 3763
+    },
+    {
+      "text": "is the key word in there.",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 3802
+    },
+    {
+      "text": "Let me give you an example sentence",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 3844
+    },
+    {
+      "text": "คุณอยากสั่งอะไร",
+      "translit": "khun yàak sàng a-rai",
+      "lang": "th",
+      "startFrame": 3927
+    },
+    {
+      "text": "— \"What would you like to order?\" You hear",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 4013
+    },
+    {
+      "text": "สั่ง",
+      "translit": "sàng",
+      "lang": "th",
+      "startFrame": 4109
+    },
+    {
+      "text": "in the middle?",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 4142
+    },
+    {
+      "text": "คุณอยากสั่งอะไร",
+      "translit": "khun yàak sàng a-rai",
+      "lang": "th",
+      "startFrame": 4183
+    },
+    {
+      "text": "Next up",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 4237
+    },
+    {
+      "text": "เผ็ด",
+      "translit": "phèt",
+      "lang": "th",
+      "startFrame": 4281
+    },
+    {
+      "text": "เผ็ด",
+      "translit": "phèt",
+      "lang": "th",
+      "startFrame": 4348
+    },
+    {
+      "text": "This means \"spicy.\" And if you're eating",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 4393
+    },
+    {
+      "text": "in Thailand,",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 4489
+    },
+    {
+      "text": "you NEED this word,",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 4523
+    },
+    {
+      "text": "because Thai food can be seriously spicy.",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 4565
+    },
+    {
+      "text": "Like,",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 4611
+    },
+    {
+      "text": "a completely different level from what you",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 4672
+    },
+    {
+      "text": "might be used to.",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 4730
+    },
+    {
+      "text": "If someone asks you",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 4778
+    },
+    {
+      "text": "เผ็ดไหม",
+      "translit": "phèt mǎi",
+      "lang": "th",
+      "startFrame": 4826
+    },
+    {
+      "text": "\"Is it spicy?\" —",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 4867
+    },
+    {
+      "text": "you want to know what that means before",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 4911
+    },
+    {
+      "text": "you say yes.",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 4986
+    },
+    {
+      "text": "Now, if you can't handle the heat —",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 5039
+    },
+    {
+      "text": "and there's no shame in that — you need",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 5124
+    },
+    {
+      "text": "ไม่เผ็ด",
+      "translit": "mâi phèt",
+      "lang": "th",
+      "startFrame": 5187
+    },
+    {
+      "text": "ไม่เผ็ด",
+      "translit": "mâi phèt",
+      "lang": "th",
+      "startFrame": 5234
+    },
+    {
+      "text": "ไม่",
+      "translit": "mâi",
+      "lang": "th",
+      "startFrame": 5317
+    },
+    {
+      "text": "means \"not\" or \"no.\" So",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 5381
+    },
+    {
+      "text": "ไม่เผ็ด",
+      "translit": "mâi phèt",
+      "lang": "th",
+      "startFrame": 5419
+    },
+    {
+      "text": "is \"not spicy.\" This is really useful",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 5459
+    },
+    {
+      "text": "because in Thai,",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 5517
+    },
+    {
+      "text": "you make something negative just by",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 5567
+    },
+    {
+      "text": "putting",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 5631
+    },
+    {
+      "text": "ไม่",
+      "translit": "mâi",
+      "lang": "th",
+      "startFrame": 5681
+    },
+    {
+      "text": "in front of it.",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 5708
+    },
+    {
+      "text": "ไม่",
+      "translit": "mâi",
+      "lang": "th",
+      "startFrame": 5750
+    },
+    {
+      "text": "plus whatever.",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 5786
+    },
+    {
+      "text": "ไม่เผ็ด",
+      "translit": "mâi phèt",
+      "lang": "th",
+      "startFrame": 5814
+    },
+    {
+      "text": "not spicy.",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 5851
+    },
+    {
+      "text": "And if you want to tell the cook \"no",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 5889
+    },
+    {
+      "text": "spicy,",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 5942
+    },
+    {
+      "text": "please\" you say",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 5985
+    },
+    {
+      "text": "ไม่เอาเผ็ดนะคะ",
+      "translit": "mâi ao phèt ná khá",
+      "lang": "th",
+      "startFrame": 6032
+    },
+    {
+      "text": ". That's the polite way to say it.",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 6073
+    },
+    {
+      "text": "ไม่เอาเผ็ดนะคะ",
+      "translit": "mâi ao phèt ná khá",
+      "lang": "th",
+      "startFrame": 6173
+    },
+    {
+      "text": "\"No spicy, please.\"",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 6233
+    },
+    {
+      "text": "This next one is one of my favourite Thai",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 6383
+    },
+    {
+      "text": "words",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 6416
+    },
+    {
+      "text": "อร่อย",
+      "translit": "a-ròoy",
+      "lang": "th",
+      "startFrame": 6457
+    },
+    {
+      "text": "อร่อย",
+      "translit": "a-ròoy",
+      "lang": "th",
+      "startFrame": 6498
+    },
+    {
+      "text": "It means \"delicious.\" Thai people LOVE it",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 6594
+    },
+    {
+      "text": "when you say this.",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 6628
+    },
+    {
+      "text": "If you eat something and you say",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 6694
+    },
+    {
+      "text": "อร่อย",
+      "translit": "a-ròoy",
+      "lang": "th",
+      "startFrame": 6734
+    },
+    {
+      "text": "the cook's face will light up.",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 6789
+    },
+    {
+      "text": "It's a compliment. Use it.",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 6822
+    },
+    {
+      "text": "And if you really mean it, you can say",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 6932
+    },
+    {
+      "text": "อร่อยมาก",
+      "translit": "a-ròoy mâak",
+      "lang": "th",
+      "startFrame": 7000
+    },
+    {
+      "text": "— \"very delicious.\"",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 7062
+    },
+    {
+      "text": "มาก",
+      "translit": "mâak",
+      "lang": "th",
+      "startFrame": 7105
+    },
+    {
+      "text": "means \"very\" or \"a lot.\" So",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 7159
+    },
+    {
+      "text": "อร่อยมาก",
+      "translit": "a-ròoy mâak",
+      "lang": "th",
+      "startFrame": 7206
+    },
+    {
+      "text": "\"really delicious.\" That's the one that",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 7319
+    },
+    {
+      "text": "gets you extra portions.",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 7370
+    },
+    {
+      "text": "OK this next one is really important.",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 7492
+    },
+    {
+      "text": "ขอ",
+      "translit": "khǎaw",
+      "lang": "th",
+      "startFrame": 7531
+    },
+    {
+      "text": "ขอ",
+      "translit": "khǎaw",
+      "lang": "th",
+      "startFrame": 7579
+    },
+    {
+      "text": "This is one of the most useful words in",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 7656
+    },
+    {
+      "text": "Thai.",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 7682
+    },
+    {
+      "text": "ขอ",
+      "translit": "khǎaw",
+      "lang": "th",
+      "startFrame": 7718
+    },
+    {
+      "text": "means \"may I have\" or",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 7791
+    },
+    {
+      "text": "\"I'd like.\" You put it at the beginning of",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 7850
+    },
+    {
+      "text": "your request",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 7885
+    },
+    {
+      "text": "ขอ",
+      "translit": "khǎaw",
+      "lang": "th",
+      "startFrame": 7932
+    },
+    {
+      "text": ", then whatever you want, then",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 7971
+    },
+    {
+      "text": "ค่ะ",
+      "translit": "khâ",
+      "lang": "th",
+      "startFrame": 8006
+    },
+    {
+      "text": "ครับ",
+      "translit": "khráp",
+      "lang": "th",
+      "startFrame": 8050
+    },
+    {
+      "text": "at the end to be polite.",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 8122
+    },
+    {
+      "text": "So for example",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 8159
+    },
+    {
+      "text": "ขอผัดไทยหนึ่งจานค่ะ",
+      "translit": "khǎaw phàt-thai nùeng jaan khâ",
+      "lang": "th",
+      "startFrame": 8264
+    },
+    {
+      "text": "— \"I'd like one Pad Thai,",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 8321
+    },
+    {
+      "text": "please.\" Let me break that down.",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 8395
+    },
+    {
+      "text": "ขอ",
+      "translit": "khǎaw",
+      "lang": "th",
+      "startFrame": 8435
+    },
+    {
+      "text": "— \"I'd like.\"",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 8480
+    },
+    {
+      "text": "ผัดไทย",
+      "translit": "phàt-thai",
+      "lang": "th",
+      "startFrame": 8524
+    },
+    {
+      "text": "— \"Pad Thai.\"",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 8565
+    },
+    {
+      "text": "หนึ่ง",
+      "translit": "nùeng",
+      "lang": "th",
+      "startFrame": 8606
+    },
+    {
+      "text": "— \"one.\"",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 8642
+    },
+    {
+      "text": "จาน",
+      "translit": "jaan",
+      "lang": "th",
+      "startFrame": 8686
+    },
+    {
+      "text": "that's the classifier for plates of food.",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 8753
+    },
+    {
+      "text": "ค่ะ",
+      "translit": "khâ",
+      "lang": "th",
+      "startFrame": 8827
+    },
+    {
+      "text": "polite ending for women.",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 8883
+    },
+    {
+      "text": "ขอผัดไทยหนึ่งจานค่ะ",
+      "translit": "khǎaw phàt-thai nùeng jaan khâ",
+      "lang": "th",
+      "startFrame": 8999
+    },
+    {
+      "text": ". That's a complete order.",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 9057
+    },
+    {
+      "text": "You can swap out",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 9104
+    },
+    {
+      "text": "ผัดไทย",
+      "translit": "phàt-thai",
+      "lang": "th",
+      "startFrame": 9146
+    },
+    {
+      "text": "for any dish",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 9187
+    },
+    {
+      "text": "ขอข้าวผัดหนึ่งจานค่ะ",
+      "translit": "khǎaw khâaw-phàt nùeng jaan khâ",
+      "lang": "th",
+      "startFrame": 9253
+    },
+    {
+      "text": "for fried rice,",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 9294
+    },
+    {
+      "text": "ขอส้มตำหนึ่งจานค่ะ",
+      "translit": "khǎaw sôm-tam nùeng jaan khâ",
+      "lang": "th",
+      "startFrame": 9388
+    },
+    {
+      "text": "for papaya salad. Same pattern every time.",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 9507
+    },
+    {
+      "text": "When you're done eating, you need this one",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 9630
+    },
+    {
+      "text": "เก็บเงิน",
+      "translit": "gèp ngern",
+      "lang": "th",
+      "startFrame": 9695
+    },
+    {
+      "text": "เก็บเงิน",
+      "translit": "gèp ngern",
+      "lang": "th",
+      "startFrame": 9752
+    },
+    {
+      "text": "This means \"check please\" or",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 9835
+    },
+    {
+      "text": "\"bill please.\"",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 9869
+    },
+    {
+      "text": "เก็บ",
+      "translit": "gèp",
+      "lang": "th",
+      "startFrame": 9932
+    },
+    {
+      "text": "means \"to collect\" and",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 9967
+    },
+    {
+      "text": "เงิน",
+      "translit": "ngern",
+      "lang": "th",
+      "startFrame": 10021
+    },
+    {
+      "text": "means \"money.\" So literally it's \"collect",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 10102
+    },
+    {
+      "text": "money\" —",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 10133
+    },
+    {
+      "text": "which is a very direct way of saying \"I'd",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 10178
+    },
+    {
+      "text": "like to pay.\"",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 10224
+    },
+    {
+      "text": "The full polite version is",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 10289
+    },
+    {
+      "text": "เก็บเงินด้วยค่ะ",
+      "translit": "gèp ngern dûuay khâ",
+      "lang": "th",
+      "startFrame": 10352
+    },
+    {
+      "text": "ด้วย",
+      "translit": "dûuay",
+      "lang": "th",
+      "startFrame": 10408
+    },
+    {
+      "text": "makes it softer — like \"also\" or \"please.\"",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 10474
+    },
+    {
+      "text": "เก็บเงินด้วยค่ะ",
+      "translit": "gèp ngern dûuay khâ",
+      "lang": "th",
+      "startFrame": 10548
+    },
+    {
+      "text": "\"Can I have the bill, please?\"",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 10594
+    },
+    {
+      "text": "This is a great one for when you look at a",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 10706
+    },
+    {
+      "text": "menu and",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 10755
+    },
+    {
+      "text": "have absolutely no idea what to order",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 10847
+    },
+    {
+      "text": "แนะนำ",
+      "translit": "náe-nam",
+      "lang": "th",
+      "startFrame": 10908
+    },
+    {
+      "text": "แนะนำ",
+      "translit": "náe-nam",
+      "lang": "th",
+      "startFrame": 10961
+    },
+    {
+      "text": "It means \"to recommend.\" So if you ask",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 11029
+    },
+    {
+      "text": "แนะนำอะไรดีคะ",
+      "translit": "náe-nam a-rai dii khá",
+      "lang": "th",
+      "startFrame": 11126
+    },
+    {
+      "text": "\"What do you recommend?\" —",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 11188
+    },
+    {
+      "text": "the vendor will pick their best dish for you.",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 11274
+    },
+    {
+      "text": "This is honestly one of the best ways to",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 11352
+    },
+    {
+      "text": "eat in Thailand. Just let them choose.",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 11423
+    },
+    {
+      "text": "แนะนำอะไรดีคะ",
+      "translit": "náe-nam a-rai dii khá",
+      "lang": "th",
+      "startFrame": 11506
+    },
+    {
+      "text": "\"What do you recommend?\" Notice that the",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 11586
+    },
+    {
+      "text": "question word",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 11625
+    },
+    {
+      "text": "อะไร",
+      "translit": "a-rai",
+      "lang": "th",
+      "startFrame": 11683
+    },
+    {
+      "text": "goes in the middle in Thai,",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 11730
+    },
+    {
+      "text": "not at the beginning like in English.",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 11806
+    },
+    {
+      "text": "Last one for today",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 11862
+    },
+    {
+      "text": "อิ่ม",
+      "translit": "ìm",
+      "lang": "th",
+      "startFrame": 11909
+    },
+    {
+      "text": "อิ่ม",
+      "translit": "ìm",
+      "lang": "th",
+      "startFrame": 11954
+    },
+    {
+      "text": "This means \"full\" —",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 12013
+    },
+    {
+      "text": "as in \"I'm not hungry anymore.\" After a",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 12121
+    },
+    {
+      "text": "big meal,",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 12160
+    },
+    {
+      "text": "you say",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 12191
+    },
+    {
+      "text": "อิ่มแล้วค่ะ",
+      "translit": "ìm láaew khâ",
+      "lang": "th",
+      "startFrame": 12239
+    },
+    {
+      "text": "— \"I'm full.\"",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 12283
+    },
+    {
+      "text": "แล้ว",
+      "translit": "láaew",
+      "lang": "th",
+      "startFrame": 12323
+    },
+    {
+      "text": "means \"already,\" so",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 12359
+    },
+    {
+      "text": "literally it's \"full already.\"",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 12433
+    },
+    {
+      "text": "อิ่มแล้วค่ะ",
+      "translit": "ìm láaew khâ",
+      "lang": "th",
+      "startFrame": 12490
+    },
+    {
+      "text": "If someone offers you more food and",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 12558
+    },
+    {
+      "text": "you're done,",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 12596
+    },
+    {
+      "text": "this is the polite way to say no thanks.",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 12692
+    },
+    {
+      "text": "OK! So those are your eight phrases.",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 12807
+    },
+    {
+      "text": "สั่ง",
+      "translit": "sàng",
+      "lang": "th",
+      "startFrame": 12834
+    },
+    {
+      "text": "เผ็ด",
+      "translit": "phèt",
+      "lang": "th",
+      "startFrame": 12873
+    },
+    {
+      "text": "ไม่เผ็ด",
+      "translit": "mâi phèt",
+      "lang": "th",
+      "startFrame": 12912
+    },
+    {
+      "text": "อร่อย",
+      "translit": "a-ròoy",
+      "lang": "th",
+      "startFrame": 12956
+    },
+    {
+      "text": "ขอ",
+      "translit": "khǎaw",
+      "lang": "th",
+      "startFrame": 13001
+    },
+    {
+      "text": "เก็บเงิน",
+      "translit": "gèp ngern",
+      "lang": "th",
+      "startFrame": 13049
+    },
+    {
+      "text": "แนะนำ",
+      "translit": "náe-nam",
+      "lang": "th",
+      "startFrame": 13092
+    },
+    {
+      "text": ", and",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 13125
+    },
+    {
+      "text": "อิ่ม",
+      "translit": "ìm",
+      "lang": "th",
+      "startFrame": 13152
+    },
+    {
+      "text": "Now let's hear them in action.",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 13241
+    },
+    {
+      "text": "What I'm going to do now is put all of",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 13361
+    },
+    {
+      "text": "those phrases together into a short",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 13421
+    },
+    {
+      "text": "conversation.",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 13468
+    },
+    {
+      "text": "Imagine you're at a street food stall in",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 13532
+    },
+    {
+      "text": "Bangkok —",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 13563
+    },
+    {
+      "text": "you sit down, you order, you eat, you pay.",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 13621
+    },
+    {
+      "text": "I'm going to speak at natural speed,",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 13716
+    },
+    {
+      "text": "the way a Thai person would actually talk.",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 13780
+    },
+    {
+      "text": "Don't pause the video.",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 13837
+    },
+    {
+      "text": "Don't try to catch every word.",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 13889
+    },
+    {
+      "text": "Just listen and",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 13932
+    },
+    {
+      "text": "see how much you can understand. Ready?",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 13997
+    },
+    {
+      "text": "Here we go.",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 14066
+    },
+    {
+      "text": "แนะนำอะไรดีคะ",
+      "translit": "náe-nam a-rai dii khá",
+      "lang": "th",
+      "startFrame": 14153
+    },
+    {
+      "text": "ขอผัดไทยหนึ่งจานค่ะ",
+      "translit": "khǎaw phàt-thai nùeng jaan khâ",
+      "lang": "th",
+      "startFrame": 14240
+    },
+    {
+      "text": "ไม่เอาเผ็ดนะคะ",
+      "translit": "mâi ao phèt ná khá",
+      "lang": "th",
+      "startFrame": 14302
+    },
+    {
+      "text": "อร่อยมาก",
+      "translit": "a-ròoy mâak",
+      "lang": "th",
+      "startFrame": 14371
+    },
+    {
+      "text": "อิ่มแล้วค่ะ",
+      "translit": "ìm láaew khâ",
+      "lang": "th",
+      "startFrame": 14445
+    },
+    {
+      "text": "เก็บเงินด้วยค่ะ",
+      "translit": "gèp ngern dûuay khâ",
+      "lang": "th",
+      "startFrame": 14527
+    },
+    {
+      "text": "How was that?",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 14589
+    },
+    {
+      "text": "Could you catch some of those phrases?",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 14664
+    },
+    {
+      "text": "If you got even two or three,",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 14742
+    },
+    {
+      "text": "that's great —",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 14795
+    },
+    {
+      "text": "you already know more Thai than I did my",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 14863
+    },
+    {
+      "text": "first week in Bangkok.",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 14926
+    },
+    {
+      "text": "Don't worry if you didn't get everything.",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 15029
+    },
+    {
+      "text": "Now let's break it down sentence by",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 15076
+    },
+    {
+      "text": "sentence.",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 15144
+    },
+    {
+      "text": "I'm going to go through that same",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 15185
+    },
+    {
+      "text": "conversation again,",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 15240
+    },
+    {
+      "text": "but this time one sentence at a time.",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 15365
+    },
+    {
+      "text": "I'll say the Thai slowly,",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 15430
+    },
+    {
+      "text": "explain what each part means,",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 15515
+    },
+    {
+      "text": "and then you'll see the English",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 15555
+    },
+    {
+      "text": "translation on screen.",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 15691
+    },
+    {
+      "text": "แนะนำอะไรดีคะ",
+      "translit": "náe-nam a-rai dii khá",
+      "lang": "th",
+      "startFrame": 15870
+    },
+    {
+      "text": "So this first one",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 15906
+    },
+    {
+      "text": "แนะนำอะไรดีคะ",
+      "translit": "náe-nam a-rai dii khá",
+      "lang": "th",
+      "startFrame": 15928
+    },
+    {
+      "text": ". We learned",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 15960
+    },
+    {
+      "text": "แนะนำ",
+      "translit": "náe-nam",
+      "lang": "th",
+      "startFrame": 15999
+    },
+    {
+      "text": "means \"to recommend.\"",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 16018
+    },
+    {
+      "text": "อะไร",
+      "translit": "a-rai",
+      "lang": "th",
+      "startFrame": 16048
+    },
+    {
+      "text": "means \"what.\"",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 16083
+    },
+    {
+      "text": "ดี",
+      "translit": "dii",
+      "lang": "th",
+      "startFrame": 16140
+    },
+    {
+      "text": "means \"good.\" So literally it's \"recommend",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 16171
+    },
+    {
+      "text": "what good?\" —",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 16222
+    },
+    {
+      "text": "which in natural English is \"What do you",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 16308
+    },
+    {
+      "text": "recommend?\"",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 16377
+    },
+    {
+      "text": "One more time",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 16409
+    },
+    {
+      "text": "แนะนำอะไรดีคะ",
+      "translit": "náe-nam a-rai dii khá",
+      "lang": "th",
+      "startFrame": 16480
+    },
+    {
+      "text": "ขอผัดไทยหนึ่งจานค่ะ",
+      "translit": "khǎaw phàt-thai nùeng jaan khâ",
+      "lang": "th",
+      "startFrame": 16594
+    },
+    {
+      "text": "This is our ordering phrase.",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 16627
+    },
+    {
+      "text": "ขอ",
+      "translit": "khǎaw",
+      "lang": "th",
+      "startFrame": 16672
+    },
+    {
+      "text": "— \"I'd like.\"",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 16716
+    },
+    {
+      "text": "ผัดไทย",
+      "translit": "phàt-thai",
+      "lang": "th",
+      "startFrame": 16759
+    },
+    {
+      "text": "— \"Pad Thai.\"",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 16800
+    },
+    {
+      "text": "หนึ่ง",
+      "translit": "nùeng",
+      "lang": "th",
+      "startFrame": 16844
+    },
+    {
+      "text": "— \"one.\"",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 16887
+    },
+    {
+      "text": "จาน",
+      "translit": "jaan",
+      "lang": "th",
+      "startFrame": 16928
+    },
+    {
+      "text": "— \"plate.\"",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 16979
+    },
+    {
+      "text": "ค่ะ",
+      "translit": "khâ",
+      "lang": "th",
+      "startFrame": 17026
+    },
+    {
+      "text": "polite ending.",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 17124
+    },
+    {
+      "text": "So: \"I'd like one Pad Thai, please.\"",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 17279
+    },
+    {
+      "text": "ขอผัดไทยหนึ่งจานค่ะ",
+      "translit": "khǎaw phàt-thai nùeng jaan khâ",
+      "lang": "th",
+      "startFrame": 17413
+    },
+    {
+      "text": "ไม่เอาเผ็ดนะคะ",
+      "translit": "mâi ao phèt ná khá",
+      "lang": "th",
+      "startFrame": 17480
+    },
+    {
+      "text": "ไม่",
+      "translit": "mâi",
+      "lang": "th",
+      "startFrame": 17504
+    },
+    {
+      "text": "— \"not.\"",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 17571
+    },
+    {
+      "text": "เอา",
+      "translit": "ao",
+      "lang": "th",
+      "startFrame": 17602
+    },
+    {
+      "text": "— \"want\" or \"take.\"",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 17653
+    },
+    {
+      "text": "เผ็ด",
+      "translit": "phèt",
+      "lang": "th",
+      "startFrame": 17683
+    },
+    {
+      "text": "— \"spicy.\"",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 17746
+    },
+    {
+      "text": "นะคะ",
+      "translit": "ná khá",
+      "lang": "th",
+      "startFrame": 17824
+    },
+    {
+      "text": "a softening particle that makes it sound",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 17861
+    },
+    {
+      "text": "polite and",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 17889
+    },
+    {
+      "text": "friendly.",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 17943
+    },
+    {
+      "text": "So together: \"I don't want spicy,",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 17976
+    },
+    {
+      "text": "please.\" Or more naturally: \"No spicy,",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 18075
+    },
+    {
+      "text": "please.\"",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 18125
+    },
+    {
+      "text": "ไม่เอาเผ็ดนะคะ",
+      "translit": "mâi ao phèt ná khá",
+      "lang": "th",
+      "startFrame": 18251
+    },
+    {
+      "text": "อร่อยมาก",
+      "translit": "a-ròoy mâak",
+      "lang": "th",
+      "startFrame": 18306
+    },
+    {
+      "text": "This one's simple.",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 18384
+    },
+    {
+      "text": "อร่อย",
+      "translit": "a-ròoy",
+      "lang": "th",
+      "startFrame": 18417
+    },
+    {
+      "text": "— \"delicious.\"",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 18469
+    },
+    {
+      "text": "มาก",
+      "translit": "mâak",
+      "lang": "th",
+      "startFrame": 18513
+    },
+    {
+      "text": "\"very.\" \"Very delicious!\" Remember,",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 18560
+    },
+    {
+      "text": "Thai people love hearing this.",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 18819
+    },
+    {
+      "text": "อร่อยมาก",
+      "translit": "a-ròoy mâak",
+      "lang": "th",
+      "startFrame": 18872
+    },
+    {
+      "text": "อิ่มแล้วค่ะ",
+      "translit": "ìm láaew khâ",
+      "lang": "th",
+      "startFrame": 18921
+    },
+    {
+      "text": "อิ่ม",
+      "translit": "ìm",
+      "lang": "th",
+      "startFrame": 18955
+    },
+    {
+      "text": "— \"full.\"",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 19003
+    },
+    {
+      "text": "แล้ว",
+      "translit": "láaew",
+      "lang": "th",
+      "startFrame": 19040
+    },
+    {
+      "text": "— \"already.\"",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 19080
+    },
+    {
+      "text": "ค่ะ",
+      "translit": "khâ",
+      "lang": "th",
+      "startFrame": 19111
+    },
+    {
+      "text": "polite ending.",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 19184
+    },
+    {
+      "text": "\"I'm full already.\" You say this when",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 19238
+    },
+    {
+      "text": "you've had enough.",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 19289
+    },
+    {
+      "text": "อิ่มแล้วค่ะ",
+      "translit": "ìm láaew khâ",
+      "lang": "th",
+      "startFrame": 19447
+    },
+    {
+      "text": "เก็บเงินด้วยค่ะ",
+      "translit": "gèp ngern dûuay khâ",
+      "lang": "th",
+      "startFrame": 19584
+    },
+    {
+      "text": "And the last one",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 19606
+    },
+    {
+      "text": "เก็บ",
+      "translit": "gèp",
+      "lang": "th",
+      "startFrame": 19630
+    },
+    {
+      "text": "— \"collect.\"",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 19655
+    },
+    {
+      "text": "เงิน",
+      "translit": "ngern",
+      "lang": "th",
+      "startFrame": 19691
+    },
+    {
+      "text": "— \"money.\"",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 19721
+    },
+    {
+      "text": "ด้วย",
+      "translit": "dûuay",
+      "lang": "th",
+      "startFrame": 19755
+    },
+    {
+      "text": "— \"also\" or \"please.\"",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 19807
+    },
+    {
+      "text": "ค่ะ",
+      "translit": "khâ",
+      "lang": "th",
+      "startFrame": 19850
+    },
+    {
+      "text": "polite. \"Can I have the bill, please?\"",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 19943
+    },
+    {
+      "text": "เก็บเงินด้วยค่ะ",
+      "translit": "gèp ngern dûuay khâ",
+      "lang": "th",
+      "startFrame": 20048
+    },
+    {
+      "text": "When you break it down, it's not so scary.",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 20115
+    },
+    {
+      "text": "Every sentence is just a few words put",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 20178
+    },
+    {
+      "text": "together in a pattern.",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 20224
+    },
+    {
+      "text": "Once you learn the pattern,",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 20280
+    },
+    {
+      "text": "you can swap in different dishes,",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 20325
+    },
+    {
+      "text": "different requests —",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 20404
+    },
+    {
+      "text": "and suddenly you can order anything.",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 20480
+    },
+    {
+      "text": "Now it's your turn to practise.",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 20587
+    },
+    {
+      "text": "I'm going to say each sentence slowly,",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 20672
+    },
+    {
+      "text": "and I want you to repeat after me.",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 20724
+    },
+    {
+      "text": "Say it out loud —",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 20789
+    },
+    {
+      "text": "don't just say it in your head.",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 20847
+    },
+    {
+      "text": "Speaking is how you learn.",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 20917
+    },
+    {
+      "text": "I'll leave a pause after each one so",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 20987
+    },
+    {
+      "text": "you have time to repeat. Ready?",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 21126
+    },
+    {
+      "text": "แนะนำอะไรดีคะ",
+      "translit": "náe-nam a-rai dii khá",
+      "lang": "th",
+      "startFrame": 21313
+    },
+    {
+      "text": "ขอผัดไทยหนึ่งจานค่ะ",
+      "translit": "khǎaw phàt-thai nùeng jaan khâ",
+      "lang": "th",
+      "startFrame": 21730
+    },
+    {
+      "text": "ไม่เอาเผ็ดนะคะ",
+      "translit": "mâi ao phèt ná khá",
+      "lang": "th",
+      "startFrame": 22005
+    },
+    {
+      "text": "อร่อยมาก",
+      "translit": "a-ròoy mâak",
+      "lang": "th",
+      "startFrame": 22265
+    },
+    {
+      "text": "อิ่มแล้วค่ะ",
+      "translit": "ìm láaew khâ",
+      "lang": "th",
+      "startFrame": 22472
+    },
+    {
+      "text": "เก็บเงินด้วยค่ะ",
+      "translit": "gèp ngern dûuay khâ",
+      "lang": "th",
+      "startFrame": 22529
+    },
+    {
+      "text": "Great job!",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 22619
+    },
+    {
+      "text": "If that felt hard, don't worry —",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 22679
+    },
+    {
+      "text": "that's completely normal.",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 22741
+    },
+    {
+      "text": "Rewind and do it again.",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 22812
+    },
+    {
+      "text": "Seriously, the more times you say it,",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 22866
+    },
+    {
+      "text": "the more natural it'll feel.",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 22928
+    },
+    {
+      "text": "OK, quiz time!",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 22987
+    },
+    {
+      "text": "I'm going to give you a situation in",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 23021
+    },
+    {
+      "text": "English,",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 23128
+    },
+    {
+      "text": "and you have to say the right Thai phrase.",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 23179
+    },
+    {
+      "text": "I'll give you a few seconds to think,",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 23255
+    },
+    {
+      "text": "and then I'll give you the answer.",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 23353
+    },
+    {
+      "text": "Let's see how many you get right.",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 23437
+    },
+    {
+      "text": "You're at a noodle stall.",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 23494
+    },
+    {
+      "text": "The cook looks at you.",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 23584
+    },
+    {
+      "text": "How do you say: \"I'd like one Pad Thai,",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 23656
+    },
+    {
+      "text": "please\"?",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 23869
+    },
+    {
+      "text": "ขอผัดไทยหนึ่งจานค่ะ",
+      "translit": "khǎaw phàt-thai nùeng jaan khâ",
+      "lang": "th",
+      "startFrame": 23961
+    },
+    {
+      "text": "That's right",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 24077
+    },
+    {
+      "text": "ขอผัดไทยหนึ่งจานค่ะ",
+      "translit": "khǎaw phàt-thai nùeng jaan khâ",
+      "lang": "th",
+      "startFrame": 24157
+    },
+    {
+      "text": "\"I'd like one Pad Thai, please.\"",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 24194
+    },
+    {
+      "text": "The cook asks if you want it spicy.",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 24228
+    },
+    {
+      "text": "You don't.",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 24324
+    },
+    {
+      "text": "How do you say: \"No spicy, please\"?",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 24588
+    },
+    {
+      "text": "ไม่เอาเผ็ดนะคะ",
+      "translit": "mâi ao phèt ná khá",
+      "lang": "th",
+      "startFrame": 24675
+    },
+    {
+      "text": "ไม่เอาเผ็ดนะคะ",
+      "translit": "mâi ao phèt ná khá",
+      "lang": "th",
+      "startFrame": 24726
+    },
+    {
+      "text": "\"No spicy, please.\"",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 24840
+    },
+    {
+      "text": "The food arrives. It's amazing.",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 24924
+    },
+    {
+      "text": "How do you say: \"Very delicious!\"?",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 25188
+    },
+    {
+      "text": "อร่อยมาก",
+      "translit": "a-ròoy mâak",
+      "lang": "th",
+      "startFrame": 25226
+    },
+    {
+      "text": "อร่อยมาก",
+      "translit": "a-ròoy mâak",
+      "lang": "th",
+      "startFrame": 25340
+    },
+    {
+      "text": "\"Very delicious!\" The cook will love you",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 25371
+    },
+    {
+      "text": "for that.",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 25426
+    },
+    {
+      "text": "You're done eating.",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 25542
+    },
+    {
+      "text": "How do you ask for the bill?",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 25738
+    },
+    {
+      "text": "เก็บเงินด้วยค่ะ",
+      "translit": "gèp ngern dûuay khâ",
+      "lang": "th",
+      "startFrame": 25817
+    },
+    {
+      "text": "เก็บเงินด้วยค่ะ",
+      "translit": "gèp ngern dûuay khâ",
+      "lang": "th",
+      "startFrame": 25916
+    },
+    {
+      "text": "\"Can I have the bill, please?\"",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 25970
+    },
+    {
+      "text": "How did you do?",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 26042
+    },
+    {
+      "text": "If you got three or four out of four,",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 26076
+    },
+    {
+      "text": "amazing.",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 26147
+    },
+    {
+      "text": "If you got one or two,",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 26199
+    },
+    {
+      "text": "that's still great — you're learning.",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 26269
+    },
+    {
+      "text": "The important thing is that you tried to",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 26326
+    },
+    {
+      "text": "produce the Thai,",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 26399
+    },
+    {
+      "text": "not just listen to it.",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 26454
+    },
+    {
+      "text": "Let's do a quick recap of everything you",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 26495
+    },
+    {
+      "text": "learned today.",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 26511
+    },
+    {
+      "text": "Eight phrases for ordering food in Thai:",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 26617
+    },
+    {
+      "text": "สั่ง",
+      "translit": "sàng",
+      "lang": "th",
+      "startFrame": 26655
+    },
+    {
+      "text": "to order",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 26711
+    },
+    {
+      "text": "เผ็ด",
+      "translit": "phèt",
+      "lang": "th",
+      "startFrame": 26782
+    },
+    {
+      "text": "spicy",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 26885
+    },
+    {
+      "text": "ไม่เผ็ด",
+      "translit": "mâi phèt",
+      "lang": "th",
+      "startFrame": 26922
+    },
+    {
+      "text": "not spicy",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 26970
+    },
+    {
+      "text": "อร่อย",
+      "translit": "a-ròoy",
+      "lang": "th",
+      "startFrame": 27006
+    },
+    {
+      "text": "delicious",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 27049
+    },
+    {
+      "text": "ขอ",
+      "translit": "khǎaw",
+      "lang": "th",
+      "startFrame": 27141
+    },
+    {
+      "text": "I'd like / may I have",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 27180
+    },
+    {
+      "text": "เก็บเงิน",
+      "translit": "gèp ngern",
+      "lang": "th",
+      "startFrame": 27248
+    },
+    {
+      "text": "the bill please",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 27293
+    },
+    {
+      "text": "แนะนำ",
+      "translit": "náe-nam",
+      "lang": "th",
+      "startFrame": 27346
+    },
+    {
+      "text": "to recommend",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 27412
+    },
+    {
+      "text": "อิ่ม",
+      "translit": "ìm",
+      "lang": "th",
+      "startFrame": 27539
+    },
+    {
+      "text": "In the next episode,",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 27595
+    },
+    {
+      "text": "we're going to learn how to ask for",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 27636
+    },
+    {
+      "text": "directions.",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 27682
+    },
+    {
+      "text": "So when you're wandering around Bangkok",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 27735
+    },
+    {
+      "text": "looking for the BTS station,",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 27806
+    },
+    {
+      "text": "you'll know exactly what to say.",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 27883
+    },
+    {
+      "text": "Here's a little preview:",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 28005
+    },
+    {
+      "text": "อยู่ที่ไหนคะ",
+      "translit": "yùu thîi nǎi khá",
+      "lang": "th",
+      "startFrame": 28114
+    },
+    {
+      "text": "\"Where is...?\"",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 28154
+    },
+    {
+      "text": "If you want to know how to use that,",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 28204
+    },
+    {
+      "text": "make sure you subscribe so",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 28241
+    },
+    {
+      "text": "you don't miss it.",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 28286
+    },
+    {
+      "text": "Thanks for watching,",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 28349
+    },
+    {
+      "text": "and I'll see you in the next one.",
+      "translit": null,
+      "lang": "en",
+      "startFrame": 28409
+    },
+    {
+      "text": "สวัสดีค่ะ",
+      "translit": "sà-wàt-dii khâ",
+      "lang": "th",
+      "startFrame": 28469
+    }
+  ]
+}

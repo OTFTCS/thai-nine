@@ -1,6 +1,8 @@
 "use client";
 
-import { useCallback, useEffect, useState } from "react";
+import Link from "next/link";
+import { useRouter } from "next/navigation";
+import { useCallback, useEffect, useMemo, useState } from "react";
 import {
   Card,
   CardDescription,
@@ -15,11 +17,34 @@ import { StatusSelect } from "@/components/creator/StatusSelect";
 import { FolderReveal } from "@/components/creator/ArtifactLink";
 import type { YouTubeRow } from "@/types/creator";
 
+interface ApiFailure {
+  ok?: false;
+  reason?: string;
+  message?: string;
+  error?: string;
+}
+
+function describeFailure(payload: ApiFailure): string {
+  if (payload.reason === "claude-cli-missing") {
+    return "Claude CLI not installed (you must be on Nine's Mac with `claude` in PATH).";
+  }
+  if (payload.reason === "unsupported-platform") {
+    return "This server cannot run script generation (claude CLI is Mac-only).";
+  }
+  if (payload.reason === "in-flight") {
+    return "Generation already in flight.";
+  }
+  return payload.message ?? payload.error ?? "Unknown error from server.";
+}
+
 export default function YouTubePage() {
+  const router = useRouter();
   const [rows, setRows] = useState<YouTubeRow[]>([]);
   const [error, setError] = useState<string | null>(null);
   const [loading, setLoading] = useState(true);
   const [syncing, setSyncing] = useState(false);
+  const [generatingNext, setGeneratingNext] = useState(false);
+  const [generateError, setGenerateError] = useState<string | null>(null);
 
   const load = useCallback(async (endpoint: string) => {
     const res = await fetch(endpoint, { cache: "no-store" });
@@ -60,15 +85,83 @@ export default function YouTubePage() {
     setRows((prev) => prev.map((r) => (r.id === id ? { ...r, status } : r)));
   }
 
+  const nextNotStarted = useMemo(
+    () => rows.find((r) => r.meta.scriptStatus === "NOT_STARTED") ?? null,
+    [rows]
+  );
+
+  async function handleGenerateNext() {
+    if (!nextNotStarted || generatingNext) return;
+    setGeneratingNext(true);
+    setGenerateError(null);
+    try {
+      const res = await fetch("/api/creator/youtube/script/generate", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ episodeId: nextNotStarted.id }),
+      });
+      if (!res.ok) {
+        let payload: ApiFailure | null = null;
+        try {
+          payload = (await res.json()) as ApiFailure;
+        } catch {
+          payload = null;
+        }
+        throw new Error(
+          payload ? describeFailure(payload) : `HTTP ${res.status}`
+        );
+      }
+      const data = (await res.json()) as { ok?: boolean; error?: string };
+      if (data.ok === false) {
+        throw new Error(data.error ?? "generate failed");
+      }
+      router.push(`/admin/creator/youtube/${nextNotStarted.id}`);
+    } catch (err) {
+      setGenerateError((err as Error).message);
+    } finally {
+      setGeneratingNext(false);
+    }
+  }
+
   const columns: ColumnSpec<YouTubeRow>[] = [
     {
       key: "id",
       label: "Episode",
-      render: (row) => <FolderReveal path={row.folderPath} label={row.id} />,
+      render: (row) => (
+        <span className="inline-flex items-center gap-1.5">
+          <Link
+            href={`/admin/creator/youtube/${row.id}`}
+            className="font-mono text-sm text-primary hover:underline"
+          >
+            {row.id}
+          </Link>
+          <FolderReveal path={row.folderPath} label="dir" />
+        </span>
+      ),
+    },
+    {
+      key: "topic",
+      label: "Topic",
+      render: (row) => (
+        <span className="text-sm">
+          {row.meta.topic ?? row.meta.catalogueTitle ?? "-"}
+        </span>
+      ),
+    },
+    {
+      key: "scriptStatus",
+      label: "Script",
+      render: (row) => (
+        <StatusSelect
+          kind="scriptStatus"
+          id={row.id}
+          status={row.meta.scriptStatus}
+        />
+      ),
     },
     {
       key: "status",
-      label: "Status",
+      label: "Pub status",
       render: (row) => (
         <StatusSelect
           kind="youtube"
@@ -87,7 +180,7 @@ export default function YouTubePage() {
     { key: "qaReport", label: "QA" },
   ];
 
-  if (loading) return <p className="text-muted-foreground">Loading…</p>;
+  if (loading) return <p className="text-muted-foreground">Loading...</p>;
   if (error)
     return (
       <Card>
@@ -114,15 +207,56 @@ export default function YouTubePage() {
                 back to the local recorded-ids list.
               </CardDescription>
             </div>
-            <button
-              type="button"
-              onClick={handleSync}
-              disabled={syncing}
-              className="rounded bg-blue-600 px-3 py-1.5 text-xs font-medium text-white hover:bg-blue-700 disabled:opacity-60"
-            >
-              {syncing ? "Syncing…" : "Sync from API"}
-            </button>
+            <div className="flex items-center gap-2">
+              <Link
+                href="/admin/creator/eval"
+                className="rounded border border-border bg-background px-3 py-1.5 text-xs font-medium text-foreground hover:bg-muted"
+              >
+                Eval annotations
+              </Link>
+              <button
+                type="button"
+                onClick={handleSync}
+                disabled={syncing}
+                className="rounded bg-blue-600 px-3 py-1.5 text-xs font-medium text-white hover:bg-blue-700 disabled:opacity-60"
+              >
+                {syncing ? "Syncing..." : "Sync from API"}
+              </button>
+            </div>
           </div>
+        </CardHeader>
+      </Card>
+
+      <Card>
+        <CardHeader>
+          <div className="flex flex-wrap items-center gap-3">
+            {nextNotStarted ? (
+              <>
+                <button
+                  type="button"
+                  onClick={() => void handleGenerateNext()}
+                  disabled={generatingNext}
+                  className="rounded bg-emerald-600 px-3 py-1.5 text-xs font-medium text-white hover:bg-emerald-700 disabled:opacity-60"
+                >
+                  {generatingNext
+                    ? `Generating ${nextNotStarted.id}...`
+                    : `Generate next: ${nextNotStarted.id}`}
+                </button>
+                <span className="text-xs text-muted-foreground">
+                  Next catalogue episode without a draft.
+                </span>
+              </>
+            ) : (
+              <span className="text-sm text-muted-foreground">
+                All catalogue episodes have at least a draft.
+              </span>
+            )}
+          </div>
+          {generateError ? (
+            <p className="mt-2 rounded border border-red-200 bg-red-50 px-3 py-2 text-xs text-red-700">
+              {generateError}
+            </p>
+          ) : null}
         </CardHeader>
       </Card>
 

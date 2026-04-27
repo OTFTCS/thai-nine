@@ -194,6 +194,19 @@ def validate_episode_structure(script: dict, result: ValidationResult):
     # Should start with a hook
     if modes and modes[0] != "hook":
         result.warn("Episode doesn't start with a 'hook' block")
+    elif modes and modes[0] == "hook":
+        # PART 1 is now a 2-person sketch -- enforce >=2 distinct speakers
+        hook_block = blocks[0]
+        speakers = {line.get("speaker") for line in hook_block.get("lines", []) if line.get("speaker")}
+        speakers.discard(None)
+        # Allow 'narrator' but require at least 2 of {A, B} for the sketch contract
+        sketch_speakers = speakers & {"A", "B"}
+        if len(sketch_speakers) < 2:
+            result.warn(
+                f"Hook block {hook_block['id']} should be a 2-person sketch with speakers 'A' and 'B'. "
+                f"Found speakers: {sorted(speakers) if speakers else 'none'}. "
+                "PART 1 is now a cold-open sketch per Rev 6 of the template."
+            )
 
     # Should end with recap or teaser
     if modes and modes[-1] not in ("recap", "teaser"):

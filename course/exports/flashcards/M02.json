@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 1,
+  "moduleId": "M02",
+  "moduleTitle": "Sounds, Script, and Reading Entry",
+  "generatedAt": "2026-04-25T02:55:26.338Z",
+  "source": "build_flashcards",
+  "lessonIds": [
+    "M02-L001",
+    "M02-L002",
+    "M02-L003",
+    "M02-L004",
+    "M02-L005",
+    "M02-L006",
+    "M02-L007",
+    "M02-L008",
+    "M02-L009",
+    "M02-L010"
+  ],
+  "cards": [
+    {
+      "id": "m02-c001",
+      "vocabId": "v-6bb42f6e5c",
+      "thai": "คน",
+      "translit": "khon",
+      "english": "person",
+      "lessonId": "M02-L009",
+      "tags": [
+        "module-M02",
+        "lesson-M02-L009",
+        "M02",
+        "L009",
+        "script",
+        "pronunciation",
+        "reading-entry"
+      ]
+    },
+    {
+      "id": "m02-c002",
+      "vocabId": "v-f0b2ddeed3",
+      "thai": "ไทย",
+      "translit": "thai",
+      "english": "Thailand / Thai",
+      "lessonId": "M02-L009",
+      "tags": [
+        "module-M02",
+        "lesson-M02-L009",
+        "M02",
+        "L009",
+        "script",
+        "pronunciation",
+        "reading-entry"
+      ]
+    }
+  ]
+}

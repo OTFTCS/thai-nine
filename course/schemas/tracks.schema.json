@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://thai-nine.local/schemas/tracks.schema.json",
+  "title": "Tracks",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["tracks"],
+  "properties": {
+    "tracks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["track_id", "track_title", "cefr_span", "ordered_lesson_ids", "capstone_lesson_id"],
+        "properties": {
+          "track_id": { "type": "string", "minLength": 1 },
+          "track_title": { "type": "string", "minLength": 1 },
+          "cefr_span": { "type": "string", "minLength": 1 },
+          "ordered_lesson_ids": {
+            "type": "array",
+            "items": { "type": "string", "pattern": "^M\\d{2}-L\\d{3}$" }
+          },
+          "capstone_lesson_id": { "type": "string", "pattern": "^M\\d{2}-L\\d{3}$" }
+        }
+      }
+    }
+  }
+}

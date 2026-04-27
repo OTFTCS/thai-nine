@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://thai-nine.local/schemas/modules.schema.json",
+  "title": "Modules Row",
+  "description": "A single module row in modules.csv. 18 rows, keyed by module_id.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "module_id",
+    "module_title",
+    "module_exit_outcome",
+    "cefr_band",
+    "stage_id",
+    "parallel_track",
+    "legacy_track_id"
+  ],
+  "properties": {
+    "module_id": { "type": "string", "pattern": "^M\\d{2}$" },
+    "module_title": { "type": "string", "minLength": 1 },
+    "module_exit_outcome": { "type": "string", "minLength": 1 },
+    "cefr_band": { "type": "string", "enum": ["A0", "A1", "A2", "B1", "B2"] },
+    "stage_id": { "type": "string", "pattern": "^S[1-4]$" },
+    "parallel_track": { "type": "string", "enum": ["main", "literacy", "both"] },
+    "legacy_track_id": { "type": "string" }
+  }
+}

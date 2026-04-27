@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://thai-nine.local/schemas/skool-metadata.schema.json",
+  "title": "Skool Metadata Row",
+  "description": "One row in skool-metadata.csv per lesson. Holds Skool-discovery fields moved out of the main blueprint.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "lesson_id",
+    "topic_tags",
+    "scenario_tags",
+    "skill_tags",
+    "flashcard_tags",
+    "standalone_rating",
+    "skool_display_title",
+    "live_upsell_cta"
+  ],
+  "properties": {
+    "lesson_id": { "type": "string", "pattern": "^M\\d{2}-L\\d{3}$" },
+    "topic_tags": { "type": "string" },
+    "scenario_tags": { "type": "string" },
+    "skill_tags": { "type": "string" },
+    "flashcard_tags": { "type": "string" },
+    "standalone_rating": { "type": "string", "pattern": "^[1-5]$" },
+    "skool_display_title": { "type": "string" },
+    "live_upsell_cta": { "type": "string", "enum": ["true", "false"] }
+  }
+}

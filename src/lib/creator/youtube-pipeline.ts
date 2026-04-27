@@ -7,11 +7,21 @@ import {
   type ContentTypeSpec,
 } from "@/lib/creator/content-scanner";
 import { fetchYouTubeUploadedIds } from "@/lib/creator/youtube-api";
+import {
+  readEpisodeStatus,
+  type ScriptStatus,
+} from "@/lib/creator/episode-status";
+import {
+  readCatalogue,
+  type CatalogueEntry,
+} from "@/lib/creator/youtube-catalogue";
 import type {
   YouTubeEpisode,
   YouTubeInventory,
   YouTubeRow,
 } from "@/types/creator";
+
+type YouTubeRowMeta = YouTubeRow["meta"];
 
 const EPISODE_PATTERN = /^YT-S01-E(\d{2,})$/;
 
@@ -46,7 +56,26 @@ function episodePaths(root: string, id: string) {
     recordingPath: path.join(root, "youtube", "recordings", `${id}.m4a`),
     imagesDirPath: path.join(root, "youtube", "images", id),
     qaReportPath: path.join(dir, "qa-report.json"),
+    scriptJsonPath: path.join(root, "youtube", "examples", `${id}.json`),
   };
+}
+
+interface ScriptJsonShape {
+  title?: unknown;
+}
+
+async function readScriptTitle(scriptJsonPath: string): Promise<string | null> {
+  const raw = await readIfExists(scriptJsonPath);
+  if (!raw) return null;
+  try {
+    const parsed = JSON.parse(raw) as ScriptJsonShape;
+    if (typeof parsed.title === "string" && parsed.title.trim() !== "") {
+      return parsed.title;
+    }
+  } catch {
+    // Malformed script JSON: fall back to id-based title at the call site.
+  }
+  return null;
 }
 
 export async function readYouTubeInventory(
@@ -179,52 +208,122 @@ function youtubeArtifactSpecs(root: string): ArtifactSpec[] {
 
 export function youtubeSpec(
   root = process.cwd()
-): ContentTypeSpec<{ recorded: boolean }> {
+): ContentTypeSpec<YouTubeRowMeta> {
   // Fetch once per spec() call; shared across all build() invocations.
   const apiSetPromise = fetchYouTubeUploadedIds(root);
+  // Catalogue is read once and cached in this map for build() lookups,
+  // keyed by episodeId.
+  const catalogueByIdPromise = loadCatalogueIndex(root);
 
   return {
     kind: "youtube",
     scan: async () => {
-      const outDir = path.join(root, "youtube", "out");
-      const items: Array<{ id: string; dir: string }> = [];
-      let entries: string[] = [];
-      try {
-        entries = await fs.readdir(outDir);
-      } catch {
-        return items;
+      const onDisk = await scanOnDiskEpisodes(root);
+      const catalogueIds = (await catalogueByIdPromise).keys();
+      // Merge on-disk + catalogue ids. On-disk entries keep their real
+      // folderPath; catalogue-only entries get an empty string for
+      // folderPath since they do not yet have an out/ directory.
+      const merged = new Map<string, { id: string; dir: string }>();
+      for (const item of onDisk) {
+        merged.set(item.id, item);
       }
-      for (const name of entries) {
-        if (!EPISODE_PATTERN.test(name)) continue;
-        const dir = path.join(outDir, name);
-        const stat = await fs.stat(dir).catch(() => null);
-        if (!stat?.isDirectory()) continue;
-        items.push({ id: name, dir });
+      for (const id of catalogueIds) {
+        if (!merged.has(id)) {
+          merged.set(id, { id, dir: "" });
+        }
       }
+      const items = Array.from(merged.values());
       items.sort((a, b) => a.id.localeCompare(b.id));
       return items;
     },
     artifacts: youtubeArtifactSpecs(root),
     build: async (id) => {
       const apiSet = await apiSetPromise;
+      const catalogueById = await catalogueByIdPromise;
+      const catalogueEntry = catalogueById.get(id) ?? null;
+
+      const paths = episodePaths(root, id);
+      const [recordingExists, scriptExists, scriptTitle, statusFile] =
+        await Promise.all([
+          pathExists(paths.recordingPath),
+          pathExists(paths.scriptJsonPath),
+          readScriptTitle(paths.scriptJsonPath),
+          Promise.resolve(readEpisodeStatus(id, root)),
+        ]);
+
       const uploaded = apiSet.has(id);
-      const recorded = uploaded || RECORDED_IDS_FALLBACK.has(id);
+      const recorded =
+        uploaded || RECORDED_IDS_FALLBACK.has(id) || recordingExists;
       const status = uploaded
         ? "UPLOADED"
         : recorded
           ? "RECORDED"
           : "PENDING";
+
+      const derivedScriptStatus: ScriptStatus = scriptExists
+        ? "DRAFT"
+        : "NOT_STARTED";
+      const scriptStatus: ScriptStatus =
+        statusFile?.scriptStatus ?? derivedScriptStatus;
+
+      const title =
+        catalogueEntry?.titleBucket ?? scriptTitle ?? id;
+
       return {
-        title: id,
+        title,
         status,
-        meta: { recorded },
+        meta: {
+          recorded,
+          scriptStatus,
+          catalogueTitle: catalogueEntry?.titleBucket ?? null,
+          topic: catalogueEntry?.topic ?? null,
+          level: catalogueEntry?.level ?? null,
+          lessonRef: catalogueEntry?.lessonRef ?? null,
+          hasScript: scriptExists,
+        },
       };
     },
   };
 }
 
+async function scanOnDiskEpisodes(
+  root: string
+): Promise<Array<{ id: string; dir: string }>> {
+  const outDir = path.join(root, "youtube", "out");
+  const items: Array<{ id: string; dir: string }> = [];
+  let entries: string[] = [];
+  try {
+    entries = await fs.readdir(outDir);
+  } catch {
+    return items;
+  }
+  for (const name of entries) {
+    if (!EPISODE_PATTERN.test(name)) continue;
+    const dir = path.join(outDir, name);
+    const stat = await fs.stat(dir).catch(() => null);
+    if (!stat?.isDirectory()) continue;
+    items.push({ id: name, dir });
+  }
+  return items;
+}
+
+async function loadCatalogueIndex(
+  root: string
+): Promise<Map<string, CatalogueEntry>> {
+  // readCatalogue is sync, but we keep the wrapper async so callers can
+  // await it consistently with apiSetPromise.
+  const entries = readCatalogue(root);
+  const map = new Map<string, CatalogueEntry>();
+  for (const entry of entries) {
+    map.set(entry.episodeId, entry);
+  }
+  return map;
+}
+
 export async function readYouTubeRows(
   root = process.cwd()
 ): Promise<YouTubeRow[]> {
-  return scanContent(youtubeSpec(root));
+  const rows = await scanContent(youtubeSpec(root));
+  rows.sort((a, b) => a.id.localeCompare(b.id));
+  return rows;
 }

@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "moduleId": "M07",
+  "moduleTitle": "Reading Fluency and Pronunciation Control",
+  "generatedAt": "2026-04-25T02:55:26.338Z",
+  "source": "build_flashcards",
+  "lessonIds": [
+    "M07-L001",
+    "M07-L002",
+    "M07-L003",
+    "M07-L004",
+    "M07-L005",
+    "M07-L006",
+    "M07-L007",
+    "M07-L008",
+    "M07-L009",
+    "M07-L010"
+  ],
+  "cards": [
+    {
+      "id": "m07-c001",
+      "vocabId": "v-e3ef8a701b",
+      "thai": "เขา",
+      "translit": "khǎo",
+      "english": "he / she",
+      "lessonId": "M07-L005",
+      "tags": [
+        "module-M07",
+        "lesson-M07-L005",
+        "M07",
+        "L005",
+        "reading",
+        "pronunciation",
+        "fluency"
+      ]
+    }
+  ]
+}

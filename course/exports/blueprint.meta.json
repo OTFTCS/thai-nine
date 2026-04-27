@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 2,
+  "lastUpdated": "2026-04-24T15:54:31.722Z",
+  "columnSpec": {
+    "main": [
+      "lesson_id",
+      "module_id",
+      "stage_id",
+      "cefr_band",
+      "module_title",
+      "lesson_title",
+      "status",
+      "lesson_primary_outcome",
+      "lesson_secondary_outcome",
+      "grammar_function_primary",
+      "grammar_function_secondary",
+      "new_vocab_core",
+      "new_chunks_core",
+      "review_vocab_required",
+      "targets",
+      "lesson_quiz_focus",
+      "prereq_lessons",
+      "notes"
+    ],
+    "modules": [
+      "module_id",
+      "module_title",
+      "module_exit_outcome",
+      "cefr_band",
+      "stage_id",
+      "parallel_track",
+      "legacy_track_id"
+    ],
+    "skool_metadata": [
+      "lesson_id",
+      "topic_tags",
+      "scenario_tags",
+      "skill_tags",
+      "flashcard_tags",
+      "standalone_rating",
+      "skool_display_title",
+      "live_upsell_cta"
+    ],
+    "community_prompts": [
+      "lesson_id",
+      "community_prompt"
+    ]
+  },
+  "sidecars": [
+    "modules.csv",
+    "stages.json",
+    "tracks.json",
+    "skool-metadata.csv",
+    "community-prompts.csv"
+  ],
+  "dropped_columns_v1": [
+    "source_inspiration"
+  ],
+  "derived_columns": {
+    "stage_title": "stages.json[stage_id]",
+    "module_quiz_link": "${module_id}-QUIZ"
+  },
+  "merged_columns": {
+    "targets": [
+      "script_target",
+      "listening_target",
+      "speaking_target",
+      "writing_target"
+    ]
+  }
+}

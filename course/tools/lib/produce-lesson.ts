@@ -126,54 +126,155 @@ function parseCsvLine(line: string): string[] {
   return cells;
 }
 
-export function readBlueprintLessonRows(root: string): BlueprintLessonRow[] {
-  const blueprintPath = join(
-    root,
-    "course",
-    "exports",
-    "full-thai-course-blueprint.csv"
-  );
-  const raw = readFileSync(blueprintPath, "utf8")
-    .split(/\r?\n/)
-    .filter(Boolean);
+type ParsedCsv = {
+  headers: string[];
+  index: Map<string, number>;
+  rows: string[][];
+};
 
-  if (raw.length < 2) {
-    return [];
+function parseCsvFile(path: string): ParsedCsv {
+  const raw = readFileSync(path, "utf8").split(/\r?\n/).filter(Boolean);
+  if (raw.length < 1) {
+    return { headers: [], index: new Map(), rows: [] };
+  }
+  const headers = parseCsvLine(raw[0]);
+  const index = new Map(headers.map((h, i) => [h, i]));
+  const rows = raw.slice(1).map(parseCsvLine);
+  return { headers, index, rows };
+}
+
+function cellAt(cells: string[], index: Map<string, number>, key: string): string {
+  return (cells[index.get(key) ?? -1] ?? "").trim();
+}
+
+type ModulesSidecar = Map<string, {
+  moduleTitle: string;
+  moduleExitOutcome: string;
+  cefrBand: string;
+  stageId: string;
+  parallelTrack: string;
+  legacyTrackId: string;
+}>;
+
+type SkoolMetadataSidecar = Map<string, {
+  flashcardTags: string;
+}>;
+
+function loadModulesSidecar(path: string): ModulesSidecar {
+  if (!existsSync(path)) return new Map();
+  const csv = parseCsvFile(path);
+  const map: ModulesSidecar = new Map();
+  for (const cells of csv.rows) {
+    const moduleId = cellAt(cells, csv.index, "module_id");
+    if (!moduleId) continue;
+    map.set(moduleId, {
+      moduleTitle: cellAt(cells, csv.index, "module_title"),
+      moduleExitOutcome: cellAt(cells, csv.index, "module_exit_outcome"),
+      cefrBand: cellAt(cells, csv.index, "cefr_band"),
+      stageId: cellAt(cells, csv.index, "stage_id"),
+      parallelTrack: cellAt(cells, csv.index, "parallel_track"),
+      legacyTrackId: cellAt(cells, csv.index, "legacy_track_id"),
+    });
+  }
+  return map;
+}
+
+function loadSkoolMetadataSidecar(path: string): SkoolMetadataSidecar {
+  if (!existsSync(path)) return new Map();
+  const csv = parseCsvFile(path);
+  const map: SkoolMetadataSidecar = new Map();
+  for (const cells of csv.rows) {
+    const lessonId = cellAt(cells, csv.index, "lesson_id");
+    if (!lessonId) continue;
+    map.set(lessonId, {
+      flashcardTags: cellAt(cells, csv.index, "flashcard_tags"),
+    });
+  }
+  return map;
+}
+
+function blueprintPathFor(root: string): string {
+  const override = process.env.BLUEPRINT_CSV;
+  if (override && override.length > 0) {
+    return override.startsWith("/") ? override : join(root, override);
+  }
+  return join(root, "course", "exports", "full-thai-course-blueprint.csv");
+}
+
+export function readBlueprintLessonRows(root: string): BlueprintLessonRow[] {
+  const blueprintPath = blueprintPathFor(root);
+  const csv = parseCsvFile(blueprintPath);
+  if (csv.rows.length === 0) return [];
+
+  const isV2 = csv.headers.includes("stage_id") && csv.headers.includes("targets");
+
+  if (isV2) {
+    const exportsDir = join(root, "course", "exports");
+    const modules = loadModulesSidecar(join(exportsDir, "modules.csv"));
+    const skoolMeta = loadSkoolMetadataSidecar(join(exportsDir, "skool-metadata.csv"));
+
+    return csv.rows.map((cells) => {
+      const lessonId = cellAt(cells, csv.index, "lesson_id");
+      const moduleId = cellAt(cells, csv.index, "module_id");
+      const mod = modules.get(moduleId);
+      const meta = skoolMeta.get(lessonId);
+      const targetsRaw = cellAt(cells, csv.index, "targets");
+      const [scriptTarget = "", listeningTarget = "", speakingTarget = ""] = targetsRaw.split("|");
+
+      return {
+        trackId: mod?.legacyTrackId ?? "",
+        trackTitle: "",
+        cefrBand: cellAt(cells, csv.index, "cefr_band") || (mod?.cefrBand ?? ""),
+        moduleId,
+        moduleTitle: cellAt(cells, csv.index, "module_title") || (mod?.moduleTitle ?? ""),
+        moduleExitOutcome: mod?.moduleExitOutcome ?? "",
+        lessonId,
+        lessonTitle: cellAt(cells, csv.index, "lesson_title"),
+        lessonPrimaryOutcome: cellAt(cells, csv.index, "lesson_primary_outcome"),
+        lessonSecondaryOutcome: cellAt(cells, csv.index, "lesson_secondary_outcome"),
+        grammarFunctionPrimary: cellAt(cells, csv.index, "grammar_function_primary"),
+        grammarFunctionSecondary: cellAt(cells, csv.index, "grammar_function_secondary"),
+        newVocabCore: cellAt(cells, csv.index, "new_vocab_core"),
+        newChunksCore: cellAt(cells, csv.index, "new_chunks_core"),
+        reviewVocabRequired: cellAt(cells, csv.index, "review_vocab_required"),
+        scriptTarget,
+        listeningTarget,
+        speakingTarget,
+        lessonQuizFocus: cellAt(cells, csv.index, "lesson_quiz_focus"),
+        moduleQuizLink: moduleId ? `${moduleId}-QUIZ` : "",
+        flashcardTags: meta?.flashcardTags ?? "",
+        notes: cellAt(cells, csv.index, "notes"),
+        sourceInspiration: "",
+      };
+    });
   }
 
-  const headers = parseCsvLine(raw[0]);
-  const index = new Map(headers.map((header, headerIndex) => [header, headerIndex]));
-  const getCell = (cells: string[], key: string) =>
-    (cells[index.get(key) ?? -1] ?? "").trim();
-
-  return raw.slice(1).map((line) => {
-    const cells = parseCsvLine(line);
-    return {
-      trackId: getCell(cells, "track_id"),
-      trackTitle: getCell(cells, "track_title"),
-      cefrBand: getCell(cells, "cefr_band"),
-      moduleId: getCell(cells, "module_id"),
-      moduleTitle: getCell(cells, "module_title"),
-      moduleExitOutcome: getCell(cells, "module_exit_outcome"),
-      lessonId: getCell(cells, "lesson_id"),
-      lessonTitle: getCell(cells, "lesson_title"),
-      lessonPrimaryOutcome: getCell(cells, "lesson_primary_outcome"),
-      lessonSecondaryOutcome: getCell(cells, "lesson_secondary_outcome"),
-      grammarFunctionPrimary: getCell(cells, "grammar_function_primary"),
-      grammarFunctionSecondary: getCell(cells, "grammar_function_secondary"),
-      newVocabCore: getCell(cells, "new_vocab_core"),
-      newChunksCore: getCell(cells, "new_chunks_core"),
-      reviewVocabRequired: getCell(cells, "review_vocab_required"),
-      scriptTarget: getCell(cells, "script_target"),
-      listeningTarget: getCell(cells, "listening_target"),
-      speakingTarget: getCell(cells, "speaking_target"),
-      lessonQuizFocus: getCell(cells, "lesson_quiz_focus"),
-      moduleQuizLink: getCell(cells, "module_quiz_link"),
-      flashcardTags: getCell(cells, "flashcard_tags"),
-      notes: getCell(cells, "notes"),
-      sourceInspiration: getCell(cells, "source_inspiration"),
-    };
-  });
+  // v1 fallback
+  return csv.rows.map((cells) => ({
+    trackId: cellAt(cells, csv.index, "track_id"),
+    trackTitle: cellAt(cells, csv.index, "track_title"),
+    cefrBand: cellAt(cells, csv.index, "cefr_band"),
+    moduleId: cellAt(cells, csv.index, "module_id"),
+    moduleTitle: cellAt(cells, csv.index, "module_title"),
+    moduleExitOutcome: cellAt(cells, csv.index, "module_exit_outcome"),
+    lessonId: cellAt(cells, csv.index, "lesson_id"),
+    lessonTitle: cellAt(cells, csv.index, "lesson_title"),
+    lessonPrimaryOutcome: cellAt(cells, csv.index, "lesson_primary_outcome"),
+    lessonSecondaryOutcome: cellAt(cells, csv.index, "lesson_secondary_outcome"),
+    grammarFunctionPrimary: cellAt(cells, csv.index, "grammar_function_primary"),
+    grammarFunctionSecondary: cellAt(cells, csv.index, "grammar_function_secondary"),
+    newVocabCore: cellAt(cells, csv.index, "new_vocab_core"),
+    newChunksCore: cellAt(cells, csv.index, "new_chunks_core"),
+    reviewVocabRequired: cellAt(cells, csv.index, "review_vocab_required"),
+    scriptTarget: cellAt(cells, csv.index, "script_target"),
+    listeningTarget: cellAt(cells, csv.index, "listening_target"),
+    speakingTarget: cellAt(cells, csv.index, "speaking_target"),
+    lessonQuizFocus: cellAt(cells, csv.index, "lesson_quiz_focus"),
+    moduleQuizLink: cellAt(cells, csv.index, "module_quiz_link"),
+    flashcardTags: cellAt(cells, csv.index, "flashcard_tags"),
+    notes: cellAt(cells, csv.index, "notes"),
+    sourceInspiration: cellAt(cells, csv.index, "source_inspiration"),
+  }));
 }
 
 export function readLessonStatus(root: string, lessonId: string): LessonStatus {

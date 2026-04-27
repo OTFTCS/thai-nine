@@ -83,7 +83,8 @@ A Thai language course (Immersion Thai with Nine) with 180 lessons across 18 mod
 - `thai-transliteration-standard.md` — full PTM transliteration rules (the authority)
 - `course/style-guide.md` — slide layout, font, colour, and formatting rules
 - `course/transliteration-policy.md` — transliteration policy for pipeline
-- `youtube-series-strategy.md` — YouTube series planning and strategy
+- `youtube/episode-catalogue.md` — single source of truth for what YouTube episodes get made (standalone, loosely progressive, title-bucket pre-assigned per topic)
+- `youtube/template-decisions.md` — change log for the YouTube script template + catalogue governance. Read before modifying the template.
 - `screen-layout-mockups.html` — interactive screen layout mockups
 - `thai-nine-project-tracker.xlsx` — project tracking spreadsheet
 
@@ -182,6 +183,16 @@ PATH="/opt/homebrew/bin:/usr/local/bin:$PATH" /opt/homebrew/bin/python3 \
 # Note: /opt/homebrew/bin/python3 has manim
 # Note: Scene generation is deterministic codegen (no Claude CLI, no Whisper)
 ```
+
+## Episode catalogue + governance
+- **Episode catalogue** — `youtube/episode-catalogue.md` is the source of truth for what episodes get made. Standalone, loosely progressive. Title-style bucket pre-assigned per topic; final title decided at scripting time using that bucket.
+- **Template change log** — `youtube/template-decisions.md` records every change to the script template and to catalogue governance. Read this before modifying the template.
+
+### Pre-Rev-6 episode writing
+Until the template overhaul (Rev 6) ships, the script template still requires `seriesId`, `seriesName`, and `nextEpisodeTease`. For new episodes written in this window:
+- Set `seriesId: "standalone"` and `seriesName: "Standalone"`
+- Set `nextEpisodeTease` to a thematic Thai phrase relevant to the topic (NOT a "watch episode N next" reference)
+- Add to `speakerNote` on the teaser block: "Pre-Rev-6 — may need retro-fit when template updates"
 
 ## Manim pipeline architecture
 - **Single-file architecture** — script JSON (`youtube/examples/`) is the sole source of truth. Contains content, timestamps, and all metadata. No intermediate timed.json or overlays.json.

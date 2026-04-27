@@ -1,0 +1,68 @@
+{
+  "episodeId": "YT-S01-E02",
+  "currentRound": 1,
+  "converged": false,
+  "chosenVariant": null,
+  "rounds": [
+    {
+      "round": 1,
+      "generatedAt": "2026-04-25T08:19:31.365845+00:00",
+      "mutatedParts": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "variants": [
+        {
+          "variantId": "r1-A",
+          "axes": {
+            "hookStyle": "situation",
+            "drillType": "anticipation",
+            "exampleSentences": "simple"
+          },
+          "path": "r1/r1-A.json",
+          "validationPassed": true,
+          "annotationPath": "r1/r1-A-annotations.md"
+        },
+        {
+          "variantId": "r1-B",
+          "axes": {
+            "hookStyle": "problem/pain",
+            "drillType": "anticipation",
+            "exampleSentences": "simple"
+          },
+          "path": "r1/r1-B.json",
+          "validationPassed": true,
+          "annotationPath": "r1/r1-B-annotations.md"
+        },
+        {
+          "variantId": "r1-C",
+          "axes": {
+            "hookStyle": "situation",
+            "drillType": "substitution",
+            "exampleSentences": "simple"
+          },
+          "path": "r1/r1-C.json",
+          "validationPassed": true,
+          "annotationPath": "r1/r1-C-annotations.md"
+        },
+        {
+          "variantId": "r1-D",
+          "axes": {
+            "hookStyle": "situation",
+            "drillType": "anticipation",
+            "exampleSentences": "rich + idiomatic"
+          },
+          "path": "r1/r1-D.json",
+          "validationPassed": true,
+          "annotationPath": "r1/r1-D-annotations.md"
+        }
+      ]
+    }
+  ]
+}

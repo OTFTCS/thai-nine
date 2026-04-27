@@ -1,0 +1,21 @@
+question_text,question_type,option_a,option_b,option_c,option_d,correct_option,points
+What is the best meaning of สวัสดี?,multiple_choice,hello,polite ending (male),polite ending (female),"hello (male, polite)",A,1
+What is the best meaning of ชื่อ?,multiple_choice,name,what,what is your name?,person,A,1
+What is the best meaning of ฉัน?,multiple_choice,I (female / neutral),I (male polite),you (polite),he / she,A,1
+What is the best meaning of ศูนย์?,multiple_choice,zero (0),one (1),two (2),three (3),A,1
+What is the best meaning of ครับ?,multiple_choice,polite ending (male),hello,polite ending (female),"hello (male, polite)",A,1
+What is the best meaning of อะไร?,multiple_choice,what,name,what is your name?,person,A,1
+What is the best meaning of ผม?,multiple_choice,I (male polite),I (female / neutral),you (polite),he / she,A,1
+What is the best meaning of หนึ่ง?,multiple_choice,one (1),zero (0),two (2),three (3),A,1
+Type the PTM transliteration for สวัสดี.,short_answer,sà-wàt-dii,,,,,1
+Type the PTM transliteration for ชื่อ.,short_answer,chûue,,,,,1
+Type the PTM transliteration for ฉัน.,short_answer,chǎn,,,,,1
+Type the PTM transliteration for ผม.,short_answer,phǒm,,,,,1
+Choose the sentence that keeps the lesson meaning of this phrase.,multiple_choice,Use สวัสดี in polite beginner conversation,Use ครับ in polite beginner conversation,Use ค่ะ in polite beginner conversation,Use สวัสดีครับ in polite beginner conversation,A,1
+Choose the sentence that keeps the lesson meaning of this phrase.,multiple_choice,Use ชื่อ in polite beginner conversation,Use อะไร in polite beginner conversation,Use คุณชื่ออะไร in polite beginner conversation,Use คน in polite beginner conversation,A,1
+Choose the sentence that keeps the lesson meaning of this phrase.,multiple_choice,Use ฉัน in polite beginner conversation,Use ผม in polite beginner conversation,Use คุณ in polite beginner conversation,Use เขา in polite beginner conversation,A,1
+"[Listen at https://youtu.be/<videoId:M01-L001>?t=<sec>] Listen to the lesson clip, then choose the best meaning of สวัสดี.",multiple_choice,hello,polite ending (male),polite ending (female),"hello (male, polite)",A,1
+"[Listen at https://youtu.be/<videoId:M01-L001>?t=<sec>] Listen to the lesson clip, then choose the best meaning of ครับ.",multiple_choice,polite ending (male),hello,polite ending (female),"hello (male, polite)",A,1
+What is the best meaning of ค่ะ?,multiple_choice,polite ending (female),hello,polite ending (male),"hello (male, polite)",A,1
+What is the best meaning of สวัสดีครับ?,multiple_choice,"hello (male, polite)",hello,polite ending (male),polite ending (female),A,1
+What is the best meaning of สวัสดีค่ะ?,multiple_choice,"hello (female, polite)",hello,polite ending (male),polite ending (female),A,1

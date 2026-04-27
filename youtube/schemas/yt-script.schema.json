@@ -53,6 +53,11 @@
       "pattern": "^\\d{1,2}:\\d{2}$",
       "description": "Estimated runtime, e.g. '12:30'"
     },
+    "desiredOutcome": {
+      "type": "string",
+      "minLength": 10,
+      "description": "One sentence in Nine's felt-promise voice: what can the viewer DO in Thai by the end of this episode that they could not do before. Used as Backward Design grounding for hook quality scoring in the variant rubric."
+    },
     "vocab": {
       "type": "array",
       "minItems": 1,
@@ -210,6 +215,10 @@
         "english": {
           "type": "string",
           "description": "English text (if applicable)"
+        },
+        "speaker": {
+          "enum": ["A", "B", "narrator"],
+          "description": "Optional speaker attribution. Used in PART 1 cold-open sketches where Nine plays two characters (A and B) plus an optional narrator beat. Most blocks omit this field."
         },
         "display": {
           "enum": ["immediate", "delayed-1s", "delayed-2s", "on-reveal", "hidden"],

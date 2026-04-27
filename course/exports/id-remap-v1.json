@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-04-24T15:59:34.147Z",
+  "description": "M10 physical renumber (W4). Maps v2-pre-remap lesson_ids to v2-post-remap lesson_ids. M10-L003 is absorbed into new M10-L004 and has no forward mapping.",
+  "remap": {
+    "M10-L001": "M10-L004",
+    "M10-L002": "M10-L001",
+    "M10-L004": "M10-L005",
+    "M10-L005": "M10-L006",
+    "M10-L006": "M10-L007",
+    "M10-L007": "M10-L002"
+  },
+  "merged_into": {
+    "M10-L003": "M10-L004"
+  },
+  "deleted": []
+}

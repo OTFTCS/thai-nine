@@ -7,7 +7,31 @@ import type {
   SocialsRow,
   TrackerSnapshot,
   YouTubeInventory,
+  YouTubeRow,
 } from "../../src/types/creator.ts";
+
+function makeYouTubeRow(
+  id: string,
+  overrides: Partial<YouTubeRow["meta"]> = {}
+): YouTubeRow {
+  return {
+    id,
+    title: id,
+    status: "PENDING",
+    folderPath: "",
+    artifacts: {},
+    meta: {
+      recorded: false,
+      scriptStatus: "NOT_STARTED",
+      catalogueTitle: null,
+      topic: null,
+      level: null,
+      lessonRef: null,
+      hasScript: false,
+      ...overrides,
+    },
+  };
+}
 
 function emptySnapshot(): TrackerSnapshot {
   return {
@@ -111,4 +135,88 @@ test("home rules: idle state when nothing matches", () => {
   const snap = emptySnapshot();
   const result = deriveWhatsNext(snap, emptyYouTube(), new Date("2026-04-19"));
   assert.equal(result.reason, "idle");
+});
+
+test("home rules: surfaces next NOT_STARTED YouTube row when nothing else is pending", () => {
+  const snap = emptySnapshot();
+  const rows: YouTubeRow[] = [
+    makeYouTubeRow("YT-S01-E07", {
+      scriptStatus: "NOT_STARTED",
+      topic: "What to wear",
+      level: "A0",
+    }),
+  ];
+  const result = deriveWhatsNext(
+    snap,
+    emptyYouTube(),
+    new Date("2026-04-19"),
+    rows
+  );
+  assert.equal(result.reason, "next-script-to-write");
+  assert.match(result.headline, /^Write next script: /);
+  assert.equal(result.headline, "Write next script: YT-S01-E07");
+  assert.match(result.deepLink, /^\/admin\/creator\/youtube\//);
+  assert.equal(result.deepLink, "/admin/creator/youtube/YT-S01-E07");
+  assert.equal(result.detail, "What to wear (A0)");
+});
+
+test("home rules: NOT_STARTED rule picks the lowest episodeId", () => {
+  const snap = emptySnapshot();
+  const rows: YouTubeRow[] = [
+    makeYouTubeRow("YT-S01-E07", { scriptStatus: "NOT_STARTED" }),
+    makeYouTubeRow("YT-S01-E03", { scriptStatus: "NOT_STARTED" }),
+    makeYouTubeRow("YT-S01-E12", { scriptStatus: "NOT_STARTED" }),
+  ];
+  const result = deriveWhatsNext(
+    snap,
+    emptyYouTube(),
+    new Date("2026-04-19"),
+    rows
+  );
+  assert.equal(result.reason, "next-script-to-write");
+  assert.equal(result.headline, "Write next script: YT-S01-E03");
+  assert.equal(result.deepLink, "/admin/creator/youtube/YT-S01-E03");
+});
+
+test("home rules: NOT_STARTED rule does not fire when no rows match", () => {
+  const snap = emptySnapshot();
+  const rows: YouTubeRow[] = [
+    makeYouTubeRow("YT-S01-E03", { scriptStatus: "DRAFT" }),
+    makeYouTubeRow("YT-S01-E04", { scriptStatus: "APPROVED" }),
+    makeYouTubeRow("YT-S01-E05", { scriptStatus: "RECORDED", recorded: true }),
+  ];
+  const result = deriveWhatsNext(
+    snap,
+    emptyYouTube(),
+    new Date("2026-04-19"),
+    rows
+  );
+  assert.equal(result.reason, "idle");
+});
+
+test("home rules: higher-priority rule wins over NOT_STARTED rule", () => {
+  const snap = emptySnapshot();
+  const due: RecurringTaskRow = {
+    rowIndex: 2,
+    task: "Weekly TikTok",
+    area: "TikTok",
+    frequency: "Weekly",
+    automated: "No",
+    lastRun: "",
+    nextDue: "2026-04-10",
+    owner: "Nine",
+    notes: "",
+  };
+  snap.recurringTasks.push(due);
+  const rows: YouTubeRow[] = [
+    makeYouTubeRow("YT-S01-E03", { scriptStatus: "NOT_STARTED" }),
+  ];
+  const result = deriveWhatsNext(
+    snap,
+    emptyYouTube(),
+    new Date("2026-04-19T12:00:00Z"),
+    rows
+  );
+  assert.equal(result.reason, "recurring-due");
+  assert.notEqual(result.reason, "next-script-to-write");
 });

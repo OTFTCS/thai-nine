@@ -13,6 +13,8 @@ export const STATUS_STYLES: Record<string, string> = {
   PENDING: "bg-gray-100 text-gray-600",
   SCHEDULED: "bg-amber-100 text-amber-800",
   PUBLISHED: "bg-green-100 text-green-800",
+  NOT_STARTED: "bg-zinc-100 text-zinc-700 border-zinc-300",
+  APPROVED: "bg-emerald-100 text-emerald-700 border-emerald-300",
 };
 
 export const STATUS_LABELS: Record<string, string> = {
@@ -35,11 +37,17 @@ export function statusLabel(status: string): string {
   return STATUS_LABELS[upper] ?? upper;
 }
 
-export type StatusKind = "tiktok" | "youtube" | "carousel" | "social";
+export type StatusKind =
+  | "tiktok"
+  | "youtube"
+  | "carousel"
+  | "social"
+  | "scriptStatus";
 
 export const STATUS_OPTIONS: Record<StatusKind, string[]> = {
   tiktok: ["DRAFT", "SCHEDULED", "PUBLISHED", "UNKNOWN"],
   youtube: ["PENDING", "RECORDED", "UPLOADED", "PUBLISHED", "UNLISTED", "UNKNOWN"],
   carousel: ["PLANNED", "IN_PROGRESS", "READY", "POSTED"],
   social: ["DRAFT", "SCHEDULED", "PUBLISHED"],
+  scriptStatus: ["NOT_STARTED", "DRAFT", "APPROVED", "RECORDED"],
 };

@@ -41,16 +41,33 @@ export function StatusSelect({
     setSaving(true);
     setError(null);
     try {
-      const res = await fetch("/api/creator/status", {
+      const { url, body } =
+        kind === "scriptStatus"
+          ? {
+              url: "/api/creator/youtube/script/status",
+              body: { episodeId: id, scriptStatus: newStatus },
+            }
+          : {
+              url: "/api/creator/status",
+              body: { kind, id, rowIndex, status: newStatus },
+            };
+      const res = await fetch(url, {
         method: "PATCH",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ kind, id, rowIndex, status: newStatus }),
+        body: JSON.stringify(body),
       });
       if (!res.ok) {
         const payload = (await res.json().catch(() => ({}))) as {
           error?: string;
         };
         throw new Error(payload.error ?? `HTTP ${res.status}`);
+      }
+      const payload = (await res.json().catch(() => ({}))) as {
+        ok?: boolean;
+        error?: string;
+      };
+      if (payload.ok === false) {
+        throw new Error(payload.error ?? "update rejected by server");
       }
       onUpdate?.(newStatus);
     } catch (err) {

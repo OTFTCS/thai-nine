@@ -73,7 +73,8 @@ function nextUnpostedSocial(socials: SocialsRow[]): SocialsRow | null {
 export function deriveWhatsNext(
   snapshot: TrackerSnapshot,
   youtube: YouTubeInventory,
-  now = new Date()
+  now = new Date(),
+  youtubeRows: YouTubeRow[] = []
 ): WhatsNext {
   const supporting: WhatsNext["supporting"] = [
     {
@@ -137,11 +138,28 @@ export function deriveWhatsNext(
   if (youtube.nextEpisode) {
     return {
       headline: `Record ${youtube.nextEpisode.episodeId}`,
-      detail: "Next YouTube episode script is ready — open the scene plan and film it.",
+      detail: "Next YouTube episode script is ready. Open the scene plan and film it.",
       cta: "Open YouTube view",
       deepLink: "/admin/creator/youtube",
       supporting,
       reason: "youtube-next",
+    };
+  }
+
+  // Rule 5: next YouTube episode that still needs a script written
+  const notStartedRow = [...youtubeRows]
+    .sort((a, b) => a.id.localeCompare(b.id))
+    .find((row) => row.meta.scriptStatus === "NOT_STARTED");
+  if (notStartedRow) {
+    const topic = notStartedRow.meta.topic ?? notStartedRow.title;
+    const level = notStartedRow.meta.level ?? "level TBD";
+    return {
+      headline: `Write next script: ${notStartedRow.id}`,
+      detail: `${topic} (${level})`,
+      cta: "Open episode",
+      deepLink: `/admin/creator/youtube/${notStartedRow.id}`,
+      supporting,
+      reason: "next-script-to-write",
     };
   }
 

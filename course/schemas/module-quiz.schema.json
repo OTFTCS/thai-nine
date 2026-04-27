@@ -1,0 +1,82 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://thai-nine.local/schemas/module-quiz.schema.json",
+  "title": "Module / Stage Capstone Quiz",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "scope", "scopeId", "passScore", "generatedAt", "questions", "metadata"],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "scope": { "enum": ["module", "stage_capstone"] },
+    "scopeId": { "type": "string", "pattern": "^(M\\d{2}|S\\d)$" },
+    "passScore": { "type": "number", "minimum": 80 },
+    "generatedAt": { "type": "string", "minLength": 1 },
+    "sourceLessons": {
+      "type": "array",
+      "items": { "type": "string", "pattern": "^M\\d{2}-L\\d{3}$" }
+    },
+    "metadata": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["targetQuestionCount", "actualQuestionCount", "gating"],
+      "properties": {
+        "targetQuestionCount": { "type": "number", "minimum": 1 },
+        "actualQuestionCount": { "type": "number", "minimum": 0 },
+        "lessonsCovered": { "type": "number", "minimum": 0 },
+        "lessonsExpected": { "type": "number", "minimum": 0 },
+        "lessonsMissing": {
+          "type": "array",
+          "items": { "type": "string", "pattern": "^M\\d{2}-L\\d{3}$" }
+        },
+        "typeMix": {
+          "type": "object",
+          "additionalProperties": { "type": "number", "minimum": 0 }
+        },
+        "gating": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["passScore", "attemptsBeforeCooldown", "cooldownHours", "unlockNote"],
+          "properties": {
+            "passScore": { "type": "number", "minimum": 80 },
+            "attemptsBeforeCooldown": { "type": "number", "minimum": 1 },
+            "cooldownHours": { "type": "number", "minimum": 0 },
+            "unlockNote": { "type": "string", "minLength": 1 }
+          }
+        }
+      }
+    },
+    "questions": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "sourceLessonId", "sourceQuestionId", "vocabId", "type", "displayMode", "prompt", "answer", "rationale"],
+        "properties": {
+          "id": { "type": "string", "minLength": 1 },
+          "sourceLessonId": { "type": "string", "pattern": "^M\\d{2}-L\\d{3}$" },
+          "sourceQuestionId": { "type": "string", "minLength": 1 },
+          "bankItemId": { "type": "string" },
+          "vocabId": { "type": "string", "pattern": "^v-[a-f0-9]{10}$" },
+          "type": { "enum": ["thai_to_english", "english_to_thai", "fill_translit", "context_mcq", "listening_link"] },
+          "displayMode": { "enum": ["triplet", "thai_only", "english_only"] },
+          "prompt": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["text"],
+            "properties": {
+              "text": { "type": "string", "minLength": 1 },
+              "thai": { "type": "string" },
+              "translit": { "type": "string" },
+              "english": { "type": "string" },
+              "audioCue": { "type": "string" }
+            }
+          },
+          "options": { "type": "array", "items": { "type": "string", "minLength": 1 } },
+          "answer": { "type": "string", "minLength": 1 },
+          "rationale": { "type": "string", "minLength": 1 }
+        }
+      }
+    }
+  }
+}

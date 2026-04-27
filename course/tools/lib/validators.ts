@@ -1,7 +1,8 @@
-import { existsSync, readFileSync } from "node:fs";
+import { existsSync, readdirSync, readFileSync } from "node:fs";
 import { basename, join } from "node:path";
 import { listLessonDirs, readJson, resolveLessonDirArtifactPath } from "./fs.ts";
 import { compareLessonIds } from "./lesson-ids.ts";
+import { readBlueprintLessonRows, type BlueprintLessonRow } from "./produce-lesson.ts";
 import { validateSchemaTargets } from "./schema-runner.ts";
 import {
   checkTransliterationPolicy,
@@ -511,6 +512,38 @@ function checkAssetProvenance(path: string, deckSourcePath: string, lessonDir: s
   return issues;
 }
 
+/**
+ * W7 — verify the per-lesson one-pager PDFs exist for any lesson that has
+ * reached READY_TO_RECORD. Missing docs are emitted as helpful issues, not
+ * crashes, so partially-produced lessons still validate cleanly.
+ */
+export function validateLessonDocsExist(
+  lessonDir: string,
+  status: LessonStatus
+): ValidationIssue[] {
+  const issues: ValidationIssue[] = [];
+  if (status.state !== "READY_TO_RECORD") return issues;
+
+  const lessonId = lessonIdFromLessonDir(lessonDir);
+  const docsDir = join(lessonDir, "docs");
+  const onepager = join(docsDir, `${lessonId}-onepager.pdf`);
+  const cloze = join(docsDir, `${lessonId}-onepager-cloze.pdf`);
+
+  if (!existsSync(onepager)) {
+    issues.push({
+      path: onepager,
+      message: `W7: missing ${lessonId}-onepager.pdf — run \`node --experimental-strip-types course/tools/generate_lesson_docs.ts --lesson ${lessonId}\``,
+    });
+  }
+  if (!existsSync(cloze)) {
+    issues.push({
+      path: cloze,
+      message: `W7: missing ${lessonId}-onepager-cloze.pdf — run \`node --experimental-strip-types course/tools/generate_lesson_docs.ts --lesson ${lessonId}\``,
+    });
+  }
+  return issues;
+}
+
 function checkStatus(path: string): ValidationIssue[] {
   const status = readJson<LessonStatus>(path);
   const issues: ValidationIssue[] = [];
@@ -675,6 +708,8 @@ export function validateLessonDir(lessonDir: string, rootInput?: string): Valida
 
   if (existsSync(statusPath)) issues.push(...checkStatus(statusPath));
 
+  issues.push(...validateLessonDocsExist(lessonDir, status));
+
   issues.push(...checkCoverageCrossFiles(lessonDir));
 
   return issues;
@@ -692,6 +727,265 @@ export function validateAllSchemas(root: string): ValidationIssue[] {
   return [...lessonIssues, ...globalIssues];
 }
 
+/**
+ * Parses new_vocab_core semicolon-separated entries and returns the Thai token(s).
+ * Each entry looks like: "สวัสดี = hello". Sense-shift / spaced-review notes in
+ * the row's `notes` column whitelist re-introductions.
+ */
+function extractVocabTokens(newVocabCore: string): string[] {
+  if (!newVocabCore) return [];
+  const tokens: string[] = [];
+  for (const raw of newVocabCore.split(";")) {
+    const trimmed = raw.trim();
+    if (!trimmed) continue;
+    const [thaiSide] = trimmed.split("=");
+    const thai = (thaiSide ?? "").trim();
+    if (thai) tokens.push(thai);
+  }
+  return tokens;
+}
+
+function parseWhitelist(notes: string): { senseShift: Set<string>; spacedReview: Set<string> } {
+  const senseShift = new Set<string>();
+  const spacedReview = new Set<string>();
+  if (!notes) return { senseShift, spacedReview };
+  const reSense = /sense-shift:\s*([^\s,;.]+)/gi;
+  const reSpaced = /spaced-review:\s*([^\s,;.]+)/gi;
+  let match: RegExpExecArray | null;
+  while ((match = reSense.exec(notes)) !== null) senseShift.add(match[1].replace(/[.;]+$/, ""));
+  while ((match = reSpaced.exec(notes)) !== null) spacedReview.add(match[1].replace(/[.;]+$/, ""));
+  return { senseShift, spacedReview };
+}
+
+/**
+ * Flags any Thai token that appears in `new_vocab_core` in more than one lesson
+ * without an opt-out annotation in the later lesson's `notes` column
+ * ("sense-shift: <thai>" for genuine homograph splits, or
+ * "spaced-review: <thai>" for deliberate spaced reintroduction, though the
+ * preferred placement for the latter is `review_vocab_required`).
+ */
+export function validateNoNewVocabReintroduction(
+  rows: BlueprintLessonRow[]
+): ValidationIssue[] {
+  const issues: ValidationIssue[] = [];
+  const firstSeenBy = new Map<string, string>(); // thai token -> lesson_id of first introduction
+  const ordered = [...rows].sort((a, b) => compareLessonIds(a.lessonId, b.lessonId));
+  for (const row of ordered) {
+    const tokens = extractVocabTokens(row.newVocabCore);
+    const { senseShift, spacedReview } = parseWhitelist(row.notes);
+    for (const thai of tokens) {
+      const prior = firstSeenBy.get(thai);
+      if (prior === undefined) {
+        firstSeenBy.set(thai, row.lessonId);
+        continue;
+      }
+      if (senseShift.has(thai) || spacedReview.has(thai)) {
+        continue;
+      }
+      issues.push({
+        path: `blueprint:${row.lessonId}`,
+        message: `new_vocab_core token "${thai}" first introduced in ${prior}; move to review_vocab_required or add "sense-shift: ${thai}" / "spaced-review: ${thai}" to notes`,
+      });
+    }
+  }
+  return issues;
+}
+
+/**
+ * Coverage validator for the W9 two-tier quiz pipeline.
+ *
+ * Checks:
+ *   - Each lesson with a quiz.json has >=5 questions.
+ *   - Each module's <Mxx>-module-quiz.json (when present) has >=20 questions.
+ *   - Each stage's <Sx>-capstone-quiz.json (when present) has >=30 questions.
+ *
+ * Lessons / modules / stages without their quiz JSON yet are surfaced as soft
+ * issues — they shouldn't block validation across the whole repo, but they
+ * should appear so we can see what still needs producing.
+ */
+export function validateQuizCoverage(
+  rows: BlueprintLessonRow[],
+  rootInput?: string
+): ValidationIssue[] {
+  const issues: ValidationIssue[] = [];
+  if (rows.length === 0) return issues;
+
+  const root = rootInput ?? process.cwd();
+
+  const lessonsByModule = new Map<string, string[]>();
+  for (const row of rows) {
+    const moduleId = row.lessonId.split("-")[0];
+    if (!lessonsByModule.has(moduleId)) lessonsByModule.set(moduleId, []);
+    lessonsByModule.get(moduleId)!.push(row.lessonId);
+  }
+
+  // Per-lesson quiz size check.
+  for (const lessonId of rows.map((r) => r.lessonId)) {
+    const [moduleId, lessonFolder] = lessonId.split("-");
+    const quizPath = join(
+      root,
+      "course",
+      "modules",
+      moduleId,
+      lessonFolder,
+      `${lessonId}-quiz.json`
+    );
+    if (!existsSync(quizPath)) continue; // soft skip — many lessons not yet produced
+    try {
+      const data = parseJsonFile<QuizSet>(quizPath);
+      if (!Array.isArray(data.questions) || data.questions.length < 5) {
+        issues.push({
+          path: quizPath,
+          message: `lesson quiz must have >=5 questions; found ${data.questions?.length ?? 0}`,
+        });
+      }
+    } catch (err) {
+      issues.push({ path: quizPath, message: `failed to parse lesson quiz: ${(err as Error).message}` });
+    }
+  }
+
+  // Per-module quiz size check.
+  for (const moduleId of lessonsByModule.keys()) {
+    const moduleQuizPath = join(
+      root,
+      "course",
+      "modules",
+      moduleId,
+      `${moduleId}-module-quiz.json`
+    );
+    if (!existsSync(moduleQuizPath)) continue; // soft skip
+    try {
+      const data = parseJsonFile<{ questions?: unknown[] }>(moduleQuizPath);
+      const count = Array.isArray(data.questions) ? data.questions.length : 0;
+      if (count < 20) {
+        issues.push({
+          path: moduleQuizPath,
+          message: `module quiz must have >=20 questions; found ${count}`,
+        });
+      }
+    } catch (err) {
+      issues.push({ path: moduleQuizPath, message: `failed to parse module quiz: ${(err as Error).message}` });
+    }
+  }
+
+  // Per-stage capstone size check.
+  const capstoneDir = join(root, "course", "exports", "stage-capstones");
+  if (existsSync(capstoneDir)) {
+    for (const file of readdirSync(capstoneDir)) {
+      if (!/^S\d-capstone-quiz\.json$/.test(file)) continue;
+      const capstonePath = join(capstoneDir, file);
+      try {
+        const data = parseJsonFile<{ questions?: unknown[] }>(capstonePath);
+        const count = Array.isArray(data.questions) ? data.questions.length : 0;
+        if (count < 30) {
+          issues.push({
+            path: capstonePath,
+            message: `stage capstone must have >=30 questions; found ${count}`,
+          });
+        }
+      } catch (err) {
+        issues.push({ path: capstonePath, message: `failed to parse stage capstone: ${(err as Error).message}` });
+      }
+    }
+  }
+
+  return issues;
+}
+
+/**
+ * W8 Flashcards parity validator.
+ *
+ * For every lesson row, every Thai token in `new_vocab_core` must appear as
+ * a card in its module's deck (course/exports/flashcards/M??.json). The
+ * deck is the joined dataset that drives both the .apkg export and the
+ * embedded SRS-lite web viewer; if a token is missing here, learners
+ * cannot drill it.
+ *
+ * Soft on missing deck files: emits a single "deck not built" notice per
+ * module and skips per-token checks for that module, so the validator can
+ * run before build_flashcards.ts has been executed.
+ */
+export function validateFlashcardParity(
+  rows: BlueprintLessonRow[],
+  vocabIndex: VocabIndex,
+  rootInput?: string
+): ValidationIssue[] {
+  const issues: ValidationIssue[] = [];
+  if (rows.length === 0) return issues;
+
+  const root = rootInput ?? process.cwd();
+  const flashcardsDir = join(root, "course", "exports", "flashcards");
+
+  // Build Thai -> vocabId lookup (earliest firstSeenLesson wins on ties).
+  const thaiToVocabId = new Map<string, string>();
+  const thaiFirstSeen = new Map<string, string>();
+  for (const entry of vocabIndex.entries) {
+    const prev = thaiFirstSeen.get(entry.thai);
+    if (!prev || (entry.firstSeenLesson ?? "") < prev) {
+      thaiFirstSeen.set(entry.thai, entry.firstSeenLesson ?? "");
+      thaiToVocabId.set(entry.thai, entry.id);
+    }
+  }
+
+  const byModule = new Map<string, BlueprintLessonRow[]>();
+  for (const row of rows) {
+    if (!byModule.has(row.moduleId)) byModule.set(row.moduleId, []);
+    byModule.get(row.moduleId)!.push(row);
+  }
+
+  for (const [moduleId, moduleRows] of byModule.entries()) {
+    const deckPath = join(flashcardsDir, `${moduleId}.json`);
+    if (!existsSync(deckPath)) {
+      issues.push({
+        path: deckPath,
+        message: `flashcard deck not built for ${moduleId}; run build_flashcards.ts`,
+      });
+      continue;
+    }
+
+    let deck: { cards: Array<{ vocabId: string; thai: string }> };
+    try {
+      deck = parseJsonFile(deckPath);
+    } catch (err) {
+      issues.push({
+        path: deckPath,
+        message: `failed to parse flashcard deck: ${(err as Error).message}`,
+      });
+      continue;
+    }
+
+    const deckVocabIds = new Set(deck.cards.map((c) => c.vocabId));
+
+    for (const row of moduleRows) {
+      const tokens = row.newVocabCore
+        .split(";")
+        .map((t) => t.trim())
+        .filter(Boolean)
+        .map((entry) => entry.split("=")[0].trim())
+        .filter(Boolean);
+
+      for (const thai of tokens) {
+        const vocabId = thaiToVocabId.get(thai);
+        if (!vocabId) {
+          issues.push({
+            path: deckPath,
+            message: `lesson ${row.lessonId} new_vocab_core token "${thai}" missing from vocab-index`,
+          });
+          continue;
+        }
+        if (!deckVocabIds.has(vocabId)) {
+          issues.push({
+            path: deckPath,
+            message: `lesson ${row.lessonId} token "${thai}" (${vocabId}) missing from ${moduleId} flashcard deck`,
+          });
+        }
+      }
+    }
+  }
+
+  return issues;
+}
+
 export function validateAll(root: string): ValidationIssue[] {
   const dirs = listLessonDirs(root);
   const lessonIssues = dirs.flatMap((dir) => validateLessonDir(dir, root));
@@ -700,6 +994,16 @@ export function validateAll(root: string): ValidationIssue[] {
   const vocabIndexPath = join(root, "course", "vocab", "vocab-index.json");
   if (existsSync(vocabIndexPath)) {
     globalIssues.push(...checkVocabIndex(vocabIndexPath));
+  }
+
+  const blueprintRows = readBlueprintLessonRows(root);
+  if (blueprintRows.length > 0) {
+    globalIssues.push(...validateNoNewVocabReintroduction(blueprintRows));
+    globalIssues.push(...validateQuizCoverage(blueprintRows, root));
+    if (existsSync(vocabIndexPath)) {
+      const vocabIndex = parseJsonFile<VocabIndex>(vocabIndexPath);
+      globalIssues.push(...validateFlashcardParity(blueprintRows, vocabIndex, root));
+    }
   }
 
   return [...lessonIssues, ...globalIssues];

@@ -773,93 +773,87 @@
   "imagePrompts": [
     {
       "id": "img-001",
-      "prompt": "Watercolour illustration of a cozy Thai street food stall at night, warm lantern lighting, steaming wok, plates of pad thai, friendly vendor, vibrant but soft colours",
-      "style": "watercolour",
-      "subject": "Thai street food stall scene"
+      "prompt": "A single Thai street food wok viewed from slightly above, centred. Wok mid-stir with a wooden spatula, a small curl of steam rising. Hero colour: deep charcoal wok body, warm orange flame underneath. No people, no stall, no background scenery.",
+      "style": "flat-vector-minimal",
+      "subject": "Thai wok — street food signal"
     },
     {
       "id": "img-002",
-      "prompt": "Watercolour illustration of a hand pointing at a Thai menu board with colourful food items listed, warm restaurant interior",
-      "style": "watercolour",
-      "subject": "Ordering from a menu"
+      "prompt": "A single human hand, palm up, index finger extended and pointing forward, centred. Illustrated simply in flat warm beige. Universal 'I'll have that one' ordering gesture. No menu, no food, no other elements.",
+      "style": "flat-vector-minimal",
+      "subject": "Pointing hand — ordering (สั่ง)"
     },
     {
       "id": "img-003",
-      "prompt": "Watercolour close-up of a steaming plate of pad thai with chopsticks, garnished with lime and peanuts, vibrant appetising colours",
-      "style": "watercolour",
-      "subject": "Delicious pad thai"
+      "prompt": "A single wide ceramic bowl of pad thai viewed from a 30-degree overhead angle, centred. Flat-illustrated lime wedge to the left, small pile of crushed peanuts to the right. Hero colour: golden orange noodles. White bowl with thin grey rim. No chopsticks, no table, no background.",
+      "style": "flat-vector-minimal",
+      "subject": "Pad thai bowl — delicious (อร่อย)"
     },
     {
       "id": "img-004",
-      "prompt": "Watercolour illustration of red thai chillies scattered on a wooden board, some whole some sliced, vivid red against warm wood tones",
-      "style": "watercolour",
-      "subject": "Thai chillies - spicy"
+      "prompt": "Two whole red Thai bird's eye chillies in a gentle X crossing, centred. Hero colour: vivid flat red. Stems illustrated in flat green. No cutting board, no bowl, no sliced pieces.",
+      "style": "flat-vector-minimal",
+      "subject": "Two crossed chillies — spicy (เผ็ด)"
     },
     {
       "id": "img-005",
-      "prompt": "Watercolour illustration of a small leather bill folder on a restaurant table with Thai baht notes peeking out, warm ambient lighting",
-      "style": "watercolour",
-      "subject": "Restaurant bill"
+      "prompt": "A single paper receipt slightly curled at the bottom, centred. The receipt is a plain white rectangle with three short horizontal grey wavy lines (representing print, not readable characters) and a thin line at the base. A simple hand pinches the top between thumb and finger. No wallet, no coins.",
+      "style": "flat-vector-minimal",
+      "subject": "Receipt held in hand — bill please (เก็บเงิน)"
     },
     {
       "id": "img-006",
-      "prompt": "Watercolour illustration of a mild Thai dish — a bowl of clear noodle soup with vegetables, gentle steam rising, calm and inviting, no chillies visible",
-      "style": "watercolour",
-      "subject": "Mild Thai food — not spicy"
+      "prompt": "A single red chilli with a bold flat red X drawn over it, centred. Same chilli illustration style as the spicy image. The X is a thick-stroked crimson overlay. Immediately readable as negation. No bowl, no dish, no food context.",
+      "style": "flat-vector-minimal",
+      "subject": "Chilli with X — not spicy (ไม่เผ็ด)"
     },
     {
       "id": "img-007",
-      "prompt": "Watercolour illustration of a person politely ordering at a Thai street food counter, pointing at a menu board, vendor smiling behind a steaming wok, warm evening light",
-      "style": "watercolour",
-      "subject": "Politely requesting food — ขอ"
+      "prompt": "Two hands, palms pressed together in a slight bow — a Thai wai gesture, centred, illustrated flat in warm beige. Hands occupy roughly 60% of frame height. No person above the wrists, no background.",
+      "style": "flat-vector-minimal",
+      "subject": "Wai hands — polite request (ขอ)"
     },
     {
       "id": "img-008",
-      "prompt": "Watercolour illustration of a person leaning back contentedly at a table covered with empty Thai food plates and bowls, satisfied expression, warm indoor lighting",
-      "style": "watercolour",
-      "subject": "Feeling full after a meal — อิ่ม"
+      "prompt": "A single flat-illustrated torso (no head, cropped from shoulder to mid-thigh) with both hands resting gently on the belly in a satisfied posture, centred. Shirt is solid warm coral. Hands cradle a gently rounded belly. No table, no plates, no background.",
+      "style": "flat-vector-minimal",
+      "subject": "Hands on belly — full (อิ่ม)"
     },
     {
       "id": "img-009",
-      "prompt": "Watercolour illustration of a friendly Thai food vendor enthusiastically pointing at her best dishes, colourful plates of food on display, bustling market stall",
-      "style": "watercolour",
-      "subject": "Vendor recommending dishes — แนะนำ"
-    },
-    {
-      "id": "img-010",
-      "prompt": "Watercolour illustration of two people sitting at a small Thai restaurant table having a natural conversation, plates of food between them, relaxed atmosphere, string lights overhead",
-      "style": "watercolour",
-      "subject": "Restaurant conversation scene"
+      "prompt": "A single flat-illustrated hand with index finger raised in a suggestion gesture (slightly raised and tilted, like making a recommendation), centred. A small flat five-pointed warm yellow star floats above the fingertip. Hero colour: warm amber. No person, no menu, no food.",
+      "style": "flat-vector-minimal",
+      "subject": "Hand with star — recommend (แนะนำ)"
     },
     {
       "id": "img-011",
-      "prompt": "Watercolour illustration of a Thai sentence being broken down word by word, with a magnifying glass over Thai script on aged paper, study desk with notebook and pen",
-      "style": "watercolour",
-      "subject": "Sentence breakdown — study scene"
+      "prompt": "A single flat magnifying glass centred, glass face toward the viewer. Inside the glass circle: three short horizontal lines of alternating lengths in warm charcoal, suggesting text being examined (not legible characters). Hero colour: warm gold handle and rim. No paper, no desk, no books.",
+      "style": "flat-vector-minimal",
+      "subject": "Magnifying glass — sentence breakdown"
     },
     {
       "id": "img-012",
-      "prompt": "Watercolour illustration of a person practising speaking Thai with speech bubbles, warm study corner with Thai language books, encouraging atmosphere",
-      "style": "watercolour",
-      "subject": "Shadowing practice"
+      "prompt": "A single flat speech bubble — rounded rectangle with a small tail pointing lower-left, centred. Inside the bubble: three short parallel sound-wave arcs in soft charcoal, suggesting spoken sound (not text). Hero colour: sky blue bubble body. No person, no books, no desk.",
+      "style": "flat-vector-minimal",
+      "subject": "Speech bubble — shadowing practice"
     },
     {
       "id": "img-013",
-      "prompt": "Watercolour illustration of a quiz or test paper with a pencil, Thai food vocabulary flashcards scattered around, warm desk lamp lighting",
-      "style": "watercolour",
-      "subject": "Production drill — quiz time"
+      "prompt": "A single flat stopwatch viewed face-on, centred. Clock face is mostly white with a simple arc in warm orange showing roughly 3 seconds remaining. Hero colour: orange arc on white face, charcoal body. No pencil, no flashcards, no paper.",
+      "style": "flat-vector-minimal",
+      "subject": "Stopwatch — production drill"
     },
     {
       "id": "img-014",
-      "prompt": "Watercolour illustration of eight Thai food-related icons arranged in a grid — wok, chilli, bowl, menu, bill folder, thumbs up, speech bubble, chopsticks — warm palette",
-      "style": "watercolour",
-      "subject": "Recap — eight phrases overview"
+      "prompt": "Eight small flat icons arranged in two rows of four, centred on the canvas with generous spacing between each icon. Icons (each ~15% of total image height): wok, chilli, bowl, pointing hand, receipt, wai hands, speech bubble, satisfied torso silhouette. All icons share the same 3-colour palette. No labels, no numbers, no decorative borders.",
+      "style": "flat-vector-minimal",
+      "subject": "Eight icon grid — recap"
     },
     {
       "id": "img-015",
-      "prompt": "Watercolour illustration of a person looking at a Bangkok street sign with Thai text, standing at a crossroads, tuk-tuks and temples in the background, adventure mood",
-      "style": "watercolour",
-      "subject": "Teaser — asking directions"
+      "prompt": "A single flat illustrated signpost — a wooden post with two arrow-shaped direction signs attached, one pointing left and one pointing right, centred. The signs are completely blank (no text). Hero colour: warm terracotta arrows, charcoal post. No street, no city, no people.",
+      "style": "flat-vector-minimal",
+      "subject": "Blank signpost — teaser for directions"
     }
   ],
   "shortFormClips": [

@@ -1,0 +1,57 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://thai-nine.local/schemas/blueprint-row.schema.json",
+  "title": "Blueprint Row (v2)",
+  "description": "A single lesson row in full-thai-course-blueprint.v2.csv. The CSV is the source of truth; this schema documents the shape of one parsed row.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "lesson_id",
+    "module_id",
+    "stage_id",
+    "cefr_band",
+    "module_title",
+    "lesson_title",
+    "status",
+    "lesson_primary_outcome",
+    "lesson_secondary_outcome",
+    "grammar_function_primary",
+    "grammar_function_secondary",
+    "new_vocab_core",
+    "new_chunks_core",
+    "review_vocab_required",
+    "targets",
+    "lesson_quiz_focus",
+    "prereq_lessons",
+    "notes"
+  ],
+  "properties": {
+    "lesson_id": { "type": "string", "pattern": "^M\\d{2}-L\\d{3}$" },
+    "module_id": { "type": "string", "pattern": "^M\\d{2}$" },
+    "stage_id": { "type": "string", "pattern": "^S[1-4]$" },
+    "cefr_band": { "type": "string", "enum": ["A0", "A1", "A2", "B1", "B2"] },
+    "module_title": { "type": "string", "minLength": 1 },
+    "lesson_title": { "type": "string", "minLength": 1 },
+    "status": {
+      "type": "string",
+      "enum": ["draft", "ready-to-record", "recorded", "published"]
+    },
+    "lesson_primary_outcome": { "type": "string" },
+    "lesson_secondary_outcome": { "type": "string" },
+    "grammar_function_primary": { "type": "string" },
+    "grammar_function_secondary": { "type": "string" },
+    "new_vocab_core": { "type": "string" },
+    "new_chunks_core": { "type": "string" },
+    "review_vocab_required": { "type": "string" },
+    "targets": {
+      "type": "string",
+      "description": "Pipe-delimited: script|listening|speaking|writing. Empty segments allowed."
+    },
+    "lesson_quiz_focus": { "type": "string" },
+    "prereq_lessons": {
+      "type": "string",
+      "description": "Comma-delimited list of lesson_ids. May be empty."
+    },
+    "notes": { "type": "string" }
+  }
+}

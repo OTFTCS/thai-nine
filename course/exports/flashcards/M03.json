@@ -1,0 +1,89 @@
+{
+  "schemaVersion": 1,
+  "moduleId": "M03",
+  "moduleTitle": "Building Simple Sentences",
+  "generatedAt": "2026-04-25T02:55:26.338Z",
+  "source": "build_flashcards",
+  "lessonIds": [
+    "M03-L001",
+    "M03-L002",
+    "M03-L003",
+    "M03-L004",
+    "M03-L005",
+    "M03-L006",
+    "M03-L007",
+    "M03-L008",
+    "M03-L009",
+    "M03-L010"
+  ],
+  "cards": [
+    {
+      "id": "m03-c001",
+      "vocabId": "v-b083e63c50",
+      "thai": "นี่",
+      "translit": "nîi",
+      "english": "this",
+      "lessonId": "M03-L001",
+      "tags": [
+        "module-M03",
+        "lesson-M03-L001",
+        "M03",
+        "L001",
+        "sentence-building",
+        "grammar",
+        "everyday-objects"
+      ]
+    },
+    {
+      "id": "m03-c002",
+      "vocabId": "v-fbd69c240c",
+      "thai": "อะไร",
+      "translit": "à-rai",
+      "english": "what",
+      "lessonId": "M03-L001",
+      "tags": [
+        "module-M03",
+        "lesson-M03-L001",
+        "M03",
+        "L001",
+        "sentence-building",
+        "grammar",
+        "everyday-objects"
+      ]
+    },
+    {
+      "id": "m03-c003",
+      "vocabId": "v-e3ef8a701b",
+      "thai": "เขา",
+      "translit": "khǎo",
+      "english": "he / she",
+      "lessonId": "M03-L002",
+      "tags": [
+        "module-M03",
+        "lesson-M03-L002",
+        "M03",
+        "L002",
+        "sentence-building",
+        "grammar",
+        "everyday-objects"
+      ]
+    },
+    {
+      "id": "m03-c004",
+      "vocabId": "v-6bb42f6e5c",
+      "thai": "คน",
+      "translit": "khon",
+      "english": "person",
+      "lessonId": "M03-L008",
+      "tags": [
+        "module-M03",
+        "lesson-M03-L008",
+        "M03",
+        "L008",
+        "sentence-building",
+        "grammar",
+        "everyday-objects"
+      ]
+    }
+  ]
+}

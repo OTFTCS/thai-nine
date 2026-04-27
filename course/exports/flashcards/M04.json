@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "moduleId": "M04",
+  "moduleTitle": "Numbers, Time, Money, and Movement",
+  "generatedAt": "2026-04-25T02:55:26.338Z",
+  "source": "build_flashcards",
+  "lessonIds": [
+    "M04-L001",
+    "M04-L002",
+    "M04-L003",
+    "M04-L004",
+    "M04-L005",
+    "M04-L006",
+    "M04-L007",
+    "M04-L008",
+    "M04-L009",
+    "M04-L010"
+  ],
+  "cards": [
+    {
+      "id": "m04-c001",
+      "vocabId": "v-43a5e0b3f2",
+      "thai": "สิบ",
+      "translit": "sìp",
+      "english": "ten (10)",
+      "lessonId": "M04-L001",
+      "tags": [
+        "module-M04",
+        "lesson-M04-L001",
+        "M04",
+        "L001",
+        "survival",
+        "numbers",
+        "time",
+        "money",
+        "movement"
+      ]
+    }
+  ]
+}

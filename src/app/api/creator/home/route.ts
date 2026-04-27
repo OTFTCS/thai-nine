@@ -34,7 +34,7 @@ export async function GET() {
       readCarousels(),
     ]);
   const tiktokLegacy = await readTikTokPipeline(snapshot.socials);
-  const whatsNext = deriveWhatsNext(snapshot, inventory);
+  const whatsNext = deriveWhatsNext(snapshot, inventory, new Date(), youtubeRows);
   const sectionSummaries = deriveSectionSummaries({
     snapshot,
     lessons,

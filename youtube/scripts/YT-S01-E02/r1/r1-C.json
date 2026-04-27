@@ -1,0 +1,1290 @@
+{
+  "schemaVersion": 2,
+  "episodeId": "YT-S01-E02",
+  "seriesId": "S01",
+  "seriesName": "Thai Survival Phrases",
+  "title": "Asking for Directions in Thai — Where Is...?",
+  "topic": "asking-directions",
+  "level": "A0",
+  "lessonRef": "M01-L005",
+  "estimatedDuration": "13:00",
+  "vocab": [
+    {
+      "id": "v-001",
+      "thai": "อยู่ที่ไหน",
+      "translit": "yùu thîi nǎi",
+      "english": "where is (it)?",
+      "thaiSplit": "อยู่ ที่ไหน",
+      "explanation": "อยู่ที่ไหน is your 'where is...?' question. อยู่ means 'to be located' or 'to live', and ที่ไหน means 'where'. Put them together after the place you're asking about — so ห้องน้ำอยู่ที่ไหน literally means 'bathroom is located where?' In Thai, the question word always comes at the end, not the beginning like in English. You'll use this one constantly.",
+      "exampleSentences": [
+        {
+          "thai": "ร้านกาแฟอยู่ที่ไหนคะ",
+          "translit": "ráan gaa-fae yùu thîi nǎi khá",
+          "english": "Where is the coffee shop?",
+          "note": "Same pattern for any place — just say the place, then อยู่ที่ไหน at the end. คะ is the polite particle for women."
+        }
+      ],
+      "imageRef": "img-002"
+    },
+    {
+      "id": "v-002",
+      "thai": "ตรงไป",
+      "translit": "trong bpai",
+      "english": "go straight",
+      "thaiSplit": "ตรง ไป",
+      "explanation": "ตรงไป means 'go straight'. ตรง means 'straight' or 'direct', and ไป means 'go'. It's short, clear, and works alone as a full direction — locals will often just say ตรงไป while pointing. You'll hear this most when you ask for directions and the answer is simple.",
+      "exampleSentences": [
+        {
+          "thai": "ตรงไปแล้วก็เห็นเลยค่ะ",
+          "translit": "trong bpai láaew gâaw hěn loei khâ",
+          "english": "Go straight and you'll see it right away.",
+          "note": "แล้วก็ links two actions — 'then'. เห็นเลย means 'you can see it right there'. A really natural direction answer."
+        }
+      ],
+      "imageRef": "img-003"
+    },
+    {
+      "id": "v-003",
+      "thai": "เลี้ยวซ้าย",
+      "translit": "líiaw sáai",
+      "english": "turn left",
+      "thaiSplit": "เลี้ยว ซ้าย",
+      "explanation": "เลี้ยวซ้าย means 'turn left'. เลี้ยว means 'turn' and ซ้าย means 'left'. These two words almost always go together. An important point: in Thai, ซ้าย (left) and ขวา (right) are easy to confuse because the tones are close — ซ้าย has a falling tone, ขวา has a rising tone. Pair them with the gesture every time you say them until it's automatic.",
+      "exampleSentences": [
+        {
+          "thai": "เลี้ยวซ้ายตรงสี่แยกครับ",
+          "translit": "líiaw sáai trong sìi-yâaek khráp",
+          "english": "Turn left at the intersection.",
+          "note": "สี่แยก means 'four-way intersection' — a very common landmark in direction-giving."
+        }
+      ],
+      "imageRef": "img-004"
+    },
+    {
+      "id": "v-004",
+      "thai": "เลี้ยวขวา",
+      "translit": "líiaw khwǎa",
+      "english": "turn right",
+      "thaiSplit": "เลี้ยว ขวา",
+      "explanation": "เลี้ยวขวา means 'turn right'. ขวา has a rising tone — your voice goes up. Compare this with ซ้าย which falls. This tone difference is how Thai people tell them apart instantly. If you get the tones wrong you could end up going the wrong direction, so it's worth drilling these two as a pair until they're solid.",
+      "exampleSentences": [
+        {
+          "thai": "เลี้ยวขวาแล้วตรงไปเลยค่ะ",
+          "translit": "líiaw khwǎa láaew trong bpai loei khâ",
+          "english": "Turn right and then just go straight.",
+          "note": "แล้ว here means 'then' or 'after that'. เลย intensifies it — 'just go straight on from there'."
+        }
+      ],
+      "imageRef": "img-004"
+    },
+    {
+      "id": "v-005",
+      "thai": "ใกล้",
+      "translit": "glâi",
+      "english": "near / close",
+      "thaiSplit": "ใกล้",
+      "explanation": "ใกล้ means 'near' or 'close'. It has a falling tone — your voice drops. This is one of those words you'll want as a yes/no check: ใกล้ไหม means 'is it near?' and the answer can simply be ใกล้ค่ะ — 'it's close'. You'll also hear ใกล้มาก meaning 'very close' when someone wants to reassure you.",
+      "exampleSentences": [
+        {
+          "thai": "ใกล้แค่นี้เองค่ะ",
+          "translit": "glâi khâe níi eeng khâ",
+          "english": "It's only this close.",
+          "note": "แค่นี้เอง is a very natural phrase — it means 'just this much' or 'only this close'. Thai people use it to reassure someone that something isn't far."
+        }
+      ],
+      "imageRef": "img-005"
+    },
+    {
+      "id": "v-006",
+      "thai": "ไกล",
+      "translit": "glai",
+      "english": "far",
+      "thaiSplit": "ไกล",
+      "explanation": "ไกล means 'far'. Notice how similar ใกล้ (near) and ไกล (far) look in writing — they differ by just one vowel mark and the tone. ใกล้ has a falling tone, ไกล has a mid tone. This is a classic Thai pair that trips up beginners, so always practise them together. If someone says ไกลนิดหน่อย it means 'a little far' — that usually means quite far.",
+      "exampleSentences": [
+        {
+          "thai": "ไกลมากไหมคะ",
+          "translit": "glai mâak mǎi khá",
+          "english": "Is it very far?",
+          "note": "มาก adds intensity — 'very far'. ไหม makes it a yes/no question. Useful to check whether you need a taxi or can walk."
+        }
+      ],
+      "imageRef": "img-005"
+    },
+    {
+      "id": "v-007",
+      "thai": "ห้องน้ำ",
+      "translit": "hâwng náam",
+      "english": "bathroom / toilet",
+      "thaiSplit": "ห้อง น้ำ",
+      "explanation": "ห้องน้ำ literally means 'water room' — ห้อง means 'room' and น้ำ means 'water'. This is the everyday word for bathroom or toilet in Thai. You'll see it on signs everywhere. If you're in a restaurant or a shopping mall, ห้องน้ำอยู่ที่ไหน is probably the most-used direction question of all. Learn it first.",
+      "exampleSentences": [
+        {
+          "thai": "ขอถามหน่อยได้ไหมคะ ห้องน้ำอยู่แถวไหนคะ",
+          "translit": "khǎaw thǎam nàuy dâai mǎi khá hâwng náam yùu thǎaew nǎi khá",
+          "english": "Excuse me, which area is the bathroom in?",
+          "note": "อยู่แถวไหน is a softer way to ask — แถว means 'area around' or 'in the vicinity of'. More casual than อยู่ที่ไหน."
+        }
+      ],
+      "imageRef": "img-006"
+    },
+    {
+      "id": "v-008",
+      "thai": "สถานีรถไฟฟ้า",
+      "translit": "sa-thǎa-nii rót-fai-fáa",
+      "english": "BTS station",
+      "thaiSplit": "สถานี รถไฟฟ้า",
+      "explanation": "สถานีรถไฟฟ้า means 'BTS Skytrain station'. สถานี means 'station', รถ means 'vehicle', ไฟฟ้า means 'electric'. So it's literally 'electric train station'. Thais often shorten it to just สถานี or even call specific stations by their name. If you're lost in Bangkok this is probably the first direction question you'll need — BTS stations are visible landmarks everywhere.",
+      "exampleSentences": [
+        {
+          "thai": "สถานีรถไฟฟ้าอยู่ใกล้ไหมคะ",
+          "translit": "sa-thǎa-nii rót-fai-fáa yùu glâi mǎi khá",
+          "english": "Is the BTS station nearby?",
+          "note": "Combining two vocab items — อยู่ที่ไหน pattern with ใกล้ไหม. This is exactly how they'd be used together in real life."
+        }
+      ],
+      "imageRef": "img-007"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "b-001",
+      "mode": "hook",
+      "speakerNote": "PART 1 cold-open sketch. Nine plays BOTH characters. A = lost tourist looking for the bathroom (more uncertain, slightly hesitant tone, filmed left side of split-frame, glasses or hat to mark the role). B = friendly food-stall vendor (warmer, pointing energetically, filmed right side, apron or different hairstyle to mark the role). This is the social-clip take -- record as a continuous 30-second performance that can be lifted directly as a Short / Reel. Beat: the universal traveller cringe of still being confused after the directions are given. Vendor's patience lands the warmth.",
+      "imageRef": "img-001",
+      "lines": [
+        {
+          "id": "l-0001",
+          "lang": "th",
+          "speaker": "A",
+          "thai": "ขอโทษค่ะ ห้องน้ำอยู่ที่ไหนคะ",
+          "translit": "khǎaw-thôot khâ hâwng náam yùu thîi nǎi khá",
+          "english": "Excuse me, where is the bathroom?",
+          "display": "immediate",
+          "spoken": true
+        },
+        {
+          "id": "l-0002",
+          "lang": "th",
+          "speaker": "B",
+          "thai": "ตรงไปแล้วเลี้ยวขวาค่ะ",
+          "translit": "trong bpai láaew líiaw khwǎa khâ",
+          "english": "Go straight, then turn right.",
+          "display": "immediate",
+          "spoken": true
+        },
+        {
+          "id": "l-0003",
+          "lang": "th",
+          "speaker": "A",
+          "thai": "ไกลไหมคะ",
+          "translit": "glai mǎi khá",
+          "english": "Is it far?",
+          "display": "immediate",
+          "spoken": true
+        },
+        {
+          "id": "l-0004",
+          "lang": "th",
+          "speaker": "B",
+          "thai": "ใกล้ค่ะ ใกล้มาก",
+          "translit": "glâi khâ glâi mâak",
+          "english": "It's close. Very close.",
+          "display": "immediate",
+          "spoken": true
+        },
+        {
+          "id": "l-0005",
+          "lang": "th",
+          "speaker": "A",
+          "thai": "ขอบคุณค่ะ",
+          "translit": "khàawp-khun khâ",
+          "english": "Thank you.",
+          "display": "immediate",
+          "spoken": true
+        },
+        {
+          "id": "l-0006",
+          "lang": "th",
+          "speaker": "B",
+          "thai": "ตรงไป... เลี้ยวขวานะคะ อย่าหลงล่ะ",
+          "translit": "trong bpai... líiaw khwǎa ná khá yàa lǒng lâ",
+          "english": "Straight... then right, OK? Don't get lost!",
+          "display": "immediate",
+          "spoken": true
+        },
+        {
+          "id": "l-0007",
+          "lang": "th",
+          "speaker": "A",
+          "thai": "ตรง... ขวา... ตรง... ขวา",
+          "translit": "trong... khwǎa... trong... khwǎa",
+          "english": "Straight... right... straight... right.",
+          "display": "immediate",
+          "spoken": true
+        },
+        {
+          "id": "l-0008",
+          "lang": "th",
+          "speaker": "B",
+          "thai": "ตรงไปก่อน แล้วเลี้ยวขวา ค่ะ",
+          "translit": "trong bpai gàawn láaew líiaw khwǎa khâ",
+          "english": "Straight first. Then turn right.",
+          "display": "immediate",
+          "spoken": true
+        }
+      ]
+    },
+    {
+      "id": "b-002",
+      "mode": "explain",
+      "speakerNote": "Nine in teacher mode now -- the sketch is over, she's unpacking it. Three beats: (1) decode the sketch in 1-2 sentences, (2) one cultural-context opener (default below), (3) promise + roadmap. Alternative cultural-context openers Nine can pick from on the day: (a) Pattern derived from sketch -- 'Did you notice the vendor said the directions twice? That's not because she didn't trust the tourist's memory -- repeating directions is a politeness move that says \"I'm taking care of you\".' (b) Counterintuitive observation -- 'Thai street addresses don't follow geographic order. A house at number 12 might be next to one at number 87. Soi 7/1 is a thing, and it's between Soi 7 and Soi 9. Knowing how to ask for directions is genuinely how you move around here.' (c) Common-mistake reframe -- 'Most learners memorise the words for left and right, but skip the tones. Get the tones wrong and you'll go the wrong way. We'll drill the tones today.' Pick whichever fits the day's energy.",
+      "imageRef": "img-001",
+      "lines": [
+        {
+          "id": "l-0009",
+          "lang": "en",
+          "english": "That sketch? She was just asking where the bathroom is, and the vendor was patiently pointing her around the corner. By the end of this video, you'll catch every word of that exchange -- and you'll be able to ask the same thing yourself.",
+          "spoken": true
+        },
+        {
+          "id": "l-0010",
+          "lang": "en",
+          "english": "Here's why this matters in Thailand. Asking for directions is one of the most human things you can do in a new language -- people will help you if you can open the door with one polite Thai phrase. And in Thailand, locals are unusually willing to walk you to your destination if you ask. The phrase that opens that door is short, and you're going to know it in 13 minutes.",
+          "spoken": true
+        },
+        {
+          "id": "l-0011",
+          "lang": "th",
+          "thai": "ขอโทษค่ะ ห้องน้ำอยู่ที่ไหนคะ",
+          "translit": "khǎaw-thôot khâ hâwng náam yùu thîi nǎi khá",
+          "spoken": true
+        },
+        {
+          "id": "l-0012",
+          "lang": "en",
+          "english": "By the end of this video, you'll be able to ask where anything is in Thai, understand directions like 'go straight', 'turn left', 'turn right', 'near', and 'far', and follow the answer in real time -- all in Thai. Today I'm going to teach you 8 phrases. We'll go through each one, I'll explain how to use it, then you'll hear them all together in a real conversation, and finally we'll practise together. Let's go.",
+          "spoken": true
+        }
+      ]
+    },
+    {
+      "id": "b-003",
+      "mode": "section-intro",
+      "speakerNote": "Upbeat. You're introducing the vocabulary section now.",
+      "lines": [
+        {
+          "id": "l-0008",
+          "lang": "en",
+          "english": "Let's start with the vocabulary. Eight words — that's everything you need. For each one I'll say the Thai, explain how to use it, and give you a real example. Ready? Let's go.",
+          "spoken": true
+        }
+      ]
+    },
+    {
+      "id": "b-004",
+      "mode": "vocab-card",
+      "vocabRefs": [
+        "v-001"
+      ],
+      "imageRef": "img-002",
+      "lines": [
+        {
+          "id": "l-0009",
+          "lang": "th",
+          "thai": "อยู่ที่ไหน",
+          "translit": "yùu thîi nǎi",
+          "display": "immediate",
+          "spoken": true
+        }
+      ]
+    },
+    {
+      "id": "b-005",
+      "mode": "vocab-explain",
+      "lines": [
+        {
+          "id": "l-0010",
+          "lang": "en",
+          "english": "อยู่ที่ไหน — yùu thîi nǎi. This means 'where is it?' or 'where is...?' อยู่ means 'to be located', and ที่ไหน means 'where'. The key thing: in Thai, the question word goes at the end. So instead of saying 'Where is the bathroom?', you say 'Bathroom — where is it?' — ห้องน้ำอยู่ที่ไหน. Just put the place first, then อยู่ที่ไหน at the end. Works for anything.",
+          "spoken": true
+        },
+        {
+          "id": "l-0011",
+          "lang": "th",
+          "thai": "ร้านกาแฟอยู่ที่ไหนคะ",
+          "translit": "ráan gaa-fae yùu thîi nǎi khá",
+          "spoken": true
+        },
+        {
+          "id": "l-0012",
+          "lang": "en",
+          "english": "That means 'Where is the coffee shop?' ร้านกาแฟ is coffee shop. See how อยู่ที่ไหน comes right at the end? That's the pattern every time.",
+          "spoken": true
+        }
+      ]
+    },
+    {
+      "id": "b-006",
+      "mode": "vocab-card",
+      "vocabRefs": [
+        "v-002"
+      ],
+      "imageRef": "img-003",
+      "lines": [
+        {
+          "id": "l-0013",
+          "lang": "en",
+          "english": "OK, the first direction word.",
+          "spoken": true
+        },
+        {
+          "id": "l-0014",
+          "lang": "th",
+          "thai": "ตรงไป",
+          "translit": "trong bpai",
+          "display": "immediate",
+          "spoken": true
+        }
+      ]
+    },
+    {
+      "id": "b-007",
+      "mode": "vocab-explain",
+      "lines": [
+        {
+          "id": "l-0015",
+          "lang": "en",
+          "english": "ตรงไป — trong bpai. This means 'go straight'. ตรง means 'straight' and ไป means 'go'. Short, easy, you'll hear it constantly. People will often say it while pointing, so even if they say it fast you'll know what they mean. ตรงไปแล้วเลี้ยวซ้าย — 'go straight then turn left' — is probably the most common direction answer in Thailand.",
+          "spoken": true
+        },
+        {
+          "id": "l-0016",
+          "lang": "th",
+          "thai": "ตรงไปแล้วก็เห็นเลยค่ะ",
+          "translit": "trong bpai láaew gâaw hěn loei khâ",
+          "spoken": true
+        },
+        {
+          "id": "l-0017",
+          "lang": "en",
+          "english": "That means 'Go straight and you'll see it right away.' เห็น is 'see', เลย means 'right there'. Very common reassurance when you're close.",
+          "spoken": true
+        }
+      ]
+    },
+    {
+      "id": "b-008",
+      "mode": "vocab-card",
+      "vocabRefs": [
+        "v-003"
+      ],
+      "imageRef": "img-004",
+      "lines": [
+        {
+          "id": "l-0018",
+          "lang": "en",
+          "english": "Next — turn left.",
+          "spoken": true
+        },
+        {
+          "id": "l-0019",
+          "lang": "th",
+          "thai": "เลี้ยวซ้าย",
+          "translit": "líiaw sáai",
+          "display": "immediate",
+          "spoken": true
+        }
+      ]
+    },
+    {
+      "id": "b-009",
+      "mode": "vocab-explain",
+      "lines": [
+        {
+          "id": "l-0020",
+          "lang": "en",
+          "english": "เลี้ยวซ้าย — líiaw sáai. Turn left. เลี้ยว means 'turn', ซ้าย means 'left'. Falling tone on ซ้าย — your voice drops. I always tell my students: practise ซ้าย and ขวา together as a pair, with the gesture, until they're automatic. If you get them wrong you'll go the wrong direction — which I've seen happen to many students.",
+          "spoken": true
+        },
+        {
+          "id": "l-0021",
+          "lang": "th",
+          "thai": "เลี้ยวซ้ายตรงสี่แยกครับ",
+          "translit": "líiaw sáai trong sìi-yâaek khráp",
+          "spoken": true
+        },
+        {
+          "id": "l-0022",
+          "lang": "en",
+          "english": "That means 'Turn left at the intersection.' สี่แยก means 'four-way intersection' — สี่ is four, แยก is split. You'll hear this landmark constantly in directions.",
+          "spoken": true
+        }
+      ]
+    },
+    {
+      "id": "b-010",
+      "mode": "vocab-card",
+      "vocabRefs": [
+        "v-004"
+      ],
+      "imageRef": "img-004",
+      "lines": [
+        {
+          "id": "l-0023",
+          "lang": "en",
+          "english": "And the opposite — turn right.",
+          "spoken": true
+        },
+        {
+          "id": "l-0024",
+          "lang": "th",
+          "thai": "เลี้ยวขวา",
+          "translit": "líiaw khwǎa",
+          "display": "immediate",
+          "spoken": true
+        }
+      ]
+    },
+    {
+      "id": "b-011",
+      "mode": "vocab-explain",
+      "lines": [
+        {
+          "id": "l-0025",
+          "lang": "en",
+          "english": "เลี้ยวขวา — líiaw khwǎa. Turn right. ขวา has a rising tone — voice goes up. Compare: ซ้าย falls, ขวา rises. That tonal contrast is how you tell them apart. If you can nail those two tones you'll always go the right way. ขวา also means 'the right side' on its own — you'll see it on signs.",
+          "spoken": true
+        },
+        {
+          "id": "l-0026",
+          "lang": "th",
+          "thai": "เลี้ยวขวาแล้วตรงไปเลยค่ะ",
+          "translit": "líiaw khwǎa láaew trong bpai loei khâ",
+          "spoken": true
+        },
+        {
+          "id": "l-0027",
+          "lang": "en",
+          "english": "That means 'Turn right and then just go straight.' แล้ว means 'then', เลย makes it sound natural — 'just go right ahead from there'.",
+          "spoken": true
+        }
+      ]
+    },
+    {
+      "id": "b-012",
+      "mode": "vocab-card",
+      "vocabRefs": [
+        "v-005"
+      ],
+      "imageRef": "img-005",
+      "lines": [
+        {
+          "id": "l-0028",
+          "lang": "en",
+          "english": "OK, next — near.",
+          "spoken": true
+        },
+        {
+          "id": "l-0029",
+          "lang": "th",
+          "thai": "ใกล้",
+          "translit": "glâi",
+          "display": "immediate",
+          "spoken": true
+        }
+      ]
+    },
+    {
+      "id": "b-013",
+      "mode": "vocab-explain",
+      "lines": [
+        {
+          "id": "l-0030",
+          "lang": "en",
+          "english": "ใกล้ — glâi. This means 'near' or 'close'. Falling tone — voice goes down. After you get directions, the natural follow-up question is ใกล้ไหมคะ — 'Is it near?' — and if they say ใกล้ค่ะ you can walk, if not you might need a taxi. Really useful short question that Thai people use all the time.",
+          "spoken": true
+        },
+        {
+          "id": "l-0031",
+          "lang": "th",
+          "thai": "ใกล้แค่นี้เองค่ะ",
+          "translit": "glâi khâe níi eeng khâ",
+          "spoken": true
+        },
+        {
+          "id": "l-0032",
+          "lang": "en",
+          "english": "That means 'It's only this close.' แค่นี้เอง is a really natural Thai expression — 'just this much'. It's the kind of thing someone says to reassure you that you haven't walked too far.",
+          "spoken": true
+        }
+      ]
+    },
+    {
+      "id": "b-014",
+      "mode": "vocab-card",
+      "vocabRefs": [
+        "v-006"
+      ],
+      "imageRef": "img-005",
+      "lines": [
+        {
+          "id": "l-0033",
+          "lang": "en",
+          "english": "And the opposite — far.",
+          "spoken": true
+        },
+        {
+          "id": "l-0034",
+          "lang": "th",
+          "thai": "ไกล",
+          "translit": "glai",
+          "display": "immediate",
+          "spoken": true
+        }
+      ]
+    },
+    {
+      "id": "b-015",
+      "mode": "vocab-explain",
+      "lines": [
+        {
+          "id": "l-0035",
+          "lang": "en",
+          "english": "ไกล — glai. This means 'far'. Mid tone — flat. Compare with ใกล้ which falls. They look almost identical on paper — ใกล้ and ไกล — but the tone makes all the difference. This is one of those pairs you just have to drill. A warning: when someone says ไกลนิดหน่อย — 'a little far' — it usually means very far. Thai people are polite.",
+          "spoken": true
+        },
+        {
+          "id": "l-0036",
+          "lang": "th",
+          "thai": "ไกลมากไหมคะ",
+          "translit": "glai mâak mǎi khá",
+          "spoken": true
+        },
+        {
+          "id": "l-0037",
+          "lang": "en",
+          "english": "That means 'Is it very far?' มาก adds 'very', ไหม makes it a question. Useful when you're on foot and wondering whether you need transport.",
+          "spoken": true
+        }
+      ]
+    },
+    {
+      "id": "b-016",
+      "mode": "vocab-card",
+      "vocabRefs": [
+        "v-007"
+      ],
+      "imageRef": "img-006",
+      "lines": [
+        {
+          "id": "l-0038",
+          "lang": "en",
+          "english": "Now — probably the most urgent direction question you'll ever ask.",
+          "spoken": true
+        },
+        {
+          "id": "l-0039",
+          "lang": "th",
+          "thai": "ห้องน้ำ",
+          "translit": "hâwng náam",
+          "display": "immediate",
+          "spoken": true
+        }
+      ]
+    },
+    {
+      "id": "b-017",
+      "mode": "vocab-explain",
+      "lines": [
+        {
+          "id": "l-0040",
+          "lang": "en",
+          "english": "ห้องน้ำ — hâwng náam. This literally means 'water room' — ห้อง is room, น้ำ is water. It's the everyday word for bathroom or toilet. You'll see it on signs everywhere — shopping malls, restaurants, petrol stations. Just add อยู่ที่ไหน after it and you have the most-used direction question in Thailand.",
+          "spoken": true
+        },
+        {
+          "id": "l-0041",
+          "lang": "th",
+          "thai": "ขอถามหน่อยได้ไหมคะ ห้องน้ำอยู่แถวไหนคะ",
+          "translit": "khǎaw thǎam nàuy dâai mǎi khá hâwng náam yùu thǎaew nǎi khá",
+          "spoken": true
+        },
+        {
+          "id": "l-0042",
+          "lang": "en",
+          "english": "That means 'Excuse me, which area is the bathroom in?' อยู่แถวไหน is a softer version — แถว means 'area around'. More casual than อยู่ที่ไหน. Both work perfectly.",
+          "spoken": true
+        }
+      ]
+    },
+    {
+      "id": "b-018",
+      "mode": "vocab-card",
+      "vocabRefs": [
+        "v-008"
+      ],
+      "imageRef": "img-007",
+      "lines": [
+        {
+          "id": "l-0043",
+          "lang": "en",
+          "english": "And the last one — this one is your lifeline in Bangkok.",
+          "spoken": true
+        },
+        {
+          "id": "l-0044",
+          "lang": "th",
+          "thai": "สถานีรถไฟฟ้า",
+          "translit": "sa-thǎa-nii rót-fai-fáa",
+          "display": "immediate",
+          "spoken": true
+        }
+      ]
+    },
+    {
+      "id": "b-019",
+      "mode": "vocab-explain",
+      "lines": [
+        {
+          "id": "l-0045",
+          "lang": "en",
+          "english": "สถานีรถไฟฟ้า — sa-thǎa-nii rót-fai-fáa. BTS Skytrain station. Break it down: สถานี is station, รถ is vehicle, ไฟฟ้า is electric — so it's literally 'electric train station'. The BTS is the easiest way to get around Bangkok and stations are visible landmarks on every main road. If you're lost, asking for the nearest station gets you to safety fast.",
+          "spoken": true
+        },
+        {
+          "id": "l-0046",
+          "lang": "th",
+          "thai": "สถานีรถไฟฟ้าอยู่ใกล้ไหมคะ",
+          "translit": "sa-thǎa-nii rót-fai-fáa yùu glâi mǎi khá",
+          "spoken": true
+        },
+        {
+          "id": "l-0047",
+          "lang": "en",
+          "english": "That means 'Is the BTS station nearby?' Notice how this combines สถานีรถไฟฟ้า, อยู่, and ใกล้ไหม — three of your eight words working together. That's exactly how it sounds in a real conversation.",
+          "spoken": true
+        }
+      ]
+    },
+    {
+      "id": "b-020",
+      "mode": "section-intro",
+      "speakerNote": "Shift energy — you're about to play the full conversation. Get the viewer ready to listen without pausing.",
+      "imageRef": "img-001",
+      "lines": [
+        {
+          "id": "l-0048",
+          "lang": "en",
+          "english": "OK — you know all eight phrases. Now I'm going to put them into a short street conversation. Imagine you've just come out of a shopping mall, you're trying to find the BTS station. I'll speak at natural speed, the way a Thai person would really talk. Don't pause the video — just listen and see how much you can follow. Ready?",
+          "spoken": true
+        }
+      ]
+    },
+    {
+      "id": "b-021",
+      "mode": "natural-listen",
+      "speakerNote": "Natural conversational speed. Act out stopping a passerby on the street and getting directions.",
+      "imageRef": "img-001",
+      "lines": [
+        {
+          "id": "l-0049",
+          "lang": "th",
+          "thai": "ขอโทษค่ะ สถานีรถไฟฟ้าอยู่ที่ไหนคะ",
+          "translit": "khǎaw-thôot khâ sa-thǎa-nii rót-fai-fáa yùu thîi nǎi khá",
+          "display": "immediate",
+          "spoken": true
+        },
+        {
+          "id": "l-0050",
+          "lang": "th",
+          "thai": "ตรงไปแล้วเลี้ยวซ้ายค่ะ",
+          "translit": "trong bpai láaew líiaw sáai khâ",
+          "display": "immediate",
+          "spoken": true
+        },
+        {
+          "id": "l-0051",
+          "lang": "th",
+          "thai": "ใกล้ไหมคะ",
+          "translit": "glâi mǎi khá",
+          "display": "immediate",
+          "spoken": true
+        },
+        {
+          "id": "l-0052",
+          "lang": "th",
+          "thai": "ใกล้ค่ะ ห้านาทีค่ะ",
+          "translit": "glâi khâ hâa naa-thii khâ",
+          "display": "immediate",
+          "spoken": true
+        },
+        {
+          "id": "l-0053",
+          "lang": "th",
+          "thai": "ขอบคุณค่ะ",
+          "translit": "khàawp-khun khâ",
+          "display": "immediate",
+          "spoken": true
+        }
+      ]
+    },
+    {
+      "id": "b-022",
+      "mode": "explain",
+      "speakerNote": "Check in with the viewer. Warm and encouraging.",
+      "lines": [
+        {
+          "id": "l-0054",
+          "lang": "en",
+          "english": "How was that? Could you catch the key phrases? Don't worry if it went fast — that's exactly what real Thai sounds like. Now let's slow it down and go through it line by line.",
+          "spoken": true
+        }
+      ]
+    },
+    {
+      "id": "b-023",
+      "mode": "section-intro",
+      "speakerNote": "Reset your energy. Clear and focused for the breakdown section.",
+      "lines": [
+        {
+          "id": "l-0055",
+          "lang": "en",
+          "english": "Same conversation, but this time I'll say each line, pause, and break down exactly what each part means.",
+          "spoken": true
+        }
+      ]
+    },
+    {
+      "id": "b-024",
+      "mode": "breakdown",
+      "speakerNote": "Say the Thai clearly, pause, let the transliteration and English appear.",
+      "imageRef": "img-008",
+      "lines": [
+        {
+          "id": "l-0056",
+          "lang": "th",
+          "thai": "ขอโทษค่ะ สถานีรถไฟฟ้าอยู่ที่ไหนคะ",
+          "translit": "khǎaw-thôot khâ sa-thǎa-nii rót-fai-fáa yùu thîi nǎi khá",
+          "display": "immediate",
+          "spoken": true
+        },
+        {
+          "id": "l-0057",
+          "lang": "translit",
+          "translit": "khǎaw-thôot khâ sa-thǎa-nii rót-fai-fáa yùu thîi nǎi khá",
+          "display": "delayed-1s",
+          "spoken": false
+        },
+        {
+          "id": "l-0058",
+          "lang": "en",
+          "english": "Excuse me, where is the BTS station?",
+          "display": "delayed-2s",
+          "spoken": false
+        }
+      ]
+    },
+    {
+      "id": "b-025",
+      "mode": "explain",
+      "lines": [
+        {
+          "id": "l-0059",
+          "lang": "en",
+          "english": "ขอโทษค่ะ is 'excuse me' — a polite opener before asking a stranger anything. Then สถานีรถไฟฟ้า is the BTS station. อยู่ที่ไหน — where is it? คะ is the soft polite particle for women. Notice how the question word ที่ไหน comes right at the end — place first, then 'where' at the end. That's the rule.",
+          "spoken": true
+        }
+      ]
+    },
+    {
+      "id": "b-026",
+      "mode": "breakdown",
+      "speakerNote": "Switch voice — this is the helper replying.",
+      "imageRef": "img-008",
+      "lines": [
+        {
+          "id": "l-0060",
+          "lang": "th",
+          "thai": "ตรงไปแล้วเลี้ยวซ้ายค่ะ",
+          "translit": "trong bpai láaew líiaw sáai khâ",
+          "display": "immediate",
+          "spoken": true
+        },
+        {
+          "id": "l-0061",
+          "lang": "translit",
+          "translit": "trong bpai láaew líiaw sáai khâ",
+          "display": "delayed-1s",
+          "spoken": false
+        },
+        {
+          "id": "l-0062",
+          "lang": "en",
+          "english": "Go straight then turn left.",
+          "display": "delayed-2s",
+          "spoken": false
+        }
+      ]
+    },
+    {
+      "id": "b-027",
+      "mode": "explain",
+      "lines": [
+        {
+          "id": "l-0063",
+          "lang": "en",
+          "english": "ตรงไป — go straight. แล้ว — then. เลี้ยวซ้าย — turn left. The structure in Thai is the same as English here: action, then next action. แล้ว is your 'then' connector. Very simple, very logical.",
+          "spoken": true
+        }
+      ]
+    },
+    {
+      "id": "b-028",
+      "mode": "breakdown",
+      "imageRef": "img-008",
+      "lines": [
+        {
+          "id": "l-0064",
+          "lang": "th",
+          "thai": "ใกล้ไหมคะ",
+          "translit": "glâi mǎi khá",
+          "display": "immediate",
+          "spoken": true
+        },
+        {
+          "id": "l-0065",
+          "lang": "translit",
+          "translit": "glâi mǎi khá",
+          "display": "delayed-1s",
+          "spoken": false
+        },
+        {
+          "id": "l-0066",
+          "lang": "en",
+          "english": "Is it near?",
+          "display": "delayed-2s",
+          "spoken": false
+        }
+      ]
+    },
+    {
+      "id": "b-029",
+      "mode": "explain",
+      "lines": [
+        {
+          "id": "l-0067",
+          "lang": "en",
+          "english": "ใกล้ is 'near'. ไหม turns it into a yes/no question — it's the Thai question particle. So ใกล้ไหม is literally 'near?' — that's all you need. Super short, completely natural.",
+          "spoken": true
+        }
+      ]
+    },
+    {
+      "id": "b-030",
+      "mode": "breakdown",
+      "imageRef": "img-008",
+      "lines": [
+        {
+          "id": "l-0068",
+          "lang": "th",
+          "thai": "ใกล้ค่ะ ห้านาทีค่ะ",
+          "translit": "glâi khâ hâa naa-thii khâ",
+          "display": "immediate",
+          "spoken": true
+        },
+        {
+          "id": "l-0069",
+          "lang": "translit",
+          "translit": "glâi khâ hâa naa-thii khâ",
+          "display": "delayed-1s",
+          "spoken": false
+        },
+        {
+          "id": "l-0070",
+          "lang": "en",
+          "english": "It's close. Five minutes.",
+          "display": "delayed-2s",
+          "spoken": false
+        }
+      ]
+    },
+    {
+      "id": "b-031",
+      "mode": "explain",
+      "lines": [
+        {
+          "id": "l-0071",
+          "lang": "en",
+          "english": "ใกล้ค่ะ — it's close. ห้า is five, นาที is minutes. Thais often answer distance questions in walking time rather than metres — which is actually more useful. ห้านาที means you can walk. ยี่สิบนาที means get a taxi.",
+          "spoken": true
+        }
+      ]
+    },
+    {
+      "id": "b-032",
+      "mode": "section-intro",
+      "speakerNote": "Switch to drill mode. Energetic, direct.",
+      "lines": [
+        {
+          "id": "l-0072",
+          "lang": "en",
+          "english": "Now we drill. I'll give you a model sentence, then ask you to swap one word out. Say the new sentence out loud before I do.",
+          "spoken": true
+        }
+      ]
+    },
+    {
+      "id": "b-033",
+      "mode": "drill-prompt",
+      "speakerNote": "Show the model sentence on screen. Read it aloud, then call the swap. Pause 3 seconds for the viewer to produce the new sentence.",
+      "imageRef": "img-009",
+      "lines": [
+        {
+          "id": "l-0073",
+          "lang": "th",
+          "thai": "ห้องน้ำอยู่ที่ไหนคะ",
+          "translit": "hâwng náam yùu thîi nǎi khá",
+          "display": "immediate",
+          "spoken": true
+        },
+        {
+          "id": "l-0074",
+          "lang": "en",
+          "english": "Now swap ห้องน้ำ for สถานีรถไฟฟ้า. Say the full sentence.",
+          "display": "delayed-1s",
+          "spoken": true
+        }
+      ]
+    },
+    {
+      "id": "b-034",
+      "mode": "drill-answer",
+      "speakerNote": "Confirm the swap. Smile.",
+      "imageRef": "img-009",
+      "lines": [
+        {
+          "id": "l-0075",
+          "lang": "th",
+          "thai": "สถานีรถไฟฟ้าอยู่ที่ไหนคะ",
+          "translit": "sa-thǎa-nii rót-fai-fáa yùu thîi nǎi khá",
+          "display": "immediate",
+          "spoken": true
+        },
+        {
+          "id": "l-0076",
+          "lang": "en",
+          "english": "สถานีรถไฟฟ้าอยู่ที่ไหนคะ. The slot is the place; the rest of the sentence stays the same.",
+          "spoken": true
+        }
+      ]
+    },
+    {
+      "id": "b-035",
+      "mode": "drill-prompt",
+      "imageRef": "img-009",
+      "lines": [
+        {
+          "id": "l-0077",
+          "lang": "th",
+          "thai": "ตรงไปแล้วเลี้ยวซ้ายค่ะ",
+          "translit": "trong bpai láaew líiaw sáai khâ",
+          "display": "immediate",
+          "spoken": true
+        },
+        {
+          "id": "l-0078",
+          "lang": "en",
+          "english": "Now swap ซ้าย for ขวา. Say the full sentence.",
+          "display": "delayed-1s",
+          "spoken": true
+        }
+      ]
+    },
+    {
+      "id": "b-036",
+      "mode": "drill-answer",
+      "imageRef": "img-009",
+      "lines": [
+        {
+          "id": "l-0079",
+          "lang": "th",
+          "thai": "ตรงไปแล้วเลี้ยวขวาค่ะ",
+          "translit": "trong bpai láaew líiaw khwǎa khâ",
+          "display": "immediate",
+          "spoken": true
+        },
+        {
+          "id": "l-0080",
+          "lang": "en",
+          "english": "ตรงไปแล้วเลี้ยวขวาค่ะ. Watch the tones: ซ้าย falls, ขวา rises. That's the only thing changing in this swap.",
+          "spoken": true
+        }
+      ]
+    },
+    {
+      "id": "b-037",
+      "mode": "drill-prompt",
+      "imageRef": "img-009",
+      "lines": [
+        {
+          "id": "l-0081",
+          "lang": "th",
+          "thai": "ใกล้ไหมคะ",
+          "translit": "glâi mǎi khá",
+          "display": "immediate",
+          "spoken": true
+        },
+        {
+          "id": "l-0082",
+          "lang": "en",
+          "english": "Now swap ใกล้ for ไกล. Say the full sentence.",
+          "display": "delayed-1s",
+          "spoken": true
+        }
+      ]
+    },
+    {
+      "id": "b-038",
+      "mode": "drill-answer",
+      "imageRef": "img-009",
+      "lines": [
+        {
+          "id": "l-0083",
+          "lang": "th",
+          "thai": "ไกลไหมคะ",
+          "translit": "glai mǎi khá",
+          "display": "immediate",
+          "spoken": true
+        },
+        {
+          "id": "l-0084",
+          "lang": "en",
+          "english": "ไกลไหมคะ. Same question structure, opposite distance. ใกล้ falls, ไกล stays mid. Tone is the only signal.",
+          "spoken": true
+        }
+      ]
+    },
+    {
+      "id": "b-039",
+      "mode": "section-intro",
+      "speakerNote": "Shift to shadowing — slower, more deliberate pace.",
+      "lines": [
+        {
+          "id": "l-0085",
+          "lang": "en",
+          "english": "One more section — shadowing. I'll say each phrase slowly. Repeat after me. Really say it out loud — this is where pronunciation gets fixed.",
+          "spoken": true
+        }
+      ]
+    },
+    {
+      "id": "b-040",
+      "mode": "shadowing",
+      "speakerNote": "Very slow. Pause 2 seconds between each sentence for the viewer to repeat.",
+      "lines": [
+        {
+          "id": "l-0086",
+          "lang": "th-split",
+          "thai": "ห้องน้ำอยู่ที่ไหนคะ",
+          "thaiSplit": "ห้อง น้ำ อยู่ ที่ไหน คะ",
+          "translit": "hâwng náam yùu thîi nǎi khá",
+          "display": "immediate",
+          "highlight": true,
+          "spoken": true
+        },
+        {
+          "id": "l-0087",
+          "lang": "th-split",
+          "thai": "ตรงไปแล้วเลี้ยวซ้ายค่ะ",
+          "thaiSplit": "ตรง ไป แล้ว เลี้ยว ซ้าย ค่ะ",
+          "translit": "trong bpai láaew líiaw sáai khâ",
+          "display": "immediate",
+          "highlight": true,
+          "spoken": true
+        },
+        {
+          "id": "l-0088",
+          "lang": "th-split",
+          "thai": "ตรงไปแล้วเลี้ยวขวาค่ะ",
+          "thaiSplit": "ตรง ไป แล้ว เลี้ยว ขวา ค่ะ",
+          "translit": "trong bpai láaew líiaw khwǎa khâ",
+          "display": "immediate",
+          "highlight": true,
+          "spoken": true
+        },
+        {
+          "id": "l-0089",
+          "lang": "th-split",
+          "thai": "ใกล้ไหมคะ",
+          "thaiSplit": "ใกล้ ไหม คะ",
+          "translit": "glâi mǎi khá",
+          "display": "immediate",
+          "highlight": true,
+          "spoken": true
+        },
+        {
+          "id": "l-0090",
+          "lang": "th-split",
+          "thai": "ใกล้ค่ะ ห้านาทีค่ะ",
+          "thaiSplit": "ใกล้ ค่ะ ห้า นาที ค่ะ",
+          "translit": "glâi khâ hâa naa-thii khâ",
+          "display": "immediate",
+          "highlight": true,
+          "spoken": true
+        },
+        {
+          "id": "l-0091",
+          "lang": "th-split",
+          "thai": "ขอบคุณค่ะ",
+          "thaiSplit": "ขอบ คุณ ค่ะ",
+          "translit": "khàawp-khun khâ",
+          "display": "immediate",
+          "highlight": true,
+          "spoken": true
+        }
+      ]
+    },
+    {
+      "id": "b-041",
+      "mode": "recap",
+      "speakerNote": "Quick energy. Flash through the vocab cards.",
+      "vocabRefs": [
+        "v-001",
+        "v-002",
+        "v-003",
+        "v-004",
+        "v-005",
+        "v-006",
+        "v-007",
+        "v-008"
+      ],
+      "imageRef": "img-010",
+      "lines": [
+        {
+          "id": "l-0092",
+          "lang": "en",
+          "english": "Quick recap — here are your 8 direction phrases in Thai.",
+          "display": "immediate",
+          "spoken": true
+        }
+      ]
+    },
+    {
+      "id": "b-042",
+      "mode": "teaser",
+      "speakerNote": "Tease next episode — taking a taxi.",
+      "lines": [
+        {
+          "id": "l-0093",
+          "lang": "en",
+          "english": "Next time — taking a taxi. You'll learn how to tell the driver where to go, ask them to use the meter, and say 'stop here'. See you then.",
+          "display": "immediate",
+          "spoken": true
+        },
+        {
+          "id": "l-0094",
+          "lang": "th",
+          "thai": "เปิดมิเตอร์ด้วยค่ะ",
+          "translit": "bpèrt mí-dtêr dûuay khâ",
+          "english": "Please use the meter.",
+          "display": "delayed-1s",
+          "spoken": true
+        }
+      ]
+    }
+  ],
+  "imagePrompts": [
+    {
+      "id": "img-001",
+      "prompt": "Watercolour illustration of a bustling Bangkok street corner with BTS Skytrain elevated track visible in the background, warm afternoon light, Thai shop signs, pedestrians on the footpath",
+      "style": "watercolour",
+      "subject": "Bangkok street corner with BTS track"
+    },
+    {
+      "id": "img-002",
+      "prompt": "Watercolour illustration of a person looking confused at a street map while a friendly local points down the road, warm tropical light, Bangkok shophouses in the background",
+      "style": "watercolour",
+      "subject": "Asking for directions scene"
+    },
+    {
+      "id": "img-003",
+      "prompt": "Watercolour illustration of a straight Bangkok road stretching into the distance with a clear directional arrow pointing forward, warm tones, palm trees lining the road",
+      "style": "watercolour",
+      "subject": "Go straight - straight road"
+    },
+    {
+      "id": "img-004",
+      "prompt": "Watercolour illustration of a Bangkok road intersection with one path curving left and one path curving right, soft warm colours, signpost with arrows visible",
+      "style": "watercolour",
+      "subject": "Left and right turn intersection"
+    },
+    {
+      "id": "img-005",
+      "prompt": "Watercolour illustration showing two people standing at different distances from a landmark — one very close, one far in the distance — illustrating near and far, warm pastel tones",
+      "style": "watercolour",
+      "subject": "Near and far distance contrast"
+    },
+    {
+      "id": "img-006",
+      "prompt": "Watercolour illustration of a clean modern bathroom sign with Thai ห้องน้ำ text visible, bright interior corridor of a Thai shopping mall, warm soft lighting",
+      "style": "watercolour",
+      "subject": "Bathroom sign in Thai"
+    },
+    {
+      "id": "img-007",
+      "prompt": "Watercolour illustration of a BTS Skytrain station entrance in Bangkok, distinctive elevated structure, commuters walking, bright sky, warm city colours",
+      "style": "watercolour",
+      "subject": "BTS Skytrain station entrance"
+    },
+    {
+      "id": "img-008",
+      "prompt": "Watercolour illustration of an open Thai language study book or notebook with direction words written in Thai script, pencil nearby, warm desk lighting",
+      "style": "watercolour",
+      "subject": "Study breakdown scene"
+    },
+    {
+      "id": "img-009",
+      "prompt": "Watercolour illustration of a quiz scene — a speech bubble with a question mark over a Bangkok street, encouraging and bright, soft warm background",
+      "style": "watercolour",
+      "subject": "Practice drill scene"
+    },
+    {
+      "id": "img-010",
+      "prompt": "Watercolour illustration of eight direction signs arranged neatly, each with a Thai word, illustrated in a warm minimalist style against a soft background",
+      "style": "watercolour",
+      "subject": "Recap - eight direction phrases"
+    }
+  ],
+  "shortFormClips": [
+    {
+      "id": "clip-01",
+      "type": "phrase-of-day",
+      "startBlock": "b-001",
+      "endBlock": "b-001",
+      "hookText": "How to ask 'where is...?' in Thai"
+    },
+    {
+      "id": "clip-02",
+      "type": "phrase-of-day",
+      "startBlock": "b-006",
+      "endBlock": "b-011",
+      "hookText": "Left, right, straight — directions in Thai"
+    },
+    {
+      "id": "clip-03",
+      "type": "can-you-understand",
+      "startBlock": "b-021",
+      "endBlock": "b-021",
+      "hookText": "Can you understand these Thai directions?"
+    },
+    {
+      "id": "clip-04",
+      "type": "repeat-after",
+      "startBlock": "b-033",
+      "endBlock": "b-034",
+      "hookText": "Can you say this in Thai?"
+    }
+  ],
+  "desiredOutcome": "You'll be able to ask where anything is in Thailand using the อยู่ที่ไหน pattern, and understand the most common direction answers (go straight, turn left, turn right, near, far) well enough to actually navigate, no app required."
+}

@@ -1,3 +1,8 @@
+import type { ScriptStatus } from "@/lib/creator/episode-status";
+
+// Re-export for convenience to consumers that import only from types.
+export type { ScriptStatus };
+
 export type TrackerRowKind = "data" | "section" | "blank";
 
 export interface SocialsRow {
@@ -175,7 +180,15 @@ export type LessonRow = ContentRow<{
   updatedAt: string;
 }>;
 
-export type YouTubeRow = ContentRow<{ recorded: boolean }>;
+export type YouTubeRow = ContentRow<{
+  recorded: boolean;
+  scriptStatus: ScriptStatus;
+  catalogueTitle: string | null;
+  topic: string | null;
+  level: string | null;
+  lessonRef: string | null;
+  hasScript: boolean;
+}>;
 
 export type TikTokEpisodeRow = ContentRow<{
   series: string;
