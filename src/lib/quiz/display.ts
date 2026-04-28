@@ -14,3 +14,11 @@ export function shouldShowLearnerTransliteration(
 
   return true;
 }
+
+export function shouldShowAudioPromptThai(quizKind: AssessmentQuizKind) {
+  if (quizKind === "tones" || quizKind === "reader_tones") {
+    return false;
+  }
+
+  return true;
+}

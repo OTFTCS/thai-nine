@@ -10,11 +10,11 @@ interface Props {
 
 export default async function DiagnosticSubmissionPage({ params }: Props) {
   const { token } = await params;
-  const invite = getInviteByToken(token);
+  const invite = await getInviteByToken(token);
 
   if (!invite) notFound();
 
-  const submission = invite.status === "completed" ? getSubmissionByToken(token) : null;
+  const submission = invite.status === "completed" ? await getSubmissionByToken(token) : null;
 
   if (!submission) {
     return (

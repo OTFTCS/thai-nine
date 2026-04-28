@@ -11,9 +11,12 @@ import type {
 import type { DiagnosticSubmission } from "@/types/diagnostic";
 import {
   clearDiagnosticAttempt,
+  clearDiagnosticConsent,
   createAttempt,
   loadDiagnosticAttempt,
+  loadDiagnosticConsent,
   saveDiagnosticAttempt,
+  saveDiagnosticConsent,
 } from "@/lib/quiz/persistence";
 import { QuizAudioPlayer } from "@/components/quizzes/quiz-audio-player";
 import {
@@ -53,15 +56,17 @@ export function DiagnosticQuizRunner({
   );
 
   const [phase, setPhase] = useState<Phase>(() => {
-    // Try to restore an in-progress attempt from localStorage
     return { kind: "track_select" };
   });
+  const [consentGiven, setConsentGiven] = useState<boolean>(false);
 
-  // Restore saved attempt on mount
   useEffect(() => {
     const saved = loadDiagnosticAttempt(token);
     if (saved && !saved.completedAt) {
       setPhase({ kind: "running", attempt: saved });
+    }
+    if (loadDiagnosticConsent(token)) {
+      setConsentGiven(true);
     }
   }, [token]);
 
@@ -97,7 +102,7 @@ export function DiagnosticQuizRunner({
         const res = await fetch("/api/diagnostic/submissions", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ token, attempt }),
+          body: JSON.stringify({ token, attempt, consentGiven: true }),
         });
         if (!res.ok) {
           const json = (await res.json()) as { error?: string };
@@ -105,6 +110,7 @@ export function DiagnosticQuizRunner({
         }
         const json = (await res.json()) as { submission: DiagnosticSubmission };
         clearDiagnosticAttempt(token);
+        clearDiagnosticConsent(token);
         setPhase({ kind: "done", submission: json.submission });
       } catch (err) {
         setPhase({
@@ -117,23 +123,46 @@ export function DiagnosticQuizRunner({
   );
 
   if (phase.kind === "track_select") {
+    const handleConsentChange = (checked: boolean) => {
+      setConsentGiven(checked);
+      saveDiagnosticConsent(token, checked);
+    };
     return (
       <Card>
         <CardHeader>
           <CardTitle>Diagnostic Assessment{learnerName ? ` for ${learnerName}` : ""}</CardTitle>
           <p className="text-sm text-muted-foreground mt-1">
             This is a short placement quiz (~10 min) so your teacher can plan your first lesson.
-            Progress saves automatically — you can leave and return.
+            Progress saves automatically, so you can leave and return.
           </p>
         </CardHeader>
         <CardContent className="space-y-4">
+          <label className="flex items-start gap-2 text-sm text-foreground">
+            <input
+              type="checkbox"
+              checked={consentGiven}
+              onChange={(e) => handleConsentChange(e.target.checked)}
+              className="mt-1"
+            />
+            <span>
+              I agree that my answers will be stored so my Thai teacher can review them.
+              Data will be deleted on request.
+            </span>
+          </label>
           <p className="text-sm text-foreground font-medium">Can you read Thai script?</p>
           <div className="grid gap-3 sm:grid-cols-2">
-            <Button onClick={() => startAttempt("reader")}>
-              Yes — I can read Thai script
+            <Button
+              onClick={() => startAttempt("reader")}
+              disabled={!consentGiven}
+            >
+              Yes, I can read Thai script
             </Button>
-            <Button variant="outline" onClick={() => startAttempt("non_reader")}>
-              No — I rely on transliteration
+            <Button
+              variant="outline"
+              onClick={() => startAttempt("non_reader")}
+              disabled={!consentGiven}
+            >
+              No, I rely on transliteration
             </Button>
           </div>
         </CardContent>
@@ -205,7 +234,7 @@ export function DiagnosticQuizRunner({
       <Card>
         <CardContent className="py-8">
           <p className="text-sm text-muted-foreground">
-            {phase.kind === "submitting" ? "Submitting your results…" : "Loading quiz…"}
+            {phase.kind === "submitting" ? "Submitting your results..." : "Loading quiz..."}
           </p>
         </CardContent>
       </Card>
@@ -313,7 +342,7 @@ export function DiagnosticQuizRunner({
     <div className="space-y-6">
       <div className="space-y-1">
         <h1 className="text-2xl font-bold text-foreground">
-          Diagnostic Assessment{learnerName ? ` — ${learnerName}` : ""}
+          Diagnostic Assessment{learnerName ? ` for ${learnerName}` : ""}
         </h1>
         <p className="text-sm text-muted-foreground">
           Progress saves automatically. You can close this tab and return later.
@@ -418,7 +447,7 @@ export function DiagnosticQuizRunner({
                 disabled={!attempt.answers[currentQuestion.id] || phase.kind === "submitting"}
               >
                 {phase.kind === "submitting"
-                  ? "Submitting…"
+                  ? "Submitting..."
                   : isLast
                     ? "Submit Diagnostic"
                     : "Next"}

@@ -8,7 +8,7 @@ interface Props {
 
 export default async function DiagnosticQuizPage({ params }: Props) {
   const { token } = await params;
-  const invite = getInviteByToken(token);
+  const invite = await getInviteByToken(token);
 
   if (!invite) {
     notFound();
@@ -18,7 +18,6 @@ export default async function DiagnosticQuizPage({ params }: Props) {
     return (
       <div className="min-h-screen bg-background flex items-center justify-center px-4">
         <div className="max-w-md w-full rounded-xl border border-border bg-card p-8 space-y-4 text-center">
-          <p className="text-4xl">✓</p>
           <h1 className="text-xl font-bold text-foreground">Already submitted</h1>
           <p className="text-sm text-muted-foreground">
             {invite.learnerName ? `${invite.learnerName}, your` : "Your"} diagnostic is complete.

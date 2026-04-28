@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 interface QuizAudioPlayerProps {
   thai: string;
   translit: string;
+  showThai?: boolean;
   showTranslit?: boolean;
   audioSrc: string;
   replayCount: number;
@@ -15,6 +16,7 @@ interface QuizAudioPlayerProps {
 export function QuizAudioPlayer({
   thai,
   translit,
+  showThai = true,
   showTranslit = true,
   audioSrc,
   replayCount,
@@ -92,12 +94,16 @@ export function QuizAudioPlayer({
 
   return (
     <div className="rounded-xl border border-border bg-muted/40 p-4 space-y-3">
-      <div>
-        <p className="text-2xl font-semibold text-foreground">{thai}</p>
-        {showTranslit && (
-          <p className="text-sm text-muted-foreground mt-1">{translit}</p>
-        )}
-      </div>
+      {(showThai || showTranslit) && (
+        <div>
+          {showThai && (
+            <p className="text-2xl font-semibold text-foreground">{thai}</p>
+          )}
+          {showTranslit && (
+            <p className="text-sm text-muted-foreground mt-1">{translit}</p>
+          )}
+        </div>
+      )}
       <div className="flex items-center gap-3">
         <Button onClick={handlePlay} variant="outline" size="sm">
           {isPlaying ? "Playing..." : "Play Audio"}

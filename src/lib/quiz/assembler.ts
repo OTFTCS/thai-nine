@@ -69,7 +69,6 @@ export function assemblePlacementQuestionIds({
   const selectedSet = new Set<string>();
   const selectedPerTopic = new Map<AssessmentTopic, number>();
 
-  // Pass 1: guarantee broad topic coverage.
   topicBuckets.forEach((bucket) => {
     const firstId = bucket.ids[0];
     if (!firstId) {

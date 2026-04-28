@@ -425,3 +425,58 @@ export function saveNineModeReview(
 
   return next;
 }
+
+const DIAGNOSTIC_ATTEMPT_KEY_PREFIX = "immersion-thai.diagnostic.attempt.v1";
+
+function buildDiagnosticAttemptKey(token: string) {
+  return `${DIAGNOSTIC_ATTEMPT_KEY_PREFIX}.${token}`;
+}
+
+export function loadDiagnosticAttempt(token: string): AssessmentAttempt | null {
+  if (!hasStorage()) return null;
+  const raw = window.localStorage.getItem(buildDiagnosticAttemptKey(token));
+  if (!raw) return null;
+  try {
+    return JSON.parse(raw) as AssessmentAttempt;
+  } catch {
+    return null;
+  }
+}
+
+export function saveDiagnosticAttempt(token: string, attempt: AssessmentAttempt) {
+  if (!hasStorage()) return;
+  window.localStorage.setItem(
+    buildDiagnosticAttemptKey(token),
+    JSON.stringify({ ...attempt, updatedAt: new Date().toISOString() })
+  );
+}
+
+export function clearDiagnosticAttempt(token: string) {
+  if (!hasStorage()) return;
+  window.localStorage.removeItem(buildDiagnosticAttemptKey(token));
+}
+
+const DIAGNOSTIC_CONSENT_KEY_PREFIX = "immersion-thai.diagnostic.consent.v1";
+
+function buildDiagnosticConsentKey(token: string) {
+  return `${DIAGNOSTIC_CONSENT_KEY_PREFIX}.${token}`;
+}
+
+export function loadDiagnosticConsent(token: string): boolean {
+  if (!hasStorage()) return false;
+  return window.localStorage.getItem(buildDiagnosticConsentKey(token)) === "true";
+}
+
+export function saveDiagnosticConsent(token: string, consent: boolean) {
+  if (!hasStorage()) return;
+  if (consent) {
+    window.localStorage.setItem(buildDiagnosticConsentKey(token), "true");
+  } else {
+    window.localStorage.removeItem(buildDiagnosticConsentKey(token));
+  }
+}
+
+export function clearDiagnosticConsent(token: string) {
+  if (!hasStorage()) return;
+  window.localStorage.removeItem(buildDiagnosticConsentKey(token));
+}

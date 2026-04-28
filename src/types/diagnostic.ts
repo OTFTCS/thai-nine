@@ -1,4 +1,4 @@
-export type DiagnosticInviteStatus = "pending" | "completed";
+export type DiagnosticInviteStatus = "pending" | "completed" | "expired";
 
 export interface DiagnosticInvite {
   token: string;

@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
-import { getInviteByToken, getSubmissionByToken } from "@/lib/diagnostic/store";
+import { getInviteByToken } from "@/lib/diagnostic/store";
 
 export async function GET(
   _request: NextRequest,
@@ -7,16 +7,20 @@ export async function GET(
 ) {
   try {
     const { token } = await params;
-    const invite = getInviteByToken(token);
+    const invite = await getInviteByToken(token);
 
     if (!invite) {
       return NextResponse.json({ error: "Invite not found" }, { status: 404 });
     }
 
-    const submission =
-      invite.status === "completed" ? getSubmissionByToken(token) : null;
-
-    return NextResponse.json({ invite, submission });
+    return NextResponse.json({
+      invite: {
+        token: invite.token,
+        learnerName: invite.learnerName,
+        status: invite.status,
+      },
+      submission: null,
+    });
   } catch (error) {
     console.error("[diagnostic/invites/[token] GET]", error);
     return NextResponse.json(

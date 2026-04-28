@@ -76,7 +76,6 @@ export function DiagnosticAdminPanel() {
 
   return (
     <div className="space-y-8">
-      {/* Create invite */}
       <Card>
         <CardHeader>
           <CardTitle>Create Diagnostic Invite</CardTitle>
@@ -123,12 +122,12 @@ export function DiagnosticAdminPanel() {
                 type="text"
                 value={form.note}
                 onChange={(e) => setForm((f) => ({ ...f, note: e.target.value }))}
-                placeholder="e.g. Trial student — referred by Maria"
+                placeholder="e.g. Trial student, referred by Maria"
                 className="w-full rounded-md border border-border bg-background px-3 py-2 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/50"
               />
             </div>
             <Button type="submit" disabled={creating}>
-              {creating ? "Creating…" : "Generate Invite Link"}
+              {creating ? "Creating..." : "Generate Invite Link"}
             </Button>
           </form>
 
@@ -142,14 +141,13 @@ export function DiagnosticAdminPanel() {
                 </Button>
               </div>
               <p className="text-xs text-muted-foreground">
-                Share this link with the student. It expires once they submit.
+                Share this link with the student. It expires after 30 days.
               </p>
             </div>
           )}
         </CardContent>
       </Card>
 
-      {/* Invite list */}
       <Card>
         <CardHeader>
           <div className="flex items-center justify-between">
@@ -161,7 +159,7 @@ export function DiagnosticAdminPanel() {
         </CardHeader>
         <CardContent>
           {loading && (
-            <p className="text-sm text-muted-foreground">Loading invites…</p>
+            <p className="text-sm text-muted-foreground">Loading invites...</p>
           )}
           {error && (
             <p className="text-sm text-destructive">{error}</p>

@@ -6,7 +6,7 @@ import {
 
 export async function GET() {
   try {
-    const invites = listInvitesWithSubmissions();
+    const invites = await listInvitesWithSubmissions();
     return NextResponse.json({ invites });
   } catch (error) {
     console.error("[diagnostic/invites GET]", error);
@@ -25,7 +25,7 @@ export async function POST(request: NextRequest) {
       note?: string;
     };
 
-    const invite = createInvite({
+    const invite = await createInvite({
       learnerName: typeof body.learnerName === "string" ? body.learnerName.trim() || undefined : undefined,
       email: typeof body.email === "string" ? body.email.trim() || undefined : undefined,
       note: typeof body.note === "string" ? body.note.trim() || undefined : undefined,

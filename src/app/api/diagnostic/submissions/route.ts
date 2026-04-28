@@ -3,7 +3,11 @@ import { getInviteByToken, saveSubmission } from "@/lib/diagnostic/store";
 import { generateLessonBrief } from "@/lib/diagnostic/lesson-brief";
 import { scoreAssessment, derivePlacementBand } from "@/lib/quiz/scoring";
 import { getQuestionsByIds } from "@/lib/quiz/question-banks";
-import type { AssessmentAttempt } from "@/types/assessment";
+import {
+  assemblePlacementQuestionIds,
+  getPlacementTargetCount,
+} from "@/lib/quiz/assembler";
+import type { AssessmentAttempt, LearnerTrack } from "@/types/assessment";
 import type { DiagnosticSubmission } from "@/types/diagnostic";
 
 export async function POST(request: NextRequest) {
@@ -11,11 +15,19 @@ export async function POST(request: NextRequest) {
     const body = (await request.json()) as {
       token: string;
       attempt: AssessmentAttempt;
+      consentGiven?: unknown;
     };
 
     if (!body.token || typeof body.token !== "string") {
       return NextResponse.json(
         { error: "Missing or invalid token" },
+        { status: 400 }
+      );
+    }
+
+    if (body.consentGiven !== true) {
+      return NextResponse.json(
+        { error: "Consent is required to submit the diagnostic" },
         { status: 400 }
       );
     }
@@ -27,7 +39,7 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    const invite = getInviteByToken(body.token);
+    const invite = await getInviteByToken(body.token);
     if (!invite) {
       return NextResponse.json({ error: "Invite not found" }, { status: 404 });
     }
@@ -51,7 +63,31 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    const questions = getQuestionsByIds("placement", attempt.questionIds);
+    const track = attempt.track as LearnerTrack | undefined;
+    const expectedQuestionIds = track
+      ? assemblePlacementQuestionIds({
+          track,
+          targetCount: getPlacementTargetCount(),
+          seed: `diagnostic:${body.token}:${track}`,
+        })
+      : null;
+
+    const submittedSet = new Set(attempt.questionIds);
+    const expectedSet = expectedQuestionIds ? new Set(expectedQuestionIds) : null;
+    const setsMatch =
+      expectedSet !== null &&
+      expectedSet.size === submittedSet.size &&
+      [...expectedSet].every((id) => submittedSet.has(id));
+
+    if (expectedQuestionIds && !setsMatch) {
+      console.warn(
+        "[diagnostic/submissions] question set mismatch; using server-derived list",
+        { token: body.token, track }
+      );
+    }
+
+    const questionIdsForScoring = expectedQuestionIds ?? attempt.questionIds;
+    const questions = getQuestionsByIds("placement", questionIdsForScoring);
     if (questions.length === 0) {
       return NextResponse.json(
         { error: "Could not load questions for attempt" },
@@ -86,7 +122,7 @@ export async function POST(request: NextRequest) {
       lessonBrief,
     };
 
-    saveSubmission(submission);
+    await saveSubmission(submission, true);
 
     return NextResponse.json({ submission }, { status: 201 });
   } catch (error) {
